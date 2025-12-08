@@ -13,11 +13,17 @@ export const metadata: Metadata = {
     description: "Validating every prediction made on the All-In Podcast with AI",
     images: [
       {
-        url: "/og.png",
+        url: "https://allin-predictions.pages.dev/og.png",
         width: 1682,
         height: 1098,
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "All-In Predictions",
+    description: "Validating every prediction made on the All-In Podcast with AI",
+    images: ["https://allin-predictions.pages.dev/og.png"],
   }
 };
 
