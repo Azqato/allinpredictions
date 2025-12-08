@@ -1,0 +1,507 @@
+{
+  "meta": {
+    "count": 13,
+    "count_by_result": {
+      "wrong": 5,
+      "right": 2,
+      "inconclusive": 5,
+      "ambiguous": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:18:07.360",
+      "result": "wrong",
+      "explanation": "*What happened*: In the 2024 U.S. presidential election on November 5, 2024, Donald Trump (Republican) ran against Kamala Harris (Democrat), not Joe Biden. Trump won with 312 electoral votes to Harris\u2019s 226, and about 49.8% of the popular vote to Harris\u2019s 48.3%.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n\n*On \u201cDemocrats will lose\u201d*: This part is correct in a narrow sense: the Democratic ticket (Harris/Walz) lost the presidency to Trump/Vance.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n\n*On \u201cJoe Biden will be defeated\u201d*: This is wrong. Biden did not end up as the Democratic nominee; Harris was. Since Biden never faced Trump on the 2024 ballot, he could not be \u201cdemolished\u201d or defeated in that election.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n\n*On \u201cby a large margin / demolished\u201d*: Trump\u2019s national popular-vote margin over Harris was about 1.5 percentage points, the narrowest popular-vote gap since 2000, and the decisive states collectively turned on roughly 230,000 votes across Michigan, Pennsylvania, and Wisconsin\u2014evidence of a close race, not a blowout.([cookpolitical.com](https://www.cookpolitical.com/analysis/national/national-politics/key-takeaways-2024-national-popular-vote-tracker?utm_source=openai)) While Trump\u2019s 312\u2013226 Electoral College margin is larger than in some recent elections, major analyses characterize his popular-vote win as modest and historically tight.([cookpolitical.com](https://www.cookpolitical.com/analysis/national/national-politics/key-takeaways-2024-national-popular-vote-tracker?utm_source=openai))\n\nBecause the prediction specifically asserted that **Joe Biden himself** would be the candidate and would get **\u201cdemolished\u201d** (a large-margin defeat), and neither of those key elements occurred\u2014even though Democrats did lose overall\u2014the prediction is best scored as **wrong**.",
+      "sources": [
+        {
+          "end_index": 405,
+          "start_index": 295,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 658,
+          "start_index": 548,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 990,
+          "start_index": 880,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1467,
+          "start_index": 1312,
+          "title": "Key Takeaways From the 2024 National Popular Vote Tracker | Cook Political Report",
+          "type": "url_citation",
+          "url": "https://www.cookpolitical.com/analysis/national/national-politics/key-takeaways-2024-national-popular-vote-tracker?utm_source=openai"
+        },
+        {
+          "end_index": 1793,
+          "start_index": 1638,
+          "title": "Key Takeaways From the 2024 National Popular Vote Tracker | Cook Political Report",
+          "type": "url_citation",
+          "url": "https://www.cookpolitical.com/analysis/national/national-politics/key-takeaways-2024-national-popular-vote-tracker?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Joe Biden withdrew from the 2024 presidential race on July 21, 2024, and did not appear on the ballot ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [NBC News](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867)). The election pitted Donald Trump against Kamala Harris, with Trump winning 312-226 in the Electoral College and ~49.9%-48.3% (~1.5-2% margin) in the popular vote ([American Presidency Project](https://www.presidency.ucsb.edu/statistics/elections/2024), [CNN](https://www.cnn.com/election/2024/results/president), [270toWin](https://www.270towin.com/2024-election)). Biden was not defeated in the election, so the prediction failed despite Democrats losing."
+    },
+    {
+      "id": "A-00:19:32.110",
+      "result": "right",
+      "explanation": "Evidence from multiple sources shows that before the November 5, 2024 U.S. presidential election, the Democratic Party did in fact replace Joe Biden with another nominee:\n\n- Joe Biden became the Democratic Party\u2019s *presumptive* 2024 nominee on March 12, 2024 after clinching enough primary delegates. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Joe_Biden_2024_presidential_campaign?utm_source=openai))\n- Following intense concerns after the June 27, 2024 debate, Biden announced on July 21, 2024 that he was *withdrawing* from the 2024 presidential race and would not accept the nomination, and he endorsed Vice President Kamala Harris as his preferred successor. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))\n- Harris immediately launched her own campaign and, by July 22, 2024, had secured enough delegate support to become the *presumptive* Democratic nominee in Biden\u2019s place. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kamala_Harris_2024_presidential_campaign?utm_source=openai))\n- On August 5, 2024, in a virtual roll call of Democratic National Convention delegates, Kamala Harris was formally confirmed as the Democratic Party\u2019s 2024 presidential nominee\u2014months before the November 5, 2024 election. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kamala_Harris?utm_source=openai))\n\nSo, in the run-up to the 2024 election, Democrats effectively conducted the \u201chot swap\u201d Jason described: they replaced Biden with another candidate (Harris) as their presidential nominee prior to Election Day. The prediction therefore came true.",
+      "sources": [
+        {
+          "end_index": 442,
+          "start_index": 336,
+          "title": "Joe Biden 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Joe_Biden_2024_presidential_campaign?utm_source=openai"
+        },
+        {
+          "end_index": 849,
+          "start_index": 706,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1132,
+          "start_index": 1022,
+          "title": "Kamala Harris 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Kamala_Harris_2024_presidential_campaign?utm_source=openai"
+        },
+        {
+          "end_index": 1440,
+          "start_index": 1357,
+          "title": "Kamala Harris",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Kamala_Harris?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Joe Biden withdrew from the 2024 presidential race on July 21, 2024 ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), AP News). Kamala Harris was nominated as the Democratic presidential nominee at the 2024 Democratic National Convention (August 19-22, 2024) ([Wikipedia](https://en.wikipedia.org/wiki/2024_Democratic_National_Convention), CNN). The general election occurred on November 5, 2024 ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election)). Biden was replaced as the nominee before the election, fulfilling the 'hot swap' prediction."
+    },
+    {
+      "id": "E-00:19:57.030",
+      "result": "wrong",
+      "explanation": "Multiple reports show that President Joe Biden *did* voluntarily end his 2024 reelection bid and step down as the Democratic candidate months before Election Day. On July 21, 2024, Biden publicly announced in a letter that he would \u201cstand down\u201d from the race and focus on his duties as president, and he simultaneously endorsed Vice President Kamala Harris to be the Democratic nominee. ([theguardian.com](https://www.theguardian.com/us-news/article/2024/jul/21/joe-biden-withdraw-running-president?utm_source=openai))  Coverage from PBS, CBS, and others confirms that this was a voluntary decision; legally, because Biden had already secured nearly all the Democratic delegates, he could not be forced out and therefore had to step aside of his own accord, which he did. ([cbsnews.com](https://www.cbsnews.com/news/biden-dropping-out-2024-presidential-election/?utm_source=openai))  Harris subsequently became the official Democratic presidential nominee in August 2024. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  Since Biden both voluntarily withdrew and did not remain the nominee through Election Day 2024, Chamath\u2019s prediction that \u201cI don\u2019t think Biden is going to step down at all\u201d is **wrong**.",
+      "sources": [
+        {
+          "end_index": 551,
+          "start_index": 420,
+          "title": "Joe Biden withdraws from presidential race after weeks of pressure to quit | Joe Biden | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/article/2024/jul/21/joe-biden-withdraw-running-president?utm_source=openai"
+        },
+        {
+          "end_index": 915,
+          "start_index": 805,
+          "title": "Biden drops out of the 2024 presidential race, endorses Vice President Kamala Harris for nomination - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/biden-dropping-out-2024-presidential-election/?utm_source=openai"
+        },
+        {
+          "end_index": 1148,
+          "start_index": 1005,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Joe Biden announced his withdrawal from the 2024 presidential race on July 21, 2024, well before Election Day (November 5, 2024), and endorsed Kamala Harris, who became the Democratic nominee ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [AP News](https://apnews.com/article/harris-democratic-presidential-nomination-eb43b6b346cc644b2d195315cb2bfb20), [CNN](https://www.cnn.com/politics/live-news/biden-trump-election-07-21-24), [NBC News](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867)). Thus, Chamath's prediction that Biden would not step down and remain the nominee through Election Day was incorrect."
+    },
+    {
+      "id": "E-00:20:06.960",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, it is not yet known whether Joe Biden will serve the *entire* presidential term that would end in January 2029, because that date is still more than three years in the future. Chamath\u2019s prediction is conditional (\u201cif Biden wins, he won\u2019t make it four years\u201d) and can only be definitively evaluated after we observe whether a full term ending in January 2029 is completed. Since that has not yet occurred (or failed to occur), the correctness of the prediction is **too early to determine**, so it is best classified as *inconclusive* at this time.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "Joe Biden did not win the 2024 U.S. presidential election. Donald Trump won with 312 electoral votes ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [270toWin](https://www.270towin.com/2024-election), [CNN](https://www.cnn.com/election/2024/results/president)). Biden withdrew from the race on July 21, 2024 ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election)). He served as president from 2021-2025 but did not begin a new term. Since the conditional premise (Biden winning) did not occur, the prediction that he would not complete a full term cannot be determined, even though enough time has passed."
+    },
+    {
+      "id": "E-00:21:28.500",
+      "result": "inconclusive",
+      "explanation": "Two separate issues make this prediction impossible to score as right or wrong at this time:\n\n1. **The conditional scenario did not fully occur.** Joe Biden initially ran for re\u2011election, but he **withdrew from the 2024 race on July 21, 2024**, after securing the primary delegates, and endorsed Kamala Harris, who then became the Democratic nominee. Donald Trump became the Republican nominee and went on to win the 2024 election, being inaugurated on January 20, 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  \n   The prediction was explicitly *conditional on both being candidates in 2024*; in the realized timeline Biden did not remain the Democratic candidate into the general election, so the comparison Chamath was describing is now partly counterfactual.\n\n2. **The forecast horizon (a full 2025\u20132029 term) has not elapsed.** As of November 30, 2025, Donald Trump is serving as president and is publicly active (e.g., pursuing his policy agenda and even musing about 2028), which indicates he is presently functioning in office. ([theguardian.com](https://www.theguardian.com/us-news/2025/nov/29/trump-administration-news-updates-today?utm_source=openai))  However, the claim was about which man had a *higher probability of remaining physically and cognitively capable of serving out an entire four\u2011year term starting in January 2025*. Trump\u2019s current term runs until January 20, 2029, so whether he will remain fully capable for that entire period is not yet knowable.\n\nBecause (a) the condition about both being candidates did not hold in the way implied, and (b) the full four\u2011year period has not yet passed, the prediction cannot currently be evaluated as correct or incorrect, so it is **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 656,
+          "start_index": 513,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1311,
+          "start_index": 1185,
+          "title": "Trump news at a glance: president goes after Biden executive orders with baseless autopen claims",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2025/nov/29/trump-administration-news-updates-today?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction that Trump had a substantially higher probability than Biden of remaining physically and cognitively capable for a full term starting Jan 2025 has been validated. Biden withdrew from the 2024 race in July 2024 amid widespread concerns over his cognitive decline, confirmed post-presidency by reports like the House Oversight Committee's Oct 2025 'Biden Autopen Presidency' document alleging impairment and cover-up ([web:3] Joe Biden search), books detailing decline (e.g., NPR May 2025 on 'Original Sin'), and Wikipedia on age/health concerns. Trump won, was inaugurated Jan 2025, and as of Dec 2025 (~10 months in), official White House physician reports (Apr 2025, Oct 2025) declare him 'excellent'/'exceptional' health with strong cognitive/physical performance ([web:0,2,6] Trump health searches; [web:0,2] physical capability). No 25th Amendment invocation or resignation occurred, despite partisan calls ([web:1,3] 25th Amendment search). Ongoing concerns exist (e.g., NYT Nov 2025 fatigue article, polls), but Trump functions as president, aligning with higher probability vs. Biden's confirmed issues."
+    },
+    {
+      "id": "A-00:42:03.000",
+      "result": "wrong",
+      "explanation": "Available reporting shows that Apple has *not* auctioned off its system\u2011level LLM integration to the highest bidder, nor set up a search\u2011style paid competition for default placement.\n\n1. **OpenAI / ChatGPT integration:** When Apple announced Apple Intelligence and system\u2011wide ChatGPT integration at WWDC 2024, multiple reports (summarizing Bloomberg\u2019s Mark Gurman) stated that **neither Apple nor OpenAI is paying the other for the deal**, and that the arrangement is not expected to generate meaningful revenue initially. Instead, Apple grants OpenAI exposure to hundreds of millions of devices, while Apple gets ChatGPT features for free. This is explicitly contrasted with the lucrative Google\u2011as\u2011default\u2011search deal and described as *not* involving direct payments. ([gadgets360.com](https://www.gadgets360.com/ai/news/apple-openai-deal-payment-revenue-chatgpt-ai-integration-report-5880034?utm_source=openai))  Apple Intelligence documentation likewise describes ChatGPT as an opt\u2011in, system\u2011wide integration, free to users, with optional sign\u2011in for paid ChatGPT features, and notes Apple plans to support other models in the future. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Apple_Intelligence?utm_source=openai))  None of this resembles an auction for default status.\n\n2. **Future revenue\u2011sharing, not auctions:** Follow\u2011on coverage notes Apple *may* in the future receive a cut from third\u2011party LLM vendors who monetize on Apple platforms (e.g., ChatGPT Plus subscriptions via in\u2011app purchase), and that it is in talks with other LLM providers such as Google and Anthropic. But these are described as **potential revenue\u2011sharing or partnership models**, not as a bidding war for default placement. ([thedailyjagran.com](https://www.thedailyjagran.com/technology/apple-not-paying-openai-to-use-chatgpt-in-ios-18-ipados-and-macos-sequoia-10166837?utm_source=openai))  No source indicates Apple has run or announced a formal auction for the system\u2011level LLM slot.\n\n3. **Google Gemini / Siri deal structure:** In late 2025, Bloomberg/Reuters reporting indicates Apple is *paying* Google roughly **$1 billion per year** for a custom Gemini model to power a redesigned Siri as part of Apple Intelligence, after evaluating OpenAI and Anthropic. ([reuters.com](https://www.reuters.com/business/apple-use-googles-ai-model-run-new-siri-bloomberg-news-reports-2025-11-05/?utm_source=openai))  That is the opposite direction of the classic Google\u2011Search\u2011on\u2011iPhone arrangement (where Google pays Apple); it reflects Apple choosing a vendor and paying for access, not running a highest\u2011bidder auction in which model providers pay Apple for default placement.\n\nAcross the 2024\u20132025 coverage, there is **no evidence** that Apple has auctioned off LLM integration rights or default status to the highest bidder, or that OpenAI, Google, or others have paid Apple for that privilege. Instead we see (a) a non\u2011monetary, opt\u2011in OpenAI integration and (b) Apple itself paying Google for Gemini. That contradicts the specific prediction that Apple would monetize its default LLM slot via a paid auction similar to its Google search deal.",
+      "sources": [
+        {
+          "end_index": 950,
+          "start_index": 806,
+          "title": "Apple Not Paying OpenAI to Integrate ChatGPT on iOS 18, macOS Sequoia: Report | Technology News",
+          "type": "url_citation",
+          "url": "https://www.gadgets360.com/ai/news/apple-openai-deal-payment-revenue-chatgpt-ai-integration-report-5880034?utm_source=openai"
+        },
+        {
+          "end_index": 1264,
+          "start_index": 1176,
+          "title": "Apple Intelligence",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Apple_Intelligence?utm_source=openai"
+        },
+        {
+          "end_index": 1919,
+          "start_index": 1753,
+          "title": "Apple Not Paying OpenAI To Use ChatGPT In iOS 18, iPadOS And macOS Sequoia",
+          "type": "url_citation",
+          "url": "https://www.thedailyjagran.com/technology/apple-not-paying-openai-to-use-chatgpt-in-ios-18-ipados-and-macos-sequoia-10166837?utm_source=openai"
+        },
+        {
+          "end_index": 2437,
+          "start_index": 2295,
+          "title": "Apple to use Google's AI model to run new Siri, Bloomberg News reports",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/apple-use-googles-ai-model-run-new-siri-bloomberg-news-reports-2025-11-05/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction did not come true. Apple Intelligence primarily uses Apple's own on-device foundation models as the system-level LLM, with optional third-party integrations like OpenAI's ChatGPT (launched Oct 2024) and Google Gemini (upcoming). There is no evidence of a paid auction or bidding for a single default LLM spot akin to Google's $20B/year search deal. Instead, Apple is reportedly paying Google ~$1B/year for a custom 1.2T-parameter Gemini model to upgrade Siri (Bloomberg, Nov 5, 2025: https://www.bloomberg.com/news/articles/2025-11-05/apple-plans-to-use-1-2-trillion-parameter-google-gemini-model-to-power-new-siri; CNET, Nov 12, 2025). Tim Cook confirmed more partnerships (Oct 30, 2025, AppleInsider), but no monetization via highest bidder. Searches for auctions/bids yield only pre-WWDC speculation, not reality. Enough time passed (1.5+ years)."
+    },
+    {
+      "id": "A-00:42:03.200",
+      "result": "inconclusive",
+      "explanation": "Jason\u2019s prediction is about the *next AI adoption cycle*, i.e., a multi\u2011year future trajectory, not a specific state by late 2025. That cycle is clearly still unfolding, so it\u2019s too early to say definitively whether Apple will *ultimately* become the dominant consumer AI assistant platform.\n\nAs of November 30, 2025, Apple has launched **Apple Intelligence** across iOS, iPadOS, macOS and VisionOS, but rollout is still constrained by hardware (A17\u2011class and newer) and staged language/region support, indicating an early and incomplete deployment rather than a mature, settled market position. ([de.wikipedia.org](https://de.wikipedia.org/wiki/IOS_18?utm_source=openai))  Apple has also moved to license Google\u2019s **Gemini** model for a redesigned Siri, with major Siri upgrades not expected until 2026, which shows Apple is still catching up technically rather than already having secured a clear, enduring lead. ([reuters.com](https://www.reuters.com/business/apple-use-googles-ai-model-run-new-siri-bloomberg-news-reports-2025-11-05/?utm_source=openai))\n\nAcross personal devices, Apple\u2019s installed base remains much smaller than competitors on key platforms where AI assistants run: Android holds about 72% of the global mobile OS market versus ~28% for iOS, and Windows dominates desktop/laptop OS share, which underpins broad deployment of Microsoft\u2019s Copilot and other assistants. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Usage_share_of_operating_systems?utm_source=openai))  In adjacent consumer\u2011assistant arenas like smart speakers and smart\u2011home voice AI, Amazon Alexa and Google Assistant still lead, with Apple Siri/HomePod participating but not in a clearly dominant position. ([market.us](https://market.us/report/voice-ai-in-smart-homes-market/?utm_source=openai))\n\nTaken together, current evidence shows **Apple is a strong but not dominant** player in consumer AI assistants as of late 2025, while the broader \u201cAI adoption cycle\u201d for assistants on phones, tablets, and PCs is still in its early to middle stages. Because the prediction is explicitly about who *will win over that entire cycle*, and the outcome has not yet been determined, the correct status today is **inconclusive (too early)** rather than right or wrong.",
+      "sources": [
+        {
+          "end_index": 714,
+          "start_index": 638,
+          "title": "IOS 18",
+          "type": "url_citation",
+          "url": "https://de.wikipedia.org/wiki/IOS_18?utm_source=openai"
+        },
+        {
+          "end_index": 1099,
+          "start_index": 957,
+          "title": "Apple to use Google's AI model to run new Siri, Bloomberg News reports",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/apple-use-googles-ai-model-run-new-siri-bloomberg-news-reports-2025-11-05/?utm_source=openai"
+        },
+        {
+          "end_index": 1534,
+          "start_index": 1432,
+          "title": "Usage share of operating systems",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Usage_share_of_operating_systems?utm_source=openai"
+        },
+        {
+          "end_index": 1832,
+          "start_index": 1743,
+          "title": "Voice AI in Smart Homes Market Size | CAGR of 44.8%",
+          "type": "url_citation",
+          "url": "https://market.us/report/voice-ai-in-smart-homes-market/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "As of December 2025, Apple has not become the dominant provider/platform for consumer-facing AI assistants on personal devices. ChatGPT holds ~60% market share in generative AI chatbots with 400M weekly users ([SQ Magazine](https://sqmagazine.co.uk/chatgpt-vs-google-gemini-statistics/), [FirstPageSage](https://firstpagesage.com/reports/top-generative-ai-chatbots/)). Google Gemini leads voice assistants (92.4M users vs Siri's 87M, [eMarketer](https://www.emarketer.com/learningcenter/guides/voice-assistants/); 39% usage vs Siri's 29%, [Scoop Market](https://scoop.market.us/intelligent-virtual-assistant-statistics/)) and topped Apple's App Store ([CNBC](https://www.cnbc.com/2025/09/16/google-gemini-tops-apples-app-store-snagging-lead-spot-from-chatgpt.html)). Apple Intelligence shows low adoption (below-average iOS 18 uptake, [AppleInsider](https://appleinsider.com/articles/25/06/05/ios-18-saw-below-average-adoption-despite-apple-intelligence); weak user impact, [TidBITS](https://talk.tidbits.com/t/do-you-use-it-apple-intelligence-sees-weak-adoption/31326)) and trails leaders ([Counterpoint](https://www.counterpointresearch.com/insight/wwdc-2025-apple-needs-to-showcase-the-best-ai-companion/)). Apple is reportedly paying Google ~$1B/year to power Siri with Gemini ([MacRumors](https://www.macrumors.com/2025/11/05/apple-siri-google-gemini-partnership/), [AppleInsider](https://appleinsider.com/articles/25/11/05/apple-considers-paying-1b-per-year-to-use-google-gemini-in-siri)), indicating lack of dominance. Android OS (~70% global share) amplifies Google's lead. 18 months post-prediction, trends contradict Apple's dominance."
+    },
+    {
+      "id": "F-00:28:58.890",
+      "result": "ambiguous",
+      "explanation": "**1. What actually happened in the Tesla fee case**\n\n- The plaintiffs\u2019 lawyers in *Tornetta v. Musk* asked for a fee in Tesla stock worth well over **$5\u20137 billion**.\n- In March 2024, Delaware Chancellor Kathaleen McCormick **rejected that multi\u2011billion\u2011dollar request** and instead awarded **about $345 million** in fees (cash or stock) \u2014 a huge sum, but **not \u201cbillions of dollars\u201d** as Sacks\u2019 conditional referred to.\n  - Associated Press and Bloomberg coverage of the decision report the fee at roughly **$345 million**, far below the multi\u2011billion request. ([apnews.com](https://apnews.com/article/86c5811b738e3a9df2b6e4adbcd055bb?utm_source=openai))\n\nSo the explicit trigger in the normalized prediction \u2014 *Delaware awarding the lawyers billions of dollars in fees* \u2014 **did not occur**.\n\n**2. What happened to Delaware\u2019s status as a corporate hub**\n\nSince the January 2024 ruling voiding Musk\u2019s Tesla pay package, there **has** been a noticeable but still modest \u201cDExit\u201d trend:\n\n- A Harvard Law Forum empirical study finds that from **2024 through mid\u20112025**, Delaware lost a **net 11 large public companies** (market cap > $250m) to reincorporations elsewhere (16 left, 5 moved in). ([corpgov.law.harvard.edu](https://corpgov.law.harvard.edu/2025/09/23/dexit-reincorporation-data-seem-to-support-the-hype/?utm_source=openai))\n- The same analysis notes Delaware still accounts for **~80\u201390% of IPO incorporations**, with only a slight dip in its share in early 2025. ([thegamingboardroom.com](https://thegamingboardroom.com/2025/09/27/dexit-reincorporation-data-seem-to-support-the-hype-5/?utm_source=openai))\n- A broader overview of the \u201cDelaware corporate exodus\u201d reports at least a **dozen** billion\u2011dollar public companies reincorporating away by late 2025, and an **8% drop in new business formations**, but emphasizes there has been **\u201cno mass exodus\u201d**; defections are high\u2011profile but numerically small. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Delaware_corporate_exodus))\n- Delaware still hosts roughly **two\u2011thirds of Fortune 500 companies** and more than **2.1\u20132.2 million registered entities**, and remains widely described by officials and legal experts as the **premier** corporate domicile, albeit under new competitive pressure from Texas and Nevada. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Delaware_corporate_exodus))\n\nSo there is **some material movement away from Delaware**, but Delaware has **not clearly lost** its status as the leading U.S. state for incorporation; it is still dominant while facing increased competition and modest erosion at the margin.\n\n**3. Why the forecast is scored as ambiguous**\n\nThe normalized prediction is explicitly conditional:\n\n> *If* the Delaware court awards the plaintiff\u2019s lawyers **billions** in fees, *then* Delaware will suffer a **significant loss of premier status**, with a **material shift** of incorporations elsewhere.\n\n- The **antecedent** (billions awarded) **never happened**; the court capped the fee at ~$345m, not billions. ([apnews.com](https://apnews.com/article/86c5811b738e3a9df2b6e4adbcd055bb?utm_source=openai))\n- Nonetheless, **some exodus did occur** after the Tesla ruling and broader Chancery decisions, but:\n  - It is **modest relative to Delaware\u2019s enormous base**, and Delaware clearly remains the primary incorporation venue.\n  - The observed shifts are driven by a mix of factors (judicial scrutiny of founders, overall legal climate, tax and cost considerations), not specifically by a multi\u2011billion fee award that never materialized. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Delaware_corporate_exodus))\n\nBecause the key condition in Sacks\u2019 forecast (a **multi\u2011billion\u2011dollar** fee award) did *not* occur, we **cannot directly test** his stated \u201cif X then Y\u201d claim. At the same time, Delaware\u2019s dominance has been **dented but not clearly \u201clost\u201d**, making it impossible to give a clean \u201cright\u201d or \u201cwrong\u201d verdict on the normalized consequence even by analogy.\n\nGiven those factors, the fairest evaluation is **\u201cambiguous\u201d**: the conditional was never triggered, and the real\u2011world outcomes (modest DExit, continued Delaware dominance) do not let us definitively confirm or falsify the full, conditional prediction.",
+      "sources": [
+        {
+          "end_index": 695,
+          "start_index": 602,
+          "title": "Delaware judge reaffirms ruling that invalidated massive Tesla pay package for Elon Musk",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/86c5811b738e3a9df2b6e4adbcd055bb?utm_source=openai"
+        },
+        {
+          "end_index": 1380,
+          "start_index": 1238,
+          "title": "DExit: Reincorporation Data Seem to Support the Hype",
+          "type": "url_citation",
+          "url": "https://corpgov.law.harvard.edu/2025/09/23/dexit-reincorporation-data-seem-to-support-the-hype/?utm_source=openai"
+        },
+        {
+          "end_index": 1664,
+          "start_index": 1522,
+          "title": "DExit: Reincorporation Data Seem to Support the Hype \u2013 The Gaming Boardroom",
+          "type": "url_citation",
+          "url": "https://thegamingboardroom.com/2025/09/27/dexit-reincorporation-data-seem-to-support-the-hype-5/?utm_source=openai"
+        },
+        {
+          "end_index": 2045,
+          "start_index": 1968,
+          "title": "Delaware corporate exodus - Wikipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Delaware_corporate_exodus"
+        },
+        {
+          "end_index": 2410,
+          "start_index": 2333,
+          "title": "Delaware corporate exodus - Wikipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Delaware_corporate_exodus"
+        },
+        {
+          "end_index": 3176,
+          "start_index": 3083,
+          "title": "Delaware judge reaffirms ruling that invalidated massive Tesla pay package for Elon Musk",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/86c5811b738e3a9df2b6e4adbcd055bb?utm_source=openai"
+        },
+        {
+          "end_index": 3690,
+          "start_index": 3613,
+          "title": "Delaware corporate exodus - Wikipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Delaware_corporate_exodus"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The Delaware Chancery Court awarded plaintiff's lawyers $345 million in fees in December 2024 (not billions, despite requests up to $7B), so the prediction's core condition was not met ([NatLawReview](https://natlawreview.com/article/delaware-court-awards-attorneys-nearly-18000hour-frustrating-will-stockholders), [Bloomberg Law](https://news.bloomberglaw.com/litigation/musk-tesla-directors-face-more-delaware-legal-fees-explained)). Without the billions trigger, the predicted consequence cannot be directly tested. However, the Tesla case prompted some 'DExit' activity: ~18 public companies proposed re-domiciling from Delaware in 2025 (13 to Nevada, 2 to Texas), Tesla moved to Texas, and Delaware's new incorporation market share dipped slightly (e.g., ~10% for tech per Ramp, H1 2025 decline per Harvard CorpGov). Yet Delaware retains premier status: 66-70% Fortune 500/tech incorporations, 80% IPOs, ~290k new entities/year, far ahead of rivals ([Glass Lewis](https://www.glasslewis.com/article/state-of-us-reincorporation-2025-growing-threat-reality-dexit), [Ramp](https://ramp.com/velocity/tech-companies-revolting-against-delaware), [Bloomberg](https://www.bloomberg.com/opinion/articles/2025-10-17/delaware-will-keep-the-corporations-because-it-must)). No 'material shift' or 'significant loss' occurred; hype exceeds reality."
+    },
+    {
+      "id": "E-01:13:24.000",
+      "result": "right",
+      "explanation": "All three concrete elements of Chamath\u2019s near\u2011term macro call have already occurred within the 2024\u20132025 rate\u2011setting cycle:\n\n1. **Unemployment rose from mid\u20112024 levels.**\n   * In June 2024 (around the time of the podcast), the U.S. unemployment rate was **4.1%** (seasonally adjusted). ([bls.gov](https://www.bls.gov/opub/ted/2025/unemployment-rate-little-changed-at-4-1-percent-in-june-2025.htm?utm_source=openai))  \n   * By August and September 2025, it had climbed to **4.3%\u20134.4%**, the highest since 2021, indicating a clear rise from that 4.1% baseline. ([tradingeconomics.com](https://tradingeconomics.com/united-states/unemployment-rate?utm_source=openai))  \n\n2. **At least one quarter of negative real GDP growth occurred.**\n   * BEA data show real U.S. GDP **decreased in Q1 2025**, with the third estimate recording a **\u20110.5% annualized** change from Q4 2024 (after Q4 2024 had grown at about 2.4%). ([bea.gov](https://www.bea.gov/index.php/news/2025/gross-domestic-product-1st-quarter-2025-third-estimate-gdp-industry-and-corporate-profits?utm_source=openai))  \n   * This satisfies his criterion of \u201cat least one quarter of negative real GDP growth\u201d in the 2024\u20132025 window.\n\n3. **The Fed cut rates more than once in the cycle.**\n   * The FOMC reduced the federal funds target range by a **cumulative 100 bps over its September, November, and December 2024 meetings**, from 5.25\u20135.50% down to 4.25\u20134.50%. That is already **three** distinct cuts. ([federalreserve.gov](https://www.federalreserve.gov/monetarypolicy/2025-02-mpr-summary.htm?utm_source=openai))  \n   * The Fed has since continued easing, including another **25 bp cut in October 2025** to a 3.75\u20134.00% range, confirming multiple further cuts within the same rate\u2011setting cycle. ([federalreserve.gov](https://www.federalreserve.gov/monetarypolicy/fomcminutes20251029.htm?utm_source=openai))\n\nGiven that unemployment is higher than at the time of the prediction, real GDP has logged a contracting quarter, and the Fed has executed several rate cuts within 2024\u20132025, Chamath\u2019s composite prediction is **substantively correct** within the timeframe he specified.",
+      "sources": [
+        {
+          "end_index": 453,
+          "start_index": 324,
+          "title": "Unemployment rate little changed at 4.1 percent in June 2025 : The Economics Daily: U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/ted/2025/unemployment-rate-little-changed-at-4-1-percent-in-june-2025.htm?utm_source=openai"
+        },
+        {
+          "end_index": 702,
+          "start_index": 598,
+          "title": "United States Unemployment Rate",
+          "type": "url_citation",
+          "url": "https://tradingeconomics.com/united-states/unemployment-rate?utm_source=openai"
+        },
+        {
+          "end_index": 1112,
+          "start_index": 952,
+          "title": "Gross Domestic Product, 1st Quarter 2025 (Third Estimate), GDP by Industry, and Corporate Profits (Revised) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/index.php/news/2025/gross-domestic-product-1st-quarter-2025-third-estimate-gdp-industry-and-corporate-profits?utm_source=openai"
+        },
+        {
+          "end_index": 1614,
+          "start_index": 1503,
+          "title": "The Fed - Monetary Policy: Monetary Policy Report (Branch)",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/monetarypolicy/2025-02-mpr-summary.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1910,
+          "start_index": 1799,
+          "title": "The Fed - Monetary Policy:",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20251029.htm?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction is correct on all counts:\n- **Unemployment rose**: From 4.1% in June 2024 (BLS Employment Situation June 2024) to 4.4% in September 2025 (BLS November 20, 2025 release; FRED UNRATE).\n- **Real GDP contracted**: Q1 2025 real GDP growth was -0.6% (annual rate; BEA Gross Domestic Product page, Q1 2025 estimates revised; FRED A191RL1Q225SBEA confirms -0.6%).\n- **More than one Fed rate cut**: Cuts began September 18, 2024 (50 bps), followed by November 7, 2024 (25 bps), December 18, 2024, January 29, 2025, and October 2025 (25 bps to 3.75%-4.00%; Wikipedia FOMC history, Trading Economics). Multiple cuts occurred in the 2024-2025 cycle."
+    },
+    {
+      "id": "E-01:22:31.110",
+      "result": "wrong",
+      "explanation": "BEA data show that all U.S. real GDP prints leading into the November 5, 2024 election were positive:\n\n- **Q1 2024:** Real GDP grew at a 1.4% annual rate (third estimate). ([bea.gov](https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry?utm_source=openai))  \n- **Q2 2024:** Real GDP grew at a 3.0% annual rate (second estimate). ([bea.gov](https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second?utm_source=openai))  \n- **Q3 2024:** Real GDP grew at a 2.8% annual rate (advance and second estimates). ([bea.gov](https://www.bea.gov/news/blog/2024-10-30/gross-domestic-product-third-quarter-2024-advance?utm_source=openai))  \n\nOther compiled series of quarterly real GDP also show **continuous positive growth from Q1\u2013Q4 2024**, with Q3 and Q4 2024 at 3.1% and ~2.4% respectively, and the *first* negative quarter only appearing in **Q1 2025** (about \u20130.3%). ([visualcapitalist.com](https://www.visualcapitalist.com/charted-americas-gdp-decline-in-q1-2025/?utm_source=openai))  \n\nChamath\u2019s claim was that it was \u201cvery possible\u201d (a *material chance*) that there would be **a negative, recessionary GDP print going into the election**. In reality, the quarterly GDP growth rate immediately preceding the election (Q3 2024) was clearly positive, and no negative GDP quarter occurred before November 5, 2024. Thus, judged on the event outcome (whether such a negative pre\u2011election print actually happened), the prediction did **not** come true.",
+      "sources": [
+        {
+          "end_index": 357,
+          "start_index": 207,
+          "title": "Gross Domestic Product (Third Estimate), Corporate Profits (Revised Estimate), and GDP by Industry, First Quarter 2024 | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry?utm_source=openai"
+        },
+        {
+          "end_index": 576,
+          "start_index": 431,
+          "title": "Gross Domestic Product (Second Estimate), Corporate Profits (Preliminary Estimate), Second Quarter 2024 | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second?utm_source=openai"
+        },
+        {
+          "end_index": 784,
+          "start_index": 663,
+          "title": "Gross Domestic Product, Third Quarter 2024 (Advance) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/blog/2024-10-30/gross-domestic-product-third-quarter-2024-advance?utm_source=openai"
+        },
+        {
+          "end_index": 1139,
+          "start_index": 1022,
+          "title": "Charted: America's GDP Decline in Q1 2025",
+          "type": "url_citation",
+          "url": "https://www.visualcapitalist.com/charted-americas-gdp-decline-in-q1-2025/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No quarterly U.S. real GDP growth print immediately preceding the November 5, 2024 election was negative. Q2 2024 final estimate (released September 26, 2024) was +3.0% ([BEA Second Estimate](https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second)). Q3 2024 advance estimate (released October 30, 2024, days before election) was +2.8% ([BEA Advance Estimate](https://www.bea.gov/news/2024/gross-domestic-product-third-quarter-2024-advance-estimate)). Subsequent Q3 revisions confirmed +2.8% ([BEA Second Estimate](https://www.bea.gov/news/2024/gross-domestic-product-third-quarter-2024-second-estimate-and-corporate-profits)). All prints positive, no recessionary conditions."
+    },
+    {
+      "id": "D-01:11:20.900",
+      "result": "wrong",
+      "explanation": "Contemporaneous U.S. data for mid\u20112024 do not support classifying the macro environment as stagflation under the usual definition of *high inflation plus stagnant/low growth and typically elevated unemployment*.([en.wikipedia.org](https://en.wikipedia.org/wiki/Stagflation?utm_source=openai))\n\n**Growth:** According to the BEA, real GDP grew at a 1.4% annual rate in Q1 2024 and then accelerated to a 3.0% annual rate in Q2 2024 (second estimate).([bea.gov](https://www.bea.gov/news/blog/2024-07-25/gross-domestic-product-second-quarter-2024-advance?utm_source=openai))([bea.gov](https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second?utm_source=openai)) That Q2 pace is solidly above most estimates of U.S. trend growth and not consistent with \u201cstagnant\u201d or \u201c1\u20132%\u201d growth as in the normalized prediction.\n\n**Inflation:** CPI inflation was above the Fed\u2019s 2% target but moderating: the 12\u2011month CPI increase was 3.3% in May 2024 and 3.0% in June 2024.([fraser.stlouisfed.org](https://fraser.stlouisfed.org/title/consumer-price-index-6838/consumer-price-index-may-2024-669816/fulltext?utm_source=openai))([fraser.stlouisfed.org](https://fraser.stlouisfed.org/title/consumer-price-index-6838/consumer-price-index-june-2024-671928/fulltext?utm_source=openai)) The Fed\u2019s preferred PCE measure showed Q2 2024 inflation around the mid\u20112% range, with core PCE about 2.8\u20132.9% annualized.([bea.gov](https://www.bea.gov/news/blog/2024-07-25/gross-domestic-product-second-quarter-2024-advance?utm_source=openai))([bea.gov](https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second?utm_source=openai)) That is mildly elevated but not the kind of persistently high inflation usually associated with stagflation.\n\n**Unemployment:** The unemployment rate in June 2024 was 4.1%, up from the lows of 2022\u201323 but still historically low and far from the high\u2011unemployment environment typically seen in stagflation episodes.([cnbc.com](https://www.cnbc.com/2024/07/05/jobs-report-june-2024.html?utm_source=openai))\n\nPutting this together, mid\u20112024 featured **moderate, above\u2011trend growth, easing but still\u2011above\u2011target inflation, and relatively low unemployment**, which does not meet standard criteria for stagflation. The more specific normalized prediction that real GDP growth would remain in the **1\u20132%** range through Q2 2024 is also contradicted by the actual ~3% growth reading. Therefore, Friedberg\u2019s claim that \u201cwe have stagflation right now\u201d is best judged as **wrong**.",
+      "sources": [
+        {
+          "end_index": 325,
+          "start_index": 244,
+          "title": "Stagflation",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Stagflation?utm_source=openai"
+        },
+        {
+          "end_index": 604,
+          "start_index": 482,
+          "title": "Gross Domestic Product, Second Quarter 2024 (Advance) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/blog/2024-07-25/gross-domestic-product-second-quarter-2024-advance?utm_source=openai"
+        },
+        {
+          "end_index": 749,
+          "start_index": 604,
+          "title": "Gross Domestic Product (Second Estimate), Corporate Profits (Preliminary Estimate), Second Quarter 2024 | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second?utm_source=openai"
+        },
+        {
+          "end_index": 1200,
+          "start_index": 1048,
+          "title": "Full text of Consumer Price Index : Consumer Price Index - May 2024 | FRASER | St. Louis Fed",
+          "type": "url_citation",
+          "url": "https://fraser.stlouisfed.org/title/consumer-price-index-6838/consumer-price-index-may-2024-669816/fulltext?utm_source=openai"
+        },
+        {
+          "end_index": 1353,
+          "start_index": 1200,
+          "title": "Full text of Consumer Price Index : Consumer Price Index - June 2024 | FRASER | St. Louis Fed",
+          "type": "url_citation",
+          "url": "https://fraser.stlouisfed.org/title/consumer-price-index-6838/consumer-price-index-june-2024-671928/fulltext?utm_source=openai"
+        },
+        {
+          "end_index": 1598,
+          "start_index": 1476,
+          "title": "Gross Domestic Product, Second Quarter 2024 (Advance) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/blog/2024-07-25/gross-domestic-product-second-quarter-2024-advance?utm_source=openai"
+        },
+        {
+          "end_index": 1743,
+          "start_index": 1598,
+          "title": "Gross Domestic Product (Second Estimate), Corporate Profits (Preliminary Estimate), Second Quarter 2024 | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second?utm_source=openai"
+        },
+        {
+          "end_index": 2150,
+          "start_index": 2060,
+          "title": "Jobs report June 2024:",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/07/05/jobs-report-june-2024.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction claimed U.S. stagflation in mid-2024 (Q2 2024), with real GDP growth low at around 1-2% annualized and CPI inflation above the Fed's 2% target. Actual data: BEA third estimate (Sep 26, 2024) shows Q2 2024 real GDP growth at 3.0% annualized ([BEA](https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0)), higher than the predicted 1-2% range. CPI YoY was 3.0% in June 2024 ([BLS](https://www.bls.gov/news.release/archives/cpi_07112024.htm)) and above 2% throughout Q2 (e.g., May 3.3%), meeting the inflation criterion but not the low growth one. Thus, no stagflation as growth accelerated, not stagnated."
+    },
+    {
+      "id": "A-01:05:00.870",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly covers \u201cthe next couple of years\u201d after June 2024, i.e., roughly through mid\u20112026. As of now (late November 2025) that window has not finished, so the forecast period is still in progress.\n\nAvailable data are also mixed relative to the normalized claim:\n\n* **Headcount levels:** Global employment is still growing rather than flat. The ILO\u2019s World Employment and Social Outlook updates project tens of millions of net new jobs in 2024\u20132025 and forecast employment growth of around 1.5\u20131.7% per year, not a plateau in aggregate headcount. ([ilo.org](https://www.ilo.org/resource/news/global-employment-forecast-downgraded-7-million-jobs-2025-amid-rising?utm_source=openai))  At the same time, some large firms (e.g., HP and other tech companies) are cutting thousands of jobs partly in connection with AI\u2011driven restructuring, showing that at least some organizations are not keeping headcount flat. ([sfchronicle.com](https://www.sfchronicle.com/tech/article/hp-job-cuts-ai-restructuring-21209553.php?utm_source=openai))  But these aggregate and anecdotal data don\u2019t tell us whether \u201cmost\u201d individual organizations have been roughly flat versus modestly expanding.\n* **Per\u2011employee productivity from AI:** There is credible evidence of productivity gains from AI tools in specific domains\u2014e.g., a 2024 study on GitHub Copilot finds around a 5\u20136% increase in individual and project\u2011level productivity for open\u2011source software development. ([arxiv.org](https://arxiv.org/abs/2410.02091?utm_source=openai))  However, it\u2019s not yet clear to what extent such gains have scaled across *most* organizations or translated into broad, \u201cnotably higher\u201d organizational efficiency at the economy\u2011wide level.\n\nBecause (1) the stated time horizon has not yet elapsed, and (2) current evidence does not cleanly confirm or falsify the precise combination of *flat headcount for most organizations* plus *significantly higher per\u2011employee productivity from AI*, the prediction cannot yet be definitively judged. Hence the result is **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 742,
+          "start_index": 608,
+          "title": "Global employment forecast downgraded by up to 7 million jobs in 2025 amid rising uncertainty | International Labour Organization",
+          "type": "url_citation",
+          "url": "https://www.ilo.org/resource/news/global-employment-forecast-downgraded-7-million-jobs-2025-amid-rising?utm_source=openai"
+        },
+        {
+          "end_index": 1090,
+          "start_index": 969,
+          "title": "HP becomes latest Silicon Valley tech giant to lay off thousands in AI shift",
+          "type": "url_citation",
+          "url": "https://www.sfchronicle.com/tech/article/hp-job-cuts-ai-restructuring-21209553.php?utm_source=openai"
+        },
+        {
+          "end_index": 1574,
+          "start_index": 1509,
+          "title": "The Impact of Generative AI on Collaborative Open-Source Software Development: Evidence from GitHub Copilot",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2410.02091?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction spans June 2024 through mid-2026, and with the current date of December 2025, roughly 6 months remain, making it too early for a definitive verdict. Trends show mixed signals: US nonfarm payroll growth has been sluggish (e.g., +119k in Sep 2025, little change since April per BLS), tech sector experienced substantial layoffs (206k impacted in 2025 per TrueUp.io/layoffs.fyi), with IT job market down 138k in 2024-2025 (Janco), yet some firms report flat headcount strategies amid AI adoption (e.g., Walmart, Microsoft post-flat; articles on 'AI hiring pause'). Productivity gains are evident (e.g., Anthropic estimates 1.8% annualized US labor boost; 27% revenue/employee rise in AI-exposed firms; McKinsey $4.4T potential), with AI use doubling to 40% of workers (Gallup). Sources: BLS reports, TrueUp.io, layoffs.fyi, Anthropic research, McKinsey, PwC AI Jobs Barometer."
+    },
+    {
+      "id": "D-01:03:18.720",
+      "result": "inconclusive",
+      "explanation": "By November 30 2025, only about 1.5 years have passed since the June 2024 prediction, which explicitly referred to a timeframe of a couple of years (roughly mid\u20112026). That window has not yet elapsed, so the outcome cannot be definitively judged. Current data suggests the market has not yet shifted in the way described: surveys show around 80% of organizations pay for subscriptions to tools like ChatGPT or Microsoft Copilot and 63% are using cloud AI APIs, while only 39% are using open\u2011source models on their own infrastructure and 27% are training proprietary in\u2011house LLMs. ([siliconangle.com](https://siliconangle.com/2025/04/21/long-road-agentic-ai-hype-vs-enterprise-reality/?utm_source=openai)) Another survey cited by the Financial Times reports that only about one in eight commercial AI workloads run on open models, with most customers preferring paid, state\u2011of\u2011the\u2011art proprietary systems and even open\u2011model users typically mixing them with commercial ones. ([ft.com](https://www.ft.com/content/ed3fdd1a-dbfd-4867-a506-de62e88436c8?utm_source=openai)) A separate study finds open models account for only about 20 percent of usage and 4 percent of revenue in the AI market despite being up to 84 percent cheaper to operate. ([itpro.com](https://www.itpro.com/software/open-source/open-source-ai-performance-cost-savings-proprietary-models-linux-foundation?utm_source=openai)) Enterprise spending on generative AI is still increasing overall, with a majority of organizations planning to boost LLM spending, and OpenAI and Google models remaining widely used. ([electronicspecifier.com](https://www.electronicspecifier.com/products/artificial-intelligence/72-of-enterprises-to-increase-spending-on-genai-in-2025/?utm_source=openai)) Netskope telemetry likewise shows that enterprise AI use is dominated by SaaS gen\u2011AI apps such as ChatGPT, Gemini, and Copilot, along with managed cloud AI platforms, rather than internally hosted open\u2011source stacks replacing external services. ([reddit.com](https://www.reddit.com//r/u_NetskopeOfficial/comments/1nl5p0n?utm_source=openai)) These indicators imply the prediction has not clearly come true yet, but because the stated timeframe runs to around mid\u20112026, it is still too early to call it definitively right or wrong.",
+      "sources": [
+        {
+          "end_index": 745,
+          "start_index": 621,
+          "title": "The long road to agentic AI \u2013 hype vs. enterprise reality - SiliconANGLE",
+          "type": "url_citation",
+          "url": "https://siliconangle.com/2025/04/21/long-road-agentic-ai-hype-vs-enterprise-reality/?utm_source=openai"
+        },
+        {
+          "end_index": 1108,
+          "start_index": 1015,
+          "title": "The risk of putting the 'open' back into OpenAI",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/ed3fdd1a-dbfd-4867-a506-de62e88436c8?utm_source=openai"
+        },
+        {
+          "end_index": 1431,
+          "start_index": 1280,
+          "title": "Open source AI models are cheaper than closed source competitors and perform on par, so why aren't enterprises flocking to them?",
+          "type": "url_citation",
+          "url": "https://www.itpro.com/software/open-source/open-source-ai-performance-cost-savings-proprietary-models-linux-foundation?utm_source=openai"
+        },
+        {
+          "end_index": 1787,
+          "start_index": 1615,
+          "title": "72% of enterprises to increase spending on GenAI in 2025 | Electronic Specifier",
+          "type": "url_citation",
+          "url": "https://www.electronicspecifier.com/products/artificial-intelligence/72-of-enterprises-to-increase-spending-on-genai-in-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 2128,
+          "start_index": 2033,
+          "title": "Cloud and Threat Report: Shadow AI and Agentic AI 2025",
+          "type": "url_citation",
+          "url": "https://www.reddit.com//r/u_NetskopeOfficial/comments/1nl5p0n?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "As of December 2025, roughly 18 months into the prediction window (June 2024 to mid-2026), open-source LLM adoption in enterprises remains low at 13% of AI workloads, down from 19% earlier in 2025 (*Menlo Ventures Mid-Year LLM Update*). Proprietary models dominate 87% of workloads, with OpenAI reaching 1M business customers and 7M ChatGPT Work seats, growing rapidly (*OpenAI announcement*). Larger enterprises show higher open-source use (e.g., Llama, Mistral) for privacy/cost-sensitive cases (*a16z CIO survey*), but internal builds fail at high rates (95% GenAI pilots fail, internals worse than generic tools like ChatGPT; *MIT/MLQ report*). No widespread evidence of effective internal open-source tools replacing proprietary services for many use cases; proprietary demand surges. With ~6 months left until mid-2026, too early to confirm or refute."
+    }
+  ]
+}

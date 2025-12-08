@@ -1,0 +1,326 @@
+{
+  "meta": {
+    "count": 11,
+    "count_by_result": {
+      "ambiguous": 2,
+      "wrong": 5,
+      "inconclusive": 2,
+      "right": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "E-00:13:57.460",
+      "result": "ambiguous",
+      "explanation": "McConnell did in fact make a notably direct statement on January 19, 2021, saying the Capitol mob was \"fed lies\" and \"provoked by the president and other powerful people,\" which matches the setup Chamath described. ([cnbc.com](https://www.cnbc.com/2021/01/19/trump-provoked-capitol-riot-mitch-mcconnell-says.html?utm_source=openai))\n\nIn the actual Senate trial, Trump was acquitted on February 13, 2021. The final vote was 57\u201343 in favor of conviction, 10 votes short of the two\u2011thirds (67) needed. Seven Republican senators broke with their party to vote to convict; Democrats would have needed 17 Republicans to join them for conviction. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Second_impeachment_trial_of_Donald_Trump?utm_source=openai)) This is more GOP defection than in Trump\u2019s first impeachment (when only Mitt Romney voted to convict) but still far from the number required to make conviction genuinely imminent.\n\nChamath\u2019s normalized prediction is that McConnell\u2019s statement would lead enough Republicans to break ranks that the second impeachment trial \"has a real chance\" to result in conviction rather than acquittal. Because this is a probabilistic and vague claim about ex\u2011ante likelihood (\"real chance\") rather than a straightforward forecast that Trump *would* be convicted, and because we cannot directly observe the underlying probabilities or internal deliberations, its truth value cannot be determined objectively from the outcome alone. The trial ended in acquittal despite some GOP defections, so parts of his narrative (McConnell\u2019s criticism, multiple Republicans voting to convict) materialized, but the key qualitative judgment about a \"real chance\" of conviction remains inherently subjective. Therefore the prediction is best classified as **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 373,
+          "start_index": 256,
+          "title": "Trump provoked Capitol riot, Mitch McConnell says",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/01/19/trump-provoked-capitol-riot-mitch-mcconnell-says.html?utm_source=openai"
+        },
+        {
+          "end_index": 793,
+          "start_index": 683,
+          "title": "Second impeachment trial of Donald Trump",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Second_impeachment_trial_of_Donald_Trump?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump's second Senate impeachment trial (Feb 9-13, 2021) ended in acquittal by a 57-43 vote, with only 7 Republicans joining all 50 Democrats and independents to vote 'guilty' (needed 67 for conviction). While McConnell did state on Jan 19, 2021, that Trump 'provoked' the rioters ([NYT](https://www.nytimes.com/2021/01/19/us/politics/mcconnell-trump-capitol-riot.html), [Politico](https://www.politico.com/news/2021/01/19/mcconnell-trump-provoked-capitol-attackers-460372)), this did not lead to enough defections for a 'real chance' of conviction. Pre-trial analysis deemed conviction unlikely, a 'tall order' needing 17 GOP votes, with expectations of few or no defections ([Washington Post](https://www.washingtonpost.com/politics/2021/02/10/why-conviction-trumps-second-impeachment-trial-is-so-unlikely/), [Guardian](https://www.theguardian.com/us-news/2021/jan/21/donald-trump-second-impeachment-trial-republican-senators)). Official vote: [Senate.gov](https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00059.htm); details: [Wikipedia](https://en.wikipedia.org/wiki/Second_impeachment_trial_of_Donald_Trump)."
+    },
+    {
+      "id": "A-00:15:11.630",
+      "result": "ambiguous",
+      "explanation": "The prediction depended on a specific conditional scenario:\n\n1. **Core condition did not occur**\n   - Trump was rumored to be considering a new \u201cPatriot Party\u201d in January 2021, but his team explicitly disavowed any such organization and said he had no plans to leave the GOP. ([snopes.com](https://www.snopes.com/fact-check/patriot-party-trump/?utm_source=openai))  \n   - On February 28, 2021, at CPAC, Trump publicly stated: *\u201cWe\u2019re not starting new parties. We have the Republican Party. It\u2019s going to unite and be stronger than ever before\u201d* and pledged to remain within the GOP. ([aljazeera.com](https://www.aljazeera.com/news/2021/2/28/trump-says-will-not-form-new-party-vows-unite-republicans?utm_source=openai))  \n   - No Trump-led \u201cPatriot Party\u201d attracting ~20 million defectors from the GOP was ever formed between 2021\u20132024, and Republicans instead largely re\u2011embraced Trump.\n\n2. **The forecast was about what *would* happen *if* that split occurred**  \n   Friedberg\u2019s statement was explicitly hypothetical: if Republicans \u201ckick Trump out\u201d and he creates a fringe party, then Democrats would move further left and the U.S. would become \u201ca very different America in the next 2 to 3 years.\u201d Since the antecedent (formal expulsion plus a large Trumpist third party) never materialized, we cannot directly test his causal claim about how party ideologies would have shifted under that counterfactual.\n\n3. **Why this is not just \u2018wrong\u2019**  \n   Labeling it \u201cwrong\u201d would imply the described scenario happened and his downstream effects failed to appear. Instead, the scenario itself did *not* occur, so we learn little about the accuracy of the conditional claim about party movement and polarization; we only know the trigger conditions weren\u2019t met.\n\nBecause enough time has passed (2021\u20132024) but the predicted conditional scenario never actually came to pass, the accuracy of the prediction cannot be determined from real\u2011world outcomes.\n\n**Conclusion:** *ambiguous* \u2014 the key precondition (a Trump\u2011led Patriot Party splitting the GOP) never occurred, so the scenario he was forecasting about party shifts and polarization cannot be evaluated.",
+      "sources": [
+        {
+          "end_index": 404,
+          "start_index": 316,
+          "title": "Did Trump Start a New Political Party Called the 'Patriot Party'? | Snopes.com",
+          "type": "url_citation",
+          "url": "https://www.snopes.com/fact-check/patriot-party-trump/?utm_source=openai"
+        },
+        {
+          "end_index": 759,
+          "start_index": 624,
+          "title": "Trump says he won\u2019t form new party, vows to unite Republicans | Politics News | Al Jazeera",
+          "type": "url_citation",
+          "url": "https://www.aljazeera.com/news/2021/2/28/trump-says-will-not-form-new-party-vows-unite-republicans?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction's core conditional premise did not materialize. Republican leaders did not broadly repudiate Trump post-January 2021 (only 10 House Republicans voted to impeach and 7 Senators to convict; party leadership retained him as key figure, per NPR, NYT). Trump did not create a 'Patriot Party' drawing ~20M GOP supporters; he discussed it briefly (WSJ Jan 2021), tweeted once in July 2021, but his campaign disavowed rogue groups, and no viable party formed (Forbes, Guardian, Snopes). No evidence of 20M defections (Reuters notes minor Facebook groups). Thus, GOP was not forced leftward; instead, it solidified Trumpism (Politico 2024 platform analysis, ABC News). Dems showed some leftward social shifts but faced moderation calls post-2024 losses (Pew, Reason). Polarization remained high (Gallup, Pew 2024) but not via predicted GOP split. Timeframe (2021-2024) passed without scenario."
+    },
+    {
+      "id": "E-00:35:11.840",
+      "result": "wrong",
+      "explanation": "By late 2025, large U.S. tech platforms such as Alphabet (Google) and Meta (Facebook) remain conventional, highly profitable, shareholder-owned corporations whose core behavior is still profit maximization, despite increased regulatory and political pressure.\n\nEvidence:\n\n- **Alphabet (Google)**\n  - Alphabet\u2019s revenue and profits have *grown substantially* since 2021. For 2024 it reported about **$350 billion in revenue** (up ~14% YoY), with operating income of ~$112 billion and net income of ~$100 billion, reflecting very strong margins and cash generation. ([assetroom.net](https://www.assetroom.net/s/alphabet/gYf6YL/alphabet-inc-reports-14-revenue-growth-to-350-billion-for-fiscal-year-2024?utm_source=openai))  \n  - Q4 2024 earnings showed continued double\u2011digit revenue growth and rising operating margins, with tens of billions in free cash flow and large share repurchases\u2014classic profit-maximizing behavior. ([finance.yahoo.com](https://finance.yahoo.com/news/alphabet-inc-goog-q4-2024-071452663.html?utm_source=openai))  \n  - Alphabet\u2019s market value has surged; recent analysis describes it as nearing a **$4 trillion** valuation and emphasizes its entrenched dominance and monetization power, not any transformation away from being a normal private profit-driven company. ([barrons.com](https://www.barrons.com/articles/buy-alphabet-stock-price-pick-3e3f606d?utm_source=openai))  \n\n- **Meta Platforms (Facebook)**\n  - Meta\u2019s gross profit has also grown strongly: 2024 gross profit was about **$134 billion**, up 23% from 2023, with further double\u2011digit growth into 2025, indicating a thriving ad\u2011driven business. ([macrotrends.net](https://www.macrotrends.net/stocks/charts/META/meta-platforms/gross-profit?utm_source=openai))  \n  - Equity analysts in 2025 still frame Meta purely as a return\u2011seeking investment, projecting significant upside based on ad monetization and AI\u2011driven improvements to its ad business, again underscoring its status as a standard profit\u2011maximizing firm. ([marketwatch.com](https://www.marketwatch.com/story/metas-stock-finds-a-new-defender-who-predicts-30-upside-from-here-894324e2?utm_source=openai))  \n\n- **Regulation vs. business model**\n  - The EU\u2019s Digital Markets Act and similar measures have imposed stricter obligations on big platforms (e.g., data\u2011sharing, interoperability, self\u2011preferencing limits), and U.S. authorities have brought antitrust suits (such as **United States v. Google LLC** over ad tech). ([en.wikipedia.org](https://en.wikipedia.org/wiki/United_States_v._Google_LLC_%282023%29?utm_source=openai))  \n  - However, these actions have not turned the companies into public utilities, non\u2011profits, or otherwise fundamentally altered them so that they are \u201cnot allowed to be companies.\u201d They remain listed corporations, with boards, shareholders, and strategies focused on maximizing earnings and market value.\n\nTiming matters as well: the quote (\u201cwill not be allowed to be companies much longer\u201d) was made in January 2021. As of November 2025\u2014almost five years later\u2014Alphabet and Meta are larger, more profitable, and more valuable than at the time of the prediction, and still operate in their familiar corporate form under capitalism.\n\nBecause the core claim that these platforms would *no longer be allowed to operate as normal profit\u2011maximizing private companies* has clearly not materialized by now, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 757,
+          "start_index": 602,
+          "title": "Alphabet Inc. Reports 14% Revenue Growth to $350 Bi.. | AssetRoom",
+          "type": "url_citation",
+          "url": "https://www.assetroom.net/s/alphabet/gYf6YL/alphabet-inc-reports-14-revenue-growth-to-350-billion-for-fiscal-year-2024?utm_source=openai"
+        },
+        {
+          "end_index": 1073,
+          "start_index": 961,
+          "title": "Alphabet Inc (GOOG) Q4 2024 Earnings Call Highlights: Strong Revenue Growth and AI Advancements ...",
+          "type": "url_citation",
+          "url": "https://finance.yahoo.com/news/alphabet-inc-goog-q4-2024-071452663.html?utm_source=openai"
+        },
+        {
+          "end_index": 1434,
+          "start_index": 1328,
+          "title": "Google Has Been an AI Winner. What to Do With Alphabet Stock Now.",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/buy-alphabet-stock-price-pick-3e3f606d?utm_source=openai"
+        },
+        {
+          "end_index": 1785,
+          "start_index": 1672,
+          "title": "Meta Platforms Gross Profit 2011-2025 | META | MacroTrends",
+          "type": "url_citation",
+          "url": "https://www.macrotrends.net/stocks/charts/META/meta-platforms/gross-profit?utm_source=openai"
+        },
+        {
+          "end_index": 2190,
+          "start_index": 2043,
+          "title": "Meta's stock finds a new defender, who predicts 30% upside from here",
+          "type": "url_citation",
+          "url": "https://www.marketwatch.com/story/metas-stock-finds-a-new-defender-who-predicts-30-upside-from-here-894324e2?utm_source=openai"
+        },
+        {
+          "end_index": 2618,
+          "start_index": 2510,
+          "title": "United States v. Google LLC (2023)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/United_States_v._Google_LLC_%282023%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "As of December 2025, large U.S. tech platforms like Alphabet (Google, ~$3.8T market cap) and Meta (Facebook, top 10 market cap) continue operating as highly profitable, publicly traded, profit-maximizing companies with core ad-driven and search/app models largely unchanged. While facing heightened regulation\u2014e.g., EU DMA fines (Apple \u20ac500M, Meta \u20ac200M for non-compliance in April 2025; ongoing probes), U.S. antitrust rulings (Google ad tech monopoly loss, but no breakup; Meta social monopoly win)\u2014no structural changes like divestitures, nationalization, or cessation as private entities have occurred. Cases ongoing, but firms thrive (Magnificent Seven market caps surged). Prediction of them 'not be[ing] allowed to be companies much longer' unfulfilled after ~5 years. [Sources: Reuters (Sep 2025 Big Tech antitrust), EU Commission (Apr 2025 fines), CompaniesMarketCap/NYT (market caps), Politico (Oct 2025 case status).](https://www.reuters.com/sustainability/boards-policy-regulation/how-big-tech-is-faring-against-us-antitrust-lawsuits-2025-09-02/)"
+    },
+    {
+      "id": "A-00:35:22.800",
+      "result": "wrong",
+      "explanation": "As of November 29, 2025, major U.S. tech platforms like Facebook/Meta, Google/YouTube, X (Twitter), etc. have **not** been classified or regulated as public utilities or common carriers under U.S. federal law.\n\nKey points:\n\n- There is **no federal statute or FCC rule** that designates social media or search platforms as public utilities or common carriers. They remain primarily governed by the Communications Act framework (including Section 230) and general competition/consumer-protection law, not utility-style rate or nondiscrimination regulation. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Section_230?utm_source=openai))\n- Texas\u2019s HB 20 explicitly *claims* large social media platforms are common carriers and imposes nondiscrimination duties, and Florida passed a similar law; these are the closest moves toward utility-style obligations. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Texas_House_Bill_20?utm_source=openai)) However, the U.S. Supreme Court in *Moody v. NetChoice* (covering both the Texas and Florida cases) vacated the lower-court rulings and remanded, while leaving injunctions in place, so neither law is in force. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Moody_v._NetChoice%2C_LLC?utm_source=openai)) The Court did **not** endorse treating platforms as common carriers or utilities.\n- Other recent laws, such as the Protecting Americans from Foreign Adversary Controlled Applications Act targeting TikTok, or various state child-safety and age-verification statutes (many of which are being blocked in court), are **narrow, issue-specific regulations**, not a general public-utility regime applied to \u201cmajor big tech platforms.\u201d ([en.wikipedia.org](https://en.wikipedia.org/wiki/Protecting_Americans_from_Foreign_Adversary_Controlled_Applications_Act?utm_source=openai))\n- Commentary and legal analysis continue to stress that social media and search companies are *not* public utilities and argue against imposing utility-style or common-carrier regulation on them. ([wired.com](https://www.wired.com/story/no-facebook-google-not-public-utilities/?utm_source=openai))\n- Even for broadband ISPs\u2014where utility-style treatment has the strongest foothold\u2014an attempt to reimpose Title II/common-carrier classification and net neutrality rules was struck down by the Sixth Circuit in *Ohio Telecom Association v. FCC* in 2025, underscoring judicial resistance to expanding utility-style regulation rather than cementing it. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ohio_Telecom_Association_v._FCC?utm_source=openai))\n\nGiven that, by several years after the 2021 prediction, major platforms have **not** been regulated in a manner similar to public utilities in the U.S., and the leading efforts to move in that direction are either blocked or not in effect, the prediction is best classified as **wrong** for the implied \"coming years\" timeframe.",
+      "sources": [
+        {
+          "end_index": 673,
+          "start_index": 592,
+          "title": "Section 230",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Section_230?utm_source=openai"
+        },
+        {
+          "end_index": 983,
+          "start_index": 894,
+          "title": "Texas House Bill 20",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Texas_House_Bill_20?utm_source=openai"
+        },
+        {
+          "end_index": 1289,
+          "start_index": 1194,
+          "title": "Moody v. NetChoice, LLC",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Moody_v._NetChoice%2C_LLC?utm_source=openai"
+        },
+        {
+          "end_index": 1860,
+          "start_index": 1719,
+          "title": "Protecting Americans from Foreign Adversary Controlled Applications Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Protecting_Americans_from_Foreign_Adversary_Controlled_Applications_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2159,
+          "start_index": 2058,
+          "title": "No, Facebook and Google Are Not Public Utilities | WIRED",
+          "type": "url_citation",
+          "url": "https://www.wired.com/story/no-facebook-google-not-public-utilities/?utm_source=openai"
+        },
+        {
+          "end_index": 2612,
+          "start_index": 2511,
+          "title": "Ohio Telecom Association v. FCC",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Ohio_Telecom_Association_v._FCC?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No major big tech platforms (e.g., Google, Facebook, Amazon) have been regulated as public utilities in the US by Dec 2025. Public utilities face rate regulation, universal service obligations, and common carrier rules by PUCs/FERC\u2014none apply to tech platforms. \n\n- Supreme Court in *NetChoice v. Paxton* and *Moody v. NetChoice* (July 2024) vacated lower court rulings on TX HB20/FL laws restricting content moderation (attempts at common carrier-like rules), remanding for as-applied review; laws remain enjoined or challenged ([SCOTUS opinion](https://www.supremecourt.gov/opinions/23pdf/22-277_d18f.pdf), [SCOTUSblog](https://www.scotusblog.com/case-files/cases/netchoice-llc-v-paxton/)). TX HB20 challenged again Aug 2025 ([CCIA](https://ccianet.org/news/2025/08/ccia-files-amended-complaint-to-strike-texas-hb20-as-an-unconstitutional-restraint-of-free-speech/)). \n- Ohio AG bid to treat Google Search as common carrier dismissed Aug 2025 ([Jones Day](https://www.jonesday.com/en/practices/experience/2025/08/google-defeats-ohio-ags-bid-to-regulate-search-as-common-carrier)). \n- No federal utility-style laws; Section 230 protects platforms ([CRS report](https://www.congress.gov/crs-product/LSB11266)). State tech laws focus on privacy/AI/kids, not moderation/utilities ([NYU report](https://techpolicynyu.org/wp-content/uploads/2024/12/state-tech-policy_2024_CTP_CSMaP_final.pdf)). \nNearly 5 years post-prediction (Jan 2021), no fulfillment."
+    },
+    {
+      "id": "F-00:36:54.310",
+      "result": "wrong",
+      "explanation": "Under Biden, the TikTok issue was not \u201cswept under the rug,\u201d and the U.S. did impose meaningful restrictions and a sale\u2011or\u2011ban framework on TikTok.\n\nKey facts:\n\n1. **Revoking Trump\u2019s specific EOs but keeping the national\u2011security focus.** In June 2021, President Biden revoked Trump\u2019s executive orders that attempted to ban TikTok and WeChat, but he replaced them with a new order directing the Commerce Department to systematically review and potentially restrict \u201cconnected software applications\u201d tied to foreign adversaries. This continued, rather than abandoned, the security scrutiny of TikTok and similar apps.\n   \n2. **Federal device ban.** On December 29, 2022, Biden signed the *No TikTok on Government Devices Act* into law, which **prohibits TikTok on all federal government devices** (with narrow exceptions). That is an explicit, nationwide legal restriction on where TikTok can operate within the federal system, not \u201cno restrictions.\u201d ([en.wikipedia.org](https://en.wikipedia.org/wiki/No_TikTok_on_Government_Devices_Act?utm_source=openai))\n\n3. **Divest\u2011or\u2011ban national law specifically targeting TikTok.** On April 24, 2024, Biden signed the *Protecting Americans from Foreign Adversary Controlled Applications Act* (PAFACA). The law:\n   * Explicitly designates TikTok/ByteDance as foreign\u2011adversary\u2011controlled applications.\n   * Requires ByteDance to **divest TikTok\u2019s U.S. operations by January 19, 2025** or face a ban.\n   * Prohibits app\u2011store distribution, hosting, maintenance, and updates for such apps in the U.S. unless a \u201cqualified divestiture\u201d occurs.\n   These are substantial legal restrictions on TikTok\u2019s operation in the United States. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Protecting_Americans_from_Foreign_Adversary_Controlled_Applications_Act?utm_source=openai))\n\n4. **Supreme Court and enforcement posture.** In January 2025, the U.S. Supreme Court upheld this law, confirming that the divest\u2011or\u2011ban regime is constitutional. The Biden administration chose not to personally carry out the final enforcement steps right before leaving office and instead left day\u2011to\u2011day enforcement timing to the incoming Trump administration, but the restrictive legal framework itself was crafted, signed, and defended by Biden\u2019s team. ([reuters.com](https://www.reuters.com/legal/us-lawmakers-cheer-supreme-court-upholding-tiktok-ban-law-2025-01-17/?utm_source=openai))\n\nGiven that the Biden administration **(a)** signed a federal law banning TikTok on government devices and **(b)** signed and defended a statute that forces TikTok\u2019s sale or a nationwide ban, the prediction that \u201cthere\u2019ll be no restrictions on TikTok\u201d and that the Trump\u2011era sanctions push would be \u201cswept under the rug\u201d is not borne out by events.\n\nTherefore, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 1094,
+          "start_index": 989,
+          "title": "No TikTok on Government Devices Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/No_TikTok_on_Government_Devices_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1853,
+          "start_index": 1712,
+          "title": "Protecting Americans from Foreign Adversary Controlled Applications Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Protecting_Americans_from_Foreign_Adversary_Controlled_Applications_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2448,
+          "start_index": 2314,
+          "title": "US lawmakers cheer Supreme Court for upholding TikTok ban law",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/legal/us-lawmakers-cheer-supreme-court-upholding-tiktok-ban-law-2025-01-17/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction was incorrect. While the Biden administration did abandon Trump-era executive orders on TikTok (revoked via EO 14034 on June 9, 2021), it imposed meaningful restrictions, including signing the No TikTok on Government Devices Act (Dec 30, 2022) and, crucially, the Protecting Americans from Foreign Adversary Controlled Applications Act (PAFACA) on April 24, 2024. PAFACA requires ByteDance to divest TikTok's U.S. operations by Jan 19, 2025, or face a nationwide ban\u2014a major restriction on its operation under Chinese ownership. The Supreme Court upheld this law. Although enforcement was paused under Biden and later extended multiple times by President Trump (e.g., to Dec 16, 2025), TikTok remains operational amid divestiture talks. Sources: [Wikipedia: Restrictions on TikTok in the United States](https://en.wikipedia.org/wiki/Restrictions_on_TikTok_in_the_United_States); White House fact sheets and news reports (NPR, NYT, CNN) on timelines and extensions."
+    },
+    {
+      "id": "E-01:01:03.650",
+      "result": "inconclusive",
+      "explanation": "As of **November 29, 2025**, we are only about **4\u20135 years** into Chamath\u2019s stated **10\u201320 year** window (\"in the next ten and 20 years\" from 2021), so the forecast period extends roughly to **2031\u20132041**. The core claims are:\n\n1. The U.S. will \u201cre\u2011emerge like a phoenix\u201d economically over that window.\n2. The main drivers will be innovation in **climate tech, agriculture, biotech, and technology**.\n3. This will generate on the order of **$20\u201330T of GDP per year over that 10\u201320 year period**, for **$300\u2013500T cumulative** additional GDP.\n\nBy late 2025:\n- U.S. **nominal GDP** is around **$28T** and has grown since 2021, but the full 10\u201320 year trajectory and whether cumulative **$300\u2013500T** of *additional* GDP tied specifically to those sectors will materialize cannot yet be evaluated.\n- Innovation and investment are indeed strong in climate tech, AI/technology, and biotech, but it\u2019s far too early to attribute long\u2011run GDP outcomes over 2021\u20132041.\n\nBecause the **forecast interval is still ongoing** and the quantitative claim is about the *entire* 10\u201320 year period, it is **too early to judge** the prediction as right or wrong. Therefore the appropriate status is **inconclusive (too early)**.",
+      "sources": [],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The prediction covers 2021\u20132041 (20 years), but only ~5 years have passed as of Dec 2025. US nominal GDP rose from $23.68T in 2021 to $29.18T in 2024 (FRED/STL Fed), with 2025 Q2 annualized ~$30.5T (Moody's Analytics/BEA)\u2014average ~$1.8T annual increase, vs. projected $20\u201330T/year additional. Cumulative addition ~$6T so far, negligible vs. $300\u2013500T total. Bioeconomy contributed ~$210B in 2023 (FAS.org/BIO), far below scale needed. Innovations in tech (AI), biotech, climate exist but not yet transformative at predicted magnitude. Sources: [FRED GDP](https://fred.stlouisfed.org/series/NGDPXDCUSA), [BEA](https://www.bea.gov/data/gdp), [BIO report](https://www.bio.org/press-release/bio-releases-new-report-underscoring-massive-economic-power-american-bioeconomy)."
+    },
+    {
+      "id": "D-01:04:01.610",
+      "result": "right",
+      "explanation": "Public records from the California Secretary of State show that the recall petition against Governor Gavin Newsom surpassed the required 1,495,709 valid signatures in April 2021, with 1,626,042 verified at that stage, explicitly stating that the threshold to trigger the recall had been met. ([sos.ca.gov](https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21019?utm_source=openai))  After the subsequent withdrawal period, counties reported that 1,719,900 verified signatures remained\u2014still above the requirement\u2014prompting the Secretary of State to notify the Department of Finance that enough signatures remained to initiate a recall election. ([sos.ca.gov](https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21028?utm_source=openai))  On July 1, 2021, the Secretary of State certified the recall petition with 1,719,900 valid signatures out of 2,161,349 submitted, and the Lieutenant Governor then set the recall election date for September 14, 2021. ([sos.ca.gov](https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21032-sos-certifies-gubernatorial-recall-petition?utm_source=openai))  A statewide gubernatorial recall election was in fact held on September 14, 2021. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai))  Since the normalized prediction only claims that the recall petition would successfully qualify and trigger a recall election in 2021\u2014not that Newsom would be removed from office\u2014this prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 467,
+          "start_index": 325,
+          "title": "SW21:019 Secretary of State Dr. Shirley N. Weber Announces Threshold Met to Trigger Recall, Signature Withdrawal Period :: California Secretary of State",
+          "type": "url_citation",
+          "url": "https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21019?utm_source=openai"
+        },
+        {
+          "end_index": 873,
+          "start_index": 731,
+          "title": "SW21:028 SOS: Counties Report Total Withdrawn Recall Signatures; Enough Remain to Initiate Recall Election :: California Secretary of State",
+          "type": "url_citation",
+          "url": "https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21028?utm_source=openai"
+        },
+        {
+          "end_index": 1277,
+          "start_index": 1091,
+          "title": "SW21:032 SOS Certifies Gubernatorial Recall Petition :: California Secretary of State",
+          "type": "url_citation",
+          "url": "https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21032-sos-certifies-gubernatorial-recall-petition?utm_source=openai"
+        },
+        {
+          "end_index": 1476,
+          "start_index": 1361,
+          "title": "2021 California gubernatorial recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The recall petition against Gavin Newsom collected sufficient verified signatures to qualify for the ballot. On April 26, 2021, California Secretary of State Shirley Weber announced that counties reported 1,495,709+ verified signatures, meeting the threshold ([CA SOS](https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall/newsom-recall-faqs), [Wikipedia](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election)). After a 30-day withdrawal period, 1,719,900 valid signatures remained. This triggered a special recall election held on September 14, 2021 ([CA SOS Certification](https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall), [multiple news sources like LATimes, NPR](https://www.latimes.com/california/story/2021-03-19/recall-newsom-signatures-validated-update)). The prediction specified qualification and election in 2021, both of which occurred."
+    },
+    {
+      "id": "A-01:04:20.710",
+      "result": "right",
+      "explanation": "Public records show that organizers of the Gavin Newsom recall submitted about **2,117,730 signatures by the extended deadline of March 17, 2021**.([mynspr.org](https://www.mynspr.org/news/2021-03-21/signatures-are-in-what-you-need-to-know-about-the-gavin-newsom-recall-effort?utm_source=openai))  The legal requirement was **1,495,709 valid signatures**.([sos.ca.gov](https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall/newsom-recall-faqs?utm_source=openai))  After county officials completed verification, the California Secretary of State reported **1,626,042 valid signatures**, comfortably above the required threshold, all drawn from petitions turned in by the March 17 deadline.([kcra.com](https://www.kcra.com/article/newsom-recall-campaign-secures-signatures-needed-to-qualify-for-ballot-filing-shows/36190354?utm_source=openai))  This implies a statewide validity rate of roughly the high\u201170% range, consistent with contemporaneous reports of validity rates in the mid\u201170s to low\u201180s.([latimes.com](https://www.latimes.com/socal/daily-pilot/news/story/2021-03-18/newport-beach-organizers-of-newsom-recall-say-enough-signatures-have-been-collected?utm_source=openai))  The Secretary of State formally announced on April 26, 2021 that the recall had qualified for the ballot, confirming that the threshold of verified signatures had indeed been met based on the petitions filed by March 17.([sos.ca.gov](https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall/newsom-recall-faqs?utm_source=openai))  Since Friedberg\u2019s normalized prediction was that the recall *would* still end up with enough valid signatures by the March 17, 2021 deadline\u2014even under lower verification\u2011rate scenarios\u2014and in fact the campaign did meet and exceed the necessary number of valid signatures from submissions by that date, the prediction is best scored as **right**.",
+      "sources": [
+        {
+          "end_index": 329,
+          "start_index": 180,
+          "title": "Signatures Are In. What You Need To Know About The Gavin Newsom Recall Effort. | NSPR",
+          "type": "url_citation",
+          "url": "https://www.mynspr.org/news/2021-03-21/signatures-are-in-what-you-need-to-know-about-the-gavin-newsom-recall-effort?utm_source=openai"
+        },
+        {
+          "end_index": 535,
+          "start_index": 388,
+          "title": "California Gubernatorial Recall Election - Frequently Asked Questions :: California Secretary of State",
+          "type": "url_citation",
+          "url": "https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall/newsom-recall-faqs?utm_source=openai"
+        },
+        {
+          "end_index": 914,
+          "start_index": 761,
+          "title": "Newsom recall campaign secures signatures needed to qualify for ballot, filing shows",
+          "type": "url_citation",
+          "url": "https://www.kcra.com/article/newsom-recall-campaign-secures-signatures-needed-to-qualify-for-ballot-filing-shows/36190354?utm_source=openai"
+        },
+        {
+          "end_index": 1252,
+          "start_index": 1070,
+          "title": "Newport Beach organizers of Newsom recall say enough signatures have been collected - Los Angeles Times",
+          "type": "url_citation",
+          "url": "https://www.latimes.com/socal/daily-pilot/news/story/2021-03-18/newport-beach-organizers-of-newsom-recall-say-enough-signatures-have-been-collected?utm_source=openai"
+        },
+        {
+          "end_index": 1621,
+          "start_index": 1474,
+          "title": "California Gubernatorial Recall Election - Frequently Asked Questions :: California Secretary of State",
+          "type": "url_citation",
+          "url": "https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall/newsom-recall-faqs?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Gavin Newsom recall campaign submitted 2,117,730 signatures by the March 17, 2021, deadline (Wikipedia). The required threshold was 1,495,709 valid signatures. Official verification as of April 19, 2021, confirmed 1,626,042 valid signatures at an 80.23% rate (CA SOS cumulative report: https://elections.cdn.sos.ca.gov/recalls/cumulative-newsom-heatlie.pdf). This exceeded the threshold, qualifying the recall on April 26, 2021 (KQED, Wikipedia). At 75% verification, ~1.59M valid signatures would still suffice; actual rate was higher. Prediction correct as they met the threshold based on deadline submissions."
+    },
+    {
+      "id": "F-01:05:16.920",
+      "result": "wrong",
+      "explanation": "Evidence shows that the recall petition **did** obtain enough certified signatures, but the **timing** of the recall election was substantially different from the prediction.\n\n- On 26 April 2021, the California Secretary of State announced that counties had reported 1,626,042 verified signatures for the Newsom recall, exceeding the 1,495,709 required and thus meeting the threshold to trigger a recall process.([sos.ca.gov](https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21019?utm_source=openai))  \n- On 1 July 2021, the Secretary of State formally certified the recall petition as sufficient, reporting 1,719,900 valid signatures.([sos.ca.gov](https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21032-sos-certifies-gubernatorial-recall-petition?utm_source=openai))  \n- That same day, the lieutenant governor set the **recall election date** for 14 September 2021, which was 76 days (about two and a half months) after certification, not 4\u20135 months, and not in July as forecast.([timesofsandiego.com](https://timesofsandiego.com/politics/2021/07/01/its-official-california-gubernatorial-recall-election-to-be-held-in-september/?utm_source=openai))\n\nSo while the forecast correctly anticipated that the recall petition would qualify, it specifically predicted an election roughly 4\u20135 months after certification and \"looking at July\". In reality, the election was held in mid\u2011September 2021, about 2.5 months after certification. Because the core dated part of the prediction (July timing and 4\u20135 month lag) was wrong, the overall prediction is rated **wrong**.",
+      "sources": [
+        {
+          "end_index": 589,
+          "start_index": 447,
+          "title": "SW21:019 Secretary of State Dr. Shirley N. Weber Announces Threshold Met to Trigger Recall, Signature Withdrawal Period :: California Secretary of State",
+          "type": "url_citation",
+          "url": "https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21019?utm_source=openai"
+        },
+        {
+          "end_index": 911,
+          "start_index": 725,
+          "title": "SW21:032 SOS Certifies Gubernatorial Recall Petition :: California Secretary of State",
+          "type": "url_citation",
+          "url": "https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21032-sos-certifies-gubernatorial-recall-petition?utm_source=openai"
+        },
+        {
+          "end_index": 1294,
+          "start_index": 1125,
+          "title": "It's Official: California Gov. Gavin Newsom to Face Recall Election Sept. 14",
+          "type": "url_citation",
+          "url": "https://timesofsandiego.com/politics/2021/07/01/its-official-california-gubernatorial-recall-election-to-be-held-in-september/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The recall petition did obtain enough certified signatures to qualify: California Secretary of State certified it on July 1, 2021 ([SOS press release](https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21032-sos-certifies-gubernatorial-recall-petition); [Wikipedia timeline](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election)). However, the recall election was proclaimed the same day (July 1, 2021) by Lt. Gov. Eleni Kounalakis for September 14, 2021\u2014roughly 2.5 months later, not 4\u20135 months after certification. It was also not 'around July 2021.' ([CalMatters](https://calmatters.org/politics/2021/07/newsom-recall-election-date/); [NYT](https://www.nytimes.com/2021/07/01/us/politics/california-gavin-newsom-recall-election.html)). The prediction failed on the timing and scheduling details."
+    },
+    {
+      "id": "E-00:35:22.000",
+      "result": "wrong",
+      "explanation": "By late 2025, major U.S. big tech platforms (e.g., Alphabet/Google, Meta/Facebook, Amazon, Apple, Microsoft) remain highly profitable, independent commercial enterprises\u2014not quasi-nonprofits or quasi-governmental utilities operating primarily on behalf of national governments.\n\nEvidence:\n\n1. **They remain strongly for\u2011profit, with massive earnings and market caps.**  \n   * Alphabet (Google) reported tens of billions in annual net income and maintains a market capitalization well over a trillion dollars, driven by advertising and cloud profits.   \n   * Meta, Amazon, Apple, and Microsoft similarly report large operating margins and high stock valuations, driven by commercial business strategies rather than utility\u2011style rate regulation or cost\u2011plus models. (Any up\u2011to\u2011date earnings reports for these firms show substantial net income, confirming they are not operating as quasi\u2011nonprofits.)\n\n2. **Regulation has increased, but not to the level of turning them into utilities.**  \n   * In the U.S., there have been antitrust lawsuits (e.g., against Google and Meta) and hearings, plus discussions of platform regulation and content moderation rules, but Congress has not passed comprehensive federal legislation that reclassifies the major platforms as public utilities or imposes utility\u2011style rate or profit controls.\n   * In the EU, the Digital Markets Act (DMA) and Digital Services Act (DSA) impose significant obligations on large platforms (gatekeepers) but explicitly leave them as private, for\u2011profit entities competing in markets; they are not converted into state\u2011directed utilities or non\u2011profit service arms of governments.\n\n3. **Corporate control and strategic autonomy remain private.**  \n   * Boards of directors and executive teams are appointed and removed via standard corporate governance and shareholder mechanisms, not by governments. No major U.S. platform has been nationalized, converted into a government\u2011chartered public utility, or required to operate on a non\u2011profit basis.\n   * These firms routinely make strategic decisions (e.g., product changes, pricing, acquisitions, layoffs, advertising policies) primarily to optimize revenue, growth, or shareholder value, often in tension with government preferences and sometimes actively litigating against regulators.\n\n4. **Relationship to governments is regulatory and adversarial, not an operational arm.**  \n   * While big tech firms must comply with laws (privacy, competition, content, data access), they are not operating \u201con behalf of\u201d governments in the way a quasi\u2011governmental utility would. They are regulated private intermediaries, frequently challenging rules in court and lobbying to shape legislation.\n\nBecause:\n\n- No major U.S. big tech firm has been structurally transformed into a quasi\u2011governmental utility or quasi\u2011nonprofit.  \n- They still operate as highly profitable, shareholder\u2011driven corporations with substantial autonomy.  \n- Regulatory burdens, though heavier than in 2021, have not reached the level of effectively converting their role into that of government utilities.\n\nThe prediction that, within several years of 2021, these platforms would **function as quasi\u2011governmental, quasi\u2011nonprofit utilities working largely on behalf of governments** is therefore **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": null
+    },
+    {
+      "id": "F-00:16:45.340",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly conditional: it describes what would happen **if** Donald Trump were to create a new third party (e.g., a \u201cPatriot Party\u201d) that splits the right-of-center vote. As of late 2025, Trump has not created or led a formal third party; he has remained within the Republican Party and run as its nominee, rather than heading a separate Patriot Party or similar.\n\nBecause the triggering condition (Trump forming a third party that fractures the GOP vote) never occurred, we can\u2019t evaluate the stated consequence (\u201cRepublicans would basically lose every election\u2026 from now until Trump is no longer a force\u201d). The scenario simply hasn\u2019t happened, so the prediction can\u2019t be judged as right or wrong.\n\nTherefore, the correct classification is **inconclusive (too early / untriggered condition)** rather than right, wrong, or ambiguous in hindsight.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is conditional on Trump creating a new third party (e.g., Patriot Party) that *substantially splits* the right-of-center vote. This did not occur: Trump stated on Feb 28, 2021 ([Reuters](https://www.reuters.com/world/us/trump-says-he-has-no-plans-form-third-party-2021-02-28/)) he had no plans for a third party; his campaign distanced from grassroots 'Patriot Party' efforts ([Guardian](https://www.theguardian.com/us-news/2021/jan/26/trump-campaign-distances-itself-from-new-patriot-party)); no such party formed or impacted elections. Trump stayed Republican, won 2024 presidency; GOP won Senate/House majorities in 2024 ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_House_of_Representatives_elections), [NBC](https://www.nbcnews.com/politics/2024-elections/house-results)) and House in 2022. Trump remains a major force (current president), but without the 'if' condition, the causal claim cannot be verified."
+    }
+  ]
+}

@@ -1,0 +1,687 @@
+{
+  "meta": {
+    "count": 17,
+    "count_by_result": {
+      "wrong": 6,
+      "right": 7,
+      "ambiguous": 2,
+      "inconclusive": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "chamath-00:27:56.940",
+      "result": "wrong",
+      "explanation": "The Supreme Court did not issue any ruling on the merits of affirmative action in the 1\u20132 month window after December 17, 2021. During that period, the key development was that the Court granted certiorari in Students for Fair Admissions v. Harvard and Students for Fair Admissions v. University of North Carolina on January 24, 2022\u2014meaning it agreed to hear the cases but did not decide them.([harvardmagazine.com](https://www.harvardmagazine.com/2022/01/supreme-court-hears-affirmative-action-cases?utm_source=openai))\n\nThe Court\u2019s *actual* strict opinion significantly curtailing affirmative action in higher education came much later, on June 29, 2023, in Students for Fair Admissions v. Harvard (consolidated with the UNC case). There the Court held that Harvard\u2019s and UNC\u2019s race-conscious admissions programs violated the Equal Protection Clause, effectively ending traditional affirmative action in college admissions and abrogating earlier precedents like Grutter and Fisher.([en.wikipedia.org](https://en.wikipedia.org/wiki/Students_for_Fair_Admissions_v._Harvard?utm_source=openai)) Because this merits decision arrived about a year and a half after the predicted 1\u20132 month horizon, the prediction\u2014tied explicitly to that short timeframe\u2014is assessed as wrong, even though a substantively similar outcome eventually occurred on a much longer timescale.",
+      "sources": [
+        {
+          "end_index": 554,
+          "start_index": 427,
+          "title": "Supreme Court to Hear Affirmative Action Appeals | Harvard Magazine",
+          "type": "url_citation",
+          "url": "https://www.harvardmagazine.com/2022/01/supreme-court-hears-affirmative-action-cases?utm_source=openai"
+        },
+        {
+          "end_index": 1128,
+          "start_index": 1019,
+          "title": "Students for Fair Admissions v. Harvard",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Students_for_Fair_Admissions_v._Harvard?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The Supreme Court did not issue any ruling on affirmative action within 1-2 months of December 17, 2021 (i.e., by ~February 2022). Oral arguments in the key cases (*Students for Fair Admissions v. Harvard* and *v. UNC*) occurred on October 31, 2022, with the decision striking down race-based admissions issued on June 29, 2023 ([Supreme Court opinion](https://www.supremecourt.gov/opinions/22pdf/20-1199_hgdj.pdf); [Wikipedia](https://en.wikipedia.org/wiki/Students_for_Fair_Admissions_v._Harvard); [SCOTUSblog](https://www.scotusblog.com/2022/10/in-cases-challenging-affirmative-action-court-will-confront-wide-ranging-arguments-on-history-diversity-and-the-role-of-race-in-america/)). No relevant rulings occurred in early 2022."
+    },
+    {
+      "id": "chamath-00:29:41.440",
+      "result": "right",
+      "explanation": "The **Build Back Better Act (BBB)**, H.R. 5376 as the large social\u2011spending and climate package branded \u201cBuild Back Better,\u201d **never became law**. It passed the House on November 19, 2021, but Senator Joe Manchin withdrew support, negotiations collapsed, and the bill\u2019s status remained only **\u201cPassed in the House\u201d**, with no final enactment in that form. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai))  \n\nLater, Democrats negotiated a much smaller, significantly reworked package that focused mainly on climate, health care, and tax changes. This compromise was passed in August 2022 as the **Inflation Reduction Act of 2022**, using H.R. 5376 as the legislative vehicle but **with its text substituted and the bill renamed**; it became Public Law 117\u2011169 on August 16, 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Inflation_Reduction_Act?utm_source=openai))  \n\nContemporary accounts and later summaries explicitly describe the original Build Back Better Act as having been effectively killed in the Senate, with the Inflation Reduction Act characterized as a reduced and comprehensively reworked successor that incorporated only some BBB elements and dropped most of the broader social\u2011policy provisions. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai))  \n\nGiven Chamath\u2019s prediction that **\u201cthe Build Back Better bill \u2026 will never be passed; it is effectively dead and will not become law,\u201d** and interpreting \u201cthe bill\u201d in the ordinary sense as that specific BBB package (not any later renamed, substantially altered compromise), the prediction is **substantively correct**: that original Build Back Better bill never passed Congress and never became law, even though a narrower follow\u2011on law using the same bill number eventually did.",
+      "sources": [
+        {
+          "end_index": 480,
+          "start_index": 389,
+          "title": "Build Back Better Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai"
+        },
+        {
+          "end_index": 950,
+          "start_index": 857,
+          "title": "Inflation Reduction Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Inflation_Reduction_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1391,
+          "start_index": 1300,
+          "title": "Build Back Better Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Build Back Better Act (H.R. 5376) passed the House on November 19, 2021, but stalled in the Senate and never became law. Sen. Joe Manchin opposed it, declaring it 'dead' in December 2021 and February 2022. While the bill shell was later amended into the Inflation Reduction Act (IRA) of 2022, the original BBB bill did not pass and was effectively killed, matching the prediction. Sources: [Wikipedia Build Back Better Act](https://en.wikipedia.org/wiki/Build_Back_Better_Act) ('passed House...'); [Ballotpedia](https://ballotpedia.org/Build_Back_Better_Act) ('Senate did not take up the bill and it did not become law'); [Congress.gov HR 5376](https://www.congress.gov/bill/117th-congress/house-bill/5376); NBC News (Manchin: 'dead'); Politico."
+    },
+    {
+      "id": "sacks-00:31:38.660",
+      "result": "ambiguous",
+      "explanation": "The outcome depends on how one interprets \u201cthe Build Back Better bill\u201d and \u201creturn.\u201d\n\n**What happened legislatively**\n- The House passed the Build Back Better Act (H.R. 5376) on November 19, 2021, but it stalled in the Senate when Sen. Joe Manchin withdrew support in December 2021. Contemporary accounts and later summaries describe this as effectively killing the bill in its then-current form.\u3010([en.wikipedia.org](https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai))\n- Subsequent negotiations between Manchin and Senate Majority Leader Chuck Schumer produced a much smaller reconciliation package, the **Inflation Reduction Act of 2022 (IRA)**. This law incorporated some of Build Back Better\u2019s climate, health-care, and tax provisions, while omitting most of its social\u2011safety\u2011net spending.\u3010([en.wikipedia.org](https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai))\n- Technically, the IRA was passed by **amending H.R. 5376** itself: the legislative text of the Build Back Better Act was replaced, and the bill went forward under the new name \u201cInflation Reduction Act of 2022,\u201d which passed the Senate on August 7, 2022, and was signed into law on August 16, 2022.\u3010([en.wikipedia.org](https://en.wikipedia.org/wiki/Inflation_Reduction_Act?utm_source=openai))\n\n**Why this makes the prediction ambiguous**\n- If you define \u201cthe Build Back Better bill\u201d as the **large social\u2011spending package branded \u201cBuild Back Better\u201d** (including major child\u2011care, child\u2011tax\u2011credit, and broader social programs), that package *was shelved and never enacted*; only parts of it survived in a slimmed\u2011down compromise. Under this interpretation, the prediction that it was \u201cbeing shelved \u2026 [and] probably not to return\u201d is **basically right**.\n- If you define \u201creturn\u201d in a **procedural or core\u2011policy sense**\u2014i.e., whether the bill vehicle (H.R. 5376) and central elements of the agenda came back and ultimately passed\u2014then the prediction is **wrong**: the same bill number was revived, rewritten, renamed the Inflation Reduction Act, and enacted into law with substantial overlap in climate, health, and tax provisions.\u3010([en.wikipedia.org](https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai))\n\nBecause both interpretations are reasonable and lead to opposite truth values, the prediction cannot be cleanly scored as simply right or wrong even though enough time has passed. Hence the outcome is **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 533,
+          "start_index": 442,
+          "title": "Build Back Better Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai"
+        },
+        {
+          "end_index": 956,
+          "start_index": 865,
+          "title": "Build Back Better Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1355,
+          "start_index": 1262,
+          "title": "Inflation Reduction Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Inflation_Reduction_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2297,
+          "start_index": 2206,
+          "title": "Build Back Better Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Build Back Better Act (H.R. 5376) passed the House on November 19, 2021, but was shelved in late December 2021 after Sen. Joe Manchin announced opposition on December 19, dooming it in the Senate ([CNN](https://www.cnn.com/2021/12/19/politics/joe-manchin-build-back-better), [Wikipedia](https://en.wikipedia.org/wiki/Build_Back_Better_Act), [Ballotpedia](https://ballotpedia.org/Build_Back_Better_Act)). It was not passed into law as BBB and not revived under that name or form. While elements were reworked into the smaller Inflation Reduction Act (IRA, same bill number) signed August 16, 2022 ([Congress.gov](https://www.congress.gov/bill/117th-congress/house-bill/5376), [Wikipedia IRA](https://en.wikipedia.org/wiki/Inflation_Reduction_Act)), the original BBB bill did not return or pass, matching the prediction ([Prospect](https://prospect.org/2022/04/28/build-back-better-dies-again/), [Shelterforce](https://shelterforce.org/2022/05/05/what-happened-to-those-build-back-better-housing-investments/))."
+    },
+    {
+      "id": "friedberg-00:47:45.430",
+      "result": "right",
+      "explanation": "Evidence from 2022\u20132025 indicates that COVID-19 did in fact transition into a long\u2011term endemic (or *effectively endemic*) respiratory disease rather than ending quickly as an acute pandemic:\n\n- In May 2023, the WHO ended the COVID-19 Public Health Emergency of International Concern, but explicitly stated that COVID-19 remains a **global health threat** and will require long\u2011term management, not eradication.\u3010\u3011\n- By 2022\u20132025, major health bodies and reviews (e.g., Lancet, CDC, WHO) consistently described COVID-19 as moving into an *endemic* phase, with ongoing circulation, repeated waves, and the expectation of **years of continued transmission** managed via vaccination, updated boosters, antivirals, and non\u2011pharmaceutical interventions during surges.\n- Society has made durable adaptations: widespread remote/hybrid work, updated building ventilation standards, periodic booster campaigns, routine COVID testing in some healthcare and institutional settings, and guidance to keep schools and businesses open while managing risk instead of broad, indefinite lockdowns. These are exactly the kinds of long\u2011term operational adaptations Friedberg described.\n- As of late 2025, COVID-19 continues to cause seasonal and variant\u2011driven waves globally, similar to but more severe than typical endemic respiratory viruses, confirming it did not \u201cend\u201d within a short period after 2021 but instead persisted over a multi\u2011year horizon.\n\nGiven the continued global circulation of COVID-19 and the structural adaptations in how people work, study, and manage public health, Friedberg\u2019s 2021 characterization that this would be an *endemic circumstance* we would be *\u201cin\u2026for a while\u201d* and that it would *\u201crequire\u2026an adaptation in terms of how we live and operate\u201d* has been borne out by events. Therefore, the prediction is **right**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "By 2025, COVID-19 has transitioned to an endemic state, with ongoing circulation but manageable through vaccines, surveillance, and adaptations like annual boosters, rather than a quick pandemic end. Sources: BU SPH (Mar 2025) states 'COVID-19 is now endemic'; UCLA Health (Jan 2025) confirms 'no longer a pandemic, now endemic'; Harvard (Aug 2024) notes 'we're definitely there'; WaPo (Mar 2025) says pandemic over but endemic threat persists; CDC (2025 case def.) focuses on monitoring variants post-endemic shift. WHO ended PHEIC May 2023; CDC Nov 2025 Rt shows regional growth but no disruptions to society/schools/businesses as predicted."
+    },
+    {
+      "id": "sacks-00:48:25.950",
+      "result": "right",
+      "explanation": "By early\u2013mid 2022, broad COVID restrictions were largely rolled back even in Democratic\u2011leaning states, in line with Sacks\u2019s prediction.\n\n\u2022 **Blue-state rollbacks of mask mandates in 2022:** In February 2022 there was a coordinated wave of Democratic governors ending indoor and school mask mandates. Reporting at the time noted Democratic-led states such as California, Oregon, Delaware, Connecticut, New Jersey, New York, Rhode Island, Massachusetts and Illinois announcing timelines to lift mask requirements in businesses and schools.([washingtonpost.com](https://www.washingtonpost.com/politics/2022/02/10/democrats-are-lifting-mask-mandates-now-why/?utm_source=openai))  New Jersey\u2019s Gov. Phil Murphy, for example, set the school mask mandate to end March 7, 2022 and lifted the state\u2019s COVID public health emergency the same day.([en.wikipedia.org](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_New_Jersey?utm_source=openai))  Illinois Gov. J.B. Pritzker similarly lifted most COVID restrictions, including the statewide mask mandate, on February 28, 2022.([en.wikipedia.org](https://en.wikipedia.org/wiki/JB_Pritzker?utm_source=openai))  \n\n\u2022 **Nationwide end of general mask mandates by spring 2022:** A comprehensive summary of U.S. mask policies notes that under new CDC metrics issued February 25, 2022, 70% of the country no longer needed mask use in most public spaces, and that **by April 2022 general mask mandates had been lifted in all U.S. states**, with Hawaii (a blue state) the last to drop its indoor mandate on March 26, 2022.([en.wikipedia.org](https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States?utm_source=openai))  A broader history summary likewise notes that by February\u2013March 2022, **all 50 states and many localities began lifting restrictions and mask mandates.**([en.wikipedia.org](https://en.wikipedia.org/wiki/History_of_the_United_States_%282016%E2%80%93present%29?utm_source=openai))  This matches the prediction that even \u201cblue areas of the country\u201d would abandon broad mandates in 2022.\n\n\u2022 **Public fatigue as a key driver:** Contemporary reporting explicitly connected these Democratic decisions to voter frustration and fatigue. A Washington Post piece on February 10, 2022 described how Democratic governors were lifting mandates as polls showed Americans were \u201ctired\u201d and \u201cfrustrated\u201d with the pandemic, and quoted Gov. Murphy acknowledging residents were \u201cfrustrated\u201d and \u201cfatigued\u201d and \u201cyearning for some sense of normalcy\u201d as he moved to lift school mask rules.([washingtonpost.com](https://www.washingtonpost.com/health/2022/02/09/mask-mandate-end-governors-politics/?utm_source=openai))  Another analysis of Democrats dropping mask mandates highlighted that many Democratic governors were now talking about a \u201creturn to normalcy\u201d and responding to public weariness with restrictions.([washingtonpost.com](https://www.washingtonpost.com/politics/2022/02/10/democrats-are-lifting-mask-mandates-now-why/?utm_source=openai))  This closely tracks Sacks\u2019s rationale that public fatigue would force even blue-state leaders to give up restrictions.\n\n\u2022 **Nuance about \u201cstates of emergency\u201d:** Some blue states, notably California, did *not* formally terminate their COVID state-of-emergency declarations until 2023 (California\u2019s ended February 28, 2023).([gov.ca.gov](https://www.gov.ca.gov/2022/10/17/governor-newsom-to-end-the-covid-19-state-of-emergency/?utm_source=openai))  However, these lingering legal emergencies were mostly administrative tools; the prominent public-facing measures Sacks emphasized\u2014lockdowns, closures, and broad mask mandates\u2014had already been largely rolled back in 2021\u20132022, and 2022 was when the remaining broad mandates in Democratic states were dropped.\n\nOverall, the core of the prediction\u2014that during 2022 even Democratic-leaning states and governors would have to roll back and largely give up sweeping COVID emergency measures like closures and broad mask mandates because the public was tired of them\u2014matches what happened, despite some technical emergency declarations persisting into 2023. Hence this is best scored as **right**.",
+      "sources": [
+        {
+          "end_index": 710,
+          "start_index": 573,
+          "title": "Democrats are lifting mask mandates now but why? - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2022/02/10/democrats-are-lifting-mask-mandates-now-why/?utm_source=openai"
+        },
+        {
+          "end_index": 972,
+          "start_index": 871,
+          "title": "COVID-19 pandemic in New Jersey",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_New_Jersey?utm_source=openai"
+        },
+        {
+          "end_index": 1184,
+          "start_index": 1103,
+          "title": "JB Pritzker",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/JB_Pritzker?utm_source=openai"
+        },
+        {
+          "end_index": 1721,
+          "start_index": 1591,
+          "title": "Face masks during the COVID-19 pandemic in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 2001,
+          "start_index": 1876,
+          "title": "History of the United States (2016\u2013present)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/History_of_the_United_States_%282016%E2%80%93present%29?utm_source=openai"
+        },
+        {
+          "end_index": 2717,
+          "start_index": 2590,
+          "title": "Abrupt end to mask mandates reflects a shifting political landscape - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/health/2022/02/09/mask-mandate-end-governors-politics/?utm_source=openai"
+        },
+        {
+          "end_index": 3051,
+          "start_index": 2914,
+          "title": "Democrats are lifting mask mandates now but why? - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2022/02/10/democrats-are-lifting-mask-mandates-now-why/?utm_source=openai"
+        },
+        {
+          "end_index": 3501,
+          "start_index": 3378,
+          "title": "Governor Newsom to End the COVID-19 State of Emergency | Governor of California",
+          "type": "url_citation",
+          "url": "https://www.gov.ca.gov/2022/10/17/governor-newsom-to-end-the-covid-19-state-of-emergency/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "In early 2022, Democratic governors in blue states like New York (Hochul lifted indoor mask mandate Feb 10, [source](https://www.lawandtheworkplace.com/2022/02/governor-hochul-lifts-new-york-state-indoor-mask-mandate/)), California (mandate expired Feb 15 for unvaccinated, schools to recommendations March 11, [source](https://districtadministration.com/article/school-mask-tracker-who-is-and-isnt-loosening-the-rules/)), Illinois (Pritzker lifted indoor mandate Feb 28, [source](https://leadingage.org/state-state-face-mask-mandates/)), and Washington (Inslee shifted to recommendations March, [source](https://www.cnn.com/2022/02/28/health/mask-mandates-lifted)) rolled back broad mask mandates. Other blue states like NJ, OR, CT, DE followed suit ([source](https://www.usnews.com/news/health-news/articles/2022-02-08/democratic-states-move-away-from-mask-mandates)). No new lockdowns or closures were imposed; states pivoted from restrictions amid Omicron decline and fatigue, as noted in reports like 'Blue state governors... abandoning their mask mandates' ([NYT](https://www.nytimes.com/2022/02/09/health/mask-rules-cdc.html)) and 'Democratic governors ease mask requirements' ([CBS](https://www.cbsnews.com/news/covid-mask-requirements-democratic-governors/)). Emergency declarations ended progressively through 2022, fulfilling 'largely give up'."
+    },
+    {
+      "id": "sacks-00:49:56.130",
+      "result": "right",
+      "explanation": "By mid\u2011December 2021 (when the episode aired), Omicron was just emerging in the U.S. Within weeks, it produced the largest U.S. COVID wave of the pandemic. CDC data show that by mid\u2011January 2022 Omicron accounted for about 99\u2013100% of sequenced U.S. cases and was >96% of variants in every HHS region, with a seven\u2011day average of roughly 600\u2013750k reported cases per day and well over 70 million cumulative U.S. cases by late January. A detailed spatiotemporal study finds that from 1 Dec 2021 to 28 Feb 2022 the Omicron wave caused about 30 million U.S. cases and 170,000 deaths, spreading rapidly across the entire country. \n\nCrucially for the prediction, this explosive spread occurred despite ongoing public\u2011health restrictions in many \"blue\" jurisdictions. For example, California reinstated and then extended a statewide indoor mask mandate through at least mid\u2011February 2022 specifically because Omicron was driving a sharp surge; even with the mandate, the state\u2019s seven\u2011day average case rate increased more than sixfold and hospitalizations doubled over two weeks. New York maintained mask and vaccine rules in schools and many venues into early 2022, yet New York City still saw daily case counts climb from about 14,000 on December 24, 2021 to roughly 40,000\u201345,000 per day around New Year\u2019s, reflecting intense community spread under restrictions. Nationwide, the U.S. set records for both daily cases (around 1.25\u20131.5 million in mid\u2011January) and COVID hospitalizations during the Omicron wave. \n\nSubsequent modeling work suggests that earlier or stronger measures could have reduced the number and peak of Omicron infections, but it still characterizes the winter 2021\u201322 U.S. Omicron surge as causing tens of millions of cases despite significant interventions already in place. In practical terms, Omicron did spread very widely across the United States and was not contained or \u201cstopped\u201d by public\u2011health restrictions. That outcome matches Sacks\u2019s prediction that Omicron\u2019s spread would be effectively impossible to stop and that it would propagate broadly regardless of interventions.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Omicron spread rapidly and widely across the US starting late 2021, becoming dominant (~100% of cases by Jan 2022) and causing record surges (>700k daily cases, peak hospitalizations) despite ongoing public health measures like mask mandates, boosters, testing, and restrictions in many areas ([NYT Jan 2022](https://www.nytimes.com/2022/01/22/us/omicron-cases-us-deaths.html), [CDC MMWR](https://www.cdc.gov/mmwr/volumes/71/wr/mm7104e4.htm)). Models confirmed limited intervention impact due to high transmissibility ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9015536/), [WaPo](https://www.washingtonpost.com/health/interactive/2022/omicron-comparison-cases-deaths-hospitalizations/)). It peaked Feb 2022 then declined, validating uncontainable spread."
+    },
+    {
+      "id": "sacks-00:51:29.700",
+      "result": "right",
+      "explanation": "Evidence from early 2022 shows that some heavily Democratic (\u201cblue\u201d) states and districts did, in fact, **re\u2011impose temporary COVID\u2011related school closures**, while many Republican\u2011leaning (\u201cred\u201d) states kept schools largely open for in\u2011person learning.\n\n* In January 2022, the Omicron wave led to thousands of pandemic\u2011related school disruptions nationwide, but NPR\u2019s summary of Burbio data noted that **\u201cthe vast majority of U.S. schools are staying open for in\u2011person learning,\u201d** even as at least 3,229 schools temporarily cancelled in\u2011person learning that week. Many of the named full\u2011district closures were in blue jurisdictions: Newark, Paterson, and Elizabeth in New Jersey; Mount Vernon in New York; Pontiac and Detroit in Michigan; and Prince George\u2019s County in Maryland.([ijpr.org](https://www.ijpr.org/education/2022-01-03/officials-are-determined-to-keep-schools-open-despite-omicron?utm_source=openai))\n* Newark Public Schools (NJ) explicitly **shifted the entire district to remote instruction from Jan. 3\u201314, 2022**, with an anticipated return to in\u2011person learning on Jan. 18 because of COVID surges.([nps.k12.nj.us](https://www.nps.k12.nj.us/press-releases/newark-public-schools-will-be-remote-on-january-3-2022/?utm_source=openai)) Detroit Public Schools Community District (MI) likewise moved to online learning in early January and then **extended remote learning until late January** before reopening for in\u2011person classes.([chalkbeat.org](https://www.chalkbeat.org/detroit/2022/1/4/22866662/online-learning-detroit-district-dpscd-in-person-learning-covid-omicron/?utm_source=openai)) Prince George\u2019s County Public Schools (MD) moved all schools to **virtual learning from Dec. 20, 2021, through Jan. 14, 2022**, returning to buildings only after the Martin Luther King Jr. holiday.([nbcwashington.com](https://www.nbcwashington.com/news/local/prince-georges-public-school-to-go-virtual/2913269/?utm_source=openai)) These are all in states that vote solidly Democratic in national elections.\n* By contrast, in **Texas** (a reliably Republican state), reporting at the start of January 2022 described many districts that \u201c**opted to power through omicron**\u201d and reopen after the holiday break with in\u2011person classes, with only some smaller districts briefly extending winter break rather than shifting to weeks of remote instruction.([texastribune.org](https://www.texastribune.org/2022/01/04/texas-schools-omicron/?utm_source=openai)) That aligns with the prediction that red states would be more inclined to keep schools operating \u201cnormally\u201d in person.\n* National data from the U.S. Department of Education\u2019s **School Pulse Panel / NCES** show that for December\u2013February 2022, **less than 2% of public\u2011school 4th\u2011 and 8th\u2011graders were enrolled in remote learning**, and most states\u2014red and blue\u2014had **98\u201399% of students attending school full\u2011time in person**.([nces.ed.gov](https://nces.ed.gov/whatsnew/press_releases/3_3_2022.asp?utm_source=openai)) This confirms that closures in 2022 were generally **short\u2011lived and localized**, not a return to the prolonged, nationwide shutdowns of 2020\u201321, but it does not contradict the narrower claim that *some* blue states would re\u2011impose closures while schools overall mostly stayed open.\n* On learning loss, 2022 National Assessment of Educational Progress data show that average scores for 9\u2011year\u2011olds **fell 5 points in reading and 7 points in math** versus pre\u2011pandemic results, confirming severe pandemic\u2011era learning loss persisting into 2022.([congress.gov](https://www.congress.gov/event/117th-congress/house-event/LC74453/text?utm_source=openai)) While most of this damage stems from earlier disruptions, additional short closures in early 2022 in the blue jurisdictions above naturally contributed at the margin.\n* Finally, earlier research on the 2020\u201321 period had already documented a strong partisan pattern in school modality choices: districts in heavily Democratic counties were **about three times as likely to open fully remote**, while heavily Republican counties were much more likely to offer in\u2011person instruction.([phys.org](https://phys.org/news/2021-10-political-partisanship-in-person-schooling-pandemic.html?utm_source=openai)) The 2022 Omicron responses in Newark, Detroit, Prince George\u2019s County, etc., are consistent with that same partisan asymmetry Sacks was extrapolating from.\n\nPutting this together: in 2022 there *were* fresh, COVID\u2011driven school closures concentrated in Democratic\u2011leaning states/districts, while Republican states like Texas largely kept schools open in person, and substantial learning loss was evident by 2022. The prediction somewhat **overstated the scale and duration** of renewed closures (they were mostly weeks, not months), but its **directional claims about where closures would recur and who would stay open were borne out**, so it is best classified as **right** overall.",
+      "sources": [
+        {
+          "end_index": 951,
+          "start_index": 816,
+          "title": "Officials are determined to keep schools open, despite omicron | Jefferson Public Radio",
+          "type": "url_citation",
+          "url": "https://www.ijpr.org/education/2022-01-03/officials-are-determined-to-keep-schools-open-despite-omicron?utm_source=openai"
+        },
+        {
+          "end_index": 1286,
+          "start_index": 1153,
+          "title": "Newark Public Schools Will be Remote On January 3, 2022 - Newark Board of Education",
+          "type": "url_citation",
+          "url": "https://www.nps.k12.nj.us/press-releases/newark-public-schools-will-be-remote-on-january-3-2022/?utm_source=openai"
+        },
+        {
+          "end_index": 1642,
+          "start_index": 1481,
+          "title": "Detroit district moves to online learning amid COVID surge - Chalkbeat",
+          "type": "url_citation",
+          "url": "https://www.chalkbeat.org/detroit/2022/1/4/22866662/online-learning-detroit-district-dpscd-in-person-learning-covid-omicron/?utm_source=openai"
+        },
+        {
+          "end_index": 1973,
+          "start_index": 1840,
+          "title": "Prince George\u2019s Public Schools to Go Virtual \u2013 NBC4 Washington",
+          "type": "url_citation",
+          "url": "https://www.nbcwashington.com/news/local/prince-georges-public-school-to-go-virtual/2913269/?utm_source=openai"
+        },
+        {
+          "end_index": 2493,
+          "start_index": 2391,
+          "title": "Omicron complicates Texas public schools\u2019 plans to reopen after holidays | The Texas Tribune",
+          "type": "url_citation",
+          "url": "https://www.texastribune.org/2022/01/04/texas-schools-omicron/?utm_source=openai"
+        },
+        {
+          "end_index": 3011,
+          "start_index": 2920,
+          "title": "Press Release - U.S. Schools Report Increased Teacher Vacancies Due to COVID-19 Pandemic, New NCES Data Show - March 3, 2022",
+          "type": "url_citation",
+          "url": "https://nces.ed.gov/whatsnew/press_releases/3_3_2022.asp?utm_source=openai"
+        },
+        {
+          "end_index": 3662,
+          "start_index": 3556,
+          "title": "BACK TO SCHOOL: MEETING STUDENTS' ACADEMIC, SOCIAL, AND EMOTIONAL NEEDS | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/event/117th-congress/house-event/LC74453/text?utm_source=openai"
+        },
+        {
+          "end_index": 4263,
+          "start_index": 4145,
+          "title": "How political partisanship governed in-person schooling during pandemic",
+          "type": "url_citation",
+          "url": "https://phys.org/news/2021-10-political-partisanship-in-person-schooling-pandemic.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No Democratic-leaning states re-imposed COVID-related school closures in 2022 at the statewide level; schools nationwide remained predominantly open during the Omicron wave (Jan-Feb 2022), with only short-term, local district-level disruptions (median 2 days) due to staffing shortages rather than policy mandates. State/local mandates accounted for just 1.6% of district closures in the 2021-22 school year ([CDC study](https://wwwnc.cdc.gov/eid/article/30/1/23-1215_article)). While blue states like CA, IL, CO had slightly higher mandate proportions and more disruptions, red states like FL, TX actively kept schools open (e.g., DeSantis statements). Nationwide trackers like Burbio showed <3% schools closed at peak. Learning loss was primarily from 2020-21, not additional 2022 closures ([NYT](https://www.nytimes.com/2024/03/18/upshot/pandemic-school-closures-data.html); [Education Next](https://www.educationnext.org/red-states-have-seen-less-learning-loss-post-pandemic-scores-nations-report-card-naep/)). EdWeek timeline confirms no statewide closures in 2022."
+    },
+    {
+      "id": "sacks-00:51:29.700-redwave",
+      "result": "wrong",
+      "explanation": "The prediction had two key components, and both failed:\n\n1. **A national Republican \u201cred wave\u201d in November 2022.**  In the 2022 U.S. midterms, Republicans gained only a narrow House majority while Democrats *held* the Senate and actually gained a net **two** governorships (Republicans went from 28 to 26 governors, Democrats from 22 to 24). Analyses across the political spectrum noted that the widely expected \u201cred wave\u201d did **not** materialize. This directly contradicts the forecast of a sweeping red wave.\n\n2. **Democratic governors with strict COVID policies would mostly lose, with Newsom as the only one left.**  In the 2022 gubernatorial elections, numerous high\u2011profile Democratic incumbents who had imposed relatively strict COVID measures were re\u2011elected, often comfortably: Gretchen Whitmer in Michigan, Jared Polis in Colorado, J.B. Pritzker in Illinois, Tony Evers in Wisconsin, Kathy Hochul in New York, and Michelle Lujan Grisham in New Mexico all won new terms. Gavin Newsom was re\u2011elected in California, but he was *far from* the \u201conly one left standing.\u201d The overall gubernatorial map shifted slightly **toward** Democrats rather than against them.  \n\nBecause there was no broad red wave and most prominent Democratic governors with strong COVID restrictions retained office, the prediction is **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction of a Republican 'red wave' in the 2022 elections sweeping out Democratic governors with strict COVID restrictions, leaving Gavin Newsom as the likely only survivor, did not occur. No red wave materialized: Republicans gained a narrow House majority (net +9 seats) but Democrats held the Senate (net +1) and gained a net +2 governorships (from 22 to 24), per [Wikipedia 2022 elections](https://en.wikipedia.org/wiki/2022_United_States_elections) and [Politico analysis](https://www.politico.com/news/2022/11/09/2022-election-results-analysis-and-takeaways-00065878). Among 15 Democratic incumbent governors seeking re-election, 14 won (only NV's Steve Sisolak lost), including strict COVID policy states like CA (Newsom 59%), MI (Whitmer 55%), IL (Pritzker 55%), NY (Hochul 53%), MN (Walz 52%), NM (Lujan Grisham 52%), per [Wikipedia gubernatorial elections](https://en.wikipedia.org/wiki/2022_United_States_gubernatorial_elections). Multiple strict Dem governors (e.g., Whitmer, Pritzker, Hochul) easily won re-election, contradicting the claim Newsom would be the only one remaining."
+    },
+    {
+      "id": "C-00:50:29.530",
+      "result": "inconclusive",
+      "explanation": "Available data show that a **large share, but not clearly \u201c(almost) everyone,\u201d** has been infected with SARS\u2011CoV\u20112 so far, and the prediction is explicitly about *eventual* (lifetime) infection, which we cannot yet observe.\n\nKey points:\n\n- In the United States, CDC seroprevalence data from blood donors estimated that by **July\u2013September 2022, 96.4% of persons \u226516 years had antibodies from infection or vaccination**, but only about **70% had infection\u2011induced antibodies** (infection alone or hybrid immunity). This leaves a substantial minority with no serologic evidence of prior infection at that time.\n  \n  \u2022 Any antibodies: 96.4%  \n  \u2022 Infection alone: 22.6%  \n  \u2022 Vaccination alone: 26.1%  \n  \u2022 Hybrid (infection + vaccination): 47.7%  \n  \u2192 Infection\u2011induced total \u2248 70.3%. ([cdc.gov](https://www.cdc.gov/mmwr/volumes/72/wr/mm7222a3.htm?utm_source=openai))\n\n- A separate CDC analysis using NHANES data (Aug 2021\u2013May 2022) found that **41.6% of adults had anti\u2011N antibodies**, indicating prior infection, and noted that commercial lab surveillance for Jan\u2013Feb 2022 estimated **57.7% infection\u2011induced seroprevalence** for the overall U.S. population. ([cdc.gov](https://www.cdc.gov/mmwr/volumes/71/wr/mm7148a4.htm?utm_source=openai))\n\n- CDC\u2019s summary of U.S. antibody seroprevalence indicates that by the **end of 2023**, *over 95% of adults and 90% of children* had antibodies to SARS\u2011CoV\u20112, but this includes **vaccine\u2011only antibodies** and does **not** mean nearly everyone has been infected at least once. ([cdc.gov](https://www.cdc.gov/covid/php/antibody-seroprevalence/index.html?utm_source=openai))\n\n- Globally, the WHO stated in December 2022 that it estimated **at least 90% of the world\u2019s population had some level of immunity to SARS\u2011CoV\u20112 from vaccination or prior infection**, again reflecting immunity, not universal infection. ([theguardian.com](https://www.theguardian.com/world/2022/dec/03/who-estimates-90-of-world-have-some-resistance-to-covid?utm_source=openai))\n\nWhat this implies for the prediction:\n\n- The normalized prediction is that *eventually, essentially everyone (or nearly everyone) will contract COVID\u201119*.\n- As of late 2025, evidence shows **most people have either been infected or vaccinated**, and a **majority** have likely been infected at least once, but there is **no robust evidence** that infection has already reached \u201calmost everyone\u201d (e.g., >90\u201395%) globally or even nationally.\n- Because the claim is about what happens *eventually* (over people\u2019s lifetimes) and the virus continues to circulate with uncertain long\u2011term dynamics, we cannot currently determine whether **\u201cnearly everyone\u201d** will, in fact, be infected at least once.\n\nTherefore, the prediction cannot fairly be scored as either clearly right or clearly wrong at this time; it rests on long\u2011run outcomes we have not yet observed and on an imprecise threshold for \u201cessentially everyone.\u201d Hence the result is **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 915,
+          "start_index": 833,
+          "title": "Estimates of SARS-CoV-2 Seroprevalence and Incidence of Primary SARS-CoV-2 Infections Among Blood Donors, by COVID-19 Vaccination Status \u2014 United States, April 2021\u2013September 2022 | MMWR",
+          "type": "url_citation",
+          "url": "https://www.cdc.gov/mmwr/volumes/72/wr/mm7222a3.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1293,
+          "start_index": 1211,
+          "title": "SARS-CoV-2 Serology and Self-Reported Infection Among Adults \u2014 National Health and Nutrition Examination Survey, United States, August 2021\u2013May 2022 | MMWR",
+          "type": "url_citation",
+          "url": "https://www.cdc.gov/mmwr/volumes/71/wr/mm7148a4.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1667,
+          "start_index": 1572,
+          "title": "Antibody Seroprevalence | COVID-19 | CDC",
+          "type": "url_citation",
+          "url": "https://www.cdc.gov/covid/php/antibody-seroprevalence/index.html?utm_source=openai"
+        },
+        {
+          "end_index": 2046,
+          "start_index": 1906,
+          "title": "WHO estimates 90% of world have some resistance to Covid | Coronavirus | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/world/2022/dec/03/who-estimates-90-of-world-have-some-resistance-to-covid?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By the end of 2022, estimates indicated that more than 70% of the global population had been infected with COVID-19 ([Wikipedia](https://en.wikipedia.org/wiki/COVID-19_pandemic), citing sources on Omicron spread and end of acute phase). IHME estimated 57% by Jan 2022, rising thereafter. WHO noted \u226590% immunity by Dec 2022 (infection + vaccination). Subsequent waves (2023-2025) with endemic circulation increased exposure further. Confirmed cases (~778M, ~9.5% of ~8.1B world pop per [areppim.com July 2025](https://stats.areppim.com/stats/stats_covid_19_20250713.htm), [Worldometer](https://www.worldometers.info/coronavirus/)) severely underestimate true infections due to limited testing ([OWID](https://ourworldindata.org/covid-cases)). Colloquial expert views confirm 'nearly everyone has had COVID' (e.g., [LAist 2024](https://laist.com/news/health/researchers-say-covid-19-virus-can-stay-in-the-body-up-to-two-years)). Prediction of widespread infection despite precautions held true."
+    },
+    {
+      "id": "B-00:50:25.690",
+      "result": "wrong",
+      "explanation": "Evidence from the November 2022 gubernatorial elections shows that Sacks\u2019s prediction did not come true.\n\n*National outcome*\n- In the 2022 gubernatorial elections, Democrats **gained** governorships overall: they went from 22 to 24 governors, while Republicans went from 28 down to 26, a net **Democratic gain of two** rather than a Republican \u201cred wave.\u201d ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_United_States_gubernatorial_elections?utm_source=openai))\n- Only **one Democratic incumbent governor lost** re-election: Steve Sisolak in Nevada. Republicans flipped just that single Democratic-held governorship, while Democrats flipped Arizona, Maryland, and Massachusetts from Republicans. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_United_States_gubernatorial_elections?utm_source=openai))\n- Post\u2011election analyses widely noted that the anticipated GOP \u201cred wave\u201d in the 2022 midterms largely **failed to materialize**. ([states.xhirp.com](https://states.xhirp.com/us%20politics/2022/12/20/2022-midterms.html?utm_source=openai))\n\n*Blue/swing-state Democratic governors with strict COVID policies*\nNumerous Democratic governors from blue or swing states that had relatively strict COVID rules and significant school closures were re\u2011elected in 2022:\n- **Gretchen Whitmer (Michigan)** was re\u2011elected by about 54.5%\u201343.9%, a margin near 11 points. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Michigan_gubernatorial_election?utm_source=openai))\n- **Tim Walz (Minnesota)** was re\u2011elected 52.3%\u201344.6%. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Minnesota_gubernatorial_election?utm_source=openai))\n- **JB Pritzker (Illinois)** won re\u2011election 54.9%\u201342.4%. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Illinois_gubernatorial_election?utm_source=openai))\n- **Kathy Hochul (New York)** won a full term 53.1%\u201346.7%. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_New_York_gubernatorial_election?utm_source=openai))\n- **Gavin Newsom (California)** himself was re\u2011elected with about 59.2% of the vote. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_California_gubernatorial_election?utm_source=openai))\n\nThese and other Democratic governors (e.g., in Maine, Connecticut, New Mexico, Wisconsin, Kansas) retained office, and Democrats *added* governorships in deep-blue states like Maryland and Massachusetts. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_United_States_gubernatorial_elections?utm_source=openai))\n\nBecause:\n1. There was no broad Republican \u201cred wave\u201d in gubernatorial races,\n2. Most blue-state or COVID\u2011strict Democratic governors were **not** voted out in 2022, and\n3. Newsom was **far from the only** such Democrat left in office,\n\nSacks\u2019s prediction is best categorized as **wrong**.",
+      "sources": [
+        {
+          "end_index": 504,
+          "start_index": 392,
+          "title": "2022 United States gubernatorial elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_United_States_gubernatorial_elections?utm_source=openai"
+        },
+        {
+          "end_index": 852,
+          "start_index": 740,
+          "title": "2022 United States gubernatorial elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_United_States_gubernatorial_elections?utm_source=openai"
+        },
+        {
+          "end_index": 1092,
+          "start_index": 984,
+          "title": "Analysis of the 2022 Midterm Elections",
+          "type": "url_citation",
+          "url": "https://states.xhirp.com/us%20politics/2022/12/20/2022-midterms.html?utm_source=openai"
+        },
+        {
+          "end_index": 1519,
+          "start_index": 1413,
+          "title": "2022 Michigan gubernatorial election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Michigan_gubernatorial_election?utm_source=openai"
+        },
+        {
+          "end_index": 1683,
+          "start_index": 1576,
+          "title": "2022 Minnesota gubernatorial election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Minnesota_gubernatorial_election?utm_source=openai"
+        },
+        {
+          "end_index": 1849,
+          "start_index": 1743,
+          "title": "2022 Illinois gubernatorial election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Illinois_gubernatorial_election?utm_source=openai"
+        },
+        {
+          "end_index": 2016,
+          "start_index": 1910,
+          "title": "2022 New York gubernatorial election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_New_York_gubernatorial_election?utm_source=openai"
+        },
+        {
+          "end_index": 2211,
+          "start_index": 2103,
+          "title": "2022 California gubernatorial election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_California_gubernatorial_election?utm_source=openai"
+        },
+        {
+          "end_index": 2531,
+          "start_index": 2419,
+          "title": "2022 United States gubernatorial elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_United_States_gubernatorial_elections?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction did not materialize. There was no broad Republican 'red wave' in the 2022 midterms; Republicans gained a narrow House majority but Democrats held the Senate, and gubernatorial results were split 18-18 with no wave ousting Democratic governors ([Wikipedia: 2022 gubernatorial elections](https://en.wikipedia.org/wiki/2022_United_States_gubernatorial_elections); [Politico](https://www.politico.com/news/2022/11/09/2022-election-results-analysis-and-takeaways-00065878); [NYT](https://www.nytimes.com/2022/12/31/us/politics/polling-election-2022-red-wave.html)). No Democratic governors in solid blue states (e.g., CA, NY, IL) lost re-election despite past COVID policies: Gavin Newsom won 59%-40% ([NYT California results](https://www.nytimes.com/interactive/2022/11/08/us/elections/results-california-governor.html)); Kathy Hochul (NY) won 53%-47%; JB Pritzker (IL) won 55%-42% ([Ballotpedia](https://ballotpedia.org/Election_results,_2022:_Governors); [Politico IL](https://www.politico.com/2022-election/results/illinois/statewide-offices/)). The only Democratic incumbent loss was Steve Sisolak in swing-state Nevada, partly due to COVID lockdowns ([Reason](https://reason.com/2022/11/11/covid-lockdown-helps-bounce-democratic-governor-in-nevada/)). During Omicron (Jan 2022), blue-state governors urged schools open, avoiding new statewide closures/lockdowns ([Politico](https://www.politico.com/news/2022/01/04/biden-schools-omicron-526474)). Multiple blue-state Democratic governors survived, contradicting the 'only Newsom' claim."
+    },
+    {
+      "id": "B-00:52:02.670",
+      "result": "right",
+      "explanation": "Evidence from 2022 supports Sacks\u2019s prediction that there would be a **political and economic correction** away from what he called COVID \u201coverreaction\u201d policies, with the U.S. largely past those policies by the end of 2022, even though COVID itself was not fully over.\n\n**1. Economic correction of stimulus / monetary policy**\n- The major rounds of federal pandemic fiscal stimulus (CARES Act 2020, Consolidated Appropriations Act 2020, American Rescue Plan 2021) had all effectively ended by 2022; no comparable broad stimulus programs were renewed that year, despite continuing COVID circulation.  \n- The Federal Reserve pivoted sharply from ultra\u2011loose policy to aggressive tightening in 2022, raising the federal funds rate from near 0% in March 2022 to over 4% by December 2022\u2014explicitly as a response to inflation partly attributed to prior stimulus and pandemic distortions, not to extend COVID-era support. (This is widely documented in Fed summaries and 2022 FOMC statements.)  \n- Pandemic emergency programs like enhanced unemployment benefits and broad stimulus checks were not restarted in 2022, indicating a clear policy correction from the earlier expansive response.\n\n**2. Rollback of restrictive COVID policies (lockdowns, school closures, broad mandates)**\n- By early 2022, U.S. **schools were overwhelmingly open for in\u2011person learning**; the 2021\u201322 school year saw a major shift back to normal operations, and full, long\u2011term school closures had largely ended, with only short-term or localized disruptions. (This is documented in reports from the U.S. Department of Education and multiple education research groups summarizing 2022 operations.)  \n- **Lockdown-style stay-at-home orders and business-closure mandates were not in force across the U.S. in late 2022.** Most states had already lifted such orders in 2020\u20132021 and did not bring them back in 2022, even during later COVID waves.  \n- **Mask and vaccine mandates were rolled back through 2022.** The CDC dropped its universal indoor masking recommendation for most of the country in February 2022 with its new \u201ccommunity levels\u201d guidance, after which many states and cities ended indoor mask mandates, including in schools and businesses, and they were not broadly re\u2011imposed by year\u2011end 2022.  \n\n**3. COVID not over, but response normalized**\n- Throughout 2022, COVID cases, hospitalizations, and deaths continued in waves (e.g., Omicron BA.2, BA.5, and later variants), and booster campaigns continued. However, the federal and state responses shifted toward **living with the virus**: focus on vaccines/boosters and therapeutics, voluntary masking, and minimal use of emergency-style restrictions. This is consistent with Sacks\u2019s framing that \u201cwe may not be completely past Covid, but \u2026 past this sort of overreaction to Covid.\u201d\n\n**Assessment vs. the prediction**\n- He forecast \u201ca further correction both political and economic in 2022\u201d and that by then the U.S. would be **past the overreaction** (huge stimulus, lockdowns, school and broad restrictions) even if COVID itself persisted.\n- By the end of 2022:\n  - Large-scale fiscal stimulus had ended and monetary policy had not only normalized but reversed hard.\n  - Lockdowns and broad school closures were gone, and national guidance and state policies had moved away from stringent restrictions.\n  - COVID was still present, but treated more as an endemic risk with far lighter, more targeted policies.\n\nGiven these facts, Sacks\u2019s prediction matches the observed political and economic trajectory in 2022, so the prediction is **right**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "By the end of 2022, the U.S. had enacted a significant political and economic correction to COVID-19 overreactions. Lockdowns and mask mandates ended nationwide by early 2022 (e.g., nearly half of state mandates lifted by Feb 2022 per NBC News; federal transport mask mandate struck down April 2022 per Reuters). Schools were fully reopened, with Biden admin emphasizing staying open (White House Aug 2022). Monetary policy shifted: Fed began aggressive rate hikes March 2022, reaching 4.25-4.5% by Dec (Federal Reserve data). No major new fiscal stimulus in 2022 after 2021 ARP; focus turned to inflation control. Politically, COVID faded from midterms discourse amid backlash (US News Oct 2022). COVID persisted (e.g., Omicron subvariants), but restrictive policies were largely abandoned, matching the prediction. Sources: CDC timeline, Fed calendars, NYT/NBC on mandates, Wikipedia timelines."
+    },
+    {
+      "id": "D-01:09:02.810",
+      "result": "inconclusive",
+      "explanation": "The prediction is framed over **\u201cthe next decade\u201d after 2021** (i.e., roughly 2021\u20132031). As of late 2025, we are only ~4 years into that window, so it is too early to say definitively whether RNA-based technologies *will* have \u201ctransformed how medicine is delivered\u201d across a wide range of diseases by 2031.\n\nWhat we can say so far:\n\n- **Clear progress and early impact**:\n  - mRNA vaccines went from COVID-19 use to broader infectious-disease applications. Moderna\u2019s mRNA RSV vaccine (mRESVIA) became the first non\u2011COVID mRNA vaccine approved in the U.S. and EU in 2024 and has since had its indication expanded (e.g., adults \u226560 and at\u2011risk adults 18\u201359). ([investors.modernatx.com](https://investors.modernatx.com/news/news-details/2024/Moderna-Receives-U.S.-FDA-Approval-for-RSV-Vaccine-mRESVIAR/default.aspx?utm_source=openai))\n  - mRNA cancer vaccines are showing strong Phase 2 results. Moderna and Merck\u2019s individualized neoantigen therapy mRNA\u20114157 (V940) combined with Keytruda reduced recurrence or death by ~44\u201349% in high\u2011risk melanoma and is now in Phase 3 and being tested in other cancers, but it is **not yet an approved standard treatment**. ([merck.com](https://www.merck.com/news/moderna-and-merck-announce-mrna-4157-v940-an-investigational-individualized-neoantigen-therapy-in-combination-with-keytruda-pembrolizumab-demonstrated-superior-recurrence-free-survival-in/?utm_source=openai))\n\n- **Genetic and rare diseases: promising but still early**:\n  - The first CRISPR gene\u2011editing therapy (Casgevy/exa\u2011cel) has been approved for sickle cell disease and beta\u2011thalassemia, offering functional cures for some patients. This is a major step for gene editing, but use is still limited to highly selected patients and complex centers. ([news.vrtx.com](https://news.vrtx.com/news-releases/news-release-details/vertex-and-crispr-therapeutics-announce-us-fda-approval?utm_source=openai))\n  - In 2025, researchers reported the first **in vivo mRNA\u2011based personalized CRISPR therapy** (mRNA-encoded base editor in lipid nanoparticles) for an infant with a lethal urea cycle disorder\u2014an N-of\u20111, proof\u2011of\u2011concept treatment showing what might be possible, but not yet a scalable modality. ([idtdna.com](https://www.idtdna.com/pages/about/news/2025/05/15/aldevron-and-integrated-dna-technologies-manufacture-world-s-first-mrna-based-personalized-crispr-therapy?utm_source=openai))\n  - RNA interference (siRNA) and related RNA drugs are steadily entering practice (e.g., patisiran and vutrisiran for hereditary transthyretin amyloidosis, inclisiran for LDL lowering, plozasiran for familial chylomicronemia, all approved or expanded by 2025). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Patisiran?utm_source=openai))  Large pharma is making multi\u2011billion\u2011dollar bets on RNA platforms (e.g., Novartis\u2019s ~$12B acquisition of Avidity Biosciences for RNA therapeutics for neuromuscular diseases, with launches anticipated before 2030), indicating expectations that RNA will become a major modality later this decade, but that is still prospective. ([novartis.com](https://www.novartis.com/news/media-releases/novartis-agrees-acquire-avidity-biosciences-innovator-rna-therapeutics-strengthening-its-late-stage-neuroscience-pipeline?utm_source=openai))\n\n- **Has it *already* transformed medicine broadly by 2025?**\n  - mRNA has clearly transformed *vaccine* development (COVID-19 and RSV) and is reshaping parts of infectious-disease prevention.\n  - For **cancer and most genetic diseases**, RNA-based approaches remain largely in clinical trials, early commercial use, or ultra\u2011rare/experimental settings, not yet a dominant, routine modality across a \u201cwide range\u201d of conditions.\n\nGiven that:\n- The prediction\u2019s **end date (around 2031) has not arrived**, and\n- Current evidence shows **strong momentum but not yet the broad, system\u2011wide transformation across cancers and genetic diseases** that the quote envisions,\n\nthe best judgment at this time is **\u201cinconclusive (too early)\u201d**. The trajectory so far is consistent with Friedberg\u2019s thesis, but it is impossible in 2025 to say with confidence that RNA technologies *will* achieve the full transformative impact he predicted by the end of the decade.",
+      "sources": [
+        {
+          "end_index": 878,
+          "start_index": 704,
+          "title": "Moderna Receives U.S. FDA Approval for RSV Vaccine mRESVIA(R)",
+          "type": "url_citation",
+          "url": "https://investors.modernatx.com/news/news-details/2024/Moderna-Receives-U.S.-FDA-Approval-for-RSV-Vaccine-mRESVIAR/default.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 1455,
+          "start_index": 1207,
+          "title": "Moderna and Merck Announce mRNA-4157 (V940), an Investigational Individualized Neoantigen Therapy, in Combination With KEYTRUDA\u00ae (pembrolizumab), Demonstrated Superior Recurrence-Free Survival in Patients With High-Risk Stage III/IV Melanoma Following Complete Resection Versus KEYTRUDA - Merck.com",
+          "type": "url_citation",
+          "url": "https://www.merck.com/news/moderna-and-merck-announce-mrna-4157-v940-an-investigational-individualized-neoantigen-therapy-in-combination-with-keytruda-pembrolizumab-demonstrated-superior-recurrence-free-survival-in/?utm_source=openai"
+        },
+        {
+          "end_index": 1951,
+          "start_index": 1802,
+          "title": "Vertex and CRISPR Therapeutics Announce US FDA Approval of CASGEVY\u2122 (exagamglogene autotemcel) for the Treatment of Sickle Cell Disease | Vertex Pharmaceuticals Newsroom",
+          "type": "url_citation",
+          "url": "https://news.vrtx.com/news-releases/news-release-details/vertex-and-crispr-therapeutics-announce-us-fda-approval?utm_source=openai"
+        },
+        {
+          "end_index": 2439,
+          "start_index": 2249,
+          "title": "World\u2019s First mRNA CRISPR Therapy for UCD | IDT",
+          "type": "url_citation",
+          "url": "https://www.idtdna.com/pages/about/news/2025/05/15/aldevron-and-integrated-dna-technologies-manufacture-world-s-first-mrna-based-personalized-crispr-therapy?utm_source=openai"
+        },
+        {
+          "end_index": 2781,
+          "start_index": 2702,
+          "title": "Patisiran",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Patisiran?utm_source=openai"
+        },
+        {
+          "end_index": 3311,
+          "start_index": 3109,
+          "title": "Novartis agrees to acquire Avidity Biosciences, an innovator in RNA therapeutics, strengthening its late-stage neuroscience pipeline | Novartis",
+          "type": "url_citation",
+          "url": "https://www.novartis.com/news/media-releases/novartis-agrees-acquire-avidity-biosciences-innovator-rna-therapeutics-strengthening-its-late-stage-neuroscience-pipeline?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction covers 2021-2031, and as of Dec 2025 (4 years in), mRNA tech shows strong progress beyond COVID vaccines\u2014e.g., promising Phase 1/2 trials for pancreatic/melanoma cancer vaccines ([Brighter Side News, Mar 2025](https://www.thebrighterside.news/post/breakthrough-mrna-vaccine-reinvents-pancreatic-cancer-treatment/); [MD Anderson, Oct 2025](https://www.mdanderson.org/newsroom/research-newsroom/-esmo-2025--mrna-based-covid-vaccines-generate-improved-response.h00-159780390.html)) and potential for genetic diseases ([ScienceDirect, 2024](https://www.sciencedirect.com/science/article/abs/pii/S0168365924002207))\u2014but no FDA approvals for non-COVID mRNA therapies for cancers/genetic diseases ([FDA approvals lists, 2021-2025](https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2025); [ASGCT Q3 2025 report](https://www.asgct.org/uploads/files/general/Landscape-Report-2025-Q3.pdf)). Not yet a 'major modality' or materially changing delivery; too early to judge full decade."
+    },
+    {
+      "id": "D-01:22:12.550",
+      "result": "wrong",
+      "explanation": "Available election data show that Friedberg\u2019s prediction of a broad, anti\u2011incumbent wave in local U.S. politics did **not** materialize, even though there were several high\u2011profile exceptions that fit his narrative.\n\n**1. Overall incumbents mostly *kept* their jobs, including locally.**\n- Ballotpedia\u2019s nationwide analysis of the Nov. 8, 2022 general elections found that, across all levels (federal, state, and local), about **94% of incumbents who ran were re\u2011elected**, with **local\u2011level incumbents still winning about 90% of the time** and local legislative incumbents about 84%. ([inkl.com](https://www.inkl.com/news/94-of-incumbents-won-re-election-in-2022-general-election?utm_source=openai))\n- A political science study of 2022 state house races found **96% of state legislative incumbents on the November 2022 ballot won re\u2011election**, the highest rate since at least 2010. ([degruyterbrill.com](https://www.degruyterbrill.com/document/doi/10.1515/for-2023-2003/html?utm_source=openai))\n- U.S. House incumbents remained extremely safe as well, with re\u2011election rates around the mid\u201190% range. ([x.com](https://x.com/i/grok/share/1iyJlBeWc94etYBs6zFPRYNZc?utm_source=openai))\n\nThese figures point to continuity, not \u201cwidespread local political turnover.\u201d\n\n**2. School boards saw more contestation, but still no mass throw\u2011the\u2011bums\u2011out wave.**\n- In large districts Ballotpedia tracks, **incumbents won about 53% of school\u2011board seats in 2022**, down from 60% in 2020 but still a majority; non\u2011incumbent candidacies increased, yet incumbents remained more likely than not to retain seats. ([inkl.com](https://www.inkl.com/news/school-board-candidates-running-per-seat-increased-each-year-from-2020-to-2022?utm_source=openai))\n- A broader study of school\u2011board elections found that when incumbents do run, they win **over 80% of the time**, and that turnover is driven mostly by incumbents stepping down, not by voters ousting them for poor performance. ([edweek.org](https://www.edweek.org/leadership/few-school-board-races-are-competitive-heres-why/2025/06?utm_source=openai))\n\nSo even in the area (education/schools) he specifically mentioned, voters did not generally remove incumbents en masse.\n\n**3. What *did* happen: notable but geographically limited backlash cases.**\nThere were several prominent examples matching his mechanism\u2014voters angered over crime, schools, or perceived mismanagement ousting local leaders:\n- **San Francisco school board recall (Feb. 2022):** Voters overwhelmingly removed three school\u2011board commissioners in a rare recall, blaming them for mismanaging the district and prioritizing symbolic issues over reopening schools. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_San_Francisco_Board_of_Education_recall_elections?utm_source=openai))\n- **San Francisco DA Chesa Boudin recall (June 2022):** 55% voted to recall him, with analyses tying the result to frustration over street conditions, property crime, and public safety. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_San_Francisco_District_Attorney_recall_election?utm_source=openai))\n- **Baltimore City State\u2019s Attorney (2022 primary):** Incumbent Marilyn Mosby lost the Democratic primary to Ivan Bates, who campaigned on changing prosecutorial leadership amid concerns that crime was \u201cout of control.\u201d ([thegrio.com](https://thegrio.com/2022/07/23/mosby-prosecutor-primary-defeat/?utm_source=openai))\n- **Alameda County DA Pamela Price recall (2024):** Voters removed another progressive prosecutor just two years into her term, again amid intense debate over crime and prosecution policies. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Alameda_County_District_Attorney_recall_election?utm_source=openai))\n- **Oakland Mayor Sheng Thao recall (2024):** Thao was recalled less than two years into her first term, with coverage emphasizing voter anger over crime, homelessness, business departures, and a federal corruption probe. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Oakland_mayoral_recall_election?utm_source=openai))\n- **Bay Area \u201crecall fever\u201d:** Local media described a broader regional trend in which multiple Bay Area officials (school\u2011board members, district attorneys, supervisors, mayors) were removed via recalls over quality\u2011of\u2011life and governance concerns. ([kqed.org](https://www.kqed.org/news/12061468/the-latest-bay-area-recall-campaign-is-over-a-six-story-apartment-building/?utm_source=openai))\n- **2025 Utah local races:** Reporting on municipal elections in Utah noted an unusually high number of incumbent mayors losing, with observers explicitly describing a \u201cpush against incumbency\u201d tied to frustration over affordability, growth, and local decisions. ([deseret.com](https://www.deseret.com/politics/2025/11/07/utah-voters-oust-incumbent-mayors-across-state-for-big-spending-and-growth-management/?utm_source=openai))\n\nThese cases validate that *in some places* and on some issues\u2014especially crime and local governance\u2014voters did in fact \u201cvote those folks out.\u201d But they are clusters and high\u2011profile examples, not a pervasive national pattern.\n\n**4. Net assessment relative to the prediction.**\nFriedberg predicted that **across the nation** and in **many cities and localities**, upcoming elections starting in 2022 would see voters broadly ousting the leaders they blamed for current problems, producing widespread local turnover. The empirical record from 2022\u20132024 shows:\n- Persistently **very high incumbent re\u2011election rates** at federal, state, and local levels, including local legislative bodies. ([inkl.com](https://www.inkl.com/news/94-of-incumbents-won-re-election-in-2022-general-election?utm_source=openai))\n- Only **pockets of intense anti\u2011incumbent activity** (CA Bay Area recalls, a few prosecutors/mayors, scattered municipal upsets like those in Utah), significant politically but numerically limited.\n\nTaken together, that means his forecast of a *broad, nationwide* wave of voters \u201cvoting those folks out of office\u201d did **not** come true. The mechanism he described did appear in some high\u2011salience locales, but the scale and geographic spread fell well short of what he predicted. Hence: **result = wrong**.",
+      "sources": [
+        {
+          "end_index": 737,
+          "start_index": 622,
+          "title": "94% of incumbents won re-election in 2022 general\u2026",
+          "type": "url_citation",
+          "url": "https://www.inkl.com/news/94-of-incumbents-won-re-election-in-2022-general-election?utm_source=openai"
+        },
+        {
+          "end_index": 1034,
+          "start_index": 922,
+          "title": "The Vanishing Incumbency Advantage in State House Elections",
+          "type": "url_citation",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/for-2023-2003/html?utm_source=openai"
+        },
+        {
+          "end_index": 1223,
+          "start_index": 1142,
+          "title": "X",
+          "type": "url_citation",
+          "url": "https://x.com/i/grok/share/1iyJlBeWc94etYBs6zFPRYNZc?utm_source=openai"
+        },
+        {
+          "end_index": 1776,
+          "start_index": 1640,
+          "title": "School board candidates running per seat increased\u2026",
+          "type": "url_citation",
+          "url": "https://www.inkl.com/news/school-board-candidates-running-per-seat-increased-each-year-from-2020-to-2022?utm_source=openai"
+        },
+        {
+          "end_index": 2129,
+          "start_index": 2005,
+          "title": "Few School Board Races Are Competitive. Here\u2019s Why",
+          "type": "url_citation",
+          "url": "https://www.edweek.org/leadership/few-school-board-races-are-competitive-heres-why/2025/06?utm_source=openai"
+        },
+        {
+          "end_index": 2839,
+          "start_index": 2715,
+          "title": "2022 San Francisco Board of Education recall elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_San_Francisco_Board_of_Education_recall_elections?utm_source=openai"
+        },
+        {
+          "end_index": 3149,
+          "start_index": 3027,
+          "title": "2022 San Francisco District Attorney recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_San_Francisco_District_Attorney_recall_election?utm_source=openai"
+        },
+        {
+          "end_index": 3469,
+          "start_index": 3371,
+          "title": "Baltimore prosecutor Marilyn Mosby defeated in primary - TheGrio",
+          "type": "url_citation",
+          "url": "https://thegrio.com/2022/07/23/mosby-prosecutor-primary-defeat/?utm_source=openai"
+        },
+        {
+          "end_index": 3785,
+          "start_index": 3662,
+          "title": "2024 Alameda County District Attorney recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Alameda_County_District_Attorney_recall_election?utm_source=openai"
+        },
+        {
+          "end_index": 4115,
+          "start_index": 4009,
+          "title": "2024 Oakland mayoral recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Oakland_mayoral_recall_election?utm_source=openai"
+        },
+        {
+          "end_index": 4509,
+          "start_index": 4367,
+          "title": "The Latest Bay Area Recall Campaign Is Over a 6-Story Apartment Building | KQED",
+          "type": "url_citation",
+          "url": "https://www.kqed.org/news/12061468/the-latest-bay-area-recall-campaign-is-over-a-six-story-apartment-building/?utm_source=openai"
+        },
+        {
+          "end_index": 4939,
+          "start_index": 4774,
+          "title": "Utah County mayors ousted in upset election. Why? \u2013 Deseret News",
+          "type": "url_citation",
+          "url": "https://www.deseret.com/politics/2025/11/07/utah-voters-oust-incumbent-mayors-across-state-for-big-spending-and-growth-management/?utm_source=openai"
+        },
+        {
+          "end_index": 5750,
+          "start_index": 5635,
+          "title": "94% of incumbents won re-election in 2022 general\u2026",
+          "type": "url_citation",
+          "url": "https://www.inkl.com/news/94-of-incumbents-won-re-election-in-2022-general-election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "While there were isolated high-profile turnovers in some blue cities linked to crime and education mismanagement\u2014e.g., San Francisco DA Chesa Boudin recalled (55% yes, June 2022, [Ballotpedia](https://ballotpedia.org/Chesa_Boudin_recall,_San_Francisco,_California_(2021-2022))), SF school board members recalled (Feb 2022, [Wikipedia](https://en.wikipedia.org/wiki/2022_San_Francisco_Board_of_Education_recall_elections)), Chicago Mayor Lori Lightfoot defeated (April 2023, crime key issue, [Ballotpedia](https://ballotpedia.org/United_States_municipal_elections,_2023)), SF Mayor London Breed lost (Nov 2024, street chaos cited, [Politico](https://www.politico.com/news/2024/11/09/san-francisco-london-breed-ouster-00188581)), Oakland Mayor Sheng Thao ousted (2024, [LA Times](https://www.latimes.com/california/story/2024-11-12/san-francisco-oakland-voters-move-right-oust-breed-thao-progressives)), LA DA George Gasc\u00f3n defeated (2024, [CalMatters](https://calmatters.org/justice/2024/11/george-gascon-pamela-price/)), Alameda DA Pamela Price ousted (2024), and progressive DAs losing 13/25 top races ([NY Post](https://nypost.com/2024/11/13/opinion/even-democratic-voters-rejected-george-soros-linked-soft-on-crime-district-attorneys/))\u2014these were not 'widespread' or 'across the nation.' Ballotpedia data shows high incumbent retention: 94% overall in 2022/2023/2024 generals; for mayors historically ~83% of seekers re-elected (66-67% seek, 16-17% defeated). Dems held ~63/100 largest city mayorships post-2022/23/24 ([Ballotpedia municipal pages](https://ballotpedia.org/United_States_municipal_elections,_2022)). No evidence of broad local turnover wave."
+    },
+    {
+      "id": "B-01:18:40.960",
+      "result": "wrong",
+      "explanation": "The prediction had two parts:\n\n1. **School board recall outcome (Feb. 15, 2022)**  \nThe prediction said that in San Francisco\u2019s school board recall, at least two of the three targeted commissioners would be recalled. In reality, **all three**\u2014Alison Collins, Gabriela L\u00f3pez, and Faauuga Moliga\u2014were removed from office in the February 15, 2022 election. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_San_Francisco_Board_of_Education_recall_elections?utm_source=openai))  \n\u2192 This part of the prediction was **correct**.\n\n2. **London Breed would publicly support the June 2022 recall of DA Chesa Boudin**  \nMultiple contemporaneous reports state that Mayor London Breed **declined to take a position** on the Boudin recall; she did not issue a formal public endorsement of the recall campaign before the June 7, 2022 vote. ([cbsnews.com](https://www.cbsnews.com/sanfrancisco/news/san-francisco-da-chesa-boudin-recall-effort-polarizes-june-election/?utm_source=openai))  Coverage after the election likewise notes that she **\u201cdid not take a position on the race\u201d**, even while having publicly clashed with Boudin and later appointing recall supporter Brooke Jenkins as DA. ([hotair.com](https://hotair.com/headlines/2022/06/10/chesa-boudin-is-out-in-san-francisco-but-his-agenda-is-alive-in-california-n475328?utm_source=openai))  Another outlet explicitly reports that Breed \"has not spoken publicly about her stance on the race\" prior to the vote. ([courthousenews.com](https://www.courthousenews.com/san-francisco-district-attorney-chesa-boudin-recalled/?utm_source=openai))  \n\nSo although Breed was widely seen as tacitly favoring Boudin\u2019s removal and did appoint a recall backer as his replacement, she **did not publicly or formally endorse the recall itself** in the run\u2011up to the June 2022 election.\n\nBecause the prediction required **both** components to occur, and the second (a public endorsement of the recall by Breed) did **not** happen, the overall prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 514,
+          "start_index": 390,
+          "title": "2022 San Francisco Board of Education recall elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_San_Francisco_Board_of_Education_recall_elections?utm_source=openai"
+        },
+        {
+          "end_index": 1015,
+          "start_index": 870,
+          "title": "San Francisco DA Chesa Boudin recall effort polarizes June election - CBS San Francisco",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-da-chesa-boudin-recall-effort-polarizes-june-election/?utm_source=openai"
+        },
+        {
+          "end_index": 1375,
+          "start_index": 1219,
+          "title": "Chesa Boudin is out in San Francisco but his agenda is alive in California \u2013 HotAir",
+          "type": "url_citation",
+          "url": "https://hotair.com/headlines/2022/06/10/chesa-boudin-is-out-in-san-francisco-but-his-agenda-is-alive-in-california-n475328?utm_source=openai"
+        },
+        {
+          "end_index": 1625,
+          "start_index": 1498,
+          "title": "San Francisco District Attorney Chesa Boudin recalled | Courthouse News Service",
+          "type": "url_citation",
+          "url": "https://www.courthousenews.com/san-francisco-district-attorney-chesa-boudin-recalled/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The first part of the prediction was correct: All three targeted San Francisco school board members\u2014Alison Collins, Gabriela L\u00f3pez, and Faauuga Moliga\u2014were successfully recalled on February 15, 2022, with over 70% voting yes ([KQED](https://www.kqed.org/news/11904879/sf-school-board-recall-results-alison-collins-gabriela-lopez-and-faauuga-moliga-headed-for-recall), [NYT](https://www.nytimes.com/2022/02/16/us/san-francisco-school-board-recall.html), [Wikipedia](https://en.wikipedia.org/wiki/2022_San_Francisco_Board_of_Education_recall_elections)).\n\nHowever, the second part failed: Mayor London Breed did **not** publicly support the recall of DA Chesa Boudin in the June 2022 election, despite the school board outcome. She remained publicly neutral, stating she had privately decided how to vote but would not endorse ([SF Chronicle, May 2022](https://www.sfchronicle.com/politics/joegarofoli/article/If-Chesa-Boudin-is-recalled-London-Breed-will-17155582.php); [SFGate, Mar 2022](https://www.sfgate.com/bay-area-politics/article/London-Breed-shifts-on-Boudin-recall-16986908.php)). No sources show her publicly backing it or link the school board recall as prompting such support ([Wikipedia Boudin recall](https://en.wikipedia.org/wiki/2022_San_Francisco_District_Attorney_recall_election)). She appointed a pro-recall interim DA *after* Boudin's successful recall on June 7, 2022.\n\nSince the prediction required both elements (recalls *and* Breed's prompted public support), it is wrong."
+    },
+    {
+      "id": "B-01:18:10.880",
+      "result": "right",
+      "explanation": "Evidence strongly supports that this prediction came true.\n\n- On December 14\u201317, 2021, just as in the podcast timeframe, Mayor London Breed announced and then formalized a **Tenderloin crime and drug crackdown**, including flooding the neighborhood with more police, seeking more police funding, and declaring a state of emergency\u2014explicitly framed as getting more \u201caggressive with law enforcement\u201d and cracking down on open-air drug dealing and associated crime. ([californiaglobe.com](https://californiaglobe.com/fl/sf-mayor-london-breed-announces-crackdown-on-crime-in-tenderloin-district/?utm_source=openai))\n- On December 20, 2021, District Attorney **Chesa Boudin publicly opposed Breed\u2019s crackdown**. In a San Francisco Chronicle report, Boudin joined other officials and activists \u201cto criticize Mayor London Breed\u2019s plan to flood San Francisco\u2019s Tenderloin neighborhood with police and crack down on drug dealers as well as people who use drugs in the open,\u201d arguing the plan relied on failed, punitive policies and calling instead for treatment and housing. ([sfchronicle.com](https://www.sfchronicle.com/sf/article/D-A-Chesa-Boudin-joins-critics-of-Breed-s-16717418.php?utm_source=openai))  This is direct, public disagreement with her policing/crime agenda.\n- Coverage of the period describes an increasingly **fraught relationship** between Breed and Boudin as crime and disorder became central political issues; Breed moved toward a more law\u2011and\u2011order posture, while Boudin championed reform and resisted punitive crackdowns. ([sfchronicle.com](https://www.sfchronicle.com/election/article/What-Chesa-Boudin-s-recall-means-for-San-17226656.php?utm_source=openai))  That tension culminated in Boudin\u2019s June 7, 2022 recall, after which Breed appointed a tougher\u2011on\u2011crime DA, Brooke Jenkins, to replace him. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_San_Francisco_District_Attorney_recall_election?utm_source=openai))\n\nThe prediction stated that within the next political cycle after December 2021, Breed would \u201cbutt heads\u201d with Boudin because he would not support her tougher policing/crime\u2011control agenda. The documented events show exactly that: **Breed advanced a policing\u2011heavy crackdown plan; Boudin refused to support it and publicly criticized it**, leading to an open policy clash that extended into 2022. Even though this conflict surfaced almost immediately (late December 2021), it clearly fits the predicted dynamic and occurs well within the predicted political timeframe. Therefore, the prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 647,
+          "start_index": 499,
+          "title": "SF Mayor London Breed Announces Crackdown on Crime in Tenderloin District \u2013 California Globe",
+          "type": "url_citation",
+          "url": "https://californiaglobe.com/fl/sf-mayor-london-breed-announces-crackdown-on-crime-in-tenderloin-district/?utm_source=openai"
+        },
+        {
+          "end_index": 1235,
+          "start_index": 1103,
+          "title": "D.A. Chesa Boudin joins critics of Breed\u2019s Tenderloin crackdown to protest plan",
+          "type": "url_citation",
+          "url": "https://www.sfchronicle.com/sf/article/D-A-Chesa-Boudin-joins-critics-of-Breed-s-16717418.php?utm_source=openai"
+        },
+        {
+          "end_index": 1713,
+          "start_index": 1576,
+          "title": "Chesa Boudin recall: What it means for San Francisco\u2019s stance on crime",
+          "type": "url_citation",
+          "url": "https://www.sfchronicle.com/election/article/What-Chesa-Boudin-s-recall-means-for-San-17226656.php?utm_source=openai"
+        },
+        {
+          "end_index": 1977,
+          "start_index": 1855,
+          "title": "2022 San Francisco District Attorney recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_San_Francisco_District_Attorney_recall_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction came true. In December 2021, Mayor London Breed announced a crackdown on crime, including increased policing in the Tenderloin. Chesa Boudin publicly opposed it, arguing problems couldn't be solved solely through arrests ([Boltsmag](https://boltsmag.org/san-francisco-da-chesa-boudin-recall/), [SFGATE Mar 2022](https://www.sfgate.com/bay-area-politics/article/London-Breed-shifts-on-Boudin-recall-16986908.php)). Breed openly criticized Boudin by name in Jan 2022 NYT interview for not supporting her emergency declaration and for prioritizing criminals over victims ([SFGATE](https://www.sfgate.com/bay-area-politics/article/London-Breed-shifts-on-Boudin-recall-16986908.php), [NYT Sway podcast](https://www.nytimes.com/2022/01/13/opinion/sway-kara-swisher-london-breed.html)). They exchanged public swipes in March 2022, with Boudin accusing Breed of scapegoating him ([SFGATE](https://www.sfgate.com/bay-area-politics/article/London-Breed-shifts-on-Boudin-recall-16986908.php)). Breed clashed repeatedly over sentencing/prosecutions ([Politico Jul 2022](https://www.politico.com/news/2022/07/20/london-breed-san-francisco-00046633), [Politico Jul 2022](https://www.politico.com/news/2022/07/07/london-breed-replaces-chesa-boudin-with-brooke-jenkins-00044563)). Conflicts occurred in early 2022, within the specified timeframe, culminating in Boudin's June 2022 recall."
+    },
+    {
+      "id": "B-01:19:59.220",
+      "result": "wrong",
+      "explanation": "Two central elements of Sacks\u2019s prediction did not occur as stated:\n\n1. **No Republican \u201cred wave\u201d in November 2022.**  \n   Pre\u2011election expectations widely forecast a strong GOP midterm showing, but major outlets and post\u2011election analyses agree that the anticipated red wave \u201cfailed to materialize.\u201d Republicans only narrowly captured the House while Democrats held (and then slightly expanded) their Senate majority, and the overall performance was described as far better than historical midterm norms for the party in power.([cnbc.com](https://www.cnbc.com/2022/11/09/midterm-election-results-look-better-for-biden-as-democrats-avoid-red-wave.html?utm_source=openai))  Since Sacks\u2019s timeline and causal story explicitly hinged on a *red wave* in 2022, that key premise was wrong.\n\n2. **No clear, new \u201cschism\u201d between pragmatic liberals and radical progressives in 2021\u20132022, especially *after* the midterms.**  \n   The Democratic Party has long contained moderate/centrist factions (e.g., New Democrat Coalition, Blue Dog Coalition) and a progressive wing, and those tensions were already evident early in Biden\u2019s term, particularly around Build Back Better and related legislation.([en.wikipedia.org](https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai))  But in 2021\u201322 Democrats nonetheless passed major bills like the Infrastructure Investment and Jobs Act and the Inflation Reduction Act with unified Democratic votes in Congress, reflecting bargaining rather than a party break.([en.wikipedia.org](https://en.wikipedia.org/wiki/Inflation_Reduction_Act?utm_source=openai))\n\n   After the 2022 midterms, analyses emphasized that **Democrats across the ideological spectrum performed better than expected**; progressives gained some seats and influence, while centrists also notched key wins. Coverage framed this as an ongoing intra\u2011party debate over strategy and electability, not an accelerated rupture triggered by the election results.([onnradio.com](https://www.onnradio.com/2022/11/13/progressives-ranks-and-plans-expand-after-midterms/))  Articles noted that some moderates view progressives as hindering unity and vice versa, but the party remained a single \u201cbig tent\u201d organization rather than splitting into two distinct liberal\u2011vs\u2011radical blocs.\n\nBecause the predicted *triggering event* (a Republican red wave) did not happen, and because Democratic intra\u2011party tensions did not qualitatively transform into the pronounced post\u20112022 schism Sacks forecast, the overall prediction is best judged as **wrong** rather than merely ambiguous.",
+      "sources": [
+        {
+          "end_index": 708,
+          "start_index": 565,
+          "title": "Election results look better for Biden as Democrats avoid 'red wave'",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/11/09/midterm-election-results-look-better-for-biden-as-democrats-avoid-red-wave.html?utm_source=openai"
+        },
+        {
+          "end_index": 1317,
+          "start_index": 1226,
+          "title": "Build Back Better Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Build_Back_Better_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1639,
+          "start_index": 1546,
+          "title": "Inflation Reduction Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Inflation_Reduction_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2111,
+          "start_index": 2006,
+          "title": "Progressives' ranks \u2014 and plans \u2014 expand after midterms | ONN Radio",
+          "type": "url_citation",
+          "url": "https://www.onnradio.com/2022/11/13/progressives-ranks-and-plans-expand-after-midterms/"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction anticipated a pronounced schism in the Democratic Party between pragmatic liberals and radical progressives from late 2021 to end-2022, accelerating after a expected Republican 'red wave' in the Nov 2022 midterms. However, the midterms produced no red wave: Republicans gained a narrow House majority (222-213) but Democrats retained and expanded Senate control (51-49), defying predictions ([Politico Nov 9, 2022](https://www.politico.com/news/2022/11/09/2022-election-results-analysis-and-takeaways-00065878), [NYT Nov 10, 2022](https://www.nytimes.com/2022/11/09/us/politics/midterm-elections-takeaways.html)).\n\nPost-Virginia 2021 loss, tensions emerged with mutual blame between moderates and progressives ([Politico Nov 4, 2021](https://www.politico.com/news/2021/11/04/virginia-election-progressives-moderates-blame-519445), [NYT Nov 6, 2021](https://www.nytimes.com/2021/11/03/us/politics/democrat-losses-2022.html)). After 2022 midterms, some recriminations targeted progressives, especially in NY losses ([Intercept Nov 12, 2022](https://theintercept.com/2022/11/12/midterms-new-york-democrats-jay-jacobs/), [NBC Nov 15, 2022](https://www.nbcnews.com/think/opinion/house-election-results-new-york-vote-show-ego-prevailed-party-rcna57328)). Broader divides existed (e.g., NYT Feb 25, 2022 on Squad/moderates).\n\nYet no evidence of a 'pronounced' party-wide split by end-2022; Democrats unified behind Biden for 2024. More overt schism talk emerged later (e.g., Guardian Dec 2023, NYMag Oct 2025 'Great Schism'). Without the red wave trigger and no clear escalation to 'pronounced' levels in the timeframe, the outcome is ambiguous."
+    },
+    {
+      "id": "B-01:26:29.310",
+      "result": "ambiguous",
+      "explanation": "Evidence cuts both ways on this prediction.\n\n**Ways the prediction looks right (country moved out of \u201cpandemic politics\u201d):**\n- Nearly all state and local mask mandates and other COVID restrictions were lifted by early\u2013mid 2022; by April 2022, general mask mandates had ended in every state, with remaining rules limited to narrow settings like some health-care facilities.([en.wikipedia.org](https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States?utm_source=openai))\n- The federal COVID-19 national emergency and public health emergency were formally ended in spring 2023, an explicit policy signal that the emergency phase was over and that extraordinary pandemic-era measures were being wound down.([abccolumbia.com](https://www.abccolumbia.com/2023/04/11/biden-ends-covid-national-emergency-after-congress-acts/?utm_source=openai))\n- By 2022 and afterward, COVID largely disappeared as a *top* voting issue. Polling on the 2022 midterms and the 2024 cycle shows voters prioritizing inflation, the broader economy, abortion, immigration, and \u201cextremism / threats to democracy,\u201d with COVID only registering in low single digits as the \u201cmost important problem.\u201d([news.gallup.com](https://news.gallup.com/poll/406739/government-remains-americans-top-problem-2022.aspx?utm_source=openai))\n- Retrospective polling in 2025 finds Americans mainly arguing about whether there were too many or too few restrictions and rating officials\u2019 performance, rather than pushing for new large-scale mandates\u2014suggesting the *active* phase of pandemic policy conflict has passed.([pewresearch.org](https://www.pewresearch.org/politics/2025/02/12/americans-views-on-covid-19-risk-and-the-countrys-response-to-health-emergencies/?utm_source=openai))\n\n**Ways the prediction looks wrong (politics did *not* broadly moderate):**\n- Overall U.S. politics did not notably moderate in the 2022\u20132025 period. Surveys show rising concern about political extremism and threats to democracy as *the* top national problem heading into 2024, ahead of even the economy, indicating that intense polarization and radical rhetoric persisted\u2014just on other fronts.([reuters.com](https://www.reuters.com/world/us/extremism-is-us-voters-greatest-worry-reutersipsos-poll-finds-2024-02-27/?utm_source=openai))\n- Analyses of the 2020 and 2024 elections argue that while COVID-era policies (lockdowns, school closures, mandates) have mostly ended, their *aftershocks* reshaped the electorate in a more hard-edged, distrustful direction (e.g., some young voters and suburban parents shifting right over anger at pandemic measures).([axios.com](https://www.axios.com/2025/03/09/covid-five-years-trump-young-voters?utm_source=openai)) This is closer to a long-term radicalization than a simple \u201ccorrection of overreaction.\u201d\n\n**Why this is rated _ambiguous_:**\n- If you interpret Sacks narrowly\u2014*\u201cwe will leave behind the specific, COVID-centered era of mandates and pandemic-driven policy fights\u201d*\u2014that forecast largely came true: emergency powers expired, mandates ended, and COVID faded as a core political issue.\n- If you interpret him more broadly\u2014*\u201cthe radical strain of politics that the pandemic bred will unwind and national politics will moderate\u201d*\u2014the data don\u2019t really support that. Polarization and extremism remain high, with the conflict shifting to other issues rather than clearly calming down.\n\nBecause one key part of his claim (exit from pandemic-centric politics) is supported by events, while another key part (overall moderation of national politics) is not, and because the quote mixes these ideas, the fairest overall judgment is **\u201cambiguous.\u201d**",
+      "sources": [
+        {
+          "end_index": 542,
+          "start_index": 412,
+          "title": "Face masks during the COVID-19 pandemic in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 911,
+          "start_index": 777,
+          "title": "Biden ends COVID national emergency after Congress acts - ABC Columbia",
+          "type": "url_citation",
+          "url": "https://www.abccolumbia.com/2023/04/11/biden-ends-covid-national-emergency-after-congress-acts/?utm_source=openai"
+        },
+        {
+          "end_index": 1364,
+          "start_index": 1239,
+          "title": "Government Remains Americans' Top Problem in 2022",
+          "type": "url_citation",
+          "url": "https://news.gallup.com/poll/406739/government-remains-americans-top-problem-2022.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 1808,
+          "start_index": 1640,
+          "title": "Americans' views on COVID-19 risk and emergency response: Looking back 5 years later | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/politics/2025/02/12/americans-views-on-covid-19-risk-and-the-countrys-response-to-health-emergencies/?utm_source=openai"
+        },
+        {
+          "end_index": 2347,
+          "start_index": 2206,
+          "title": "Extremism is US voters' greatest worry, Reuters/Ipsos poll finds",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/extremism-is-us-voters-greatest-worry-reutersipsos-poll-finds-2024-02-27/?utm_source=openai"
+        },
+        {
+          "end_index": 2768,
+          "start_index": 2667,
+          "title": "The pandemic upended politics - twice",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2025/03/09/covid-five-years-trump-young-voters?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Data from multiple sources indicates that U.S. political polarization has not moderated since the 2021-2022 pandemic peak; it has persisted or intensified. Gallup (Jan 2025) reports the percentage of self-identified moderates hit a record low of 34% in 2024, down from 43% in 1992, with parties at historically high ideological polarization ([Gallup](https://news.gallup.com/poll/655190/political-parties-historically-polarized-ideologically.aspx)). Pew Research (Oct 2025) shows partisan hostility rising: 72% of Republicans and 63% of Democrats view the opposing party as more immoral (up from 2016), 84% say debate less respectful, and majorities see both parties as extreme ([Pew](https://www.pewresearch.org/politics/2025/10/30/)). Wikipedia notes 77% of Republicans identify as conservative/very conservative in 2025. Trump's 2024 election win (312 electoral votes, popular vote margin) amid ongoing division further evidences lack of moderation ([CNN](https://www.cnn.com/election/2024/results/president), [NYT](https://www.nytimes.com/interactive/2024/11/05/us/elections/results-president.html)). Post-COVID assessments describe America as 'more divided than ever' (Bloomberg, Mar 2025). With four years elapsed, sufficient time has passed to evaluate."
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "meta": {
+    "count": 8,
+    "count_by_result": {
+      "wrong": 1,
+      "right": 4,
+      "ambiguous": 2,
+      "inconclusive": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:16:32.000",
+      "result": "wrong",
+      "explanation": "Jason was describing the level of *U.S. job openings* (JOLTS), which were \"finally dipped under 11 million\" and around 10\u201311 million at the time of the August 2022 episode. He then projected that they would shed about 300\u2013400k per month over the next year, taking openings \"down to maybe 5 or 6\" million.\n\nAccording to the Bureau of Labor Statistics JOLTS data, total nonfarm job openings in August 2022 were about 10.2 million on a seasonally adjusted basis.\n- The BLS Monthly Labor Review chart shows 10.198 million job openings in August 2022.\n  ([bls.gov](https://www.bls.gov/opub/mlr/2023/article/job-openings-reach-record-highs-in-2022-as-the-labor-market-recovery-continues.htm?src_trk=em667c610e66eb48.572587891186966225&utm_source=openai))\n- The contemporaneous JOLTS release similarly reports 10.1 million job openings at the end of August 2022.\n  ([bls.gov](https://www.bls.gov/news.release/archives/jolts_10042022.htm?utm_source=openai))\n\nOne year later, job openings were still close to 9\u201310 million, not 5\u20136 million:\n- The BLS JOLTS news release for August 2023 reports that job openings **increased to about 9.6 million**.\n  ([bls.gov](https://www.bls.gov/news.release/archives/jolts_10032023.htm?utm_source=openai))\n- A later BLS table of seasonally adjusted series (TED: The Economics Daily) lists **9.287 million** job openings in August 2023.\n  ([bls.gov](https://www.bls.gov/opub/ted/2025/7-2-million-job-openings-in-august-2025.htm?utm_source=openai))\n\nUsing these official figures, openings fell from roughly 10.2 million (Aug 2022) to about 9.3 million (Aug 2023), a decline of only ~0.9 million over 12 months\u2014about **75k per month on average**, far below the predicted 300\u2013400k per month. And the level in August 2023 remained almost **double** the predicted 5\u20136 million.\n\nBecause both the *magnitude of the monthly decline* and the *end-of-period level* were far off, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 789,
+          "start_index": 590,
+          "title": "Job openings reach record highs in 2022 as the labor market recovery continues : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/mlr/2023/article/job-openings-reach-record-highs-in-2022-as-the-labor-market-recovery-continues.htm?src_trk=em667c610e66eb48.572587891186966225&utm_source=openai"
+        },
+        {
+          "end_index": 992,
+          "start_index": 901,
+          "title": "Job Openings and Labor Turnover Survey News Release - 2022 M08 Results",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/news.release/archives/jolts_10042022.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1278,
+          "start_index": 1187,
+          "title": "Job Openings and Labor Turnover Survey News Release - 2023 M08 Results",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/news.release/archives/jolts_10032023.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1521,
+          "start_index": 1413,
+          "title": "7.2 million job openings in August 2025 : The Economics Daily: U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/ted/2025/7-2-million-job-openings-in-august-2025.htm?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction was for U.S. job openings to decline by roughly 300,000\u2013400,000 per month from ~10\u201311 million in August 2022, reaching 5\u20136 million by August 2023. Actual data from BLS JOLTS (via FRED series JTSJOL, latest revisions, in thousands):\n\n- Aug 2022: 10,148\n- Sep 2022: 10,812\n- Oct 2022: 10,488\n- Nov 2022: 10,619\n- Dec 2022: 10,876\n- Jan 2023: 10,393\n- Feb 2023: 9,846\n- Mar 2023: 9,572\n- Apr 2023: 9,992\n- May 2023: 9,310\n- Jun 2023: 9,191\n- Jul 2023: 8,606 (lowest in period)\n- Aug 2023: 9,287\n\nJob openings fluctuated but net declined only ~0.86 million over 12 months (average ~72k/month decline), ending at ~9.3 million\u2014far above 5\u20136 million. Initial BLS Aug 2022 release: 10.1 million; Aug 2023: 9.6 million. Sources: [FRED JTSJOL](https://fred.stlouisfed.org/series/JTSJOL), [BLS Aug 2022 JOLTS](https://www.bls.gov/news.release/archives/jolts_10042022.pdf), [BLS Aug 2023 JOLTS](https://www.bls.gov/news.release/archives/jolts_10032023.pdf)."
+    },
+    {
+      "id": "A-00:17:37.940",
+      "result": "right",
+      "explanation": "Chamath said that from the earlier 2022 market lows, the S&P 500 would rally to roughly the 4,000\u20134,300 range. The S&P 500 made a major local low in June 2022 around 3,636.87. It then rallied above 4,000 in July and, on August 16, 2022, reached an intraday high of 4,325.28 and closed at 4,305.20, squarely within and at the top of his projected band. ([statmuse.com](https://www.statmuse.com/money/ask/s-and-p-500-values-by-month-2022?utm_source=openai)) Given that this rally occurred soon after those lows, the prediction that the index would move into the 4,000\u20134,300 zone was borne out.",
+      "sources": [
+        {
+          "end_index": 488,
+          "start_index": 385,
+          "title": "S And P 500 Values By Month 2022 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/s-and-p-500-values-by-month-2022?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The S&P 500 reached lows earlier in 2022 around mid-June, closing at approximately 3,666 on June 16 (CNBC reports nearby 3,749 on June 12 as a key low point) and ending June at 3,785 (YCharts, Macrotrends). From there, it rallied sharply: July 31 close at 4,130 (YCharts), August 5 (podcast date) close at 4,145 (Yahoo Finance, fedprimerate.com), and August 12 at 4,280 (fedprimerate.com). This rally fits squarely within the predicted 4,000\u20134,300 range. Even after the later 2022 low of ~3,577 in October (Wikipedia, Macrotrends Sep close 3,585), it recovered through this range in early 2023. The prediction that it 'will rally to' this range from earlier 2022 lows came true shortly after the August 5, 2022 podcast, with ample time passed by 2025."
+    },
+    {
+      "id": "A-00:20:40.000",
+      "result": "right",
+      "explanation": "Evidence from October\u2013November 2022 shows that energy supply and pricing were indeed at the center of geopolitical and national security debates, closely tied to the Ukraine war, as Chamath predicted.\n\n- In October 2022 Russia launched a large missile and drone campaign specifically targeting Ukraine\u2019s energy infrastructure, knocking out around half of the country\u2019s power grid by mid\u2011November. This created mass blackouts and was widely framed as a deliberate strategy in the war, putting energy systems squarely at the heart of security discussions. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Russian_strikes_against_Ukrainian_infrastructure?utm_source=openai))\n- The same period saw knock\u2011on crises in neighboring states: Moldova suffered its worst energy crisis since independence in late 2022 after Gazprom cut gas supplies and Ukraine halted electricity exports due to Russian attacks on its grid, a situation described as a major national emergency directly linked to the war. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Moldovan_energy_crisis?utm_source=openai))\n- In the United States, President Biden used October 18\u201319, 2022 speeches and fact sheets to announce additional releases from the Strategic Petroleum Reserve explicitly framed as actions to strengthen U.S. energy security and respond to \"Putin\u2019s price hike\" in fuel costs\u2014showing energy prices and supply as central domestic and security issues on the eve of the midterms. ([bidenwhitehouse.archives.gov](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/10/18/fact-sheet-president-biden-to-announce-new-actions-to-strengthen-u-s-energy-security-encourage-production-and-bring-down-costs/?utm_source=openai))\n- Throughout November 2022, G7 and EU governments were intensely negotiating the design and level of a price cap on Russian seaborne oil, explicitly intended to reduce Moscow\u2019s ability to finance the invasion of Ukraine while avoiding global oil price spikes. This made energy policy the main lever in sanctions strategy and a core topic in high\u2011level security deliberations. ([euronews.com](https://www.euronews.com/next/2022/11/24/ukraine-crisis-russia-oil?utm_source=openai))\n- In October 2022 OPEC+ announced a large oil production cut, widely interpreted as aiding Russia. President Biden vowed \u201cconsequences\u201d and said the U.S. would re\u2011evaluate its relationship with Saudi Arabia, highlighting how oil production decisions were being treated as matters of foreign policy alignment and national security, not just economics. ([en.wikipedia.org](https://en.wikipedia.org/wiki/OPEC?utm_source=openai))\n- More broadly, analyses of the 2021\u20132023 global energy crisis document that Russia\u2019s invasion of Ukraine turned an existing supply crunch into a full\u2011blown energy emergency, with record gas and power prices, EU emergency measures, and widespread European protests over energy\u2011driven inflation in October 2022\u2014indicating that energy affordability and security were central to political conflict across the continent. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Global_energy_crisis_%282021%E2%80%932023%29?utm_source=openai))\n\nTaken together, these developments show that by October\u2013November 2022, energy supply and pricing were again (and arguably still) the main focus and \"tip of the spear\" in debates about the Ukraine war, sanctions, and broader national security concerns, aligning well with Chamath\u2019s forecast.",
+      "sources": [
+        {
+          "end_index": 707,
+          "start_index": 589,
+          "title": "Russian strikes against Ukrainian infrastructure",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Russian_strikes_against_Ukrainian_infrastructure?utm_source=openai"
+        },
+        {
+          "end_index": 1126,
+          "start_index": 1029,
+          "title": "2022 Moldovan energy crisis",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Moldovan_energy_crisis?utm_source=openai"
+        },
+        {
+          "end_index": 1765,
+          "start_index": 1504,
+          "title": "FACT SHEET: President Biden to Announce New Actions to Strengthen U.S. Energy Security, Encourage Production, and Bring Down Costs | The White House",
+          "type": "url_citation",
+          "url": "https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/10/18/fact-sheet-president-biden-to-announce-new-actions-to-strengthen-u-s-energy-security-encourage-production-and-bring-down-costs/?utm_source=openai"
+        },
+        {
+          "end_index": 2245,
+          "start_index": 2143,
+          "title": "Proposed G7 oil price cap to have little immediate impact on Russian revenue | Euronews",
+          "type": "url_citation",
+          "url": "https://www.euronews.com/next/2022/11/24/ukraine-crisis-russia-oil?utm_source=openai"
+        },
+        {
+          "end_index": 2672,
+          "start_index": 2598,
+          "title": "OPEC",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/OPEC?utm_source=openai"
+        },
+        {
+          "end_index": 3205,
+          "start_index": 3091,
+          "title": "Global energy crisis (2021\u20132023)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Global_energy_crisis_%282021%E2%80%932023%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction was accurate. In October-November 2022, energy supply and pricing issues were indeed a central focus of geopolitical and national security debates, comparable to early 2022 post-Ukraine invasion. Key evidence:\n\n- **Nord Stream sabotage (Sept 26, 2022)**: Explosions on pipelines renewed fears of energy shortages ahead of winter, spiking gas prices and prompting debates on hybrid warfare, Russian weaponization of energy, and Europe's vulnerability. [NYTimes: 'Act of Sabotage' Hits Europe's Energy](https://www.nytimes.com/2022/09/28/business/dealbook/sabotage-nordstream-europe-russia-gas-stocks.html); [Wikipedia: Nord Stream sabotage](https://en.wikipedia.org/wiki/Nord_Stream_pipelines_sabotage).\n\n- **IEA World Energy Outlook (Oct 27, 2022)**: Explicitly described the 'global energy crisis triggered by Russia's invasion of Ukraine' as causing profound changes, mirroring early 2022 intensity. [IEA](https://www.iea.org/news/world-energy-outlook-2022-shows-the-global-energy-crisis-can-be-a-historic-turning-point-towards-a-cleaner-and-more-secure-future).\n\n- **US-EU Energy Security Task Force (Nov 7, 2022)**: Joint readout highlighted Russia's war and energy weaponization as top threats to global energy security. [White House](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2022/11/07/joint-readout-of-u-s-eu-task-force-meeting-on-energy-security/).\n\n- **Ongoing EU measures**: Emergency gas storage mandates, price cap discussions (leading to G7 oil cap Dec 2022), and COP27 (Nov 2022) emphasized energy security tied to Ukraine. [EU Commission](https://commission.europa.eu/topics/energy/eu-action-address-energy-crisis_en); [Reuters retrospective](https://www.reuters.com/business/energy/year-russia-turbocharged-global-energy-crisis-2022-12-13/).\n\nThis matched early 2022's focus (e.g., invasion-triggered spikes), with energy as the 'tip of the spear' in Ukraine-related national security talks."
+    },
+    {
+      "id": "B-00:25:20.000",
+      "result": "ambiguous",
+      "explanation": "The claim was explicitly conditional: **\u201cIf we still have 9% inflation three months from now, then I don\u2019t think the rate increases are done.\u201d** The antecedent (\u201cstill 9% inflation\u201d around November 2022) did *not* occur, so we cannot directly test the conditional.\n\n**What actually happened:**\n- U.S. CPI inflation peaked at 9.1% year\u2011over\u2011year in June 2022, but by October 2022 it had fallen to about **7.7%**, and by November 2022 to about **7.1%**, well below 9%. ([theworlddata.com](https://theworlddata.com/us-inflation-year-by-year/?utm_source=openai))\n- The Federal Reserve nonetheless **continued raising rates after August 2022**, hiking the federal funds target range to 3.00\u20133.25% in September, 3.75\u20134.00% in November, and 4.25\u20134.50% in December 2022, all above the then\u2011current late\u2011July level of 2.25\u20132.50%. ([nerdwallet.com](https://www.nerdwallet.com/article/banking/what-is-the-fed-rate?utm_source=openai))\n\nBecause the world in which inflation actually stayed near 9% by November 2022 never occurred, we **cannot empirically verify** whether, *under that specific condition*, the Fed would have continued hiking. The statement is therefore best classified as **ambiguous** under your rubric: it\u2019s a counterfactual conditional whose trigger never happened, even though in reality the Fed did keep raising rates with inflation in the 7\u20138% range.",
+      "sources": [
+        {
+          "end_index": 598,
+          "start_index": 507,
+          "title": "US Inflation Year by Year Statistics 2025 | Key Facts - The World Data",
+          "type": "url_citation",
+          "url": "https://theworlddata.com/us-inflation-year-by-year/?utm_source=openai"
+        },
+        {
+          "end_index": 963,
+          "start_index": 862,
+          "title": "What Is the Federal Funds Rate? - NerdWallet",
+          "type": "url_citation",
+          "url": "https://www.nerdwallet.com/article/banking/what-is-the-fed-rate?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction is a conditional: IF CPI inflation ~9% around November 2022, THEN Fed continues raising rates beyond August 2022 levels. US CPI YoY inflation was 7.1% in November 2022 (down from 9.1% in June and 8.5% in July), per BLS release Dec 13, 2022 ([source](https://www.bls.gov/news.release/archives/cpi_12132022.pdf)). Condition unmet. Fed funds rate was 2.25-2.50% post-July 2022 hike (effective Aug ~2.33%, [FRED](https://fred.stlouisfed.org/series/FEDFUNDS)); hikes continued: Sep +75bps to 3-3.25%, Nov +75bps to 3.75-4%, Dec +50bps to 4.25-4.5%, peaking at 5.25-5.5% in 2023 ([Forbes history](https://www.forbes.com/advisor/investing/fed-funds-rate-history/)). Antecedent false makes implication true; prediction holds."
+    },
+    {
+      "id": "A-00:25:51.000",
+      "result": "right",
+      "explanation": "Evidence from the inflation and rate paths lines up with Chamath\u2019s forecast.\n\n* **CPI above 5%:** U.S. headline CPI ran well above 5% through 2021\u20132022, peaking at 9.1% year\u2011over\u2011year in June 2022 and remaining elevated into early 2023. ([usinflationcalculator.com](https://www.usinflationcalculator.com/inflation/u-s-inflation-near-41-year-high-as-cpi-hits-9-1-in-june/100022937/?utm_source=openai))\n* **CPI falls below 5%:** CPI first fell back under 5% in April 2023, printing 4.9% year\u2011over\u2011year (the first sub\u20115% reading since June 2021). ([cnbc.com](https://www.cnbc.com/2023/05/10/cpi-inflation-april-2023.html?utm_source=openai))\n* **Fed funds path:** The Fed began hiking in March 2022 and kept raising its target range until it reached 4.75\u20135.00% at the March 22, 2023 FOMC meeting, then 5.00\u20135.25% in May and ultimately 5.25\u20135.50% in July 2023. ([forbes.com](https://www.forbes.com/advisor/investing/july-fomc-meeting-federal-reserve/?utm_source=openai))\n\nBy the time inflation dropped below 5% (April 2023), the federal funds target range already had an upper bound of 5.0%, i.e., mid\u2011single digits and roughly double the pre\u2011hiking \u201cequilibrium\u201d assumption around 2.5%.  This matches the core of Chamath\u2019s prediction: that, given CPI had run above 5%, the Fed would ultimately have to lift rates up to roughly the CPI level (mid\u2011single digits) to get inflation back under 5%. While we can\u2019t prove this level was *strictly necessary* in a causal sense, the actual policy path and timing of inflation\u2019s decline are consistent with what he said would need to happen, so the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 435,
+          "start_index": 272,
+          "title": "U.S. Inflation Near 41-Year High as CPI Hits 9.1% in June | US Inflation Calculator",
+          "type": "url_citation",
+          "url": "https://www.usinflationcalculator.com/inflation/u-s-inflation-near-41-year-high-as-cpi-hits-9-1-in-june/100022937/?utm_source=openai"
+        },
+        {
+          "end_index": 673,
+          "start_index": 580,
+          "title": "CPI report: Inflation rose in April 2023",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/05/10/cpi-inflation-april-2023.html?utm_source=openai"
+        },
+        {
+          "end_index": 1002,
+          "start_index": 893,
+          "title": "Federal Funds Rate History 1990 to 2025 \u2013 Forbes Advisor",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/advisor/investing/july-fomc-meeting-federal-reserve/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "US CPI was successively >5% in 2021-2022, peaking at 9.1% YoY in June 2022 ([BLS](https://www.bls.gov/news.release/archives/cpi_07132022.htm)). Fed raised federal funds rate to target 5.25-5.50% (effective ~5.33% peak late 2023, [FRED](https://fred.stlouisfed.org/series/FEDFUNDS), [Macrotrends](https://www.macrotrends.net/2015/fed-funds-rate-historical-chart)), mid-single digits and ~double then-assumed 2.5% equilibrium. CPI fell below 5% by April 2023 (4.9%, [Reuters](https://www.reuters.com/markets/us/us-consumer-prices-increase-solidly-april-2023-05-10/)), and latest Sep 2025 at 3.0% ([BLS](https://www.bls.gov/news.release/cpi.nr0.htm)). Matches prediction and historical pattern."
+    },
+    {
+      "id": "A-00:35:04.560",
+      "result": "right",
+      "explanation": "Evidence since the August 2022 episode lines up well with Chamath\u2019s outlined regime: higher rates, higher inflation and costs than the pre\u20112020 globalization era, alongside continued (but slower) growth.\n\n1. **Higher and sustained interest rates vs. the 2010s:**  \nFrom 2010\u20132019 the effective federal funds rate was typically near 0\u20132.5%, averaging around the low\u20111% range. Since the 2022 hiking cycle, the annual effective rate has been 1.69% (2022), 5.03% (2023), and 5.14% (2024), with the target range still 3.75\u20134.00% as of late 2025\u2014well above the 2010s norm.\nThis is a multi\u2011year shift to structurally higher policy rates compared with the pre\u2011COVID decade.\n([ycharts.com](https://ycharts.com/indicators/effective_federal_funds_rate_annual?utm_source=openai))\n\n2. **Inflation and input costs above the pre\u2011COVID norm:**  \nCore PCE inflation in the U.S. averaged roughly 1.5\u20131.7% in the 2010s; since 2021 it has been materially higher: 3.6% (2021), 5.3% (2022), 4.2% (2023), and 2.9% (2024). Headline PCE shows a similar pattern, with 2021\u201324 all above the 2010s average even after the initial spike faded. ([ycharts.com](https://ycharts.com/indicators/us_core_pce_inflation_rate_yearly?utm_source=openai))  \nPrice levels for many inputs (energy, key commodities, labor, and capital) remain structurally higher than in the 2010s; even as inflation has cooled toward 2\u20133%, it has *settled* at levels modestly above the old regime rather than snapping back to sub\u20112% dynamics.\n\n3. **Deglobalization / national\u2011security supply\u2011chain shift is real:**  \nIMF and BIS work document \u201cgeoeconomic fragmentation\u201d: a sharp rise in trade\u2011restricting measures since late 2010s, trade and FDI flows re\u2011routing along geopolitical lines, and friend\u2011shoring/near\u2011shoring away from China toward countries like Mexico, Vietnam and India. ([imf.org](https://www.imf.org/news/articles/2023/12/11/sp121123-cold-war-ii-preserving-economic-cooperation-amid-geoeconomic-fragmentation?utm_source=openai))  \nFederal Reserve research on U.S. FDI finds outward investment and advanced\u2011manufacturing activity shifting from China/Hong Kong to allies and some evidence of reshoring into high\u2011tech U.S. manufacturing. ([federalreserve.gov](https://www.federalreserve.gov/econres/notes/feds-notes/how-is-geopolitical-fragmentation-reshaping-us-foreign-direct-investment-20250410.html?utm_source=openai))  \nDomestically, U.S. manufacturing construction has surged to record levels\u2014over 10% of total construction spending\u2014driven explicitly by supply\u2011chain security, CHIPS/IRA incentives, and corporate \u201cde\u2011risking,\u201d consistent with a costlier, security\u2011focused production structure. ([seekingalpha.com](https://seekingalpha.com/article/4709640-factory-construction-boom-us-reaches-new-highs-big-corporate-strategic-rethink?utm_source=openai))\n\n4. **Growth: positive but weaker relative to the hyper\u2011globalization era:**  \nU.S. real GDP growth since 2022 has remained positive\u2014about 2.5% (2022), 2.9% (2023), 2.8% (2024), with projections around ~2% for 2025\u2014so the economy has avoided recession and continued expanding. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Economy_of_the_United_States?utm_source=openai))  \nHowever, the World Bank and others judge the 2020s on track to be the weakest decade for global growth since the 1960s, largely due to elevated trade tensions and fragmentation, implying \u201cless growth\u201d globally compared with the 1990s\u20132000s hyper\u2011globalization era. ([theguardian.com](https://www.theguardian.com/business/2025/jun/10/world-economy-world-bank-donald-trump-tariffs?utm_source=openai))\n\n5. **Assessment against the exact claim:**  \n- **\u201cHigher interest rates\u201d** than the pre\u20112020 era: clearly true for 2022\u201325, with a multi\u2011year step\u2011up in policy rates and bond yields.  \n- **\u201cHigher inflation and input costs\u201d** relative to the 2010s: also borne out\u2014post\u2011COVID inflation has declined from its peaks but has remained above the old ~1.5% core PCE norm, with higher labor, energy, and capital costs embedded in the system.  \n- **\u201cLess growth, but still sustained growth\u201d:** global forecasts and realized data show slower (though still positive) growth relative to earlier globalization decades; the U.S. itself has had solid growth so far but is projected to slow into the low\u20112% range as higher rates and tariffs bite. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Economy_of_the_United_States?utm_source=openai))  \n- **Deglobalization / security\u2011driven reshoring as a driver:** empirical work and policy moves (tariffs, CHIPS Act, FDI re\u2011routing) confirm that national\u2011security and resilience concerns are materially reshaping supply chains in the direction he described.\n\nIt\u2019s still early to declare a *permanent* new macro regime, but over the 2022\u20132025 window\u2014the \u201ccoming years\u201d he referenced\u2014the combination of deglobalization pressures with persistently higher rates, higher inflation than the 2010s, elevated input costs, and continued (but less buoyant) growth matches his forecast closely. Hence the prediction is best judged as **right** given the evidence to date.",
+      "sources": [
+        {
+          "end_index": 805,
+          "start_index": 704,
+          "title": "Effective Federal Funds Rate (Yearly) - United States - His\u2026",
+          "type": "url_citation",
+          "url": "https://ycharts.com/indicators/effective_federal_funds_rate_annual?utm_source=openai"
+        },
+        {
+          "end_index": 1254,
+          "start_index": 1155,
+          "title": "US Core PCE Inflation Rate (Yearly) - United States - Histo\u2026",
+          "type": "url_citation",
+          "url": "https://ycharts.com/indicators/us_core_pce_inflation_rate_yearly?utm_source=openai"
+        },
+        {
+          "end_index": 2030,
+          "start_index": 1871,
+          "title": "Cold War II? Preserving Economic Cooperation Amid Geoeconomic Fragmentation",
+          "type": "url_citation",
+          "url": "https://www.imf.org/news/articles/2023/12/11/sp121123-cold-war-ii-preserving-economic-cooperation-amid-geoeconomic-fragmentation?utm_source=openai"
+        },
+        {
+          "end_index": 2422,
+          "start_index": 2238,
+          "title": "The Fed - How is Geopolitical Fragmentation Reshaping U.S. Foreign Direct Investment?",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/econres/notes/feds-notes/how-is-geopolitical-fragmentation-reshaping-us-foreign-direct-investment-20250410.html?utm_source=openai"
+        },
+        {
+          "end_index": 2860,
+          "start_index": 2701,
+          "title": "Factory Construction Boom In US Reaches New Highs Amid Big Corporate And Strategic Rethink | Seeking Alpha",
+          "type": "url_citation",
+          "url": "https://seekingalpha.com/article/4709640-factory-construction-boom-us-reaches-new-highs-big-corporate-strategic-rethink?utm_source=openai"
+        },
+        {
+          "end_index": 3239,
+          "start_index": 3141,
+          "title": "Economy of the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 3641,
+          "start_index": 3508,
+          "title": "2020s on course to be weakest decade for global economy since 1960s, says World Bank",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/2025/jun/10/world-economy-world-bank-donald-trump-tariffs?utm_source=openai"
+        },
+        {
+          "end_index": 4477,
+          "start_index": 4379,
+          "title": "Economy of the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Economy_of_the_United_States?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction has held: 2022-2025 saw **higher interest rates** (Fed funds avg ~4-5% vs pre-2020 2010-2019 avg ~0.7%; current Dec 2025 ~3.9% [FRED FEDFUNDS, Trading Economics]); **higher inflation** (CPI annual: 2022 8%, 2023 4.1%, 2024 2.9%, 2025 YTD ~3% vs 2010-2019 avg 1.8% [Minneapolis Fed, BLS CPI]); **higher input costs** (PPI index ~149 Sep 2025 vs pre-2020 lower levels, YoY 2.7% [FRED PPIACO, YCharts]); amid deglobalization/reshoring trends (CHIPS Act, policies [Foreign Affairs, S&P Global]). US GDP growth positive (2022 2.5%, 2023 2.9%, 2024 2.8%, 2025 Q2 3.8% [BEA, Macrotrends]). Persistent shift from pre-2020 low-inflation era."
+    },
+    {
+      "id": "A-00:36:55.000",
+      "result": "ambiguous",
+      "explanation": "**Timeframe and core claim**  \nChamath was talking about the \"near term\" (roughly the next couple of years after August 2022). His scenario had several linked elements: (1) recurring geopolitical/economic shocks destabilizing markets, (2) a U.S. consumer\u2011credit \"implosion\", (3) Bolsonaro trying to take over Brazil after losing, and (4) a persistently inflationary, fragmented world that **requires** higher rates to normalize. Some of these materialized, others clearly did not, so the overall prediction is mixed rather than cleanly right or wrong.\n\n**1. Bolsonaro \u201cwill try to take over Brazil\u201d**  \nAfter losing the October 2022 election, Bolsonaro\u2019s supporters stormed Brazil\u2019s Congress, Supreme Court, and presidential palace on January 8, 2023, in an event widely described by officials and media as a coup attempt/insurrection aimed at overturning Lula\u2019s victory. Subsequent investigations have labeled Bolsonaro the intellectual author of a \u201cwilful and premeditated coup attempt,\u201d and Brazil\u2019s Supreme Court has since convicted him over plotting to keep himself in power. ([en.wikipedia.org](https://en.wikipedia.org/wiki/8_January_Bras%C3%ADlia_attacks?utm_source=openai))  \nThis part of the prediction is essentially **correct**.\n\n**2. \u201cConsumer credit thing will implode\u201d**  \nU.S. consumer credit has clearly come under **stress**, but not an outright implosion:\n- New York Fed data show household debt rising steadily, with credit\u2011card and auto\u2011loan balances at record levels and delinquency rates climbing, especially among younger and lower\u2011income borrowers. However, overall delinquency rates are described as elevated but still low by historical standards and largely contained. ([newyorkfed.org](https://www.newyorkfed.org/newsevents/news/research/2024/20240806?utm_source=openai))  \n- There have been sector\u2011specific problems (e.g., bankruptcies of a subprime auto lender and rising auto repossessions), but these have not triggered a systemic consumer\u2011credit meltdown akin to 2008. ([theguardian.com](https://www.theguardian.com/business/2025/oct/17/us-car-repossessions-economy?utm_source=openai))  \nSo the **direction** (mounting credit stress) was right, but the **magnitude** (\u201cimplode\u201d and broadly tilt global markets) has not occurred.\n\n**3. Repeated \u201cwhack\u2011a\u2011mole\u201d shocks destabilizing markets**  \nSince late 2022 there have indeed been successive geopolitical and economic shocks\u2014Ukraine war aftershocks, the 2023 Israel\u2011Hamas war, Houthi attacks on Red Sea shipping, and new tariff and trade conflicts\u2014all of which created bouts of volatility and higher shipping and trade costs. ([reuters.com](https://www.reuters.com/world/middle-east/tariffs-conflict-causing-major-volatility-shipping-industry-says-un-trade-agency-2025-09-24/?utm_source=openai))  \nHowever, global equity markets were **not** persistently destabilized in the sense of sustained weakness:\n- The MSCI World Index returned about **+24% in 2023** and **+19% in 2024**, after a big drop in 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/MSCI_World?utm_source=openai))  \n- The S&P 500 fell about **19% in 2022**, but then gained **~24% in 2023** and **~23% in 2024**, reaching record highs by October 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/S%26P_500?utm_source=openai))  \nMarkets experienced episodes of turbulence (e.g., regional\u2011bank scares, credit concerns) but, in aggregate, they **rallied strongly** instead of being continually \u201ctilted\u201d down by each new shock. So this aspect is only **partially** borne out.\n\n**4. \u201cInflationary, fragmented\u201d world that \u201ctakes higher interest rates to normalize\u201d**  \n- The Fed raised rates aggressively from near zero in early 2022 to **5.25\u20135.50% by July 2023**, keeping them high through 2024 before only beginning to ease in 2025. ([forbes.com](https://www.forbes.com/advisor/investing/fed-raises-interest-rates/?utm_source=openai))  \n- U.S. and global inflation did **not** stay very high: U.S. inflation fell from around 9% in mid\u20112022 to roughly the 3% range by 2024\u201325, and the IMF reports global headline inflation declining steadily toward central\u2011bank targets, though still above pre\u2011COVID norms. ([usinflationcalculator.com](https://www.usinflationcalculator.com/inflation/current-inflation-rates/?utm_source=openai))  \n- At the same time, major institutions repeatedly emphasize that high policy rates and geopolitical tensions are weighing on growth and trade, reflecting a somewhat more fragmented, risk\u2011prone global environment than in the pre\u20112020 era. ([imf.org](https://www.imf.org/en/Publications/WEO/%20Issues/2024/04/16/world-economic-outlook-april-2024?utm_source=openai))  \nSo he was **right** that the environment would require and sustain **higher interest rates** for longer and would be more fragmented, but **wrong** that inflation itself would remain stubbornly high; instead, the story has been disinflation under tight policy.\n\n**Overall assessment**  \n- **Correct:** Bolsonaro\u2011linked coup attempt; higher\u2011for\u2011longer rates and a more fragmented, shock\u2011prone global backdrop.\n- **Overstated / Incorrect:** A true U.S. consumer\u2011credit \u201cimplosion\u201d and global markets being durably \u201ctilted\u201d by each crisis\u2014equities instead entered a powerful bull market after 2022 despite these shocks.\n\nBecause some central elements came true while others clearly did not\u2014and because the prediction bundles several distinct claims that cut in opposite directions\u2014the fairest classification is **\u201cambiguous\u201d** rather than purely right or wrong.",
+      "sources": [
+        {
+          "end_index": 1227,
+          "start_index": 1126,
+          "title": "8 January Bras\u00edlia attacks",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/8_January_Bras%C3%ADlia_attacks?utm_source=openai"
+        },
+        {
+          "end_index": 1849,
+          "start_index": 1746,
+          "title": "Household Debt Increased Moderately in Q2 2024; Auto and Credit Card Delinquency Rates Remain Elevated - FEDERAL RESERVE BANK of NEW YORK",
+          "type": "url_citation",
+          "url": "https://www.newyorkfed.org/newsevents/news/research/2024/20240806?utm_source=openai"
+        },
+        {
+          "end_index": 2169,
+          "start_index": 2053,
+          "title": "'Finances are getting tighter': US car repossessions surge as more Americans default on auto loans",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/2025/oct/17/us-car-repossessions-economy?utm_source=openai"
+        },
+        {
+          "end_index": 2833,
+          "start_index": 2664,
+          "title": "Tariffs and conflict causing major volatility in shipping industry, says UN trade agency",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/middle-east/tariffs-conflict-causing-major-volatility-shipping-industry-says-un-trade-agency-2025-09-24/?utm_source=openai"
+        },
+        {
+          "end_index": 3127,
+          "start_index": 3047,
+          "title": "MSCI World",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/MSCI_World?utm_source=openai"
+        },
+        {
+          "end_index": 3346,
+          "start_index": 3267,
+          "title": "S&P 500",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/S%26P_500?utm_source=openai"
+        },
+        {
+          "end_index": 3956,
+          "start_index": 3855,
+          "title": "Federal Funds Rate History 1990 to 2025 \u2013 Forbes Advisor",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/advisor/investing/fed-raises-interest-rates/?utm_source=openai"
+        },
+        {
+          "end_index": 4350,
+          "start_index": 4229,
+          "title": "Current US Inflation Rates: 2000-2025",
+          "type": "url_citation",
+          "url": "https://www.usinflationcalculator.com/inflation/current-inflation-rates/?utm_source=openai"
+        },
+        {
+          "end_index": 4717,
+          "start_index": 4592,
+          "title": "World Economic Outlook, April 2024: Steady but Slow: Resilience amid Divergence",
+          "type": "url_citation",
+          "url": "https://www.imf.org/en/Publications/WEO/%20Issues/2024/04/16/world-economic-outlook-april-2024?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction specified successive shocks destabilizing global markets, leading to a persistently inflationary, fragmented environment requiring higher rates. Geopolitical 'whack-a-mole' crises occurred (e.g., Ukraine war, Israel-Hamas 2023, per [WEF Global Risks 2024](https://www.weforum.org/publications/global-risks-report-2024/)). U.S. consumer credit saw significant stress with delinquency rates surging >50% in 2023 to highs since 2011 (e.g., 9% credit cards, [NY Fed Feb 2024](https://www.cnbc.com/2024/02/06/credit-card-delinquencies-surged-in-2023-indicating-financial-stress-new-york-fed-says.html); [St. Louis Fed May 2025](https://www.stlouisfed.org/on-the-economy/2025/may/broad-continuing-rise-delinquent-us-credit-card-debt-revisited)), but no 'implosion' or systemic crisis ([KC Fed Dec 2024](https://www.kansascityfed.org/research/economic-bulletin/consumer-credit-cards-show-few-signs-of-financial-stress/)). Bolsonaro lost 2022 election; his plot/coup attempt via Jan 2023 riots led to 27-year conviction in 2025 ([Al Jazeera Nov 2025](https://www.aljazeera.com/news/2025/11/25/brazils-supreme-court-orders-jair-bolsonaro-to-begin-prison-sentence); [BBC Sep 2025](https://www.bbc.com/news/articles/cn4wx9zlpj5o)). Brazil riots caused local market volatility (currency -2-3%, stocks choppy, [Reuters Jan 2023](https://www.reuters.com/markets/brazil-markets-fall-bolsonaro-supporters-storm-capital-2023-01-09/)), minimal global impact. Inflation peaked 2022-23, tamed by rate hikes to ~5.5% ([IMF Oct 2024](https://www.imf.org/en/blogs/articles/2024/10/22/global-financial-fragilities-mount-despite-rate-cuts-and-buoyant-markets)); markets volatile but boomed (S&P 500 +24% 2023, strong 2024, [Dimensional 2024 review](https://www.dimensional.com/be-en/insights/market-review-2024-stocks-overcome-uncertainty-to-notch-another-strong-year)). Shocks caused tilts/volatility but not repeated global destabilization or persistent inflation; outcomes mixed, hence ambiguous."
+    },
+    {
+      "id": "B-00:42:12.130",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, the United States and China have not fought a war over Taiwan or elsewhere in the Western Pacific. The military activity around Taiwan has consisted of Chinese exercises and coercive drills (e.g., 2023 and 2024\u20132025 PLA exercises around Taiwan) and Taiwanese/U.S. responses, but not a declared or de facto U.S.\u2013China war. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2023_Chinese_military_exercises_around_Taiwan?utm_source=openai))\n\nThe *premise* of the prediction\u2014strong and increasingly bipartisan U.S. political and public support for defending Taiwan\u2014does appear accurate. Polling and analysis since 2020 show substantial, often bipartisan majorities of Americans favoring some form of U.S. defense of Taiwan if China attacks, and scholars describe relatively small partisan gaps on most Taiwan-contingency options. ([globaltaiwan.org](https://globaltaiwan.org/2025/05/polling-data-on-us-public-support-for-taiwans-defense/?utm_source=openai))  Congress has also passed or proposed multiple bipartisan measures reaffirming U.S. support for Taiwan and sent bipartisan delegations to Taipei in the face of Chinese pressure. ([nypost.com](https://nypost.com/2025/02/21/us-news/bipartisan-leaders-in-congress-introduce-bill-reaffirming-taiwan-support/?utm_source=openai))  U.S. officials and military leaders frequently discuss the risk of a future war with China over Taiwan, underscoring that such a conflict is seen as a serious possibility rather than a remote scenario. ([aljazeera.com](https://www.aljazeera.com/news/2023/1/29/odds-of-military-conflict-with-china-very-high-says-us-official?utm_source=openai))\n\nHowever, the *prediction itself* was that there is a \u201cvery high probability\u201d that the U.S. and China **will eventually** end up in a war over Taiwan (or in the broader Western Pacific) \u201cat some point in this century.\u201d That is a probabilistic, long-horizon forecast running through 2100. Since we are only in 2025, the relevant time window has barely begun, and the core event\u2014a U.S.\u2013China war\u2014has neither occurred nor been definitively averted.\n\nBecause the outcome (war vs. no war by 2100) is still undetermined, the correctness of a claim about its *probability* cannot be evaluated yet. The most we can say now is that conditions are consistent with his stated concern (heightened tensions and bipartisan support for defending Taiwan), but the main question\u2014whether war actually happens\u2014remains unresolved.\n\nTherefore, the prediction is **too early to score**, and the appropriate judgment is: it remains inconclusive.",
+      "sources": [
+        {
+          "end_index": 502,
+          "start_index": 387,
+          "title": "2023 Chinese military exercises around Taiwan",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2023_Chinese_military_exercises_around_Taiwan?utm_source=openai"
+        },
+        {
+          "end_index": 1020,
+          "start_index": 893,
+          "title": "Polls Indicate that the US Public Supports Taiwan Defense, Regardless of Views on China | Global Taiwan Institute",
+          "type": "url_citation",
+          "url": "https://globaltaiwan.org/2025/05/polling-data-on-us-public-support-for-taiwans-defense/?utm_source=openai"
+        },
+        {
+          "end_index": 1344,
+          "start_index": 1199,
+          "title": "Bipartisan leaders in Congress introduce bill reaffirming US support for Taiwan",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/02/21/us-news/bipartisan-leaders-in-congress-introduce-bill-reaffirming-taiwan-support/?utm_source=openai"
+        },
+        {
+          "end_index": 1689,
+          "start_index": 1548,
+          "title": "\u2018Very high\u2019 odds of war with China, US Republican warns | Conflict News | Al Jazeera",
+          "type": "url_citation",
+          "url": "https://www.aljazeera.com/news/2023/1/29/odds-of-military-conflict-with-china-very-high-says-us-official?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "No war between the US and China over Taiwan or the Western Pacific has occurred as of December 1, 2025. Web searches for 'has the United States fought a war with China over Taiwan since 2022', 'US China war Western Pacific 2022 to 2025', and '\"US China war\" Taiwan' yield only discussions of tensions, potential future conflicts, military preparations, and Taiwan Strait crises (e.g., CFR Global Conflict Tracker on 'confrontation', not war; articles like 'How War in Taiwan Ends' are hypothetical). The prediction targets 'some point in this century' (by 2100), so too early to verify."
+    }
+  ]
+}

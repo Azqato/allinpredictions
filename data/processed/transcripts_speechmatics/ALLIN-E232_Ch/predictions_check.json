@@ -1,0 +1,599 @@
+{
+  "meta": {
+    "count": 26,
+    "count_by_result": {
+      "inconclusive": 21,
+      "ambiguous": 1,
+      "right": 3,
+      "wrong": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "E-00:31:55.320",
+      "result": "inconclusive",
+      "explanation": "The prediction sets a timeframe of **about one year from the June 2025 recording**, i.e., roughly by **mid\u20112026**. Today is **November 30, 2025**, so less than a year has passed since the podcast release on June 21, 2025, and we have not yet reached the prediction\u2019s target date. Because the deadline for the forecast (mid\u20112026) is still in the future, it\u2019s **too early to judge** whether the video AI model (\"Vo 3\" / Google Veo) will have \u201cdestroyed Hollywood\u201d as claimed.\n\nAdditionally, the notion that Hollywood is \u201cdone\u201d is somewhat subjective and would be difficult to measure precisely even once the date arrives, but the primary reason we cannot evaluate this forecast yet is simply that the **specified time horizon has not elapsed**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction claims Veo 3 (Google's AI video model, released May 2025 per [Wikipedia](https://en.wikipedia.org/wiki/Veo_%28text-to-video_model%29), [Mashable](https://mashable.com/article/google-veo-3-ai-video), [CNET](https://www.cnet.com/tech/services-and-software/over-40-million-ai-videos-have-been-made-with-google-veo-3-since-may-how-my-expert-testing-went/)) will destroy Hollywood by mid-2026. As of Dec 1, 2025 (~6 months post-podcast), Hollywood shows no signs of collapse: AI integration ongoing (e.g., Netflix 'all-in' [TechCrunch Oct 21](https://techcrunch.com/2025/10/21/netflix-goes-all-in-on-generative-ai-as-entertainment-industry-remains-divided/)), actor backlash ([Understanding AI Nov 19](https://www.understandingai.org/p/an-ai-tsunami-is-coming-for-hollywood)), but industry active with protections post-strikes. Too early to assess full 1-year impact; hype exists ([Medium May 23](https://barnier.medium.com/why-googles-veo-3-won-t-kill-hollywood-and-what-it-actually-means-2937d190d7b8)) but no disruption yet (Reddit mocks prediction [Jun 25](https://www.reddit.com/r/TheAllinPodcasts/comments/1lkb4bd/2022_chamath_predicts_crypto_payments_will_kill/))."
+    },
+    {
+      "id": "F-00:29:58.610",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, it is too early to judge a 5\u2011year prediction made in June 2025 about what will be the *primary* compute architecture through roughly mid\u20112030.\n\nCurrent evidence actually points in the *direction* of the prediction being plausible:\n- NVIDIA GPUs still dominate AI training and data\u2011center accelerators in 2025, with many estimates putting its share of data\u2011center AI GPUs well above 80\u201390% and discrete GPU share in the mid\u201190% range.([techkv.com](https://techkv.com/ai-chip-statistics/?utm_source=openai))  \n- Market analyses and equity research expect NVIDIA/GPU\u2011centric infrastructure to retain very high share of AI accelerator revenue through the decade, with some forecasts explicitly projecting NVIDIA to maintain around 80\u201390% GPU market share into 2030.([techkv.com](https://techkv.com/ai-chip-statistics/?utm_source=openai))  \n- Custom AI chips and alternative architectures (Google TPUs, AWS Trainium/Inferentia, Meta\u2019s MTIA, other XPUs) are growing quickly, and hyperscalers are clearly investing to reduce dependence on NVIDIA. However, even bullish coverage of TPUs and XPUs still describes GPUs as the majority of AI compute spend and the de\u2011facto standard platform as of 2025.([ecopulse24.com](https://ecopulse24.com/articles/google-s-tpu-the-secret-weapon-that-could-end-nvidia-s-ai-dominance?utm_source=openai))\n\nBut the prediction is explicitly about the *entire* medium term (the next five years from June 2025). Only a few months of that window have elapsed, and competitive dynamics in AI hardware (including rapid advances in custom ASICs and potential ecosystem or regulatory shifts) could still change the landscape before 2030. Since we cannot reliably know yet whether GPUs will *still* be the central architecture across the full period, the correct classification today is **\"inconclusive (too early)\"**, even though present trends are consistent with the predictor\u2019s view.",
+      "sources": [
+        {
+          "end_index": 573,
+          "start_index": 501,
+          "title": "AI Chip Statistics 2025: Market Insights Unveiled \u2022 TechKV",
+          "type": "url_citation",
+          "url": "https://techkv.com/ai-chip-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 902,
+          "start_index": 830,
+          "title": "AI Chip Statistics 2025: Market Insights Unveiled \u2022 TechKV",
+          "type": "url_citation",
+          "url": "https://techkv.com/ai-chip-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 1398,
+          "start_index": 1261,
+          "title": "Google's TPU: The Secret Weapon That Could End Nvidia's AI Dominance - ecopulse24.com",
+          "type": "url_citation",
+          "url": "https://ecopulse24.com/articles/google-s-tpu-the-secret-weapon-that-could-end-nvidia-s-ai-dominance?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction covers the medium term (June 2025 to June 2030), but only ~5.5 months have passed as of Dec 1, 2025. Current evidence shows GPUs (primarily Nvidia) remain dominant for training leading AI models, with Nvidia holding 80-95% market share in AI accelerators ([Wedbush Nov 2025](https://investor.wedbush.com/wedbush/article/tokenring-2025-11-10-the-silicon-supercycle-how-ai-data-centers-are-forging-a-new-era-for-semiconductors), [Euronews Nov 2025](https://www.euronews.com/business/2025/11/25/nvidia-shares-slip-as-ai-accelerator-race-shifts-interest-to-google-chips), [CNBC Nov 2025](https://www.cnbc.com/2025/11/25/nvidia-says-its-gpus-are-a-generation-ahead-of-googles-ai-chips.html)). Alternatives like Google TPUs (v7 'Ironwood') are emerging and competitive especially for inference, but not displacing GPUs for training ([SemiAnalysis Nov 2025](https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the), [CNBC Nov 2025](https://www.cnbc.com/2025/11/21/nvidia-gpus-google-tpus-aws-trainium-comparing-the-top-ai-chips.html)). Major clusters (e.g., Microsoft-Anthropic 1GW NVIDIA GB300) use GPUs ([State of AI Dec 2025](https://nathanbenaich.substack.com/p/state-of-ai-december-2025-newsletter)). Too early to assess full 5-year outcome."
+    },
+    {
+      "id": "B-00:37:09.010",
+      "result": "inconclusive",
+      "explanation": "The prediction\u2019s own timeframe is \u201cin the near term,\u201d which we normalized as *within a few years from June 2025*. As of November 30, 2025, only about five months have passed, so the window for judging it has clearly not expired.\n\nSubstantively, there are **early signs consistent with the prediction**:\n\n- Huawei is mass\u2011shipping Ascend 910C AI accelerators built on SMIC\u2019s domestic 7 nm process as an alternative to Nvidia\u2019s H100/H20 in China; these chips reach roughly 60% of an H100\u2019s performance and are being deployed in large CloudMatrix systems.([mihutz.com](https://www.mihutz.com/2025/04/nvidia-vs-huawei-rivalry-in-ai-chip.html?utm_source=openai))\n- Huawei has announced the Ascend 920 on SMIC\u2019s 6 nm node, aiming to exceed Nvidia\u2019s China\u2011specific H20 in raw performance, though independent benchmarks and large\u2011scale deployment are still pending.([tomshardware.com](https://www.tomshardware.com/tech-industry/artificial-intelligence/huawei-ascend-ai-910d-processor-designed-to-take-on-nvidias-blackwell-and-rubin-gpus?utm_source=openai))\n- U.S. export controls and recent Chinese regulatory moves limiting new Nvidia deployments inside China are pushing domestic firms toward local AI silicon (e.g., Huawei Ascend), creating the beginnings of a **structural, China\u2011based challenger** in that market.([reuters.com](https://www.reuters.com/world/china/chinese-regulators-block-bytedance-using-nvidia-chips-information-reports-2025-11-26/?utm_source=openai))\n\nHowever, **as of late 2025** these developments have *not yet* translated into a clear, global \u201csignificant competitive threat\u201d to Nvidia\u2019s overall AI\u2011chip dominance:\n\n- Analyses consistently find Huawei\u2019s Ascend line still one generation behind Nvidia in performance per watt and ecosystem maturity; training on Ascend often costs more and carries higher integration risk versus Nvidia\u2019s CUDA\u2011based stack.([ainvest.com](https://www.ainvest.com/news/huawei-chip-ambition-threat-nvidia-dominance-ai-hardware-2504/?utm_source=openai))\n- SMIC\u2019s 7 nm and 6 nm processes lag TSMC\u2019s leading\u2011edge nodes that fabricate Nvidia\u2019s top chips, and Huawei\u2019s 2025 production volumes (a few hundred thousand advanced AI chips) are far below Nvidia\u2019s global scale, limiting immediate competitive impact outside China.([evervolve.com](https://evervolve.com/huawei-vs-nvidia-challenging-nvidias-dominance-in-ai-computing-2025-2028/?utm_source=openai))\n\nOverall, China has **started** developing advanced AI chips on domestic manufacturing processes that challenge Nvidia *within China*, but it is too early in the stated multi\u2011year window to say whether this will mature into the \u201csignificant competitive threat\u201d to Nvidia\u2019s *global* dominance that the prediction describes. Hence the status is **inconclusive (too early)** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 701,
+          "start_index": 596,
+          "title": "Nvidia vs Huawei: The Rivalry in the AI Chip Market",
+          "type": "url_citation",
+          "url": "https://www.mihutz.com/2025/04/nvidia-vs-huawei-rivalry-in-ai-chip.html?utm_source=openai"
+        },
+        {
+          "end_index": 1093,
+          "start_index": 902,
+          "title": "Huawei Ascend AI 910D processor designed to take on Nvidia's Blackwell and Rubin GPUs | Tom's Hardware",
+          "type": "url_citation",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/huawei-ascend-ai-910d-processor-designed-to-take-on-nvidias-blackwell-and-rubin-gpus?utm_source=openai"
+        },
+        {
+          "end_index": 1512,
+          "start_index": 1356,
+          "title": "Chinese regulators block ByteDance from using Nvidia chips, The Information reports",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/china/chinese-regulators-block-bytedance-using-nvidia-chips-information-reports-2025-11-26/?utm_source=openai"
+        },
+        {
+          "end_index": 2050,
+          "start_index": 1924,
+          "title": "Huawei's Chip Ambition: A Threat to Nvidia's Dominance in AI Hardware?",
+          "type": "url_citation",
+          "url": "https://www.ainvest.com/news/huawei-chip-ambition-threat-nvidia-dominance-ai-hardware-2504/?utm_source=openai"
+        },
+        {
+          "end_index": 2451,
+          "start_index": 2319,
+          "title": "Huawei vs Nvidia. Challenging Nvidia's Dominance in AI Computing (2025-2028) - EverVolve",
+          "type": "url_citation",
+          "url": "https://evervolve.com/huawei-vs-nvidia-challenging-nvidias-dominance-in-ai-computing-2025-2028/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies 'near term (within a few years from June 2025),' so up to ~2028. Only 5.5 months have passed by Dec 1, 2025, making it too early to verify. China shows progress (e.g., SMIC at 7nm, testing 5nm tools, Huawei doubling Ascend AI chip output [Bloomberg Sep 29, 2025]; Nvidia CEO Huang warns China 'nanoseconds behind' [BBC Oct 5, 2025; Axios Nov 5, 2025]). However, no evidence of advanced manufacturing (e.g., <5nm mass production rivaling TSMC's 3nm/2nm) creating *significant* threat to Nvidia's global AI chip dominance yet\u2014Chinese chips lag in performance, Nvidia remains leader [IEEE Nov 13, 2025; Bloomberg Nov 5, 2025]."
+    },
+    {
+      "id": "F-00:46:52.200",
+      "result": "ambiguous",
+      "explanation": "There has been **no announcement or completion of an Apple acquisition of OpenAI** at any price as of November 30, 2025. Public reporting around OpenAI\u2019s strategic partnerships and funding focuses on Microsoft\u2019s multi\u2011billion\u2011dollar investment and integration of OpenAI models into Microsoft products, with no indication of an Apple takeover deal or acquisition announcement.\n\nBecause the prediction is explicitly conditional \u2014 *\u201cIf Apple were to acquire OpenAI for around $500 billion, Apple\u2019s stock price would rise on the day the acquisition is announced\u201d* \u2014 and the triggering event (an Apple\u2013OpenAI acquisition announcement around that scale) has **never occurred**, we cannot observe any actual market reaction to evaluate whether the claim would have been correct.\n\nThus, the accuracy of the prediction **cannot be determined** given real\u2011world events to date; it\u2019s a counterfactual scenario rather than a forecast about something that did or didn\u2019t happen.\n\nTherefore, the appropriate classification is: the condition never happened, so whether the prediction would have been right is **ambiguous**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The predicted event\u2014Apple acquiring OpenAI for around $500 billion\u2014did not occur between June 21, 2025, and December 1, 2025. Searches for 'Apple OpenAI acquisition 2025' and related queries returned no evidence of such a deal; instead, results show OpenAI acquiring startups like Jony Ive's io ($6.5B, May 2025) and Software Applications Inc. (Oct 2025), with Apple stock dipping on the former news ([CNBC](https://www.cnbc.com/2025/11/24/openai-hardware-jony-ive-sam-altman-emerson-collective.html), [Yahoo Finance](https://finance.yahoo.com/news/apple-rattled-openai-acquires-io-171326400.html)). Apple CEO Tim Cook mentioned openness to AI M&A ([TechCrunch, Oct 31, 2025](https://techcrunch.com/2025/10/31/tim-cook-says-apple-is-open-to-ma-on-the-ai-front/)), but no OpenAI involvement. Without the acquisition announcement, the hypothetical stock reaction cannot be tested."
+    },
+    {
+      "id": "F-01:04:46.460",
+      "result": "inconclusive",
+      "explanation": "Chamath\u2019s claim is explicitly long\u2011dated: that *\u201cover the coming years\u201d* essentially all major enterprise/business software will be **rebuilt end\u2011to\u2011end** using new AI\u2011enabled development toolchains, displacing the current generation of vertical SaaS and custom software.\n\nAs of November 30, 2025:\n\n* **AI development tools are being adopted very rapidly.** GitHub Copilot and similar tools are now used by a large share of professional developers and enterprises. Gartner forecasts that by 2028, about 90% of enterprise software engineers will use AI code assistants, up from <14% in early 2024.([github.blog](https://github.blog/ai-and-ml/github-copilot/gartner-positions-github-as-a-leader-in-the-2025-magic-quadrant-for-ai-code-assistants-for-the-second-year-in-a-row/?utm_source=openai)) Surveys also report that a majority of professional developers use AI tools regularly, and Copilot alone has tens of thousands of enterprise customers and millions of users.([secondtalent.com](https://www.secondtalent.com/resources/github-copilot-statistics/?utm_source=openai)) This supports the *direction* of his thesis (AI deeply permeating the software development lifecycle).\n\n* **However, the existing SaaS and enterprise software base is still enormous and largely intact.** The global SaaS market in 2025 is hundreds of billions of dollars and is projected to keep *growing* through 2030\u20132034, not to be wholesale displaced in the near term.([rss.globenewswire.com](https://rss.globenewswire.com/news-release/2025/04/08/3057829/0/en/Software-As-a-Service-SaaS-Market-Size-to-Reach-USD-1-251-35-Bn-by-2034.html?utm_source=openai)) There is no evidence that \u201cessentially all\u201d major enterprise systems have been or are imminently being rebuilt from scratch; instead, vendors are adding AI features, consolidating, or modernizing parts of their stacks rather than replacing everything soup\u2011to\u2011nuts.([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/city/chennai/saas-consolidates-as-ai-adoption-talent-war-intensifies/articleshow/124324537.cms?utm_source=openai))\n\n* **Timeframe: we are only ~5 months past the June 21, 2025 episode.** A prediction about \u201cthe entirety of the software that runs the world\u201d being rebuilt \u201cover the coming years\u201d spans many years, not months. The horizon he implies (multi\u2011year global rebuild) is far beyond November 2025, so it is too early to say definitively whether this end\u2011state will or will not materialize.\n\nBecause (a) AI toolchain adoption is clearly underway in line with the *spirit* of the claim, but (b) the *outcome he specifies*\u2014nearly all major enterprise/business software rebuilt end\u2011to\u2011end\u2014concerns a much longer period than has elapsed, the prediction cannot yet be judged as either correct or incorrect.\n\nTherefore the status as of November 30, 2025 is **\u201cinconclusive (too early to tell).\u201d**",
+      "sources": [
+        {
+          "end_index": 836,
+          "start_index": 640,
+          "title": "Gartner positions GitHub as a Leader in the 2025 Magic Quadrant for AI Code Assistants for the second year in a row - The GitHub Blog",
+          "type": "url_citation",
+          "url": "https://github.blog/ai-and-ml/github-copilot/gartner-positions-github-as-a-leader-in-the-2025-magic-quadrant-for-ai-code-assistants-for-the-second-year-in-a-row/?utm_source=openai"
+        },
+        {
+          "end_index": 1115,
+          "start_index": 1010,
+          "title": "GitHub Copilot Statistics & Adoption Trends [2025] | Second Talent",
+          "type": "url_citation",
+          "url": "https://www.secondtalent.com/resources/github-copilot-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 1677,
+          "start_index": 1489,
+          "title": "Software As a Service (SaaS) Market Size to Reach USD",
+          "type": "url_citation",
+          "url": "https://rss.globenewswire.com/news-release/2025/04/08/3057829/0/en/Software-As-a-Service-SaaS-Market-Size-to-Reach-USD-1-251-35-Bn-by-2034.html?utm_source=openai"
+        },
+        {
+          "end_index": 2123,
+          "start_index": 1942,
+          "title": "SaaS consolidates as AI adoption & talent war intensifies",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/city/chennai/saas-consolidates-as-ai-adoption-talent-war-intensifies/articleshow/124324537.cms?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns a massive, global rebuild of 'essentially all major enterprise and business software systems' over 'the coming years' (plural), replacing vertical SaaS and custom software with AI-enabled toolchains. Only ~5.5 months have passed since the June 21, 2025 podcast (current date: Dec 1, 2025), far too short for such a sweeping transformation, which typically takes years in enterprise contexts. Web searches reveal ongoing discussions of AI integration trends (e.g., [Forbes Nov 2025](https://www.forbes.com/sites/alexanderpuutio/2025/11/12/from-systems-of-record-to-systems-of-reason-the-enterprise-ai-revolution/) on potential revolutions; [Emergence Capital Oct 2025](https://www.emcap.com/thoughts/two-paths-for-enterprise-ai-retrofit-or-rebuild) debating retrofit vs. rebuild), Chamath's related ventures like 8090 AI factory ([Benzinga Jul 2025](https://www.benzinga.com/markets/tech/25/07/46485314/chamath-palihapitiya-slams-ai-agent-hype-as-year-of-letdowns-touts-8090s-software-factory-as-no-gimmick-alternative)), and predictions of disruption (e.g., [Bain Sep 2025](https://www.bain.com/insights/will-agentic-ai-disrupt-saas-technology-report-2025/)), but no evidence of widespread rebuilding or replacement having occurred. SaaS remains dominant per multiple sources."
+    },
+    {
+      "id": "F-01:04:46.461",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly sets a long horizon: performance dispersion in the S&P 493 *\u201cover roughly the next decade.\u201d* As of now (late November 2025), only a few months have passed since the June 21, 2025 podcast release date, far too little time to evaluate whether:\n\n- AI adoption has *persistently* driven \u201cvery large performance dispersion\u201d across the S&P 493, and\n- this has in fact produced \u201csome of the largest relative\u2011return opportunities for public\u2011equity investors in decades.\u201d\n\nWhile there are already anecdotal signs of differing AI strategies and some early market enthusiasm around AI-forward companies, that short-term behavior cannot conclusively confirm or refute a *decade-scale* claim about structural return dispersion and opportunities. We would need many more years of realized returns and clear attribution to AI-driven operational changes to make a fair assessment.\n\nBecause the forecast window is still in its very early phase, the correct classification at this time is **\u201cinconclusive (too early)\u201d**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns 'very large performance dispersion' over 'roughly the next decade' (from June 2025) within the S&P 493 between AI-aggressive adopters and laggards. Only ~5.5 months have elapsed by Dec 1, 2025, too short to assess a decade-scale outcome. No sources quantify exceptional intra-S&P 493 dispersion tied to AI workflow rebuilds; S&P 493 has lagged Mag 7 overall ([AI-driven rally splits US market](https://biz.chosun.com/en/en-international/2025/11/25/PBUBGKBDTNBORIXZD5P3JA6R7Y/), Nov 25), with commentary on picking alpha ([Unlocking Alpha in the S&P 500's 'Other 493'](https://www.ainvest.com/news/unlocking-alpha-500-493-strategic-shift-magnificent-2508/), Aug 23). Some non-Mag 7 outperformers like Seagate/WD (AI data storage) exist ([Best-performing stocks Nov 2025](https://www.bankrate.com/investing/best-performing-stocks/)), but not evidencing 'largest relative-return opportunities in decades' yet."
+    },
+    {
+      "id": "F-01:02:59.790",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly uses a 5\u201310 year horizon for these newly public companies to compound revenues around 25% annually and become the next generation of \"compounders.\" As of November 30, 2025\u2014about five months after the June 21, 2025 podcast\u2014CoreWeave, Circle, and Chime have only a short public track record, even though early growth looks strong (e.g., CoreWeave\u2019s 2024 revenue grew about 737% year over year and it guides to multi\u2011billion\u2011dollar 2025 revenue; Circle reported 53% year\u2011over\u2011year revenue growth in Q2 2025, its first quarter as a public company; Chime\u2019s revenue grew roughly 30% in 2024 and continues to rise post\u2011IPO). ([fool.com](https://www.fool.com/investing/2025/03/09/this-nvidia-backed-ipo-grew-737-last-year-and-is-a/?utm_source=openai)) Whether many of these firms will sustain ~25% annual growth over an entire 5\u201310 year period and truly become durable compounders cannot yet be determined, so the prediction is too early to judge.",
+      "sources": [
+        {
+          "end_index": 811,
+          "start_index": 686,
+          "title": "This Nvidia-Backed IPO Grew 737% Last Year and Is About to Go Public: What Investors Should Know About CoreWeave | The Motley Fool",
+          "type": "url_citation",
+          "url": "https://www.fool.com/investing/2025/03/09/this-nvidia-backed-ipo-grew-737-last-year-and-is-a/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The prediction concerns revenue growth at ~25% per year for CoreWeave, Circle, Chime, and similar companies over the 5\u201310 years following the June 21, 2025 podcast (i.e., through 2030\u20132035). Only ~5.5 months have passed as of December 1, 2025.\n\nAll three went public in 2025:\n- **CoreWeave (CRWV)**: Q3 2025 revenue $1.36B (134% YoY growth); 2025 guidance $5.05\u20135.15B; analysts project $25.8B by 2029 ([CoreWeave IR](https://investors.coreweave.com), [Yahoo Finance](https://finance.yahoo.com/news/coreweave-tremendous-long-term-opportunity-173207052.html), [Seeking Alpha](https://seekingalpha.com/article/4846041-coreweave-stock-q3-sell-off-hides-the-real-story)).\n- **Circle**: Q3 2025 revenue $740M (66% YoY); strong stablecoin-driven growth ([Reuters](https://www.reuters.com/business/circle-quarterly-revenue-rises-stablecoin-growth-2025-11-12/), [Seeking Alpha](https://seekingalpha.com/article/4842579-q3-25-earnings-circles-valuation-and-revenue-concentration-problems)).\n- **Chime (CHYM)**: Q3 2025 ~29% YoY growth; 2025 revenue outlook $2.16\u20132.17B (29% YoY); recent quarters 26\u201341% growth ([Reuters](https://www.reuters.com/business/finance/chime-lifts-2025-revenue-forecast-growth-digital-banking-users-2025-11-05/), [Yahoo Finance](https://finance.yahoo.com/news/chime-financial-chym-18-5-201434980.html), [S&P Global](https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/10/chimes-q3-revenue-set-to-jump-26percent-as-platform-growth-accelerates)).\n\nShort-term growth exceeds 25% YoY, aligning with 'high-growth' and 'newly public' descriptors, but insufficient time has elapsed to assess 5\u201310 year compounding ability. No evidence of failure; optimistic projections exist, but long-term outcomes undetermined."
+    },
+    {
+      "id": "E-01:10:26.630",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, there isn\u2019t enough evidence to say that Chamath\u2019s structural, long\u2011term call on traditional enterprise SaaS has clearly proven right or wrong.\n\nKey points:\n\n- **Sector growth has slowed, but not collapsed.** Large flagship SaaS vendors like Salesforce are still growing revenue in the high single\u2011 to low double\u2011digit range (around 7\u201310% YoY in recent quarters), even though that\u2019s a clear deceleration from the mid\u2011teens or higher growth rates seen earlier in the 2020s. ([reddit.com](https://www.reddit.com/r/stocks/comments/1iz3qu5?utm_source=openai))  This supports the \u201cgrowth deceleration\u201d part of his thesis but does not yet show that the business model has broadly failed.\n\n- **Investor returns and expectations are mixed.** Salesforce, one of the emblematic cloud SaaS names, is down roughly 30% year\u2011to\u2011date in late 2025 and has modest returns over five years, underperforming the S&P 500, with forward revenue growth now expected to be <10% annually and valuation multiples compressed. ([barrons.com](https://www.barrons.com/articles/salesforce-stock-ai-earnings-89c9f0bc?utm_source=openai))  At the same time, Salesforce still guides to over $60B in revenue by 2030 and is executing large AI\u2011driven acquisitions like Informatica, signaling that markets do not view the category as \u201cover\u201d so much as repriced. ([reuters.com](https://www.reuters.com/business/salesforce-forecasts-revenue-over-60-billion-2030-2025-10-15/?utm_source=openai))  Cloud\u2011heavy vendors like Oracle are even guiding to *higher* cloud growth going forward. ([wsj.com](https://www.wsj.com/business/earnings/oracle-shares-jump-as-ceo-targets-dramatically-higher-revenue-growth-3b56b67a?utm_source=openai))  So structural underperformance is not clearly established across the whole space.\n\n- **Public cloud/SaaS indexes show pressure but continued viability.** The BVP Nasdaq Emerging Cloud Index (a proxy for public cloud/SaaS names) remains well above its 2018 base value (around 1,600\u20131,700 vs. 1,000 at inception), indicating that the segment is still meaningful. ([indexes.nasdaqomx.com](https://indexes.nasdaqomx.com/index/History/EMCLOUD?utm_source=openai))  It has had bouts of underperformance and drawdowns\u2014Nasdaq\u2019s March 2025 scorecard highlighted cloud and AI thematic indexes among the worst performers that month, with the cloud index down ~11.4%\u2014but this is consistent with a repricing and rotation, not clear evidence that the \u201cjig is totally up for software.\u201d ([nasdaq.com](https://www.nasdaq.com/articles/index-monthly-scorecard-march-2025?utm_source=openai))\n\n- **Customers *are* experiencing tool fatigue and poor ROI.** Surveys like Freshworks\u2019 2025 research show enterprises wasting roughly 20% of software budgets on unused tools, failed implementations, and hidden costs, with significant productivity loss and burnout due to software complexity and tool sprawl. More than half of businesses report that software investments aren\u2019t delivering the expected ROI. ([itpro.com](https://www.itpro.com/software/software-complexity-is-burning-through-enterprise-budgets-draining-productivity-and-burning-out-employees-and-its-a-gbp32-billion-problem-that-cant-be-solved?utm_source=openai))  Other analyses quantify overlapping SaaS tools, unused licenses, and integration overhead, and explicitly argue for moving from \u201cSaaS sprawl\u201d to more consolidated, often AI\u2011driven, custom architectures. ([medium.com](https://medium.com/%40k.jaidev/from-saas-sprawl-to-open-source-agentic-ai-a-quantitative-and-technical-paradigm-shift-951a4a8cb917?utm_source=openai))  This supports the *direction* of Chamath\u2019s critique (customers are tired of \u201cyet another tool\u201d).\n\n- **AI and agentic systems are surging, but mostly as overlays, not wholesale replacements.** Enterprise adoption of AI agents and compound/agentic AI architectures is ramping quickly, and many forecasts expect strong ROI and rapid market growth through 2030. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Agentic_AI?utm_source=openai))  However, in practice, much of this is happening *inside* existing SaaS platforms (e.g., Salesforce\u2019s Agentforce and Data Cloud, or CRM\u2011style vendors adding copilots) rather than via enterprises replacing large swaths of SaaS with entirely custom-built AI software stacks. ([marketwatch.com](https://www.marketwatch.com/story/salesforces-stock-rises-as-earnings-show-an-ai-boost-with-more-to-follow-50de16d9?utm_source=openai))  That pattern is consistent with evolution and integration, not yet with the broad displacement implied by \u201cthe jig is totally up for software.\u201d\n\n- **Structural claims need a longer horizon.** Chamath was explicitly talking about a multi\u2011year structural shift driven by AI making it cheap to rebuild vertical software and by enterprises rejecting per\u2011seat/ever\u2011escalating license models. ([metacast.app](https://metacast.app/podcasts/episode/a0a7b2fa_7c8c_5609_9772_aee22f236ad7_2fe4cf47_1892_4d10_9fe9_191485e8101d?utm_source=openai))  Only about five months have passed since the June 21, 2025 episode; even where we see funding pressure and consolidation in enterprise applications (deal funding down modestly, more M&A, lower valuations), that is still early and influenced by macro conditions and the post\u20112021 repricing as much as by AI\u2011driven custom solutions per se. ([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/city/chennai/saas-consolidates-as-ai-adoption-talent-war-intensifies/articleshow/124324537.cms?utm_source=openai))  We do not yet have enough multi\u2011year data on ROE, sector\u2011wide returns, or actual replacement of SaaS by custom AI to decisively validate or falsify his structural forecast.\n\nPutting these strands together: some elements of his narrative (slower growth, multiple compression, tool fatigue, rising AI/agent adoption) are clearly observable, but the stronger claim\u2014that traditional enterprise SaaS as a whole will structurally underperform and be displaced by cheaper AI\u2011driven custom software\u2014cannot reasonably be judged after only a few quarters. The available evidence is consistent with both \u201crepricing and adaptation\u201d and \u201cearly stages of eventual disruption,\u201d so the prediction\u2019s ultimate accuracy remains **inconclusive** at this time.",
+      "sources": [
+        {
+          "end_index": 623,
+          "start_index": 541,
+          "title": "Salesforce misses on revenue, issues disappointing guidance",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/stocks/comments/1iz3qu5?utm_source=openai"
+        },
+        {
+          "end_index": 1173,
+          "start_index": 1068,
+          "title": "Don't Expect Salesforce's Earnings to Dispel Fear That AI Could Hurt It",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/salesforce-stock-ai-earnings-89c9f0bc?utm_source=openai"
+        },
+        {
+          "end_index": 1521,
+          "start_index": 1392,
+          "title": "Salesforce forecasts stronger-than-expected revenue of over $60 billion in 2030",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/salesforce-forecasts-revenue-over-60-billion-2030-2025-10-15/?utm_source=openai"
+        },
+        {
+          "end_index": 1758,
+          "start_index": 1612,
+          "title": "Oracle Shares Jump as CEO Targets 'Dramatically Higher' Revenue Growth",
+          "type": "url_citation",
+          "url": "https://www.wsj.com/business/earnings/oracle-shares-jump-as-ceo-targets-dramatically-higher-revenue-growth-3b56b67a?utm_source=openai"
+        },
+        {
+          "end_index": 2219,
+          "start_index": 2123,
+          "title": "History for EMCLOUD",
+          "type": "url_citation",
+          "url": "https://indexes.nasdaqomx.com/index/History/EMCLOUD?utm_source=openai"
+        },
+        {
+          "end_index": 2632,
+          "start_index": 2532,
+          "title": "Index Monthly Scorecard: March 2025 | Nasdaq",
+          "type": "url_citation",
+          "url": "https://www.nasdaq.com/articles/index-monthly-scorecard-march-2025?utm_source=openai"
+        },
+        {
+          "end_index": 3263,
+          "start_index": 3042,
+          "title": "Software 'complexity' is burning through enterprise budgets, draining productivity, and burning out employees - and it's a \u00a332 billion problem that can't be solved",
+          "type": "url_citation",
+          "url": "https://www.itpro.com/software/software-complexity-is-burning-through-enterprise-budgets-draining-productivity-and-burning-out-employees-and-its-a-gbp32-billion-problem-that-cant-be-solved?utm_source=openai"
+        },
+        {
+          "end_index": 3632,
+          "start_index": 3468,
+          "title": "From SaaS Sprawl to Enterprise AI Agents | by Jaidev Karthickeyan | Medium",
+          "type": "url_citation",
+          "url": "https://medium.com/%40k.jaidev/from-saas-sprawl-to-open-source-agentic-ai-a-quantitative-and-technical-paradigm-shift-951a4a8cb917?utm_source=openai"
+        },
+        {
+          "end_index": 4074,
+          "start_index": 3994,
+          "title": "Agentic AI",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Agentic_AI?utm_source=openai"
+        },
+        {
+          "end_index": 4502,
+          "start_index": 4348,
+          "title": "Salesforce's stock rises as earnings show an AI boost - with more to follow",
+          "type": "url_citation",
+          "url": "https://www.marketwatch.com/story/salesforces-stock-rises-as-earnings-show-an-ai-boost-with-more-to-follow-50de16d9?utm_source=openai"
+        },
+        {
+          "end_index": 5040,
+          "start_index": 4893,
+          "title": "IPOs and SPACs are Back, Mag 7 Showdown, Zuck on Tilt, Apple's Fumble, GENIUS Act passes Senate | All-In with Chamath, Jason, Sacks & Friedberg podcast - Listen or read transcript on Metacast",
+          "type": "url_citation",
+          "url": "https://metacast.app/podcasts/episode/a0a7b2fa_7c8c_5609_9772_aee22f236ad7_2fe4cf47_1892_4d10_9fe9_191485e8101d?utm_source=openai"
+        },
+        {
+          "end_index": 5561,
+          "start_index": 5380,
+          "title": "SaaS consolidates as AI adoption & talent war intensifies",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/city/chennai/saas-consolidates-as-ai-adoption-talent-war-intensifies/articleshow/124324537.cms?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Only 5.5 months have passed since the June 21, 2025 podcast. Q3 2025 earnings show SaaS growth decelerated but still positive: ServiceNow subscription revenue up 20.5% YoY ([ServiceNow Q3](https://www.servicenow.com/kr/company/media/press-room/third-quarter-2025-financial-results.html)), Workday total revenue up 12.6% ([Workday Q3](https://investor.workday.com/2025-11-25-Workday-Announces-Fiscal-2026-Third-Quarter-Financial-Results)), Salesforce recent quarters ~8-10% ([Salesforce](https://www.salesforce.com/news/press-releases/2024/12/03/salesforce-announces-third-quarter-fiscal-2025-results/)), Adobe 11% ([Adobe Q3](https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/11905202/aiy4w5teshy5t.pdf)). Median public SaaS growth ~15% ([Blossom Street Q3 2025](https://blossomstreetventures.medium.com/q3-2025-saas-multiples-for-87-publics-295bc10e5a7d)). No data on ROE failing expectations; margins improving ([Pitchbook](https://pitchbook.com/news/reports/q3-2025-enterprise-saas-public-comp-sheet-and-valuation-guide)). Discussions of AI shift exist ([AlixPartners](https://www.alixpartners.com/insights/102kcw9/farewell-saas-ai-is-the-future-of-enterprise-software/)), but SaaS market growing to $299B ([Zylo](https://zylo.com/blog/saas-statistics/)), companies integrating AI. Too early to confirm structural underperformance."
+    },
+    {
+      "id": "E-01:11:39.930",
+      "result": "inconclusive",
+      "explanation": "Only about five months have passed between the podcast release (21 June 2025) and the current date (30 November 2025), and the claim is explicitly framed as **\u201cover the long term\u201d**. That horizon is typically several years, so there hasn\u2019t been enough time to decisively confirm or falsify the prediction.\n\nCurrent evidence actually points the opposite way in the short run:\n- Snowflake continues to **center its business on consumption\u2011based pricing** and is actively promoting guides and playbooks that advocate usage\u2011based models, not retreating from them. ([snowflake.com](https://www.snowflake.com/resource/the-simple-guide-to-snowflake-pricing/?utm_source=openai))\n- Independent writeups of Snowflake\u2019s pricing in 2025 still describe the familiar **pay\u2011for\u2011what\u2011you\u2011use model** across compute and storage (credits per warehouse size, TB\u2011per\u2011month storage), rather than a shift to a fundamentally different structure. ([blog.twingdata.com](https://blog.twingdata.com/p/warehouse-pricing-snowflake-now-with?utm_source=openai))\n- Specific tweaks, like Snowpipe moving to a fixed credit amount per GB for ingestion, simplify billing but remain per\u2011usage; they don\u2019t abandon the consumption framework. ([docs.snowflake.com](https://docs.snowflake.com/en/en/user-guide/data-load-snowpipe-billing?utm_source=openai))\n- Financially, Snowflake\u2019s product revenue is still growing >20% annually with strong net\u2011revenue\u2011retention and repeated guidance beats in 2025, which suggests the model is **economically viable so far**, even if customers are more cost\u2011conscious and optimize usage. ([reuters.com](https://www.reuters.com/technology/snowflake-forecasts-annual-product-revenue-above-estimates-2025-02-26/?utm_source=openai))\n- There is no clear evidence of **large\u2011scale customer migration from Snowflake to lower\u2011cost Postgres/Supabase\u2011style alternatives**; if anything, we see Snowflake acquiring Crunchy Data to offer its own Postgres option and case studies of firms migrating *to* Snowflake from other platforms. ([constellationr.com](https://www.constellationr.com/blog-news/insights/snowflake-makes-its-postgres-move-acquires-crunchy-data?utm_source=openai))\n\nGiven the explicitly long\u2011term nature of the prediction and the relatively short time elapsed, plus the lack of clear evidence either of mass migrations away from Snowflake or of its pricing model collapsing, the fairest assessment as of November 2025 is that the prediction\u2019s truth value is **still undetermined**.",
+      "sources": [
+        {
+          "end_index": 713,
+          "start_index": 603,
+          "title": "The Simple Guide to Snowflake Pricing - Snowflake",
+          "type": "url_citation",
+          "url": "https://www.snowflake.com/resource/the-simple-guide-to-snowflake-pricing/?utm_source=openai"
+        },
+        {
+          "end_index": 1074,
+          "start_index": 967,
+          "title": "Warehouse Pricing: Snowflake - by Simon - Twing Data",
+          "type": "url_citation",
+          "url": "https://blog.twingdata.com/p/warehouse-pricing-snowflake-now-with?utm_source=openai"
+        },
+        {
+          "end_index": 1360,
+          "start_index": 1248,
+          "title": "Snowpipe costs | Snowflake Documentation",
+          "type": "url_citation",
+          "url": "https://docs.snowflake.com/en/en/user-guide/data-load-snowpipe-billing?utm_source=openai"
+        },
+        {
+          "end_index": 1769,
+          "start_index": 1629,
+          "title": "Cloud analytics firm Snowflake forecasts upbeat full-year product revenue",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/snowflake-forecasts-annual-product-revenue-above-estimates-2025-02-26/?utm_source=openai"
+        },
+        {
+          "end_index": 2211,
+          "start_index": 2064,
+          "title": "Snowflake makes its Postgres move, acquires Crunchy Data | Constellation Research Inc.",
+          "type": "url_citation",
+          "url": "https://www.constellationr.com/blog-news/insights/snowflake-makes-its-postgres-move-acquires-crunchy-data?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns the *long-term* unsustainability of Snowflake's consumption-based pricing, with customers migrating to alternatives like Postgres/Supabase. Only ~5.5 months have passed since the June 21, 2025 podcast. Snowflake's Q2 FY2026 earnings (ended Jul 31, 2025; reported Aug 27, 2025) showed strong 32% YoY product revenue growth to $1.09B, net revenue retention of 125% (indicating customer expansion, not migration/churn), and 654 customers with >$1M TTM revenue (up from prior quarters). [Snowflake IR](https://investors.snowflake.com/financials/quarterly-results/default.aspx), [Yahoo Finance](https://finance.yahoo.com/news/snowflake-reports-financial-results-second-200500410.html). No reports of pricing changes or mass migrations; pricing remains consumption-based per 2025 guides. Stock rose from ~$195 (Aug 2025) to ~$240-250 (Nov 2025). [Snowflake Stock Info](https://investors.snowflake.com/stock-information/default.aspx), [Yahoo Historical](https://finance.yahoo.com/quote/SNOW/history/). Q3 earnings pending Dec 3. Too early to assess long-term outcome."
+    },
+    {
+      "id": "F-01:13:12.080",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly covers **\u201cthe next five years\u201d** from June 21, 2025, i.e., roughly through mid\u20112030. As of today (November 30, 2025), less than a year of that five\u2011year window has elapsed.\n\nEven if we could already observe some dispersion between AI winners and laggards in the Mag 7 or the broader S&P 500, that would not be enough to validate the claim that:\n\n1. This *entire* five\u2011year period is unusually good for active stock pickers, and\n2. The key driver of that persistent dispersion is AI adoption.\n\nBoth points require multi\u2011year realized performance data (active manager excess returns, cross\u2011sectional dispersion, sector/industry attribution to AI themes, etc.) that simply do not exist yet for the full horizon. Because the evaluation date (mid\u20112030) has not arrived, the prediction cannot be judged right or wrong at this time.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction covers the five years from June 2025 to June 2030. Only ~5.5 months have passed as of December 1, 2025, making it too early to assess if public equity markets (Mag 7 and S&P 500) will show *unusually high dispersion* driven by AI adoption over the full period, favoring active stock pickers. Recent data shows some emerging dispersion: active large-cap funds underperformed S&P 500 at 54% in H1 2025 (improvement per [SPIVA](https://www.spglobal.com/spdji/en/spiva/article/spiva-us/)); growing intra-Mag 7 and cross-sector spreads noted ([BlackRock Q3](https://www.blackrock.com/us/financial-professionals/insights/q3-earnings-equity-market-outlook)); active management resurgence ([Morningstar](https://www.morningstar.com/news/marketwatch/20250904269/why-its-getting-easier-for-active-managers-to-beat-the-sp-500-in-2025)). However, Mag 7 still dominate (~35% S&P 500 weight, [Motley Fool](https://www.fool.com/research/magnificent-seven-sp-500/)), and no long-term verdict possible yet."
+    },
+    {
+      "id": "E-01:15:31.990",
+      "result": "inconclusive",
+      "explanation": "The prediction is framed on a **decade-long horizon** (\"within roughly the next decade\"). As of November 30, 2025, only about a year and a half has passed since the June 21, 2025 podcast release.\n\nWhile there is active discussion and early evidence that AI may pressure some traditional IT services and outsourcing models, we cannot yet determine:\n\n- whether **\u201cmany\u201d** such rolled\u2011up IT services businesses will, in aggregate, actually lack terminal buyers, and\n- whether **exit values for private\u2011equity roll\u2011ups in those sectors** will be structurally and durably depressed specifically because AI agents automate their value proposition.\n\nBoth of those require several years of M&A, IPO, and secondary transaction data across the sector, which simply do not exist yet for the 10\u2011year window implied. Therefore, the prediction\u2019s outcome **cannot be assessed this early**, even directionally, beyond noting it as a plausible but unproven long\u2011term thesis.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns a trend over 'roughly the next decade' (from June 2025 to ~2035), but only ~5.5 months have passed as of December 1, 2025, making it too early to evaluate. Current 2025 trends show robust M&A and PE activity in tech/software sectors: PwC reports AI and PE fueling a surge in large deals, on pace for strongest year since 2021 ([link](https://www.pwc.com/us/en/services/consulting/deals/library/ai-and-private-equity-fuel-surge-in-mergers-and-acquisitions.html)); EY notes tech sector deal value up significantly in Oct 2025 ([link](https://www.ey.com/en_us/insights/mergers-acquisitions/m-and-a-activity-report)); Bain and others highlight strong software M&A and PE exits. No evidence yet of depressed exit values or lack of terminal buyers for IT services roll-ups; AI appears to be boosting activity rather than automating it away ([Private Equity Pulse Q3 2025](https://www.ey.com/en_us/insights/private-equity/pulse)). The original quote from the All-In podcast confirms the long-term fear ([transcript](https://speakai.co/podcast-transcription/all-in-podcast/ipos-and-spacs-are-back-mag-7-showdown-zuck-on-tilt-apples-fumble-genius-act-passes-senate/))."
+    },
+    {
+      "id": "F-01:18:51.610",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, only about five months of the 1\u20132 year window (June 21, 2025 through at least June 21, 2026, and possibly June 21, 2027) have elapsed, so the full period the prediction covers has not yet played out.\n\nEvidence so far is *supportive* of Friedberg\u2019s view:\n\n- **High\u2011quality tech IPOs have occurred and been very well received.** Figma went public on July 31, 2025 at $33 per share and raised roughly $1.2 billion; the stock closed its first day over $115, more than 250% above the IPO price, signaling extremely strong demand for a marquee growth software name.\n  ([forbes.com](https://www.forbes.com/sites/zacharyfolk/2025/07/31/figma-stock-price-jumps-250-thursday-after-ipo/?utm_source=openai))\n- **Other \u201cfantastic\u201d growth tech/fintech/AI names have also listed with big pops.** Circle Internet Group\u2019s June 2025 IPO and CoreWeave\u2019s March 2025 IPO are cited alongside Figma as standout tech offerings; Circle\u2019s first\u2011day gain was about 165%, while CoreWeave and other AI\u2011infrastructure/tech IPOs have delivered triple\u2011digit returns post\u2011listing, indicating robust investor appetite for top\u2011tier growth tech issuers. ([finance.yahoo.com](https://finance.yahoo.com/news/ipo-pops-are-nearing-10-year-highs-and-tech-is-leading-the-way-155742294.html?utm_source=openai))\n- **Broader US IPO data suggests the market is \u2018open for business\u2019 in 2025, especially for quality names.** By mid\u20112025, U.S. IPOs were averaging first\u2011day pops of around 27\u201336%, near decade highs, with tech leading the way and 241 U.S. IPOs year\u2011to\u2011date\u2014evidence of an active, receptive market. A February 2025 Renaissance Capital review also noted that most sizable IPOs were trading above offer, even if a few large deals dragged down weighted averages. ([finance.yahoo.com](https://finance.yahoo.com/news/ipo-pops-are-nearing-10-year-highs-and-tech-is-leading-the-way-155742294.html?utm_source=openai))\n\nHowever, Friedberg\u2019s prediction is explicitly about the market **remaining** open over the *next 1\u20132 years*. Conditions could still change (e.g., macro downturn, rate shock, regulatory or geopolitical events) between now and mid\u20112026/2027 that might shut the window for high\u2011quality growth tech IPOs. Because that future part of the timeframe has not yet occurred, we cannot definitively say the prediction has proven right or wrong.\n\nTherefore the correct status *at this time* is **inconclusive (too early)**: early developments are consistent with his thesis, but the full 1\u20132 year horizon has not yet passed.",
+      "sources": [
+        {
+          "end_index": 765,
+          "start_index": 632,
+          "title": "Figma Stock Price Up Over 250% After IPO",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/zacharyfolk/2025/07/31/figma-stock-price-jumps-250-thursday-after-ipo/?utm_source=openai"
+        },
+        {
+          "end_index": 1338,
+          "start_index": 1189,
+          "title": "IPO pops are nearing 10-year highs, and tech is leading the way",
+          "type": "url_citation",
+          "url": "https://finance.yahoo.com/news/ipo-pops-are-nearing-10-year-highs-and-tech-is-leading-the-way-155742294.html?utm_source=openai"
+        },
+        {
+          "end_index": 1946,
+          "start_index": 1797,
+          "title": "IPO pops are nearing 10-year highs, and tech is leading the way",
+          "type": "url_citation",
+          "url": "https://finance.yahoo.com/news/ipo-pops-are-nearing-10-year-highs-and-tech-is-leading-the-way-155742294.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction covers June 2025 to June 2026\u20132027. Only ~5.5 months have passed (podcast: June 21, 2025; now: Dec 1, 2025), making it too early to determine if the US IPO market *remains open* for the full period with multiple high-quality growth tech IPOs (e.g., Figma peers) that are well-received. \n\nPositive signs so far: Figma (example cited) IPO'd July 31, 2025 (NYSE: FIG), priced $33, +250% day-1 pop to $115.50, but down ~72% since ([Yahoo Finance](https://finance.yahoo.com/quote/FIG/history/), [Seeking Alpha](https://seekingalpha.com/article/4848742-figma-plunge-means-worst-over)). Market active: 315 US IPOs YTD (Nov 30), +54% vs. 2024 ([Stock Analysis](https://stockanalysis.com/ipos/2025/)); strongest since 2021, tech-led ([EY Q3](https://www.ey.com/en_us/insights/ipo/ipo-market-trends), [Crunchbase](https://news.crunchbase.com/public/ipo-market-outlook-ai-h2-2025/)). Other tech: CoreWeave (CRWV) soared 200% post-IPO (Mar 2025, pre-podcast; [Medium](https://beth-kindig.medium.com/coreweave-stock-soars-200-since-ipo-can-it-defy-the-odds-253615675062)); Circle tripled ([The Information](https://www.theinformation.com/articles/ai-crypto-companies-dominated-ipo-winners-2025)). But mixed sustained reception (e.g., Figma) and insufficient time elapsed."
+    },
+    {
+      "id": "B-01:19:41.220",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly about *\u201cthe coming years\u201d* of the AI transition, implying a multi\u2011year horizon for evaluating whether a long/short strategy (short S&P 500, long a few emerging AI \u201ccategory killers\u201d) outperforms simple passive S&P 500 exposure.\n\nThe episode containing this remark was released on June 21, 2025.([tapesearch.com](https://www.tapesearch.com/episode/ipos-and-spacs-are-back-mag-7-showdown-zuck-on-tilt-apple-s-fumble-genius-act-passes-senate/SRuRxx28baSqDokMZVhUfU)) As of today, November 30, 2025, less than one year has passed, which is well short of a reasonable interpretation of \u201cyears\u201d (at least ~2\u20133 years). In addition, the prediction does not specify:\n\n- which exact AI \u201ccategory killer\u201d stocks to hold,\n- the position sizing and rebalancing rules,\n- or the precise evaluation window.\n\nBecause (1) the stated timeframe has not elapsed, and (2) the strategy is too loosely defined to test rigorously so far, there is not enough information or elapsed time to determine whether Friedberg\u2019s claim about this strategy *being unusually attractive and likely to outperform the S&P 500* has proven correct or incorrect.\n\nSo the status as of November 30, 2025 is **\u201cinconclusive (too early)\u201d**.",
+      "sources": [
+        {
+          "end_index": 534,
+          "start_index": 365,
+          "title": "Tapesearch - Every Podcast Conversation at Your Fingertips",
+          "type": "url_citation",
+          "url": "https://www.tapesearch.com/episode/ipos-and-spacs-are-back-mag-7-showdown-zuck-on-tilt-apple-s-fumble-genius-act-passes-senate/SRuRxx28baSqDokMZVhUfU"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is framed for 'the coming years of the AI transition,' implying a multi-year horizon. Only ~5.5 months have elapsed (podcast June 21, 2025, to Dec 1, 2025). S&P 500 rose from 5,967.84 close on June 20 to 6,849.09 on Nov 28 (~+14.8%) [*Yahoo Finance* historical data; *Macrotrends*]. NVDA closed ~$158 end-June to $177 Nov 28 (~+12%) [*StatMuse*, *NVIDIA IR*], underperforming S&P; MSFT to $492 Nov 28 (no exact June 20 price found, but YTD +12% vs. S&P +18% [*Threads post Nov 22*]). Mag 7 mixed YTD (NVDA +33%, others lower/negative [*IBD Nov 21*]). No specific 'category killers' named by Friedberg. Short-term data neither confirms nor refutes long-term strategy of short S&P/long concentrated AI winners outperforming passive S&P."
+    },
+    {
+      "id": "E-01:31:40.240",
+      "result": "inconclusive",
+      "explanation": "It\u2019s too early to evaluate this prediction.\n\n- The prediction horizon is *\u201croughly five years from now\u201d* relative to the podcast date of **June 21, 2025**, i.e., around **mid\u20112030**.\n- Today is **November 30, 2025**, only a few months after the prediction, so we don\u2019t yet know Microsoft\u2019s global employee count in 2030.\n- Current public data only shows Microsoft\u2019s workforce up to recent fiscal years (roughly in the 220,000\u2013250,000 range, depending on year and layoffs), but nothing about the 2030 level yet.\n\nBecause the specified five\u2011year period has not elapsed, the prediction cannot yet be judged; hence the status is **inconclusive (too early)**.",
+      "sources": [],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The prediction is for Microsoft's global employee count to be higher than ~250,000 (actual ~228,000 peak in FY2025) by roughly five years from June 2025 (~June 2030). Only ~5.5 months have passed as of Dec 1, 2025. Latest official count: 228,000 as of June 30, 2025 ([Microsoft Annual Report FY2025](https://www.microsoft.com/investor/reports/ar25/index.html), [Macrotrends](https://www.macrotrends.net/stocks/charts/MSFT/microsoft/number-of-employees), [StockAnalysis](https://stockanalysis.com/stocks/msft/employees/), Wikipedia). No post-June 2025 official figures available; Q1 FY2026 earnings (Oct 2025) omit headcount. CEO Nadella noted plans to grow headcount with AI leverage ([CNBC Nov 1, 2025](https://www.cnbc.com/2025/11/01/microsoft-ceo-headcount-leverage-ai.html)), but too early to assess 2030 outcome."
+    },
+    {
+      "id": "B-01:34:00.990",
+      "result": "inconclusive",
+      "explanation": "The prediction window is *about five years* from the podcast date of **June 21, 2025**, so it runs roughly until mid\u20112030. As of **November 30, 2025**, we are only a few months into that window, so it is too early to judge whether Microsoft\u2019s eventual total headcount will end up below its recent peak (~250,000 employees).\n\nRecent public data suggests Microsoft\u2019s headcount has been near or above that quarter\u2011million level in the mid\u20112020s, but the prediction concerns where it will settle *by 2030*, not where it is in 2025. Because that future outcome cannot yet be observed, the correctness of the prediction cannot be determined at this time.\n\nTherefore, the status of the prediction is **inconclusive (too early)**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for Microsoft's headcount to drop below its recent peak (~250k per predictor, but actual peak FY2024-2025: **228,000**) *within about five years* from June 21, 2025 (i.e., by ~June 2030). Only ~5.5 months have passed as of Dec 1, 2025. Headcount remained flat at 228k through FY2025 end (June 30, 2025) despite layoffs (~15k-20k total in 2025, offset by hiring; [Microsoft 10-K via GeekWire](https://www.geekwire.com/2025/microsoft-cut-product-rd-jobs-added-operations-roles-over-the-past-year-new-filing-confirms/), [Macrotrends](https://www.macrotrends.net/stocks/charts/MSFT/microsoft/number-of-employees)). As of Nov 2025, CEO Nadella stated plans to *grow* headcount with AI leverage ([CNBC](https://www.cnbc.com/2025/11/01/microsoft-ceo-headcount-leverage-ai.html)). No Q1 FY2026 headcount data yet; too early to verify long-term trend. [StockAnalysis](https://stockanalysis.com/stocks/msft/employees/), [Bullfincher](https://bullfincher.io/companies/microsoft-corporation/number-of-employees)."
+    },
+    {
+      "id": "F-01:35:10.410",
+      "result": "inconclusive",
+      "explanation": "The prediction has a five-year horizon, from June 21, 2025 through roughly June 21, 2030, so as of November 30, 2025 only about five months have elapsed. It is therefore too early to know whether Microsoft\u2019s overall business and total employee count will ultimately be larger than in 2025. Current data show that Microsoft\u2019s revenue is still growing (about $281.7B in fiscal 2025, up roughly 15% year over year, with strong cloud and AI-driven results) while its global headcount is around 228,000 and essentially flat compared with 2024, after layoffs of several thousand employees earlier in 2025. ([stockanalysis.com](https://stockanalysis.com/stocks/msft/revenue/?utm_source=openai)) These short-term trends are consistent with a growing business but do not allow us to determine whether, by 2030, both revenue/scale and total headcount will be higher than the 2025 baseline.",
+      "sources": [
+        {
+          "end_index": 727,
+          "start_index": 640,
+          "title": "Microsoft (MSFT) Revenue 2006-2025",
+          "type": "url_citation",
+          "url": "https://stockanalysis.com/stocks/msft/revenue/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction forecasts Microsoft's revenue/scale and total employee count to be larger in five years (by ~June 2030) than in June 2025. Only ~5.5 months have passed (current date: Dec 1, 2025). As of FY2025 end (June 30, 2025), employees: 228,000 (unchanged YoY; [Stock Analysis](https://stockanalysis.com/stocks/msft/employees/), [Macrotrends](https://www.macrotrends.net/stocks/charts/MSFT/microsoft/number-of-employees)). No updated headcount for late 2025; remains 228k in reports ([Wikipedia](https://en.wikipedia.org/wiki/Microsoft), Oct/Nov 2025 articles). Revenue grew: FY25 Q4 $76.4B (+18%; [MSFT IR](https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast)); FY26 Q1 $77.67B ([Bullfincher](https://bullfincher.io/companies/microsoft-corporation/revenue)). Layoffs occurred (~9k July 2025, prior rounds; [CNBC](https://www.cnbc.com/2025/07/02/microsoft-laying-off-about-9000-employees-in-latest-round-of-cuts.html)), but headcount stable. Too early to assess 5-year net growth. CEO noted plans for headcount growth with AI leverage ([CNBC Nov 2025](https://www.cnbc.com/2025/11/01/microsoft-ceo-headcount-leverage-ai.html))."
+    },
+    {
+      "id": "A-01:31:19.910",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly about **\u201cthe next several years (on the order of five years)\u201d** after the podcast release on 21 June 2025. That implies a horizon out to roughly mid\u20112030.\n\nAs of today (30 November 2025), only about **5 months** have elapsed\u2014far short of the multi\u2011year timeframe. While we can inspect early data (e.g., Microsoft\u2019s FY 2025 results and any recent headcount or layoff announcements) to see directionally what\u2019s happening, those partial trends cannot reliably confirm or falsify a **five\u2011year** operational prediction.\n\nBecause the specified time window has **not** yet passed, and nothing in the current data makes the prediction logically impossible to achieve by 2030, the only defensible assessment is that it is **too early** to know whether Jason\u2019s prediction about strong revenue growth with roughly flat headcount (~250k \u00b110%)\u2014and thus much higher revenue per employee\u2014will ultimately be right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction spans 'several years (on the order of five years)' from June 2025, but only ~5.5 months have passed as of December 1, 2025\u2014far too early to evaluate long-term outcomes. Microsoft's FY2025 (ended June 30, 2025) headcount was 228,000 (flat from FY2024), within the predicted ~250,000 \u00b110% range ([Microsoft Facts](https://news.microsoft.com/facts-about-microsoft/), [StockAnalysis](https://stockanalysis.com/stocks/msft/employees/), [Wikipedia](https://en.wikipedia.org/wiki/Microsoft)). Revenue grew strongly: FY2025 $281.7B (+15%), Q1 FY2026 $77.7B (+18%) ([Microsoft IR](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast)). However, CEO Nadella indicated plans to grow headcount 'with more leverage' ([CNBC, Nov 1, 2025](https://www.cnbc.com/2025/11/01/microsoft-ceo-headcount-leverage-ai.html)), and no Q1 FY2026 headcount data confirms ongoing flatness."
+    },
+    {
+      "id": "F-01:36:56.680",
+      "result": "inconclusive",
+      "explanation": "The prediction specifies a five\u2011year holding period starting from around the podcast date (June 21, 2025), implying an evaluation point near June 21, 2030. As of the current date (November 30, 2025), less than one year of that five\u2011year horizon has elapsed. Over such a short fraction of the intended period, any outperformance or underperformance of an equal\u2011weighted basket of AWS (if it were separable), Microsoft Azure, and Google Cloud Platform versus the broad market would not be a reliable indicator of the long\u2011term outcome. Because the prediction\u2019s success condition is explicitly about returns over the full five years and we are far from that endpoint, it cannot yet be determined whether this basket will ultimately outperform the broad market to the degree implied by \u2018you wouldn\u2019t need to own anything else.\u2019",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction covers a five-year horizon from June 21, 2025. As of December 1, 2025, only ~5.5 months have elapsed, far too short to assess long-term outperformance against the broad market."
+    },
+    {
+      "id": "J-01:40:15.900",
+      "result": "right",
+      "explanation": "The GENIUS Act is the federal stablecoin bill discussed on the podcast. After the Senate passed it on June 17, 2025, the House of Representatives passed the bill on July 17, 2025, by a vote of 308\u2013122. President Donald Trump signed it into law on July 18, 2025, making it Public Law 119\u201127.\n\nThese dates are documented in:\n- The GENIUS Act legislative history, showing House passage on July 17, 2025, and Trump\u2019s signature on July 18, 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai))  \n- Congress.gov, which lists S.1582 (GENIUS Act) as having \"Became Public Law No: 119\u201127\" on July 18, 2025. ([congress.gov](https://www.congress.gov/bill/119th-congress/senate-bill/1582/text?utm_source=openai))  \n- Contemporary news coverage confirming Trump signed the GENIUS Act on July 18, 2025. ([politico.com](https://www.politico.com/news/2025/07/18/trump-signs-landmark-crypto-bill-into-law-00463366?utm_source=openai))\n\nThe podcast aired June 21, 2025. The House acted 26 days later (about three and a half weeks), which reasonably fits the colloquial \"next few weeks,\" and Trump did in fact receive and sign the bill during his current term. Both key elements of Sacks\u2019s prediction\u2014timing in the near future and ultimate presidential signature\u2014were fulfilled, so the prediction is best judged **right**.",
+      "sources": [
+        {
+          "end_index": 557,
+          "start_index": 477,
+          "title": "GENIUS Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai"
+        },
+        {
+          "end_index": 772,
+          "start_index": 670,
+          "title": "Text - S.1582 - 119th Congress (2025-2026): GENIUS Act | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582/text?utm_source=openai"
+        },
+        {
+          "end_index": 989,
+          "start_index": 862,
+          "title": "Trump signs landmark crypto bill into law",
+          "type": "url_citation",
+          "url": "https://www.politico.com/news/2025/07/18/trump-signs-landmark-crypto-bill-into-law-00463366?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The U.S. House of Representatives passed the GENIUS Act (S.1582, Guiding and Establishing National Innovation for U.S. Stablecoins Act) on July 17, 2025, approximately 26 days (about 4 weeks) after the June 21, 2025 podcast ([House Financial Services Committee](https://financialservices.house.gov/news/documentsingle.aspx?DocumentID=410815), [Rep. Steil press release](http://steil.house.gov/media/press-releases/genius-act-passes-the-house-heads-to-president-s-desk), [Sen. Scott statement](https://www.banking.senate.gov/newsroom/majority/scott-applauds-house-passage-of-genius-act)). President Trump signed it into law (Public Law 119-27) the next day, July 18, 2025, during his term ([White House fact sheet](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/), [Congress.gov bill text](https://www.congress.gov/bill/119th-congress/senate-bill/1582/text)). This matches the prediction exactly."
+    },
+    {
+      "id": "J-01:44:33.560",
+      "result": "inconclusive",
+      "explanation": "Key facts:\n\n- The GENIUS Act, a federal framework for U.S. dollar stablecoins, was passed by Congress and signed into law on July 18, 2025, creating a new regulatory category for **payment stablecoins** that are *not* bank deposits (they are explicitly treated separately from traditional bank deposits and securities/commodities). ([en.wikipedia.org](https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai))\n\n- Since then, **no major U.S. bank has launched a retail or broadly-available GENIUS\u2011Act \"payment stablecoin\"**:\n  - **Bank of America** repeatedly says it is *ready* and *expects* to launch a fully dollar\u2011backed stablecoin but only once the regulatory path is fully clear; as of mid\u2011 to late\u20112025 it still describes this as a future plan, with no product or launch date announced. ([coindesk.com](https://www.coindesk.com/markets/2025/07/24/stablecoin-supply-to-grow-as-much-as-usd75b-following-passage-of-genius-act-bofa-says?utm_source=openai))\n  - **Citigroup** likewise says it is *considering* or *looking at the issuance* of a Citi stablecoin for digital payments, but again only as an exploration, not a launched product. ([reuters.com](https://www.reuters.com/business/finance/citigroup-considers-issuing-its-own-stablecoin-ceo-says-2025-07-15/?utm_source=openai))\n  - An August 12, 2025 Reuters piece notes that after the GENIUS Act, firms like Bank of America and Citigroup are **exploring** GENIUS\u2011compliant stablecoins, but stresses that deployment strategies, regulatory details, and timelines remain unresolved. ([reuters.com](https://www.reuters.com/legal/government/companies-plan-stablecoins-under-new-law-experts-say-hurdles-remain-2025-08-12/?utm_source=openai))\n\n- The one concrete on\u2011chain dollar instrument from a major U.S. bank is **JPMorgan\u2019s JPMD**:\n  - JPMorgan piloted and then, on **November 12, 2025**, made its **USD deposit token \"JPMD\"** available to institutional clients on Coinbase\u2019s Base L2. ([jpmorgan.com](https://www.jpmorgan.com/payments/newsroom/kinexys-usd-digital-deposit-tokens?utm_source=openai))\n  - JPMorgan itself and multiple commentators stress that **JPMD is a *deposit token*, not a GENIUS\u2011Act payment stablecoin**: it represents insured bank deposits, accrues interest, and is framed as \"commercial bank money\" on\u2011chain. JPMorgan\u2019s Kinexys unit explicitly says, *\u201cThis is a deposit token and not a stablecoin; clients are sending and receiving real bank money on Base,\u201d* and the Financial Times similarly contrasts JPMD with stablecoins for regulatory purposes. ([en.coinotag.com](https://en.coinotag.com/jpmorgan-launches-jpmd-coin-on-base-for-potential-instant-institutional-payments/?utm_source=openai))\n\nInterpretation:\n\n- Sacks\u2019 prediction was that **after the GENIUS Act, major U.S. banks would issue their own U.S.-dollar stablecoins under the new framework.**\n- As of November 30, 2025:\n  - Banks **are clearly preparing and signaling intent** to issue such stablecoins under GENIUS. ([coindesk.com](https://www.coindesk.com/markets/2025/07/24/stablecoin-supply-to-grow-as-much-as-usd75b-following-passage-of-genius-act-bofa-says?utm_source=openai))\n  - But **no major U.S. bank has yet launched a GENIUS\u2011regulated payment stablecoin**; JPMorgan\u2019s live product is deliberately structured and branded as a *deposit token* rather than a GENIUS stablecoin, and other big banks remain in the planning phase.\n\nBecause the GENIUS Act only became law in July 2025 and large banks are still in the design/regulatory\u2011approval stage, it is too early to say that the prediction\u2014\"the banks ... are going to issue one\" under this new framework\u2014has failed. At the same time, the exact outcome Sacks described has not yet materialized.\n\n**Conclusion:** The prediction is neither clearly right nor clearly wrong as of November 30, 2025; it remains **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 454,
+          "start_index": 374,
+          "title": "GENIUS Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1008,
+          "start_index": 843,
+          "title": "Bank of America (BAC) Sees 'Relatively Modest' Stablecoin Growth GENIUS Act Law",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/markets/2025/07/24/stablecoin-supply-to-grow-as-much-as-usd75b-following-passage-of-genius-act-bofa-says?utm_source=openai"
+        },
+        {
+          "end_index": 1335,
+          "start_index": 1192,
+          "title": "Citigroup considers issuing its own stablecoin, CEO says",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/finance/citigroup-considers-issuing-its-own-stablecoin-ceo-says-2025-07-15/?utm_source=openai"
+        },
+        {
+          "end_index": 1745,
+          "start_index": 1590,
+          "title": "Companies plan stablecoins under new law, but experts say hurdles remain",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/legal/government/companies-plan-stablecoins-under-new-law-experts-say-hurdles-remain-2025-08-12/?utm_source=openai"
+        },
+        {
+          "end_index": 2111,
+          "start_index": 1998,
+          "title": "Kinexys Pilots First USD-Denominated Deposit Tokens",
+          "type": "url_citation",
+          "url": "https://www.jpmorgan.com/payments/newsroom/kinexys-usd-digital-deposit-tokens?utm_source=openai"
+        },
+        {
+          "end_index": 2732,
+          "start_index": 2588,
+          "title": "JPMorgan Launches JPMD Coin on Base for Potential Instant Institutional Payments | COINOTAG NEWS",
+          "type": "url_citation",
+          "url": "https://en.coinotag.com/jpmorgan-launches-jpmd-coin-on-base-for-potential-instant-institutional-payments/?utm_source=openai"
+        },
+        {
+          "end_index": 3189,
+          "start_index": 3024,
+          "title": "Bank of America (BAC) Sees 'Relatively Modest' Stablecoin Growth GENIUS Act Law",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/markets/2025/07/24/stablecoin-supply-to-grow-as-much-as-usd75b-following-passage-of-genius-act-bofa-says?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The GENIUS Act passed the Senate on June 17, 2025, and was signed into law on July 18, 2025, establishing a framework for payment stablecoins ([Congress.gov](https://www.congress.gov/bill/119th-congress/senate-bill/1582), [White House](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/)). Major US banks (e.g., Bank of America, JPMorgan, Citigroup) announced plans, pilots, and explorations post-passage ([Reuters Jul 16](https://www.reuters.com/business/finance/bank-america-expects-launch-stablecoins-morgan-stanley-weighs-use-2025-07-16/), [CCN Jul 21](https://www.ccn.com/news/crypto/top-banks-racing-stablecoins-genius-act/)), including joint efforts ([Reuters Oct 10](https://www.reuters.com/business/finance/major-banks-explore-issuing-stablecoins-pegged-g7-currencies-2025-10-10/)) and JPMorgan's JPM Coin deposit token (Nov 2025, not a public stablecoin ([Bloomberg Nov 11](https://www.bloomberg.com/news/articles/2025-11-12/jpmorgan-rolls-out-deposit-token-jpm-coin-in-digital-asset-push))). U.S. Bank tested a pilot (Nov 25, [Decrypt](https://decrypt.co/350011/us-bank-testing-stablecoin-stellar-network)). No actual public USD stablecoin launches by major banks by Dec 1, 2025; efforts remain in planning/testing amid implementation hurdles ([Grant Thornton Nov 3](https://www.grantthornton.com/insights/articles/banking/2025/genius-act-means-for-banks)). Too early ~5 months post-enactment for full launches."
+    },
+    {
+      "id": "J-01:44:33.561",
+      "result": "inconclusive",
+      "explanation": "The GENIUS Act was signed into U.S. law on July 18, 2025, and it includes a three\u2011year transition period after enactment before U.S. digital asset service providers are generally barred from offering payment stablecoins that are not issued by a \"permitted payment stablecoin issuer\"; foreign issuers can continue if they meet certain conditions to comply with U.S. lawful orders and reciprocal arrangements, rather than being strictly forced to redomicile onshore.\u00a0\u30101view0\u3010\u30102view0\u3010\u30103view0\u3010\u00a0That three\u2011year window runs until July 18, 2028, which is still in the future as of November 30, 2025, so the time horizon of the prediction has not elapsed.\u00a0\u30101view0\u3010\u30100news16\u3011\n\nEmpirically, since passage of the GENIUS Act, Tether has announced plans to: (a) use the law\u2019s foreign\u2011issuer pathway to make USDT available in the United States while remaining an offshore issuer, and (b) launch a separate, U.S.-based compliant stablecoin (variously reported as USAT/USA\u20ae) issued through Anchorage Digital Bank under U.S. regulation.\u00a0\u30104search0\u3010\u30104search8\u3010\u30104news12\u3010\u30104news13\u3010 These steps do not yet amount to fully relocating Tether\u2019s existing offshore stablecoin operations onshore, but because the statutory three\u2011year deadline has not arrived, it is still possible (though not guaranteed) that Tether and similar issuers could restructure to satisfy the prediction by 2028. Given the open time window and ongoing strategic moves, the prediction cannot currently be judged true or false.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The GENIUS Act was signed into law on July 18, 2025 ([White House Fact Sheet](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/), [Congress.gov Public Law 119-27](https://www.congress.gov/bill/119th-congress/senate-bill/1582/text)). As of December 1, 2025, only ~4.5 months have passed since enactment, far short of the predicted 3-year window (ending July 2028). Tether has announced plans to comply via a new U.S.-regulated stablecoin USAT, planned for December 2025 launch ([CoinDesk Oct 24, 2025](https://www.coindesk.com/business/2025/10/24/tether-eyes-fresh-investments-to-push-usat-stablecoin-to-100m-americans-at-december-launch), [Tether announcement Sep 12](https://tether.io/news/tether-unveils-usat-its-planned-u-s-regulated-dollar-backed-stablecoin-and-will-appoint-bo-hines-as-ceo-of-tether-usat/)), and CEO stated intent to comply ([CoinDesk Jul 18](https://www.coindesk.com/policy/2025/07/18/tether-ceo-says-he-ll-comply-with-genius-to-come-to-u-s-circle-says-it-s-set-now)). However, no evidence shows relocation of existing USDT operations onshore; USAT appears to be a new compliant product, not a full relocation. The Act imposes compliance requirements on foreign issuers for U.S. market access (e.g., reserves, licensing; [Yale JREG Aug 23](https://www.yalejreg.com/nc/how-the-genius-act-regulates-foreign-issuersand-how-it-compares-to-europe-and-the-uk-by-benedikt-bartylla/)), but full implementation is ongoing (Treasury ANPRM Sep 2025). Too early to determine if relocation will occur within 3 years."
+    },
+    {
+      "id": "J-01:47:18.920",
+      "result": "right",
+      "explanation": "The GENIUS Act is a U.S. stablecoin-regulation bill that passed the Senate on June 17, 2025, then went to the House.\n\nOfficial legislative histories and news coverage show that the U.S. House of Representatives passed the GENIUS Act on **July 17, 2025**, and President Trump signed it into law on **July 18, 2025**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai))  \n\nSince the podcast episode was released on June 21, 2025, the bill cleared the House less than a month later\u2014well within a reasonable interpretation of \u201cvery quickly\u201d in congressional terms. Therefore, Jason\u2019s prediction that the referenced crypto bill (the GENIUS Act) would pass the House in the near term was borne out by events.",
+      "sources": [
+        {
+          "end_index": 431,
+          "start_index": 351,
+          "title": "GENIUS Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The GENIUS Act, a crypto bill regulating payment stablecoins, passed the Senate prior to the June 21, 2025 podcast episode. It then passed the U.S. House on July 17, 2025\u2014less than one month later, aligning with the prediction of passing 'very quickly.' President Trump signed it into law on July 18, 2025 (Public Law 119\u201327). Sources: [Congress.gov (S.1582)](https://www.congress.gov/bill/119th-congress/senate-bill/1582/text), [White House Fact Sheet](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/), [Rep. Steil Press Release](http://steil.house.gov/media/press-releases/genius-act-passes-the-house-heads-to-president-s-desk), [Jones Day](https://www.jonesday.com/en/insights/2025/07/us-house-passes-genius-and-clarity-acts-signaling-bipartisan-support-for-digital-assets)."
+    },
+    {
+      "id": "A-01:50:03.090",
+      "result": "wrong",
+      "explanation": "Multiple independent episode listings and AI-generated summaries for *\u201cIPOs and SPACs are Back, Mag 7 Showdown, Zuck on Tilt, Apple\u2019s Fumble, GENIUS Act passes Senate\u201d* show that the full episode is about 1 hour 52\u201353 minutes (\u2248113 minutes), not multiple hours. The chapters cover LA/AI, Magnificent Seven, Apple and AI, IPOs/SPACs, liquidity, Amazon\u2019s position, and the GENIUS Act; they end with an \u201cAnimal trailer\u201d segment. There is **no** second, third, or fourth hour, and no extended segment about the Israeli conflict with Iran or Ukraine, nor any appearance by John Mearsheimer or Jeffrey Sachs, in the published episode. ([allin.onpodcastai.com](https://allin.onpodcastai.com/episodes/IQjl1jroxWc?utm_source=openai))\n\nBecause the episode\u2019s total runtime is under two hours and its documented contents do not include the predicted geopolitical discussion or guests, the prediction that later segments of this same episode would feature ~90 minutes on Israel/Iran and Ukraine with Mearsheimer and Sachs is **wrong**.",
+      "sources": [
+        {
+          "end_index": 757,
+          "start_index": 662,
+          "title": "IPOs and SPACs are Back, Mag 7 Showdown, Zuck on Tilt, Apple's Fumble, GENIUS Act passes Senate - All-In Podcast",
+          "type": "url_citation",
+          "url": "https://allin.onpodcastai.com/episodes/IQjl1jroxWc?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The All-In Podcast episode titled 'IPOs and SPACs are Back, Mag 7 Showdown, Zuck on Tilt, Apple's Fumble, GENIUS Act passes Senate' (released June 20-21, 2025, ~Episode 232) is 1:52 long, features guest Thomas Laffont, and covers only business/tech topics like AI, IPOs/SPACs, Mag 7, Apple, GENIUS Act (timestamps: YouTube https://www.youtube.com/watch?v=86t6YNf_B7Q; Spotify https://open.spotify.com/episode/0hE2Z9xGAwYlLzo77Klnkk). It includes the quoted teaser at the end but has no subsequent 90+ minutes on Israel-Iran/Ukraine or guests John Mearsheimer/Jeffrey Sachs (confirmed absent in full transcripts/descriptions: podscripts.co, speakai.co). Mearsheimer/Sachs appeared separately at All-In Summit 2024 (Sep 2024, https://www.youtube.com/watch?v=uvFtyDy_Bt0). The predicted segments did not occur in this episode."
+    },
+    {
+      "id": "A-01:51:52.320",
+      "result": "right",
+      "explanation": "The transcript of the episode confirms that near the end, the hosts talk about a tequila launch and say, *\u201cAre you guys still doing the tequila launch? \u2026 Saturday night. We\u2019ll see you Saturday night. Absolutely.\u201d*([speakai.co](https://speakai.co/podcast-transcription/all-in-podcast/ipos-and-spacs-are-back-mag-7-showdown-zuck-on-tilt-apples-fumble-genius-act-passes-senate/?utm_source=openai))  \n\nMultiple news and press sources describe the launch of **The Besties All\u2011In Tequila**, stating that the All\u2011In hosts (\u201cThe Besties\u201d \u2013 Chamath Palihapitiya, Jason Calacanis, David Sacks, David Friedberg) **hosted a private black\u2011tie launch event at Delilah in Los Angeles** to celebrate the tequila\u2019s debut.([businesswire.com](https://www.businesswire.com/news/home/20250627255815/en/All-In-Podcast-Launches-The-Besties-All-In-Tequila))  Coverage of the product and event further specifies that this exclusive launch party was **held on June 21, 2025, at Delilah in Los Angeles/West Hollywood**, as part of the tequila\u2019s rollout.([zoonop.com](https://zoonop.com/articles/all-in-podcast-hosts-unveil-1200-limited-edition-tequila-selling-out-rapidly))  \n\nIndependent date-of-week references show that **June 21, 2025 was a Saturday**.([datetimego.com](https://datetimego.com/what-day-of-the-week-june-21-2025?utm_source=openai))  The episode itself is listed as a June 20\u201321, 2025 release, so the \u201cupcoming Saturday night\u201d after recording corresponds to **Saturday, June 21, 2025**, the same date as the documented tequila launch event.([iheart.com](https://www.iheart.com/podcast/867-all-in-with-chamath-jason-61290607/episode/ipos-and-spacs-are-back-mag-282225747/?utm_source=openai))  \n\nBecause (1) the tequila launch party did occur on that Saturday night, and (2) it is described as being hosted by the four All\u2011In \u201cBesties,\u201d which implies they were together in person at the event, the prediction that the hosts (including speakers A and F) would meet in person that Saturday night for the tequila launch is best judged as **having come true**.",
+      "sources": [
+        {
+          "end_index": 427,
+          "start_index": 246,
+          "title": "IPOs and SPACs are Back, Mag 7 Showdown, Zuck on Tilt, Apple's Fumble, GENIUS Act passes Senate - Try Speak Free!",
+          "type": "url_citation",
+          "url": "https://speakai.co/podcast-transcription/all-in-podcast/ipos-and-spacs-are-back-mag-7-showdown-zuck-on-tilt-apples-fumble-genius-act-passes-senate/?utm_source=openai"
+        },
+        {
+          "end_index": 868,
+          "start_index": 739,
+          "title": "All-In Podcast Launches \u2018The Besties All-In Tequila\u2019",
+          "type": "url_citation",
+          "url": "https://www.businesswire.com/news/home/20250627255815/en/All-In-Podcast-Launches-The-Besties-All-In-Tequila"
+        },
+        {
+          "end_index": 1181,
+          "start_index": 1061,
+          "title": "All-In Podcast Hosts Unveil $1,200 Limited Edition Tequila, Selling Out Rapidly",
+          "type": "url_citation",
+          "url": "https://zoonop.com/articles/all-in-podcast-hosts-unveil-1200-limited-edition-tequila-selling-out-rapidly"
+        },
+        {
+          "end_index": 1360,
+          "start_index": 1266,
+          "title": "What Day Of The Week Was June 21, 2025? - DateTimeGo",
+          "type": "url_citation",
+          "url": "https://datetimego.com/what-day-of-the-week-june-21-2025?utm_source=openai"
+        },
+        {
+          "end_index": 1718,
+          "start_index": 1568,
+          "title": "IPOs and SPACs are Back, Mag 7 Showdown, Zuck on Tilt, Apple's Fumble, GENIUS Act passes Senate - All-In with Chamath, Jason, Sacks & Friedberg | iHeart",
+          "type": "url_citation",
+          "url": "https://www.iheart.com/podcast/867-all-in-with-chamath-jason-61290607/episode/ipos-and-spacs-are-back-mag-282225747/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The All-In Podcast episode was released around June 21, 2025. The quote refers to a planned tequila launch event that Saturday night (June 21). Evidence confirms the event occurred: Rex Features and Getty Images document the 'The Besties All-In Podcast Tequila Launch Party' in Los Angeles on June 21, 2025, with photos/videos of all four hosts\u2014Chamath Palihapitiya, Jason Calacanis, David Sacks, and David Friedberg\u2014attending in person ([Rex Features](https://www.rexfeatures.com/livefeed/2025/06/21/%27the_besties%27_all-in_podcast_tequila_launch_party%2C_los_angeles%2C_california?), [Getty](https://www.gettyimages.com/editorial-video/entertainment/event/the-besties-all-in-tequila-launch-party/776339353), [Shutterstock](https://www.shutterstock.com/editorial/image-editorial/david-friedberg-sacks-chamath-palihapitiya-jason-calacanis-15367426v)). TechCrunch reported the launch and sell-out on Saturday night ([TechCrunch](https://techcrunch.com/2025/06/24/the-all-in-podcasts-1200-tequila-has-already-sold-out/)). The next episode (June 27) recaps 'Launching All-In Tequila!' confirming it happened. Speakers A and F (likely among the hosts, e.g., A=one host, F=Friedberg) met as part of the group at the event."
+    },
+    {
+      "id": "B-01:36:59.920",
+      "result": "inconclusive",
+      "explanation": "The prediction specifies a **five\u2011year** horizon starting from around the podcast release date of June 21, 2025. That window runs approximately until June 21, 2030. As of today (November 30, 2025), only a little over **five months** of that period have elapsed, far short of the full five\u2011year horizon required to judge whether a portfolio concentrated in AWS, Azure (Microsoft), and GCP (Google) has outperformed the rest of the market. Because the prediction is explicitly long\u2011dated and we are still early in the evaluation period, it cannot yet be determined whether it is right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": null
+    },
+    {
+      "id": "E-01:08:15.640",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly about \"the coming decade\" of performance dispersion within the S&P 493 between AI adopters and laggards. The podcast was released on 21 June 2025, and the current date is 30 November 2025\u2014only a few months later. That is far too short a window to evaluate a decade\u2011scale claim about structural dispersion in equity returns and the resulting opportunity set for stock pickers. Even if early patterns (e.g., some AI\u2011exposed names outperforming) can be observed, they cannot yet be reliably attributed to the long\u2011run effect the prediction describes. Therefore, it is too early to determine whether this forecast is right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The prediction forecasts 'very large dispersion' in S&P 493 returns over the coming decade due to AI adoption vs. laggards, enabling big stock-picking opportunities. Only ~5.5 months have passed since June 21, 2025. While S&P 500 dispersion is elevated (CBOE DSPX >40 in Oct 2025; cap-weight +12.5% YTD vs. equal-weight +6.2% as of Nov 21 per Advisor Perspectives), S&P 493 lags Mag 7 amid AI rally (Chosunbiz Nov 25; Reuters Nov 21), with emerging but unquantified intra-493 AI divides (e.g., 16% AI-exposed per LinkedIn CIO note Jul 21; Goldman Sachs Feb 21 notes stock-picking ripe). Insufficient time/data to verify decade-long trend. Sources: [Chosunbiz](https://biz.chosun.com/en/en-international/2025/11/25/PBUBGKBDTNBORIXZD5P3JA6R7Y/), [Reuters](https://www.reuters.com/commentary/breakingviews/humble-493-hang-tough-with-magnificent-7-2025-11-21/), [Advisor Perspectives](https://www.advisorperspectives.com/dshort/updates/2025/11/21/s-p-500-snapshot-index-falls-below-50-day-moving-average)."
+    }
+  ]
+}

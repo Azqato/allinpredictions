@@ -1,0 +1,649 @@
+{
+  "meta": {
+    "count": 15,
+    "count_by_result": {
+      "ambiguous": 3,
+      "inconclusive": 6,
+      "wrong": 1,
+      "right": 5
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:10:18.000",
+      "result": "ambiguous",
+      "explanation": "Friedberg\u2019s on-air statement was:\n\n> \u201cwe had within 72 hours, I think, more applications than we have seats\u2026 And in the next week, we\u2019ll start to respond to people\u2026 it\u2019s going to be done in order of when it\u2019s received. And they\u2019re going to start processing applications this week.\u201d ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/google-fires-protestors-npr-chaos-humanes-ai-pin-startup-tax-crisis-sports-betting-scandal?utm_source=openai))\n\nKey pieces to verify:\n\n1. **Timing \u2013 \u201cin the next week we\u2019ll start to respond / start processing applications this week.\u201d**  \n   \u2022 The episode is dated April 19, 2024, so this implies initial responses and processing should begin roughly by April 26, 2024. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/google-fires-protestors-npr-chaos-humanes-ai-pin-startup-tax-crisis-sports-betting-scandal))  \n   \u2022 A Reddit thread from May 9, 2024 shows at least one applicant saying they had **not** heard back yet, but another commenter says they have seen people on X (Twitter) who \u201chave been accepted and paid the admission fee,\u201d indicating some acceptances were going out by early May. ([reddit.com](https://www.reddit.com/r/TheAllinPodcasts/comments/1cnzmf1?utm_source=openai))  \n   \u2022 Public web data (tweets, posts, press) does not clearly show when the very first acceptance emails went out, only that some people were accepted *by* May 9. That\u2019s consistent with the prediction but doesn\u2019t prove responses actually started within the specific one\u2011week window after April 19.\n\n2. **Oversubscription claim \u2013 \u201cwithin 72 hours\u2026 more applications than we have seats.\u201d**  \n   \u2022 There is no independent public reporting that confirms or refutes the exact 72\u2011hour oversubscription metric. Later coverage simply notes the All\u2011In Summit is an invite\u2011only, sold\u2011out conference with around 1,800\u20131,950 attendees paying about $7,500 each in 2024, which is compatible with strong demand but not specific enough to verify the 72\u2011hour detail. ([en.wikipedia.org](https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai))\n\n3. **Processing \u201cin order of when it\u2019s received.\u201d**  \n   \u2022 The application and review process is run privately by the organizers; available anecdotes (e.g., some applicants waiting while others are already admitted) don\u2019t establish whether they actually followed strict first\u2011come\u2011first\u2011served ordering or made exceptions (e.g., sponsors, VIPs, scholarships). ([reddit.com](https://www.reddit.com/r/TheAllinPodcasts/comments/1cnzmf1?utm_source=openai))\n\nBecause:\n\n* The relevant actions (exact start date of responses and internal processing order) happen entirely inside a private system; and  \n* Public traces only show that **some** acceptances existed by May 9, 2024, without pinning down when processing began or how strictly ordering was followed,\n\nthere isn\u2019t enough verifiable external evidence to say the prediction was clearly correct or clearly wrong. It can\u2019t be determined even though the event is long past, so the appropriate classification is **\u201cambiguous.\u201d**",
+      "sources": [
+        {
+          "end_index": 521,
+          "start_index": 321,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - Google fires protestors, NPR chaos, Humane's AI Pin, Startup tax crisis, sports betting scandal Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/google-fires-protestors-npr-chaos-humanes-ai-pin-startup-tax-crisis-sports-betting-scandal?utm_source=openai"
+        },
+        {
+          "end_index": 967,
+          "start_index": 785,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - Google fires protestors, NPR chaos, Humane's AI Pin, Startup tax crisis, sports betting scandal Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/google-fires-protestors-npr-chaos-humanes-ai-pin-startup-tax-crisis-sports-betting-scandal"
+        },
+        {
+          "end_index": 1344,
+          "start_index": 1252,
+          "title": "All-In Summit",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/TheAllinPodcasts/comments/1cnzmf1?utm_source=openai"
+        },
+        {
+          "end_index": 2190,
+          "start_index": 2100,
+          "title": "All-In (podcast)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai"
+        },
+        {
+          "end_index": 2647,
+          "start_index": 2555,
+          "title": "All-In Summit",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/TheAllinPodcasts/comments/1cnzmf1?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction came true. Applications opened around April 12, 2024 (Reddit post linking summit.allinpodcast.co on Apr 12; Jason tweet Apr 19 promoting). Podcast on Apr 19 confirmed >seats apps in first 72h. Reddit user 'team_lloyd' (Jun 26, 2024 post) applied 'right when it opened' and 'got invited in the first week,' aligning with start of responses by ~Apr 19-26. Other reports: LinkedIn post May 4 ('accepted' May 3); Reddit May 9 (some accepted via X); confirms processing roughly in order received (early apps got early invites, podcast summary: 'processed in the order received'). Later added 200 spots (Jun 26 announcements), implying initial oversubscription resolved via ordered responses. No contradicting evidence of delay. Sources: [Reddit Jun 26](https://www.reddit.com/r/TheAllinPodcasts/comments/1dp44nr/why_should_i_pay_7500/), [Reddit May 9](https://www.reddit.com/r/TheAllinPodcasts/comments/1cnzmf1/allin_summit/), [LinkedIn May 4](https://www.linkedin.com/posts/catieivey_anyone-else-die-hard-all-in-listeners-activity-7192555817110286336-gErA)."
+    },
+    {
+      "id": "A-00:11:33.980",
+      "result": "ambiguous",
+      "explanation": "The transcript of the April 19, 2024 episode confirms Friedberg saying about All\u2011In Summit speakers: \u201cIn a week, we\u2019ll announce a bunch together,\u201d during the summit update segment. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/google-fires-protestors-npr-chaos-humanes-ai-pin-startup-tax-crisis-sports-betting-scandal?utm_source=openai))  Earlier, the April 12 episode described All\u2011In Summit 2024 and explicitly noted that a lineup of notable speakers was still \u201cto be announced,\u201d so a first speaker list had not yet been made public by then. ([allin.onpodcastai.com](https://allin.onpodcastai.com/episodes/e2hcz0NntFa?utm_source=openai))  However, in searching news coverage, blogs, the All\u2011In / All\u2011In Summit web pages, and later episode summaries and transcripts, I can find no dated record of a public \u201cbatch\u201d announcement of confirmed 2024 Summit speakers around a week later (roughly April 26, 2024). ([en.wikipedia.org](https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai))  Those sources do confirm the summit, its dates, and a long list of ultimate speakers, but none specify when the initial speaker cohort was publicly announced. ([en.wikipedia.org](https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai))  Because such an announcement could have been made via channels that are not well indexed (e.g., email blasts or certain social posts) and I cannot find clear evidence either that it happened on the stated timeline or that it did not, the accuracy of the prediction cannot be determined from available public records.",
+      "sources": [
+        {
+          "end_index": 418,
+          "start_index": 218,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - Google fires protestors, NPR chaos, Humane's AI Pin, Startup tax crisis, sports betting scandal Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/google-fires-protestors-npr-chaos-humanes-ai-pin-startup-tax-crisis-sports-betting-scandal?utm_source=openai"
+        },
+        {
+          "end_index": 720,
+          "start_index": 625,
+          "title": "E174: Inflation stays hot, AI disclosure bill, Drone warfare, defense startups & more - All-In Podcast",
+          "type": "url_citation",
+          "url": "https://allin.onpodcastai.com/episodes/e2hcz0NntFa?utm_source=openai"
+        },
+        {
+          "end_index": 1079,
+          "start_index": 989,
+          "title": "All-In (podcast)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai"
+        },
+        {
+          "end_index": 1330,
+          "start_index": 1240,
+          "title": "All-In (podcast)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence of a public announcement of a group of confirmed speakers for the All-In Summit in a single batch approximately one week after April 19, 2024 (around April 26). Web searches for announcements, Twitter posts from @theallinpod (@theallinpod \"summit\" \"speakers\" since:2024-04-20 until:2024-05-01 returned no results), and related queries found nothing matching. Instead, a attendee recap states: \"The lineup, which wasn't revealed until one day before the event\" (Sep 7-10, 2024 event; [https://www.founderspond.com/p/all-in-summit-is-it-worth-the-trip](https://www.founderspond.com/p/all-in-summit-is-it-worth-the-trip)). For 2025 summit, individual speaker announcements began in July-Aug 2025 (e.g., [Twitter posts](https://twitter.com/theallinpod/status/1950617515761058131)). Podcast transcripts confirm summit announcement in April but no speaker batch then."
+    },
+    {
+      "id": "H-00:22:50.000",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly framed as a **long\u2011term, historical judgment** (\u201cin the fullness of time\u2026 Israel\u2019s Vietnam\u201d), i.e., *years to decades* after the 2023\u201324 Gaza war. As of the evaluation date (30 Nov 2025), only about a year and a half has passed since the war began and the podcast aired, and the war itself is still ongoing with major uncertainty over its end state and political consequences. Current writing and polling therefore reflect *contemporary* opinion, not the eventual \u201chistorical consensus\u201d the predictor is talking about.\n\nOn the **\"Israel\u2019s Vietnam\"** analogy: a number of commentators and activists *have* used that framing or asked whether Gaza could become \u201cIsrael\u2019s Vietnam,\u201d but these are individual opinions and polemics, not any kind of settled consensus among historians or the broader public.([revolucion.org.es](https://www.revolucion.org.es/en/gaza-is-israels-vietnam/?utm_source=openai)) The main encyclopedic treatments of the conflict still describe it in more neutral, descriptive terms and emphasize that it remains ongoing with evolving regional and international repercussions, which by definition means a stable retrospective judgment has not yet formed.([en.wikipedia.org](https://en.wikipedia.org/wiki/Gaza_war?utm_source=openai))\n\nOn **public sympathy for anti\u2011war protesters (e.g., students, tech workers)**: available polling during and shortly after the first big protest waves shows a sharply divided public, not an overwhelming or settled sympathy. For example, U.S. polls around the 2024 university Gaza encampments found roughly 28\u201340% of Americans supporting the protests and 42\u201347% opposing them; college students were more supportive (around 45% support), but the country as a whole was mixed and polarized.([en.wikipedia.org](https://en.wikipedia.org/wiki/Gaza_war_protests_at_universities?utm_source=openai)) That tells us how they\u2019re seen *now*, not how they\u2019ll be seen \u201cin the fullness of time.\u201d\n\nBecause:\n- the predictor\u2019s own time horizon is **multi\u2011year to multi\u2011decade**;\n- the war and its political aftermath are still in flux; and\n- existing data only speaks to short\u2011term, contested public opinion,\n\nthere is not yet enough information to say whether the Gaza war will *ultimately* be remembered as \u201cIsrael\u2019s Vietnam\u201d or whether today\u2019s protesters will be broadly and historically re\u2011cast as sympathetic figures. The correct assessment at this point is therefore **\u201cinconclusive (too early)\u201d rather than right or wrong.**",
+      "sources": [
+        {
+          "end_index": 970,
+          "start_index": 872,
+          "title": "Gaza is Israel's Vietnam :: @Revolucion",
+          "type": "url_citation",
+          "url": "https://www.revolucion.org.es/en/gaza-is-israels-vietnam/?utm_source=openai"
+        },
+        {
+          "end_index": 1322,
+          "start_index": 1244,
+          "title": "Gaza war",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Gaza_war?utm_source=openai"
+        },
+        {
+          "end_index": 1915,
+          "start_index": 1812,
+          "title": "Gaza war protests at universities",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Gaza_war_protests_at_universities?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies a long-term shift (years to decades) in public and historical opinion. As of Dec 2025 (~19 months post-podcast), US polls show growing disapproval of Israel's Gaza actions: Gallup (Aug 2025) reports 32% approval/60% disapproval ([link](https://news.gallup.com/poll/692948/u.s.-back-israel-military-action-gaza-new-low.aspx)); Pew (Oct 2025) finds 39% say Israel 'going too far' (up from 27% in 2023) and 59% unfavorable of Israeli gov ([link](https://www.pewresearch.org/politics/2025/10/03/how-americans-view-the-israel-hamas-conflict-2-years-into-the-war/)). Some opinion pieces draw Vietnam parallels (e.g., [Middle East Eye](https://www.middleeasteye.net/opinion/gaza-war-turned-israel-vietnam-how)), but no polls confirm it as 'widely regarded.' Google protesters (fired Apr 2024) face lawsuits but no broad sympathy shift ([CNN](https://www.cnn.com/2024/04/23/tech/google-fires-employees-protest-israel)). War ongoing; too early for historical consensus."
+    },
+    {
+      "id": "B-00:34:18.690",
+      "result": "wrong",
+      "explanation": "Chamath\u2019s prediction had two parts: (1) that attention to Google\u2019s Project Nimbus controversy would fade within a week, and (2) that the contract would not be canceled.\n\n**1. Media/public attention within a week**  \nThe episode was released April 19, 2024, so \u201ca week from now\u201d is roughly through April 26, 2024. In that period and immediately after:\n\n- The Alphabet Workers Union issued an updated press release on April 25, 2024, specifically about the Project Nimbus protests and firings, keeping the story in the news and in worker organizing. ([alphabetworkersunion.org](https://www.alphabetworkersunion.org/press/updated-awu-cwa-statement-following-termination-of-workers-after-project-nimbus-protest-at-google-cloud-office?utm_source=openai))  \n- On April 27, 2024, *The Guardian* ran a high\u2011profile piece, \u201cWorkers accuse Google of \u2018tantrum\u2019 after 50 fired over Israel contract protest,\u201d centered on the Project Nimbus contract and the protests around it. ([theguardian.com](https://www.theguardian.com/technology/2024/apr/27/google-project-nimbus-israel?utm_source=openai))  \n- Coverage of No Tech for Apartheid and Project Nimbus continued beyond that week; the campaign\u2019s own history and later reporting document the April 16 sit\u2011ins, subsequent firings, and ongoing organizing specifically aimed at ending Project Nimbus. ([en.wikipedia.org](https://en.wikipedia.org/wiki/No_Tech_for_Apartheid?utm_source=openai))  \n\nThis shows the issue *did not* quickly disappear from public or media attention within a week; coverage and activism continued and even escalated shortly after his time window.\n\n**2. Whether Project Nimbus was canceled**  \nAs of late 2025, Project Nimbus remains in force:\n\n- A 2025 joint investigation by *The Guardian*, +972 Magazine, and Local Call analyzes leaked documents from the still\u2011active Nimbus contract, revealing secret provisions and confirming the deal\u2019s ongoing status. ([theguardian.com](https://www.theguardian.com/us-news/2025/oct/29/google-amazon-israel-contract-secret-code?utm_source=openai))  \n- In 2025, Alphabet shareholders are being asked to vote on a proposal about the human\u2011rights implications of its products \u201cparticularly those used in Israel\u2019s Project Nimbus\u201d; both Alphabet\u2019s board and external groups discuss Nimbus as an existing contract, not a canceled one. ([nypost.com](https://nypost.com/2025/05/13/business/adl-calls-on-google-to-vote-down-anti-israel-human-rights-proposal/?utm_source=openai))  \n\nThere is no credible reporting that Nimbus was canceled due to the 2024 protests; instead, it has remained operational and a continuing source of controversy.\n\n**Overall assessment**  \n- Wrong on the **time\u2011bound prediction** that \u201cin a week from now, everybody will forget what Project Nimbus is,\u201d since coverage and organizing clearly persisted and even intensified beyond that week. ([theguardian.com](https://www.theguardian.com/technology/2024/apr/27/google-project-nimbus-israel?utm_source=openai))  \n- Right that **Project Nimbus was not canceled** as a result of those protests. ([theguardian.com](https://www.theguardian.com/us-news/2025/oct/29/google-amazon-israel-contract-secret-code?utm_source=openai))  \n\nBecause the emphatic, falsifiable part of the prediction (rapid disappearance of attention within a week) did not occur, the overall prediction is best classified as **wrong**, even though the non\u2011cancellation component turned out to be accurate.",
+      "sources": [
+        {
+          "end_index": 787,
+          "start_index": 586,
+          "title": "UPDATED: AWU-CWA Statement Following Termination of Workers After Project Nimbus Protest at Google Cloud Office",
+          "type": "url_citation",
+          "url": "https://www.alphabetworkersunion.org/press/updated-awu-cwa-statement-following-termination-of-workers-after-project-nimbus-protest-at-google-cloud-office?utm_source=openai"
+        },
+        {
+          "end_index": 1121,
+          "start_index": 1003,
+          "title": "Workers accuse Google of \u2018tantrum\u2019 after 50 fired over Israel contract protest | Google | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2024/apr/27/google-project-nimbus-israel?utm_source=openai"
+        },
+        {
+          "end_index": 1465,
+          "start_index": 1374,
+          "title": "No Tech for Apartheid",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/No_Tech_for_Apartheid?utm_source=openai"
+        },
+        {
+          "end_index": 2091,
+          "start_index": 1963,
+          "title": "Revealed: Israel demanded Google and Amazon use secret 'wink' to sidestep legal orders",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2025/oct/29/google-amazon-israel-contract-secret-code?utm_source=openai"
+        },
+        {
+          "end_index": 2514,
+          "start_index": 2374,
+          "title": "ADL calls on Google shareholders to vote down human rights proposal 'whose goal is to delegitimize Israel'",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/05/13/business/adl-calls-on-google-to-vote-down-anti-israel-human-rights-proposal/?utm_source=openai"
+        },
+        {
+          "end_index": 3027,
+          "start_index": 2909,
+          "title": "Workers accuse Google of \u2018tantrum\u2019 after 50 fired over Israel contract protest | Google | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2024/apr/27/google-project-nimbus-israel?utm_source=openai"
+        },
+        {
+          "end_index": 3239,
+          "start_index": 3111,
+          "title": "Revealed: Israel demanded Google and Amazon use secret 'wink' to sidestep legal orders",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2025/oct/29/google-amazon-israel-contract-secret-code?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction has two parts: (1) media attention to the Project Nimbus controversy would largely dissipate within one week (by ~April 26, 2024), and (2) the project would not be canceled due to protests. Part (2) was correct\u2014Project Nimbus remains active as of December 2024/2025, with no cancellation reported ([Wikipedia](https://en.wikipedia.org/wiki/Project_Nimbus), [NYT Dec 3, 2024](https://www.nytimes.com/2024/12/03/technology/google-israel-contract-project-nimbus.html), [Intercept Dec 2, 2024](https://theintercept.com/2024/12/02/google-project-nimbus-ai-israel/)). However, part (1) was incorrect: Coverage of the April 16-19 protests and firings continued past April 26, including Al Jazeera (Apr 23), LA Times (Apr 23), Fast Company (Apr 26), Guardian (Apr 27), Nation (Apr 29), Verge (Apr 30), and CNN confirming 50 firings (Apr 23). Further protests occurred (e.g., Google I/O May 14), and a NLRB complaint followed (Apr 30). Thus, it remained a significant topic beyond one week ([Wikipedia timeline](https://en.wikipedia.org/wiki/Project_Nimbus), multiple news sources)."
+    },
+    {
+      "id": "H-00:39:29.680",
+      "result": "right",
+      "explanation": "\u2022 In mid\u20112025, federal support for public broadcasting was effectively eliminated: the **Rescissions Act of 2025** rescinded $1.1 billion in funding for the Corporation for Public Broadcasting (CPB), the main federal funding conduit for NPR and PBS, and was signed into law on July 24, 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Rescissions_Act_of_2025?utm_source=openai))  CPB then announced it would wind down and shut its doors because its federal budget had been zeroed out. ([arstechnica.com](https://arstechnica.com/tech-policy/2025/08/corporation-for-public-broadcasting-will-shut-down-in-2026/?utm_source=openai))  This satisfies the prediction\u2019s condition that U.S. government funding for NPR be (for all practical purposes) eliminated.\n\n\u2022 Despite that loss of federal funding, NPR has **continued to operate as a national news organization**. Coverage asking whether NPR would \u201cgo away\u201d after CPB\u2019s shutdown explicitly concludes that NPR \u201cwill still continue to operate,\u201d while warning that the real damage will fall on smaller and rural member stations. ([forbes.com](https://www.forbes.com/sites/andymeek/2025/08/05/will-npr-and-pbs-go-away-how-cpb-shutting-down-affects-them/?utm_source=openai))  NPR\u2019s CEO Katherine Maher similarly frames the crisis as forcing budget cuts and restructuring, not closure of NPR itself. ([washingtonpost.com](https://www.washingtonpost.com/business/2025/08/06/npr-katherine-maher-funding/?utm_source=openai))\n\n\u2022 Post\u2011cut reporting emphasizes that NPR and PBS are responding by ramping up **private funding mechanisms**\u2014member donations, pledge drives, and other non\u2011government support\u2014to compensate for the loss of CPB money. ([forbes.com](https://www.forbes.com/sites/andymeek/2025/08/05/will-npr-and-pbs-go-away-how-cpb-shutting-down-affects-them/?utm_source=openai))  That is precisely the dynamic the prediction described (subscriptions/donations sustaining the organization rather than it shutting down).\n\nGiven that (1) federal public\u2011media appropriations have been effectively removed and CPB is shutting down, yet (2) NPR has not \u201cgone away\u201d and is instead trying to sustain itself through private revenue and intensified fundraising, the prediction that NPR would continue to operate even if U.S. government funding were eliminated has, so far, proven **right**.",
+      "sources": [
+        {
+          "end_index": 418,
+          "start_index": 325,
+          "title": "Rescissions Act of 2025",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Rescissions_Act_of_2025?utm_source=openai"
+        },
+        {
+          "end_index": 667,
+          "start_index": 525,
+          "title": "RIP Corporation for Public Broadcasting: 1967\u20132026 - Ars Technica",
+          "type": "url_citation",
+          "url": "https://arstechnica.com/tech-policy/2025/08/corporation-for-public-broadcasting-will-shut-down-in-2026/?utm_source=openai"
+        },
+        {
+          "end_index": 1256,
+          "start_index": 1113,
+          "title": "Will NPR And PBS Go Away? How CPB Shutting Down Affects Them",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/andymeek/2025/08/05/will-npr-and-pbs-go-away-how-cpb-shutting-down-affects-them/?utm_source=openai"
+        },
+        {
+          "end_index": 1502,
+          "start_index": 1381,
+          "title": "NPR faces big changes without federal funds, CEO Katherine Maher says - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/business/2025/08/06/npr-katherine-maher-funding/?utm_source=openai"
+        },
+        {
+          "end_index": 1865,
+          "start_index": 1722,
+          "title": "Will NPR And PBS Go Away? How CPB Shutting Down Affects Them",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/andymeek/2025/08/05/will-npr-and-pbs-go-away-how-cpb-shutting-down-affects-them/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "U.S. government funding for NPR was largely eliminated in 2025: Congress rescinded $1.1B for the Corporation for Public Broadcasting (CPB) in July 2025 ([NPR, Jul 18, 2025](https://www.npr.org/2025/07/18/nx-s1-5469912/npr-congress-rescission-funding-trump)), Trump executive order directed cuts ([White House, May 1, 2025](https://www.whitehouse.gov/presidential-actions/2025/05/ending-taxpayer-subsidization-of-biased-media/)), and CPB shut down by Sept 30, 2025 ([NPR, Aug 1, 2025](https://www.npr.org/2025/08/01/nx-s1-5489808/cpb-shut-down-public-broadcasting-trump)). NPR, which received ~1-2% directly from federal funds pre-cuts, made $5M budget trims but balanced its $300M budget via surging private donations and NPR+ subscriptions ($18.3M in FY25) ([NPR, Sep 17, 2025](https://www.npr.org/2025/09/17/nx-s1-5539164/npr-public-media-funding-budget); [Current.org](https://current.org/2025/09/npr-network-revenue-programs-net-stations-nearly-16-million/)). NPR continues operating, publishing content into Nov 2025 (e.g., [NPR, Nov 17, 2025](https://www.npr.org/2025/11/17/nx-s1-5611103/npr-trump-cpb-lawsuit)), with no shutdown. Some local stations struggled, but NPR as an organization persists on private funding, matching the prediction."
+    },
+    {
+      "id": "B-00:54:30.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, there isn\u2019t enough evidence yet to say that social norms have clearly shifted in the way Chamath predicts.\n\nOn the *\"intrusive\" social interfaces* side:\n- AI smart glasses and related wearables are growing quickly from a small base. Ray\u2011Ban Meta smart glasses have sold over 2 million units since late 2023, and global smart\u2011glasses shipments grew ~200% in 2024; AI smart glasses made up the majority of shipments by 2025, with vendors planning to scale production dramatically through 2026\u20132029. ([counterpointresearch.com](https://www.counterpointresearch.com/insight/post-insight-research-notes-blogs-rayban-meta-smart-glasses-drive-global-smart-glasses-market-surge-in-2024-fuelling-momentum-in-2025-with-projected-60-cagr-through-2029/?utm_source=openai))  \n- Meta\u2019s newer Ray\u2011Ban Display glasses add a wristband that tracks hand movements so users can control apps via gestures\u2014exactly the kind of gestural interface he\u2019s skeptical about\u2014and U.S. smart\u2011glasses sales *tripled* in 2025, even if the category is still niche and faces price/privacy concerns. ([reuters.com](https://www.reuters.com/business/big-buzz-small-market-metas-smartglasses-are-specialty-gadget-this-holiday-2025-11-25/))  \n- Brands are actively normalizing these devices in social and cultural venues (e.g., fashion shows and experiential pop\u2011ups, including an immersive Ray\u2011Ban Meta installation that was remounted for events like Cannes and Coachella), which suggests ongoing experimentation with them in group social environments rather than a clear rejection. ([fashionista.com](https://fashionista.com/2025/03/ray-ban-meta-coperni-paris-fashion-week-collaboration?utm_source=openai))\n\nAt the same time, there *is* evidence of pushback and discomfort:\n- Humane\u2019s screenless, clip\u2011on AI Pin\u2014an archetype of a conspicuous, always\u2011on AI wearable\u2014was a commercial and usability failure, drawing very negative reviews and high return rates, and was shut down less than a year after launch, with services ending in February 2025. ([theverge.com](https://www.theverge.com/news/614883/humane-ai-hp-acquisition-pin-shutdown?utm_source=openai))  \n- Camera\u2011equipped smart glasses are provoking privacy backlash, especially among Gen Z, with viral incidents and coverage emphasizing fears of being recorded without consent in everyday life, even though the devices include indicator lights. ([washingtonpost.com](https://www.washingtonpost.com/technology/2025/08/27/gen-z-smart-glasses-digital-privacy-consent/?utm_source=openai))  \n- Bulky headsets like Apple Vision Pro still provoke social awkwardness in public; many users report feeling they\u2019re not yet socially acceptable outside controlled contexts (home, planes, some work environments), which points to limits on how far obviously isolating wearables can go in shared spaces. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Apple_Vision_Pro?utm_source=openai))\n\nOn the *\"passive/utility\" wearables* side, his view matches current trends but that trend long predates the prediction:\n- Fitness trackers, smartwatches, and similar bands are a very large and fast\u2011growing market, with tens of billions in annual revenue and strong projected growth into the 2030s. ([fortunebusinessinsights.com](https://www.fortunebusinessinsights.com/fitness-tracker-market-103358?utm_source=openai))  \n- Continuous glucose monitors and metabolic\u2011health wearables are expanding rapidly into both clinical and consumer segments (e.g., Abbott\u2019s Lingo CGM moving into Walmart retail, DexCom\u2019s extended\u2011wear CGMs, and integrations between CGMs and wearables like the Oura Ring). ([reuters.com](https://www.reuters.com/business/healthcare-pharmaceuticals/walmart-be-first-us-retailer-sell-abbotts-continuous-glucose-monitor-axios-2025-10-21/?utm_source=openai))  \nThese devices are generally accepted in daily life, which is consistent with his claim that \"band\" and health\u2011oriented wearables retain social value.\n\nHowever, the core of his prediction is about *future* social norms \u201cover the coming years\u201d in group social environments (e.g., concerts/festivals) decisively turning against socially intrusive, gestural interfaces\u2014people \u201cripping the devices off\u201d and choosing to participate without them. As of ~1.5 years after the prediction:\n- Intrusive/AI wearables are still in the early\u2011adoption phase; their market is growing, not shrinking, but remains niche.  \n- Norms around when and where they\u2019re acceptable are still forming and are clearly contested (privacy backlash vs. growing curiosity and early mainstream marketing).  \n- There is no clear empirical evidence yet that, at scale, people at concerts/festivals are either broadly rejecting or fully embracing these interfaces; we mostly see experiments, marketing pushes, and scattered anecdotes rather than stable norms.\n\nBecause (1) the stated horizon is multi\u2011year, (2) adoption and backlash are both increasing from a small base, and (3) large\u2011scale social norms in the specific settings he mentions (concerts, festivals) are not yet well\u2011established in the data, it\u2019s too early to judge the prediction as clearly right or wrong. Hence: **inconclusive**.",
+      "sources": [
+        {
+          "end_index": 830,
+          "start_index": 567,
+          "title": "Ray-Ban Meta Smart Glasses Drive Global Smart Glasses Market Surge in 2024, Fuelling Momentum in 2025 with Projected 60%+ CAGR Through 2029",
+          "type": "url_citation",
+          "url": "https://www.counterpointresearch.com/insight/post-insight-research-notes-blogs-rayban-meta-smart-glasses-drive-global-smart-glasses-market-surge-in-2024-fuelling-momentum-in-2025-with-projected-60-cagr-through-2029/?utm_source=openai"
+        },
+        {
+          "end_index": 1269,
+          "start_index": 1133,
+          "title": "Big buzz, small market: Meta's smartglasses are a specialty gadget this holiday | Reuters",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/big-buzz-small-market-metas-smartglasses-are-specialty-gadget-this-holiday-2025-11-25/"
+        },
+        {
+          "end_index": 1738,
+          "start_index": 1614,
+          "title": "Must Read: Ray-Ban Meta Collaborates With Coperni, Nancy Twine, Briogeo and Ulta Announce 'Makers Mindset' Workshop - Fashionista",
+          "type": "url_citation",
+          "url": "https://fashionista.com/2025/03/ray-ban-meta-coperni-paris-fashion-week-collaboration?utm_source=openai"
+        },
+        {
+          "end_index": 2191,
+          "start_index": 2081,
+          "title": "Humane is shutting down the AI Pin and selling its remnants to HP",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/614883/humane-ai-hp-acquisition-pin-shutdown?utm_source=openai"
+        },
+        {
+          "end_index": 2576,
+          "start_index": 2437,
+          "title": "Smart glasses record people in public. The most online generation is pushing back.",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/technology/2025/08/27/gen-z-smart-glasses-digital-privacy-consent/?utm_source=openai"
+        },
+        {
+          "end_index": 2968,
+          "start_index": 2882,
+          "title": "Apple Vision Pro",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Apple_Vision_Pro?utm_source=openai"
+        },
+        {
+          "end_index": 3393,
+          "start_index": 3273,
+          "title": "Fitness Tracker Market Size, Share, Trends | Growth [2032]",
+          "type": "url_citation",
+          "url": "https://www.fortunebusinessinsights.com/fitness-tracker-market-103358?utm_source=openai"
+        },
+        {
+          "end_index": 3850,
+          "start_index": 3669,
+          "title": "Walmart to be first US retailer to sell Abbott's continuous glucose monitor, Axios reports",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/walmart-be-first-us-retailer-sell-abbotts-continuous-glucose-monitor-axios-2025-10-21/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Only ~1.5 years have passed since the April 2024 prediction of a multi-year shift in social norms rejecting 'socially intrusive' gesture-based wearables (e.g., Humane AI Pin-style devices) at events like Coachella in favor of device-free participation or passive wearables. No direct evidence of this shift: Coachella 2025 coverage focuses on fashion/beauty trends (e.g., [Cornell Daily Sun](https://www.cornellsun.com/article/2025/05/the-biggest-trends-of-coachella-2025), [Vogue](https://www.vogue.com/slideshow/coachella-music-festival-polarizing-style-trends)), with no mentions of gesture wearables or rejection; phones remain prevalent despite complaints/poor service ([GQ 2024](https://www.gq-magazine.co.uk/article/coachella-festival-phone-ban)). Specific devices flopped (Humane Pin shutdown 2025, sold to HP ([Reddit](https://www.reddit.com/r/Android/comments/1isrscx/humane_is_shutting_down_the_ai_pin_and_selling/)); Rabbit R1 low usage ([Verge](https://www.theverge.com/2024/9/25/24254253/rabbit-r1-5000-daily-users-ai-gadget))), supporting rejection but not norms. Broader smart/AR glasses boomed (370% YoY sales Q3 2025 ([Reddit](https://www.reddit.com/r/augmentedreality/comments/1olu55n/q3_2025_report_ar_glasses_sales_jump_180_while_vr/))), some with gestures, promoted for concerts ([RaveRunner](https://raverunner.co/blog/smart-glasses-revolutionize-concerts-festivals)). Privacy backlash exists ([WaPo](https://www.washingtonpost.com/technology/2025/08/27/gen-z-smart-glasses-digital-privacy-consent/)), but no festival-specific norm shift. Too early for 'coming years' prediction."
+    },
+    {
+      "id": "H-00:55:29.020",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly concerns a *multi-decade* horizon and claims the trend toward tighter human\u2013computer integration (wearables, AR, brain\u2013computer interfaces, etc.) is *irreversible* and will not reverse \"over the long term.\" As of late 2025, only ~1.5 years have passed since the statement, far too short to determine whether a claimed irreversible, multi-decade trend will *never* reverse.\n\nCurrent evidence does show continued growth in several relevant categories\u2014e.g., global smartwatch and wearable shipments have generally risen year\u2011over\u2011year, major firms are still investing heavily in AR/VR platforms, and research and early products in brain\u2013computer interfaces are ongoing\u2014but these are still early in their adoption curves and subject to future technological, social, regulatory, or economic shifts that could alter or reverse the long\u2011term trajectory. Because the claim is about permanence of the trend over decades, and we have not yet observed anything close to that timeframe, it cannot be definitively judged right or wrong at this point.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies a *multi-decade horizon* for continued increase in adoption of cybernetic tech (wearables, AR, BCI) without reversal. Released April 2024, only ~19 months have passed (to Dec 2025), far too short to evaluate long-term irreversibility. Current trends show growth\u2014e.g., global smartwatch shipments up 9% YoY in 2024 per IDC; Apple Vision Pro sales ongoing despite niche; Neuralink human trials advancing\u2014but no basis yet for multi-decade verdict."
+    },
+    {
+      "id": "H-00:55:29.020-2",
+      "result": "ambiguous",
+      "explanation": "Parts of the prediction track reality, but the central **Apple\u2011glasses** element has not come true and now effectively cannot.\n\nWhat came true:\n- Humane\u2019s AI Pin was marketed as a **phone-replacement wearable** and launched in April 2024, but it was panned for poor performance, short battery life, and usability problems, and never came close to replacing smartphones in practice.([cnbc.com](https://www.cnbc.com/2023/11/09/former-apple-designers-at-humane-launch-hands-free-ai-powered-pin.html?utm_source=openai))  By early 2025, Humane sold most of its assets to HP, halted sales of the Pin, and announced that cloud features (calling, messaging, AI queries) would shut off on February 28, 2025, effectively killing the product.([theverge.com](https://www.theverge.com/news/614883/humane-ai-hp-acquisition-pin-shutdown?utm_source=openai))  So its \u201cprospects as a standalone replacement for the phone\u201d were indeed very limited.\n- During the Pin\u2019s short life, **multiple other computer\u2011vision wearables** emerged or scaled up. Meta\u2019s Ray\u2011Ban smart glasses line (with cameras and Meta AI) launched in 2023 and, by 2025, had sold over 2 million units and expanded into multiple models, with further display-equipped \u201cRay\u2011Ban Display\u201d and Oakley Meta glasses announced and shipping in 2025.([fr.wikipedia.org](https://fr.wikipedia.org/wiki/Apple_Vision_Pro?utm_source=openai))  Other AI smart glasses (e.g., from Alibaba) also entered the market.([theverge.com](https://www.theverge.com/news/831354/alibaba-quark-smart-glasses?utm_source=openai))  That matches the idea that pendant-style devices would face competition from many vision\u2011based wearables \u201csucking in\u201d real\u2011world visual information.\n\nWhat did *not* come true:\n- As of November 30, 2025, **Apple has not released consumer smart glasses**. Its only shipping head\u2011worn device is the Apple Vision Pro mixed\u2011reality *headset* (launched February 2024), which is bulky and positioned as a spatial computer, not everyday glasses.([apple.com](https://www.apple.com/newsroom/2024/01/apple-vision-pro-available-in-the-us-on-february-2/?utm_source=openai))  Apple\u2019s true AR/smart\u2011glasses projects (\u201cApple Glasses\u201d / N107, etc.) have been repeatedly **postponed or cancelled**, with reports that development was put on hold due to technical challenges and that any smart\u2011glasses launch is pushed to around 2027 at the earliest.([macrumors.com](https://www.macrumors.com/2023/01/17/apple-glasses-postponed/?utm_source=openai))  \n- Humane\u2019s AI Pin, meanwhile, is being shut down in early 2025, well before any Apple smart glasses are expected to reach market.([theverge.com](https://www.theverge.com/news/614883/humane-ai-hp-acquisition-pin-shutdown?utm_source=openai))  That means the Pin never actually **competed with Apple\u2019s glasses** in the marketplace and, given its discontinuation, never will.\n\nBecause:\n- The prediction correctly foresaw that **other computer\u2011vision wearables** would emerge and that this category (along with the Pin\u2019s flaws) would undercut the Pin\u2019s chances as a phone replacement, **but**\n- It specifically framed this in terms of direct competition with **\u201cApple glasses,\u201d** which did not materialize within the Pin\u2019s lifespan and are still not on the market,\n\n\u2026the overall outcome is mixed. Important elements are accurate, but the Apple\u2011glasses centerpiece is not, so the fairest evaluation is **ambiguous**, rather than cleanly right or wrong.",
+      "sources": [
+        {
+          "end_index": 555,
+          "start_index": 421,
+          "title": "Former Apple designers at Humane launch hands-free AI-powered pin",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/11/09/former-apple-designers-at-humane-launch-hands-free-ai-powered-pin.html?utm_source=openai"
+        },
+        {
+          "end_index": 881,
+          "start_index": 771,
+          "title": "Humane is shutting down the AI Pin and selling its remnants to HP",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/614883/humane-ai-hp-acquisition-pin-shutdown?utm_source=openai"
+        },
+        {
+          "end_index": 1415,
+          "start_index": 1329,
+          "title": "Apple Vision Pro",
+          "type": "url_citation",
+          "url": "https://fr.wikipedia.org/wiki/Apple_Vision_Pro?utm_source=openai"
+        },
+        {
+          "end_index": 1585,
+          "start_index": 1485,
+          "title": "China's Alibaba brings removable batteries to the smart glasses race",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/831354/alibaba-quark-smart-glasses?utm_source=openai"
+        },
+        {
+          "end_index": 2150,
+          "start_index": 2027,
+          "title": "Apple Vision Pro available in the U.S. on February 2 - Apple",
+          "type": "url_citation",
+          "url": "https://www.apple.com/newsroom/2024/01/apple-vision-pro-available-in-the-us-on-february-2/?utm_source=openai"
+        },
+        {
+          "end_index": 2518,
+          "start_index": 2420,
+          "title": "Development on Augmented Reality 'Apple Glasses' Postponed Indefinitely - MacRumors",
+          "type": "url_citation",
+          "url": "https://www.macrumors.com/2023/01/17/apple-glasses-postponed/?utm_source=openai"
+        },
+        {
+          "end_index": 2761,
+          "start_index": 2651,
+          "title": "Humane is shutting down the AI Pin and selling its remnants to HP",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/614883/humane-ai-hp-acquisition-pin-shutdown?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction anticipates competition over the 'next several years' (from Apr 2024), implying 3+ years. By Dec 2025 (~20 months), Humane AI Pin failed spectacularly\u2014shut down Feb 2025, sold to HP, devices bricked ([The Verge](https://www.theverge.com/news/614883/humane-ai-hp-acquisition-pin-shutdown), [Wikipedia](https://en.wikipedia.org/wiki/Humane_Inc.)). Failure due to poor performance (slow AI, battery/heat issues, hallucinations), high cost/subscription, rushed launch\u2014not primarily competition ([NYT](https://www.nytimes.com/2024/06/06/technology/humane-ai-pin.html), [CNET](https://www.cnet.com/tech/mobile/humanes-ai-pin-failed-because-it-ignored-what-was-already-in-our-pockets/)).\n\nMultiple computer-vision wearables emerged/existed: Meta Ray-Ban glasses (camera/AI vision for real-world capture/translation, successful; updates 2024-2025 incl. display Sep 2025) ([CNET](https://www.cnet.com/tech/mobile/meta-ray-bans-6-months-later-the-best-ai-companion-happens-to-be-camera-glasses/), [Meta](https://www.meta.com/blog/meta-ray-ban-display-ai-glasses-connect-2025/)); others like Xreal One, Viture, Limitless Pendant ([WIRED](https://www.wired.com/gallery/best-smart-glasses/), [PCMag](https://www.pcmag.com/picks/the-best-smart-glasses)).\n\nHowever, Apple glasses unreleased\u2014rumors for 2026 announcement/2027 launch ([MacRumors](https://www.macrumors.com/guide/apple-smart-glasses/), [Bloomberg](https://www.bloomberg.com/news/articles/2025-10-01/apple-shelves-vision-headset-revamp-to-prioritize-meta-like-ai-smart-glasses), [Tom's Guide](https://www.tomsguide.com/computing/smart-glasses/apple-glasses-everything-we-know-so-far)). Too early to confirm full prediction, esp. Apple-specific competition and causal link to Humane's prospects."
+    },
+    {
+      "id": "H-00:59:13.070",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, no brain\u2013computer interface (BCI) or ocular-neural system exists that can *record and later upload* a person\u2019s full, first-person, memory-like visual record of their experiences as a persistent, searchable life log.\n\nCurrent state of the field:\n- **Elon Musk\u2019s Neuralink** and similar invasive BCIs are in very early human trials aimed at restoring function (e.g., helping paralyzed patients control cursors or prosthetics), not recording or replaying naturalistic memories or continuous first-person video of life experiences.\n- **Research BCIs** can decode limited aspects of visual perception or imagined speech in constrained lab settings, typically using fMRI or implanted electrodes, and only over short time windows with heavy preprocessing. They do not approximate a full-life DVR of experiences or conversations.\n\nThe predictor explicitly framed this as \u201cpretty far off\u201d and effectively multi-decade. Since only ~1.5 years have elapsed since the prediction (April 2024 \u2192 November 2025) and the claimed long-term horizon has clearly not arrived, there is not yet a fair test of whether such a mature, memory-upload BCI will exist.\n\nTherefore, the correct status today is **\u201cinconclusive (too early)\u201d**: the prediction has definitely not come true yet, but the timeframe the predictor implied has not expired, so it cannot be judged definitively right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction explicitly describes a multi-decade future capability ('pretty far off'), but only ~1.5 years have passed since the April 2024 podcast (current date: Dec 1, 2025). No BCI technology has achieved recording/uploading first-person visual memories or full-life DVR logs. Neuralink has implanted ~12 humans by Sep 2025 for paralysis aid (cursor control, gaming, speech trials) per [Neuralink updates](https://neuralink.com/updates/), [Seeking Alpha](https://seekingalpha.com/news/4493634-elon-musks-neuralink-says-globally-12-people-have-received-implants), and [Wikipedia](https://en.wikipedia.org/wiki/Neuralink). Memory decoding is experimental (e.g., rat trials, Stanford brain readout) but far from persistent, searchable visual life logs via neural/ocular interfaces ([Facebook post on memory decoding](https://www.facebook.com/groups/38680135622/posts/10172240714980623/), [MIT Tech Review](https://www.technologyreview.com/2025/01/16/1110017/what-to-expect-from-neuralink-in-2025/)). Too early to evaluate."
+    },
+    {
+      "id": "A-01:08:23.979",
+      "result": "right",
+      "explanation": "The prediction matches what actually happened.\n\n1. **The fix did stall past April 15, 2024.**  A $78B bipartisan tax bill (including restoration of immediate R&D expensing under Section 174) passed the House in January 2024 but remained stuck in the Senate as Americans filed by the April 15 deadline, and senators themselves warned it might be \u201ctoo late\u201d to salvage it for that filing season. ([wsj.com](https://www.wsj.com/politics/policy/senate-overdue-on-taxes-as-americans-finish-filing-541c6cba?utm_source=openai))  Later reporting shows the Senate effectively killed this bill, so no broad retroactive R&D fix for 2022\u20132023 passed in that Congress. ([wsj.com](https://www.wsj.com/politics/policy/senate-is-set-to-kill-bipartisan-tax-bill-c309d47b?utm_source=openai))  During 2023\u20132024 filings, businesses therefore had to capitalize and amortize R&D over five or fifteen years instead of expensing it immediately.\n\n2. **Many small, R&D\u2011intensive firms did experience significant financial strain from this rule (i.e., taxes on \u201cphantom\u201d profits).**  \n   * A 2025 survey of founders by startup bank Mercury found that **73%** said the R&D amortization change had a negative financial impact, and **44%** reported operational changes such as cutting R&D budgets, slowing or reducing hiring, delaying/canceling projects, offshoring, and even layoffs. ([mercury.com](https://mercury.com/blog/startup-economics-report-2025?utm_source=openai))  These respondents are predominantly tech startups.\n   * The U.S. Chamber of Commerce reports that, since mandatory R&D amortization began in 2022, **many small and midsize businesses have suffered cash\u2011flow and liquidity problems and been forced to take high\u2011interest loans, raise prices, and stop hiring just to pay their higher tax bills**. ([uschamber.com](https://www.uschamber.com/taxes/retroactive-tax-legislation-would-help-american-small-businesses?utm_source=openai))\n   * A Senate small\u2011business roundtable summarized survey data showing a **median 32% increase in tax bills (about $59,000)** for small firms subject to the new R&D rules; **35% had to borrow to pay the tax**, and 19% said their firm might go out of business, with additional impacts like reduced investment, hiring cuts, and layoffs. ([congress.gov](https://www.congress.gov/event/118th-congress/senate-event/LC74472/text?utm_source=openai))\n   * Industry letters (e.g., from manufacturing and startup groups) describe the R&D amortization requirement as causing **\u201csignificant cash flow impacts\u201d on startups and small businesses**, forcing them to delay investments, forego hiring, and take out loans, and warn that **\u201ctens of thousands of jobs are at risk\u201d** if it remains. ([nffs.org](https://www.nffs.org/news/nffs-joins-nam-effort-supporting-tax-policy-change?utm_source=openai))  The National Defense Industrial Association specifically notes that losing most of the R&D deduction creates dramatically higher tax bills that **many companies, especially small defense\u2011related businesses, will struggle to manage**, tying it to national\u2011security supply chains. ([nationaldefensemagazine.org](https://www.nationaldefensemagazine.org/articles/2023/11/21/ndia-policy-points-tax-policies-must-line-up-with-national-security-objectives?utm_source=openai))\n   * Policy and news analyses on Section 174 explicitly explain that amortization can make unprofitable startups appear profitable for tax purposes, resulting in tax bills despite having no real earnings \u2014 the textbook definition of \u201cphantom\u201d taxable income. ([axios.com](https://www.axios.com/2024/01/20/taxes-irs-startups-section174?utm_source=openai))\n\n3. **Timing relative to the 2023\u20132024 tax years.**  The amortization requirement has applied since tax years beginning in 2022, so its first big impact hit 2022 and 2023 returns (filed in 2023 and 2024), with continuing effects into 2024 filings, precisely the window the prediction referred to. ([cbh.com](https://www.cbh.com/insights/articles/how-2025-tax-reform-affects-government-contractors/?utm_source=openai))  A later 2025 reform (creating new Section 174A and allowing some retroactive small\u2011business relief via amended returns) only arrived after this period and does not negate the substantial cash strain and operational damage many small tech, life\u2011sciences, and defense\u2011related firms reported during 2023\u20132024.\n\nGiven (a) the confirmed Senate stall beyond April 15, 2024, and (b) strong empirical evidence that a large number of small, R&D\u2011intensive U.S. businesses faced large tax increases, cash\u2011flow problems, borrowing needs, and cuts to R&D and hiring because of Section 174 amortization, the prediction that this stall would \u201churt a lot of small businesses\u201d through taxes on phantom profits is best judged **right**.",
+      "sources": [
+        {
+          "end_index": 555,
+          "start_index": 429,
+          "title": "Senate Overdue on Taxes as Americans Finish Filing",
+          "type": "url_citation",
+          "url": "https://www.wsj.com/politics/policy/senate-overdue-on-taxes-as-americans-finish-filing-541c6cba?utm_source=openai"
+        },
+        {
+          "end_index": 808,
+          "start_index": 691,
+          "title": "Senate Kills Bipartisan Tax Bill",
+          "type": "url_citation",
+          "url": "https://www.wsj.com/politics/policy/senate-is-set-to-kill-bipartisan-tax-bill-c309d47b?utm_source=openai"
+        },
+        {
+          "end_index": 1482,
+          "start_index": 1393,
+          "title": "The New Economics of Starting Up: How Startups Are Scaling and Spending in 2025 | Mercury",
+          "type": "url_citation",
+          "url": "https://mercury.com/blog/startup-economics-report-2025?utm_source=openai"
+        },
+        {
+          "end_index": 1961,
+          "start_index": 1828,
+          "title": "R&D Tax Legislation Would Help American Small Businesses | U.S. Chamber of Commerce",
+          "type": "url_citation",
+          "url": "https://www.uschamber.com/taxes/retroactive-tax-legislation-would-help-american-small-businesses?utm_source=openai"
+        },
+        {
+          "end_index": 2405,
+          "start_index": 2298,
+          "title": "S.Hrg. 118-671 \u2014 ROUNDTABLE DISCUSSION ON TACKLING TAX COMPLEXITY: THE SMALL BUSINESS PERSPECTIVE | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/event/118th-congress/senate-event/LC74472/text?utm_source=openai"
+        },
+        {
+          "end_index": 2849,
+          "start_index": 2741,
+          "title": "NFFS joins NAM effort supporting tax policy change - Non-Ferrous Founders' Society",
+          "type": "url_citation",
+          "url": "https://www.nffs.org/news/nffs-joins-nam-effort-supporting-tax-policy-change?utm_source=openai"
+        },
+        {
+          "end_index": 3319,
+          "start_index": 3130,
+          "title": "NDIA POLICY POINTS: Tax Policies Must Line Up with National Security Objectives",
+          "type": "url_citation",
+          "url": "https://www.nationaldefensemagazine.org/articles/2023/11/21/ndia-policy-points-tax-policies-must-line-up-with-national-security-objectives?utm_source=openai"
+        },
+        {
+          "end_index": 3675,
+          "start_index": 3580,
+          "title": "A 2017 law comes back to haunt startups in 2024",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2024/01/20/taxes-irs-startups-section174?utm_source=openai"
+        },
+        {
+          "end_index": 4095,
+          "start_index": 3975,
+          "title": "How 2025 Tax Reform Affects Government Contractors | Cherry Bekaert",
+          "type": "url_citation",
+          "url": "https://www.cbh.com/insights/articles/how-2025-tax-reform-affects-government-contractors/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The R&D amortization fix (H.R. 7024, Tax Relief for American Families and Workers Act of 2024) passed the House on Jan 31, 2024, but stalled in the Senate past April 15, 2024, and was ultimately blocked ([congress.gov](https://www.congress.gov/bill/118th-congress/house-bill/7024), [PwC Aug 2024](https://www.pwc.com/us/en/services/tax/library/senate-blocks-house-business-and-family-tax-relief-bill.html)). Businesses amortized R&D expenses for 2023 (filed 2024) and 2024 tax years, paying taxes on 'phantom profits' and facing cash flow strain, as evidenced by slowed R&D spending ([Thomson Reuters Apr 2024](https://tax.thomsonreuters.com/news/rd-expert-capitalization-amortization-requirement-hurts-smaller-businesses/)). Small tech/life sciences firms were hit hardest. Retroactive relief via OBBBA (2025, \u00a7174A) allows small businesses (<$31M receipts) to amend 2022-2024 returns ([KBKG Aug 2025](https://www.kbkg.com/research-and-development/2024-rd-expensing-approved-what-small-businesses-need-to-do-now), [RSM Sep 2025](https://rsmus.com/insights/tax-alerts/2025/small-businesses-tax-relief-research-costs.html)), confirming initial strain before refunds."
+    },
+    {
+      "id": "A-01:09:29.880",
+      "result": "right",
+      "explanation": "*Legal/policy part of the prediction*\n\n- The January 2024 bipartisan framework and H.R. 7024 (\u201cTax Relief for American Families and Workers Act of 2024\u201d) would have restored immediate expensing only for **domestic** R&D while keeping **foreign** research expenditures subject to 15\u2011year amortization under \u00a7174. House and practitioner summaries explicitly state that foreign R&D costs would \u201ccontinue\u201d to be amortized over 15 years. ([congress.gov](https://www.congress.gov/congressional-report/118th-congress/house-report/353/1?utm_source=openai))\n- That specific 2024 bill ultimately stalled, but in 2025 the **One Big Beautiful Bill Act (OBBBA)** was enacted. OBBBA rewrote \u00a7174 so that it now applies only to **foreign** research, which \u201ccontinues to be amortized\u201d over 15 years for tax years beginning after December 31, 2024. A new \u00a7174A restores full expensing for **domestic** research. IRS guidance and technical summaries confirm this structure. ([irs.gov](https://www.irs.gov/irb/2025-38_IRB?utm_source=openai))\n- Multiple tax advisories after OBBBA describe current law as: (1) permanent or effectively permanent full expensing for domestic R&D, and (2) **no change** for foreign R&D, which must still be capitalized and amortized over 15 years, with no scheduled sunset. ([manercpa.com](https://manercpa.com/incentivizing-production-what-the-obbba-means-for-manufacturing/?utm_source=openai))  \n\nThis matches Friedberg\u2019s core claim that the legislative fix would (and now does) leave in place a rule forcing US companies to spread **offshore** R&D over 15 years while giving much more favorable treatment to domestic R&D.\n\n*Economic consequences part of the prediction*\n\n- Practitioners and IRS commentary note that the \u00a7174 capitalization rules increased taxable income and reduced cash flow for R&D\u2011intensive firms when they first took effect, precisely because immediate deductions were replaced with slow amortization. ([irs.gov](https://www.irs.gov/irb/2024-05_IRB?utm_source=openai))\n- Under current law, a US company that does a **growing** amount of offshore R&D must still capitalize and deduct those costs slowly over 15 years, while domestic costs can be expensed. This generally means taxable income is higher than it would be under immediate expensing and can exceed \u201ceconomic\u201d profit, especially in growth phases when R&D spending is ramping up. Analysts explicitly warn that the foreign\u2011only capitalization regime may drive firms to relocate R&D to the US for tax reasons, which reflects the same underlying distortion Friedberg described. ([grantthornton.com](https://www.grantthornton.com/insights/alerts/tax/2025/insights/full-expensing-of-domestic-research?utm_source=openai))\n\n- His stronger language (\u201cany\u201d such business will \u201calways\u201d pay tax even at breakeven) is somewhat hyperbolic, because net operating losses, credits, or other deductions can offset tax in particular cases. But the **directional mechanism**\u2014that a 15\u2011year amortization rule on foreign R&D raises taxable income relative to economic profit for growing firms with significant offshore R&D\u2014is correct and is recognized in the professional commentary.\n\nGiven that (1) the law has in fact evolved so foreign R&D must be amortized over 15 years indefinitely while domestic R&D is expensed, and (2) this structure does exactly what he said in terms of tax distortions (even if not literally in every single case), the prediction is best classified as **right** overall.",
+      "sources": [
+        {
+          "end_index": 583,
+          "start_index": 468,
+          "title": "H. Rept. 118-353 - TAX RELIEF FOR AMERICAN FAMILIES AND WORKERS ACT OF 2024 | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/congressional-report/118th-congress/house-report/353/1?utm_source=openai"
+        },
+        {
+          "end_index": 1058,
+          "start_index": 992,
+          "title": "Internal Revenue Bulletin: 2025-38 | Internal Revenue Service",
+          "type": "url_citation",
+          "url": "https://www.irs.gov/irb/2025-38_IRB?utm_source=openai"
+        },
+        {
+          "end_index": 1442,
+          "start_index": 1321,
+          "title": "What the OBBBA Means for Manufacturing - Maner Costerisan",
+          "type": "url_citation",
+          "url": "https://manercpa.com/incentivizing-production-what-the-obbba-means-for-manufacturing/?utm_source=openai"
+        },
+        {
+          "end_index": 2045,
+          "start_index": 1979,
+          "title": "Internal Revenue Bulletin: 2024-05 | Internal Revenue Service",
+          "type": "url_citation",
+          "url": "https://www.irs.gov/irb/2024-05_IRB?utm_source=openai"
+        },
+        {
+          "end_index": 2752,
+          "start_index": 2612,
+          "title": "Permanent full expensing for U.S. research in OBBBA | Grant Thornton",
+          "type": "url_citation",
+          "url": "https://www.grantthornton.com/insights/alerts/tax/2025/insights/full-expensing-of-domestic-research?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction is accurate. As of December 2025, U.S. tax law under Section 174 still requires capitalization and 15-year amortization of foreign/offshore R&D expenses, unchanged from the April 2024 proposal and post-OBBBA (One Big Beautiful Bill Act, passed July 2025). Domestic R&D expensing was restored permanently starting 2025, but foreign R&D remains amortized over 15 years indefinitely. This creates the predicted tax mismatch for growing companies: annual deductions lag expenses, inflating taxable income above economic profit and generating U.S. tax liabilities even at breakeven.\n\nSources:\n- [Shay CPA (Sep 2025)](https://shaycpa.com/section-174-has-changed-what-startups-need-to-do-for-2024-2025/): 'Outside U.S. \u2192 Capitalize and amortize over 15 years.'\n- [Deloitte (Aug 2025)](https://www.deloitte.com/be/en/services/tax/blogs/us-tax-bill-one-big-beautiful-bill-act.html): 'No change to \u201cforeign\u201d R&D expenditures \u2013 still must capitalize and amortize over 15 years.'\n- [BNN CPA / IRS Rev. Proc. 2025-28 (Sep 2025)](https://www.bnncpa.com/resources/irs-issues-revenue-procedure-2025%25E2%2580%259128-key-guidance-for-re-expenditures-under-the-obbba/): 'Taxpayers with foreign R&E expenditures must continue to capitalize and amortize over 15 years.'\n- [RSM (Jul 2025)](https://rsmus.com/insights/services/business-tax/obbba-tax-life-sciences.html): 'Foreign R&D: Requirement to capitalize and amortize over 15 years remains.'\n\nThe 2024 bill stalled in Senate; 2025 OBBBA confirmed the distinction."
+    },
+    {
+      "id": "D-01:10:24.130",
+      "result": "inconclusive",
+      "explanation": "Jason\u2019s statement was a conditional warning about what **would** happen *if* two policy problems (R&D amortization and tight M&A/antitrust rules) were not fixed \"over the next few years.\" As of late 2025, both the *time horizon* and the *conditions* of that hypothetical are not clearly met, so the prediction can\u2019t be definitively judged.\n\nKey points:\n\n- **R&D amortization has largely been rolled back for domestic R&D**, at least prospectively. Congress restored immediate expensing for U.S.-based R&D, both via earlier relief tied to the *Tax Relief for American Families and Workers Act of 2024* and then more comprehensively in the *One Big Beautiful Bill Act (OBBBA)* in July 2025, which reinstates current-year expensing for domestic research costs for tax years beginning after December 31, 2024. ([globalreporterjournal.com](https://www.globalreporterjournal.com/article/849251853-major-tax-relief-for-u-s-innovators-immediate-r-d-expensing-restored-by-congress?utm_source=openai))  That means the \u201cfix this tax issue\u201d part of his warning has, in substantial measure, been addressed, at least for domestic R&D.\n- **Before the rollback, Section 174 amortization was clearly harmful to startups**, creating taxable income \"out of thin air\" and raising cash taxes for early\u2011stage tech companies, especially those with significant engineering costs. ([theregister.com](https://www.theregister.com/2024/01/12/us_tax_research/?utm_source=openai))  So his concern about the tax rule itself was grounded in real pressure on startups.\n- **Antitrust / M&A constraints have not clearly been \u201ceased\u201d in a way that targets startup exits.** FTC/DOJ data for FY 2024 show elevated enforcement (more Second Requests and intensive reviews) even as overall deal volume remains strong, and reporting through 2025 describes a still\u2011tough but functioning review environment\u2014more scrutiny, but not an obvious pro\u2011startup relaxation. ([reuters.com](https://www.reuters.com/legal/transactional/mergers-review-takeaways-fy-2024-hsr-report-related-agency-data--pracin-2025-10-01/?utm_source=openai))  There\u2019s no decisive policy shift whose primary effect is to make it markedly easier for large firms to buy startups.\n- **Startup ecosystem outcomes are mixed and hard to attribute to these two levers alone.** U.S. startup funding in 2025 has rebounded strongly\u2014driven heavily by AI\u2014suggesting robust capital for at least one large segment of tech. ([reuters.com](https://www.reuters.com/business/us-ai-startups-see-funding-surge-while-more-vc-funds-struggle-raise-data-shows-2025-07-15/?utm_source=openai))  At the same time, data on Series A conversion shows a harsh environment: only a small fraction of recent seed\u2011stage startups are reaching Series A, and timelines between rounds have lengthened, which implies elevated startup attrition. ([wsj.com](https://www.wsj.com/articles/there-are-no-easy-as-in-venture-capital-these-days-a1c1b27a?utm_source=openai))  However, those dynamics are affected by macro conditions, interest rates, and the AI platform shift\u2014not just R&D tax policy and antitrust.\n- **Timeframe:** Jason said \"over the next few years.\" From April 2024 to late 2025 is only partway through that window, and we don\u2019t yet have a full multi\u2011year picture of post\u2011reform startup formation and survival.\n\nBecause (1) one of his key conditions (the R&D tax problem) has been substantially addressed for domestic R&D, (2) the antitrust/M&A side has not seen a clearly defined, large pro\u2011startup easing, and (3) the ecosystem data is mixed and causally entangled with many other factors, we can\u2019t cleanly say whether *his specific conditional prediction*\u2014that **failing** to fix both issues would \"kill a lot of startups\" and materially damage U.S. startup formation\u2014has come true. It\u2019s simply **too early and too confounded** to judge either as clearly right or clearly wrong.",
+      "sources": [
+        {
+          "end_index": 1037,
+          "start_index": 852,
+          "title": "Major Tax Relief for U.S. Innovators: Immediate R&D Expensing Restored by Congress | Global Reporter Journal",
+          "type": "url_citation",
+          "url": "https://www.globalreporterjournal.com/article/849251853-major-tax-relief-for-u-s-innovators-immediate-r-d-expensing-restored-by-congress?utm_source=openai"
+        },
+        {
+          "end_index": 1499,
+          "start_index": 1405,
+          "title": "Forced tax cost amortization hobbling US tech R&D projects \u2022 The Register",
+          "type": "url_citation",
+          "url": "https://www.theregister.com/2024/01/12/us_tax_research/?utm_source=openai"
+        },
+        {
+          "end_index": 2133,
+          "start_index": 1971,
+          "title": "Mergers in review: takeaways from the FY 2024 HSR report and related agency data",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/legal/transactional/mergers-review-takeaways-fy-2024-hsr-report-related-agency-data--pracin-2025-10-01/?utm_source=openai"
+        },
+        {
+          "end_index": 2642,
+          "start_index": 2484,
+          "title": "US AI startups see funding surge while more VC funds struggle to raise, data shows",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/us-ai-startups-see-funding-surge-while-more-vc-funds-struggle-raise-data-shows-2025-07-15/?utm_source=openai"
+        },
+        {
+          "end_index": 2999,
+          "start_index": 2880,
+          "title": "There Are No Easy A's in Venture Capital These Days",
+          "type": "url_citation",
+          "url": "https://www.wsj.com/articles/there-are-no-easy-as-in-venture-capital-these-days-a1c1b27a?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The premise requires no rollback of R&D amortization **and** no easing of M&A/antitrust constraints. However, US policymakers **rolled back** Section 174 R&D amortization via the OBBBA in 2025, restoring full expensing for domestic R&E starting tax year 2025 ([Grant Thornton](https://www.grantthornton.com/insights/alerts/tax/2025/insights/full-expensing-of-domestic-research), [RSM](https://rsmus.com/insights/services/business-tax/obbba-tax-research-development.html), [BDO](https://www.bdo.com/insights/tax/irs-issues-procedural-guidance-on-obbba-treatment-of-r-and-e-expenditures)). Trump admin also eased M&A enforcement, ditching Biden-era discouragement ([Forbes](https://www.forbes.com/sites/aldenabbott/2025/07/16/ma-enforcement-easing-under-the-trump-administration/)). No evidence of 'significant' startup failures materially reducing US tech ecosystem due to these issues; shutdowns rose 25% in 2024 (966 vs 769 in 2023, [TechCrunch](https://techcrunch.com/2025/01/26/2025-will-likely-be-another-brutal-year-of-failed-startups-data-suggests/)) but pre-relief/attributed to funding winter, not specifically R&D/antitrust. Funding up Q2 2025 ([Crunchbase](https://news.crunchbase.com/venture/state-of-startups-q2-h1-2025-ai-ma-charts-data/)), entrepreneur confidence improved ([Mercury](https://mercury.com/blog/startup-economics-report-2025)). Normal failure rates (~90%, [Exploding Topics](https://explodingtopics.com/blog/startup-failure-stats)). Prediction's consequent did not occur."
+    },
+    {
+      "id": "A-01:10:24.130",
+      "result": "inconclusive",
+      "explanation": "The prediction covers a long window \u2014 *\u201cthe decade ahead\u201d* from roughly 2024 through 2034. As of now (November 30, 2025), only about a year and a half of that period has elapsed, so it\u2019s too early to judge whether the **full** claim (sustained, decade\u2011long pressure leading to increasingly innovation\u2011distorting business taxes) is right or wrong.\n\nSome early context:\n\n- U.S. federal debt and projected deficits remain high, and official budget projections from bodies like the Congressional Budget Office anticipate continued upward pressure on spending, especially from entitlements and interest costs, which in turn imply pressure for higher revenues over the long term. This is directionally consistent with the *motivation* behind the prediction, but doesn\u2019t by itself confirm the specific outcome about how new taxes will target innovative businesses.\n- There have been ongoing debates and proposals around corporate minimum taxes, digital/service taxes, and higher taxes on large or highly profitable firms in tech and other sectors, but these are incremental and politically contested. It\u2019s not yet clear that we are in a sustained regime where *\u201cmore and more tax and all these weird ways that can really hurt industry\u201d* is definitively the pattern for the remainder of the decade.\n\nBecause the claim is (1) medium\u2011term macro\u2011fiscal, (2) explicitly about *trends over an entire decade*, and (3) stated in qualitative terms about how much new tax pressure will *hurt* innovation\u2011driven industries, we don\u2019t have enough elapsed time or clear evidence to decisively deem it right or wrong. The appropriate classification as of 2025 is therefore **\u201cinconclusive (too early).\u201d**",
+      "sources": [],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The prediction spans 2024\u20132034, but only ~1.5 years have passed (podcast April 2024; current date Dec 1, 2025). US federal deficits remain high (e.g., FY2025 deficit $1.8T per [Bipartisan Policy Center Deficit Tracker](https://bipartisanpolicy.org/report/deficit-tracker/); CBO reports), creating revenue pressure. However, 2025 tax legislation ('One Big Beautiful Bill Act'/2025 Tax Act) extended TCJA provisions, restored 100% bonus depreciation, immediate R&D expensing, and increased Sec. 179 deductions\u2014benefiting businesses and innovation (e.g., [KBKG summary](https://www.kbkg.com/feature/house-passes-tax-bill-sending-to-president-for-signature); [Roth & Co](https://rothcocpa.com/trend/trumps-new-tax-laws-will-supercharge-american-innovation/)). No new/expanded taxes targeting innovation industries observed; tariffs raised some revenue but not business-specific hikes hurting startups/tech. Too early to assess decade-long trend."
+    },
+    {
+      "id": "B-01:18:51.040",
+      "result": "right",
+      "explanation": "Available data since early 2024 show exactly the pattern Chamath described: rapid growth of app\u2011based gambling in the U.S., heavily concentrated among young men, alongside worrying levels of problem gambling.\n\n**1. Usage of app\u2011based sports betting is rising sharply**  \n\u2022 A February 2024 national survey found 19% of U.S. adults\u2014and 39% of men 18\u201349\u2014had an online sports\u2011betting account, with 91% of bettors having a betting app on their smartphone and most betting at least weekly.([sbu.edu](https://www.sbu.edu/news/news-items/2024/02/05/st.-bonaventure-siena-research-survey-reveals-almost-1-in-5-americans-have-an-online-sports-betting-account?utm_source=openai))  \n\u2022 By February 2025, a follow\u2011up survey showed 22% of Americans\u2014and 48% of men 18\u201349\u2014had an active sportsbook account, a notable one\u2011year jump (19%\u219222% overall; 39%\u219248% for men 18\u201349).([scri.siena.edu](https://scri.siena.edu/2025/02/18/22-of-all-americans-half-of-men-18-49-have-active-online-sports-betting-account/?utm_source=openai))  \n\u2022 Industry and regulatory data indicate that ~80% of all U.S. sports bets were already placed via mobile apps by 2023, and commercial sports\u2011betting revenue in May 2024 was up ~25% year\u2011over\u2011year, underscoring rapid expansion of app\u2011based gambling.([rg.org](https://rg.org/guides/sportsbetting-guides/how-many-americans-bet?utm_source=openai))  \n\u2022 Operators report large year\u2011over\u2011year gains: BetMGM\u2019s online sports revenue grew ~68% year\u2011on\u2011year in early 2025, and legal wagering on Super Bowl 2025 was projected to hit a record $1.39B, up over 11% from 2024.([investopedia.com](https://www.investopedia.com/mgm-resorts-international-stock-rises-on-strong-q1-betmgm-results-11723187?utm_source=openai))  \n\n**2. Problem gambling and addiction are concentrated in young men and linked to apps**  \n\u2022 A September 2024 Fairleigh Dickinson University national poll found that 10% of U.S. men aged 18\u201330 scored as problem gamblers versus 3% of the overall population, with problems *strongly* associated with online sports betting and online slots; the poll\u2019s authors explicitly warn that online gambling is \u201ccreating a generation of problem gamblers.\u201d([fdu.edu](https://www.fdu.edu/news/fdu-poll-finds-online-betting-leads-to-problems-for-young-men/?utm_source=openai))  \n\u2022 Rutgers\u2019 2023 New Jersey prevalence study (widely cited in 2024 coverage) found that one\u2011third of bettors aged 18\u201324 wager exclusively online\u2014about five times the share in 2017\u2014and that 19% of 18\u201324\u2011year\u2011olds were at high risk for gambling problems, especially men.([oceancountyhealth.gov](https://oceancountyhealth.gov/uncategorized/young-men-at-high-risk-for-gambling-addiction/?utm_source=openai))  \n\u2022 National surveys of 18\u201322\u2011year\u2011olds show sports betting is widespread (58% have bet on sports; 28% use apps or websites), with measurable shares losing large sums (e.g., >$500 in a day), and public\u2011health reporting in 2025 continues to describe online gambling among youth as \u201con the rise.\u201d([nyproblemgambling.org](https://nyproblemgambling.org/resource-lib-item/sports-betting-activities-survey/?utm_source=openai))  \n\u2022 Research summarized in 2025 coverage of sports\u2011betting scandals reports that in states where sports betting is legal, about 19% of 18\u201324\u2011year\u2011olds meet high\u2011risk criteria for gambling problems, again highlighting young men as the core at\u2011risk group.([businessinsider.com](https://www.businessinsider.com/sports-betting-scandal-college-athletes-ncaa-nba-terry-rozier-billups-2025-10?utm_source=openai))\n\nTaken together, these data show: (a) rapid growth in app\u2011based sports betting usage, particularly among young men; and (b) a substantial and growing cohort of young men exhibiting problem or high\u2011risk gambling behaviors strongly tied to those apps. That matches the substance and direction of Chamath\u2019s prediction that app\u2011driven gambling and associated addiction among young men would \"skyrocket\" in the coming years, so as of late 2025 his prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 704,
+          "start_index": 519,
+          "title": "St. Bonaventure/Siena Research survey reveals almost 1 in 5 Americans have an online sports betting account",
+          "type": "url_citation",
+          "url": "https://www.sbu.edu/news/news-items/2024/02/05/st.-bonaventure-siena-research-survey-reveals-almost-1-in-5-americans-have-an-online-sports-betting-account?utm_source=openai"
+        },
+        {
+          "end_index": 1043,
+          "start_index": 891,
+          "title": "22% of All Americans, Half of Men 18-49, Have Active Online Sports Betting Account \u2013 Siena Research Institute",
+          "type": "url_citation",
+          "url": "https://scri.siena.edu/2025/02/18/22-of-all-americans-half-of-men-18-49-have-active-online-sports-betting-account/?utm_source=openai"
+        },
+        {
+          "end_index": 1390,
+          "start_index": 1295,
+          "title": "The Truth About Sports Betting: How Many Americans Bet on Sports - Sports Betting Guide - RG",
+          "type": "url_citation",
+          "url": "https://rg.org/guides/sportsbetting-guides/how-many-americans-bet?utm_source=openai"
+        },
+        {
+          "end_index": 1751,
+          "start_index": 1608,
+          "title": "MGM Resorts International Stock Rises on Strong Q1 BetMGM Results",
+          "type": "url_citation",
+          "url": "https://www.investopedia.com/mgm-resorts-international-stock-rises-on-strong-q1-betmgm-results-11723187?utm_source=openai"
+        },
+        {
+          "end_index": 2315,
+          "start_index": 2197,
+          "title": "FDU Poll finds Online Betting Leads to Problems for Young Men | Fairleigh Dickinson University",
+          "type": "url_citation",
+          "url": "https://www.fdu.edu/news/fdu-poll-finds-online-betting-leads-to-problems-for-young-men/?utm_source=openai"
+        },
+        {
+          "end_index": 2721,
+          "start_index": 2586,
+          "title": "Ocean County Health Department | YOUNG MEN AT HIGH RISK FOR GAMBLING ADDICTION - Ocean County Health Department",
+          "type": "url_citation",
+          "url": "https://oceancountyhealth.gov/uncategorized/young-men-at-high-risk-for-gambling-addiction/?utm_source=openai"
+        },
+        {
+          "end_index": 3143,
+          "start_index": 3017,
+          "title": "Sports Betting Activities Survey - New York Council on Problem Gambling",
+          "type": "url_citation",
+          "url": "https://nyproblemgambling.org/resource-lib-item/sports-betting-activities-survey/?utm_source=openai"
+        },
+        {
+          "end_index": 3550,
+          "start_index": 3398,
+          "title": "Why the NBA sports betting scandal could be 'the tip of the iceberg'",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/sports-betting-scandal-college-athletes-ncaa-nba-terry-rozier-billups-2025-10?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Since April 2024, US sports betting handle reached $150.8B and revenue $13.9B in 2024 (up 23-25% YoY per American Gaming Assoc. and LegalSportsReport), with continued high activity into 2025 (Jan-Oct $121B handle). Participation rose slightly to 22% adults (Pew Oct 2025, up from 19% in 2022; online 10% up from 6%), concentrated among young men (48% men 18-49 have accounts per Siena Feb 2025; 25% men under 30 bet online per FDU/CNN Aug 2025). Addiction signals surged: help-seeking searches up 23% nationally since 2018, 50-67% in key states post-online launch (JAMA 2025 via UCSD/Psych Today); 10% young men 18-30 show problem gambling vs 3% overall (FDU); apps driving mental health crises in young men (STAT Nov 2025). Matches prediction of sharp rises in usage/addiction among young men. [Pew](https://www.pewresearch.org/short-reads/2025/10/02/), [Siena](https://sri.siena.edu/2025/02/18/), [LegalSportsReport](https://www.legalsportsreport.com/sports-betting-states/revenue/), [JAMA/UCSD](https://today.ucsd.edu/story/study-reveals-surge-in-gambling-addiction-following-legalization-of-sports-betting), [CNN/FDU](https://www.cnn.com/2025/08/23/business/sports-gambling-risk-young-men)."
+    },
+    {
+      "id": "B-01:19:52.460",
+      "result": "right",
+      "explanation": "Evidence since the April 2024 podcast shows that app-based sports betting has already become a significant social issue in the U.S., centered heavily on young men, with clear financial and behavioral harms.\n\n\u2022 A 2024 national Fairleigh Dickinson University poll found that about 10% of men aged 18\u201330 meet problem-gambling thresholds, versus 3% of the overall population, and explicitly links these elevated rates to online sports betting and online slots, warning that online gambling is creating a \"generation of problem gamblers.\" ([fdu.edu](https://www.fdu.edu/news/fdu-poll-finds-online-betting-leads-to-problems-for-young-men/?utm_source=openai))\n\n\u2022 A February 2025 Siena College/St. Bonaventure survey reported that 22% of Americans \u2014 including 48% of men aged 18\u201349 \u2014 have an online sportsbook account; among these bettors, 52% had chased losses, 37% felt ashamed after losing, and 20% had lost so much they struggled to meet financial obligations. A majority of Americans say online sports betting will create compulsive gamblers and want strong federal regulation, indicating broad recognition of social harm. ([scri.siena.edu](https://scri.siena.edu/2025/02/18/22-of-all-americans-half-of-men-18-49-have-active-online-sports-betting-account/?utm_source=openai))\n\n\u2022 Maryland\u2019s 2025 prevalence study shows disordered gambling rising from about 4% in 2022 to 5.7% in 2024, with online/mobile sports betting participation jumping from 3% to 12% after legalization; nearly 15% of those who bet on sports met criteria for disordered gambling, and two\u2011thirds of disordered gamblers were male. ([marylandmatters.org](https://marylandmatters.org/2025/10/23/new-study-finds-uptick-in-problematic-gambling-since-legalization-of-online-sports-betting/?utm_source=openai))\n\n\u2022 In April 2025, the city of Baltimore sued DraftKings and FanDuel, alleging that their apps and marketing practices intentionally drive compulsive gambling and citing research that online sports betting is associated with serious social harms, including suicidal ideation and domestic abuse. The complaint frames these harms as a growing public health concern. ([washingtonpost.com](https://www.washingtonpost.com/sports/2025/04/03/baltimore-sues-draftkings-fanduel/?utm_source=openai))\n\n\u2022 Federally, lawmakers have reintroduced the SAFE Bet Act, explicitly arguing that the explosion of mobile sports betting is exploiting addiction, with \"far too many \u2013 especially young people \u2013 driven into gambling abuse disorder,\" and calling for national public\u2011health style regulation. ([blumenthal.senate.gov](https://www.blumenthal.senate.gov/newsroom/press/release/blumenthal-and-tonko-reintroduce-safe-bet-act-addressing-sports-gambling?utm_source=openai)) In parallel, recent commentary in medical and policy outlets now describes sports-betting apps as a growing public health crisis whose primary casualties are young men, emphasizing the role of mobile apps and in\u2011play betting in fostering addiction. ([statnews.com](https://www.statnews.com/2025/11/11/sports-betting-apps-public-health-crisis/?utm_source=openai))\n\nTaken together, these data and policy responses show (1) disproportionately high and rising problem gambling among young men tied to online/app-based sports betting, and (2) mounting public, legal, and regulatory treatment of it as a serious public health and social problem \u2014 all within the \"next several years\" window. That matches the spirit of Chamath\u2019s prediction that the gamified sports betting apps used by young men would become a big problem, so the prediction is best judged as right.",
+      "sources": [
+        {
+          "end_index": 692,
+          "start_index": 574,
+          "title": "FDU Poll finds Online Betting Leads to Problems for Young Men | Fairleigh Dickinson University",
+          "type": "url_citation",
+          "url": "https://www.fdu.edu/news/fdu-poll-finds-online-betting-leads-to-problems-for-young-men/?utm_source=openai"
+        },
+        {
+          "end_index": 1314,
+          "start_index": 1162,
+          "title": "22% of All Americans, Half of Men 18-49, Have Active Online Sports Betting Account \u2013 Siena Research Institute",
+          "type": "url_citation",
+          "url": "https://scri.siena.edu/2025/02/18/22-of-all-americans-half-of-men-18-49-have-active-online-sports-betting-account/?utm_source=openai"
+        },
+        {
+          "end_index": 1814,
+          "start_index": 1641,
+          "title": "New study finds uptick in problematic gambling since legalization of online sports betting - Maryland Matters",
+          "type": "url_citation",
+          "url": "https://marylandmatters.org/2025/10/23/new-study-finds-uptick-in-problematic-gambling-since-legalization-of-online-sports-betting/?utm_source=openai"
+        },
+        {
+          "end_index": 2305,
+          "start_index": 2180,
+          "title": "Baltimore sues DraftKings, FanDuel, alleging they drive 'compulsive gambling",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/sports/2025/04/03/baltimore-sues-draftkings-fanduel/?utm_source=openai"
+        },
+        {
+          "end_index": 2774,
+          "start_index": 2600,
+          "title": "[2025-03-12] Blumenthal & Tonko Reintroduce SAFE Bet Act Addressing...",
+          "type": "url_citation",
+          "url": "https://www.blumenthal.senate.gov/newsroom/press/release/blumenthal-and-tonko-reintroduce-safe-bet-act-addressing-sports-gambling?utm_source=openai"
+        },
+        {
+          "end_index": 3137,
+          "start_index": 3024,
+          "title": "Sports gambling is a public health crisis for young men | STAT",
+          "type": "url_citation",
+          "url": "https://www.statnews.com/2025/11/11/sports-betting-apps-public-health-crisis/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By late 2025, problem gambling from app-based sports betting among young US men has emerged as a significant social issue, with evidence of financial harms (e.g., rising bankruptcies, lower credit scores per [AIBM study](https://aibm.org/research/how-sports-betting-can-harm-young-men/)) and behavioral harms (e.g., increased anxiety/depression per [STAT News](https://www.statnews.com/2025/11/11/sports-betting-apps-public-health-crisis/)). Multiple outlets label it a 'public health crisis' ([USA Today](https://www.usatoday.com/story/life/health-wellness/2025/06/03/sports-betting-addictions-young-men/83825202007/), [Guardian](https://www.theguardian.com/sport/2025/jan/31/how-the-quick-high-of-fast-food-gambling-ensnared-young-men), [Harvard Magazine](https://www.harvardmagazine.com/2025/03/harvard-research-gambling-public-health-crisis)). Helpline calls surged (e.g., 60%+ for 18-24yo since 2019 per [VCU Health](https://www.vcuhealth.org/news/when-the-game-doesnt-end-understanding-gambling-addiction-in-a-tech-driven-world/), state jumps like Florida 138% per [Birches Health](https://bircheshealth.com/resources/concerning-gambling-addiction-stats-in-america)); addiction help searches spiked post-legalization ([UCSD study](https://today.ucsd.edu/story/study-reveals-surge-in-gambling-addiction-following-legalization-of-sports-betting)). Polls show high participation (48% men 18-49 have accounts per [Siena](https://sri.siena.edu/2025/02/18/22-of-all-americans-half-of-men-18-49-have-active-online-sports-betting-account/)) and 10% young men as problem gamblers ([FDU Poll](https://www.fdu.edu/news/fdu-poll-finds-online-betting-leads-to-problems-for-young-men/)). Public views worsened (43% see it as bad for society, up from 34% per [Pew](https://www.pewresearch.org/short-reads/2025/10/02/americans-increasingly-see-legal-sports-betting-as-a-bad-thing-for-society-and-sports/)). While NCPG NGAGE 3.0 (2024) noted leveling overall risky behavior, trends confirm noticeable increases in harms among targeted demographic within ~1.5 years."
+    }
+  ]
+}

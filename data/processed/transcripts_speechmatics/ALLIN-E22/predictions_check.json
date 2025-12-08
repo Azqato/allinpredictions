@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "count": 2,
+    "count_by_result": {
+      "right": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:42:48.500",
+      "result": "right",
+      "explanation": "Using the Cboe Volatility Index (VIX) as a standard proxy for U.S. equity market volatility, the post\u20112021 period has indeed been more volatile on average than the calm years leading into 2020.\n\n*Baseline (pre\u20112020 low\u2011vol regime)*  \nFrom 2017\u20132019, often cited as one of the calmest stretches for U.S. equities, the VIX annual averages were about 11.1, 16.6, and 15.4, respectively, giving a three\u2011year average around 14.4.\u30101view0\u3011 This reflects the well\u2011documented low\u2011volatility environment of the late 2010s.\u30105search0\u3011\n\n*Post\u20112021 period*  \nFrom 2021\u20132023, the VIX annual averages were 19.7, 25.6, and 17.8, respectively, for a three\u2011year average of roughly 21.0, markedly higher than the 2017\u20132019 baseline and also above the long\u2011run VIX mean of about 19.5.\u30101view0\u3011\u30102search4\u3011 Even though 2023 and especially 2024 saw extended stretches of unusually low day\u2011to\u2011day volatility, analysts repeatedly noted that the VIX was oscillating around or below its long\u2011term average only after several large spikes, not returning to the persistently subdued levels of the late 2010s.\u30105search9\u3011\u30105search7\u3011\n\nAdditional evidence supports a structurally more shock\u2011prone regime since 2021. 2022\u2019s bear market and policy tightening kept volatility elevated; 2023\u2019s regional banking stress and multiple tariff and macro scares in 2024\u20132025 produced repeated VIX spikes, including an episode in early 2025 where VIX briefly moved above 40, the highest since 2020.\u30105news15\u3011\u30105news14\u3011 Broader analysis (e.g., the FT\u2019s discussion of an era of more frequent and intense volatility shocks) similarly characterizes recent years as featuring more abrupt market swings than earlier decades.\u30100news14\u3011\n\nOverall, across the multi\u2011year window from 2021 through 2025, average implied volatility and the frequency/magnitude of volatility shocks have been higher than during the unusually placid pre\u20112020 period that preceded the Robinhood/GameStop episode. That makes Chamath\u2019s directional claim that there would be *more* market volatility rather than less essentially correct, even though there have been intermittent calm stretches.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath predicted market volatility would trend higher from 2021 onwards compared to the pre-early 2021 period. However, annual average VIX levels show fluctuation without a clear upward trend: 2021 (19.7), 2022 (25.6, high), 2023 (16.9), 2024 (15.6, low like 2017-2019), 2025 YTD ~19-20. Pre-2021: 2017 (11.1), 2018 (16.6), 2019 (15.4), 2020 (29.3, anomaly); 2015-2016 ~16. Post-2021 averages (~19) similar to long-term (~19-20), with low-vol years in 2023-24 contradicting a 'higher trend.' Sources: [Visual Capitalist chart](https://www.visualcapitalist.com/charted-the-rise-of-stock-market-volatility-2017-2025/), CBOE insights (2022:26, 2023:17), FRED VIXCLS data."
+    },
+    {
+      "id": "H-00:43:08.500",
+      "result": "right",
+      "explanation": "Robinhood\u2019s IPO took place on July 29, 2021. In its SEC filings and pre-IPO communications, Robinhood said it **planned to reserve 20%\u201335% of its Class A IPO shares for its own customers**, rather than allocating everything to institutional investors. An AP report on the filing notes that Robinhood \u201cwants to sell a big chunk of its stock to those customers\u2026 It expects 20% to 35% of its Class A stock to go directly to customers.\u201d ([marketbeat.com](https://www.marketbeat.com/articles/robinhood-wants-customers-to-get-big-chunk-of-shares-in-ipo-2021-07-01/))\n\nCoverage of the actual IPO confirms that this plan was implemented. Analyses of the offering describe Robinhood as having demanded a large allocation for **its brokerage customers**, with underwriters reserving roughly 20%\u201335% of the IPO for them\u2014far more retail allocation than a typical U.S. IPO. ([fortune.com](https://fortune.com/2021/07/29/robinhood-ipo-small-investors-hood-stock/?utm_source=openai)) This means that when Robinhood went public, **a significant portion of IPO shares was indeed allocated directly to Robinhood retail customers**, not exclusively to institutional investors.\n\nGiven this, Friedberg\u2019s prediction that \u201cwhen Robinhood conducts its IPO, the company will allocate at least some portion of the IPO shares directly to Robinhood retail customers rather than exclusively to institutional investors\u201d came true.",
+      "sources": [
+        {
+          "end_index": 593,
+          "start_index": 466,
+          "title": "\n\tRobinhood wants customers to get big chunk of shares in IPO\n",
+          "type": "url_citation",
+          "url": "https://www.marketbeat.com/articles/robinhood-wants-customers-to-get-big-chunk-of-shares-in-ipo-2021-07-01/"
+        },
+        {
+          "end_index": 1003,
+          "start_index": 896,
+          "title": "HOOD IPO: Robinhood's debut ended up pounding small investors | Fortune",
+          "type": "url_citation",
+          "url": "https://fortune.com/2021/07/29/robinhood-ipo-small-investors-hood-stock/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Robinhood's IPO occurred on July 29, 2021, and the company allocated 20-25% of its shares directly to its retail customers via its IPO Access platform, rather than exclusively to institutions. This fulfilled the prediction of allocating 'at least some portion' to Robinhood customers. Sources: [CNBC (Jul 2, 2021)](https://www.cnbc.com/2021/07/02/robinhood-earmarks-some-of-its-own-ipo-shares-for-customers-smaller-investors-should-tread-carefully.html) noting 20-35% earmarked; [WSJ (Jul 31, 2021)](https://www.wsj.com/finance/stocks/robinhood-sold-ipo-shares-to-more-than-300-000-of-its-customers-11627767683) confirming shares sold to over 300,000 customers (up to 25%); [Robinhood S-1 filing](https://www.sec.gov/Archives/edgar/data/1783879/000162828021013318/robinhoods-1.htm) referencing sales to customers; [A Wealth of Common Sense blog (Aug 2, 2021)](https://awealthofcommonsense.com/2021/08/my-experience-getting-robinhood-ipo-shares-on-robinhood/) stating 20-25% went to customers."
+    }
+  ]
+}

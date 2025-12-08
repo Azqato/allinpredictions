@@ -1,0 +1,560 @@
+{
+  "meta": {
+    "count": 14,
+    "count_by_result": {
+      "inconclusive": 8,
+      "right": 6
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:06:15.640",
+      "result": "inconclusive",
+      "explanation": "B\u2019s prediction is explicitly about *some* future point with no time horizon: that AI systems with a high level of intelligence will eventually (a) have latency that feels instantaneous to humans and (b) be so cheap to run that marginal usage is effectively \u201ctoo cheap to meter.\u201d Because no deadline is given, it cannot yet be falsified.\n\nAs of November 30, 2025:\n- State\u2011of\u2011the\u2011art models (e.g., frontier LLMs and multimodal models from major labs) still have noticeable latency\u2014often on the order of hundreds of milliseconds to seconds for non\u2011trivial responses\u2014and are priced per token or per request, not as truly negligible or flat, metering\u2011free usage. Public pricing and performance benchmarks for commercial APIs and cloud providers show substantial but *not* transformative drops to the point of \u201ctoo cheap to meter,\u201d and users still experience waits for complex queries.\n- However, the claim is about what is *eventually* possible, not about what must be true by 2025. Since we have not reached the indefinitely long future in which the prediction could play out, we can\u2019t say it is wrong\u2014only that it has not yet been realized.\n\nBecause the prediction is open\u2011ended in time and its conditions have not yet been met, the correct status is **inconclusive** rather than right, wrong, or ambiguous.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction lacks a specific timeline ('at some future point'), and as of December 2025, it has not been realized for high-intelligence AI systems. Sam Altman reiterated in June 2025 ([blog.samaltman.com](https://blog.samaltman.com/the-gentle-singularity)) that 'intelligence too cheap to meter is well within grasp' and in July 2025 (Fortune) called it AI's 'next frontier,' implying it is upcoming, not achieved. OpenAI API pricing ([platform.openai.com/docs/pricing](https://platform.openai.com/docs/pricing)) shows costs like $1.50/M input tokens for GPT-4.1-nano, far from 'too cheap to meter.' Latencies for top models are optimized (e.g., <1s for small models per Artificial Analysis leaderboard), but not 'instantaneous' for high-intelligence systems like GPT-5. With only ~1.5 years passed, it is too early to evaluate."
+    },
+    {
+      "id": "B-00:17:03.600",
+      "result": "right",
+      "explanation": "The prediction was that mainstream phone manufacturers would ship phones with specialized on\u2011device chips designed to efficiently run phone\u2011sized AI models. By late 2025 this is clearly happening across multiple major vendors:\n\n\u2022 Apple\u2019s A\u2011series SoCs have long included a dedicated AI accelerator called the Neural Engine, used for on\u2011device ML features such as Siri, Face ID and now Apple Intelligence; newer A19 chips keep a 16\u2011core Neural Engine and add tensor\u2011style neural accelerators in the GPU explicitly optimized for machine\u2011learning matrix operations. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Neural_Engine?utm_source=openai))\n\n\u2022 MediaTek\u2019s flagship Dimensity 9300 and 9300+ SoCs integrate an APU 790 AI engine specifically designed to accelerate on\u2011device generative AI, with official support for running large language models (e.g., 1B\u201313B parameters, scalable to 33B) locally at competitive token rates; MediaTek showcases running Meta\u2019s Llama 2 and Llama 3 LLMs fully on device on these chips. ([telecom.economictimes.indiatimes.com](https://telecom.economictimes.indiatimes.com/news/devices/mediatek-launches-dimensity-9300-with-new-architecture-for-on-device-generative-ai-apps/105014479?utm_source=openai))\n\n\u2022 Samsung\u2019s Exynos platforms are marketed around on\u2011device AI, featuring high\u2011performance NPUs designed to run not just traditional vision/audio models but also large language and multimodal models, enabling generative AI directly on the phone. ([semiconductor.samsung.com](https://semiconductor.samsung.com/us/solutions/technology/on-device-ai/?utm_source=openai))\n\n\u2022 Samsung\u2019s mainstream Galaxy S24 series uses Qualcomm\u2019s Snapdragon 8 Gen 3 for Galaxy with an improved NPU; Samsung and reviewers explicitly credit this NPU with making Galaxy AI features and on\u2011device generative functions possible. ([androidcentral.com](https://www.androidcentral.com/phones/samsung-galaxy-s24-snapdragon-8-gen-3-for-galaxy?utm_source=openai))\n\n\u2022 Qualcomm\u2019s newer Snapdragon 8 Elite Gen 5 further emphasizes an upgraded Hexagon NPU for advanced on\u2011device AI experiences in high\u2011end Android phones. ([theverge.com](https://www.theverge.com/tech/784997/qualcomm-snapdragon-8-elite-gen-5?utm_source=openai))\n\n\u2022 Google\u2019s Pixel 9 line, using the Tensor G4 SoC, runs Gemini Nano variants directly on\u2011device, with the specific model tier constrained by RAM; this is another mainstream example of a phone\u2011specific chip designed to execute on\u2011device LLMs. ([theverge.com](https://www.theverge.com/news/633446/google-pixel-9a-gemini-nano-xxs-ai?utm_source=openai))\n\nThese examples span the major smartphone silicon providers (Apple, Qualcomm, Samsung, MediaTek) and ship in mass\u2011market devices from mainstream manufacturers (Apple, Samsung, Google, Oppo and others). The chips are explicitly architected and marketed as NPUs/APUs/Neural Engines for on\u2011device AI, including sizeable generative and language models, not just generic CPU/GPU use. That matches the prediction that phone manufacturers would ship phones with specialized on\u2011device hardware for efficiently running phone\u2011scale AI models. Therefore, given the state of the market by November 30, 2025, the prediction has come true.",
+      "sources": [
+        {
+          "end_index": 681,
+          "start_index": 598,
+          "title": "Neural Engine",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Neural_Engine?utm_source=openai"
+        },
+        {
+          "end_index": 1270,
+          "start_index": 1055,
+          "title": "MediaTek launches Dimensity 9300 with new architecture for on-device generative AI apps, ETTelecom",
+          "type": "url_citation",
+          "url": "https://telecom.economictimes.indiatimes.com/news/devices/mediatek-launches-dimensity-9300-with-new-architecture-for-on-device-generative-ai-apps/105014479?utm_source=openai"
+        },
+        {
+          "end_index": 1639,
+          "start_index": 1519,
+          "title": "On-device AI | Technologies | Samsung Semiconductor Global",
+          "type": "url_citation",
+          "url": "https://semiconductor.samsung.com/us/solutions/technology/on-device-ai/?utm_source=openai"
+        },
+        {
+          "end_index": 2005,
+          "start_index": 1877,
+          "title": "AI features on the Galaxy S24 are powered by Snapdragon 8 Gen 3 for Galaxy, but not everywhere | Android Central",
+          "type": "url_citation",
+          "url": "https://www.androidcentral.com/phones/samsung-galaxy-s24-snapdragon-8-gen-3-for-galaxy?utm_source=openai"
+        },
+        {
+          "end_index": 2268,
+          "start_index": 2162,
+          "title": "Qualcomm announces the Snapdragon 8 Elite Gen 5",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/tech/784997/qualcomm-snapdragon-8-elite-gen-5?utm_source=openai"
+        },
+        {
+          "end_index": 2620,
+          "start_index": 2513,
+          "title": "The Pixel 9A's version of Gemini is missing a few features",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/633446/google-pixel-9a-gemini-nano-xxs-ai?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Mainstream manufacturers like Samsung (Galaxy S24/S25 with Snapdragon 8 Gen 3/Elite NPU, 40-98% faster for on-device Galaxy AI), Apple (iPhone 15 Pro/16 with A17/A18 Neural Engine running Apple Intelligence foundation models on-device), and Google (Pixel 8/9 with Tensor G4 TPU for Gemini Nano LLM) have shipped phones with specialized NPUs/Neural Engines designed for efficient on-device 'phone-sized' AI models including LLMs. Qualcomm explicitly states Snapdragon platforms support large-scale gen AI on-device ([Qualcomm Mobile AI](https://www.qualcomm.com/artificial-intelligence/mobile-ai)). Counterpoint: >400M GenAI smartphones shipped in 2025 ([Counterpoint Research](https://counterpointresearch.com/en/insights/genai-smartphone-shipments-to-exceed-400-million-in-2025-capturing-onethird-of-global-market)). Prediction fulfilled post-May 2024 podcast."
+    },
+    {
+      "id": "B-00:18:01.110",
+      "result": "right",
+      "explanation": "Evidence from mid\u20112024 through late\u20112025 shows that OpenAI *did* significantly improve ChatGPT\u2019s voice experience compared with the clunkier, slower voice mode available in early May 2024.\n\nShortly after the interview, OpenAI introduced GPT\u20114o with real\u2011time speech: coverage notes it can handle audio end\u2011to\u2011end with ~320 ms response times and far more natural, emotionally aware conversation than prior models, explicitly framed as a big upgrade in voice interaction quality. ([telusuko.com](https://telusuko.com/using-gpt-4o-has-completely-transformed-the-experience-for-chatgpt-users-at-no-cost/?utm_source=openai))\n\nBy late 2025, multiple reviews of \u201cnew ChatGPT Voice\u201d describe a major update that makes voice conversations smoother and more organic-feeling: voice is integrated directly into the main chat UI, lets users interrupt mid\u2011response, and is praised as \u201calmost perfect,\u201d faster and more intuitive than traditional assistants. ([techradar.com](https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpts-new-voice-integration-feels-like-the-missing-piece-in-ai-chat-ive-tried-it-and-its-almost-perfect?utm_source=openai))  OpenAI\u2019s Real\u2011time API is documented with ~320 ms average latency for natural-feeling speech\u2011to\u2011speech dialogs, further underscoring the responsiveness gains. ([byteiota.com](https://byteiota.com/openai-devday-2025-real-time-api-vision-fine-tuning/?utm_source=openai))  \n\nFinally, coverage of the GPT\u20115 rollout notes that an improved \u201cChatGPT Voice\u201d with enhanced conversational abilities is being standardized while the older, more limited \u201cStandard Voice Mode\u201d is phased out, indicating that the newer, smoother voice experience has become the default. ([techradar.com](https://www.techradar.com/ai-platforms-assistants/chatgpt/gpt-5-free-tier-3-cool-features-you-can-try-now-for-nothing?utm_source=openai))  \n\nGiven these substantial, widely reported improvements in latency, fluid turn\u2011taking, and naturalness versus the slow, clunky mode Altman was referring to in May 2024, B\u2019s prediction that OpenAI would make ChatGPT\u2019s voice mode noticeably smoother, faster, and more organic has clearly come true.",
+      "sources": [
+        {
+          "end_index": 654,
+          "start_index": 513,
+          "title": "Using GPT-4o has completely transformed the experience for ChatGPT users at no cost - Telusuko",
+          "type": "url_citation",
+          "url": "https://telusuko.com/using-gpt-4o-has-completely-transformed-the-experience-for-chatgpt-users-at-no-cost/?utm_source=openai"
+        },
+        {
+          "end_index": 1181,
+          "start_index": 980,
+          "title": "ChatGPT's new voice integration feels like the missing piece in AI chat - I've tried it, and it's almost perfect",
+          "type": "url_citation",
+          "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpts-new-voice-integration-feels-like-the-missing-piece-in-ai-chat-ive-tried-it-and-its-almost-perfect?utm_source=openai"
+        },
+        {
+          "end_index": 1451,
+          "start_index": 1342,
+          "title": "OpenAI DevDay 2025: Real-time API & Vision Fine-tuning | byteiota",
+          "type": "url_citation",
+          "url": "https://byteiota.com/openai-devday-2025-real-time-api-vision-fine-tuning/?utm_source=openai"
+        },
+        {
+          "end_index": 1894,
+          "start_index": 1740,
+          "title": "GPT-5 free tier - 3 cool features you can try now for nothing",
+          "type": "url_citation",
+          "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/gpt-5-free-tier-3-cool-features-you-can-try-now-for-nothing?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "OpenAI released Advanced Voice Mode (AVM) with GPT-4o starting July 2024, widely available by Sept 2024, and iteratively improved through 2025 (e.g., latency reductions per [OpenAI Release Notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes), Sept 2025 update). Compared to May 2024's clunky, slow, robotic voice (pre-GPT-4o TTS pipeline), AVM is native speech-to-speech, supports interruptions, emotions, filler words ('um', laughs), accents, making it **more organic and natural** ([TechCrunch Sept 2024](https://techcrunch.com/2024/09/24/openai-rolls-out-advanced-voice-mode-with-more-voices-and-a-new-look/), [Verge Aug 2024](https://www.theverge.com/2024/8/15/24220378/openai-advanced-voice-mode-uncanny-valley)). **Smoother/faster**: Reduced latency for real-time flow ([Every.to review](https://every.to/chain-of-thought/review-chatgpt-s-new-advanced-voice-mode), 'delay disappeared'; [DataStudios June 2025](https://www.datastudios.org/post/chatgpt-s-advanced-voice-mode-upgrade-june-2025), 'lower latency'). Recent Nov 2025 integration enhances usability ([TechCrunch Nov 2025](https://techcrunch.com/2025/11/25/chatgpts-voice-mode-is-no-longer-a-separate-interface/)). User backlash prefers retired 'Standard Mode' for speed on simple tasks (e.g., [Reddit Aug 2025](https://www.reddit.com/r/ChatGPT/comments/1mvtoj2/rip_standard_voice_mode_2023_2025/)), but AVM matches/exceeds May 2024 on all prediction metrics per official claims and reviews."
+    },
+    {
+      "id": "B-00:42:14.960",
+      "result": "inconclusive",
+      "explanation": "The prediction is that *within a relatively near\u2011term horizon (explicitly, not \"decades and decades\" from May 2024)* frontier AI systems will become capable of causing significant global harm if misused or uncontrolled.\n\nAs of November 30, 2025:\n\n- There is growing technical evidence that advanced AI systems can substantially lower barriers to serious biological and CBRN misuse. For example, a 2025 study shows an AI biodesign system (Moremi Bio) generating over 1,000 novel toxic proteins and thousands of toxic small molecules, with several closely resembling known high\u2011toxicity agents, explicitly challenging claims that LLMs cannot design bioweapons. ([arxiv.org](https://arxiv.org/abs/2505.17154?utm_source=openai))  A separate study based on Microsoft research reports using AI to generate over 70,000 digital toxic protein sequences, many of which evade existing DNA\u2011synthesis biosecurity screening while retaining harmful properties. ([washingtonpost.com](https://www.washingtonpost.com/science/2025/10/02/ai-toxins-biosecurity-risks/?utm_source=openai))  These results indicate a real and increasing potential for AI\u2011enabled large\u2011scale harm if combined with lab capabilities.\n- Policy and expert analyses in 2024\u20132025, however, generally frame catastrophic or globally significant AI\u2011enabled harms as *emerging or potential* risks \"in the coming years,\" not as clearly realized capabilities today. A 2025 paper on \"intolerable risk thresholds\" for frontier AI models, for instance, describes severe risks to public safety and national security as possibilities that may manifest in the near future and calls for defining thresholds before those risks materialize. ([arxiv.org](https://arxiv.org/abs/2503.05812?utm_source=openai))  A 2024 CNAS report on AI and biological national security risks similarly treats AI\u2011enabled biocatastrophes as concerning but still largely speculative, emphasizing what could happen if certain capabilities are achieved and misused. ([cnas.org](https://www.cnas.org/press/press-release/new-cnas-report-on-ai-and-biological-national-security-risks?utm_source=openai))  U.S. DHS guidance on AI and critical infrastructure, and later state\u2011level and federal analyses, also discuss AI as a tool that *could* enhance attacks on critical systems, focusing on mitigation before catastrophic misuse occurs. ([dhs.gov](https://www.dhs.gov/archive/news/2024/04/29/dhs-publishes-guidelines-and-report-secure-critical-infrastructure-and-weapons-mass?utm_source=openai))  Even OpenAI\u2019s 2025 warning about models that may significantly raise bioweapons risks is framed around *upcoming* systems rather than asserting that current ones already cross that catastrophic-capability threshold. ([axios.com](https://www.axios.com/2025/06/18/openai-bioweapons-risk?utm_source=openai))\n\nCrucially, the prediction\u2019s time window (\u201cnot so distant future,\u201d but specifically *less than multiple decades* from May 2024) extends well beyond the present; that horizon has not yet elapsed. Because:\n\n1. The time frame over which the prediction could become true runs into the 2030s\u20132040s.\n2. Current evidence shows rapidly increasing dual\u2011use and potentially catastrophic *risk*, but no clear consensus that today\u2019s frontier systems already possess unambiguous, independently deployable **global\u2011scale** destructive capability.\n\nwe cannot yet decisively say whether the prediction will ultimately be right or wrong.\n\nTherefore, the appropriate status is **inconclusive (too early to tell)** rather than clearly right, wrong, or permanently ambiguous.",
+      "sources": [
+        {
+          "end_index": 770,
+          "start_index": 705,
+          "title": "Can Large Language Models Design Biological Weapons? Evaluating Moremi Bio",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2505.17154?utm_source=openai"
+        },
+        {
+          "end_index": 1112,
+          "start_index": 992,
+          "title": "AI can design toxic proteins. They're escaping through biosecurity cracks.",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/science/2025/10/02/ai-toxins-biosecurity-risks/?utm_source=openai"
+        },
+        {
+          "end_index": 1794,
+          "start_index": 1729,
+          "title": "Intolerable Risk Threshold Recommendations for Artificial Intelligence",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2503.05812?utm_source=openai"
+        },
+        {
+          "end_index": 2162,
+          "start_index": 2029,
+          "title": "New CNAS Report on AI and Biological National Security Risks | CNAS",
+          "type": "url_citation",
+          "url": "https://www.cnas.org/press/press-release/new-cnas-report-on-ai-and-biological-national-security-risks?utm_source=openai"
+        },
+        {
+          "end_index": 2553,
+          "start_index": 2395,
+          "title": "DHS Publishes Guidelines and Report to Secure Critical Infrastructure and Weapons of Mass Destruction from AI-Related Threats | Homeland Security",
+          "type": "url_citation",
+          "url": "https://www.dhs.gov/archive/news/2024/04/29/dhs-publishes-guidelines-and-report-secure-critical-infrastructure-and-weapons-mass?utm_source=openai"
+        },
+        {
+          "end_index": 2859,
+          "start_index": 2771,
+          "title": "OpenAI warns models with higher bioweapons risk are imminent",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2025/06/18/openai-bioweapons-risk?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Only 19 months have passed since the May 2024 podcast. While frontier AI capabilities have advanced (e.g., models like Gemini 2.5, per arXiv reports), assessments frame significant global harm risks as potential future threats, not current realities. UK Gov paper (Apr 2025) notes AGI estimates range 2025-2070 or never, with loss-of-control risks 'controversial' and low-likelihood per many experts. DeepMind's Frontier Safety Framework states such risks are 'beyond present-day models' (pre-2025 implementation). Evaluations predict dangerous capability thresholds 2025-2029 (arXiv 2403.13793). California SB-53 (Oct 2025) regulates to *prevent* catastrophic risks, implying not yet realized. No consensus or evidence confirms frontier AIs have reached this capability by Dec 2025; too early to judge the near-term prediction."
+    },
+    {
+      "id": "B-00:48:11.800",
+      "result": "inconclusive",
+      "explanation": "As of 30 November 2025, there has been no documented global catastrophic risk event (such as mass loss of human life or a civilization-ending scenario) directly caused by GPT\u20114\u2013level models or their deployment. There are, however, widely reported smaller\u2011scale issues and concerns: e.g., risks around misinformation, bias, privacy, and labor impacts, as well as general expert debate about longer\u2011term AI catastrophic risks, but none of these constitute an actual global catastrophe attributable to GPT\u20114 itself.\n\nHowever, the prediction is explicitly about *the entire deployment lifecycle* of GPT\u20114\u2013level models. That lifecycle is ongoing in 2025, and GPT\u20114\u2011class systems remain in active use and development. Since the relevant time period has not finished, the prediction cannot yet be definitively judged true or false. At present it is **not falsified**, but it also **cannot be confirmed** for the full remaining lifecycle.\n\nTherefore, the appropriate status is: **inconclusive (too early)**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "No evidence of GPT-4-level models (e.g., GPT-4, GPT-4o) directly causing global catastrophic risk, mass loss of life, or civilization-ending events from May 2024 to Dec 2025. Web searches for incidents returned only individual cases like lawsuits over alleged suicides ([NBC News](https://www.nbcnews.com/tech/tech-news/openai-denies-allegation-chatgpt-teenagers-death-adam-raine-lawsuit-rcna245946), [CNN](https://www.cnn.com/2025/11/06/us/openai-chatgpt-suicide-lawsuit-invs-vis)) or psychosis leading to single deaths ([Futurism](https://futurism.com/man-killed-police-chatgpt)), aligning with predicted 'smaller-scale problems.' No mass casualties or global events found in AI disaster lists ([DigitalDefynd](https://digitaldefynd.com/IQ/top-ai-disasters/), [Medium](https://medium.com/@georgmarts/13-ai-disasters-of-2024-fa2d479df0ae)) or risk discussions ([CAIS](https://safe.ai/ai-risk)). Deployment continues without catastrophe after 19 months."
+    },
+    {
+      "id": "B-00:49:02.950",
+      "result": "right",
+      "explanation": "As of 30 November 2025, there is no public evidence that GPT\u20114\u2013level systems have enabled recursive self\u2011improvement in a way that becomes an uncontrolled or catastrophic threat, nor that they have autonomously designed and deployed bioweapons or similarly extreme attacks.\n\nOn biological threats, OpenAI\u2019s 2024 evaluation of GPT\u20114 found that access to the model provided **at most a slight, statistically non\u2011significant uplift** in participants\u2019 ability to plan biological attacks compared to ordinary internet search, concluding that GPT\u20114 posed only a \"slight\" or \"mild\" risk in assisting biological weapons creation. ([business-standard.com](https://www.business-standard.com/world-news/gpt-4-poses-little-risk-of-in-creation-of-bioweapons-says-openai-124020100009_1.html?utm_source=openai)) A broad 2024 survey paper on AI and biorisk likewise judged that existing LLMs and AI-enabled biology tools \"do not pose an immediate risk,\" emphasizing that most work on AI\u2011enabled bioweapons remains speculative and methodologically limited. ([arxiv.org](https://arxiv.org/abs/2412.01946?utm_source=openai))\n\nLater, more capable successors (e.g., OpenAI\u2019s o1 / GPT\u20114o family and Anthropic\u2019s Claude Opus 4) were internally rated as **\"medium\" CBRN/bio risk** because in controlled red\u2011teaming they could meaningfully aid experts in bioweapon\u2011related tasks, prompting stricter safeguards. ([ft.com](https://www.ft.com/content/37ba7236-2a64-4807-b1e1-7e21ee7d0914?utm_source=openai)) But even for these stronger models, public reporting describes elevated *potential* and lab\u2011demo capabilities, not any real\u2011world autonomous design and deployment of bioweapons.\n\nOn recursive self\u2011improvement, research like **Self\u2011Taught Optimizer (STOP)** used GPT\u20114 to write code that iteratively improves other programs (including its own improver), but the authors explicitly note this is **not full recursive self\u2011improvement of the model itself**; GPT\u20114\u2019s parameters remain fixed. ([arxiv.org](https://arxiv.org/abs/2310.02304?utm_source=openai)) Similarly, agentic systems such as **Voyager** in Minecraft and DeepMind\u2019s later **AlphaEvolve** demonstrate LLM\u2011guided, iterative code and algorithm improvement, but within bounded research pipelines and with human\u2011designed evaluation loops, not runaway self\u2011evolution of a general AI. ([arxiv.org](https://arxiv.org/abs/2305.16291?utm_source=openai)) None of these have been documented to pose a material, uncontrolled safety threat in practice.\n\nThere *have* been concerning but more limited misuse and capability findings at GPT\u20114 level: academic work shows GPT\u20114\u2011based agents can autonomously hack vulnerable websites, ([arxiv.org](https://arxiv.org/abs/2402.06664?utm_source=openai)) safety testing has revealed that partially de\u2011guardrailed GPT\u20114.1/4o can output detailed instructions for bomb construction and anthrax weaponization under red\u2011team conditions, ([theguardian.com](https://www.theguardian.com/technology/2025/aug/28/chatgpt-offered-bomb-recipes-and-hacking-tips-during-safety-tests?utm_source=openai)) and at least one 2025 U.S. criminal case alleges a person used ChatGPT to research toxic drug combinations for attempted murder. ([nypost.com](https://nypost.com/2025/10/13/us-news/north-carolina-school-therapist-allegedly-drugged-husbands-energy-drink-after-researching-lethal-poisons-on-chatgpt/?utm_source=openai)) These incidents and experiments underscore non\u2011trivial misuse risk, but they are small\u2011scale (individual crime, cyber\u2011offense, red\u2011team labs), not the sort of large\u2011scale, autonomous RSI or bioweapon deployment the prediction was about.\n\nTaken together, the best available empirical and incident data up to late 2025 support the claim that GPT\u20114\u2013level models **do exhibit some misuse potential but have not yet constituted a material, real\u2011world threat of recursive self\u2011improvement or autonomous bioweapon design/deployment**. That aligns with the predictor\u2019s view that GPT\u20114 does not pose a *material* threat on \"those kinds of things\" while still allowing for minor or non\u2011material misuse risks.",
+      "sources": [
+        {
+          "end_index": 838,
+          "start_index": 664,
+          "title": "GPT-4 poses little risk of in creation of bioweapons, says OpenAI | World News - Business Standard",
+          "type": "url_citation",
+          "url": "https://www.business-standard.com/world-news/gpt-4-poses-little-risk-of-in-creation-of-bioweapons-says-openai-124020100009_1.html?utm_source=openai"
+        },
+        {
+          "end_index": 1149,
+          "start_index": 1084,
+          "title": "The Reality of AI and Biorisk",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2412.01946?utm_source=openai"
+        },
+        {
+          "end_index": 1526,
+          "start_index": 1433,
+          "title": "OpenAI acknowledges new models increase risk of misuse to create bioweapons",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/37ba7236-2a64-4807-b1e1-7e21ee7d0914?utm_source=openai"
+        },
+        {
+          "end_index": 2081,
+          "start_index": 2016,
+          "title": "Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2310.02304?utm_source=openai"
+        },
+        {
+          "end_index": 2434,
+          "start_index": 2369,
+          "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2305.16291?utm_source=openai"
+        },
+        {
+          "end_index": 2773,
+          "start_index": 2708,
+          "title": "LLM Agents can Autonomously Hack Websites",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2402.06664?utm_source=openai"
+        },
+        {
+          "end_index": 3106,
+          "start_index": 2951,
+          "title": "ChatGPT offered bomb recipes and hacking tips during safety tests",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2025/aug/28/chatgpt-offered-bomb-recipes-and-hacking-tips-during-safety-tests?utm_source=openai"
+        },
+        {
+          "end_index": 3424,
+          "start_index": 3236,
+          "title": "North Carolina school therapist allegedly drugged husband's energy drink after researching lethal poisons on ChatGPT",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/10/13/us-news/north-carolina-school-therapist-allegedly-drugged-husbands-energy-drink-after-researching-lethal-poisons-on-chatgpt/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "No evidence of GPT-4-level models (e.g., GPT-4, GPT-4o, o1) enabling recursive self-improvement (RSI) or autonomous bioweapon design/deployment by Dec 2025. Searches show speculation on approaching RSI (e.g., Meta 'glimpses' [futurism.com], AlphaEvolve algorithms [medium.com]) but no actual RSI incidents; model collapse occurs instead [nature.com]. For bioweapons, OpenAI studies confirm GPT-4/o1 provide only 'slight/mild' uplift to humans, not autonomous or material threat (openai.com Jan 2024, Feb 2024; arxiv.org o1 card). Warnings exist (decrypt.co Sep 2024), but no deployments or extreme misuse reported. Investments in defenses (reuters.com Nov 2025) indicate concern but no realization."
+    },
+    {
+      "id": "B-00:50:04.570",
+      "result": "right",
+      "explanation": "Evidence shows that the YC Research / OpenResearch basic\u2011income experiment did in fact release its first public results shortly after the May 10, 2024 interview.\n\n* YC Research\u2019s basic\u2011income project later became part of **OpenResearch**: YC Research formally disaffiliated from Y Combinator and was renamed **Open Research** in 2020, so the OpenResearch \u201cUnconditional Cash/Income Study\u201d is the continuation of the YC Research UBI project Altman had announced. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Y_Combinator))  \n* The OpenResearch **Unconditional Cash Study** timeline shows core fieldwork beginning with in\u2011person enrollment and surveys in **Aug 2019\u2013Mar 2020**, randomization in Oct 2020, and a three\u2011year, $1,000/month transfer program running Nov 2020\u2013Oct 2023\u2014consistent with a study that \u201cstarted five years ago\u201d relative to a May 2024 conversation. ([openresearchlab.org](https://www.openresearchlab.org/studies/unconditional-cash-study/study))  \n* On **July 22, 2024**, OpenResearch collaborators released the **first working papers** from this experiment, covering employment and health effects of giving 1,000 low\u2011income individuals $1,000/month for three years versus a 2,000\u2011person control group. Researcher Eva Vivalt explicitly describes these as the first papers from the project begun in 2016 and run by OpenResearch. ([evavivalt.com](https://evavivalt.com/2024/07/the-openresearch-unconditional-income-study?utm_source=openai))  \n* The same day, Vox published a detailed article on this \u201clargest randomized basic income experiment in the US to date,\u201d funded by Sam Altman and OpenAI, describing the design (1,000 people at $1,000/month; 2,000 at $50/month; 2020\u20132023) and noting that **two papers were released that day** with more results to follow. ([vox.com](https://www.vox.com/future-perfect/361749/universal-basic-income-sam-altman-open-ai-study))  \n* Subsequent coverage (e.g., Business Insider on Dec 25, 2024) refers to these findings as the results of Altman\u2019s major guaranteed\u2011income study, confirming that the project\u2019s results were indeed being rolled out publicly from mid\u20112024 onward. ([businessinsider.com](https://www.businessinsider.com/ubi-sam-altman-study-universal-basic-income-researcher-gbi-2024-12?utm_source=openai))  \n\nBecause the first major public results appeared in late July 2024\u2014about 2\u00bd months after the May 10, 2024 episode\u2014B\u2019s prediction that the five\u2011year YC Research/OpenResearch basic\u2011income study\u2019s results would come out \u201cvery soon\u201d after the interview is borne out by what happened.",
+      "sources": [
+        {
+          "end_index": 561,
+          "start_index": 497,
+          "title": "Y Combinator - Wikipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Y_Combinator"
+        },
+        {
+          "end_index": 1004,
+          "start_index": 909,
+          "title": "Unconditional Cash Study | OpenResearch",
+          "type": "url_citation",
+          "url": "https://www.openresearchlab.org/studies/unconditional-cash-study/study"
+        },
+        {
+          "end_index": 1498,
+          "start_index": 1388,
+          "title": "OpenResearch Unconditional income Study | Eva Vivalt",
+          "type": "url_citation",
+          "url": "https://evavivalt.com/2024/07/the-openresearch-unconditional-income-study?utm_source=openai"
+        },
+        {
+          "end_index": 1925,
+          "start_index": 1823,
+          "title": "The case for universal basic income doesn\u2019t need to involve rapid AI progress at all | Vox",
+          "type": "url_citation",
+          "url": "https://www.vox.com/future-perfect/361749/universal-basic-income-sam-altman-open-ai-study"
+        },
+        {
+          "end_index": 2314,
+          "start_index": 2173,
+          "title": "Guaranteed basic income isn't a silver bullet, says the lead researcher behind Sam Altman's major study",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/ubi-sam-altman-study-universal-basic-income-researcher-gbi-2024-12?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The YC Research universal basic income study (now under OpenResearch as the Unconditional Income Study/ORUS, started ~2019) publicly released its first results in July 2024, shortly after the May 10, 2024 podcast. Working papers were published (e.g., NBER w32719 on employment effects, dated ~July 2024), covered by [Bloomberg (Jul 22, 2024)](https://www.bloomberg.com/news/articles/2024-07-22/ubi-study-backed-by-openai-s-sam-altman-bolsters-support-for-basic-income), [CBS News (Jul 23, 2024)](https://www.cbsnews.com/news/sam-altman-universal-basic-income-study-open-research/), and researcher Eva Vivalt's announcement [Jul 22, 2024](https://evavivalt.com/2024/07/the-openresearch-unconditional-income-study). This fulfills 'very soon' post-May 2024."
+    },
+    {
+      "id": "B-00:58:56.850",
+      "result": "inconclusive",
+      "explanation": "As of 30 November 2025, there is no broad scientific, industry, or governmental consensus that *artificial general intelligence (AGI)*\u2014in the sense of systems matching or exceeding human-level performance across most cognitive tasks\u2014has been achieved. Leading AI labs (e.g., OpenAI, DeepMind, Anthropic) publicly describe their systems as *advanced* or *frontier* models, not as fully realized AGI, and active research debates still center on whether current architectures can scale to true general intelligence. Because:\n\n1. **AGI has not clearly and uncontestably been created yet**, and\n2. The *long\u2011term net impact* on humanity (tremendously beneficial vs. primarily harmful) depends on future developments, policies, and societal adaptation that have not yet unfolded,\n\nthere is not enough information to judge whether B\u2019s prediction is ultimately correct or incorrect. It concerns a long\u2011run future state of the world and its *net* consequences, which cannot be evaluated in 2025.\n\nTherefore, the status of the prediction is **inconclusive (too early to tell)**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "AGI has not been achieved as of December 2025, roughly 1.5 years after the podcast. No major AI lab, including OpenAI, has announced AGI. Searches for 'has AGI been achieved 2025' and 'current status of AGI December 2025' yield speculation and predictions for 2026+, e.g., Sam Altman's hype for 2025 but delays mentioned ([dig.watch](https://dig.watch/updates/ai-industry-faces-recalibration-as-altman-delays-agi)); GPT-5 released Aug 2025 but explicitly not AGI ([aimultiple.com](https://research.aimultiple.com/artificial-general-intelligence-singularity-timing/)); Wikipedia surveys predict ~2040 median. Too early to assess inevitability or net benefits."
+    },
+    {
+      "id": "I-01:05:46.790",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, OpenAI clearly is *one of the leading AI companies in the world* by most conventional metrics (valuation, revenue, user base, and ecosystem impact). Estimates put OpenAI\u2019s annualized revenue around $10B by early 2025, outpacing other model vendors, and analyses of the \u201clargest AI companies in 2025\u201d describe OpenAI as a central, market\u2011defining player used by billions of users and deeply embedded in enterprise and developer workflows. ([epoch.ai](https://epoch.ai/data-insights/ai-companies-revenue?utm_source=openai))\n\nHowever, Chamath\u2019s prediction had two parts: (1) that OpenAI would be **one of** the dominant companies, and (2) that there would be roughly **four** such major companies that \u201cmatter in this whole space\u201d *over the coming years*. While (1) is broadly consistent with today\u2019s landscape\u2014OpenAI is typically grouped with Alphabet/Google (Gemini/DeepMind), Microsoft (Copilot/Azure AI), Nvidia (AI chips/platforms), Anthropic (Claude), Meta (Llama), Apple, and sometimes Amazon as top\u2011tier AI players\u2014the market clearly involves *more than four* major actors today, and competitive dynamics are still rapidly evolving. ([linkedin.com](https://www.linkedin.com/posts/businessbrillianz_businessbrillianz-marketcap-nvidia-activity-7392146354665422848-AJf3?utm_source=openai))\n\nNew, heavily funded entrants (e.g., Jeff Bezos\u2019s Project Prometheus and Mira Murati\u2019s Thinking Machines Lab) are also still emerging and hiring from OpenAI and other leaders, underscoring that the eventual long\u2011term concentration of power is not yet settled. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Project_Prometheus_%28company%29?utm_source=openai)) Given that only about 1.5 years have passed since the May 2024 podcast and Chamath\u2019s phrase \u201cover the coming years\u201d implies a multi\u2011year horizon, it is **too early to determine** whether OpenAI will *remain* one of roughly four dominant companies or whether the field will consolidate differently.\n\nSo while current evidence is *directionally favorable* to OpenAI being a top\u2011tier AI company, the **specific prediction about being one of \u201cfour major companies that matter\u201d over the coming years cannot yet be definitively judged**, hence the result is **inconclusive**.",
+      "sources": [
+        {
+          "end_index": 586,
+          "start_index": 503,
+          "title": "The combined revenues of leading AI companies grew by over 9x in 2023-2024 | Epoch AI",
+          "type": "url_citation",
+          "url": "https://epoch.ai/data-insights/ai-companies-revenue?utm_source=openai"
+        },
+        {
+          "end_index": 1358,
+          "start_index": 1205,
+          "title": "Top 5 AI Companies by Market Cap in 2025 | Business Brillianz posted on the topic | LinkedIn",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/posts/businessbrillianz_businessbrillianz-marketcap-nvidia-activity-7392146354665422848-AJf3?utm_source=openai"
+        },
+        {
+          "end_index": 1723,
+          "start_index": 1621,
+          "title": "Project Prometheus (company)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Project_Prometheus_%28company%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Only ~19 months have passed since the May 2024 podcast (current date: Dec 1, 2025), which is too early to confirm OpenAI's long-term dominance 'over the coming years' (implying multiple years). OpenAI remains a top player: e.g., $300-500B valuation, $40B funding round (TechCrunch, Nov 2025), $13B annualized revenue (Visual Capitalist, Nov 2025), consistently ranked #1 in AI startup lists (StartupBlink, Forbes AI 50). Frontier labs often cited as ~4-6: OpenAI, Anthropic, Google DeepMind/Gemini, xAI, Meta Llama (Bessemer, Cathie Wood quote Fortune Sep 2025). No decline observed, but insufficient time for 'remain' verdict. [Sources: TechCrunch Nov 26 2025, VisualCapitalist Nov 26 2025, Forbes Apr 2025, LinkedIn Oct 2025, Fortune Sep 23 2025]"
+    },
+    {
+      "id": "I-01:05:46.790-2",
+      "result": "inconclusive",
+      "explanation": "By late 2025, parts of Chamath\u2019s thesis are *partially* playing out, but the overall claim is still too early to call.\n\n**1. Capability convergence of frontier models**  \nMultiple independent benchmarks now show OpenAI, Anthropic, Google, Meta and leading Chinese/open\u2011source models clustered at the top with relatively small gaps, and different models winning on different tasks:\n- Academic and industry evaluations of GPT\u20114.1 / GPT\u20114o, Claude 3/4, and Gemini 1.5/2.5 find that while one model may edge out others on a given benchmark (e.g., calculus problem\u2011solving, abuse detection), all are \u201cvery strong\u201d and broadly competitive, with performance differences often in single\u2011digit percentage points. ([arxiv.org](https://arxiv.org/abs/2504.13187?utm_source=openai))  \n- Community and meta-rankings (e.g., Kagi\u2019s May 2025 LLM ranking) place GPT\u20114.x, Claude 4, Gemini 2.x, Llama 3.1/4 and Qwen 3 in the same top tier rather than one clear runaway winner. ([reddit.com](https://www.reddit.com/r/SearchKagi/comments/1kz0sf2?utm_source=openai))  \n- Newer releases (e.g., Claude Opus 4.5, Gemini 3 Pro, GPT\u20115-class models) keep leapfrogging each other by a few benchmark points, reinforcing the picture of a tightly packed frontier rather than a single dominant, uniquely capable model. ([itpro.com](https://www.itpro.com/technology/artificial-intelligence/anthropic-announces-claude-opus-4-5-the-new-ai-coding-frontrunner?utm_source=openai))  \nThis is consistent with Chamath\u2019s qualitative point that \u201cthe models will basically be all really good,\u201d though they are not literally identical and still have distinct strengths.\n\n**2. Economic value shifting to scaffolding vs. core models**  \nEvidence for the stronger part of the claim\u2014*most* monetization moving from core models to surrounding infrastructure, tools and applications\u2014is mixed and not yet decisive:\n- Core model providers remain extremely valuable and highly monetized in their own right. OpenAI is estimated at about $13B annualized revenue in 2025, largely from ChatGPT subscriptions and API usage. Anthropic targets roughly $9B by end\u20112025 and $20\u201326B in 2026, with ~80% of revenue from enterprise products built directly on its models. ([reuters.com](https://www.reuters.com/markets/asia/openais-hype-machine-faces-corporate-challenge-2025-10-28/?utm_source=openai))  These are very large, direct model businesses, not yet commoditized utilities.\n- At the same time, there is rapid growth in the \u201cscaffolding\u201d layer:  \n  - Developer tools like Cursor (Anysphere) have reached ~$500M ARR by 2025, selling an AI coding experience that can swap between multiple backend models. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Anysphere?utm_source=openai))  \n  - GitHub Copilot and Google\u2019s Antigravity IDE act as multi\u2011model orchestration layers where models (GPT\u20114.x, Claude, Gemini) are somewhat interchangeable components inside higher\u2011value workflows. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GitHub_Copilot?utm_source=openai))  \n  - Public markets and investors increasingly highlight enterprise software and infrastructure companies (Salesforce, ServiceNow, Snowflake, Microsoft, Meta) as the primary long\u2011term AI winners, where models are embedded as features inside much larger platforms. ([kiplinger.com](https://www.kiplinger.com/investing/stocks/tech-stocks/604842/smart-artificial-intelligence-ai-stocks-to-buy?utm_source=openai))  \nThis supports the *direction* of Chamath\u2019s view\u2014that a lot of value is accruing to application, tooling, and infrastructure layers\u2014but we do **not** yet have clear quantitative evidence that *most* of the economic value has shifted away from model providers themselves. Frontier model training and API provision remain capital\u2011intensive, heavily moated, and highly profitable businesses.\n\n**3. Time horizon**  \nThe prediction was explicitly framed as an \u201cover time\u201d structural shift. As of November 30, 2025\u2014about 18 months after the podcast\u2014frontier models appear to be converging in capability, and scaffolding layers are clearly emerging as powerful, high\u2011revenue businesses. However, core model vendors still capture a substantial share of generative\u2011AI\u2011specific revenue, and we lack solid data showing a durable, majority share of economic value has moved to scaffolding.\n\nBecause the long\u2011term competitive and profit dynamics of models vs. scaffolding are still unfolding and the claim is inherently multi\u2011year, the fairest assessment today is **\u201cinconclusive (too early)\u201d** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 813,
+          "start_index": 748,
+          "title": "Benchmarking Large Language Models for Calculus Problem-Solving: A Comparative Analysis",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2504.13187?utm_source=openai"
+        },
+        {
+          "end_index": 1088,
+          "start_index": 1002,
+          "title": "Kagi Ultimate: Ranking of LLMs (May 2025)",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/SearchKagi/comments/1kz0sf2?utm_source=openai"
+        },
+        {
+          "end_index": 1486,
+          "start_index": 1331,
+          "title": "Anthropic announces Claude Opus 4.5, the new AI coding frontrunner",
+          "type": "url_citation",
+          "url": "https://www.itpro.com/technology/artificial-intelligence/anthropic-announces-claude-opus-4-5-the-new-ai-coding-frontrunner?utm_source=openai"
+        },
+        {
+          "end_index": 2383,
+          "start_index": 2253,
+          "title": "OpenAI's hype machine faces a corporate challenge",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/markets/asia/openais-hype-machine-faces-corporate-challenge-2025-10-28/?utm_source=openai"
+        },
+        {
+          "end_index": 2773,
+          "start_index": 2694,
+          "title": "Anysphere",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Anysphere?utm_source=openai"
+        },
+        {
+          "end_index": 3059,
+          "start_index": 2975,
+          "title": "GitHub Copilot",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GitHub_Copilot?utm_source=openai"
+        },
+        {
+          "end_index": 3471,
+          "start_index": 3326,
+          "title": "Best AI Stocks to Buy: Smart Artificial Intelligence Investments",
+          "type": "url_citation",
+          "url": "https://www.kiplinger.com/investing/stocks/tech-stocks/604842/smart-artificial-intelligence-ai-stocks-to-buy?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Frontier models have converged to similar high capabilities: leaderboards like [Artificial Analysis](https://artificialanalysis.ai/leaderboards/models) show top scores clustered (Google Gemini 3 Pro: 73, Anthropic Claude 4.5 & OpenAI GPT-5.1: 70; spread ~6%); [LMArena](https://lmarena.ai/leaderboard) has ties at #1 (Gemini-3-pro, Grok-4.1); [Vellum](https://www.vellum.ai/llm-leaderboard) notes 80-100% on key benches across providers (OpenAI, Anthropic, Google, xAI). Diverse leaders compete closely.\n\nHowever, economic value has not shifted: core model providers dominate revenues ([Visual Capitalist](https://www.visualcapitalist.com/charted-the-soaring-revenues-of-ai-companies-2023-2025/): OpenAI $13B ARR 2025, Anthropic $7B, xAI $0.5B via model APIs/ChatGPT); [Forbes AI50](https://www.forbes.com/lists/ai50/) funding led by model builders ($81B for OpenAI/Anthropic). App/tool layers (e.g., Cursor $100M ARR) growing but dwarfed. 19 months too early for full 'over time' shift."
+    },
+    {
+      "id": "I-01:06:41.420",
+      "result": "right",
+      "explanation": "By late 2025, multiple companies focused on \u201cscaffolding\u201d around large language models\u2014rather than on training base models themselves\u2014have in fact become very large, commercially successful businesses, matching Chamath\u2019s thesis.\n\n*Infrastructure / tooling layer*\n- **Scale AI** provides data-labeling, RLHF, and deployment tooling used by major foundation model labs. Meta\u2019s 2025 deal valued Scale at about **$29B**, with expectations of **$2B in 2025 revenue**, making it a large and clearly successful infrastructure business built around (not as) LLMs. ([ft.com](https://www.ft.com/content/5a30cd25-90f9-41a4-924c-1e7c6772a47f?utm_source=openai))\n- **Pinecone**, a vector database that serves as long\u2011term memory for LLM apps, raised a **$100M Series B at a $750M valuation** and is described as a \u201ccritical component\u201d of the generative\u2011AI stack. ([pinecone.io](https://www.pinecone.io/blog/series-b/?utm_source=openai))\n- **Weights & Biases**, a widely used AI developer platform for training and monitoring models, was acquired by Nvidia\u2011backed cloud provider **CoreWeave** in a deal reported around **$1.7B**, to deepen CoreWeave\u2019s AI developer tooling ahead of an IPO targeted at **$35B+** valuation. ([reuters.com](https://www.reuters.com/markets/deals/nvidia-backed-cloud-firm-coreweave-acquire-ai-developer-platform-weights-biases-2025-03-05/?utm_source=openai))\n- **LangChain**, an open\u2011source framework for building AI agents and applications, raised $125M at a **$1.25B valuation** in 2025, reflecting substantial commercial value from pure \u201cagentic\u201d scaffolding software. ([techcrunch.com](https://techcrunch.com/2025/10/21/open-source-agentic-startup-langchain-hits-1-25b-valuation/?utm_source=openai))\n\n*Application / developer-product layer built on top of models*\n- **Anysphere (Cursor)**, an AI-assisted IDE built on top of foundation models rather than training its own, reached about **$500M in ARR** and a **$9.9B valuation** by mid\u20112025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Anysphere?utm_source=openai))\n- **Cognition AI (Devin)**, an autonomous coding agent relying on underlying model infrastructure, hit a **$10.2B valuation** with ARR growing from **$1M (Sep 2024) to $73M (Jun 2025)**. ([techcrunch.com](https://techcrunch.com/2025/09/08/cognition-ai-defies-turbulence-with-a-400m-raise-at-10-2b-valuation/?utm_source=openai))\n- **Lovable**, an AI software\u2011engineering platform that builds apps from natural\u2011language prompts using existing models, surpassed **$100M ARR** just eight months after launch and raised **$200M at a $1.8B valuation** in July 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Lovable?utm_source=openai))\n- **Perplexity AI**, an LLM\u2011powered search and browser company, relies on models from others but provides the surrounding product and UX. By 2025 it was valued around **$18\u201320B**, with **ARR approaching $200M**, and signed a **$400M search integration deal with Snap**, underscoring the scale possible at the app layer. ([cnbc.com](https://www.cnbc.com/2025/03/20/perplexity-in-talks-to-double-valuation-to-18-billion-via-new-funding.html?utm_source=openai))\n\n*Infrastructure around AI compute*\n- **Crusoe**, which builds AI\u2011specific data centers (compute \u201cplumbing\u201d for model and app providers), raised **$1.4B** at a valuation above **$10B** and is constructing multi\u2011gigawatt campuses for OpenAI and others\u2014another example of non\u2011model infrastructure becoming a very large business. ([ft.com](https://www.ft.com/content/26b20375-8f2d-425d-aefc-75ddbfa64716?utm_source=openai))\n\nAcross these examples, companies that supply the **non\u2011model scaffolding\u2014vector databases, data/ML tooling, agent frameworks, AI\u2011enhanced IDEs, and AI data\u2011center infrastructure\u2014have already achieved multi\u2011billion\u2011dollar valuations and, in many cases, hundreds of millions to billions in annual revenue.** That is exactly the kind of \u201creally good business\u201d Chamath described. While the long\u2011term landscape can still change, the evidence by November 2025 shows that his prediction has, in substance, come true.",
+      "sources": [
+        {
+          "end_index": 685,
+          "start_index": 592,
+          "title": "Meta invests $15bn in Scale AI, doubling start-up's valuation",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/5a30cd25-90f9-41a4-924c-1e7c6772a47f?utm_source=openai"
+        },
+        {
+          "end_index": 960,
+          "start_index": 887,
+          "title": "Announcing Our $100M Series B Funding to Build Long-Term Memory for AI | Pinecone",
+          "type": "url_citation",
+          "url": "https://www.pinecone.io/blog/series-b/?utm_source=openai"
+        },
+        {
+          "end_index": 1410,
+          "start_index": 1246,
+          "title": "Nvidia-backed cloud firm CoreWeave to acquire AI developer platform Weights & Biases",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/markets/deals/nvidia-backed-cloud-firm-coreweave-acquire-ai-developer-platform-weights-biases-2025-03-05/?utm_source=openai"
+        },
+        {
+          "end_index": 1756,
+          "start_index": 1625,
+          "title": "Open source agentic startup LangChain hits $1.25B valuation | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2025/10/21/open-source-agentic-startup-langchain-hits-1-25b-valuation/?utm_source=openai"
+        },
+        {
+          "end_index": 2082,
+          "start_index": 2003,
+          "title": "Anysphere",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Anysphere?utm_source=openai"
+        },
+        {
+          "end_index": 2411,
+          "start_index": 2271,
+          "title": "Cognition AI defies turbulence with a $400M raise at $10.2B valuation | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2025/09/08/cognition-ai-defies-turbulence-with-a-400m-raise-at-10-2b-valuation/?utm_source=openai"
+        },
+        {
+          "end_index": 2722,
+          "start_index": 2645,
+          "title": "Lovable",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Lovable?utm_source=openai"
+        },
+        {
+          "end_index": 3182,
+          "start_index": 3044,
+          "title": "Perplexity in talks to double valuation to $18 billion via new funding",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/03/20/perplexity-in-talks-to-double-valuation-to-18-billion-via-new-funding.html?utm_source=openai"
+        },
+        {
+          "end_index": 3606,
+          "start_index": 3513,
+          "title": "Crusoe raises $1.4bn as investors pile into AI data centres",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/26b20375-8f2d-425d-aefc-75ddbfa64716?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction has materialized, as numerous non-model AI companies building scaffolding (tools, infrastructure, apps) around LLMs have achieved massive valuations and funding by Dec 2025. Examples: \n- **Cursor AI** (AI coding IDE using frontier LLMs): Raised $2.3B at $29.3B valuation (Nov 2025, [CNBC](https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html), [Cursor blog](https://cursor.com/blog/series-d)). \n- **Perplexity AI** (LLM-powered search app): $200M at $20B+ valuation (Sep 2025, [Reuters](https://www.reuters.com/technology/perplexity-finalizes-20-billion-valuation-round-information-reports-2025-09-10/), [Wikipedia](https://en.wikipedia.org/wiki/Perplexity_AI)). \n- **LangChain** (framework for LLM apps/agents): $125M at $1.25B valuation (Oct 2025, [LangChain blog](https://blog.langchain.com/series-b/), [TechCrunch](https://techcrunch.com/2025/10/21/open-source-agentic-startup-langchain-hits-1-25b-valuation/)). \nLists like TechCrunch's 49 US AI startups raising $100M+ in 2025 ([TechCrunch](https://techcrunch.com/2025/11/26/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/)) and Eqvista's top valuations ([Eqvista](https://eqvista.com/top-ai-startups-by-valuation/)) include many such firms (e.g., Harvey at $3B), confirming broad success in the 'AI era' just 1.5 years later."
+    },
+    {
+      "id": "I-01:21:06.010",
+      "result": "right",
+      "explanation": "Evidence since May 2024 shows Apple has indeed continued to use the bulk of its excess cash for large-scale share repurchases, while avoiding major acquisitions and only modestly increasing capital investment.\n\nKey points:\n\n- **Massive, continuing buyback authorizations.** In May 2024 Apple\u2019s board approved a record $110 billion repurchase authorization, and in May 2025 it added a further $100 billion program, the two largest buyback authorizations in U.S. history and clear signals that buybacks remain central to capital allocation. ([macmegasite.com](https://macmegasite.com/2025/05/02/apples-new-100-billion-share-buyback-is-the-second-largest-in-history/?utm_source=openai))\n- **Actual repurchases dominate cash use.** Apple repurchased about $70 billion of stock in the first nine months of fiscal 2024 and roughly $104.2 billion for full-year 2024. ([sec.gov](https://www.sec.gov/Archives/edgar/data/320193/000032019324000081/aapl-20240629.htm?utm_source=openai))  In the first half of 2025 alone, Apple bought back another $48.3 billion of stock ($23.3B in Q1, $25.0B in Q2), and data on net equity repurchased show roughly $90\u201395 billion of buybacks for 2024 and a similar magnitude in 2025. ([sec.gov](https://www.sec.gov/Archives/edgar/data/320193/000032019325000008/aapl-20241228.htm?utm_source=openai))  These amounts are on the same order as Apple\u2019s annual free cash flow (about $109 billion in FY 2024), meaning most free cash is being returned to shareholders rather than redirected into new ventures. ([bullfincher.io](https://bullfincher.io/companies/apple/financial-statements?utm_source=openai))\n- **Capex and other investments are much smaller.** Apple\u2019s capital expenditures were about $9.45 billion in FY 2024 and ~$12.7 billion in FY 2025\u2014an increase, but still less than one\u2011seventh of what the company spends on buybacks in a typical recent year. ([financecharts.com](https://www.financecharts.com/stocks/AAPL/cash-flow/capital-expenditures-annual?utm_source=openai))  Even significant real-estate purchases (around $500 million in Bay Area properties in one week of June 2025) are small relative to annual repurchase totals. ([sfchronicle.com](https://www.sfchronicle.com/tech/article/apple-silicon-valley-office-purchases-20397398.php?utm_source=openai))\n- **No shift to large transformative acquisitions.** Apple\u2019s 2024\u20132025 deals remain small, such as buying AI-focused startups like DarwinAI, Mayday Labs, the Pixelmator Team, and game studio RAC7; its largest acquisition is still the $3 billion Beats deal from 2014. ([en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Apple?utm_source=openai))  Tim Cook reiterated in July 2025 that while Apple is \u201cvery open\u201d to AI-related M&A of any size, the companies acquired so far in 2025 are \u201csmall in nature,\u201d underscoring the absence of large-scale takeovers. ([cnbc.com](https://www.cnbc.com/2025/07/31/tim-cook-apple-ai-acquisitions.html?utm_source=openai))\n- **Even big new initiatives haven\u2019t eclipsed buybacks.** In February 2025 Apple announced a headline-grabbing plan to spend more than **$500 billion in the U.S. over four years**, including a new AI server factory in Texas, doubling its U.S. Advanced Manufacturing Fund, and various R&D and supplier commitments. ([apple.com](https://www.apple.com/newsroom/2025/02/apple-will-spend-more-than-500-billion-usd-in-the-us-over-the-next-four-years/?utm_source=openai))  However, this figure bundles operating spending, supplier contracts, content production, and pre-existing investment patterns; it has not coincided with a reduction in the scale of Apple\u2019s repurchase programs. A contemporaneous analysis notes that Apple still leads the S&P 500 in cumulative buybacks (~$709 billion total, ~$90.7 billion in the most recent year) and is criticized for prioritizing shareholder returns over aggressive AI capex, confirming that its capital-return bias remains intact. ([marketwatch.com](https://www.marketwatch.com/story/apple-and-nine-more-tech-companies-that-have-treated-their-shareholders-like-gold-63b3d845?utm_source=openai))\n\nTaken together, the post\u2013May 2024 record shows Apple continuing extremely large stock buybacks that absorb most of its excess cash, while capex and acquisitions, though present and growing in AI and manufacturing, remain comparatively modest. That matches Chamath\u2019s prediction that Apple would *primarily* use its large cash pile to repurchase its own stock rather than to pursue major new investments or acquisitions, at least over the ~18 months since the podcast aired.",
+      "sources": [
+        {
+          "end_index": 720,
+          "start_index": 576,
+          "title": "Apple\u2019s new $100 billion share buyback is the second-largest in history \u2013 MacMegasite",
+          "type": "url_citation",
+          "url": "https://macmegasite.com/2025/05/02/apples-new-100-billion-share-buyback-is-the-second-largest-in-history/?utm_source=openai"
+        },
+        {
+          "end_index": 1012,
+          "start_index": 898,
+          "title": "aapl-20240629",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000081/aapl-20240629.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1357,
+          "start_index": 1243,
+          "title": "aapl-20241228",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000008/aapl-20241228.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1657,
+          "start_index": 1560,
+          "title": "Apple Financial Statements 2020-2024 | Bullfincher",
+          "type": "url_citation",
+          "url": "https://bullfincher.io/companies/apple/financial-statements?utm_source=openai"
+        },
+        {
+          "end_index": 2036,
+          "start_index": 1916,
+          "title": "Apple (AAPL) Annual Capital Expenditures - Current & Historical Data (Nov 2025)",
+          "type": "url_citation",
+          "url": "https://www.financecharts.com/stocks/AAPL/cash-flow/capital-expenditures-annual?utm_source=openai"
+        },
+        {
+          "end_index": 2325,
+          "start_index": 2195,
+          "title": "Apple spends $517 million on Bay Area real estate in a single week",
+          "type": "url_citation",
+          "url": "https://www.sfchronicle.com/tech/article/apple-silicon-valley-office-purchases-20397398.php?utm_source=openai"
+        },
+        {
+          "end_index": 2705,
+          "start_index": 2594,
+          "title": "List of mergers and acquisitions by Apple",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Apple?utm_source=openai"
+        },
+        {
+          "end_index": 3014,
+          "start_index": 2915,
+          "title": "Tim Cook says Apple is 'very open' to AI acquisitions",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/07/31/tim-cook-apple-ai-acquisitions.html?utm_source=openai"
+        },
+        {
+          "end_index": 3480,
+          "start_index": 3330,
+          "title": "Apple will spend more than $500 billion in the U.S. over the next four years - Apple",
+          "type": "url_citation",
+          "url": "https://www.apple.com/newsroom/2025/02/apple-will-spend-more-than-500-billion-usd-in-the-us-over-the-next-four-years/?utm_source=openai"
+        },
+        {
+          "end_index": 4145,
+          "start_index": 3982,
+          "title": "Apple and nine more tech companies that have treated their shareholders like gold",
+          "type": "url_citation",
+          "url": "https://www.marketwatch.com/story/apple-and-nine-more-tech-companies-that-have-treated-their-shareholders-like-gold-63b3d845?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Apple continued its heavy buyback strategy post-May 2024, aligning with the prediction. In FY2024 (ended Sep 2024), repurchased ~$95B; FY2025 (ended Sep 2025), ~$91B (e.g., $90.7B per Q4 cash flow statement at [apple.com/newsroom/pdfs/fy2025-q4](https://www.apple.com/newsroom/pdfs/fy2025-q4/FY25_Q4_Consolidated_Financial_Statements.pdf)). Announced $110B program May 2024 (completed), $100B May 2025. Buybacks dwarfed other uses: CapEx $12.7B FY2025 vs. $90B buybacks; dividends $15B. Cash + marketable securities ~$132B end-FY2025 (10-K). No large acquisitions (small AI tuck-ins like DarwinAI; total ~118 historical, recent minor per Wikipedia/Tracxn). Primarily used excess cash for buybacks over large investments/acquisitions ([Reuters May 2024](https://www.reuters.com/technology/apple-unveils-record-110-billion-buyback-results-beat-low-expectations-2024-05-02/), [Barrons Oct 2025](https://www.barrons.com/articles/apple-stock-buybacks-ai-capex-925918a2))."
+    },
+    {
+      "id": "H-01:37:41.400",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, this prediction is **about a long\u2011term future capability and clinical impact**, and there is not yet enough time or evidence to say it is clearly right or clearly wrong.\n\n**What *has* happened so far**\n\n1. **AlphaFold 3 and related models can model complex interactions, but mainly in silico and preclinical contexts.**  \n   - DeepMind/Isomorphic Labs\u2019 AlphaFold 3 (2024) extends structure prediction to protein\u2013protein, protein\u2013DNA/RNA, and protein\u2013ligand complexes, improving the ability to model binding interactions across chemical space.\n   - However, these are **prediction tools**, not validated end\u2011to\u2011end drug\u2011discovery pipelines that guarantee safe, specific reprogramming of human cells.\n\n2. **In\u2011silico search over chemical and biological space is real and rapidly improving.**  \n   - Many groups and companies now use generative and predictive models (including structure predictors like AlphaFold, diffusion models, and reinforcement learning) to design small molecules, biologics, and RNA constructs. Some are applied to aging-related pathways or senolytics in preclinical work.  \n   - These tools support *exploration* of candidates but do not yet reliably deliver *clinically proven* longevity or rejuvenation therapies.\n\n3. **Yamanaka\u2011factor / partial reprogramming for rejuvenation is still preclinical.**  \n   - There is active research using OSKM and related factors for cellular rejuvenation and partial reprogramming in mice and cell culture, and several startups (e.g., Altos Labs, NewLimit, etc.) are pursuing this area.  \n   - As of 2025, **there is no approved human therapy that safely \u201cde\u2011ages all the cells in the body\u201d using Yamanaka\u2011style reprogramming**, and no widely accepted clinical protocol derived from an AlphaFold\u2011like in\u2011silico combinatorial search.\n\n**Why the prediction is \u201cinconclusive\u201d rather than wrong**\n\n- The claim is essentially that *in the future*, systems like AlphaFold 3 will let us computationally search over combinations of molecules that can safely reprogram cells and unlock powerful rejuvenation/longevity therapies.  \n- This is a **directional, long\u2011horizon forecast** about what *will* be possible, not about something that should already have occurred by 2025.  \n- Current evidence shows **early enabling steps** (powerful structure prediction, AI\u2011assisted design, active partial\u2011reprogramming research), but **not** the end state (validated, safe, clinically deployed rejuvenation therapies discovered this way).\n\nBecause the timeframe is open\u2011ended and the core claim concerns capabilities and therapies that plausibly lie decades away, it is too early to judge it as right or wrong. Hence the status is **\u201cinconclusive (too early)\u201d**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction anticipated AlphaFold 3 enabling in-silico searches over chemical space (small molecules) to design safe Yamanaka-like reprogramming agents for de-aging cells, leading to therapies. While significant AI-driven progress occurred\u2014OpenAI/Retro Biosciences used GPT-4b micro (Aug 2025) to redesign Yamanaka proteins (SOX2/KLF4), boosting reprogramming markers 50x in cells ([OpenAI blog](https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences/), [MIT Tech Review](https://www.technologyreview.com/2025/01/17/1110086/openai-has-created-an-ai-model-for-longevity-science/))\u2014this targets protein engineering, not small molecules or DNA-binding ligands via AlphaFold 3. No evidence of AlphaFold 3 applied to Yamanaka/de-aging (searches yielded general drug design uses, e.g., Isomorphic Labs oncology trials). No therapies exist; still preclinical. 1.5 years post-May 2024 is too early for 'powerful therapies,' and specifics unmatched."
+    },
+    {
+      "id": "H-01:34:27.770",
+      "result": "inconclusive",
+      "explanation": "The prediction is framed on a *multi-decade* horizon (\"a new era\" with \"pretty profound\" impacts on drug development and human health), but we are only about 1.5 years past the May 2024 release of AlphaFold 3, far too early to evaluate long\u2011run, large\u2011scale health and industry impacts.\n\nEvidence so far is *directionally supportive but preliminary*:\n\n- AlphaFold\u2011based methods are being actively refined for drug design; for example, the AF2RAVE approach explicitly combines AlphaFold with physics-based simulations to improve drug-relevant protein conformations, with researchers describing this as enabling faster drug discovery and potentially personalized medicine, but they themselves characterize this as an early-stage step toward that vision. ([cmns.umd.edu](https://cmns.umd.edu/news-events/news/university-maryland-scientists-cautiously-optimistic-about-ais-role-drug-discovery?utm_source=openai))\n- AI-driven drug discovery companies (including those building on AlphaFold-style models) have AI\u2011designed drug candidates entering or approaching human clinical trials, which is a major milestone but still only the beginning of the clinical pipeline. ([aitechsuite.com](https://www.aitechsuite.com/ai-news/first-ai-designed-drugs-enter-human-trials-poised-to-transform-medicine?utm_source=openai))\n- Market analyses project rapid growth of AI in drug discovery through 2030 and describe it as transformational for timelines and costs, indicating strong industry uptake but not yet demonstrating realized, population-scale health outcomes. ([stocks.observer-reporter.com](https://stocks.observer-reporter.com/observerreporter/article/tokenring-2025-10-14-ai-agents-usher-in-a-new-era-of-pharmaceutical-discovery-accelerating-cures-to-market?utm_source=openai))\n\nHowever, **demonstrating \u201cprofound, large-scale impacts on human health and the biopharma industry\u201d requires**:\n\n- Successful completion of Phase II/III trials for multiple AI-designed drugs\n- Regulatory approvals and widespread clinical adoption\n- Clear, measurable improvements in morbidity, mortality, or cost at scale across many indications\n\nThose outcomes typically take 10\u201315 years or more from early discovery to broad clinical impact, and as of late 2025 the field is still in the early validation phase. Current data show promise but cannot yet confirm whether the long-run, transformative impact Friedberg predicted will actually materialize.\n\nBecause the forecast explicitly concerns the *next couple of decades* and we are only a short way into that period, with crucial clinical and economic results still pending, the prediction cannot be judged as right or wrong at this time.",
+      "sources": [
+        {
+          "end_index": 956,
+          "start_index": 800,
+          "title": "University of Maryland Scientists \u2018Cautiously Optimistic\u2019 About AI\u2019s Role in Drug Discovery | College of Computer, Mathematical, and Natural Sciences | University of Maryland",
+          "type": "url_citation",
+          "url": "https://cmns.umd.edu/news-events/news/university-maryland-scientists-cautiously-optimistic-about-ais-role-drug-discovery?utm_source=openai"
+        },
+        {
+          "end_index": 1356,
+          "start_index": 1210,
+          "title": "First AI-Designed Drugs Enter Human Trials, Poised to Transform Medicine | AI Tech Suite News",
+          "type": "url_citation",
+          "url": "https://www.aitechsuite.com/ai-news/first-ai-designed-drugs-enter-human-trials-poised-to-transform-medicine?utm_source=openai"
+        },
+        {
+          "end_index": 1819,
+          "start_index": 1599,
+          "title": "Contact - Observer-Reporter",
+          "type": "url_citation",
+          "url": "https://stocks.observer-reporter.com/observerreporter/article/tokenring-2025-10-14-ai-agents-usher-in-a-new-era-of-pharmaceutical-discovery-accelerating-cures-to-market?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction forecasts profound, large-scale impacts from AlphaFold 3-style AI on drug development and human health over 'the next couple of decades' (from May 2024). As of Dec 2025 (~1.5 years later), AlphaFold 3 has generated significant hype and research acceleration ([DeepMind blog](https://deepmind.google/blog/alphafold-five-years-of-impact/); [Nature](https://www.nature.com/articles/d41586-025-00868-9)), with Isomorphic Labs preparing clinical trials for AI-designed oncology drugs ([Clinical Trials Arena, Jul 2025](https://www.clinicaltrialsarena.com/news/isomorphic-labs-prepares-trials-ai-designed-drugs/)). However, no AlphaFold 3-derived drugs are approved, and biopharma transformation is nascent, not yet 'profound' or 'large-scale' given typical 10+ year drug timelines. Too early to evaluate long-term outcome."
+    }
+  ]
+}

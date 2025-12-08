@@ -1,0 +1,689 @@
+{
+  "meta": {
+    "count": 13,
+    "count_by_result": {
+      "inconclusive": 6,
+      "wrong": 2,
+      "right": 3,
+      "ambiguous": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:10:20.490",
+      "result": "inconclusive",
+      "explanation": "As of **November 30, 2025**, we are far from the 2040s\u20132050s window that Chamath is talking about. The claim is explicitly about what will *not* happen until several decades from the podcast date (April 2023). Since we have not yet reached those decades, we cannot evaluate whether AI agents will or will not fully replace good human judgment by that time. Therefore, the prediction\u2019s truth value cannot currently be determined and is **inconclusive (too early)** to judge.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Prediction: AI agents will **not** fully replace good human judgment before 2040s\u20132050s. Current date (Dec 2025) is only ~2.5 years post-podcast (Apr 2023), far short of predicted timeline. AI agents (e.g., AutoGPT) augment tasks but require human oversight and do not replace judgment, per 2025 sources: McKinsey on human-AI partnerships ([web:0] AI agents query); 'Why Agentic AI Often Fails and the Enduring Value of Human Judgment' (Nov 2025, [web:2]); AutoGPT reviews noting lower reliability vs. human guidance ([web:3] AutoGPT query). Too early to falsify or confirm."
+    },
+    {
+      "id": "C-00:11:57.280",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly about **the next 3\u20134 years from April 2023**, i.e., approximately April 2026\u2013April 2027. As of today (November 30, 2025), only about 2.6 years of that window have elapsed, so the full period Chamath was talking about has not yet played out.\n\nAvailable evidence is mixed and not decisive either way:\n\n* Venture markets have clearly shifted away from the 2020\u20132021 mega\u2011bubble: reporting in 2023\u20132024 shows **harder fundraising, smaller checks, and underperformance/strain at large multi\u2011stage and late\u2011stage funds**, with commentary that big VC funds have been underperforming smaller ones and are struggling to raise and deploy capital efficiently. ([institutionalinvestor.com](https://www.institutionalinvestor.com/article/2cjotgawx7nn70st06k8w/portfolio/big-vc-funds-are-underperforming-smaller-ones-and-their-future-is-dim?utm_source=openai)) This is directionally consistent with the idea that very large funds can be oversized in a tougher environment.\n* At the same time, **large funds still dominate total capital raised** across private markets: one fundraising review finds that funds larger than $1B accounted for about **81% of total capital raised in 2024**, indicating that LPs continue to back very large vehicles despite headwinds. ([aranca.com](https://www.aranca.com/practices/business-research?utm_source=openai)) And within AI specifically, major AI\u2011focused funds have been raised in the high hundreds of millions (e.g., Radical Ventures\u2019 nearly $800M AI fund in 2024), which is close to the $1B scale Chamath argued would be oversized. ([ft.com](https://www.ft.com/content/2b3e5dbe-4462-48c4-b14f-306fe252accf?utm_source=openai))\n* The **average U.S. venture fund size fell to around $105M in early 2024**, with fewer billion\u2011dollar-plus funds closing, and press coverage explicitly framing this as a \u201cmoment\u201d for smaller and mid\u2011sized funds\u2014even while giants like a16z still raise multi\u2011billion vehicles. ([wsj.com](https://www.wsj.com/articles/renegade-partners-nets-128-million-as-smaller-funds-have-their-moment-ad8d311b?utm_source=openai)) That suggests partial support for the idea that smaller funds may be better matched to the current opportunity set, but it does not validate a specific \u201cright\u201d number like $50M, nor prove that $1B is categorically too large.\n* Chamath himself has since emphasized **pulling back from traditional VC fundraising and largely investing his own sizable balance sheet**, criticizing the large\u2011fund VC model as misaligned\u2014behavior that is consistent with his skepticism about big funds, but not by itself proof that his numerical sizing call was correct. ([institutionalinvestor.com](https://www.institutionalinvestor.com/article/2bsx50dfm3p7vduehik8w/culture/the-unusual-ambitions-of-chamath-palihapitiya?utm_source=openai))\n\nBecause (1) the **time horizon he specified has not yet finished**, and (2) there is **no clear, agreed\u2011upon metric** that would already let us declare that $1B vehicles are definitively \u201coversized\u201d or that ~$50M over four years is empirically \u201cright\u201d for new-company formation in a generative\u2011AI era, this prediction cannot yet be judged as right or wrong. It is therefore best classified as **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 918,
+          "start_index": 722,
+          "title": "Big VC Funds Are Underperforming Smaller Ones and Their Future Is Dim | Institutional Investor",
+          "type": "url_citation",
+          "url": "https://www.institutionalinvestor.com/article/2cjotgawx7nn70st06k8w/portfolio/big-vc-funds-are-underperforming-smaller-ones-and-their-future-is-dim?utm_source=openai"
+        },
+        {
+          "end_index": 1405,
+          "start_index": 1321,
+          "title": "Knowledge Library - | Growth Advisory | Aranca",
+          "type": "url_citation",
+          "url": "https://www.aranca.com/practices/business-research?utm_source=openai"
+        },
+        {
+          "end_index": 1723,
+          "start_index": 1630,
+          "title": "Radical Ventures raises nearly $800mn to focus on AI",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/2b3e5dbe-4462-48c4-b14f-306fe252accf?utm_source=openai"
+        },
+        {
+          "end_index": 2139,
+          "start_index": 2001,
+          "title": "Renegade Partners Nets $128 Million as Smaller Funds Have Their Moment",
+          "type": "url_citation",
+          "url": "https://www.wsj.com/articles/renegade-partners-nets-128-million-as-smaller-funds-have-their-moment-ad8d311b?utm_source=openai"
+        },
+        {
+          "end_index": 2860,
+          "start_index": 2690,
+          "title": "The Unusual Ambitions of Chamath Palihapitiya | Institutional Investor",
+          "type": "url_citation",
+          "url": "https://www.institutionalinvestor.com/article/2bsx50dfm3p7vduehik8w/culture/the-unusual-ambitions-of-chamath-palihapitiya?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath predicted that due to generative AI improving company formation efficiency, $1B VC funds would be oversized for the next 3-4 years (until ~2026-2027), with an appropriate size being ~$50M deployed over 4 years. However, since April 2023, numerous $1B+ VC funds have closed, including AI-focused ones: SignalFire's $1B (Apr 2025, [Crunchbase](https://news.crunchbase.com/venture/signalfire-new-fund-seed-early-stage-applied-ai/)), Emergence Capital's $1B (Mar 2025, [TechFundingNews](https://techfundingnews.com/1b-for-next-gen-b2b-startups-emergence-capital-to-reshape-future-of-work-in-the-ai-era/)), Cathay Innovation's $1B (May 2025, [Crunchbase](https://news.crunchbase.com/venture/cathay-innovation-vertical-ai-startup-fund/)), a16z's $7.2B across funds (Apr 2024, [a16z](https://a16z.com/new-funds-new-era/)), and Sequoia's $950M early-stage (Oct 2025, [TechCrunch](https://techcrunch.com/2025/10/27/sequoia-unveils-950m-in-new-early-stage-funds-as-it-strives-to-be-only-as-good-as-our-next-investment/)). AI startups attracted $100B+ in VC annually (e.g., $89.4B in 2025 YTD, [SecondTalent](https://www.secondtalent.com/resources/ai-startup-funding-investment/)), with mega-rounds like xAI's $6B, showing big funds are viable and deploying capital aggressively. At ~2.75 years into the period (Dec 2025), the opposite trend prevails."
+    },
+    {
+      "id": "C-00:21:57.280",
+      "result": "inconclusive",
+      "explanation": "As of late 2025, there is clear movement toward AI-agent-based software, but not clear evidence that large, sales- and marketing-heavy enterprise software vendors have been **materially cannibalized** or that their traditional go-to-market motions have become **unnecessary**.\n\n1. **Large incumbent enterprise vendors remain dominant and sales-led.** Salesforce is still the world\u2019s largest enterprise applications vendor, generating tens of billions in annual revenue and maintaining a workforce of over 76,000 employees, with tens of thousands in sales and support roles, indicating that a classic sales-intensive GTM model remains central to its business. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Salesforce?utm_source=openai))\n\n2. **Incumbents are adding AI agents, not being displaced by agent-native competitors.** Salesforce and other major enterprise software firms (e.g., Snowflake, ServiceNow) have launched their own AI agent platforms such as Agentforce and similar offerings, folding agents into their existing products and sales channels rather than being replaced by external AutoGPT-style competitors. ([investors.com](https://www.investors.com/news/technology/salesforce-stock-data-cloud-arr-artificial-intelligence/?utm_source=openai))\n\n3. **AI agent startups are growing but have not obviously cannibalized the large vendors.** Startups like Sierra (customer-service agents), Decagon (AI support agents), Docket (AI sales engineer/seller), and Alta (AI SDR and GTM agents) have raised substantial capital and are scaling, with Sierra reportedly reaching a ~$10B valuation and >$100M ARR. But these numbers are still small relative to incumbents\u2019 revenue bases, and coverage frames them as new competitors operating alongside \u2014 not yet hollowing out \u2014 giants like Salesforce. ([sfchronicle.com](https://www.sfchronicle.com/tech/article/openai-chairman-startup-signing-big-office-lease-21135588.php?utm_source=openai))\n\n4. **Industry analyses describe agentic AI as emergent and largely ahead of its full impact.** Gartner estimates that only about 5% of enterprise software includes AI agents today, with a forecast of 40% by 2026, explicitly portraying the agent transition as still in its early phases. Articles on \u201cagentic AI\u201d stress that many enterprises are not yet ready to rely heavily on autonomous agents and are focusing on narrow, supervised deployments, again implying that a broad structural upheaval has not yet played out. ([blockchain.news](https://blockchain.news/ainews/gartner-predicts-40-of-enterprise-software-will-feature-ai-agents-by-2026-disrupting-traditional-saas-pricing-models?utm_source=openai))\n\n5. **AI is automating internal roles, but that\u2019s not the same as external cannibalization of vendors or their GTM.** Some companies, including Salesforce and Klarna, have reduced or reshaped support headcount by deploying AI agents, showing internal labor substitution. But this is different from AI-agent-based *competitors* making entire enterprise vendors or their sales organizations obsolete; the core vendors are, in fact, the ones deploying these agents. ([businessinsider.com](https://www.businessinsider.com/list-companies-replacing-human-employees-with-ai-layoffs-workforce-reductions?utm_source=openai))\n\nBecause Chamath did **not** give a specific end date beyond a vague \u201cmatter of time\u201d / \u201cover the coming years,\u201d and we are only about 2.5 years past the prediction, the medium-term horizon he seemed to imply has not clearly expired. At the same time, available evidence shows early competitive pressure and experimentation rather than the kind of large-scale cannibalization and obviation of traditional enterprise sales motions he envisioned.\n\nGiven the combination of (a) clear partial movement toward agents, but (b) ongoing dominance and sales-led GTM of incumbents, and (c) the absence of a firm deadline in the prediction, the fairest current verdict is that it is **too early to definitively judge** whether his forecast will ultimately prove right or wrong.",
+      "sources": [
+        {
+          "end_index": 781,
+          "start_index": 701,
+          "title": "Salesforce",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Salesforce?utm_source=openai"
+        },
+        {
+          "end_index": 1306,
+          "start_index": 1171,
+          "title": "Salesforce Sheds Light On Data Cloud, AI Annual Recurring Revenue",
+          "type": "url_citation",
+          "url": "https://www.investors.com/news/technology/salesforce-stock-data-cloud-arr-artificial-intelligence/?utm_source=openai"
+        },
+        {
+          "end_index": 1990,
+          "start_index": 1849,
+          "title": "OpenAI chairman's new startup moves to sign one of S.F.'s biggest office leases this year",
+          "type": "url_citation",
+          "url": "https://www.sfchronicle.com/tech/article/openai-chairman-startup-signing-big-office-lease-21135588.php?utm_source=openai"
+        },
+        {
+          "end_index": 2699,
+          "start_index": 2513,
+          "title": "Gartner Predicts 40% of Enterprise Software Will Feature AI Agents by 2026, Disrupting Traditional SaaS Pricing Models | AI News Detail",
+          "type": "url_citation",
+          "url": "https://blockchain.news/ainews/gartner-predicts-40-of-enterprise-software-will-feature-ai-agents-by-2026-disrupting-traditional-saas-pricing-models?utm_source=openai"
+        },
+        {
+          "end_index": 3317,
+          "start_index": 3165,
+          "title": "6 companies that have signaled they are replacing human employees with AI",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/list-companies-replacing-human-employees-with-ai-layoffs-workforce-reductions?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Large enterprise software firms like Salesforce ($37.9B revenue in 2025, up significantly YOY; Data Cloud & AI ARR +120%; [Salesforce FY2025 results](https://investor.salesforce.com/news/news-details/2025/Salesforce-Announces-Fourth-Quarter-and-Fiscal-Year-2025-Results/default.aspx)), Oracle (ERP market leader 6.63% share, $8.7B ERP revenue; cloud growth; [Apps Run The World](https://www.appsruntheworld.com/top-10-erp-software-vendors-and-market-forecast/)), SAP (cloud revenue +26% YOY; [Technology Magazine](https://technologymagazine.com/articles/top-10-fastest-growing-cloud-companies)), and ServiceNow ($12.5B ARR, +22%; [SaaStr](https://www.saastr.com/5-interesting-learnings-from-servicenow-at-12-5-billion-in-arr/)) continue strong growth and market leadership. No evidence of material market share loss to new AI-agent startups (AI agent market ~$7.6B total vs. enterprise software $260B+; [Litslink](https://litslink.com/blog/ai-agent-statistics), [CB Insights](https://www.cbinsights.com/research/ai-agent-market-map-2025/)). Incumbents integrate AI agents (e.g., Agentforce), augmenting sales (65% teams use AI for prospecting; [Gartner](https://www.classicinformatics.com/blog/sales-teams-powered-by-ai-agents-2025)). Layoffs in sales/SDR roles (36% B2B cuts; [SaaStr](https://www.saastr.com/the-great-sdr-downsizing-36-of-b2b-companies-cut-sales-development-teams-in-2025/)) and mid-tier SaaS pressure exist, but traditional GTM persists and large firms thrive. Speculative articles predict future disruption ([New Stack](https://thenewstack.io/ai-agents-will-eat-enterprise-software-just-not-in-one-bite/)), but 2.5 years post-prediction shows no material cannibalization."
+    },
+    {
+      "id": "C-00:22:04.480",
+      "result": "wrong",
+      "explanation": "Within a year of April 2023 (i.e., by April 2024), AutoGPT\u2011style agents were still experimental and unreliable, not robust tools for rebuilding complex enterprise software.\n\nAutoGPT itself was widely covered in 2023 as an autonomous agent framework, but contemporaneous reporting emphasized severe limitations: it frequently got stuck in loops, hallucinated, and was explicitly described as *not production\u2011ready* and better suited as a sandbox or proof\u2011of\u2011concept rather than something to run real systems on. ([en.wikipedia.org](https://en.wikipedia.org/wiki/AutoGPT?utm_source=openai)) Broader surveys of agentic AI note that, even as of 2025, there are *few real\u2011world applications* of AI agents, and controlled studies found that such agents generally fail to complete the majority of tasks in simulated software\u2011company settings\u2014indicating that robust, autonomous end\u2011to\u2011end software engineering was still out of reach, not something hundreds of solo teams had already accomplished a year after April 2023. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Agentic_AI?utm_source=openai))\n\nThe strongest real example in this direction is Devin, an \"AI software engineer\" announced in March 2024. Devin can autonomously complete some software tasks and build small applications, but reporting and benchmarks portray it as a tool that can handle portions of development work with non\u2011trivial failure rates, not as a system that single\u2011handedly rebuilds full, Salesforce\u2011 or SAP\u2011scale enterprise stacks for solo developers. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Devin_AI?utm_source=openai)) In parallel, while there are case studies of one developer using ChatGPT\u2011style tools to build and scale relatively simple SaaS products quickly, those are niche applications, not full\u2011fledged replacements for major enterprise platforms. ([vocal.media](https://vocal.media/futurism/one-developer-three-ai-tools-1-m-arr-the-new-saa-s-playbook?utm_source=openai))\n\nFinally, industry anecdotes through 2023\u20132024 still describe companies struggling even to clone existing Salesforce orgs or to replace Salesforce with internal tools, often requiring teams and consultants rather than \"hundreds of one\u2011person teams\" succeeding with agentic AI. ([reddit.com](https://www.reddit.com/r/salesforce/comments/16mojjx?utm_source=openai)) Given the lack of any documented examples of solo, agent\u2011driven rebuilds of major enterprise software stacks by April 2024\u2014and the consistent evidence that autonomous agents remained immature at that time\u2014the prediction that this would be achieved \"in less than a year\" from April 2023 did not come true.",
+      "sources": [
+        {
+          "end_index": 626,
+          "start_index": 549,
+          "title": "AutoGPT",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/AutoGPT?utm_source=openai"
+        },
+        {
+          "end_index": 1131,
+          "start_index": 1051,
+          "title": "Agentic AI",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Agentic_AI?utm_source=openai"
+        },
+        {
+          "end_index": 1646,
+          "start_index": 1568,
+          "title": "Devin AI",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Devin_AI?utm_source=openai"
+        },
+        {
+          "end_index": 2007,
+          "start_index": 1884,
+          "title": "One Developer, Three AI Tools, $1M ARR: The New SaaS Playbook | Futurism",
+          "type": "url_citation",
+          "url": "https://vocal.media/futurism/one-developer-three-ai-tools-1-m-arr-the-new-saa-s-playbook?utm_source=openai"
+        },
+        {
+          "end_index": 2375,
+          "start_index": 2289,
+          "title": "Need to make a clone of a production org to another one.",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/salesforce/comments/16mojjx?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence exists of one-person teams using AI agents like AutoGPT reconstructing viable full-stack equivalents of major enterprise software (e.g., Salesforce CRM, SAP ERP) by April 2024 or even by December 2025. Searches for examples (e.g., 'solo developer built Salesforce clone with AI agents', 'one person recreated SAP ERP with AI 2024') yielded zero matches; instead, results show AI agents assisting coding or prototyping simple apps ([web:3 from first search](https://medium.com/madhukarkumar/how-to-build-a-full-stack-app-with-an-ai-coding-agent-9b6467ac18bc)), enterprise vendors like Salesforce building their own AI agents (Agentforce, [Salesforce Agentforce](https://www.salesforce.com/agentforce/)), and hype without proof ([e.g., '$1B Solo Entrepreneur' speculation](https://peteweishaupt.medium.com/1-billion-dollar-solo-entrepreneur-1c310564f11d)). An article explicitly counters similar claims: 'Chamath is wrong: AI won't kill enterprise software' ([Medium](https://chsrbrts.medium.com/chamath-is-wrong-ai-wont-kill-enterprise-software-2b94a53e5300)). AI aids solo devs but cannot autonomously handle enterprise complexity (security, scalability, compliance)."
+    },
+    {
+      "id": "A-00:24:07.540",
+      "result": "wrong",
+      "explanation": "By late 2025, text\u2011to\u2011video and AI VFX tools have improved dramatically, but they still fall short of consistently matching something like Disney\u2019s The Mandalorian in full production quality and reliability.\n\n1. **State of text\u2011to\u2011video around and after April 2025**  \n   - OpenAI\u2019s Sora and successors can produce highly photorealistic, cinematic short clips (tens of seconds up to about a minute), but reviewers and OpenAI\u2019s own system card note ongoing problems with complex physics, causality, and fine details such as faces and crowded scenes. External assessments explicitly say it is impressive but not perfect and that it will be a long time before text\u2011to\u2011video threatens traditional filmmaking. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Sora_%28text-to-video_model%29?utm_source=openai))  \n   - Runway\u2019s Gen\u20114 model (released March 2025) generates only 5\u201310\u2011second clips at 720p and is documented to suffer from motion artifacts, physics issues, and character inconsistency across separately generated clips. Reviews and Runway\u2019s own positioning emphasize its use for previsualization, concept work, and short clips, not for end\u2011to\u2011end TV\u2011episode\u2011length production. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Gen-4_%28AI_image_and_video_model%29?utm_source=openai))  \n   - Survey and benchmark work on text\u2011to\u2011video models in 2024\u20132025 highlights that even top models (Runway, Sora, Kling, etc.) still exhibit complex distortions, unnatural actions, and other artifacts that make high\u2011end, long\u2011form production challenging. ([arxiv.org](https://arxiv.org/abs/2501.08545?utm_source=openai))  \n\n2. **Industry and critical judgment vs. Mandalorian\u2011level production**  \n   - Hands\u2011on reviews of Sora after public release conclude that, despite its strengths, it is not ready for mainstream video production or commercial storytelling, especially for longer, controlled narratives; it performs best for relatively simple short clips and still fails unpredictably on complex prompts. ([theverge.com](https://www.theverge.com/2024/12/12/24318924/openai-sora-ai-video-generator-hands-on?utm_source=openai))  \n   - Major studio partnerships (e.g., Lionsgate and AMC Networks with Runway) explicitly frame AI video as a tool for storyboarding, pre\u2011vis, background elements, and post\u2011production assistance, not as a direct replacement for full VFX pipelines on big\u2011budget shows. ([theguardian.com](https://www.theguardian.com/film/2024/sep/18/lionsgate-ai?utm_source=openai))  \n   - A 2024 analysis of Runway\u2019s film\u2011studio collaboration notes that while AI video can now create realistic moving imagery quickly, making an entire feature film with AI alone is still not expected in the near term; the tech is mainly used for segments and shorts. ([ispr.info](https://ispr.info/2024/09/20/ai-provider-and-major-movie-studio-team-up-likely-expanding-presence/?utm_source=openai))  \n   - Large, high\u2011profile productions that leaned heavily on AI\u2011enhanced visuals, such as the Wizard of Oz adaptation for the Las Vegas Sphere, have drawn mixed or negative criticism specifically for the AI\u2011generated imagery quality, suggesting that fully AI\u2011driven visuals are still not consistently at top\u2011tier blockbuster TV/film standards. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Wizard_of_Oz_at_Sphere?utm_source=openai))  \n   - VFX\u2011community discussions in 2025 repeatedly point out persistent problems with long\u2011scene consistency, reproducibility, and character control in AI video tools, reinforcing that current systems are not yet a drop\u2011in replacement for traditional VFX workflows on dialogue\u2011heavy, multi\u2011shot scenes like those common in The Mandalorian. ([reddit.com](https://www.reddit.com//r/vfx/comments/1noqmlx?utm_source=openai))  \n\n3. **Gap between AI storyboards / pre\u2011vis and final output**  \n   - There has been clear progress toward closing the gap Jason talked about: tools like Runway Gen\u20114, Open\u2011Sora 2.0 and other modern models are explicitly used for cinematic previsualization and concept development, and research systems such as CineVision integrate scripts with real\u2011time AI pre\u2011vis to accelerate storyboard creation and director\u2013cinematographer collaboration. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Gen-4_%28AI_image_and_video_model%29?utm_source=openai))  \n   - However, these tools are still primarily positioned as aids at the previz / ideation stage; the last mile from AI animatic to final, broadcast\u2011quality VFX is still handled largely with traditional techniques. Industry commentary and technical evaluations do not support the view that, by October 2025, the gap has substantially closed in the sense that AI can routinely generate final shots at Mandalorian\u2011like quality with the required control and length.\n\n**Conclusion:** By the April 2025 two\u2011year mark (and even by late 2025), text\u2011to\u2011video and AI VFX systems can produce striking short clips and are heavily used for pre\u2011visualization, but they are not yet at a level where their typical, controllable output is comparable to the overall visual standard of a show like The Mandalorian, nor has the storyboard\u2011to\u2011final\u2011shot gap substantially closed in mainstream production pipelines. Given that the time windows in the prediction have now passed and the core claim has not materialized, the prediction is best judged as **wrong**, albeit directionally pointing toward real (but insufficient) progress.",
+      "sources": [
+        {
+          "end_index": 841,
+          "start_index": 741,
+          "title": "Sora (text-to-video model)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Sora_%28text-to-video_model%29?utm_source=openai"
+        },
+        {
+          "end_index": 1327,
+          "start_index": 1221,
+          "title": "Gen-4 (AI image and video model)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Gen-4_%28AI_image_and_video_model%29?utm_source=openai"
+        },
+        {
+          "end_index": 1652,
+          "start_index": 1587,
+          "title": "T2VEval: T2V-generated Videos Benchmark Dataset and Objective Evaluation Method",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2501.08545?utm_source=openai"
+        },
+        {
+          "end_index": 2164,
+          "start_index": 2044,
+          "title": "Sora's AI video revolution is still a ways off",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/2024/12/12/24318924/openai-sora-ai-video-generator-hands-on?utm_source=openai"
+        },
+        {
+          "end_index": 2531,
+          "start_index": 2435,
+          "title": "Lionsgate partners with AI firm to train generative model on film and TV library",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/film/2024/sep/18/lionsgate-ai?utm_source=openai"
+        },
+        {
+          "end_index": 2933,
+          "start_index": 2802,
+          "title": "AI provider and major movie studio team up, likely expanding presence \u2013 ISPR",
+          "type": "url_citation",
+          "url": "https://ispr.info/2024/09/20/ai-provider-and-major-movie-studio-team-up-likely-expanding-presence/?utm_source=openai"
+        },
+        {
+          "end_index": 3376,
+          "start_index": 3280,
+          "title": "The Wizard of Oz at Sphere",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/The_Wizard_of_Oz_at_Sphere?utm_source=openai"
+        },
+        {
+          "end_index": 3799,
+          "start_index": 3719,
+          "title": "Movie Studio Lionsgate is Struggling to Make AI-Generated Films With Runway",
+          "type": "url_citation",
+          "url": "https://www.reddit.com//r/vfx/comments/1noqmlx?utm_source=openai"
+        },
+        {
+          "end_index": 4354,
+          "start_index": 4248,
+          "title": "Gen-4 (AI image and video model)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Gen-4_%28AI_image_and_video_model%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By December 2025, AI text-to-video tools like Runway Gen-4 (released March 2025, [Runway research page](https://runwayml.com/research/introducing-runway-gen-4)) achieve production-ready visuals with realistic motion, physics simulation, and consistency for characters/objects/scenes, enabling GVFX integration with live-action content. Reviews praise photorealism (e.g., 8.5/10 rating, [Runway AI Review 2025](https://max-productive.ai/ai-tools/runwayml/)) and Hollywood-grade quality ([YouTube comparisons](https://www.youtube.com/watch?v=NmCAtCueJI8)). Professional use confirmed via partnerships (AMC Networks, Harmony Korine, [Runway news](https://runwayml.com/news)). Similar advances in Veo 3/Sora/Kling produce near-indistinguishable short clips ([Ars Technica](https://arstechnica.com/ai/2025/05/ai-video-just-took-a-startling-leap-in-realism-are-we-doomed/)). Gap from storyboards to final output substantially closed, as AI generates dynamic, coherent footage rivaling Mandalorian VFX shots, though full episodes require pipelines ([Fortune Nov 2025](https://fortune.com/2025/11/14/is-hollywood-entertainment-industry-movies-ready-for-ai/)). Prediction timelines met/passed."
+    },
+    {
+      "id": "B-00:25:47.650",
+      "result": "right",
+      "explanation": "Evidence up to November 30, 2025 lines up well with Sacks\u2019s two-part claim.\n\n1. **Hobbyists/amateurs generating reasonably good-looking animated movies from a script (near term)**  \n- By 2024\u20132025, multiple consumer-accessible tools let individuals turn scripts or text prompts into multi\u2011scene animated videos:  \n  - **LTX Studio** (released Feb 2024) explicitly markets itself as an AI \u201cmovie maker\u201d that turns *scripts* or text prompts into characters, scenes, storyboards and video sequences, effectively automating much of the pipeline an amateur would need to create a short film. ([en.wikipedia.org](https://en.wikipedia.org/wiki/LTX_Studio?utm_source=openai))  \n  - Research systems such as **MovieFactory** (2023) and **AniMaker** (2025) demonstrate end\u2011to\u2011end automatic movie/animation generation from text, including story expansion, shot planning, video clips and audio/voiceover, specifically aiming at \"fully automated\" movie creation from natural\u2011language input. ([arxiv.org](https://arxiv.org/abs/2306.07257?utm_source=openai))  \n  - Mass\u2011market text\u2011to\u2011video models \u2014 Runway\u2019s Gen series, Luma\u2019s **Dream Machine**, Google\u2019s **Veo 2**, and OpenAI\u2019s **Sora** (wider release Dec 2024) \u2014 all allow non\u2011experts to produce visually impressive clips from text with no traditional animation skills required. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dream_Machine_%28text-to-video_model%29?utm_source=openai))  \n- Independent creators have used these tools to release AI\u2011animated shorts (e.g., *The Lost Father*, made with Runway Gen\u20112 and other off\u2011the\u2011shelf tools) that are publicly showcased as \u201canimated AI short films,\u201d visually coherent and cinematic by hobbyist standards. ([soorai.com](https://soorai.com/app/?utm_source=openai))  \nTaken together, this supports Sacks\u2019s expectation that within a few years of April 2023, amateurs could feed in a script and get \u201cpretty nice looking\u201d animated movies out of AI-driven pipelines.\n\n2. **Fully AI\u2011generated, *theatrical\u2011quality* motion pictures taking longer than two years (i.e., not by April 2025)**  \n- There *are* feature\u2011length works created entirely or almost entirely with generative AI within that two\u2011year window:\n  - *Window Seat* and later *DreadClub: Vampire\u2019s Verdict* (87\u2011minute animated feature released on Prime Video in July 2024) were made entirely by a single filmmaker using AI for visuals, performances, sound, music and even some editing, on a ~$405 budget. ([en.wikipedia.org](https://en.wikipedia.org/wiki/DreadClub%3A_Vampire%27s_Verdict?utm_source=openai))  \n  - *The Death of Film* (856\u2011hour experimental project described as \u201cthe first feature\u2011length film fully made from generative artificial intelligence\u201d) likewise shows that fully AI\u2011generated long\u2011form films exist by early 2025, but it is explicitly framed as an experimental art piece, not mainstream theatrical fare. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Draft%3AThe_Death_of_Film?utm_source=openai))  \n- However, these projects are micro\u2011budget or avant\u2011garde experiments, not studio\u2011scale, broadly marketed theatrical releases comparable in polish and resources to major animated features. They\u2019re generally discussed as *proofs of concept* and milestones, not as replacements for big\u2011budget studio productions.\n- By contrast, the first widely publicized **studio\u2011backed, mostly\u2011AI animated feature aimed at global theaters**, *Critterz*, is targeting a Cannes debut and theatrical rollout **in 2026**, and even that project is described as \u201cmostly AI\u2011generated\u201d / \u201cAI\u2011assisted,\u201d still relying on human writers, voice actors and artist sketches rather than being a fully automated pipeline. ([theverge.com](https://www.theverge.com/news/773584/openai-animated-feature-film-critterz?utm_source=openai))  \n- The fact that the flagship industry example of an AI\u2011driven theatrical animated feature is scheduled *after* 2025, and is still human\u2011assisted rather than purely AI\u2011generated, indicates that a generally accepted, fully AI\u2011produced, big\u2011studio\u2011quality theatrical movie had **not** arrived by April 2025. The state of the art in mid\u20112025 is short, high\u2011fidelity clips and indie/experimental features, not full Pixar\u2011 or Disney\u2011level films created end\u2011to\u2011end by AI.\n\n**Why classify this as \u201cright\u201d rather than \u201cambiguous\u201d?**  \n- Sacks\u2019s key distinction was between:  \n  1. **Hobbyist\u2011grade \u201cpretty nice looking\u201d animations from a script** \u2013 which clearly exist by 2024\u20132025 via tools like LTX Studio, Sora, Dream Machine, Runway, etc., plus numerous AI\u2011animated shorts. ([en.wikipedia.org](https://en.wikipedia.org/wiki/LTX_Studio?utm_source=openai))  \n  2. **\u201cAltogether replacing\u201d traditional production with fully AI\u2011generated, *theatrical\u2011quality* films in under two years** \u2013 which, judging by industry behavior and the 2026 timetable for the first high\u2011profile AI\u2011heavy animated feature, has not happened. ([theverge.com](https://www.theverge.com/news/773584/openai-animated-feature-film-critterz?utm_source=openai))  \n- While some fully AI features did appear earlier than many expected, they are low\u2011budget/experimental and not yet what the industry or audiences would generally label \u201ctheatrical\u2011quality\u201d replacements for studio animation.\n\nGiven those facts, the spirit of Sacks\u2019s prediction \u2014 rapid empowerment of amateurs, but a significantly slower path to mainstream, fully AI\u2011generated theatrical films \u2014 is borne out by events through April 2025 and beyond. Hence the verdict: **right**.",
+      "sources": [
+        {
+          "end_index": 704,
+          "start_index": 624,
+          "title": "LTX Studio",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/LTX_Studio?utm_source=openai"
+        },
+        {
+          "end_index": 1083,
+          "start_index": 1018,
+          "title": "MovieFactory: Automatic Movie Creation from Text using Large Generative Models for Language and Images",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2306.07257?utm_source=openai"
+        },
+        {
+          "end_index": 1467,
+          "start_index": 1358,
+          "title": "Dream Machine (text-to-video model)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dream_Machine_%28text-to-video_model%29?utm_source=openai"
+        },
+        {
+          "end_index": 1796,
+          "start_index": 1739,
+          "title": "Sora 2 App | Video Generator App Download On Mobile",
+          "type": "url_citation",
+          "url": "https://soorai.com/app/?utm_source=openai"
+        },
+        {
+          "end_index": 2599,
+          "start_index": 2497,
+          "title": "DreadClub: Vampire's Verdict",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/DreadClub%3A_Vampire%27s_Verdict?utm_source=openai"
+        },
+        {
+          "end_index": 3016,
+          "start_index": 2921,
+          "title": "Draft:The Death of Film",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Draft%3AThe_Death_of_Film?utm_source=openai"
+        },
+        {
+          "end_index": 3821,
+          "start_index": 3711,
+          "title": "OpenAI comes for Hollywood with Critterz, an AI-powered animated film",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/773584/openai-animated-feature-film-critterz?utm_source=openai"
+        },
+        {
+          "end_index": 4678,
+          "start_index": 4598,
+          "title": "LTX Studio",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/LTX_Studio?utm_source=openai"
+        },
+        {
+          "end_index": 5051,
+          "start_index": 4941,
+          "title": "OpenAI comes for Hollywood with Critterz, an AI-powered animated film",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/773584/openai-animated-feature-film-critterz?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By late 2025, hobbyists can generate reasonably good-looking animated shorts or films from screenplays using accessible AI tools like Textideo, Mootion (screenplay-to-video), ComfyUI workflows, and chains of text-to-video models (e.g., Sora 2, Veo 2), as shown in tutorials like 'How I Created an Animated Short Film Using AI' (Medium, Jul 2025) and 'AI Animation Filmmaking in 2025' (IndieHackers). However, no fully AI-generated animated feature has reached theatrical/Pixar-level quality by Dec 2025. Claims like 'Critterz' (OpenAI-backed, Cannes 2026 premiere, trailers criticized as 'ugly' with clunky movements [Inverse, Sep 2025]), 'Naisha' (India's first AI film, May 2025 release, proof-of-concept [AI Mode]), 'Where The Robots Grow' (2024, polished but robot-suited [Forbes]), and others are either unreleased, partial AI, documentaries ('Post Truth'), or not mainstream quality. Film execs predict full-quality AI features in 5+ years [Deadline, Jul 2025]. Prediction holds."
+    },
+    {
+      "id": "B-00:15:22.990",
+      "result": "right",
+      "explanation": "Evidence through late 2025 indicates that **startups have not, in general, been able to fully and reliably replace entire functional teams (sales, marketing, engineering) with autonomous AI systems**, and that such capability remains years away, consistent with Sacks\u2019s April 2023 prediction.\n\nKey points:\n\n1. **AI agents still struggle with real jobs.** A 2025 benchmark from the Center for AI Safety and Scale AI tested frontier agents on 240 real freelance projects (software, design, etc.). Even the best agent automated only about 1\u20132.5% of the economic value, with frequent failures on complex, long-running tasks\u2014hardly a drop\u2011in replacement for full human teams. ([techbrew.com](https://www.techbrew.com/stories/2025/11/06/ai-agents-freelance-work?utm_source=openai))\n\n2. **Industry surveys show low adoption of *fully autonomous* agents.** Gartner-related reporting in 2025 finds that only ~15% of IT leaders are even exploring fully autonomous agents; most organizations prefer supervised or \u201ccopilot\u201d style AI, and only a small minority expect AI to replace human workers outright in the next 2\u20134 years. ([techradar.com](https://www.techradar.com/pro/ai-might-not-actually-be-killing-off-jobs-like-we-thought-but-many-businesses-are-still-wary-about-agents?utm_source=openai)) This indicates that, even 2+ years after April 2023, most firms cannot or will not run whole functions purely with AI.\n\n3. **Leaders in AI infrastructure say full automation is very hard.** Databricks CEO Ali Ghodsi emphasizes that people underestimate how difficult it is to completely automate tasks; human oversight is still required even where AI agents are used for customer service and HR workflows. ([businessinsider.com](https://www.businessinsider.com/when-ai-automation-replacing-humans-databricks-ceo-ali-ghodsi-2025-6?utm_source=openai)) OpenAI cofounder Andrej Karpathy likewise argued in 2025 that current agents are not yet effective and may take around a decade to truly work as hoped. ([businessinsider.com](https://www.businessinsider.com/andrej-karpathy-ai-agents-timelines-openai-2025-10?utm_source=openai)) These are strong validations of Sacks\u2019s view that team\u2011level replacement was not just \u201cmonths\u201d away.\n\n4. **Where AI does \u201creplace a team,\u201d it is narrow and recent, not a broad 2023 reality.** Blog\u2011style case studies in mid\u20112025 describe a company that \u201creplaced an entire sales team with 12 AI agents,\u201d but this is: (a) a single, highly specific sales function; (b) reported more than two years after Sacks spoke; and (c) still framed around automating repetitive pipeline work rather than running the whole company independently. ([agilegrowthlabs.com](https://www.agilegrowthlabs.com/blog/we-replaced-an-entire-sales-team-with-12-ai-agents-and-increased-conversion-rates-by-32/?utm_source=openai)) This timing aligns with his \u201cyears, not months\u201d claim rather than contradicting it.\n\n5. **\u2018AI\u2011only startups\u2019 exist, but only as very small, tool\u2011stack businesses and again appear years later.** A 2025 article describes an \u201cAI\u2011only startup\u201d with no employees where a solo founder uses tools like ChatGPT, AutoGPT, Midjourney, Zapier, etc., for product, marketing, support, and analytics. ([medium.com](https://medium.com/%40sidehustler4050/the-ai-only-startup-how-i-built-a-company-without-employees-236deb65eff8?utm_source=openai)) These are micro\u2011businesses operated by a founder orchestrating tools\u2014not credible evidence that, by late 2023, typical startups could drop entire sales/marketing/engineering teams and hand them over to fully autonomous AI.\n\n6. **Enterprise and analyst consensus still emphasizes hybrid human\u2013AI teams.** Multiple 2024\u20132025 analyses of agentic AI stress that agents will automate parts of jobs and routine decisions, but **not** remove humans from the loop in the near term; many agentic AI projects are being canceled or overhyped (\u201cagent washing\u201d), underscoring how far reality lags the marketing. ([reuters.com](https://www.reuters.com/business/over-40-agentic-ai-projects-will-be-scrapped-by-2027-gartner-says-2025-06-25/?utm_source=openai))\n\nTaken together, the data show that: (a) within the first \u201cfew months\u201d after April 2023, full functional\u2011team replacement was clearly not achieved; and (b) even by late 2025, such replacement is rare, experimental, and unreliable. That matches Sacks\u2019s assertion that this capability was **years away rather than months**, so his prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 812,
+          "start_index": 708,
+          "title": "AI agents still majorly struggle with real-world work",
+          "type": "url_citation",
+          "url": "https://www.techbrew.com/stories/2025/11/06/ai-agents-freelance-work?utm_source=openai"
+        },
+        {
+          "end_index": 1326,
+          "start_index": 1154,
+          "title": "AI might not actually be killing off jobs like we thought - but many businesses are still wary about agents",
+          "type": "url_citation",
+          "url": "https://www.techradar.com/pro/ai-might-not-actually-be-killing-off-jobs-like-we-thought-but-many-businesses-are-still-wary-about-agents?utm_source=openai"
+        },
+        {
+          "end_index": 1878,
+          "start_index": 1735,
+          "title": "The CEO of a $62B data and AI company says people underestimate how hard it is to completely automate tasks",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/when-ai-automation-replacing-humans-databricks-ceo-ali-ghodsi-2025-6?utm_source=openai"
+        },
+        {
+          "end_index": 2156,
+          "start_index": 2031,
+          "title": "OpenAI cofounder Andrej Karpathy says it will take a decade before AI agents actually work",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/andrej-karpathy-ai-agents-timelines-openai-2025-10?utm_source=openai"
+        },
+        {
+          "end_index": 2858,
+          "start_index": 2690,
+          "title": "\"We replaced an entire sales team with 12 AI agents and increased conversion rates by 32%\"",
+          "type": "url_citation",
+          "url": "https://www.agilegrowthlabs.com/blog/we-replaced-an-entire-sales-team-with-12-ai-agents-and-increased-conversion-rates-by-32/?utm_source=openai"
+        },
+        {
+          "end_index": 3392,
+          "start_index": 3248,
+          "title": "The AI-Only Startup: How I Built a Company Without Employees | by Rohit Kumar Choudhary | Jun, 2025 | Medium",
+          "type": "url_citation",
+          "url": "https://medium.com/%40sidehustler4050/the-ai-only-startup-how-i-built-a-company-without-employees-236deb65eff8?utm_source=openai"
+        },
+        {
+          "end_index": 4139,
+          "start_index": 3994,
+          "title": "Over 40% of agentic AI projects will be scrapped by 2027, Gartner says",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/over-40-agentic-ai-projects-will-be-scrapped-by-2027-gartner-says-2025-06-25/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "As of December 2025, over 2.5 years after the April 2023 prediction, no credible evidence exists of startups fully replacing entire functional teams (e.g., full sales, marketing, or engineering) with AI systems alone, without any humans. Claims like the Medium article by WealthWoven ([link](https://medium.com/@wealthwoven/how-one-startup-replaced-its-entire-team-with-ai-and-scaled-to-1-6m-year-29853b14fa92)) describe an unnamed startup scaling to $1.6M ARR with zero humans, but lack verifiable details, revenue proof, or external validation\u2014appearing as promotional hype from a Medium author focused on inspirational AI business posts. Throxy (YC-backed, $6.2M raised) provides AI for outbound sales/SDRs but does not replace entire sales teams and operates with humans ([VentureBeat](https://venturebeat.com/ai/base10-backed-throxy-challenges-ai-sales-giants-with-pay-per-meeting-model)). Engineering replacement is explicitly unfeasible per analyses citing reliability, cost, security gaps (e.g., [Maven Solutions](https://www.mavensolutions.tech/blog/why-claude-wont-replace-your-engineering-team-yet)); Builder.ai failed after AI hype ([Medium](https://ai.plainenglish.io/what-happened-when-companies-replaced-their-teams-with-ai-a6b8c9cdc5e5)). Broader reports show partial automation (MIT: 11.7% workforce replaceable [CNBC](https://www.cnbc.com/2025/11/26/mit-study-finds-ai-can-already-replace-11point7percent-of-us-workforce.html)), regrets over full swaps, and 'tiny teams' with humans + AI. Prediction of 'several years' holds as it has not occurred within this timeframe."
+    },
+    {
+      "id": "C-00:56:49.140",
+      "result": "ambiguous",
+      "explanation": "Evidence cuts both ways, and there is no objective yardstick for \u201c10\u201312 years of progress\u201d or a well-defined \u201ctraditional innovation rate,\u201d so the claim can\u2019t be cleanly verified or falsified.\n\n**Why it *might* look roughly right (in spirit):**\n- Between April and October 2023, there was a flood of new frontier and open(-ish) models and tooling: Anthropic\u2019s Claude 2 (July 2023), Meta\u2019s Llama 2 (July 2023), Alibaba\u2019s Tongyi/Qwen (beta April, public release September 2023), IBM\u2019s Granite models (announced September 2023), and many similar efforts, all riding the wave started by GPT\u20114 in March 2023.([en.wikipedia.org](https://en.wikipedia.org/wiki/Anthropic?utm_source=openai))  2023 is widely described as an \u201cAI boom,\u201d with large language models and generative AI becoming central in science and tech news.([en.wikipedia.org](https://en.wikipedia.org/wiki/2023_in_science?utm_source=openai))  A major policy analyst reviewing 2023 AI developments said it felt like \u201c10 years worth of news\u201d compressed into one year, reflecting a broadly shared sense of unusually fast change.([csis.org](https://www.csis.org/analysis/ai-2023-year-review?utm_source=openai))  This supports Chamath\u2019s *qualitative* intuition that progress in AI that year felt vastly compressed in time.\n\n**Why it *might* be overstated or wrong in detail:**\n- Chamath framed this as \u201ccompounding at 48 or 72 hours,\u201d implying extraordinarily fast, near-continuous leaps in capability. Contemporary quantitative work on language-model progress instead finds that, over 2012\u20132023, the compute needed to hit a given performance level halves roughly every **5\u201314 months** (median ~8 months), not every 2\u20133 days.([arxiv.org](https://arxiv.org/abs/2403.05812?utm_source=openai))  And by 2024, multiple analyses described generative AI as entering a more incremental phase, with plateauing qualitative gains and underwhelming real\u2011world usefulness relative to the hype, suggesting that 2023 did **not** trigger a sustained, runaway 48\u201372\u2011hour compounding regime.([wired.com](https://www.wired.com/story/generative-ai-will-need-to-prove-its-usefulness?utm_source=openai))\n\nBecause (1) the prediction is partly rhetorical, (2) the 48\u201372\u2011hour compounding premise is not supported by quantitative data, yet (3) many observers still describe 2023\u2019s AI changes as compressed into a period that *felt* like many years of ordinary progress, the claim cannot be judged clearly right or wrong using available evidence; it remains **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 722,
+          "start_index": 643,
+          "title": "Anthropic",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Anthropic?utm_source=openai"
+        },
+        {
+          "end_index": 938,
+          "start_index": 853,
+          "title": "2023 in science",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2023_in_science?utm_source=openai"
+        },
+        {
+          "end_index": 1203,
+          "start_index": 1122,
+          "title": "AI 2023 Year in Review",
+          "type": "url_citation",
+          "url": "https://www.csis.org/analysis/ai-2023-year-review?utm_source=openai"
+        },
+        {
+          "end_index": 1785,
+          "start_index": 1720,
+          "title": "Algorithmic progress in language models",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2403.05812?utm_source=openai"
+        },
+        {
+          "end_index": 2176,
+          "start_index": 2068,
+          "title": "Generative AI Still Needs to Prove Its Usefulness",
+          "type": "url_citation",
+          "url": "https://www.wired.com/story/generative-ai-will-need-to-prove-its-usefulness?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "AI capabilities did not improve on a 48\u201372 hour compounding cycle from April to mid-October 2023. Major releases included Claude 2 (July, MMLU ~78%), Llama 2 70B (July, MMLU 69%), Mistral 7B (Sep, MMLU ~60%), but top scores remained near GPT-4's 86.4% MMLU (Mar 2023), with no massive leaps (*Stanford AI Index 2025*; LMSYS Arena leaderboards May-Oct 2023 showed incremental Elo gains ~100-200 points). GPQA (Nov 2023) baseline GPT-4 at 39%, no superior 2023 models. This steady but non-explosive progress does not equate to 10\u201312 years of traditional rates (e.g., Moore's Law ~30\u201350x over 10\u201312 years; *Epoch AI, various sources*). No sources confirm Chamath's extreme equivalence."
+    },
+    {
+      "id": "B-01:01:24.360",
+      "result": "inconclusive",
+      "explanation": "The prediction is framed as a conditional: **if** the U.S. \u201ccreates a new FDA\u201d for AI in the near term, **then** U.S. innovation will be destroyed and other countries will overtake it in AI.\n\n1. **Antecedent has not occurred.**\n   * As of late 2025, the U.S. still has **no single, FDA\u2011style federal AI regulator**. Federal oversight is decentralized and sector\u2011specific, with many agencies (FTC, FDA, etc.) applying existing laws rather than a new, overarching AI regulator.\n   * Legal and policy surveys explicitly note that **\u201cthere is no single federal agency charged with regulating AI\u201d** and that the U.S. lacks an EU\u2011style comprehensive AI statute, instead relying on guidance (e.g., NIST AI Risk Management Framework), executive actions, and a patchwork of state laws. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Regulation_of_AI_in_the_United_States))\n   * The 2023 Biden **Executive Order 14110** on AI created a coordinated federal approach and directed agencies to set standards, but did **not** establish a licensing regulator with FDA\u2011like powers, and it was rescinded in January 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Executive_Order_14110?utm_source=openai))\n   * The U.S. AI Safety Institute created under NIST is a testing and standards body, not a broad regulatory agency. ([en.wikipedia.org](https://en.wikipedia.org/wiki/AI_Safety_Institute?utm_source=openai))\n   * The Trump administration\u2019s 2025 **AI Action Plan** explicitly moves toward *less* federal AI regulation, not a new regulator. ([lexmundi.com](https://www.lexmundi.com/guides/ai-legislative-guide/jurisdictions/united-states/usa-federal-law/?utm_source=openai))\n\n   Because the U.S. has not, in fact, created an FDA\u2011like AI regulator in the 2023\u20132025 \u201cnear term,\u201d the condition that triggers Sacks\u2019s predicted outcome has not been met.\n\n2. **Current evidence on AI leadership doesn\u2019t test the counterfactual.**\n   * Under the actual light\u2011to\u2011moderate regulatory regime, recent analyses (e.g., Stanford\u2019s 2025 AI Index) find that the **U.S. remains the global leader in cutting\u2011edge AI models and private AI investment**, though China is closing the gap. ([axios.com](https://www.axios.com/2025/04/07/china-ai-race-stanford-report?utm_source=openai))\n   * European assessments describe the U.S. as having \u201chegemonic power\u201d in AI and warn that the EU risks becoming a \u201cdigital colony\u201d relative to the U.S. and China, again indicating continued U.S. strength. ([euronews.com](https://www.euronews.com/next/2024/12/10/europes-ai-progress-insufficient-to-compete-with-us-and-china-french-report-says?utm_source=openai))\n\nHowever, these data only describe what happened **without** an FDA\u2011style AI regulator. They do not show what **would** have happened had such a regulator been created. Since the key condition in the prediction never materialized, the causal claim about its consequences cannot be empirically verified or falsified.\n\nBecause the necessary trigger (\u201ccreating a new FDA for AI\u201d in the near term) did not occur, the prediction\u2019s **if\u2011then** statement remains a counterfactual. Its accuracy is therefore **inconclusive**, not demonstrably right or wrong.",
+      "sources": [
+        {
+          "end_index": 910,
+          "start_index": 821,
+          "title": "Regulation of AI in the United States - Wikipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Regulation_of_AI_in_the_United_States"
+        },
+        {
+          "end_index": 1242,
+          "start_index": 1151,
+          "title": "Executive Order 14110",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Executive_Order_14110?utm_source=openai"
+        },
+        {
+          "end_index": 1450,
+          "start_index": 1361,
+          "title": "AI Safety Institute",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/AI_Safety_Institute?utm_source=openai"
+        },
+        {
+          "end_index": 1716,
+          "start_index": 1583,
+          "title": "USA (Federal Law) | Lex Mundi",
+          "type": "url_citation",
+          "url": "https://www.lexmundi.com/guides/ai-legislative-guide/jurisdictions/united-states/usa-federal-law/?utm_source=openai"
+        },
+        {
+          "end_index": 2309,
+          "start_index": 2214,
+          "title": "U.S.'s AI lead over China rapidly shrinking: Stanford report",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2025/04/07/china-ai-race-stanford-report?utm_source=openai"
+        },
+        {
+          "end_index": 2675,
+          "start_index": 2518,
+          "title": "Europe risks becoming a 'digital colony' amid 'insufficient' progress on AI compared to US and China | Euronews",
+          "type": "url_citation",
+          "url": "https://www.euronews.com/next/2024/12/10/europes-ai-progress-insufficient-to-compete-with-us-and-china-french-report-says?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is conditional on the US creating an FDA-style regulatory body for AI before clear technical standards exist. No such body has been established as of December 2025. Searches confirm no new comprehensive federal AI regulatory agency akin to the FDA; existing efforts include the US AI Safety Institute (standards-focused, not regulatory enforcement), executive orders, state laws, and FDA regulation of AI in medical devices only ([White & Case Sep 2025](https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-united-states), [Congressional Research Service Jun 2025](https://www.congress.gov/crs-product/R48555)). US AI innovation has not slowed substantially, and the US retains leadership (e.g., Stanford AI Index 2025: US produced 40 notable AI models vs. China's closing gap but not surpassing; Bloomberg Nov 2025). Without the 'if' condition met, the prediction cannot be verified or falsified."
+    },
+    {
+      "id": "C-01:07:23.920",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly long term (\"over time\"), about how AI regulation *will evolve* structurally, so by November 30, 2025 there has not been enough time for the end-state to emerge.\n\n**What we see so far:**\n- The EU has adopted the AI Act with a centralized *AI Office* in the European Commission plus national competent authorities, a risk-based framework, and phased enforcement into 2026\u20132027, which is the closest thing to a dedicated AI regime akin to medicines regulation. However, implementation details and even potential watering\u2011down or delays are still being debated, so the structure is not yet settled. ([euronews.com](https://www.euronews.com/next/2024/03/12/as-ai-act-enters-into-force-focus-shifts-to-countries-oversight-appointments?utm_source=openai))\n- In the US, Biden\u2019s 2023 Executive Order 14110 created a national AI governance program and an AI Safety Institute at NIST, but Trump rescinded that order in January 2025 and reoriented the institute (now CAISI) toward competitiveness and security, leaving no FDA\u2011like, independent AI regulator and making the long\u2011term institutional path highly uncertain. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Executive_Order_14110?utm_source=openai))\n- Canada\u2019s proposed Artificial Intelligence and Data Act (AIDA), which would have created a federal AI regulator, stalled in committee and then died on the order paper when Parliament was prorogued in January 2025; as of early 2025, Canada has no binding, comprehensive federal AI law or dedicated AI authority. ([dentons.com](https://www.dentons.com/en/insights/newsletters/2025/january/23/global-regulatory-trends-to-watch/dentons-canadian-regulatory-trends-to-watch-in-2025/artificial-intelligence-trends-to-watch-in-2025?utm_source=openai))\n- Japan continues to favor a soft\u2011law, principles\u2011based, risk\u2011based approach with guidelines rather than a horizontal, binding AI statute or a standalone AI regulator, even as it leads the G7 Hiroshima AI Process for global principles and a code of conduct. ([csis.org](https://www.csis.org/analysis/japans-approach-ai-regulation-and-its-impact-2023-g7-presidency?utm_source=openai))\n- China has binding, sectoral AI rules (e.g., the 2023 Interim Measures for generative AI) enforced by the Cyberspace Administration of China alongside several other ministries, but not a single medicines\u2011style AI regulator; its guardrails are tailored to domestic political and social stability goals. ([loc.gov](https://www.loc.gov/item/global-legal-monitor/2023-07-18/china-generative-ai-measures-finalized/?utm_source=openai))\n\n**Convergence vs. divergence so far:**\nThere *is* emerging cross\u2011jurisdictional commonality at the level of principles and voluntary standards: the G7 Hiroshima AI Process produced shared Guiding Principles and an International Code of Conduct, now backed by an OECD reporting framework meant to promote interoperability of risk\u2011management practices across countries. ([international.gc.ca](https://www.international.gc.ca/world-monde/international_relations-relations_internationales/g7/documents/2023-10-30-ai-hiroshima-ia.aspx?lang=eng&utm_source=openai))  This supports the idea of overlapping \"guardrails,\" but these are mostly non\u2011binding and sit on top of still\u2011divergent domestic legal structures.\n\nGiven that:\n- several of the named jurisdictions (US, Canada, Japan) do *not* yet have stable, FDA\u2011like AI regulators,\n- the EU and China have taken quite different hard\u2011law approaches,\n- and political shifts (e.g., in the US and EU) are actively reshaping AI governance in real time,\nwe cannot yet say whether the long\u2011run outcome will be a set of domestically anchored, EMA/FDA\u2011analog regulatory bodies with *substantially overlapping* standards, or a more fragmented landscape.\n\nTherefore, the evidence to date is **insufficient to judge the prediction as either right or wrong**, and the appropriate classification is **\"inconclusive\" (too early)**.",
+      "sources": [
+        {
+          "end_index": 822,
+          "start_index": 669,
+          "title": "As the EU AI Act enters into force, focus shifts to countries' oversight appointments | Euronews",
+          "type": "url_citation",
+          "url": "https://www.euronews.com/next/2024/03/12/as-ai-act-enters-into-force-focus-shifts-to-countries-oversight-appointments?utm_source=openai"
+        },
+        {
+          "end_index": 1273,
+          "start_index": 1182,
+          "title": "Executive Order 14110",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Executive_Order_14110?utm_source=openai"
+        },
+        {
+          "end_index": 1819,
+          "start_index": 1587,
+          "title": "Dentons - Artificial intelligence trends to watch in 2025: Regulation of AI",
+          "type": "url_citation",
+          "url": "https://www.dentons.com/en/insights/newsletters/2025/january/23/global-regulatory-trends-to-watch/dentons-canadian-regulatory-trends-to-watch-in-2025/artificial-intelligence-trends-to-watch-in-2025?utm_source=openai"
+        },
+        {
+          "end_index": 2204,
+          "start_index": 2079,
+          "title": "Japan\u2019s Approach to AI Regulation and Its Impact on the 2023 G7 Presidency",
+          "type": "url_citation",
+          "url": "https://www.csis.org/analysis/japans-approach-ai-regulation-and-its-impact-2023-g7-presidency?utm_source=openai"
+        },
+        {
+          "end_index": 2636,
+          "start_index": 2509,
+          "title": "China: Generative AI Measures Finalized | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.loc.gov/item/global-legal-monitor/2023-07-18/china-generative-ai-measures-finalized/?utm_source=openai"
+        },
+        {
+          "end_index": 3199,
+          "start_index": 3009,
+          "title": "G7 Leaders\u2019 Statement on the Hiroshima AI Process",
+          "type": "url_citation",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/g7/documents/2023-10-30-ai-hiroshima-ia.aspx?lang=eng&utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath's prediction of dedicated domestic AI regulatory bodies analogous to FDA/EMA in US, EU, Canada, Japan, and China, with significantly overlapping safety guardrails, has not materialized by Dec 2025. \n\n- **US**: US AI Safety Institute (NIST) exists for standards/testing but lacks regulatory powers ([White & Case](https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-united-states), [Hyperdimensional](https://www.hyperdimensional.co/p/on-the-us-ai-safety-institute)). FDA regulates only medical AI (>1,250 devices, [BPC](https://bipartisanpolicy.org/issue-brief/fda-oversight-understanding-the-regulation-of-health-ai-tools/)). Fragmented EO/NIST frameworks.\n- **EU**: AI Act enforced by national authorities coordinated by EU Commission/AI Office; no central EMA-like body ([Orrick](https://www.orrick.com/en/Insights/2024/09/The-EU-AI-Act-Oversight-and-Enforcement)).\n- **Canada**: AIDA stalled/not passed; no body ([Xenoss](https://xenoss.io/blog/ai-regulation-canada), [White & Case](https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-canada)).\n- **Japan**: AI Promotion Act (2025) promotes innovation via existing laws; no dedicated agency ([MoFo Tech](https://mofotech.mofo.com/topics/japan-s-approach-to-ai-regulation-in-2025)).\n- **China**: CAC enforces AI rules (e.g., 2025 measures), but pre-existing, security-focused; not new safety body ([Securiti](https://securiti.ai/china-ai-regulatory-landscape/)).\n\nGuardrails show some risk-based commonality (EU-influenced), but diverge: EU binding, US voluntary, China ideological ([Anecdotes.ai](https://www.anecdotes.ai/learn/ai-regulations-in-2025-us-eu-uk-japan-china-and-more), [Brookings](https://www.brookings.edu/articles/the-eu-and-us-diverge-on-ai-regulation-a-transatlantic-comparison-and-steps-to-alignment/)). No evidence of predicted overlapping standards from analogous bodies ([IAPP Tracker](https://iapp.org/resources/article/global-ai-legislation-tracker/)). 2.5 years post-prediction, trajectory is fragmentation, not convergence."
+    },
+    {
+      "id": "B-01:07:43.360",
+      "result": "inconclusive",
+      "explanation": "Since April 2023, several AI-focused public bodies have been created, but none cleanly match the *strong* condition Sacks described (a centralized U.S.-style gatekeeper that must **approve** most AI models/apps before deployment), and the available data are too early and noisy to show the \u201cinnovation will completely slow down\u201d outcome he predicted.\n\n**Regulatory bodies that did emerge**\n- The U.S. created the **AI Safety Institute** within NIST in late 2023. Its mandate is to develop testing, evaluation methods, and safety guidelines and to collaborate with firms like OpenAI and Anthropic on pre\u2011 and post\u2011release model testing\u2014not to license or approve models before they reach the market. Companies still launch models without formal government approval in most domains. ([nist.gov](https://www.nist.gov/news-events/news/2024/08/us-ai-safety-institute-signs-agreements-regarding-ai-safety-research?utm_source=openai))\n- The EU established the **European AI Office** to implement and enforce the EU AI Act, especially for general\u2011purpose AI. It coordinates enforcement, issues codes of practice, and can sanction non\u2011compliance, but most high\u2011risk AI uses are handled via national market\u2011surveillance authorities and notified bodies, not a single centralized approvals agency. Key high\u2011risk provisions have only just started to phase in and, as of November 2025, many are delayed to 2027 to avoid harming competitiveness. ([digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/en/news/commission-establishes-ai-office-strengthen-eu-leadership-safe-and-trustworthy-artificial?utm_source=openai))\n- China\u2019s **Cyberspace Administration (CAC)** did adopt binding generative\u2011AI regulations in August 2023 that require government approval before public deployment of many models, fitting Sacks\u2019 scenario better than the U.S. or EU. Yet since then China has become second only to the U.S. in the number of large\u2011scale AI models, with over 40 approved and multiple heavily funded startups (e.g., Moonshot AI) emerging under this regime. ([time.com](https://time.com/7012765/zhuang-rongwen/?utm_source=openai))\n\n**Innovation outcomes to date**\nGlobally, 2023\u20132025 saw an *acceleration* in AI activity: rapid revenue growth at firms like Anthropic, continuing waves of generative\u2011AI startup cohorts, and tens of billions of dollars invested into AI startups and tools. ([reuters.com](https://www.reuters.com/business/anthropic-hits-3-billion-annualized-revenue-business-demand-ai-2025-05-30/?utm_source=openai))  In Europe, industry figures warn the AI Act could slow innovation, but even they generally emphasize that it\u2019s *too early to know* its long\u2011run impact. ([verdict.co.uk](https://www.verdict.co.uk/industry-comment-what-does-the-eus-ai-act-mean-for-its-development/?utm_source=openai))\n\n**Why the prediction is not yet testable**\n1. The U.S. never created the kind of centralized licensing body Sacks was arguing against, so his conditional claim has not really been triggered in his primary jurisdiction.\n2. Where more centralized approval regimes *do* exist (notably China, and partially the EU for general\u2011purpose AI), they are relatively new, still evolving, or not fully in force, and are entangled with other factors (geopolitics, chip export controls, macroeconomy) that also affect innovation.\n3. Available evidence does *not* yet show that the **overall** rate or diversity of AI innovation has \u201ccompletely\u201d or \u201cdramatically\u201d slowed in those jurisdictions; at the same time, formal empirical work quantifying any chilling effect is only beginning.\n\nGiven these points, the prediction cannot be cleanly scored as right or wrong as of November 30, 2025; it remains **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 969,
+          "start_index": 823,
+          "title": "U.S. AI Safety Institute Signs Agreements Regarding AI Safety Research, Testing and Evaluation With Anthropic and OpenAI | NIST",
+          "type": "url_citation",
+          "url": "https://www.nist.gov/news-events/news/2024/08/us-ai-safety-institute-signs-agreements-regarding-ai-safety-research?utm_source=openai"
+        },
+        {
+          "end_index": 1662,
+          "start_index": 1474,
+          "title": "Commission establishes AI Office to strengthen EU leadership in safe and trustworthy Artificial Intelligence | Shaping Europe\u2019s digital future",
+          "type": "url_citation",
+          "url": "https://digital-strategy.ec.europa.eu/en/news/commission-establishes-ai-office-strengthen-eu-leadership-safe-and-trustworthy-artificial?utm_source=openai"
+        },
+        {
+          "end_index": 2170,
+          "start_index": 2098,
+          "title": "Zhuang Rongwen",
+          "type": "url_citation",
+          "url": "https://time.com/7012765/zhuang-rongwen/?utm_source=openai"
+        },
+        {
+          "end_index": 2573,
+          "start_index": 2431,
+          "title": "Anthropic hits $3 billion in annualized revenue on business demand for AI",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/anthropic-hits-3-billion-annualized-revenue-business-demand-ai-2025-05-30/?utm_source=openai"
+        },
+        {
+          "end_index": 2857,
+          "start_index": 2727,
+          "title": "Industry comment: what does the EU\u2019s AI Act mean for its development? - Verdict",
+          "type": "url_citation",
+          "url": "https://www.verdict.co.uk/industry-comment-what-does-the-eus-ai-act-mean-for-its-development/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is conditional on the creation of a 'new centralized AI regulatory body' to approve AI models/apps, akin to pre-market approval processes. No such body has been created in the US or EU as of Dec 2025. US focuses on deregulation (*America's AI Action Plan*, Jul 2025; CRS report Jun 2025: no broad federal AI regulatory authority enacted). EU AI Act (phased rollout to 2027) imposes risk-based obligations but no central pre-approval (*artificialintelligenceact.eu*); Spain's AESIA is national oversight, not centralized model approval (*whitecase.com*). Absent the condition, the prediction cannot be tested. Meanwhile, AI innovation accelerated: ~90k AI companies globally (*ascendixtech.com*); industry-led models rose to 90% (*Stanford AI Index 2025*). Sources: web searches on US/EU AI regulation, innovation stats."
+    },
+    {
+      "id": "B-01:07:43.360b",
+      "result": "ambiguous",
+      "explanation": "Evidence since April 2023 shows **partial confirmation** of Sacks\u2019 prediction, but not clearly enough to call it definitively right or wrong.\n\n**1. Adoption of AI tools and \u201ccopilots\u201d by defenders (including public sector)**  \n* Microsoft has rolled out **Security Copilot**, an AI assistant for security analysts that helps summarize incidents, analyze vulnerabilities, and investigate threats such as phishing, and expanded its availability in 2024; it\u2019s explicitly marketed for security operations centers and can be (and is) used by public-sector and government customers. ([kelo.com](https://kelo.com/2024/03/13/microsoft-expands-availability-of-its-ai-powered-cybersecurity-assistant/?utm_source=openai))  \n* Microsoft is now promoting \u201cagentic AI\u201d via Security Copilot as a way to automate and speed up cyber\u2011defense workflows, emphasizing reduced response times and more effective handling of complex threats. ([news.microsoft.com](https://news.microsoft.com/en-xm/2025/05/06/microsoft-highlights-critical-role-of-agentic-ai-in-shaping-the-future-of-cybersecurity-at-gisec-global-2025/?utm_source=openai))  \n* Interpol\u2019s innovation lab in Singapore uses AI systems to monitor **millions of cyberattacks daily** and to counter deepfake scams, sextortion, and **phishing schemes**, showing that an international law\u2011enforcement body is already using AI at scale for exactly these kinds of online threats. ([ft.com](https://www.ft.com/content/a0197aef-411f-4b7a-8ef2-5dd9c14d3efa?utm_source=openai))  \n* India has launched specialized training for **\u201ccyber commandos\u201d** to detect and neutralize AI\u2011driven cyberthreats, including automated phishing attacks, indicating that police units are being equipped and trained to confront AI\u2011enabled scams with advanced technical tools. ([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/city/pune/cyber-commandos-to-spot-and-prevent-ai-driven-offences/articleshow/123195850.cms?utm_source=openai))  \n* India\u2019s **Vastav AI** deepfake\u2011detection platform is offered free to law\u2011enforcement and government agencies to combat AI\u2011generated media used in fraud and disinformation, further illustrating deployment of AI tools on the defensive side. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Vastav_Ai?utm_source=openai))  \n\nTaken together, these examples support the *first part* of the prediction: law\u2011enforcement and closely allied public\u2011sector security teams **are** adopting AI\u2011based tools, some of which are directly branded and function as \u201ccopilots,\u201d to assist in detecting and investigating online crime, including phishing and related scams.\n\n**2. Has this made large\u2011scale phishing \u201crelatively easy\u201d to detect and reduced criminals\u2019 advantage?**  \nThe available data cut against a clear \"yes\":\n\n* Europol\u2019s 2025 Serious and Organized Crime Threat Assessment warns that **AI is turbocharging organized crime**, enabling more scalable scams, deepfakes, and online fraud, and stresses how AI makes criminals \u201charder to detect,\u201d rather than reporting that detection has become easy. ([reuters.com](https://www.reuters.com/world/europe/europol-warns-ai-driven-crime-threats-2025-03-18/?utm_source=openai))  \n* In the U.S., FBI Internet\u2011crime data show that **overall losses from online crime are still rising sharply**, and reporting from states like Indiana attributes a big part of the surge in effective phishing, romance scams, and impersonation fraud to criminals\u2019 use of AI, not to successful neutralization by law enforcement. ([axios.com](https://www.axios.com/local/indianapolis/2025/05/06/internet-crime-victims-cash-indiana-fbi?utm_source=openai))  \n* Google and others are deploying powerful AI\u2011based scam and phishing detectors (e.g., Google Messages\u2019 AI scam detection on billions of texts), but these are primarily **consumer\u2011 and provider\u2011side defenses**, and even they are framed as responses to rapidly escalating AI\u2011enabled scams, not as having turned phishing into a solved or trivially detectable problem. ([wired.com](https://www.wired.com/story/google-io-on-device-ai-scam-texts?utm_source=openai))  \n* Major law\u2011enforcement operations like **Operation First Light 2024** coordinated global crackdowns on phishing, investment, and romance scams, seizing hundreds of millions of dollars, but public reporting does not show that AI\u2011based copilots have made mass phishing \u201ceasy\u201d to detect in a way that clearly shifts the overall balance of advantage away from criminals; instead, such operations are presented as partial successes in an expanding problem space. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Operation_First_Light_2024?utm_source=openai))  \n\nOverall, **both sides are arming themselves with AI**: law\u2011enforcement and defenders are indeed adopting AI tools and copilot\u2011like systems, but organized criminals are simultaneously leveraging AI to scale and sophisticate phishing and other fraud. Leading agencies (Europol, FBI) currently emphasize the *increasing* threat from AI\u2011enabled crime, not that AI has made mass phishing straightforward to detect or has clearly reduced criminals\u2019 net advantage.\n\nBecause one core component of the prediction (widespread adoption of AI tools/copilots by law enforcement) is happening, while the stronger claim (that this makes large\u2011scale phishing \u201crelatively easy\u201d to detect and **reduces** AI\u2011criminals\u2019 advantage) is **not clearly supported and arguably contradicted** by threat\u2011assessments and loss data, the overall forecast cannot be cleanly scored as simply right or wrong. The situation is mixed and depends heavily on how one interprets \u201crelatively easy\u201d and \u201creducing the advantage,\u201d so the most accurate verdict is **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 750,
+          "start_index": 617,
+          "title": "Microsoft expands availability of its AI-powered cybersecurity assistant",
+          "type": "url_citation",
+          "url": "https://kelo.com/2024/03/13/microsoft-expands-availability-of-its-ai-powered-cybersecurity-assistant/?utm_source=openai"
+        },
+        {
+          "end_index": 1154,
+          "start_index": 959,
+          "title": "Microsoft highlights critical role of Agentic AI in shaping the future of cybersecurity at GISEC Global 2025 \u2013 Middle East & Africa News Center",
+          "type": "url_citation",
+          "url": "https://news.microsoft.com/en-xm/2025/05/06/microsoft-highlights-critical-role-of-agentic-ai-in-shaping-the-future-of-cybersecurity-at-gisec-global-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 1546,
+          "start_index": 1453,
+          "title": "Inside Interpol's innovation lab",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/a0197aef-411f-4b7a-8ef2-5dd9c14d3efa?utm_source=openai"
+        },
+        {
+          "end_index": 2002,
+          "start_index": 1825,
+          "title": "Cyber commandos to spot and prevent AI-driven offences",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/city/pune/cyber-commandos-to-spot-and-prevent-ai-driven-offences/articleshow/123195850.cms?utm_source=openai"
+        },
+        {
+          "end_index": 2326,
+          "start_index": 2247,
+          "title": "Vastav Ai",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Vastav_Ai?utm_source=openai"
+        },
+        {
+          "end_index": 3226,
+          "start_index": 3105,
+          "title": "Europol warns of AI-driven crime threats",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/europe/europol-warns-ai-driven-crime-threats-2025-03-18/?utm_source=openai"
+        },
+        {
+          "end_index": 3680,
+          "start_index": 3556,
+          "title": "Internet crime claims more victims but less cash in Indiana",
+          "type": "url_citation",
+          "url": "https://www.axios.com/local/indianapolis/2025/05/06/internet-crime-victims-cash-indiana-fbi?utm_source=openai"
+        },
+        {
+          "end_index": 4144,
+          "start_index": 4050,
+          "title": "Google Is Using On-Device AI to Spot Scam Texts and Investment Fraud",
+          "type": "url_citation",
+          "url": "https://www.wired.com/story/google-io-on-device-ai-scam-texts?utm_source=openai"
+        },
+        {
+          "end_index": 4703,
+          "start_index": 4607,
+          "title": "Operation First Light 2024",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Operation_First_Light_2024?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By 2025, law enforcement shows significant AI adoption: 90% of professionals support it, accelerating due to staffing shortages (Police Records Management 2025 Snapshot; Axon 2025 trends). AI detects patterns in phishing operations and financial crimes (Police and Security News, Oct 2025). Tools like Constella's Hunter Copilot assist investigators with dark web/OSINT for cyber threats including phishing sites (Constella.ai, 2024). DOJ announced AI for fraud detection in June 2025 (Dynamis LLP). Police explore Microsoft Copilot/Co-Pilot for operations (eMazzanti, Dec 2024; Policing.tv, May 2025). While AI-phishing surged (1,265% per Deepstrike.io), LE tools counter scale, aligning with prediction of easy detection/countering mass activities, reducing criminal edge. FBI notes AI capabilities expansion (fbi.gov)."
+    },
+    {
+      "id": "G-01:07:23.920",
+      "result": "right",
+      "explanation": "Evidence since 2023 shows that *no* broad, tightly coordinated global regime has emerged that halts or uniformly constrains AI model development worldwide, and advanced models are in fact being aggressively developed outside the U.S.\n\n1. **No global, lockstep regulatory regime that \u201cstops\u201d AI development**  \n   * The UN General Assembly has adopted global AI resolutions (e.g., the March 2024 resolution on \u201csafe, secure and trustworthy\u201d AI and later follow\u2011ups), but these are **non\u2011binding** norm\u2011setting texts, not an enforceable global regulatory regime that blocks model development. ([reuters.com](https://www.reuters.com/technology/cybersecurity/un-adopts-first-global-artificial-intelligence-resolution-2024-03-21/?utm_source=openai))  \n   * The 2023 Bletchley Declaration from the UK\u2019s AI Safety Summit and the subsequent G7 Hiroshima Process likewise create high\u2011level principles among subsets of countries, not binding global restrictions, and they explicitly aim to *unlock benefits* while managing risk rather than pause frontier models. ([gov.uk](https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration?utm_source=openai))  \n   * The Council of Europe\u2019s 2024 Framework Convention on AI is a real treaty, but it has a limited membership (mostly European and a few partners) and focuses on aligning AI with human rights and rule of law, not forbidding advanced AI systems or stopping their development globally. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Framework_Convention_on_Artificial_Intelligence?utm_source=openai))  \n   * The EU AI Act is binding but only within the EU and is risk\u2011based: it phases in obligations and bans only certain \u201cunacceptable risk\u201d uses while explicitly permitting broad AI R&D and deployment under conditions. It is repeatedly described as a regional framework, not a global moratorium. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Artificial_Intelligence_Act?utm_source=openai))  \n   * Meanwhile, major powers diverge in approach: China has its own generative\u2011AI rules; the U.S. used an executive order in 2023 to direct federal AI oversight and then, under a new administration, has been rolling back or refocusing some safety structures (e.g., rebranding the AI Safety Institute and emphasizing competitiveness). Together this points to **fragmented, nationally driven regulation**, not a single coordinated global clampdown. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Interim_Measures_for_the_Management_of_Generative_AI_Services?utm_source=openai))\n\n2. **Continued, competitive development of advanced AI outside the U.S.**  \n   * Chinese firms (Alibaba, ByteDance, DeepSeek, Baidu, Huawei, MiniMax, etc.) have continued to train and release cutting\u2011edge large language models, including many open\u2011weight or open\u2011source variants (Qwen 2.5, Qwen3, DeepSeek\u2011V3/R1). Studies now show China leading the world in downloads of \u201copen\u201d AI models, indicating vigorous non\u2011U.S. development. ([ft.com](https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41?utm_source=openai))  \n   * To work around U.S. chip export controls, Chinese tech giants are training frontier models like Qwen and Doubao in overseas data centers in Southeast Asia using Nvidia GPUs, demonstrating that even strong U.S. export and safety policies are not preventing competitive model development abroad. ([reuters.com](https://www.reuters.com/world/china/chinas-tech-giants-move-ai-model-training-overseas-tap-nvidia-chips-ft-reports-2025-11-27/?utm_source=openai))  \n   * In Europe, Mistral AI has become a leading non\u2011U.S. frontier\u2011model developer, repeatedly releasing powerful open\u2011weight and reasoning models and attracting multi\u2011billion\u2011dollar funding, explicitly positioning itself as a European answer to OpenAI. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Mistral_AI?utm_source=openai))  \n   * Globally, the list of large language models now includes many non\u2011U.S. or widely open\u2011licensed systems (DeepSeek, Qwen, Mistral, MiniMax, etc.), confirming that frontier\u2011level AI capabilities are not confined to U.S. firms and are not being universally throttled by harmonized regulation. ([en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_large_language_models?utm_source=openai))\n\nTaken together, the world has moved toward *patchwork* national and regional AI rules plus soft global norms, while powerful models proliferate and are strategically developed (and sometimes routed around U.S. controls) outside the U.S. That matches Friedberg\u2019s claim that a fully coordinated global regulatory stop on AI was unlikely, and that models would continue to evolve and be exploited competitively in many jurisdictions even if the U.S. tried to impose strong regulations.",
+      "sources": [
+        {
+          "end_index": 780,
+          "start_index": 627,
+          "title": "UN adopts first global artificial intelligence resolution",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/cybersecurity/un-adopts-first-global-artificial-intelligence-resolution-2024-03-21/?utm_source=openai"
+        },
+        {
+          "end_index": 1210,
+          "start_index": 1090,
+          "title": "AI Safety Summit 2023: The Bletchley Declaration - GOV.UK",
+          "type": "url_citation",
+          "url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration?utm_source=openai"
+        },
+        {
+          "end_index": 1616,
+          "start_index": 1499,
+          "title": "Framework Convention on Artificial Intelligence",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Framework_Convention_on_Artificial_Intelligence?utm_source=openai"
+        },
+        {
+          "end_index": 2012,
+          "start_index": 1915,
+          "title": "Artificial Intelligence Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2594,
+          "start_index": 2463,
+          "title": "Interim Measures for the Management of Generative AI Services",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Interim_Measures_for_the_Management_of_Generative_AI_Services?utm_source=openai"
+        },
+        {
+          "end_index": 3123,
+          "start_index": 3030,
+          "title": "China leapfrogs US in global market for 'open' AI models",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41?utm_source=openai"
+        },
+        {
+          "end_index": 3587,
+          "start_index": 3426,
+          "title": "China's tech giants move AI model training overseas to access Nvidia chips, FT reports",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/china/chinas-tech-giants-move-ai-model-training-overseas-tap-nvidia-chips-ft-reports-2025-11-27/?utm_source=openai"
+        },
+        {
+          "end_index": 3924,
+          "start_index": 3844,
+          "title": "Mistral AI",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Mistral_AI?utm_source=openai"
+        },
+        {
+          "end_index": 4321,
+          "start_index": 4222,
+          "title": "List of large language models",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/List_of_large_language_models?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "No broad, coordinated global regulation has emerged to stop or tightly restrict AI model development and deployment worldwide as of December 2025. Regulations remain fragmented: the EU AI Act imposes risk-based obligations on general-purpose AI models (e.g., transparency requirements effective August 2025) but does not halt development ([artificialintelligenceact.eu](https://artificialintelligenceact.eu/)); the US has revoked prior restrictive policies via Executive Order 14179 (Jan 2025) to promote innovation, with no federal bans on model development and efforts to preempt state laws ([whitehouse.gov](https://www.whitehouse.gov/)); China enforces generative AI standards but released the 'AI Plus' plan and debuted models like DeepSeek-R1 ([nbr.org](https://www.nbr.org/publication/chinas-approach-to-ai-development-and-governance/)). The Stanford 2025 AI Index confirms explosive growth: industry produced ~90% of notable models in 2024, US leads (40 models), China closing gap, with no evidence of global halts ([hai.stanford.edu/ai-index/2025-ai-index-report](https://hai.stanford.edu/ai-index/2025-ai-index-report)). UN/China action plans exist but are non-binding and aspirational, not restrictive ([fmprc.gov.cn](https://www.fmprc.gov.cn/)). Advanced AI continues competitively outside any single nation's regs, validating the prediction."
+    }
+  ]
+}

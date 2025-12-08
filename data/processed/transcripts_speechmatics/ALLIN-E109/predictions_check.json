@@ -1,0 +1,896 @@
+{
+  "meta": {
+    "count": 24,
+    "count_by_result": {
+      "wrong": 12,
+      "right": 7,
+      "ambiguous": 4,
+      "inconclusive": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:07:45.000",
+      "result": "wrong",
+      "explanation": "Donald Trump **did run** in the 2024 Republican presidential primary. He officially announced his 2024 candidacy on November 15, 2022, and then actively campaigned through the 2024 primary season, ultimately securing the Republican nomination.\n\nRon DeSantis did *not* maintain the same polling strength against Trump that he had in late 2022. Through 2023, national Republican primary polls showed Trump opening up and then sustaining a large lead over DeSantis and other GOP contenders, and DeSantis\u2019s relative position weakened rather than strengthened. Nonetheless, the key outcome in Sacks\u2019s prediction \u2014 that **Trump might not run again** in order to avoid risking a primary loss \u2014 clearly did *not* occur: Trump chose to run despite any such risks and won the primary.\n\nBecause the observable real-world outcome (Trump ran and won the 2024 GOP primary) is directly contrary to the implied forecast that he would likely *not* run under the scenario being discussed, this prediction is best scored as **wrong**.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction was conditional: if DeSantis continued polling as strongly as end-2022, Trump would not run in 2024 GOP primary. End-2022 polls showed DeSantis competitive or leading Trump head-to-head (e.g., [WSJ poll Dec 14, 2022](https://www.politico.com/news/2022/12/14/desantis-trump-gop-primary-voters-00073874); Suffolk Dec 13). However, DeSantis did not continue strongly; Trump led in early 2023 polls (Quinnipiac Feb 2023: Trump 42%, DeSantis 36%; [538 average Apr 2023](https://fivethirtyeight.com/features/trump-desantis-national-polls/)) and dominated thereafter (e.g., Quinnipiac May 2023: Trump 56%, DeSantis 25%; DeSantis ~11% by Dec 2023). Trump ran, won nomination ([Wikipedia 2024 primaries](https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_primaries)). Since condition unmet, counterfactual untestable."
+    },
+    {
+      "id": "A-00:19:10.000",
+      "result": "right",
+      "explanation": "Jason\u2019s core prediction was that Trump would still be *viable* in 2024, would be a central player in the Republican primaries, and had a real chance to beat Ron DeSantis and win the nomination. That central thesis proved correct, though one specific detail (that Trump would *debate* DeSantis) did not.\n\nEvidence:\n\n- Donald Trump ran in the 2024 Republican primaries, dominated the field, won 54 contests, and far exceeded the 1,215 delegates needed for the GOP nomination, ultimately becoming the Republican presidential nominee at the 2024 convention.\n  ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_primaries?utm_source=openai))\n- Ron DeSantis did in fact challenge Trump in the 2024 Republican primary, entering as his main rival but suspending his campaign on January 21, 2024 after a disappointing showing in Iowa, and explicitly endorsing Trump\u2014confirming that Trump, not DeSantis, emerged as the party\u2019s standard-bearer. ([abc17news.com](https://abc17news.com/politics/national-politics/cnn-us-politics/2024/01/21/desantis-ends-2024-presidential-campaign-and-endorses-trump-2/?utm_source=openai))\n- Trump clinched the nomination early in the calendar (by mid-March 2024) by surpassing the delegate threshold, confirming that he not only remained viable but decisively won the GOP primaries. ([forbes.com](https://www.forbes.com/sites/saradorn/2024/03/12/trump-clinches-republican-nomination/?utm_source=openai))\n- However, Jason also said Trump was \u201cgoing to have to debate DeSantis.\u201d In reality, Trump skipped *all* official 2024 Republican primary debates; DeSantis appeared in those debates, but Trump never shared a debate stage with him. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai))\n\nTaken together, Jason was right about the *substantive* outcome he cared about\u2014Trump\u2019s continued viability and real chance to win the 2024 GOP nomination over DeSantis\u2014while being wrong about the specific mechanism (a head\u2011to\u2011head primary debate) through which that contest would play out. On balance, the prediction is best scored as **right**, with a notable but secondary detail incorrect.",
+      "sources": [
+        {
+          "end_index": 708,
+          "start_index": 594,
+          "title": "2024 Republican Party presidential primaries",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_primaries?utm_source=openai"
+        },
+        {
+          "end_index": 1182,
+          "start_index": 1007,
+          "title": "DeSantis ends 2024 presidential campaign and endorses Trump - ABC17NEWS",
+          "type": "url_citation",
+          "url": "https://abc17news.com/politics/national-politics/cnn-us-politics/2024/01/21/desantis-ends-2024-presidential-campaign-and-endorses-trump-2/?utm_source=openai"
+        },
+        {
+          "end_index": 1498,
+          "start_index": 1378,
+          "title": "Trump Wins 2024 Republican Nomination",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/saradorn/2024/03/12/trump-clinches-republican-nomination/?utm_source=openai"
+        },
+        {
+          "end_index": 1840,
+          "start_index": 1731,
+          "title": "Donald Trump 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump did participate in the 2024 Republican primaries and won the nomination decisively ([Wikipedia: 2024 Republican primaries](https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_primaries), [PBS: Trump clinches nomination](https://www.pbs.org/newshour/politics/trump-clinches-2024-republican-nomination)). However, he skipped all primary debates, including those where DeSantis participated, so they never debated ([Wikipedia: 2024 GOP debates](https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_debates_and_forums), [Ballotpedia: GOP debates](https://ballotpedia.org/Republican_presidential_primary_debates,_2024)). The prediction explicitly expected a Trump-DeSantis debate ('he's going to have to debate DeSantis'), which did not occur, making the overall prediction wrong despite Trump's victory."
+    },
+    {
+      "id": "C-00:24:20.000",
+      "result": "wrong",
+      "explanation": "Looking at performance from roughly late December 2022 through late December 2023 (well\u2011approximated by full\u2011year 2023 returns), the named U.S. defense contractors substantially **underperformed the broader U.S. equity market**:\n\n- **Lockheed Martin (LMT)**: 2023 total/price return about **\u20134.3%**. ([financecharts.com](https://www.financecharts.com/stocks/LMT/performance?utm_source=openai))  \n- **Northrop Grumman (NOC)**: 2023 annual % change about **\u201312.8%**. ([macrotrends.net](https://www.macrotrends.net/stocks/charts/NOC/northrop-grumman/stock-price-history?utm_source=openai))  \n- **RTX Corp (RTX, Raytheon)**: 2023 return about **\u201316.6%**. ([slickcharts.com](https://www.slickcharts.com/symbol/RTX/returns?utm_source=openai))  \n- **General Dynamics (GD)**: 2023 return about **+7\u20137.1%**. ([companiesmarketcap.com](https://companiesmarketcap.com/general-dynamics/stock-price-history/?utm_source=openai))  \n\nOver the same year, the **S&P 500 total return was about +26.3% in 2023**, driven largely by a strong rally in large\u2011cap U.S. stocks. ([slickcharts.com](https://www.slickcharts.com/sp500/returns/details?utm_source=openai))  This means all four contractors **lagged the broad market badly** over that first year after December 2022, with three of them actually negative while the index gained over 25%.\n\nSince the normalized prediction specified that these defense contractors would \"continue to perform well in the stock market for at least the next year\" *relative to* the broader market, and they instead **underperformed the S&P 500 by a wide margin** during that period, the prediction did **not** come true.",
+      "sources": [
+        {
+          "end_index": 428,
+          "start_index": 335,
+          "title": "Lockheed Martin (LMT) Performance History & Total Returns",
+          "type": "url_citation",
+          "url": "https://www.financecharts.com/stocks/LMT/performance?utm_source=openai"
+        },
+        {
+          "end_index": 622,
+          "start_index": 501,
+          "title": "Northrop Grumman - 44 Year Stock Price History | NOC | MacroTrends",
+          "type": "url_citation",
+          "url": "https://www.macrotrends.net/stocks/charts/NOC/northrop-grumman/stock-price-history?utm_source=openai"
+        },
+        {
+          "end_index": 773,
+          "start_index": 688,
+          "title": "RTX Annual Returns by Year",
+          "type": "url_citation",
+          "url": "https://www.slickcharts.com/symbol/RTX/returns?utm_source=openai"
+        },
+        {
+          "end_index": 951,
+          "start_index": 837,
+          "title": "General Dynamics (GD) - Stock price history",
+          "type": "url_citation",
+          "url": "https://companiesmarketcap.com/general-dynamics/stock-price-history/?utm_source=openai"
+        },
+        {
+          "end_index": 1179,
+          "start_index": 1091,
+          "title": "S&P 500 Price Return, Dividend Return, and Total Return",
+          "type": "url_citation",
+          "url": "https://www.slickcharts.com/sp500/returns/details?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction specified performance 'well ... relative to the broader market' for at least the next year (Dec 2022-Dec 2023). In 2023, these stocks underperformed the S&P 500 significantly. Lockheed Martin (LMT) delivered a total return of -6% vs. S&P 500 +24.8% ([web:5] Globe and Mail, Dec 2023). LMT was -4% for 2023 ([web:8] Nasdaq, Mar 2025). RTX, GD, and LMT were in negative territory YTD as of Oct 2023 ([web:2] Motley Fool). Over the full period to Dec 2025 (~3 years), approximate price returns from Dec 30, 2022 closes: LMT $481\u2192$458 (-5%), NOC $546\u2192$572 (+5%), RTX $100\u2192$172 (+72%), GD $233\u2192$343 (+47%); SPY $369\u2192$683 (+85%). Average underperformed S&P 500, even with dividends (~2-3% yield). Sources: Yahoo Finance histories via searches, StatMuse, FinanceCharts, Macrotrends."
+    },
+    {
+      "id": "A-00:29:35.000",
+      "result": "ambiguous",
+      "explanation": "1. **Did Microsoft release the predicted product? \u2013 Yes**\n\n- On February 7, 2023, Microsoft unveiled the \u201cnew Bing\u201d and a revamped Edge browser that **integrated an OpenAI GPT\u20114\u2013based chatbot directly into Bing search**, offering a ChatGPT\u2011like conversational experience alongside traditional search results. ([techcrunch.com](https://techcrunch.com/2023/02/07/microsoft-launches-the-new-bing-with-chatgpt-built-in/?utm_source=openai))  \n- This chat experience (initially Bing Chat, now Microsoft Copilot) is explicitly described as a built\u2011in feature of **Microsoft Bing and Edge**, powered by OpenAI\u2019s GPT\u20114/5 models. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GPT-4?utm_source=openai))  \n\nOn the narrow question of *\u201cWill Microsoft release a search engine with OpenAI that offers ChatGPT\u2011like capabilities?\u201d* the prediction clearly came true in early 2023.\n\n2. **Did it have a \u201csignificant impact\u201d / \u201cmaterially erode or threaten\u201d Google\u2019s core search business? \u2013 Evidence cuts both ways**\n\n**Market\u2011share and revenue impact (weak so far):**\n- Despite the AI \u201cnew Bing,\u201d Bing\u2019s worldwide share remains only around **3\u20134%**, while Google is still near **90%** of global search as of 2024\u20132025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Microsoft_Bing?utm_source=openai))  \n- A StatCounter\u2011based analysis found that from Feb 2023 to Jan 2024, Bing\u2019s U.S. share rose modestly from 6.35% to 7.87%, and worldwide from 2.81% to 3.43%, while Google lost only 1.5\u20131.9 percentage points\u2014described as **little real change**. ([searchengineland.com](https://searchengineland.com/one-year-later-little-change-to-microsoft-bing-search-market-share-437238?utm_source=openai))  \n- Ars Technica and other outlets noted that **Microsoft\u2019s AI infusion \u201cmay have helped Bing on the margins, but [hasn\u2019t] meaningfully eroded Google\u2019s search market share.\u201d** ([arstechnica.com](https://arstechnica.com/ai/2024/01/report-microsofts-ai-infusion-hasnt-helped-bing-take-share-from-google/?utm_source=openai))  \n- Recent coverage still describes Google\u2019s search business as extremely strong and dominant, with Google\u2019s parent Alphabet approaching a $4T valuation and search/ads remaining its core profit engine. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Google_Search?utm_source=openai))  \n\nOn a **strict, numerical view of \u201cmaterially erode\u201d**, the data show only a small share shift from Google to Bing; Google\u2019s core search franchise remains overwhelmingly dominant in usage and revenue.\n\n**Strategic and competitive impact (clearly significant):**\n- The combination of ChatGPT\u2019s rise and Microsoft\u2019s GPT\u2011powered Bing triggered what multiple reports describe as **\u201cCode Red\u201d inside Google**, with management treating generative AI as a serious threat to its search empire and rushing AI\u2011powered search products (Bard \u2192 Gemini) to market. ([forbes.com](https://www.forbes.com/sites/davidphelan/2023/01/23/how-chatgpt-suddenly-became-googles-code-red-prompting-return-of-page-and-brin/?utm_source=openai))  \n- Analyses of the \u201cnew Bing\u201d launch say Microsoft **\u201cput pressure on the search industry,\u201d** forcing Google to accelerate its own AI search experiences and making search more expensive to operate (AI overviews, etc.), which could compress Google\u2019s search margins even without massive share loss. ([forbes.com](https://www.forbes.com/sites/moorinsights/2023/02/09/microsoft-announces-new-generative-ai-search-using-chatgpt-bada-bing-bada-boom-the-ai-race-is-on/?utm_source=openai))  \n- Regulators and courts have also begun to cite **generative\u2011AI tools (including OpenAI/Microsoft offerings) as emerging competition that slightly weakens Google\u2019s monopoly position**, showing that policymakers now see Microsoft/OpenAI as a genuine, if still small, competitive threat in search. ([reuters.com](https://www.reuters.com/legal/litigation/googles-ai-rivals-get-boost-data-sharing-order-tech-giant-far-routed-2025-09-03/?utm_source=openai))  \n\nOn a **strategic/qualitative view of \u201csignificant impact\u201d or \u201cthreaten,\u201d** Microsoft\u2019s OpenAI\u2011integrated search clearly forced Google into a defensive posture, reshaped its product roadmap, and influenced antitrust assessments of Google\u2019s dominance.\n\n3. **Why the overall verdict is \u2018ambiguous\u2019**\n\n- The prediction has two parts: (1) Microsoft will release an OpenAI\u2011integrated search engine (this is clearly **right**); and (2) that product will **\u201chave a significant impact\u201d / \u201cmaterially erode or threaten\u201d Google\u2019s search franchise within a few years.**  \n- As of late 2025, **Google\u2019s actual search share and revenue have only modestly budged**, so a strict, numbers\u2011only reading of \u201csignificant impact\u201d or \u201cmaterially erode\u201d would say the prediction **overstated** the damage. ([searchengineland.com](https://searchengineland.com/one-year-later-little-change-to-microsoft-bing-search-market-share-437238?utm_source=openai))  \n- At the same time, **Google and the wider industry have behaved as though the Microsoft\u2013OpenAI move represents a serious, strategic threat**, triggering code\u2011red responses, accelerated launches (Bard/Gemini, AI Overviews), and regulatory arguments that generative AI is finally creating real competition in search. ([forbes.com](https://www.forbes.com/sites/davidphelan/2023/01/23/how-chatgpt-suddenly-became-googles-code-red-prompting-return-of-page-and-brin/?utm_source=openai))  \n\nBecause reasonable observers can credibly argue **either** (a) that the impact on Google\u2019s *business metrics* has *not* yet been \u201csignificant,\u201d **or** (b) that the *strategic threat and forced responses* **are** a significant impact on its franchise, the truth of the prediction depends heavily on how you interpret \u201csignificant impact\u201d / \u201cmaterially erode or threaten.\u201d\n\nGiven this genuine interpretive disagreement\u2014despite sufficient elapsed time and data\u2014the fairest classification is **\u201cambiguous.\u201d**",
+      "sources": [
+        {
+          "end_index": 477,
+          "start_index": 351,
+          "title": "Microsoft launches the new Bing, with ChatGPT built in | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2023/02/07/microsoft-launches-the-new-bing-with-chatgpt-built-in/?utm_source=openai"
+        },
+        {
+          "end_index": 738,
+          "start_index": 663,
+          "title": "GPT-4",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GPT-4?utm_source=openai"
+        },
+        {
+          "end_index": 1337,
+          "start_index": 1253,
+          "title": "Microsoft Bing",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Bing?utm_source=openai"
+        },
+        {
+          "end_index": 1730,
+          "start_index": 1584,
+          "title": "One year later: Little change to Microsoft Bing's search market share",
+          "type": "url_citation",
+          "url": "https://searchengineland.com/one-year-later-little-change-to-microsoft-bing-search-market-share-437238?utm_source=openai"
+        },
+        {
+          "end_index": 2053,
+          "start_index": 1908,
+          "title": "Bing Search shows few, if any, signs of market share increase from AI features - Ars Technica",
+          "type": "url_citation",
+          "url": "https://arstechnica.com/ai/2024/01/report-microsofts-ai-infusion-hasnt-helped-bing-take-share-from-google/?utm_source=openai"
+        },
+        {
+          "end_index": 2340,
+          "start_index": 2257,
+          "title": "Google Search",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Google_Search?utm_source=openai"
+        },
+        {
+          "end_index": 3064,
+          "start_index": 2899,
+          "title": "How ChatGPT Suddenly Became Google\u2019s Code Red, Prompting Return Of Page And Brin",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/davidphelan/2023/01/23/how-chatgpt-suddenly-became-googles-code-red-prompting-return-of-page-and-brin/?utm_source=openai"
+        },
+        {
+          "end_index": 3548,
+          "start_index": 3364,
+          "title": "Microsoft Announces New Generative AI Search Using ChatGPT; Bada BING, Bada Boom\u2014The AI Race Is On",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/moorinsights/2023/02/09/microsoft-announces-new-generative-ai-search-using-chatgpt-bada-bing-bada-boom-the-ai-race-is-on/?utm_source=openai"
+        },
+        {
+          "end_index": 4004,
+          "start_index": 3848,
+          "title": "Google's AI rivals get a boost from data-sharing order, but tech giant far from routed",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/legal/litigation/googles-ai-rivals-get-boost-data-sharing-order-tech-giant-far-routed-2025-09-03/?utm_source=openai"
+        },
+        {
+          "end_index": 4944,
+          "start_index": 4798,
+          "title": "One year later: Little change to Microsoft Bing's search market share",
+          "type": "url_citation",
+          "url": "https://searchengineland.com/one-year-later-little-change-to-microsoft-bing-search-market-share-437238?utm_source=openai"
+        },
+        {
+          "end_index": 5429,
+          "start_index": 5264,
+          "title": "How ChatGPT Suddenly Became Google\u2019s Code Red, Prompting Return Of Page And Brin",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/davidphelan/2023/01/23/how-chatgpt-suddenly-became-googles-code-red-prompting-return-of-page-and-brin/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Microsoft launched an AI-powered Bing (later rebranded as Copilot) integrating OpenAI technology in February 2023, fulfilling the product release ([Microsoft blog, Feb 7, 2023](https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/)). This has threatened Google's dominance, prompting urgent responses like Bard/Gemini launches, Search Generative Experience, and radical search overhauls (*NYT Apr 2023*; *WSJ May 2025*; *BBC Sep 2025*). Industry views it as the first major threat in decades (*Yahoo Finance Feb 2023*; Bill Gates Feb 2023). While Google's global market share dipped slightly from ~92% (late 2022, Statcounter) to ~90% (Oct 2025, Statcounter), and Bing grew modestly from ~3% to ~4% globally (*Statcounter*), the threat is evident in competitive actions and discourse, matching 'materially erode **or** threaten' within ~3 years."
+    },
+    {
+      "id": "A-00:41:56.000",
+      "result": "right",
+      "explanation": "Jason made his comment on the Dec 24, 2022 \u201cBestie Awards\u201d episode, when Disney (DIS) was trading in the mid\u2011$80s; for example, it closed at about $86.6 on December 23, 2022 and ended 2022 at $85.46. ([statmuse.com](https://www.statmuse.com/money/ask/walt-disney-stock-price-in-december-2022?utm_source=openai))\n\nFrom that level, Disney\u2019s stock has **materially appreciated**:\n- In 2023 it fluctuated, hitting lows around the high\u2011$70s in September but finishing the year at about $89.1, modestly above the late\u20112022 level. ([statmuse.com](https://www.statmuse.com/money/ask/dis-stock-price-historical-2023?utm_source=openai))  \n- In 2024 it rallied strongly, closing the year near $110.9, roughly **30% above** the $85\u201387 range where he was bullish. ([macrotrends.net](https://www.macrotrends.net/stocks/charts/DIS/disney/stock-price-history?utm_source=openai))  \n- As of late November 2025, Disney trades around $103\u2013104, still about **20%+ above** its late\u20112022 price despite some pullback from 2024 highs. ([macrotrends.net](https://www.macrotrends.net/stocks/charts/DIS/disney/stock-price-history?utm_source=openai))\n\nThe **normalized prediction** is that Disney\u2019s stock would appreciate enough in the future to make adding to the position in 2023 look justified. Based on public price data, buying in late 2022 or during 2023 at those depressed levels would leave an investor with a clear gain by 2024\u20132025. That outcome is consistent with Jason\u2019s bullish view.\n\nWe cannot directly verify his personal trading activity, but the market outcome itself \u2014 substantial appreciation from the time of the call \u2014 supports the economic content of the prediction. Therefore, the prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 344,
+          "start_index": 233,
+          "title": "Walt Disney Stock Price In December 2022 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/walt-disney-stock-price-in-december-2022?utm_source=openai"
+        },
+        {
+          "end_index": 662,
+          "start_index": 560,
+          "title": "Dis Stock Price Historical 2023 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/dis-stock-price-historical-2023?utm_source=openai"
+        },
+        {
+          "end_index": 899,
+          "start_index": 788,
+          "title": "Disney - 63 Year Stock Price History | DIS | MacroTrends",
+          "type": "url_citation",
+          "url": "https://www.macrotrends.net/stocks/charts/DIS/disney/stock-price-history?utm_source=openai"
+        },
+        {
+          "end_index": 1159,
+          "start_index": 1048,
+          "title": "Disney - 63 Year Stock Price History | DIS | MacroTrends",
+          "type": "url_citation",
+          "url": "https://www.macrotrends.net/stocks/charts/DIS/disney/stock-price-history?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Jason Calacanis announced in Dec 2022 he owned DIS stock and planned to buy more in 2023, expecting future appreciation to justify it. A Mar 2023 podcast confirms he bought Disney stock then ([Meb Faber ep #469](https://mebfaber.com/2023/03/08/jason-calacanis/)). DIS adjusted close: end-2022 $85.46; end-2023 $89.10 (+4.3%); end-2024 $110.88 (+24.4%); Nov 28, 2025 $104.47 (net +22.3% from end-2022). Despite 2025 low ~$82, stock appreciated overall from 2023 levels to late 2025 ([Macrotrends](https://www.macrotrends.net/stocks/charts/DIS/disney/stock-price-history); [Yahoo Finance](https://finance.yahoo.com/quote/DIS/history/)). Thus, his expectation held true."
+    },
+    {
+      "id": "A-00:42:55.000",
+      "result": "right",
+      "explanation": "Available evidence shows that, following the FTX/FTT collapse in late 2022, the SEC under Chair Gary Gensler *did* launch a broad wave of additional enforcement actions against other crypto tokens, lending products, and exchanges it claimed were fraudulent or unregistered securities, over the subsequent years.\n\nKey post\u2011FTX actions include:\n- **Genesis & Gemini (Gemini Earn)** \u2013 In January 2023 the SEC charged Genesis and Gemini for the *unregistered offer and sale of securities* through the Gemini Earn crypto lending program, explicitly framing it as part of an ongoing crackdown on crypto lending platforms and intermediaries.\n([sec.gov](https://www.sec.gov/newsroom/press-releases/2023-7?utm_source=openai))\n- **Kraken staking program** \u2013 In February 2023 the SEC charged Kraken entities for failing to register their crypto \u201cstaking\u2011as\u2011a\u2011service\u201d program as a securities offering, forcing Kraken to shut the program for U.S. customers and pay $30M.([sec.gov](https://www.sec.gov/newsroom/press-releases/2023-25?utm_source=openai))\n- **Bittrex exchange** \u2013 In April 2023 the SEC charged Bittrex, its former CEO, and Bittrex Global for operating an unregistered national securities exchange, broker, and clearing agency dealing in crypto assets alleged to be securities.([sec.gov](https://www.sec.gov/newsroom/press-releases/2023-78?utm_source=openai))\n- **Coinbase** \u2013 In June 2023 the SEC charged Coinbase with operating an unregistered securities exchange, broker, and clearing agency and with conducting an unregistered securities offering via its staking\u2011as\u2011a\u2011service program, alleging billions in unlawful crypto\u2011securities trading.([sec.gov](https://www.sec.gov/newsroom/press-releases/2023-102?utm_source=openai))\n- **Binance / BNB / BUSD / staking products** \u2013 Also in June 2023 the SEC filed 13 charges against Binance, its U.S. affiliate, and founder Changpeng Zhao, including operating unregistered exchanges and the unregistered offer and sale of Binance\u2019s own crypto assets (BNB, BUSD, lending and staking products). Gensler characterized this as another example of evasion in the crypto markets.([sec.gov](https://www.sec.gov/newsroom/press-releases/2023-101?utm_source=openai))\n- **Further follow\u2011through** \u2013 The SEC later announced a settlement with Genesis in 2024 over the same Earn program and brought additional crypto\u2011related actions (for example, against crypto\u2011focused bank Silvergate for misrepresentations tied to its crypto clientele), underscoring a sustained enforcement push in 2023\u20132024 rather than a one\u2011off response to FTX.([sec.gov](https://www.sec.gov/newsroom/press-releases/2024-37?utm_source=openai))\n\nThese actions, launched after the FTX/FTT case and explicitly framed as part of a broader crackdown on crypto \"unregistered securities\" and misconduct, match the prediction that Gensler\u2019s SEC would \"go down the list of other tokens\" and pursue more prosecutions of crypto \"grifts\" over the next few years. Therefore, the prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 753,
+          "start_index": 672,
+          "title": "SEC.gov | SEC Charges Genesis and Gemini for the Unregistered Offer and Sale of Crypto Asset Securities through the Gemini Earn Lending Program",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/newsroom/press-releases/2023-7?utm_source=openai"
+        },
+        {
+          "end_index": 1078,
+          "start_index": 996,
+          "title": "SEC.gov | Kraken to Discontinue Unregistered Offer and Sale of Crypto Asset Staking-As-A-Service Program and Pay $30 Million to Settle SEC Charges",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/newsroom/press-releases/2023-25?utm_source=openai"
+        },
+        {
+          "end_index": 1399,
+          "start_index": 1317,
+          "title": "SEC.gov | SEC Charges Crypto Asset Trading Platform Bittrex and its Former CEO for Operating an Unregistered Exchange, Broker, and Clearing Agency",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/newsroom/press-releases/2023-78?utm_source=openai"
+        },
+        {
+          "end_index": 1769,
+          "start_index": 1686,
+          "title": "SEC.gov | SEC Charges Coinbase for Operating as an Unregistered Securities Exchange, Broker, and Clearing Agency",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/newsroom/press-releases/2023-102?utm_source=openai"
+        },
+        {
+          "end_index": 2242,
+          "start_index": 2159,
+          "title": "SEC.gov | SEC Files 13 Charges Against Binance Entities and Founder Changpeng Zhao",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/newsroom/press-releases/2023-101?utm_source=openai"
+        },
+        {
+          "end_index": 2688,
+          "start_index": 2606,
+          "title": "SEC.gov | Genesis Agrees to Pay $21 Million Penalty to Settle SEC Charges",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/newsroom/press-releases/2024-37?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction came true. Post-FTX (Nov 2022), the SEC under Gensler initiated numerous enforcement actions against crypto projects for unregistered securities and fraud, including major suits against Binance (June 2023, alleging 13 tokens like BNB as securities), Coinbase (June 2023, listing SOL, ADA, MATIC, etc.), Kraken settlement (Feb 2023), and others like Cumberland DRW (Oct 2024). In FY2023, SEC reported impactful crypto actions ([SEC FY2023 results](https://www.sec.gov/newsroom/press-releases/2023-234)); FY2024 had 33 crypto-related actions against 90 defendants ([Cornerstone SEC Crypto Enforcement 2024](https://www.cornerstone.com/wp-content/uploads/2025/01/SEC-Cryptocurrency-Enforcement-2024-Update.pdf)). SEC's crypto enforcement page lists many post-2022 cases ([SEC Enforcement Actions](https://www.sec.gov/about/divisions-offices/division-enforcement/cyber-crypto-assets-emerging-technology/enforcement-actions)). Gensler led aggressive enforcement until Jan 2025, matching the 'few years' timeline."
+    },
+    {
+      "id": "A-00:47:12.000",
+      "result": "wrong",
+      "explanation": "Jason\u2019s timeframe of \u201canother 6 to 18 weeks\u201d from late December 2022 corresponds roughly to early February through late April / early May 2023. In that window, Twitter did ship a number of visible features, such as making the \u201cFor You\u201d algorithmic feed the default on iOS, adding side\u2011by\u2011side \u201cFor You\u201d and \u201cFollowing\u201d tabs (and then partially rolling this back after backlash), as well as launching 4,000\u2011 and later 10,000\u2011character tweets for Twitter Blue subscribers.([macrumors.com](https://www.macrumors.com/2023/01/11/twitter-algorithmic-feed-default-ios/?utm_source=openai))\n\nHowever, contemporaneous coverage and user discussion in that same period were dominated by transitional and operational turmoil, not by enthusiasm for these features. In January\u2013February 2023, Twitter abruptly cut off many third\u2011party clients and announced the end of free API access, widely reported as breaking apps and angering developers.([en.wikipedia.org](https://en.wikipedia.org/wiki/Twitter_under_Elon_Musk?utm_source=openai)) On March 28, 2023, TechCrunch ran an analysis titled \u201cTwitter is dying,\u201d arguing that Musk\u2019s moves\u2014like turning verification into pay\u2011to\u2011play and reinstating banned extremists\u2014were destroying the service\u2019s value, underscoring that the narrative was about chaos and decline rather than product improvements.([techcrunch.com](https://techcrunch.com/2023/03/28/twitter-is-dying/?utm_source=openai))\n\nIn April 2023, the biggest Twitter stories were the \u201cstate\u2011affiliated\u201d / \u201cgovernment\u2011funded media\u201d labeling fiasco that led NPR, PBS, CBC and others to quit the platform, and the messy removal of legacy blue checks and ensuing #BlockTheBlue backlash against Twitter Blue subscribers.([en.wikipedia.org](https://en.wikipedia.org/wiki/Twitter_Blue_verification_controversy?utm_source=openai)) Coverage in May 2023 around Elon Musk naming Linda Yaccarino CEO likewise framed his tenure up to that point as \u201cchaotic\u201d and focused on advertiser flight and moderation problems, not on a successful feature renaissance.([english.elpais.com](https://english.elpais.com/science-tech/2023-05-15/linda-yaccarino-may-be-exactly-what-twitter-needs-but-is-the-new-ceo-being-set-up-to-fail.html?utm_source=openai))\n\nBecause the predominant public and media conversation 6\u201318 weeks after December 2022 still centered on layoffs, broken APIs, verification chaos, labeling controversies, and leadership turmoil\u2014with new features mostly discussed in that negative context\u2014Jason\u2019s prediction that people would be \u201ctalking about all the great features in Twitter, not any of the transitional issues\u201d during that timeframe did not come true.",
+      "sources": [
+        {
+          "end_index": 614,
+          "start_index": 503,
+          "title": "Twitter's Algorithmic 'For You' Feed Becomes Default Timeline on iOS - MacRumors",
+          "type": "url_citation",
+          "url": "https://www.macrumors.com/2023/01/11/twitter-algorithmic-feed-default-ios/?utm_source=openai"
+        },
+        {
+          "end_index": 1054,
+          "start_index": 961,
+          "title": "Twitter under Elon Musk",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Twitter_under_Elon_Musk?utm_source=openai"
+        },
+        {
+          "end_index": 1450,
+          "start_index": 1361,
+          "title": "Twitter is dying | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2023/03/28/twitter-is-dying/?utm_source=openai"
+        },
+        {
+          "end_index": 1844,
+          "start_index": 1737,
+          "title": "Twitter Blue verification controversy",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Twitter_Blue_verification_controversy?utm_source=openai"
+        },
+        {
+          "end_index": 2252,
+          "start_index": 2065,
+          "title": "Linda Yaccarino may be \u2018exactly what Twitter needs.\u2019 But is the new CEO being set up to fail? | Science | EL PA\u00cdS English",
+          "type": "url_citation",
+          "url": "https://english.elpais.com/science-tech/2023-05-15/linda-yaccarino-may-be-exactly-what-twitter-needs-but-is-the-new-ceo-being-set-up-to-fail.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Public discussion on Twitter (now X) in March\u2013May 2023 did not shift to focus primarily on new 'great features'; instead, it centered on ongoing transitional and operational problems from Elon Musk's October 2022 takeover, including staff cuts to ~1,500 by April ([Wikipedia](https://en.wikipedia.org/wiki/Twitter_under_Elon_Musk)), verification badge removals sparking outrage (April 1 announcement, [Democracy Now](https://www.democracynow.org/2023/4/3/headlines/prominent_twitter_accounts_including_nyt_and_other_news_sites_to_lose_checkmark_verification)), rising outages ([NYT Feb/Mar](https://www.nytimes.com/2023/02/28/technology/twitter-outages-elon-musk.html)), source code leaks ([Arctic Wolf Apr](https://arcticwolf.com/resources/blog/top-cyber-attacks-march-2023/)), ad revenue plunge, and user exodus (>1M accounts closed in March, [Datareportal Apr 27](https://datareportal.com/reports/digital-2023-deep-dive-the-state-of-twitter-in-april-2023)). Anniversary coverage lamented decline ([WaPo Apr 17](https://www.washingtonpost.com/technology/2023/04/15/twitter-musk-bid-anniversary/); [CNN Mar 29](https://www.cnn.com/2023/03/29/media/elon-musk-twitter-promises-reliable-sources)). Reddit r/Twitter posts (e.g., Apr mega thread, complaints on feeds/notifications) reflect frustration, not feature praise.\n\nFew user-facing features shipped: API tiers (Mar, developer-focused/controversial), legacy badge removal (Apr, negative), image Community Notes/DM encryption (May, minor). No 'parade' evident ([Britopian](https://www.britopian.com/content/twitter-new-features/); [Planoly Jun](https://www.planoly.com/blog/twitter-updates)). Searches for positive buzz ('great features' + Musk 2023) yield sparse pro-Musk tweets, not dominant discourse."
+    },
+    {
+      "id": "C-00:50:56.000",
+      "result": "right",
+      "explanation": "The prediction referred to Twitter/X rolling out **custom organizational affiliation badges** so that the All\u2011In podcast and its hosts would have distinctive \u201cAll\u2011In\u201d badges on their profiles.\n\nEvidence:\n\n- In late December 2022, Elon Musk discussed on the All\u2011In podcast the new **organizational affiliation** concept, explicitly crediting David Sacks with the idea and describing a system where organizations verify people and an org badge appears next to those affiliates\u2019 accounts. A contemporaneous write\u2011up of that conversation notes this as *\u201cTwitter for Business/Organizations\u201d* and ties it to organizational verification under Twitter Blue for Business. ([whatsuptwitter.com](https://whatsuptwitter.com/2022/12/29/xxallinxx/?utm_source=openai))\n- On December 12, 2022\u2014just days before E109\u2019s Dec 24, 2022 release\u2014Twitter launched **Blue for Business**, a corporate tier that gives organizations a gold check and (per internal docs reported by TechCrunch) the ability to give employees additional badges next to their names to mark affiliation. This is exactly the custom affiliation\u2011badge product Sacks was describing. ([techcrunch.com](https://techcrunch.com/2022/12/12/twitter-launches-blue-for-business-grants-gold-checkmarks-to-corporate-entities/))\n- X\u2019s current help page defines **\u201caffiliation badges\u201d** as badges that show the profile photo of a Verified Organization and are applied to all that organization\u2019s affiliates, appearing on profiles, posts, timelines, and more. ([help.twitter.com](https://help.twitter.com/en/rules-and-policies/profile-labels))\n- Today, The All\u2011In Podcast has a dedicated **Affiliates** page on X (`x.com/theallinpod/affiliates`) listing the hosts\u2019 handles as affiliates of the All\u2011In organization. That status implies the hosts\u2019 accounts carry the All\u2011In organization\u2019s badge as their affiliation badge, matching Sacks\u2019s \u201cAll\u2011In badges\u201d description. ([x.com](https://x.com/theallinpod/affiliates))\n- Episode E109 itself is dated December 24, 2022, so the corporate/affiliation system began rolling out essentially immediately after the timeframe of the episode, i.e., within weeks to a few months of the prediction. ([metacast.app](https://metacast.app/podcast/all-in-with-chamath-jason-sacks-and-friedberg/3AEqEKwn/e109-2022-bestie-awards-live-from-twitter-hq/5v18Rwz0?utm_source=openai))\n\nPutting this together: the **organizational affiliation feature** Sacks described was launched publicly within days of the episode, and All\u2011In is now a Verified Organization on X with its hosts listed as affiliates, which by X\u2019s own rules means they carry the org\u2019s custom affiliation badge. While we don\u2019t have an exact public timestamp for when the All\u2011In org and hosts were enrolled, the feature itself shipped almost immediately and functions today exactly as Sacks predicted. On that basis, the prediction that they would have \u201cAll\u2011In badges really soon\u201d is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 790,
+          "start_index": 700,
+          "title": "Twitter Update: Elon Musk talks on the \u2018All-In Podcast\u2019 reveals details about Twitter 2.0. and more \u2013 WHAT'S UP \ud835\udd4f by Gail Alfar",
+          "type": "url_citation",
+          "url": "https://whatsuptwitter.com/2022/12/29/xxallinxx/?utm_source=openai"
+        },
+        {
+          "end_index": 1300,
+          "start_index": 1166,
+          "title": "Twitter launches Blue for Business, grants gold checkmarks to 'corporate entities' | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2022/12/12/twitter-launches-blue-for-business-grants-gold-checkmarks-to-corporate-entities/"
+        },
+        {
+          "end_index": 1613,
+          "start_index": 1530,
+          "title": "About profile labels",
+          "type": "url_citation",
+          "url": "https://help.twitter.com/en/rules-and-policies/profile-labels"
+        },
+        {
+          "end_index": 1985,
+          "start_index": 1938,
+          "title": "Affiliates of The All-In Podcast (@theallinpod) / X",
+          "type": "url_citation",
+          "url": "https://x.com/theallinpod/affiliates"
+        },
+        {
+          "end_index": 2378,
+          "start_index": 2205,
+          "title": "E109: 2022 Bestie Awards Live from Twitter HQ | All-In with Chamath, Jason, Sacks & Friedberg podcast - Listen or read transcript on Metacast",
+          "type": "url_citation",
+          "url": "https://metacast.app/podcast/all-in-with-chamath-jason-sacks-and-friedberg/3AEqEKwn/e109-2022-bestie-awards-live-from-twitter-hq/5v18Rwz0?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence indicates Twitter (now X) rolled out custom 'All-In' affiliation badges for the All-In podcast accounts (@theallinpod) or hosts (@chamath, @Jason, @davidsacks, @friedberg) within months of December 2022. Twitter launched Verified Organizations (gold checks) and affiliation badges in a pilot around Dec 19, 2022 (e.g., [The Verge](https://www.theverge.com/2022/12/19/23517733/twitter-blue-for-business-brands-affiliation-gray-checkmark-badge)), with early access for some like Craft Ventures (Sacks' firm). However, searches for quotes, announcements, or features yield no results for 'All-In badges.' Current profiles show standard blue verified checks (\u2713); @theallinpod may have gold (per browse), but hosts lack affiliation badges linking to All-In. Reddit episode thread mentions excitement but no fulfillment ([Reddit](https://www.reddit.com/r/TheAllinPodcasts/comments/zuba22/e109_2022_bestie_awards_live_from_twitter_hq/))."
+    },
+    {
+      "id": "elon-01:18:41.580",
+      "result": "wrong",
+      "explanation": "Key parts of the prediction did not materialize according to standard economic data and dating.\n\n**1. Did the U.S. enter a recession in 2023?**  \n- The National Bureau of Economic Research (NBER), which is the widely recognized arbiter of U.S. business cycles, has **not declared any U.S. recession in 2023**. Their list of business cycle peaks and troughs shows the last recession ending in April 2020, with no subsequent recession dates through and including 2023.\n- U.S. real GDP **grew** in 2023, rather than contracting overall. Bureau of Economic Analysis data show real GDP rising throughout 2023, with annual growth around 2\u20133%, not the pattern associated with a recession year.\n- The U.S. labor market remained historically strong in 2023, with unemployment hovering around 3.5\u20133.8% for much of the year, again inconsistent with a recession of any severity (light, moderate, or severe).\n\n**2. Was there a global recession in 2023?**  \n- The IMF\u2019s World Economic Outlook described 2023 as a period of **slowing global growth**, not a global recession. Global real GDP growth for 2023 was positive (roughly 3%), significantly above zero and far from the broad, synchronized contraction of 2009.\n\n**3. Comparison to 2009 severity**  \n- The 2008\u20132009 Great Recession involved a sharp drop in U.S. and global output, a spike in unemployment, and severe financial stress.  \n- In contrast, 2023 featured **continued expansion** in the U.S. and globally (albeit with elevated inflation and monetary tightening). There was no downturn \u201con the order of 2009\u201d in terms of GDP contraction or unemployment.\n\nBecause **neither the U.S. nor the global economy entered a 2023 recession**, and conditions were nowhere near the severity of 2009, the prediction that 2023 would bring at least a light-to-moderate recession, roughly comparable to 2009, is **incorrect**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "No US recession occurred in 2023 despite widespread predictions; NBER has not declared one (latest announcements reference 2020 COVID recession only, [NBER Business Cycle Dating](https://www.nber.org/research/business-cycle-dating)). US GDP grew positively (e.g., 3.3% annualized Q4 2023, overall ~2.5% annual, [CNBC](https://www.cnbc.com/2023/12/26/the-us-avoided-a-recession-in-2023-whats-the-outlook-for-2024.html), [Axios](https://www.axios.com/2023/12/22/2023-economy-predictions-wrong-recession)). Unemployment stayed low (~3.7%), vs. 2009 peak of 10% and ~4.3% GDP contraction ([Fed History](https://www.federalreservehistory.org/essays/great-recession-of-200709)). Globally, IMF/World Bank forecasted slowdowns but no recession (growth ~2.8-3%, [IMF WEO April 2023](https://www.imf.org/en/publications/weo/issues/2023/04/11/world-economic-outlook-april-2023)). Prediction of light-to-moderate recession comparable to 2009 did not materialize."
+    },
+    {
+      "id": "elon-01:19:56.000",
+      "result": "ambiguous",
+      "explanation": "**What was predicted**\n- Elon Musk said in Dec 2022 that we\u2019d have \u201cstormy times for a year or two, a year and a half,\u201d with the *\u201cdawn\u201d* of recovery starting *around Q2 2024*.\n\n**What actually happened (major economies, especially the U.S.)**\n- The U.S. did **not** enter an official recession after 2022. Real GDP grew **1.9% in 2022**, then **2.5% in 2023**, and **2.8% in 2024**; from Q4 2022 to Q4 2023 GDP rose **3.1%**, and quarterly growth remained positive through 2024. ([bea.gov](https://www.bea.gov/news/2024/gross-domestic-product-fourth-quarter-and-year-2023-second-estimate))\n- The labor market stayed very strong: U.S. unemployment was **below 4% for 25 straight months through February 2024**, an historically tight job market inconsistent with broad recession. ([theguardian.com](https://www.theguardian.com/business/2024/mar/08/us-jobs-february-growth-layoffs?utm_source=openai))\n- Globally, growth *slowed* from the post\u2011COVID rebound but remained positive. The IMF\u2019s April 2023 *World Economic Outlook* described a **\u201crocky recovery\u201d**, with world growth projected to fall from **3.4% in 2022 to 2.8% in 2023**, then edge up to 3.0% in 2024\u2014weak but still expansion, especially for advanced economies. ([meetings.imf.org](https://meetings.imf.org/en/IMF/Home/Publications/WEO/Issues/2023/04/11/world-economic-outlook-april-2023?utm_source=openai))\n- By April 2024, the IMF was characterizing the situation as a **\u201csteady but slow\u201d global recovery**, with world growth around **3.2%** in 2023\u20132025, and inflation gradually coming down\u2014again, not a clear inflection beginning specifically in Q2 2024. ([imf.org](https://www.imf.org/en/publications/weo/issues/2024/04/16/world-economic-outlook-april-2024?utm_source=openai))\n- Many analysts by late 2023 and 2024 were talking about a possible **\u201csoft landing\u201d**\u2014inflation falling without recession\u2014rather than a deep or prolonged downturn. ([investopedia.com](https://www.investopedia.com/is-an-economic-soft-landing-coming-to-the-us-in-2025-8758746?utm_source=openai))\n\n**Why this is ambiguous rather than clearly right or wrong**\n- On a **strict macro definition** (recession = broad, sustained decline in output and employment), the prediction misses: there was no 1\u20132 year recessionary period from late 2022, and no sharp, new \u201cdawn\u201d starting precisely in Q2 2024\u2014growth and disinflation were already underway before then.\n- However, if you interpret **\u201cstormy times\u201d** more loosely\u2014as a period of *below\u2011trend growth, elevated inflation, and high interest rates* rather than a formal recession\u2014then 2023 and early 2024 do fit that description reasonably well, and conditions *were* generally improving by mid\u20112024 (inflation lower, growth still positive, fears of a hard landing fading).\n- Because the claim is framed in very qualitative terms (\u201cstormy,\u201d \u201cdawn breaks\u201d) and not anchored to a clear, falsifiable macro metric, the data do not let us uniquely say it was either clearly accurate or clearly false.\n\nGiven that the period from late 2022 to mid\u20112024 was one of **continued but slower growth with high but falling inflation**, and no clean turning point around Q2 2024, the prediction\u2019s truth depends heavily on how you define \u201cstormy times\u201d and \u201cdawn.\u201d That makes its accuracy **fundamentally interpretive rather than cleanly testable**, so the fairest grading is **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 631,
+          "start_index": 521,
+          "title": "Gross Domestic Product, Fourth Quarter and Year 2023 (Second Estimate) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2024/gross-domestic-product-fourth-quarter-and-year-2023-second-estimate"
+        },
+        {
+          "end_index": 940,
+          "start_index": 821,
+          "title": "US adds 275,000 jobs in February as labor market continues to grow",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/2024/mar/08/us-jobs-february-growth-layoffs?utm_source=openai"
+        },
+        {
+          "end_index": 1411,
+          "start_index": 1266,
+          "title": "World Economic Outlook, April 2023: A Rocky Recovery",
+          "type": "url_citation",
+          "url": "https://meetings.imf.org/en/IMF/Home/Publications/WEO/Issues/2023/04/11/world-economic-outlook-april-2023?utm_source=openai"
+        },
+        {
+          "end_index": 1786,
+          "start_index": 1664,
+          "title": "World Economic Outlook, April 2024: Steady but Slow: Resilience amid Divergence",
+          "type": "url_citation",
+          "url": "https://www.imf.org/en/publications/weo/issues/2024/04/16/world-economic-outlook-april-2024?utm_source=openai"
+        },
+        {
+          "end_index": 2082,
+          "start_index": 1953,
+          "title": "Is an Economic 'Soft Landing' Coming to the U.S. in 2025?",
+          "type": "url_citation",
+          "url": "https://www.investopedia.com/is-an-economic-soft-landing-coming-to-the-us-in-2025-8758746?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The US economy (primary reference for Elon's prediction) did not experience persistent economic weakness or recessionary conditions from late 2022 for 1-2 years. Instead, real GDP grew positively every quarter: Q4 2022 ~2.6%, Q1 2023 ~2.9%, Q2 2023 ~2.5%, and continued strongly through 2024 (annual 2.8%) and into 2025 (Q2 3.8%) per BEA, Multpl.com, YCharts. NBER did not declare a recession post-2022 (2022 Q1-Q2 dip not classified as one). Unemployment remained low (~3.7-4.1% 2023-2024, rising to 4.4% late 2025) per BLS/FRED. Summaries confirm robust growth, avoiding predicted recession (Reuters, American Progress, CNBC). No downturn to recover from by Q2 2024; strength persisted. Sources: [BEA GDP](https://www.bea.gov/data/gdp), [Multpl GDP table](https://www.multpl.com/us-real-gdp-growth-rate/table/by-quarter), [NBER](https://www.nber.org/research/business-cycle-dating), [FRED UNRATE](https://fred.stlouisfed.org/series/UNRATE)."
+    },
+    {
+      "id": "elon-01:06:47.020",
+      "result": "wrong",
+      "explanation": "Elon Musk said in late 2022 that \u201chate speech impressions\u201d on Twitter were already down by about one-third and would \u201cget even lower\u201d over time. However, X/Twitter has not subsequently released transparent, longitudinal data on hate\u2011speech *impressions* that would allow direct external verification of that internal metric; watchdogs note that neither impression data nor comprehensive hate\u2011speech volume data have been made publicly available since his takeover.([counterhate.com](https://counterhate.com/blog/the-musk-bump-quantifying-the-rise-in-hate-speech-under-elon-musk/?utm_source=openai))\n\nIn lieu of official impression data, multiple independent large\u2011scale studies of Twitter/X content from January 2022 through mid\u20112023 consistently find that *hate speech itself* (the volume/rate of hateful posts) rose substantially and remained elevated after Musk\u2019s acquisition:\n\n- A peer\u2011reviewed PLOS ONE study (UC Berkeley/LA/USC) finds that the weekly rate of hate speech on X was about 50% higher from Musk\u2019s purchase through at least May 2023 than in the months preceding his purchase, with increases across racism, homophobia, and transphobia.([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/39937728/?utm_source=openai))\n- A USC Viterbi summary of that work reports that hate speech overall increased by about 50%, with some slurs (especially transphobic) far more than doubling, and that posts containing hate speech received roughly 70% more likes per day than before\u2014indicating substantially greater engagement, and therefore likely greater exposure, to such content.([viterbischool.usc.edu](https://viterbischool.usc.edu/news/2025/02/a-platform-problem-hate-speech-and-bots-still-thriving-on-x/?utm_source=openai))\n- Euronews\u2019 coverage of the same research similarly reports that hate speech on X rose by around 50% after the acquisition, and that likes on posts containing homophobic, transphobic, and racist slurs increased by about 70%, again suggesting more users were seeing (and interacting with) such content.([euronews.com](https://www.euronews.com/news/2025/02/13/hate-speech-on-x-now-50-higher-under-elon-musks-leadership-new-study-finds?utm_source=openai))\n- Earlier analyses by the Center for Countering Digital Hate and partners showed that use of several major racist, homophobic, and transphobic slurs was markedly higher after Musk\u2019s takeover than before, contradicting his claim that hate\u2011related content had dropped, and emphasizing that Twitter/X does not share impression data with researchers.([counterhate.com](https://counterhate.com/blog/the-musk-bump-quantifying-the-rise-in-hate-speech-under-elon-musk/?utm_source=openai))([gaysonoma.com](https://www.gaysonoma.com/2022/12/transphobia-on-twitter-is-the-worst-its-ever-been-as-anti-lgbtq-slurs-surge/?utm_source=openai))\n\nWhile these studies measure tweet counts and engagement rather than Musk\u2019s proprietary \u201chate speech impressions\u201d metric, impressions are a prerequisite for likes and other engagement. A 50%+ increase in hate\u2011speech volume combined with ~70% more likes on that content is strongly inconsistent with a scenario in which the *total* number of views (\u201cimpressions\u201d) of hate speech continued to fall below already\u2011reduced December 2022 levels. Instead, the best available evidence indicates that hate\u2011speech prevalence and user exposure increased and stayed elevated for many months after the acquisition.\n\nBecause X has not provided independent, verifiable time\u2011series data on hate\u2011speech impressions, any judgment cannot be mathematically exact. But given (1) the absence of supporting transparency for Musk\u2019s claimed trend and (2) multiple independent empirical studies showing substantial, sustained increases in hate\u2011speech content and engagement after his takeover, the most reasonable conclusion is that his prediction that hate\u2011speech impressions would \u201cget even lower\u201d over time did **not** come true.",
+      "sources": [
+        {
+          "end_index": 631,
+          "start_index": 497,
+          "title": "The Musk Bump: Quantifying the rise in hate speech under Elon Musk \u2014 Center for Countering Digital Hate | CCDH",
+          "type": "url_citation",
+          "url": "https://counterhate.com/blog/the-musk-bump-quantifying-the-rise-in-hate-speech-under-elon-musk/?utm_source=openai"
+        },
+        {
+          "end_index": 1276,
+          "start_index": 1188,
+          "title": "X under Musk's leadership: Substantial hate and no reduction in inauthentic activity - PubMed",
+          "type": "url_citation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39937728/?utm_source=openai"
+        },
+        {
+          "end_index": 1775,
+          "start_index": 1627,
+          "title": "A Platform Problem: Hate Speech and Bots Still Thriving on X - USC Viterbi | School of Engineering",
+          "type": "url_citation",
+          "url": "https://viterbischool.usc.edu/news/2025/02/a-platform-problem-hate-speech-and-bots-still-thriving-on-x/?utm_source=openai"
+        },
+        {
+          "end_index": 2229,
+          "start_index": 2078,
+          "title": "Hate speech on X now 50% higher under Elon Musk\u2019s leadership, new study finds | Euronews",
+          "type": "url_citation",
+          "url": "https://www.euronews.com/news/2025/02/13/hate-speech-on-x-now-50-higher-under-elon-musks-leadership-new-study-finds?utm_source=openai"
+        },
+        {
+          "end_index": 2711,
+          "start_index": 2577,
+          "title": "The Musk Bump: Quantifying the rise in hate speech under Elon Musk \u2014 Center for Countering Digital Hate | CCDH",
+          "type": "url_citation",
+          "url": "https://counterhate.com/blog/the-musk-bump-quantifying-the-rise-in-hate-speech-under-elon-musk/?utm_source=openai"
+        },
+        {
+          "end_index": 2858,
+          "start_index": 2711,
+          "title": "Transphobia on Twitter is \u2018the worst it\u2019s ever been\u2019 as anti-LGBTQ+ slurs surge \u2013 We The People",
+          "type": "url_citation",
+          "url": "https://www.gaysonoma.com/2022/12/transphobia-on-twitter-is-the-worst-its-ever-been-as-anti-lgbtq-slurs-surge/?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "Elon claimed in Dec 2022 that hate speech impressions were down ~1/3 from pre-spike levels and would decline further ([Elon tweet Dec 2, 2022](https://x.com/elonmusk/status/1598752139278532610)). An independent Sprinklr assessment in Mar/Jul 2023 found impressions at 0.003% of total (vs X's 0.012%), indicating further decline ([X Safety](https://x.com/Safety/status/1638256122942353422), [Jul 2023 update](https://x.com/Safety/status/1681400087790927876)). However, X ceased weekly reporting as promised, and no public data on impressions exists post-2023. Recent X transparency reports (Sep 2024) detail actions (e.g., 5M hateful posts removed from 66M reports H1 2024) but omit impressions ([X Transparency](https://transparency.x.com/dsa-transparency-report.html)). Independent studies (e.g., PLOS One Feb 2025, Berkeley Feb 2025) report ~50% rise in hate speech *rates* post-acquisition through mid-2024, contradicting claims of reduced exposure, but measure post frequency/slurs, not impressions/views ([PLOS](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0313293)). Without specific impressions data after 2023, cannot confirm further decline."
+    },
+    {
+      "id": "elon-01:16:08.370",
+      "result": "wrong",
+      "explanation": "Musk\u2019s prediction was that **by mid\u2013late January 2023** Twitter would roll out a *new* feature set that, inside the product UI, clearly explained why an account was suspended or subject to \u201cvisibility filtering\u201d / shadowbanning.\n\nWe do see Musk publicly promising such a feature in early December 2022. Multiple outlets reported his tweet that *\u201cTwitter is working on a software update that will show your true account status, so you know clearly if you\u2019ve been shadowbanned, the reason why and how to appeal\u201d* and framed it as an **upcoming** feature, not something already live. ([gizmodo.com](https://gizmodo.com/elon-musk-twitter-shadowban-alert-feature-1849876688?utm_source=openai))\n\nHowever, coverage well **after** January 2023 still describes this as a work in progress, not a shipped feature. In August 2023, TechCrunch reported Musk apologizing that it was \u201ctaking so long,\u201d explaining that X\u2019s trust & safety code had many layers and that a ground\u2011up rewrite was underway\u2014clear evidence the transparency tooling was *not* yet implemented. ([techcrunch.com](https://techcrunch.com/2023/08/17/musk-says-x-will-address-shadowbanning-soon-but-former-trust-safety-exec-explains-why-that-will-be-difficult/?utm_source=openai)) In September 2023, X designer Andrea Conway publicly shared *mockups* of future \u201cshadowban\u201d / limited\u2011reach alerts, with articles noting the feature was still in development and that it was **not clear when it would be available to the public**. ([mobilesyrup.com](https://mobilesyrup.com/2023/09/27/new-x-prompt-for-shadow-banned-users/?utm_source=openai)) A later summary as of February 2025 likewise concluded there was no definitive evidence that the promised \u201ctrue account status\u201d feature (including reasons and appeal for shadowbans) had been fully rolled out. ([twitter.com](https://twitter.com/i/grok/share/THY9Ev75CBecWl2hOJSKQB5NI?utm_source=openai))\n\nTwitter/X has long shown generic suspension/lock notices and rule names, but the **specific, new in\u2011product transparency tooling Musk promised\u2014explaining visibility filtering/shadowbans and how to appeal\u2014was still not launched by mid\u2013late January 2023, and in fact was still incomplete many months later.** Given the missed deadline and continuing reports of the feature being only planned or prototyped, the prediction did not come true in the stated timeframe.",
+      "sources": [
+        {
+          "end_index": 723,
+          "start_index": 616,
+          "title": "Twitter Will Tell You If You've Been Shadowbanned, Elon Says",
+          "type": "url_citation",
+          "url": "https://gizmodo.com/elon-musk-twitter-shadowban-alert-feature-1849876688?utm_source=openai"
+        },
+        {
+          "end_index": 1269,
+          "start_index": 1088,
+          "title": "Musk says X will address shadowbanning 'soon,' but former Trust & Safety exec explains why that will be difficult | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2023/08/17/musk-says-x-will-address-shadowbanning-soon-but-former-trust-safety-exec-explains-why-that-will-be-difficult/?utm_source=openai"
+        },
+        {
+          "end_index": 1627,
+          "start_index": 1516,
+          "title": "X\u2019s designer reveals new prompt that will be visible to shadow-banned users",
+          "type": "url_citation",
+          "url": "https://mobilesyrup.com/2023/09/27/new-x-prompt-for-shadow-banned-users/?utm_source=openai"
+        },
+        {
+          "end_index": 1930,
+          "start_index": 1837,
+          "title": "X",
+          "type": "url_citation",
+          "url": "https://twitter.com/i/grok/share/THY9Ev75CBecWl2hOJSKQB5NI?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence found of Twitter rolling out in-product information explaining account suspensions or visibility filtering (shadow banning) by mid to late January 2023. Elon announced intent in Dec 2022 ([CNN](https://www.cnn.com/2022/12/09/tech/musk-twitter-shadowbanning)), but actual tweet visibility labels launched April 2023 ([Mashable](https://mashable.com/article/twitter-visibility-limited-labels-roll-out), [TechCrunch Apr 17](https://techcrunch.com/2023/04/17/twitter-says-it-will-label-tweets-that-violate-its-hate-speech-policy-and-get-downranked-as-a-result/)). Account 'temporary label' notifications appear in user reports from Nov 2023 onward ([Reddit](https://www.reddit.com/r/Twitter/comments/17xr5ff/weve_added_a_label_to_your_account_message/), [BlackHatWorld Jan 2024](https://www.blackhatworld.com/seo/weve-added-a-temporary-label-to-your-account-new-restriction.1558385/)). Jan 27, 2023 policy update focused on fewer suspensions ([The Verge](https://www.theverge.com/2023/1/27/23575170/twitter-less-severe-actions-suspensions-reinstatement)), not explanations. Prediction missed timeline."
+    },
+    {
+      "id": "elon-01:03:21.500",
+      "result": "ambiguous",
+      "explanation": "Musk told the All-In podcast in December 2022 that his \u201cerror rate\u2026 as Chief Twit will be less over time\u201d and that there would be \u201cfewer gaffes in the future.\u201d([ndtv.com](https://www.ndtv.com/feature/elon-musk-says-twitter-is-not-on-the-fast-lane-to-bankruptcy-anymore-3642573?utm_source=openai))  \n\nIn the first weeks after his October 2022 acquisition, there *was* a dense cluster of widely criticized, quickly reversed decisions: the rushed paid-verification rollout that triggered impersonation chaos and had to be paused within days; mass layoffs followed by attempts to rehire critical staff; and December 2022 suspensions of journalists and links to rival Mastodon that drew condemnation from the UN/EU and were partly walked back, with Musk later calling the cross\u2011platform link ban a mistake.([asisonline.org](https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2022/november/twitter-verification-impersonation-misinformation-reputational-risk/?utm_source=openai)) This period is broadly described in contemporaneous reporting as \u201cchaotic.\u201d([english.elpais.com](https://english.elpais.com/economy-and-business/2022-11-28/elon-musks-chaotic-first-month-at-twitter-layoffs-resignations-and-lost-ad-revenue.html?utm_source=openai))\n\nHowever, controversy and apparent missteps continued well beyond those initial weeks. Regulators and former executives have described Musk\u2019s leadership at X as creating a \u201cchaotic environment,\u201d including for privacy and security obligations.([gizmochina.com](https://www.gizmochina.com/2023/09/13/elon-musks-chaos-at-x-formerly-twitter/?utm_source=openai)) In November 2023 he endorsed an antisemitic conspiracy post, prompting a major advertiser exodus and public condemnation; at the DealBook Summit he called that reply one of the most foolish things he\u2019d done on the platform, even as he told departing advertisers to \u201cgo f--- yourself,\u201d which itself generated another wave of backlash.([arstechnica.com](https://arstechnica.com/tech-policy/2023/11/elon-musk-on-x-antisemitism-controversy-dont-advertise-go-f-yourself/?utm_source=openai)) The 2023 rebrand from Twitter to X was widely criticized as destroying existing brand equity and confusing users.([en.wikipedia.org](https://en.wikipedia.org/wiki/Twitter_under_Elon_Musk?utm_source=openai))  In 2025, Grok\u2014an AI chatbot tightly integrated with X and overseen by Musk\u2019s xAI\u2014was found generating antisemitic and genocidal content, leading to further reputational damage and contributing to CEO Linda Yaccarino\u2019s resignation after a tenure marked by repeated crises and advertiser boycotts.([en.wikipedia.org](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=openai))  Musk has also repeatedly attracted scrutiny for public explanations of outages (e.g., attributing March 2025 disruptions to a large \u201ccyberattack\u201d without clear evidence) and for aggressive legal and public-relations responses to watchdogs like Media Matters.([theguardian.com](https://www.theguardian.com/technology/2025/mar/10/elon-musk-cyberattack-x-outages?utm_source=openai))\n\nThere is no objective or commonly accepted metric for \u201cerror rate\u201d or \u201cgaffes\u201d in this context\u2014one could plausibly argue that the *frequency* of rapid, self\u2011reversed feature and policy changes declined after the first months, while others could point to the continued stream of high\u2011impact controversies, advertiser exits, regulatory clashes, and Musk\u2019s own acknowledgments of serious mistakes as evidence that his error rate has not clearly fallen. Because reasonable assessments can differ and the prediction is inherently qualitative, the claim that his gaffe rate would go down over time cannot be determined as clearly right or wrong; it remains **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 333,
+          "start_index": 196,
+          "title": "Elon Musk Says Twitter Is \"Not On The Fast Lane To Bankruptcy Anymore\"",
+          "type": "url_citation",
+          "url": "https://www.ndtv.com/feature/elon-musk-says-twitter-is-not-on-the-fast-lane-to-bankruptcy-anymore-3642573?utm_source=openai"
+        },
+        {
+          "end_index": 1046,
+          "start_index": 840,
+          "title": "Twitter Verification Changes Unleash Deluge of Impersonations, Misinformation, and Reputation Risks",
+          "type": "url_citation",
+          "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2022/november/twitter-verification-impersonation-misinformation-reputational-risk/?utm_source=openai"
+        },
+        {
+          "end_index": 1310,
+          "start_index": 1122,
+          "title": "Elon Musk\u2019s chaotic first month at Twitter: Layoffs, resignations and lost ad revenue | Economy and Business | EL PA\u00cdS English",
+          "type": "url_citation",
+          "url": "https://english.elpais.com/economy-and-business/2022-11-28/elon-musks-chaotic-first-month-at-twitter-layoffs-resignations-and-lost-ad-revenue.html?utm_source=openai"
+        },
+        {
+          "end_index": 1670,
+          "start_index": 1555,
+          "title": "Elon Musk's Leadership Style Under Fire as FTC Predicts \"Chaos\" at X, Formerly Twitter - Gizmochina",
+          "type": "url_citation",
+          "url": "https://www.gizmochina.com/2023/09/13/elon-musks-chaos-at-x-formerly-twitter/?utm_source=openai"
+        },
+        {
+          "end_index": 2156,
+          "start_index": 2004,
+          "title": "Elon Musk on X antisemitism controversy: \u201cDon\u2019t advertise. Go f*** yourself\u201d - Ars Technica",
+          "type": "url_citation",
+          "url": "https://arstechnica.com/tech-policy/2023/11/elon-musk-on-x-antisemitism-controversy-dont-advertise-go-f-yourself/?utm_source=openai"
+        },
+        {
+          "end_index": 2363,
+          "start_index": 2270,
+          "title": "Twitter under Elon Musk",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Twitter_under_Elon_Musk?utm_source=openai"
+        },
+        {
+          "end_index": 2748,
+          "start_index": 2660,
+          "title": "Grok (chatbot)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=openai"
+        },
+        {
+          "end_index": 3129,
+          "start_index": 3008,
+          "title": "Elon Musk claims 'massive cyber-attack' caused X outages",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2025/mar/10/elon-musk-cyberattack-x-outages?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction that the rate of notable mistakes or gaffes in Elon's management of Twitter/X would decrease relative to the initial weeks post-acquisition (late Oct-Dec 2022) did not come true. A detailed timeline from [Wikipedia: Twitter under Elon Musk](https://en.wikipedia.org/wiki/Twitter_under_Elon_Musk) documents high densities of major events across periods:\n\n- **Initial weeks (Oct-Nov 2022)**: 8-12 events, e.g., abrupt executive firings, mass layoffs with reversals, 'hardcore' ultimatum causing mass resignations, ElonJet/journalist suspensions.\n- **2023**: 12-18 events, e.g., paid verification chaos, antisemitic tweet endorsement (leading to advertiser exodus and 'go f*** yourself' remark), rebrand to X backlash, policy reversals increasing hate speech/misinfo, lawsuits vs. critics like CCDH.\n- **2024**: 8-9 events, e.g., UK riots 'civil war' tweets, Brazil platform ban defiance, CSAM account reinstatements, weakened blocks, advertiser lawsuits.\n- **2025 (to Dec)**: 5-6 events, e.g., ongoing CSAM networks (BBC found 100+ seller accounts), CEO Yaccarino resignation, Community Notes manipulation claims, xAI acquisition scrutiny.\n\nControversies persisted at a sustained or comparable rate (e.g., ~1-2 major events/month post-2022), with financial fallout (valuation down 70-80% per Fidelity), regulatory fines (EU, Australia, US), and lawsuits indicating no relative decrease. Sources like [The Week's controversy list](https://theweek.com/elon-musk/1022182/elon-musks-most-controversial-moments) and Reuters timelines confirm ongoing issues into 2025."
+    },
+    {
+      "id": "chamath-01:45:41.330",
+      "result": "ambiguous",
+      "explanation": "Macroeconomic data do not show a clearly defined global or U.S. recession lasting into mid\u20112024. The IMF\u2019s World Economic Outlook in January and April 2024 described **steady but below\u2011trend growth (~3.1\u20133.2% globally in 2023\u20132025) with falling inflation and a plausible \u201csoft landing,\u201d** rather than an ongoing recession that would \u201cend\u201d around mid\u20112024. ([meetings.imf.org](https://meetings.imf.org/en/IMF/Home/Publications/WEO/Issues/2024/01/30/world-economic-outlook-update-january-2024?utm_source=openai)) An IMF economist also said in April 2024 that the **risk of a global recession was \u201cfairly minimal,\u201d** again implying no clear recession to end at that time. ([cnbc.com](https://www.cnbc.com/2024/04/17/risk-of-a-global-recession-is-minimal-imf-economist-says.html?utm_source=openai)) Major banks like Goldman Sachs and Morgan Stanley similarly framed 2024 as a normalization/soft\u2011landing scenario, not an exit from recession. ([goldmansachs.com](https://www.goldmansachs.com/intelligence/pages/the-us-economy-is-on-its-final-descent-to-a-soft-landing.html?utm_source=openai))\n\nFor startups and venture funding, the picture is different but still mixed. After a severe \u201cfunding winter\u201d starting in 2022, VC investment fell sharply through 2022\u20132023. ([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/research/fintech-funding-falls-42-to-35b-in-2023-but-downturn-may-be-nearing-end?utm_source=openai)) In 2024 there **was a partial recovery**: global VC funding ticked up slightly versus 2023 and U.S. VC deal value rose about 30%, but activity remained more than 50% below 2021 levels and was **heavily concentrated in AI and top\u2011tier firms**, leaving many startups and sectors still capital\u2011constrained. ([reuters.com](https://www.reuters.com/technology/artificial-intelligence/ai-startups-drive-vc-funding-resurgence-capturing-record-us-investment-2024-2025-01-07/?utm_source=openai)) Some regions (notably African tech) saw **further funding declines in 2024**, with analysts only talking about \u201ccautious recovery\u201d in 2025, which contradicts the idea of a broad recovery beginning by mid\u20112024. ([disruptafrica.com](https://disruptafrica.com/2024/04/04/q1-african-tech-startup-funding-down-once-more-as-funding-winter-continues/?utm_source=openai))\n\nBy Q1 2025, U.S. VC reports describe **\u201cbright spots\u201d and \u201chope on the horizon\u201d with the strongest exit values since late 2021, yet still low liquidity and weak fundraising overall**, consistent with a gradual, uneven thaw rather than a clearly completed recovery. ([pitchbook.com](https://pitchbook.com/webinars/q1-2025-pitchbook-nvca-venture-monitor-webinar?utm_source=openai))\n\nBecause:\n- there was no officially recognized macro recession to \u201cend\u201d in mid\u20112024, and\n- the startup funding downturn and its recovery timing varied widely by sector and geography, with only a partial, uneven improvement around 2024\u2013early 2025,\n\nit isn\u2019t possible to map Chamath\u2019s \u201crecession ends mid\u20112024, then you can raise with runway to Q1 2025\u201d prediction cleanly onto the actual data. His **runway advice** turned out to be conservative and broadly reasonable, but the **specific timing and notion of a single recessionary period ending in mid\u20112024** do not line up neatly with how the economy and funding markets evolved. Overall, the call is best characterized as **ambiguous rather than clearly right or wrong.**",
+      "sources": [
+        {
+          "end_index": 547,
+          "start_index": 393,
+          "title": "World Economic Outlook Update, January 2024: Moderating Inflation and Steady Growth Open Path to Soft Landing",
+          "type": "url_citation",
+          "url": "https://meetings.imf.org/en/IMF/Home/Publications/WEO/Issues/2024/01/30/world-economic-outlook-update-january-2024?utm_source=openai"
+        },
+        {
+          "end_index": 831,
+          "start_index": 706,
+          "title": "Risk of a global recession is minimal, IMF economist says",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/04/17/risk-of-a-global-recession-is-minimal-imf-economist-says.html?utm_source=openai"
+        },
+        {
+          "end_index": 1123,
+          "start_index": 974,
+          "title": "The US economy is on its final descent to a soft landing | Goldman Sachs",
+          "type": "url_citation",
+          "url": "https://www.goldmansachs.com/intelligence/pages/the-us-economy-is-on-its-final-descent-to-a-soft-landing.html?utm_source=openai"
+        },
+        {
+          "end_index": 1477,
+          "start_index": 1299,
+          "title": "Fintech funding falls 42% to $35B in 2023, but downturn may be nearing end | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/fintech-funding-falls-42-to-35b-in-2023-but-downturn-may-be-nearing-end?utm_source=openai"
+        },
+        {
+          "end_index": 1963,
+          "start_index": 1782,
+          "title": "AI startups drive VC funding resurgence, capturing record US investment in 2024",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/ai-startups-drive-vc-funding-resurgence-capturing-record-us-investment-2024-2025-01-07/?utm_source=openai"
+        },
+        {
+          "end_index": 2327,
+          "start_index": 2174,
+          "title": "Q1 African tech startup funding down once more as \u201cfunding winter\u201d continues - Disrupt Africa",
+          "type": "url_citation",
+          "url": "https://disruptafrica.com/2024/04/04/q1-african-tech-startup-funding-down-once-more-as-funding-winter-continues/?utm_source=openai"
+        },
+        {
+          "end_index": 2710,
+          "start_index": 2596,
+          "title": "Q1 2025 PitchBook-NVCA Venture Monitor Webinar | PitchBook",
+          "type": "url_citation",
+          "url": "https://pitchbook.com/webinars/q1-2025-pitchbook-nvca-venture-monitor-webinar?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "No official US recession occurred (NBER has not declared one since 2020; GDP positive every quarter: e.g., 2024 annual 2.8%, Q4 2.4%, Q3 2.8%, Q2 3.1%; 2025 Q2 3.8% per BEA). However, Chamath referred to an 'ongoing recessionary period' (high rates peaking Jul 2023, VC funding winter 2022-early 2024). This eased mid-2024 onward: Fed cuts began Sep 2024 (50bps), continued Nov/Dec 2024 & 2025. VC funding recovered late 2024 (Q4 surge, AI-driven), boomed 2025 (US $215B 2024 total per NVCA; Q1 2025 $80B+ US VC, +30% QoQ per EY; global Q2 $91B, Q3 $97B per Crunchbase). Startups needed ~Q1 2025 runway as predicted, with funding environment improving thereafter. Timeline aligns despite no formal recession. Sources: [NBER Business Cycle](https://www.nber.org/research/business-cycle-dating), [BEA GDP](https://www.bea.gov/data/gdp), [Fed FOMC](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm), [NVCA Yearbook](https://nvca.org/press_releases/nvca-releases-2025-yearbook-showcasing-2024-vc-trends/), [EY VC Q1 2025](https://www.ey.com/en_us/insights/growth/venture-capital-investment-trends)."
+    },
+    {
+      "id": "E-01:44:05.440",
+      "result": "wrong",
+      "explanation": "Chamath framed the situation in late 2022 as a *current recession* that he expected to last until roughly mid\u20112024, and he advised companies to get to breakeven or have runway through Q1 2025.\n\nUsing standard macroeconomic definitions for the U.S., this did **not** happen:\n\n- The National Bureau of Economic Research (NBER), the official arbiter of U.S. business cycles, shows the last recession ending in **April 2020**, with no new recession at any point from 2022 through at least Q3 2025. ([nber.org](https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions?utm_source=openai))  \n- Revised GDP data removed even the earlier \u201ctechnical recession\u201d story: updated Commerce Department figures show that U.S. real GDP in Q2 2022 actually **grew** at a 0.3% annual rate rather than shrinking, meaning the two\u2011quarters\u2011down rule of thumb never applied. ([axios.com](https://www.axios.com/2024/09/26/2022-recession-gdp-revision?utm_source=openai))\n- On an annual basis, real U.S. GDP **rose** 2.1% in 2022, 2.5% in 2023, and 2.8% in 2024, a pattern of continued expansion rather than a multi\u2011year recession. ([bea.gov](https://www.bea.gov/news/2023/gross-domestic-product-fourth-quarter-and-year-2022-third-estimate-gdp-industry-and?utm_source=openai))\n- The labor market stayed historically tight: the unemployment rate averaged about **3.6% in 2023** and **4.0% in 2024**, with BLS describing 2024 as a year where unemployment edged up modestly but remained low by historical standards\u2014not the surge in joblessness typical of a recession. ([bls.gov](https://www.bls.gov/opub/mlr/2025/article/unemployment-rate-increases-in-the-first-half-of-2024-before-leveling-off-while-the-labor-force-participation-rate-holds-fairly-steady.htm?mf_ct_campaign=yahoo-synd-feed&utm_source=openai))\n- Contemporary commentary on 2023\u201324 macro conditions repeatedly characterized the outcome as a **soft landing** in which the U.S. \u201ceasily skirted a recession\u201d while inflation fell and growth remained solid. ([presidency.ucsb.edu](https://www.presidency.ucsb.edu/documents/icymi-president-bidens-economic-plan-fuels-strong-growth-2023?utm_source=openai))\n\nYou can argue there was a \"recession\" in specific risk assets or venture funding, but in the usual macroeconomic sense Chamath was talking about (guiding CEOs around a broad downturn), the U.S. did **not** experience a recession running into mid\u20112024. Since the underlying recession he anticipated never materialized, it cannot be said to have \"ended\" around mid\u20112024, making his timing call wrong by the standard macro data.",
+      "sources": [
+        {
+          "end_index": 643,
+          "start_index": 531,
+          "title": "US Business Cycle Expansions and Contractions | NBER",
+          "type": "url_citation",
+          "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions?utm_source=openai"
+        },
+        {
+          "end_index": 1006,
+          "start_index": 913,
+          "title": "2022's \"technical recession\" wasn't real, revised GDP data shows",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2024/09/26/2022-recession-gdp-revision?utm_source=openai"
+        },
+        {
+          "end_index": 1312,
+          "start_index": 1168,
+          "title": "Gross Domestic Product, Fourth Quarter and Year 2022 (Third Estimate), GDP by Industry, and Corporate Profits | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2023/gross-domestic-product-fourth-quarter-and-year-2022-third-estimate-gdp-industry-and?utm_source=openai"
+        },
+        {
+          "end_index": 1844,
+          "start_index": 1602,
+          "title": "Unemployment rate increases in the first half of 2024, before leveling off, while the labor force participation rate holds fairly steady : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/mlr/2025/article/unemployment-rate-increases-in-the-first-half-of-2024-before-leveling-off-while-the-labor-force-participation-rate-holds-fairly-steady.htm?mf_ct_campaign=yahoo-synd-feed&utm_source=openai"
+        },
+        {
+          "end_index": 2200,
+          "start_index": 2054,
+          "title": "ICYMI: President Biden's Economic Plan Fuels Strong Growth in 2023 | The American Presidency Project",
+          "type": "url_citation",
+          "url": "https://www.presidency.ucsb.edu/documents/icymi-president-bidens-economic-plan-fuels-strong-growth-2023?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath predicted the 'current recession' (as of Dec 2022) would end around mid-2024. However, the NBER has not declared any US recession since the COVID-era one ending April 2020 ([NBER Business Cycle Dating](https://www.nber.org/research/business-cycle-dating)). Despite two negative GDP quarters in early 2022 (Q1: -1.6%, Q2: -0.6% annualized), NBER did not classify it as a recession due to strong employment ([Dallas Fed](https://www.dallasfed.org/research/economics/2022/0802), [CT Mirror](https://ctmirror.org/2025/09/18/us-economic-recession/)). US GDP grew positively thereafter: 2023 ~2.5-2.9% ([Macrotrends](https://www.macrotrends.net/global-metrics/countries/usa/united-states/gdp-growth-rate)); 2024 quarters all positive (e.g., Q4 2.4%, Q3 2.8% [Multpl](https://www.multpl.com/us-real-gdp-growth-rate/table/by-quarter)); 2025 Q2 3.8% ([BEA](https://www.bea.gov/data/gdp/gross-domestic-product)). No recession occurred or ended mid-2024; economy expanded continuously ([NYT](https://www.nytimes.com/2024/01/26/business/economy/economy-recession-soft-landing.html), [Advisor Perspectives Big Four](https://www.advisorperspectives.com/dshort/updates/2025/11/25/the-big-four-recession-indicators)). Enough time has passed (Dec 2025)."
+    },
+    {
+      "id": "E-01:55:26.160",
+      "result": "wrong",
+      "explanation": "Chamath suggested after the 2022 Bestie Awards that there might be no \"turnaround\" award until 2025. However, in the 2023 Bestie Awards episode (E159, released December 29, 2023), the show explicitly includes a **\u201cBest Turnaround\u201d** segment at 47:07 in the chapter list. ([podcasts.apple.com](https://podcasts.apple.com/us/podcast/e159-the-bestie-awards-recapping-the-best-and-worst-of-2023/id1502871393?i=1000640031471&l=ar&utm_source=openai)) In the transcript for that segment, the Besties actively debate and *award* Best Turnaround to several cases (e.g., Novo Nordisk, Solana, Uber/Dara, Sam Altman), demonstrating that they did find clear turnaround stories well before 2025. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e159-the-bestie-awards-recapping-the-best-and-worst-of-2023?scroll_to_words=first+principles&search_type=basic)) This directly contradicts the prediction that there would be no turnaround award until 2025.",
+      "sources": [
+        {
+          "end_index": 479,
+          "start_index": 306,
+          "title": "E159: The Bestie Awards! Recap... - All-In with Chamath, Jason, Sacks & Friedberg - Apple Podcasts",
+          "type": "url_citation",
+          "url": "https://podcasts.apple.com/us/podcast/e159-the-bestie-awards-recapping-the-best-and-worst-of-2023/id1502871393?i=1000640031471&l=ar&utm_source=openai"
+        },
+        {
+          "end_index": 920,
+          "start_index": 718,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E159: The Bestie Awards! Recapping the best and worst of 2023 Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e159-the-bestie-awards-recapping-the-best-and-worst-of-2023?scroll_to_words=first+principles&search_type=basic"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath's prediction that there would be no turnaround award until 2025 was incorrect, as the All-In Podcast's 2023 Bestie Awards (E159, released Dec 29, 2023) featured a 'Best Turnaround' category. Hosts nominated: Chamath - Novo Nordisk; Sacks - Solana; Friedberg - Uber/Dara Khosrowshahi; Jason - Sam Altman/OpenAI. Timestamps from YouTube ([link](https://www.youtube.com/watch?v=vT4ejH4ZfF4)), Spotify, Apple Podcasts, and episode summaries confirm the category at ~47:07-50:04. This occurred well before 2025."
+    },
+    {
+      "id": "E-02:02:51.230",
+      "result": "inconclusive",
+      "explanation": "The prediction\u2019s key claims are explicitly about what will happen *\u201cover the next decade or two\u201d* (roughly 2022\u20132032 or 2022\u20132042):\n\n1. **Energy costs**: It asserts that the marginal cost of energy generation and storage will be in the low single-digit cents per kWh and make energy effectively free and abundant. While utility-scale solar and wind PPAs in many regions are indeed in the low single-digit cents per kWh range and battery costs have continued to fall, the global energy system is still far from \u201ceffectively free and abundant\u201d in 2025; fossil fuels remain significant, and retail electricity prices for consumers are much higher than a few cents/kWh in most markets. (Multiple, evolving data sources on levelized costs of energy and storage would be needed to fully validate, and this transition is ongoing beyond 2025.)\n\n2. **Foreign policy / national security impact**: The more substantial, time-sensitive part of the prediction is that this cheap, abundant energy will create a *\u201cmassive peace dividend\u201d* and *\u201crewrite our foreign policy\u201d* and *\u201crewrite national security\u201d* over that 10\u201320 year horizon. As of late 2025, only about three years have elapsed since the prediction. U.S. foreign policy and national security priorities are still heavily shaped by geopolitical competition (e.g., with China and Russia), supply-chain security, and traditional defense concerns. It is too early in the 10\u201320 year window to judge whether cheap energy will eventually produce the kind of structural, durable \u201cpeace dividend\u201d effect he forecasts.\n\nBecause:\n- The prediction\u2019s main horizon (10\u201320 years) has **not yet elapsed**, and\n- The transformative outcomes (free/abundant energy + fundamental re-write of U.S. foreign policy and national security) are long-run structural claims that cannot reasonably be confirmed or falsified after only ~3 years,\n\nthis forecast cannot yet be fairly evaluated.\n\nTherefore, the appropriate status as of November 30, 2025 is: it is **too early to tell** whether this prediction will prove correct.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for effects over 10\u201320 years (2032\u20132042), but only ~3 years have passed (2022\u20132025). Costs have declined as forecasted: Lazard's 2025 LCOE+ reports unsubsidized utility-scale solar at $38\u201378/MWh (3.8\u20137.8\u00a2/kWh), onshore wind $37\u201386/MWh (3.7\u20138.6\u00a2/kWh), and solar+storage $50\u2013131/MWh (5\u201313.1\u00a2/kWh), confirming low single-digit cents at the lower end for generation and near it for storage-inclusive systems ([Lazard LCOE+ 2025](https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf)). Wholesale prices averaged ~$40/MWh forecast for 2025 (EIA). However, energy is not 'effectively free' (retail ~16\u00a2/kWh), and no 'massive peace dividend' or reshaping of U.S. foreign policy/national security is evident\u2014searches for policy changes yield no links to cheap renewables, focusing instead on fossils/LNG. Too early to assess full outcome."
+    },
+    {
+      "id": "B-02:03:28.550",
+      "result": "right",
+      "explanation": "Available evidence by late 2025 indicates that Friedberg\u2019s prediction has largely played out as described.\n\n- **Prompt-based, \u201cnarrate what you want\u201d interaction has become the standard for generative AI.** Academic and industry work now explicitly defines AI-generated content as systems that automatically create text, images, etc. *based on user prompts*, and even proposes architectures and frameworks whose core optimization variable is the prompt/narration supplied by the user. ([arxiv.org](https://arxiv.org/abs/2309.01065?utm_source=openai))\n- **Mass consumer and enterprise adoption shows this narrator-style usage has indeed \u201cemerged and grown.\u201d** By 2024\u201325, ChatGPT alone had over 100 million weekly active users and was reportedly adopted in some form by more than 90% of Fortune 500 companies, while the broader AI boom is characterized specifically by generative models like large language models and image generators. ([investopedia.com](https://www.investopedia.com/productivity-gains-from-ai-to-boost-economic-growth-in-2024-and-beyond-8403942?utm_source=openai))  This reflects exactly the behavior he described: ordinary users and workers typing natural-language instructions to generate content, code, designs, and more on demand.\n- **Business operations and product creation are being re-shaped around generative AI.** Research on firms integrating GenAI into online retail workflows finds statistically significant sales and productivity gains when generative features are embedded into business processes, directly tying prompt-driven generation to measurable operational changes. Conceptual enterprise frameworks published in 2025 focus specifically on how organizations adopt and integrate GenAI \u2013 including prompt engineering and model orchestration \u2013 into strategy, workflows, and governance, indicating that this mode of working is now a serious management and IT concern rather than a fringe experiment. ([arxiv.org](https://arxiv.org/abs/2510.12049?utm_source=openai))\n- **Cultural and creator behavior has shifted toward a \u201cnarrator / prompt economy.\u201d** Commentators now explicitly use terms like \u201cnarrator economy\u201d and \u201cprompt economy\u201d to describe an environment where economic and creative leverage comes from the ability to prompt and frame ideas for AI systems, not from traditional technical production skills. These pieces highlight that with tools like ChatGPT and image generators, anyone can create apps, art, or content by narrating what they want, and that prompting has become a central creative and economic skill. ([medium.com](https://medium.com/%40shawnkanungo15/the-narrator-economy-why-you-must-disrupt-yourself-shawn-kanungo-2ede24e9f3e9?utm_source=openai))\n\nTaken together, these developments match the core of Friedberg\u2019s prediction: a rapidly growing, prompt\u2011driven \"narrator economy\" that is changing how people entertain themselves, behave as users, and how businesses operate and create products. The trend is still evolving, but enough has already materialized to judge the prediction as essentially correct.",
+      "sources": [
+        {
+          "end_index": 585,
+          "start_index": 520,
+          "title": "Optimizing Mobile-Edge AI-Generated Everything (AIGX) Services by Prompt Engineering: Fundamental, Framework, and Case Study",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2309.01065?utm_source=openai"
+        },
+        {
+          "end_index": 1118,
+          "start_index": 971,
+          "title": "Productivity Gains From AI To Boost Economic Growth in 2024 and Beyond",
+          "type": "url_citation",
+          "url": "https://www.investopedia.com/productivity-gains-from-ai-to-boost-economic-growth-in-2024-and-beyond-8403942?utm_source=openai"
+        },
+        {
+          "end_index": 2037,
+          "start_index": 1972,
+          "title": "Generative AI and Firm Productivity: Field Experiments in Online Retail",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2510.12049?utm_source=openai"
+        },
+        {
+          "end_index": 2747,
+          "start_index": 2599,
+          "title": "The Narrator Economy & Why You Must Disrupt Yourself \u2014 Shawn Kanungo | by Shawn Kanungo | Medium",
+          "type": "url_citation",
+          "url": "https://medium.com/%40shawnkanungo15/the-narrator-economy-why-you-must-disrupt-yourself-shawn-kanungo-2ede24e9f3e9?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Friedberg's prediction of a 'narrator economy'\u2014where users narrate desires via generative AI (e.g., ChatGPT, DALL\u00b7E) for on-demand creation, transforming entertainment, user behavior, and business\u2014has emerged and grown substantially by 2025. \n\n**Market & Adoption Growth**: Generative AI market valued at ~$20-37B in 2024/2025, projected to $100B+ by 2030 (CAGR 37-46%; [GMI](https://www.gminsights.com/industry-analysis/generative-ai-market), [Grand View](https://www.grandviewresearch.com/industry-analysis/generative-ai-market-report), [Precedence](https://www.precedenceresearch.com/generative-ai-market)). Adoption doubled to 65% (2023-2024), with 40% US workers using AI ([Anthropic](https://www.anthropic.com/research/anthropic-economic-index-september-2025-report), [AmplifAI](https://www.amplifai.com/blog/generative-ai-statistics)). 'Shadow AI economy' thrives via personal tools ([VentureBeat](https://venturebeat.com/ai/mit-report-misunderstood-shadow-ai-economy-booms-while-headlines-cry-failure)).\n\n**Entertainment**: AI revolutionizes content creation, personalization, scriptwriting ([McKinsey](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/how-ai-could-reinvent-film-and-tv-production), [Morgan Stanley](https://www.morganstanley.com/insights/articles/ai-in-media-entertainment-benefits-and-risks), [WEF](https://reports.weforum.org/docs/WEF_Artificial_Intelligence_in_Media_Entertainment_and_Sport_2025.pdf)).\n\n**User Behavior**: Prompt engineering boomed as a skill ([LinkedIn trends](https://www.linkedin.com/posts/lokesh-dudhat_top-10-ai-prompt-engineering-trends-shaping-activity-7315304935326138368-R7Mw), [Precedence](https://www.precedenceresearch.com/prompt-engineering-market)); shift from 'creator' to 'narrator' echoed ([Dexa.ai](https://dexa.ai/s/8-gQxf-H)).\n\n**Business**: Productivity +1.5% GDP boost by 2035; cost savings, custom products ([Wharton](https://budgetmodel.wharton.upenn.edu/issues/2025/9/8/projected-impact-of-generative-ai-on-future-productivity-growth), [S&P](https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/10/generative-ai-shows-rapid-growth-but-yields-mixed-results)).\n\n3 years post-2022 prediction aligns with 'emerging' trend; concept validated despite term not mainstream."
+    },
+    {
+      "id": "C-02:04:18.420",
+      "result": "right",
+      "explanation": "Evidence since late 2022 shows both pillars of Sacks\u2019 prediction playing out:\n\n- **Trust in legacy/corporate news has kept falling to record lows.** Gallup trend data summarized in multiple outlets shows U.S. trust in \u201cmass media such as newspapers, TV and radio\u201d dropping from the mid\u201130% range in 2022 to 31% in 2024 and then 28% in 2025 saying they have a *great deal or fair amount* of trust\u2014its lowest level in over 50 years. Roughly 70% now say they have *not very much* or *no* trust in these outlets. ([breitbart.com](https://www.breitbart.com/politics/2025/02/27/poll-americans-trust-in-mass-media-lowest-point-in-over-50-years/?utm_source=openai))  This directly matches his claim that more people see corporate media as failing and agenda\u2011driven.\n\n- **A growing share of people are \u201copting out\u201d toward independent or non\u2011traditional media.** \n  - A 2024 Pew report finds about **1 in 5 U.S. adults (21%)**\u2014and **37% of adults 18\u201329**\u2014regularly get news from *news influencers* on social media, and **77% of those influencers have no affiliation with a news organization**, i.e., they are independent creators. ([pewresearch.org](https://www.pewresearch.org/journalism/2024/11/18/americas-news-influencers/?utm_source=openai))  \n  - A 2025 Reuters Institute analysis and related coverage report that **social and video networks have overtaken TV as Americans\u2019 primary news source**, with people increasingly turning to online personalities and podcasters like Joe Rogan instead of traditional news brands. ([reuters.com](https://www.reuters.com/world/us/us-news-consumers-are-turning-podcaster-joe-rogan-away-traditional-sources-2025-06-16/?utm_source=openai))  \n  - The \u201cindependent journalism era\u201d is documented as rapidly expanding: platforms like **Substack** grew from ~1 million paid subscriptions in 2021 to over **3 million by early 2024** and **around 5 million paid subscriptions by early 2025**, with politics and news as leading categories and many high\u2011profile journalists leaving legacy outlets to build independent businesses there. ([axios.com](https://www.axios.com/2024/02/22/substack-3-million-paid-subscriptions?utm_source=openai))  \n  - Podcast and creator\u2011driven content consumption is at all\u2011time highs, with a majority of Americans now monthly podcast consumers, and podcasts\u2014often independent\u2014serving as a major news/opinion channel. ([edisonresearch.com](https://www.edisonresearch.com/the-infinite-dial-2025/?utm_source=openai))\n\nAcross roughly three years since the prediction, the **directional trend is clear**: trust in corporate/mass media keeps deteriorating, while independent/creator\u2011led and influencer\u2011driven outlets capture a growing share of news consumption, especially among younger audiences. That aligns closely with Sacks\u2019 forecast that more people would recognize corporate media as biased and would shift toward independent media \u201cover the coming years.\u201d",
+      "sources": [
+        {
+          "end_index": 692,
+          "start_index": 544,
+          "title": "Poll: Americans Trust in Mainstream Media 'Lowest Point' in over 50 Years",
+          "type": "url_citation",
+          "url": "https://www.breitbart.com/politics/2025/02/27/poll-americans-trust-in-mass-media-lowest-point-in-over-50-years/?utm_source=openai"
+        },
+        {
+          "end_index": 1274,
+          "start_index": 1159,
+          "title": "Influencers Who Often Post About News, and Who Sees Their Content | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/journalism/2024/11/18/americas-news-influencers/?utm_source=openai"
+        },
+        {
+          "end_index": 1709,
+          "start_index": 1555,
+          "title": "US news consumers are turning to podcaster Joe Rogan and away from traditional sources, report shows",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/us-news-consumers-are-turning-podcaster-joe-rogan-away-traditional-sources-2025-06-16/?utm_source=openai"
+        },
+        {
+          "end_index": 2201,
+          "start_index": 2098,
+          "title": "Substack says it now has more than 3 million paid subscriptions",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2024/02/22/substack-3-million-paid-subscriptions?utm_source=openai"
+        },
+        {
+          "end_index": 2506,
+          "start_index": 2410,
+          "title": "The Infinite Dial 2025 - Edison Research",
+          "type": "url_citation",
+          "url": "https://www.edisonresearch.com/the-infinite-dial-2025/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Sacks' prediction has come true. Gallup polls show U.S. trust in mass media declined from 34% in 2022 ([Gallup Historical Trends](https://news.gallup.com/poll/1663/media-use-evaluation.aspx)) to a record low of 28% in 2025 ([Gallup 2025](https://news.gallup.com/poll/695762/trust-media-new-low.aspx)). Reuters Digital News Report 2025 notes traditional news media facing 'declining engagement, low trust' and rise of alternative media ecosystems ([Reuters 2025](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2025)), with U.S. trust already at 26% in 2022 ([Reuters 2022](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2022)). Cable/satellite TV subscriptions fell from 63% to 49% ([Deloitte 2025](https://www.deloitte.com/us/en/insights/industry/technology/digital-media-trends-consumption-habits-survey/2025.html)); cable news viewership down sharply (e.g., CNN primetime -42% YoY in 2025). Independent media surged: Substack paid subs to 5M, independent journalists' submissions up 4x since 2022, podcasts 'exploding' ([various sources](https://www.qwoted.com/the-rise-of-independent-journalism-why-journalists-are-turning-to-substack/))."
+    },
+    {
+      "id": "A-01:59:35.700",
+      "result": "wrong",
+      "explanation": "Sam Bankman-Fried was sentenced on **March 28, 2024** in U.S. federal court to **25 years in prison**, plus supervised release, following his conviction on seven criminal counts related to fraud at FTX. Multiple reputable outlets (e.g., major U.S. newspapers and wire services) report the sentence length as 25 years, not 35.\n\nSince Jason\u2019s prediction set an over-under line at **35 years**, and the actual sentence was **significantly below** that (by about 10 years), the prediction that the sentence would be \u201capproximately 35 years\u201d is **incorrect**.\n\n*(Key sources: contemporaneous news reports on the March 28, 2024 sentencing by major outlets such as the New York Times, Associated Press, and others, all consistently stating a 25-year sentence.)*",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Sam Bankman-Fried was sentenced to **25 years** in federal prison on March 28, 2024, well below the 35-year over-under line set by Jason. This is confirmed by official U.S. Department of Justice statements ([justice.gov](https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-prison)), Wikipedia, CNN, BBC, Reuters, and other sources. The prediction of approximately 35 years did not come true."
+    },
+    {
+      "id": "E-01:59:39.660",
+      "result": "wrong",
+      "explanation": "Sam Bankman-Fried was sentenced on **March 28, 2024** in U.S. federal court to **25 years in prison** for fraud and related charges, according to multiple reputable sources including major news outlets and the U.S. Department of Justice reporting. This is substantially *less* than 35 years and far from Bernie Madoff\u2019s 150-year sentence, which is often cited as the benchmark for a de facto life sentence in large financial fraud cases.\n\nBecause Chamath explicitly said he would \"take the over\" on 35 years and compared it to \"Madoff level\" sentencing, his prediction that SBF would receive a sentence **longer than 35 years and effectively Madoff-level** was not borne out by the actual 25-year sentence.\n\nTherefore, the prediction is **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Sam Bankman-Fried was sentenced to 25 years in prison on March 28, 2024, which is less than 35 years and far short of Bernie Madoff's 150-year (de facto life) sentence. Sources: [U.S. Department of Justice](https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-prison), [Wikipedia](https://en.wikipedia.org/wiki/Sam_Bankman-Fried), [NYT comparison article](https://www.nytimes.com/2024/03/28/technology/sam-bankman-fried-white-collar-sentences.html)."
+    },
+    {
+      "id": "B-01:59:46.680",
+      "result": "wrong",
+      "explanation": "Sam Bankman-Fried was sentenced in U.S. federal court on March 28, 2024, to **25 years in prison**, far below the \u201chundreds of years\u201d term Friedberg predicted. ([theguardian.com](https://www.theguardian.com/business/live/2024/mar/28/sam-bankman-fried-ftx-sentencing-live-updates?utm_source=openai))  Under federal rules and the Bureau of Prisons\u2019 current calculations, he is expected to serve a bit over 20 years, with a projected release date in **December 2044** after good-conduct credits and other adjustments. ([washingtonpost.com](https://www.washingtonpost.com/business/2024/03/28/sam-bankman-fried-sentence-fraud-ftx-crypto/?utm_source=openai))  Bankman-Fried was in his early 30s at sentencing, so a 25-year term with projected release in his early 50s is **neither a sentence in the hundreds of years nor an effective life sentence**. Appeals are ongoing, but there is no realistic path evident in the record or current reporting toward a \u201chundreds of years\u201d sentence replacing the 25-year term. ([ft.com](https://www.ft.com/content/87141275-5ae9-409b-87ae-42f97b2c5507?utm_source=openai))  Therefore, Friedberg\u2019s prediction that SBF would receive \u201chundreds of years\u201d and be \u201cgone for life\u201d has not come true and is contradicted by the actual sentencing and projected release timeline.",
+      "sources": [
+        {
+          "end_index": 331,
+          "start_index": 193,
+          "title": "Sam Bankman-Fried will appeal his 25-year sentence \u2013 as it happened | Sam Bankman-Fried | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/live/2024/mar/28/sam-bankman-fried-ftx-sentencing-live-updates?utm_source=openai"
+        },
+        {
+          "end_index": 685,
+          "start_index": 548,
+          "title": "Sam Bankman-Fried sentenced to 25 years in prison - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/business/2024/03/28/sam-bankman-fried-sentence-fraud-ftx-crypto/?utm_source=openai"
+        },
+        {
+          "end_index": 1132,
+          "start_index": 1039,
+          "title": "Sam Bankman-Fried's lawyer says FTX founder's trial was 'fundamentally unfair'",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/87141275-5ae9-409b-87ae-42f97b2c5507?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Sam Bankman-Fried was sentenced to 25 years in federal prison on March 28, 2024, far short of 'hundreds of years.' He is unlikely to spend the rest of his life in prison (born 1992, eligible for release around age 58 with good behavior). Sources: [US DOJ](https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-prison), [Wikipedia](https://en.wikipedia.org/wiki/Sam_Bankman-Fried), [CNN](https://www.cnn.com/2024/03/28/business/ftx-sam-bankman-fried-sentencing)."
+    },
+    {
+      "id": "A-01:59:52.960",
+      "result": "wrong",
+      "explanation": "Sam Bankman-Fried was sentenced on March 28, 2024 to 25 years in federal prison, not to life imprisonment. ([theguardian.com](https://www.theguardian.com/business/2024/mar/28/sam-bankman-fried-sentenced-prison-ftx-fraud?utm_source=openai))  Under federal rules he is expected to serve a bit over 21 years before release eligibility, and the Bureau of Prisons currently projects a release date of December 14, 2044\u2014about 21 years after sentencing. ([coindesk.com](https://www.coindesk.com/policy/2024/03/28/sam-bankman-fried-ftx-sentencing?utm_source=openai))  Born in March 1992, he would be in his early 50s at that time, leaving a substantial portion of normal life expectancy remaining. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Sam_Bankman-Fried?utm_source=openai))  While he is appealing his conviction and sentence, those efforts seek to overturn or shorten the sentence, and there is no indication of any move toward a harsher, life-equivalent term. ([apnews.com](https://apnews.com/article/f140a9d2b0c5fe0d2bad2b1ff7184e10?utm_source=openai))  Given these facts, the prediction that he would receive a life sentence or a sentence functionally equivalent to life has not come true.",
+      "sources": [
+        {
+          "end_index": 272,
+          "start_index": 140,
+          "title": "\u2018He knew it was wrong\u2019: Sam Bankman-Fried sentenced to 25 years in prison over FTX fraud | Sam Bankman-Fried | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/2024/mar/28/sam-bankman-fried-sentenced-prison-ftx-fraud?utm_source=openai"
+        },
+        {
+          "end_index": 591,
+          "start_index": 480,
+          "title": "Sam Bankman-Fried Sentenced to 25 Years in Prison",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/policy/2024/03/28/sam-bankman-fried-ftx-sentencing?utm_source=openai"
+        },
+        {
+          "end_index": 810,
+          "start_index": 723,
+          "title": "Sam Bankman-Fried",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Sam_Bankman-Fried?utm_source=openai"
+        },
+        {
+          "end_index": 1091,
+          "start_index": 998,
+          "title": "Appeals judges react skeptically to Sam Bankman-Fried's bid to overturn fraud conviction",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/f140a9d2b0c5fe0d2bad2b1ff7184e10?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Sam Bankman-Fried was sentenced to **25 years in federal prison** on March 28, 2024, followed by 3 years of supervised release and $11 billion forfeiture. This is far short of a life sentence or equivalent (e.g., 100+ years). He was 32 at sentencing; 25 years would end at age ~57, potentially less with good behavior credits. Sources: [US DOJ](https://www.justice.gov/archives/opa/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes), [Wikipedia](https://en.wikipedia.org/wiki/Trial_of_Sam_Bankman-Fried), [NPR](https://www.npr.org/2024/03/28/1241484048/sam-bankman-fried-sentenced-to-25-years-on-multi-billion-dollar-fraud), [CNN](https://www.cnn.com/2024/03/28/business/ftx-sam-bankman-fried-sentencing/index.html). Prediction from Dec 2022 podcast incorrect as of Dec 2025; appeal ongoing but sentence stands."
+    },
+    {
+      "id": "C-02:08:08.510",
+      "result": "right",
+      "explanation": "Multiple sources show that **Dal\u00edland** received its general U.S. theatrical and on\u2011demand release on **June 9, 2023**.\n\n* Wikipedia notes that *Dal\u00edland* \"was released in the United States on June 9, 2023\" by Magnolia Pictures. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dal%C3%ADland?utm_source=openai))  \n* Collider reported that *Dal\u00edland* \"will be released in theaters and on-demand on June 9, 2023.\" ([collider.com](https://collider.com/daliland-trailer-ben-kingsley/?utm_source=openai))  \n* Release-tracking sites likewise list the theater/PVOD date as June 9, 2023. ([whentostream.com](https://www.whentostream.com/daliland-2023?utm_source=openai))\n\nThe podcast (Dec 24, 2022) prediction was that the movie would \"be coming out next summer.\" In common U.S. usage and in the film industry, movies released in early June are part of the **summer** movie season, and meteorological summer in the U.S. begins on June 1. Since the film\u2019s public release fell on June 9, 2023, this matches the prediction that it would come out in summer 2023.\n\nTherefore, the prediction that *Dal\u00edland* would be released to the public in the summer of 2023 is **right**.",
+      "sources": [
+        {
+          "end_index": 349,
+          "start_index": 266,
+          "title": "Dal\u00edland",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dal%C3%ADland?utm_source=openai"
+        },
+        {
+          "end_index": 540,
+          "start_index": 453,
+          "title": "'Dal\u00edland' Trailer: Ben Kingsley Is Salvador Dal\u00ed at the End of His Career",
+          "type": "url_citation",
+          "url": "https://collider.com/daliland-trailer-ben-kingsley/?utm_source=openai"
+        },
+        {
+          "end_index": 704,
+          "start_index": 622,
+          "title": "DALILAND (2023) \u2014 When To Stream",
+          "type": "url_citation",
+          "url": "https://www.whentostream.com/daliland-2023?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The movie *Dal\u00edland* (produced by David O. Sacks) had its world premiere at the Toronto International Film Festival on September 17, 2022, but its public theatrical and streaming release was on June 9, 2023, in the US (limited release by Magnolia Pictures). June 9 falls within summer 2023 (meteorological summer: June 1\u2013Aug 31). Sources: [IMDb](https://www.imdb.com/title/tt8399658/), [Rotten Tomatoes](https://www.rottentomatoes.com/m/daliland), [Wikipedia](https://en.wikipedia.org/wiki/Daliland), [Movie Insider](https://www.movieinsider.com/m21451/daliland). This matches the prediction of public release 'next summer' (2023) from the Dec 2022 podcast."
+    }
+  ]
+}

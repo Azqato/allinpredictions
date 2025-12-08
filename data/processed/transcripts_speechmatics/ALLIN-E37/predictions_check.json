@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "count": 10,
+    "count_by_result": {
+      "right": 5,
+      "inconclusive": 3,
+      "wrong": 1,
+      "ambiguous": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:19:48.430",
+      "result": "right",
+      "explanation": "Eric Adams won the 2021 New York City mayoral election held on November 2, 2021, defeating Republican nominee Curtis Sliwa with about 67% of the vote, and he was sworn in as the 110th Mayor of New York City on January 1, 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021_New_York_City_mayoral_election?utm_source=openai))\n\nSince the prediction was that *\u201cEric Adams is going to be the next mayor of New York City\u201d* (i.e., win the 2021 election and become mayor), and this is exactly what happened, the prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 365,
+          "start_index": 260,
+          "title": "2021 New York City mayoral election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021_New_York_City_mayoral_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Eric Adams won the Democratic primary on June 22, 2021 (finalized July 6), and the general election on November 2, 2021, defeating Republican Curtis Sliwa with 67% of the vote. He was sworn in as the 110th Mayor of New York City on January 1, 2022. This fulfills the prediction made on June 25, 2021. Sources: [Wikipedia: 2021 NYC mayoral election](https://en.wikipedia.org/wiki/2021_New_York_City_mayoral_election), [Wikipedia: Eric Adams](https://en.wikipedia.org/wiki/Eric_Adams)."
+    },
+    {
+      "id": "C-00:19:48.800",
+      "result": "right",
+      "explanation": "Survey and electoral evidence shows that crime and public safety *did* remain a major political theme in U.S. politics for several years after mid\u20112021, even if it was not always the single top issue.\n\n- In the 2022 midterms, Pew found about six-in-ten registered voters (60\u201361%) said violent crime was **\u201cvery important\u201d** to their vote, putting it in the top tier of issues alongside the economy, gun policy, health care, and education.([pewresearch.org](https://www.pewresearch.org/politics/2022/08/23/midterm-election-preferences-voter-engagement-views-of-campaign-issues/?utm_source=openai)) Pew also noted that candidates nationwide released thousands of ads focused on violent crime.([pewresearch.org](https://www.pewresearch.org/fact-tank/2022/10/31/violent-crime-is-a-key-midterm-voting-issue-but-what-does-the-data-say/?utm_source=openai))\n- Multiple 2022 polls (Rasmussen and others) reported that around 80% of likely voters expected crime/violent crime to be an important issue in the elections, with roughly half calling it **\u201cvery important.\u201d**([sharylattkisson.com](https://sharylattkisson.com/2022/10/poll-voters-see-crime-as-important-mid-term-election-issue/?utm_source=openai))\n- Going into the 2024 presidential election, Pew found violent crime remained one of the **leading issues**, especially among Republicans: 76% of Trump supporters said violent crime was *very important* to their vote, ranking with the economy and immigration for that bloc.([pewresearch.org](https://www.pewresearch.org/politics/2024/09/09/issues-and-the-2024-election/?utm_source=openai)) A 2024 Rasmussen poll likewise found 79% of likely voters expected crime to be important in the presidential race, with 45% saying *very* important.([floridadaily.com](https://floridadaily.com/poll-shows-more-voters-trust-republicans-over-democrats-to-handle-crime-issues/?utm_source=openai))\n- Crime and public safety continued to shape state and local politics, e.g., California\u2019s 2024 Proposition 36 (reversing parts of Prop 47 and increasing penalties for certain theft and drug crimes) passed by a large margin, signaling that crime policy was still salient to voters, and mayoral races in cities like Oakland and New York prominently featured public safety plans.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_California_Proposition_36?utm_source=openai))\n\nCountervailing data show that when people are asked for the *single* \u201cmost important problem,\u201d crime usually ranked below the economy, inflation, the government, and immigration (e.g., Gallup in 2023 found only 3% named crime as the top national problem).([news.gallup.com](https://news.gallup.com/poll/544442/americans-crime-problem-serious.aspx?utm_source=openai)) By 2025, concern about crime as an \u201cextremely/very serious\u201d national issue had started to decline, though it still remained substantial.([washingtonpost.com](https://www.washingtonpost.com/nation/2025/10/30/perceptions-crime-united-states/?utm_source=openai))\n\nHowever, the prediction only claimed crime would be a **huge, reverberating issue for the next few years**, not that it would remain the single dominant concern indefinitely. From 2021 through at least the 2024 cycle, crime and public safety consistently registered as a high-salience voting issue and a major theme in campaigns at the national, state, and local levels. On that basis, the prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 631,
+          "start_index": 473,
+          "title": "Midterm voter preference, importance of elections, views of campaign issues | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/politics/2022/08/23/midterm-election-preferences-voter-engagement-views-of-campaign-issues/?utm_source=openai"
+        },
+        {
+          "end_index": 884,
+          "start_index": 725,
+          "title": "What the public thinks \u2013 and data shows \u2013 about violent crime in U.S. | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/fact-tank/2022/10/31/violent-crime-is-a-key-midterm-voting-issue-but-what-does-the-data-say/?utm_source=openai"
+        },
+        {
+          "end_index": 1233,
+          "start_index": 1095,
+          "title": "(POLL) Voters see crime as important Mid-term Election issue | Sharyl Attkisson",
+          "type": "url_citation",
+          "url": "https://sharylattkisson.com/2022/10/poll-voters-see-crime-as-important-mid-term-election-issue/?utm_source=openai"
+        },
+        {
+          "end_index": 1624,
+          "start_index": 1508,
+          "title": "Issues and the 2024 election | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/politics/2024/09/09/issues-and-the-2024-election/?utm_source=openai"
+        },
+        {
+          "end_index": 1917,
+          "start_index": 1773,
+          "title": "Poll Shows More Voters Trust Republicans Over Democrats to Handle Crime Issues - Florida Daily",
+          "type": "url_citation",
+          "url": "https://floridadaily.com/poll-shows-more-voters-trust-republicans-over-democrats-to-handle-crime-issues/?utm_source=openai"
+        },
+        {
+          "end_index": 2395,
+          "start_index": 2295,
+          "title": "2024 California Proposition 36",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_California_Proposition_36?utm_source=openai"
+        },
+        {
+          "end_index": 2765,
+          "start_index": 2654,
+          "title": "More Americans See U.S. Crime Problem as Serious",
+          "type": "url_citation",
+          "url": "https://news.gallup.com/poll/544442/americans-crime-problem-serious.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 3025,
+          "start_index": 2902,
+          "title": "Concerns about crime in U.S. fall for second year in a row, poll shows",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/nation/2025/10/30/perceptions-crime-united-states/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Crime was a prominent political issue nationally for several years after mid-2021. In the 2022 midterms, Gallup (Oct 2022) ranked it as the #3 most important voting issue after economy and abortion; Pew called it a 'key midterm voting issue,' very important to 73% of Republicans. In 2024 presidential election, Pew (Sep 2024) found 62% of voters rated violent crime 'very important' to their vote (behind economy at 81%, ahead of others); 76% of Trump supporters prioritized it. Campaigns emphasized crime (e.g., GOP ads 2022, Trump 2024). Though economy dominated Gallup's 'Most Important Problem' (~20-30%, crime ~5-6%), and concerns declined by 2025 as rates fell (FBI: violent crime down 3% 2023), it reverberated as predicted for ~3 years. Sources: [Gallup](https://news.gallup.com/poll/404243/economy-top-election-issue-abortion-crime-next.aspx), [Pew 2022](https://www.pewresearch.org/short-reads/2022/10/31/violent-crime-is-a-key-midterm-voting-issue-but-what-does-the-data-say/), [Pew 2024](https://www.pewresearch.org/politics/2024/09/09/issues-and-the-2024-election/), [Gallup MIP](https://news.gallup.com/poll/1675/most-important-problem.aspx)."
+    },
+    {
+      "id": "A-00:39:23.000",
+      "result": "right",
+      "explanation": "Evidence shows that Chamath\u2019s prediction substantially came true.\n\n1. **New notable variants beyond Delta emerged in fall 2021.**  \n   * The WHO designated B.1.1.529 (Omicron) as a *variant of concern* on **26 November 2021**, after it was first reported from South Africa earlier that month, explicitly recognizing it as a new major SARS\u2011CoV\u20112 variant beyond Delta. ([who.int](https://www.who.int/news/item/26-11-2021-classification-of-omicron-%28b.1.1.529%29-sars-cov-2-variant-of-concern?utm_source=openai))  \n   * The CDC likewise classified Omicron as a Variant of Concern and reported the first confirmed U.S. case on **1 December 2021**. ([archive.cdc.gov](https://archive.cdc.gov/www_cdc_gov/media/releases/2021/s1201-omicron-variant.html?utm_source=openai))  \n   This fits the prediction that \u201cwe\u2019re going to hear about other variants in the fall\u201d beyond Delta.\n\n2. **Winter 2021\u20132022 was indeed a difficult COVID winter.**  \n   * A U.S. epidemiologic analysis identifies the **Omicron wave from 1 December 2021 to 28 February 2022 as the most severe wave** of the pandemic in the United States, with about **30 million cases and 170,000 deaths**, and a daily case peak above **1.25 million** in mid\u2011January 2022. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC10385263/?utm_source=openai))  \n   * U.S. historical overviews similarly describe Omicron\u2019s arrival in December 2021 and note that by **January 2022** it was causing a *massive increase* in cases, hospitalizations and deaths, averaging over 1 million new cases daily. ([en.wikipedia.org](https://en.wikipedia.org/wiki/History_of_the_United_States_%282016%E2%80%93present%29?utm_source=openai))  \n   * State\u2011level data (e.g., Massachusetts) show that the winter 2021\u201322 Omicron wave **exceeded previous peaks in daily case counts**, underlining the severity of that winter. ([en.wikipedia.org](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Massachusetts?utm_source=openai))\n\nGiven that (a) a major new variant beyond Delta (Omicron) did emerge in late fall 2021 and (b) this variant drove an exceptionally severe COVID surge in winter 2021\u201322, the core factual content of Chamath\u2019s prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 546,
+          "start_index": 403,
+          "title": "Classification of Omicron (B.1.1.529): SARS-CoV-2 Variant of Concern",
+          "type": "url_citation",
+          "url": "https://www.who.int/news/item/26-11-2021-classification-of-omicron-%28b.1.1.529%29-sars-cov-2-variant-of-concern?utm_source=openai"
+        },
+        {
+          "end_index": 803,
+          "start_index": 682,
+          "title": "First Confirmed Case of Omicron Variant Detected in the United States | CDC Online Newsroom | CDC",
+          "type": "url_citation",
+          "url": "https://archive.cdc.gov/www_cdc_gov/media/releases/2021/s1201-omicron-variant.html?utm_source=openai"
+        },
+        {
+          "end_index": 1358,
+          "start_index": 1264,
+          "title": "Spatiotemporal Patterns of the Omicron Wave of COVID-19 in the United States - PMC",
+          "type": "url_citation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10385263/?utm_source=openai"
+        },
+        {
+          "end_index": 1723,
+          "start_index": 1598,
+          "title": "History of the United States (2016\u2013present)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/History_of_the_United_States_%282016%E2%80%93present%29?utm_source=openai"
+        },
+        {
+          "end_index": 2008,
+          "start_index": 1904,
+          "title": "COVID-19 pandemic in Massachusetts",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Massachusetts?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Omicron (B.1.1.529) was first detected in samples dated November 9, 2021, reported to WHO on November 24, 2021, and designated a Variant of Concern on November 26, 2021\u2014all within fall 2021 (Sept-Dec). No other major variants emerged between Delta (VOC May 2021) and Omicron. Omicron rapidly replaced Delta as dominant by December 2021, causing massive case surges worldwide in winter 2021-2022 (e.g., 'Winter of Omicron'; record US hospitalizations ~150k in Jan 2022; significant global deaths despite lower per-case severity due to immunity). This matches the prediction of additional notable variants beyond Delta leading to a tough winter COVID impact. Sources: WHO (Nov 26, 2021 designation, [who.int](https://www.who.int/news-room/feature-stories/detail/one-year-since-the-emergence-of-omicron)); CDC/Wikipedia timelines ([cdc.gov](https://www.cdc.gov/mmwr/volumes/70/wr/mm7050e1.htm), [en.wikipedia.org/wiki/Timeline_of_the_SARS-CoV-2_Omicron_variant](https://en.wikipedia.org/wiki/Timeline_of_the_SARS-CoV-2_Omicron_variant)); JAMA ([jamanetwork.com](https://jamanetwork.com/journals/jama/fullarticle/2787609))."
+    },
+    {
+      "id": "C-00:43:42.450",
+      "result": "right",
+      "explanation": "Sacks\u2019 claim was not that we\u2019d get a definitive proof of a lab leak, but that **over time, more evidence of a *cover\u2011up* around the Wuhan lab and COVID origins would leak out, making the situation look progressively worse for those involved.** That trajectory has largely matched what actually unfolded from late 2021 through 2025.\n\nKey developments since June 2021:\n\n1. **More internal intelligence and declassification about a possible lab origin**  \n   * The 2023 COVID\u201119 Origin Act forced the Director of National Intelligence to declassify information about potential links between the Wuhan Institute of Virology (WIV) and COVID\u201119, leading to a public ODNI report in June 2023. That report described an intelligence community split: several agencies favored a natural spillover, while the Department of Energy and FBI assessed a lab\u2011associated incident as \u201cmost likely,\u201d though with low or moderate confidence. ([en.wikipedia.org](https://en.wikipedia.org/wiki/COVID-19_Origin_Act_of_2023?utm_source=openai))  \n   * In 2025, the CIA publicly shifted to say it now considers a lab origin \u201cmore likely,\u201d again with low confidence, aligning its position with DOE and the FBI. ([time.com](https://time.com/7210348/covid-19-cia-lab-leak-conclusion/?utm_source=openai))  \n   These shifts did not settle the origin question, but they **added new, more detailed disclosures and expanded the official paper trail** about lab\u2011leak concerns.\n\n2. **Concrete evidence of record\u2011evasion and secrecy inside U.S. health agencies**  \n   * Emails from Dr. David Morens, senior adviser to Anthony Fauci at NIAID, released by the House Select Subcommittee on the Coronavirus Pandemic, show him boasting that he \u201clearned from our FOIA lady here how to make emails disappear\u201d after a FOIA request and that he deleted earlier emails after forwarding them to Gmail. He also urged colleagues to send sensitive material only to his private account and wrote that officials were \u201csmart enough to know to never have smoking guns\u2026and if we found them we\u2019d delete them.\u201d ([congress.gov](https://www.congress.gov/event/118th-congress/house-event/LC72976/text?utm_source=openai))  \n   * Oversight materials and press reports describe this as part of a broader pattern at NIH/NIAID to evade FOIA and shield EcoHealth Alliance (which funded coronavirus work at WIV) and Fauci from scrutiny, prompting congressional investigations into a possible **NIH/NIAID records\u2011destruction and transparency \u201cconspiracy.\u201d** ([oversight.house.gov](https://oversight.house.gov/release/wenstrup-investigates-nih-conspiracy-to-evade-foia-avoid-public-transparency/?utm_source=openai))  \n   Even if some participants later called these emails \u201cjokes\u201d or denied intent, the documented conduct is exactly the kind of **\u201cfingerprints\u201d of a cover\u2011up** Sacks was talking about, and it only became public well after mid\u20112021.\n\n3. **Growing documentary evidence and investigations around the Wuhan lab itself**  \n   * Congressional and investigative reports have assembled detailed chronologies showing that WIV\u2019s publicly accessible virus\u2011sequence database was taken offline around September 12, 2019, and stayed offline, despite later public claims that it was only removed during the pandemic for cybersecurity reasons. These reports also highlight internal Chinese concerns about biosafety at WIV in mid\u2011 to late\u20112019 and subsequent procurement of high\u2011end safety equipment, all presented as circumstantial evidence of an incident followed by efforts to hide data. ([washingtonexaminer.com](https://www.washingtonexaminer.com/news/512113/gop-coronavirus-origins-report-details-2019-china-biosafety-scramble-at-wuhan-lab/?utm_source=openai))  \n   * Combined with existing evidence that Chinese authorities censored early information about the Wuhan outbreak and have refused to restore access to key WIV records, this has fueled a sustained narrative of a **Chinese\u2011side cover\u2011up** that became more, not less, detailed after 2021. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Chinese_government_response_to_COVID-19?utm_source=openai))\n\n4. **Re\u2011examination of how the \u201cnatural origin\u201d narrative was promoted**  \n   * The House held a hearing explicitly titled \u201cInvestigating the Proximal Origin of a Cover\u2011Up,\u201d digging into whether Fauci and NIH officials influenced the highly cited \u201cThe Proximal Origin of SARS\u2011CoV\u20112\u201d paper that framed lab\u2011leak ideas as implausible, and whether early discussions among its authors were more open to a lab origin than the final publication suggested. ([congress.gov](https://www.congress.gov/event/118th-congress/house-event/116185/text?utm_source=openai))  \n   * These inquiries, backed by FOIA\u2011obtained emails, have deepened public suspicion that **U.S. and international scientific messaging about origins was, at minimum, \u201cmanaged\u201d behind the scenes**, even though the scientists involved insist their views changed for legitimate scientific reasons. ([dailycaller.com](https://dailycaller.com/2023/07/10/fauci-andersen-accuse-republicans-covid-emails/?utm_source=openai))\n\n5. **Ongoing uncertainty about the origin itself**  \n   * The ODNI report and subsequent annexes emphasize that both lab\u2011associated and natural spillover origins remain plausible; most U.S. intelligence agencies still lean toward a natural origin, though with low confidence, and the report found **no direct evidence** that SARS\u2011CoV\u20112 came from WIV. ([gigazine.net](https://gigazine.net/gsc_news/en/20230626-potential-links-wuhan-institute-covid/?utm_source=openai))  \n   * Meanwhile, influential scientific work (e.g., Worobey and colleagues\u2019 geospatial analysis of early Wuhan cases and animal\u2011market data) continues to argue that a wildlife market spillover fits the available evidence best. ([vanityfair.com](https://www.vanityfair.com/news/story/ralph-baric-wuhan-lab-leak?utm_source=openai))  \n   So **we still don\u2019t know definitively how COVID\u201119 began**, and many of the \u201ccover\u2011up\u201d claims remain heavily contested and politically polarized.\n\nPutting this together:\n\n* Sacks predicted that **more information about a cover\u2011up around the Wuhan lab and COVID origins would continue to surface, rather than the story going static**, and that these revelations would increasingly implicate those involved.  \n* Since mid\u20112021, there has indeed been a **steady stream of new documents, declassified assessments, FOIA material, and congressional findings** that:\n  * Expose questionable record\u2011keeping and FOIA\u2011evasion practices by NIH/NIAID staff tied to EcoHealth and origin\u2011related communications. ([congress.gov](https://www.congress.gov/event/118th-congress/house-event/LC72976/text?utm_source=openai))  \n  * Add detail to concerns about WIV\u2019s database removal, biosafety problems, and post\u20112019 secrecy. ([washingtonexaminer.com](https://www.washingtonexaminer.com/news/512113/gop-coronavirus-origins-report-details-2019-china-biosafety-scramble-at-wuhan-lab/?utm_source=openai))  \n  * Reveal more about how U.S. intelligence agencies internally weighed and re\u2011weighed the lab\u2011leak hypothesis. ([covidindex.science](https://covidindex.science/index-entries/potential-links-between-the-wuhan-institute-of-virology-and-the-origin-of-the-covid-19-pandemic?utm_source=openai))  \n\nEven though the **ultimate origin remains unresolved and many scientists still favor zoonosis**, the narrow prediction\u2014that **\u201cmore and more information\u201d pointing to some form of cover\u2011up would emerge over time, making the controversy more damaging for key actors\u2014has clearly borne out.** On that basis, the forecast is best judged as **right**, with the caveat that it was about the *direction and volume of revelations*, not about conclusively proving any specific lab\u2011leak scenario.",
+      "sources": [
+        {
+          "end_index": 1054,
+          "start_index": 957,
+          "title": "COVID-19 Origin Act of 2023",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COVID-19_Origin_Act_of_2023?utm_source=openai"
+        },
+        {
+          "end_index": 1310,
+          "start_index": 1220,
+          "title": "What to Know About the CIA's Conclusion that COVID-19 Came From a Lab",
+          "type": "url_citation",
+          "url": "https://time.com/7210348/covid-19-cia-lab-leak-conclusion/?utm_source=openai"
+        },
+        {
+          "end_index": 2198,
+          "start_index": 2092,
+          "title": "A HEARING WITH THE NATIONAL INSTITUTE OF ALLERGY AND INFECTIOUS DISEASES SENIOR SCIENTIFIC ADVISOR DR. DAVID MORENS | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/event/118th-congress/house-event/LC72976/text?utm_source=openai"
+        },
+        {
+          "end_index": 2685,
+          "start_index": 2529,
+          "title": "Wenstrup Investigates NIH Conspiracy to Evade FOIA, Avoid Public Transparency - United States House Committee on Oversight and Government Reform",
+          "type": "url_citation",
+          "url": "https://oversight.house.gov/release/wenstrup-investigates-nih-conspiracy-to-evade-foia-avoid-public-transparency/?utm_source=openai"
+        },
+        {
+          "end_index": 3741,
+          "start_index": 3566,
+          "title": "GOP coronavirus origins report details 2019 China biosafety scramble at Wuhan lab",
+          "type": "url_citation",
+          "url": "https://www.washingtonexaminer.com/news/512113/gop-coronavirus-origins-report-details-2019-china-biosafety-scramble-at-wuhan-lab/?utm_source=openai"
+        },
+        {
+          "end_index": 4141,
+          "start_index": 4032,
+          "title": "Chinese government response to COVID-19",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Chinese_government_response_to_COVID-19?utm_source=openai"
+        },
+        {
+          "end_index": 4700,
+          "start_index": 4595,
+          "title": "\u201cInvestigating the Proximal Origin of a Cover Up\u201d | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/event/118th-congress/house-event/116185/text?utm_source=openai"
+        },
+        {
+          "end_index": 5121,
+          "start_index": 5000,
+          "title": "Fauci-Tied Scientist Accuses Republicans Of \u2018Quote-Mining\u2019 His Private Emails | The Daily Caller",
+          "type": "url_citation",
+          "url": "https://dailycaller.com/2023/07/10/fauci-andersen-accuse-republicans-covid-emails/?utm_source=openai"
+        },
+        {
+          "end_index": 5593,
+          "start_index": 5477,
+          "title": "``There is no direct evidence'' that the new corona came from the Wuhan Institute of Virology, the Office of the Director of National Intelligence in the United States reported, neither affirming nor denying the leaked theory of the laboratory, and postponed the conclusion - GIGAZINE",
+          "type": "url_citation",
+          "url": "https://gigazine.net/gsc_news/en/20230626-potential-links-wuhan-institute-covid/?utm_source=openai"
+        },
+        {
+          "end_index": 5925,
+          "start_index": 5823,
+          "title": "Ralph Baric, Whose Virology Techniques Were Used in Wuhan, Testified That Lab Leak Was Possible",
+          "type": "url_citation",
+          "url": "https://www.vanityfair.com/news/story/ralph-baric-wuhan-lab-leak?utm_source=openai"
+        },
+        {
+          "end_index": 6742,
+          "start_index": 6636,
+          "title": "A HEARING WITH THE NATIONAL INSTITUTE OF ALLERGY AND INFECTIOUS DISEASES SENIOR SCIENTIFIC ADVISOR DR. DAVID MORENS | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/event/118th-congress/house-event/LC72976/text?utm_source=openai"
+        },
+        {
+          "end_index": 7021,
+          "start_index": 6846,
+          "title": "GOP coronavirus origins report details 2019 China biosafety scramble at Wuhan lab",
+          "type": "url_citation",
+          "url": "https://www.washingtonexaminer.com/news/512113/gop-coronavirus-origins-report-details-2019-china-biosafety-scramble-at-wuhan-lab/?utm_source=openai"
+        },
+        {
+          "end_index": 7315,
+          "start_index": 7137,
+          "title": "Potential Links Between the Wuhan Institute of Virology and the Origin of the COVID-19 Pandemic - Covid Index",
+          "type": "url_citation",
+          "url": "https://covidindex.science/index-entries/potential-links-between-the-wuhan-institute-of-virology-and-the-origin-of-the-covid-19-pandemic?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Since June 2021, substantially more information has emerged implicating a potential cover-up related to the Wuhan lab leak theory for COVID-19 origins. Key developments include:\n\n- **House Select Subcommittee Final Report (Dec 2024)**: Concludes COVID-19 most likely from WIV lab leak via U.S.-funded gain-of-function research through EcoHealth Alliance. Reveals 'Proximal Origin' paper (March 2020) was prompted by Fauci/Collins to promote natural origin despite initial lab suspicions; NIH fostered FOIA evasion (Morens emails deleting records); EcoHealth/Daszak violated grants, leading to HHS funding suspension/debarment (May 2024) and DOJ grand jury probe (subpoenas 2023). [Source: oversight.house.gov final report; Science.org Dec 3, 2024 article]\n\n- **Fauci testimony/hearings (2024)**: Accused of misleading Congress on gain-of-function funding at WIV; senior aide Morens admitted using personal email to evade FOIA. [Source: Congress.gov; usrtk.org May 2024]\n\n- **EcoHealth/Daszak**: Congressional hearings (2024) exposed misleading U.S. govt on WIV ties, document doctoring; DOJ investigated lab leak role (NY Post Dec 2024). [Source: oversight.house.gov May 2024]\n\nThese revelations have intensified scrutiny ('gotten worse') on Fauci, Daszak, NIH/EcoHealth, with actions like debarments and probes\u2014directly matching the prediction. While intel remains divided (ODNI 2023: low confidence either way) and no definitive proof, the volume of implicating info post-2021 is substantial. [Sources: whitehouse.gov/lab-leak; heritage.org May 2024]"
+    },
+    {
+      "id": "G-00:49:52.520",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, the 10\u2011year window for this prediction (through roughly mid\u20112031) has not expired, so it is too early to say definitively whether it will prove right or wrong.\n\nEvidence on the *technology trajectory*:\n- MIT researchers have built a tabletop \"mobile vaccine printer\" that produces microneedle\u2011patch vaccines and is explicitly framed as enabling on\u2011demand, decentralized vaccine production; it has been demonstrated in mice but is still a research prototype, not a widely deployed commercial product.\u30100search3\u3011\n- CureVac has developed \"The RNA Printer,\" a downsized, integrated and automated GMP\u2011grade mRNA manufacturing system intended as a mobile, modular facility for RNA vaccines and therapeutics. CureVac created a dedicated subsidiary (CureVac RNA Printer GmbH) in 2022 to advance it and has obtained initial manufacturing licenses in Germany, but current public information describes it as an in\u2011house/partner platform in regulatory review and development, not yet a globally deployed fleet of printers.\u30102search0\u3011\u30102search2\u3011\n- BioNTech\u2019s modular \"BioNTainer\" units\u2014containerized mRNA manufacturing facilities shipped to Rwanda and planned for other African countries\u2014are another step toward decentralized mRNA production, but they are large container factories (two modules covering ~800 m\u00b2) rather than the kind of small, bioreactor \"printer\" Friedberg described, and they are only in a few locations so far.\u30101search0\u3011\u30101search6\u3011\n\nEvidence on *deployment scale* vs. the claim:\n- None of the above efforts are yet described in 2025 sources as small vaccine printers that are broadly **\"deployed around the world\"** in routine use. Instead, they are in R&D, pilot, or early facility\u2011buildout stages.\u30100search3\u3011\u30102search1\u3011\u30101search1\u3011\n- However, multiple companies (CureVac, BioNTech, academic/industry collaborations at MIT and others) are clearly pursuing exactly the kind of digitally programmable, small\u2011footprint or modular vaccine manufacturing systems Friedberg envisioned.\u30100search3\u3011\u30102search3\u3011\n\nBecause (1) the forecast horizon still runs for nearly six more years, and (2) the key condition\u2014widespread global deployment of such vaccine printers\u2014is not yet met but also not ruled out, the correct status for this prediction as of late 2025 is **\"inconclusive (too early).\"",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction requires deployment of small bioreactor-based vaccine printers worldwide by 2031. As of Dec 2025 (4.5 years into the decade), no such systems are deployed globally for vaccine production. Related developments include: MIT's 2023 microneedle vaccine printer (MVP) prototype for mRNA patch formulation (*[Nature Biotechnology](https://www.nature.com/articles/s41587-023-01774-z)*, potential but not deployed); Telesis Bio's commercial BioXp system (DNA/mRNA synthesizer from digital code, kits shipped 2023, e.g., *[press release](https://ir.telesisbio.com/news-releases/news-release-details/telesis-bio-announces-first-commercial-shipment-bioxpr-select)*), lab/research use only, cell-free not bioreactor-based; stalled CureVac-Tesla RNA microfactories (hyped 2020, no post-2021 deployment updates). Modular bioreactors (e.g., Univercells) support decentralized manufacturing but not small 'printers' shipping code for vaccines. No evidence of worldwide operational deployment; too early to call."
+    },
+    {
+      "id": "B-01:14:54.210",
+      "result": "wrong",
+      "explanation": "Available evidence from 2021\u20132025 points to *continued* and in some domains intensified culture\u2011war conflict and \u201ccancel culture\u201d dynamics, rather than a clear subsiding and broadening of the Overton window as Jason predicted.\n\nKey points:\n\n1. **Ongoing & high\u2011salience cancellation controversies**  \n   - High\u2011profile cases over speech, social media posts, and old statements continued after mid\u20112021 across media, academia, and entertainment. Examples include Dave Chappelle\u2019s Netflix specials and backlash (2021\u20132023), J.K. Rowling\u2019s continuing ostracization and boycotts, and numerous de\u2011platforming and firing controversies tied to views on race, gender, and trans issues. News and commentary sources in 2022\u20132024 describe \u201ccancel culture\u201d as *ongoing* and a major flashpoint, not something that has clearly ended or markedly diminished. \n\n2. **Polarization and culture\u2011war salience remain high**  \n   - U.S. political polarization on cultural issues (race, gender, education, COVID measures, etc.) remained high through the 2022 and 2024 election cycles. Surveys and analyses during this period continued to identify culture\u2011war topics and speech controversies as central partisan battlegrounds, including fights over school curricula, corporate DEI policies, and online speech moderation. This is inconsistent with a broad, cross\u2011partisan cooling of \u201chysteria.\u201d \n\n3. **No clear evidence of *significantly fewer* social/professional penalties for speech**  \n   - While there has been *backlash to* and criticism of cancel culture (e.g., the Harper\u2019s Letter in 2020, ongoing op\u2011eds and books criticizing cancellation), there is no robust evidence that instances of people facing social or professional consequences for controversial or past statements have *significantly declined* relative to the late\u20112010s/early\u20112020s baseline. High\u2011profile firings, social\u2011media pile\u2011ons, and boycotts remained common topics in press and public debate through at least 2024\u20132025. \n\n4. **Overton window has not clearly \u2018blossomed\u2019 in the predicted way**  \n   - In some online spaces, certain taboo topics have become more openly discussed, but simultaneously other viewpoints (especially on race, gender identity, and the 2020 election) have become more fraught, with strong social and sometimes professional penalties. On the right, there has been increased formal censorship pressure (book bans, restrictions on teaching certain concepts) while on parts of the left, social/organizational pressures regarding speech remain strong. Overall, the set of ideas that can be expressed without serious social risk has **not** obviously expanded in a broad, society\u2011wide sense.\n\nGiven that several years have passed since mid\u20112021 and the observable trajectory shows: (a) culture\u2011war salience remaining high, (b) continued prominent cancellation disputes, and (c) no clear, systemic broadening of tolerated speech, the specific prediction that \"this great nightmare of hysteria is going to end\" and the Overton window would \"blossom\" with fewer cancellations is best evaluated as **wrong**, rather than merely inconclusive or ambiguous.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Multiple sources indicate cancel culture has subsided since mid-2021, aligning with the prediction. Articles document a decline: 'Cancel Culture in decline' (peanutgallerynews.com, Jun 2025) cites public fatigue, platform algorithm changes curbing outrage, and free speech resurgence on campuses (e.g., FIRE 2024 report). 'RIP, cancel culture?' (deseret.com, Dec 2024) notes no active high-profile cancellations by year-end, uncancellings (e.g., J.K. Rowling's HBO project, Chris Pratt untargeted), and Trump's 2024 win halting 'mob mentality.' '2025 Year of the Uncancellation' (consequence.net) highlights comebacks. FIRE data (thefire.org, eternallyradicalidea.com) shows deplatforming peak at 172 in 2024 (vs. 169 in 2023), early 2025 pace down to ~153, suggesting slight decline post-peak. Overton window broadened, especially rightward post-election ([web:0] medium.com Aug 2024; Reddit discussions), with more acceptance of controversial ideas (e.g., Trump policies now mainstream). Public discourse less hysterical, institutions pushing back on DEI/cancellations."
+    },
+    {
+      "id": "C-01:16:38.370",
+      "result": "ambiguous",
+      "explanation": "I couldn\u2019t find any reliable public information (interviews, social media posts, news, or transcripts) from David Sacks, Jason Calacanis, or third-party sources that report or compare their body weights around late summer 2021.\n\nBecause their exact weights at that time are private and apparently never disclosed in a verifiable way, there is no factual basis to determine whether David Sacks actually weighed less than Jason Calacanis by the end of summer 2021. The prediction therefore cannot be evaluated from public data and remains **ambiguous**.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "No public records or statements confirm the exact weights of David Sacks and Jason Calacanis by late September 2021. In All-In Podcast E52 (Oct 22, 2021), there is banter about the hosts' 'bestie weight loss strategies' and a clip titled 'How David Sacks Lost 20 pounds' ([YouTube clip](https://www.youtube.com/watch?v=qYXq2YNkQEs)), indicating Sacks achieved significant weight loss shortly after the deadline. Jason Calacanis posted on Instagram about his own weight loss on Nov 2, 2021 ([Instagram](https://www.instagram.com/p/CVy2a5XPIDC/)), motivated by COVID and turning 50. However, no direct comparison, weigh-in, or acknowledgment of the prediction's outcome exists in searches across podcasts, Twitter, or web results. Visual or subjective assessments from podcast videos are unreliable without explicit metrics. Thus, cannot be definitively determined. Sources: All-In E52 show notes ([Libsyn](https://allinchamathjason.libsyn.com/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand)), Podwise summary ([Podwise](https://beta.podwise.ai/dashboard/episodes/5137882))."
+    },
+    {
+      "id": "G-01:12:23.180",
+      "result": "inconclusive",
+      "explanation": "The prediction is framed on a *10\u2011year* horizon starting around mid\u20112021 (i.e., through ~2031). As of the current date in late 2025, only about four years of that window have elapsed, so it\u2019s too early to make a definitive call.\n\n**Current evidence:**\n\n*Amazon\u2019s position in commerce*\n- Amazon still has a dominant share of U.S. e\u2011commerce: roughly **37.6% of U.S. online retail in 2024**, nearly **6\u00d7** the next\u2011largest retailer (Walmart at 6.4%, Apple at 3.6%). ([demandsage.com](https://www.demandsage.com/amazon-statistics/?utm_source=openai))  \n- Shopify has grown into a strong #2, with about **12% of all U.S. retail e\u2011commerce GMV in 2024** and ~30% share of U.S. e\u2011commerce platforms by website usage, but that still leaves Amazon with a much larger slice of actual spending. ([salesso.com](https://salesso.com/blog/shopify-store-statistics/?utm_source=openai))  \n- There is no evidence yet that Amazon is \u201closing to\u201d Shopify, Square/Block, or Stripe in a way that materially erodes its overall dominance in retail e\u2011commerce.\n\n*Apple\u2019s position in payments/financial services*\n- Apple Pay remains the leading mobile wallet in the U.S., with estimates of **~92% share of U.S. mobile wallet transactions** and around **14% of global online consumer payments** as of 2024\u20132025. ([capitaloneshopping.com](https://capitaloneshopping.com/research/apple-pay-statistics/?utm_source=openai))  \n- Apple Pay is estimated to process on the order of **$10 trillion annually** in 2025. ([clearlypayments.com](https://www.clearlypayments.com/blog/apple-pay-and-other-digital-wallets-market-share-in-2025/?utm_source=openai))  \n- Stripe is large and growing fast\u2014processing **$1.4 trillion in payments in 2024** and valued around **$91.5B** in 2025\u2014but that is still a fraction of card volumes and of Apple Pay\u2019s estimated throughput, and Stripe\u2019s online\u2011payments share (~8% vs Apple Pay\u2019s ~14% in 2025) does not yet show Apple clearly \u201closing\u201d to Stripe. ([capitaloneshopping.com](https://capitaloneshopping.com/research/stripe-statistics/?utm_source=openai))\n\n*Shopify, Block (Square), Stripe as challengers*\n- Shopify, Block, and Stripe have all grown into major players (e.g., Shopify\u2019s 12% GMV share in U.S. retail e\u2011commerce; Stripe\u2019s $1.4T payment volume in 2024; Square\u2019s quarterly GPV in the ~$60\u201370B range and continuing growth). ([salesso.com](https://salesso.com/blog/shopify-store-statistics/?utm_source=openai))  \n- However, the data so far show **coexistence and growth of challengers alongside continued dominance by Amazon and Apple**, rather than a clear, already\u2011realized loss of dominance by Amazon/Apple in commerce or payments.\n\n**Why the result is \u2018inconclusive\u2019:**\n- The core claim is about what will happen *\u201cover the next decade\u201d*\u2014i.e., by around 2031. We are only partway through that period.\n- Interim data show that Shopify, Stripe, and Block are indeed formidable and growing, but they have not yet \u201ccaused Amazon and Apple to lose\u201d or **materially eroded** Amazon\u2019s or Apple\u2019s dominance in their respective arenas as of 2024\u20132025.\n- It remains plausible that relative shares could shift much more between now and 2031, so the prediction cannot be definitively scored as right or wrong yet.\n\nGiven the incomplete time horizon and mixed but not decisively contrary evidence, the correct status for this prediction as of 2025 is **\u201cinconclusive (too early)\u201d** rather than right or wrong.",
+      "sources": [
+        {
+          "end_index": 592,
+          "start_index": 509,
+          "title": "94 Amazon Statistics & Market Share 2025 [Worldwide Data]",
+          "type": "url_citation",
+          "url": "https://www.demandsage.com/amazon-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 916,
+          "start_index": 831,
+          "title": "Shopify Store Statistics 2025: Key Data & Growth Insights - Sales So",
+          "type": "url_citation",
+          "url": "https://salesso.com/blog/shopify-store-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 1442,
+          "start_index": 1335,
+          "title": "Apple Pay Statistics (2025): Users, Market Share & Growth Rate",
+          "type": "url_citation",
+          "url": "https://capitaloneshopping.com/research/apple-pay-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 1670,
+          "start_index": 1533,
+          "title": "Apple Pay and Other Digital Wallets Market Share in 2025",
+          "type": "url_citation",
+          "url": "https://www.clearlypayments.com/blog/apple-pay-and-other-digital-wallets-market-share-in-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 2106,
+          "start_index": 2002,
+          "title": "Stripe Statistics (2025): Revenue, Market Share & Growth Rate",
+          "type": "url_citation",
+          "url": "https://capitaloneshopping.com/research/stripe-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 2474,
+          "start_index": 2389,
+          "title": "Shopify Store Statistics 2025: Key Data & Growth Insights - Sales So",
+          "type": "url_citation",
+          "url": "https://salesso.com/blog/shopify-store-statistics/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction spans ~10 years from mid-2021 to 2031; as of Dec 2025 (~4.5 years in), insufficient time has passed to verify. Amazon holds 40.4% US e-commerce retail share ($492B; [eMarketer via upcounting.com](https://www.upcounting.com/blog/largest-ecommerce-market-share)), dwarfing Shopify's 10.32% global platform share ([redstagfulfillment.com](https://redstagfulfillment.com/shopify-market-share/)). Apple Services revenue hit record highs (e.g., $27.4B Q3 2025; [apple.com](https://www.apple.com/newsroom/2025/07/apple-reports-third-quarter-results/)), Apple Pay ~6-14% online payments ([sqmagazine.co.uk](https://sqmagazine.co.uk/apple-pay-statistics/)). Stripe ~17-29% online payments (behind PayPal; [chargeflow.io](https://www.chargeflow.io/blog/stripe-statistics)); Block/Square POS-focused. Market caps: Amazon ~$2.4T, Apple ~$4T, Shopify $206B ([yahoo finance](https://finance.yahoo.com/quote/SHOP/)), Block $40B ([companiesmarketcap.com](https://companiesmarketcap.com/square/marketcap/)), Stripe ~$100B valuation ([pymnts.com](https://www.pymnts.com/news/fintech-investments/2025/stripe-valuation-reaches-record-106-billion/)). Challengers growing but no material erosion of Amazon/Apple dominance yet."
+    },
+    {
+      "id": "A-01:13:16.200",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly covers a **10\u201315 year** horizon starting in 2021, i.e., roughly **2021\u20132031/2036**. As of today (2025-11-30), only about four years have passed, so we cannot yet determine whether *over that entire period* all four firms will \u201ccontinue to win\u201d without any of them being displaced or substantially diminished. That makes the forecast **too early to score definitively**.\n\nPartial check so far (as of late 2025):\n\n- **Amazon** remains the world\u2019s largest retailer by market cap and one of the top five public companies globally, with a market cap around **$2.4\u20132.5T**. ([companiesmarketcap.com](https://companiesmarketcap.com/amazon/marketcap/?utm_source=openai))\n- **Apple** is one of the two most valuable public companies, with a market cap around **$4.1T**, and is projected to overtake or has just overtaken Samsung as the top global smartphone seller. ([companiesmarketcap.com](https://companiesmarketcap.com/apple/marketcap/?utm_source=openai))\n- **Shopify** is still a major e\u2011commerce platform provider, with a market cap around **$200B**, ranking in the top ~100 public companies worldwide. ([companiesmarketcap.com](https://companiesmarketcap.com/shopify/marketcap/?utm_source=openai))\n- **Stripe** remains one of the most valuable private fintechs, with a 2025 secondary sale valuing it at about **$91.5B**, close to its 2021 peak of $95B. ([cnbc.com](https://www.cnbc.com/2025/02/27/stripes-valuation-climbs-to-91point5-billion-in-secondary-stock-sale-.html?utm_source=openai))\n\nSo far, reality is **consistent** with Chamath\u2019s view that all four are still major winners and none has been clearly displaced by the others. However, because the forecast is about their status **over the full 10\u201315 year span**, and we are not yet close to the end of that window, the appropriate score at this time is **\u201cinconclusive (too early)\u201d rather than definitively right or wrong.",
+      "sources": [
+        {
+          "end_index": 731,
+          "start_index": 637,
+          "title": "Amazon (AMZN) - Market capitalization",
+          "type": "url_citation",
+          "url": "https://companiesmarketcap.com/amazon/marketcap/?utm_source=openai"
+        },
+        {
+          "end_index": 1020,
+          "start_index": 927,
+          "title": "Apple (AAPL) - Market capitalization",
+          "type": "url_citation",
+          "url": "https://companiesmarketcap.com/apple/marketcap/?utm_source=openai"
+        },
+        {
+          "end_index": 1266,
+          "start_index": 1171,
+          "title": "Shopify (SHOP) - Market capitalization",
+          "type": "url_citation",
+          "url": "https://companiesmarketcap.com/shopify/marketcap/?utm_source=openai"
+        },
+        {
+          "end_index": 1561,
+          "start_index": 1423,
+          "title": "Stripe's valuation climbs to $91.5 billion in secondary stock sale",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/02/27/stripes-valuation-climbs-to-91point5-billion-in-secondary-stock-sale-.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Only ~4.5 years have passed since the June 2021 prediction (current date: Dec 1, 2025), far short of the 10\u201315 year horizon (through ~2031\u20132036). Thus, too early to fully assess. Currently, all four companies remain major winners:\n- **Amazon**: #1 e-commerce by market cap (> $2T; [Statista](https://www.statista.com/statistics/245340/leading-large-cap-e-commerce-companies-market-cap/)), AWS leads cloud with ~29% share ([CloudZero](https://www.cloudzero.com/blog/cloud-service-providers/); Gartner leader).\n- **Apple**: Set to top global smartphone shipments in 2025 ([Counterpoint](https://counterpointresearch.com/en/insights/Global-Smartphone-Forecast-for-2025); [CNBC](https://www.cnbc.com/2025/11/26/apple-iphone-shipments-to-beat-samsung-for-the-first-time-in-14-years.html)).\n- **Shopify**: Top e-commerce platform ([Shopify blog](https://www.shopify.com/blog/ecommerce-companies); [Forbes](https://www.forbes.com/advisor/business/software/best-ecommerce-platform/)), ~$192B market cap.\n- **Stripe**: Leading payment processor for online businesses ([Built In](https://builtin.com/articles/fintech-payments-companies-examples); processes $1.4T ([Red Stag](https://redstagfulfillment.com/what-is-the-market-share-of-stripe/))).\nNo evidence of displacement or diminution ([web searches yielded no such claims](https://www.threads.com/@benedictevans/post/DQziLZbDj4S/shopify-keeps-on-unbundling-amazon))."
+    },
+    {
+      "id": "G-00:35:37.150",
+      "result": "right",
+      "explanation": "**Assessment:** The prediction matches what actually happened between mid\u20112021 and roughly mid\u20112023.\n\n1. **\"A lot more emerging variants\" of SARS\u2011CoV\u20112**  \n   * After June 2021, the world saw the emergence of multiple new variants and subvariants. Most notably, the Omicron variant was identified in November 2021 and rapidly became globally dominant, followed by a large family of Omicron sublineages (BA.1, BA.2, BA.3, BA.4, BA.5, BQ.1/BQ.1.1, XBB.1.5, etc.). ([en.wikipedia.org](https://en.wikipedia.org/wiki/SARS-CoV-2_Omicron_variant?utm_source=openai))  \n   * Through 2022\u20132023, additional Omicron subvariants such as XBB lineages and BA.2.86/JN.1 continued to emerge and spread, illustrating exactly the pattern of \u201ca lot more\u2026emerging variants\u201d over the \u201cnext couple of years\u201d after mid\u20112021. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Variants_of_SARS-CoV-2?utm_source=openai))  \n   * Even beyond that two\u2011year window, new subvariants (e.g., XFG in 2025) have continued to appear, reinforcing that the virus kept evolving into distinct global lineages. ([indiatimes.com](https://indiatimes.com/trending/covid-variant-xfg-surges-14-in-us-as-who-tracks-spread-to-38-nations-india-confirms-163-cases-heres-what-we-know-so-far-666535.html?utm_source=openai))  \n   This clearly fulfills the first part of the prediction.\n\n2. **\"Increasing number of risks from potentially engineered biological agents\"**  \n   While there has not been a confirmed large\u2011scale engineered bioweapon attack in that specific period, the *risk environment* due to engineered or engineerable agents has measurably intensified, which is what the prediction referred to:\n   * The Biological Weapons Convention community and expert analyses explicitly note that rapid advances in synthetic biology, gene editing, and enabling technologies are **eroding the technological barriers** to acquiring or genetically enhancing dangerous pathogens for hostile use. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Biological_Weapons_Convention?utm_source=openai))  \n   * Unclassified U.S. intelligence threat assessments (summarized in legal and media analyses) warn that **rapid advances in dual\u2011use technologies\u2014bioinformatics, synthetic biology, genomic editing, etc.\u2014could enable development of *novel biological threats***, i.e., new or engineered agents. ([americanbar.org](https://www.americanbar.org/groups/law_national_security/events_cle/34th-annual-review-of-the-field-of-national-security-law-conference-cle-materials/?utm_source=openai))  \n   * Academic and policy work over 2022\u20132023 highlights that AI, large language models, and biological design tools can lower barriers to designing or optimizing dangerous biological agents, explicitly framing this as an **increasing biosecurity risk from engineered biology**. ([arxiv.org](https://arxiv.org/abs/2306.13952?utm_source=openai))  \n   Collectively, these official and expert sources converge on the view that the *risk* from engineered or engineerable biological agents has been rising since around the time of the prediction, consistent with Friedberg\u2019s claim about \u201cincreasing\u2026risks.\u201d\n\n**Conclusion:**  \nBoth components of the prediction came true in the relevant timeframe: many more SARS\u2011CoV\u20112 variants did emerge globally, and expert and official assessments confirm a growing risk landscape around engineered biological agents. Hence the prediction is best scored as **right**.",
+      "sources": [
+        {
+          "end_index": 596,
+          "start_index": 500,
+          "title": "SARS-CoV-2 Omicron variant",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/SARS-CoV-2_Omicron_variant?utm_source=openai"
+        },
+        {
+          "end_index": 932,
+          "start_index": 840,
+          "title": "Variants of SARS-CoV-2",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Variants_of_SARS-CoV-2?utm_source=openai"
+        },
+        {
+          "end_index": 1310,
+          "start_index": 1109,
+          "title": "Covid variant XFG surges 14% in US as WHO tracks spread to 38 nations, India confirms 163 cases; here's what we know so far",
+          "type": "url_citation",
+          "url": "https://indiatimes.com/trending/covid-variant-xfg-surges-14-in-us-as-who-tracks-spread-to-38-nations-india-confirms-163-cases-heres-what-we-know-so-far-666535.html?utm_source=openai"
+        },
+        {
+          "end_index": 2087,
+          "start_index": 1988,
+          "title": "Biological Weapons Convention",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Biological_Weapons_Convention?utm_source=openai"
+        },
+        {
+          "end_index": 2575,
+          "start_index": 2386,
+          "title": "34th Annual Review of the Field of National Security Law Conference: CLE Materials",
+          "type": "url_citation",
+          "url": "https://www.americanbar.org/groups/law_national_security/events_cle/34th-annual-review-of-the-field-of-national-security-law-conference-cle-materials/?utm_source=openai"
+        },
+        {
+          "end_index": 2922,
+          "start_index": 2857,
+          "title": "Artificial intelligence and biological misuse: Differentiating risks of language models and biological design tools",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2306.13952?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction has two parts, both verified as accurate by 2025. First, many additional SARS-CoV-2 variants emerged globally post-mid-2021: Delta dominated into late 2021, followed by Omicron (Nov 2021, WHO VOC), sublineages like BA.2/4/5 (2022), XBB (2022), JN.1 (2023), KP.3 (2024-2025) per WHO, ECDC, CDC, and Wikipedia timelines ([WHO tracking](https://www.who.int/activities/tracking-SARS-CoV-2-variants), [ECDC VOC list](https://www.ecdc.europa.eu/en/covid-19/variants-concern)). Second, risks from potentially engineered biological agents increased, with post-2021 reports highlighting growing threats from synthetic biology, AI-enabled bioweapons, and gain-of-function research (e.g., CSIS 2025 on AI bioterrorism, RAND 2025 biotech framework, Nature 2024 on engineered threats, Frontiers 2025 emerging tech biosecurity). No actual engineered outbreaks occurred (searches for incidents 2021-2025 yielded none, only hypotheticals), but expert assessments confirm escalating potential risks as predicted."
+    }
+  ]
+}

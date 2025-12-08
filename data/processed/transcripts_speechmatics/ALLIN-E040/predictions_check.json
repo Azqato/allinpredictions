@@ -1,0 +1,486 @@
+{
+  "meta": {
+    "count": 14,
+    "count_by_result": {
+      "wrong": 5,
+      "right": 4,
+      "ambiguous": 2,
+      "inconclusive": 3
+    }
+  },
+  "predictions": [
+    {
+      "id": "D-00:07:10.000",
+      "result": "wrong",
+      "explanation": "The prediction was that, from mid\u20112021 onward, essentially all unvaccinated people would eventually be infected with the COVID\u201119 Delta variant.\n\nEvidence from seroprevalence and variant\u2011specific surveillance indicates:\n\n- By late 2021 and early 2022, Delta did become the dominant variant globally for a time and infected a large share of unvaccinated people, but not all. Estimates from multiple countries show substantial, but far from universal, infection or seroprevalence levels before Omicron arrived (often well below 100%, even when including both vaccinated and unvaccinated populations), leaving many people still uninfected by Delta when Omicron began to outcompete it.\n- Omicron (and its sublineages) rapidly displaced Delta in late 2021 and 2022, becoming the overwhelmingly dominant variant worldwide. This means that many people who avoided infection during the Delta wave but were later infected, were infected with Omicron or later variants rather than Delta.\n- There is no credible epidemiological evidence that *nearly all* unvaccinated individuals (let alone literally all) were ever infected with Delta specifically; instead, data consistently show a mix of: people infected with pre\u2011Delta strains, people infected with Delta, people infected only with Omicron or later variants, and some who (as of 2025) still show no evidence of infection.\n\nBecause the statement is strong and specific to the *Delta* variant (\"if you're not vaccinated, you're going to get the delta variant\"), and available data show large numbers of unvaccinated people who either remained uninfected through the Delta period or were first infected by later variants, the prediction is best classified as **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The Delta variant dominated infections from mid-2021 to late 2021 but was largely replaced by Omicron starting December 2021 and does not significantly circulate as of 2025 (current variants: XFG, NB.1.8.1 per Nebraska Med and ECDC trackers). No evidence shows 'essentially all' unvaccinated individuals were infected with Delta; household secondary attack rates were 25-38% (Lancet studies), and cumulative Delta-specific seroprevalence/incidence data indicate far lower proportions (e.g., case underreporting 12-37% during wave implies high but not near-universal infections, per Infectious Diseases Modelling). Overall seroprevalence rose later with Omicron, not Delta. Sources: CDC MMWR, WHO/ECDC variant tracking, Lancet, Nature, Wikipedia Delta page."
+    },
+    {
+      "id": "B-00:11:40.000",
+      "result": "right",
+      "explanation": "The episode aired on 16 July 2021. On 19 November 2021, less than five months later, the FDA amended the Emergency Use Authorizations for the Pfizer-BioNTech and Moderna COVID-19 vaccines so that a single booster dose was authorized for **all adults 18 and older**, rather than just high\u2011risk groups. ([biopharminternational.com](https://www.biopharminternational.com/view/fda-authorizes-covid-19-boosters-for-all-adults?utm_source=openai)) That same day, the CDC director endorsed ACIP\u2019s expanded recommendations, explicitly **expanding eligibility and recommending booster shots for all adults ages 18 and older** who had completed an mRNA primary series at least six months earlier. ([archive.cdc.gov](https://archive.cdc.gov/www_cdc_gov/media/releases/2021/s1119-booster-shots.html?utm_source=openai)) This represented a clear shift in U.S. policy and practice from targeted boosters to a general\u2011population booster recommendation within a short period after July 2021, matching Friedberg\u2019s prediction that \u201cwe\u2019re going to need to do a booster very soon for everyone.\u201d",
+      "sources": [
+        {
+          "end_index": 473,
+          "start_index": 334,
+          "title": "FDA Authorizes COVID-19 Boosters for All Adults | BioPharm International",
+          "type": "url_citation",
+          "url": "https://www.biopharminternational.com/view/fda-authorizes-covid-19-boosters-for-all-adults?utm_source=openai"
+        },
+        {
+          "end_index": 838,
+          "start_index": 719,
+          "title": "CDC Expands Eligibility for COVID-19 Booster Shots to All Adults",
+          "type": "url_citation",
+          "url": "https://archive.cdc.gov/www_cdc_gov/media/releases/2021/s1119-booster-shots.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction came true. In July 2021, boosters were not yet recommended for the general population. However, shortly after:\n- Sep 22, 2021: FDA authorizes Pfizer boosters for high-risk groups ([FDA](https://www.fda.gov/news-events/press-announcements/fda-authorizes-booster-dose-pfizer-biontech-covid-19-vaccine-certain-populations)).\n- Sep 23, 2021: ACIP recommends for 65+, high-risk adults.\n- Nov 19, 2021: CDC endorses boosters for *all adults 18+* ([CNN](https://www.cnn.com/2021/11/19/health/covid-vaccine-boosters-fda-cdc), [NYT](https://www.nytimes.com/2021/11/19/health/covid-boosters-cdc.html), [CBS](https://www.cbsnews.com/news/covid-vaccine-booster-shot-cdc-fda-authorization/)).\nThis shift to recommending third doses for the general adult population occurred within ~4 months, qualifying as a 'short period' in pandemic context."
+    },
+    {
+      "id": "B-00:11:52.660",
+      "result": "wrong",
+      "explanation": "The prediction was that mRNA COVID\u201119 vaccine effectiveness against infection would decline to roughly two\u2011thirds (about 60\u201370%) around six months after the initial 2\u2011dose series.\n\nReal\u2011world data show substantially *lower* effectiveness against infection by about 5\u20136 months, especially once Delta became dominant:\n- A large Kaiser Permanente / Pfizer cohort study of BNT162b2 found effectiveness against *any* SARS\u2011CoV\u20112 infection fell from 88% in the first month after full vaccination to 47% at six months overall, with Delta-specific effectiveness around 53% by four months and non\u2011Delta effectiveness about 67% at 4\u20135 months \u2013 already below or barely at the lower edge of the predicted 60\u201370% band and still declining. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/34619098/?utm_source=openai))\n- A nationwide Qatar study found BNT162b2 effectiveness against infection peaked early then dropped rapidly, reaching roughly 20% in months 5\u20137 after the second dose, far below two\u2011thirds. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/34614327/?utm_source=openai))\n- In England\u2019s OpenSAFELY cohort, by weeks 23\u201326 (about six months) after the second dose, rates of positive SARS\u2011CoV\u20112 tests in vaccinated people were similar to or higher than in unvaccinated people, implying vaccine effectiveness against infection near zero or even negative at that time. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/35858698/?utm_source=openai))\n\nEarlier phase 3 trial follow\u2011up for BNT162b2 reported high efficacy (around 84\u201391%) against symptomatic COVID\u201119 through six months, but those data were mostly pre\u2011Delta and not focused specifically on the six\u2011month point in a real\u2011world, variant\u2011mixed setting. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/34525277/?utm_source=openai)) Subsequent observational studies across multiple countries consistently show that by roughly six months post\u2011series, protection against *infection* had typically fallen below 60%, often much lower, although protection against severe disease remained high.\n\nBecause the actual effectiveness against infection at about six months was generally well under the predicted 60\u201370% (two\u2011thirds) level, the prediction overestimated how much protection would remain and is best classified as wrong.",
+      "sources": [
+        {
+          "end_index": 849,
+          "start_index": 761,
+          "title": "Effectiveness of mRNA BNT162b2 COVID-19 vaccine up to 6 months in a large integrated health system in the USA: a retrospective cohort study - PubMed",
+          "type": "url_citation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34619098/?utm_source=openai"
+        },
+        {
+          "end_index": 1128,
+          "start_index": 1040,
+          "title": "Waning of BNT162b2 Vaccine Protection against SARS-CoV-2 Infection in Qatar - PubMed",
+          "type": "url_citation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34614327/?utm_source=openai"
+        },
+        {
+          "end_index": 1510,
+          "start_index": 1422,
+          "title": "Waning effectiveness of BNT162b2 and ChAdOx1 covid-19 vaccines over six months since second dose: OpenSAFELY cohort study using linked electronic health records - PubMed",
+          "type": "url_citation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35858698/?utm_source=openai"
+        },
+        {
+          "end_index": 1864,
+          "start_index": 1776,
+          "title": "Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine through 6 Months - PubMed",
+          "type": "url_citation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34525277/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Real-world studies confirmed the prediction. UK surveillance data (e.g., VIEW-hub summary of UKHSA reports, Jan 2022) showed Pfizer (BNT162b2) VE against symptomatic Delta infection at \u226520 weeks (~5 months) post-dose 2 was 62.5% (95% CI not specified in summary but consistent across reports). CDC VISION study (MMWR Feb 2022) reported pooled mRNA VE against ED/UC visits (symptomatic infection proxy) during Delta at \u22655 months: 77% (76\u201378%), waning from 92%; overall 69%. Israel data ~64% against Delta. Qatar NEJM (Oct 2021) showed lower ~17% at 6 months (including asymptomatic, later Delta), but multiple sources align with 60\u201370% range against symptomatic infection by ~6 months. Prediction matched observed waning during Delta era post-July 2021 podcast."
+    },
+    {
+      "id": "B-00:13:38.000",
+      "result": "right",
+      "explanation": "FDA in the United States authorized a Pfizer-BioNTech COVID\u201119 booster dose for certain populations on **September 22, 2021**, with CDC advisory panel backing and CDC director sign\u2011off on **September 23\u201324, 2021**, after which booster shots began being administered nationally.\n\nSources:\n- The FDA issued an Emergency Use Authorization (EUA) for a single Pfizer booster dose for high\u2011risk groups on **Sept. 22, 2021**.\n- CDC\u2019s ACIP recommended the booster on **Sept. 23, 2021**, and CDC\u2019s director endorsed and slightly expanded those recommendations shortly thereafter, allowing boosters to begin for eligible groups in late September 2021.\n\nSince boosters were both **authorized and available in the U.S. market in September 2021**, Friedberg\u2019s prediction that \u201cwe\u2019re going to get boosters and \u2026 see them hit the market next month in September\u201d is **correct** for the United States and timeframe specified.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was correct. FDA authorized additional (booster) doses of Pfizer and Moderna COVID-19 vaccines for certain immunocompromised individuals on August 12, 2021 ([FDA Moderna decision memo](https://www.fda.gov/media/151611/download), [Pfizer](https://www.fda.gov/media/151613/download)). Broader booster authorization for Pfizer-BioNTech was issued September 22, 2021, for ages 65+ and high-risk 18-64 ([FDA announcement](https://www.fda.gov/news-events/press-announcements/fda-authorizes-booster-dose-pfizer-biontech-covid-19-vaccine-certain-populations)). CDC endorsed September 24. Boosters were available starting mid-August for immunocompromised and late September for others, with rollout plans announced for September 20 ([Reuters](https://www.reuters.com/world/us/us-start-offering-covid-19-vaccine-booster-doses-september-2021-08-18/), [NPR](https://www.npr.org/sections/coronavirus-live-updates/2021/08/18/1028798003/covid-19-booster-shots-roll-out-september-moderna-pfizer)). Thus, authorized and available by September 2021."
+    },
+    {
+      "id": "C-00:15:05.510",
+      "result": "ambiguous",
+      "explanation": "Two key facts:\n\n1. **Antecedent didn\u2019t occur (much less than 40% unvaccinated).**  \n   CDC data summarized in August 2023 reporting shows that by **May 11, 2023**, about **81.4% of the U.S. population had received at least one COVID-19 vaccine dose**, i.e., only ~18.6% remained entirely unvaccinated. ([frequentbusinesstraveler.com](https://www.frequentbusinesstraveler.com/2023/08/coronavirus-morning-news-brief-august-2-fda-could-soon-authorize-updated-boosters-deadly-heat-triggers-covid-like-lockdown/?utm_source=openai))  Later reporting notes that by 2025 about **70% of Americans had completed the initial vaccine series**, implying ~30% were unvaccinated or incompletely vaccinated\u2014still well below 40%. ([nypost.com](https://nypost.com/2025/09/01/us-news/president-trump-demands-drug-companies-release-data-on-covid-vaccines-to-the-public/?utm_source=openai))  So the condition \u201cif ~40% of Americans remain unvaccinated 2\u20133 years from mid\u20112021\u201d was **not** met.\n\n2. **No new \u201ckiller strain\u201d emerged in 2023\u20132024.**  \n   The dominant variants in that period were Omicron sublineages such as **JN.1**, **KP.3**, **LB.1**, and later **NB.1.8.1**. Multiple analyses from WHO, CDC, and academic/medical sources consistently report that these subvariants are *more transmissible and more immune\u2011evasive* but **do not cause more severe disease or higher mortality** than prior Omicron strains: \n   * JN.1: WHO and CDC data show no evidence of increased severity vs other Omicron variants. ([yalemedicine.org](https://www.yalemedicine.org/news/jn1-coronavirus-variant-covid?utm_source=openai))  \n   * KP.3: Described as more contagious but *not* associated with more severe illness than recent strains. ([health.com](https://www.health.com/covid-variant-kp3-dominant-8662468?utm_source=openai))  \n   * LB.1 and NB.1.8.1: Monitored variants with **no evidence of more severe disease or higher hospitalization/death rates** than contemporaneous variants. ([cbsnews.com](https://www.cbsnews.com/news/covid-variant-lb-1-symptoms-no-evidence-more-severe/?utm_source=openai))  \n   Broader reviews also note that post\u2011Omicron, COVID\u201119 has generally become **more transmissible but less severe**, with lower case\u2011fatality rates compared with earlier waves like Delta. ([lemonde.fr](https://www.lemonde.fr/en/health/article/2024/12/31/five-years-after-covid-19-burst-across-the-world-it-is-almost-banal_6736575_14.html?utm_source=openai))  There was *no* distinct \u201chighly lethal\u201d new U.S. variant in 2023\u20132024 that caused catastrophic mortality specifically among the unvaccinated.\n\n**Why this is scored as \u201cambiguous\u201d:**  \nChamath made a *conditional* forecast: *if* ~40% of Americans stayed unvaccinated 2\u20133 years out, then a \u201ckiller strain\u201d would emerge with essentially 100% probability. In reality, the vaccination rate rose high enough that this **40%\u2011unvaccinated scenario never happened**, and pandemic evolution took place under different immunity conditions. Because the stated condition failed, the prediction\u2019s implied causal claim about what *would* have happened under that counterfactual cannot be directly tested.\n\nIf one ignores the conditional and treats his statement as an *unconditional* claim that a killer strain would appear by ~2023\u20132024, available evidence would make it **wrong**; but under the literal conditional phrasing, the fairest scoring is that the prediction\u2019s truth **cannot be determined from realized data**, hence **\u201cambiguous.\u201d**",
+      "sources": [
+        {
+          "end_index": 566,
+          "start_index": 342,
+          "title": "| Coronavirus Morning News Brief \u2013 August 2: FDA Could Soon Authorize Updated Boosters, Deadly Heat Triggers Covid-Like LockdownFrequent Business Traveler",
+          "type": "url_citation",
+          "url": "https://www.frequentbusinesstraveler.com/2023/08/coronavirus-morning-news-brief-august-2-fda-could-soon-authorize-updated-boosters-deadly-heat-triggers-covid-like-lockdown/?utm_source=openai"
+        },
+        {
+          "end_index": 909,
+          "start_index": 753,
+          "title": "Trump demands drug companies release data on COVID vaccines to the public",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/09/01/us-news/president-trump-demands-drug-companies-release-data-on-covid-vaccines-to-the-public/?utm_source=openai"
+        },
+        {
+          "end_index": 1639,
+          "start_index": 1536,
+          "title": "3 Things to Know About JN.1, the New Coronavirus Strain | News | Yale Medicine",
+          "type": "url_citation",
+          "url": "https://www.yalemedicine.org/news/jn1-coronavirus-variant-covid?utm_source=openai"
+        },
+        {
+          "end_index": 1841,
+          "start_index": 1750,
+          "title": "COVID Variant KP.3 Surges to Dominance-Here's What You Need to Know",
+          "type": "url_citation",
+          "url": "https://www.health.com/covid-variant-kp3-dominant-8662468?utm_source=openai"
+        },
+        {
+          "end_index": 2117,
+          "start_index": 2001,
+          "title": "\"No evidence\" new COVID variant LB.1 causes more severe disease, CDC says - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/covid-variant-lb-1-symptoms-no-evidence-more-severe/?utm_source=openai"
+        },
+        {
+          "end_index": 2479,
+          "start_index": 2310,
+          "title": "Five years after Covid-19 burst across the world, the disease is almost banal",
+          "type": "url_citation",
+          "url": "https://www.lemonde.fr/en/health/article/2024/12/31/five-years-after-covid-19-burst-across-the-world-it-is-almost-banal_6736575_14.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The condition of approximately 40% of Americans remaining unvaccinated by mid-2023 to mid-2024 was not met. Data shows ~81% received at least one dose nationally as of mid-2023 (USAFacts: [https://usafacts.org/visualizations/covid-vaccine-tracker-states/](https://usafacts.org/visualizations/covid-vaccine-tracker-states/)), implying ~19% unvaccinated (zero doses), stable from Oct 2022 (~20.1%, Wikipedia: [https://en.wikipedia.org/wiki/COVID-19_vaccination_in_the_United_States](https://en.wikipedia.org/wiki/COVID-19_vaccination_in_the_United_States)). No highly lethal COVID variant causing substantial unvaccinated mortality emerged; 2023-2024 Omicron subvariants (e.g., JN.1, XBB) had lower case fatality rates than Delta (Lancet: [https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762(24)00021-8/fulltext](https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762(24)00021-8/fulltext); other studies confirm declining lethality). Since the 'if' condition failed, the conditional prediction cannot be verified as true or false."
+    },
+    {
+      "id": "B-00:25:24.240",
+      "result": "right",
+      "explanation": "Multiple data sources show that in the weeks after mid\u2011July 2021, a substantial share of Americans *voluntarily* pulled back from travel and dining as the Delta wave and breakthrough reports grew, even though there were no new broad stay\u2011at\u2011home lockdowns.\n\n**Travel & flying behavior**  \n\u2022 A Destination Analysts survey (summarized in a Montana tourism bulletin dated August 13, 2021) reported that 54% of American travelers said the Delta variant made them **less interested in traveling right now**, with notable increases in trip postponements (27%) and cancellations (23%) compared with late July. Nearly half (48%) agreed that media coverage of COVID had them doubting it was safe to travel, and fewer than half considered flying on an airplane safe. ([content.govdelivery.com](https://content.govdelivery.com/accounts/MTDOC/bulletins/2ebab93?utm_source=openai))  \n\u2022 The same research series found that by early August, optimism about the near\u2011term pandemic trajectory had **crashed about 40% since early June**, and travel intent had dropped from its early\u2011summer highs, which analysts explicitly linked to the Delta surge. ([qatar-tribune.com](https://www.qatar-tribune.com/article/218999/OPINION/Why-Your-Next-Trip-Might-Be-More-Expensive-Than-Your-Last?utm_source=openai))  \n\u2022 Southwest Airlines, in an August 11, 2021 regulatory update, said that Delta\u2011related developments had caused **negative effects on August and September revenue trends**, undermining its earlier expectation of a profitable Q3. The article discussing this cites survey data that **more than 54% of Americans said the Delta variant made them less interested in traveling right now**, reinforcing that there was a demand\u2011side, traveler\u2011driven pullback rather than only regulatory limits. ([dallasnews.com](https://www.dallasnews.com/business/airlines/2021/08/11/southwest-airlines-hope-for-profits-fade-as-delta-variant-hinders-travel-demand/?utm_source=openai))\n\n**Restaurant dining behavior**  \n\u2022 An early\u2011August 2021 OpenTable/Booking Holdings release noted that **U.S. dining demand was down 13% compared with just one month earlier**, with significant declines in cities like Minneapolis, Seattle, and New York. This compares July to early August\u2014precisely the \u201cweeks following mid\u2011July\u201d window. ([bookingholdings.com](https://www.bookingholdings.com/press-releases/as-local-regulations-for-dining-change-opentable-launches-new-safety-tools-for-diners-and-restaurants/?utm_source=openai))  \n\u2022 A QSR Magazine analysis, drawing on National Restaurant Association survey work, reported that, amid Delta\u2019s rise, **19% of adults said they had stopped going out to restaurants and 9% said they had cancelled existing plans in recent weeks because of COVID trends**. The same piece cited OpenTable data showing dining down 16% in San Francisco compared with July and much further below 2019 levels\u2014clear evidence of a voluntary pullback. ([qsrmagazine.com](https://www.qsrmagazine.com/exclusives/covids-remarkable-impact-restaurants-18-months-later/?utm_source=openai))\n\n**Lack of new formal lockdowns, but rising Delta/breakthrough fears**  \n\u2022 By early August 2021, the Delta variant accounted for roughly 99% of U.S. cases and drove a large summer wave, including rising concern about breakthrough infections, but the U.S. did **not** re\u2011enter nationwide economic lockdowns. Restrictions were more targeted\u2014e.g., New York City\u2019s proof\u2011of\u2011vaccination rule for indoor dining announced August 3 and effective August 16, with enforcement only starting in September. ([en.wikipedia.org](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States?utm_source=openai))  \n\nPutting this together: within a few weeks of mid\u2011July 2021, measurable shares of Americans reported being more hesitant to travel or fly, showed increased postponements/cancellations of trips, and reduced in\u2011person restaurant dining, in response to the Delta surge and associated fears. These shifts occurred largely through **voluntary behavior changes** and sentiment\u2011driven pullbacks rather than broad re\u2011imposed lockdowns. That matches Friedberg\u2019s prediction that people would \u201cget scared again,\u201d go into a kind of **social lockdown**, and become nervous about traveling, flying, and going to restaurants. Hence, the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 904,
+          "start_index": 793,
+          "title": "Friday Flash 8/13/21",
+          "type": "url_citation",
+          "url": "https://content.govdelivery.com/accounts/MTDOC/bulletins/2ebab93?utm_source=openai"
+        },
+        {
+          "end_index": 1319,
+          "start_index": 1168,
+          "title": "Why Your Next Trip Might Be More Expensive Than Your Last - Read Qatar Tribune on the go for unrivalled news coverage",
+          "type": "url_citation",
+          "url": "https://www.qatar-tribune.com/article/218999/OPINION/Why-Your-Next-Trip-Might-Be-More-Expensive-Than-Your-Last?utm_source=openai"
+        },
+        {
+          "end_index": 1983,
+          "start_index": 1809,
+          "title": "Southwest Airlines\u2019 hope for profits fade as delta variant hinders travel demand",
+          "type": "url_citation",
+          "url": "https://www.dallasnews.com/business/airlines/2021/08/11/southwest-airlines-hope-for-profits-fade-as-delta-variant-hinders-travel-demand/?utm_source=openai"
+        },
+        {
+          "end_index": 2517,
+          "start_index": 2325,
+          "title": "As Local Regulations for Dining Change, OpenTable Launches New Safety Tools for Diners and Restaurants - Booking Holdings",
+          "type": "url_citation",
+          "url": "https://www.bookingholdings.com/press-releases/as-local-regulations-for-dining-change-opentable-launches-new-safety-tools-for-diners-and-restaurants/?utm_source=openai"
+        },
+        {
+          "end_index": 3092,
+          "start_index": 2961,
+          "title": "COVID\u2019s Remarkable Impact on Restaurants, 18 Months Later - QSR Magazine",
+          "type": "url_citation",
+          "url": "https://www.qsrmagazine.com/exclusives/covids-remarkable-impact-restaurants-18-months-later/?utm_source=openai"
+        },
+        {
+          "end_index": 3698,
+          "start_index": 3590,
+          "title": "COVID-19 pandemic in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "In late July-August 2021, amid rising Delta variant cases and breakthrough infection reports (e.g., CDC Provincetown cluster report on July 30 showing high viral loads in vaccinated [CDC MMWR](https://www.cdc.gov/mmwr/volumes/70/wr/mm7031e2.htm)), US consumer behavior shifted noticeably without lockdowns. TSA screenings peaked at 2.24M on July 11 but fell 28% to 1.6M by Aug 17 ([Business Insider](https://www.businessinsider.com/air-travel-drops-as-summer-ends-and-delta-variant-spreads-2021-8)); domestic bookings dropped 13% in July from June ([NBC](https://www.nbcnews.com/business/travel/air-travel-sees-sharp-decline-delta-variant-continues-derail-vacation-n1278008)). Restaurant foot traffic exceeded 2019 levels most of July but plunged 30-50% below in late July-early Aug due to Delta fears ([Statista/SafeGraph](https://www.statista.com/chart/25561/footfall-at-us-retailers-and-restaurants/)); OpenTable seated diners fell 11% in Aug vs July/below 2019 ([NYPost](https://nypost.com/2021/09/06/restaurant-recovery-gets-hit-hard-by-delta-variant/), [CNN](https://www.cnn.com/2021/08/10/economy/covid-restaurant-economy)); 60% changed restaurant use per National Restaurant Assoc ([PRNewswire](https://www.prnewswire.com/news-releases/national-restaurant-association-releases-2021-mid-year-state-of-the-restaurant-industry-update-301365454.html)), 1 in 5 stopped dining out ([Reuters](https://www.reuters.com/business/delta-variant-likely-hurt-us-restaurant-recovery-report-2021-08-31/)). Surveys and trends confirm voluntary pullback from fear."
+    },
+    {
+      "id": "B-00:27:40.000",
+      "result": "right",
+      "explanation": "Multiple surveys from late July and early August 2021 show a clear, rapid increase in hesitancy around discretionary activities like travel and public leisure, especially among the vaccinated, within roughly four weeks of mid\u2011July 2021.\n\n* Morning Consult\u2019s \u201cReturn to Normal\u201d tracking found that Americans\u2019 average comfort with more than 40 leisure activities (shopping malls, vacations, sporting events, movie theaters, etc.) peaked at 55% around July 8\u201310, then **fell every week in July**, reaching 49% by the Aug 2\u20133 survey. Comfort among vaccinated adults dropped more sharply, from a record 55% in early July to 47% by early August, with noted declines in going to malls, restaurants, movie theaters and sporting events.([pro.morningconsult.com](https://pro.morningconsult.com/articles/americans-comfort-level-fall)) This is squarely inside Friedberg\u2019s \u201cnext four weeks\u201d window after mid\u2011July.\n* A Gallup poll conducted July 19\u201326 found **concern about catching COVID-19 rising again** (from 17% in June to 29% in July) and a growing share saying the better advice for healthy people was to **stay home as much as possible** (up from 35% to 41%), indicating more caution about normal out\u2011of\u2011home activities as the Delta wave hit.([news.gallup.com](https://news.gallup.com/poll/353003/americans-optimism-covid-dashed-cases-surge.aspx?utm_source=openai))\n* For travel specifically, an August Fortune/SurveyMonkey poll reported that **61% of Americans said they were more concerned about traveling because of the Delta variant**, with concern especially high among the vaccinated (72% of vaccinated vs. 40% of unvaccinated).([surveymonkey.com](https://www.surveymonkey.com/curiosity/fortune-august-2021/))\n* A YouGov survey for The Points Guy (fielded Aug 18\u201320) found that, among people who travel at least occasionally, **49% of fully vaccinated respondents now felt less comfortable taking a domestic flight**, 53% less comfortable with an international flight, and 35% less comfortable just traveling to a different city or town, specifically \u201cin light of the delta variant\u2019s spread.\u201d([thepointsguy.com](https://thepointsguy.com/news/delta-variant-travel-uncertainty/)) The same piece cites a Cars.com mid\u2011August survey where 20% of respondents were canceling flights and driving instead for Labor Day, and 24% were changing their destination\u2014direct evidence of altered discretionary travel plans.([thepointsguy.com](https://thepointsguy.com/news/delta-variant-travel-uncertainty/))\n* Morning Consult also reported that concern about the Delta variant was very widespread and rising between late July and late August, with 82% of U.S. adults saying they were very or somewhat concerned, and vaccinated adults notably more worried than the unvaccinated.([pro.morningconsult.com](https://pro.morningconsult.com/articles/return-to-normal-delta-variant-concern-polling)) This matches Friedberg\u2019s intuition that vaccinated people, hearing about more breakthrough infections, would become especially uneasy.\n\nTaken together, these data show that by early to mid\u2011August 2021\u2014a roughly four\u2011week period after the mid\u2011July podcast\u2014large shares of Americans, particularly the vaccinated, had become **less comfortable and more hesitant** about travel and other discretionary public activities, consistent with Friedberg\u2019s prediction. While the surveys don\u2019t directly measure \u201chearing about friends getting COVID,\u201d they do show the predicted behavioral shift and heightened caution in nearly the exact timeframe he specified, so the forecast is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 858,
+          "start_index": 762,
+          "title": "Rising Delta Variant Cases, CDC Indoor Mask Guidance Cut Into Consumer Comfort",
+          "type": "url_citation",
+          "url": "https://pro.morningconsult.com/articles/americans-comfort-level-fall"
+        },
+        {
+          "end_index": 1395,
+          "start_index": 1272,
+          "title": "Americans' Optimism About COVID-19 Dashed as Cases Surge",
+          "type": "url_citation",
+          "url": "https://news.gallup.com/poll/353003/americans-optimism-covid-dashed-cases-surge.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 1746,
+          "start_index": 1665,
+          "title": "Fortune|SurveyMonkey Poll August Update",
+          "type": "url_citation",
+          "url": "https://www.surveymonkey.com/curiosity/fortune-august-2021/"
+        },
+        {
+          "end_index": 2215,
+          "start_index": 2130,
+          "title": "As delta variant spreads, some travelers are increasingly less comfortable with travel - The Points Guy",
+          "type": "url_citation",
+          "url": "https://thepointsguy.com/news/delta-variant-travel-uncertainty/"
+        },
+        {
+          "end_index": 2528,
+          "start_index": 2443,
+          "title": "As delta variant spreads, some travelers are increasingly less comfortable with travel - The Points Guy",
+          "type": "url_citation",
+          "url": "https://thepointsguy.com/news/delta-variant-travel-uncertainty/"
+        },
+        {
+          "end_index": 2913,
+          "start_index": 2799,
+          "title": "As Delta Variant Surges, Vaccinated Americans Remain More Worried Than the Unvaccinated",
+          "type": "url_citation",
+          "url": "https://pro.morningconsult.com/articles/return-to-normal-delta-variant-concern-polling"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "In late July to mid-August 2021, US travel bookings dropped sharply due to Delta variant fears, with domestic flight prices falling below 2019 levels ([Forbes, Aug 30](https://www.forbes.com/sites/roberthart/2021/08/30/delta-variant-slams-brakes-on-us-domestic-air-travel-as-demand-flight-prices-drop-below-pre-pandemic-levels/); [NBC, Aug 30](https://www.nbcnews.com/business/travel/air-travel-sees-sharp-decline-delta-variant-continues-derail-vacation-n1278008)). An Aug 4 survey found ~1/3 of travelers postponed trips ([USA Today, Aug 14](https://www.usatoday.com/story/travel/news/2021/08/14/covid-travel-concerns-delta-variant-trips-canceled/8100193002/)). Theme park attendance plummeted: Disney World saw its slowest weeks of 2021, with hotel occupancy dropping as guests canceled amid Florida's surge ([WDWNT, Aug 17](https://wdwnt.com/2021/08/disney-hotel-occupancy-rates-dropping-fast-as-guests-cancel-walt-disney-world-vacations-due-to-florida-covid-19-cases/); [Disney Tourist Blog](https://www.disneytouristblog.com/disney-worlds-lowest-crowd-week-of-the-last-year/); [BlogMickey, Aug 22](https://blogmickey.com/2021/08/disney-world-just-had-the-slowest-week-of-2021/)). Only 44% felt comfortable visiting parks ([Variety, Aug 17](https://variety.com/vip/virus-concerns-loom-large-over-theme-park-business-1235042564/)). Breakthrough cases in vaccinated people rose and were widely reported ([NYT, Jul 22](https://www.nytimes.com/2021/07/22/health/coronavirus-breakthrough-infections-delta.html)), fueling hesitation matching the predictor's timeframe and rationale."
+    },
+    {
+      "id": "C-00:29:35.810",
+      "result": "wrong",
+      "explanation": "Evidence shows that California did **not** return to a broad COVID lockdown or stay\u2011at\u2011home order around September 2021.\n\n* On June 15, 2021, California **fully reopened**, with Governor Newsom terminating the statewide Stay\u2011at\u2011Home Order and ending physical distancing, capacity limits, and the color\u2011tier system.([gov.ca.gov](https://www.gov.ca.gov/2021/06/11/as-california-fully-reopens-governor-newsom-announces-plans-to-lift-pandemic-executive-orders/?utm_source=openai))  There is no record of these statewide closures being reimposed later in 2021.\n* Subsequent statewide changes before and around September 2021 were **targeted measures**, not lockdowns: e.g., an August 11 order requiring teachers and school staff to be vaccinated or tested weekly, and an August 19 rule that, effective September 20, large indoor events (1,000+ attendees) must verify vaccination or a recent negative test.([en.wikipedia.org](https://en.wikipedia.org/wiki/California_government_response_to_the_COVID-19_pandemic?utm_source=openai))  These rules allowed events and businesses to continue operating under conditions, rather than \u201clocking back up.\u201d\n* Local governments (e.g., San Francisco, Contra Costa County, Los Angeles City/County, West Hollywood, Berkeley) added their own **vaccine\u2011check and mask rules** for certain indoor businesses and large events in August\u2013October 2021, but businesses generally remained open with restrictions, not closed under a stay\u2011at\u2011home or broad shutdown order.([en.wikipedia.org](https://en.wikipedia.org/wiki/COVID-19_vaccination_mandates_in_the_United_States?utm_source=openai))\n* A broader **statewide indoor mask mandate** was reintroduced later, from December 15, 2021 to January 15, 2022, again as a mitigation measure rather than a stay\u2011at\u2011home or lockdown order.([en.wikipedia.org](https://en.wikipedia.org/wiki/California_government_response_to_the_COVID-19_pandemic?utm_source=openai))\n\nGiven that the prediction was that Newsom would be \u201clocking it back up in September\u201d (i.e., reimposing major lockdown\u2011style restrictions), and the actual policy changes were limited, targeted measures without a renewed statewide lockdown or stay\u2011at\u2011home order, the prediction did **not** come true.",
+      "sources": [
+        {
+          "end_index": 511,
+          "start_index": 349,
+          "title": "As California Fully Reopens, Governor Newsom Announces Plans to Lift Pandemic Executive Orders | Governor of California",
+          "type": "url_citation",
+          "url": "https://www.gov.ca.gov/2021/06/11/as-california-fully-reopens-governor-newsom-announces-plans-to-lift-pandemic-executive-orders/?utm_source=openai"
+        },
+        {
+          "end_index": 1061,
+          "start_index": 936,
+          "title": "California government response to the COVID-19 pandemic",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/California_government_response_to_the_COVID-19_pandemic?utm_source=openai"
+        },
+        {
+          "end_index": 1645,
+          "start_index": 1525,
+          "title": "COVID-19 vaccination mandates in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COVID-19_vaccination_mandates_in_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 1961,
+          "start_index": 1836,
+          "title": "California government response to the COVID-19 pandemic",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/California_government_response_to_the_COVID-19_pandemic?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "California fully reopened on June 15, 2021, lifting stay-at-home orders, the county tier system, physical distancing, and capacity limits statewide ([gov.ca.gov/2021/06/11](https://www.gov.ca.gov/2021/06/11/as-california-fully-reopens-governor-newsom-announces-plans-to-lift-pandemic-executive-orders/)). No statewide lockdowns, partial lockdowns, or significant restrictions like business closures were reimposed in September 2021. Amid the Delta variant, some counties (e.g., LA County July 15, Bay Area Aug 3) reinstated local indoor mask mandates ([calmatters.org Aug 3](https://calmatters.org/newsletters/whatmatters/2021/08/california-covid-mask-rules/), [sacbee.com Jul 15](https://www.sacbee.com/news/politics-government/capitol-alert/article252786183.html)), but the state did not issue a new universal indoor mask mandate until December 2021 (Omicron). Newsom focused on vaccine mandates for state/school workers (Aug-Oct 2021) during the recall election (Sept 14), not lockdowns ([calmatters.org timeline](https://calmatters.org/health/coronavirus/2021/03/timeline-california-pandemic-year-key-points/)). Searches for reimpositions yield no evidence of 'locking back up' ([en.wikipedia.org COVID California](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_California))."
+    },
+    {
+      "id": "A-00:53:30.000",
+      "result": "inconclusive",
+      "explanation": "The prediction\u2019s time horizon is *within a decade* from July 2021, i.e., by around **2031**. As of today (November 29, 2025), only about four years have passed since the prediction was made, so we are not yet at (or close to) the end of the stated period.\n\nBecause the claim concerns what will happen *by* 2031, and not what must already have happened by 2025, it is too early to determine whether:\n\n- An additional **1\u20132 billion** people who previously lacked broadband will have gained access, and\n- This change will have the described **transformational impact on the planet\u2019s economy and society**.\n\nEven though we can look at interim broadband expansion trends today, those do not definitively confirm or refute what will be true by 2031. Therefore the status of this prediction, judged as of 2025, is **inconclusive (too early to tell)**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction targets 2031, approximately 10 years from July 2021. As of December 2025, only ~4.5 years have passed. Global internet users increased from 4.80 billion in July 2021 ([DataReportal](https://datareportal.com/reports/digital-2021-july-global-statshot)) to ~6 billion in 2025 ([ITU Facts and Figures 2025](https://www.itu.int/en/mediacentre/Pages/PR-2025-11-17-Facts-and-Figures.aspx)), a gain of ~1.2 billion, reducing offline population from ~3.1 billion to ~2.2 billion (world population ~8.2 billion). Fixed broadband subscribers rose modestly from 1.27 billion (Q4 2021, [Point Topic](https://www.point-topic.com/post/global-broadband-subscribers-q4-2021)) to 1.53 billion (Q2 2025, [Point Topic](https://techblog.comsoc.org/2025/10/29/point-topic-global-broadband-subscribers-in-q2-2025-5g-fwa-dsl-satellite-and-fttp/)). Progress is occurring, but insufficient time remains to confirm if 1-2 billion additional people lacking broadband will gain access by 2031, nor the 'transformational impact'."
+    },
+    {
+      "id": "C-00:57:29.000",
+      "result": "inconclusive",
+      "explanation": "The prediction\u2019s horizon is *within five years* of July 2021, i.e., up to roughly mid\u20112026. As of today (29 November 2025), that deadline has not yet passed, so we cannot definitively say whether it will be true by the stated time.\n\nWhat we can say so far:\n- As of July 2025, about **68\u201369% of the global population** used the internet (around 5.6 billion people), meaning over 30% of people are still offline.([statista.com](https://www.statista.com/statistics/325706/global-internet-user-penetration/?utm_source=openai))\n- The UN/ITU estimates roughly **2.6 billion people remained offline in 2024**, most in rural and low\u2011income areas, with affordability and infrastructure still major barriers.([social.desa.un.org](https://social.desa.un.org/sdn/global-internet-use-continues-to-rise-but-disparities-remain?utm_source=openai))\n- Mobile broadband networks (3G/4G/5G) do not yet cover all rural areas; for example, only about **82% of rural populations have 4G coverage**, and some rural regions\u2014especially in low\u2011income countries\u2014still lack any mobile broadband at all.([itu.int](https://www.itu.int/itu-d/reports/statistics/2024/11/10/ff24-mobile-network-coverage?utm_source=openai))\n- Satellite constellations like Starlink have expanded rapidly (service in ~130\u2013150 countries/territories by 2025), but they still face regulatory gaps, cost constraints, and do not provide practical, affordable access to *everyone*, especially in the poorest regions.([bez-kabli.pl](https://www.bez-kabli.pl/news/starlinks-global-satellite-internet-revolution-mobile-coverage-plans-surprising-2025-updates/?utm_source=openai))\n\nSo *as of late 2025*, the world clearly does **not** have \u201cpervasive internet access everywhere on Earth\u201d in the sense of effectively complete global coverage. However, because the prediction allows until mid\u20112026, it is technically **too early** to say with certainty that it has failed, hence the classification as **inconclusive (too early)** rather than definitively wrong.",
+      "sources": [
+        {
+          "end_index": 565,
+          "start_index": 453,
+          "title": "Global internet user penetration 2025| Statista",
+          "type": "url_citation",
+          "url": "https://www.statista.com/statistics/325706/global-internet-user-penetration/?utm_source=openai"
+        },
+        {
+          "end_index": 875,
+          "start_index": 742,
+          "title": "Global Internet use continues to rise but disparities remain | Division for Inclusive Social Development (DISD)",
+          "type": "url_citation",
+          "url": "https://social.desa.un.org/sdn/global-internet-use-continues-to-rise-but-disparities-remain?utm_source=openai"
+        },
+        {
+          "end_index": 1233,
+          "start_index": 1118,
+          "title": "Facts and Figures 2024 - Mobile network coverage",
+          "type": "url_citation",
+          "url": "https://www.itu.int/itu-d/reports/statistics/2024/11/10/ff24-mobile-network-coverage?utm_source=openai"
+        },
+        {
+          "end_index": 1662,
+          "start_index": 1503,
+          "title": "Starlink\u2019s Global Satellite Internet Revolution: Mobile Coverage, Plans & Surprising 2025 Updates",
+          "type": "url_citation",
+          "url": "https://www.bez-kabli.pl/news/starlinks-global-satellite-internet-revolution-mobile-coverage-plans-surprising-2025-updates/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The prediction targets mid-2026 (5 years from July 2021), but the current date is December 1, 2025\u2014about 7 months early. Starlink has ~7,600-8,800 satellites, providing coverage across land, oceans, and poles (including Antarctica since 2022, full polar by late 2025 per sources), serving 150+ countries/territories and 8M users ([Wikipedia](https://en.wikipedia.org/wiki/Starlink), [Starlink.com](https://starlink.com)). However, regulatory restrictions block service in major areas like China, Russia, India (pending), and others ([Statista](https://www.statista.com/chart/34152/countries-by-availability-of-starlink-satellite-internet), Reddit/Dishytech). Global population internet use is ~68-73% ([Statista Oct 2025](https://www.statista.com/statistics/617136/digital-population-worldwide), [DataReportal](https://datareportal.com/reports/digital-2025-global-overview-report)), leaving ~2.5B without access. Effectively complete coverage not yet achieved due to regs and penetration gaps; too soon to judge."
+    },
+    {
+      "id": "C-01:04:47.000",
+      "result": "wrong",
+      "explanation": "Chamath made the prediction in mid\u2011July 2021 that Virgin Galactic would be \u201cstarting commercial ops\u201d in the \u201cnext 2 or 3 quarters,\u201d implying a start roughly by mid\u20112022.\n\nIn reality, Virgin Galactic **had not begun commercial passenger operations by mid\u20112022**. In October 2021 the company updated guidance to target commercial service in Q4 2022, already outside the 2\u20133 quarter window. ([space.com](https://www.space.com/virgin-galactic-delays-next-crewed-flight-2022?utm_source=openai)) In May 2022 it further delayed commercial **passenger** service to the first quarter of 2023. ([space.com](https://www.space.com/virgin-galactic-first-commercial-flight-delay-2023?utm_source=openai))  \n\nVirgin Galactic ultimately **announced the start of commercial spaceflight service on June 15, 2023**, stating that its first commercial revenue\u2011generating mission, Galactic 01, would fly in a June 27\u201330 window, and this mission flew on June 29, 2023 as the company\u2019s inaugural commercial spaceflight. ([virgin.com](https://www.virgin.com/about-virgin/latest/virgin-galactic-announces-start-of-commercial-spaceflight-service?utm_source=openai)) Since commercial operations began about two years after the prediction\u2014well beyond the forecasted 2\u20133 fiscal quarters\u2014the prediction did not come true.",
+      "sources": [
+        {
+          "end_index": 524,
+          "start_index": 423,
+          "title": "Virgin Galactic delays next crewed space launch to 2022 | Space",
+          "type": "url_citation",
+          "url": "https://www.space.com/virgin-galactic-delays-next-crewed-flight-2022?utm_source=openai"
+        },
+        {
+          "end_index": 724,
+          "start_index": 619,
+          "title": "Virgin Galactic pushes 1st planned commercial passenger flight to 2023 | Space",
+          "type": "url_citation",
+          "url": "https://www.space.com/virgin-galactic-first-commercial-flight-delay-2023?utm_source=openai"
+        },
+        {
+          "end_index": 1174,
+          "start_index": 1032,
+          "title": "Virgin Galactic announces start of commercial spaceflight service | Virgin",
+          "type": "url_citation",
+          "url": "https://www.virgin.com/about-virgin/latest/virgin-galactic-announces-start-of-commercial-spaceflight-service?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Virgin Galactic did not begin commercial passenger operations by mid-2022. The company delayed commercial flights multiple times: in Oct 2021 to Q4 2022 ([CNBC](https://www.cnbc.com/2021/10/14/virgin-galactic-delays-beginning-of-commercial-spaceflights-to-fourth-quarter-2022.html)), then in Aug 2022 to Q1 2023 ([SpaceNews](https://spacenews.com/virgin-galactic-again-delays-start-of-commercial-suborbital-flights/)). Their 2022 annual report states they had not yet started commercial operations ([investors.virgingalactic.com](https://s29.q4cdn.com/417755062/files/doc_downloads/2023/virgin-galactic-annual-report-fye-2022.pdf)). The first commercial flight, Galactic 01, occurred on June 29, 2023 ([Virgin Galactic press release](https://investors.virgingalactic.com/news/news-details/2023/Virgin-Galactic-Announces-Start-of-Commercial-Spaceflight-Service/default.aspx), [Wikipedia](https://en.wikipedia.org/wiki/Galactic_01)). This was over a year after the predicted mid-2022 timeline (2-3 fiscal quarters post-July 2021, i.e., by Q2 2022)."
+    },
+    {
+      "id": "A-01:05:39.000",
+      "result": "wrong",
+      "explanation": "Jason\u2019s prediction has two parts:\n\n1. **Time\u2011bound claim:** Within 1\u20132 years from July 2021 (i.e., by roughly July 2023), commercial space tourism flights would have a lower per\u2011trip risk of death or serious injury than riding a motorcycle.\n2. **Open\u2011ended claim:** Eventually that risk would fall below that of driving a car.\n\nOnly the first part is time\u2011bounded and testable now; if that is false, the overall prediction fails regardless of the second, open\u2011ended clause.\n\n---\n\n**Baseline risk for motorcycles and cars**\n\nU.S. National Highway Traffic Safety Administration (NHTSA) data show that motorcyclists have a very *high* fatality rate **relative to cars**, but the *absolute* risk per mile is still small:\n\n- In 2023 there were **31.39 motorcyclist fatalities per 100 million vehicle miles traveled**, versus **1.13 per 100 million miles for passenger car occupants**\u2014about a 28\u00d7 higher rate for motorcycles.\n  ([nhtsa.gov](https://www.nhtsa.gov/press-releases/motorcycle-safety-awareness-month-motorcyclist-fatality-rate?utm_source=openai))\n\nEven if motorcycles are much more dangerous than cars, this still corresponds to a fatality probability on the order of 10\u207b\u2077\u201310\u207b\u2076 per mile. A typical trip of tens of miles yields a per\u2011trip fatality risk of only a few in a million or less.\n\n---\n\n**Best estimates of human spaceflight / space tourism risk**\n\nHistorical and contemporary analyses consistently place human spaceflight orders of magnitude riskier than everyday transport:\n\n- As of early 2021, the **in\u2011flight astronaut fatality rate was about 1 death per 31 boardings (~3.2%)**. ([newspaceeconomy.ca](https://newspaceeconomy.ca/2023/05/21/market-size-for-space-tourism/?utm_source=openai))\n- A 2023 safety overview notes that **about 3% of astronauts have died during spaceflight**, and concludes that spaceflight \u201cstill is and probably will remain a dangerous industry,\u201d expecting more deaths as tourism scales. ([spacegeneration.org](https://spacegeneration.org/space-tourism-a-closer-look-on-safety-sustainability?utm_source=openai))\n- For modern orbital crewed flights, NASA\u2011linked risk assessments during the era of SpaceX Crew Dragon put the **probability of a catastrophic failure** on a mission like Inspiration4 at roughly **1 in 300** (\u22480.3%). ([space.com](https://www.space.com/space-tourism-risk-safety-regulations?utm_source=openai))\n- An Aviation Week analysis, using the X\u201115 program as an analogue, assumes a **~0.5% per\u2011flight fatal crash probability** (about 1 in 200) for Virgin Galactic\u2013style commercial suborbital flights when projecting program\u2011level accident odds. ([aviationweek.com](https://aviationweek.com/aerospace/program-management/what-happens-space-tourism-if-there-fatal-accident?utm_source=openai))\n\nThese are *engineering* or *historical* risk estimates\u2014not just counting the small number of recent tourist flights. Even the most optimistic of these (\u22480.3% per mission) is **thousands of times** higher than the per\u2011trip fatality risk for a typical motorcycle ride.\n\nRegulatory posture is consistent with this high\u2011risk view. For U.S. space tourism, the FAA does **not** certify vehicles as safe for human passengers; instead it requires informed consent, explicitly telling customers that the vehicle is not safety\u2011certified and that they fly \u201centirely at their own risk,\u201d with disclosure of human\u2011spaceflight accident history and vehicle safety record. ([newspaceeconomy.ca](https://newspaceeconomy.ca/2023/05/14/space-tourism-do-you-have-the-right-stuff/?utm_source=openai))\n\n---\n\n**What actually happened between July 2021 and July 2023?**\n\nDuring this 1\u20132 year window, Blue Origin, Virgin Galactic, and SpaceX flew multiple paying or privately funded passengers without any passenger deaths or serious publicized injuries. However:\n\n- The **overall human\u2011spaceflight fatality rate and expert risk estimates** remained at the levels above (~0.3\u20133% per mission), far higher than motorcycles.\n- In September 2022, Blue Origin\u2019s **NS\u201123** mission suffered a **booster failure**; the capsule\u2019s abort system fired and landed safely, but the booster was destroyed. Although this was an uncrewed research flight, the same vehicle family is used for human tourism, and the FAA grounded New Shepard while the failure was investigated. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Blue_Origin_NS-23?utm_source=openai))  This highlighted that catastrophic\u2011type failures were still a real possibility in exactly the regime being sold to tourists.\n\nSo, while the *observed* number of tourist fatalities between 2021 and 2023 was zero, the **best\u2011estimate underlying probability of a fatal or serious\u2011injury event per spaceflight** remained orders of magnitude higher than the risk per motorcycle trip.\n\n---\n\n**Comparison and verdict**\n\n- Motorcycles: per\u2011mile fatality risk \u2248 3\u00d710\u207b\u2077, implying per\u2011trip risks in the *few\u2011in\u2011a\u2011million* range for typical rides. ([nhtsa.gov](https://www.nhtsa.gov/press-releases/motorcycle-safety-awareness-month-motorcyclist-fatality-rate?utm_source=openai))\n- Cars: roughly 25\u201330\u00d7 safer per mile than motorcycles, so per\u2011trip risk is even lower. ([nhtsa.gov](https://www.nhtsa.gov/press-releases/motorcycle-safety-awareness-month-motorcyclist-fatality-rate?utm_source=openai))\n- Commercial human spaceflight / space tourism (2021\u20132023): credible estimates in the **0.3\u20133% per\u2011mission** range, i.e. one chance in hundreds to low dozens, far higher than road transport.\n\nGiven these orders of magnitude, there is **no plausible basis** on which, by July 2023, commercial space tourism had genuinely become safer per trip than riding a motorcycle, let alone safer than driving a car. Regulatory treatment and expert commentary in this period explicitly describe space tourism as a significantly higher\u2011risk activity than common transport modes.\n\nBecause the time\u2011bounded part of Jason\u2019s prediction (\u201cin the next year or two\u201d) clearly did **not** come true, the prediction as a whole is best classified as **wrong**, even though the longer\u2011term \u201ceventually safer than cars\u201d clause remains untestable at this time.",
+      "sources": [
+        {
+          "end_index": 1099,
+          "start_index": 969,
+          "title": "Motorcycle Safety Month: Help Prevent Motorcycle Deaths | NHTSA",
+          "type": "url_citation",
+          "url": "https://www.nhtsa.gov/press-releases/motorcycle-safety-awareness-month-motorcyclist-fatality-rate?utm_source=openai"
+        },
+        {
+          "end_index": 1763,
+          "start_index": 1653,
+          "title": "Practical Market Size Estimates For Space Tourism | New Space Economy",
+          "type": "url_citation",
+          "url": "https://newspaceeconomy.ca/2023/05/21/market-size-for-space-tourism/?utm_source=openai"
+        },
+        {
+          "end_index": 2111,
+          "start_index": 1988,
+          "title": "Space Tourism: A Closer Look on Safety Sustainability \u2013 Space Generation Advisory Council",
+          "type": "url_citation",
+          "url": "https://spacegeneration.org/space-tourism-a-closer-look-on-safety-sustainability?utm_source=openai"
+        },
+        {
+          "end_index": 2422,
+          "start_index": 2330,
+          "title": "Do space tourists really understand the risk they're taking? | Space",
+          "type": "url_citation",
+          "url": "https://www.space.com/space-tourism-risk-safety-regulations?utm_source=openai"
+        },
+        {
+          "end_index": 2809,
+          "start_index": 2665,
+          "title": "What Happens To Space Tourism If There Is A Fatal Accident? | Aviation Week Network",
+          "type": "url_citation",
+          "url": "https://aviationweek.com/aerospace/program-management/what-happens-space-tourism-if-there-fatal-accident?utm_source=openai"
+        },
+        {
+          "end_index": 3593,
+          "start_index": 3471,
+          "title": "Do You Have the Right Stuff to be a Private Astronaut? | New Space Economy",
+          "type": "url_citation",
+          "url": "https://newspaceeconomy.ca/2023/05/14/space-tourism-do-you-have-the-right-stuff/?utm_source=openai"
+        },
+        {
+          "end_index": 4442,
+          "start_index": 4355,
+          "title": "Blue Origin NS-23",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Blue_Origin_NS-23?utm_source=openai"
+        },
+        {
+          "end_index": 5118,
+          "start_index": 4988,
+          "title": "Motorcycle Safety Month: Help Prevent Motorcycle Deaths | NHTSA",
+          "type": "url_citation",
+          "url": "https://www.nhtsa.gov/press-releases/motorcycle-safety-awareness-month-motorcyclist-fatality-rate?utm_source=openai"
+        },
+        {
+          "end_index": 5338,
+          "start_index": 5208,
+          "title": "Motorcycle Safety Month: Help Prevent Motorcycle Deaths | NHTSA",
+          "type": "url_citation",
+          "url": "https://www.nhtsa.gov/press-releases/motorcycle-safety-awareness-month-motorcyclist-fatality-rate?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "Enough time has passed (over 4 years since July 2021), but the prediction cannot be determined due to insufficient data on space tourism flights. Commercial space tourism (Virgin Galactic, Blue Origin, SpaceX civilian missions like Axiom/Polaris) has carried approximately 120-400 passengers across ~30-80 flights by late 2025, with zero fatalities or serious injuries to paying passengers ([CRS report May 2025](https://www.congress.gov/crs-product/R48050); [hotelagio.com Sep 2025](https://hotelagio.com/space-tourism-statistics/); [spaceportlounge Aug 2025](https://www.spaceportlounge.com/p/midyear-2025-space-travel-data)). This yields an empirical rate of 0 per trip, but with small N (~200 trips max), the 95% upper confidence interval for fatality risk is ~1.5-3% per trip (Poisson: ~3/N), far above motorcycle's ~537 per 100M person-trips (~1 in 186,000 trips; [VTPI TCA 2005, 1999-2003 data](https://www.vtpi.org/tca/tca0503.pdf Table 5.3.3-7); consistent with recent ~30/100M VMT and ~10-mile avg trip). Car risk even lower (~9/100M trips). No evidence risk has reliably dropped below these established benchmarks; sample too small for statistical confidence."
+    },
+    {
+      "id": "C-01:07:22.000",
+      "result": "inconclusive",
+      "explanation": "Available biographical sources indicate that Chamath Palihapitiya has three children from his first marriage, born in 2008, 2010, and 2012, plus two younger children with his current wife.([stg.scsonline.ca](https://stg.scsonline.ca/wiki/chamath-palihapitiya?utm_source=openai)) That means his oldest child will turn 18 in 2026, and as of the evaluation date (November 29, 2025) none of his children has yet reached 18.\n\nThe prediction he made on the July 16, 2021 All\u2011In podcast episode (E40) was explicitly about **a future point when his children are of age**\u2014either buying each one a ticket to space when they turn 18 or taking a full\u2011cabin family spaceflight.\n\nPublic reporting on Palihapitiya focuses on his role in taking Virgin Galactic public, later selling his personal stake, and eventually resigning from the company\u2019s board.([cnbc.com](https://www.cnbc.com/2021/03/05/chamath-palihapitiya-sells-virgin-galactic-spce-stake.html?utm_source=openai)) These sources mention his desire to *one day* fly to space but do not document him or his family already having gone, nor do they report him buying spaceflight tickets for his children.\n\nBecause (1) the triggering condition (his children being 18+) has not yet occurred, and (2) there is no contrary evidence that definitively shows he **won\u2019t** follow through later, it is too early to judge whether this long\u2011dated promise will ultimately be kept or broken.",
+      "sources": [
+        {
+          "end_index": 318,
+          "start_index": 228,
+          "title": "Chamath Palihapitiya Biography - Girlfriend, Divorce, Wife, Net Worth, Earning, Investments, Children",
+          "type": "url_citation",
+          "url": "https://stg.scsonline.ca/wiki/chamath-palihapitiya?utm_source=openai"
+        },
+        {
+          "end_index": 1003,
+          "start_index": 881,
+          "title": "Chamath Palihapitiya sells Virgin Galactic SPCE stake",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/03/05/chamath-palihapitiya-sells-virgin-galactic-spce-stake.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Chamath Palihapitiya's children have not yet reached the age of 18. In 2017, his three children with his first wife were ages 5-9 (born ~2008-2012). As of May 2025, he referred to his son as a 'rising junior' (likely high school, ~15-16 years old). He has 4-5 children total, including younger ones. No reports of purchasing space tickets for any child upon turning 18 or a family spaceflight (searches for space-related terms with family/children yielded no relevant results; he sold his Virgin Galactic stake in 2021). Sources: [CNBC 2017](https://www.cnbc.com/2017/12/12/chamath-palihapitiya-my-kids-get-no-screen-time-whatsoever.html), [Benzinga May 2025](https://www.benzinga.com/25/05/45535055/chamath-palihapitiya-says-hed-send-his-son-to-college-only-for-the-culture-the-best-thing-you-could-do), [Fool.com Jun 2025](https://www.fool.com/investing/how-to-invest/famous-investors/chamath-palihapitiya/), [CNBC Mar 2021](https://www.cnbc.com/2021/03/05/chamath-palihapitiya-sells-virgin-galactic-spce-stake.html)."
+    },
+    {
+      "id": "C-01:15:49.000",
+      "result": "ambiguous",
+      "explanation": "Publicly available material confirms that in E40 the Besties talk about an upcoming/ongoing Italy trip, Jason\u2019s heavy gelato and pasta consumption, and a \u201cone meal a day\u201d challenge, which matches the context of Chamath joking that Jason will gain significant weight on that trip.([podcasts.apple.com](https://podcasts.apple.com/us/podcast/e40-a-bestie-gets-covid-delta-breakthrough/id1502871393?i=1000529038600&utm_source=openai))  \n\nLater, E44 is explicitly labeled as including an \u201cIntro & Italy recap,\u201d indicating that the trip had finished by August 28, 2021, and was debriefed on-air.([podcasts.apple.com](https://podcasts.apple.com/us/podcast/e44-usas-afghanistan-embarrassment-chinas-new-algo/id1502871393?i=1000533361429&utm_source=openai))  However, the accessible summaries and transcript stubs for E44 (and E40) from sites like TranscriptForest and Glasp do not include any concrete statement about how many pounds Jason actually gained or lost, nor any explicit callback that resolves Chamath\u2019s \u201c+15 lbs\u201d prediction.([glasp.co](https://glasp.co/youtube/p/e40-a-bestie-gets-covid-delta-breakthrough-billionaire-space-race-more))  \n\nBroader searches of Jason Calacanis\u2013related content (including later All-In episodes where they discuss weight and obesity more generally) likewise do not surface any reliable, specific number tied to that 2021 Italy trip.([allin.onpodcastai.com](https://allin.onpodcastai.com/episodes/QKGPV0O550a?utm_source=openai))  Because Jason\u2019s exact weight change on that vacation is not publicly documented and the show appears not to have reported a clear outcome of the bet, there is no verifiable way to determine whether he gained \u201cabout 15 pounds\u201d as predicted.\n\nGiven that the event is long past but the outcome is not knowable from available sources, the prediction\u2019s accuracy must be rated as **ambiguous** rather than right, wrong, or merely too early to tell.",
+      "sources": [
+        {
+          "end_index": 467,
+          "start_index": 316,
+          "title": "E40: A Bestie gets COVID, Delt\u2026 - All-In with Chamath, Jason, Sacks & Friedberg - Apple Podcasts",
+          "type": "url_citation",
+          "url": "https://podcasts.apple.com/us/podcast/e40-a-bestie-gets-covid-delta-breakthrough/id1502871393?i=1000529038600&utm_source=openai"
+        },
+        {
+          "end_index": 787,
+          "start_index": 628,
+          "title": "E44: USA's Afghanistan embarra\u2026 - All-In with Chamath, Jason, Sacks & Friedberg - Apple Podcasts",
+          "type": "url_citation",
+          "url": "https://podcasts.apple.com/us/podcast/e44-usas-afghanistan-embarrassment-chinas-new-algo/id1502871393?i=1000533361429&utm_source=openai"
+        },
+        {
+          "end_index": 1178,
+          "start_index": 1067,
+          "title": "E40: A Bestie gets COVID, Delta breakthrough, Billionaire Space Race & more | Video Summary and Q&A | Glasp",
+          "type": "url_citation",
+          "url": "https://glasp.co/youtube/p/e40-a-bestie-gets-covid-delta-breakthrough-billionaire-space-race-more"
+        },
+        {
+          "end_index": 1501,
+          "start_index": 1406,
+          "title": "E139: Recapping Chamath's wedding, VC surplus, unions vs Hollywood, room-temp superconductors & more - All-In Podcast",
+          "type": "url_citation",
+          "url": "https://allin.onpodcastai.com/episodes/QKGPV0O550a?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "In All-In Podcast E44 (Aug 27, 2021, post-trip recap), the hosts, including Chamath, tease Jason about noticeable weight gain from the Italy trip, noting he is 'up a button' on his shirt and joking about his indulgence (co-opting the chef, croissants, truffle pizza, etc.), confirming Chamath's E40 prediction of ~15 pounds. No exact measurement given, but visual/verbal acknowledgment matches 'approximately.' Jason later discussed weight loss (e.g., 41 lbs by 2022/2023 episodes), consistent with prior gain. Sources: [E44 transcript](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e44-usas-afghanistan-embarrassment-chinas-new-algo-laws-future-of-robots-italy-recap); [YouTube E44](https://www.youtube.com/watch?v=-Cyu00cyw60)."
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "count": 11,
+    "count_by_result": {
+      "inconclusive": 5,
+      "wrong": 1,
+      "right": 3,
+      "ambiguous": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "H-00:30:45.910",
+      "result": "inconclusive",
+      "explanation": "The prediction concerns milestones in the **2030s** (production-level, commercially relevant fusion pilot plants) and **2040s** (grid-scale deployment). As of November 30, 2025, those years have not yet occurred, so the timeline cannot be confirmed or falsified.\n\nWhat we *do* know today:\n\n- The National Ignition Facility (NIF) has repeatedly achieved **fusion ignition with energy gain** in the lab (starting December 5, 2022, and with improved yields through 2023\u20132025), but NIF is a scientific experiment, not a continuously operating, grid-connected power plant. It does not constitute a commercial or pilot power facility. ([annual.llnl.gov](https://annual.llnl.gov/fy-2023/national-ignition-facility-2023?utm_source=openai))\n- Private companies are *planning* pilot and grid-scale fusion plants, but none is yet operating:\n  - **Helion Energy** has a power purchase agreement with Microsoft targeting a first fusion power plant delivering at least 50 MW to the grid by **2028**, and construction on the \u201cOrion\u201d plant site in Washington state began in 2025. This would be a commercial demonstration ahead of Friedberg\u2019s 2030s estimate *if* it succeeds, but as of now it is only a goal under construction, not a demonstrated, operating plant. ([helionenergy.com](https://www.helionenergy.com/articles/helion-announces-worlds-first-fusion-ppa-with-microsoft/?utm_source=openai))\n  - **Commonwealth Fusion Systems (CFS)** plans its ARC fusion power plant in Virginia to deliver grid power in the **early 2030s**, with the SPARC demonstration device aiming for first plasma around 2026; again, these are future plans, not operating plants. ([reuters.com](https://www.reuters.com/business/energy/commonwealth-plans-worlds-first-grid-scale-fusion-power-plant-virginia-2024-12-17/?utm_source=openai))\n\nBecause:\n\n1. **No continuously operating, commercially relevant fusion pilot plant is yet online or delivering power to the grid**, and\n2. The prediction\u2019s key time windows (2030s for demonstration, 2040s for grid-scale deployment) lie fully in the future relative to 2025,\n\nthere is currently **no way to say** whether Friedberg\u2019s specific 2030s/2040s timeline will ultimately prove correct or incorrect. It remains **too early to judge**, so the appropriate assessment is **inconclusive**.",
+      "sources": [
+        {
+          "end_index": 775,
+          "start_index": 673,
+          "title": "National Ignition Facility - 2023 | Annual Report",
+          "type": "url_citation",
+          "url": "https://annual.llnl.gov/fy-2023/national-ignition-facility-2023?utm_source=openai"
+        },
+        {
+          "end_index": 1428,
+          "start_index": 1294,
+          "title": "Helion announces world\u2019s first fusion energy purchase agreement with Microsoft | Helion",
+          "type": "url_citation",
+          "url": "https://www.helionenergy.com/articles/helion-announces-worlds-first-fusion-ppa-with-microsoft/?utm_source=openai"
+        },
+        {
+          "end_index": 1846,
+          "start_index": 1689,
+          "title": "Commonwealth plans world's first grid-scale fusion power plant in Virginia",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/energy/commonwealth-plans-worlds-first-grid-scale-fusion-power-plant-virginia-2024-12-17/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies a production-level demonstration (commercially relevant, continuously operating pilot plant) in the 2030s and grid-scale deployment in the 2040s. As of December 2025\u2014only 3 years after the 2022 prediction\u2014no such pilot plant exists or is operating. Recent developments include DOE's Fusion Science & Technology Roadmap (Oct 2025) targeting pilot plants in the 2030s [energy.gov], companies like Type One Energy and Tokamak Energy designing pilot plants with goals for mid-2030s [typeoneenergy.com, tokamakenergy.com], and IAEA World Fusion Outlook 2025 noting projects aiming for engineering gain but not yet achieved [iaea.org]. Grid-scale remains further out, with projections aligning with or beyond the prediction. Too early to verify, as 2030s have not arrived."
+    },
+    {
+      "id": "B-00:12:01.300",
+      "result": "inconclusive",
+      "explanation": "The prediction\u2019s time window is 2022\u20132032, so as of **30 November 2025** we are only about three years into a ten\u2011year horizon.\n\nEvidence about the underlying trend:\n\n- Non\u2011state actors (e.g., ISIS, Mexican cartels, Yemen\u2019s Houthis, Ukraine\u2019s volunteer units) have already used **weaponized commercial drones** with GPS\u2011based autopilots and improvised munitions, demonstrating that relatively sophisticated precision\u2011style attacks are possible without being a state military.\n- Consumer and DIY platforms like DJI drones and open\u2011source autopilot stacks (e.g., ArduPilot, PX4) support waypoint navigation using GPS coordinates out of the box; adding an explosive payload is technically straightforward for a determined group, though still non\u2011trivial and illegal.\n- However, the specific scenario Sacks describes\u2014*that continuously publishing an individual\u2019s precise GPS coordinates would make it \u201cpretty easy\u201d for non\u2011state actors to use precision GPS\u2011guided weapons for assassination*\u2014is **not clearly documented as a demonstrated or widely accessible capability**. The risk is widely discussed in security circles, but it remains more of a plausible threat model than a routinely observed or clearly commoditized capability.\n\nBecause:\n1. The **deadline (2032)** has not yet arrived, and\n2. The claim is about **future feasibility and ease**, not a clearly falsifiable event that has either happened or not,\n\nwe cannot definitively say the prediction is right or wrong at this point. It is still developing and depends on subjective judgments about what counts as \u201cpretty easy\u201d and \u201cfeasible\u201d for non\u2011state actors.\n\nTherefore the appropriate classification is **\"inconclusive\" (too early to tell)**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction covers 2022\u20132032, but only ~3 years have elapsed as of December 2025, making it too early to determine fulfillment. Non-state actors (e.g., Houthis, Hezbollah, Mexican cartels, TTP) have proliferated drone use, including GPS-guided/autonomous variants for strikes (*e.g.*, Houthi Samad drones, TTP GPS-guided drones per [GNET 2025 article](https://gnet-research.org/2025/11/20/space-tech-and-terrorism-satellite-imagery-and-gps-guided-drones-in-ttp-propaganda/), cartel FPV/one-way attack drones per [NYT Sep 2025](https://www.nytimes.com/2025/09/01/world/americas/mexico-cartel-weapons.html), [CSIS Jun 2025](https://www.csis.org/analysis/illicit-innovation-latin-america-not-prepared-fight-criminal-drones)). However, no evidence of state-level GPS-guided munitions (e.g., JDAMs) obtainable by typical non-state actors, nor assassinations using published GPS coordinates. Commercial drones enable waypoint GPS attacks, but feasibility for 'relatively easy' doxxing-based assassination remains limited to sophisticated groups, not broadly realized. Sources: CTC West Point [Mar 2025](https://ctc.westpoint.edu/the-rising-threat-of-non-state-actor-commercial-drone-use-emerging-capabilities-and-threats/), Taylor & Francis [2024](https://www.tandfonline.com/doi/full/10.1080/09592318.2024.2319216)."
+    },
+    {
+      "id": "C-00:33:34.830",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly about **costs ~10 years after 2022 (around 2032)**, based on an IAEA forecast: that grid\u2011scale solar would fall from about **$0.03/kWh to ~$0.015/kWh**, and **solar + storage LCOE** would be around **$0.03/kWh**.\n\nAs of today (November 30, 2025), only ~3 years of that 10\u2011year window have elapsed. Long\u2011term LCOE forecasts from agencies (e.g., IEA, IRENA, IAEA and similar bodies) typically give projections for 2030\u20132050, and current real\u2011world LCOE numbers for utility\u2011scale solar plus storage are still well above the **$0.03/kWh combined** level in most markets; many analyses place current utility\u2011scale solar *without* storage in the low\u2011$0.02 to ~$0.04/kWh range, and *with* storage significantly higher, depending on region and financing. \n\nHowever, because the **prediction\u2019s main checkable date is ~2032**, and we are only in **2025**, it is **too early to determine** whether costs will in fact reach those levels by that time. The partial data we have now cannot definitively confirm or falsify a 2032 cost target; the learning curve for solar and storage costs is path\u2011dependent and sensitive to policy, supply chains, interest rates, and technology breakthroughs.\n\nTherefore, the correct status for this prediction is **\u201cinconclusive (too early)\u201d** rather than right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction targets ~2032 (10 years from 2022 podcast), but the current date is December 2025\u2014only ~3 years later, making it too early to verify. Current unsubsidized utility-scale solar PV LCOE is ~$38\u201378/MWh (Lazard v18.0 June 2025, US-focused; [Lazard PDF](https://www.lazard.com/media/eijnqja3/lazards-lcoeplus-june-2025.pdf)); global weighted average $0.043/kWh in 2024 (IRENA; [IRENA PDF](https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2025/Jul/IRENA_TEC_RPGC_in_2024_2025.pdf)). Solar+storage hybrids: $50\u2013131/MWh (Lazard 2025), e.g., $79/MWh US, $51/MWh Australia (IRENA). BNEF projects fixed-tilt PV LCOE to $35/MWh end-2025, $25/MWh by 2035. Costs have declined since 2022 (~$30/MWh then per claim) but not yet to predicted $15/MWh solar/$30/MWh +storage; forecasts suggest continued drops (e.g., NREL battery capex mid $243/kWh by 2035; [NREL PDF](https://docs.nrel.gov/docs/fy25osti/93281.pdf)), but outcome uncertain. No exact IAEA 2022 forecast found matching quote."
+    },
+    {
+      "id": "H-00:40:30.460",
+      "result": "wrong",
+      "explanation": "Friedberg predicted that ITER, a ~$30B production\u2011scale fusion demonstration facility in Europe, would be \u201conline\u201d and operating by the end of the 2020s.\n\nCurrent information shows this cannot happen under ITER\u2019s own official schedule:\n\n- In July 2024, ITER adopted a new baseline in which **first plasma is delayed to at least the early/mid\u20112030s** (around 2033\u20132034), with **deuterium\u2013deuterium operations starting in 2035 and deuterium\u2013tritium (burning plasma) operations in 2039**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/ITER?utm_source=openai))\n- A 2024 U.S. Congressional research report likewise notes that ITER announced it would **not be fully operational (with burning plasma) until 2039**, with substantial cost increases. ([congress.gov](https://www.congress.gov/crs-products/product/pdf/R/R48362?utm_source=openai))\n- Independent coverage of the revised baseline (e.g., The Chemical Engineer, DDay.it) also reports research operations beginning in the early 2030s and D\u2013T fusion not before 2039. ([thechemicalengineer.com](https://www.thechemicalengineer.com/news/iter-postponed-by-a-decade-in-5bn-overhaul/?utm_source=openai))\n\nGiven these officially adopted plans, ITER will *not* be online and operating as a fusion demonstration facility by 2029; its operational milestones are now placed firmly in the 2030s. Even if further schedule changes occur, they would have to pull a 2030s roadmap forward by nearly a decade, which is incompatible with all current project planning. Therefore, the prediction that ITER would be online and operating by the end of the 2020s is **wrong** based on the information available today.",
+      "sources": [
+        {
+          "end_index": 597,
+          "start_index": 523,
+          "title": "ITER",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/ITER?utm_source=openai"
+        },
+        {
+          "end_index": 877,
+          "start_index": 783,
+          "title": "ITER\u2014An International Nuclear Fusion Research and Development Facility | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/crs-products/product/pdf/R/R48362?utm_source=openai"
+        },
+        {
+          "end_index": 1190,
+          "start_index": 1059,
+          "title": "ITER postponed by a decade in \u20ac5bn overhaul - News - The Chemical Engineer",
+          "type": "url_citation",
+          "url": "https://www.thechemicalengineer.com/news/iter-postponed-by-a-decade-in-5bn-overhaul/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction states that ITER will be 'online and operating' by the end of the 2020s (i.e., by December 31, 2029). The current date is December 1, 2025, so approximately 4 years remain before the deadline, making it too early to definitively verify if the prediction came true. Recent updates confirm ongoing construction progress (e.g., vacuum vessel assembly ahead of schedule as of November 2025 per [ITER Road to ITER](https://www.iter.org/project/road-iter)), but the latest official timeline from July 2024 sets first plasma for 2033\u20132034, D-D operations in 2035, and D-T operations in 2039 ([Wikipedia citing ITER DG presentation](https://www.iter.org/sites/default/files/media/2024-07/baseline_press_conference_summary_july-2024_b.pdf); [CRS report Jan 2025](https://www.congress.gov/crs-product/R48362)). While delays make it unlikely, schedules can change, and the deadline has not passed."
+    },
+    {
+      "id": "C-00:52:40.000",
+      "result": "right",
+      "explanation": "Chamath said the Coupa\u2013Thoma Bravo deal was the start of a \u201ctidal wave\u201d of private\u2011equity\u2011sponsored deals in tech, especially SaaS, over the following years. Looking at 2023\u20132025, that broad directional call did play out.\n\nKey evidence that a multi\u2011year PE wave in tech/SaaS did emerge:\n- Coupa itself was taken private by Thoma Bravo in an ~$8 billion all\u2011cash deal that closed in 2023, marking a major software/SaaS take\u2011private exactly in the timeframe he was talking about. ([thomabravo.com](https://www.thomabravo.com/press-releases/thoma-bravo-completes-acquisition-of-coupa-software?utm_source=openai))\n- 2023 saw a series of large PE take\u2011privates of software and SaaS companies, including Sumo Logic (SaaS analytics) by Francisco Partners for $1.7 billion and Qualtrics by Silver Lake and CPP Investments for $12.5 billion. ([franciscopartners.com](https://www.franciscopartners.com/media/sumo-logic-to-be-acquired-by-francisco-partners-for-17-billion?utm_source=openai)) S&P Global noted that global PE public\u2011to\u2011private deals reached 96 by Oct. 25, 2023\u2014the highest annual total in 16 years\u2014with software singled out as a popular target and Qualtrics and New Relic highlighted among the year\u2019s notable software take\u2011privates. ([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2023/11/private-equity-take-private-deals-hit-16-year-high-78173569?utm_source=openai))\n- PitchBook data cited by TechCrunch shows 136 PE\u2011led take\u2011privates globally in 2023, up 15% from 2022, and by mid\u20112024 there were already 97 such deals, 46 of them in the technology sector alone\u2014on pace to match 2023\u2019s high level. ([techcrunch.com](https://techcrunch.com/2024/10/17/the-14-biggest-private-equity-acquisitions-of-public-tech-firms-in-2024-so-far/?utm_source=openai)) Those 2024 tech take\u2011privates include many SaaS or software firms such as Adevinta, Alteryx, PowerSchool, Squarespace and Nuvei. ([techcrunch.com](https://techcrunch.com/2024/10/17/the-14-biggest-private-equity-acquisitions-of-public-tech-firms-in-2024-so-far/?utm_source=openai))\n- By 2025 the trend is very clear in software/SaaS specifically. RBC Capital estimates that software M&A activity in 2025 is up 78%, with private\u2011equity software deals **more than doubling** versus the prior year as PE buyers hunt for undervalued SaaS and software assets. ([businessinsider.com](https://www.businessinsider.com/ai-disruption-rbc-top-software-acquisition-targets-saas-2025-11?utm_source=openai)) A Bespoke Partners analysis reports that in just the first half of 2025, enterprise SaaS companies were involved in 405 private\u2011equity transactions out of 671 SaaS deals overall, underscoring intense PE focus on SaaS. ([linkedin.com](https://www.linkedin.com/posts/bespoke-partners_executivesearch-privateequity-software-activity-7379205968460476416-e-p0?utm_source=openai)) Regionally, for example, PE investments in India\u2019s enterprise SaaS sector reached $1.38 billion in the first seven months of 2025, a 66% increase over the **entire** year 2024. ([economictimes.indiatimes.com](https://economictimes.indiatimes.com/tech/technology/private-equity-firms-turn-to-enterprise-saas-taking-investments-up-66-in-2025/articleshow/123568578.cms?utm_source=openai))\n- The activity has clearly extended \u201cinto other realms\u201d of tech beyond classic horizontal SaaS: PE firms have bought cybersecurity companies like Darktrace (Thoma Bravo), education software providers PowerSchool and Instructure, and various infrastructure and data\u2011analytics software firms. ([ft.com](https://www.ft.com/content/44b9884b-0b7b-4cb7-b372-0b390ed96947?utm_source=openai))\n\nImportant nuance:\n- Some tech\u2011specific M&A datasets show that **2023 alone** was not an immediate step\u2011function higher in PE tech deals versus 2021\u20132022. Cooley\u2019s 2023 tech M&A review finds private equity\u2019s share of tech M&A fell to a six\u2011year low (27%), with only 16 PE take\u2011privates of US\u2011listed tech companies in 2023, down from 21 in both 2021 and 2022. ([jdsupra.com](https://www.jdsupra.com/legalnews/cooley-s-2023-tech-m-a-year-in-review-1576341/?utm_source=openai)) European/US tech\u2011only data similarly show PE take\u2011private volume peaking in 2021\u20132022 and moderating in 2023 before re\u2011accelerating. ([2023.stateofeuropeantech.com](https://2023.stateofeuropeantech.com/exits?utm_source=openai))\n\nPutting it together, the **multi\u2011year** pattern after late 2022 is exactly what Chamath described: a sustained and then intensifying wave of private\u2011equity\u2011backed acquisitions of tech companies, heavily weighted toward SaaS but spreading across software verticals. Even though 2023 was a softer year for tech\u2011only PE relative to the 2021\u20132022 peak, the broader 2023\u20132025 data show a pronounced and growing PE wave in tech/SaaS, with Coupa among the early high\u2011profile deals in that cycle. On balance, that makes his prediction substantively right, albeit with a less immediate spike in 2023 than the word \u201ctidal wave\u201d might imply.",
+      "sources": [
+        {
+          "end_index": 645,
+          "start_index": 514,
+          "title": "Thoma Bravo Completes Acquisition of Coupa Software",
+          "type": "url_citation",
+          "url": "https://www.thomabravo.com/press-releases/thoma-bravo-completes-acquisition-of-coupa-software?utm_source=openai"
+        },
+        {
+          "end_index": 1017,
+          "start_index": 870,
+          "title": "Sumo Logic to be Acquired by Francisco Partners for $1.7 Billion | Media | Francisco Partners",
+          "type": "url_citation",
+          "url": "https://www.franciscopartners.com/media/sumo-logic-to-be-acquired-by-francisco-partners-for-17-billion?utm_source=openai"
+        },
+        {
+          "end_index": 1448,
+          "start_index": 1274,
+          "title": "Private equity take-private deals hit 16-year high | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2023/11/private-equity-take-private-deals-hit-16-year-high-78173569?utm_source=openai"
+        },
+        {
+          "end_index": 1833,
+          "start_index": 1682,
+          "title": "The 14 biggest take-private PE acquisitions so far this year in tech | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2024/10/17/the-14-biggest-private-equity-acquisitions-of-public-tech-firms-in-2024-so-far/?utm_source=openai"
+        },
+        {
+          "end_index": 2114,
+          "start_index": 1963,
+          "title": "The 14 biggest take-private PE acquisitions so far this year in tech | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2024/10/17/the-14-biggest-private-equity-acquisitions-of-public-tech-firms-in-2024-so-far/?utm_source=openai"
+        },
+        {
+          "end_index": 2527,
+          "start_index": 2389,
+          "title": "RBC Capital says these software companies are the most likely to be acquired as AI eats the world",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/ai-disruption-rbc-top-software-acquisition-targets-saas-2025-11?utm_source=openai"
+        },
+        {
+          "end_index": 2902,
+          "start_index": 2746,
+          "title": "Private equity-backed software and SaaS: A turning point in 2025 | Bespoke Partners posted on the topic | LinkedIn",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/posts/bespoke-partners_executivesearch-privateequity-software-activity-7379205968460476416-e-p0?utm_source=openai"
+        },
+        {
+          "end_index": 3288,
+          "start_index": 3080,
+          "title": "Private equity firms turn to enterprise SaaS taking investments up 66% in 2025",
+          "type": "url_citation",
+          "url": "https://economictimes.indiatimes.com/tech/technology/private-equity-firms-turn-to-enterprise-saas-taking-investments-up-66-in-2025/articleshow/123568578.cms?utm_source=openai"
+        },
+        {
+          "end_index": 3674,
+          "start_index": 3581,
+          "title": "Thoma Bravo to buy UK-listed Darktrace for \u00a34.3bn",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/44b9884b-0b7b-4cb7-b372-0b390ed96947?utm_source=openai"
+        },
+        {
+          "end_index": 4152,
+          "start_index": 4037,
+          "title": "Cooley\u2019s 2023 Tech M&A Year in Review: An AI-Generated Glass Half Full | Cooley LLP - JDSupra",
+          "type": "url_citation",
+          "url": "https://www.jdsupra.com/legalnews/cooley-s-2023-tech-m-a-year-in-review-1576341/?utm_source=openai"
+        },
+        {
+          "end_index": 4380,
+          "start_index": 4286,
+          "title": "State of European Tech 2023",
+          "type": "url_citation",
+          "url": "https://2023.stateofeuropeantech.com/exits?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction of a 'tidal wave' of private-equity (PE)-sponsored acquisitions of tech/SaaS companies starting late 2022 (with Coupa-Thoma Bravo announced Dec 12, 2022, closed Feb 2023) proved accurate. SaaS M&A volume reached 2,107 deals in 2024, the second-highest on record behind 2022's peak, up 41% from 2023 lows per Aventis Advisors and Software Equity Group (SEG) 2025 Annual SaaS Report. PE firms dominated, driving 61% of 2024 transactions (51% PE-backed strategics), up from prior shares, with PE/VC-backed buyers at 58% ([SEG](https://softwareequity.com/research/annual-saas-report)). Thoma Bravo alone executed 9 public SaaS acquisitions through May 2025 (SaaStr), plus major deals like Darktrace ($5.3B, 2024), Verint ($2B, 2025), and others, totaling $42B in 2025 activity. Take-private PE deals rose 15% in 2023 to 136 (TechCrunch/PitchBook). Tech M&A values rose 32% in 2024 vs 2023 (Cooley). This PE-led rebound in SaaS/tech amid public market weakness validates the 'canary in the coal mine' call."
+    },
+    {
+      "id": "C-00:59:46.000",
+      "result": "inconclusive",
+      "explanation": "It\u2019s too early to know whether this full-cycle prediction is right or wrong.\n\n**1. Time horizon issue (core reason for \u201cinconclusive\u201d)**  \nChamath\u2019s claim is explicitly *cycle-wide*: that \u201cover the current cycle beginning in 2022\u201d private equity (PE) will buy many private software companies, cut headcount, run them more efficiently, and *on average* generate roughly **1.2x\u20131.7x MOIC with few money\u2011losing deals**, in line with historical PE performance.  \n\nPE buyout funds typically have **holding periods of ~4\u20137 years** before exits, so realized MOIC for deals done starting in 2022 generally will not be known until the **late 2020s or early 2030s**. Industry data on returns by vintage year show that even funds from the early 2020s are still mostly in the *investment/hold* phase, with only partial realizations and volatile marks due to changing interest rates and valuations.  \nBecause the \u201ccurrent cycle\u201d starting in 2022 is clearly still ongoing as of **late 2025**, we cannot yet determine the eventual average MOIC or the fraction of money\u2011losing deals for that cohort.\n\n**2. Observed trends that are directionally consistent, but not dispositive**  \nEven though we can\u2019t fully score the prediction, several parts of the narrative do line up with observed trends since 2022:\n\n- **\u201cBuy a ton of private software companies\u201d** \u2013 There has been a large wave of PE\u2011backed software take\u2011privates and buyouts (e.g., Thoma Bravo, Vista Equity Partners, Silver Lake and others remain very active in software and enterprise SaaS). Public reporting and deal databases show that software remains one of the most targeted sectors for PE globally.  \n- **\u201cFire lots of people\u201d / run them \u201chyper efficiently\u201d** \u2013 Numerous PE\u2011backed software companies (and tech companies more broadly) have announced substantial headcount reductions and cost\u2011cutting since 2022 as interest rates rose and investors emphasized profitability and efficiency.  \n\nThese patterns support the *mechanics* of what Chamath described, but they do **not** yet tell us if the *final* fund\u2011level economics will average 1.2x\u20131.7x MOIC with few losers for this 2022+ vintage.\n\n**3. Why we still cannot score MOIC and loss rates**  \n- Most 2022\u20132025 software buyouts are still held on PE books, with values based on interim marks; these marks can change materially before exit.  \n- Exit markets (IPOs, strategic sales, secondary buyouts) have been choppy post\u20112022, so ultimate MOIC is highly path\u2011dependent on future capital\u2011market conditions.  \n- Public sources do not yet provide a stable, realized-return dataset specific to the **post\u20112022 software buyout cohort** that would allow us to say, confidently, whether the realized average will fall in the 1.2x\u20131.7x range with few money\u2011losing deals.\n\nBecause the key measurable components of the prediction (average MOIC and loss frequency over the *full* 2022+ cycle) **cannot yet be observed**, the correct scoring as of November 30, 2025 is **\u201cinconclusive (too early)\u201d**, even though early qualitative evidence on deal activity and layoffs is directionally aligned with his setup.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "While private equity firms have indeed acquired numerous software/SaaS companies since 2022 (e.g., PE drove 61% of SaaS M&A in 2024 per Software Equity Group; software topped PE shopping lists per Bloomberg; major deals like Thoma Bravo's Dayforce $12B, Olo $2B, SolarWinds), and headcount reductions for efficiency align with widespread tech layoffs in PE-backed firms (e.g., 2022-2025 tech layoff trackers from TechCrunch/Crunchbase), assessing average 1.2x\u20131.7x MOIC with few losses is too early. Most 2022+ deals remain unrealized (PE hold periods 5-7 years); recent reports (Bain 2025 PE Report, McKinsey Global Private Markets 2025) note exits rising but performance below historical averages for recent vintages, with no specific software MOIC data for this cycle (e.g., 2023 software PE investment at 4-year low per S&P Global). Historical PE MOIC ~1.5-2x (Cambridge Associates, Kaplan), but current cycle incomplete."
+    },
+    {
+      "id": "B-01:06:00.860",
+      "result": "ambiguous",
+      "explanation": "Available data show that 2023 was clearly a tougher demand year for software and SaaS, but there is no sector\u2011wide measurement of \u201cnew customer business / new bookings vs. 2022\u201d that would allow a clean yes/no on Sacks\u2019s specific 50% figure.\n\nWhat we can see:\n\n* Sacks\u2019s quote on the episode is indeed: \u201cYou should expect your new business to be roughly 50% of what it was. Next year it\u2019ll be 50% of what it was last year. That\u2019s my rule of thumb for most companies. New business down 50%.\u201d ([allinpodcast.readablepods.com](https://www.allinpodcast.readablepods.com/p/e108?utm_source=openai))\n* Gartner\u2019s post\u2011hoc market\u2011share analysis shows worldwide enterprise software revenue **grew** 11.0\u201311.1% in 2023 to about $785\u2013788 billion, rather than shrinking, despite macro headwinds. ([gartner.com](https://www.gartner.com/en/documents/5656823?utm_source=openai))  Earlier forecasts for 2023 had also called for high single\u2011 to low double\u2011digit growth in enterprise software spend, and those broad numbers were borne out. ([saastr.com](https://www.saastr.com/gartner-overall-it-spend-has-slowed-but-software-still-growing/?utm_source=openai))  This tells us overall software revenue and spend continued to rise; it does *not* directly tell us how much of 2023\u2019s **new** bookings were down vs. 2022.\n* Bessemer\u2019s Cloud 100 Benchmarks Report notes that for the 2023 Cloud 100 (100 top private cloud/SaaS companies), the **average revenue growth rate** dropped from ~100% in 2022 to ~55% in 2023 \u2013 i.e., growth was \u201cnearly halved\u201d in that cohort. ([bvp.com](https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai))  That is directionally consistent with Sacks\u2019s idea that the pace of new business would fall sharply, but it\u2019s a revenue\u2011growth statistic for a specific elite subset, not a bookings\u2011level statistic for \u201cmost software companies.\u201d\n* Other industry summaries of the SaaS market also report that the **market size increased** from roughly $237B in 2022 to about $273B in 2023 (~15% growth), even while describing 2023 as a \u201cyear of efficiency\u201d with slower growth and more cautious buyers. ([fox.agency](https://fox.agency/us/insights/the-state-of-saas/?utm_source=openai))  Again, these figures speak to overall revenue/market size, not to new\u2011logo or new\u2011ARR bookings as a percentage of 2022.\n\nThe key problems in judging the prediction are:\n\n1. **No unified bookings metric:** New\u2011customer bookings are not reported consistently across vendors, and there is no global dataset aggregating \u201c2023 new customer business vs. 2022\u201d for \u201cmost software companies.\u201d Public sources focus on revenue, ARR, and sometimes total billings, not the specific \u201cnew customer bookings\u201d slice.\n2. **Level vs. growth:** Where we *do* have broad data (e.g., Cloud 100), the main story is that **growth rates roughly halved**, not that new\u2011business levels themselves dropped to 50% of the prior year. That\u2019s qualitatively similar but not the same as \u201cnew bookings are 50% of 2022 in absolute dollars.\u201d\n3. **Heterogeneity:** The evidence we have is heavily skewed toward large public vendors and top\u2011tier private cloud companies. Sacks\u2019s comment was about \u201cmost companies,\u201d including a long tail of smaller and mid\u2011market software firms for which we lack systematic bookings data; operator anecdotes vary widely.\n\nPutting this together: the *direction* of Sacks\u2019s call \u2013 that 2023 would see a pronounced slowdown in new business for many software/SaaS vendors \u2013 is supported by multiple sources. But his **specific quantitative claim** that, in calendar 2023, new customer bookings for *most* software companies would fall to \u201croughly 50%\u201d of 2022 can\u2019t be rigorously confirmed or falsified from public data. Because of the absence of a comprehensive, comparable bookings metric, the prediction\u2019s accuracy has to be rated as **ambiguous** rather than clearly right or clearly wrong.",
+      "sources": [
+        {
+          "end_index": 633,
+          "start_index": 532,
+          "title": "E108: Doxing debate, Nuclear fusion breakthrough, state of the markets & more",
+          "type": "url_citation",
+          "url": "https://www.allinpodcast.readablepods.com/p/e108?utm_source=openai"
+        },
+        {
+          "end_index": 904,
+          "start_index": 825,
+          "title": "Market Share Analysis: Enterprise Software, Worldwide, 2023",
+          "type": "url_citation",
+          "url": "https://www.gartner.com/en/documents/5656823?utm_source=openai"
+        },
+        {
+          "end_index": 1183,
+          "start_index": 1063,
+          "title": "Gartner: Overall IT Spend Has Slowed. But Software? That\u2019s Still Growing. | SaaStr",
+          "type": "url_citation",
+          "url": "https://www.saastr.com/gartner-overall-it-spend-has-slowed-but-software-still-growing/?utm_source=openai"
+        },
+        {
+          "end_index": 1675,
+          "start_index": 1586,
+          "title": "The Cloud 100 Benchmarks Report 2025 - Bessemer Venture Partners",
+          "type": "url_citation",
+          "url": "https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai"
+        },
+        {
+          "end_index": 2245,
+          "start_index": 2162,
+          "title": "The state of SaaS | Fox Agency",
+          "type": "url_citation",
+          "url": "https://fox.agency/us/insights/the-state-of-saas/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Data from multiple SaaS benchmarks shows overall revenue growth slowed in 2023 vs. 2022 (e.g., SaaS Capital median 35% to 30%; Paddle private $5-20M ARR 61% to 35%; public growth rates like Snowflake 98% to 60%), but remained positive for ~95% of companies, with medians 20-35%. No reports indicate new bookings or new customer ARR declined ~50% for most companies; Paddle's Sales Index (net new sales MRR) was down ~15% Dec 2023 vs. Dec 2022 but still 22% above 2019 levels. NRR ~105% and positive growth imply new business slowdown but not halving. Sources: [SaaS Capital Growth Benchmarks](https://www.saas-capital.com/blog-posts/growth-benchmarks-for-private-saas-companies/), [Paddle 2023 Report](https://www.paddle.com/blog/b2b-saas-market-report-2023), [Maxio Benchmarks](https://www.maxio.com/blog/2023-b2b-saas-benchmarks), [OpenView](https://openviewpartners.com/2023-saas-benchmarks-report/)."
+    },
+    {
+      "id": "B-01:06:18.000",
+      "result": "ambiguous",
+      "explanation": "Public data on SaaS churn over 2023\u20132024 is mostly (a) aggregate across all customer segments and (b) reported as broad benchmarks, not precise time\u2011series for *small\u2011business* logo churn.\n\n\u2022 KeyBanc\u2019s widely cited Private SaaS surveys show median *overall* annual logo churn around 13% in both their 2022 and 2023 data, with no evidence of an industry\u2011wide spike to 25\u201330% logo churn during that period.([snohat.com](https://snohat.com/fractional-cmo-resources/growth-metrics-defined-churn-rate/?utm_source=openai)) These figures are not broken out specifically for small\u2011business customers.\n\u2022 For SMB segments specifically, a Bessemer Venture Partners guide (about two years old) already described typical SMB churn ranges like 15\u201320% annually as \u201cgood,\u201d with 10\u201315% or lower considered better, implying mid\u2011teens churn was *already* normal for SMB SaaS prior to or around the start of the prediction window, not a low baseline that later spiked.([bvp.com](https://www.bvp.com/atlas/understanding-churn-and-building-an-action-plan-to-fix-the-proverbial-leaky-bucket?utm_source=openai))\n\u2022 Newer benchmark articles (2024\u20132025) often say small\u2011business / consumer SaaS churn of roughly 20\u201330% annually is common, again as a structural norm rather than as a recently observed jump traceable to 2023\u20132024 macro conditions.([tomorrowdesk.com](https://tomorrowdesk.com/info/customer-churn?utm_source=openai))\n\u2022 Company\u2011specific commentary supports the idea that SMB churn is structurally higher, not that it suddenly surged from ~15% to 25\u201330%. For example, ZoomInfo\u2019s finance leadership in 2024 talks about natural SMB churn \u201cclose to 20%\u201d largely because many small customers eventually shut down, but frames this as an inherent feature of the SMB segment, not as an unusually elevated rate unique to 2023\u20132024.([in.marketscreener.com](https://in.marketscreener.com/quote/stock/ZOOMINFO-TECHNOLOGIES-INC-107772705/news/Transcript-ZoomInfo-Technologies-Inc-Presents-at-Jefferies-Software-Conference-2024-May-29-2024-46857389/?utm_source=openai))\n\nBecause (1) the best quantitative sources aggregate all customer sizes, (2) SMB\u2011only churn benchmarks are presented as broad ranges without clear pre\u2011 vs post\u20112023 deltas, and (3) no sector\u2011wide evidence shows SMB logo churn specifically rising from a stable ~15% to a sustained 25\u201330% in 2023\u20132024, we cannot confidently say whether Sacks\u2019s specific forecast about *magnitude and change* in small\u2011business logo churn came true. The timeframe has passed, but the available data are too coarse and inconsistent to judge the prediction as clearly right or clearly wrong, so the fairest rating is **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 555,
+          "start_index": 443,
+          "title": "Growth Metrics Defined: Churn Rate - Snohat",
+          "type": "url_citation",
+          "url": "https://snohat.com/fractional-cmo-resources/growth-metrics-defined-churn-rate/?utm_source=openai"
+        },
+        {
+          "end_index": 1127,
+          "start_index": 988,
+          "title": "Understanding churn and building an action plan to fix the proverbial \u201cleaky bucket\u201d - Bessemer Venture Partners",
+          "type": "url_citation",
+          "url": "https://www.bvp.com/atlas/understanding-churn-and-building-an-action-plan-to-fix-the-proverbial-leaky-bucket?utm_source=openai"
+        },
+        {
+          "end_index": 1444,
+          "start_index": 1360,
+          "title": "Customer Churn: Prediction, Prevention, and Technology Solutions for 2025",
+          "type": "url_citation",
+          "url": "https://tomorrowdesk.com/info/customer-churn?utm_source=openai"
+        },
+        {
+          "end_index": 2083,
+          "start_index": 1850,
+          "title": "Transcript : ZoomInfo Technologies Inc. Presents at Jefferies Software Conference 2024, May-29-2024 02 | MarketScreener India",
+          "type": "url_citation",
+          "url": "https://in.marketscreener.com/quote/stock/ZOOMINFO-TECHNOLOGIES-INC-107772705/news/Transcript-ZoomInfo-Technologies-Inc-Presents-at-Jefferies-Software-Conference-2024-May-29-2024-46857389/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "SaaS logo churn rates for small businesses did not rise to 25-30% annually in 2023-2024. Benchmarks show historical rates around 15% (consistent with prediction's baseline), with some increase in 2023 to ~20% median for B2B SaaS startups per [Lighter Capital](https://www.lightercapital.com/blog/b2b-saas-startup-benchmarking-insights) (14-16% in 2020-2022, 20.4% in 2023), attributed to macro conditions. Other reports indicate SMB churn typically 10-20% (e.g., [MetricHQ](https://www.metrichq.org/saas/logo-churn/), [Agile Growth Labs](https://www.agilegrowthlabs.com/blog/saas-churn-rate-benchmarks-2025/)), up to 20% ([Zylo](https://zylo.com/blog/saas-statistics/)), or GRR ~90% implying ~10% revenue churn for low-ACV/SMB ([SaaS Capital 2023](https://www.saas-capital.com/wp-content/uploads/2023/05/RB28WS1-2023-B2B-SaaS-Retention-Benchmarks.pdf)). 2024 saw stabilization or improvement (e.g., [UserMotion](https://usermotion.com/saas-churn-rate-benchmark-2024), [Fullview](https://www.fullview.io/blog/average-churn-rate-for-saas-companies)). US small business closures did not surge massively (net +212k establishments 2022-2023 per [SBA](https://advocacy.sba.gov/wp-content/uploads/2024/11/United_States.pdf)). No sources confirm 25-30% churn."
+    },
+    {
+      "id": "B-01:08:20.000",
+      "result": "right",
+      "explanation": "Evidence from 2023\u2013mid\u20112024 shows that software and broader tech companies did face sustained macro headwinds: venture funding into business software fell sharply (for example, European SaaS investment dropped about 59% in 2023 versus the prior year) as rising rates and the Silicon Valley Bank crisis created a \u201cdifficult financing climate\u201d and lengthened sales cycles and tightened customer budgets for cloud/SaaS firms.([forbes.com](https://www.forbes.com/sites/trevorclawson/2024/02/29/cloudy-weather-2023-was-a-tough-year-for-europes-saas-startups/?utm_source=openai)) Large public software companies saw revenue growth and \u201cgrowth efficiency\u201d fall markedly between 2021 and 2023 even as sales and marketing spend kept rising, indicating it was harder to generate high growth without heavy spending.([mckinsey.com](https://www.mckinsey.com/featured-insights/week-in-charts/softwares-growth-slowdown?utm_source=openai)) Industry\u2011wide, overall IT\u2011spending forecasts for 2023 were cut roughly in half to low\u2011single\u2011digit growth amid economic uncertainty and CIO \u201cchange fatigue,\u201d while 2024 was expected to improve but still described as constrained.([gartner.com](https://www.gartner.com/en/newsroom/press-releases/2023-01-18-gartner-forecasts-worldwide-it-spending-to-grow-2-percent-in-2023?utm_source=openai)) At the same time, tech companies executed unusually large layoffs\u2014about 263,000 tech workers were laid off in 2023, with more than 120,000 additional cuts in 2024\u2014as firms adjusted to higher interest rates and slower demand.([marketwatch.com](https://www.marketwatch.com/story/tech-layoffs-still-in-spotlight-after-apple-and-take-two-cuts-but-how-does-2024-compare-to-2023-367a4d9d?utm_source=openai)) Analysts in 2024 still characterized the near\u2011term software outlook as positive but tempered by \u201cheightened macroeconomic uncertainty\u201d through 2024.([morningstar.com](https://www.morningstar.com/business/insights/blog/markets/software-industry-outlook?utm_source=openai)) Altogether, this supports Sacks\u2019s qualitative claim that the roughly 4\u20136 quarters after December 2022 (early 2023 through mid\u20112024) would be a period of major economic headwinds that made sustaining very high software growth without aggressive spending significantly harder, so the prediction is best judged as right.",
+      "sources": [
+        {
+          "end_index": 606,
+          "start_index": 455,
+          "title": "Cloudy Weather: 2023 Saw A Funding Reversal For Europe\u2019s SaaS Startups",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/trevorclawson/2024/02/29/cloudy-weather-2023-was-a-tough-year-for-europes-saas-startups/?utm_source=openai"
+        },
+        {
+          "end_index": 956,
+          "start_index": 837,
+          "title": "Software\u2019s growth slowdown",
+          "type": "url_citation",
+          "url": "https://www.mckinsey.com/featured-insights/week-in-charts/softwares-growth-slowdown?utm_source=openai"
+        },
+        {
+          "end_index": 1347,
+          "start_index": 1185,
+          "title": "Gartner Forecasts Worldwide IT Spending to Grow 2.4% in 2023",
+          "type": "url_citation",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2023-01-18-gartner-forecasts-worldwide-it-spending-to-grow-2-percent-in-2023?utm_source=openai"
+        },
+        {
+          "end_index": 1749,
+          "start_index": 1572,
+          "title": "Tech layoffs still in spotlight after Apple and Take-Two cuts. But how does 2024 compare to 2023?",
+          "type": "url_citation",
+          "url": "https://www.marketwatch.com/story/tech-layoffs-still-in-spotlight-after-apple-and-take-two-cuts-but-how-does-2024-compare-to-2023-367a4d9d?utm_source=openai"
+        },
+        {
+          "end_index": 2021,
+          "start_index": 1898,
+          "title": "2024 Software Industry: Growth and Risks | Morningstar",
+          "type": "url_citation",
+          "url": "https://www.morningstar.com/business/insights/blog/markets/software-industry-outlook?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction proved correct. From early 2023 through mid-2024, software/SaaS companies encountered major macroeconomic headwinds, including high interest rates, inflation, and recession fears, leading to slowed revenue growth (e.g., medians dropped to 10-18% from 30-40%+ prior; [CFO.com Nov 2025](https://www.cfo.com/news/saas-companies-struggle-against-slowdown-in-revenue-gains-cfo-tech-spend-bdo-research-/805038/), [SaaS Capital Oct 2024](https://www.saas-capital.com/blog-posts/growth-benchmarks-for-private-saas-companies/)), a 'SaaS winter' ([SaaSiest Apr 2024](https://saasiest.com/welcome-to-the-new-era-of-saas-the-ai-era/)), massive layoffs (188k+ in 2023, 150k+ in 2024; [Layoffs.fyi](https://layoffs.fyi/), [TrueUp](https://www.trueup.io/layoffs)), and shifts to cost-cutting/profitability over high growth via unsustainable spending ([Deloitte Tech Outlook 2024](https://www.deloitte.com/us/en/Industries/tmt/articles/technology-industry-outlook.html), [Key.com](https://www.key.com/businesses-institutions/business-expertise/articles/saas-struggling-conditions-improve.html)). Recovery signs emerged late 2024, but headwinds dominated the period."
+    },
+    {
+      "id": "H-01:13:35.130",
+      "result": "right",
+      "explanation": "Available data from 2022\u20132024 show that private equity dealmaking evolved exactly in the way Friedberg described.\n\n1. **Bolt\u2011ons/add\u2011ons became the dominant form of PE buyouts over these years.**  \n   * PitchBook- and law\u2011firm analyses report that add\u2011on acquisitions made up roughly three\u2011quarters of PE buyouts in 2022 and 2023 and remained around 76% of all PE buyouts in early 2024. ([cbh.com](https://www.cbh.com/insights/reports/private-equity-midyear-2023-report/?utm_source=openai))  \n   * McKinsey and Brookfield/Evalueserve similarly note that add\u2011ons accounted for about 70% of total PE deal count in 2023, up sharply from prior years. ([mckinsey.com](https://www.mckinsey.com/capabilities/m-and-a/our-insights/how-private-equity-funds-can-use-m-and-a-to-create-outsize-returns?utm_source=openai))  \n   * BDO reports that 76% of PE deals by volume in Q3 2023 were add\u2011ons, explicitly tying this to buy\u2011and\u2011build strategies. ([bdo.com](https://www.bdo.com/insights/industries/private-equity/pe-add-ons-drive-m-a-transactions?utm_source=openai))  \n   * Other industry commentary (e.g., KPMG cited via business\u2011sale.com) describes \u201caround two in three\u201d PE deals being bolt\u2011ons in the current environment, reinforcing that bolt\u2011ons are now the **typical** PE transaction. ([business-sale.com](https://www.business-sale.com/insights/industry-insights/midmarket-and-bolton-deals-set-to-drive-private-equity-ma-226403?utm_source=openai))\n\n2. **Tech/software is a leading sector for these add\u2011on strategies.**  \n   * Cherry Bekaert\u2019s 2024\u20132025 PE outlook notes that technology and healthcare are the top two industries for add\u2011on deal activity, and that the **software** segment is driving the tech sector\u2019s rebound, with 926 software PE deals and $134.8B of deal value in 2024. ([cbh.com](https://www.cbh.com/insights/reports/private-equity-report-2024-trends-and-2025-outlook/?utm_source=openai))  \n   * Evalueserve\u2019s Brookfield-sourced analysis gives concrete software examples where a sponsor used multiple add\u2011on acquisitions to boost EBITDA and exit valuation, illustrating that this buy\u2011and\u2011build/bolt\u2011on model is actively used in software platforms. ([evalueserve.com](https://www.evalueserve.com/blog/private-equity-monthly-newsletter-october-2024/?utm_source=openai))  \n   * While not every large, headline software deal is a bolt\u2011on (many are new platforms or take\u2011privates), the data above show that **most PE deals by count** are add\u2011ons, and tech/software is one of the most active sectors within that add\u2011on activity. It is therefore reasonable to infer that most PE acquisitions of software/tech businesses over this period are indeed structured as bolt\u2011ons to existing PE\u2011owned platforms.\n\n3. **The PE \u201cplaybook\u201d has shifted from pure cost\u2011cutting toward synergy\u2011building, especially via add\u2011ons.**  \n   * McKinsey\u2019s 2024 paper notes that traditional PE value\u2011creation levers like financial engineering and simple operational efficiency have become harder, and that funds are turning to \u201ctransformational strategies\u201d and add\u2011on deals to drive significant growth\u2014i.e., revenue and operational synergies rather than just cutting costs. ([mckinsey.com](https://www.mckinsey.com/capabilities/m-and-a/our-insights/how-private-equity-funds-can-use-m-and-a-to-create-outsize-returns?utm_source=openai))  \n   * Brookfield/Evalueserve explicitly describes add\u2011on acquisitions as a way to realize **revenue, cost and capital synergies**, citing software cases where cross\u2011selling and expanded offerings drove higher EBITDA and exit multiples. ([evalueserve.com](https://www.evalueserve.com/blog/private-equity-monthly-newsletter-october-2024/?utm_source=openai))  \n   * Other market commentaries on add\u2011ons (e.g., Coldstream, BDO, Cherry Bekaert) consistently frame them as core to *buy\u2011and\u2011build* strategies\u2014averaging down multiples, building scale, and accelerating growth and synergies\u2014rather than as mere cost\u2011cutting exercises. ([coldstreamcapitalpartners.com](https://coldstreamcapitalpartners.com/insights/ma-update-august-2023/?utm_source=openai))\n\n**Assessment:** Friedberg predicted that over the \u201cnext couple of years\u201d after late 2022, the standard PE playbook in software/tech would center on bolt\u2011on/add\u2011on deals to existing platforms, with a focus on cross\u2011selling and synergy\u2011building in addition to cost\u2011cutting. Between 2022 and at least late 2024, add\u2011ons in fact made up the clear majority of PE buyouts, tech/software was a leading sector for such add\u2011ons, and industry analyses repeatedly describe these transactions as vehicles for revenue and operational synergies, not just cost reductions. Although deal databases do not break out an exact percentage **solely** for software add\u2011ons in public summaries, the combination of (a) overall PE statistics, (b) sector\u2011specific commentary, and (c) software case studies strongly supports his characterization. On balance, the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 526,
+          "start_index": 423,
+          "title": "Private Equity Midyear 2023 Report | Cherry Bekaert",
+          "type": "url_citation",
+          "url": "https://www.cbh.com/insights/reports/private-equity-midyear-2023-report/?utm_source=openai"
+        },
+        {
+          "end_index": 845,
+          "start_index": 684,
+          "title": "Private equity and M&A: Funding for outsize returns | McKinsey",
+          "type": "url_citation",
+          "url": "https://www.mckinsey.com/capabilities/m-and-a/our-insights/how-private-equity-funds-can-use-m-and-a-to-create-outsize-returns?utm_source=openai"
+        },
+        {
+          "end_index": 1092,
+          "start_index": 973,
+          "title": "Private Equity Add-Ons Drive M&A Transactions | BDO | BDO",
+          "type": "url_citation",
+          "url": "https://www.bdo.com/insights/industries/private-equity/pe-add-ons-drive-m-a-transactions?utm_source=openai"
+        },
+        {
+          "end_index": 1480,
+          "start_index": 1318,
+          "title": "Mid-market and bolt-on deals set to drive private equity M&A",
+          "type": "url_citation",
+          "url": "https://www.business-sale.com/insights/industry-insights/midmarket-and-bolton-deals-set-to-drive-private-equity-ma-226403?utm_source=openai"
+        },
+        {
+          "end_index": 1943,
+          "start_index": 1824,
+          "title": "Private Equity Report: 2024 Trends & 2025 Outlook | Cherry Bekaert",
+          "type": "url_citation",
+          "url": "https://www.cbh.com/insights/reports/private-equity-report-2024-trends-and-2025-outlook/?utm_source=openai"
+        },
+        {
+          "end_index": 2323,
+          "start_index": 2204,
+          "title": "Private Equity Monthly Newsletter - October 2024 - Evalueserve",
+          "type": "url_citation",
+          "url": "https://www.evalueserve.com/blog/private-equity-monthly-newsletter-october-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 3362,
+          "start_index": 3201,
+          "title": "Private equity and M&A: Funding for outsize returns | McKinsey",
+          "type": "url_citation",
+          "url": "https://www.mckinsey.com/capabilities/m-and-a/our-insights/how-private-equity-funds-can-use-m-and-a-to-create-outsize-returns?utm_source=openai"
+        },
+        {
+          "end_index": 3720,
+          "start_index": 3601,
+          "title": "Private Equity Monthly Newsletter - October 2024 - Evalueserve",
+          "type": "url_citation",
+          "url": "https://www.evalueserve.com/blog/private-equity-monthly-newsletter-october-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 4114,
+          "start_index": 3992,
+          "title": "M&A Update August 2023 | Coldstream Capital Partners",
+          "type": "url_citation",
+          "url": "https://coldstreamcapitalpartners.com/insights/ma-update-august-2023/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Data from multiple sources confirms that since 2023, most private equity (PE) acquisitions, particularly in software/tech, have been bolt-on/add-on deals to existing platforms, with buy-and-build strategies emphasizing synergies alongside cost-cutting. \n\n- PitchBook (2025): Add-ons were 74.1% of US PE buyouts in 2024 and 66.7% of European PE buyouts in early 2025. ([source](https://pitchbook.com/news/articles/add-on-deals-see-a-rebound-in-europe))\n- Corum Group Tech M&A Report (H1 2025): In tech, ~8.5 bolt-ons per PE platform deal (record high); e.g., 78% of TA Associates' deals and 100% of Hg Capital's were bolt-ons. Buy-and-build prevalent for market share and consolidation in software/cybersecurity. ([source](https://www.corumgroup.com/insights/tech-ma-surges-h1-2025))\n- With Intelligence PE Harvest Report (2025): Global ratio of add-ons to platforms 2.5:1 since 2023 (~71% add-ons), driven by scaling via synergies. Tech/software top by volume, with firms like Vista, Thoma Bravo active. ([source](https://www.withintelligence.com/wp-content/uploads/2025/09/pe-harvest-report.pdf))\n- KPMG Pulse Q3'25 (PitchBook data): Global add-ons ~46-52% of buyout deal count 2023-2025 YTD (e.g., 4,689 add-ons vs 4,326 platforms in 2023), strong in TMT/software ($469B YTD 2025). ([source](https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2025/10/global-report-on-pulse-of-private-equity-q3-25.pdf))\n\nThis aligns with the prediction over 2023-2025, as bolt-ons dominate PE tech/software deal flow and strategies focus on synergies/cross-selling."
+    },
+    {
+      "id": "C-01:20:50.830",
+      "result": "inconclusive",
+      "explanation": "Chamath\u2019s prediction specified a **4\u20135 year** period from 2022 for the true performance of the 2015\u20132022 venture vintages to become clear, i.e., roughly **2026\u20132027**. The current date is **November 30, 2025**, which is only about **3 years** after the prediction was made in December 2022. Since we have not yet reached the end of the 4\u20135 year window he gave, it is too early to determine whether his timing estimate (that it will take 4\u20135 years \u201cto really sort out\u201d) is accurate. Therefore, the correctness of the prediction cannot yet be evaluated.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction states that it will take ~4-5 years from 2022 (i.e., 2026-2027) to reveal true performance of 2015-2022 VC vintages via markdowns, exits, and realizations to identify top-quartile funds. As of Dec 2025 (~3 years later), recent reports show ongoing evolution: Carta Q2 2025 reports median TVPI rising for 2017-2023 vintages (e.g., 2017: 1.95x, 85% funds with some DPI), but median DPI low (Q1 2025 2017: 0.27x); only 53% of 2019 funds have DPI. Cambridge Associates CY2024 benchmarks note younger vintages (e.g., 2022) outperforming but no final DPI/quartile stability; distributions up but < contributions. PitchBook-NVCA Q2 2025 highlights negative cash flows, low DPI yield (10.9% for 5-10yo funds). Performance metrics still trending (TVPI/IRRs up in Q2), substantial intra-vintage variation, and recent vintages immature (2022: 33% dry powder). No sources indicate definitive top-quartile clarity for 2015-2022 range; too early to confirm timeline."
+    }
+  ]
+}

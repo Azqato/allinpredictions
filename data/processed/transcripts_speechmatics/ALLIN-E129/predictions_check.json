@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "count": 5,
+    "count_by_result": {
+      "inconclusive": 2,
+      "right": 2,
+      "ambiguous": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:15:55.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, it is too early to judge a prediction whose explicit horizon is **5\u201310 years after May 2023** (i.e., roughly 2028\u20132033). We are only about 2.5 years into that window, so the core claim about what will or will not be possible for regulators by that time cannot yet be tested.\n\nWhat we can say so far:\n\n- **On-device / edge models are clearly advancing, but not dominant for frontier capabilities.** Apple\u2019s \u201cApple Intelligence\u201d strategy uses a relatively small ~3B-parameter model on-device plus larger models in a privacy-preserving cloud, illustrating a hybrid approach rather than a full shift of powerful models entirely to the edge.\n  Apple emphasizes that many features run on-device, but more complex tasks are still offloaded to server-side models via Private Cloud Compute. ([apple.com](https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/?utm_source=openai))\n\n- **Regulatory systems are still in the process of being built, not demonstrably obsolete yet.** The EU AI Act, approved in 2024 and entering phased effect starting August 2025, creates obligations specifically for general\u2011purpose / foundation models (called GPAI models), focusing on transparency, safety, and risk controls rather than trying to track every individual device instance. ([ibanet.org](https://www.ibanet.org/the-regulation-of-foundation-models-in-the-eu-ai-act?utm_source=openai))  Enforcement and guidance are still being rolled out and even debated (e.g., calls to delay enforcement and soften rules), but there is not yet clear evidence that regulators *in principle* cannot monitor major model families or providers. ([reuters.com](https://www.reuters.com/business/media-telecom/will-eu-delay-enforcing-its-ai-act-2025-07-03/?utm_source=openai))\n\n- **The prediction\u2019s key test (\u201cit will be effectively impossible for regulators to comprehensively track, audit, and approve which models are being run on which machines\u201d) is inherently about the *end state* of a technological and regulatory race.** Current trends (rapid open-source proliferation and stronger on-device hardware, alongside regulatory experimentation) could plausibly support Friedberg\u2019s concern, but by 2025 we do not yet have decisive evidence either way.\n\nBecause the specified 2028\u20132033 timeframe has not arrived and present evidence does not conclusively show that comprehensive regulatory oversight over models-on-edge is either definitively possible or definitively impossible, the prediction\u2019s truth value cannot yet be determined.",
+      "sources": [
+        {
+          "end_index": 979,
+          "start_index": 852,
+          "title": "Introducing Apple Intelligence for iPhone, iPad, and Mac - Apple",
+          "type": "url_citation",
+          "url": "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/?utm_source=openai"
+        },
+        {
+          "end_index": 1479,
+          "start_index": 1370,
+          "title": "The regulation of foundation models in the EU AI Act | International Bar Association",
+          "type": "url_citation",
+          "url": "https://www.ibanet.org/the-regulation-of-foundation-models-in-the-eu-ai-act?utm_source=openai"
+        },
+        {
+          "end_index": 1848,
+          "start_index": 1720,
+          "title": "Will the EU delay enforcing its AI Act?",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/media-telecom/will-eu-delay-enforcing-its-ai-act-2025-07-03/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Current date (Dec 1, 2025) is only ~2.5 years after May 2023 episode; prediction timeframe is 2028\u20132033, so too early to evaluate fulfillment. Progress exists for *smaller* open-source LLMs on consumer hardware (e.g., Llama-3.1-8B, Qwen2.5-7B on phones/laptops via Snapdragon, per [Medium](https://medium.com/@fahey_james/bringing-llms-to-the-edge-phones-and-laptops-without-the-cloud-c1d7f24dc097), [Reddit r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/comments/1lmmh3l/consumer_hardware_landscape_for_local_llms_june/)), but frontier/large models (e.g., GPT-4 equivalents) remain cloud/server-based. No reports of ubiquitous edge deployment or regulators unable to track models (focus still on centralized AI; cf. papers on compliant edge LLMs [ResearchGate](https://www.researchgate.net/publication/392032373_Designing_Regulatory-Compliant_LLM_Architectures_for_Edge_Devices)). Trends promising but not yet 'largely moved' ([SiliconFlow](https://www.siliconflow.com/articles/en/best-llms-for-edge-ai-devices-2025))."
+    },
+    {
+      "id": "A-00:58:17.800",
+      "result": "right",
+      "explanation": "Evidence suggests that Jason\u2019s *directional* prediction\u2014that the official mobile app would drive about an order\u2011of\u2011magnitude jump in both users and usage\u2014has essentially come true, even if the user count has not landed exactly at 10\u00d7.\n\n**Baseline (pre\u2011app):**\n- By January 2023, before any official mobile app, ChatGPT had already surpassed **100 million monthly active users**, widely reported as the fastest growth for a consumer app at the time. ([en.wikipedia.org](https://en.wikipedia.org/wiki/ChatGPT?utm_source=openai))\n- Web traffic was about **616 million visits in January 2023** and climbed to around **1.8 billion monthly visits by April\u2013May 2023**, just before and around the iOS app launch. ([nerdynav.com](https://nerdynav.com/chatgpt.statistics/?utm_source=openai))\n\n**Post\u2011app user growth:**\n- OpenAI CEO Sam Altman announced **100 million weekly active users** in November 2023. ([techcrunch.com](https://techcrunch.com/2023/11/06/Openais-Chatgpt-Now-Has-100-Million-Weekly-Active-Users/?utm_source=openai))\n- Weekly active users then grew to **300 million by December 2024** and **400 million by February 2025**. ([theverge.com](https://www.theverge.com/2024/12/4/24313097/chatgpt-300-million-weekly-users?utm_source=openai))\n- By DevDay 2025, Altman reported **around 800 million weekly active users**, with Business Insider and other outlets repeating that figure. ([businessinsider.com](https://www.businessinsider.com/chatgpt-users-openai-sam-altman-devday-llm-artificial-intelligence-2025-10?utm_source=openai))  Relative to the ~100M active\u2011user baseline in early 2023, that\u2019s roughly a **7\u20138\u00d7** increase in recurring users.\n\n**Post\u2011app usage (volume) growth:**\n- Within a week of its late\u20112022 launch, ChatGPT was handling on the order of **10 million queries per day**. ([digitalinformationworld.com](https://www.digitalinformationworld.com/2025/05/chatgpt-stats-in-numbers-growth-usage-and-global-impact.html?utm_source=openai))\n- By December 2024, OpenAI said ChatGPT was already processing **over 1 billion messages per day**, a \u2265100\u00d7 jump versus those early levels. ([theverge.com](https://www.theverge.com/2024/12/4/24313097/chatgpt-300-million-weekly-users?utm_source=openai))\n- In **July 2025**, OpenAI disclosed that ChatGPT now handles about **2.5 billion prompts every day**, a 150% increase over late\u20112024 usage. ([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/technology/tech-news/chatgpt-now-handles-2-5-billion-user-prompts-daily-confirms-company/articleshow/122836218.cms?utm_source=openai))  That is clearly **well over a 10\u00d7 increase** in usage volume compared with the pre\u2011app era.\n\n**Role of the mobile app:**\n- The official iOS app launched in the US on **May 18, 2023**, and expanded to **dozens of countries and then 152+ countries** by early June; Android followed in August 2023. ([iqiglobal.com](https://iqiglobal.com/blog/chatgpt-app-launch/?utm_source=openai))\n- Since then, the app has become a central access point: by mid\u20112025 it had **hundreds of millions of monthly active mobile users** and, in 2025 alone, an estimated **300M+\u2013400M+ additional downloads**, with total installs approaching 700M. ([statista.com](https://www.statista.com/statistics/1497377/global-chatgpt-vs-gemini-app-downloads/?utm_source=openai))  This mobile reach plausibly underpins much of the jump in both user count and query volume.\n\nPutting this together:\n- **User count** has increased by around **7\u20138\u00d7** versus the pre\u2011app 100M\u2011user baseline\u2014not literally 10\u00d7, but close to the \u201croughly an order of magnitude\u201d framing.\n- **Usage volume** has jumped far **beyond 10\u00d7**, from millions of daily queries in early 2023 to billions per day by mid\u20112025.\n\nGiven that his claim was qualitative (\u201cgame over\u2026 going to 10x the number of users and 10x the amount of usage\u201d), and that both users and especially usage did, in fact, grow on roughly that scale after the official app rollout and broad availability, the fairest assessment is that the prediction was **basically right in substance**, even if the current user count falls somewhat short of an exact 10\u00d7.",
+      "sources": [
+        {
+          "end_index": 562,
+          "start_index": 485,
+          "title": "ChatGPT",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/ChatGPT?utm_source=openai"
+        },
+        {
+          "end_index": 818,
+          "start_index": 742,
+          "title": "107 Up-to-Date ChatGPT Statistics & User Numbers [Nov 2024]",
+          "type": "url_citation",
+          "url": "https://nerdynav.com/chatgpt.statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 1065,
+          "start_index": 937,
+          "title": "OpenAI's ChatGPT now has 100 million weekly active users | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2023/11/06/Openais-Chatgpt-Now-Has-100-Million-Weekly-Active-Users/?utm_source=openai"
+        },
+        {
+          "end_index": 1285,
+          "start_index": 1173,
+          "title": "ChatGPT now has over 300 million weekly users",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/2024/12/4/24313097/chatgpt-300-million-weekly-users?utm_source=openai"
+        },
+        {
+          "end_index": 1577,
+          "start_index": 1428,
+          "title": "Sam Altman touts ChatGPT's 800 million weekly users, double all its main competitors combined",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/chatgpt-users-openai-sam-altman-devday-llm-artificial-intelligence-2025-10?utm_source=openai"
+        },
+        {
+          "end_index": 2001,
+          "start_index": 1842,
+          "title": "ChatGPT Usage Statistics: Numbers Behind Its Worldwide Growth and Reach (September, 2025)",
+          "type": "url_citation",
+          "url": "https://www.digitalinformationworld.com/2025/05/chatgpt-stats-in-numbers-growth-usage-and-global-impact.html?utm_source=openai"
+        },
+        {
+          "end_index": 2255,
+          "start_index": 2143,
+          "title": "ChatGPT now has over 300 million weekly users",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/2024/12/4/24313097/chatgpt-300-million-weekly-users?utm_source=openai"
+        },
+        {
+          "end_index": 2599,
+          "start_index": 2398,
+          "title": "ChatGPT now handles 2.5 billion user prompts daily, confirms company",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/chatgpt-now-handles-2-5-billion-user-prompts-daily-confirms-company/articleshow/122836218.cms?utm_source=openai"
+        },
+        {
+          "end_index": 2983,
+          "start_index": 2900,
+          "title": "ChatGPT in Your Pocket! ChatGPT Now Available on iOS",
+          "type": "url_citation",
+          "url": "https://iqiglobal.com/blog/chatgpt-app-launch/?utm_source=openai"
+        },
+        {
+          "end_index": 3345,
+          "start_index": 3226,
+          "title": "Global ChatGPT and Gemini app downloads 2025| Statista",
+          "type": "url_citation",
+          "url": "https://www.statista.com/statistics/1497377/global-chatgpt-vs-gemini-app-downloads/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "ChatGPT's weekly active users (WAU) grew from an estimated ~50 million in early 2023 (e.g., [Superlines.io chart](https://www.superlines.io/articles/chatgpt-statistics-2025), consistent with 100M MAU in Jan 2023 per [Exploding Topics](https://explodingtopics.com/blog/chatgpt-users) and Reuters) to 100M WAU by Nov 2023 (Sam Altman/OpenAI announcement) and 800M WAU by late 2025 (multiple sources including Sam Altman Oct 2025 statement, [DemandSage](https://www.demandsage.com/chatgpt-statistics/), [TechCrunch](https://techcrunch.com/2025/10/06/sam-altman-says-chatgpt-has-hit-800m-weekly-active-users/)). This represents roughly 10-16x growth since pre-app (May 2023, likely similar to ~70-100M range based on steady early growth). Usage volume grew from ~10M queries/day shortly after Nov 2022 launch ([DemandSage](https://www.demandsage.com/chatgpt-statistics/)) to 2B+ queries/day now ([DemandSage](https://www.demandsage.com/chatgpt-statistics/), Sam Altman), >10x even accounting for growth pre-app. Mobile app (iOS May 2023, Android July 2023 per Wikipedia) enabled broad access, contributing to sustained growth as assumed. Web traffic peaked at 1.81B visits/mo May 2023 ([Similarweb](https://www.similarweb.com/blog/insights/ai-news/chatgpt-rebuilds/)) and reached 5-6B/mo now (~3x, but total includes app). Prediction holds as ~order of magnitude increase post-launch."
+    },
+    {
+      "id": "D-01:08:18.490",
+      "result": "ambiguous",
+      "explanation": "Empirical data clearly support the *premise* that the 2022\u20132023 mortgage\u2011rate spike reduced US housing mobility, but they do **not** clearly show a resulting, time\u2011trend increase in *resident discontent with their state or city* versus prior years.\n\n**1. Premise: rate\u2011lock sharply reduced mobility**\n\nMultiple studies show that rising mortgage rates in 2022\u20132023 created a strong \u201cmortgage rate lock\u2011in\u201d effect:\n\n- FHFA finds that for each percentage point current market rates exceed a homeowner\u2019s original rate, the probability of sale falls by 18.1%, and estimates a 57% reduction in fixed\u2011rate home sales in 2023 Q4 and 1.33 million \u201cmissing\u201d sales between 2022 Q2 and 2023 Q4 due to lock\u2011in.\n  ([fhfa.gov](https://www.fhfa.gov/research/papers/wp2403?utm_source=openai))\n- NBER work by Liebersohn & Rothstein estimates rising rates in 2022\u20132023 reduced mobility for mortgaged households by about 16%, discouraging ~800,000 moves in one year.\n  ([nber.org](https://www.nber.org/papers/w32781?utm_source=openai))\n- Federal Reserve researchers similarly attribute roughly 44% of the 2021\u20132022 drop in moves among mortgage holders to rate lock\u2011in, with especially large effects on within\u2011metro moves (fewer local and \u201cmove\u2011up\u201d moves), and smaller but non\u2011zero effects on moves across labor\u2011market areas.\n  ([ideas.repec.org](https://ideas.repec.org/p/fip/fedgfe/2024-88.html?utm_source=openai))\n\nSo the \u201cpeople are less able or willing to move because they\u2019re locked into low mortgage rates\u201d part of the prediction is strongly validated.\n\n**2. Evidence of people feeling \u2018stuck\u2019 where they live**\n\nThere is also solid evidence of *housing\u2011specific* frustration:\n\n- Realtor.com and related surveys report that about 82% of homeowners who would like to sell feel \u201cstuck\u201d because their current mortgage rate is lower than market rates, and more than half say they\u2019re waiting for rates to fall before listing their homes.\n  ([parealtors.org](https://www.parealtors.org/blog/many-would-be-sellers-feel-hesitant-due-to-mortgage-rates/?utm_source=openai))\n- A 2024 West Shore Home survey of recent buyers (2020\u20132023) finds 58% of homeowners feel \u201cstuck\u201d or \u201clocked in\u201d; about 23% explicitly say they\u2019d like to move but feel they can\u2019t because of current rates, and over one\u2011third report turning down job opportunities because they can\u2019t afford housing in a new location.\n  ([westshorehome.com](https://westshorehome.com/blog/homeowners-stuck/?utm_source=openai))\n- An Edelman Financial survey (reported by Realty Today) finds 36% of US homeowners, and nearly half of those under 50, say they feel *trapped* in their homes by high rates and affordability; 25% of Americans say they are not able to live where they want due to financial constraints.\n  ([realtytoday.com](https://www.realtytoday.com/articles/113499/20241120/half-homeowners-under-50-feel-trapped-homes-due-mortgage-rates.htm?utm_source=openai))\n- A 2024 Anytime Estimate study of movers finds that about one\u2011third say financial desperation forced them to move somewhere they *didn\u2019t want*, and 20% say they\u2019re embarrassed about where they ended up\u2014an indicator of dissatisfaction with their current location driven by affordability.\n  ([anytimeestimate.com](https://anytimeestimate.com/research/moving-trends-2025/?utm_source=openai))\n\nThese surveys show a measurable sense of being **stuck in one\u2019s current home or neighborhood** and, for a meaningful minority, **not living where they want** because of financial and rate constraints. That\u2019s consistent with the mechanism the predictor described.\n\n**3. Missing piece: trend in *state/city* discontent vs prior years**\n\nThe prediction, however, is more specific: it claims that *because* people can no longer easily move, we will see a **measurable rise in resident discontent with their current states or cities, compared with earlier, higher\u2011mobility periods.** To validate that, we\u2019d need:\n\n1. A consistent, national time series on satisfaction with one\u2019s **state or city as a place to live** (e.g., Gallup\u2011style \u201csatisfied with the city or area where you live?\u201d), covering pre\u2011spike years and the post\u20112022 period, and\n2. Evidence that discontent rose in tandem with the mortgage\u2011lock period, beyond what can be explained by other factors (politics, crime, broader cost\u2011of\u2011living issues, etc.).\n\nAvailable data fall short on both counts:\n\n- Urban satisfaction snapshots like Gensler\u2019s large 2024 multi\u2011city survey (about 13,500 residents across 27 US cities) show **wide variation but generally high satisfaction**: for example, 78% of San Antonio residents and ~70% of Atlanta residents report being satisfied or very satisfied with their city; even lower\u2011scoring cities like Portland, Baltimore, and Philadelphia still have around 50\u201360% satisfaction. Those results show current dis/satisfaction levels but lack directly comparable pre\u20112022 baselines using the same methodology, so we cannot reliably infer a *trend* attributable to mortgage lock\u2011in.\n  ([axios.com](https://www.axios.com/2025/11/18/city-satisfaction-rates?utm_source=openai))\n- Long\u2011standing polls about wanting to move to another state (e.g., Gallup\u2019s 2013\u20132014 surveys, where 40\u201350% of residents in some states already said they\u2019d like to leave if they could) show that substantial state\u2011level discontent and desire to move **predate** the recent rate spike, making it hard to say that such discontent has *increased* rather than simply persisted.\n  ([thecaucusblog.com](https://www.thecaucusblog.com/2014/04/gallup-poll-half-in-illinois-want-to.html?utm_source=openai))\n- Academic work using older Gallup data (e.g., 2009\u20132016) documents county\u2011level averages of satisfaction with \u201cthe city or area where you live,\u201d but again does not extend into the 2022\u20132025 period in a way that would allow a clear before/after comparison tied to the rate\u2011lock episode.\n  ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC12588161/?utm_source=openai))\n\nIn short, while we can document **present\u2011day frustration about being unable to move** and **location mismatch** for many households, we lack a clean, consistent metric showing that *overall* discontent with one\u2019s state or city has **risen relative to earlier high\u2011mobility years** because of mortgage lock\u2011in.\n\n**4. Causation is also hard to isolate**\n\nEven if we did see a rise in state/city dissatisfaction over this period, it would be difficult to attribute it primarily to reduced housing mobility rather than to other contemporaneous forces: sharp rent and home\u2011price increases, inflation, local crime perceptions, political polarization, and pandemic after\u2011effects, all of which affect how people feel about where they live irrespective of whether they can easily move.\n\n**Conclusion**\n\n- The *mechanism* posited\u2014rate\u2011driven immobility creating frustration and a sense of being stuck\u2014is strongly supported by data on mortgage lock\u2011in and homeowner sentiment.\n- However, the claimed *macro\u2011level outcome*\u2014a demonstrable, time\u2011series increase in **state or city discontent** versus pre\u2011spike years\u2014cannot be established with current public evidence.\n\nBecause of that measurement and attribution gap, the prediction\u2019s truth value is **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 819,
+          "start_index": 744,
+          "title": "Working Paper 24-03: The Lock-In Effect of Rising Mortgage Rates | FHFA",
+          "type": "url_citation",
+          "url": "https://www.fhfa.gov/research/papers/wp2403?utm_source=openai"
+        },
+        {
+          "end_index": 1061,
+          "start_index": 995,
+          "title": "Household Mobility and Mortgage Rate Lock | NBER",
+          "type": "url_citation",
+          "url": "https://www.nber.org/papers/w32781?utm_source=openai"
+        },
+        {
+          "end_index": 1443,
+          "start_index": 1355,
+          "title": "Locked In: Mobility, Market Tightness, and House Prices",
+          "type": "url_citation",
+          "url": "https://ideas.repec.org/p/fip/fedgfe/2024-88.html?utm_source=openai"
+        },
+        {
+          "end_index": 2106,
+          "start_index": 1978,
+          "title": "Many Would-Be Sellers Feel Hesitant Due to Mortgage Rates - Pennsylvania Association of Realtors\u00ae",
+          "type": "url_citation",
+          "url": "https://www.parealtors.org/blog/many-would-be-sellers-feel-hesitant-due-to-mortgage-rates/?utm_source=openai"
+        },
+        {
+          "end_index": 2515,
+          "start_index": 2426,
+          "title": "Survey: 58% of Homeowners Feel Stuck Due to High Interest Rates",
+          "type": "url_citation",
+          "url": "https://westshorehome.com/blog/homeowners-stuck/?utm_source=openai"
+        },
+        {
+          "end_index": 2963,
+          "start_index": 2805,
+          "title": "Half of US Homeowners Under 50 Feel Trapped in Their Homes Due to Mortgage Rates, Survey Finds",
+          "type": "url_citation",
+          "url": "https://www.realtytoday.com/articles/113499/20241120/half-homeowners-under-50-feel-trapped-homes-due-mortgage-rates.htm?utm_source=openai"
+        },
+        {
+          "end_index": 3355,
+          "start_index": 3256,
+          "title": "2025 Data: 70% of Americans Have Regrets About Moving | Anytime Estimate",
+          "type": "url_citation",
+          "url": "https://anytimeestimate.com/research/moving-trends-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 5134,
+          "start_index": 5045,
+          "title": "These cities have the highest - and lowest - satisfaction rates",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2025/11/18/city-satisfaction-rates?utm_source=openai"
+        },
+        {
+          "end_index": 5633,
+          "start_index": 5513,
+          "title": "The Caucus Blog of the Illinois House Republicans: Gallup Poll: Half in Illinois Want to Move Elsewhere",
+          "type": "url_citation",
+          "url": "https://www.thecaucusblog.com/2014/04/gallup-poll-half-in-illinois-want-to.html?utm_source=openai"
+        },
+        {
+          "end_index": 6019,
+          "start_index": 5925,
+          "title": "Quantifying generalized trust in individuals and counties using language - PMC",
+          "type": "url_citation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12588161/?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "Reduced US housing mobility is confirmed due to mortgage rate lock-in: Census data shows only 11% changed residences in 2024 (lowest in 50+ years, down from ~14-20% prior); Harvard JCHS reports homeowner mobility at 5.5% in 2023; Fed research attributes 44% of move drop to lock-in ([Federal Reserve FEDS paper](https://www.federalreserve.gov/econres/feds/locked-in-rate-hikes-housing-markets-and-mobility.htm)). Interstate migration slowed in 2024-2025 per Placer.ai and CRE Daily. However, evidence for *resulting* measurable rise in resident discontent vs. pre-2022 higher-mobility years is unclear. Gallup national satisfaction stable at record-low 38% (2022-2025), personal 'very satisfied' down to 44% in 2025 but declining since 2020 ([Gallup](https://news.gallup.com/poll/655493/new-low-satisfied-personal-life.aspx)); Clever Offers: 68% frustrated with location in 2025 (up from 59% in 2024, 69% like it vs. 73% prior), with 93% blocked from moving mainly by affordability ([Clever](https://cleveroffers.com/research/best-places-to-live-in-the-us-2025/)); WalletHub/Gallup state happiness rankings stable (e.g., Hawaii top). High housing dissatisfaction (94% per US Mayors 2025), but no direct studies link lock-in immobility to rising state/city discontent over confounders like prices/pandemic; causal chain unproven despite timing."
+    },
+    {
+      "id": "D-01:11:03.610",
+      "result": "right",
+      "explanation": "Within 1\u20132 years after May 2023, U.S. commercial real estate clearly experienced **significant financial distress**, especially in offices, matching David\u2019s prediction.\n\nKey indicators:\n- MSCI reports that the stock of *distressed* U.S. commercial properties rose for four straight quarters in 2023, reaching about **$71.8B by mid\u20112023** and **$85.8B by year\u2011end**, with offices the largest share and over 80% of new distress in Q2 2023. ([msci.com](https://www.msci.com/research-and-insights/quick-take/distress-in-us-commercial-property-increased-further?utm_source=openai))\n- Trepp and other data providers show CMBS delinquencies climbing notably over that period: overall CMBS delinquency hit **4.4% in July 2023**, with office delinquencies up more than 350 basis points since end\u20112022, and by January 2024 commercial mortgage delinquency was **4.66% vs. 2.94% a year earlier**, with office loans at **6.3%** and record\u2011high office vacancy around **20%**. ([trepp.com](https://www.trepp.com/trepptalk/cmbs-delinquency-rate-july-2023-office-lodging-delinquencies-increase-again?utm_source=openai))\n- Concrete **loan defaults and write\u2011downs** became widespread: Brookfield defaulted on roughly **$1.1B of debt** tied to three major downtown Los Angeles office towers in 2023, and a defaulted tower (777 Figueroa) was subsequently sold at roughly **half the outstanding debt**, a textbook fire\u2011sale outcome. ([therealdeal.com](https://therealdeal.com/la/2024/01/02/brookfield-dtla-towers-lead-socals-top-defaults-in-2023/?utm_source=openai))\n- Distress showed up in lenders\u2019 books: Aareal Bank reported that about **25% of its \u20ac4B U.S. office loan book went into default in 2023**, creating about **\u20ac1B of non\u2011performing assets**, explicitly tied to U.S. office weakness. ([ft.com](https://www.ft.com/content/de4f0675-c81f-4312-b291-f8018a2bc06d?utm_source=openai))\n- More broadly, commercial property foreclosures in the U.S. jumped **117% year\u2011over\u2011year** by March 2024, reaching the highest monthly foreclosure count since 2015, again concentrated in large states like California and New York\u2014clear evidence of mounting distress. ([credaily.com](https://www.credaily.com/briefs/cre-foreclosures-rise-drastically-as-distress-looms/?utm_source=openai))\n\nWhile the share of total transactions that are formally labeled \u201cdistressed\u201d remained a minority of overall deal volume, the combination of rapidly rising delinquencies, large\u2011scale loan defaults, growing pools of distressed assets, and high\u2011profile fire\u2011sale disposals within 2023\u20132024 is exactly the sort of **\u201ca lot of distress\u201d in commercial real estate** David described for the near term. On that basis, his prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 612,
+          "start_index": 474,
+          "title": "Distress in US Commercial Property Increased Further | MSCI",
+          "type": "url_citation",
+          "url": "https://www.msci.com/research-and-insights/quick-take/distress-in-us-commercial-property-increased-further?utm_source=openai"
+        },
+        {
+          "end_index": 1139,
+          "start_index": 999,
+          "title": "CMBS Delinquency Rate Tops 4% in July 2023; Office, Lodging Delinquencies Increase Again",
+          "type": "url_citation",
+          "url": "https://www.trepp.com/trepptalk/cmbs-delinquency-rate-july-2023-office-lodging-delinquencies-increase-again?utm_source=openai"
+        },
+        {
+          "end_index": 1583,
+          "start_index": 1450,
+          "title": "Brookfield DTLA towers lead SoCal\u2019s top defaults in 2023",
+          "type": "url_citation",
+          "url": "https://therealdeal.com/la/2024/01/02/brookfield-dtla-towers-lead-socals-top-defaults-in-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 1908,
+          "start_index": 1815,
+          "title": "Private equity-owned German bank hit after 25% of US office loans default",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/de4f0675-c81f-4312-b291-f8018a2bc06d?utm_source=openai"
+        },
+        {
+          "end_index": 2297,
+          "start_index": 2177,
+          "title": "CRE Foreclosures Surge 117% Amid Growing Distress - CRE Daily",
+          "type": "url_citation",
+          "url": "https://www.credaily.com/briefs/cre-foreclosures-rise-drastically-as-distress-looms/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Delinquency rates on US bank CRE loans (excluding farmland) rose to a 10-year high of ~1.57% by Q2 2025 (CoStar, Mar 2025; Trading Economics/Fed data), up from lows of ~0.6% in 2022 (FRED DRCRELEXFACBS series, latest Q3 2025 data confirms elevated levels at ~1.6%). CMBS delinquencies climbed to 7.46% in Oct 2025, with office at 9.6% (Trepp). MBA reported increases in Q1/Q2 2025 across sources, stabilizing in Q3. Banks like NYCB recorded major CRE-related losses/write-downs in 2024 ($280M Q3 loss), delaying profits to 2026 (Reuters). $957B maturity wall in 2025 led to surging maturity defaults in CRE CLOs (CRE Daily, Nov 2025). Office vacancies hit record 20.4% (JPMorgan, Jul 2025). This evidences significant distress via rising defaults/write-downs within 1-2 years (2023-2025), though no systemic crisis or widespread fire-sales occurred (WSJ noted limited distressed sales). Sources: FRED, MBA, Trepp, Reuters, CoStar."
+    },
+    {
+      "id": "D-01:12:25.000",
+      "result": "inconclusive",
+      "explanation": "Evidence to date is mixed: the *direction* of David\u2019s call looks broadly correct (serious office\u2011CRE stress spilling into some banks), but the **specific scenario** he described\u2014large numbers of vacant office towers ending up as bank\u2011owned REO and being liquidated at scale, causing a broad banking problem\u2014has not clearly materialized yet, and the main refinancing \u201cmaturity wall\u201d is still ahead.\n\n**1. \u201cHuge commercial real estate problem\u201d in offices**  \nSan Francisco\u2019s office market did indeed deteriorate sharply after May 2023. Reports show record or near\u2011record vacancy rates in 2024\u201325 (mid\u201130% range and among the highest in the U.S.), with rents back to mid\u20112010s levels and large amounts of empty space. Similar high office vacancies are noted in other major markets. \nThese conditions are widely described as severe stress in the office segment of CRE, even as some AI\u2011driven leasing has helped at the margin. ([cnbc.com](https://www.cnbc.com/2024/07/08/san-franciscos-real-estate-slide-continues-as-office-vacancies-peak.html?utm_source=openai))  \nSo the **\u201chuge commercial real estate problem\u201d (in offices)** part of the quote is substantively right.\n\n**2. Have \u201call these office towers\u201d ended up owned and liquidated by banks?**  \nThere *are* notable cases where lenders (including insurance companies and other institutional lenders) have taken back troubled towers or been handed the keys via deed\u2011in\u2011lieu, often at very large valuation hits\u2014for example:\n- Blackstone handing back 1740 Broadway in Manhattan, where value fell from about $605M purchase price to an appraisal around $175M, wiping out lower CMBS tranches. ([chiltonreit.com](https://chiltonreit.com/2025/06/01/public-reits-are-positioned-for-trophy-office-upside-june-2025/?utm_source=openai))  \n- BentallGreenOak surrendering 757 Third Avenue in Midtown East to New York Life Real Estate Investors via a deed\u2011in\u2011lieu, with the building valued at less than half its 2015 price. ([therealdeal.com](https://therealdeal.com/new-york/2025/10/31/bgo-surrenders-midtown-east-office-tower-to-avoid-foreclosure/?utm_source=openai))  \n- Owners in Chicago and other cities handing suburban and secondary towers back to lenders when sales at acceptable prices proved impossible. ([therealdeal.com](https://therealdeal.com/chicago/2024/03/20/golub-alcion-surrender-office-complex-in-suburban-chicago/?utm_source=openai))  \n\nHowever, system\u2011level data and supervisory commentary suggest **widespread bank foreclosures and fire\u2011sale liquidations have *not* yet happened**. A New York Fed analysis explicitly describes banks engaging in \u201cextend\u2011and\u2011pretend\u201d\u2014extending CRE loan maturities to avoid crystallizing losses\u2014leaving many problem loans in limbo instead of taking properties onto bank balance sheets and selling them. ([reuters.com](https://www.reuters.com/markets/us/ny-fed-says-banks-obscuring-commercial-real-estate-risks-by-extending-loan-terms-2024-10-23/?utm_source=openai))  \nIn other words, we see a growing *trickle* of lender\u2011takebacks and distressed sales at steep discounts, but not the wave of mass bank ownership and forced liquidation that David\u2019s wording implies.\n\n**3. Have CRE write\u2011offs become a \u201cbig banking problem\u201d?**  \nOffice and broader CRE stress *has* created meaningful problems for some banks:\n- New York Community Bancorp (NYCB) suffered multiple quarters of large losses, sharp rating downgrades into junk territory, and a delayed path back to profitability, largely tied to CRE and multifamily exposure\u2014including offices. ([reuters.com](https://www.reuters.com/business/finance/fitch-downgrades-new-york-community-bancorp-bb-2024-05-07/?utm_source=openai))  \n- Major banks like Bank of America report significantly higher net charge\u2011offs driven by office loans and have elevated criticized office exposure, though office is still a small share of their total loan books. ([content.equisolve.net](https://content.equisolve.net/sec/0000070858-25-000139/bac-20241231.htm?utm_source=openai))  \n- Office delinquencies in the CMBS market hit record levels (around 11\u201312% by late 2025), underscoring real credit stress in the office sector. ([credaily.com](https://www.credaily.com/briefs/cmbs-delinquency-hits-7-46-as-office-sector-sets-new-record/?utm_source=openai))  \n\nAt the same time, **the U.S. banking system overall does *not* look like it\u2019s in a full\u2011blown crisis driven by office CRE**:\n- FDIC data for Q3 2025 show U.S. banks\u2019 aggregate profits up 13.5% year\u2011on\u2011year, with strong capital and liquidity and only 57 \u201cproblem banks,\u201d even as CRE, especially offices, is flagged as a continuing weak spot. ([reuters.com](https://www.reuters.com/sustainability/boards-policy-regulation/us-banks-report-135-jump-profits-fdic-2025-11-24/?utm_source=openai))  \n- The Federal Reserve\u2019s April 2024 Financial Stability Report and the Office of Financial Research\u2019s 2024 Annual Report both highlight CRE\u2014particularly office exposure at smaller/regional banks\u2014as a *key vulnerability*, but explicitly describe the banking sector as sound and broadly well\u2011capitalized, with solvency risk characterized as low overall. ([federalreserve.gov](https://www.federalreserve.gov/publications/2024-april-financial-stability-report-overview.htm?utm_source=openai))  \n- All 22 large U.S. banks comfortably passed the Fed\u2019s 2025 stress test, which included a 30% CRE price drop scenario, indicating resilience even under severe assumed CRE losses. ([apnews.com](https://apnews.com/article/bd4c6049c0f060a6e43ec3aa229c22af?utm_source=openai))  \n\nThat pattern is more consistent with **\u201csignificant localized and prospective risk, plus a few high\u2011profile casualties,\u201d** rather than with the realized, system\u2011wide \u201cbig banking problem\u201d implied by the quote.\n\n**4. Why this is judged *inconclusive* rather than right or wrong**  \nKey elements of the prediction are already partly borne out:\n- Severe, persistent stress in office CRE (especially in San Francisco and other major markets). ([cnbc.com](https://www.cnbc.com/2024/07/08/san-franciscos-real-estate-slide-continues-as-office-vacancies-peak.html?utm_source=openai))  \n- Rising delinquencies and charge\u2011offs on office loans, and real pain at some regional banks with concentrated CRE exposure. ([reuters.com](https://www.reuters.com/business/finance/us-regional-banks-weather-cre-storm-office-loans-continue-lag-2025-11-06/?utm_source=openai))  \n\nBut two core mechanisms and outcomes he specified remain unsettled as of November 2025:\n- **Scale of bank takeovers & liquidations of office towers:** While there are numerous high\u2011profile examples of keys being handed back to lenders, much of the banking sector is still in an \u201cextend\u2011and\u2011pretend\u201d phase, deferring foreclosures and restructurings rather than recognizing full losses and selling collateral. ([reuters.com](https://www.reuters.com/markets/us/ny-fed-says-banks-obscuring-commercial-real-estate-risks-by-extending-loan-terms-2024-10-23/?utm_source=openai))  \n- **Whether this becomes a truly \u201cbig banking problem\u201d:** Supervisors and the IMF see CRE (especially office) as one of the main *potential* triggers for future bank stress, particularly for smaller banks, but so far the system as a whole remains profitable and well\u2011capitalized; CRE has not (yet) produced a broad banking crisis. ([reuters.com](https://www.reuters.com/sustainability/boards-policy-regulation/us-banks-report-135-jump-profits-fdic-2025-11-24/?utm_source=openai))  \n\nGiven that:\n- The phrase \u201cin the coming years\u201d plausibly extends beyond 2025, into the period when large volumes of CRE loans will hit maturity and be forced to refinance or default; and\n- Current data show substantial stress but not the full chain of events (mass bank ownership of towers, forced liquidations, and system\u2011wide banking distress),\n\nthe fairest assessment as of **late 2025** is that the prediction\u2019s ultimate accuracy is **not yet determined**. It\u2019s directionally on track regarding office\u2011CRE trouble and emerging bank\u2011level issues, but the more catastrophic banking\u2011sector outcome he foresaw has neither clearly occurred nor been definitively averted.",
+      "sources": [
+        {
+          "end_index": 1102,
+          "start_index": 966,
+          "title": "San Francisco's real estate slide continues as office vacancies peak",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/07/08/san-franciscos-real-estate-slide-continues-as-office-vacancies-peak.html?utm_source=openai"
+        },
+        {
+          "end_index": 1823,
+          "start_index": 1686,
+          "title": "Public REITs Are Positioned for Trophy Office Upside | June 2025 | chiltonreit.com",
+          "type": "url_citation",
+          "url": "https://chiltonreit.com/2025/06/01/public-reits-are-positioned-for-trophy-office-upside-june-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 2154,
+          "start_index": 2009,
+          "title": "BGO Surrenders Midtown East Office Tower To Avoid Foreclosure",
+          "type": "url_citation",
+          "url": "https://therealdeal.com/new-york/2025/10/31/bgo-surrenders-midtown-east-office-tower-to-avoid-foreclosure/?utm_source=openai"
+        },
+        {
+          "end_index": 2440,
+          "start_index": 2300,
+          "title": "Golub, Alcion Surrender Office Complex in Suburban Chicago",
+          "type": "url_citation",
+          "url": "https://therealdeal.com/chicago/2024/03/20/golub-alcion-surrender-office-complex-in-suburban-chicago/?utm_source=openai"
+        },
+        {
+          "end_index": 3007,
+          "start_index": 2845,
+          "title": "NY Fed says banks obscuring commercial real estate risks by extending loan terms",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/markets/us/ny-fed-says-banks-obscuring-commercial-real-estate-risks-by-extending-loan-terms-2024-10-23/?utm_source=openai"
+        },
+        {
+          "end_index": 3719,
+          "start_index": 3585,
+          "title": "Fitch downgrades New York Community Bancorp to 'BB' on near-term earnings pressure",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/finance/fitch-downgrades-new-york-community-bancorp-bb-2024-05-07/?utm_source=openai"
+        },
+        {
+          "end_index": 4051,
+          "start_index": 3935,
+          "title": "bac-20241231",
+          "type": "url_citation",
+          "url": "https://content.equisolve.net/sec/0000070858-25-000139/bac-20241231.htm?utm_source=openai"
+        },
+        {
+          "end_index": 4327,
+          "start_index": 4199,
+          "title": "CMBS Delinquency Hits 7.46% as Office Sector Sets New Record - CRE Daily",
+          "type": "url_citation",
+          "url": "https://www.credaily.com/briefs/cmbs-delinquency-hits-7-46-as-office-sector-sets-new-record/?utm_source=openai"
+        },
+        {
+          "end_index": 4823,
+          "start_index": 4675,
+          "title": "US banks report 13.5% jump in profits: FDIC",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-banks-report-135-jump-profits-fdic-2025-11-24/?utm_source=openai"
+        },
+        {
+          "end_index": 5314,
+          "start_index": 5178,
+          "title": "The Fed - Overview",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/publications/2024-april-financial-stability-report-overview.htm?utm_source=openai"
+        },
+        {
+          "end_index": 5590,
+          "start_index": 5497,
+          "title": "Big banks all pass the Federal Reserve's stress tests, but the tests were less vigorous this year",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/bd4c6049c0f060a6e43ec3aa229c22af?utm_source=openai"
+        },
+        {
+          "end_index": 6175,
+          "start_index": 6039,
+          "title": "San Francisco's real estate slide continues as office vacancies peak",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/07/08/san-franciscos-real-estate-slide-continues-as-office-vacancies-peak.html?utm_source=openai"
+        },
+        {
+          "end_index": 6453,
+          "start_index": 6304,
+          "title": "US regional banks weather CRE storm, office loans continue to lag",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/finance/us-regional-banks-weather-cre-storm-office-loans-continue-lag-2025-11-06/?utm_source=openai"
+        },
+        {
+          "end_index": 7030,
+          "start_index": 6868,
+          "title": "NY Fed says banks obscuring commercial real estate risks by extending loan terms",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/markets/us/ny-fed-says-banks-obscuring-commercial-real-estate-risks-by-extending-loan-terms-2024-10-23/?utm_source=openai"
+        },
+        {
+          "end_index": 7513,
+          "start_index": 7365,
+          "title": "US banks report 13.5% jump in profits: FDIC",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-banks-report-135-jump-profits-fdic-2025-11-24/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction has not materialized to the extent described. While office vacancies remain high (e.g., national rate ~20.4% in Q1 2025 per J.P. Morgan) and CRE delinquencies elevated (office CMBS at 11.08-11.8% per Trepp/Hughes Marino, bank CRE PDNA ~4% per FDIC Q3 2025), banks have largely avoided mass foreclosures on office towers in SF and major cities. Isolated cases exist (e.g., Starwood forfeited Oakland offices to Deutsche Bank in 2024; ING sold SF office loan at loss in 2025 per Wolf Street), but not 'many' bank-owned towers. Banks prefer loan extensions, modifications (up 66% YoY per St. Louis Fed), or selling notes to PE firms, per Hughes Marino (Sep 2025: 'Why Haven\u2019t More Office Buildings Gone Into Foreclosure?'). Charge-offs remain low (0.18% CRE loans Q3 2025 per FRED/Fed), far from 'significant write-offs.' Regional banks are 'weathering the storm' with resilient portfolios and declining NPLs in some cases (Reuters Nov 2025). No 'notable problem' for banking sector; problem banks at normal 1.3% (FDIC Q3 2025). CRE impacts owners/investors more than banks systemically."
+    }
+  ]
+}

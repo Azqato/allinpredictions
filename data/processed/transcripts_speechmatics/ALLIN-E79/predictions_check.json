@@ -1,0 +1,850 @@
+{
+  "meta": {
+    "count": 19,
+    "count_by_result": {
+      "right": 13,
+      "wrong": 1,
+      "ambiguous": 5
+    }
+  },
+  "predictions": [
+    {
+      "id": "E-00:24:28.030",
+      "result": "right",
+      "explanation": "The prediction was that by the end of June 2022 the Supreme Court would issue a decision in *Dobbs v. Jackson Women\u2019s Health Organization* in which a 5\u20134 majority of justices votes to overturn *Roe v. Wade*.\n\nWhat happened:\n\n- The Supreme Court issued its decision in *Dobbs* on **June 24, 2022**, so the timing (\u201cby the end of June 2022\u201d) was correct. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai))  \n- In *Dobbs*, the Court **upheld Mississippi\u2019s 15\u2011week abortion ban by a 6\u20133 vote**, but **only five justices joined the part of the majority opinion that explicitly overturned *Roe v. Wade* and *Planned Parenthood v. Casey***. Chief Justice Roberts concurred only in the judgment to uphold the law and did *not* join the portion overruling *Roe* and *Casey*, making the vote on overturning those precedents **5\u20134**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai))  \n- Multiple contemporaneous reports likewise describe the decision as **6\u20133 to uphold the law, 5\u20134 to overturn *Roe***. ([amp.cnn.com](https://amp.cnn.com/cnn/2022/06/24/politics/dobbs-mississippi-supreme-court-abortion-roe-wade?utm_source=openai))  \n\nBecause the Court did in fact issue the *Dobbs* decision by the end of June 2022 and there was a 5\u20134 majority specifically for overturning *Roe v. Wade*, the prediction matches both the timing and the vote breakdown on the overturning question.",
+      "sources": [
+        {
+          "end_index": 506,
+          "start_index": 390,
+          "title": "Dobbs v. Jackson Women's Health Organization",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai"
+        },
+        {
+          "end_index": 1043,
+          "start_index": 927,
+          "title": "Dobbs v. Jackson Women's Health Organization",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai"
+        },
+        {
+          "end_index": 1294,
+          "start_index": 1166,
+          "title": "Supreme Court overturns Roe v Wade | CNN Politics",
+          "type": "url_citation",
+          "url": "https://amp.cnn.com/cnn/2022/06/24/politics/dobbs-mississippi-supreme-court-abortion-roe-wade?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Supreme Court issued its decision in *Dobbs v. Jackson Women's Health Organization* on June 24, 2022 (within the end of June 2022 timeframe), explicitly overturning *Roe v. Wade* and *Planned Parenthood v. Casey*. The majority opinion overturning *Roe* was joined by five justices (Alito, Thomas, Gorsuch, Kavanaugh, Barrett), while Chief Justice Roberts concurred in the judgment upholding Mississippi's law but dissented from overturning *Roe*, joined by the three liberal dissenters (Breyer, Sotomayor, Kagan)\u2014resulting in a 5\u20134 split on overturning *Roe*. This matches the prediction precisely.\n\nSources:\n- [Supreme Court opinion](https://www.supremecourt.gov/opinions/21pdf/19-1392_6j37.pdf)\n- [Wikipedia: Dobbs v. Jackson](https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization) (\"A smaller majority of five justices joined the opinion... Chief Justice Roberts... did not join the majority in the opinion to overturn Roe\")\n- [SCOTUSblog](https://www.scotusblog.com/cases/case-files/dobbs-v-jackson-womens-health-organization/) (6-3 overall, with details on opinions)\n- Multiple reports confirm 5-4 on overturning *Roe* (e.g., Constitution Center, NYU Law)."
+    },
+    {
+      "id": "F-00:15:23.800",
+      "result": "right",
+      "explanation": "On June 24, 2022, the Supreme Court decided *Dobbs v. Jackson Women\u2019s Health Organization*, explicitly overturning *Roe v. Wade* and *Planned Parenthood v. Casey*.\u30100search15\u3011\n\nPrior to *Dobbs*, 13 states had enacted abortion \"trigger\" laws\u2014statutes passed in advance that were written to ban or severely restrict abortion automatically if *Roe* were overturned, without requiring new legislation. Standard lists of these trigger-law states include: Arkansas, Idaho, Kentucky, Louisiana, Mississippi, Missouri, North Dakota, Oklahoma, South Dakota, Tennessee, Texas, Utah, and Wyoming.\u30100search15\u3011\u30100search19\u3011\n\nAnalyses at the time of *Dobbs* by outlets summarizing Guttmacher Institute data similarly noted that 13 states had such trigger laws on the books, some taking effect immediately upon the decision and others after short built\u2011in waiting periods or certifications (e.g., 10\u201330 days, or upon an attorney\u2011general/governor certification), but **none** required the passage of new abortion\u2011ban legislation after *Dobbs* for these bans to activate.\u30100search2\u3011\u30100search3\u3011\n\nIn practice, several bans did take legal effect the same day as *Dobbs* (e.g., Kentucky, Louisiana, Missouri, South Dakota, Utah), while others were activated by their statutory mechanisms soon afterward; in some states they were later blocked by courts, but only after having been triggered.\u30101search3\u3011\u30101search9\u3011\n\nBecause (1) *Dobbs* did in fact overrule *Roe* and *Casey*, and (2) at least a dozen (indeed, 13) states already had legislatively enacted trigger laws that then took effect (subject only to built\u2011in timing or certification provisions, not new legislation), the prediction that \"at least a dozen\" states would have such laws that \"would go into effect\" without needing new laws was substantively correct. The slight imprecision in saying \"immediately\" doesn\u2019t change the core empirical claim, which clearly came true.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "The Supreme Court overruled Roe v. Wade and Planned Parenthood v. Casey in Dobbs v. Jackson Women's Health Organization on June 24, 2022. Multiple reliable sources confirm that 13 states had pre-existing trigger laws that automatically took effect shortly after (many on or the same day as the decision via AG certification, others within 30 days) without new legislation: Arkansas, Idaho, Kentucky, Louisiana, Mississippi, Missouri, North Dakota, Oklahoma, South Dakota, Tennessee, Texas, Utah, and Wyoming (e.g., [CT.gov report](https://cga.ct.gov/2022/rpt/pdf/2022-R-0227.pdf), [USAFacts](https://usafacts.org/articles/how-have-abortion-laws-changed-since-the-dobbs-ruling/), [Guttmacher](https://www.guttmacher.org/2023/06/state-abortion-policy-landscape-one-year-post-roe) noting 9 immediately banned). This exceeds the 'at least 12' threshold; 'immediately' aligns with trigger design for prompt activation post-decision, as described pre-Dobbs (e.g., [CNN May 2022](https://www.cnn.com/2022/05/03/us/state-abortion-trigger-laws-roe-v-wade-overturned)). Some faced injunctions later, but activated automatically as predicted."
+    },
+    {
+      "id": "E-00:35:28.440",
+      "result": "right",
+      "explanation": "Evidence since the Dobbs decision strongly supports the prediction that overturning *Roe* would turbo\u2011charge conservative legislatures and attorneys general to press new laws and test cases on abortion and LGBTQ-related rights.\n\nOn abortion, state legislative activity and enforcement surged after *Dobbs*. Guttmacher documents that in 2022 alone, 16 states had near\u2011total abortion bans in effect at some point, and many more enacted gestational\u2011age bans in the immediate aftermath of *Dobbs*.\u00a0\u30101search1\u3011 In 2023, states enacted 80 additional abortion restrictions, leaving about 14 states enforcing total bans and nearly 18 million women of reproductive age without in\u2011state access.\u00a0\u30101search10\u3011 A Guardian overview shows that by late 2025, 13 states had near\u2011total abortion bans and several others had six\u2011week bans, largely across Republican\u2011controlled South and Midwest states.\u00a0\u30101news12\u3011 The *Dobbs* case summary itself notes that, immediately after the ruling, multiple Republican governors and attorneys general invoked trigger laws and pushed new bans into effect.\u00a0\u30100search24\u3011\n\nOn LGBTQ rights, there has been a clear, quantifiable escalation in conservative state efforts. The ACLU/HRC-tracked data show that in 2023, over 520\u2013571 anti\u2011LGBTQ or \"anti\u2011equality\" bills were introduced in state legislatures, with 70+ enacted\u2014far more than any prior year and nearly triple 2022 levels.\u00a0\u30101search0\u30111\u30115\u3011 This trend continued into 2024 and 2025, with hundreds more bills, many targeting gender\u2011affirming care, school speech, and public accommodations; roughly 40% of trans youth now live in states that have banned gender\u2011affirming care for minors.\u00a0\u30101search11\u30111\u301116\u3011 Such measures directly test or narrow previously understood constitutional and civil rights protections for LGBTQ people.\n\nConservative attorneys general and allied groups have also aggressively driven new test cases to the Supreme Court and other federal courts:\n- *United States v. Skrmetti* (2025) upheld Tennessee\u2019s ban on gender\u2011affirming care for minors, with Tennessee AG Jonathan Skrmetti as the named defendant; the Court treated it as a major test of Equal Protection for transgender people.\u00a0\u30100search19\u3011\n- *Moyle v. United States* (Idaho EMTALA case) put Idaho\u2019s near\u2011total abortion ban in direct conflict with federal emergency\u2011care obligations; Idaho\u2019s officials sought Supreme Court backing to enforce the ban even in medical emergencies.\u00a0\u30102search0\u30112\u30114\u3011\n- *303 Creative LLC v. Elenis* (2023) was a strategic test of whether public\u2011accommodations laws protecting same\u2011sex couples could be limited by First Amendment claims, supported by numerous conservative states and advocacy groups.\u00a0\u30100search16\u3011\n- *Chiles v. Salazar* (pending) challenges Colorado\u2019s ban on conversion therapy for minors as a First Amendment violation, another ADF-backed vehicle to chip away at LGBTQ protections.\u00a0\u30100search20\u3011\n- States like Louisiana and Texas have launched novel criminal and civil actions against out\u2011of\u2011state telehealth abortion providers, widely seen as test cases over shield laws and interstate abortion conflicts that could ultimately reach the Supreme Court.\u00a0\u30102news18\u30112\u301114\u3011\n\nCollectively, the post\u2011*Dobbs* data show exactly the dynamic the speaker anticipated: conservative legislatures and attorneys general, seeing the Court\u2019s new openness, have significantly escalated both lawmaking and litigation to revisit and test constitutional baselines on abortion and LGBTQ rights. That makes the prediction **right**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Post-Dobbs (June 2022), conservative states significantly ramped up abortion restrictions: 13 states enacted total bans and 28 gestational limits ([KFF Abortion Dashboard](https://www.kff.org/womens-health-policy/abortion-in-the-u-s-dashboard/), [Guttmacher](https://www.guttmacher.org/state-policy/explore/state-policies-abortion-bans), [NYT Tracker](https://www.nytimes.com/interactive/2024/us/abortion-laws-roe-v-wade.html)). On LGBTQ rights, Republican states passed record anti-trans laws (e.g., gender-affirming care bans in 24+ states, bathroom/sports restrictions), with 22 states enacting in 2025 alone and 70 in 2023 ([ACLU Mapping](https://www.aclu.org/legislative-attacks-on-lgbtq-rights-2025), [HRC](https://www.hrc.org/press-releases/roundup-of-anti-lgbtq-legislation-advancing-in-states-across-the-country)). These test settled rights like privacy/equal protection. SCOTUS cases include *U.S. v. Skrmetti* (upheld TN trans care ban, 2025) and mifepristone challenges; AGs like TX's Paxton sued over interstate pills, MO's Bailey defended bans and sued FDA ([Brennan Center](https://www.brennancenter.org/our-work/research-reports/state-court-abortion-litigation-tracker), [State Court Report](https://statecourtreport.org/our-work/analysis-opinion/case-trends-post-dobbs-and-skrmetti-state-courts-are-battlegrounds)). This matches the predicted surge in legislation, enforcement, and SCOTUS tests."
+    },
+    {
+      "id": "G-00:56:59.370",
+      "result": "right",
+      "explanation": "As of November 30, 2025, the U.S. Supreme Court has **not overturned the constitutional right to same\u2011sex marriage**. *Obergefell v. Hodges* (2015) remains binding precedent, and the Court recently declined to hear a case (Davis v. Ermold) that explicitly asked it to overturn Obergefell, rejecting the petition without comment and leaving nationwide marriage equality in place.([apnews.com](https://apnews.com/article/50eb4ad421911696e742d8c4fb4962fd?utm_source=openai))\n\nLikewise, the Court has **not overturned the constitutional protections for contraception** established in *Griswold v. Connecticut* and its progeny; those decisions are still good law. Justice Clarence Thomas\u2019s Dobbs concurrence did call for reconsidering Griswold (contraception) and Obergefell (same\u2011sex marriage), but the Court has not acted on that suggestion, and Griswold\u2019s recognition of a constitutional right for married couples to use contraception remains in force.([washingtonpost.com](https://www.washingtonpost.com/politics/2022/06/24/contraception-supreme-court-clarence-thomas-griswold/?utm_source=openai))\n\nThere is also **no national legal regime outlawing contraception**. Federal law does not ban contraceptives; instead, Congress has seen repeated efforts to *protect* access via the Right to Contraception Act and related bills, and the FDA continues to approve and even expand over\u2011the\u2011counter contraceptive options. Access has become more fragmented, with many residents in states that restrict or complicate contraceptive access, and federal and state policies have reduced funding or coverage in some contexts, but these are not a nationwide prohibition.([guttmacher.org](https://www.guttmacher.org/fact-sheet/right-to-contraception-in-us?utm_source=openai))\n\nBecause (1) Obergefell and the core constitutional protections for contraception remain intact, and (2) no nationwide legal ban on contraception has emerged, Sacks\u2019s prediction is **substantively correct** as of the current date.",
+      "sources": [
+        {
+          "end_index": 504,
+          "start_index": 411,
+          "title": "Supreme Court rejects call to overturn its decision legalizing same-sex marriage nationwide",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/50eb4ad421911696e742d8c4fb4962fd?utm_source=openai"
+        },
+        {
+          "end_index": 1131,
+          "start_index": 985,
+          "title": "Clarence Thomas says right to contraception in Griswold v. Connecticut was 'erroneous' - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2022/06/24/contraception-supreme-court-clarence-thomas-griswold/?utm_source=openai"
+        },
+        {
+          "end_index": 1795,
+          "start_index": 1691,
+          "title": "The Right to Contraception in the United States | Guttmacher Institute",
+          "type": "url_citation",
+          "url": "https://www.guttmacher.org/fact-sheet/right-to-contraception-in-us?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction held true. The U.S. Supreme Court has not overturned *Obergefell v. Hodges* (same-sex marriage rights); in November 2025, it declined to hear *Davis v. Ermold*, a case seeking to challenge its constitutionality ([SCOTUSblog](https://www.scotusblog.com/2025/11/supreme-court-declines-to-hear-case-on-constitutionality-of-same-sex-marriage/), [CNN](https://www.cnn.com/2025/11/10/politics/supreme-court-same-sex-marriage-obergefell-kim-davis), [NYT](https://www.nytimes.com/2025/11/10/us/politics/supreme-court-same-sex-marriage.html)). Similarly, *Griswold v. Connecticut* (contraception rights) remains intact, with 2025 articles affirming it as good law 60 years on and no overturning ([NWLC](https://nwlc.org/resource/the-supreme-court-recognized-a-constitutional-right-to-contraception-in-1965-60-years-later-gaps-persist-and-attacks-continue/), [Guttmacher](https://www.guttmacher.org/fact-sheet/right-to-contraception-in-us)). No national or federal ban on contraception has emerged; searches yield only discussions of threats or abortion-related policies like Project 2025, but none enacted ([KFF](https://www.kff.org/womens-health-policy/a-new-reproductive-health-landscape-possible-actions-that-could-be-undertaken-during-the-second-trump-administration/), [PBS](https://www.pbs.org/newshour/show/after-fall-of-roe-pro-life-activists-take-aim-at-birth-control)). *Dobbs v. Jackson* (2022) explicitly preserved these precedents."
+    },
+    {
+      "id": "D-00:59:36.630",
+      "result": "right",
+      "explanation": "The \u201cthen-pending\u201d higher-education affirmative action case in 2022 refers to *Students for Fair Admissions v. Harvard* and *Students for Fair Admissions v. University of North Carolina*. On June 29, 2023, the U.S. Supreme Court held that the race-conscious admissions programs at Harvard and UNC violate the Equal Protection Clause of the Fourteenth Amendment, ruling those affirmative action policies unconstitutional. ([supreme.justia.com](https://supreme.justia.com/cases/federal/us/600/20-1199/?utm_source=openai))  \n\nNews and institutional summaries consistently describe this as the Court **striking down** or **rejecting** affirmative action in college admissions, effectively ending the use of race-conscious admissions policies of the type at issue nationwide. ([news.harvard.edu](https://news.harvard.edu/gazette/story/2023/06/harvard-united-in-resolve-in-face-of-supreme-courts-admissions-ruling/?utm_source=openai))  \n\nBecause Chamath predicted that the Supreme Court would strike down affirmative action policies in that higher-education case, and the Court in fact did so in its 2023 decisions, the prediction was **right**.",
+      "sources": [
+        {
+          "end_index": 552,
+          "start_index": 454,
+          "title": "Students for Fair Admissions, Inc. v. President and Fellows of Harvard College | 600 U.S. ___ (2023) | Justia U.S. Supreme Court Center",
+          "type": "url_citation",
+          "url": "https://supreme.justia.com/cases/federal/us/600/20-1199/?utm_source=openai"
+        },
+        {
+          "end_index": 963,
+          "start_index": 806,
+          "title": "Harvard united in resolve in face of Supreme Court\u2019s admissions ruling \u2014 Harvard Gazette",
+          "type": "url_citation",
+          "url": "https://news.harvard.edu/gazette/story/2023/06/harvard-united-in-resolve-in-face-of-supreme-courts-admissions-ruling/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was made in May 2022 regarding the pending Supreme Court cases *Students for Fair Admissions, Inc. v. Harvard* and *v. UNC*, where certiorari was granted on January 24, 2022 ([Oyez](https://www.oyez.org/cases/2022/20-1199), [Wikipedia](https://en.wikipedia.org/wiki/Students_for_Fair_Admissions_v._Harvard)). On June 29, 2023, the Court ruled 6-3 that race-based affirmative action in college admissions violates the Equal Protection Clause, effectively striking down the policies ([SCOTUS opinion](https://www.supremecourt.gov/opinions/22pdf/20-1199_hgdj.pdf), [NYT](https://www.nytimes.com/2023/06/29/us/politics/supreme-court-admissions-affirmative-action-harvard-unc.html)). The prediction was correct."
+    },
+    {
+      "id": "G-01:06:16.940",
+      "result": "wrong",
+      "explanation": "The prediction described a possible outcome in which Chief Justice Roberts would *\u201cpeel off a vote\u201d* so that:\n\n1. **Roe v. Wade would be upheld**, and\n2. It would be *modified* to allow restrictive state laws like Mississippi\u2019s 15\u2011week ban.\n\nWhat actually happened in **Dobbs v. Jackson Women\u2019s Health Organization** on June 24, 2022 was:\n\n- The Supreme Court **upheld Mississippi\u2019s 15\u2011week abortion ban**.\n- A **5\u20134 majority explicitly overturned Roe v. Wade and Planned Parenthood v. Casey**, holding that the Constitution does not confer a right to abortion.\n- Chief Justice Roberts **concurred only in the judgment** to uphold Mississippi\u2019s law but did **not** join the portion of the opinion that overturned Roe and Casey; he proposed a more limited ruling that would stop at upholding the 15\u2011week ban while not fully overruling Roe/Casey, and he did **not** attract an additional vote to that position.\n\nBecause no justice joined Roberts in a compromise position and Roe was not upheld in any form, the scenario the predictor treated as still possible \u2014 *Roe upheld but modified to allow laws like Mississippi\u2019s* \u2014 did **not** occur.\n\nTherefore, the prediction is **wrong**: the specific outcome he floated never materialized, and Roe v. Wade was overturned instead.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction suggested that as of May-June 2022, it was possible for Chief Justice Roberts to secure an additional vote to uphold *Roe v. Wade* while modifying it to allow restrictive state laws like Mississippi's 15-week ban. In reality, the Supreme Court issued its decision in *Dobbs v. Jackson Women's Health Organization* on June 24, 2022, overturning *Roe* and *Casey* by a 5-4 vote (Alito, Thomas, Gorsuch, Kavanaugh, Barrett). Roberts concurred only in upholding the Mississippi law but dissented from overruling *Roe*, proposing a narrower approach that no other justice joined. He did not secure the predicted vote for his compromise position. ([Supreme Court opinion](https://www.supremecourt.gov/opinions/21pdf/19-1392_6j37.pdf), [Wikipedia](https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization), [SCOTUSblog](https://www.scotusblog.com/cases/case-files/dobbs-v-jackson-womens-health-organization/), [CNN analysis](https://www.cnn.com/2022/06/26/politics/john-roberts-chief-justice-roe-dobbs-analysis))."
+    },
+    {
+      "id": "G-01:06:16.940-2",
+      "result": "right",
+      "explanation": "1. **Condition met: Roe overturned along lines of leaked Alito draft.** On June 24, 2022, the Supreme Court decided *Dobbs v. Jackson Women\u2019s Health Organization*, explicitly overruling *Roe v. Wade* and *Planned Parenthood v. Casey* and returning abortion regulation to \u201cthe people and their elected representatives.\u201d Analyses note the final majority opinion was substantially similar to the earlier leaked Alito draft. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai))\n\n2. **Democrats in Congress attempted to codify Roe.** The Women\u2019s Health Protection Act (WHPA), designed to enshrine Roe/Casey-style abortion protections in federal statute, passed the House in September 2021 (218\u2013211) and again on July 15, 2022 (219\u2013210) after Roe was overturned. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Women%27s_Health_Protection_Act?utm_source=openai)) These were explicit attempts by congressional Democrats to \u201ccodify Roe\u201d in federal law.\n\n3. **Those efforts failed due to lack of votes to overcome/eliminate the Senate filibuster.** In the Senate, WHPA failed on key cloture/advancement votes. On May 11, 2022, the bill to codify abortion protections received 49\u201351, far short of the 60 votes needed to overcome a filibuster. ([wboi.org](https://www.wboi.org/npr-news/npr-news/2022-05-11/a-bill-to-codify-abortion-protections-fails-in-the-senate?utm_source=openai)) President Biden later publicly supported a filibuster exception to codify Roe, but Senators Manchin and Sinema maintained their opposition to changing filibuster rules, and Biden acknowledged Democrats did not have the votes to alter the filibuster. ([washingtonpost.com](https://www.washingtonpost.com/politics/2022/06/30/biden-abortion-filibuster-nato/?utm_source=openai)) No federal law codifying Roe has been enacted since.\n\n4. **Post-Roe, abortion policy has defaulted to state control in practice.** The Dobbs majority expressly stated that Roe and Casey are overruled and that \u201cthe authority to regulate abortion is returned to the people and their elected representatives,\u201d with the decision \u201cdevolving to state governments the authority to regulate any aspect of abortion that federal law does not preempt.\u201d ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai)) After Dobbs, a patchwork of state laws emerged: some states implemented near-total bans via trigger laws or revived old statutes, while others protected or expanded access, confirming that abortion policy is now largely determined at the state level absent a federal codification. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai))\n\nTaken together, the predicted sequence occurred: Roe was overturned along the lines of the draft; Democrats tried and failed to codify Roe because they lacked the votes to overcome or scrap the filibuster; and in the aftermath, abortion regulation has effectively defaulted to state control. Hence the prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 570,
+          "start_index": 454,
+          "title": "Dobbs v. Jackson Women's Health Organization",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai"
+        },
+        {
+          "end_index": 957,
+          "start_index": 856,
+          "title": "Women's Health Protection Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Women%27s_Health_Protection_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1475,
+          "start_index": 1336,
+          "title": "A bill to codify abortion protections fails in the Senate | WBOI - NPR News & Diverse Music in Northeast Indiana",
+          "type": "url_citation",
+          "url": "https://www.wboi.org/npr-news/npr-news/2022-05-11/a-bill-to-codify-abortion-protections-fails-in-the-senate?utm_source=openai"
+        },
+        {
+          "end_index": 1850,
+          "start_index": 1726,
+          "title": "Biden calls for suspending filibuster rules to guarantee abortion rights - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2022/06/30/biden-abortion-filibuster-nato/?utm_source=openai"
+        },
+        {
+          "end_index": 2411,
+          "start_index": 2295,
+          "title": "Dobbs v. Jackson Women's Health Organization",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai"
+        },
+        {
+          "end_index": 2809,
+          "start_index": 2693,
+          "title": "Dobbs v. Jackson Women's Health Organization",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Roe v. Wade was overturned by *Dobbs v. Jackson* (June 24, 2022), matching the leaked draft's effect ([KFF](https://www.kff.org/womens-health-policy/abortion-in-the-u-s-dashboard/)). Democrats attempted to codify Roe via the Women's Health Protection Act (WHPA): House passed July 2022; Senate cloture failed (e.g., 49-51 votes pre/post-Dobbs due to filibuster, lacking 60 votes; Manchin/Sinema opposed filibuster elimination) ([Congress.gov S.4132](https://www.congress.gov/bill/117th-congress/senate-bill/4132), [Senate.gov votes](https://www.senate.gov/legislative/LIS/roll_call_votes/vote1172/vote_117_2_00065.htm), [WHYY](https://whyy.org/articles/abortion-legislation-codify-roe-senate-vote/)). No federal codification passed 2022-2025 ([searches confirm no such law](https://www.congress.gov/bill/119th-congress/house-bill/722)). Abortion policy defaulted to states: 14+ bans enacted, protections in others ([Guttmacher](https://www.guttmacher.org/2023/06/state-abortion-policy-landscape-one-year-post-roe), [Repro Rights](https://reproductiverights.org/maps/abortion-laws-by-state/)). Prediction fully accurate."
+    },
+    {
+      "id": "G-01:06:16.940-3",
+      "result": "right",
+      "explanation": "The prediction was that, after Roe was overturned, the U.S. would roughly sort into three groups: (1) about half the states with little/no change in abortion access; (2) about 12 states where pre\u2011existing trigger or other restrictive laws would immediately take effect; and (3) roughly a dozen remaining purple states where abortion became a major legislative and electoral battleground.\n\nWhat actually happened closely matches this structure:\n\n1. **States with little or no new restriction (roughly half the country).**  \n   - In the year after *Dobbs*, analyses noted that abortion \"remains legal and protected\" in about 20 states, largely on the coasts and some upper\u2011Midwest states, with that number growing to about 29 states plus D.C. by late 2024 as more blue or blue\u2011leaning states added statutory or constitutional protections (e.g., CA, NY, WA, CO, IL, VT, MI, etc.).\n   - These are predominantly Democratic\u2011leaning states where the end of Roe did **not** reduce access; many actually expanded protections, but in terms of *restrictions imposed on residents* his claim of \u201cabout half the states\u201d seeing no new ban is directionally accurate.\n   \n   Sources describe 20 states with legal and protected abortion one year post\u2011Dobbs and later 29 states plus D.C. with abortion legal and protected while bans cluster elsewhere, i.e., roughly half or more of states maintaining access.\n   ([newswise.com](https://www.newswise.com/articles/bloomberg-school-experts-on-anniversary-of-dobbs-decision-overturning-roe-v-wade?utm_source=openai))\n\n2. **States where pre\u2011existing bans or trigger laws quickly took effect (\u224812 states).**  \n   - Before the decision, the Guttmacher Institute identified **13 trigger\u2011ban states** whose laws were designed to take effect automatically or by rapid state action if Roe fell (AR, ID, KY, LA, MS, MO, ND, OK, SD, TN, TX, UT, WY).([guttmacher.org](https://www.guttmacher.org/node/33571/printable/print?utm_source=openai))  \n   - After *Dobbs* in June 2022, those trigger bans (plus some revived pre\u2011Roe bans) rapidly went into force, and by late 2022\u20132023, around **14 states were enforcing total or near\u2011total abortion bans**, overwhelmingly in the South and interior.([guttmacher.org](https://www.guttmacher.org/node/300446/printable/print?utm_source=openai))  \n   - That is essentially the group Sacks described as \u201cabout 12 states\u201d where \u201crestrictions that are already on the books are going to go into effect,\u201d and his order\u2011of\u2011magnitude is very close to the actual 13 trigger\u2011ban states.\n\n3. **Battleground purple states (\u224812\u201313).**  \n   - Since *Dobbs*, abortion has become a central contested issue in a band of politically mixed states: Kansas, Kentucky, Michigan, Montana, and Vermont voted on abortion\u2011related referenda in 2022; Kansas and Kentucky (red or purple) rejected anti\u2011abortion amendments, while Michigan and Vermont adopted pro\u2011choice constitutional protections.([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Montana_Legislative_Referendum_131?utm_source=openai))  \n   - In 2024, **10 states** had abortion on the ballot (AZ, CO, FL, MD, MO, MT, NE, NV, NY, SD), many of them classic or emerging purple states (AZ, MO, NV, NE, FL, MT). Seven passed pro\u2011choice measures; three failed, underscoring how hotly contested policy is in this middle group.([time.com](https://time.com/7018665/abortion-ballot-measures-2024/?utm_source=openai))  \n   - Media and research summaries repeatedly characterize the post\u2011Dobbs landscape as a sharp divide between solidly restrictive and solidly protective states, with a remaining tier of states\u2014largely in the Midwest, interior West, and some Sunbelt states\u2014where abortion is the focal point of ongoing legislative fights and ballot campaigns.([theguardian.com](https://www.theguardian.com/us-news/ng-interactive/2024/jul/29/abortion-laws-bans-by-state?utm_source=openai))  \n   \n   The number of such battleground states is not fixed, but the set of states where abortion is the defining policy and electoral issue is on the order of a dozen, in line with his \u201c12 or 13 states that become battlegrounds.\u201d\n\nBecause the *pattern* he forecast\u2014a three\u2011way split into (a) roughly half of states with continued access, (b) roughly a dozen states where pre\u2011existing bans immediately bit, and (c) roughly a dozen purple\u2011state battlegrounds\u2014does in fact describe the post\u2011Dobbs map reasonably well (even if exact counts and which states fall in which bucket have evolved), this prediction is best classified as **right** in substance.",
+      "sources": [
+        {
+          "end_index": 1587,
+          "start_index": 1437,
+          "title": "Bloomberg School Experts on Anniversary of Dobbs Decision Overturning Roe v. Wade | Newswise",
+          "type": "url_citation",
+          "url": "https://www.newswise.com/articles/bloomberg-school-experts-on-anniversary-of-dobbs-decision-overturning-roe-v-wade?utm_source=openai"
+        },
+        {
+          "end_index": 2005,
+          "start_index": 1914,
+          "title": "13 States Have Abortion Trigger Bans\u2014Here's What Happens When Roe Is Overturned",
+          "type": "url_citation",
+          "url": "https://www.guttmacher.org/node/33571/printable/print?utm_source=openai"
+        },
+        {
+          "end_index": 2346,
+          "start_index": 2254,
+          "title": "State Policy Trends 2023: In the First Full Year Since Roe Fell, a Tumultuous Year for Abortion and Other Reproductive Health Care",
+          "type": "url_citation",
+          "url": "https://www.guttmacher.org/node/300446/printable/print?utm_source=openai"
+        },
+        {
+          "end_index": 3082,
+          "start_index": 2973,
+          "title": "2022 Montana Legislative Referendum 131",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Montana_Legislative_Referendum_131?utm_source=openai"
+        },
+        {
+          "end_index": 3455,
+          "start_index": 3368,
+          "title": "Here's Where Abortion Will Be on the Ballot in the 2024 Election",
+          "type": "url_citation",
+          "url": "https://time.com/7018665/abortion-ballot-measures-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 3928,
+          "start_index": 3799,
+          "title": "Tracking abortion laws across the United States",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/ng-interactive/2024/jul/29/abortion-laws-bans-by-state?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction accurately described the post-Dobbs landscape. Immediately after the June 2022 Dobbs decision overturning Roe v. Wade, approximately 13 states enforced near-total bans or substantial restrictions via trigger laws or pre-existing statutes (e.g., AL, AR, ID, KY, LA, MS, MO, ND, OK, SD, TN, TX, WV), matching the ~12 states predicted. Around 25 mostly Democratic-led states (e.g., CA, CO, CT, DE, HI, IL, MA, MD, ME, MN, NJ, NM, NY, OR, RI, VT, WA and others) saw little or no change, quickly enacting or maintaining protections for abortion access up to viability. The remaining ~12-13 swing/purple states (e.g., AZ, FL, GA, IA, KS, MI, NC, NE, NV, OH, PA, WI) became major battlegrounds with legislative fights, litigation, and ballot measures, as predicted. Current data (Nov 2025) confirms 13 states with near-total bans and 30+ with broad access, aligning with the initial categorization ([NYT Abortion Laws Tracker](https://www.nytimes.com/interactive/2024/us/abortion-laws-roe-v-wade.html), [KFF Dashboard](https://www.kff.org/womens-health-policy/abortion-in-the-u-s-dashboard/), [Guttmacher Map](https://states.guttmacher.org/policies/), [Repro Rights Map](https://reproductiverights.org/maps/abortion-laws-by-state/))."
+    },
+    {
+      "id": "G-01:06:16.940-4",
+      "result": "right",
+      "explanation": "Available post\u2011Dobbs evidence broadly supports Sacks\u2019s prediction that, in a post\u2011Roe world, state\u2011level politicians whose abortion positions are closer to the median voter in their state gain an electoral edge over more absolutist positions.\n\n1. **Voters have repeatedly chosen policies near the statewide median over absolutist bans.** Since Dobbs, voters have backed abortion\u2011rights or viability\u2011based measures in a wide range of states: Kansas rejected a constitutional amendment that would have allowed near\u2011total bans by ~59\u201341 in 2022, with the pro\u2011rights side winning in every congressional district, including deep\u2011red ones.([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Kansas_abortion_referendum?utm_source=openai)) Kentucky voters likewise defeated a 2022 amendment stating there is no constitutional right to abortion.([rasmussenreports.com](https://www.rasmussenreports.com/public_content/political_commentary/commentary_by_j_miles_coleman/the_atlas_of_post_dobbs_abortion_ballot_measures_part_two?utm_source=openai)) In 2022 and 2023, California, Michigan, Vermont and then Ohio approved constitutional protections for abortion up to viability, often by double\u2011digit margins even in states that lean Republican in federal races.([kff.org](https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/November_2023_Ohio_Issue_1?utm_source=openai)) In 2024, voters again adopted viability\u2011oriented or broad abortion\u2011rights amendments in Arizona, Colorado, Maryland, Montana and Nevada,([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Arizona_Proposition_139?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Colorado_Amendment_79?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Maryland_Question_1?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Montana_Initiative_128?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_ballot_measures?utm_source=openai)) while an abortion\u2011rights measure in Florida still drew 57% support despite failing the 60% supermajority requirement.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Florida_Amendment_4?utm_source=openai)) The main exception, Nebraska, saw voters choose a relatively *less* absolutist restriction\u2014a constitutional ban after the first trimester with rape/incest/medical\u2011emergency exceptions (Initiative 434) over a broader rights\u2011to\u2011viability measure (Initiative 439)([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Nebraska_Initiative_434?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Nebraska_Initiative_439?utm_source=openai))\u2014still consistent with voters gravitating toward a perceived middle ground for that very conservative state.\n\n2. **Politicians visibly tied to hardline positions have been punished, while those closer to state opinion have done better.** In Kentucky, Democrat Andy Beshear won reelection governor in 2023 by over 5 points in a deep\u2011red state; reporting credits a viral ad highlighting that Republican Daniel Cameron had backed a near\u2011total ban with no rape or incest exceptions as a key factor in Cameron\u2019s loss, even Kentucky GOP leaders acknowledged its impact.([en.wikipedia.org](https://en.wikipedia.org/wiki/2023_Kentucky_gubernatorial_election?utm_source=openai)) In Virginia, Governor Youngkin and legislative Republicans framed a 15\u2011week ban with exceptions as a \"consensus\" limit, but polls showed voters split on that policy and broadly seeing GOP abortion positions as too restrictive or \"extreme\";([theguardian.com](https://www.theguardian.com/us-news/2023/sep/09/virginia-election-abortion-rights?utm_source=openai))([washingtonpost.com](https://www.washingtonpost.com/dc-md-va/2023/10/20/abortion-virginia-election-poll-youngkin-approval/?utm_source=openai)) Democrats ran squarely against new restrictions and went on to win full control of the legislature in 2023, blocking Youngkin\u2019s proposal\u2014analyses explicitly linked GOP losses to their abortion stance.([stateline.org](https://stateline.org/2023/11/09/virginia-republicans-embraced-a-15-week-abortion-ban-and-then-lost/?utm_source=openai)) In red and purple states with abortion on the ballot, Democratic/state\u2011level pro\u2011rights candidates systematically ran ahead of generic partisan baselines when their message matched the broadly pro\u2011Roe preferences revealed by the ballot questions.([kff.org](https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai))([judiciary.senate.gov](https://www.judiciary.senate.gov/press/releases/on-the-51st-anniversary-of-roe-v-wade-durbin-recommits-to-protecting-reproductive-rights?utm_source=openai))\n\n3. **Quantitative studies find an electoral penalty for hardline anti\u2011abortion positions, implying a relative advantage for moderation.** KFF\u2019s analysis of the 2022 midterms using AP VoteCast found that voters for whom Dobbs/abortion was the most important issue backed Democratic House candidates by about 70\u201325, and that the Dobbs decision had a \"major impact\" on turnout and candidate choice for many key groups; this helps explain Democrats\u2019 better\u2011than\u2011expected performance, particularly where abortion was salient.([kff.org](https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai)) A political\u2011science style analysis of 2022 races estimates that Republican candidates\u2019 pro\u2011life stance and the Dobbs backlash likely cost the GOP around 1 percentage point nationally, and that, after controlling for incumbency and Trump alignment, candidates who maintained hardline pro\u2011life positions lost roughly 0.6 points more than relatively more moderate Republicans\u2014small but real margins that matter in close races.([decivitate.jamesjheaney.com](https://decivitate.jamesjheaney.com/p/the-impact-of-dobbs-on-general-elections)) That is exactly the kind of marginal advantage Sacks was pointing to: over time, being closer to voter sentiment on abortion appears to yield electoral gains at the margins, while absolutist positions (especially near\u2011total bans without broad exceptions) have been electorally costly.\n\n4. **Caveats.** The effect size is modest, and many other factors (partisanship, Trump, the economy) shape election outcomes. There are also outliers like Nebraska\u2019s relatively strict 2024 amendment([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Nebraska_Initiative_434?utm_source=openai)) and ongoing efforts in states like Missouri to roll back voter\u2011approved abortion\u2011rights measures([apnews.com](https://apnews.com/article/5581a8bb6f6dacf876b85731ed0181dd?utm_source=openai)). But taken together\u2014ballot\u2011measure results across ideologically diverse states, high\u2011salience gubernatorial and legislative races (Kentucky, Virginia, Michigan, Ohio), and quantitative estimates of an abortion\u2011related penalty for hardliners\u2014the post\u2011Roe electoral record aligns with Sacks\u2019s claim in direction and mechanism. Politicians whose positions track where \u201cmost of the people in their state are\u201d on abortion have, on balance, fared better than those holding uncompromising extremes.",
+      "sources": [
+        {
+          "end_index": 769,
+          "start_index": 668,
+          "title": "2022 Kansas abortion referendum",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Kansas_abortion_referendum?utm_source=openai"
+        },
+        {
+          "end_index": 1074,
+          "start_index": 874,
+          "title": "The Atlas of Post-Dobbs Abortion Ballot Measures: Part Two - Rasmussen Reports\u00ae",
+          "type": "url_citation",
+          "url": "https://www.rasmussenreports.com/public_content/political_commentary/commentary_by_j_miles_coleman/the_atlas_of_post_dobbs_abortion_ballot_measures_part_two?utm_source=openai"
+        },
+        {
+          "end_index": 1394,
+          "start_index": 1286,
+          "title": "How The Supreme Court's Dobbs Decision Played In 2022 Midterm Election: KFF/AP VoteCast Analysis | KFF",
+          "type": "url_citation",
+          "url": "https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai"
+        },
+        {
+          "end_index": 1490,
+          "start_index": 1394,
+          "title": "November 2023 Ohio Issue 1",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/November_2023_Ohio_Issue_1?utm_source=openai"
+        },
+        {
+          "end_index": 1725,
+          "start_index": 1627,
+          "title": "2024 Arizona Proposition 139",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Arizona_Proposition_139?utm_source=openai"
+        },
+        {
+          "end_index": 1821,
+          "start_index": 1725,
+          "title": "2024 Colorado Amendment 79",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Colorado_Amendment_79?utm_source=openai"
+        },
+        {
+          "end_index": 1915,
+          "start_index": 1821,
+          "title": "2024 Maryland Question 1",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Maryland_Question_1?utm_source=openai"
+        },
+        {
+          "end_index": 2012,
+          "start_index": 1915,
+          "title": "2024 Montana Initiative 128",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Montana_Initiative_128?utm_source=openai"
+        },
+        {
+          "end_index": 2116,
+          "start_index": 2012,
+          "title": "2024 United States ballot measures",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_ballot_measures?utm_source=openai"
+        },
+        {
+          "end_index": 2328,
+          "start_index": 2234,
+          "title": "2024 Florida Amendment 4",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Florida_Amendment_4?utm_source=openai"
+        },
+        {
+          "end_index": 2687,
+          "start_index": 2589,
+          "title": "2024 Nebraska Initiative 434",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Nebraska_Initiative_434?utm_source=openai"
+        },
+        {
+          "end_index": 2785,
+          "start_index": 2687,
+          "title": "2024 Nebraska Initiative 439",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Nebraska_Initiative_439?utm_source=openai"
+        },
+        {
+          "end_index": 3456,
+          "start_index": 3350,
+          "title": "2023 Kentucky gubernatorial election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2023_Kentucky_gubernatorial_election?utm_source=openai"
+        },
+        {
+          "end_index": 3820,
+          "start_index": 3700,
+          "title": "Virginia\u2019s off-off-year election is next big test for reproductive rights | US politics | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2023/sep/09/virginia-election-abortion-rights?utm_source=openai"
+        },
+        {
+          "end_index": 3963,
+          "start_index": 3820,
+          "title": "Post-Schar School poll: Abortion is key for Dems., women in Virginia election - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/dc-md-va/2023/10/20/abortion-virginia-election-poll-youngkin-approval/?utm_source=openai"
+        },
+        {
+          "end_index": 4301,
+          "start_index": 4164,
+          "title": "Virginia Republicans embraced a 15-week abortion ban \u2014 and then lost \u2022 Stateline",
+          "type": "url_citation",
+          "url": "https://stateline.org/2023/11/09/virginia-republicans-embraced-a-15-week-abortion-ban-and-then-lost/?utm_source=openai"
+        },
+        {
+          "end_index": 4656,
+          "start_index": 4548,
+          "title": "How The Supreme Court's Dobbs Decision Played In 2022 Midterm Election: KFF/AP VoteCast Analysis | KFF",
+          "type": "url_citation",
+          "url": "https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai"
+        },
+        {
+          "end_index": 4836,
+          "start_index": 4656,
+          "title": "On the 51st Anniversary of Roe V. Wade, ... | United States Senate Committee on the Judiciary",
+          "type": "url_citation",
+          "url": "https://www.judiciary.senate.gov/press/releases/on-the-51st-anniversary-of-roe-v-wade-durbin-recommits-to-protecting-reproductive-rights?utm_source=openai"
+        },
+        {
+          "end_index": 5470,
+          "start_index": 5362,
+          "title": "How The Supreme Court's Dobbs Decision Played In 2022 Midterm Election: KFF/AP VoteCast Analysis | KFF",
+          "type": "url_citation",
+          "url": "https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai"
+        },
+        {
+          "end_index": 6005,
+          "start_index": 5894,
+          "title": "The Impact of Dobbs on General Elections",
+          "type": "url_citation",
+          "url": "https://decivitate.jamesjheaney.com/p/the-impact-of-dobbs-on-general-elections"
+        },
+        {
+          "end_index": 6590,
+          "start_index": 6492,
+          "title": "2024 Nebraska Initiative 434",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Nebraska_Initiative_434?utm_source=openai"
+        },
+        {
+          "end_index": 6780,
+          "start_index": 6687,
+          "title": "Missouri lawmakers advance proposed repeal of abortion-rights measure approved by voters",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/5581a8bb6f6dacf876b85731ed0181dd?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "Polls like PRRI's 2022 50-state survey show majorities supporting legal abortion in most/all cases in 43 states + DC, implying the median voter favors permissive stances nearly everywhere ([PRRI](https://prri.org/research/abortion-attitudes-in-a-post-roe-world-findings-from-the-50-state-2022-american-values-atlas/)). Ballot measures post-Dobbs won for abortion rights in states like KS (2022), MI (2022), OH (2023), AZ/MO/NY/etc. (2024), even outperforming Biden in red counties ([Politico](https://www.politico.com/news/2023/11/09/abortion-rights-elections-red-states-00126225)). However, state politicians supporting restrictive/absolutist bans (e.g., total or 6-week) continued winning: DeSantis (FL gov 2022 post-15wk ban), KY AG Lynn Fitch (MS, Dobbs litigant, 2023 reelect), numerous GOP state legislative/gov wins 2022-2024 in ban states despite moderation attempts by some ([NYT](https://www.nytimes.com/interactive/2024/10/31/us/politics/house-races-abortion-stances.html); [Politico 2022 analysis](https://www.politico.com/news/2022/12/19/dobbs-2022-election-abortion-00074426)). Mixed outcomes (e.g., Beshear pro-choice win KY 2023, Youngkin ban push lost VA legis 2023) show no systematic electoral advantage for median-aligned moderates over absolutists; partisan loyalty dominates."
+    },
+    {
+      "id": "G-01:06:16.940-5",
+      "result": "ambiguous",
+      "explanation": "There is clear evidence **both** for and against Sachs\u2019s prediction, so the overall judgment is mixed rather than definitively right or wrong.\n\n**Evidence consistent with the prediction (punishment in contested states):**\n\n* In **Michigan\u2019s 2022 governor race**, Republican Tudor Dixon explicitly opposed abortion exceptions for rape and incest, saying her only exception was to save the mother\u2019s life.\n  She lost to Democratic Gov. Gretchen Whitmer by a wide margin at the same time Michigan voters passed Proposal 3, a constitutional amendment protecting abortion rights, by roughly 57\u201343%.  Analysts explicitly link Dixon\u2019s defeat to her hard\u2011line abortion position. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Tudor_Dixon?utm_source=openai))\n\n* In **Pennsylvania\u2019s 2022 governor race**, Republican Doug Mastriano supported a ban from conception with *no* exceptions for rape, incest, or even the mother\u2019s life.  He lost to Democrat Josh Shapiro by about 15 points in a swing state where the race had been expected to be closer; coverage repeatedly flagged his extreme abortion stance as part of his broader far\u2011right profile. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Doug_Mastriano?utm_source=openai))\n\n* In **Arizona\u2019s 2022 Senate race**, Republican Blake Masters backed a 15\u2011week ban with no rape or incest exceptions and supported a broad federal \u201cpersonhood\u201d law.  Mark Kelly defeated him 51.4%\u201346.5%; post\u2011election analysis notes that Kelly heavily attacked Masters over abortion and that Masters\u2019s stance hurt him, especially with women. ([politifact.com](https://www.politifact.com/factchecks/2022/sep/16/senate-majority-pac/senate-candidate-blake-masters-backs-15-week-arizo/?utm_source=openai))\n\n* In **Georgia\u2019s 2022 Senate race**, Herschel Walker repeatedly said there was \u201cno exception\u201d in his mind for abortion bans, before trying to walk that back later.  He underperformed the more conventional anti\u2011abortion Republican governor Brian Kemp and ultimately lost the runoff to Raphael Warnock, even as Kemp was easily re\u2011elected\u2014suggesting voters were less willing to back the more absolutist candidate. ([washingtonpost.com](https://www.washingtonpost.com/politics/2022/10/06/walker-hewitt-interview-abortion/?utm_source=openai))\n\n* Voters also repeatedly rejected very restrictive abortion positions via **statewide ballot measures**: Kansas (a red state) defeated an anti\u2011abortion constitutional amendment 59\u201341 in August 2022; Kentucky voters rejected Amendment 2, which would have declared no state constitutional right to abortion; Michigan, Vermont, and California all voted to enshrine abortion protections; and in 2023, Ohio voters (in a Trump\u2011leaning state) adopted a constitutional amendment guaranteeing broad reproductive rights.  These outcomes are widely interpreted as backlash against abortion bans and particularly against extreme or no\u2011exception policies. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Kansas_abortion_referendum?utm_source=openai))\n\n* Polling shows that **rape and incest exceptions are overwhelmingly popular**, with around 77\u201379% of Americans supporting legal abortion in those circumstances, underscoring why no\u2011exception positions are politically vulnerable in competitive environments. ([poynter.org](https://www.poynter.org/fact-checking/2022/post-roe-v-wade-state-bans-no-exceptions-rape-incest/?utm_source=openai))\n\nTaken together, these cases show that in a number of **high\u2011profile, genuinely contested states and races**, politicians or campaigns associated with bans lacking rape/incest exceptions either lost badly or saw their positions repudiated at the ballot box\u2014very much in line with Sachs\u2019s expectation about electoral punishment.\n\n**Evidence against the prediction (no clear punishment in many states):**\n\n* At the same time, **many states have enacted or maintained bans with no rape/incest exceptions, and the politicians responsible have largely *not* been removed from office.**  Fact\u2011checking and policy reviews in 2022\u201323 found that roughly 15 states with new or impending strict abortion laws offered *no exceptions* for rape or incest (including Alabama, Missouri, South Dakota, Tennessee, Texas and others), and these bans largely remain in force. ([politifact.com](https://www.politifact.com/article/2022/jul/18/next-frontier-battle-over-abortion-bans-carve-outs/?utm_source=openai))\n\n* **Texas** is a particularly important counterexample.  The state implemented a six\u2011week \u201cheartbeat\u201d ban and then a near\u2011total ban that *explicitly excludes* rape and incest exceptions.  Gov. Greg Abbott has publicly defended these laws and rejected adding such exceptions, yet he was re\u2011elected governor in 2022 by about 11 points.  Reporting after the election noted that, despite broad public opposition to Texas\u2019s near\u2011total ban, outrage over abortion access \u201cdidn\u2019t translate into enough votes\u201d to stop Republicans from sweeping statewide races\u2014directly contradicting the idea that such politicians are reliably punished even where the policy is hotly contested. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Abortion_in_Texas?utm_source=openai))\n\n* Similar patterns exist in other **deep\u2011red states** like Tennessee, Alabama, Oklahoma, and Kentucky, where near\u2011total bans without rape/incest exceptions (or with extremely narrow, hard\u2011to\u2011use exceptions) have taken effect and Republican trifectas have remained intact, with no large\u2011scale electoral backlash sufficient to change party control. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Abortion_in_Tennessee?utm_source=openai))\n\n* In some cases, **Republican politicians have responded not by being voted out but by moderating their rhetoric**.  For example, J.D. Vance initially compared abortion to slavery and questioned rape/incest exceptions, then later explicitly endorsed those exceptions while emphasizing that states should set their own rules\u2014suggesting perceived electoral costs for hard\u2011line positions, but also that politicians can adapt and remain viable rather than simply being \"punished\" at the polls. ([washingtonpost.com](https://www.washingtonpost.com/politics/2022/05/04/gop-abortion-dilemma-exceptions/?utm_source=openai))\n\n* Broad 2022 midterm analyses generally agree that **Dobbs and abortion rights hurt Republicans overall and helped Democrats avoid a \u201cred wave,\u201d especially in swing states**, but they also note that in strongly Republican states such as Texas, the same issue did *not* prevent GOP victories, even where the underlying policies were highly controversial. ([theguardian.com](https://www.theguardian.com/us-news/2022/nov/11/abortion-midterm-elections-republicans-women-voters?utm_source=openai))\n\n**Why the outcome is ambiguous:**\n\nSachs framed his claim in general terms\u2014\u201cif the pro\u2011life side refuses to make compromises for, say, rape and incest, they\u2019re going to be punished by voters in those states.\u201d  What we actually see is:\n\n* In **competitive or purple states and in direct statewide referenda**, no\u2011exception or very hard\u2011line abortion positions *have* often been punished: candidates with such stances have lost major races, and restrictive measures have been defeated.\n* In many **deep\u2011red states** where abortion is nevertheless intensely contested in public opinion and activism, politicians backing bans with no rape/incest exceptions have so far avoided serious electoral punishment and continue to govern under those laws.\n\nBecause significant real\u2011world evidence points in *both* directions, and because key terms like \u201cstates where abortion policy becomes contested\u201d and \u201cpunished\u201d are imprecise (does it mean losing any one race, losing control of state government, or simply facing public disapproval?), the overall verdict on the prediction can\u2019t be cleanly labeled as simply correct or incorrect.  The pattern is **partially validating** Sachs\u2019s logic in swing contexts but **clearly not universal**, which makes the outcome best characterized as **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 793,
+          "start_index": 712,
+          "title": "Tudor Dixon",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Tudor_Dixon?utm_source=openai"
+        },
+        {
+          "end_index": 1264,
+          "start_index": 1180,
+          "title": "Doug Mastriano",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Doug_Mastriano?utm_source=openai"
+        },
+        {
+          "end_index": 1768,
+          "start_index": 1609,
+          "title": "PolitiFact | Senate candidate Blake Masters backs 15-week Arizona abortion law with no rape, incest exceptions",
+          "type": "url_citation",
+          "url": "https://www.politifact.com/factchecks/2022/sep/16/senate-majority-pac/senate-candidate-blake-masters-backs-15-week-arizo/?utm_source=openai"
+        },
+        {
+          "end_index": 2309,
+          "start_index": 2183,
+          "title": "The holes in Herschel Walker\u2019s response to the abortion allegation - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2022/10/06/walker-hewitt-interview-abortion/?utm_source=openai"
+        },
+        {
+          "end_index": 3057,
+          "start_index": 2956,
+          "title": "2022 Kansas abortion referendum",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Kansas_abortion_referendum?utm_source=openai"
+        },
+        {
+          "end_index": 3450,
+          "start_index": 3319,
+          "title": "15 states with new or impending abortion limits have no exceptions for rape, incest - Poynter",
+          "type": "url_citation",
+          "url": "https://www.poynter.org/fact-checking/2022/post-roe-v-wade-state-bans-no-exceptions-rape-incest/?utm_source=openai"
+        },
+        {
+          "end_index": 4448,
+          "start_index": 4312,
+          "title": "PolitiFact | Many states are looking toward abortion bans with no exceptions for rape, incest",
+          "type": "url_citation",
+          "url": "https://www.politifact.com/article/2022/jul/18/next-frontier-battle-over-abortion-bans-carve-outs/?utm_source=openai"
+        },
+        {
+          "end_index": 5208,
+          "start_index": 5121,
+          "title": "Abortion in Texas",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Abortion_in_Texas?utm_source=openai"
+        },
+        {
+          "end_index": 5650,
+          "start_index": 5559,
+          "title": "Abortion in Tennessee",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Abortion_in_Tennessee?utm_source=openai"
+        },
+        {
+          "end_index": 6271,
+          "start_index": 6146,
+          "title": "The GOP's newfound abortion dilemma on rape and incest - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2022/05/04/gop-abortion-dilemma-exceptions/?utm_source=openai"
+        },
+        {
+          "end_index": 6767,
+          "start_index": 6629,
+          "title": "How the fall of Roe shattered Republicans\u2019 midterm dreams | US midterm elections 2022 | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2022/nov/11/abortion-midterm-elections-republicans-women-voters?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Post-Dobbs elections (2022 midterms, 2023 off-year, 2024 cycle) in contested/swing states like PA, AZ, VA, MI, OH, KS show backlash against extreme abortion positions. E.g., Doug Mastriano (PA gov 2022) supported abortion ban treating it as murder (no rape/incest exceptions implied), lost 15%-42% to Shapiro amid abortion attacks ([NYT](https://www.nytimes.com/2022/09/27/us/politics/doug-mastriano-abortion-murder.html), [WHYY](https://whyy.org/articles/doug-mastriano-extreme-abortion-views/)). Kari Lake (AZ gov 2022, Senate 2024) backed total bans/no exceptions initially, lost both races ([CNN](https://www.cnn.com/2024/05/12/politics/kari-lake-arizona-senate-abortion), [Guardian](https://www.theguardian.com/world/2024/apr/11/kari-lake-arizona-abortion-reversal)). VA Dems flipped legislature 2023 after GOP no-exceptions ban floated ([NYT](https://www.nytimes.com/2023/11/08/us/politics/election-results-democrats-abortion.html)). Voters rejected bans/referenda in KS, OH, MI ([Politico](https://www.politico.com/news/2022/12/19/dobbs-2022-election-abortion-00074426)). Trump blamed 'no exceptions' hardliners for 2022 losses ([AEI](https://www.aei.org/op-eds/trump-blames-extreme-pro-lifers-for-republican-midterm-defeats/)). Deep-red states (TX, AL) not 'contested,' no punishment there (Abbott won). GOP moderated in swing states, aligning with prediction."
+    },
+    {
+      "id": "G-01:06:16.940-6",
+      "result": "ambiguous",
+      "explanation": "There is substantial evidence that *very strict, no\u2011exceptions anti\u2011abortion stances* have been an electoral liability for Republicans since Dobbs, which supports part of Sacks\u2019s logic, but the broader, symmetric claim about \u201cabsolutists in both parties\u201d generally losing relative to compromisers is not clearly borne out.\n\nAfter Roe was overturned, abortion became a top voting issue and materially boosted Democrats in 2022. KFF/AP VoteCast found that about half of voters said the Dobbs decision had a \u201cmajor impact\u201d on which candidates they supported, with those voters breaking heavily for Democrats. Abortion-related ballot measures in 2022 consistently went in the abortion\u2011rights direction, even in red states like Kansas and Kentucky, where voters rejected constitutional amendments that would have removed or denied abortion rights. In 2023, Ohio voters approved a constitutional amendment protecting abortion rights by a large margin. These results signal broad resistance to maximal abortion bans. ([kff.org](https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai))\n\nIn key statewide races, Republican candidates with very hardline positions (near\u2011total bans, no rape/incest exceptions) underperformed or lost. Michigan gubernatorial candidate Tudor Dixon, who opposed abortion except to save the mother\u2019s life, lost by more than 10 points in an election where a pro\u2011abortion\u2011rights constitutional amendment passed and where analysts explicitly noted that abortion and negative ads about her stance hurt her. Minnesota\u2019s Scott Jensen initially backed a ban with no rape/incest exceptions and had to partially walk it back; the race became heavily about abortion and he lost by a comfortable margin. Post\u2011election analyses and GOP strategists have repeatedly said Republicans\u2019 \u201cextreme\u201d abortion positions and failure to find a middle ground helped blunt the expected red wave. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Tudor_Dixon?utm_source=openai))\n\nRepublican elites themselves have warned that hardline, no\u2011compromise positions are costing elections and urged more compromise. Rep. Nancy Mace has repeatedly argued that the GOP\u2019s \u201cextreme\u201d stance on abortion will prevent national victories and that voters want middle\u2011ground limits with exceptions. Donald Trump has called six\u2011week \u201cheartbeat\u201d bans a \u201cterrible mistake\u201d and blamed the party\u2019s 2022 underperformance in part on Republicans who \u201cdidn\u2019t understand the issue,\u201d while promising to \u201cnegotiate\u201d a more broadly acceptable policy rather than championing a national hard ban. Both the Cook Political Report and other analysts describe less\u2011extreme Republicans as better positioned than hardliners in competitive races. ([wjcl.com](https://www.wjcl.com/article/mace-says-gop-stance-on-abortion-is-extreme/43660981?utm_source=openai))\n\nHowever, the prediction goes further: it says that **absolutists in *both* parties** will tend to lose relative to compromisers. On the Democratic side, there is little clear evidence that strong abortion\u2011rights positions\u2014sometimes labeled \u201cabsolutist\u201d by opponents\u2014have systematically hurt candidates; if anything, Democrats who campaigned aggressively on protecting abortion access often overperformed expectations in 2022 and 2023. Polling shows a national majority favoring abortion being legal in all or most cases, with voters trusting Democrats more than Republicans on the issue, and research cautions against assuming Democrats\u2019 abortion stance is electorally \u201ctoo extreme.\u201d ([pewresearch.org](https://www.pewresearch.org/politics/2022/08/23/abortion-rises-in-importance-as-a-voting-issue-driven-by-democrats/?utm_source=openai)) At the same time, many very anti\u2011abortion politicians continue to win handily in solidly Republican states, where partisanship overwhelms issue\u2011based punishment.\n\nBecause (1) there is strong but not universal evidence that hardline anti\u2011abortion stances have hurt some Republican candidates after Dobbs, *but* (2) no comparable, systematic pattern that \u201cabsolutist\u201d abortion\u2011rights Democrats lose relative to compromisers, and (3) many other factors (partisanship, candidate quality, economics) confound a clean comparison, the specific, symmetric claim that absolutists in **both** parties \u201cwill tend to lose elections relative to those who compromise\u201d cannot be cleanly confirmed or falsified. Some elements fit observed trends, but the prediction as stated remains **ambiguous** given the available evidence.",
+      "sources": [
+        {
+          "end_index": 1157,
+          "start_index": 1049,
+          "title": "How The Supreme Court's Dobbs Decision Played In 2022 Midterm Election: KFF/AP VoteCast Analysis | KFF",
+          "type": "url_citation",
+          "url": "https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai"
+        },
+        {
+          "end_index": 2052,
+          "start_index": 1971,
+          "title": "Tudor Dixon",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Tudor_Dixon?utm_source=openai"
+        },
+        {
+          "end_index": 2897,
+          "start_index": 2784,
+          "title": "South Carolina Rep. Mace says GOP's stance on abortion is 'extreme'",
+          "type": "url_citation",
+          "url": "https://www.wjcl.com/article/mace-says-gop-stance-on-abortion-is-extreme/43660981?utm_source=openai"
+        },
+        {
+          "end_index": 3739,
+          "start_index": 3585,
+          "title": "Democrats Drive Abortion's Rise as Important Voting Issue in Midterms | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/politics/2022/08/23/abortion-rises-in-importance-as-a-voting-issue-driven-by-democrats/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction that absolutist politicians on abortion from either party would tend to lose elections relative to compromisers post-Roe has not materialized. Multiple elections (2022 midterms, 2023 off-years, 2024 general) show mixed results, but no clear pattern where absolutists underperform compromisers. Many pro-life Republicans supporting strict state bans won reelection in red states (e.g., [Oklahoma Voice: absolutists largely winning where bans enacted](https://oklahomavoice.com/2023/11/27/some-republicans-willing-to-compromise-on-abortion-ban-exceptions-activists-ensured-they-didnt/)). Nationally, Republicans gained the presidency, Senate, and House in 2024 despite pro-life platforms, with Trump succeeding via a states'-rights (pragmatic) stance ([ABC News: abortion didn't deliver Dem victory](https://abcnews.go.com/538/abortion-lead-democrats-victory-2024-election/story?id=116880480)). Ballot measures rejected bans (7-0 pre-2024, 7/10 pro-rights in 2024; [NBC: abortion rights won every election since overturn](https://www.nbcnews.com/politics/elections/abortion-rights-won-every-election-roe-v-wade-overturned-rcna99031)), but politicians' stances didn't lead to losses\u2014hardliners held power ([Politico: post-Roe surprises](https://www.politico.com/news/magazine/2023/06/23/dobbs-roe-abortion-surprises-00103084)). No evidence of pro-choice absolutists losing to moderates either. Vague definitions and lack of systematic losses make it unfulfilled."
+    },
+    {
+      "id": "C-01:12:59.520",
+      "result": "right",
+      "explanation": "Roe v. Wade was formally overturned on June 24, 2022, when the U.S. Supreme Court decided *Dobbs v. Jackson Women\u2019s Health Organization*, holding that the Constitution does not confer a right to abortion and returning regulatory authority to the states. \n\nFollowing *Dobbs*, U.S. states rapidly implemented highly divergent abortion-law frameworks:\n\n- Many Republican-led states activated or passed bans or severe restrictions, often with differing contours around **gestational limits** (e.g., near\u2011total bans, 6\u2011week bans, 12\u2011 or 15\u2011week limits).  \n- States varied significantly on **exceptions** (life/health of the pregnant person, rape, incest, fatal fetal anomaly), sometimes *excluding* rape and incest, or tying them to narrow evidentiary requirements and reporting deadlines.  \n- Democratic-led states moved in the opposite direction, enacting **protections or expansions** of abortion access, including \u201cshield laws\u201d for providers and patients traveling from restrictive states.\n\nThe result since mid\u20112022 has been a patchwork system widely described by legal scholars, medical groups, and major media as chaotic or confusing:\n\n- Rapidly changing state injunctions and court rulings have repeatedly altered whether particular bans are in force. Providers and patients in states like Texas, Idaho, Alabama, Wisconsin, and others have had to change practices multiple times in response to shifting legal landscapes.  \n- Physicians report uncertainty and delays in providing care (including miscarriage and emergency pregnancy care) because of unclear or restrictive statutory language and fear of criminal and civil liability.  \n- Large numbers of patients now travel across state lines to obtain abortions, with access depending heavily on residence and resources, illustrating substantial *practical* chaos in obtaining care.\n\nMore than three years have passed between the podcast (May 7, 2022) and the current date (late 2025). In that period, the post\u2011*Dobbs* environment has demonstrably featured exactly what the prediction described: **states independently constructing varied, often conflicting abortion-law frameworks and a sustained period of legal and practical chaos around access.** Accordingly, the prediction is **right**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Post-Dobbs (June 2022), U.S. states enacted highly varied abortion laws, confirming the prediction. As of Nov/Dec 2025:\n- **Total bans** (few exceptions) in 13 states (e.g., Texas, Alabama; [Guttmacher](https://www.guttmacher.org/state-policy/explore/state-policies-abortion-bans), [Britannica](https://www.britannica.com/science/US-abortion-rights-by-state-2236312)).\n- **Gestational limits**: 6 states at 6-12 weeks (e.g., Florida 6 weeks), others at 15-18 weeks or later ([KFF Dashboard](https://www.kff.org/womens-health-policy/abortion-in-the-u-s-dashboard/), [NYT Tracker](https://www.nytimes.com/interactive/2024/us/abortion-laws-roe-v-wade.html)).\n- **On-demand/protected**: Several states (e.g., CA, NY) allow up to viability or no limits ([Repro Rights map](https://reproductiverights.org/maps/abortion-laws-by-state/)).\n**Exceptions vary**: Of states with bans/early limits, some have rape/incest exceptions (11/21 per [KFF Aug 2025](https://www.kff.org/womens-health-policy/exceptions-in-state-abortion-bans-and-early-gestational-limits/)), others do not (e.g., Texas; reporting hurdles in many). \n**Chaos for several years**: Ongoing litigation ([KFF](https://www.kff.org/womens-health-policy/abortion-in-the-u-s-dashboard/)), clinic closures, interstate travel, doctor confusion/vague laws ([NPR Jun 2023](https://www.npr.org/2023/06/24/1183639093/abortion-ban-dobbs-roe-v-wade-anniversary-confusion); [CFR Jun 2025](https://www.cfr.org/blog/three-years-overturn-roe-v-wade-where-abortion-access-stands)), ballot fights, unsteady access persisting 3.5+ years ([Fuller Project Oct 2025](https://fullerproject.org/story/abortion-access-bans-us-roe-v-wade-2025/))."
+    },
+    {
+      "id": "G-01:13:41.690",
+      "result": "right",
+      "explanation": "Sacks\u2019s prediction has largely borne out.\n\nAfter Dobbs, many Republican-led states enacted near-total abortion bans with **no rape or incest exceptions** (e.g., Alabama, Arkansas, Kentucky, Louisiana, Missouri, Oklahoma, South Dakota, Tennessee, Texas), matching his \"no\u2011compromise\" scenario.\nThis hardened stance became a defining feature of the party\u2019s brand on abortion. ([kff.org](https://www.kff.org/page/50/?entry=table-of-contents-what-are-the-consequences-of-being-uninsured&utm_source=openai))\n\nElectorally, Republicans have not replicated Youngkin\u2011style broad victories in competitive states since these bans took effect. In the 2022 midterms\u2014expected to be a GOP \u201cred wave\u201d\u2014Republicans only narrowly won the U.S. House while Democrats *gained* a Senate seat, an historically strong showing for the party in power. Analyses across major outlets conclude that abortion backlash was a central reason the red wave failed to materialize. ([theguardian.com](https://www.theguardian.com/us-news/2022/nov/11/abortion-midterm-elections-republicans-women-voters?utm_source=openai))\n\nIn high\u2011profile statewide races, hardline anti\u2011abortion Republicans frequently underperformed or lost in states where a Youngkin\u2011style win might otherwise have been plausible. In Michigan, for example, voters simultaneously passed a constitutional amendment protecting abortion rights and gave Democrats a governing trifecta; Gov. Gretchen Whitmer defeated Tudor Dixon, who opposed abortion in nearly all cases, by a far larger margin than polls suggested. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Michigan_gubernatorial_election?utm_source=openai))  Similar patterns appeared in Pennsylvania and Arizona, where Democratic candidates beat Republicans tied to strict abortion positions while making abortion central to their campaigns. ([theguardian.com](https://www.theguardian.com/us-news/2022/nov/11/abortion-midterm-elections-republicans-women-voters?utm_source=openai))\n\nVoters have also **directly punished no\u2011compromise positions through ballot measures**. Since Dobbs, most state\u2011level abortion referendums have gone in the pro\u2011rights direction, including in red states such as Kansas and Kentucky; overall, in 13 of 16 post\u2011Dobbs ballot measures, the abortion\u2011rights side has won. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Abortion_law_in_the_United_States_by_state?utm_source=openai))  In 2023, Ohio voters enshrined abortion rights in the state constitution and Virginia voters handed full legislative control to Democrats after Republicans campaigned on new abortion limits\u2014results widely read as further backlash to GOP abortion policy. ([en.wikipedia.org](https://en.wikipedia.org/wiki/November_2023_Ohio_Issue_1?utm_source=openai))\n\nBy 2025, Virginia itself\u2014where Youngkin\u2019s 2021 win had been the model of broad Republican success\u2014swung back decisively to Democrats, who won the governorship and expanded their legislative majority while running in part on protecting abortion rights, ending the GOP era Youngkin had started. ([washingtonpost.com](https://www.washingtonpost.com/dc-md-va/2025/11/05/virginia-election-democratic-sweep-what-next/?utm_source=openai))  Taken together, the proliferation of uncompromising GOP abortion bans and the consistent electoral and ballot\u2011measure backlash against them align closely with Sacks\u2019s forecast that \u201cif the parties don\u2019t compromise on this, voters will eventually punish them\u201d and that Republicans would not keep seeing Youngkin\u2011like victories under a no\u2011compromise stance.",
+      "sources": [
+        {
+          "end_index": 540,
+          "start_index": 412,
+          "title": "Page 50 | KFF",
+          "type": "url_citation",
+          "url": "https://www.kff.org/page/50/?entry=table-of-contents-what-are-the-consequences-of-being-uninsured&utm_source=openai"
+        },
+        {
+          "end_index": 1122,
+          "start_index": 984,
+          "title": "How the fall of Roe shattered Republicans\u2019 midterm dreams | US midterm elections 2022 | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2022/nov/11/abortion-midterm-elections-republicans-women-voters?utm_source=openai"
+        },
+        {
+          "end_index": 1689,
+          "start_index": 1583,
+          "title": "2022 Michigan gubernatorial election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Michigan_gubernatorial_election?utm_source=openai"
+        },
+        {
+          "end_index": 2013,
+          "start_index": 1875,
+          "title": "How the fall of Roe shattered Republicans\u2019 midterm dreams | US midterm elections 2022 | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2022/nov/11/abortion-midterm-elections-republicans-women-voters?utm_source=openai"
+        },
+        {
+          "end_index": 2443,
+          "start_index": 2331,
+          "title": "Abortion law in the United States by state",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Abortion_law_in_the_United_States_by_state?utm_source=openai"
+        },
+        {
+          "end_index": 2795,
+          "start_index": 2699,
+          "title": "November 2023 Ohio Issue 1",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/November_2023_Ohio_Issue_1?utm_source=openai"
+        },
+        {
+          "end_index": 3230,
+          "start_index": 3092,
+          "title": "Virginia Democrats won in a 'doggone tsunami' of an election. Now what?",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/dc-md-va/2025/11/05/virginia-election-democratic-sweep-what-next/?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is conditional: *if* the Republican Party adopts a no-compromise stance on abortion (e.g., opposing rape/incest exceptions), *then* it will face voter backlash and fail to achieve broad electoral successes like Glenn Youngkin's 2021 Virginia win. \n\nNationally, the GOP did **not** adopt such a stance post-Dobbs. The 2024 GOP platform emphasized states' rights, opposed late-term abortion with 'salvific exceptions,' and avoided a national ban ([ABC News](https://abcnews.go.com/Politics/2024-rnc-platform-alter-gops-abortion-position-time/story?id=111728686), [Politico](https://www.politico.com/news/2024/10/16/trump-republicans-abortion-defense-00184049)). Trump explicitly supported exceptions for rape, incest, and life of the mother ([NPR](https://www.npr.org/2023/11/16/1213006071/republican-candidates-abortion-rights)). Polls showed vast GOP voter support for exceptions ([NBC](https://www.nbcnews.com/politics/2022-election/vast-majority-republicans-support-abortion-exceptions-rape-incest-moth-rcna52237)). Candidates often moderated hardline views due to 2022 backlash ([CNN](https://www.cnn.com/interactive/2024/04/politics/abortion-rights-republican-2024-election-dg/index.html)). \n\nYet, Republicans achieved massive successes: Trump won the 2024 presidency, popular vote, and swing states exceeding Youngkin's scale, despite state bans (some without rape/incest exceptions) ([CBS](https://www.cbsnews.com/news/exit-polls-2024-presidential-election/), [ABC](https://abcnews.go.com/538/abortion-lead-democrats-victory-2024-election/story?id=116880480)). Abortion ballot measures passed pro-rights in 7/10 states, but did not derail GOP wins; voters split tickets ([KFF](https://www.kff.org/public-opinion/health-care-in-2024-elections-apvotecast-polling/), [Politico](https://www.politico.com/news/2024/11/06/election-abortion-ballot-measures-states-00187854)). In 2022 midterms, extreme stances (e.g., Blake Masters opposing exceptions) contributed to GOP underperformance ([Politico](https://www.politico.com/news/2022/12/19/dobbs-2022-election-abortion-00074426), [PNAS](https://www.pnas.org/doi/10.1073/pnas.2319512121)). \n\nSince the national party never adopted no-compromise, the condition was not met, leaving the prediction untested despite 3+ years of elections. Local examples are mixed, making it impossible to confirm or refute definitively."
+    },
+    {
+      "id": "C-01:16:05.730",
+      "result": "ambiguous",
+      "explanation": "Evidence since Dobbs shows *some* clear political costs to Republicans on abortion, but not the kind of broad, overwhelming, long\u2011term national penalty implied by \u201cmassive price,\u201d and the overall partisan balance has recently shifted in their favor.\n\n**Evidence for real costs:**\n- In the 2022 midterms, Republicans badly underperformed historical midterm gains; KFF/AP VoteCast finds about half of voters said overturning Roe had a *major impact* on which candidates they supported, with those voters breaking heavily for Democrats, especially in key Senate and gubernatorial races in states like Pennsylvania and Arizona. ([kff.org](https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai))  \n- A county\u2011level study of the 2022 election finds that in states with abortion ballot measures, the Republican U.S. House vote margin fell by about 4.8 percentage points relative to prior midterms, enough to plausibly flip dozens of close seats\u2014evidence of a measurable GOP penalty tied to abortion politics in those states. ([sciencedirect.com](https://www.sciencedirect.com/science/article/abs/pii/S0165176525000199?utm_source=openai))  \n- Since Dobbs, every statewide vote framed as *expanding or protecting* abortion rights in competitive or even red-leaning states (e.g., Kansas 2022, Michigan 2022, Ohio 2023, plus Arizona, Colorado, Missouri, and Montana constitutional amendments in 2024) has passed, while high\u2011profile efforts to entrench or expand abortion bans have repeatedly failed (e.g., Kentucky 2022, Ohio 2023). ([cbsnews.com](https://www.cbsnews.com/news/kansas-abortion-vote-results-how-amendment-was-defeated/?utm_source=openai))  This constrains Republican policy options and shows their preferred position is often a *policy* loser, even among electorates that are otherwise willing to back GOP candidates.\n\n**Evidence against a clear, massive long\u2011term partisan price:**\n- Despite these headwinds, by 2024 Republicans *regained the presidency* (Trump defeating Harris), flipped the U.S. Senate to a GOP majority, and held the U.S. House\u2014giving the party full federal governing control for the first time since 2016. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_elections?utm_source=openai))  That outcome is hard to square with the idea that Dobbs inflicted a uniformly \u201cmassive\u201d nationwide electoral penalty on the GOP.\n- Recent national polling shows the *Democratic* Party currently has worse favorability numbers than the Republican Party, with Dems\u2019 unfavorables at multi\u2011decade highs and Republicans slightly less disliked and now leading or competitive on many issue\u2011trust measures. ([nypost.com](https://nypost.com/2025/01/29/us-news/democrats-unfavorability-rating-reaches-new-high-poll/?utm_source=openai))  If Dobbs had produced a broad, enduring anti\u2011GOP backlash, you would expect the opposite pattern.\n- Public opinion on abortion itself has moved modestly but not dramatically: roughly 6 in 10 Americans now say abortion should be legal in all or most cases, up only a few points from pre\u2011Dobbs levels, and \u201cpro\u2011choice\u201d identification has an edge but not an overwhelming one. ([pewresearch.org](https://www.pewresearch.org/politics/2024/05/13/broad-public-support-for-legal-abortion-persists-2-years-after-dobbs/?utm_source=openai))  This puts Republican issue positions out of step with the median voter, but it has not yet translated into consistent, decisive partisan realignment away from the GOP.\n\n**Why this is rated *ambiguous* rather than clearly right or wrong:**\n- There is good evidence that Dobbs has imposed **targeted, sometimes decisive costs** on Republicans\u2014especially in swing races, ballot measures, and among key blocs of women and younger voters\u2014and that it remains a structural vulnerability for the party. ([kff.org](https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai))  \n- At the same time, by late 2025 Republicans control the presidency and both chambers of Congress, hold or dominate many state governments, and are *not* suffering uniquely poor favorability compared with Democrats. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_elections?utm_source=openai))  That outcome is inconsistent with the prediction of a clear, sweeping, long\u2011term national political collapse triggered by overturning Roe.\n\nGiven these mixed signals\u2014real but bounded electoral and policy costs versus continued GOP institutional strength and competitive or better national ratings\u2014the net **long\u2011term** effect of Dobbs on Republican fortunes is, as of 2025, genuinely unclear. Hence the prediction is best classified as *ambiguous*, not definitively validated or disproven.",
+      "sources": [
+        {
+          "end_index": 772,
+          "start_index": 664,
+          "title": "How The Supreme Court's Dobbs Decision Played In 2022 Midterm Election: KFF/AP VoteCast Analysis | KFF",
+          "type": "url_citation",
+          "url": "https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai"
+        },
+        {
+          "end_index": 1213,
+          "start_index": 1101,
+          "title": "Abortion ballot measures affect election outcomes - ScienceDirect",
+          "type": "url_citation",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165176525000199?utm_source=openai"
+        },
+        {
+          "end_index": 1726,
+          "start_index": 1606,
+          "title": "How the anti-abortion amendment was defeated in Kansas - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/kansas-abortion-vote-results-how-amendment-was-defeated/?utm_source=openai"
+        },
+        {
+          "end_index": 2317,
+          "start_index": 2219,
+          "title": "2024 United States elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_elections?utm_source=openai"
+        },
+        {
+          "end_index": 2844,
+          "start_index": 2718,
+          "title": "Democrats' unfavorability rating reaches new, 16-year high as party keeps licking wounds following disastrous 2024: poll",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/01/29/us-news/democrats-unfavorability-rating-reaches-new-high-poll/?utm_source=openai"
+        },
+        {
+          "end_index": 3376,
+          "start_index": 3220,
+          "title": "Most Americans Support Legal Abortion 2 Years After Roe Was Overturned | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/politics/2024/05/13/broad-public-support-for-legal-abortion-persists-2-years-after-dobbs/?utm_source=openai"
+        },
+        {
+          "end_index": 3984,
+          "start_index": 3876,
+          "title": "How The Supreme Court's Dobbs Decision Played In 2022 Midterm Election: KFF/AP VoteCast Analysis | KFF",
+          "type": "url_citation",
+          "url": "https://www.kff.org/elections/2022-midterm-election-kff-ap-votecast-analysis/?utm_source=openai"
+        },
+        {
+          "end_index": 4302,
+          "start_index": 4204,
+          "title": "2024 United States elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_elections?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction of a broad and substantial long-term political cost to Republicans from overturning Roe (Dobbs, June 2022) did not materialize nationally. In 2022 midterms, abortion backlash helped Democrats outperform expectations (no 'red wave,' held Senate, narrow GOP House gain), per KFF/AP VoteCast and Politico analysis ([Politico, Nov 2022](https://www.politico.com/news/magazine/2022/11/19/republicans-roe-abortion-midterms-00069484)). However, by 2024, Republicans achieved a trifecta: Trump won presidency/popular vote, gained Senate, retained House. Abortion ranked low (14% voters per exit polls vs. 32% economy), failing to deliver Democratic wins despite pro-choice ballot victories in 7/10 states ([Balls & Strikes, Nov 2024](https://ballsandstrikes.org/law-politics/election-abortion-2024-dobbs-roe/); KFF/AP VoteCast). GOP favorability stable/no sustained decline (Gallup trends show similar to Democrats ~40% range, modest 2025 improvement per Pew). Short-term 2022 cost, but no long-term national electoral/public support penalty after 3.5 years/major cycles."
+    },
+    {
+      "id": "G-01:18:31.070",
+      "result": "right",
+      "explanation": "As of November 30, 2025, *Obergefell v. Hodges*, 576 U.S. 644 (2015), remains binding Supreme Court precedent establishing that same\u2011sex couples have a fundamental right to marry and that states must license and recognize same\u2011sex marriages under the Fourteenth Amendment.([law.cornell.edu](https://www.law.cornell.edu/wex/obergefell_v._hodges?utm_source=openai))  \n\nIn fact, the current Court recently declined to hear a case (stemming from former Kentucky clerk Kim Davis) that sought to roll back or revisit *Obergefell*, leaving the decision in place and signaling no present majority to overturn it.([reuters.com](https://www.reuters.com/world/us-supreme-court-rejects-bid-overturn-same-sex-marriage-right-2025-11-10/?utm_source=openai))  \n\nSeparately, Congress enacted the Respect for Marriage Act in 2022, which repealed DOMA and requires federal recognition of same\u2011sex marriages and interstate recognition by states, further entrenching legal protections for same\u2011sex marriage, even though the core constitutional holding still comes from *Obergefell*.([en.wikipedia.org](https://en.wikipedia.org/wiki/Respect_for_Marriage_Act?utm_source=openai))  \n\nBecause the Supreme Court has **not** overturned *Obergefell* and same\u2011sex marriage remains constitutionally protected throughout the United States as of the current date, Sacks\u2019s prediction that \u201cI don't think *Obergefell* is going to get overturned\u201d has, up to now, been borne out. However, some states have passed nonbinding resolutions urging the Court to reconsider *Obergefell*, showing ongoing political efforts but no change in constitutional law.([them.us](https://www.them.us/story/north-dakota-same-sex-marriage-resolution-senate-obergefell-supreme-court?utm_source=openai))",
+      "sources": [
+        {
+          "end_index": 396,
+          "start_index": 305,
+          "title": "Obergefell v. Hodges | Wex | US Law | LII / Legal Information Institute",
+          "type": "url_citation",
+          "url": "https://www.law.cornell.edu/wex/obergefell_v._hodges?utm_source=openai"
+        },
+        {
+          "end_index": 777,
+          "start_index": 639,
+          "title": "US Supreme Court rejects bid to overturn same-sex marriage right",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us-supreme-court-rejects-bid-overturn-same-sex-marriage-right-2025-11-10/?utm_source=openai"
+        },
+        {
+          "end_index": 1192,
+          "start_index": 1098,
+          "title": "Respect for Marriage Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Respect_for_Marriage_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1783,
+          "start_index": 1653,
+          "title": "North Dakota Could Become First State to Officially Ask SCOTUS to Repeal Same-Sex Marriage",
+          "type": "url_citation",
+          "url": "https://www.them.us/story/north-dakota-same-sex-marriage-resolution-senate-obergefell-supreme-court?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The U.S. Supreme Court has not overturned *Obergefell v. Hodges*. On November 10, 2025, the Court declined to hear *Davis v. Ermold*, a case that explicitly sought to reconsider and overturn the 2015 decision legalizing same-sex marriage nationwide ([SCOTUSblog](https://www.scotusblog.com/2025/11/supreme-court-declines-to-hear-case-on-constitutionality-of-same-sex-marriage/), [CNN](https://www.cnn.com/2025/11/10/politics/supreme-court-same-sex-marriage-obergefell-kim-davis), [NYT](https://www.nytimes.com/2025/11/10/us/politics/supreme-court-same-sex-marriage.html), [Reuters](https://www.reuters.com/world/us-supreme-court-rejects-bid-overturn-same-sex-marriage-right-2025-11-10/)). Same-sex marriage remains constitutionally protected, confirming the prediction made in May 2022."
+    },
+    {
+      "id": "G-01:18:31.070-2",
+      "result": "ambiguous",
+      "explanation": "This prediction is explicitly counterfactual and conditional on a historical event that never occurred: the Supreme Court *did not* recognize a right to same\u2011sex marriage in the early 1990s. The actual historical path was:\n\n- Same\u2011sex marriage recognition at the federal constitutional level came only with *Obergefell v. Hodges* in 2015.\n- No federal constitutional amendment banning same\u2011sex marriage has ever been adopted; various proposed amendments (e.g., the Federal Marriage Amendment in the 2000s) failed to secure the necessary congressional supermajorities and state ratifications.\n\nBecause the claim is: \"*if* the Supreme Court had ... in the early 1990s, *we might have had* a constitutional amendment banning gay marriage,\" it is not a falsifiable prediction about the actual world but a hypothetical about an alternative timeline. There is no empirical way to determine whether earlier judicial recognition *would* have triggered sufficient political support and ratification for such an amendment. Political counterfactuals of this kind cannot be settled conclusively by subsequent real\u2011world events.\n\nTherefore, even though we know what *did* happen (no such amendment), we cannot infer what *would have* happened under the specified alternative conditions. The prediction remains inherently untestable and thus **ambiguous**, not right or wrong in the usual empirical sense.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is a counterfactual historical claim: a Supreme Court ruling recognizing same-sex marriage in the early 1990s would *likely* have led to passage of a federal constitutional amendment banning it. Counterfactuals cannot be empirically verified as they posit an alternate history that did not occur. Historical evidence shows backlash to same-sex marriage advances\u2014e.g., Hawaii's 1993 state court ruling prompted DOMA (1996 statute, not amendment) and state bans ([Wikipedia: Defense of Marriage Act](https://en.wikipedia.org/wiki/Defense_of_Marriage_Act)); Massachusetts' 2003 ruling led to Federal Marriage Amendment proposals (2003-2006), but they failed in Senate cloture votes (2004: 48-50; 2006: 49-48) despite ~50% public support in some polls ([Pew: Reading the Polls on Gay Marriage](https://www.pewresearch.org/politics/2004/07/13/reading-the-polls-on-gay-marriage-and-the-constitution/); [Wikipedia: Federal Marriage Amendment](https://en.wikipedia.org/wiki/Federal_Marriage_Amendment)). Obergefell (2015) produced no amendment. Recent 2025 SCOTUS rejection of challenges reinforces stability ([NYT: Supreme Court Denies Request](https://www.nytimes.com/2025/11/10/us/politics/supreme-court-same-sex-marriage.html)). While earlier timing might have amplified opposition (lower SSM support in 1990s), amendments require supermajorities (2/3 Congress + 38 states), which proved unattainable even at backlash peaks. Thus, indeterminable. No podcast transcript found to alter context."
+    },
+    {
+      "id": "G-01:25:26.800",
+      "result": "right",
+      "explanation": "As of November 30, 2025, the Supreme Court has **not overturned** either *Obergefell v. Hodges* (same\u2011sex marriage) or *Loving v. Virginia* (interracial marriage). Both decisions remain binding precedent, and key aspects of *Obergefell* and *Loving* are now also codified in the 2022 Respect for Marriage Act, which requires federal and interstate recognition of same\u2011sex and interracial marriages.\u200b([en.wikipedia.org](https://en.wikipedia.org/wiki/Obergefell_v._Hodges?utm_source=openai))\n\nOn the **certiorari** part of the prediction: in *Ermold v. Davis* (the Kim Davis case), the petitioner explicitly asked the Court not only to review her liability but also to **overturn *Obergefell***. On November 10, 2025, the Supreme Court **denied certiorari without comment**, leaving the lower\u2011court judgment (and *Obergefell*) in place and explicitly refusing to take up that direct challenge.\u200b([en.wikipedia.org](https://en.wikipedia.org/wiki/Ermold_v._Davis?utm_source=openai))  There have been political and advocacy efforts (e.g., an Idaho House resolution) urging the Court to reverse *Obergefell*, but these are nonbinding and have not produced any granted case aimed at overruling the marriage precedents.\u200b([them.us](https://www.them.us/story/idaho-house-passes-resolution-urging-scotus-overturn-obergefell-v-hodges?utm_source=openai))  Likewise, there has been **no Supreme Court case granting certiorari to reconsider or overturn *Loving v. Virginia***.\n\nAlthough Justice Thomas has urged the Court, in his *Dobbs* concurrence, to reconsider substantive due\u2011process precedents including *Obergefell*, the Court as a whole has not acted on that suggestion.\u200b([newsweek.com](https://www.newsweek.com/clarence-thomas-said-same-sex-marriage-supreme-court-obergefell-2025174?utm_source=openai))  The Court has heard related religious\u2011liberty and free\u2011speech cases involving same\u2011sex weddings, such as *303 Creative LLC v. Elenis*, but those were framed around First Amendment questions and did **not** ask the Court to overrule *Obergefell* itself.\u200b([en.wikipedia.org](https://en.wikipedia.org/wiki/303_Creative_LLC_v._Elenis?utm_source=openai))  Taken together, this means the prediction\u2014that the Court would neither overturn the same\u2011sex and interracial marriage precedents nor grant certiorari in a case directly seeking to overturn them\u2014has been accurate so far.",
+      "sources": [
+        {
+          "end_index": 527,
+          "start_index": 437,
+          "title": "Obergefell v. Hodges",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Obergefell_v._Hodges?utm_source=openai"
+        },
+        {
+          "end_index": 1022,
+          "start_index": 937,
+          "title": "Ermold v. Davis",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Ermold_v._Davis?utm_source=openai"
+        },
+        {
+          "end_index": 1390,
+          "start_index": 1261,
+          "title": "Idaho House Passes Resolution Urging SCOTUS to Overturn Obergefell v. Hodges",
+          "type": "url_citation",
+          "url": "https://www.them.us/story/idaho-house-passes-resolution-urging-scotus-overturn-obergefell-v-hodges?utm_source=openai"
+        },
+        {
+          "end_index": 1852,
+          "start_index": 1720,
+          "title": "What Clarence Thomas Has Said About Same-Sex Marriage Ruling - Newsweek",
+          "type": "url_citation",
+          "url": "https://www.newsweek.com/clarence-thomas-said-same-sex-marriage-supreme-court-obergefell-2025174?utm_source=openai"
+        },
+        {
+          "end_index": 2208,
+          "start_index": 2112,
+          "title": "303 Creative LLC v. Elenis",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/303_Creative_LLC_v._Elenis?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The U.S. Supreme Court has not overturned *Obergefell v. Hodges* (same-sex marriage, 2015) or *Loving v. Virginia* (interracial marriage, 1967). In November 2025, SCOTUS denied certiorari in *Davis v. Ermold*, a direct challenge seeking to overturn *Obergefell* (e.g., [SCOTUSblog](https://www.scotusblog.com/2025/11/supreme-court-declines-to-hear-case-on-constitutionality-of-same-sex-marriage/), [NPR](https://www.npr.org/2025/11/10/nx-s1-5604293/scotus-rejects-gay-marriage-appeal), [NBC](https://www.nbcnews.com/politics/supreme-court/supreme-court-rejects-long-shot-effort-overturn-sex-marriage-ruling-rcna241113)). No cert grants or decisions overturning *Loving* (searches yield only post-Dobbs speculation, e.g., Thomas concurrence, no cases). Prediction held as of Dec 1, 2025."
+    },
+    {
+      "id": "C-01:23:48.760",
+      "result": "ambiguous",
+      "explanation": "Evidence cuts both ways.\n\n**Where the prediction looks directionally right (especially in competitive races)**\n\n* In high\u2011profile swing\u2011state races after Dobbs, Republicans with *absolutist* abortion positions often lost badly:\n  * Michigan: Tudor Dixon backed banning abortion with no exceptions for rape or incest, allowing only life\u2011of\u2011the\u2011mother exceptions, and lost the 2022 governor\u2019s race to Gretchen Whitmer by ~10 points. Analyses explicitly note her near\u2011total\u2011ban stance as a liability in a cycle where voters also passed a pro\u2011abortion\u2011rights constitutional amendment. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Michigan_gubernatorial_election?utm_source=openai))\n  * Pennsylvania: Doug Mastriano advocated a ban from conception with **no** exceptions for rape, incest, or the life of the mother and was defeated decisively by Josh Shapiro in the 2022 governor\u2019s race. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Pennsylvania_gubernatorial_election?utm_source=openai))\n  * North Carolina: Mark Robinson repeatedly rejected any \u201ccompromise\u201d on abortion and said he\u2019d outlaw it entirely if he had the power, then ran for governor in 2024 and lost to Democrat Josh Stein by nearly 15 points in a purple state. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Mark_Robinson_%28American_politician%29?utm_source=openai))\n\n* Post\u2011Dobbs analysis of the 2022 midterms concluded abortion was a *defining* issue that helped Democrats and hurt Republicans seen as extreme; the Guardian\u2019s post\u2011election read explicitly ties Dixon\u2019s and Mastriano\u2019s losses to their hardline abortion positions. ([theguardian.com](https://www.theguardian.com/us-news/2022/nov/11/abortion-midterm-elections-republicans-women-voters?utm_source=openai))\n\n* GOP candidates in competitive 2022 races were documented scrubbing or softening earlier \u201cno exceptions\u201d or very rigid abortion language once Roe fell, reflecting exactly the kind of electoral pressure Jason anticipated. An AP report described more than a dozen such Republicans in battleground races who tried to distance themselves from prior statements favoring bans with few or no exceptions. ([keyt.com](https://keyt.com/news/2022/09/01/gop-candidates-soften-tone-on-abortion-for-midterm-election/?utm_source=openai))\n\n* Since then, several prominent national Republicans have argued for a more moderate, \u201clegal under some circumstances\u201d posture:\n  * Rep. Nancy Mace now publicly insists she will only support abortion legislation that includes rape, incest, and life\u2011of\u2011the\u2011mother exceptions and urges the party to move toward broadly popular middle\u2011ground limits. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Nancy_Mace?utm_source=openai))\n  * Nikki Haley centered her 2024 presidential campaign rhetoric on finding a \u201cnational consensus,\u201d pointing to a 15\u2011week limit with rape/incest/health/life exceptions and explicitly rejecting the idea that a pure ban is realistic or electorally viable at the federal level. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Nikki_Haley?utm_source=openai))\n  * Party messaging guidance circulated by RNC\u2011aligned strategists recommended emphasizing that Republicans favor exceptions for rape, incest and life of the mother, highlighting the political necessity of not appearing to back absolute bans. ([washingtonpost.com](https://www.washingtonpost.com/politics/2022/09/14/there-hardly-gop-consensus-around-15-week-national-abortion-ban/?utm_source=openai))\n\nTaken together, these patterns in swing\u2011state and national races support Jason\u2019s *core intuition*: in much of the country, Republicans who are perceived as insisting on abortion being **illegal in all or nearly all cases** have struggled to win or have felt compelled to shift to a \u201clegal under some circumstances\u201d position.\n\n**Where the prediction fails or overgeneralizes**\n\n* At the same time, a substantial bloc of Republican officeholders in deep\u2011red states has *not* moved into a clearly \"legal under certain circumstances\" bucket in the ordinary\u2011language sense; instead they have enacted or defended near\u2011total bans:\n  * Alabama\u2019s Human Life Protection Act imposes a near\u2011total abortion ban with **no exceptions for rape or incest**, only a narrow life\u2011of\u2011the\u2011mother carve\u2011out, and it took effect after Roe was overturned. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Human_Life_Protection_Act?utm_source=openai))  Republican leadership that backed it\u2014including Gov. Kay Ivey and the legislators who passed it\u2014remains electorally secure in a heavily Republican state.\n  * A 2024 Guttmacher analysis notes that **14 states** had *total* abortion bans in effect (i.e., abortion is broadly illegal, often with only very narrow exceptions) even after multiple election cycles post\u2011Dobbs. These bans predominantly exist in Republican trifecta states, whose GOP governors and legislators have continued winning elections. ([guttmacher.org](https://www.guttmacher.org/report/stability-number-abortions-2023-2024-us-states-without-total-bans-masks-major-shifts-access?utm_source=openai))\n  * News and explainer pieces as of 2024 still list states such as **Alabama, Texas, Louisiana, Kentucky, and others** where abortion is banned in almost all circumstances and explicitly *lacks* rape and incest exceptions; yet Republicans firmly control statewide offices there. ([fox5atlanta.com](https://www.fox5atlanta.com/news/abortion-states-laws-election-2024?utm_source=openai))\n  * Tennessee\u2019s near\u2011total ban has no exceptions for rape or incest; Republican Gov. Bill Lee, who backed sweeping abortion restrictions, was easily re\u2011elected in 2022 with nearly 65% of the vote. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Bill_Lee_%28Tennessee_politician%29?utm_source=openai))\n\n* Even some politicians with very absolutist prior rhetoric (e.g., Mark Robinson in NC) have modulated their messaging *without actually renouncing* support for much stricter bans if they had the power\u2014suggesting that moderation in language doesn\u2019t always equal a genuine move into a stable \"legal under some circumstances\" policy bucket. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Mark_Robinson_%28American_politician%29?utm_source=openai))\n\n**Why the verdict is \"ambiguous\"**\n\nJason framed his prediction broadly (\u201cRepublicans are going to have to\u2026 They will not get office\u201d), without specifying that he meant primarily *competitive statewide or federal races* rather than deep\u2011red strongholds. In practice:\n\n* In swing and purple states, and in nationally visible contests, subsequent elections strongly support his claim: hardline no\u2011exceptions or near\u2011total\u2011ban stances have generally been punished at the ballot box, and GOP candidates have been pushed toward acknowledging at least some legal abortion.\n* In many solidly Republican states, however, politicians who back laws making abortion effectively illegal in almost all circumstances **have kept or won office**, and total or near\u2011total bans remain in force. That directly contradicts the idea that such positions are electorally non\u2011viable *across the board*.\n\nBecause the real\u2011world outcome matches his forecast in some major contexts (competitive races, national messaging) but clearly not in others (safe red states with total bans), and because his wording doesn\u2019t pin down which universe he meant, the fairest overall assessment is **\"ambiguous\"** rather than clearly right or clearly wrong.",
+      "sources": [
+        {
+          "end_index": 732,
+          "start_index": 626,
+          "title": "2022 Michigan gubernatorial election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Michigan_gubernatorial_election?utm_source=openai"
+        },
+        {
+          "end_index": 1049,
+          "start_index": 939,
+          "title": "2022 Pennsylvania gubernatorial election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Pennsylvania_gubernatorial_election?utm_source=openai"
+        },
+        {
+          "end_index": 1398,
+          "start_index": 1289,
+          "title": "Mark Robinson (American politician)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Mark_Robinson_%28American_politician%29?utm_source=openai"
+        },
+        {
+          "end_index": 1804,
+          "start_index": 1666,
+          "title": "How the fall of Roe shattered Republicans\u2019 midterm dreams | US midterm elections 2022 | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2022/nov/11/abortion-midterm-elections-republicans-women-voters?utm_source=openai"
+        },
+        {
+          "end_index": 2331,
+          "start_index": 2206,
+          "title": "GOP candidates mask rigid abortion stances after Roe ruling | News Channel 3-12",
+          "type": "url_citation",
+          "url": "https://keyt.com/news/2022/09/01/gop-candidates-soften-tone-on-abortion-for-midterm-election/?utm_source=openai"
+        },
+        {
+          "end_index": 2763,
+          "start_index": 2683,
+          "title": "Nancy Mace",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Nancy_Mace?utm_source=openai"
+        },
+        {
+          "end_index": 3121,
+          "start_index": 3040,
+          "title": "Nikki Haley",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Nikki_Haley?utm_source=openai"
+        },
+        {
+          "end_index": 3523,
+          "start_index": 3366,
+          "title": "There's hardly GOP consensus around a 15-week national abortion ban - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2022/09/14/there-hardly-gop-consensus-around-15-week-national-abortion-ban/?utm_source=openai"
+        },
+        {
+          "end_index": 4459,
+          "start_index": 4364,
+          "title": "Human Life Protection Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Human_Life_Protection_Act?utm_source=openai"
+        },
+        {
+          "end_index": 5126,
+          "start_index": 4963,
+          "title": "Stability in the Number of Abortions from 2023 to 2024 in US States Without Total Bans Masks Major Shifts in Access | Guttmacher Institute",
+          "type": "url_citation",
+          "url": "https://www.guttmacher.org/report/stability-number-abortions-2023-2024-us-states-without-total-bans-masks-major-shifts-access?utm_source=openai"
+        },
+        {
+          "end_index": 5513,
+          "start_index": 5407,
+          "title": "Abortion laws by state | FOX 5 Atlanta",
+          "type": "url_citation",
+          "url": "https://www.fox5atlanta.com/news/abortion-states-laws-election-2024?utm_source=openai"
+        },
+        {
+          "end_index": 5817,
+          "start_index": 5712,
+          "title": "Bill Lee (Tennessee politician)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Bill_Lee_%28Tennessee_politician%29?utm_source=openai"
+        },
+        {
+          "end_index": 6271,
+          "start_index": 6162,
+          "title": "Mark Robinson (American politician)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Mark_Robinson_%28American_politician%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Post-Dobbs (2022), Republican politicians moderated abortion stances to remain viable, supporting legality under certain circumstances (e.g., exceptions for rape/incest/life of mother, gestational limits, state-level decisions) and rejecting total illegality without exceptions. Donald Trump won the 2024 presidency emphasizing states' rights and exceptions ([CBS News](https://www.cbsnews.com/news/trump-harris-abortion-2024/), [PBS](https://www.pbs.org/newshour/live-update/election-news-2024/where-trump-stands-on-abortion)). Hardline candidates like Mark Robinson (NC gov 2024), who promised strict bans without broad exceptions, lost decisively ([19th News](https://19thnews.org/2024/11/north-carolina-governors-race-results-josh-stein-mark-robinson/), [NBC](https://www.nbcnews.com/politics/2024-election/mark-robinson-loses-north-carolina-governor-josh-stein-rcna173891)). GOP candidates downplayed past extreme views ([CNN](https://www.cnn.com/interactive/2024/04/politics/abortion-rights-republican-2024-election-dg/index.html)), Senate hopefuls softened positions ([NBC](https://www.nbcnews.com/politics/2024-election/gop-senate-candidates-soften-abortion-stances-2024-roe-losing-streak-rcna125185)), and House Rs backed away from federal bans ([NYT](https://www.nytimes.com/2024/01/12/us/politics/house-republicans-abortion-ban.html)). Abortion rights ballot measures passed in 7/10 states in 2024 ([PBS](https://www.pbs.org/newshour/politics/live-results-abortion-on-the-ballot)), pressuring GOP. No major examples of no-exception 'total illegality' advocates winning office; mainstream Rs adopted viable positions as predicted."
+    },
+    {
+      "id": "E-00:48:59.700",
+      "result": "right",
+      "explanation": "The leaked draft in *Dobbs v. Jackson Women\u2019s Health Organization* became the Court\u2019s final decision on June 24, 2022. In that ruling, the Supreme Court held that the U.S. Constitution does **not** confer a right to abortion and explicitly overruled *Roe v. Wade* and *Planned Parenthood v. Casey*, returning authority over abortion regulation to \u201cthe people and their elected representatives\u201d (i.e., legislatures). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai))  \n\nThe leak of the draft opinion occurred in early May 2022, and the final decision was issued on June 24, 2022\u2014about seven weeks later, well within the \u201cabout eight weeks\u201d window and before early July 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai))  \n\nSo both key components of the prediction came true: (1) the federal constitutional right to abortion recognized in *Roe* was eliminated, and (2) primary authority over abortion regulation was returned to legislatures, on roughly the predicted timeline. Therefore, the prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 565,
+          "start_index": 449,
+          "title": "Dobbs v. Jackson Women's Health Organization",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai"
+        },
+        {
+          "end_index": 892,
+          "start_index": 776,
+          "title": "Dobbs v. Jackson Women's Health Organization",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dobbs_v._Jackson_Women%27s_Health_Organization?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": null
+    }
+  ]
+}

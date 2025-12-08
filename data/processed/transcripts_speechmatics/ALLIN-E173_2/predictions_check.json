@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "count": 9,
+    "count_by_result": {
+      "wrong": 2,
+      "right": 1,
+      "inconclusive": 5,
+      "ambiguous": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:02:33.330",
+      "result": "wrong",
+      "explanation": "In episode E173 on April 5, 2024, Jason introduces the new CEO, Jon Haile, and explicitly says that *Jon\u2019s first duty* will be to \u201cnext week announce the details of the All-In Summit 2024, our third edition.\u201d ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e173-google-buying-hubspot-ftx-depositors-not-made-whole-ai-job-fears-ukraine-joining-nato?utm_source=openai))  \n\nThe following week\u2019s episode, E174 (released April 12, 2024), does indeed contain an \u201cAll-In Summit 2024 Announcement\u201d segment and links to the registration page. That segment publicly reveals the key details: the event returns to Los Angeles and will be held September 8\u201310, 2024. ([podcasts.apple.com](https://podcasts.apple.com/us/podcast/e174-inflation-stays-hot-ai-disclosure-bill-drone-warfare/id1502871393?i=1000652303387&utm_source=openai)) However, the episode credits and third-party show notes list only Friedberg, Chamath, and Sacks as the speakers, with the summit announcement specifically attributed to David Friedberg\u2014not to Jon Haile. ([allin.onpodcastai.com](https://allin.onpodcastai.com/episodes/e2hcz0NntFa?utm_source=openai))  \n\nSo while the *content* of the prediction (that the 2024 All-In Summit\u2019s dates/location would be announced the following week) came true, the *agent* of that announcement was wrong: it was made on-air by the hosts, not by Jon Haile. Because the prediction is framed around Jon himself publicly making the announcement, it is best scored as **wrong** rather than partially correct.",
+      "sources": [
+        {
+          "end_index": 442,
+          "start_index": 242,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E173: Google buying HubSpot? FTX depositors not made whole, AI job fears, Ukraine joining NATO Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e173-google-buying-hubspot-ftx-depositors-not-made-whole-ai-job-fears-ukraine-joining-nato?utm_source=openai"
+        },
+        {
+          "end_index": 896,
+          "start_index": 730,
+          "title": "E174: Inflation stays hot, AI \u2026 - All-In with Chamath, Jason, Sacks & Friedberg - Apple Podcasts",
+          "type": "url_citation",
+          "url": "https://podcasts.apple.com/us/podcast/e174-inflation-stays-hot-ai-disclosure-bill-drone-warfare/id1502871393?i=1000652303387&utm_source=openai"
+        },
+        {
+          "end_index": 1195,
+          "start_index": 1100,
+          "title": "E174: Inflation stays hot, AI disclosure bill, Drone warfare, defense startups & more - All-In Podcast",
+          "type": "url_citation",
+          "url": "https://allin.onpodcastai.com/episodes/e2hcz0NntFa?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction stated that John (the new CEO) would publicly announce details (dates, location, etc.) of the third All-In Summit 2024 during the week after April 5, 2024 (i.e., April 6-12). All-In Podcast E174, released April 12, 2024, contained the public announcement at ~0:57 by host David Friedberg: dates September 8-10, 2024, in Los Angeles (UCLA), applications open at summit.allinpodcast.co, with upgrades like transportation and concierge ([YouTube transcript summary](https://www.youtube.com/watch?v=hZp80SYIRlY); [Apple Podcasts](https://podcasts.apple.com/us/podcast/e174-inflation-stays-hot-ai-disclosure-bill-drone/id1502871393?i=1000652303387)). No mention of John in the announcement. Later episodes refer to 'our CEO John' for operations (e.g., [transcript](https://podcasts.happyscribe.com/all-in-with-chamath-jason-sacks-friedberg/the-stablecoin-future-milei-s-memecoin-doge-for-the-dod-grok-3-why-stripe-stays-private)), confirming his role, but no evidence he publicly announced details. Reddit post on April 12 confirms registrations live post-podcast ([Reddit](https://www.reddit.com/r/TheAllinPodcasts/comments/1c2b767/all_in_summit_2024_registrations_are_live_7500/)). Thus, hosts announced, not John."
+    },
+    {
+      "id": "A-00:26:11.000",
+      "result": "right",
+      "explanation": "Evidence from regulatory filings and multiple news outlets shows that Donald Trump did in fact receive an additional **36 million shares** of Trump Media & Technology Group (DJT) as an *earnout* award, and that these shares were worth on the order of **$1.6\u2013$1.8 billion** at the time:\n\n- The merger agreement included up to **36 million \u201cearnout\u201d shares** for Trump if DJT\u2019s share price stayed above set benchmarks (notably $17.50) for 20 out of 30 trading days beginning March 25, 2024. ([cnbc.com](https://www.cnbc.com/2024/04/22/djt-trump-set-to-get-millions-more-trump-media-shares.html?utm_source=openai))  \n- By April 22, 2024, CNBC reported Trump was *poised* to receive up to **36 million additional shares** once that 20-day condition was satisfied. ([cnbc.com](https://www.cnbc.com/2024/04/22/djt-trump-set-to-get-millions-more-trump-media-shares.html?utm_source=openai))  \n- A later CNBC piece reports that Trump **received 36 million more shares on Friday, April 26, 2024**, as an earnout bonus, bringing his total holdings to 114.75 million shares; at a DJT closing price of **$49.93**, the new block alone was worth about **$1.8 billion** (\u201calmost $2 billion\u201d). ([cnbc.com](https://www.cnbc.com/2024/04/30/djt-trump-receives-36-million-more-shares-of-trump-media-as-bonus.html?utm_source=openai))  \n- AP and other outlets likewise report that Trump was awarded **36 million additional shares**, raising his stake to more than 114 million shares, with the grant valued around **$1.6\u2013$1.8 billion**, depending on the reference price. ([valuethemarkets.com](https://www.valuethemarkets.com/news/trump-awarded-36-million-more-trump-media-shares-worth-18-billion-after-hitting-price-benchmarks?utm_source=openai))\n\n**Match to the prediction:**\n- **Number of shares:** Predicted \u224836 million; actual grant = 36,000,000 shares \u2192 *accurate*.\n- **Value:** Predicted \u201calmost $2 billion\u201d; contemporaneous valuations around $1.6\u2013$1.8 billion \u2192 *very close in magnitude*.\n- **Timing:** Jason said \u201cin the coming week\u201d (normalized as \u201cwithin roughly one week\u201d of the April 5 episode). In reality, the grant was made on **April 26, 2024**, about *three weeks* after the episode. \n\nBecause the core substantive claim\u2014that Trump would receive about **36 million extra DJT shares** worth **nearly $2 billion**\u2014did indeed come true (albeit a bit later than implied), this prediction is best classified as **right**, with the caveat that the timing was off by roughly two weeks.",
+      "sources": [
+        {
+          "end_index": 646,
+          "start_index": 524,
+          "title": "DJT: Trump set to get millions more Trump Media shares",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/04/22/djt-trump-set-to-get-millions-more-trump-media-shares.html?utm_source=openai"
+        },
+        {
+          "end_index": 918,
+          "start_index": 796,
+          "title": "DJT: Trump set to get millions more Trump Media shares",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/04/22/djt-trump-set-to-get-millions-more-trump-media-shares.html?utm_source=openai"
+        },
+        {
+          "end_index": 1348,
+          "start_index": 1214,
+          "title": "DJT: Trump receives 36 million more shares of Trump Media as bonus",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/04/30/djt-trump-receives-36-million-more-shares-of-trump-media-as-bonus.html?utm_source=openai"
+        },
+        {
+          "end_index": 1761,
+          "start_index": 1585,
+          "title": "Trump awarded 36 million more Trump Media shares worth $1.8 billion after hitting price benchmarks | Value The Markets",
+          "type": "url_citation",
+          "url": "https://www.valuethemarkets.com/news/trump-awarded-36-million-more-trump-media-shares-worth-18-billion-after-hitting-price-benchmarks?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction specified that Trump would receive approximately 36 million additional DJT shares within roughly one week of the April 5, 2024 podcast (i.e., by around April 12). However, the earnout shares were earned and issued on April 26, 2024, about 21 days later. This is confirmed by multiple SEC filings stating: 'As of April 26, 2024, the Earnout Shares had been earned and issued, and President Donald J. Trump received 36,000,000 Earnout Shares' ([SEC filing](https://www.sec.gov/Archives/edgar/data/1849635/000114036125021579/ny20050075x1_s3.htm)) and 'On April 26, 2024, the Earnout Shares had been earned and such shares were issued' ([another SEC filing](https://www.sec.gov/Archives/edgar/data/1849635/000114036125018209/ef20047598_10q.htm)). News reports align: CNBC (Apr 30, 2024) reported receipt 'on Friday' (Apr 26); AP, CBS, CNN similarly dated to late April. No evidence of issuance in early April. DJT closed at $38.65 on Apr 26 ([financecharts.com historical data snippet](https://www.financecharts.com/stocks/DJT/summary/price)), valuing 36M shares at ~$1.39B, somewhat less than $2B but timing failure determines outcome."
+    },
+    {
+      "id": "D-01:05:53.000",
+      "result": "inconclusive",
+      "explanation": "The prediction window is from early April 2024 to early April 2029. As of **30 November 2025**, we are only ~1.5 years into that 5\u2011year period, so it is too early to know if general\u2011purpose humanoid domestic robots will *fail* to become widely available by April 2029.\n\nCurrent market status:\n\n- **1X\u2019s NEO \u201cHome Robot\u201d** opened pre\u2011orders in October 2025, with deliveries planned for 2026. It targets private homes but is expensive (~$20,000 for early adopters) and initially relies heavily on teleoperation by remote humans, with the company explicitly positioning these early units as data\u2011gathering and training platforms rather than fully autonomous, general\u2011purpose home servants. This is not yet a mass\u2011market, widely adopted consumer product. ([en.wikipedia.org](https://en.wikipedia.org/wiki/1X_Technologies?utm_source=openai))\n- **Tesla Optimus** is in limited internal use and targeted first at factory tasks. Musk and coverage describe limited production in 2025, with availability to other *businesses* in 2026 and an eventual consumer version still several years away, with timelines often framed as 3\u20135+ years out from 2024\u20132025. As of late 2025, no consumer Optimus is on sale. ([benzinga.com](https://www.benzinga.com/news/24/04/38395385/elon-musk-says-tesla-optimus-humanoid-robot-might-be-available-externally-by-the-end-of-next-year-he?utm_source=openai))\n- **Agility Robotics\u2019 Digit** and similar humanoids (e.g., from Agility, Apptronik) are being deployed commercially in logistics, warehousing, and manufacturing, not as general\u2011purpose home robots. ([agilityrobotics.com](https://www.agilityrobotics.com/?utm_source=openai))\n- Industry coverage of leading humanoid\u2011robot firms (Tesla, Figure, 1X, Agility, Boston Dynamics, Apptronik) consistently emphasizes near\u2011term industrial and logistics use, with home use framed as a future step. ([businessinsider.com](https://www.businessinsider.com/humanoid-robot-companies-us-tesla-figure-1x-agility-apptronik-2025-11?utm_source=openai))\n- Existing and upcoming domestic robots like Samsung\u2019s **Ballie** and ASUS **Zenbo** are either non\u2011humanoid companion/smart\u2011home devices or relatively limited in capability, not the kind of *general\u2011purpose humanoid* doing a broad range of household tasks autonomously. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ballie?utm_source=openai))\n\nSo far, reality **does not contradict** Sacks\u2019 claim: there are still *no* widely available, general\u2011purpose humanoid domestic robots in typical homes as of late 2025. However, because the key part of the prediction is that such robots **will not** be widely available *by April 2029*, and we have not yet reached that date, the correctness of the prediction cannot be definitively judged. It remains **plausible but unproven**, hence the result is **\u201cinconclusive (too early)\u201d** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 880,
+          "start_index": 795,
+          "title": "1X Technologies",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/1X_Technologies?utm_source=openai"
+        },
+        {
+          "end_index": 1420,
+          "start_index": 1239,
+          "title": "Elon Musk Says Tesla Optimus Humanoid Robot Might Be Available Externally By The End Of Next Year: Here's The Progress Report - Tesla (NASDAQ:TSLA) - Benzinga",
+          "type": "url_citation",
+          "url": "https://www.benzinga.com/news/24/04/38395385/elon-musk-says-tesla-optimus-humanoid-robot-might-be-available-externally-by-the-end-of-next-year-he?utm_source=openai"
+        },
+        {
+          "end_index": 1695,
+          "start_index": 1620,
+          "title": "Agility Robotics",
+          "type": "url_citation",
+          "url": "https://www.agilityrobotics.com/?utm_source=openai"
+        },
+        {
+          "end_index": 2053,
+          "start_index": 1909,
+          "title": "6 leading humanoid robot companies worth watching",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/humanoid-robot-companies-us-tesla-figure-1x-agility-apptronik-2025-11?utm_source=openai"
+        },
+        {
+          "end_index": 2402,
+          "start_index": 2326,
+          "title": "Ballie",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Ballie?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction timeframe is 5 years from April 2024 (until April 2029). As of December 2025 (less than 2 years in), no general-purpose humanoid domestic robots are widely available to consumers. Examples: 1X NEO offers preorders at $20,000 with 2026 delivery ([1X.tech](https://www.1x.tech/order), [CNET](https://www.cnet.com/tech/considering-buying-a-20k-home-robot-theres-something-you-need-to-know-first/)); Tesla Optimus targets internal/factory use first, consumer sales possibly 2026 ([TechCrunch](https://techcrunch.com/2024/07/23/elon-musk-sets-2026-optimus-sale-date-heres-where-other-humanoid-robots-stand/)); Figure 03 is in demo stage for homes ([Figure.ai](https://www.figure.ai/)). High costs and limited/pending shipments do not constitute 'widely available' in typical homes. Too early to assess full 5-year prediction."
+    },
+    {
+      "id": "D-01:06:36.600",
+      "result": "inconclusive",
+      "explanation": "As of late 2025, the *current* pattern of AI\u2011enabled robot deployment is strongly consistent with Sacks\u2019 prediction, but his stated horizon (\u201cin the near term\u201d / \u201cover the next several years, into the late 2020s\u201d) has not finished yet, so it\u2019s too early to declare it definitively right or wrong.\n\n**What we see so far (2023\u20132025):**\n- Industrial robots massively dominate robot deployment: the International Federation of Robotics (IFR) reports a record 4.28 million robots operating on factory floors worldwide in 2023, with more than 540,000 new industrial units installed annually in 2023\u20132024.([linkedin.com](https://www.linkedin.com/posts/international-federation-of-robotics_world-robotics-2024-report-released-by-ifr-activity-7244276811914702850-Uxqk?utm_source=openai))  This is orders of magnitude larger than any other robot category.\n- Professional service robots are growing, but they\u2019re also mostly *industrial or commercial*, not domestic: in 2023 over 205,000 professional service robots were sold, and **more than half** were for transportation and logistics (warehouse/industrial handling), with other big segments in hospitality, cleaning, agriculture, and security.([ifr.org](https://ifr.org/ifr-press-releases/news/sales-of-service-robots-up-30-worldwide?utm_source=openai))  These are deployed in workplaces, malls, hospitals, airports, etc., not as general\u2011purpose home helpers.\n- Humanoid and \u201cadvanced\u201d robots in 2024\u20132025 are primarily piloted in factories and logistics. An IDTechEx market study notes that, as of 2025, humanoid robots in the automotive sector are still in early pilot tests, doing basic material\u2011handling and inspection, and that general\u2011purpose humanoids in non\u2011industrial areas (like healthcare) are even further away; warehouse pilots number fewer than 100 humanoid units.([idtechex.com](https://www.idtechex.com/en/research-report/humanoid-robots/1093?utm_source=openai))  A Wired piece similarly frames 2025 as the year of the **humanoid robot factory worker**, with Boston Dynamics\u2019 Atlas going into a Hyundai plant.([wired.com](https://www.wired.com/story/2025-year-of-the-humanoid-robot-factory-worker/?utm_source=openai))  A deployment survey of humanoids shows they are working mainly in logistics, security, elder care, retail, and R&D pilots\u2014again, institutional rather than home use.([mechonomics.co](https://www.mechonomics.co/c/work?utm_source=openai))\n- Military use of robots and drones is substantial and growing: Ukraine is creating dedicated units of robotic ground vehicles; Russia has formed a large drone\u2011warfare unit (\u201cRubicon\u201d); and the US and allies are developing collaborative combat drones like the XQ\u201158 Valkyrie and long\u2011endurance UAVs such as ULTRA.([reuters.com](https://www.reuters.com/business/aerospace-defense/ukraines-military-roll-out-units-robotic-vehicles-2025-02-05/?utm_source=openai))  This supports the prediction\u2019s mention of military applications.\n- By contrast, **general\u2011purpose robots in private homes are still rare and experimental**. A notable example, 1X\u2019s NEO \u201chome robot,\u201d only opened pre\u2011orders in October 2025, targets early adopters at about $20,000 (or $499/month), and currently relies heavily on remote human teleoperation rather than full autonomy\u2014indicating an early, niche market rather than broad deployment.([en.wikipedia.org](https://en.wikipedia.org/wiki/1X_Technologies?utm_source=openai))  Analysts also project that truly general\u2011purpose humanoid robots for non\u2011industrial domains will not begin to scale until later in the decade.([idtechex.com](https://www.idtechex.com/en/research-report/humanoid-robots/1093?utm_source=openai))\n\n**Why the verdict is \u201cinconclusive\u201d:**\n- Sacks\u2019 **directional claim**\u2014that in the near term most practical deployment of advanced AI robots would be industrial or military rather than as general\u2011purpose home robots\u2014matches the evidence up to November 2025.\n- However, the normalized prediction explicitly extends \u201cthrough at least the late 2020s.\u201d We have not yet reached that point, and rapid breakthroughs or unexpected consumer adoption (e.g., affordable, capable home humanoids post\u20112026) could still change the balance.\n\nSo, while the world in 2024\u20132025 looks very much like what he described, the multi\u2011year horizon is still unfolding, making the overall prediction **inconclusive (too early to fully score)**.",
+      "sources": [
+        {
+          "end_index": 821,
+          "start_index": 641,
+          "title": "WORLD ROBOTICS 2024 REPORT released by IFR: \u201cRecord 4 Million Robots on Factory Floors Worldwide\u201d \u27a1 The new World Robotics report recorded 4,281,585 units operating in factories worldwide - an\u2026 | International Federation of Robotics | 24 comments",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/posts/international-federation-of-robotics_world-robotics-2024-report-released-by-ifr-activity-7244276811914702850-Uxqk?utm_source=openai"
+        },
+        {
+          "end_index": 1339,
+          "start_index": 1229,
+          "title": "Sales of Service Robots up 30% Worldwide - International Federation of Robotics",
+          "type": "url_citation",
+          "url": "https://ifr.org/ifr-press-releases/news/sales-of-service-robots-up-30-worldwide?utm_source=openai"
+        },
+        {
+          "end_index": 1965,
+          "start_index": 1865,
+          "title": "Humanoid Robots 2025-2035: Technologies, Markets and Opportunities: IDTechEx",
+          "type": "url_citation",
+          "url": "https://www.idtechex.com/en/research-report/humanoid-robots/1093?utm_source=openai"
+        },
+        {
+          "end_index": 2220,
+          "start_index": 2112,
+          "title": "2025 Is the Year of the Humanoid Robot Factory Worker | WIRED",
+          "type": "url_citation",
+          "url": "https://www.wired.com/story/2025-year-of-the-humanoid-robot-factory-worker/?utm_source=openai"
+        },
+        {
+          "end_index": 2457,
+          "start_index": 2386,
+          "title": "work | Mechonomics",
+          "type": "url_citation",
+          "url": "https://www.mechonomics.co/c/work?utm_source=openai"
+        },
+        {
+          "end_index": 2919,
+          "start_index": 2772,
+          "title": "Ukraine's military to roll out units of robotic vehicles",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/aerospace-defense/ukraines-military-roll-out-units-robotic-vehicles-2025-02-05/?utm_source=openai"
+        },
+        {
+          "end_index": 3451,
+          "start_index": 3366,
+          "title": "1X Technologies",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/1X_Technologies?utm_source=openai"
+        },
+        {
+          "end_index": 3695,
+          "start_index": 3595,
+          "title": "Humanoid Robots 2025-2035: Technologies, Markets and Opportunities: IDTechEx",
+          "type": "url_citation",
+          "url": "https://www.idtechex.com/en/research-report/humanoid-robots/1093?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction covers deployments through at least the late 2020s, but only ~1.75 years have passed (podcast Apr 2024 to Dec 2025). Current evidence shows practical deployments of advanced AI humanoid robots primarily in industrial settings, e.g., Figure 02 at BMW Spartanburg plant for months of real work ([Figure AI BMW deployment](https://winsomemarketing.com/ai-in-marketing/figure-ais-battle-scarred-robots-just-proved-humanoid-ai-can-survive-the-factory-floor)), Tesla Optimus planned for internal factory use 2025 ([Tesla shareholder meeting](https://www.teslarati.com/elon-musk-reveals-what-will-make-optimus-ridiculous-production-targets-feasible/)), and military like Ukraine THeMIS UGVs. Home use is limited to pilots: 1X NEO Gamma testing in 'a few hundred' homes ([TechCrunch](https://techcrunch.com/2025/03/21/1x-will-test-humanoid-robots-in-a-few-hundred-homes-in-2025/)), Figure 03 announced for home but no widespread deployment yet ([Figure.ai](https://www.figure.ai/news/introducing-figure-03)). No evidence of most deployments being general-purpose home robots. Too early to verify full timeframe."
+    },
+    {
+      "id": "C-01:07:16.390",
+      "result": "inconclusive",
+      "explanation": "Chamath\u2019s claim was that **within about 2\u20133 years** (from April 2024), people would *\u201chave a domestic help robot that you can probably pay 1000 bucks a month for\u201d*\u2014i.e., a general\u2011purpose household robot, capable of multiple chores like dishes and laundry, available for home use at roughly that price point.\n\nAs of **late 2025**, there are **early consumer humanoid home robots**, but they are still in limited rollout and not yet clearly matching his vision at scale:\n\n- **1X Technologies\u2019 NEO** is a humanoid home robot designed to do chores like unloading the dishwasher, folding laundry, tidying, etc. It opened pre\u2011orders in October 2025 for home use, at about **$20,000** outright or roughly **$499/month** on a subscription plan, with deliveries scheduled for **2026**. However, reports note that many tasks are still tele\u2011operated by remote human operators rather than being fully autonomous. ([en.wikipedia.org](https://en.wikipedia.org/wiki/1X_Technologies?utm_source=openai))\n- **Weave\u2019s Isaac** is another \u201crobot butler\u201d aimed at household tasks such as folding laundry and organizing spaces, with first customer shipments planned for **fall 2025**. Its pricing is around **$59,000** or about **$1,385 per month for 48 months**, which is the same order of magnitude as $1,000/month but at a very high total cost and for a very small number of early customers. ([therundown.ai](https://www.therundown.ai/p/futuristic-robot-butlers-weave-2025?utm_source=openai))\n\nThese products show that **multi\u2011task domestic robots for home use are just beginning to appear**, some with subscription models in the same ballpark as $1,000/month. But:\n\n1. **The prediction\u2019s time window (2026\u20132027) has not finished yet.** We are only ~1.5 years after the April 2024 statement, and his explicit horizon was \u201cthe next 2 or 3 years.\u201d\n2. Current offerings are **early, expensive, and/or heavily teleoperated**, rather than robust general\u2011purpose household help at a clearly established ~$1,000/month price point for typical consumers.\n\nBecause the deadline has not yet passed and the market is still emerging, **it is too early to say definitively** whether his prediction will prove right or wrong.\n\nSo the appropriate status as of November 30, 2025 is: **inconclusive (too early to judge)**.",
+      "sources": [
+        {
+          "end_index": 1031,
+          "start_index": 946,
+          "title": "1X Technologies",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/1X_Technologies?utm_source=openai"
+        },
+        {
+          "end_index": 1518,
+          "start_index": 1418,
+          "title": "New robot butlers coming in 2025",
+          "type": "url_citation",
+          "url": "https://www.therundown.ai/p/futuristic-robot-butlers-weave-2025?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "As of December 1, 2025, no general-purpose domestic help robots capable of tasks like washing dishes and doing laundry are available for consumer home use at ~$1,000/month. The closest is 1X's NEO humanoid robot, which handles folding laundry, emptying the dishwasher, tidying, etc., with preorder pricing at $20,000 or $499/month, but deliveries to US homes begin in 2026 ([1X.tech](https://www.1x.tech/discover/neo-home-robot), [The Robot Report](https://www.therobotreport.com/1x-announces-pre-order-launch-neo-humanoid-robot/), [Fortune](https://fortune.com/2025/10/30/1x-neo-household-robot-chores-20k/)). Tesla Optimus and Figure AI focus on commercial/industrial use, not yet consumer-available for homes. Prediction timeframe (2026-2027) from April 2024 release has not elapsed, making it too early to confirm."
+    },
+    {
+      "id": "D-01:22:57.650",
+      "result": "wrong",
+      "explanation": "Antony Blinken\u2019s April 4, 2024 remarks in Brussels clearly stated that *\u201cUkraine will become a member of NATO\u201d* and that the goal of the Washington summit was to *\u201chelp build a bridge to that membership and to create a clear pathway for Ukraine moving forward.\u201d*([en.interfax.com.ua](https://en.interfax.com.ua/news/general/978210.html?utm_source=openai))  In the immediate aftermath (the next several days of coverage), U.S. and NATO messaging simply repeated this line about building a \u201cbridge\u201d to eventual membership, with no official correction or dilution from the administration.([euromaidanpress.com](https://euromaidanpress.com/2024/04/05/ukraine-leaves-nato-birthday-party-with-promises-of-air-defense-but-not-membership/?utm_source=openai))\n\nHowever, in a Time magazine interview conducted in late May and published on June 4, 2024, President Biden said that peace in Ukraine *\u201cdoesn\u2019t mean [they are] part of NATO\u201d* and added: *\u201cI am not prepared to support the NATOization of Ukraine,\u201d* explicitly presenting a vision of Ukraine\u2019s future security that does **not** require NATO membership.([time.com](https://time.com/6984968/joe-biden-transcript-2024-interview?utm_source=openai))  Ukrainian and European outlets highlighted this as Biden reiterating he had not been a supporter of Ukraine joining NATO.([pravda.com.ua](https://www.pravda.com.ua/eng/news/2024/06/04/7459152/?utm_source=openai))  The Washington Post described the comment as *\u201cappearing to rule out the country\u2019s membership altogether and contradicting the U.S. government\u2019s official stance,\u201d* i.e., contradicting the earlier \u201cUkraine will become a member of NATO\u201d formulation.([washingtonpost.com](https://www.washingtonpost.com/national-security/2024/07/09/nato-biden-ukraine-membership/?utm_source=openai))  A Kyiv Post analysis likewise treated Biden\u2019s remark as directly at odds with Blinken\u2019s April assurance.([kyivpost.com](https://www.kyivpost.com/opinion/34286?utm_source=openai))\n\nBecause the head of the same administration later articulated a position that cast serious doubt on, and was widely read as contradicting, Blinken\u2019s categorical \u201cUkraine will become a member of NATO\u201d line, this **does** amount to a significant softening/partial walk-back of that commitment in subsequent public communications. Under the normalized prediction (\u201cthe Biden administration will *not* significantly walk back or formally clarify this position in a way that meaningfully softens or reverses the commitment\u201d), that outcome makes Sacks\u2019s prediction wrong.",
+      "sources": [
+        {
+          "end_index": 388,
+          "start_index": 295,
+          "title": "Blinken: Our goal at Washington summit is to help build bridge to Ukraine's membership in NATO",
+          "type": "url_citation",
+          "url": "https://en.interfax.com.ua/news/general/978210.html?utm_source=openai"
+        },
+        {
+          "end_index": 783,
+          "start_index": 618,
+          "title": "Ukraine leaves NATO birthday party with promises of air defense, but not membership - Euromaidan Press",
+          "type": "url_citation",
+          "url": "https://euromaidanpress.com/2024/04/05/ukraine-leaves-nato-birthday-party-with-promises-of-air-defense-but-not-membership/?utm_source=openai"
+        },
+        {
+          "end_index": 1228,
+          "start_index": 1136,
+          "title": "President Joe Biden 2024 TIME Interview Transcript: Read | TIME",
+          "type": "url_citation",
+          "url": "https://time.com/6984968/joe-biden-transcript-2024-interview?utm_source=openai"
+        },
+        {
+          "end_index": 1442,
+          "start_index": 1351,
+          "title": "Biden says vision for peace in Ukraine doesn't have to include NATO membership | Ukrainska Pravda",
+          "type": "url_citation",
+          "url": "https://www.pravda.com.ua/eng/news/2024/06/04/7459152/?utm_source=openai"
+        },
+        {
+          "end_index": 1823,
+          "start_index": 1691,
+          "title": "Biden kicks off NATO summit pledging support for Ukraine - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/national-security/2024/07/09/nato-biden-ukraine-membership/?utm_source=openai"
+        },
+        {
+          "end_index": 2003,
+          "start_index": 1929,
+          "title": "Opinion: Fissures Within Team Biden?",
+          "type": "url_citation",
+          "url": "https://www.kyivpost.com/opinion/34286?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Blinken stated on April 4, 2024, in Brussels: 'Ukraine will become a member of NATO. Our purpose at the summit is to help build a bridge to that membership.' ([State Dept transcript](https://2021-2025.state.gov/secretary-antony-j-blinken-at-a-solo-press-availability/), [Reuters](https://www.reuters.com/world/europe/us-secretary-state-blinken-says-ukraine-will-be-nato-member-2024-04-04/)). This echoed prior NATO positions (e.g., Vilnius 2023). No evidence from searches of Biden administration significantly walking back, clarifying, or softening this in the ensuing news cycle (April-May 2024) or public communications. NATO Foreign Ministers' meeting (April 3-4) proceeded without reversal ([NATO](https://www.nato.int/cps/en/natohq/news_224204.htm)). Later, Washington Summit (July 2024) unveiled the 'bridge to membership' ([Reuters](https://www.reuters.com/world/europe/nato-allies-summit-unveil-ukraine-bridge-membership-2024-07-05/)). June 2024 Biden comments on no NATO in peace deal were not a reversal of future membership commitment, and policy was affirmed unchanged ([RFERL](https://www.rferl.org/a/32989719.html)). No retractions found up to Dec 2025."
+    },
+    {
+      "id": "A-01:10:27.900",
+      "result": "inconclusive",
+      "explanation": "The prediction specifies a timeline of **seven years from April 2024**, which points to around **April 2031** as the target date by which \u201cevery middle class household in America\u201d will have a ~$1,000/month general\u2011purpose domestic robot. The current date is **November 30, 2025**, which is less than two years into that seven\u2011year window. Because the deadline for the prediction has not yet arrived, it\u2019s too early to determine whether this adoption level will actually occur. Therefore, the accuracy of the prediction cannot yet be evaluated.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": null
+    },
+    {
+      "id": "C-00:43:36.710",
+      "result": "ambiguous",
+      "explanation": "Alphabet/Google never actually proceeded with an acquisition of HubSpot. In early April 2024, reports said Alphabet was considering a bid for HubSpot, but no formal offer was made and no deal was announced.\u30100search9\u3011 On July 10, 2024, Bloomberg and Reuters reported that Alphabet had shelved its efforts to acquire HubSpot and that the talks had never progressed to due diligence.\u30100search1\u3011\u30100search6\u3011 Subsequent coverage described this as a \"failed\" or abandoned deal, with HubSpot continuing as an independent public company into late 2024 and 2025.\u30100news14\u3011\n\nChamath's prediction was conditional: **if** Google proceeded with acquiring HubSpot, antitrust review and approval would take on the order of three years from announcement to close. Because Google never proceeded to an announced acquisition, the antitrust-review timeline he predicted was never tested in reality. There is therefore no observable outcome by which to judge whether \"three years\" would have been accurate.\n\nSince the necessary condition (a formal Google\u2013HubSpot acquisition attempt) did not occur, the correctness of the predicted 3-year review period cannot be determined. Hence the result is **ambiguous**, not right or wrong.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is conditional on Google proceeding with the HubSpot acquisition (i.e., announcing a deal and entering antitrust review). No deal was ever formally announced; preliminary talks were reported by [Reuters on April 4, 2024](https://www.reuters.com/markets/deals/google-parent-alphabet-weighs-offer-hubspot-sources-say-2024-04-04/), but Alphabet shelved interest before due diligence per [Bloomberg and Reuters on July 10, 2024](https://www.reuters.com/technology/google-parent-alphabet-shelves-interest-hubspot-bloomberg-news-reports-2024-07-10/). HubSpot remains independent, releasing products in 2025 (e.g., Fall 2025 Spotlight). No antitrust review occurred, so the 3-year timeline cannot be verified. Enough time (20+ months) has passed to confirm no deal proceeded."
+    },
+    {
+      "id": "A-00:05:01.050",
+      "result": "inconclusive",
+      "explanation": "**Summary:** Part (2) of Jason\u2019s prediction (a live Q&A around 500k subs) has already happened. Part (1) (a special 1M-subscriber party) depends on the channel hitting 1,000,000 YouTube subscribers, which it has not yet done as of late November 2025, so the overall prediction is *too early to fully evaluate*.\n\n**What Jason predicted in E173 (Apr 5, 2024)**  \nIn episode E173 he said they would:\n- Hold **\u201ca 1 million subscriber party\u201d** when the All-In YouTube channel hits 1,000,000 subscribers.\n- When they were at **486,000 subscribers**, do **\u201ca live Q&A with all the besties\u201d** once they added **14,000 more** subscribers (i.e., around 500,000 subs). ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e173-google-buying-hubspot-ftx-depositors-not-made-whole-ai-job-fears-ukraine-joining-nato?utm_source=openai))\n\n**Status of the 500k-subscriber live Q&A (Part 2)**\n- On **June 28, 2024**, the All-In channel ran a livestream titled **\u201c500K Subscriber Livestream! | All-In Podcast\u201d** explicitly celebrating **reaching 500,000 subscribers on YouTube**. ([getrecall.ai](https://www.getrecall.ai/summary/all-in-podcast/500k-subscriber-livestream-or-all-in-podcast?utm_source=openai))\n- The video\u2019s description states **\u201cONLY SUBSCRIBERS CAN ASK LIVE QUESTIONS!\u201d**, indicating it was a live Q&A-style event with questions from subscribers (\u201cbesties\u201d). ([videohighlight.com](https://videohighlight.com/v/AsDrfUQImhs))\n- Summaries of the stream confirm it was a **live chat / Q&A format** tied to the 500k milestone, and during that stream they again talk about future subscriber milestones and a planned million-subscriber party. ([getrecall.ai](https://www.getrecall.ai/summary/all-in-podcast/500k-subscriber-livestream-or-all-in-podcast?utm_source=openai))\n\nThis matches Jason\u2019s promise of a **live Q&A when going from ~486k to ~500k subs**, so **Part (2) has come true**.\n\n**Status of the 1M-subscriber party (Part 1)**\n- Multiple analytics trackers show the **All-In Podcast YouTube channel is still under 1,000,000 subscribers** as of late November 2025:\n  - SPEAKRJ lists **972,000 subscribers** as of **November 23, 2025**. ([speakrj.com](https://www.speakrj.com/audit/report/UCESLZhusAkFfsNsApnjF_Cg/youtube?utm_source=openai))\n  - SocialCounts.org\u2019s live counter shows about **974,963 subscribers** on **November 27, 2025**. ([socialcounts.org](https://socialcounts.org/youtube-live-subscriber-count/UCESLZhusAkFfsNsApnjF_Cg?utm_source=openai))\n- Other coverage and transcripts refer to a **planned** million-subscriber party (including mentions of a future Vegas party) but there is **no evidence that a 1M-subscriber party has actually been held yet**, and the precondition (reaching 1M subs) clearly has not occurred. ([podcasts.happyscribe.com](https://podcasts.happyscribe.com/all-in-with-chamath-jason-sacks-friedberg/hurricane-fallout-alphafold-google-breakup-trump-surge-vc-giveback-tiktok-survey?utm_source=openai))\n\n**Conclusion**\n- **Part (2):** The ~500k live Q&A with subscriber questions has happened.  \n- **Part (1):** The 1M subscriber threshold has not yet been reached, so the promised 1M-subscriber party has *not* yet happened and isn\u2019t overdue.\n\nBecause the overall prediction is conjunctive (they will do *both* things) and the first part is still pending on a future milestone, the correct overall judgment **today (Nov 30, 2025)** is **\"inconclusive\" (too early to fully determine)**.",
+      "sources": [
+        {
+          "end_index": 903,
+          "start_index": 703,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E173: Google buying HubSpot? FTX depositors not made whole, AI job fears, Ukraine joining NATO Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e173-google-buying-hubspot-ftx-depositors-not-made-whole-ai-job-fears-ukraine-joining-nato?utm_source=openai"
+        },
+        {
+          "end_index": 1274,
+          "start_index": 1146,
+          "title": "500K Subscriber Livestream! | All-In Podcast",
+          "type": "url_citation",
+          "url": "https://www.getrecall.ai/summary/all-in-podcast/500k-subscriber-livestream-or-all-in-podcast?utm_source=openai"
+        },
+        {
+          "end_index": 1507,
+          "start_index": 1443,
+          "title": "500K Subscriber Livestream! | All-In Podcast | YouTube Video Summary \u2013 Video Highlight | Video Highlight",
+          "type": "url_citation",
+          "url": "https://videohighlight.com/v/AsDrfUQImhs"
+        },
+        {
+          "end_index": 1849,
+          "start_index": 1721,
+          "title": "500K Subscriber Livestream! | All-In Podcast",
+          "type": "url_citation",
+          "url": "https://www.getrecall.ai/summary/all-in-podcast/500k-subscriber-livestream-or-all-in-podcast?utm_source=openai"
+        },
+        {
+          "end_index": 2332,
+          "start_index": 2228,
+          "title": "All-In Podcast YouTube Channel Statistics / Analytics - SPEAKRJ Stats",
+          "type": "url_citation",
+          "url": "https://www.speakrj.com/audit/report/UCESLZhusAkFfsNsApnjF_Cg/youtube?utm_source=openai"
+        },
+        {
+          "end_index": 2551,
+          "start_index": 2432,
+          "title": "All-In Podcast - YouTube Live Subscriber Count - SocialCounts.org",
+          "type": "url_citation",
+          "url": "https://socialcounts.org/youtube-live-subscriber-count/UCESLZhusAkFfsNsApnjF_Cg?utm_source=openai"
+        },
+        {
+          "end_index": 3032,
+          "start_index": 2829,
+          "title": "Transcript of Hurricane ... | Your Podcast Transcripts",
+          "type": "url_citation",
+          "url": "https://podcasts.happyscribe.com/all-in-with-chamath-jason-sacks-friedberg/hurricane-fallout-alphafold-google-breakup-trump-surge-vc-giveback-tiktok-survey?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction has two parts. Part (2) came true: All-In Podcast reached ~500K YouTube subscribers and hosted a live Q&A livestream with all four hosts ('besties') on June 25, 2024 ([YouTube video](https://www.youtube.com/watch?v=AsDrfUQImhs); [Twitter announcement](https://x.com/theallinpod/status/1805689157177455030); podcast mentions). Part (1) cannot be verified yet: Channel at 977K subscribers as of Dec 1, 2025 ([YouTube channel](https://www.youtube.com/@allin); [SocialBlade](https://socialblade.com/youtube/channel/UCESLZhusAkFfsNsApnjF_Cg)), below 1M, so no party has occurred. No evidence of a 1M party despite searches. Too early for part (1)."
+    }
+  ]
+}

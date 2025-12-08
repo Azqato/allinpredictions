@@ -1,0 +1,983 @@
+{
+  "meta": {
+    "count": 21,
+    "count_by_result": {
+      "wrong": 6,
+      "right": 6,
+      "inconclusive": 5,
+      "ambiguous": 4
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:18:01.810",
+      "result": "wrong",
+      "explanation": "The prediction was that Democrats would *not* pull off a late switch and that Joe Biden would remain their nominee through the 2024 election. In reality, Biden **withdrew from the 2024 race on July 21, 2024**, citing the best interests of his party and the country, and he endorsed Kamala Harris as the Democratic nominee. ([cnbc.com](https://www.cnbc.com/2024/07/21/biden-to-drop-out-of-2024-presidential-race.html?utm_source=openai)) Following his withdrawal, the Democratic Party moved forward with Harris, who **officially became the Democratic presidential nominee on August 5, 2024**, and then headed the ticket in the November election, which she ultimately lost to Donald Trump. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai)) Because there *was* a late switch and Biden did *not* remain the nominee through Election Day, Sacks\u2019s prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 468,
+          "start_index": 356,
+          "title": "Biden drops out of 2024 presidential election against Trump",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/07/21/biden-to-drop-out-of-2024-presidential-race.html?utm_source=openai"
+        },
+        {
+          "end_index": 863,
+          "start_index": 720,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Joe Biden withdrew from the 2024 presidential race on July 21, 2024, and Kamala Harris became the Democratic nominee, officially confirmed around August 1, 2024. Biden did not remain the candidate through the November 2024 election. Sources: [Wikipedia: Withdrawal of Joe Biden](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [NPR: Harris nominee](https://www.npr.org/2024/08/01/nx-s1-5060456/harris-democratic-nominee-roll-call-delegates), [AP News](https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/)."
+    },
+    {
+      "id": "A-00:16:39.060",
+      "result": "wrong",
+      "explanation": "The prediction had two clear conditions:\n\n1. **Democrats replace Joe Biden with another presidential candidate during June 2024.**  \n2. **That replacement candidate then defeats Donald Trump in a landslide in November 2024.**\n\nWhat actually happened:\n\n- Joe Biden remained the Democratic nominee through and after June 2024; there was no June \u201cswitcheroo\u201d to a different Democratic candidate. Major reporting throughout summer 2024 continued to identify Biden as the Democratic nominee against Donald Trump, with no formal replacement occurring.\n- Since the *conditional trigger* (a June 2024 replacement of Biden) never happened, the prediction\u2019s scenario did not materialize, and thus its stated outcome (a landslide win by the replacement candidate) did not occur.\n\nBecause the prediction is explicitly conditional on an event that did **not** occur (Democrats switching candidates in June 2024), the prediction as stated is **wrong**.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is conditional: *if* Democrats replaced Biden in June 2024, the replacement would defeat Trump by a landslide. Biden withdrew on July 21, 2024\u2014not June\u2014and was replaced by Kamala Harris, who lost to Trump (Trump won with 312 electoral votes). [Wikipedia: Biden withdrawal](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [270toWin: 2024 results](https://www.270towin.com/2024-election). Since the condition (June replacement) did not occur, the prediction cannot be verified as right or wrong."
+    },
+    {
+      "id": "A-00:52:32.000",
+      "result": "wrong",
+      "explanation": "Dr. Fauci did testify publicly before the House Select Subcommittee on the Coronavirus Pandemic on Monday, June 3, 2024, and the hearing was widely covered and described as contentious or fiery, with sharp partisan exchanges and high political drama. ([cbsnews.com](https://www.cbsnews.com/news/anthony-fauci-testimony-house-select-subcommittee-on-the-coronavirus-pandemic/?utm_source=openai)) However, major mainstream accounts emphasize that the hearing did not produce new evidence or decisive revelations about a COVID \u201ccover\u2011up.\u201d Associated Press reporting on the hearing noted that after more than a year of investigation, the GOP-led subcommittee had found no evidence linking Fauci to wrongdoing and that there was no new scientific information resolving the lab\u2011leak versus natural\u2011origin debate. ([waka.com](https://www.waka.com/2024/06/03/fauci-grilled-in-u-s-house-hearing-over-covid-origins-and-controversies/?utm_source=openai)) Scientific American similarly characterized the session as Fauci fending off allegations and calling cover\u2011up claims \u201csimply preposterous,\u201d without highlighting any breakthrough disclosures. ([scientificamerican.com](https://www.scientificamerican.com/article/fauci-calls-covid-cover-up-claim-preposterous/?utm_source=openai)) CNN\u2019s detailed takeaway piece focused on Fauci\u2019s reiteration of long\u2011standing positions about COVID\u2019s origins, his denial of influencing scientists via grants, and his description of ongoing death threats\u2014again, not on any dramatic new facts emerging. ([keyt.com](https://keyt.com/politics/cnn-us-politics/2024/06/03/takeaways-from-faucis-testimony-at-contentious-house-hearing-on-covid-19-pandemic/?utm_source=openai)) Some partisan or activist outlets on the right framed the hearing as producing \u201cfireworks\u201d or a \u201cheated showdown,\u201d largely because of confrontational questioning and calls for prosecution rather than because of substantiated new findings. ([childrenshealthdefense.org](https://childrenshealthdefense.org/defender/fauci-defends-covid-policies-lawmakers-house-select-subcommittee-hearing/?utm_source=openai)) Taken together, the public record shows a high\u2011temperature but largely rehashing hearing, not one that \u201ccracked open\u201d a COVID cover\u2011up with major, widely recognized revelations, so Jason\u2019s prediction is best judged as wrong.",
+      "sources": [
+        {
+          "end_index": 426,
+          "start_index": 284,
+          "title": "Fauci testifies about COVID pandemic response at heated House hearing - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/anthony-fauci-testimony-house-select-subcommittee-on-the-coronavirus-pandemic/?utm_source=openai"
+        },
+        {
+          "end_index": 975,
+          "start_index": 839,
+          "title": "Fauci grilled in U.S. House hearing over COVID origins and controversies - WAKA 8",
+          "type": "url_citation",
+          "url": "https://www.waka.com/2024/06/03/fauci-grilled-in-u-s-house-hearing-over-covid-origins-and-controversies/?utm_source=openai"
+        },
+        {
+          "end_index": 1302,
+          "start_index": 1167,
+          "title": "Fauci Calls COVID Cover-Up Claim \u2018Preposterous\u2019 | Scientific American",
+          "type": "url_citation",
+          "url": "https://www.scientificamerican.com/article/fauci-calls-covid-cover-up-claim-preposterous/?utm_source=openai"
+        },
+        {
+          "end_index": 1722,
+          "start_index": 1555,
+          "title": "Takeaways from Fauci\u2019s testimony at contentious House hearing on Covid-19 pandemic | News Channel 3-12",
+          "type": "url_citation",
+          "url": "https://keyt.com/politics/cnn-us-politics/2024/06/03/takeaways-from-faucis-testimony-at-contentious-house-hearing-on-covid-19-pandemic/?utm_source=openai"
+        },
+        {
+          "end_index": 2129,
+          "start_index": 1962,
+          "title": "\u2018You Cannot Believe One Word\u2019: Fauci Defends COVID Policies in Heated Showdown With Skeptical Lawmakers \u2022 Children's Health Defense",
+          "type": "url_citation",
+          "url": "https://childrenshealthdefense.org/defender/fauci-defends-covid-policies-lawmakers-house-select-subcommittee-hearing/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The June 3, 2024, House Select Subcommittee on the Coronavirus Pandemic hearing with Dr. Fauci occurred and was contentious, with Republicans accusing him of cover-ups on COVID origins and policies like masks/social distancing ([Congress.gov transcript](https://www.congress.gov/118/chrg/CHRG-118hhrg55830/CHRG-118hhrg55830.pdf), [CNN takeaways](https://www.cnn.com/2024/06/03/politics/fauci-testimony-house-hearing-covid-19)). Fauci denied allegations as 'preposterous' with no new evidence emerging ([NYT](https://www.nytimes.com/2024/06/03/science/fauci-hearing-covid-origins.html), [BMJ: 'fails to produce smoking gun'](https://www.bmj.com/content/385/bmj.q1231), [Scientific American](https://www.scientificamerican.com/article/fauci-calls-covid-cover-up-claim-preposterous/)). Mainstream coverage described partisan fireworks but no major revelations 'cracking open' a cover-up; Democrats called GOP claims empty-handed. No significant post-hearing developments validated the hype, per final subcommittee report ([Oversight House, Dec 2024](https://oversight.house.gov/wp-content/uploads/2024/12/12.04.2024-SSCP-FINAL-REPORT.pdf))."
+    },
+    {
+      "id": "A-00:14:49.760",
+      "result": "right",
+      "explanation": "Jason\u2019s multi-part prediction substantially came true.\n\n1. **Trump \u201cdemolishing\u201d Biden in the June 27 debate**  \nA 538/Ipsos post\u2011debate poll found that about **60% of debate watchers said Trump performed best vs. 21% for Biden**, and **73% rated Biden\u2019s performance as poor or terrible, with only 8% calling it good or excellent**. ([ipsos.com](https://www.ipsos.com/en-us/538-ipsos-june-2024-presidential-debate-poll?utm_source=openai))  This matches the spirit of \u201cdemolish\u201d and a clear Trump outperformance.\n\n2. **Biden\u2019s support dropping to ~30%**  \nAfter the debate, Biden\u2019s job approval and general standing slid into the low\u2013mid 30s in major polls. Gallup recorded his **all\u2011time low presidential approval at 36% in July 2024**, in the days after the debate and just before his withdrawal. ([news.gallup.com](https://news.gallup.com/poll/655298/biden-job-approval-second-lowest-among-post-wwii-presidents.aspx?utm_source=openai))  Pew\u2019s July 1\u20137, 2024 survey (covering the immediate aftermath) put his approval at **32%**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024%E2%80%932025_opinion_polling_on_the_Biden_administration?utm_source=openai))  That\u2019s \u201croughly 30%\u201d by normal forecasting standards, even if not exactly 30 in the averages.\n\n3. **Democrats engineering a \u2018graceful out\u2019 and replacing Biden as nominee**  \nOn **July 21, 2024**, Biden announced he would **not accept the Democratic nomination and was ending his re\u2011election bid**, explicitly framing it as being in the best interest of his party and the country. ([time.com](https://time.com/6997832/biden-drop-out-presidential-race/?utm_source=openai))  In the same window he endorsed **Kamala Harris** to be the nominee, and Democratic leaders rapidly coalesced around her; reporting at the time tied his withdrawal directly to the *\u201cdisastrous\u201d* June 27 debate and the subsequent party revolt. ([latimes.com](https://www.latimes.com/politics/story/2024-07-21/biden-steps-down-drops-out-democratic-president-nominee-election?utm_source=openai))  Harris then became the Democratic presidential nominee at the August 2024 convention.\n\nPutting it together: Trump clearly outperformed Biden in the June 27 debate; Biden\u2019s national support (as measured by job approval) dropped into the low 30s; and Democratic leaders did in fact orchestrate a relatively face\u2011saving withdrawal and substitute a different nominee. Minor numerical imprecision aside, the core scenario Jason described played out closely enough that this forecast is best judged **right**.",
+      "sources": [
+        {
+          "end_index": 474,
+          "start_index": 369,
+          "title": "Biden lost the debate, but Trump didn't win | Ipsos",
+          "type": "url_citation",
+          "url": "https://www.ipsos.com/en-us/538-ipsos-june-2024-presidential-debate-poll?utm_source=openai"
+        },
+        {
+          "end_index": 976,
+          "start_index": 837,
+          "title": "Biden Job Approval Second Lowest Among Post-WWII Presidents",
+          "type": "url_citation",
+          "url": "https://news.gallup.com/poll/655298/biden-job-approval-second-lowest-among-post-wwii-presidents.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 1201,
+          "start_index": 1070,
+          "title": "2024\u20132025 opinion polling on the Biden administration",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024%E2%80%932025_opinion_polling_on_the_Biden_administration?utm_source=openai"
+        },
+        {
+          "end_index": 1676,
+          "start_index": 1586,
+          "title": "Biden Drops Out of Presidential Race, Endorses Harris | TIME",
+          "type": "url_citation",
+          "url": "https://time.com/6997832/biden-drop-out-presidential-race/?utm_source=openai"
+        },
+        {
+          "end_index": 2069,
+          "start_index": 1920,
+          "title": "Biden drops out, endorses Kamala Harris as Democratic presidential nominee - Los Angeles Times",
+          "type": "url_citation",
+          "url": "https://www.latimes.com/politics/story/2024-07-21/biden-steps-down-drops-out-democratic-president-nominee-election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction had several parts. Trump did clearly outperform Biden in the June 27, 2024 debate per post-debate polls (e.g., [CNN flash poll](https://www.cnn.com/2024/06/28/politics/debate-poll-cnn-trump-biden): majority of viewers said Trump won). Biden withdrew on July 21, 2024, amid party pressure post-debate ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election)), and Kamala Harris became the Democratic nominee ([BBC](https://www.bbc.com/news/articles/c4ng1my55vno)). However, Biden's national polling did **not** drop to roughly 30%; post-debate averages showed him around 38-41% (e.g., [USA Today poll](https://www.usatoday.com/story/news/politics/elections/2024/07/02/biden-trump-poll-post-debate/74263315007/): 38%; [NYT](https://www.nytimes.com/interactive/2024/07/23/us/politics/polls-biden-trump-debate-shift.html) showed growing deficits but not to 30%). No sources confirm a drop to 30%. The specific polling claim being false makes the overall prediction wrong."
+    },
+    {
+      "id": "A-00:14:41.680",
+      "result": "right",
+      "explanation": "Jason\u2019s prediction window was roughly from May 31, 2024 (podcast release) to about July 30, 2024 (\"the next 30 to 60 days\").\n\nOn **July 21, 2024**, President Joe Biden **ended his 2024 reelection campaign** and announced he would not seek another term. In the same announcement, he **endorsed Vice President Kamala Harris as his replacement to lead the Democratic ticket**, and Democrats quickly moved to unite behind her as the new standard-bearer.([pbs.org](https://www.pbs.org/newshour/politics/biden-ends-his-2024-reelection-bid-after-weeks-of-pressure-from-democrats-to-drop-out?utm_source=openai))  This effectively removed Biden as the Democratic presidential candidate and installed Harris as the de facto nominee **within** the 30\u201360 day window Jason specified.\n\nFormally, Harris was only **officially nominated by the Democratic National Committee on August 5, 2024**, after a virtual roll call that concluded that day, which is just outside the 60\u2011day window.([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  However, Jason\u2019s wording about Democrats \u201cfielding a different candidate\u201d is satisfied in the common political sense as of July 21\u201322, when Biden withdrew and Harris became the presumptive nominee and active Democratic presidential candidate. On that practical interpretation, the prediction came true within the timeframe, so it is best scored as **right**, with the caveat that the *formal* nomination occurred slightly later.",
+      "sources": [
+        {
+          "end_index": 640,
+          "start_index": 486,
+          "title": "Biden ends his 2024 reelection bid and endorses Harris as his replacement to lead the ticket | PBS News",
+          "type": "url_citation",
+          "url": "https://www.pbs.org/newshour/politics/biden-ends-his-2024-reelection-bid-after-weeks-of-pressure-from-democrats-to-drop-out?utm_source=openai"
+        },
+        {
+          "end_index": 1152,
+          "start_index": 1009,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Joe Biden withdrew from the 2024 presidential race on July 21, 2024, endorsing Kamala Harris, who became the Democratic nominee. This occurred within the predicted window (podcast on May 31, 2024; 60 days later is ~July 30). Harris was formally nominated at the DNC (Aug 19-22, 2024), but the replacement effectively happened in late July. Sources: [Wikipedia on Biden's withdrawal](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [AP News](https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/), [NBC News](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867)."
+    },
+    {
+      "id": "D-01:02:33.360",
+      "result": "inconclusive",
+      "explanation": "Available data strongly *supports* Chamath\u2019s view so far, but it cannot *prove* a \"never\" prediction.\n\n**What\u2019s happened to BAYC prices since the podcast (May 31, 2024):**\n- BAYC\u2019s floor price peaked around 128\u2013153 ETH in 2022, over $400k at the time. ([cointelegraph.com](https://cointelegraph.com/news/bored-ape-yacht-club-floor-price-lowest-point-since-august-2021/?utm_source=openai))\n- By April 2024, before the podcast, the floor had crashed to about 11 ETH, more than 90% below the peak. ([cointelegraph.com](https://cointelegraph.com/news/bored-ape-yacht-club-floor-price-lowest-point-since-august-2021/?utm_source=openai))\n- On May 1, 2024, CNBC reported a floor of about 13.4 ETH, versus a 128 ETH peak. ([cnbc.com](https://www.cnbc.com/2024/05/02/bored-ape-yacht-club-nfts-floor-price-sinks-ceo-announces-layoffs.html?utm_source=openai))\n- In June 2024, multiple sources reported BAYC briefly plunging below 10 ETH (around 8.95\u20139.5 ETH on Blur/OpenSea). ([knightsbridgedigital.com](https://www.knightsbridgedigital.com/update/bored-ape-yacht-clubs-bayc-floor-prices-plunge-below-10-eth?utm_source=openai))\n- A July 22, 2025 overview notes that by mid\u20112025 the floor price was still only roughly 11\u201313 ETH. ([digitalcollectables.biz](https://digitalcollectables.biz/bored-ape-yacht-club/?utm_source=openai))\n- As of November 10, 2025, reports again show BAYC\u2019s floor under 10 ETH (about 8.95 ETH on Blur, 9.49 ETH on OpenSea), still down more than 90% from the 2022 highs. ([bitexes.com](https://bitexes.com/blog/117736?utm_source=openai))\n\n**Interpretation:**\n- Since Chamath\u2019s May 2024 comment, BAYC has *not* \u201cgone back up\u201d anywhere close to prior bubble highs; it has instead stayed in the ~9\u201313 ETH range, over 90% below peak levels.\n- That is **consistent** with his claim that the apes would not recover to their old bubble valuations and would remain effectively crushed in value relative to the peak.\n- However, because his wording was effectively \"never\" (no meaningful recovery *ever*), and markets could in principle re-inflate in the future, we cannot definitively say the prediction is finally and irreversibly correct.\n\nSo, based on the data up to November 30, 2025, the prediction has **not been falsified and is currently tracking well**, but in strict terms it remains **inconclusive (too early)** to declare a timeless \u201cnever\u201d prediction fully right.",
+      "sources": [
+        {
+          "end_index": 433,
+          "start_index": 297,
+          "title": "Bored Ape NFT floor price hits lowest point in over two and a half years",
+          "type": "url_citation",
+          "url": "https://cointelegraph.com/news/bored-ape-yacht-club-floor-price-lowest-point-since-august-2021/?utm_source=openai"
+        },
+        {
+          "end_index": 677,
+          "start_index": 541,
+          "title": "Bored Ape NFT floor price hits lowest point in over two and a half years",
+          "type": "url_citation",
+          "url": "https://cointelegraph.com/news/bored-ape-yacht-club-floor-price-lowest-point-since-august-2021/?utm_source=openai"
+        },
+        {
+          "end_index": 895,
+          "start_index": 761,
+          "title": "Bored Ape Yacht Club NFTs floor price sinks, CEO announces layoffs",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/05/02/bored-ape-yacht-club-nfts-floor-price-sinks-ceo-announces-layoffs.html?utm_source=openai"
+        },
+        {
+          "end_index": 1164,
+          "start_index": 1013,
+          "title": "Bored Ape Yacht Club\u2019s (BAYC) Floor Prices Plunge Below 10 ETH \u2014 Knightsbridge Digital",
+          "type": "url_citation",
+          "url": "https://www.knightsbridgedigital.com/update/bored-ape-yacht-clubs-bayc-floor-prices-plunge-below-10-eth?utm_source=openai"
+        },
+        {
+          "end_index": 1366,
+          "start_index": 1266,
+          "title": "Bored Ape Yacht Club",
+          "type": "url_citation",
+          "url": "https://digitalcollectables.biz/bored-ape-yacht-club/?utm_source=openai"
+        },
+        {
+          "end_index": 1599,
+          "start_index": 1533,
+          "title": "Bored Ape Yacht Club\u2019s (BAYC) Floor Prices Plunge Below 10 ETH: NFT Community in Shock",
+          "type": "url_citation",
+          "url": "https://bitexes.com/blog/117736?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath predicted BAYC NFTs would never recover to prior bubble highs (~145-152 ETH in May 2022) and remain near worthless. As of December 2025, ~18 months later, the floor price is ~5.8-6 ETH (e.g., [OpenSea](https://opensea.io/collection/boredapeyachtclub): 5.88 ETH; [CoinGecko](https://www.coingecko.com/en/nft/bored-ape-yacht-club): ~$18k or 6 ETH equiv.; [nftpricefloor.com](https://nftpricefloor.com/bored-ape-yacht-club): 5.98 ETH), a >95% drop from peak and lower than mid-2025 levels (~10 ETH in June 2025 per [AInvest](https://www.ainvest.com/news/bored-ape-yacht-club-nft-floor-price-drops-29-10-eth-2506/)). No recovery observed; remains far below highs and low relative to bubble valuation. Sources: OpenSea, CoinGecko, NFTPriceFloor, CryptoSlam."
+    },
+    {
+      "id": "D-00:57:45.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, Bitcoin has **not** \"completely replaced gold\" as a store-of-value asset:\n\n- Gold\u2019s total market value is still on the order of **$15\u2013$16 trillion**, while Bitcoin\u2019s market cap is roughly **$1\u20131.5 trillion** (depending on price), meaning gold remains far larger and more widely held as a reserve and wealth-preservation asset.\n- Central banks continue to hold and accumulate gold as a reserve asset, while none treat Bitcoin as a primary reserve comparable to gold.\n- Gold is still the dominant asset in jewelry and physical bullion markets, and is deeply embedded in institutional portfolios and monetary systems.\n\nBitcoin also has **not yet gained broad transactional use for purchasing hard assets** (e.g., real estate, cars, large capital goods). While there are niche examples of real estate or cars being bought with Bitcoin, these remain exceptions rather than a mainstream, system-wide practice; most high\u2011value asset markets are still priced and settled in fiat currencies, with Bitcoin rarely used directly as the payment medium.\n\nHowever, Chamath\u2019s claim was framed as an *eventual*, long\u2011run outcome of the current halving+ETF cycle, without a specific date. Because this is a structural, multi\u2011cycle thesis about Bitcoin ultimately displacing gold and gaining widespread transactional utility, it is **too early** to judge it definitively right or wrong based solely on conditions in 2025.\n\nTherefore, the appropriate classification as of now is **\u201cinconclusive (too early)\u201d**: the prediction has not come true yet, but also has not been invalidated by a missed time-bound target.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction lacks a specific timeline, framing Bitcoin's complete replacement of gold as a store-of-value and transactional use for hard assets as an 'eventual' outcome *if* it appreciates like prior post-halving cycles. As of Dec 1, 2025 (~19 months post-April 2024 halving), BTC trades ~$87k-$90k (market cap ~$1.8T; [Yahoo Finance](https://finance.yahoo.com/quote/BTC-USD/history/), [YCharts](https://ycharts.com/indicators/bitcoin_market_cap)), up only ~50% from halving\u2014described as the 'weakest post-halving performance on record' ([Kaiko](https://research.kaiko.com/insights/bitcoins-halving-anniversary-this-time-was-different), [Nasdaq](https://www.nasdaq.com/articles/bitcoin-had-its-worst-ever-post-halving-performance-will-next-halving-be-just-lackluster)). Gold outperforms (price ~$4,200/oz, market cap $20T+; [Trading Economics](https://tradingeconomics.com/commodity/gold), [Capital.com](https://capital.com/en-int/analysis/gold-vs-bitcoin-complete-comparison)), with sources affirming gold's dominance as safe haven ([Morningstar](https://global.morningstar.com/en-gb/markets/gold-vs-bitcoin-why-safe-haven-debate-is-shifting-2025), [Yahoo Finance](https://finance.yahoo.com/news/why-gold-winning-over-bitcoin-130000327.html)). Limited transactional use for hard assets noted (e.g., tokenization trends), but not at replacement scale. Too early to deem fulfilled or falsified."
+    },
+    {
+      "id": "A-00:52:24.110",
+      "result": "ambiguous",
+      "explanation": "Evidence about the June 3, 2024 House Select Subcommittee on the Coronavirus Pandemic hearing supports parts of Jason\u2019s prediction but not the full, stronger claim in the normalized version.\n\n**What clearly happened**\n- **Contentious / \u201cexplosive\u201d tone:** Major outlets described the hearing as *contentious* and *fiery*, highlighting bitter partisan clashes. Coverage emphasized heated exchanges, including Rep. Marjorie Taylor Greene accusing Fauci of \u201ccrimes against humanity,\u201d which briefly derailed the hearing over decorum issues. ([cbsnews.com](https://www.cbsnews.com/news/anthony-fauci-testimony-house-select-subcommittee-on-the-coronavirus-pandemic/?utm_source=openai))  This matches the \u201cexplosive\u201d / highly contentious aspect of the prediction.\n- **Widely covered:** The hearing was carried and analyzed by national news organizations (CBS, CNN, AP\u2011syndicated local outlets, Reuters, etc.), as well as partisan and niche outlets, indicating substantial media attention. ([cbsnews.com](https://www.cbsnews.com/news/anthony-fauci-testimony-house-select-subcommittee-on-the-coronavirus-pandemic/?utm_source=openai))\n- **Some \u201crevealing\u201d material:** Public questioning revisited and amplified material already emerging from Fauci\u2019s January 2024 closed\u2011door testimony, including: his statement that the 6\u2011foot distancing guideline \u201csort of just appeared,\u201d questions about NIH\u2011funded work with EcoHealth and the Wuhan Institute of Virology, and emails from Fauci aide David Morens about avoiding FOIA. Fauci publicly distanced himself from Morens and reiterated that he keeps an open mind on lab\u2011leak vs. natural origin while denying any cover\u2011up. ([cbsnews.com](https://www.cbsnews.com/news/anthony-fauci-testimony-house-select-subcommittee-on-the-coronavirus-pandemic/?utm_source=openai))  These points gave commentators \u201ctakeaways,\u201d though most were continuations of earlier revelations rather than brand\u2011new bombshells.\n\n**Where the prediction goes beyond what we can verify**\n- The normalized prediction adds that the exchanges would **\u201csignificantly escalate public controversy over Fauci\u2019s role\u201d** in COVID\u201119 origins and an alleged cover\u2011up. While controversy around Fauci and the lab\u2011leak hypothesis *did* intensify over 2024\u20132025 in general\u2014e.g., the Republican\u2011led subcommittee\u2019s December 2024 report concluding a lab\u2011associated origin is \u201cmost likely\u201d and sharply criticizing Fauci, and later political moves like the Trump administration\u2019s 2025 COVID\u2011origin website and removal of a Fauci mural at NIH ([en.wikipedia.org](https://en.wikipedia.org/wiki/Origin_of_SARS-CoV-2?utm_source=openai))\u2014those developments stem from a multi\u2011year investigation, accumulated documents, and broader politics.\n- Available reporting on the June 3 hearing itself (from mainstream and partisan sources) treats it as a high\u2011profile, partisan hearing but **does not identify it as a clear watershed that newly \u201ccracked open\u201d the origins issue or produced decisive new evidence against Fauci.** Instead, it mainly publicized already\u2011emerging disputes and Fauci\u2019s denials. ([amp.cnn.com](https://amp.cnn.com/cnn/2024/06/03/politics/fauci-testimony-house-hearing-covid-19?utm_source=openai))  There is no robust, quantifiable way to isolate how much that single hearing, versus the ongoing investigation and subsequent report, \u201csignificantly escalated\u201d public controversy.\n\nBecause:\n- The **tone and media\u2011attention parts** of the prediction clearly came true (contentious, widely covered, and to some extent revealing), **but**\n- The **claimed causal impact**\u2014that this specific hearing would *significantly escalate* controversy over Fauci\u2019s role and a cover\u2011up\u2014cannot be cleanly measured or attributed from available evidence,\n\nthe overall accuracy of the normalized prediction cannot be determined with confidence. Hence the classification **\"ambiguous\"** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 719,
+          "start_index": 577,
+          "title": "Fauci testifies about COVID pandemic response at heated House hearing - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/anthony-fauci-testimony-house-select-subcommittee-on-the-coronavirus-pandemic/?utm_source=openai"
+        },
+        {
+          "end_index": 1165,
+          "start_index": 1023,
+          "title": "Fauci testifies about COVID pandemic response at heated House hearing - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/anthony-fauci-testimony-house-select-subcommittee-on-the-coronavirus-pandemic/?utm_source=openai"
+        },
+        {
+          "end_index": 1838,
+          "start_index": 1696,
+          "title": "Fauci testifies about COVID pandemic response at heated House hearing - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/anthony-fauci-testimony-house-select-subcommittee-on-the-coronavirus-pandemic/?utm_source=openai"
+        },
+        {
+          "end_index": 2656,
+          "start_index": 2566,
+          "title": "Origin of SARS-CoV-2",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Origin_of_SARS-CoV-2?utm_source=openai"
+        },
+        {
+          "end_index": 3233,
+          "start_index": 3116,
+          "title": "Takeaways from Fauci\u2019s testimony at contentious House hearing on Covid-19 pandemic | CNN Politics",
+          "type": "url_citation",
+          "url": "https://amp.cnn.com/cnn/2024/06/03/politics/fauci-testimony-house-hearing-covid-19?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The hearing occurred on June 3, 2024, before the House Select Subcommittee on the Coronavirus Pandemic, as confirmed by official records ([Congress.gov](https://www.congress.gov/118/chrg/CHRG-118hhrg55830/CHRG-118hhrg55830.pdf)) and major outlets (CNN, NYT, WaPo, AP). It was highly contentious and widely covered, with descriptions like 'contentious' (CNN), 'combative' (NBC), 'fiery' (AP/WaPo), and one 'explosive' reference (Forbes on MTG exchanges). However, it was not revealing of new information on cover-up or origins\u2014no smoking gun or breakthroughs (BMJ: 'fails to produce smoking gun'; Science.org: 'shed no new light'; NYT: no evidence linking Fauci). Fauci denied allegations, kept 'open mind' on lab leak. No evidence it significantly escalated public controversy; partisan attacks continued prior debates without pivot (no polls/opinion shifts noted; post-hearing coverage emphasized lack of novelty). Prediction's 'crack open/explosive' hype unmet."
+    },
+    {
+      "id": "A-01:00:19.500",
+      "result": "ambiguous",
+      "explanation": "Jason\u2019s prediction has two main parts:\n\n1. **A clear, pro\u2011crypto regulatory framework would emerge as a political issue by the 2024 U.S. general election.**  \n   * On the *law* side, Congress had not passed a comprehensive, clear framework for crypto by Election Day (Nov 5, 2024). The House passed the FIT21 bill in May 2024, which would clarify SEC/CFTC jurisdiction over digital assets, but it stalled in the Senate and never became law in that Congress.([mayerbrown.com](https://www.mayerbrown.com/en/insights/publications/2024/06/house-passes-digital-asset-market-structure-legislation-financial-innovation-and-technology-for-the-21st-century-act-fit21?utm_source=openai))  The first major federal framework, the GENIUS Act on stablecoins, was only enacted in July 2025 under Trump, i.e., *after* the election.([en.wikipedia.org](https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai))  So a **formal, enacted \u201ccrypto framework\u201d did not exist yet** for voters to respond to in 2024.\n   * On the *politics* side, crypto policy clearly **did become a visible campaign issue for a minority of voters and elites**. Industry\u2011 and crypto\u2011adjacent surveys (DCG/Harris, Gemini, Grayscale, Paradigm, etc.) consistently found that roughly 20% of some voter samples considered crypto a \u201cmajor\u201d or \u201csignificant\u201d issue, and that many wanted candidates to talk more about regulation.([cryptopotato.com](https://cryptopotato.com/crypto-is-a-major-election-issue-for-20-of-voters-dcg-survey/?utm_source=openai))  A Paradigm poll in October 2024 found that 5% of voters were \u201csingle\u2011issue\u201d crypto voters.([paradigm.xyz](https://www.paradigm.xyz/2024/10/october-polling?utm_source=openai))  Trump explicitly campaigned on ending the \u201cwar on crypto,\u201d promised to fire SEC Chair Gary Gensler, and attracted significant crypto\u2011industry money via the Fairshake super PAC and other efforts; contemporaneous summaries describe crypto regulation as a *wedge issue* in the 2024 race.([en.wikipedia.org](https://en.wikipedia.org/wiki/Regulation_of_cryptocurrency?utm_source=openai))  \n   * At the same time, **mainstream issue polling and the televised debates show crypto was not a top\u2011tier concern for most voters.** Large non\u2011industry polls list the economy, inflation, democracy, abortion, immigration, etc. as the dominant issues; crypto usually doesn\u2019t appear on those lists.([today.yougov.com](https://today.yougov.com/politics/articles/50794-the-economy-what-2024-voters-want-and-which-candidate-they-trust?utm_source=openai))  The Harris\u2013Trump debate in September 2024 did not mention crypto at all, and analysis in both crypto and general\u2011finance media argued this reflected how low it ranked for the broader electorate.([coindesk.com](https://www.coindesk.com/opinion/2024/09/11/the-debate-showed-how-little-crypto-matters-to-voters-and-politicians?utm_source=openai))  One post\u2011hoc critique also points out that industry\u2011funded polls may overstate both usage and salience of crypto.([bettermarkets.org](https://bettermarkets.org/newsroom/crypto-industry-juices-latest-polls-to-falsely-claim-broad-support-among-us-investors/?utm_source=openai))  \n   * Net: **crypto regulation clearly *emerged* as a recognizable campaign and wedge issue for a niche but non\u2011trivial slice of voters and donors, but not as a clear, enacted pro\u2011crypto regulatory framework understood by the general electorate.** Whether that matches what Jason meant by a \u201ccrypto framework\u201d is interpretive rather than factual.\n\n2. **Supporting crypto would be worth roughly 5 percentage points of the vote in that election.**  \n   * The main quantitative support for a \u201c5\u2011point\u201d effect comes from the Paradigm polling that 5% of voters self\u2011describe as *single\u2011issue crypto voters*.([paradigm.xyz](https://www.paradigm.xyz/2024/10/october-polling?utm_source=openai))  Paradigm itself emphasized that 5% is larger than the 1\u20132 point margins typical in key swing states, implying that, in theory, a strongly pro\u2011crypto stance *could* swing close races. This is almost exactly Jason\u2019s \u201cworth probably five points\u201d framing.  \n   * However, **there is no solid evidence that pro\u2011crypto positions actually produced a ~5\u2011point shift in realized vote share**:\n     * Even crypto\u2011friendly coverage notes that a Paradigm\u2011commissioned poll found just 5% of likely voters considered crypto a *key* issue, underscoring how small this bloc is nationally.([coindesk.com](https://www.coindesk.com/news-analysis/2024/11/05/crypto-regulation-2024-election-impact?utm_source=openai))  \n     * Broader polls show crypto ranks near the bottom of issues, especially among men 18\u201329, where it came dead last among 28 tested issues.([blueprint-research.com](https://blueprint-research.com/polling/man-survey-9-25/?utm_source=openai))  \n     * Post\u2011election commentary argues that **crypto money and PAC spending mattered more than any measurable \u201ccrypto voter\u201d bloc**; one analysis explicitly doubts that single\u2011issue crypto voters had a large electoral impact, suggesting industry cash did the heavy lifting.([dlnews.com](https://www.dlnews.com/articles/opinion/why-bitcoin-cash-spoke-louder-than-its-voters-during-the-2024-elections/?utm_source=openai))  \n     * No exit polls or rigorous academic studies attribute a ~5\u2011percentage\u2011point net swing in national or swing\u2011state margins *specifically* to candidates\u2019 crypto stances, as opposed to the dominant issues (economy, democracy, abortion, immigration, etc.).([grokipedia.com](https://grokipedia.com/page/2024_United_States_presidential_election?utm_source=openai))  \n   * Because the available data are either **industry\u2011funded and hypothetical** (\u201ccould swing,\u201d \u201ccould decide\u201d) or **high\u2011level and non\u2011specific**, we cannot confidently say that being pro\u2011crypto *actually yielded* ~5 extra points for any candidate in 2024.\n\n**Why this is scored \u201cambiguous\u201d:**  \n* There is credible evidence that **crypto policy and regulatory debates *did* emerge as a visible, partisan wedge issue**, especially in elite politics and among a notable minority of voters; in that narrow sense, part of Jason\u2019s intuition was directionally right.([en.wikipedia.org](https://en.wikipedia.org/wiki/Regulation_of_cryptocurrency?utm_source=openai))  \n* But a **clear, enacted pro\u2011crypto regulatory framework did *not* exist by Election Day 2024**, and the claim that supporting crypto was \u201cworth probably five points\u201d cannot be empirically validated: we only have suggestive polls, no robust measurement of an actual 5\u2011point vote effect.([mayerbrown.com](https://www.mayerbrown.com/en/insights/publications/2024/06/house-passes-digital-asset-market-structure-legislation-financial-innovation-and-technology-for-the-21st-century-act-fit21?utm_source=openai))  \n\nBecause one part of the prediction is partly borne out in a limited way (salience as an issue) while the stronger claims (a clear framework in place and a realized ~5\u2011point electoral payoff) are not clearly supported nor clearly disproven by the available evidence, the overall forecast cannot be cleanly classified as simply right or wrong. Hence, **\u201cambiguous.\u201d**",
+      "sources": [
+        {
+          "end_index": 717,
+          "start_index": 497,
+          "title": "House Passes Digital Asset Market Structure Legislation: Financial Innovation and Technology for the 21st Century Act (FIT21) | Insights | Mayer Brown",
+          "type": "url_citation",
+          "url": "https://www.mayerbrown.com/en/insights/publications/2024/06/house-passes-digital-asset-market-structure-legislation-financial-innovation-and-technology-for-the-21st-century-act-fit21?utm_source=openai"
+        },
+        {
+          "end_index": 935,
+          "start_index": 855,
+          "title": "GENIUS Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1546,
+          "start_index": 1420,
+          "title": "Crypto Is A Major Election Issue For 20% Of Voters: DCG Survey",
+          "type": "url_citation",
+          "url": "https://cryptopotato.com/crypto-is-a-major-election-issue-for-20-of-voters-dcg-survey/?utm_source=openai"
+        },
+        {
+          "end_index": 1722,
+          "start_index": 1638,
+          "title": "October 2024 Public Opinion Poll - Paradigm",
+          "type": "url_citation",
+          "url": "https://www.paradigm.xyz/2024/10/october-polling?utm_source=openai"
+        },
+        {
+          "end_index": 2106,
+          "start_index": 2008,
+          "title": "Regulation of cryptocurrency",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Regulation_of_cryptocurrency?utm_source=openai"
+        },
+        {
+          "end_index": 2559,
+          "start_index": 2406,
+          "title": "The Economy: What 2024 voters want and which candidate they trust | YouGov",
+          "type": "url_citation",
+          "url": "https://today.yougov.com/politics/articles/50794-the-economy-what-2024-voters-want-and-which-candidate-they-trust?utm_source=openai"
+        },
+        {
+          "end_index": 2904,
+          "start_index": 2755,
+          "title": "The Harris-Trump Debate Showed How Little Crypto Matters to Voters and Politicians",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/opinion/2024/09/11/the-debate-showed-how-little-crypto-matters-to-voters-and-politicians?utm_source=openai"
+        },
+        {
+          "end_index": 3181,
+          "start_index": 3019,
+          "title": "Crypto Industry Juices Latest Polls to Falsely Claim Broad Support among U.S. Voters | Better Markets",
+          "type": "url_citation",
+          "url": "https://bettermarkets.org/newsroom/crypto-industry-juices-latest-polls-to-falsely-claim-broad-support-among-us-investors/?utm_source=openai"
+        },
+        {
+          "end_index": 3873,
+          "start_index": 3789,
+          "title": "October 2024 Public Opinion Poll - Paradigm",
+          "type": "url_citation",
+          "url": "https://www.paradigm.xyz/2024/10/october-polling?utm_source=openai"
+        },
+        {
+          "end_index": 4573,
+          "start_index": 4449,
+          "title": "Here's Why Today's U.S. Election Matters for Crypto",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/news-analysis/2024/11/05/crypto-regulation-2024-election-impact?utm_source=openai"
+        },
+        {
+          "end_index": 4819,
+          "start_index": 4718,
+          "title": "Meat & Potatoes, Not Memes & Crypto: The Top Issues for Men Are The Boring Basics - Blueprint",
+          "type": "url_citation",
+          "url": "https://blueprint-research.com/polling/man-survey-9-25/?utm_source=openai"
+        },
+        {
+          "end_index": 5242,
+          "start_index": 5096,
+          "title": "Why crypto\u2019s cash spoke louder than its voters during the 2024 elections \u2013 DL News",
+          "type": "url_citation",
+          "url": "https://www.dlnews.com/articles/opinion/why-bitcoin-cash-spoke-louder-than-its-voters-during-the-2024-elections/?utm_source=openai"
+        },
+        {
+          "end_index": 5609,
+          "start_index": 5503,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://grokipedia.com/page/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 6276,
+          "start_index": 6178,
+          "title": "Regulation of cryptocurrency",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Regulation_of_cryptocurrency?utm_source=openai"
+        },
+        {
+          "end_index": 6786,
+          "start_index": 6566,
+          "title": "House Passes Digital Asset Market Structure Legislation: Financial Innovation and Technology for the 21st Century Act (FIT21) | Insights | Mayer Brown",
+          "type": "url_citation",
+          "url": "https://www.mayerbrown.com/en/insights/publications/2024/06/house-passes-digital-asset-market-structure-legislation-financial-innovation-and-technology-for-the-21st-century-act-fit21?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Crypto became a prominent political issue in the 2024 election, with Trump adopting a pro-crypto stance (e.g., promising to fire SEC Chair Gensler, support U.S. crypto leadership), contrasting the Biden-Harris administration's regulatory approach, and industry PACs spending ~$130M on pro-crypto candidates ([Politico](https://www.politico.com/news/2024/11/08/crypto-2024-elections-00187415), [NYT](https://www.nytimes.com/2024/11/06/technology/crypto-industry-spending-election.html)). However, no 'clear pro-crypto regulatory framework' (e.g., legislation like FIT21 stalled in Senate pre-election) fully emerged by Nov. 5; only campaign promises. Critically, no evidence supporting crypto being worth ~5 vote points: Pre-election polls (FDU Aug 2024: 14% own crypto, Trump +12 pts among them \u2192 ~1.7 pt overall boost; Paradigm polls similar, varying 10-20% ownership with Trump margins shrinking to ~10 pts late) suggest 1-3 pt max impact. No post-election validated data quantifies 5%; Trump won popular vote by 1.5% (49.9%-48.4%), swing states by 1-3%, with crypto cited as helpful but not decisive at that scale ([CBS](https://www.cbsnews.com/news/who-were-the-2024-elections-crypto-voters-60-minutes/), [Paradigm Oct 2024](https://www.paradigm.xyz/2024/10/october-polling))."
+    },
+    {
+      "id": "C-01:35:20.680",
+      "result": "right",
+      "explanation": "Trump was convicted in May 2024 on 34 felony counts in the New York hush\u2011money case, making him a legally defined felon during the 2024 campaign.([apnews.com](https://apnews.com/article/97c331ec5f07fe888f421f3aee605124?utm_source=openai))  After the verdict, Democrats explicitly incorporated his felony status into their messaging: the DNC and Biden/Harris campaigns ran paid ads and billboards labeling him a convicted felon and framing the race as prosecutor versus felon, including the Phoenix billboard, the Character Matters ad, and the Law & Order\u2013style convention spot, as well as broader strategy pieces describing this contrast as a key weapon.([cbsnews.com](https://www.cbsnews.com/news/dnc-to-unveil-billboard-calling-trump-convicted-felon/?utm_source=openai))  Despite this, Trump won the 2024 presidential election with 312 electoral votes and a popular\u2011vote plurality, and Republicans captured the presidency and control of Congress, indicating that the felon\u2011focused line of attack did not prevent his political success or keep him from remaining highly competitive and ultimately victorious.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))  Given that the strategy was clearly used and Trump still prevailed, Sacks\u2019s prediction that it was probably not going to work is borne out by the eventual results.",
+      "sources": [
+        {
+          "end_index": 271,
+          "start_index": 178,
+          "title": "The Latest: Judge sentences Donald Trump in hush money case but declines to impose any punishment",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/97c331ec5f07fe888f421f3aee605124?utm_source=openai"
+        },
+        {
+          "end_index": 805,
+          "start_index": 687,
+          "title": "DNC to unveil new billboard calling Trump a \"convicted felon\" - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/dnc-to-unveil-billboard-calling-trump-convicted-felon/?utm_source=openai"
+        },
+        {
+          "end_index": 1251,
+          "start_index": 1141,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Trump was convicted on 34 felony counts in the New York hush money case on May 30, 2024 ([AP News](https://apnews.com/article/trump-trial-deliberations-jury-testimony-verdict-85558c6d08efb434d05b694364470aa0), [Wikipedia](https://en.wikipedia.org/wiki/Prosecution_of_Donald_Trump_in_New_York)). Democrats prominently used the 'convicted felon' label as a central attack, including Biden's rhetoric, DNC billboards, and a $50M ad buy ([Forbes](https://www.forbes.com/sites/saradorn/2024/06/07/biden-and-top-democrats-call-trump-a-convicted-felon-at-least-24-times-since-verdict/), [Axios](https://www.axios.com/2024/06/06/dnc-billboard-trump-convicted-felon), [Reuters](https://www.reuters.com/world/us/new-50-million-biden-ad-campaign-targets-trump-felony-convictions-2024-06-17/)). Despite this, Trump won the 2024 election decisively (312-226 electoral votes, 49.9% popular vote) ([CNN](https://www.cnn.com/election/2024/results/president), [Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election)). The strategy failed to prevent his success."
+    },
+    {
+      "id": "D-01:00:45.000",
+      "result": "ambiguous",
+      "explanation": "Several key parts of Chamath\u2019s scenario cannot be directly tested with available post\u2011election data, even though the 2024 election has already occurred.\n\n1. **Size of the crypto\u2011holder population (~50M)**  \nSurveys before the election estimated that roughly 15\u201320% of U.S. adults had invested in or used cryptocurrency. Pew Research in 2024 found 17% of American adults had ever used or invested in crypto, which corresponds to tens of millions of people, broadly consistent with a 40\u201350M range. ([washingtonpost.com](https://www.washingtonpost.com/technology/2025/03/07/trump-crypto-summit-white-house/?utm_source=openai))  Industry and advocacy groups later cited figures around 50\u201352M U.S. crypto owners (about 15% of adults), again roughly matching his order\u2011of\u2011magnitude claim. ([standwithcrypto.org](https://www.standwithcrypto.org/us/press/the-crypto-voter-is-a-force-in-the-2024-election?utm_source=openai))  So his base population estimate is plausible, but that alone is not the core of the prediction.\n\n2. **Turnout among crypto holders (\"80% show up\")**  \nPre\u2011election polling by Consensys/HarrisX and related reporting suggested extremely high *intended* turnout among crypto owners: around 92% said they planned to vote. ([elections.harrisx.com](https://elections.harrisx.com/news/half-of-all-us-voters-support-pro-crypto-policies?utm_source=openai))  However, official election statistics and high\u2011quality post\u2011election studies (e.g., Pew\u2019s validated voter work) do not report actual turnout rates specifically for crypto owners. No validated\u2011voter dataset I could find includes cryptocurrency ownership as a category. As a result, we **cannot verify** whether realized turnout among crypto holders was actually on the order of 80%.\n\n3. **Direction of the vote (\"they're all going to vote for President Trump\")**  \nMultiple pre\u2011election polls did find that crypto owners leaned toward Trump relative to non\u2011owners:\n- A Fairleigh Dickinson University poll in August 2024 showed Trump leading Harris 50\u201338 among likely voters who own crypto, while Harris led 53\u201341 among non\u2011owners. ([fdu.edu](https://www.fdu.edu/news/fdu-poll-finds-trumps-embrace-of-crypto-pays-off/?utm_source=openai))  \n- A Paradigm\u2011linked survey in March 2024 found 48% of crypto holders planned to vote for Trump vs. 39% for Biden, a 9\u2011point edge. ([cryptoslate.com](https://cryptoslate.com/crypto-owners-favor-trump-over-biden-in-2024-election-with-9-divide/?utm_source=openai))  \nThese results support the idea that crypto owners disproportionately favored Trump, but they **do not** show anything close to \u201call\u201d or an overwhelming supermajority; they suggest a modest but meaningful lean, not unanimity.\n\n4. **Did this bloc swing the election by ~5 percentage points?**  \nThe actual national popular\u2011vote margin in 2024 was about **Trump 49.8% vs. Harris 48.3%**, a Republican lead of roughly **1.5 percentage points**, with Trump winning 312\u2013226 in the Electoral College. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))  Some post\u2011election counterfactual analyses by Pew and others indicate that even if all eligible Americans had voted, Trump\u2019s margin would likely have increased only modestly, not by anything like five full percentage points. ([politico.com](https://www.politico.com/news/2025/06/26/2024-election-turnout-trum-00426544?utm_source=openai))  \n\nCrucially, though, **no available dataset isolates the marginal effect of crypto holders** on that margin. We do not have a credible estimate of what Trump\u2019s vote share would have been in the absence of crypto owners, nor a validated measure of how many of them actually voted and for whom. Without that counterfactual, we can\u2019t say whether they swung the race by 0.5 points, 2 points, 5 points, or not at all.\n\n5. **Overall assessment**  \n- The **existence and size** of a substantial crypto\u2011interested electorate is broadly in line with his framing. ([digitalchamber.org](https://digitalchamber.org/national-poll-reveals-cryptos-growing-influence-on-2024-voter-decisions/?utm_source=openai))  \n- The **tendency of crypto owners to lean toward Trump** is supported by multiple polls, though at single\u2011digit or low\u2011double\u2011digit margins rather than an overwhelming \u201call for Trump.\u201d ([fdu.edu](https://www.fdu.edu/news/fdu-poll-finds-trumps-embrace-of-crypto-pays-off/?utm_source=openai))  \n- But the central, quantifiable pieces of the prediction \u2014 **80% turnout among ~50M holders and a resulting swing of up to 500 basis points in the election outcome** \u2014 cannot be confirmed or refuted with current evidence, because those metrics are not directly observed in any validated post\u2011election data.\n\nBecause the core causal and quantitative claims about turnout and a 5\u2011point swing can\u2019t be empirically tested with existing public data, the prediction cannot be cleanly labeled as right or wrong. It remains **ambiguous** rather than demonstrably fulfilled or refuted.",
+      "sources": [
+        {
+          "end_index": 663,
+          "start_index": 536,
+          "title": "Trump says he's ending the U.S. government's 'war on crypto'",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/technology/2025/03/07/trump-crypto-summit-white-house/?utm_source=openai"
+        },
+        {
+          "end_index": 955,
+          "start_index": 823,
+          "title": "The crypto voter is a force in the 2024 election | Stand With Crypto",
+          "type": "url_citation",
+          "url": "https://www.standwithcrypto.org/us/press/the-crypto-voter-is-a-force-in-the-2024-election?utm_source=openai"
+        },
+        {
+          "end_index": 1409,
+          "start_index": 1280,
+          "title": "HarrisX Elections Hub",
+          "type": "url_citation",
+          "url": "https://elections.harrisx.com/news/half-of-all-us-voters-support-pro-crypto-policies?utm_source=openai"
+        },
+        {
+          "end_index": 2252,
+          "start_index": 2147,
+          "title": "FDU Poll finds Trump\u2019s Embrace of Crypto Pays Off | Fairleigh Dickinson University",
+          "type": "url_citation",
+          "url": "https://www.fdu.edu/news/fdu-poll-finds-trumps-embrace-of-crypto-pays-off/?utm_source=openai"
+        },
+        {
+          "end_index": 2517,
+          "start_index": 2386,
+          "title": "Crypto owners favor Trump over Biden in 2024 election with 9% divide - POS poll",
+          "type": "url_citation",
+          "url": "https://cryptoslate.com/crypto-owners-favor-trump-over-biden-in-2024-election-with-9-divide/?utm_source=openai"
+        },
+        {
+          "end_index": 3128,
+          "start_index": 3018,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 3467,
+          "start_index": 3355,
+          "title": "Bigger turnout in 2024 would have benefitted Trump, new survey finds",
+          "type": "url_citation",
+          "url": "https://www.politico.com/news/2025/06/26/2024-election-turnout-trum-00426544?utm_source=openai"
+        },
+        {
+          "end_index": 4169,
+          "start_index": 4028,
+          "title": "National Poll Reveals Cryptocurrency's Influence on Voters",
+          "type": "url_citation",
+          "url": "https://digitalchamber.org/national-poll-reveals-cryptos-growing-influence-on-2024-voter-decisions/?utm_source=openai"
+        },
+        {
+          "end_index": 4463,
+          "start_index": 4358,
+          "title": "FDU Poll finds Trump\u2019s Embrace of Crypto Pays Off | Fairleigh Dickinson University",
+          "type": "url_citation",
+          "url": "https://www.fdu.edu/news/fdu-poll-finds-trumps-embrace-of-crypto-pays-off/?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction was conditional and speculative: ~50M crypto holders, feeling threatened, up to 80% turnout voting mostly Trump, potentially swinging election by up to 5 points. US crypto ownership estimates were ~14-28% adults (~36-65M, plausible for 50M) per Gallup, Security.org, Gemini reports. Pre-election polls (FDU Aug 2024: 15% voters own crypto, Trump +12pts 50-38; Consensys/HarrisX: 92% plan to vote) showed preference for Trump and high turnout intent. Post-election, no exit polls or surveys quantify crypto turnout (e.g., 80%) or vote share; Paradigm (Oct 2024) claimed high Election Day voting among crypto owners leaning R, but unverified. Trump won popular vote by 1.5% (Pew: 49.8-48.3%), not 5pts. Industry claims turnout helped (CBS 60min Dec 2024: execs say crypto voters turned out; 85% backed candidates won Congress), but NPR notes little evidence crypto drove votes. No causal data links crypto turnout to swing; ambiguous as specifics unverifiable despite time passed. Sources: [FDU Poll](https://www.fdu.edu/news/fdu-poll-finds-trumps-embrace-of-crypto-pays-off/), [Pew](https://www.pewresearch.org/politics/feature/how-changes-in-turnout-and-vote-choice-powered-trumps-victory-in-2024/), [CBS](https://www.cbsnews.com/news/who-were-the-2024-elections-crypto-voters-60-minutes/), [Paradigm](https://www.paradigm.xyz/2024/10/october-polling)."
+    },
+    {
+      "id": "A-01:30:54.650",
+      "result": "right",
+      "explanation": "Donald Trump\u2019s New York business\u2011records/hush\u2011money case resulted in a May 2024 felony conviction on 34 counts, but when he was finally sentenced on January 10, 2025, Judge Juan Merchan imposed an *unconditional discharge*\u2014no jail time, no probation, no fine, and no community service\u2014leaving only collateral consequences such as a felony record, loss of gun rights, and a DNA submission requirement. ([apnews.com](https://apnews.com/article/97c331ec5f07fe888f421f3aee605124?utm_source=openai)) The conviction remains on the books and is being appealed in New York\u2019s courts, and Trump has also pursued related federal litigation seeking to move or undo the case; so far, no appellate court has overturned the verdict. ([theguardian.com](https://www.theguardian.com/us-news/2025/jan/29/trump-appeals-hush-money-conviction?utm_source=openai)) Because this is a state conviction, it is not subject to a presidential pardon, and no form of clemency has mooted it. ([theguardian.com](https://www.theguardian.com/us-news/2025/jan/29/trump-appeals-hush-money-conviction?utm_source=openai)) However, by late 2025 the criminal\u2011justice outcome is effectively limited to a largely symbolic sentence with minimal practical punishment, while Trump continues to serve again as president, which aligns with Jason\u2019s core claim that the case would function more like a political \u201cspeeding ticket\u201d than a source of severe long\u2011term punishment\u2014even though his more specific expectations about an outright overturning or pardon have not (at least yet) materialized. ([theguardian.com](https://www.theguardian.com/us-news/2025/nov/26/trump-georgia-2020-racketeering-case-dropped?utm_source=openai))",
+      "sources": [
+        {
+          "end_index": 527,
+          "start_index": 434,
+          "title": "The Latest: Judge sentences Donald Trump in hush money case but declines to impose any punishment",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/97c331ec5f07fe888f421f3aee605124?utm_source=openai"
+        },
+        {
+          "end_index": 873,
+          "start_index": 751,
+          "title": "Donald Trump appeals his New York hush-money conviction | Donald Trump trials | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2025/jan/29/trump-appeals-hush-money-conviction?utm_source=openai"
+        },
+        {
+          "end_index": 1115,
+          "start_index": 993,
+          "title": "Donald Trump appeals his New York hush-money conviction | Donald Trump trials | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2025/jan/29/trump-appeals-hush-money-conviction?utm_source=openai"
+        },
+        {
+          "end_index": 1710,
+          "start_index": 1579,
+          "title": "Georgia prosecutor confirms final criminal case against Trump is 'over'",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2025/nov/26/trump-georgia-2020-racketeering-case-dropped?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": null
+    },
+    {
+      "id": "C-01:23:17.820",
+      "result": "inconclusive",
+      "explanation": "Sacks predicted that Donald Trump\u2019s New York hush\u2011money/business\u2011records conviction would *eventually* be overturned on appeal, but only *after* the November 5, 2024 election.\n\nWhat has actually happened so far:\n- Trump was convicted in New York on 34 felony counts of falsifying business records related to the Stormy Daniels hush\u2011money payments on May 30, 2024, and later received an unconditional discharge at sentencing on January 10, 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Criminal_trial_of_Donald_Trump_in_New_York?utm_source=openai))\n- Trump has appealed the conviction in New York\u2019s state courts (notice of appeal filed January 29, 2025; a formal appeal seeking to overturn the conviction filed in October 2025). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Prosecution_of_Donald_Trump_in_New_York?utm_source=openai))\n- Separately, a federal appeals court in November 2025 gave him another chance to try to move the case to federal court, where he would then argue for dismissal on presidential\u2011immunity grounds, but that ruling only ordered further consideration\u2014it did *not* vacate the conviction. ([washingtonpost.com](https://www.washingtonpost.com/national/2025/11/06/trump-hush-money-appeal-federal-court-conviction/3e4ceef6-bb28-11f0-b389-38cf5ff33d6f_story.html?itid=agg_ticker&utm_source=openai))\n- Major overviews of Trump\u2019s legal status as of late November 2025 still describe him as *convicted* in the New York hush\u2011money case and \u201cseeking to overturn that conviction,\u201d indicating no court has yet set the verdict aside. ([apnews.com](https://apnews.com/article/7b8b7f3ccb4318bca0aecf9c407032cd?utm_source=openai))\n\nBecause the conviction remains in place and the appeals (both in state court and via the attempted federal removal route) are still unresolved as of November 30, 2025, we don\u2019t yet know whether it will \u201cget tossed on appeal.\u201d It *has* remained in effect through and beyond the November 5, 2024 election, matching his timing claim so far, but the core question\u2014whether it will ultimately be overturned\u2014has not been decided. Therefore the prediction\u2019s accuracy is **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 600,
+          "start_index": 488,
+          "title": "Criminal trial of Donald Trump in New York",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Criminal_trial_of_Donald_Trump_in_New_York?utm_source=openai"
+        },
+        {
+          "end_index": 891,
+          "start_index": 782,
+          "title": "Prosecution of Donald Trump in New York",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Prosecution_of_Donald_Trump_in_New_York?utm_source=openai"
+        },
+        {
+          "end_index": 1380,
+          "start_index": 1175,
+          "title": "Appeals court gives Trump another shot at erasing his hush money conviction - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/national/2025/11/06/trump-hush-money-appeal-federal-court-conviction/3e4ceef6-bb28-11f0-b389-38cf5ff33d6f_story.html?itid=agg_ticker&utm_source=openai"
+        },
+        {
+          "end_index": 1702,
+          "start_index": 1609,
+          "title": "Here's where all the legal cases against Trump stand since his return to the White House",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/7b8b7f3ccb4318bca0aecf9c407032cd?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The conviction has not been overturned as of December 2025, over a year after the May 2024 trial and post-election. Trump was sentenced to an unconditional discharge on January 10, 2025 ([NY Times](https://www.nytimes.com/news-event/trump-ny-hush-money-case), [Wikipedia](https://en.wikipedia.org/wiki/Prosecution_of_Donald_Trump_in_New_York)). Appeals are ongoing: formal state appeal filed October 27, 2025 to NY First Department ([Politico](https://www.politico.com/news/2025/10/28/donald-trump-appeal-hush-money-conviction-00624382), [BBC](https://www.bbc.com/news/articles/c4g3m95ykzko)); federal 2nd Circuit revived removal effort November 6, 2025 ([ABC News](https://abcnews.go.com/US/appeals-court-revives-trumps-effort-remove-hush-money/story?id=127256521), [NYT](https://www.nytimes.com/2025/11/06/nyregion/trump-conviction-appeal.html)). No sources indicate overturn; process could take years, so too early to confirm 'eventually' overturned, though timeline matches 'after election'."
+    },
+    {
+      "id": "C-00:10:55.480",
+      "result": "right",
+      "explanation": "Sacks predicted that the late\u2011May 2024 Silicon Valley Trump fundraiser would \u201cbreak the ice\u201d and trigger a *preference cascade* in which high\u2011profile business and finance figures would start openly backing Trump, making such support more acceptable in elite circles.\n\nEvidence from the 2024 cycle shows exactly that pattern:\n\n- Within days, David Sacks and Chamath Palihapitiya\u2019s San Francisco fundraiser for Trump (early June 2024) raised about $12 million and drew dozens of prominent tech investors. Jacob Helberg, a former Democratic fundraiser who himself donated about $1 million to Trump, said that in 2016 he knew only one Silicon Valley Trump supporter (Peter Thiel) but by mid\u20112024 he counted them \u201cin the dozens\u201d and described the prior six months as seeing \u201cthe dam break.\u201d([cnbc.com](https://www.cnbc.com/2024/06/06/trump-in-liberal-san-francisco-for-high-dollar-tech-fundraiser.html?utm_source=openai))  In a separate interview he noted that \u201cthe social cost of supporting Trump isn\u2019t as great as it was\u201d and called himself one of a \u201ccadre of high\u2011powered Silicon Valley businessmen\u201d newly warming to Trump.([dailywire.com](https://www.dailywire.com/news/democrat-fundraiser-from-silicon-valley-donates-1m-to-trump?utm_source=openai))  That is precisely the dynamic Sacks forecast.\n\n- A dedicated Trump super PAC, America PAC, was founded by Elon Musk in 2024 with backing from multiple high\u2011profile tech investors including Joe Lonsdale, Tyler and Cameron Winklevoss, Ken Howery, Shaun Maguire, and Antonio Gracias\u2014an organized cluster of Silicon Valley and crypto\u2011aligned business elites publicly financing Trump\u2019s bid.([en.wikipedia.org](https://en.wikipedia.org/wiki/America_PAC?utm_source=openai))  Separately, Trump\u2019s main super PAC, MAGA Inc., saw very large checks from billionaire financiers Timothy Mellon, Diane Hendricks, Howard Lutnick, and Paul Singer in mid\u20112024, including Mellon\u2019s $50 million contributions in both May 31 and July, underscoring strong, visible support from the financial elite.([en.wikipedia.org](https://en.wikipedia.org/wiki/MAGA_Inc.?utm_source=openai))\n\n- Several very prominent business figures who had been Democrats or non\u2011Trump Republicans made *public* pro\u2011Trump moves after this period:\n  - **Elon Musk**, by early 2024 already leaning right, formally endorsed Trump minutes after the July 2024 assassination attempt and went on to become the single largest individual donor of the 2024 election, giving roughly a quarter\u2011billion dollars in support of Trump and allied efforts.([en.wikipedia.org](https://en.wikipedia.org/wiki/Elon_Musk?utm_source=openai))\n  - **Bill Ackman**, a long\u2011time Democratic donor who had backed Dean Phillips and RFK Jr. earlier in the cycle, publicly endorsed Trump on July 13\u201314, 2024, in widely covered posts on X, explicitly framing it as a careful, data\u2011driven choice.([investing.com](https://www.investing.com/news/world-news/billionaire-bill-ackman-endorses-trump-in-us-presidential-race-3518188?utm_source=openai))\n  - **Marc Andreessen and Ben Horowitz**, co\u2011founders of Andreessen Horowitz and historically Democratic donors, announced on their own podcast and in a TechCrunch\u2011covered statement on July 16, 2024, that they would support and vote for Trump, citing tech and crypto policy as reasons.([techcrunch.com](https://techcrunch.com/2024/07/16/andreessen-horowitz-co-founders-explain-why-theyre-supporting-trump/?utm_source=openai))\n  - **Thomas Peterffy**, a billionaire who had previously said he would not fund Trump, reversed course and in August 2024 both attended a high\u2011dollar Aspen fundraiser for Trump and contributed hundreds of thousands of dollars after giving nothing to Trump earlier in the cycle.([en.wikipedia.org](https://en.wikipedia.org/wiki/Thomas_Peterffy?utm_source=openai))\n  Together with other financiers such as Scott Bessent\u2014an ex\u2011Democratic donor turned seven\u2011figure Trump fundraiser\u2014this represents exactly the \u201cflipping\u201d of business and finance leaders Sacks anticipated.([en.wikipedia.org](https://en.wikipedia.org/wiki/Scott_Bessent?utm_source=openai))\n\n- Compiled endorsement lists for Trump\u2019s 2024 campaign show a substantial roster of named CEOs, founders, hedge\u2011fund managers, and crypto leaders in the finance and technology categories, including Musk, Ackman, Andreessen, Charles Hoskinson, Thomas Peterffy, Joe Ricketts, the Winklevoss twins, and others.([en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_Donald_Trump_2024_presidential_campaign_non-political_endorsements?utm_source=openai))  Post\u2011election commentary by Bill Gates explicitly notes the emergence of a \u201csignificant right\u2011of\u2011center group\u201d of tech leaders\u2014he specifically names Musk, Sacks, Thiel, Patrick Collison, Horowitz, and Andreessen\u2014who had backed Trump in 2024, emphasizing how unusual this was given Silicon Valley\u2019s historic Democratic tilt.([nypost.com](https://nypost.com/2025/01/30/business/bill-gates-surprised-by-right-of-center-group-in-silicon-valley/?utm_source=openai))\n\nAt the same time, many corporate leaders continued to back Democrats (especially Kamala Harris once she became the nominee), and some high\u2011profile Republicans on Wall Street, like Ken Griffin, remained outspoken Trump critics or sat the race out.([en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_Kamala_Harris_2024_presidential_campaign_non-political_endorsements?utm_source=openai))  But Sacks did *not* predict that elite support would be monolithic\u2014only that there would be a noticeable cascade and that open Trump support would become more acceptable in elite business circles.\n\nGiven:\n- the rapid sequence of highly visible endorsements and mega\u2011donations from new or previously reluctant business and finance leaders after the late\u2011May / early\u2011June 2024 fundraiser,\n- explicit contemporary descriptions of a \u201cdam break\u201d in Silicon Valley Trump support and a reduced social cost to backing him,\n- and subsequent recognition that a sizable, coherent pro\u2011Trump faction had emerged among tech and financial elites,\n\nSacks\u2019s prediction that the fundraiser would be followed by a noticeable preference cascade of elite business and financial support for Trump during the 2024 cycle is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 953,
+          "start_index": 822,
+          "title": "Trump in liberal San Francisco for high-dollar tech fundraiser",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/06/06/trump-in-liberal-san-francisco-for-high-dollar-tech-fundraiser.html?utm_source=openai"
+        },
+        {
+          "end_index": 1285,
+          "start_index": 1158,
+          "title": "Democrat Fundraiser From Silicon Valley Donates $1M To Trump",
+          "type": "url_citation",
+          "url": "https://www.dailywire.com/news/democrat-fundraiser-from-silicon-valley-donates-1m-to-trump?utm_source=openai"
+        },
+        {
+          "end_index": 1755,
+          "start_index": 1674,
+          "title": "America PAC",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/America_PAC?utm_source=openai"
+        },
+        {
+          "end_index": 2143,
+          "start_index": 2064,
+          "title": "MAGA Inc.",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/MAGA_Inc.?utm_source=openai"
+        },
+        {
+          "end_index": 2656,
+          "start_index": 2577,
+          "title": "Elon Musk",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Elon_Musk?utm_source=openai"
+        },
+        {
+          "end_index": 3050,
+          "start_index": 2901,
+          "title": "Billionaire Bill Ackman endorses Trump in US presidential race By Reuters",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/world-news/billionaire-bill-ackman-endorses-trump-in-us-presidential-race-3518188?utm_source=openai"
+        },
+        {
+          "end_index": 3477,
+          "start_index": 3337,
+          "title": "Andreessen Horowitz co-founders explain why they're supporting Trump | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2024/07/16/andreessen-horowitz-co-founders-explain-why-theyre-supporting-trump/?utm_source=openai"
+        },
+        {
+          "end_index": 3842,
+          "start_index": 3757,
+          "title": "Thomas Peterffy",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Thomas_Peterffy?utm_source=openai"
+        },
+        {
+          "end_index": 4131,
+          "start_index": 4048,
+          "title": "Scott Bessent",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Scott_Bessent?utm_source=openai"
+        },
+        {
+          "end_index": 4586,
+          "start_index": 4442,
+          "title": "List of Donald Trump 2024 presidential campaign non-political endorsements",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/List_of_Donald_Trump_2024_presidential_campaign_non-political_endorsements?utm_source=openai"
+        },
+        {
+          "end_index": 5048,
+          "start_index": 4911,
+          "title": "Bill Gates says it's a 'surprise' that there is 'significant right-of-center group' in Silicon Valley",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/01/30/business/bill-gates-surprised-by-right-of-center-group-in-silicon-valley/?utm_source=openai"
+        },
+        {
+          "end_index": 5443,
+          "start_index": 5298,
+          "title": "List of Kamala Harris 2024 presidential campaign non-political endorsements",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/List_of_Kamala_Harris_2024_presidential_campaign_non-political_endorsements?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": null
+    },
+    {
+      "id": "G-01:42:16.520",
+      "result": "wrong",
+      "explanation": "**Why this prediction missed**  \n\n1. **No sustained U.S. economic slowdown from mid\u20112024 onward.** Real U.S. GDP grew at a 2.8% annualized rate in Q3 2024 and 2.3\u20132.4% in Q4 2024, with full\u2011year 2024 growth at 2.8%\u2014above the post\u20112000 average.([cnbc.com](https://www.cnbc.com/2024/10/30/us-gdp-q3-2024.html?utm_source=openai)) After a brief 0.5\u20130.6% contraction in Q1 2025, GDP rebounded sharply to about 3.8% annualized in Q2 2025.([tradingeconomics.com](https://tradingeconomics.com/united-states/gdp-growth/news/481079?utm_source=openai)) That pattern (solid 2H24 growth plus a one\u2011quarter dip followed by strong re\u2011acceleration) is not a \u201cslow contraction from mid\u20112024 onward.\u201d\n\n2. **Enterprise / IT spending kept growing rather than falling.** Gartner\u2019s forecasts through 2024\u20132026 show *rising* worldwide IT outlays: up ~7.5% in 2024, with software and data\u2011center systems growing double\u2011digits, and further 7.9\u20139.3% growth projected for 2025, again led by software and AI\u2011driven infrastructure.([gartner.com](https://www.gartner.com/en/newsroom/press-releases/2024-07-16-gartner-forecasts-worldwide-it-spending-to-grow-7-point-5-percent-in-2024?utm_source=openai)) Gartner does note a 2025 \u201cpause on net\u2011new spending\u201d due to macro uncertainty, but explicitly says this is outweighed by ongoing AI digitization initiatives, not a broad pullback.([gartner.com](https://www.gartner.com/en/newsroom/press-releases/2025-07-15-gartner-forecasts-worldwide-it-spending-to-grow-7-point-9-percent-in-2025?utm_source=openai)) That is inconsistent with \u201creduced spending\u201d and \u201creduced conversion of enterprise customers to buy anything.\u201d\n\n3. **Tech stocks did not enter a sustained contraction; many hit record highs.** The Nasdaq Composite was already near record levels in June 2024 and went on to set new all\u2011time highs in June 2025, alongside the S&P 500.([marketwatch.com](https://www.marketwatch.com/story/nasdaq-composite-rises-1-26-to-17717-65-data-talk-1ba8fe62?utm_source=openai)) The Nasdaq\u2011100 likewise notched a record close of ~22,190 in June 2025 and later, by November 28, 2025, the Nasdaq was up ~21% year\u2011to\u2011date.([reuters.com](https://www.reuters.com/business/nasdaq-100-notches-first-record-high-close-since-february-2025-06-24/?utm_source=openai)) Sector ETFs focused on software and cloud\u2014exactly the kind of enterprise tech he was talking about\u2014show gains, not a sustained bear market: IGV returned about +27% in 2024 and is modestly positive in 2025 overall,([companiesmarketcap.com](https://companiesmarketcap.com/ishares-expanded-tech-software-sector-etf/stock-price-history/?utm_source=openai)) while WCLD shows mid\u2011teens 1\u2011year returns as of September 2025 despite volatility.([myplaniq.com](https://www.myplaniq.com/invest/quote/WCLD/?utm_source=openai)) Those trajectories contradict the idea of an enduring sector\u2011wide contraction.\n\n4. **Valuation multiples did not broadly compress across public tech.** As of November 2025, IGV\u2019s price/earnings ratio is around 52, a very elevated level by historical standards,([ishares.com](https://www.ishares.com/us/products/239771/ishares-north-american-techsoftware-etf?utm_source=openai)) and market commentary through 2025 repeatedly highlights concerns about *stretched* AI\u2011driven tech valuations, not cheapened ones.([apnews.com](https://apnews.com/article/443b8287d085199133d998d5f52936ee?utm_source=openai)) Even where there were pockets of de\u2011rating\u2014e.g., a software ETF falling ~21% from a recent high and CIOs trimming budget growth expectations from 4% to 3% amid tariff worries\u2014analysts still emphasized strong long\u2011term growth and only *modest* near\u2011term caution.([barrons.com](https://www.barrons.com/articles/software-microsoft-salesforce-stock-1383bca7?utm_source=openai)) That is a far cry from broad, lasting multiple compression across tech.\n\nTaken together, the data show: (a) continued macro growth with just a brief 2025 soft patch, (b) rising, not falling, enterprise tech spending, and (c) technology equity markets that, while volatile, reached record levels and retained high valuations rather than entering a long, contractionary, multiple\u2011compression phase. That makes the prediction **wrong** in both its macro and sector\u2011specific components.",
+      "sources": [
+        {
+          "end_index": 361,
+          "start_index": 278,
+          "title": "U.S. GDP Q3 2024:",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/10/30/us-gdp-q3-2024.html?utm_source=openai"
+        },
+        {
+          "end_index": 576,
+          "start_index": 467,
+          "title": "US GDP Growth Revised Higher to 3.3% in Q2",
+          "type": "url_citation",
+          "url": "https://tradingeconomics.com/united-states/gdp-growth/news/481079?utm_source=openai"
+        },
+        {
+          "end_index": 1209,
+          "start_index": 1039,
+          "title": "Gartner Forecasts Worldwide IT Spending to Grow 7.5% in 2024",
+          "type": "url_citation",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2024-07-16-gartner-forecasts-worldwide-it-spending-to-grow-7-point-5-percent-in-2024?utm_source=openai"
+        },
+        {
+          "end_index": 1559,
+          "start_index": 1389,
+          "title": "Gartner Forecasts Worldwide IT Spending to Grow 7.9% in 2025",
+          "type": "url_citation",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2025-07-15-gartner-forecasts-worldwide-it-spending-to-grow-7-point-9-percent-in-2025?utm_source=openai"
+        },
+        {
+          "end_index": 2025,
+          "start_index": 1894,
+          "title": "NASDAQ Composite Rises 1.26% to 17717.65 -- Data Talk",
+          "type": "url_citation",
+          "url": "https://www.marketwatch.com/story/nasdaq-composite-rises-1-26-to-17717-65-data-talk-1ba8fe62?utm_source=openai"
+        },
+        {
+          "end_index": 2303,
+          "start_index": 2166,
+          "title": "Nasdaq 100 notches first record high close since February",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/nasdaq-100-notches-first-record-high-close-since-february-2025-06-24/?utm_source=openai"
+        },
+        {
+          "end_index": 2656,
+          "start_index": 2517,
+          "title": "iShares Expanded Tech-Software Sector ETF (IGV) - Stock price history",
+          "type": "url_citation",
+          "url": "https://companiesmarketcap.com/ishares-expanded-tech-software-sector-etf/stock-price-history/?utm_source=openai"
+        },
+        {
+          "end_index": 2818,
+          "start_index": 2739,
+          "title": "WCLD | WisdomTree Cloud Computing Fund",
+          "type": "url_citation",
+          "url": "https://www.myplaniq.com/invest/quote/WCLD/?utm_source=openai"
+        },
+        {
+          "end_index": 3198,
+          "start_index": 3081,
+          "title": "iShares Expanded Tech-Software Sector ETF | IGV",
+          "type": "url_citation",
+          "url": "https://www.ishares.com/us/products/239771/ishares-north-american-techsoftware-etf?utm_source=openai"
+        },
+        {
+          "end_index": 3422,
+          "start_index": 3329,
+          "title": "How major US stock indexes fared Friday, 11/28/2025",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/443b8287d085199133d998d5f52936ee?utm_source=openai"
+        },
+        {
+          "end_index": 3796,
+          "start_index": 3684,
+          "title": "Software Stocks Are Way Down, But Shouldn't Be. Microsoft and 2 More to Buy.",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/software-microsoft-salesforce-stock-1383bca7?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction of a US economic slowdown from mid-2024, with reduced enterprise spending, lower tech purchases, valuation multiple compression, and sustained tech market contraction did not occur. Instead, the economy grew robustly (e.g., Q2 2025 GDP +3.8% annualized [BEA, Sep 25, 2025](https://www.bea.gov/news/2025/gross-domestic-product-2nd-quarter-2025-third-estimate-gdp-industry-corporate-profits); Q3 2025 estimate +3.9% [Atlanta Fed GDPNow](https://www.atlantafed.org/cqer/research/gdpnow)), NASDAQ rose ~31% from ~17,800 (end-June 2024 [Yahoo Finance]) to ~23,300 (Nov 2025 [FRED](https://fred.stlouisfed.org/series/NASDAQCOM)), tech sector +18.71% YTD 2025 [Morningstar, Nov 4, 2025](https://www.morningstar.com/stocks/best-tech-stocks-buy), IT spending forecasts +7.9% in 2025 [Gartner, Jul 15, 2025](https://www.gartner.com/en/newsroom/press-releases/2025-07-15-gartner-forecasts-worldwide-it-spending-to-grow-7-point-9-percent-in-2025), SaaS multiples recovered to 6.1x [Bookman Capital, Sep 5, 2025](https://bookmancapital.io/saas-valuation-multiples-2025-boring-vs-flashy/)."
+    },
+    {
+      "id": "C-01:11:48.930",
+      "result": "right",
+      "explanation": "**How the prediction was framed**\n\nSacks\u2019 prediction had two parts:\n1. The ~20% post\u2011earnings drop in late May 2024 would be a *buying opportunity* for Salesforce (CRM).\n2. Marc Benioff would successfully pivot Salesforce to *benefit from the AI trend* rather than missing it or being caught flat\u2011footed.\n\n**1. Was the May 2024 crash a buying opportunity?**\n\n- After weak Q1 FY25 results, Salesforce fell about 20% on May 30, 2024, closing near $216, its worst day since 2004. ([upi.com](https://www.upi.com/Top_News/US/2024/05/30/Salesforce-share-prices-down/6511717093810/?utm_source=openai))\n- The next day (May 31, 2024) it rebounded but still finished the month around $232\u2013234 per share. ([statmuse.com](https://www.statmuse.com/money/ask/salesforce-stock-price-in-may-2024?utm_source=openai))\n- From that level, CRM went on a very strong run:\n  - It reached a highest closing price of $365.66 on December 4, 2024, up roughly 55\u201360% from the late\u2011May closing level. ([statmuse.com](https://www.statmuse.com/money/ask/crm-highest-closing-price-in-2024?utm_source=openai))\n  - It ended 2024 at about $333 per share, still ~40% above the May 31 close. ([digrin.com](https://www.digrin.com/stocks/detail/CRM/price?utm_source=openai))\n- By late November 2025, the stock has round\u2011tripped back near its May 2024 level (around $230.54 vs. ~$232\u2013234 then), meaning a buy\u2011and\u2011hold investor from May 2024 to now would be roughly flat and would have underperformed the broader market. ([statmuse.com](https://www.statmuse.com/money/ask/crm-stock-price-may-2024?utm_source=openai))\n\nHowever, Sacks did not specify a holding period\u2014only that the drop would prove to be a buying opportunity. In the 6\u201312 months after the call, buyers had multiple chances to realize very substantial gains (40\u201360% at year\u2011end 2024 and even more at the December 4 peak). In common investing language, that qualifies the May 2024 plunge as having been a **buying opportunity**, even if the stock later gave back those gains.\n\n**2. Did Benioff pivot Salesforce to AI instead of missing the trend?**\n\nEvidence strongly supports that Salesforce leaned *into* AI rather than missing it:\n\n- Salesforce launched **Einstein Copilot**, a conversational generative\u2011AI assistant embedded across its CRM, first announced in February 2024 and made generally available in April 2024; it\u2019s grounded in customer data via Data Cloud and marketed as part of the \u201cEinstein 1 Platform\u201d (now Salesforce Platform). ([salesforce.com](https://www.salesforce.com/news/press-releases/2024/02/27/einstein-copilot-news/?utm_source=openai))\n- Salesforce then introduced **Agentforce**, positioning itself as the \u201c#1 AI CRM\u201d and emphasizing autonomous AI agents that automate customer\u2011facing workflows. Earnings commentary highlighted hundreds of early Agentforce deals and a large AI deal pipeline. ([cnbc.com](https://www.cnbc.com/2024/12/04/salesforce-stock-up-on-earnings-beat-and-strong-ai-deals-pipeline.html?utm_source=openai))\n- By mid\u20112025, management and analysts were pointing to fast\u2011growing AI and data\u2011related annual recurring revenue (hundreds of millions to over $1 billion in ARR) and to AI as a central driver of Salesforce\u2019s long\u2011term growth plan, including guidance to exceed $60 billion in revenue by 2030 with AI\u2011driven products like Agentforce 360 at the core. ([reuters.com](https://www.reuters.com/business/salesforce-forecasts-revenue-over-60-billion-2030-2025-10-15/?utm_source=openai))\n- Internally, Benioff has said AI \u201cdigital employees\u201d now do roughly 30\u201350% of Salesforce\u2019s own work, underlining how aggressively the company has adopted AI in its operations. ([sfchronicle.com](https://www.sfchronicle.com/tech/article/salesforce-marc-benioff-ai-digital-employees-20395539.php?utm_source=openai))\n\nThere is ongoing debate about *how quickly* Salesforce can monetize these AI offerings, and some recent commentary notes investor concern that AI could be more disruptive than accretive until monetization catches up. ([barrons.com](https://www.barrons.com/articles/salesforce-stock-ai-earnings-89c9f0bc?utm_source=openai)) But the factual record is clear: Salesforce did not sit out the AI wave\u2014it rebranded itself as an AI\u2011first CRM platform, launched multiple AI products, built a substantial AI deal pipeline, and tied its long\u2011term financial guidance directly to AI.\n\n**Overall assessment**\n\n- **Stock call:** The May 2024 plunge *was* a buying opportunity over the subsequent year, with 40\u201360% gains available to investors who bought near the lows and exited during the 2024\u2013early\u20112025 rally.\n- **Strategic/AI call:** Benioff *did* pivot Salesforce aggressively toward AI, with Einstein Copilot, Agentforce, and AI\u2011driven revenue and internal usage becoming central to the company\u2019s narrative and product roadmap.\n\nGiven that both key elements of Sacks\u2019 prediction largely materialized, despite later volatility and lingering questions about AI monetization, the prediction is best classified as **right** overall.",
+      "sources": [
+        {
+          "end_index": 635,
+          "start_index": 518,
+          "title": "Salesforce stock price drops 20% amid macroeconomic challenges - UPI.com",
+          "type": "url_citation",
+          "url": "https://www.upi.com/Top_News/US/2024/05/30/Salesforce-share-prices-down/6511717093810/?utm_source=openai"
+        },
+        {
+          "end_index": 841,
+          "start_index": 736,
+          "title": "Salesforce Stock Price In May 2024 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/salesforce-stock-price-in-may-2024?utm_source=openai"
+        },
+        {
+          "end_index": 1120,
+          "start_index": 1016,
+          "title": "Crm Highest Closing Price In 2024 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/crm-highest-closing-price-in-2024?utm_source=openai"
+        },
+        {
+          "end_index": 1280,
+          "start_index": 1200,
+          "title": "Salesforce, Inc. price | Digrin",
+          "type": "url_citation",
+          "url": "https://www.digrin.com/stocks/detail/CRM/price?utm_source=openai"
+        },
+        {
+          "end_index": 1621,
+          "start_index": 1526,
+          "title": "Crm Stock Price May 2024 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/crm-stock-price-may-2024?utm_source=openai"
+        },
+        {
+          "end_index": 2639,
+          "start_index": 2521,
+          "title": "Salesforce\u2019s Einstein Copilot is Here: The Conversational AI Assistant for CRM that Delivers Trusted AI Responses Grounded with Your Company Data - Salesforce",
+          "type": "url_citation",
+          "url": "https://www.salesforce.com/news/press-releases/2024/02/27/einstein-copilot-news/?utm_source=openai"
+        },
+        {
+          "end_index": 3033,
+          "start_index": 2899,
+          "title": "Salesforce stock up on earnings beat and strong AI deals pipeline",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/12/04/salesforce-stock-up-on-earnings-beat-and-strong-ai-deals-pipeline.html?utm_source=openai"
+        },
+        {
+          "end_index": 3513,
+          "start_index": 3384,
+          "title": "Salesforce forecasts stronger-than-expected revenue of over $60 billion in 2030",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/salesforce-forecasts-revenue-over-60-billion-2030-2025-10-15/?utm_source=openai"
+        },
+        {
+          "end_index": 3829,
+          "start_index": 3692,
+          "title": "Marc Benioff says AI does 50% of Salesforce's work, calls himself the 'Taylor Swift of tech'",
+          "type": "url_citation",
+          "url": "https://www.sfchronicle.com/tech/article/salesforce-marc-benioff-ai-digital-employees-20395539.php?utm_source=openai"
+        },
+        {
+          "end_index": 4155,
+          "start_index": 4050,
+          "title": "Don't Expect Salesforce's Earnings to Dispel Fear That AI Could Hurt It",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/salesforce-stock-ai-earnings-89c9f0bc?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": null
+    },
+    {
+      "id": "G-01:38:19.890",
+      "result": "wrong",
+      "explanation": "By late 2025, the tech/AI/SaaS space does not look like it entered a prolonged \u201cslow contraction\u201d starting in mid\u20112024, nor like an initial AI mini\u2011bubble that burst and then deflated.\n\n**1. Valuations and sector size went *up*, not down.**  \nBessemer\u2019s 2025 Cloud 100 report shows the leading private cloud/AI companies\u2019 aggregate value jumping from about $820B in 2024 to about $1.1T in 2025, a ~36% increase, with valuations at all\u2011time highs and AI companies accounting for a rapidly growing share of that value. This is expansion, not contraction. ([bvp.com](https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai))\n\n**2. Multiple compression was real, but ongoing since 2021, not a new mid\u20112024 \u201creckoning.\u201d**  \nCloud/AI revenue multiples have been drifting down from their 2021 peak for several years. Bessemer notes Cloud 100 revenue multiples falling from 26\u00d7 (2023) to 23\u00d7 (2024) to ~20\u00d7 (2025), about 40% below the 2021 peak, while total valuations still hit records. ([bvp.com](https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai))  Public SaaS indices such as the BVP Nasdaq Emerging Cloud Index are trading around 7\u20138\u00d7 revenue in 2024\u201325\u2014roughly 65\u201370% below 2021 peaks, but described as having *stabilized*, not entering a new phase of contraction starting mid\u20112024. ([rockingweb.com.au](https://www.rockingweb.com.au/saas-metrics-benchmark-report-2025/?utm_source=openai))  So multiples compressed, but that process began years earlier and coexisted with very strong growth in overall sector value.\n\n**3. Investor enthusiasm for AI remained extremely strong.**  \nFar from a deflating mini\u2011bubble, AI names increasingly dominated markets through 2025. A widely cited overview of the \u201cAI bubble\u201d notes that in 2025 AI\u2011related enterprises were responsible for roughly 80% of U.S. stock\u2011market gains, that market concentration in a handful of mega\u2011cap tech/AI firms reached the highest levels in about 50 years, and that valuations were in the most stretched territory since the dot\u2011com era. ([en.wikipedia.org](https://en.wikipedia.org/wiki/AI_bubble?utm_source=openai))  Parallel coverage of the AI trade describes \u201cinsatiable enthusiasm,\u201d with Nvidia\u2019s market cap briefly exceeding $4\u20135T, OpenAI\u2019s private valuation rising into the hundreds of billions, and an IPO/financing boom for AI infrastructure and software firms. ([financialcontent.com](https://www.financialcontent.com/article/marketminute-2025-10-3-ais-unstoppable-ascent-reshaping-stock-valuations-and-forging-new-market-leaders?utm_source=openai))  Major platforms like Alphabet, Oracle, Palantir, and others saw huge 2025 gains explicitly tied to AI optimism. ([reuters.com](https://www.reuters.com/business/alphabet-races-toward-4-trillion-valuation-ai-fueled-gains-accelerate-2025-11-24/?utm_source=openai))\n\n**4. Net effect vs. the prediction.**  \nThe prediction was that, starting around mid\u20112024, tech\u2014especially AI and SaaS\u2014was beginning a *slow contraction* driven by multiple compression and waning enthusiasm, marking the bursting of an initial AI mini\u2011bubble. What actually happened is better characterized as:\n- Continued, gradual multiple normalization from 2021 extremes, **but**  \n- **Record\u2011high** aggregate valuations and sector size, and  \n- Intensifying AI hype and capital flows through 2025, not sustained cooling.\n\nTaken together, the core thrust of the prediction\u2014an AI/tech mini\u2011bubble starting to deflate into a slow contraction from mid\u20112024 onward\u2014has not played out by November 2025. The sector instead experienced an even larger AI boom with only intermittent corrections, so the forecast is best judged as **wrong**.",
+      "sources": [
+        {
+          "end_index": 678,
+          "start_index": 589,
+          "title": "The Cloud 100 Benchmarks Report 2025 - Bessemer Venture Partners",
+          "type": "url_citation",
+          "url": "https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai"
+        },
+        {
+          "end_index": 1129,
+          "start_index": 1040,
+          "title": "The Cloud 100 Benchmarks Report 2025 - Bessemer Venture Partners",
+          "type": "url_citation",
+          "url": "https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai"
+        },
+        {
+          "end_index": 1474,
+          "start_index": 1368,
+          "title": "The Complete SaaS Metrics Benchmark Report 2025: 2,000+ Companies Analysed",
+          "type": "url_citation",
+          "url": "https://www.rockingweb.com.au/saas-metrics-benchmark-report-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 2172,
+          "start_index": 2093,
+          "title": "AI bubble",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/AI_bubble?utm_source=openai"
+        },
+        {
+          "end_index": 2614,
+          "start_index": 2426,
+          "title": "AI's Unstoppable Ascent: Reshaping Stock Valuations and Forging New Market Leaders | FinancialContent",
+          "type": "url_citation",
+          "url": "https://www.financialcontent.com/article/marketminute-2025-10-3-ais-unstoppable-ascent-reshaping-stock-valuations-and-forging-new-market-leaders?utm_source=openai"
+        },
+        {
+          "end_index": 2877,
+          "start_index": 2728,
+          "title": "Alphabet races toward $4 trillion valuation as AI-fueled gains accelerate",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/alphabet-races-toward-4-trillion-valuation-ai-fueled-gains-accelerate-2025-11-24/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction of a 'slow contraction' in tech/AI/SaaS stocks starting mid-2024, with multiple compression and reduced enthusiasm, did not materialize. Instead, the sector experienced strong growth. NASDAQ-100 closed around 19,698 on June 28, 2024 (Yahoo Finance historical data) and reached 25,434.89 by Nov 30, 2025 (Nasdaq.com), a ~29% gain. Annual returns: +24.88% in 2024 and +21.05% in 2025 (Slickcharts). AI stocks like NVDA rose from ~$123 (June 2024 post-split) to ~$176-$182 by late 2025, up over 40% (Yahoo Finance, Macrotrends). SaaS median EV/Revenue multiple recovered to 6.1x by Aug 2025 from 2024 lows (Aventis Advisors). SEG SaaS Index up 3% end-2024. While Nov 2025 saw a selloff with AI bubble fears (e.g., Reuters, IBD articles erasing $2.4T), this was a short-term pullback after sustained gains, not a 'slow contraction' or mini-bubble burst from mid-2024."
+    },
+    {
+      "id": "G-01:24:39.760",
+      "result": "wrong",
+      "explanation": "Available polling of independents and undecided/swing voters after Trump\u2019s May 30, 2024 New York conviction shows a net *negative* reaction, not a sympathy-driven boost.\n\nKey evidence:\n\n- A Reuters/Ipsos poll summarized by *Forbes* found that among independents, 25% said the conviction made them *less likely* to vote for Trump, vs only 18% who said *more likely*\u2014a clear net negative effect. Over half of independents in the same coverage said he should drop out of the race. ([forbes.com](https://www.forbes.com/sites/brianbushard/2024/06/04/post-trump-conviction-polls-show-warning-signs-most-independents-think-trump-should-drop-out/?utm_source=openai))\n- A Politico/Ipsos poll reported that 32% of independents were less likely to support Trump after the verdict, while only 12% were more likely; 53% of independents said he was guilty. ([benzinga.com](https://www.benzinga.com/general/politics/24/06/39369169/trump-in-trouble-new-2024-election-poll-shows-32-of-independent-voters-less-likely-to-support-fo?utm_source=openai)) Another Politico/Ipsos reading found 21% of independents less likely vs 5% more likely\u2014again a net negative. ([onnradio.com](https://www.onnradio.com/2024/06/17/21-percent-of-independents-less-likely-to-back-trump-poll/?utm_source=openai))\n- An AP\u2011NORC survey found overall views of Trump and Biden were essentially unchanged from before the verdict, with independents divided on Trump and no sign of a broad sympathy surge; about half of U.S. adults approved of the conviction. ([ny1.com](https://ny1.com/nyc/test/news/2024/06/12/poll-trump-guilty-verdict-new-york-hush-money-election?utm_source=openai))\n- Morning Consult\u2019s post\u2011verdict polling showed a majority of independents (about 52%) approved of the conviction and a similar share believed Trump had committed crimes, even as many opposed imprisoning him\u2014suggesting limited sympathy for Trump himself, rather than for harsh punishment. ([pro.morningconsult.com](https://pro.morningconsult.com/analysis/donald-trump-polling-guilty-verdict-jury-trial))\n- A separate summary of polling noted that 52% of independents thought Trump should end his 2024 campaign after the conviction, underscoring admonishment rather than increased sympathy. ([gvwire.com](https://gvwire.com/2024/06/05/poll-independents-and-double-haters-urge-trump-to-end-2024-campaign-after-conviction/?utm_source=openai))\n\nOn Election Day, Trump *did* perform better with independents than in 2020 (e.g., Pew finds independents including leaners split 48\u201348 between Trump and Harris in 2024, after favoring Biden by 9 points in 2020; Edison data shows self\u2011identified independents 49% Harris, 46% Trump). ([pewresearch.org](https://www.pewresearch.org/politics/2025/06/26/voting-patterns-in-the-2024-election/?utm_source=openai)) Other analyses suggest his share of the independent vote rose several points and that independents were pivotal in swing states. ([thefulcrum.us](https://thefulcrum.us/bridging-common-ground/power-of-independent-voters?utm_source=openai)) But these longer\u2011run shifts are driven by many factors (economy, immigration, Harris replacing Biden, etc.), and the direct polling on the conviction itself shows it initially *hurt* him with independents rather than generating net sympathy.\n\nBecause multiple independent polls consistently show that, among independents and undecided/swing voters, more people moved away from Trump than toward him in response to the New York conviction\u2014and many wanted him to drop out\u2014the prediction that the conviction would create a net sympathy effect and thus *improve* his standing with that group going into 2024 is best classified as **wrong**.",
+      "sources": [
+        {
+          "end_index": 695,
+          "start_index": 515,
+          "title": "Trump Polls: Some Independents, Republicans May Shift After Guilty Verdict",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/brianbushard/2024/06/04/post-trump-conviction-polls-show-warning-signs-most-independents-think-trump-should-drop-out/?utm_source=openai"
+        },
+        {
+          "end_index": 1070,
+          "start_index": 881,
+          "title": "Trump In Trouble: New 2024 Election Poll Shows 32% Of Independent Voters Less Likely To Support Former President After Conviction - Benzinga",
+          "type": "url_citation",
+          "url": "https://www.benzinga.com/general/politics/24/06/39369169/trump-in-trouble-new-2024-election-poll-shows-32-of-independent-voters-less-likely-to-support-fo?utm_source=openai"
+        },
+        {
+          "end_index": 1310,
+          "start_index": 1180,
+          "title": "21 percent of independents less likely to back Trump: Poll | ONN Radio",
+          "type": "url_citation",
+          "url": "https://www.onnradio.com/2024/06/17/21-percent-of-independents-less-likely-to-back-trump-poll/?utm_source=openai"
+        },
+        {
+          "end_index": 1677,
+          "start_index": 1551,
+          "title": "Poll: Half of U.S. adults approve of Trump's conviction",
+          "type": "url_citation",
+          "url": "https://ny1.com/nyc/test/news/2024/06/12/poll-trump-guilty-verdict-new-york-hush-money-election?utm_source=openai"
+        },
+        {
+          "end_index": 2082,
+          "start_index": 1968,
+          "title": "More Than Half of Voters Approve of Donald Trump\u2019s New York Conviction",
+          "type": "url_citation",
+          "url": "https://pro.morningconsult.com/analysis/donald-trump-polling-guilty-verdict-jury-trial"
+        },
+        {
+          "end_index": 2419,
+          "start_index": 2270,
+          "title": "Poll: Independents and 'Double Haters' Urge Trump to End 2024 Campaign After Conviction - GV Wire",
+          "type": "url_citation",
+          "url": "https://gvwire.com/2024/06/05/poll-independents-and-double-haters-urge-trump-to-end-2024-campaign-after-conviction/?utm_source=openai"
+        },
+        {
+          "end_index": 2829,
+          "start_index": 2705,
+          "title": "How voting patterns changed in the 2024 election: A detailed analysis | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/politics/2025/06/26/voting-patterns-in-the-2024-election/?utm_source=openai"
+        },
+        {
+          "end_index": 3068,
+          "start_index": 2959,
+          "title": "Republicans Can Build A Winning Coalition With Independents - The Fulcrum",
+          "type": "url_citation",
+          "url": "https://thefulcrum.us/bridging-common-ground/power-of-independent-voters?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Immediate post-conviction polls (May-June 2024) showed the New York verdict hurt Trump's standing or had no positive effect among independents: Politico/Ipsos (Jun 17) found it hurts independents; ABC News (Jun 3) had 52% of independents saying Trump should end his campaign; multiple outlets (USA Today, CBS) reported declining support. One Quinnipiac Georgia poll (Jun 6) showed a slight boost, but overall consensus was neutral-to-negative. 2024 exit polls (CBS/NBC: independents 49% Harris-46% Trump; PRRI: 53%-44%) show Trump improved from 2020 (Biden 54%-41%) but still trailed slightly nationally, with no evidence attributing gains to conviction sympathy. Post-election analyses emphasize economy/immigration over trial; causation unclear but no net sympathy increase confirmed. Sources: [Politico](https://www.politico.com/news/magazine/2024/06/17/trouble-for-trump-in-a-new-poll-on-his-conviction-00163498), [ABC](https://abcnews.go.com/Politics/majority-independents-double-haters-trump-end-2024-campaign/story?id=110778206), [Roper/CBS Exit Polls](https://ropercenter.cornell.edu/how-groups-voted-2024), [NBC Exit Polls](https://www.nbcnews.com/politics/2024-elections/exit-polls), [PRRI](https://prri.org/research/analyzing-the-2024-presidential-vote-prris-post-election-survey/)."
+    },
+    {
+      "id": "A-01:45:06.810",
+      "result": "ambiguous",
+      "explanation": "Available public information confirms that Poker Power does run a **Summer Bootcamp** tied to All-In Summit tickets, but does **not** provide data on how fast the 2024 cohort filled or whether all spots were taken.\n\nWhat we can see:\n- Poker Power currently advertises a **2025 Summer Bootcamp**, a free 2\u2011week virtual program that is explicitly capped (\u201creserved for the first 100 people who register\u201d) and culminates in a tournament awarding two tickets to the 2025 All\u2011In Summit. Registration is described as first\u2011come, first\u2011served, with a prominent \u201cRegister\u201d call\u2011to\u2011action, but there is no public indicator of whether or when capacity is reached. ([pokerpower.com](https://www.pokerpower.com/2025-summer-bootcamp?utm_source=openai))\n- Site\u2011wide banners and blog pages reference a **\u201cWin All\u2011In Summit tickets! FREE 2\u2011week poker bootcamp + tournament\u201d** promotion, which is clearly the same campaign, but again they provide no enrollment statistics or waitlist/sell\u2011out notices. ([pokerpower.com](https://www.pokerpower.com/group-lessons/?utm_source=openai))\n\nHowever:\n- There is **no accessible archived 2024 Summer Bootcamp landing page** (e.g., a `2024-summer-bootcamp` URL or similar) and no press release or news item describing the 2024 women\u2019s bootcamp filling its 80\u2011spot capacity or selling out quickly.\n- Searches across Poker Power\u2019s site and broader web (including news and blog coverage) do not turn up any statements about 2024 registration numbers, sell\u2011out timing, or a public waitlist for that year\u2019s women\u2011only summer bootcamp.\n\nBecause Jason\u2019s claim is very specific\u2014*that the 2024 women\u2019s summer bootcamp with 80 spots would \"fill up quick\" after the episode*\u2014verifying it would require internal registration data or explicit public confirmation that the 80 places sold out rapidly. No such evidence is available from public web sources, and there is also no counter\u2011evidence that it failed to fill or was still advertising open spots near the start date.\n\nGiven the lack of concrete public data either confirming or refuting the bootcamp\u2019s fill rate in 2024, the prediction cannot be reliably judged as correct or incorrect. Therefore the outcome has to be classified as **ambiguous** rather than right, wrong, or merely \u201ctoo early to tell.\u201d",
+      "sources": [
+        {
+          "end_index": 779,
+          "start_index": 694,
+          "title": "Free Summer Poker Bootcamp\u202f2025\u202f|\u202fPoker Power",
+          "type": "url_citation",
+          "url": "https://www.pokerpower.com/2025-summer-bootcamp?utm_source=openai"
+        },
+        {
+          "end_index": 1105,
+          "start_index": 1026,
+          "title": "Team Up and Level Up | Group Poker Lessons | Poker Power",
+          "type": "url_citation",
+          "url": "https://www.pokerpower.com/group-lessons/?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "No public information confirms whether the Poker Power 2024 Summer Bootcamp sold out its 80 spots quickly after the May 31, 2024 podcast release. Web searches for terms like 'Poker Power 2024 summer bootcamp sold out', 'results', 'winner', 'All-In Summit ticket', and site-specific queries returned only promotional materials from May 2024 (e.g., [Jason's tweet](https://x.com/Jason/status/1794131808118043057), Threads post), the podcast transcript, and details on the 2025 bootcamp. The official site ([pokerpower.com](https://www.pokerpower.com/)) and 2025 page have no mentions of 2024 attendance, sell-out status, tournament results, or participant numbers. Browsing the site yielded insufficient relevant content for 2024. Absence of announcements about a sell-out or winner, despite promotion and sufficient time passed (event in summer 2024), makes it impossible to verify."
+    },
+    {
+      "id": "A-01:45:06.811",
+      "result": "inconclusive",
+      "explanation": "Jason makes this statement at the end of the May 31, 2024 episode, saying they are \"going to do a party in Vegas\" when they hit a million subscribers, in the context of directing listeners to the YouTube channel. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/doj-targets-nvidia-meme-stock-comeback-trump-fundraiser-in-sf-appleopenai-texas-stock-market?utm_source=openai))\n\nHowever, multiple independent analytics trackers show that the All-In Podcast YouTube channel has **not yet reached 1,000,000 subscribers** as of late November 2025. Social Blade lists the channel at around 963K subscribers in late October 2025, while its realtime page and history show mid\u2013900Ks through fall 2025. ([socialblade.com](https://socialblade.com/youtube/channel/UCESLZhusAkFfsNsApnjF_Cg/monthly?utm_source=openai)) SPEAKRJ reports 972K subscribers as of November 23, 2025, and SocialCounts.org shows roughly 975K subscribers on November 27, 2025\u2014still below 1M. ([speakrj.com](https://www.speakrj.com/audit/report/UCESLZhusAkFfsNsApnjF_Cg/youtube?utm_source=openai))\n\nGiven that the **trigger condition (1,000,000 YouTube subscribers) has not yet been met**, we cannot know whether they will in fact hold a Vegas party at or near that milestone. The prediction therefore cannot yet be judged as either fulfilled or failed, so the correct status is **\"inconclusive (too early)\"**.",
+      "sources": [
+        {
+          "end_index": 457,
+          "start_index": 255,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - DOJ targets Nvidia, Meme stock comeback, Trump fundraiser in SF, Apple/OpenAI, Texas stock market Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/doj-targets-nvidia-meme-stock-comeback-trump-fundraiser-in-sf-appleopenai-texas-stock-market?utm_source=openai"
+        },
+        {
+          "end_index": 888,
+          "start_index": 777,
+          "title": "All-In Podcast's YouTube Statistics - Social Blade",
+          "type": "url_citation",
+          "url": "https://socialblade.com/youtube/channel/UCESLZhusAkFfsNsApnjF_Cg/monthly?utm_source=openai"
+        },
+        {
+          "end_index": 1140,
+          "start_index": 1036,
+          "title": "All-In Podcast YouTube Channel Statistics / Analytics - SPEAKRJ Stats",
+          "type": "url_citation",
+          "url": "https://www.speakrj.com/audit/report/UCESLZhusAkFfsNsApnjF_Cg/youtube?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The All-In Podcast YouTube channel (@allin, https://www.youtube.com/@allin) has not yet reached 1,000,000 subscribers. Current count is approximately 970,000 as of late November/early December 2025, based on multiple analytics sites: vidIQ reports 968K on Nov 16, 2025 (https://vidiq.com/youtube-stats/channel/UCESLZhusAkFfsNsApnjF_Cg/); SocialCounts.org at 970K (https://socialcounts.org/youtube-live-subscriber-count/UCESLZhusAkFfsNsApnjF_Cg); SPEAKRJ notes recent gains but under 1M (https://www.speakrj.com/audit/report/UCESLZhusAkFfsNsApnjF_Cg/youtube); YouTube search snippets show 972K-977K. They celebrated 500K in June 2024 (https://www.youtube.com/watch?v=AsDrfUQImhs). No announcements or evidence of reaching 1M or a Vegas party (searches for '\"All-In Podcast\" \"1 million subscribers\" Vegas party' and similar yield no results). Since the milestone hasn't been hit, the prediction cannot be verified yet."
+    },
+    {
+      "id": "D-01:39:36.240",
+      "result": "inconclusive",
+      "explanation": "As of 30 November 2025, the conditions and time horizon of Chamath\u2019s prediction have not clearly played out yet.\n\n**1. What the prediction requires**\nThe normalized prediction is conditional and medium\u2011term:\n\n- *If* hyperscalers keep spending tens of billions per quarter on AI infra **without commensurate new revenue**, \n- *then*, **within the next few years**, Nvidia\u2019s valuation will prove unjustified and both Nvidia and the big spenders will suffer significant share\u2011price punishment.\n\nThe key pieces to check are: (a) continued huge AI capex, (b) lack of matching revenue/earnings, and (c) a major, sustained drawdown in Nvidia and hyperscaler stocks **within a few years** of May 2024. We\u2019re only ~18 months into that window.\n\n**2. What has actually happened so far**\n\n**Spending:**\n- Google/Alphabet has sharply ramped technical\u2011infrastructure and AI spending, guiding ~$85\u201390B of annual capex, mostly for servers, data centers and networking to meet AI cloud demand.\u30100search7\u3011\u30100news16\u3011\n- Amazon plans around $100B of AWS capex in 2025, with quarterly capex in the low\u2011$20Bs to $30B+ range, the \u201cvast majority\u201d on AI infrastructure.\u30100search3\u3011\u30100search8\u3011\n- Microsoft\u2019s capex has risen into the tens of billions per quarter as well, largely to support Azure and AI workloads.\u30102news13\u3011\n\nSo the **\u201ctens of billions per quarter\u201d spending** part is clearly happening.\n\n**Revenues/earnings:**\n- AWS became a >$100B\u2011per\u2011year business in 2024 with ~$107.6B in sales and ~$39.8B operating income, 19% YoY growth, as Amazon simultaneously prepares ~$100B of AI\u2011heavy capex in 2025.\u30100search5\u3011\u30100search3\u3011\n- Alphabet\u2019s Google Cloud revenue grew 32% YoY to $13.6B in a recent quarter, with a $106B backlog, and management explicitly ties its elevated capex to strong AI and cloud demand.\u30100search7\u3011\n- Microsoft reports that Azure surpassed $75B in annual revenue, growing in the low\u2011to\u2011mid\u201130% range, and total Microsoft Cloud revenue is growing ~27% YoY, framed by the company itself as driven by cloud and AI.\u30100search0\u3011\u30100search2\u3011\n\nIn other words, **substantial incremental revenue and profit are already showing up**, even though investors still argue about whether these returns are fully \u201ccommensurate\u201d with the capex.\n\n**Stock\u2011price behavior:**\nStarting near Chamath\u2019s podcast date (31 May 2024) and looking through late 2025:\n\n- **Nvidia (NVDA)** closed at about **$109.6** on 31 May 2024; recent prices are around **$177\u2013180**, a gain of roughly 60%+.\u30101search0\u3011\u30100finance0\u3011 Nvidia even briefly reached a **$4T market cap** in July 2025, becoming the world\u2019s most valuable company due to AI chip demand.\u30103search0\u3011\u30103search1\u3011\n- **Microsoft (MSFT)** rose from about **$411** at 31 May 2024 to roughly **$490\u2013520** in late 2025.\u30102search0\u3011\u30100finance1\u3011\n- **Alphabet (GOOGL)** went from about **$171** to around **$280\u2013320**, and its market cap is now approaching $4T, with the stock up ~70% in 2025 alone on AI optimism.\u30101search1\u3011\u30100finance2\u3011\u30103news12\u3011\n- **Amazon (AMZN)** climbed from about **$176** to the low\u2011$230s.\u30101search3\u3011\u30100finance3\u3011\n- **Meta (META)** moved from about **$464** to the mid\u2011$600s.\u30102search4\u3011\u30100finance4\u3011\n\nThere have been sizable pullbacks and sector wobbliness in late 2025 (e.g., Nvidia giving back hundreds of billions from a peak above $5T, short\u2011term 10\u201315% drops on AI\u2011ROI fears),\u30100news14\u3011\u30103news13\u3011 but **from the May 2024 baseline these names are still dramatically higher, not \u201cpunished.\u201d**\n\n**3. Why this is not yet a clean \u201cright\u201d or \u201cwrong\u201d call**\n- The **timeframe** Chamath pointed to was \u201cwithin the next few years\u201d from mid\u20112024. As of late 2025, that window is only partially elapsed; markets could still reassess the ROI of AI capex and re\u2011rate these stocks lower in 2026\u201327.\n- The prediction is **explicitly conditional** on hyperscalers *not* showing incremental revenue/earnings from their AI spending. So far, they are in fact reporting large and growing cloud/AI revenue and profits; whether that is \u201ccommensurate\u201d is partly subjective, and the condition has arguably not been met yet.\n- Because the **antecedent (\u201cno incremental revenue\u201d) is not clearly satisfied**, we can\u2019t empirically test the \u201cthen they will be punished\u201d part. At the same time, the observed outcome so far (Nvidia + hyperscalers up sharply) runs opposite to the spirit of his warning, but that could still change before his vague \u201cfew years\u201d horizon fully expires.\n\nGiven this, the forecast cannot yet be definitively scored as right or wrong. The **AI capex boom and Nvidia\u2019s valuation have so far been rewarded, not punished**, but the specified time window and the conditional nature of his statement mean the final verdict is still open.\n\n**Conclusion:** it\u2019s **too early** to declare a definitive outcome, so the appropriate rating is **\u201cinconclusive (too early).\u201d",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Nvidia's market cap grew from $2.7T on May 31, 2024 ([StatMuse](https://www.statmuse.com/money/ask/nvidia-market-cap-in-may-2024)) to $4.301T as of Dec 1, 2025 ([Macrotrends](https://www.macrotrends.net/stocks/charts/NVDA/nvidia/market-cap), [CompaniesMarketCap](https://companiesmarketcap.com/nvidia/marketcap/)), with stock price rising ~62% from $109.59 (split-adjusted, [Digrin](https://www.digrin.com/stocks/detail/NVDA/price)) to ~$176-178. Hyperscalers continued massive AI capex ($114B total in Q3 2025, [Platformonomics](https://platformonomics.com/2025/10/follow-the-capex-q3-2025-scoreboard/); $350-400B expected 2025, [Statista](https://www.statista.com/chart/35046/capital-expenditure-of-meta-alphabet-amazon-and-microsoft/)). Despite this, revenues grew (cloud +22% Q2 2025 [ChannelInsider](https://www.channelinsider.com/infrastructure/canalys-cloud-hyperscaler-report-sept-2025/), Nvidia DC $51.2B +66% YoY [Seeking Alpha](https://seekingalpha.com/article/4847447-nvidia-the-next-growth-frontier-is-sovereign-ai)). Hyperscaler stocks rose: MSFT ~$415 (May 2024 est.) to $492 (+~18%, [Macrotrends](https://www.macrotrends.net/stocks/charts/MSFT/microsoft/stock-price-history)), META $467 to $648 (+39%). Volatility occurred (NVDA 52w low $86.62), with recent bubble fears ([NPR Nov 2025](https://www.npr.org/2025/11/23/nx-s1-5615410/ai-bubble-nvidia-openai-revenue-bust-data-centers)), but no significant sustained punishment; valuations higher after 18 months."
+    }
+  ]
+}

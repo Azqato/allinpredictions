@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "count": 4,
+    "count_by_result": {
+      "inconclusive": 2,
+      "wrong": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "F-01:08:53.500",
+      "result": "inconclusive",
+      "explanation": "The prediction specifies a timeframe of **5\u201310 years** from the podcast date (September 27, 2025) for widespread deployment of robots that run their core AI inference locally on-device. As of today (November 30, 2025), only about **2 months** have passed since the prediction was made. This is far too early within the stated 5\u201310 year window to determine whether the typical robot in commercial use will predominantly rely on local inference rather than cloud-based inference. Therefore, the correctness of this prediction cannot yet be evaluated.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction anticipates that within 5\u201310 years from September 2025 (i.e., by 2030\u20132035), typical commercial robots will run core AI inference locally on-device. As of December 1, 2025\u2014only ~2 months later\u2014insufficient time has elapsed to assess fulfillment, making it too early to determine."
+    },
+    {
+      "id": "F-01:19:44.990",
+      "result": "wrong",
+      "explanation": "Governor Gavin Newsom **did not sign** SB 771 into law; he **vetoed** it.\n\nMultiple sources report that:\n\n- On **October 13, 2025**, Newsom vetoed SB 771, a bill that would have fined social-media companies up to $1 million per post for algorithmically amplifying certain violent or hate-related content, calling the legislation \u201cpremature\u201d and stating, \u201cFor this reason, I cannot sign this bill.\u201d ([politico.com](https://www.politico.com/news/2025/10/13/newsom-siding-with-tech-giants-vetoes-online-hate-speech-bill-00606600?utm_source=openai))\n- Civil-rights organizations such as CAIR-CA explicitly \u201cwelcomed Governor Newsom\u2019s veto of SB 771,\u201d confirming that his action on the bill was a veto rather than a signature. ([ca.cair.com](https://ca.cair.com/press-release/cair-ca-welcomes-governor-newsoms-veto-of-sb-771-commitment-to-protecting-free-speech/?utm_source=openai))\n\nBecause the prediction was that Newsom **would sign** SB 771 instead of vetoing it, and he **in fact vetoed** the bill, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 582,
+          "start_index": 435,
+          "title": "Newsom, siding with tech giants, vetoes online hate speech bill",
+          "type": "url_citation",
+          "url": "https://www.politico.com/news/2025/10/13/newsom-siding-with-tech-giants-vetoes-online-hate-speech-bill-00606600?utm_source=openai"
+        },
+        {
+          "end_index": 915,
+          "start_index": 760,
+          "title": "CAIR-CA Welcomes Governor Newsom\u2019s Veto of SB 771, Commitment To Protecting Free Speech | CAIR California",
+          "type": "url_citation",
+          "url": "https://ca.cair.com/press-release/cair-ca-welcomes-governor-newsoms-veto-of-sb-771-commitment-to-protecting-free-speech/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Governor Gavin Newsom vetoed SB 771 on October 13, 2025, rather than signing it into law. This contradicts the prediction. Sources: [Official veto message](https://www.gov.ca.gov/wp-content/uploads/2025/10/SB-771-Veto.pdf); [Politico article](https://www.politico.com/news/2025/10/13/newsom-siding-with-tech-giants-vetoes-online-hate-speech-bill-00606600); [Governor's legislative update](https://www.gov.ca.gov/2025/10/13/governor-newsom-issues-legislative-update-10-13-25/); multiple reports from KCRA, ADC, CAIR-CA confirming the veto."
+    },
+    {
+      "id": "F-01:21:50.730",
+      "result": "wrong",
+      "explanation": "Gavin Newsom did not sign SB 771 into law; instead, he vetoed the bill in mid-October 2025, with CAIR-CA, Politico, the California Lawyers Association, and other outlets all describing SB 771 as vetoed rather than enacted. ([ca.cair.com](https://ca.cair.com/press-release/cair-ca-welcomes-governor-newsoms-veto-of-sb-771-commitment-to-protecting-free-speech/?utm_source=openai)) Because the bill never became law, it was never reviewed or struck down by the U.S. Supreme Court; contemporary coverage discusses only potential First Amendment challenges and contains no record of any Supreme Court decision on SB 771. ([legalinsurrection.com](https://legalinsurrection.com/2025/09/california-senate-bill-771-sparks-first-amendment-showdown/?utm_source=openai)) Therefore, the prediction that Newsom would sign SB 771 and that the Supreme Court would later invalidate it is wrong.",
+      "sources": [
+        {
+          "end_index": 411,
+          "start_index": 256,
+          "title": "CAIR-CA Welcomes Governor Newsom\u2019s Veto of SB 771, Commitment To Protecting Free Speech | CAIR California",
+          "type": "url_citation",
+          "url": "https://ca.cair.com/press-release/cair-ca-welcomes-governor-newsoms-veto-of-sb-771-commitment-to-protecting-free-speech/?utm_source=openai"
+        },
+        {
+          "end_index": 791,
+          "start_index": 649,
+          "title": "California Senate Bill 771 Sparks First Amendment Showdown",
+          "type": "url_citation",
+          "url": "https://legalinsurrection.com/2025/09/california-senate-bill-771-sparks-first-amendment-showdown/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Governor Gavin Newsom vetoed SB 771 on October 13, 2025, rather than signing it into law, as confirmed by the official veto message ([gov.ca.gov](https://www.gov.ca.gov/wp-content/uploads/2025/10/SB-771-Veto.pdf)), news reports ([Politico](https://www.politico.com/news/2025/10/13/newsom-siding-with-tech-giants-vetoes-online-hate-speech-bill-00606600)), and legislative trackers ([LegiScan](https://legiscan.com/CA/bill/SB771/2025)). Since the bill never became law, there was no subsequent U.S. Supreme Court ruling."
+    },
+    {
+      "id": "F-01:07:51.830",
+      "result": "inconclusive",
+      "explanation": "The episode was released on September 27, 2025, and the quote explicitly frames the \u201crobot revolution\u201d and its associated energy use as something that will unfold \u201cin the next five years.\u201d([speakai.co](https://speakai.co/podcast-transcription/all-in-podcast/h-1b-shakeup-kimmel-apology-autism-causes-california-hate-speech-law/?utm_source=openai)) That prediction window runs until September 27, 2030. As of today (November 30, 2025), only about two months of that five\u2011year period have elapsed, so there is not yet enough information to determine whether widespread robot deployment will materially increase electricity demand relative to a no\u2011robots counterfactual. Therefore the prediction cannot currently be judged.",
+      "sources": [
+        {
+          "end_index": 387,
+          "start_index": 228,
+          "title": "H-1B Shakeup, Kimmel Apology, Autism Causes, California Hate Speech Law - Try Speak Free!",
+          "type": "url_citation",
+          "url": "https://speakai.co/podcast-transcription/all-in-podcast/h-1b-shakeup-kimmel-apology-autism-causes-california-hate-speech-law/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction deadline is September 27, 2030, but the current date is December 1, 2025\u2014only ~2 months after the podcast. No evidence of a 'robot revolution' with widespread deployment materially boosting electricity demand. Tesla Optimus plans target thousands of units in 2025 (e.g., [Tesla announcements](https://humanoidroboticstechnology.com/industry-news/tesla-announces-ambitious-production-targets-for-optimus-humanoid-robot/), but scaling is projected for 2026-2027; one report notes abandoned 5k target ([Reddit](https://www.reddit.com/r/investing/comments/1o1y1i9/tesla_abandons_2025_optimus_production_target_of/)). Industrial robot installations grow modestly to ~575k globally in 2025 ([IFR](https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years)), not revolutionary scale. Electricity demand surges are driven by AI data centers (doubling to 945 TWh by 2030 per [IEA](https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai)), not robots. Hype exists ([McKinsey](https://www.mckinsey.com/~/media/mckinsey/email/rethink/2025/09/2025-09-10d.html)), but no materialized impact yet\u2014too early to evaluate. "
+    }
+  ]
+}

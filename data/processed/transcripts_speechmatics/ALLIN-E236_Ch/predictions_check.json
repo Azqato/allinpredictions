@@ -1,0 +1,546 @@
+{
+  "meta": {
+    "count": 17,
+    "count_by_result": {
+      "inconclusive": 11,
+      "right": 3,
+      "wrong": 3
+    }
+  },
+  "predictions": [
+    {
+      "id": "gavin-00:08:55.000",
+      "result": "inconclusive",
+      "explanation": "As of 30 November 2025, Donald Trump has *not* actually fired Jerome Powell as Federal Reserve Chair. Powell remains in office with a term running through May 2026, and reporting describes Trump only considering or threatening removal (including drafting a dismissal letter) rather than carrying it out. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Jerome_Powell?utm_source=openai)) Trump has at times said it is 'highly unlikely' he will fire Powell and, on another occasion, that he has 'no intention' of doing so before the term ends, with markets reacting to those statements but no confirmed dismissal occurring. ([reuters.com](https://www.reuters.com/world/us/trump-indicated-republican-lawmakers-he-will-fire-feds-powell-cbs-reports-2025-07-16/?utm_source=openai)) Current coverage instead focuses on the possibility of naming a successor when Powell\u2019s term expires, not on any completed firing. ([investopedia.com](https://www.investopedia.com/trump-could-name-a-new-fed-chair-by-christmas-treasury-secretary-bessent-says-11856460?utm_source=openai)) Because the triggering condition in the prediction (a confirmed firing of Powell by Trump) has not happened yet, the implied market reaction cannot be observed, so the accuracy of the prediction cannot currently be determined.",
+      "sources": [
+        {
+          "end_index": 427,
+          "start_index": 344,
+          "title": "Jerome Powell",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Jerome_Powell?utm_source=openai"
+        },
+        {
+          "end_index": 816,
+          "start_index": 663,
+          "title": "Trump says he's 'not planning' to fire Fed's Powell",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/trump-indicated-republican-lawmakers-he-will-fire-feds-powell-cbs-reports-2025-07-16/?utm_source=openai"
+        },
+        {
+          "end_index": 1103,
+          "start_index": 948,
+          "title": "Trump Could Name A New Fed Chair By Christmas, Treasury Secretary Bessent Says",
+          "type": "url_citation",
+          "url": "https://www.investopedia.com/trump-could-name-a-new-fed-chair-by-christmas-treasury-secretary-bessent-says-11856460?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The predicted event\u2014Donald Trump firing Jerome Powell as Federal Reserve Chair\u2014has not occurred. Powell remains Fed Chair as of December 1, 2025, with his term ending in May 2026 (*[Federal Reserve Board](https://www.federalreserve.gov/aboutthefed/bios/board/powell.htm)*, *[WSJ](https://www.wsj.com/economy/central-banking/fed-interest-rate-cut-powell-december-e9207386)*, *[CNN](https://www.cnn.com/2025/11/29/business/wall-street-fed-supreme-court)*). There were rumors and threats in July 2025 around the podcast date, causing a ~1% market dip, but Trump backed off, stating it was 'highly unlikely' and indicating Powell would serve out his term (*[NYT July 16/19](https://www.nytimes.com/2025/07/16/us/politics/trump-powell-firing-letter.html)*, *[NPR July 22](https://www.npr.org/2025/07/22/nx-s1-5476308/trump-jerome-powell-fed-chair-job)*). Recent news (Nov 2025) shows Trump criticizing Powell and planning a successor post-term, but no firing (*[CNBC Nov 19](https://www.cnbc.com/2025/11/19/trump-bessent-powell-fed-rates.html)*, *[Investopedia Nov](https://www.investopedia.com/the-likely-next-fed-chair-kevin-hassett-is-a-fan-of-cutting-interest-rates-11857788)*). Without the firing, the market reaction cannot be assessed; still possible before term end."
+    },
+    {
+      "id": "gavin-00:13:45.000",
+      "result": "right",
+      "explanation": "Federal deficits have in fact remained very large (around 6% of GDP in 2023\u201325, with CBO projecting similarly high deficits going forward), and interest rates on Treasuries have stayed elevated, matching the scenario the predictor described.([americanactionforum.org](https://www.americanactionforum.org/insight/highlights-of-cbos-january-2025-budget-and-economic-outlook/?utm_source=openai)) In May 2024, halfway through FY 2024, the House Budget Committee and Committee for a Responsible Federal Budget noted that net interest payments had already exceeded both national defense and Medicare spending so far that fiscal year.([budget.house.gov](https://budget.house.gov/press-release/interest-costs-surpass-national-defense-and-medicare-spending)) CBO\u2019s 2024 outlook likewise projected full\u2011year 2024 net interest of about $870 billion versus $850 billion for defense, meaning interest outlays surpassed military spending on an annual basis.([forbes.com](https://www.forbes.com/sites/theapothecary/2024/02/07/cbo-federal-interest-payments-now-exceed-defense-spending/?utm_source=openai)) Updated estimates for FY 2025 show net interest reaching about $970 billion, more than national defense ($917 billion) and Medicaid ($668 billion), and making interest the third\u2011largest federal expense behind only Social Security and Medicare.([americanactionforum.org](https://www.americanactionforum.org/insight/sizing-up-interest-payments-on-the-national-debt/?utm_source=openai)) Thus, within a few years of the podcast, and under roughly the fiscal and rate conditions he assumed, annual net interest outlays did indeed exceed at least one of Medicare/Medicaid, Social Security, or the military (in fact, multiple of them), so the core prediction is currently borne out, even though the longer\u2011term claim that interest will become significantly larger than those items cannot yet be fully evaluated.",
+      "sources": [
+        {
+          "end_index": 425,
+          "start_index": 274,
+          "title": "Highlights of CBO's January 2025 Budget and Economic Outlook - AAF",
+          "type": "url_citation",
+          "url": "https://www.americanactionforum.org/insight/highlights-of-cbos-january-2025-budget-and-economic-outlook/?utm_source=openai"
+        },
+        {
+          "end_index": 782,
+          "start_index": 660,
+          "title": "Interest Costs Surpass National Defense and Medicare Spending | The U.S. House Committee on the Budget - House Budget Committee",
+          "type": "url_citation",
+          "url": "https://budget.house.gov/press-release/interest-costs-surpass-national-defense-and-medicare-spending"
+        },
+        {
+          "end_index": 1122,
+          "start_index": 976,
+          "title": "CBO: Federal Interest Payments Now Exceed Defense Spending",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/theapothecary/2024/02/07/cbo-federal-interest-payments-now-exceed-defense-spending/?utm_source=openai"
+        },
+        {
+          "end_index": 1506,
+          "start_index": 1366,
+          "title": "Sizing Up Interest Payments on the National Debt - AAF",
+          "type": "url_citation",
+          "url": "https://www.americanactionforum.org/insight/sizing-up-interest-payments-on-the-national-debt/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "In FY2025 (ended Sep 30, 2025), US federal net interest outlays reached $970 billion, exceeding national defense/military outlays of $917 billion ([American Action Forum](https://www.americanactionforum.org/insight/sizing-up-interest-payments-on-the-national-debt/), [EPIC for America](https://epicforamerica.org/federal-budget/fiscal-year-2025-is-over-what-congress-should-know-how-to-respond/)). This satisfies exceeding at least one category (the military). FY2025 falls within mid-2020s. Deficits were ~$1.8T ([CBO](https://www.cbo.gov/publication/61307)), roughly current levels. Though 10-year yields fell to ~4% by Dec 2025 ([FRED](https://fred.stlouisfed.org/series/DGS10)), average rates supported high interest costs. SS (~$1.51T) and Medicare (~$0.96T) remained larger ([CRFB](https://www.crfb.org/blogs/12-month-deficit-totals-17-trillion-debt-approaches-100-gdp)). Prediction verified as true."
+    },
+    {
+      "id": "gavin-00:14:46.000",
+      "result": "inconclusive",
+      "explanation": "The prediction is about **the next decade** after July 19, 2025: that, if policies stay roughly the same, *net interest on the federal debt will eventually become the single largest federal budget line item*, larger than each of Social Security, Medicare/Medicaid, and defense individually.\n\nAs of **November 30, 2025**, this is a forward\u2011looking, conditional statement about what will happen by roughly **2035**. There is not yet data for that period, and the 10\u2011year window has barely begun. Current CBO and OMB projections (as of 2024\u20132025) do show net interest *rising very rapidly* and in some scenarios approaching or exceeding defense outlays later in the 2030s, but projections are not outcomes and remain sensitive to future policy changes and interest rates. Because the prediction\u2019s time horizon has not elapsed, we cannot yet say whether it turned out to be correct.\n\nTherefore, even using the latest available budget data and projections, the claim **cannot yet be verified or falsified**, so the correct status is: **too early to tell**.",
+      "sources": [],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The prediction forecasts net interest becoming the single largest US federal budget line item (surpassing Social Security, Medicare/Medicaid, and defense) within ~10 years (~2035) under unchanged policies. The podcast was released July 19, 2025; current date is Dec 1, 2025\u2014only ~4.5 months later, far short of the timeframe. Current data (FY2026 YTD as of Oct 2025) shows net interest at 13% of spending ($970B in FY2025), behind Medicare (22%), Social Security (19%), and defense (15%). CBO projections (e.g., [Budget Outlook 2025-2035](https://www.cbo.gov/publication/61172)) show interest growing rapidly (to ~4.1% GDP by 2035) but not surpassing SS or Medicare, which dominate mandatory spending. No sources project it as #1 by 2035. Sources: [fiscaldata.treasury.gov](https://fiscaldata.treasury.gov/americas-finance-guide/federal-spending/), CBO.gov, [AAF](https://www.americanactionforum.org/insight/sizing-up-interest-payments-on-the-national-debt/), CRFB.org."
+    },
+    {
+      "id": "gavin-00:21:19.000",
+      "result": "wrong",
+      "explanation": "The prediction hinged on two claims: (1) that the next major frontier models from xAI, OpenAI, and Google would be *trained* on Nvidia\u2019s Blackwell\u2011generation GPUs rather than Hopper, and (2) that these models would show a large step\u2011function capability jump over current frontier models.\n\nIn reality, OpenAI\u2019s successor to GPT\u20114.1, GPT\u20115, is reported to have been trained on Nvidia H100 and H200 (Hopper\u2011family) GPUs, while Blackwell GB200 systems are used for deployment/serving, not the main pre\u2011training run. ([marketwatch.com](https://www.marketwatch.com/story/how-nvidias-h20-chip-found-itself-at-the-center-of-the-u-s-china-trade-war-75c6ad37?utm_source=openai))  xAI\u2019s post\u2011Grok\u20113 frontier model Grok 4 (and its 4.1 update) was trained on very large clusters of Nvidia H100s (and some H200s), with public reporting describing 200k+ H100 GPUs and no evidence that Blackwell B200 was the primary pre\u2011training substrate. ([ainvest.com](https://www.ainvest.com/news/nvidia-breakthrough-scaling-law-origins-set-revolutionize-ai-performance-2507/?utm_source=openai))  Google\u2019s next\u2011generation Gemini models (2.x and 3), meanwhile, are consistently described as being trained entirely on Google\u2019s own TPUs (Trillium/TPUv6 and then Ironwood/TPUv7), not on Nvidia GPUs of any kind. ([blog.scuti.jp](https://blog.scuti.jp/gemini-2-0-google-latest-ai/?utm_source=openai))\n\nOn the capability side, coverage of GPT\u20115 in particular has emphasized that its improvements over GPT\u20114.x are meaningful but largely incremental rather than a dramatic \u2018step\u2011function\u2019 leap, which already undermines the second part of the claim. ([ft.com](https://www.ft.com/content/d01290c9-cc92-4c1f-bd70-ac332cd40f94?utm_source=openai))  Since the hardware prediction is clearly false for all three companies (Hopper and TPUs, not Blackwell, were used for training the next frontier models), the overall prediction is best classified as **wrong**, regardless of how one interprets the subjective \u201cstep\u2011function\u201d language.",
+      "sources": [
+        {
+          "end_index": 703,
+          "start_index": 547,
+          "title": "How Nvidia's H20 chip found itself at the center of the U.S.-China trade war",
+          "type": "url_citation",
+          "url": "https://www.marketwatch.com/story/how-nvidias-h20-chip-found-itself-at-the-center-of-the-u-s-china-trade-war-75c6ad37?utm_source=openai"
+        },
+        {
+          "end_index": 1102,
+          "start_index": 960,
+          "title": "Nvidia Breakthrough: Scaling Law Origins Set to Revolutionize AI Performance",
+          "type": "url_citation",
+          "url": "https://www.ainvest.com/news/nvidia-breakthrough-scaling-law-origins-set-revolutionize-ai-performance-2507/?utm_source=openai"
+        },
+        {
+          "end_index": 1402,
+          "start_index": 1315,
+          "title": "Gemini 2.0: Google\u6700\u65b0AI\u306e\u901f\u5831 - \u682a\u5f0f\u4f1a\u793e\u30b9\u30af\u30fc\u30c6\u30a3\u30fc \u30d6\u30ed\u30b0",
+          "type": "url_citation",
+          "url": "https://blog.scuti.jp/gemini-2-0-google-latest-ai/?utm_source=openai"
+        },
+        {
+          "end_index": 1744,
+          "start_index": 1651,
+          "title": "Is AI hitting a wall?",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/d01290c9-cc92-4c1f-bd70-ac332cd40f94?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction requires the next major frontier models from xAI (successor to Grok-4/5), OpenAI (successor to GPT-4.1), and Google (next Gemini) to be trained on Nvidia Blackwell GPUs (not Hopper) with large step-function improvements. \n\n- **OpenAI GPT-5** (released Aug 7, 2025, successor to GPT-4o/4.1): Trained on Nvidia H100/H200 Hopper GPUs, not Blackwell. Confirmed by NVIDIA posts: '[OpenAI's GPT-5 was trained on NVIDIA H100 and H200s GPUs](https://www.linkedin.com/posts/nvidia-data-center_introducing-gpt-5-activity-7361149324648435713-tLON)' (Aug 12, 2025) and similar on X/Facebook. Served/inferred on Blackwell, but training was Hopper. \n\n- **Google Gemini 3.0** (released Nov 18, 2025): Trained entirely on Google TPUs, not Nvidia GPUs. '[Like all earlier versions of Gemini, it was trained entirely on TPUs](https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the)' (recent SemiAnalysis). \n\n- **xAI Grok-5** (successor to Grok-4, released July 9, 2025): Not released by Dec 1, 2025; delayed to Q1 2026 per Elon Musk/The Information (Nov 14, 2025). Training hardware unclear/unconfirmed as Blackwell (plans mentioned, but no release). \n\nSince OpenAI and Google did not train on Blackwell (OpenAI used Hopper, Google no Nvidia), and xAI's next unreleased, prediction fails on hardware for all three. Improvements occurred (e.g., GPT-5/Gemini 3.0 benchmarks), but hardware condition unmet. Sources from July-Dec 2025 searches."
+    },
+    {
+      "id": "sacks-00:39:59.000",
+      "result": "right",
+      "explanation": "Public records show that the GENIUS Act (a U.S. stablecoin regulation bill) passed the House on July 17, 2025, and was signed into law by President Donald Trump on July 18, 2025, according to the bill\u2019s legislative history and multiple news outlets. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai))  The White House published an official fact sheet dated July 18, 2025, explicitly stating that President Trump signed the GENIUS Act into law that day. ([whitehouse.gov](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/?utm_source=openai))  Since the podcast\u2019s public release date is July 19, 2025, the signing and enactment indeed occurred before the episode was released.  \n\nSacks\u2019s prediction that the bill would go to the president\u2019s desk \"tomorrow,\" be signed in a bill\u2011signing ceremony, and become law before the pod was released is therefore borne out by the subsequent timeline.",
+      "sources": [
+        {
+          "end_index": 363,
+          "start_index": 283,
+          "title": "GENIUS Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai"
+        },
+        {
+          "end_index": 663,
+          "start_index": 516,
+          "title": "Fact Sheet: President Donald J. Trump Signs GENIUS Act into Law \u2013 The White House",
+          "type": "url_citation",
+          "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The GENIUS Act (Guiding and Establishing National Innovation for U.S. Stablecoins Act, S.1582) was signed into law by President Trump on July 18, 2025, as confirmed by the White House fact sheet ([whitehouse.gov](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/)), Congress.gov (PUBLIC LAW 119\u201327\u2014JULY 18, 2025), and multiple sources including law firms (e.g., Latham & Watkins, Covington) and C-SPAN footage of the signing where David Sacks spoke. This occurred before the podcast's public release on July 19, 2025, matching the prediction of signing 'tomorrow' from the recording and becoming law by release."
+    },
+    {
+      "id": "sacks-00:40:39.000",
+      "result": "wrong",
+      "explanation": "Congressional and news records show that the *Digital Asset Market Clarity Act of 2025* (the CLARITY Act, H.R. 3633) did **not** pass the Senate or reach President Trump\u2019s desk by the end of September 2025, nor was it signed into law in October 2025.\n\nKey facts:\n\n- The CLARITY Act passed the House on July 17, 2025, by a 294\u2013134 vote. It was then sent to the Senate and on **September 18, 2025** was \u201creceived in the Senate and read twice and referred to the Committee on Banking, Housing, and Urban Affairs,\u201d where it remains. Congress.gov lists its latest action as that September 18 referral, and its status is still only **\u201cPassed House,\u201d** not \u201cPassed Senate,\u201d \u201cTo President,\u201d or \u201cBecame Law.\u201d ([congress.gov](https://www.congress.gov/index.php/bill/119th-congress/house-bill/3633?utm_source=openai))\n- A Congressional Research Service brief on the CLARITY Act, revised **September 30, 2025**, still describes it as pending legislation and does not indicate Senate passage or enactment. ([legistorm.com](https://www.legistorm.com/reports/view/crs/550097/Crypto_Legislation_An_Overview_of_H_R_3633_the_CLARITY_Act.html?utm_source=openai))\n- Senate sources through October 2025 describe the crypto market-structure bill (based on or related to the CLARITY framework) as being in draft/negotiation, with significant partisan disputes and no completed committee or floor vote. For example, coverage from early and late October notes that the market-structure bill \u201cremains in the discussion phase in the Senate\u201d and is stalled amid gridlock, clearly implying it has not yet passed. ([axios.com](https://www.axios.com/2025/10/07/crypto-market-structure-afl-cio?utm_source=openai))\n- By contrast, the **GENIUS Act** (the stablecoin bill) *did* complete the process: it passed both chambers and was signed by President Trump on **July 18, 2025**, becoming the first major federal crypto law. This is consistently documented in legislative records and press reports, underscoring that if the CLARITY Act had been similarly enacted, it would appear in the same way\u2014which it does not. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai))\n\nDavid Sacks\u2019 prediction, normalized as: *\u201cAssuming the process proceeds without major disruption, the CLARITY Act will pass the Senate and reach President Trump\u2019s desk by the end of September 2025, enabling a signing into law around October 2025,\u201d* is therefore **incorrect**. The specified milestones (Senate passage by end of September and presidential signing in October) did not occur within that timeframe or by November 30, 2025, despite ongoing work on related Senate market-structure legislation.",
+      "sources": [
+        {
+          "end_index": 843,
+          "start_index": 737,
+          "title": "H.R.3633 - 119th Congress (2025-2026): Digital Asset Market Clarity Act of 2025 | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/index.php/bill/119th-congress/house-bill/3633?utm_source=openai"
+        },
+        {
+          "end_index": 1181,
+          "start_index": 1031,
+          "title": "Crypto Legislation: An Overview of H.R. 3633, the CLARITY Act - Congressional Research Service (CRS) Report",
+          "type": "url_citation",
+          "url": "https://www.legistorm.com/reports/view/crs/550097/Crypto_Legislation_An_Overview_of_H_R_3633_the_CLARITY_Act.html?utm_source=openai"
+        },
+        {
+          "end_index": 1720,
+          "start_index": 1623,
+          "title": "AFL-CIO opposes major crypto legislation",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2025/10/07/crypto-market-structure-afl-cio?utm_source=openai"
+        },
+        {
+          "end_index": 2201,
+          "start_index": 2121,
+          "title": "GENIUS Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The Digital Asset Market Clarity Act (CLARITY Act, H.R.3633) passed the House on July 17, 2025, but did not pass the Senate by end of September 2025 or reach President Trump's desk for signing in October 2025. Senate Banking Chair Tim Scott targeted September but confirmed delays to committee markup in December 2025 and floor vote in early 2026 due to Democratic opposition (DL News, Nov 19, 2025: 'Clarity Act delayed to 2026'; The Block, Nov 18, 2025: 'hopes to get the bill to the Senate floor in early 2026'). As of Dec 1, 2025, no Senate passage or enactment (Congress.gov shows no Senate actions post-House passage; no reports of signing). Sources: [congress.gov/bill/119th-congress/house-bill/3633](https://www.congress.gov/bill/119th-congress/house-bill/3633), [dlnews.com](https://www.dlnews.com/articles/regulation/clarity-act-delayed-to-2026-due-to-democrat-stalling-says-tim-scott/), [theblock.co](https://www.theblock.co/post/379422/scott-crypto-market-bill-next-month)."
+    },
+    {
+      "id": "sacks-00:51:28.000",
+      "result": "inconclusive",
+      "explanation": "The prediction specifies a **three\u2011year window starting from the GENIUS Act\u2019s enactment**. The podcast episode is dated **19 July 2025**, and the title claims the *GENIUS Act Becomes Law* on or around that time. Three years from mid\u20112025 ends in **mid\u20112028**, which is well after the current date of **30 November 2025** (i.e., only a few months have elapsed).\n\nBecause the deadline for the prediction (sometime in 2028) has **not yet passed**, we cannot determine whether:\n\n1. The world\u2019s largest stablecoin issuer in mid\u20112025 (commonly understood to be Tether/USDT, operated by Tether Holdings Limited, an offshore entity),\n2. Will in fact establish an **onshore, U.S.\u2011regulated structure** and\n3. **Comply with U.S. regulatory requirements** *within three years* of the GENIUS Act\u2019s enactment.\n\nThere is still substantial time remaining for either outcome, so the prediction cannot be judged as right or wrong yet.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The GENIUS Act was enacted on July 18, 2025 ([White House Fact Sheet](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/), [Congress.gov S.1582](https://www.congress.gov/bill/119th-congress/senate-bill/1582/text)). It prohibits non-permitted (non-US-regulated) issuers from US issuance, with a 3-year transition until July 18, 2028, after which US platforms cannot offer/sell non-compliant stablecoins. Tether (USDT), the largest offshore issuer mid-2025 ([Medium analysis](https://medium.com/@monolith.vc/stablecoins-in-2025-full-overview-of-the-230b-market-bab96c680c44), [Fool.com](https://www.fool.com/research/largest-stablecoins/)), announced USA\u20ae (USAT), a planned US-regulated stablecoin for late 2025 launch ([Tether.io Sep 12, 2025](https://tether.io/news/tether-unveils-usat-its-planned-u-s-regulated-dollar-backed-stablecoin-and-will-appoint-bo-hines-as-ceo-of-tether-usat/), [CNBC](https://www.cnbc.com/2025/09/12/tether-reveals-new-stablecoin-appoints-bo-hines-to-lead-us-business-.html)). No confirmation of establishment by Dec 1, 2025. With only ~4.5 months elapsed of the 3-year period, too early to determine if Tether will fully comply within the timeframe."
+    },
+    {
+      "id": "sacks-00:52:37.000",
+      "result": "wrong",
+      "explanation": "The GENIUS Act was signed into law on July 18, 2025 and establishes a federal framework for \u201cpayment stablecoin\u201d issuers, so its actual requirements are now clear.([en.wikipedia.org](https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai))  Comparing those to Sacks\u2019s prediction:\n\n1. **\u201cAll the stablecoin companies will have to operate in the United States\u201d** \u2013 The Act does *not* require every stablecoin issuer to be U.S.-based. It explicitly **forbids foreign issuers from being licensed as U.S. permitted payment stablecoin issuers**, but still allows U.S. digital asset service providers to offer some *foreign-issued* payment stablecoins if the foreign issuer is under a \u201ccomparable\u201d non\u2011U.S. regime, registers for monitoring by the OCC, and holds sufficient reserves in the U.S. for U.S. customers, among other conditions.([debevoise.com](https://www.debevoise.com/insights/publications/2025/07/genius-act-progresses-in-congress-as-stablecoin))  Foreign issuers can continue operating abroad and, if they meet these conditions, can still access the U.S. market. So it is incorrect to say that *all* stablecoin companies must operate in the U.S.; the law creates a U.S.-jurisdiction gate for access to the U.S. market, not a universal U.S.-location requirement.\n\n2. **\u201cThey\u2019ll be subjected to quarterly audits\u201d** \u2013 The statute and regulatory analyses describe **monthly reserve reporting with independent attestations and annual audited financial statements for large issuers**, not quarterly audits. Issuers must publish a monthly reserve report (outstanding coins and reserve composition), with prior months\u2019 reports audited by a registered public accounting firm, and issuers over certain size thresholds must produce annually audited GAAP financials.([debevoise.com](https://www.debevoise.com/insights/publications/2025/07/genius-act-progresses-in-congress-as-stablecoin))  Commentators even note that the Act *rejects* traditional quarterly cadences in favor of monthly oversight for stablecoins.([theregreview.org](https://www.theregreview.org/2025/11/17/krause-krause-auditing-payment-stablecoins-under-the-genius-act/?utm_source=openai))  So the \u201cquarterly audits\u201d detail is specifically wrong.\n\n3. **\u201cEvery stablecoin \u2026 fully reserved or backed up by a dollar in a U.S. bank account\u201d** \u2013 The Act requires **at least 1:1 reserves in specified high\u2011quality, U.S.\u2011dollar\u2011denominated liquid assets** (U.S. currency and central bank reserves, FDIC\u2011insured bank deposits, short\u2011term U.S. Treasuries, Treasury repos, certain government money market funds, and tokenized versions of these).([debevoise.com](https://www.debevoise.com/insights/publications/2025/07/genius-act-progresses-in-congress-as-stablecoin))  That is broader than \u201ca dollar in a U.S. bank account\u201d (it explicitly includes short\u2011term Treasuries, repos, and government MMFs), though directionally similar. More importantly, these rules apply to **permitted U.S. payment stablecoins and qualifying foreign payment stablecoins offered in the U.S.**, not to *every* stablecoin globally or to all types of crypto tokens (algorithmic or non\u2011payment stablecoins are outside this core regime).([debevoise.com](https://www.debevoise.com/insights/publications/2025/07/genius-act-progresses-in-congress-as-stablecoin))  So we will not literally \u201cknow that every stablecoin that\u2019s been issued is fully reserved\u201d; we will only have that assurance\u2014via required disclosures and attestations\u2014for the regulated subset within the Act\u2019s perimeter.\n\n4. **Timing (\u201conce the Act is in force and implemented\u201d)** \u2013 The law sets **deferred and phased effective dates**: it becomes effective the earlier of 18 months after enactment or 120 days after implementing regulations, and some prohibitions (e.g., on unlicensed U.S. issuers via intermediaries) don\u2019t fully bite until years later.([debevoise.com](https://www.debevoise.com/insights/publications/2025/07/genius-act-progresses-in-congress-as-stablecoin))  But regardless of that timing, the *content* of the eventual regime is already fixed in the statute and does not match Sacks\u2019s description on the key points above.\n\nBecause two central elements of the prediction\u2014universal U.S. operation for all stablecoin companies and a quarterly audit requirement\u2014conflict with the actual text and structure of the GENIUS Act, and the claim about \u201cevery stablecoin\u201d being backed by a dollar in a U.S. bank account overstates the law\u2019s scope and narrows its allowed reserve types, the prediction is best classified as **wrong**, not merely incomplete or too early to judge.",
+      "sources": [
+        {
+          "end_index": 276,
+          "start_index": 196,
+          "title": "GENIUS Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GENIUS_Act?utm_source=openai"
+        },
+        {
+          "end_index": 991,
+          "start_index": 869,
+          "title": "Genius Act Signed into Law, Establishing First Federal Stablecoin Framework | 07 | 2025 | Publications | Insights & Publications | Debevoise & Plimpton LLP",
+          "type": "url_citation",
+          "url": "https://www.debevoise.com/insights/publications/2025/07/genius-act-progresses-in-congress-as-stablecoin"
+        },
+        {
+          "end_index": 1924,
+          "start_index": 1802,
+          "title": "Genius Act Signed into Law, Establishing First Federal Stablecoin Framework | 07 | 2025 | Publications | Insights & Publications | Debevoise & Plimpton LLP",
+          "type": "url_citation",
+          "url": "https://www.debevoise.com/insights/publications/2025/07/genius-act-progresses-in-congress-as-stablecoin"
+        },
+        {
+          "end_index": 2193,
+          "start_index": 2049,
+          "title": "Auditing Payment Stablecoins Under the GENIUS Act | The Regulatory Review",
+          "type": "url_citation",
+          "url": "https://www.theregreview.org/2025/11/17/krause-krause-auditing-payment-stablecoins-under-the-genius-act/?utm_source=openai"
+        },
+        {
+          "end_index": 2763,
+          "start_index": 2641,
+          "title": "Genius Act Signed into Law, Establishing First Federal Stablecoin Framework | 07 | 2025 | Publications | Insights & Publications | Debevoise & Plimpton LLP",
+          "type": "url_citation",
+          "url": "https://www.debevoise.com/insights/publications/2025/07/genius-act-progresses-in-congress-as-stablecoin"
+        },
+        {
+          "end_index": 3328,
+          "start_index": 3206,
+          "title": "Genius Act Signed into Law, Establishing First Federal Stablecoin Framework | 07 | 2025 | Publications | Insights & Publications | Debevoise & Plimpton LLP",
+          "type": "url_citation",
+          "url": "https://www.debevoise.com/insights/publications/2025/07/genius-act-progresses-in-congress-as-stablecoin"
+        },
+        {
+          "end_index": 4007,
+          "start_index": 3885,
+          "title": "Genius Act Signed into Law, Establishing First Federal Stablecoin Framework | 07 | 2025 | Publications | Insights & Publications | Debevoise & Plimpton LLP",
+          "type": "url_citation",
+          "url": "https://www.debevoise.com/insights/publications/2025/07/genius-act-progresses-in-congress-as-stablecoin"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The GENIUS Act (Public Law 119-27, signed July 18, 2025) is in force and requires permitted US payment stablecoin issuers (which must be US-formed entities under federal or certified state regulation) to maintain 1:1 reserves in USD assets including demand deposits at US insured depository institutions, short-term US Treasuries, repos, and certain money market funds ([congress.gov bill text SEC. 4(a)(1)(A)](https://www.congress.gov/bill/119th-congress/senate-bill/1582/text); [L&W summary](https://www.lw.com/en/insights/the-genius-act-of-2025-stablecoin-legislation-adopted-in-the-us)). Reserves must be segregated, with geographic custody disclosed. However, it mandates **monthly** (not quarterly) public reserve reports examined by a registered public accounting firm, with CEO/CFO certification (SEC. 4(a)(1)(C), 4(a)(3); annual audits only for >$50B issuers, SEC. 4(a)(10)). Audits do not verify full backing quarterly as predicted ([White House fact sheet](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/); [CBH](https://www.cbh.com/insights/articles/genius-act-new-rules-for-stablecoin-issuers/)). Reserves exceed 'US bank accounts or Treasuries' (e.g., repos, MMFs). Foreign issuers need US reserves for US users but aren't 'regulated US-dollar stablecoin issuers' under full US jurisdiction. Prediction mismatches on audit frequency and reserve scope."
+    },
+    {
+      "id": "sacks-00:48:18.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, there has not yet been **trillions of dollars of additional cumulative demand** for U.S. Treasuries driven by dollar\u2011backed stablecoins under the GENIUS Act, but the prediction was explicitly framed as occurring *\u201cover the coming years\u201d* after enactment, so it is too early to judge it right or wrong.\n\nKey facts:\n\n- The GENIUS Act was passed by Congress and signed into law in mid\u20112025 (Senate passage on June 17, 2025; reporting on it being signed into law on July 18, 2025). ([reuters.com](https://www.reuters.com/sustainability/boards-policy-regulation/us-senate-passes-stablecoin-bill-milestone-crypto-industry-2025-06-17/?utm_source=openai))\n- Following enactment, one analysis estimates that **between July and November 2025, stablecoin issuers bought about $44 billion in Treasury bills** to comply with the new 100%\u2011backing requirements, raising the stablecoin market cap from about $260 billion to roughly $304 billion. ([cryptowakeup.com](https://cryptowakeup.com/genius-act-stablecoin-treasury-financing-analysis/?utm_source=openai))  That\u2019s tens of billions, not trillions, of incremental demand so far.\n- Broadly, dollar\u2011backed stablecoins already hold on the order of **$150\u2013200+ billion in Treasuries** as reserves, given total stablecoin market caps in the low\u2011hundreds of billions and reserve ratios heavily weighted to T\u2011bills. ([coinlive.com](https://www.coinlive.com/news/genius-act-2-trillion-in-stablecoins-to-save-us-debt?utm_source=openai))  This is material but still far below \u201ctrillions.\u201d\n- However, *official and industry projections* after GENIUS was enacted envision exactly the kind of outcome Sacks referenced: for example, U.S. Treasury and TBAC analyses, as well as bank research (Standard Chartered, Citi, etc.), project stablecoin market caps could reach **$1\u20133.7 trillion+ by 2028\u20132030**, implying **$1\u20132+ trillion of additional demand for short\u2011term U.S. government securities** if current reserve structures persist. ([mdpi.com](https://www.mdpi.com/1911-8074/18/11/594?utm_source=openai))  Senior officials like Treasury Secretary Scott Bessent have publicly cited similar multi\u2011trillion\u2011dollar potential demand. ([mdpi.com](https://www.mdpi.com/1911-8074/18/11/594?utm_source=openai))\n\nPutting this together:\n\n- The **descriptive part** of Sacks\u2019s statement \u2014 that *studies project* the GENIUS Act\u2013style stablecoin regime could generate trillions in new Treasury demand \u2014 is supported by multiple government and bank analyses.\n- The **forecasted outcome itself** (actual trillions of extra demand materializing) is meant to unfold over several years (often modeled out to 2028\u20132030). Only a few months of post\u2011enactment data are available, and the realized additional demand so far is in the tens of billions, while the relevant horizon is multi\u2011year.\n\nBecause we are still near the beginning of that horizon and the projected magnitudes have not yet had time to either materialize or clearly fail, the correct assessment today is **\u201cinconclusive (too early)\u201d**, not definitively right or wrong.",
+      "sources": [
+        {
+          "end_index": 716,
+          "start_index": 547,
+          "title": "US Senate passes stablecoin bill in milestone for crypto industry",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-senate-passes-stablecoin-bill-milestone-crypto-industry-2025-06-17/?utm_source=openai"
+        },
+        {
+          "end_index": 1115,
+          "start_index": 1000,
+          "title": "GENIUS Act Stablecoin Treasury: $44B Demand Framework",
+          "type": "url_citation",
+          "url": "https://cryptowakeup.com/genius-act-stablecoin-treasury-financing-analysis/?utm_source=openai"
+        },
+        {
+          "end_index": 1536,
+          "start_index": 1418,
+          "title": "GENIUS Act: $2 trillion in stablecoins to save US debt?",
+          "type": "url_citation",
+          "url": "https://www.coinlive.com/news/genius-act-2-trillion-in-stablecoins-to-save-us-debt?utm_source=openai"
+        },
+        {
+          "end_index": 2101,
+          "start_index": 2029,
+          "title": "GENIUS at Work in the US Financial System | MDPI",
+          "type": "url_citation",
+          "url": "https://www.mdpi.com/1911-8074/18/11/594?utm_source=openai"
+        },
+        {
+          "end_index": 2298,
+          "start_index": 2226,
+          "title": "GENIUS at Work in the US Financial System | MDPI",
+          "type": "url_citation",
+          "url": "https://www.mdpi.com/1911-8074/18/11/594?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The GENIUS Act was enacted on July 18, 2025 ([White House fact sheet](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/), [Congress.gov S.1582](https://www.congress.gov/bill/119th-congress/senate-bill/1582)). The prediction concerns *cumulative* additional demand for US Treasuries in the *trillions* from global stablecoin adoption 'over the coming years.' As of late November/early December 2025 (4.5 months post-enactment), stablecoin market cap grew from ~$200B to ~$300-310B, with issuers reportedly buying ~$109B more T-bills ([CoinStats](https://coinstats.app/news/...), [MacroMicro Nov 28](https://en.macromicro.me/charts/134292/world-stablecoin-market-cap), [ARK Oct](https://info.arkm.com/research/how-stablecoins-reached-a-300-billion-market-cap-in-2025)). Projections (e.g., Treasury Sec. Bessent: $3T stablecoins by 2030 [Treasury Nov 12](https://home.treasury.gov/news/press-releases/sb0314)) remain future-oriented; no trillions realized yet. Too early to verify long-term outcome."
+    },
+    {
+      "id": "bo-00:58:16.000",
+      "result": "inconclusive",
+      "explanation": "It\u2019s too early to determine whether this 2025 year\u2011end prediction is correct.\n\nThe normalized prediction specifies **calendar year 2025** and an **annual ranking** (\u201cwill rank as the fourth\u2011largest purchaser \u2026 over the year\u201d), which depends on full\u2011year 2025 data on global US Treasury holdings and/or net purchases. As of **November 30, 2025**, several facts hold:\n\n- Public data on **Tether\u2019s US Treasury holdings** (from company attestations and industry analyses) show it as a very large marginal buyer of T\u2011bills in 2023\u20132024, but not yet with an official, definitive 2025 *year\u2011end* ranking among all global holders (such as the U.S. Federal Reserve, U.S. commercial banks, money\u2011market funds, and foreign official institutions like Japan and China).\n- Comprehensive, audited **global rankings of US Treasury holders and net purchasers for the full year 2025** will only be available after the year closes and after U.S. Treasury, Federal Reserve, and international data releases are compiled and analyzed. Those datasets (e.g., TIC data, Federal Reserve Z.1, IMF/central\u2011bank disclosures) for the *full* 2025 calendar year are **not yet fully published or synthesized** into a clear ranking of \u201clargest purchasers\u201d by November 30, 2025.\n\nBecause the claim is explicitly about **where Tether will rank for all of 2025**, and we do **not yet have final, authoritative full\u2011year data** to say whether it ended up exactly fourth by holdings or net purchases, the prediction can\u2019t be confidently labeled right or wrong at this time. Therefore the correct status is **\u201cinconclusive (too early)\u201d**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Tether's US Treasury holdings reached approximately $135 billion as of Q3 2025 (end-September), ranking it as the 17th or 18th largest holder if treated as a sovereign entity, behind South Korea ($142.9B) and far below the top four: Japan ($1,189B), UK ($865B), China ($701B), Canada ($476B) per US Treasury TIC Major Foreign Holders data (Sep 2025) at [ticdata.treasury.gov](https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.html). No reports indicate Tether ranked 4th in net purchases for 2025 YTD; it was the 7th largest net buyer in Q2 2025 and previously in 2024, with projections to top-5 holders only by 2033 ([cryptoslate.com](https://cryptoslate.com/how-tethers-127b-in-us-treasuries-will-hit-top-5-foreign-holders-by-2033/)). Although 2025 is not fully complete (current date Dec 1), data through Sep and Tether's Q3 attestation ([tether.io](https://tether.io/news/tether-attestation-reports-q1-q3-2025-profit-surpassing-10b-record-levels-in-us-treasuries-exposure-accelerating-usdt-supply-amidst-worlds-macroeconomic-uncertainty/)) show it cannot reach 4th place by either metric."
+    },
+    {
+      "id": "G-00:58:05.350",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, available data do **not** show any single stablecoin issuer (including Tether) as the *fourth\u2011largest purchaser or holder* of U.S. Treasuries, but the calendar year is not yet over and full\u2011year 2025 buyer rankings have not been published, so the prediction cannot be definitively ruled out.\n\nWhat we can say so far:\n\n* **By net purchases:** For the 12\u2011month period June 2024\u2013June 2025, *stablecoin issuers as a group* (primarily Tether and Circle) ranked **7th** among foreign buyers of U.S. debt, behind Cayman Islands, Belgium, the U.K., France, Canada, and Japan. This is based on changes in Treasury holdings and explicitly lists \u201cStablecoin Issuers\u201d in 7th place, not 4th. ([visualcapitalist.com](https://www.visualcapitalist.com/sp/pla02-ranked-the-biggest-buyers-of-u-s-debt/?utm_source=openai))\n* **By total holdings (all holders globally):** Analyses using U.S. Treasury TIC data and Messari/Tagus estimates consistently place **Tether around 17th\u201318th** among *all* foreign holders of U.S. Treasuries as of mid\u2011to\u2011late 2025 (roughly $127\u2013135 billion of U.S. debt), i.e., far below 4th place. ([finance.yahoo.com](https://finance.yahoo.com/news/tether-now-holds-more-us-180110469.html?utm_source=openai))\n* **Stablecoin issuers in aggregate:** ARK Invest and related summaries estimate that Tether and Circle together were only the **18th\u2011largest holders** of U.S. Treasuries as of early 2025, and that Tether alone was the **7th\u2011largest buyer** in 2024\u2014not 4th. ([bee.com](https://www.bee.com/ar/51611.html?utm_source=openai))\n* **Forward\u2011looking research and officials:** JP Morgan, the Treasury Borrowing Advisory Committee, and Citi discuss scenarios where stablecoin issuers *could become* the **third\u2011largest buyer** of T\u2011bills in coming years, which explicitly frames this as a **future** possibility rather than an already\u2011achieved status in 2025. ([investing.com](https://www.investing.com/news/stock-market-news/analysisstablecoins-step-toward-mainstream-could-shake-up-parts-of-us-treasury-market-4084633?utm_source=openai))\n* **Conflicting claims:** A crypto\u2011sector commentary citing the \u201cAndersen Institute\u201d has claimed that *stablecoins collectively* are already the **third\u2011largest buyer of T\u2011bills** and **fourth\u2011largest holders** of U.S. debt as of early 2025, but this (a) refers to *all stablecoins combined*, not a single issuer, and (b) conflicts with the rankings derived from Treasury/TIC\u2011based work above, so it is not strong evidence that one issuer reached 4th place. ([ambcrypto.com](https://ambcrypto.com/russia-slams-u-s-stablecoin-plans-35-trillion-debt-at-stake/?utm_source=openai))\n\nBecause:\n\n1. The prediction is time\u2011bounded to **\u201cthis year (2025)\u201d**, and\n2. We are still in 2025 with no finalized full\u2011year ranking of net buyers, and\n3. Current best data only show stablecoin issuers (individually and collectively) well below 4th place,\n\nthe most accurate status today is **\u201cinconclusive (too early)\u201d**: the prediction has *not* come true so far and looks unlikely, but we cannot formally disprove it until full\u2011year 2025 buyer data are available.",
+      "sources": [
+        {
+          "end_index": 872,
+          "start_index": 748,
+          "title": "U.S. Debt: Who Are The Biggest Buyers?",
+          "type": "url_citation",
+          "url": "https://www.visualcapitalist.com/sp/pla02-ranked-the-biggest-buyers-of-u-s-debt/?utm_source=openai"
+        },
+        {
+          "end_index": 1284,
+          "start_index": 1173,
+          "title": "Tether Now Holds More US Debt Than South Korea, Germany: CEO Paolo Ardoino Says Stablecoin Issuer Will Soon Surpass Brazil With $200 Billion Target",
+          "type": "url_citation",
+          "url": "https://finance.yahoo.com/news/tether-now-holds-more-us-180110469.html?utm_source=openai"
+        },
+        {
+          "end_index": 1608,
+          "start_index": 1544,
+          "title": "ARK Invest: Stablecoins will become the U.S. government\u2019s most resilient financial ally | Bee Network",
+          "type": "url_citation",
+          "url": "https://www.bee.com/ar/51611.html?utm_source=openai"
+        },
+        {
+          "end_index": 2117,
+          "start_index": 1938,
+          "title": "Analysis-Stablecoins\u2019 step toward mainstream could shake up parts of US Treasury market By Reuters",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/stock-market-news/analysisstablecoins-step-toward-mainstream-could-shake-up-parts-of-us-treasury-market-4084633?utm_source=openai"
+        },
+        {
+          "end_index": 2696,
+          "start_index": 2577,
+          "title": "Russia slams U.S. stablecoin plans: '$35 trillion debt' at stake - AMBCrypto",
+          "type": "url_citation",
+          "url": "https://ambcrypto.com/russia-slams-u-s-stablecoin-plans-35-trillion-debt-at-stake/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Tether held approximately $135 billion in U.S. Treasuries as of Q3 2025 (Sep 30), ranking it as the 17th largest holder if treated as a country, surpassing South Korea ($143B) but far below the top 4: Japan ($1.19T), UK ($865B), China ($701B), Canada ($476B). [U.S. Treasury TIC data Sep 2025](https://www.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.html); [Tether Q3 attestation](https://tether.io/news/tether-attestation-reports-q1-q3-2025-profit-surpassing-10b-record-levels-in-us-treasuries-exposure-accelerating-usdt-supply-amidst-worlds-macroeconomic-uncertainty/); [Yahoo Finance](https://finance.yahoo.com/news/stablecoin-giant-tether-now-holds-115119171.html). No sources indicate Tether as the fourth-largest purchaser in 2025; net increases for entities like Cayman Islands (~$116B June 2024-25) exceed Tether's growth (~$100B YTD estimate from prior $33B end-2024). [Visual Capitalist](https://www.visualcapitalist.com/sp/pla02-ranked-the-biggest-buyers-of-u-s-debt/). With 2025 nearly over, the prediction did not occur."
+    },
+    {
+      "id": "F-01:02:53.400",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly refers to **\"the coming years\"**, implying a multi\u2011year horizon. As of now (30 Nov 2025), only a bit over four months have passed since the 19 Jul 2025 podcast, so the full time window has clearly not elapsed.\n\nEmpirically, dollar\u2011based stablecoins *are* seeing rapid global growth:\n- Global stablecoin market cap has passed about **$300B** with daily average transaction volumes in the trillions, and they are expanding from trading into payments, savings, and business uses worldwide. ([business-standard.com](https://www.business-standard.com/markets/news/global-stablecoin-market-crosses-300-billion-in-m-cap-says-report-125111301924_1.html?utm_source=openai))\n- Reports estimate stablecoins are actively used in **50+ countries**, especially for remittances, ecommerce, and as a \u201cdigital dollar\u201d in high\u2011inflation economies like Nigeria and Argentina. ([coinlaw.io](https://coinlaw.io/stablecoin-statistics/?utm_source=openai))\n- Studies show hundreds of millions of wallet addresses and trillions of dollars of on\u2011chain volume, with significant shares of payments activity (P2P, B2B, and card\u2011based) now moving over stablecoins in multiple regions. ([crypto.news](https://crypto.news/usdt-and-usdc-lead-239b-stablecoin-market-as-global-adoption-soars/?utm_source=openai))\n\nAt the same time, major regulators still describe **real\u2011economy, day\u2011to\u2011day payment use as limited** in some developed markets. For example, the European Central Bank notes that stablecoins\u2019 *use in the real economy is still limited in Europe*, even while the sector is large and systemically relevant. ([cincodias.elpais.com](https://cincodias.elpais.com/mercados-financieros/2025-11-24/el-bce-alerta-del-riesgo-que-suponen-las-stablecoins-para-los-bonos-del-tesoro-de-ee-uu.html?utm_source=openai))  That makes it hard to say they are already \u201ccommonly used for transactions\u201d across many countries in the everyday sense implied by the normalized prediction.\n\nGiven:\n1. The prediction\u2019s **multi\u2011year** timeframe has not yet run its course, and\n2. Current data show strong momentum but not yet clear, mainstream everyday usage \u201call over the world,\u201d\n\nit\u2019s too early to judge definitively whether the prediction will ultimately be right or wrong.\n",
+      "sources": [
+        {
+          "end_index": 735,
+          "start_index": 558,
+          "title": "Global stablecoin market crosses $300 billion in m-cap, says report | Markets News - Business Standard",
+          "type": "url_citation",
+          "url": "https://www.business-standard.com/markets/news/global-stablecoin-market-crosses-300-billion-in-m-cap-says-report-125111301924_1.html?utm_source=openai"
+        },
+        {
+          "end_index": 1004,
+          "start_index": 929,
+          "title": "Stablecoin Statistics 2025: Growth, Adoption, and Regulation \u2022 CoinLaw",
+          "type": "url_citation",
+          "url": "https://coinlaw.io/stablecoin-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 1350,
+          "start_index": 1228,
+          "title": "USDT and USDC lead $239b stablecoin market as global adoption soars",
+          "type": "url_citation",
+          "url": "https://crypto.news/usdt-and-usdc-lead-239b-stablecoin-market-as-global-adoption-soars/?utm_source=openai"
+        },
+        {
+          "end_index": 1855,
+          "start_index": 1658,
+          "title": "El BCE alerta del riesgo que suponen las 'stablecoins' para los bonos del Tesoro de EE UU",
+          "type": "url_citation",
+          "url": "https://cincodias.elpais.com/mercados-financieros/2025-11-24/el-bce-alerta-del-riesgo-que-suponen-las-stablecoins-para-los-bonos-del-tesoro-de-ee-uu.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies 'over the coming years,' but only ~4.5 months have passed since July 19, 2025. Dollar stablecoins (e.g., USDT, USDC) show rapid growth: market cap >$250B mid-2025, tx volumes >$27T in 2024 (surpassing PayPal; [CoinDesk Oct 2025](https://www.coindesk.com/coindesk-indices/2025/10/22/crypto-for-advisors-the-growth-of-stablecoins)), 30% of crypto tx volume Jan-Jul 2025 ([TRM Labs Oct 2025](https://www.trmlabs.com/reports-and-whitepapers/2025-crypto-adoption-and-stablecoin-usage-report)). High activity in emerging markets like Argentina, Nigeria, India ([Chainalysis/ECB Nov 2025](https://www.ecb.europa.eu/press/financial-stability-publications/fsr/focus/2025/html/ecb.fsrbox202511_05~63636227b4.en.html)), used for remittances/cross-border ([JPM Oct 2025](https://www.jpmorgan.com/insights/global-research/currencies/stablecoins)). However, still primarily crypto trading/DeFi, not 'commonly used' for everyday transactions broadly; 'still small in euro area' ([ECB Nov 2025](https://www.ecb.europa.eu/press/financial-stability-publications/fsr/focus/2025/html/ecb.fsrbox202511_05~63636227b4.en.html)), future mainstream projected ([CoinDesk Oct 2025](https://www.coindesk.com/coindesk-indices/2025/10/22/stablecoins-will-be-bigger-than-bitcoin)). Too early to confirm widespread/common status."
+    },
+    {
+      "id": "F-01:02:59.000",
+      "result": "inconclusive",
+      "explanation": "It\u2019s too early to determine whether this multi\u2011year prediction has come true.\n\n**1. The stated horizon (\u201cnext several years\u201d) hasn\u2019t elapsed.**  \nThe prediction was made on 19 July 2025 and explicitly framed as playing out *over the next several years*. Evaluating it by 30 November 2025\u2014roughly four and a half months later\u2014does not satisfy that timeframe, so the outcome cannot yet be judged.\n\n**2. Directionally, evidence supports growing stablecoin\u2011driven dollarization.**  \nRecent analyses show rapid growth of dollar\u2011pegged stablecoins used as de facto digital dollars in high\u2011inflation or capital\u2011controlled economies such as Argentina, Turkey, Nigeria, and others. In these places, people use USDT/USDC for savings, payments, remittances, and invoicing, often explicitly to escape weak local currencies.([followin.io](https://followin.io/en/feed/16968198?utm_source=openai))  Stablecoin transaction volumes globally have surged into the tens of trillions of dollars annually, and total stablecoin supply exceeds $200 billion, with usage heavily concentrated in emerging markets.([coindesk.com](https://www.coindesk.com/opinion/2025/06/04/stablecoins-are-quietly-reinforcing-u-s-national-power?utm_source=openai))  This supports the *trend* sacks described: bottom\u2011up, dollar\u2011stablecoin usage in developing countries.\n\n**3. But current data do not yet show that a \u201clarge share\u201d of all economic transactions has shifted.**  \nEven optimistic reports emphasize that stablecoins, while important in certain niches (crypto trading, cross\u2011border payments, savings, some retail payments), still represent only a small fraction of total money supply and overall transaction volume in these economies. One analysis notes that despite fast growth, stablecoins are still only a few\u2011tenths of a percent of global money supply.([blog.wewire.com](https://blog.wewire.com/stay-wired/how-stablecoins-are-redefining-savings-in-high-inflation-economies/?utm_source=openai))  Most day\u2011to\u2011day commerce in these countries still runs through cash and traditional banking systems, so the claim that **a large share of all economic transactions** has shifted to dollar stablecoins is not yet demonstrably true or false.\n\nBecause (a) the forecast\u2019s multi\u2011year window has barely begun and (b) current evidence shows strong growth but not yet the clear, economy\u2011wide dominance implied by \u201ca large portion of these economies,\u201d the only defensible judgment at this point is **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 928,
+          "start_index": 857,
+          "title": "Can Stablecoins Reshape Global Finance? An Interpretation of Development Trends from 2025 to 2030",
+          "type": "url_citation",
+          "url": "https://followin.io/en/feed/16968198?utm_source=openai"
+        },
+        {
+          "end_index": 1266,
+          "start_index": 1132,
+          "title": "Stablecoins Are Quietly Reinforcing U.S. National Power",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/opinion/2025/06/04/stablecoins-are-quietly-reinforcing-u-s-national-power?utm_source=openai"
+        },
+        {
+          "end_index": 2011,
+          "start_index": 1870,
+          "title": "How Stablecoins Are Redefining Savings in High-Inflation Economies - WeWire Blog",
+          "type": "url_citation",
+          "url": "https://blog.wewire.com/stay-wired/how-stablecoins-are-redefining-savings-in-high-inflation-economies/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies a shift to a 'large share of economic transactions' over 'the next several years,' but only ~4.5 months have passed since the July 19, 2025 podcast (current date: Dec 1, 2025). While stablecoin usage is growing rapidly in countries like Argentina, Nigeria, Turkey, and Venezuela for remittances, inflation hedging, and cross-border payments (e.g., Chainalysis 2025 reports: Argentina $93.9B crypto txn volume, Turkey $200B; stablecoins ~30% of global crypto volume per TRM Labs), this represents a small fraction of total economic activity (e.g., Argentina GDP ~$600B). Reports from IMF, CGD, and others note potential dollarization risks and deposit outflows but describe ongoing growth, not a dominant shift (e.g., Standard Chartered forecasts 2/3 of stablecoin activity from emerging markets by 2028). No evidence of 'large share' dominance yet; too early to evaluate."
+    },
+    {
+      "id": "F-01:04:46.990",
+      "result": "inconclusive",
+      "explanation": "The prediction is framed as a *multi\u2011year* structural claim (\u201cover the coming years\u201d community banks will *not* be put out of business or broadly wiped out by stablecoins). As of Nov. 30, 2025, only a little over four months have elapsed since the July 19, 2025 episode, so the intended time horizon has clearly not played out.\n\nWhat we *can* see so far:\n\n- Community banks remain a major part of the U.S. system and are still described in 2025 policy discussions as providing the majority of small\u2011business and agricultural lending, i.e., they have not been broadly wiped out or rendered insignificant in the short term.\u200b([icba.org](https://www.icba.org/newsroom/newswatch-today/2025/10/08/icba-urges-congress-to-preserve-access-to-credit-by-extending-prohibition-on-yield-bearing-stablecoins?utm_source=openai))  \n- An empirical study by Charles River Associates (commissioned by Coinbase) using 2019\u20132025 data finds **no material impact** of USDC stablecoin adoption on community\u2011bank deposits under current and near\u2011term adoption levels, with even aggressive scenarios implying only single\u2011digit percentage impacts on deposits.\u200b([crai.com](https://www.crai.com/insights-events/publications/study-from-cra-about-impact-of-stablecoins-adoption-on-community-bank-deposits/?utm_source=openai))  \n- Coinbase and other industry analyses likewise argue that, at current and projected scales, stablecoins are unlikely to meaningfully erode community\u2011bank funding, though they advocate for partnerships and guardrails.\u200b([cointelegraph.com](https://cointelegraph.com/news/banks-stablecoin-concerns-overblown-ignores-reality-coinbase?utm_source=openai))  \n\nAt the same time, regulators and policy groups continue to warn that **future** large\u2011scale, yield\u2011bearing or non\u2011bank stablecoins could trigger major deposit outflows and consolidation that would fall hardest on community banks, underscoring that the long\u2011run outcome is unresolved.\u200b([icba.org](https://www.icba.org/newsroom/news-and-articles/2025/02/27/icba-stablecoin-legislation-must-protect-role-of-community-banks?utm_source=openai)) \n\nBecause the claim is explicitly about what will happen over the coming years and the system is still in the early phase of adaptation to the GENIUS Act and expanding stablecoin use, there has not yet been enough time to judge whether community banks will *ultimately* avoid being substantially displaced. Early evidence is consistent with the prediction, but it does not yet settle the long\u2011term question. Hence the result is **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 862,
+          "start_index": 671,
+          "title": "ICBA Urges Congress to Preserve Access to Credit by Extending Prohibition on Yield-Bearing Stablecoins",
+          "type": "url_citation",
+          "url": "https://www.icba.org/newsroom/newswatch-today/2025/10/08/icba-urges-congress-to-preserve-access-to-credit-by-extending-prohibition-on-yield-bearing-stablecoins?utm_source=openai"
+        },
+        {
+          "end_index": 1348,
+          "start_index": 1187,
+          "title": "New study from CRA VP finds no material impact of stablecoins\u2019 adoption on community bank deposits | Reports | CRA",
+          "type": "url_citation",
+          "url": "https://www.crai.com/insights-events/publications/study-from-cra-about-impact-of-stablecoins-adoption-on-community-bank-deposits/?utm_source=openai"
+        },
+        {
+          "end_index": 1707,
+          "start_index": 1575,
+          "title": "Stablecoins Real-World Use Doesn\u2019t Harm Banks, Says Coinbase",
+          "type": "url_citation",
+          "url": "https://cointelegraph.com/news/banks-stablecoin-concerns-overblown-ignores-reality-coinbase?utm_source=openai"
+        },
+        {
+          "end_index": 2157,
+          "start_index": 2002,
+          "title": "ICBA: Stablecoin legislation must protect role of community banks - ICBA.org",
+          "type": "url_citation",
+          "url": "https://www.icba.org/newsroom/news-and-articles/2025/02/27/icba-stablecoin-legislation-must-protect-role-of-community-banks?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The podcast prediction was made in July 2025, and only ~4.5 months have passed by December 1, 2025\u2014far too short to assess impacts 'over the coming years.' Stablecoin market cap has grown to ~$300-306B ([DefiLlama](https://defillama.com/stablecoins), [CoinDesk Nov 2025](https://www.coindesk.com/research/stablecoins-and-cbdcs-report-november-2025)), indicating emergence/growth, but US community bank numbers remain stable at ~3,982 in Q2 2025 (down 38 via M&A, [FDIC Q2 2025](https://www.fdic.gov/quarterly-banking-profile/quarterly-banking-profile-q2-2025)), with no evidence of stablecoin-driven failures or deposit runoff ([CRA study Jul 2025](https://www.crai.com/insights-events/publications/study-from-cra-about-impact-of-stablecoins-adoption-on-community-bank-deposits/)). Discussions note potential risks/opportunities ([Pymnts Sep 2025](https://www.pymnts.com/credit-unions/2025/community-banks-must-reimagine-business-model-amid-stablecoin-threat/)), but no broad wipeout observed."
+    },
+    {
+      "id": "H-01:07:37.860",
+      "result": "inconclusive",
+      "explanation": "The prediction ties the GENIUS Act and related 2025 policies to a *future* outcome: making the U.S. the \u201ccrypto capital of the world\u201d **within the next several years**. The act was only signed into law on July 18, 2025, and is the first federal framework for payment stablecoins and digital assets in the U.S.([forbes.com](https://www.forbes.com/sites/beccabratcher/2025/07/19/trump-signs-genius-act-establishing-first-us-crypto-law-strengthening-dollar/?utm_source=openai))  The White House itself describes the GENIUS Act as paving the way for the U.S. to lead the \u201cdigital currency revolution\u201d and explicitly frames it as part of a broader promise to make America the \u201ccrypto capital of the world.\u201d([whitehouse.gov](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/?utm_source=openai))\n\nHowever, the law\u2019s core regulatory regime does **not** take full effect immediately. Legal analyses note that the GENIUS Act becomes effective the earlier of (i) 18 months after enactment or (ii) 120 days after implementing regulations are finalized, meaning much of its impact will materialize in 2026\u20132027 at the earliest, not by November 2025.([lw.com](https://www.lw.com/en/insights/2025/07/the-genius-act-of-2025-stablecoin-legislation-adopted-in-the-us?utm_source=openai))  Because the forecast is explicitly about what happens *over the next several years*, the relevant time window (roughly 2027\u20132028) has not yet elapsed.\n\nAs of late 2025, the U.S. is clearly a major crypto center\u2014home to large exchanges, deep trading volumes, and new initiatives like the Strategic Bitcoin Reserve\u2014but global rankings still depict a multipolar landscape rather than a single uncontested \u201ccrypto capital.\u201d Coincub, for example, dubs the U.S. the \u201cnew \u2018crypto capital\u2019\u201d in narrative text while ranking it only 6th in its global regulation index.([coincub.com](https://coincub.com/ranking/crypto-asset-risk-2025/?utm_source=openai))  Other assessments highlight Singapore, the UAE, London or Lisbon as leading crypto hubs based on adoption, regulatory clarity, or ecosystem metrics, with the U.S. prominent but not uniquely dominant.([coindesk.com](https://www.coindesk.com/business/2023/10/16/upbit-singapore-receives-preliminary-in-principal-nod-from-singapores-mas?utm_source=openai))\n\nBecause (1) the forecast\u2019s multi\u2011year horizon has not passed and (2) the GENIUS Act\u2019s full effects are still pending implementation, it is **too early** to determine whether the U.S. will ultimately become the undisputed \u201ccrypto capital of the world\u201d as predicted. The correct classification at this time is therefore **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 514,
+          "start_index": 349,
+          "title": "Trump Signs GENIUS Act, Establishing First U.S. Crypto Law, Strengthening Dollar",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/beccabratcher/2025/07/19/trump-signs-genius-act-establishing-first-us-crypto-law-strengthening-dollar/?utm_source=openai"
+        },
+        {
+          "end_index": 888,
+          "start_index": 741,
+          "title": "Fact Sheet: President Donald J. Trump Signs GENIUS Act into Law \u2013 The White House",
+          "type": "url_citation",
+          "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/?utm_source=openai"
+        },
+        {
+          "end_index": 1370,
+          "start_index": 1238,
+          "title": "The GENIUS Act of 2025 Stablecoin Legislation Adopted in the US",
+          "type": "url_citation",
+          "url": "https://www.lw.com/en/insights/2025/07/the-genius-act-of-2025-stablecoin-legislation-adopted-in-the-us?utm_source=openai"
+        },
+        {
+          "end_index": 2018,
+          "start_index": 1932,
+          "title": "Global Crypto Rankings & Reports 2024 | Coincub",
+          "type": "url_citation",
+          "url": "https://coincub.com/ranking/crypto-asset-risk-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 2373,
+          "start_index": 2219,
+          "title": "Upbit Receives Preliminary 'In-Principal' Approval in Singapore",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/business/2023/10/16/upbit-singapore-receives-preliminary-in-principal-nod-from-singapores-mas?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The GENIUS Act (Guiding and Establishing National Innovation for U.S. Stablecoins Act) was signed into law by President Trump on July 18, 2025, just before the podcast's release on July 19, 2025, establishing a federal framework for payment stablecoins ([White House Fact Sheet](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/), [Congress.gov](https://www.congress.gov/bill/119th-congress/senate-bill/1582/text)). Government statements aspire to make the US the 'crypto capital of the world' ([Treasury](https://home.treasury.gov/news/press-releases/sb0216), [House Financial Services](https://financialservices.house.gov/news/documentsingle.aspx?DocumentID=410793)). However, only ~4.5 months have passed by December 1, 2025, and the prediction specifies 'within the next several years' (typically 3+ years). No evidence shows the US has yet become the leading global crypto hub; reports note policy shifts and high adoption (e.g., Chainalysis 2025 Index ranks US #2 after India) but describe goals as ongoing, not achieved ([LA Times](https://www.latimes.com/business/story/2025-11-28/the-crypto-gang-saw-trump-as-their-savior-then-reality-set-in), [Brookings](https://www.brookings.edu/articles/will-the-us-become-the-new-crypto-capital-of-the-world-the-techtank-podcast/)). Too early to verify."
+    },
+    {
+      "id": "H-01:17:45.480",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly multi\u2011year: it claims that **bipartisan Senate support for pro\u2011crypto, pro\u2011stablecoin, dollar\u2011dominance legislation will persist and likely grow over the next few years, with more Democrats backing such measures.** Since it was made on July 19, 2025 and we are only a little over four months into that multi\u2011year horizon, it is too early to determine whether the trend will actually *persist and grow* over the full period.\n\nWhat we can say so far:\n\n* The **GENIUS Act** (a pro\u2011stablecoin, pro\u2011dollar\u2011dominance bill) was introduced in February 2025 with bipartisan sponsorship, including Democrat Sen. Kirsten Gillibrand alongside Republican Sens. Scott, Hagerty, and Lummis, explicitly framed around innovation and dollar dominance. ([lummis.senate.gov](https://www.lummis.senate.gov/press-releases/lummis-hagerty-gillibrand-scott-introduce-bipartisan-stablecoin-regulatory-framework/?utm_source=openai))\n* The Senate passed the GENIUS Act on June 17, 2025 by **68\u201330**, with around **17\u201318 Democratic senators** voting in favor\u2014substantial Democratic crossover that analysts consistently describe as bipartisan support for stablecoin regulation. ([cnbc.com](https://www.cnbc.com/2025/06/17/genius-stablecoin-bill-crypto.html?utm_source=openai))\n* The House passed the GENIUS Act on July 17, 2025 by **308\u2013122**, with **over 100 Democrats** joining Republicans in support, again underscoring broad bipartisan backing. ([gazette.com](https://gazette.com/2025/07/17/house-passes-crypto-week-legislation-after-republican-revolt-409546b4-2f9a-5714-b266-da7202783227/?utm_source=openai))\n* President Trump signed the GENIUS Act into law on July 18, 2025, and both the White House and legal/industry analyses characterize it as a landmark, bipartisan stablecoin framework aimed at strengthening U.S. dollar dominance and digital\u2011asset leadership. ([whitehouse.gov](https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/?utm_source=openai))\n* Additional crypto\u2011related bills (the **Digital Asset Market Clarity Act** and the **Anti\u2011CBDC Surveillance State Act**) have also advanced with some Democratic support, but they show more mixed, partly partisan voting patterns, and CLARITY is still awaiting Senate action. ([nypost.com](https://nypost.com/2025/07/17/us-news/house-passes-trio-of-crypto-bills-to-help-regulate-digital-currency-bars-fed-from-making-its-own/?utm_source=openai))\n\nThese datapoints suggest that as of late 2025 there **is** meaningful bipartisan support, including from a non\u2011trivial number of Democrats, for at least one major pro\u2011stablecoin, pro\u2011dollar bill. However, the prediction goes further: it asserts that such bipartisan support **will persist and likely grow over the next few years.** Whether Democratic support in the Senate continues to increase\u2014or instead plateaus or reverses\u2014as future crypto and stablecoin bills are debated (e.g., broader market\u2011structure or follow\u2011on legislation) cannot yet be assessed so soon after the prediction date.\n\nBecause the evaluation period (\u201cthe next few years\u201d) has not elapsed and future legislative behavior remains uncertain, the correct status now is **inconclusive (too early)**, even though early evidence is directionally consistent with the prediction.",
+      "sources": [
+        {
+          "end_index": 978,
+          "start_index": 807,
+          "title": "Lummis, Hagerty, Gillibrand, Scott Introduce Bipartisan Stablecoin Regulatory Framework \u00bb Senator Cynthia Lummis",
+          "type": "url_citation",
+          "url": "https://www.lummis.senate.gov/press-releases/lummis-hagerty-gillibrand-scott-introduce-bipartisan-stablecoin-regulatory-framework/?utm_source=openai"
+        },
+        {
+          "end_index": 1320,
+          "start_index": 1222,
+          "title": "Senate passes landmark GENIUS Act stablecoin bill",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/06/17/genius-stablecoin-bill-crypto.html?utm_source=openai"
+        },
+        {
+          "end_index": 1658,
+          "start_index": 1494,
+          "title": "House passes \u2018crypto week\u2019 legislation after Republican revolt - Colorado Springs Gazette",
+          "type": "url_citation",
+          "url": "https://gazette.com/2025/07/17/house-passes-crypto-week-legislation-after-republican-revolt-409546b4-2f9a-5714-b266-da7202783227/?utm_source=openai"
+        },
+        {
+          "end_index": 2065,
+          "start_index": 1918,
+          "title": "Fact Sheet: President Donald J. Trump Signs GENIUS Act into Law \u2013 The White House",
+          "type": "url_citation",
+          "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/?utm_source=openai"
+        },
+        {
+          "end_index": 2511,
+          "start_index": 2342,
+          "title": "House passes trio of crypto bills - here's what it means for the future of digital currency",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/07/17/us-news/house-passes-trio-of-crypto-bills-to-help-regulate-digital-currency-bars-fed-from-making-its-own/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The GENIUS Act (pro-stablecoin legislation emphasizing USD dominance) passed the Senate in June 2025 with 18 Democrats supporting (68-30 vote), House with 102 Democrats, signed July 18, 2025\u2014right before the podcast. Post-July 19: 12 Senate Democrats released a crypto market structure framework (Sep 9, 2025); Senate Ag Committee (R-Boozman & D-Booker) released bipartisan crypto market structure draft (Nov 10, 2025); ongoing negotiations for CLARITY Act/Senate Banking draft with Democrat input (e.g., Warner, Gillibrand). No decline in bipartisan/Democrat support; evidence of persistence and growth in engagement ([Senate Ag release](https://www.agriculture.senate.gov/newsroom/rep/press/release/boozman-booker-release-bipartisan-market-structure-discussion-draft), [Dem framework](https://www.dwt.com/blogs/financial-services-law-advisor/2025/09/senate-responsible-financial-innovation-act-draft), [Politico](https://www.politico.com/live-updates/2025/11/10/congress/senate-ag-releases-long-awaited-crypto-market-structure-draft-00641759))."
+    },
+    {
+      "id": "F-01:18:22.000",
+      "result": "right",
+      "explanation": "Evidence shows that by well before October 2025 a follow\u2011on **CLARITY** market\u2011structure bill for non\u2011stablecoin digital assets had in fact been drafted and significantly advanced in the U.S. Congress:\n\n- After the GENIUS Act established a federal framework for payment stablecoins and was signed into law on July 18, 2025, news coverage described it as the first major stablecoin law and noted that the administration and congressional leaders were already pointing to a broader crypto market\u2011structure bill as the next step.\u00a0\u30100news13\u3011\u30100search15\u3011\n- The **Digital Asset Market Clarity Act of 2025** (\"CLARITY Act of 2025\", H.R. 3633) was introduced on May 29, 2025. The House Financial Services and Agriculture Committees reported it favorably on June 23, 2025, with committee reports explicitly describing it as a comprehensive *digital asset market structure* framework that allocates jurisdiction between the SEC and CFTC and clarifies treatment of digital commodities and secondary trading of tokens.\u00a0\u30100search1\u3011\n- The bill passed the U.S. House on July 17, 2025 (294\u2013134) and on September 18, 2025 was **received in the Senate and referred to the Senate Banking Committee**, with its official status shown as \"Passed House\"\u2014all well before October 2025.\u00a0\u30102view0\u3011\n- Associated press coverage of the July 17 House votes explicitly distinguishes three separate crypto bills: a bipartisan **stablecoin regulation bill**, a **market structure bill defining which digital assets are commodities or securities**, and a CBDC\u2011ban bill, with the market\u2011structure bill heading to the Senate.\u00a0\u30100news14\u3011 This matches the predicted idea of a follow\u2011on non\u2011stablecoin market\u2011structure measure.\n- On July 23, 2025, the Senate Banking Committee chair announced an initial discussion draft of broader digital\u2011asset market\u2011structure legislation, explicitly framed as *building on* both the GENIUS Act and the House\u2011passed CLARITY Act\u2014indicating active intent to advance such a framework in the Senate.\u00a0\u30100search2\u3011\n\nBy October 2025, therefore, a CLARITY\u2011branded market\u2011structure bill for non\u2011stablecoin digital assets had been drafted, moved through House committees, passed the House, and been taken up in the Senate, with leadership clearly signaling an aim to pass it. That satisfies the normalized prediction that a follow\u2011on \u201cClarity\u201d market\u2011structure bill for non\u2011stablecoin tokens would be **drafted, advanced, and positioned for passage by October 2025**, even though it had not yet become law by that date.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "The prediction came true. H.R. 3633, the Digital Asset Market Clarity Act of 2025 (CLARITY Act), was introduced (drafted) in the House on May 29, 2025 ([congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/3633)). It advanced through House committees in June 2025 and passed the House on July 17, 2025 ([govtrack.us](https://www.govtrack.us/congress/bills/119/hr3633), [axios.com July 17, 2025](https://www.axios.com/2025/07/17/house-crpto-market-structure-clarity-passes)). It establishes market structure rules (e.g., CFTC regulation of digital commodity exchanges/brokers for non-stablecoin tokens) as a follow-on to the GENIUS Act for stablecoins ([congress.gov bill text](https://www.congress.gov/bill/119th-congress/house-bill/3633/text)). Efforts aimed for passage by October 2025 align with Sacks' quote and congressional 'Crypto Week' push (e.g., [financialservices.house.gov July 2025](https://financialservices.house.gov/news/documentsingle.aspx?DocumentID=410793)); Senate received it Sept. 18, 2025, with Sen. Kennedy discussing quick movement on Oct. 16 ([kennedy.senate.gov](https://www.kennedy.senate.gov/public/2025/10/kennedy-on-crypto-market-structure-bill-i-hope-we-ll-move-it-quickly-but-i-hope-we-ll-move-deliberately)). As of Dec. 1, 2025, it remains in Senate Banking ([congress.gov actions](https://www.congress.gov/bill/119th-congress/house-bill/3633/all-actions)), but the prediction required only drafting, advancement, and aiming by October, all fulfilled."
+    }
+  ]
+}

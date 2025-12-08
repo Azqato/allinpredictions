@@ -1,0 +1,530 @@
+{
+  "meta": {
+    "count": 11,
+    "count_by_result": {
+      "wrong": 1,
+      "right": 9,
+      "inconclusive": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:42:06.710",
+      "result": "wrong",
+      "explanation": "The prediction bundles two linked claims:\n\n1. **Fed funds rate \u22485.5%.**  \nThe Federal Reserve did in fact raise the federal funds target range to **5.25%\u20135.50%** at its July 26, 2023 meeting, the highest level in over 22 years. This was the peak of the 2022\u20132023 tightening cycle and was maintained into mid\u20112024 before cuts began. ([cnbc.com](https://www.cnbc.com/2023/07/26/fed-meeting-july-2023-.html?utm_source=openai))  \nOn this part, Chamath\u2019s call for a ~5.5% fed funds rate was essentially correct.\n\n2. **Credit Suisse 3\u2011month T\u2011bill product at ~7.5% soon.**  \nThree\u2011month U.S. Treasury bill yields in 2023 peaked around the **mid\u20115% range**, not anywhere near 7.5%. For example, data and commentary show 3\u2011month T\u2011bill yields around **5.3%\u20135.4%** in 2023\u20132024, including specific observations such as **5.37%** in May 2023 and **5.34%** on October 5, 2023. ([nasdaq.com](https://www.nasdaq.com/articles/3-month-treasury-yields-hit-2-decade-high-cshi-captures?utm_source=openai))  \nA bank structuring a simple 3\u2011month T\u2011bill product cannot sustainably advertise a 7.5% annualized yield when the underlying risk\u2011free 3\u2011month bills only yield ~5.3\u20135.4%; there is no evidence of such an offer from Credit Suisse.\n\nMoreover, **Credit Suisse failed and was taken over by UBS in an emergency rescue in March 2023, with the legal takeover completed June 12, 2023**. After that point it no longer operated as an independent bank that could roll out new CS\u2011branded retail products. ([cnbc.com](https://www.cnbc.com/2023/03/19/ubs-agrees-to-buy-credit-suisse-as-regulators-look-to-shore-up-global-banking-system.html?utm_source=openai))  This makes the notion that \u201csoon\u201d in the same cycle Credit Suisse would be offering 7.5% on 3\u2011month T\u2011bills even less plausible.\n\nBecause the prediction, as normalized, explicitly ties a correct macro call (Fed to ~5.5%) to a much higher, specific yield level (Credit Suisse 3\u2011month T\u2011bill product at ~7.5% in the same hiking cycle) that clearly did **not** occur, the combined prediction must be judged **wrong overall**, even though one component was accurate.",
+      "sources": [
+        {
+          "end_index": 459,
+          "start_index": 368,
+          "title": "Fed meeting July 2023: Fed approves hike, interest rates rise to highest level in more than 22 years",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/07/26/fed-meeting-july-2023-.html?utm_source=openai"
+        },
+        {
+          "end_index": 1027,
+          "start_index": 906,
+          "title": "3-Month Treasury Yields Hit 2 Decade High, CSHI Captures | Nasdaq",
+          "type": "url_citation",
+          "url": "https://www.nasdaq.com/articles/3-month-treasury-yields-hit-2-decade-high-cshi-captures?utm_source=openai"
+        },
+        {
+          "end_index": 1677,
+          "start_index": 1524,
+          "title": "UBS buys Credit Suisse for $3.2 billion as regulators look to shore up the global banking system",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/03/19/ubs-agrees-to-buy-credit-suisse-as-regulators-look-to-shore-up-global-banking-system.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The Federal Reserve did raise the federal funds rate to a target range of 5.25%-5.5% in July 2023, matching the 'approximately 5.5%' prediction ([CNBC, July 26, 2023](https://www.cnbc.com/2023/07/26/fed-meeting-july-2023-.html); [Forbes Fed Funds History](https://www.forbes.com/advisor/investing/fed-funds-rate-history/)). However, no evidence shows Credit Suisse or similar short-term bank products reaching ~7.5% annualized yield on 3-month T-bill offerings in 2023. Credit Suisse offered 6.5% on new 3-month deposits ($5M+) in Asia around March 2-3, 2023, amid deposit outflows ([Reuters, Mar 3, 2023](https://www.reuters.com/business/finance/credit-suisse-offers-higher-deposit-rates-asia-woo-wealthy-sources-2023-03-02/); [Bloomberg](https://www.bloomberg.com/news/articles/2023-03-02/credit-suisse-bids-above-rivals-for-rich-clients-as-bankers-exit)), but not 7.5%, and the bank collapsed shortly after (March 19, 2023). US 3-month T-bill yields peaked ~5.5%; bank CDs/savings ~5% max. The consequential 7.5% yield did not occur, making the full prediction wrong."
+    },
+    {
+      "id": "H-00:31:05.760",
+      "result": "right",
+      "explanation": "Evidence from 2H 2023 and 2024 strongly supports Sacks\u2019s forecast of (a) widespread down/structured rounds for 2021\u2011vintage startups and (b) a bifurcated market where AI attracts most new capital.\n\n**1. Down rounds, structure, and recapitalizations for 2021\u2011era deals**  \n* Carta and PitchBook data show that from early 2023 onward, the share of flat or down rounds in the U.S. stayed near post\u20112022 highs, with about a quarter of all Q1 2024 financings globally at flat or reduced valuations and U.S. flat/down rounds above 26%\u2014the highest proportion in more than a decade. ([zephyrnet.com](https://zephyrnet.com/how-venture-capitalists-value-early-stage-companies/?utm_source=openai))  \n* Preqin found that down rounds jumped to an unprecedented 27% of all global venture deals in Q4 2023, up from 14.5% the prior quarter, confirming that by late 2023 a large share of financings were already repricings. ([linkedin.com](https://www.linkedin.com/posts/cfoleadershipcouncil_from-dropbox-to-ivp-the-cfo-turned-vc-investor-activity-7199054061445201922-KPgz?utm_source=openai))  \n* Legal/market overviews note that in 2024 nearly 25% of U.S. VC deals and 18% of European deals were down rounds, and investors often imposed \u201cinvestor\u2011friendly\u201d terms such as warrants, convertibles, and other structured instruments to take advantage of falling valuations. ([practiceguides.chambers.com](https://practiceguides.chambers.com/practice-guides/venture-capital-2025/uk?utm_source=openai))  \n* VC commentary aimed at founders explicitly says that \u201cstructured rounds\u2026returned in full force over the past two years as late\u2011stage companies reel from the heights of 2021,\u201d and that companies mispriced in 2021 face a choice between down rounds or structured rescue financing. ([1984.vc](https://1984.vc/docs/founders-handbook/structured-and-downrounds/?utm_source=openai))  \n* A Financial Times analysis of U.S. startups in 2024 describes a 60% jump in failures as many ran out of cash from the 2021\u201122 boom, while new funding became scarce except in favored sectors\u2014clear evidence of the \u201cmedicine being taken\u201d for peak\u2011era valuations. ([ft.com](https://www.ft.com/content/2808ad4c-783f-4475-bcda-bddc0299095e?utm_source=openai))  \n\n**2. AI as the \u201chot area\u201d vs. everyone else (bifurcated market)**  \n* Global VC investment in 2024 was roughly flat year\u2011on\u2011year and still 55% below the 2021 peak, but AI funding *grew more than 80%* and accounted for close to one\u2011third of all venture dollars, driven by mega\u2011rounds for xAI, Databricks, Anthropic, OpenAI and others. ([barrons.com](https://www.barrons.com/articles/venture-capital-investments-2024-ai-766c99dc?utm_source=openai))  \n* Analyses of 2024\u201325 VC flows show that AI represented only a small fraction of total deal count (e.g., ~3% of U.S. rounds in 2024) but 15% or more of invested capital, with \u201cenormous Series Bs at punchy valuations\u201d for AI while non\u2011AI startups \u201cfight for any remaining capital.\u201d ([thatwastheweek.com](https://www.thatwastheweek.com/p/ai-and-venture-capital?utm_source=openai))  \n* Multiple industry pieces explicitly describe the situation as a \u201ctale of two cities\u201d: AI funding surged (e.g., +62% to $110B in 2024) while overall startup funding fell double digits; sectors like fintech and climate tech saw large declines and struggled to raise. ([esinli.com](https://esinli.com/blog/tech-startups-allocation-trends/?utm_source=openai))  \n* Data from Kruze and others indicate that by 2024 a large majority of new capital for many startup portfolios was going into AI, even as failures and shutdowns climbed among non\u2011AI companies that had raised aggressively in 2021\u201322. ([ft.com](https://www.ft.com/content/2808ad4c-783f-4475-bcda-bddc0299095e?utm_source=openai))  \n\nTaken together, the data from 2H 2023 through 2024 show (1) historically high levels of down and structured rounds affecting many startups that raised at 2021 peak valuations, and (2) sustained, outsized investor enthusiasm for AI deals while most other startups faced a harsh funding environment. That closely matches Sacks\u2019s prediction of \u201ca lot of medicine,\u201d widespread down/structured rounds, and a bifurcated market where AI remained the clear funding magnet.",
+      "sources": [
+        {
+          "end_index": 722,
+          "start_index": 611,
+          "title": "How Venture Capitalists Value Early-Stage Companies - Data Intelligence",
+          "type": "url_citation",
+          "url": "https://zephyrnet.com/how-venture-capitalists-value-early-stage-companies/?utm_source=openai"
+        },
+        {
+          "end_index": 1112,
+          "start_index": 944,
+          "title": "According to Ajay Vashee, former CFO of Dropbox and current investor with IVP the most successful finance leaders are great storytellers. | CFO Leadership Council",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/posts/cfoleadershipcouncil_from-dropbox-to-ivp-the-cfo-turned-vc-investor-activity-7199054061445201922-KPgz?utm_source=openai"
+        },
+        {
+          "end_index": 1517,
+          "start_index": 1391,
+          "title": "Venture Capital 2025 - UK | Global Practice Guides | Chambers and Partners",
+          "type": "url_citation",
+          "url": "https://practiceguides.chambers.com/practice-guides/venture-capital-2025/uk?utm_source=openai"
+        },
+        {
+          "end_index": 1897,
+          "start_index": 1801,
+          "title": "Structured and Down Rounds \u2013 1984 Ventures - Founders Handbook & Cap Table Worksheet",
+          "type": "url_citation",
+          "url": "https://1984.vc/docs/founders-handbook/structured-and-downrounds/?utm_source=openai"
+        },
+        {
+          "end_index": 2256,
+          "start_index": 2163,
+          "title": "Start-up failures rise 60% as founders face hangover from boom years",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/2808ad4c-783f-4475-bcda-bddc0299095e?utm_source=openai"
+        },
+        {
+          "end_index": 2709,
+          "start_index": 2597,
+          "title": "Venture Capital Investments in AI Surged in 2024",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/venture-capital-investments-2024-ai-766c99dc?utm_source=openai"
+        },
+        {
+          "end_index": 3091,
+          "start_index": 2994,
+          "title": "AI and Venture Capital - by Keith Teare - That Was The Week",
+          "type": "url_citation",
+          "url": "https://www.thatwastheweek.com/p/ai-and-venture-capital?utm_source=openai"
+        },
+        {
+          "end_index": 3452,
+          "start_index": 3362,
+          "title": "The AI Gold Rush: How Artificial Intelligence is Reshaping Venture Capital Markets in 2025 | Esinli Capital",
+          "type": "url_citation",
+          "url": "https://esinli.com/blog/tech-startups-allocation-trends/?utm_source=openai"
+        },
+        {
+          "end_index": 3782,
+          "start_index": 3689,
+          "title": "Start-up failures rise 60% as founders face hangover from boom years",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/2808ad4c-783f-4475-bcda-bddc0299095e?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction accurately described VC trends in H2 2023 and 2024. Down rounds were widespread, especially for 2021 peak-valuation companies: PitchBook-NVCA Q4 2024 report notes elevated down rounds as 2021/2022 raises returned to market ([nvca.org](https://nvca.org/wp-content/uploads/2025/01/Q4-2024-PitchBook-NVCA-Venture-Monitor.pdf)); Cooley Q4 2024: 19% of deals down rounds, high vs. pre-2023 ([cooley.com](https://www.cooley.com/news/insight/2025/2025-02-07-q4-2024-venture-financing-report)); Carta: 20% down rounds in 2024 ([carta.com](https://carta.com/data/vc-concentration-2024/)); Forbes/SG Analytics: ~20-30% down/flat rounds, highest in decade. Recaps/structured deals occurred, e.g., Cooley tracked recap % of deals. AI attracted massive investment: Crunchbase noted AI's biggest funding leap in 2024; Silicon Sands: AI 35.7% of VC value in 2024 (up from 24.7% 2023). Bifurcation confirmed via 'tale of two cities' phrasing in PitchBook-NVCA Q3 2024 ([nvca.org](https://nvca.org/wp-content/uploads/2024/10/Q3-2024-PitchBook-NVCA-Venture-Monitor.pdf)), Business Insider, Allocate, TechCrunch, etc., with AI thriving amid non-AI struggles."
+    },
+    {
+      "id": "C-00:27:05.290",
+      "result": "right",
+      "explanation": "Evidence from 2023\u20132024 shows exactly the dynamic described: institutional LPs pulled back overall and concentrated commitments into a small group of large, brand\u2011name (often Silicon Valley\u2013based) firms, while emerging and sub\u2011scale managers struggled to raise. For 2024, around $76B was raised across ~508 US VC funds, but the top 30 funds captured about 75% of all capital and just nine funds took ~46%, with Andreessen Horowitz alone accounting for roughly 10%\u2014a clear sign of LP capital concentrating in a narrow set of top managers rather than being spread across many small funds. ([junipersquare.com](https://www.junipersquare.com/blog/vc-q4-2024?utm_source=openai)) An FT analysis similarly finds that in 2024 more than half of the $71B raised by US VCs went to just nine firms, and notes that financial institutions have been concentrating funds into top\u2011tier Silicon Valley firms such as Andreessen Horowitz, Sequoia, and Thrive Capital, while the number of active US VC firms has fallen sharply, reflecting pressure on smaller players. ([ft.com](https://www.ft.com/content/7a787423-9466-4e55-8c0e-8811cfe44dd3?utm_source=openai)) Multiple industry reports describe a pronounced \u2018flight to quality\u2019: just 10 firms accounted for nearly half of 2024 VC fundraising; fundraising for emerging managers was \u201cexceptionally difficult\u201d; and the number of new first\u2011time funds fell by more than 75% from 2021, with roughly half of 2019\u2019s first\u2011time managers unable to raise a successor fund. ([vencap.com](https://www.vencap.com/the-return-of-the-power-law-what-to-expect-from-the-vc-industry-in-2025-and-beyond/?utm_source=openai)) Additional data show that first\u2011time US VC funds raised only about $5.2B in 2024\u2014the lowest in a decade\u2014while experienced managers launched more funds than emerging managers for the first time in over ten years, underscoring LPs\u2019 preference for re\u2011ups with established franchises. ([linkedin.com](https://www.linkedin.com/posts/true-search_scaling-vc-firms-insights-into-investors-activity-7219325425431252992-O3uO?utm_source=openai)) These patterns began after the 2021\u20132022 boom, with 2023 US VC fundraising already down sharply (about $67B vs. $173B in 2022), and leading firms like Andreessen Horowitz still able to raise multi\u2011billion\u2011dollar complexes of funds in that tougher environment. ([reuters.com](https://www.reuters.com/business/finance/andreessen-horowitz-nears-7-billion-funding-haul-growth-sector-focused-funds-2024-03-06/?utm_source=openai)) Taken together, the data support C\u2019s prediction: in the 2023\u20132024 vintages immediately following the podcast, institutional LPs narrowed their aperture toward a small group of top\u2011tier firms, while many sub\u2011scale, first\u2011 and second\u2011time venture funds faced a very difficult fundraising environment rather than the broad, easy access to capital seen in the prior boom years.",
+      "sources": [
+        {
+          "end_index": 706,
+          "start_index": 620,
+          "title": "The State of Venture Capital: A look back at 2024, an eye on 2025",
+          "type": "url_citation",
+          "url": "https://www.junipersquare.com/blog/vc-q4-2024?utm_source=openai"
+        },
+        {
+          "end_index": 1173,
+          "start_index": 1080,
+          "title": "Number of US venture capital firms falls as cash flows to tech's top investors",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/7a787423-9466-4e55-8c0e-8811cfe44dd3?utm_source=openai"
+        },
+        {
+          "end_index": 1666,
+          "start_index": 1526,
+          "title": "The return of the power law - What to expect from the VC industry in 2025 and beyond - VenCap",
+          "type": "url_citation",
+          "url": "https://www.vencap.com/the-return-of-the-power-law-what-to-expect-from-the-vc-industry-in-2025-and-beyond/?utm_source=openai"
+        },
+        {
+          "end_index": 2101,
+          "start_index": 1948,
+          "title": "As a VC firm grows, so does the size of their investment team. | True Search",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/posts/true-search_scaling-vc-firms-insights-into-investors-activity-7219325425431252992-O3uO?utm_source=openai"
+        },
+        {
+          "end_index": 2526,
+          "start_index": 2362,
+          "title": "Andreessen Horowitz nears $7 billion funding haul for growth and sector-focused funds, sources say",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/finance/andreessen-horowitz-nears-7-billion-funding-haul-growth-sector-focused-funds-2024-03-06/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction accurately came true for 2023-2024 VC vintages. Institutional LPs concentrated commitments in top-tier Silicon Valley firms: e.g., General Catalyst and a16z (both Sand Hill Road/Silicon Valley giants) captured 44% of US VC fundraising in early 2024 ($13.2B of $23.7B), with 20 firms taking 60% of 2024 total ($76.1B across 508 funds, per [PitchBook-NVCA Q4 2024 Venture Monitor](https://nvca.org/wp-content/uploads/2025/01/Q4-2024-PitchBook-NVCA-Venture-Monitor.pdf)); 9 firms accounted for ~50% ([Carta VC Concentration 2024](https://carta.com/data/vc-concentration-2024/)). Established firms raised 79.4% of capital, highest in a decade.\n\nSub-scale/first-/second-time funds struggled: First-time funds raised just $5.2B across 103 funds in 2024 (lowest since 2014, down from $15.7B/242 in 2023; 57% YoY drop in count per Carta); of 2021 first-timers, only 33% raised second funds, 12% for 2022 ([PitchBook: 1st-time VCs face 2nd-fund slump](https://pitchbook.com/news/articles/1st-time-vcs-face-2nd-fund-slump)). LPs retreated to proven managers amid liquidity issues ([PitchBook: General Catalyst, a16z](https://pitchbook.com/news/articles/general-catalyst-a16z-funds-lp-commitments))."
+    },
+    {
+      "id": "C-00:40:09.320",
+      "result": "right",
+      "explanation": "The prediction was that, over the next few U.S. inflation releases after March 3, 2023, inflation would keep *trending down toward ~4%* and would do so faster than market sentiment implied.\n\n**1. What actually happened to inflation?**\n\n- Headline CPI year\u2011over\u2011year fell from about **6.4% in January 2023** to **6.0% in February**, **5.0% in March**, **4.9% in April**, and **4.0% in May**; it then dropped further to about **3.0% in June**. ([inflation.eu](https://www.inflation.eu/en/inflation-rates/united-states/historic-inflation/cpi-inflation-united-states-2023.aspx?utm_source=openai))  \n- The Fed\u2019s preferred PCE index likewise moved down: headline PCE year\u2011over\u2011year went from **5.4% in January** to **5.0% in February** and **4.2% in March**, with core PCE easing to **4.6%** year\u2011over\u2011year in February and remaining at that level in March. ([bea.gov](https://www.bea.gov/news/2023/personal-income-and-outlays-january-2023?utm_source=openai))  \n\nSo in the span of roughly three CPI prints after the recording (March, April, May data), headline inflation moved from ~6% to **4%**, clearly \u201cheading in the direction of 4%.\u201d\n\n**2. Did it fall faster than expectations / sentiment?**\n\nLooking at the specific **\u201cnext few prints\u201d** after March 3, 2023:\n\n- **February CPI (released March 14)** came in exactly in line with expectations at **6.0% YoY**, but confirmed the downtrend from January\u2019s 6.4%. ([cnbc.com](https://www.cnbc.com/2023/03/14/cpi-inflation-february-2023-.html?utm_source=openai))  \n- **February PCE (released March 31)** showed core PCE rising **0.3% MoM vs 0.4% expected**, and 4.6% YoY, a slight downside surprise relative to forecasts. ([cnbc.com](https://www.cnbc.com/2023/03/31/fed-inflation-gauge-february-2023-.html?utm_source=openai))  \n- **March CPI (released April 12)** printed **5.0% YoY vs a 5.1% consensus**, explicitly described as \u201cless than expected\u201d and as inflation that \u201ccooled\u201d more than anticipated. ([cnbc.com](https://www.cnbc.com/2023/04/12/cpi-march-2023-.html?utm_source=openai))  \n- Commentary on the March CPI noted that annual inflation \u201cplunged\u201d and was **less than experts predicted**, underlining that the disinflation was somewhat stronger than forecasters had penciled in. ([inflationdata.com](https://inflationdata.com/articles/2023/04/13/inflation-less-than-experts-predict-in-march/?utm_source=openai))  \n- **April CPI (released May 10)** at **4.9% YoY** was again slightly below estimates and marked the smallest increase in two years, reinforcing the perception of a steady disinflation trend. ([cnbc.com](https://www.cnbc.com/2023/05/10/april-2023-cpi-inflation-report.html?utm_source=openai))  \n- By the **May CPI print (released June 13)**, headline inflation was **exactly 4.0% YoY**, the lowest in about two years and right at the \u201c~4%\u201d level Gerstner referenced; this was described as consistent with or slightly better than consensus expectations. ([cnbc.com](https://www.cnbc.com/2023/06/13/cpi-inflation-report-may-2023-.html?utm_source=openai))  \n\nWhile \u201cmarket sentiment\u201d and what people \u201cemotionally\u201d expected are inherently squishy, the data show that:\n\n- Inflation *did* move quickly toward 4% over the next few CPI/PCE releases.  \n- Several of those prints (especially February PCE and March\u2013April CPI) came in **at or slightly below** economists\u2019 consensus, with contemporaneous coverage emphasizing that inflation was cooling *more* than experts predicted.\n\nGiven this, the realized path of inflation matched or slightly outpaced mainstream expectations for disinflation and clearly moved toward ~4% in the near term that Gerstner highlighted. On balance, that supports classifying the prediction as **right** rather than wrong or ambiguous.",
+      "sources": [
+        {
+          "end_index": 632,
+          "start_index": 482,
+          "title": "Inflation United States 2023 \u2013 CPI inflation United States 2023",
+          "type": "url_citation",
+          "url": "https://www.inflation.eu/en/inflation-rates/united-states/historic-inflation/cpi-inflation-united-states-2023.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 993,
+          "start_index": 892,
+          "title": "Personal Income and Outlays, January 2023 | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2023/personal-income-and-outlays-january-2023?utm_source=openai"
+        },
+        {
+          "end_index": 1552,
+          "start_index": 1455,
+          "title": "CPI inflation February 2023 increased 0.4% and 6% from a year ago",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/03/14/cpi-inflation-february-2023-.html?utm_source=openai"
+        },
+        {
+          "end_index": 1816,
+          "start_index": 1713,
+          "title": "Fed inflation gauge February 2023: Core PCE up 0.3%, less than expected",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/03/31/fed-inflation-gauge-february-2023-.html?utm_source=openai"
+        },
+        {
+          "end_index": 2081,
+          "start_index": 1997,
+          "title": "'CPI March 2023: Inflation rose 0.1% in March, and 5% from a year ago'",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/04/12/cpi-march-2023-.html?utm_source=openai"
+        },
+        {
+          "end_index": 2416,
+          "start_index": 2284,
+          "title": "Inflation Less Than Experts Predict in March",
+          "type": "url_citation",
+          "url": "https://inflationdata.com/articles/2023/04/13/inflation-less-than-experts-predict-in-march/?utm_source=openai"
+        },
+        {
+          "end_index": 2711,
+          "start_index": 2611,
+          "title": "Inflation breakdown for April 2023 in one chart",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/05/10/april-2023-cpi-inflation-report.html?utm_source=openai"
+        },
+        {
+          "end_index": 3072,
+          "start_index": 2973,
+          "title": "CPI report May 2023: Inflation rose at a 4% annual rate in May, the lowest in 2 years",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/06/13/cpi-inflation-report-may-2023-.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The next CPI prints after March 3, 2023, showed YoY headline inflation trending down rapidly: Feb (Mar 14 release) 6.0% (exp. 6.0%); Mar (Apr 12) 5.0% vs exp. 5.2%; Apr (May 10) 4.9% (less than exp.); May (Jun 13) 4.0% vs exp. 4.1%. Reached ~4% as predicted. Feb core PCE (Mar 31) rose 0.3% MoM < exp., YoY 4.6%. Prints met or beat (lower than) consensus, indicating faster disinflation than pessimistic market sentiment implied post-Jan 6.4% print. Sources: [CNBC Mar 14 CPI](https://www.cnbc.com/2023/03/14/cpi-inflation-february-2023-.html), [CNBC Apr 12 CPI](https://www.cnbc.com/2023/04/12/cpi-march-2023-.html), [CNBC May 10 CPI](https://www.cnbc.com/2023/05/10/cpi-inflation-april-2023.html), [CNBC Jun 13 CPI](https://www.cnbc.com/2023/06/13/cpi-inflation-report-may-2023-.html), [CNBC Mar 31 PCE](https://www.cnbc.com/2023/03/31/fed-inflation-gauge-february-2023-.html), BLS archives."
+    },
+    {
+      "id": "B-00:17:57.760",
+      "result": "inconclusive",
+      "explanation": "Evidence strongly supports the *first* part of Jason\u2019s prediction (a ~10x expansion of generative\u2011AI startups), but it is too early and too data\u2011poor to judge the *second* part (that most of those startups will be rapidly culled by milestone\u2011based funding).\n\n**1. Did the number of generative\u2011AI startups grow ~10x from ~500 to around 5,000?**  \nMultiple datasets show that, by 2024\u20132025, the generative\u2011AI startup population was already well into the thousands:\n\n- StartUs Insights\u2019 2024 Generative AI report finds **8,600+ generative\u2011AI companies globally, including 2,037 startups**; that\u2019s already far above Jason\u2019s starting premise of ~500. ([startus-insights.com](https://www.startus-insights.com/innovators-guide/generative-ai-report/?utm_source=openai))  \n- Its 2025 report shows continued rapid growth to **16,520 companies and 6,020+ generative\u2011AI startups** worldwide. ([startus-insights.com](https://www.startus-insights.com/innovators-guide/generative-ai-report-key-stats/?utm_source=openai))  \n- Another analysis of the generative\u2011AI landscape reports roughly **50,000 generative\u2011AI firms at end\u20112023, rising to about 67,200 by early 2024**, indicating explosive proliferation well beyond the 5,000 mark (definitions differ, but all show orders\u2011of\u2011magnitude growth vs. 2022\u2013early 2023). ([seo.goover.ai](https://seo.goover.ai/report/202409/go-public-report-en-a528d8cb-e517-42c2-a742-8577c31c01fe-0-0.html?utm_source=openai))  \n\nTaken together, these sources make it quite clear that *by 2024\u20132025* the number of generative\u2011AI startups globally had very likely exceeded Jason\u2019s 5,000\u2011startup threshold, so the growth/\"10x\" portion of the prediction looks directionally **right**.\n\n**2. Has the sector already \u201cquickly whittled down,\u201d with most of those startups culled?**  \nHere the data are much weaker and mostly indirect:\n\n- Funding into generative\u2011AI startups remains extremely strong: investment jumped from about **$25.2B in 2023** to roughly **$56B across 885 deals in 2024**, a 92% YoY increase\u2014more a capital surge than a post\u2011bubble culling. ([fliphtml5.com](https://fliphtml5.com/miert/rneh/2024_EAIGG_Annual_Report/?utm_source=openai))  \n- However, capital is becoming **concentrated**: in 1H 2025, AI startups were 53% of global VC funding (64% in the U.S.), yet just **five U.S. companies captured over one\u2011third of Q2 venture dollars**, suggesting many smaller startups are starved for follow\u2011on funding even as headline investment grows. ([axios.com](https://www.axios.com/newsletters/axios-pro-rata-d4299627-1e82-44f2-9308-212d8860b6aa?utm_source=openai))  \n- S&P Global\u2019s Generative AI Market Monitor shows the **top eight vendors now hold ~63% of generative\u2011AI software revenue**, but the number of vendors with >$10M in revenue also increased from 78 to 138 between mid\u20112024 and 2025, implying a *widening* tier of meaningful players rather than an obvious collapse in counts. ([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/research/generative-ai-market-revenue-projected-to-grow-at-a-40-cagr-from-2024-2029?utm_source=openai))  \n- An MIT\u2011linked study finds that **95% of generative\u2011AI projects in businesses are failing to produce meaningful outcomes**, indicating high project\u2011level failure and likely pressure on many vendors, but it does not give hard data on how many generative\u2011AI startups have actually shut down. ([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/technology/tech-news/mit-study-finds-95-of-generative-ai-projects-are-failing-only-hype-little-transformation/articleshow/123453071.cms?utm_source=openai))  \n- Press coverage documents some AI\u2011startup shutdowns (e.g., several Indian AI startups recently closing), but these are illustrative cases, not evidence that a majority of gen\u2011AI startups globally have already disappeared. ([economictimes.indiatimes.com](https://economictimes.indiatimes.com/tech/artificial-intelligence/the-ai-startup-dilemma-to-pivot-or-perish/articleshow/122959372.cms?utm_source=openai))\n\nIn other words, we **do** see early signs of the shake\u2011out Jason anticipated\u2014capital concentrating in a relatively small set of winners, many pilots failing, and some startups shutting down\u2014but the available data:\n\n- show **net growth** in the number of generative\u2011AI startups through 2024\u20132025, not a drop; and  \n- do **not** yet let us quantify whether \u201cthe majority\u201d of the expanded startup cohort (\u22485,000+ companies) has actually been culled.\n\nGiven that Jason spoke about growth \u201cover the subsequent few years\u201d (from March 2023) and a *quick* culling via milestone\u2011based funding, we are still within that multi\u2011year window (late 2025). Startup survival/failure statistics at this granularity typically only become clear over a 5\u2011 to 10\u2011year horizon. At this point, we can confidently say the **10x\u2011growth part has happened**, but we **cannot yet verify or falsify** the claim that most of those startups will be rapidly whittled down.\n\n**Conclusion:** Because the prediction is compound and its second, crucial clause (rapid majority culling) *cannot yet be empirically assessed* with the data available as of November 2025, the fairest overall verdict is **\u201cinconclusive (too early)\u201d** rather than fully right or fully wrong.",
+      "sources": [
+        {
+          "end_index": 806,
+          "start_index": 691,
+          "title": "Generative AI Report 2024 | StartUs Insights",
+          "type": "url_citation",
+          "url": "https://www.startus-insights.com/innovators-guide/generative-ai-report/?utm_source=openai"
+        },
+        {
+          "end_index": 1051,
+          "start_index": 926,
+          "title": "Generative AI Report 2025 | StartUs Insights",
+          "type": "url_citation",
+          "url": "https://www.startus-insights.com/innovators-guide/generative-ai-report-key-stats/?utm_source=openai"
+        },
+        {
+          "end_index": 1486,
+          "start_index": 1348,
+          "title": "The Dynamic Growth and Impact of Generative AI in 2024",
+          "type": "url_citation",
+          "url": "https://seo.goover.ai/report/202409/go-public-report-en-a528d8cb-e517-42c2-a742-8577c31c01fe-0-0.html?utm_source=openai"
+        },
+        {
+          "end_index": 2217,
+          "start_index": 2122,
+          "title": "2024 EAIGG Annual Report - Flipbook by team | FlipHTML5",
+          "type": "url_citation",
+          "url": "https://fliphtml5.com/miert/rneh/2024_EAIGG_Annual_Report/?utm_source=openai"
+        },
+        {
+          "end_index": 2643,
+          "start_index": 2525,
+          "title": "Axios Pro Rata: AI eats VC",
+          "type": "url_citation",
+          "url": "https://www.axios.com/newsletters/axios-pro-rata-d4299627-1e82-44f2-9308-212d8860b6aa?utm_source=openai"
+        },
+        {
+          "end_index": 3150,
+          "start_index": 2969,
+          "title": "Generative AI market revenue projected to grow at a 40% CAGR from 2024\u20132029 | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/generative-ai-market-revenue-projected-to-grow-at-a-40-cagr-from-2024-2029?utm_source=openai"
+        },
+        {
+          "end_index": 3667,
+          "start_index": 3445,
+          "title": "MIT study finds 95% of generative AI projects are failing: Only hype, little transformation",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/mit-study-finds-95-of-generative-ai-projects-are-failing-only-hype-little-transformation/articleshow/123453071.cms?utm_source=openai"
+        },
+        {
+          "end_index": 4079,
+          "start_index": 3894,
+          "title": "The AI startup dilemma: To pivot or perish",
+          "type": "url_citation",
+          "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/the-ai-startup-dilemma-to-pivot-or-perish/articleshow/122959372.cms?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction claimed ~500 gen-AI startups in Mar 2023 would 10x to ~5,000 in a few years, then most culled quickly via milestone funding. CB Insights (Q4 2023 report) identified ~800 gen-AI companies by end-2023 ([link](https://www.cbinsights.com/research/generative-ai-funding-top-startups-investors-2023/)). Crunchbase Generative AI hub currently lists 1,783 organizations (2025 data, [link](https://www.crunchbase.com/hub/generative-ai-startups)). This indicates ~3-4x growth at most, not 10x to 5,000. One outlier source claims 50k+ 'gen-AI firms' by late 2023 ([springsapps.com](https://springsapps.com/knowledge/how-many-generative-ai-startups-are-there-latest-statistics-in-2024)), but likely includes non-startup/broad users, contradicting specialist trackers. No culling observed: Gen-AI VC funding hit $49B in H1 2025 alone (EY), surpassing full 2024 ($45B); 49 US AI startups raised $100M+ in 2025 (TechCrunch). Frenzy persists 2.75 years later, not whittling down."
+    },
+    {
+      "id": "B-00:52:10.380",
+      "result": "right",
+      "explanation": "Salesforce did exactly what Jason described and then went even further.\n\n* **Program increased to ~$20B:** In February 2023, shortly around the time of the March 2023 earnings discussion, Salesforce\u2019s board authorized an additional **$10 billion** in share repurchases on top of the existing $10 billion program, for an **aggregate total authorization of $20 billion**. This is disclosed in Salesforce\u2019s 2023 Form 10\u2011K and related 10\u2011Q filings, which state that the August 2022 $10B authorization was expanded by $10B in February 2023 to reach $20B in total. ([sec.gov](https://www.sec.gov/Archives/edgar/data/1108524/000110852423000011/crm-20230131.htm?utm_source=openai))\n* **Ongoing, large\u2011scale buybacks:** Salesforce continued to deploy significant capital to repurchases after that point. In fiscal 2023, 2024, and 2025 it repurchased roughly **$4.0B, $7.7B, and $7.76B** of stock, respectively, as reported in its 10\u2011K/10\u2011Q disclosures. ([streetinsider.com](https://www.streetinsider.com/SEC%2BFilings/Form%2B10-K%2BSalesforce%2C%2BInc.%2BFor%3A%2BJan%2B31/22895154.html?utm_source=openai))  The quarterly 10\u2011Q for the period ended July 31, 2023 also shows multiple billions repurchased and many billions still available under the program, consistent with \u201cseeing more of that for sure.\u201d ([annual-statements.com](https://annual-statements.com/company/salesforce-inc/annual-report-2023-form-10q-362103?utm_source=openai))\n* **Further expansions beyond $20B (supporting the general thrust):** In February 2024, the board authorized another **$10B**, taking the **total authorization from $20B to $30B**. ([streetinsider.com](https://www.streetinsider.com/SEC%2BFilings/Form%2B10-K%2BSalesforce%2C%2BInc.%2BFor%3A%2BJan%2B31/22895154.html?utm_source=openai))  Then, in September 2025, Salesforce announced a further **$20B increase** to its buyback authorization, bringing the **total to $50B**, as noted in its Form 8\u2011K summary and contemporary news coverage. ([perivis.com](https://www.perivis.com/note/6eec7946-5891-4304-8d13-4f494df76df6?utm_source=openai))\n\nGiven that Salesforce both (a) increased its share repurchase authorization to about **$20B** as forecast and (b) continued to deploy **substantial capital** into buybacks over the subsequent years, Jason\u2019s prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 708,
+          "start_index": 594,
+          "title": "crm-20230131",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852423000011/crm-20230131.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1133,
+          "start_index": 980,
+          "title": "Form 10-K Salesforce, Inc. For: Jan 31",
+          "type": "url_citation",
+          "url": "https://www.streetinsider.com/SEC%2BFilings/Form%2B10-K%2BSalesforce%2C%2BInc.%2BFor%3A%2BJan%2B31/22895154.html?utm_source=openai"
+        },
+        {
+          "end_index": 1463,
+          "start_index": 1331,
+          "title": "Salesforce, Inc. - Quarter Report: 2023 July (Form 10-Q) | Annual Statements",
+          "type": "url_citation",
+          "url": "https://annual-statements.com/company/salesforce-inc/annual-report-2023-form-10q-362103?utm_source=openai"
+        },
+        {
+          "end_index": 1799,
+          "start_index": 1646,
+          "title": "Form 10-K Salesforce, Inc. For: Jan 31",
+          "type": "url_citation",
+          "url": "https://www.streetinsider.com/SEC%2BFilings/Form%2B10-K%2BSalesforce%2C%2BInc.%2BFor%3A%2BJan%2B31/22895154.html?utm_source=openai"
+        },
+        {
+          "end_index": 2102,
+          "start_index": 2002,
+          "title": "8-K - Salesforce, Inc. (0001108524) (Filer) | Perivis",
+          "type": "url_citation",
+          "url": "https://www.perivis.com/note/6eec7946-5891-4304-8d13-4f494df76df6?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction accurately foresaw Salesforce's actions. In the March 1, 2023 earnings call (podcast discussed on March 3), Salesforce announced an increase in its share repurchase authorization from $10B (first program started Aug 2022) to $20B total, after repurchasing $2.3B in Q4 FY2023 ([Salesforce press release](https://investor.salesforce.com/news/news-details/2023/Salesforce-Announces-Strong-Fourth-Quarter-and-Full-Fiscal-2023-Results/default.aspx), [SEC filing](https://www.sec.gov/Archives/edgar/data/1108524/000110852423000007/crm-20230301.htm)). They continued significant buybacks: e.g., $1.7B in Q4 FY2024, net ~$19.7B repurchased in 12 months to July 2025 ([Macrotrends](https://www.macrotrends.net/stocks/charts/CRM/salesforce/net-common-equity-issued-repurchased)), nearly $16B since 2023 ([Trefis](https://www.trefis.com/data/companies/CRM)). Authorizations expanded further to $30B (Feb 2024, [Nasdaq](https://www.nasdaq.com/articles/why-is-salesforce.com-crm-down-2.5-since-last-earnings-report)) and $50B (Sep 2025), confirming ongoing activity."
+    },
+    {
+      "id": "C-01:22:10.470",
+      "result": "right",
+      "explanation": "Evidence from 2023\u20132024 shows that, in the months after early March 2023, Congress displayed a sharply elevated, bipartisan level of hostile rhetoric and legislative focus directed at China/CCP, consistent with Brad Gerstner\u2019s prediction.\n\n1. **Hostile, often xenophobic rhetoric from both parties after March 2023**\n   * On March 23, 2023, the House Energy and Commerce Committee\u2019s TikTok hearing was described by observers as a five\u2011hour \u201cspectacle of xenophobia, anticommunism and anti\u2011Chinese invective,\u201d where members from both parties repeatedly portrayed China as a \u201cthreat,\u201d \u201cadversary,\u201d and \u201cdanger.\u201d The Republican chair called TikTok \u201ca weapon by the Chinese Communist Party,\u201d and the Democratic ranking member agreed with much of her framing, referring to its \u201cBeijing communist\u2011based\u201d ownership as a danger to the country. ([wsws.org](https://www.wsws.org/en/articles/2023/03/25/tikt-m25.html?utm_source=openai))\n   * Individual Democrats also adopted very sharp language about China/CCP. For example, Rep. Josh Gottheimer in March 2023 called TikTok\u2019s data \u201can enormous asset to the Chinese Communist Party, a known adversary,\u201d and said colleagues defending TikTok were \u201cbrainwashed by the Chinese government\u2019s propaganda.\u201d He continued through late 2023 to link TikTok to China being \u201cpro\u2011Hamas\u201d and pushing \u201canti\u2011American content.\u201d ([en.wikipedia.org](https://en.wikipedia.org/wiki/Josh_Gottheimer?utm_source=openai))\n\n2. **Sustained, bipartisan legislative push framed around the China threat**\n   * Just days after the podcast date, the RESTRICT Act (S.686) was introduced on March 7, 2023, empowering the Commerce Department to restrict ICT transactions tied to \u201cforeign adversaries\u201d; it was widely characterized as a vehicle to target Chinese\u2011owned TikTok. ([en.wikipedia.org](https://en.wikipedia.org/wiki/RESTRICT_Act?utm_source=openai))\n   * In 2024, the House overwhelmingly passed the Protecting Americans from Foreign Adversary Controlled Applications Act (H.R. 7521), which would force TikTok\u2019s Chinese parent, ByteDance, to divest or face a ban. Reporting notes the bill\u2019s strong **bipartisan** support and repeatedly frames it as a response to national\u2011security fears about \u201cChina\u201d and CCP influence; one lawmaker summarized the view that \u201cAmerica\u2019s foremost adversary has no business controlling a dominant media platform in the United States.\u201d ([apnews.com](https://apnews.com/article/2d851c716d6454d7c87762a056604c7a?utm_source=openai))\n\n3. **Analyses describing a new, unusually intense bipartisan anti\u2011China consensus**\n   * A September 2023 analysis in *China.org.cn*/Beijing Review notes that since the start of the 118th Congress (January 2023), **legislative activities related to China have surged**, and that anti\u2011China sentiment has become \u201cthe norm\u201d in Congress\u2019s involvement in U.S. China policy, citing the new House Select Committee on the CCP, a \"China Competition 2.0\" bill, and TikTok sanctions. ([english.chinatoday.com.cn](https://english.chinatoday.com.cn/Opinion/Voice/202309/t20230913_800342123.html?utm_source=openai))\n   * Academic analysis on U.S.\u2013China Perception Monitor finds that, compared to earlier congresses, legislators from both parties have sharply increased negative messaging about China since the late 2010s, producing a *\u201cnew bipartisan consensus\u201d* on getting \u201ctough on China,\u201d reflected both in the volume of China\u2011related bills and in social\u2011media rhetoric. ([uscnpm.org](https://uscnpm.org/2023/10/19/why-polarization-wont-stop-washingtons-new-bipartisan-consensus-on-china/?utm_source=openai))\n   * By late 2023, Chatham House described U.S. politics as having a bipartisan consensus on China, with \u201cbeing \u2018tough on China\u2019\u201d effectively a requirement for national candidates, reinforcing that this was not a brief spike but a sustained rhetorical posture. ([chathamhouse.org](https://www.chathamhouse.org/2023/11/biden-needs-convince-americans-dialogue-china-their-interests?utm_source=openai))\n\nTaken together, these sources show: (a) harsh, often alarmist or xenophobic language about China and the CCP coming from **both** Republicans and Democrats, (b) maintained over many months via hearings and legislation, and (c) widely characterized as a heightened, bipartisan \u201ctough on China\u201d or anti\u2011China consensus compared with earlier periods. That aligns closely with Gerstner\u2019s forecast of an unusually high, sustained level of anti\u2011China rhetoric from both sides of Congress, so the prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 961,
+          "start_index": 872,
+          "title": "US Congress holds anti-China witch-hunt at TikTok hearing - World Socialist Web Site",
+          "type": "url_citation",
+          "url": "https://www.wsws.org/en/articles/2023/03/25/tikt-m25.html?utm_source=openai"
+        },
+        {
+          "end_index": 1470,
+          "start_index": 1385,
+          "title": "Josh Gottheimer",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Josh_Gottheimer?utm_source=openai"
+        },
+        {
+          "end_index": 1899,
+          "start_index": 1817,
+          "title": "RESTRICT Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/RESTRICT_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2509,
+          "start_index": 2416,
+          "title": "US lawmakers see TikTok as China's tool, even as it distances itself from Beijing",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/2d851c716d6454d7c87762a056604c7a?utm_source=openai"
+        },
+        {
+          "end_index": 3118,
+          "start_index": 2990,
+          "title": "Partisan politics drive anti-China rhetoric in U.S. Congress-- Beijing Review",
+          "type": "url_citation",
+          "url": "https://english.chinatoday.com.cn/Opinion/Voice/202309/t20230913_800342123.html?utm_source=openai"
+        },
+        {
+          "end_index": 3615,
+          "start_index": 3478,
+          "title": "Why Polarization Won\u2019t Stop Washington\u2019s New Bipartisan Consensus on China - U.S.-China Perception Monitor",
+          "type": "url_citation",
+          "url": "https://uscnpm.org/2023/10/19/why-polarization-wont-stop-washingtons-new-bipartisan-consensus-on-china/?utm_source=openai"
+        },
+        {
+          "end_index": 4016,
+          "start_index": 3878,
+          "title": "Biden needs to convince Americans that dialogue with China is in their interests | Chatham House \u2013 International Affairs Think Tank",
+          "type": "url_citation",
+          "url": "https://www.chathamhouse.org/2023/11/biden-needs-convince-americans-dialogue-china-their-interests?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction has come true. Post-March 2023, US Congress exhibited unusually high and sustained bipartisan anti-China rhetoric and actions, more intense than prior years. Evidence includes:\n- **118th Congress (2023-2024)** introduced more China-specific bills than previous sessions ([CSIS analysis](https://www.csis.org/blogs/trustee-china-hand/all-bark-and-no-bite-118th-congress-china)). Mentions of China in NDAA increased ~10x over prior 5 years ([Carnegie Endowment](https://carnegieendowment.org/research/2023/11/the-role-of-congress-in-us-china-relations?lang=en)).\n- **China Week (Sep 2024)**: House passed 25 anti-CCP bills bipartisanly, targeting drones, biotech, sanctions ([House Select Committee](http://selectcommitteeontheccp.house.gov/media/press-releases/china-week-recap-congress-passes-25-bills-combat-chinese-communist-party), [AP News](https://apnews.com/article/china-united-states-house-drones-evs-biotech-b5a56798058c7bd823280eecebf59c65)).\n- Bipartisan House Select Committee on CCP (formed 2023) held numerous hearings ([Congress.gov](https://selectcommitteeontheccp.house.gov/)).\n- Sustained into 2025: Congress seen as 'bulwark of anti-China sentiment' ([NYT Sep 2025](https://www.nytimes.com/2025/09/23/world/asia/us-china-trump-xi.html)); ongoing bills/hearings ([USCC](https://www.uscc.gov/hearings)).\nThis exceeds pre-2023 levels, fueled by spy balloon, TikTok, chips, with broad consensus ([China Briefing](https://www.china-briefing.com/news/us-china-relations-in-the-biden-era-a-timeline/))."
+    },
+    {
+      "id": "A-01:25:52.280",
+      "result": "right",
+      "explanation": "By late 2025, TikTok\u2019s original, China\u2011controlled corporate structure has effectively been barred from operating in the U.S., and the app has only survived by undergoing a forced restructuring, which aligns closely with the normalized prediction.\n\nKey facts:\n\n1. **Targeted ban on the China\u2011controlled structure:** In April 2024, Congress passed and President Biden signed the Protecting Americans from Foreign Adversary Controlled Applications Act (PAFACA). The law explicitly names ByteDance and TikTok as \u201cforeign adversary controlled\u201d and **requires them either to divest from Chinese control or face a nationwide ban on hosting and distributing the app in the U.S. by January 19, 2025**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Protecting_Americans_from_Foreign_Adversary_Controlled_Applications_Act?utm_source=openai))  TikTok and ByteDance challenged this law in *TikTok, Inc. v. Garland*, but the Supreme Court ultimately left the law in force, with a federal appeals court and then the Court upholding its constitutionality as a national\u2011security measure. ([techcrunch.com](https://techcrunch.com/2024/12/06/us-appeals-court-upholds-tiktok-ban/?utm_source=openai))\n\n2. **Legal \u201cban\u201d on TikTok in its old form, even as enforcement was delayed:** Coverage summarizing the situation notes that **TikTok has technically been \u201cbanned in the U.S. since January 19\u201d under the statute, with app stores supposed to stop distributing it, but successive presidential orders repeatedly delayed enforcement** while a divestiture deal was negotiated. ([macrumors.com](https://www.macrumors.com/2025/07/01/trump-tiktok-buyer/?utm_source=openai))  In other words, the original, ByteDance\u2011controlled structure is legally prohibited from continuing, even if the government temporarily paused actually pulling the app.\n\n3. **Forced restructuring to remove Chinese control:** On September 25, 2025, the White House issued an executive order titled *\u201cSaving TikTok While Protecting National Security.\u201d* It formally determined that a **\u201cqualified divestiture\u201d** would move TikTok\u2019s U.S. operations into a **new U.S.-based joint venture, majority\u2011owned and controlled by U.S. investors, with ByteDance and other \u201cforeign adversary\u201d entities capped at under 20% ownership**. The order emphasizes that the new joint venture, not ByteDance, would control the algorithms, code, content\u2011moderation decisions, and U.S. user data, which must be stored in an American\u2011run cloud and subject to intensive U.S. security monitoring. ([whitehouse.gov](https://www.whitehouse.gov/presidential-actions/2025/09/saving-tiktok-while-protecting-national-security/?utm_source=openai))  Reporting around the same time describes ByteDance divesting about 80% of its U.S. TikTok assets to a consortium led by Oracle and Silver Lake, with the algorithm retrained and monitored under U.S. supervision. ([reuters.com](https://www.reuters.com/technology/tiktok-names-former-boeing-exec-us-public-policy-chief-2025-11-25/?utm_source=openai))\n\n4. **Outcome vs. the normalized prediction:**\n   * The normalized prediction states that *within a few years after March 2023, TikTok will be banned from operating in the United States in its then\u2011current, China\u2011controlled corporate structure.* By January 2025\u2013September 2025, U.S. law and executive action **do exactly that**: the ByteDance\u2011controlled configuration is legally prohibited; TikTok can continue only if ownership and operational control are transferred to a U.S.-controlled entity.\n   * While the app itself ultimately remains available to users, it does so **only after becoming the central test case and main corporate target in U.S.\u2013China tech and data\u2011security tensions**, with a bespoke statute naming it and a forced divestiture regime built around it\u2014precisely the kind of \u201cmost obvious victim\u201d Chamath was describing. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Protecting_Americans_from_Foreign_Adversary_Controlled_Applications_Act?utm_source=openai))\n\nBecause (a) the China\u2011controlled structure has indeed been effectively banned in law and practice, (b) TikTok was forced into a major, U.S.-controlled restructuring within roughly 2.5 years of the March 2023 prediction, and (c) it became the signature corporate flashpoint in U.S.\u2013China tech tensions, the prediction\u2014under the user\u2019s normalized wording\u2014is best classified as **right**, even though the government ultimately chose forced divestiture rather than a permanent shutdown of the app for users.",
+      "sources": [
+        {
+          "end_index": 871,
+          "start_index": 730,
+          "title": "Protecting Americans from Foreign Adversary Controlled Applications Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Protecting_Americans_from_Foreign_Adversary_Controlled_Applications_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1220,
+          "start_index": 1112,
+          "title": "US appeals court upholds TikTok ban | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2024/12/06/us-appeals-court-upholds-tiktok-ban/?utm_source=openai"
+        },
+        {
+          "end_index": 1688,
+          "start_index": 1595,
+          "title": "Amid Third TikTok Ban Extension, Trump Claims to Have Potential Buyer - MacRumors",
+          "type": "url_citation",
+          "url": "https://www.macrumors.com/2025/07/01/trump-tiktok-buyer/?utm_source=openai"
+        },
+        {
+          "end_index": 2701,
+          "start_index": 2558,
+          "title": "Saving TikTok While Protecting National Security \u2013 The White House",
+          "type": "url_citation",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/09/saving-tiktok-while-protecting-national-security/?utm_source=openai"
+        },
+        {
+          "end_index": 3050,
+          "start_index": 2914,
+          "title": "TikTok names former Boeing exec as US public policy chief",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/tiktok-names-former-boeing-exec-us-public-policy-chief-2025-11-25/?utm_source=openai"
+        },
+        {
+          "end_index": 4038,
+          "start_index": 3897,
+          "title": "Protecting Americans from Foreign Adversary Controlled Applications Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Protecting_Americans_from_Foreign_Adversary_Controlled_Applications_Act?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "TikTok continues to operate in the US under its China-controlled ByteDance ownership as of December 1, 2025. A 2024 law (Protecting Americans from Foreign Adversary Controlled Applications Act) required divestiture by Jan 19, 2025, or a ban, leading to a brief app store removal, but President Trump issued multiple executive orders extending enforcement (latest to Dec 16, 2025) while negotiating a partial divestiture deal (e.g., US consortium like Oracle/Silver Lake taking majority control, ByteDance <20% stake). No permanent ban occurred, and the app remains fully accessible with 170M+ users. It has not become a 'banned' casualty but persists via delays. [White House extensions](https://www.whitehouse.gov/presidential-actions/2025/09/further-extending-the-tiktok-enforcement-delay-9dde/), [Reuters Nov 24 on plan questions](https://www.reuters.com/legal/transactional/senator-wants-trump-answer-questions-tiktok-divestiture-plan-2025-11-24/), [Social Media Today Dec 1 deadline](https://www.socialmediatoday.com/news/tiktoks-us-sell-off-deadline-is-about-to-expire-once-again/806615/)."
+    },
+    {
+      "id": "H-01:17:13.400",
+      "result": "right",
+      "explanation": "Sacks\u2019 normalized prediction was that the Dominion Voting Systems defamation lawsuit against Fox News would **not** ultimately result in Fox being found legally liable under the New York Times v. Sullivan standard\u2014i.e., Fox would avoid an adverse *final judgment* on liability.\n\nWhat actually happened:\n\n- On March 31, 2023, the Delaware trial judge granted partial summary judgment for Dominion, ruling that Fox\u2019s statements about Dominion were false and defamatory as a matter of law, but he left the key *actual malice* and damages questions for a jury at trial. This meant there was not yet a final judgment of liability under the full defamation standard. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dominion_Voting_Systems_v._Fox_News_Network?utm_source=openai))\n- Jury selection began in April 2023, and trial was set to start on April 18, 2023. Just as opening statements were about to begin, the parties announced a **settlement**: Fox agreed to pay Dominion **$787.5 million**, and the trial was canceled. ([washingtonpost.com](https://www.washingtonpost.com/media/2023/04/18/fox-news-dominion-settlement//?utm_source=openai))\n- Because the case settled, there was **no jury verdict** and **no final court judgment** finding Fox liable under the New York Times v. Sullivan \u201cactual malice\u201d standard; the case was resolved by settlement and then dismissed. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dominion_Voting_Systems_v._Fox_News_Network?utm_source=openai))\n\nAlthough Fox paid a massive sum and the court formally found that many of its statements about Dominion were false, the specific prediction was about *avoiding an adverse final liability judgment* under the governing defamation standard. That is exactly what occurred. Therefore, judged against the normalized prediction, the prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 811,
+          "start_index": 698,
+          "title": "Dominion Voting Systems v. Fox News Network",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dominion_Voting_Systems_v._Fox_News_Network?utm_source=openai"
+        },
+        {
+          "end_index": 1180,
+          "start_index": 1060,
+          "title": "Fox News, Dominion settle defamation lawsuit for $787.5 million - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/media/2023/04/18/fox-news-dominion-settlement//?utm_source=openai"
+        },
+        {
+          "end_index": 1523,
+          "start_index": 1410,
+          "title": "Dominion Voting Systems v. Fox News Network",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dominion_Voting_Systems_v._Fox_News_Network?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Dominion Voting Systems defamation lawsuit against Fox News settled on April 18, 2023, for $787.5 million, averting a trial and any final judgment on liability ([AP News](https://apnews.com/article/fox-news-dominion-lawsuit-trial-trump-2020-0ac71f75acfacc52ea80b3e747fb0afe), [NPR](https://www.npr.org/2023/04/18/1170339114/fox-news-settles-blockbuster-defamation-lawsuit-with-dominion-voting-systems), [Reuters](https://www.reuters.com/legal/dominions-defamation-case-against-fox-poised-trial-after-delay-2023-04-18/)). A prior summary judgment (March 31, 2023) ruled Fox's statements false but deferred 'actual malice' under *New York Times v. Sullivan* to trial, which never happened ([Wikipedia](https://en.wikipedia.org/wiki/Dominion_Voting_Systems_v._Fox_News_Network), [Nolo](https://www.nolo.com/news/fox-news-dominion-lawsuit.html)). No adverse final judgment occurred, matching the prediction; settlement included no admission of liability ([Fox News statement](https://press.foxnews.com/2023/04/fox-news-and-dominion-voting-systems-reach-settlement))."
+    },
+    {
+      "id": "H-01:26:56.550",
+      "result": "right",
+      "explanation": "Evidence since 2023 shows that TikTok has, in practice, become a major casualty of escalating U.S.\u2013China great power competition, primarily via a forced divestiture rather than an outright ban.\n\nKey developments:\n\n1. **Congress targeted TikTok directly with a divestiture-or-ban law.** In April 2024, the Protecting Americans from Foreign Adversary Controlled Applications Act was signed into law. It explicitly applies to ByteDance/TikTok and requires apps deemed \u201cforeign adversary controlled\u201d (i.e., TikTok) to either be divested from that control or be banned in the U.S. by January 19, 2025, with only a short possible extension. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Protecting_Americans_from_Foreign_Adversary_Controlled_Applications_Act?utm_source=openai))  This law is a direct outgrowth of U.S. national security concerns about China.\n\n2. **Courts upheld the law, making clear TikTok faced an existential choice.** A federal appeals court in late 2024 upheld the constitutionality of the law, confirming that TikTok must complete a qualified divestiture from ByteDance by January 19, 2025, or effectively become unavailable in the U.S. ([jurist.org](https://www.jurist.org/news/2024/12/federal-appeals-upholds-tiktok-divestiture-law-setting-stage-for-potential-us-ban/?utm_source=openai))  In early 2025, the U.S. Supreme Court likewise upheld the statute in *TikTok, Inc. v. Garland*, affirming that Congress could mandate divestiture because of national security risks tied to Chinese ownership. ([americanbar.org](https://www.americanbar.org/groups/infrastructure-regulated-industries/resources/recent-developments/2025/communications/?utm_source=openai))\n\n3. **The U.S. government repeatedly delayed but did not back off the mandate.** After taking office in January 2025, President Trump issued a series of executive orders delaying enforcement of the TikTok ban provisions, not to spare TikTok indefinitely, but explicitly to allow time to negotiate and complete a sale of TikTok\u2019s U.S. operations that would satisfy the statute\u2019s requirements. ([whitehouse.gov](https://www.whitehouse.gov/presidential-actions/2025/01/application-of-protecting-americans-from-foreign-adversary-controlled-applications-act-to-tiktok/?utm_source=openai))  The White House framed this as balancing national security with the desire to keep the app online.\n\n4. **By late 2025, ByteDance is being forced to relinquish control of TikTok U.S.** A September 25, 2025 executive order from President Trump found that a proposed transaction to move TikTok\u2019s U.S. app into a new U.S.-based joint venture constitutes a \u201cqualified divestiture\u201d under the Act, with ByteDance\u2019s stake to be kept under 20% and the algorithm and content moderation controlled by the new U.S. entity under heavy security monitoring. ([whitehouse.gov](https://www.whitehouse.gov/presidential-actions/2025/09/saving-tiktok-while-protecting-national-security/?utm_source=openai))  Reporting in November 2025 describes ByteDance as being in the process of divesting about 80% of its U.S. assets in TikTok to a consortium led by Oracle and Silver Lake, with TikTok\u2019s algorithm to be retrained and supervised under U.S. oversight. ([reuters.com](https://www.reuters.com/technology/tiktok-names-former-boeing-exec-us-public-policy-chief-2025-11-25/?utm_source=openai))\n\nInterpretation against the prediction:\n\n- The user\u2019s normalized version of the prediction allows **\"ban, forced divestiture, or equivalent measures\"** as the mechanism by which TikTok is \u201cseverely harmed\u201d and becomes \u201cGPC roadkill.\u201d\n- While TikTok as a product remains available in the U.S. as of late 2025, **its China-based owner is being compelled by U.S. law and policy\u2014explicitly justified by national security concerns about China\u2014to surrender majority ownership and operational control, including over its core algorithm and data handling.** That is a severe strategic and economic blow to ByteDance and to TikTok as a China-controlled asset, and it is precisely the type of outcome one would describe as a major casualty of great power competition.\n- The timeline (\u201cover the few years following March 2023\u201d) is also satisfied: the law was passed in April 2024, upheld through 2024\u20132025, and by late 2025 the forced divestiture framework is in place and being executed.\n\nBecause U.S.\u2013China competition has in fact led to a binding legal framework that forces TikTok\u2019s U.S. operations out of effective Chinese control under threat of a nationwide ban, within roughly 2.5 years of the March 2023 podcast, the core substance of Sacks\u2019s prediction\u2014that TikTok would end up as GPC \u201croadkill\u201d via ban/forced divestiture or equivalent severe measures\u2014is best judged as **right** rather than wrong or ambiguous.",
+      "sources": [
+        {
+          "end_index": 813,
+          "start_index": 672,
+          "title": "Protecting Americans from Foreign Adversary Controlled Applications Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Protecting_Americans_from_Foreign_Adversary_Controlled_Applications_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1349,
+          "start_index": 1197,
+          "title": "Federal appeals court upholds TikTok divestiture law, setting stage for potential US ban - JURIST - News",
+          "type": "url_citation",
+          "url": "https://www.jurist.org/news/2024/12/federal-appeals-upholds-tiktok-divestiture-law-setting-stage-for-potential-us-ban/?utm_source=openai"
+        },
+        {
+          "end_index": 1719,
+          "start_index": 1559,
+          "title": "Communications: 2025 Recent Developments",
+          "type": "url_citation",
+          "url": "https://www.americanbar.org/groups/infrastructure-regulated-industries/resources/recent-developments/2025/communications/?utm_source=openai"
+        },
+        {
+          "end_index": 2305,
+          "start_index": 2114,
+          "title": "Application Of Protecting Americans From Foreign Adversary Controlled Applications Act To TikTok \u2013 The White House",
+          "type": "url_citation",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/application-of-protecting-americans-from-foreign-adversary-controlled-applications-act-to-tiktok/?utm_source=openai"
+        },
+        {
+          "end_index": 2995,
+          "start_index": 2852,
+          "title": "Saving TikTok While Protecting National Security \u2013 The White House",
+          "type": "url_citation",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/09/saving-tiktok-while-protecting-national-security/?utm_source=openai"
+        },
+        {
+          "end_index": 3380,
+          "start_index": 3244,
+          "title": "TikTok names former Boeing exec as US public policy chief",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/tiktok-names-former-boeing-exec-us-public-policy-chief-2025-11-25/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "As of December 1, 2025, TikTok remains fully operational in the US, available on app stores, and owned by ByteDance with no completed divestiture. A law (Protecting Americans from Foreign Adversary Controlled Applications Act, April 2024) mandated divestiture or ban effective January 19, 2025, leading to a brief one-day suspension, but President Trump issued multiple executive orders delaying enforcement (e.g., latest to December 16, 2025 via EO September 16, 2025). A framework deal for US sale was announced September 2025 but not finalized, per senators' inquiries and reports. No ban enforced, no forced divestiture occurred despite US-China tensions. TikTok not 'severely harmed' or 'roadkill.' Sources: [Wikipedia Restrictions on TikTok](https://en.wikipedia.org/wiki/Restrictions_on_TikTok_in_the_United_States), [White House EO](https://www.whitehouse.gov/presidential-actions/2025/09/further-extending-the-tiktok-enforcement-delay-9dde/), [The Verge](https://www.theverge.com/23651507/tiktok-ban-us-news), search results on status/deadlines."
+    },
+    {
+      "id": "H-01:26:56.550-GPC",
+      "result": "right",
+      "explanation": "Evidence since 2023 shows that *competition with China framed as great/strategic power competition* has in fact functioned as a primary organizing principle of U.S. foreign policy and strategy.\n\n1. **China-centered competition as core of official strategy.** The 2022 National Security Strategy (still operative through the following years) explicitly states that a *competition among major powers* is underway and identifies China as \u201cAmerica\u2019s most consequential geopolitical challenge,\u201d the only state with both the intent and capability to reshape the international order, and says the U.S. must \u201cout-compete\u201d China. It describes the era as one of \u201cstrategic competition with major powers,\u201d clearly elevating this competition\u2014especially with China\u2014above other threats.\u30102\u2020turn2search1\u3011\u30102\u2020turn2search2\u3011 Independent summaries stress that this competition with China *suffuses* the document.\u30102\u2020turn2search0\u3011\u30102\u2020turn2search4\u3011\n\n2. **Defense planning built around China as the pacing challenge.** The unclassified 2022 National Defense Strategy and related Pentagon statements repeatedly call China the \u201coverall pacing challenge\u201d and \u201cmost consequential strategic competitor for the coming decades,\u201d saying U.S. force planning, modernization, and posture are set with that yardstick in mind.\u30100\u2020turn0search2\u3011\u30100\u2020turn0search5\u3011 Analyses of this framing note that U.S. defense planning, industrial policy, and global posture now revolve around how to keep up with and outpace Beijing, explicitly treating China-centric competition as the benchmark for strategy.\u30100\u2020turn0search9\u3011\n\n3. **Congressional and bureaucratic structures explicitly organized around competition with China.** In January 2023, the House created the Select Committee on the *Strategic Competition between the United States and the Chinese Communist Party*, mandated to study and make recommendations across economic, technological, and security domains of U.S.\u2013China rivalry.\u30102\u2020turn2search14\u3011 That a standing select committee is framed entirely around \"strategic competition\" with China is strong evidence that this concept has become a central organizing lens in official policy deliberations.\n\n4. **Foreign-policy professionals explicitly describe GPC as the central organizing principle.** A U.S. Foreign Service Journal article (June 2021, still widely cited in subsequent debates) flatly describes the re-emergence of \u201cgreat power competition\u201d as **\u201cthe central organizing principle for U.S. engagement with the world,\u201d** specifically highlighting the rise of Xi\u2019s China as the main peer competitor.\u30104\u2020turn4view0\u3011 Later commentary and book reviews on U.S. strategy in the era of \u201cgreat power competition\u201d and \u201cstrategic competition\u201d treat this frame as the widely accepted *deep structure* of U.S. grand strategy, even when arguing it is a flawed or dangerous organizing concept.\u30103\u2020turn3search0\u3011\u30103\u2020turn3search4\u3011\n\n5. **Ongoing China-focused competitive framing across regions and issues.** Analyses of U.S. policy in regions like the Middle East complain that *great power competition with China* is increasingly the lens through which Washington views local issues\u2014implicitly acknowledging that this frame is driving policy.\u30101\u2020turn1search10\u3011 Other scholarship and commentary in 2023\u20132025 describe the United States as entering a full-fledged \"great-power contest\" or \u201cgreat-power rivalry\u201d with China that dominates policymakers\u2019 thinking about alliances, technology controls (e.g., chips), and economic statecraft.\u30101\u2020turn1search1\u3011\u30102\u2020turn2news12\u3011\u30102\u2020turn2search6\u3011\n\n6. **Caveats that do *not* overturn the prediction.**\n   * The Biden team nominally shifted terminology from **\u201cgreat power competition\u201d** to **\u201cstrategic competition\u201d** in some documents,\u30103\u2020turn3search3\u3011\u30103\u2020turn3search13\u3011 and the NSS also emphasizes transnational threats (climate, pandemics) alongside competition.\u30102\u2020turn2search3\u3011\n   * Some 2024\u20132025 analyses argue that the great-power-competition frame is misguided or even in decline under newer approaches (e.g., more homeland-focused defense, spheres-of-influence bargaining).\u30100\u2020turn0news16\u3011\u30101\u2020turn1search11\u3011\u30101\u2020turn1search9\u3011\n\n   But these critiques *presuppose* that great/strategic power competition with China is the prevailing paradigm they are arguing against, which reinforces\u2014rather than refutes\u2014Sacks\u2019s claim that it has become the organizing principle.\n\nTaking all of this together: by the mid\u20112020s, China-centered great/strategic power competition clearly shapes U.S. national security strategy, defense planning, congressional structures, and much of the foreign\u2011policy debate. That matches Sacks\u2019s prediction that this concept would become the primary organizing framework of U.S. foreign policy over the years after March 2023, even if the preferred official label is often **\u201cstrategic competition\u201d** rather than the exact phrase **\u201cgreat power competition.\u201d**",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "The term 'Great Power Competition' (GPC), particularly with China, has been prominently featured in U.S. official rhetoric and strategic planning post-March 2023. Examples include: DNI report (Jul 2024) on gray zone activities by China; CRS report (Aug 2024) framing defense implications; State Dept (Apr 2025) on era of GPC; Senate Armed Services (Nov 2025) on GPC in Africa; Pentagon (Apr 2024) on alliances in GPC. Biden's 2022 NSS focused on 'strategic competition' with China as primary challenge without heavy GPC phrasing, but DoD/Congress docs continued GPC framing. Trump 2.0 (post-Jan 2025) docs like Sep 2025 NDS narrow GPC to Indo-Pacific but retain concept. Foreign Affairs (Apr 2025) notes GPC as bipartisan consensus until recent Trump shifts toward 'collusion,' but usage remains widespread in planning. This matches prediction of increasing prominence as organizing principle over subsequent years. Sources: web searches on gov sites, CRS/DNI reports, Foreign Affairs."
+    }
+  ]
+}

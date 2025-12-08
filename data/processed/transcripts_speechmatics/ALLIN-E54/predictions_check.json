@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "count": 10,
+    "count_by_result": {
+      "right": 3,
+      "ambiguous": 1,
+      "wrong": 4,
+      "inconclusive": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:08:05.920",
+      "result": "right",
+      "explanation": "Using closing prices on **Nov 5, 2021** (the last trading day before the podcast\u2019s Nov 6, 2021 release) and recent prices in late November 2025, and comparing *returns* on an equal\u2011weighted basis:\n\n1. **Starting prices (Nov 5, 2021, closes)**  \n   - MSFT: **$324.57**  \n   - GOOGL (Alphabet A): **$147.83**  \n   - AAPL: **$148.17**  \n   - AMZN: **$175.95**  \n   - META (then Facebook): **$339.04**  \n   - NFLX: **$64.57**  \n   These values come from StatMuse\u2019s daily price tables for November 2021 for each ticker. ([statmuse.com](https://www.statmuse.com/money/ask/msft-stock-price-november-2021))\n\n2. **Recent prices (late Nov 2025)**  \n   The same StatMuse pages report latest prices around late November 2025 of approximately:  \n   - MSFT: **$492.08**  \n   - GOOGL: **$320.10**  \n   - AAPL: **$278.86**  \n   - AMZN: **$211.70**  \n   - META: **$633.72**  \n   - NFLX: **$107.57**  ([statmuse.com](https://www.statmuse.com/money/ask/msft-stock-price-november-2021))\n\n3. **Approximate total price returns (split\u2011adjusted, dividends ignored)**  \n   - MSFT: **+51.6%**  \n   - GOOGL: **+116.5%**  \n   \u2192 Average for the long side (MSFT & GOOGL): **~+84%**.\n\n   - AAPL: **+88.2%**  \n   - AMZN: **+20.3%**  \n   - META: **+86.9%**  \n   - NFLX: **+66.6%**  \n   \u2192 Average for the equal\u2011weighted short basket (AAPL, AMZN, META, NFLX): **~+65\u201366%**.\n\n   These percentages are computed directly from the StatMuse start and latest prices above.\n\n4. **Did the spread trade work?**  \n   Interpreting Chamath\u2019s idea in the normalized way you gave \u2014 that **\u201cMSFT and GOOG will outperform the equal\u2011weighted basket of AAPL, META, AMZN, NFLX\u201d on a *return* basis** \u2014 the data show:\n\n   - Long side average return \u2248 **+84%**  \n   - Short basket average return \u2248 **+65\u201366%**  \n   - **Relative outperformance \u2248 18\u201319 percentage points** in favor of MSFT + GOOGL over ~4 years.\n\n   In a standard, dollar\u2011neutral spread (equal notional long MSFT+GOOGL vs equal\u2011weighted short of the four others), that return differential translates into a **positive cumulative P&L** for the trade over this period.\n\nBecause MSFT+GOOGL have indeed outperformed the specified equal\u2011weighted basket since the prediction, the podcast forecast \u2014 that this spread would make money on a relative basis \"over the coming years\" \u2014 has **come true so far**, hence the classification of **\u201cright.\u201d**",
+      "sources": [
+        {
+          "end_index": 640,
+          "start_index": 557,
+          "title": "Msft Stock Price November 2021 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/msft-stock-price-november-2021"
+        },
+        {
+          "end_index": 1017,
+          "start_index": 934,
+          "title": "Msft Stock Price November 2021 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/msft-stock-price-november-2021"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "From November 5, 2021 closes (split-adjusted) to November 28, 2025 closes:\n\n**Long side (equal-weight MSFT & GOOG):**\n- MSFT: $326.94 \u2192 $492.01 (+50.4%)\n- GOOG: $149.24 \u2192 $320.12 (+114.4%)\n- Average: +82.4%\n\n**Short basket (equal-weight AAPL, META, AMZN, NFLX):**\n- AAPL: $148.17 \u2192 $278.85 (+88.2%)\n- META: $339.04 \u2192 $647.95 (+91.1%)\n- AMZN: $175.95 \u2192 $233.22 (+32.5%)\n- NFLX: $64.57 \u2192 $107.58 (+66.6%)\n- Average: +69.6%\n\nThe long side outperformed the short basket by ~12.8% (price return basis). This uses comparable split-adjusted closing prices from sources including Yahoo Finance historical data snippets, StatMuse Money, and Nasdaq. Total returns would likely show even stronger outperformance for MSFT due to dividends ([Yahoo Finance](https://finance.yahoo.com/quote/MSFT/history/), [StatMuse](https://www.statmuse.com)). Over 4 years, the spread trade generated positive relative returns as predicted."
+    },
+    {
+      "id": "B-00:17:28.000",
+      "result": "ambiguous",
+      "explanation": "Using an illustrative version of the trade\u2014long Microsoft (MSFT) and Alphabet Class\u00a0A (GOOGL) and short Apple (AAPL), Meta (META), Amazon (AMZN), and Netflix (NFLX), sized dollar\u2011neutral from the podcast date (Nov\u00a05\u00a02021 close) to late Nov\u00a02025\u2014here\u2019s what the data show:\n\n- **Entry prices on Nov\u00a05\u00a02021 (split\u2011adjusted)**  \n  - MSFT \u2248 $324.57  \n  - GOOGL \u2248 $147.81  \n  - AAPL \u2248 $148.28  \n  - META (then Facebook) \u2248 $339.04  \n  - AMZN \u2248 $175.95  \n  - NFLX \u2248 $64.57  \n  These are from StatMuse-style historical pages listing daily closes for each ticker in Nov\u00a02021. ([statmuse.com](https://www.statmuse.com/money/ask/microsoft-stock-price-in-november-2021?utm_source=openai))\n\n- **Current prices (Nov\u00a028\u00a02025)** from live market data:  \n  - MSFT \u2248 $492.01  \n  - GOOGL \u2248 $320.18  \n  - AAPL \u2248 $278.85  \n  - META \u2248 $647.95  \n  - AMZN \u2248 $233.22  \n  - NFLX \u2248 $107.58  \n  - SPY (S&P\u00a0500 ETF) \u2248 $683.39  \n\n- **Approximate price returns, Nov\u00a05\u00a02021 \u2192 Nov\u00a028\u00a02025** (ignoring dividends):  \n  - MSFT: +51.6%  \n  - GOOGL: +116.6%  \n  - AAPL: +88.1%  \n  - META: +91.1%  \n  - AMZN: +32.5%  \n  - NFLX: +66.6%  \n  - SPY: +45.9%  \n\nFrom these:\n\n- **Long basket (MSFT + GOOGL)** average return \u2248 **+84%**.  \n- **Short basket (AAPL + META + AMZN + NFLX)** average return \u2248 **+70%**.  \n  \u2192 In a dollar\u2011neutral long/short, you *gain* roughly the difference, about **+14\u201315% total** over four years (~3\u20134% annualized) from the relative spread.\n- The **overall market (SPY)** is up about **+46%** over the same period, starting near 468.5 in early Nov\u00a02021 and ending around 683.4. ([reddit.com](https://www.reddit.com/r/MillennialBets/comments/qnjnii?utm_source=openai))\n\n**Why this is ambiguous rather than clearly right or wrong:**\n\n1. **The trade is modestly profitable but not a home run.** The long basket has indeed outperformed the short basket by ~14\u201315 percentage points, so the basic idea of some positive spread *has* worked, but only mildly.\n2. **It has *not* obviously beaten a simple market long.** SPY\u2019s +46% absolute gain over the same window is far larger than the roughly +14\u201315% you\u2019d earn from the market\u2011neutral spread, so in straightforward absolute\u2011return terms the spread did *not* \u201coutperform the overall market.\u201d\n3. **Risk and exact construction are under\u2011specified.** Chamath spoke generically about \u201cfiguring out which ones you want to be long [and] short\u201d in mega\u2011cap tech; he did not lock in this exact basket or weighting scheme, nor define what \u201coutperform\u201d means on a risk\u2011adjusted basis. Other plausible baskets (e.g., including Nvidia on the long side) could have looked very different. ([fr.advfn.com](https://fr.advfn.com/bourses/NYSE/MS-Q/actualites/97058531/form-fwp-filing-under-securities-act-rules-163-4?utm_source=openai))\n4. **The horizon isn\u2019t fully elapsed.** He gave a **4\u20135 year** window; we\u2019re a bit past 4 years from Nov\u00a02021, but not yet at 5 years, so the final outcome could still change meaningfully.\n\nGiven these points, the evidence so far neither clearly confirms nor clearly falsifies the normalized prediction. The specific long/short described has been *somewhat* profitable on a relative basis but has **not clearly delivered the strong, market\u2011beating, volatility\u2011neutral payoff** the statement implies, and there is still time left in the upper end of the forecast window. Hence the label **\u201cambiguous.\u201d**",
+      "sources": [
+        {
+          "end_index": 721,
+          "start_index": 612,
+          "title": "Microsoft Stock Price In November 2021 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/microsoft-stock-price-in-november-2021?utm_source=openai"
+        },
+        {
+          "end_index": 1720,
+          "start_index": 1631,
+          "title": "SPY 500 EOY? Likely, the data has already decided.",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/MillennialBets/comments/qnjnii?utm_source=openai"
+        },
+        {
+          "end_index": 2821,
+          "start_index": 2678,
+          "title": "Form FWP - Filing under Securities Act Rules 163/433 of free writing prospectuses",
+          "type": "url_citation",
+          "url": "https://fr.advfn.com/bourses/NYSE/MS-Q/actualites/97058531/form-fwp-filing-under-securities-act-rules-163-4?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The market-neutral spread trade (equal-dollar long GOOGL ~$0.5 + MSFT ~$0.5; short AAPL/META/AMZN/NFLX ~$0.25 each) generated a total return of approximately +56% from Nov 5, 2021 (adj closes: GOOGL $142.66, MSFT $324.57, AAPL $148.16, META $339.04, AMZN $174.07, NFLX $690.08; [Yahoo Finance historical data]) to Nov 28, 2025 (adj closes: GOOGL $320.18 [+124%], MSFT $492.01 [+52%], AAPL $278.85 [+88%], META $647.95 [+91%], AMZN $233.22 [+34%], NFLX $107.58 [-84%]). Long basket: +88%; short basket: +32%; spread: 88% - 32% = +56%. SPY: $468.35 to $683.39 [+46%]. The spread profited from relative outperformance of GOOGL/MSFT vs. weak names (esp. NFLX drag), outperforming the market while neutralizing beta/volatility. Sources: Yahoo Finance historical pages, Nasdaq data, Macrotrends."
+    },
+    {
+      "id": "B-00:14:38.430",
+      "result": "wrong",
+      "explanation": "Evidence from 2022\u20132025 shows Notion *accelerating* rather than suffering \u201cpersistent, significant growth headwinds\u201d after Microsoft\u2019s competitive move (Loop) and broader bundling strategy.\n\nKey facts:\n\n- **Rapid, sustained revenue growth:** Multiple sources estimate Notion\u2019s revenue at about **$67M in 2022**, **$250M in 2023**, and **$400M in 2024**, implying several hundred percent growth in two years. ([taptwicedigital.com](https://taptwicedigital.com/stats/notion?utm_source=openai))  In September 2025, Notion reported **over $500M in annualized revenue/ARR**, confirming that growth has continued at scale, not stalled. ([cnbc.com](https://www.cnbc.com/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html?utm_source=openai))  This is inconsistent with the idea of material, persistent growth headwinds.\n\n- **Strong mid\u2011market and enterprise penetration:** Reports state that **over 50% of Fortune 500 companies have teams using Notion**, and that growth is increasingly driven by large corporate clients. Named enterprise customers include **Kaiser Permanente, Mitsubishi Heavy Industries, Nvidia, and Volvo Cars**, and Notion\u2019s COO says the company is \u201cracing to keep up with enterprise demand.\u201d ([cnbc.com](https://www.cnbc.com/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html?utm_source=openai))  This contradicts the claim that Microsoft\u2019s distribution/bundling would *materially constrain* Notion\u2019s ability to scale into mid\u2011market and enterprise.\n\n- **Healthy valuation for a private SaaS company:** Notion\u2019s last disclosed funding round in 2021 valued it at **$10B**, and there is no evidence of a down\u2011round or major valuation impairment; the company has not needed new primary capital since. ([cnbc.com](https://www.cnbc.com/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html?utm_source=openai))  With ~$500M ARR by 2025, that implies a roughly 20\u00d7 ARR private valuation, which is broadly in line with, not obviously below, what high\u2011growth productivity SaaS companies might command in public markets during favorable conditions. This does *not* support the prediction that competitive pressure would prevent Notion from achieving a \u201cfull, standalone\u201d type of valuation.\n\n- **Microsoft competition did not stop adoption:** Microsoft announced **Loop**, a Notion\u2011like app integrated into Microsoft 365, in late 2021; it became available to organizations in 2023. ([cnbc.com](https://www.cnbc.com/amp/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html?utm_source=openai))  Yet the same period (2023\u20132025) is when Notion\u2019s revenue and enterprise usage surged, aided by rapid adoption of Notion\u2019s AI features. ([cnbc.com](https://www.cnbc.com/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html?utm_source=openai))  The data shows coexistence and strong Notion growth, not clear evidence that Microsoft\u2019s 80%-as-good bundled product has significantly capped Notion\u2019s trajectory.\n\n- **Time horizon has elapsed:** The prediction was made in November 2021 and explicitly concerned \u201cthe coming years.\u201d We now have roughly four years of post\u2011prediction data (through 2025), enough to judge whether major, persistent headwinds emerged; they did not.\n\nBecause Notion has grown quickly, expanded meaningfully into mid\u2011market and enterprise, and maintained a robust valuation profile despite Microsoft\u2019s entry, the prediction that Microsoft\u2019s bundled competition would *materially constrain* Notion\u2019s growth and scaling has not borne out. The most appropriate verdict is **\u201cwrong.\u201d**",
+      "sources": [
+        {
+          "end_index": 528,
+          "start_index": 445,
+          "title": "10 Notion Statistics (2025): Revenue, Valuation, Users, Investors, Funding",
+          "type": "url_citation",
+          "url": "https://taptwicedigital.com/stats/notion?utm_source=openai"
+        },
+        {
+          "end_index": 804,
+          "start_index": 667,
+          "title": "Notion launches AI agent as it crosses $500 million in annual revenue",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html?utm_source=openai"
+        },
+        {
+          "end_index": 1416,
+          "start_index": 1279,
+          "title": "Notion launches AI agent as it crosses $500 million in annual revenue",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html?utm_source=openai"
+        },
+        {
+          "end_index": 1958,
+          "start_index": 1821,
+          "title": "Notion launches AI agent as it crosses $500 million in annual revenue",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html?utm_source=openai"
+        },
+        {
+          "end_index": 2668,
+          "start_index": 2527,
+          "title": "Notion launches AI agent as it crosses $500 million in annual revenue",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/amp/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html?utm_source=openai"
+        },
+        {
+          "end_index": 2942,
+          "start_index": 2805,
+          "title": "Notion launches AI agent as it crosses $500 million in annual revenue",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Notion has experienced explosive growth since 2021, contradicting the prediction of persistent headwinds from Microsoft Loop. ARR grew from ~$31M in 2021 ([GetLatka](https://getlatka.com/companies/notion)) to $500M in 2025 ([CNBC](https://www.cnbc.com/2025/09/18/notion-launches-ai-agent-as-it-crosses-500-million-in-annual-revenue.html), [Sacra](https://sacra.com/c/notion/)), with ~60% YoY growth in recent years, driven by AI features. Over 50% of Fortune 500 companies use Notion ([SQ Magazine](https://sqmagazine.co.uk/notion-statistics/), [CNBC Disruptor 50](https://www.cnbc.com/2025/06/10/notion-cnbc-disruptor-50.html)), showing strong mid-market/enterprise scaling. Valuation steady at $10B ([multiple sources](https://taptwicedigital.com/stats/notion)), a premium ~20x ARR multiple for hypergrowth SaaS (vs. 7-10x typical high-growth privates ([SaaS Capital](https://www.saas-capital.com/blog-posts/private-saas-company-valuations-multiples/))). No evidence of Microsoft Loop materially constraining growth; comparisons exist but Notion thrived ([searches yielded no negative impact reports](https://techcrunch.com/2023/03/22/microsoft-launches-loop-its-notion-competitor-in-public-preview/))."
+    },
+    {
+      "id": "D-00:37:14.660",
+      "result": "right",
+      "explanation": "Public filings and contemporaneous news show that Zillow did in fact reduce its workforce by roughly 25%, and that the cuts were driven primarily by shutting down its iBuyer/home\u2011flipping arm, Zillow Offers.\n\nOn November 2\u20133, 2021, Zillow announced it would **wind down Zillow Offers** and that this wind\u2011down was **expected to result in approximately a 25% reduction of the company\u2019s workforce**.\n- A Seattle Times/Anchorage Daily News report notes that closing the house\u2011flipping division \u201cwill include a reduction of Zillow\u2019s workforce by approximately 25%.\u201d ([adn.com](https://www.adn.com/nation-world/2021/11/02/zillow-to-close-its-home-flipping-division-lay-off-25-of-staff/?utm_source=openai))  \n- Zillow\u2019s own SEC filing states that the November 2, 2021 decision to wind down Zillow Offers \u201cis expected to be complete during the second half of 2022 and result in approximately a 25% reduction of the Company\u2019s workforce.\u201d ([sec.gov](https://www.sec.gov/Archives/edgar/data/1617640/000161764022000013/R30.htm?utm_source=openai))\n\nMultiple outlets describe this as **about 2,000 employees, or ~25% of staff**, tied specifically to the shutdown of Zillow Offers, i.e., the iBuyer/home\u2011flipping business. GeekWire reports that shutting down Zillow Offers would lead to layoffs of \u201capproximately 25%, or about 2,000 people,\u201d and later notes that continuing layoffs were \u201cpart of the company\u2019s decision to end its home buying business.\u201d ([geekwire.com](https://www.geekwire.com/2021/zillow-shutter-home-buying-business-lay-off-2k-employees-big-real-estate-bet-falters/?utm_source=openai))  RealTrends likewise describes the 2,000\u2011employee layoff \u201clast November\u201d as happening \u201cafter shuttering its iBuyer operation.\u201d ([realtrends.com](https://www.realtrends.com/blog/2022/10/26/zillow-is-the-latest-firm-to-undergo-layoffs/?utm_source=openai))  A later Wall Street Journal piece summarizes that the workforce was down 28% in 2022, largely due to these layoffs tied to winding down the algorithm\u2011based home\u2011flipping business. ([wsj.com](https://www.wsj.com/articles/how-zillow-got-on-track-for-first-profitable-year-since-2012-8f79cca8?utm_source=openai))\n\nRelative to the November 2021 recording:\n- **Magnitude:** The reduction was indeed about **25% of total headcount**.  \n- **Timing:** The layoffs were announced immediately (early November 2021) and carried out over the following **several quarters/months**, which fits the prediction of cuts happening \u201cover the next few months.\u201d  \n- **Primary target:** The cuts were largely due to and focused on the **Zillow Offers iBuyer/home\u2011flipping operations**.\n\nBecause the real\u2011world outcome matches the prediction on all key points\u2014~25% workforce reduction, driven primarily by the iBuyer unit, and executed in the months following November 2021\u2014the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 736,
+          "start_index": 598,
+          "title": "Zillow to close its home-flipping division, lay off 25% of staff - Anchorage Daily News",
+          "type": "url_citation",
+          "url": "https://www.adn.com/nation-world/2021/11/02/zillow-to-close-its-home-flipping-division-lay-off-25-of-staff/?utm_source=openai"
+        },
+        {
+          "end_index": 1072,
+          "start_index": 967,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1617640/000161764022000013/R30.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1629,
+          "start_index": 1478,
+          "title": "Zillow to shutter home buying business and lay off 2,000 employees as its big real estate bet falters \u2013 GeekWire",
+          "type": "url_citation",
+          "url": "https://www.geekwire.com/2021/zillow-shutter-home-buying-business-lay-off-2k-employees-big-real-estate-bet-falters/?utm_source=openai"
+        },
+        {
+          "end_index": 1883,
+          "start_index": 1757,
+          "title": "Zillow lays off 300, pivots to \"housing super app\" - RealTrends - Blog",
+          "type": "url_citation",
+          "url": "https://www.realtrends.com/blog/2022/10/26/zillow-is-the-latest-firm-to-undergo-layoffs/?utm_source=openai"
+        },
+        {
+          "end_index": 2194,
+          "start_index": 2065,
+          "title": "How Zillow Got On Track for First Profitable Year Since 2012",
+          "type": "url_citation",
+          "url": "https://www.wsj.com/articles/how-zillow-got-on-track-for-first-profitable-year-since-2012-8f79cca8?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was accurate. On November 2, 2021\u2014just days before the podcast's November 6 release\u2014Zillow announced it was shutting down its iBuying program (Zillow Offers) and reducing its workforce by 25%, laying off approximately 2,000 employees out of a total of about 6,400-8,000, primarily from iBuyer-related roles. This matches the prediction of ~25% layoffs within a few months of the November 2021 recording, focused on iBuyer/home-flipping operations. Layoffs rolled out over several quarters into 2022 as part of the wind-down. Sources: [CNN (Nov 2, 2021)](https://www.cnn.com/2021/11/02/homes/zillow-exit-ibuying-home-business), [NPR (Nov 3, 2021)](https://www.npr.org/2021/11/03/1051941654/zillow-will-stop-buying-and-renovating-homes-and-cut-25-of-its-workforce), [GeekWire (Nov 2, 2021)](https://www.geekwire.com/2021/zillow-shutter-home-buying-business-lay-off-2k-employees-big-real-estate-bet-falters/), [CBS News (Nov 2, 2021)](https://www.cbsnews.com/news/zillow-layoffs-closing-zillow-offers-selling-homes/)."
+    },
+    {
+      "id": "B-01:09:24.590",
+      "result": "inconclusive",
+      "explanation": "Chamath\u2019s statement was explicitly conditional: if Youngkin had a successful four-year term as Virginia governor and then ran for president, he would be able to \u2018crush\u2019 the race. As of November 30, 2025, Youngkin\u2019s first and only term is still in progress and scheduled to end in January 2026, when he will be succeeded by Abigail Spanberger as governor of Virginia. ([apnews.com](https://apnews.com/article/e965bd7b3081016e2e43bf107b236b82?utm_source=openai)) He did not run for president in the 2024 cycle and repeatedly stated he would not launch a 2024 bid, focusing instead on Virginia and its legislative elections. ([fox5dc.com](https://www.fox5dc.com/news/governor-glenn-youngkin-rejects-2024-presidential-run-virginia-elections-republican-party?utm_source=openai)) Current reporting frames him only as a potential or speculative contender for 2028, not a declared candidate. ([foxnews.com](https://www.foxnews.com/politics/succeeding-trump-six-republican-potential-presidential-hopefuls-keep-your-eyes-2028?utm_source=openai)) Because the prerequisite (him actually running for president) has not occurred and no presidential race featuring Youngkin has taken place yet, there is no outcome to compare against the prediction. It is therefore too early to judge the prediction as right or wrong.",
+      "sources": [
+        {
+          "end_index": 500,
+          "start_index": 407,
+          "title": "AP Race Call: Democrat Abigail Spanberger elected Virginia governor",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/e965bd7b3081016e2e43bf107b236b82?utm_source=openai"
+        },
+        {
+          "end_index": 813,
+          "start_index": 662,
+          "title": "\u2018I\u2019m not going anywhere:\u2019 Youngkin rejects 2024 presidential run | FOX 5 DC",
+          "type": "url_citation",
+          "url": "https://www.fox5dc.com/news/governor-glenn-youngkin-rejects-2024-presidential-run-virginia-elections-republican-party?utm_source=openai"
+        },
+        {
+          "end_index": 1075,
+          "start_index": 924,
+          "title": "Trump rules out third term as Republican contenders quietly eye 2028 | Fox News",
+          "type": "url_citation",
+          "url": "https://www.foxnews.com/politics/succeeding-trump-six-republican-potential-presidential-hopefuls-keep-your-eyes-2028?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is conditional on Youngkin completing a *successful* four-year term (2022\u20132026) *and then* running for U.S. president in subsequent cycles (e.g., 2028). His term ends January 17, 2026 ([Ballotpedia](https://ballotpedia.org/Glenn_Youngkin); multiple sources), so it is not yet complete as of December 1, 2025. He did not run in 2024 ([NBC News, Nov 2023](https://www.nbcnews.com/politics/2024-election/virginia-gov-glenn-youngkin-indicates-wont-run-president-2024-rcna124233); congratulated Trump, who won ([Governor.va.gov](https://www.governor.virginia.gov/newsroom/news-releases/2024/november/name-1036012-en.html); [Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election))). No 2028 run has occurred or been announced, only speculation from 2025 Iowa/SC visits and low polling ([Axios, Jul 2025](https://www.axios.com/local/richmond/2025/07/17/youngkin-2028-presidential-speculation-iowa-trip); [Emerson Poll, Aug 2025](https://www.wric.com/news/politics/hypothetical-candidates-for-2028-presidential-race-come-into-focus-in-emerson-college-poll/)). Too early to evaluate."
+    },
+    {
+      "id": "F-01:11:43.780",
+      "result": "inconclusive",
+      "explanation": "So far, the record is mixed, and the decade is only about halfway over.\n\nKey federal outcomes so far:\n\n- **2020 cycle / start of the decade (before and just after the prediction):** Joe Biden (Democrat) won the 2020 presidential election, and Democrats held the House with a 222\u2013213 majority going into 2021. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai))  In the 117th Congress (2021\u20132023), Democrats controlled both chambers (via the vice president\u2019s tiebreak in a 50\u201350 Senate) and the presidency, i.e., a Democratic federal trifecta. ([en.wikipedia.org](https://en.wikipedia.org/wiki/117th_United_States_Congress?utm_source=openai))\n\n- **2022 midterms:** Republicans won control of the House (about 222\u2013213), while Democrats slightly expanded their effective Senate majority to 51\u201349 (including independents caucusing with them). ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections?utm_source=openai))  This produced a split Congress under a Democratic president.\n\n- **2024 elections:** Donald Trump, the Republican nominee, won the 2024 presidential election. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))  Republicans also **held the House** with a very narrow majority (around 220 seats) and **flipped the Senate** to a 53\u201347 Republican majority. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_House_of_Representatives_elections?utm_source=openai))  From January 2025 onward, Republicans therefore have a unified hold on the presidency, House, and Senate.\n\nInterpretation vs. the prediction:\n\n- The prediction was that the **2020s as a whole** would be a \"Republican decade\" in the sense of Republicans generally dominating federal elections across 2021\u20132030.\n- The **early 2020s (2021\u20132022)** were clearly dominated by Democrats at the federal level. ([en.wikipedia.org](https://en.wikipedia.org/wiki/117th_United_States_Congress?utm_source=openai))  The **mid\u20112020s (2025 onward)** currently favor Republicans, who now control the presidency and both chambers of Congress. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n- Crucially, there are still major federal elections to come in **2026, 2028, and 2030**, which will determine whether Republicans truly dominate the balance of the decade or whether control swings back toward Democrats.\n\nBecause the time period the prediction is about (roughly the entire 2020s) has **not yet concluded**, and the pattern so far is mixed\u2014Democratic dominance early, Republican dominance as of 2025\u2014the correctness of \u201cthis could be a Republican decade\u201d **cannot yet be determined.** The fairest status is therefore **\u201cinconclusive (too early).\u201d",
+      "sources": [
+        {
+          "end_index": 463,
+          "start_index": 353,
+          "title": "2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 744,
+          "start_index": 646,
+          "title": "117th United States Congress",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/117th_United_States_Congress?utm_source=openai"
+        },
+        {
+          "end_index": 1067,
+          "start_index": 944,
+          "title": "2022 United States House of Representatives elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections?utm_source=openai"
+        },
+        {
+          "end_index": 1339,
+          "start_index": 1229,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1606,
+          "start_index": 1483,
+          "title": "2024 United States House of Representatives elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_House_of_Representatives_elections?utm_source=openai"
+        },
+        {
+          "end_index": 2115,
+          "start_index": 2017,
+          "title": "117th United States Congress",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/117th_United_States_Congress?utm_source=openai"
+        },
+        {
+          "end_index": 2350,
+          "start_index": 2240,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns Republican dominance in federal elections (Congress and/or presidency) throughout roughly 2021\u20132030, but only ~4.5 years have passed by Dec 2025. Timeline: 117th Congress (2021-2023): Dem trifecta (House D 222-213, Senate D 50R-48D-2I + VP; Biden pres). 118th (2023-2025): Divided (House R 221-214, Senate D 51-49; Biden pres). 119th (2025-): GOP trifecta (House R 220-215, Senate R 53-47; Trump pres). Mixed control so far, with key elections (2026 midterms, 2028 pres) remaining. Too early to assess full decade. Sources: [Wikipedia Party divisions](https://en.wikipedia.org/wiki/Party_divisions_of_United_States_Congresses), [Ballotpedia](https://ballotpedia.org/Election_results,_2024:_U.S._Congress), [CNN/Ballotpedia 2024 results](https://www.cnn.com/election/2024/results/house), Bloomberg Govt balance of power."
+    },
+    {
+      "id": "F-01:12:55.670",
+      "result": "wrong",
+      "explanation": "The prediction was that after the November 2021 elections, Republican politicians and media would rapidly stop alleging that U.S. elections are rigged or stolen and would largely drop 2020-election-fraud rhetoric, \"overnight\" and within months (by mid\u20112022).\n\nBy mid\u20112022, that clearly had not happened:\n\n- Donald Trump was still explicitly claiming that the 2020 election was \"rigged and stolen\". On June 9, 2022, he posted on Truth Social that January 6 was about an election that was \"Rigged and Stolen,\" and PolitiFact noted he had shown \"no signs of backing down\" from that claim. ([politifact.com](https://www.politifact.com/article/2022/jun/10/jan-6-committee-trump-ignited-mob-falsely-saying-e/)) On June 19, 2022, he again described the 2020 election as \"RIGGED & STOLLEN\" in a public statement, as documented by Snopes. ([snopes.com](https://www.snopes.com/fact-check/trump-election-stollen/?utm_source=openai)) Trump is the leading Republican figure; his continued rhetoric alone contradicts the prediction.\n- High-profile Republican candidates in 2022 were still centering campaigns on false stolen\u2011election claims. For example, Arizona GOP gubernatorial candidate Kari Lake repeatedly called the 2020 election \"stolen\" and \"corrupt\" and used these claims prominently in a June 2022 primary debate. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kari_Lake?utm_source=openai))\n- Systematic analyses of 2022 midterm candidates show election\u2011denial rhetoric remained widespread well past mid\u20112022. CBS News found that, as of early November 2022, 308 of 597 Republican federal and statewide candidates had raised unfounded doubts about the 2020 election, including many who explicitly said it was stolen or rigged. ([cbsnews.com](https://www.cbsnews.com/news/republican-candidates-trump-2020-election-doubts/)) The Washington Post similarly reported nearly 300 GOP \"election deniers\" on the 2022 ballot, noting that the movement arising from Trump\u2019s effort to overturn 2020 was, in many respects, even stronger two years later. ([washingtonpost.com](https://www.washingtonpost.com/nation/2022/10/06/elections-deniers-midterm-elections-2022/?utm_source=openai)) Academic work from Stanford also characterizes 2022 as a cycle in which a large share of Republican statewide candidates questioned or denied the 2020 results. ([gsb.stanford.edu](https://www.gsb.stanford.edu/insights/voters-punished-candidates-who-pushed-election-fraud-claims-2022?utm_source=openai))\n\nBecause prominent Republican politicians and a substantial share of GOP candidates were still actively using 2020 stolen\u2011election rhetoric well into and beyond mid\u20112022, the forecast that such claims would quickly stop and effectively disappear was not borne out.",
+      "sources": [
+        {
+          "end_index": 749,
+          "start_index": 631,
+          "title": "PolitiFact | Trump\u2019s own advisers add to evidence that election wasn\u2019t stolen",
+          "type": "url_citation",
+          "url": "https://www.politifact.com/article/2022/jun/10/jan-6-committee-trump-ignited-mob-falsely-saying-e/"
+        },
+        {
+          "end_index": 968,
+          "start_index": 877,
+          "title": "'Rigged and Stollen': Did Trump Accidentally Reference Fruitcake in Election Rant? | Snopes.com",
+          "type": "url_citation",
+          "url": "https://www.snopes.com/fact-check/trump-election-stollen/?utm_source=openai"
+        },
+        {
+          "end_index": 1442,
+          "start_index": 1363,
+          "title": "Kari Lake",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Kari_Lake?utm_source=openai"
+        },
+        {
+          "end_index": 1874,
+          "start_index": 1779,
+          "title": "\n    Over half of Republicans running for federal, statewide office have raised unfounded doubts about 2020 election - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/republican-candidates-trump-2020-election-doubts/"
+        },
+        {
+          "end_index": 2226,
+          "start_index": 2094,
+          "title": "Over half the GOP candidates running in 2022 are election deniers - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/nation/2022/10/06/elections-deniers-midterm-elections-2022/?utm_source=openai"
+        },
+        {
+          "end_index": 2529,
+          "start_index": 2387,
+          "title": "Voters \u201cPunished\u201d Candidates Who Pushed Election Fraud Claims in 2022 | Stanford Graduate School of Business",
+          "type": "url_citation",
+          "url": "https://www.gsb.stanford.edu/insights/voters-punished-candidates-who-pushed-election-fraud-claims-2022?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction failed: Republicans did not stop 2020 election fraud rhetoric by mid-2022. Trump repeated false stolen election claims into 2022, e.g., July 26 speech ([PBS](https://www.pbs.org/newshour/politics/trump-repeats-false-election-fraud-claims-during-speech-in-washington)). By July 18, 2022, \u2265120 GOP nominees denied 2020 results ([FiveThirtyEight](https://fivethirtyeight.com/features/at-least-120-republicans-who-deny-the-2020-election-results-will-be-on-the-ballot-in-november/)). >220 such candidates won midterms ([NYT](https://www.nytimes.com/interactive/2022/11/09/us/politics/election-misinformation-midterms-results.html)). Election deniers toured spreading claims in June 2022 ([NPR](https://www.npr.org/2022/06/30/1107868327/trump-election-fraud-jan-6)). Rhetoric persisted ([Wikipedia](https://en.wikipedia.org/wiki/Election_denial_movement_in_the_United_States))."
+    },
+    {
+      "id": "F-01:13:40.000",
+      "result": "right",
+      "explanation": "The prediction was that, after the November 2021 elections, the bipartisan federal infrastructure bill would \"sail through\" Congress without serious further obstruction from progressives.\n\nKey facts:\n\n- The bill in question is the **Infrastructure Investment and Jobs Act (IIJA)**, also known as the bipartisan infrastructure bill or Bipartisan Infrastructure Law.\n- It had already passed the Senate on August 10, 2021, but was being held up in the House in a standoff between moderates and progressives, with progressives tying it to the larger Build Back Better reconciliation bill. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Infrastructure_Investment_and_Jobs_Act?utm_source=openai))\n- After the off\u2011year elections on November 2, 2021, the House brought the IIJA to a final vote on **November 5, 2021**, just three days later. The bill passed 228\u2013206, with 13 Republicans joining most Democrats. Only six progressive Democrats (\u201cthe Squad\u201d and allies) voted no and did not succeed in blocking the bill. ([theguardian.com](https://www.theguardian.com/us-news/2021/nov/05/biden-spending-bill-vote-build-back-better-package-latest?utm_source=openai))\n- Once the House agreed to the Senate version on November 5, the bill\u2019s congressional journey was complete; President Biden signed it into law on **November 15, 2021**. There was no additional congressional obstruction from progressives after that point, since no further votes on the IIJA itself were required. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Infrastructure_Investment_and_Jobs_Act?utm_source=openai))\n\nInterpretation relative to the prediction:\n\n- **\u201cSail through\u201d / \u201cpass quickly\u201d after the election:** The last needed congressional action (House passage of the Senate bill) happened almost immediately after the November 2 elections\u2014on November 5\u2014after months of prior delay. That matches the prediction that, in the wake of the elections, it would move quickly.\n- **\u201cWithout serious further obstruction from progressives\u201d:** Progressives had been *the* main source of obstruction before the elections by refusing to pass the infrastructure bill without simultaneous action on Build Back Better. After the elections, they allowed the infrastructure bill to come to a vote and did not use procedural tactics to stop it. A small group of six progressives voted \"no,\" but the bill passed comfortably with bipartisan support, and their opposition did not create any new or effective obstruction. ([commondreams.org](https://www.commondreams.org/news/2021/11/05/solid-no-progressives-reject-pelosi-push-pass-bipartisan-bill-without-build-back?utm_source=openai))\n\nBecause the bill did indeed pass very quickly after the elections and there was no *successful* or prolonged new obstruction from progressives in that post\u2011election window, the prediction is best characterized as **right**.",
+      "sources": [
+        {
+          "end_index": 733,
+          "start_index": 625,
+          "title": "Infrastructure Investment and Jobs Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Infrastructure_Investment_and_Jobs_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1198,
+          "start_index": 1054,
+          "title": "Democrats pass Joe Biden\u2019s $1tn infrastructure bill after chaotic day | US politics | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2021/nov/05/biden-spending-bill-vote-build-back-better-package-latest?utm_source=openai"
+        },
+        {
+          "end_index": 1620,
+          "start_index": 1512,
+          "title": "Infrastructure Investment and Jobs Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Infrastructure_Investment_and_Jobs_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2686,
+          "start_index": 2521,
+          "title": "'Solid No': Progressives Reject Pelosi Push to Pass Bipartisan Bill Without Build Back Better | Common Dreams",
+          "type": "url_citation",
+          "url": "https://www.commondreams.org/news/2021/11/05/solid-no-progressives-reject-pelosi-push-pass-bipartisan-bill-without-build-back?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was correct. The November 2021 elections occurred on November 2 (e.g., Virginia gubernatorial race, a Democratic loss seen as a setback). The Infrastructure Investment and Jobs Act passed the House on November 5, 2021 (228-206 vote), just 3 days later, after prior progressive demands to link it to the Build Back Better Act. Progressives had signaled support by October 31, and a deal between progressives and moderates resolved tensions on November 5, ending the standoff ([Wikipedia](https://en.wikipedia.org/wiki/Infrastructure_Investment_and_Jobs_Act); [Congress.gov](https://www.congress.gov/bill/117th-congress/house-bill/3684/actions)). Six progressives ('the Squad') voted no, but no serious further obstruction occurred; it was signed into law November 15. The Virginia loss pressured Democrats to act quickly ([POLITICO Nov 3, 2021](https://www.politico.com/news/2021/11/03/democrats-virginia-congress-519051); [NPR Nov 3, 2021](https://www.npr.org/2021/11/03/1051905163/election-losses-spook-democrats-dems-blew-the-timing-on-infrastructure))."
+    },
+    {
+      "id": "F-01:14:57.170",
+      "result": "wrong",
+      "explanation": "Democrats did not lose anywhere near **40\u201350 House seats** in the 2022 midterms. In the 2020 election they held **222 seats**; after the 2022 elections they held **213**, a net loss of **9 seats**, not 40\u201350. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections?utm_source=openai))\n\nAlthough Sacks framed this as conditional on Biden continuing to let Bernie Sanders and Elizabeth Warren \"dominate the agenda,\" we can still evaluate the measurable part of the prediction (the size of the House losses). Regardless of how one judges that policy condition, the forecasted outcome (40\u201350 lost seats) clearly did **not** occur, so the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 365,
+          "start_index": 242,
+          "title": "2022 United States House of Representatives elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Democrats held 222 seats in the U.S. House before the 2022 midterms and 213 afterward, a net loss of 9 seats to Republicans (sources: [Ballotpedia](https://ballotpedia.org/Election_results%2C_2022:_U.S._House), [Wikipedia](https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections)). This falls far short of the predicted 40\u201350 seat losses. Whether Sanders and Warren 'dominated' Biden's agenda is debatable (e.g., progressive influence noted in [WaPo](https://www.washingtonpost.com/opinions/2022/12/29/elizabeth-warren-ideas-biden-presidency/) and [Guardian](https://www.theguardian.com/us-news/2023/feb/27/bernie-sanders-biden-influence-progressives), but progressives expressed frustration), but the outcome did not match the prediction."
+    },
+    {
+      "id": "F-00:47:19.920",
+      "result": "wrong",
+      "explanation": "Republicans did win control of the U.S. House in the November 2022 midterms, but their *net* seat gain was only **9 seats**, not the roughly **44\u201351 seat** pickup that Sacks cited and implicitly endorsed.\n\nIn 2020, Republicans held 213 seats and Democrats 222. After the 2022 elections, Republicans held **222 seats** to Democrats\u2019 **213**, for a GOP net gain of **+9 seats**\u2014just four seats over the 218 needed for a majority. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections?utm_source=openai))\n\nSo while the **direction** (Republicans win the House) was correct, the **core quantitative claim** in the normalized prediction\u2014gains on the order of 44\u201351 seats\u2014was off by more than 30 seats. Because that magnitude was central to the prediction (a big \"red wave\" versus the very narrow majority that actually occurred), the prediction is best judged as **wrong**.",
+      "sources": [
+        {
+          "end_index": 586,
+          "start_index": 463,
+          "title": "2022 United States House of Representatives elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "In the 2020 elections, Republicans held 213 seats in the U.S. House ([Wikipedia 2020 House elections](https://en.wikipedia.org/wiki/2020_United_States_House_of_Representatives_elections), [NYT](https://www.nytimes.com/interactive/2020/11/03/us/elections/results-house.html)). After the 2022 midterms, Republicans held 222 seats, a net gain of 9 seats, while Democrats held 213 ([Wikipedia 2022 House elections](https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections), [Ballotpedia](https://ballotpedia.org/Election_results,_2022:_U.S._House)). This falls far short of the predicted 44\u201351 seat gain."
+    }
+  ]
+}

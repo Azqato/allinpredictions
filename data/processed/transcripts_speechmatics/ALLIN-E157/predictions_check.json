@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "count": 6,
+    "count_by_result": {
+      "wrong": 2,
+      "ambiguous": 1,
+      "right": 2,
+      "inconclusive": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:14:30.000",
+      "result": "wrong",
+      "explanation": "Key elements of Friedberg\u2019s prediction were:\n\n1. **Google would likely win on appeal of the Epic v. Google Play Store antitrust verdict.**\n2. **As a result, there would be no massive change to Play Store business practices or economics (\"nothing burger\").**\n\nWhat actually happened:\n\n- Google did appeal, but on **July 31, 2025 the Ninth Circuit unanimously affirmed the 2023 jury verdict and the permanent injunction**, rejecting Google\u2019s arguments and upholding findings that Google unlawfully maintained monopoly power in Android app distribution and in\u2011app billing. ([cnbc.com](https://www.cnbc.com/2025/07/31/google-loses-appeal-over-app-store.html?utm_source=openai))\n- The district court\u2019s **October 7, 2024 injunction** (three years, Nov 1, 2024\u2013Nov 1, 2027) requires Google to:\n  - Allow developers to steer users to alternative billing and distribution channels and provide links/info about them.\n  - Stop conditioning benefits on Play Store exclusivity or preinstallation deals that crowd out rival stores.\n  - Permit rival Android app stores to access the Play Store\u2019s app catalog and to be distributed through the Play Store itself.\n  These are major structural changes to how the Play Store operates. ([caselaw.findlaw.com](https://caselaw.findlaw.com/court/us-9th-circuit/117554724.html?utm_source=openai))\n- On appeal, the Ninth Circuit **specifically upheld this injunctive relief**, confirming that these reforms were a valid remedy for Google\u2019s antitrust violations. ([law.justia.com](https://law.justia.com/cases/federal/appellate-courts/ca9/24-6256/24-6256-2025-07-31.html?utm_source=openai))\n- Google sought to pause or narrow the injunction, but the Ninth Circuit **denied Google\u2019s request for a stay** pending further appeals, and set the injunction on course to take effect, with implementation deadlines into late 2025 (e.g., an October 29, 2025 deadline to open the store, allow alternative billing, and let developers set their own prices). ([reuters.com](https://www.reuters.com/world/us-appeals-court-declines-google-bid-further-pause-play-store-overhaul-epic-2025-09-12/?utm_source=openai))\n- By late 2025, Epic announced that the **Epic Games Store will be available within Google Play**, and reporting describes the ruling as potentially reshaping the Android app ecosystem. ([androidcentral.com](https://www.androidcentral.com/apps-software/google-play-store/epic-games-for-android-available-google-store-ninth-circuit-ruling?utm_source=openai))\n- In November 2025, Epic and Google announced a **proposed settlement** under which Google would reduce its standard Play Store cut to around **9\u201320%** and formally allow third\u2011party stores like Epic\u2019s as recognized app stores on Android worldwide\u2014changes significant enough that Judge Donato questioned whether the deal adequately addresses the jury\u2019s liability findings. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Epic_Games_v._Google?utm_source=openai))\n\nThese outcomes directly contradict the prediction: Google **did not** win the key appeal, and the case has already driven\u2014or is in the process of driving\u2014substantial changes to both **Play Store business practices** (catalog sharing, rival stores within Play, alternative billing, anti\u2011steering, limits on exclusive deals) and **economics** (lower take rates in the proposed settlement). That is the opposite of a \"nothing burger\" with \u201cno massive change.\u201d\n\nTherefore, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 715,
+          "start_index": 612,
+          "title": "Google loses appeal over app store reforms in Epic Games case",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/07/31/google-loses-appeal-over-app-store.html?utm_source=openai"
+        },
+        {
+          "end_index": 1368,
+          "start_index": 1262,
+          "title": "IN RE: GOOGLE PLAY STORE ANTITRUST LITIGATION (2025) | FindLaw",
+          "type": "url_citation",
+          "url": "https://caselaw.findlaw.com/court/us-9th-circuit/117554724.html?utm_source=openai"
+        },
+        {
+          "end_index": 1661,
+          "start_index": 1534,
+          "title": "EPIC GAMES, INC. V. GOOGLE LLC, ET AL., No. 24-6256 (9th Cir. 2025) :: Justia",
+          "type": "url_citation",
+          "url": "https://law.justia.com/cases/federal/appellate-courts/ca9/24-6256/24-6256-2025-07-31.html?utm_source=openai"
+        },
+        {
+          "end_index": 2170,
+          "start_index": 2018,
+          "title": "US appeals court declines Google bid to further pause Play store overhaul in Epic Games case",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us-appeals-court-declines-google-bid-further-pause-play-store-overhaul-epic-2025-09-12/?utm_source=openai"
+        },
+        {
+          "end_index": 2529,
+          "start_index": 2358,
+          "title": "Epic Games for Android will be available on Google Store following court ruling",
+          "type": "url_citation",
+          "url": "https://www.androidcentral.com/apps-software/google-play-store/epic-games-for-android-available-google-store-ninth-circuit-ruling?utm_source=openai"
+        },
+        {
+          "end_index": 2994,
+          "start_index": 2904,
+          "title": "Epic Games v. Google",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Epic_Games_v._Google?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Google did appeal the December 2023 verdict but lost at the Ninth Circuit Court of Appeals, which unanimously upheld the jury verdict and permanent injunction on July 31, 2025 ([Reuters](https://www.reuters.com/legal/litigation/google-loses-us-appeal-over-app-store-reforms-epic-games-case-2025-07-31/), [AP News](https://apnews.com/article/google-antitrust-android-apps-appeal-ceba472d6882c413967f512f2dc56067), [Wikipedia](https://en.wikipedia.org/wiki/Epic_Games_v._Google)). Google petitioned the Supreme Court for certiorari on October 27, 2025 (response due November 28; pending as of December 1) ([SCOTUSblog](https://www.scotusblog.com/cases/case-files/google-llc-v-epic-games-inc-2/)). SCOTUS denied an emergency stay in October 2025. The injunction requires Play Store changes like allowing rival app stores and billing ([CNBC, Oct 2024](https://www.cnbc.com/2024/10/07/google-ordered-to-open-android-app-store-in-epic-games-case.html)). Google and Epic proposed a November 2025 settlement capping fees at 9-20% (vs. 30%), enhancing third-party stores; court approval pending and judge expressed doubts ([Ars Technica](https://arstechnica.com/gadgets/2025/11/google-settlement-with-epic-caps-play-store-fees-boosts-other-android-app-stores/), [GameDeveloper](https://www.gamedeveloper.com/business/california-court-postpones-approval-of-proposed-settlement-between-epic-games-and-google)). These mandate changes to practices, contra prediction. Play Store revenue stable/growing (~$47-50B in 2023-2024, projections $60B+ 2025; no Epic-related drop) ([Business of Apps](https://www.businessofapps.com/data/google-play-statistics/), [Appinventiv](https://appinventiv.com/blog/google-play-store-statistics/)), Alphabet total revenue up ($307B 2023 to $350B 2024; Q3 2025 $102B) ([Alphabet earnings](https://s206.q4cdn.com/479360582/files/doc_financials/2025/q3/2025q3-alphabet-earnings-release.pdf)). No *massive* economic change, but failed to 'win on appeal' and changes required, making prediction wrong."
+    },
+    {
+      "id": "A-00:32:21.000",
+      "result": "wrong",
+      "explanation": "The prediction requires that **The Walt Disney Company itself** launch a commercial, DALL\u00b7E/Stable\u2011Diffusion\u2011style *image* generator that lets users create customized images using Disney IP, e.g., \u201cput yourself as a Star Wars character.\u201d\n\nWhat we actually see by November 30, 2025:\n\n- There is **no record** in major news, trade press, or Disney communications of Disney launching any public generative *image* product that allows consumers to generate images of themselves or others as Star Wars/Marvel/Disney characters. My searches instead surface only unaffiliated \u201cDisney-style\u201d or \u201cStar Wars-style\u201d avatar tools provided by third parties, not by Disney. ([nanoeditor.app](https://nanoeditor.app/disney-style-generator?utm_source=openai))\n- Disney\u2019s public posture has gone in the opposite direction: the company has filed a landmark lawsuit against Midjourney precisely for enabling users to generate images of characters like Darth Vader, Elsa, and others without authorization, describing Midjourney as a copyright \u201cfree\u2011rider\u201d and seeking to stop such uses. ([cnbc.com](https://www.cnbc.com/2025/06/11/disney-universal-midjourney-ai-copyright.html?utm_source=openai)) This makes it even less likely they have quietly launched their own open IP-generating tool for the public.\n- Disney does use generative/AI techniques **internally** (e.g., high\u2011resolution face\u2011swap tech for VFX, and alleged AI\u2011generated Oogie Boogie Bash marketing art), but these are production tools and assets, not a consumer-facing, DALL\u00b7E\u2011like image product. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Deepfake?utm_source=openai))\n- In late 2025, Bob Iger discussed future plans for Disney+ to let subscribers create **AI\u2011generated videos** and other short-form user content, via partnerships with generative\u2011AI providers. That feature is framed as upcoming video functionality on Disney+, not as a launched standalone text\u2011to\u2011image service, and the reporting does not specify an official \u201cput yourself as a Star Wars character\u201d image tool. ([gamesradar.com](https://www.gamesradar.com/entertainment/disney-plus/disney-plus-to-start-letting-subscribers-create-user-generated-ai-content-ceo-bob-iger-reveals-and-disney-is-really-excited-about-it/))\n\nGiven (1) the absence of any credible evidence of a Disney\u2011run, DALL\u00b7E\u2011like *image* generator using Disney IP for public self\u2011insert avatars, and (2) nearly two years having passed since the December 2023 prediction, it has **not** come true.",
+      "sources": [
+        {
+          "end_index": 780,
+          "start_index": 697,
+          "title": "Disney Style AI: Free Disney Style Image Generator | NanoEditor",
+          "type": "url_citation",
+          "url": "https://nanoeditor.app/disney-style-generator?utm_source=openai"
+        },
+        {
+          "end_index": 1214,
+          "start_index": 1105,
+          "title": "Disney and Universal sue Midjourney for AI copyright infringement",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/06/11/disney-universal-midjourney-ai-copyright.html?utm_source=openai"
+        },
+        {
+          "end_index": 1659,
+          "start_index": 1581,
+          "title": "Deepfake",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Deepfake?utm_source=openai"
+        },
+        {
+          "end_index": 2277,
+          "start_index": 2071,
+          "title": "Disney Plus to start letting subscribers create user-generated AI content, CEO Bob Iger reveals, and Disney is \"really excited\" about it | GamesRadar+",
+          "type": "url_citation",
+          "url": "https://www.gamesradar.com/entertainment/disney-plus/disney-plus-to-start-letting-subscribers-create-user-generated-ai-content-ceo-bob-iger-reveals-and-disney-is-really-excited-about-it/"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence of Disney launching its own commercial generative image product like DALL\u00b7E or Stable Diffusion using Disney IP (e.g., Star Wars characters for custom images like 'put yourself as a Star Wars character'). Searches reveal Disney sued Midjourney in June 2025 for unauthorized AI generation of its characters ([Hollywood Reporter](https://www.hollywoodreporter.com/business/digital/disney-plus-gen-ai-user-generated-content-1236426135/), [CNBC](https://www.cnbc.com/amp/2025/06/11/disney-universal-midjourney-ai-copyright.html)). Recent Nov 2025 announcements indicate Disney+ is testing/rolling out AI for **short-form video** user-generated content with IP, but not images, not fully launched by Dec 1, 2025, and via AI partners ([IGN](https://www.ign.com/articles/disney-will-soon-feature-ai-generated-user-content), [Hollywood Reporter](https://www.hollywoodreporter.com/business/digital/disney-plus-gen-ai-user-generated-content-1236426135/)). No official Disney site mentions such a tool. Enough time (2 years) has passed without fulfillment."
+    },
+    {
+      "id": "A-00:56:01.360",
+      "result": "ambiguous",
+      "explanation": "Jason was reacting to the FCC\u2019s decision in December 2023 to *deny* Starlink roughly $885\u2013886M in Rural Digital Opportunity Fund (RDOF) subsidies, which were intended to finance future rural build\u2011outs, not to pay for existing end\u2011user subscriptions. That ruling reaffirmed an earlier 2022 revocation of the provisional award. It did **not** cut off service to a cohort of current Starlink customers; it simply meant Starlink would not receive that public money to expand to 642,000 planned rural locations.([irepod.com](https://irepod.com/podcast/all-in-with-chamath-palihapitiya-jason-calacanis/e157-epic-legal-win-openai-licensing-deals-fcc-tar?utm_source=openai))\n\nSeparately, the main U.S. household internet subsidy\u2014the Affordable Connectivity Program (ACP)\u2014ended on June 1, 2024 after connecting over 23 million low\u2011income households.([congress.gov](https://www.congress.gov/crs-product/IF12637?utm_source=openai))  However, multiple independent consumer and Starlink\u2011focused sources agree that Starlink either never meaningfully participated in ACP or was at most briefly/nominally listed and then removed; in practice, Starlink customers did not receive ACP discounts at scale.([highspeedinternet.com](https://www.highspeedinternet.com/resources/starlink-low-income-internet?utm_source=openai))  That means there is no well\u2011documented, sizeable group of *\u201crural customers whose government\u2011subsidized Starlink service was canceled\u201d* to study.\n\nWhere we *do* have data is for non\u2011Starlink ISPs: FCC surveys and independent analyses found that when ACP funding lapsed, roughly three\u2011quarters of participating low\u2011income households expected to change or drop their internet service rather than keep paying full price, and providers like Comcast in fact lost tens of thousands of ACP\u2011linked broadband customers when the subsidy ended.([route-fifty.com](https://www.route-fifty.com/digital-government/2024/02/more-17m-low-income-households-will-experience-service-disruptions-if-internet-subsidy-ends/394581/?utm_source=openai))  Meanwhile, Starlink\u2019s global subscriber count rose sharply from about 2.2 million in December 2023 to around 8 million by late 2025, with a large share of its base in rural areas, but those aggregate figures don\u2019t tell us *who* subscribed or whether they were formerly government\u2011funded users.([en.wikipedia.org](https://en.wikipedia.org/wiki/Starlink?utm_source=openai))\n\nBecause (1) the specific population Jason describes (rural users whose *Starlink* was canceled due to a U.S. subsidy program) is not clearly identifiable or sizable in the real data, and (2) we lack provider\u2011level evidence on what such users actually did afterward, his prediction about that group\u2019s behavior cannot be directly evaluated from available information. Hence the outcome is **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 704,
+          "start_index": 544,
+          "title": "E157: Epic legal win, OpenAI licensing deals, FCC targets Elon, Alex Jones reinstated & more \u2013 All-In with Chamath, Jason, Sacks & Friedberg",
+          "type": "url_citation",
+          "url": "https://irepod.com/podcast/all-in-with-chamath-palihapitiya-jason-calacanis/e157-epic-legal-win-openai-licensing-deals-fcc-tar?utm_source=openai"
+        },
+        {
+          "end_index": 960,
+          "start_index": 880,
+          "title": "The End of the Affordable Connectivity Program: Options for Consumers and Congress | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/crs-product/IF12637?utm_source=openai"
+        },
+        {
+          "end_index": 1342,
+          "start_index": 1225,
+          "title": "Does Starlink Offer Low-Income Internet? | HighSpeedInternet.com",
+          "type": "url_citation",
+          "url": "https://www.highspeedinternet.com/resources/starlink-low-income-internet?utm_source=openai"
+        },
+        {
+          "end_index": 2072,
+          "start_index": 1879,
+          "title": "More than 17M low-income households will experience service disruptions if internet subsidy ends - Route Fifty",
+          "type": "url_citation",
+          "url": "https://www.route-fifty.com/digital-government/2024/02/more-17m-low-income-households-will-experience-service-disruptions-if-internet-subsidy-ends/394581/?utm_source=openai"
+        },
+        {
+          "end_index": 2445,
+          "start_index": 2367,
+          "title": "Starlink",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Starlink?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction assumes rural customers had government-subsidized Starlink service canceled around December 2023 (FCC RDOF reaffirmation). However, no such cancellations occurred. Starlink's RDOF application was rejected in August 2022 (reaffirmed December 2023) before any subsidized deployments or service in those ~642,000 locations; subsidies were never disbursed, so no existing customers lost service. ([FCC.gov](https://www.fcc.gov/document/fcc-reaffirms-decision-reject-starlink-application-nearly-900-million-subsidies), [The Verge 2023](https://www.theverge.com/2023/12/12/23999070/spacex-starlink-fcc-rural-digital-opportunity-fund-fcc-rejected), [TechCrunch 2023](https://techcrunch.com/2023/12/12/fcc-issues-final-denial-of-885m-starlink-subsidy/)). No evidence of affected customers resubscribing, as none existed. Starlink rural adoption grew anyway (e.g., US users >2M by 2025, speeds doubled per Ookla), but the specific prediction failed. ([Broadband Breakfast 2025](https://broadbandbreakfast.com/with-8-million-users-globally-starlink-likely-seventh-largest-fixed-u-s-isp/), [Ookla 2025](https://www.ookla.com/articles/starlink-us-performance-2025))."
+    },
+    {
+      "id": "G-01:29:15.400",
+      "result": "right",
+      "explanation": "Claudine Gay resigned as president of Harvard University on January 2, 2024, less than seven months into her tenure and well within one year of the December 16, 2023 podcast episode.\n\nMultiple outlets report that Gay stepped down on January 2, 2024, amid controversy over her congressional testimony on antisemitism and allegations of plagiarism, with Harvard\u2019s provost Alan Garber becoming interim president.([cnbc.com](https://www.cnbc.com/2024/01/02/harvard-university-president-claudine-gay-resigning-her-post-reports-say.html?utm_source=openai))  Her resignation letter confirms that she was \u201cstepping down as president\u201d and returning to the faculty.([theguardian.com](https://www.theguardian.com/education/2024/jan/02/harvard-president-claudine-gay-resignation-letter?utm_source=openai))\n\nChamath\u2019s prediction had two branches:\n\n1. **Short-term**: She \u201cprobably won\u2019t be in that job in a year from now.\u201d  \n2. **Medium-term**: Alternatively, she would \u201cmuddle along\u201d and in 2\u20133 years retire under a face\u2011saving narrative (e.g., to spend more time with family).\n\nReality matched the first branch: she did not remain in the job for even one year after the episode; instead she resigned within a few weeks. The exact *framing* of the resignation (institutional controversy rather than a bland \u201cmore time with family\u201d narrative) corresponds to the second, alternative branch that did *not* occur, but that does not affect the correctness of the primary, time-bounded prediction.\n\nBecause Gay indeed left the presidency well before one year had elapsed, the prediction that she would not be in the job a year later was **right**.",
+      "sources": [
+        {
+          "end_index": 585,
+          "start_index": 444,
+          "title": "Harvard University President Claudine Gay resigns",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/01/02/harvard-university-president-claudine-gay-resigning-her-post-reports-say.html?utm_source=openai"
+        },
+        {
+          "end_index": 828,
+          "start_index": 690,
+          "title": "Harvard president Claudine Gay\u2019s resignation letter in full | Harvard University | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/education/2024/jan/02/harvard-president-claudine-gay-resignation-letter?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Claudine Gay resigned as Harvard President on January 2, 2024, less than three weeks after the December 16, 2023 podcast episode\u2014well within the predicted 'about 1 year' timeframe. This matches Chamath's primary suspicion that 'she probably won't be in that job in a year from now.' Sources: [Harvard Crimson (Jan 3, 2024)](https://www.thecrimson.com/article/2024/1/3/claudine-gay-resign-harvard/), [NYT (Jan 2, 2024)](https://www.nytimes.com/2024/01/02/us/harvard-claudine-gay-resigns.html), [Wikipedia](https://en.wikipedia.org/wiki/Claudine_Gay), [CNN timeline (Jan 2, 2024)](https://www.cnn.com/2024/01/02/business/timeline-harvard-president-claudine-gay-resignation). She cited plagiarism accusations and criticism over antisemitism testimony, not family time (which was only framed for the 2-3 year scenario). As of 2025, she is no longer president but a professor on leave ([Harvard AAAS page](https://aaas.fas.harvard.edu/people/claudine-gay), [MassLive Sep 19, 2025](https://www.masslive.com/news/2025/09/claudine-gay-harvards-former-president-breaks-silence-over-trump-harvard-battle.html))."
+    },
+    {
+      "id": "Taleb-01:25:35.860",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, the Russia\u2013Ukraine war is still ongoing. There has not been:\n\n- A comprehensive **negotiated political settlement** ending the conflict; instead there have been intermittent talks and proposals but no final peace agreement or formal armistice that resolves the war.\n- A **decisive Ukrainian military victory** that restores all internationally recognized Ukrainian territory and compels Russia to accept defeat.\n- A **regime collapse in Moscow**; Vladimir Putin and the current Russian leadership remain in power, and Russia continues to sustain large-scale military operations and defense production despite sanctions.\n\nCurrent reporting characterizes the war as a prolonged, high-intensity conflict with shifting front lines, continued Russian missile and drone attacks on Ukrainian infrastructure, and ongoing Western military and economic support to Ukraine; analysts widely describe it as a war of attrition rather than a concluded conflict. These facts show that Taleb\u2019s core premise about Russian staying power has, so far, not been falsified, but his *specific prediction about the eventual form of the war\u2019s end (a negotiated settlement rather than a decisive Ukrainian victory or regime collapse)* concerns an outcome that has **not yet occurred** either way.\n\nBecause the war has not ended and none of the mutually exclusive end\u2011states Taleb contrasted (negotiated settlement vs. decisive Ukrainian victory vs. regime collapse) has actually materialized yet, it is **too early** to say whether his prediction about the *eventual* outcome is correct. The available evidence only shows that the conflict is prolonged and Russia has indeed maintained substantial military and economic staying power, but that is intermediate evidence, not the final outcome.\n\nTherefore, the correct classification as of November 30, 2025 is: **inconclusive (too early to tell).**",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "As of December 1, 2025, the Russia-Ukraine war remains ongoing with no negotiated settlement reached. Peace talks are active, including US-proposed 28-point (revised to 19-point) plans discussed in Geneva, Abu Dhabi, and Florida, involving Trump envoys, Zelenskyy, and Russian officials. US Secretary of State Rubio described recent US-Ukraine talks as 'very productive' but noted 'much work to do' ([ISW Nov 30, 2025](https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-30-2025/); [CNN Dec 1, 2025](https://www.cnn.com/2025/12/01/europe/us-ukraine-talks-russia-war-analysis-intl-hnk)). Russian forces continue offensives, with no decisive Ukrainian victory or Moscow regime collapse ([Wikipedia Peace Negotiations](https://en.wikipedia.org/wiki/Peace_negotiations_in_the_Russo-Ukrainian_war_(2022%E2%80%93present))). Russia shows staying power, but 'eventually' has not materialized yet, making it too early to confirm."
+    },
+    {
+      "id": "G-01:34:25.560",
+      "result": "right",
+      "explanation": "Uber\u2019s stock traded below $70 around mid\u2011December 2023 (e.g., closing at about $62 on December 15, 2023), so Chamath\u2019s reference price of \u201caround 70\u201d is in the right neighborhood.([statmuse.com](https://www.statmuse.com/money/ask/uber-stock-price-in-december-2023?utm_source=openai))  Historical price data show that on April 5, 2024, Uber closed at roughly $77.16, clearly above the $76 level specified in the prediction and well within a few months of the December 16, 2023 recording.([marketwatch.com](https://www.marketwatch.com/data-news/uber-technologies-inc-stock-rises-friday-outperforms-market-4d7c37b5-31536a72bc40?utm_source=openai))  Annual data for 2024 also record a year high of about $86.34, confirming that the stock traded comfortably above $76 during that year.([macrotrends.net](https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/stock-price-history?utm_source=openai))  By late 2025, Uber\u2019s share price remains in the mid\u2011$80s, further underscoring that the stock surpassed and stayed above the predicted threshold within the 1\u20132 year \u201cmarket cycle\u201d window.([macrotrends.net](https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/stock-price-history?utm_source=openai))  Since the specific quantitative target (\u2265$76) was reached relatively quickly after the prediction and well within the implied horizon, this prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 316,
+          "start_index": 212,
+          "title": "Uber Stock Price In December 2023 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/uber-stock-price-in-december-2023?utm_source=openai"
+        },
+        {
+          "end_index": 677,
+          "start_index": 519,
+          "title": "Uber Technologies Inc. stock rises Friday, outperforms market",
+          "type": "url_citation",
+          "url": "https://www.marketwatch.com/data-news/uber-technologies-inc-stock-rises-friday-outperforms-market-4d7c37b5-31536a72bc40?utm_source=openai"
+        },
+        {
+          "end_index": 936,
+          "start_index": 813,
+          "title": "Uber Technologies - 6 Year Stock Price History | UBER | MacroTrends",
+          "type": "url_citation",
+          "url": "https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/stock-price-history?utm_source=openai"
+        },
+        {
+          "end_index": 1248,
+          "start_index": 1125,
+          "title": "Uber Technologies - 6 Year Stock Price History | UBER | MacroTrends",
+          "type": "url_citation",
+          "url": "https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/stock-price-history?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Uber's stock was around $62 on Dec 14, 2023 (nearest to podcast date; Macrotrends.net), despite podcast's ~$70 approximation. It rose above $76 shortly after, with Feb 2024 monthly close ~$79.50 (Digrin.com), Mar 2024 intraday/closes near $77 (FullRatio.com). Peaked at all-time high closing $100.10 on Oct 6, 2025 (Macrotrends.net, CompaniesMarketCap.com), and 52-week high $101.99 (Macrotrends). Recent closes: $87.54 on Nov 28, 2025 (Nasdaq.com); ~$87.40 (StatMuse.com). Exceeded $76 multiple times within 1-2 years (Yahoo Finance historical data confirms from Feb 2025, but earlier sources show 2024). Prediction fulfilled."
+    }
+  ]
+}

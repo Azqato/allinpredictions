@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "count": 9,
+    "count_by_result": {
+      "inconclusive": 1,
+      "right": 4,
+      "wrong": 4
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:50:45.610",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, the time horizon of the prediction (\u201cwithin the next several years\u201d) has *not* elapsed, so it\u2019s too early to judge its long\u2011term accuracy.\n\n**Reddit:** Reddit went public on March 21, 2024, and continues to operate as an independent public company (ticker RDDT). Recent coverage and filings describe it as a standalone public firm with a diversified institutional shareholder base, ongoing earnings reports, and strategic partnerships, not as a subsidiary that has been acquired in a take\u2011private or merger transaction. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Reddit?utm_source=openai)) There is no evidence of Reddit being bought by a larger company after its IPO.\n\n**Stack Overflow:** Stack Overflow (via Stack Exchange) has been wholly owned by Prosus\u2014a large tech holding company\u2014since its acquisition in 2021, well *before* the March 2024 podcast. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Prosus?utm_source=openai)) That prior deal doesn\u2019t test the *future* part of the prediction.\n\nBecause (1) Reddit has not been acquired yet, and (2) the multi\u2011year window the speaker invoked is still open, we cannot say the prediction is definitively right or wrong at this point.",
+      "sources": [
+        {
+          "end_index": 663,
+          "start_index": 587,
+          "title": "Reddit",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Reddit?utm_source=openai"
+        },
+        {
+          "end_index": 1008,
+          "start_index": 932,
+          "title": "Prosus",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Prosus?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction was made in March 2024 for acquisitions 'within the next several years' (typically 3+ years). Only ~21 months have passed by Dec 2025. Reddit IPO'd in March 2024 and remains an independent public company (RDDT), with no acquisition news; CEO Steve Huffman became a billionaire from stock gains ([Forbes Nov 2025](https://www.forbes.com/sites/monicahunter-hart/2025/11/02/reddits-ceo-debuts-as-a-steve-huffman-billionaire-20-years-after-cofounding-the-company/)). Stack Overflow was already acquired by Prosus in 2021 for $1.8B and remains under Prosus ownership, with no further changes since 2024 ([Wikipedia](https://en.wikipedia.org/wiki/Stack_Overflow), [Stack Overflow Blog 2025](https://stackoverflow.blog/2025/05/20/ceo-update-exploration-and-experimentation-for-bold-evolution/)). Too early to evaluate."
+    },
+    {
+      "id": "D-00:52:13.940",
+      "result": "right",
+      "explanation": "Within roughly a year of March 1, 2024, there was a clear shift from mostly unpriced, implicit scraping of web content toward a recognizable market for training data, with repeated, high-profile licensing deals that put concrete dollar values and contractual patterns around content used for large language models.\n\nFrom spring 2024 onward, OpenAI and other AI firms signed a series of explicit, paid content-licensing agreements with major news organizations and platforms: Le Monde and Spain\u2019s Prisa Media in March 2024; the Financial Times in April 2024; and a large, multi\u2011year News Corp deal in May 2024 that press reports said could exceed $250 million over five years, following earlier agreements with the Associated Press and Axel Springer. These contracts typically cover both training use and in-product display, and industry reporting indicates that OpenAI and peers now routinely pay anywhere from low single\u2011digit millions per year for smaller publishers up to nine\u2011figure packages for marquee groups, establishing de facto price bands for premium text data. ([openai.com](https://openai.com/blog/global-news-partnerships-le-monde-and-prisa-media?utm_source=openai)) In parallel, platform data deals such as Reddit\u2019s reported $60 million\u2011per\u2011year agreement with Google for API access, plus subsequent AI partnerships, reinforced the notion that large conversational datasets have substantial, quantifiable market value. ([time.com](https://time.com/7012845/steve-huffman/?utm_source=openai)) Broader industry analysis by mid\u2011 to late\u20112024 described a \u201cdata gold rush\u201d in which big tech firms were systematically hedging legal and supply risk by buying or licensing training data (e.g., Shutterstock image/video/music libraries, Defined.ai brokered datasets) at increasingly standardised per\u2011asset or per\u2011word prices, further clarifying commercial norms for AI training data. ([wifc.com](https://wifc.com/2024/04/05/inside-big-techs-underground-race-to-buy-ai-training-data/?utm_source=openai))  \n\nAt the same time, the legal framework around copyright and fair use for training remained unresolved, with major lawsuits such as The New York Times and other publishers vs. OpenAI and Microsoft allowed to proceed into discovery in 2024\u20132025 rather than being definitively settled, and new legislation like the U.S. Generative AI Copyright Disclosure Act only beginning to address transparency obligations. ([apnews.com](https://apnews.com/article/cc19ef2cf3f23343738e892b60d6d7a6?utm_source=openai)) That ongoing litigation shows the *law* is not fully settled, but it does not negate the prediction: by early 2025, there was a much clearer, widely reported pattern of how AI companies and rights\u2011holders were valuing and transacting over training data (license-or-litigate, with well\u2011understood deal structures and price ranges), compared with the far murkier situation in early 2023\u2013early 2024. Given that the claim was that things would start to become clearer over the following year, not that every legal and economic question would be fully resolved, the prediction is best judged as having come true.",
+      "sources": [
+        {
+          "end_index": 1218,
+          "start_index": 1111,
+          "title": "Global news partnerships: Le Monde and Prisa Media | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/blog/global-news-partnerships-le-monde-and-prisa-media?utm_source=openai"
+        },
+        {
+          "end_index": 1543,
+          "start_index": 1472,
+          "title": "Steve Huffman",
+          "type": "url_citation",
+          "url": "https://time.com/7012845/steve-huffman/?utm_source=openai"
+        },
+        {
+          "end_index": 2045,
+          "start_index": 1927,
+          "title": "Inside Big Tech\u2019s underground race to buy AI training data | 95.5 WIFC",
+          "type": "url_citation",
+          "url": "https://wifc.com/2024/04/05/inside-big-techs-underground-race-to-buy-ai-training-data/?utm_source=openai"
+        },
+        {
+          "end_index": 2551,
+          "start_index": 2458,
+          "title": "Judge allows newspaper copyright lawsuit against OpenAI to proceed",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/cc19ef2cf3f23343738e892b60d6d7a6?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": null
+    },
+    {
+      "id": "C-01:06:17.100",
+      "result": "right",
+      "explanation": "Chamath\u2019s claim is about *feasibility* (\u201ca one person company should be able to\u2026\u201d), not that most or all founders will do this. That can be evaluated as soon as clear examples exist.\n\n1. **Documented solo SaaS founders are already reaching product\u2013market fit with minimal capital.**  \n   - ScreenshotOne, a screenshot\u2011API SaaS, is run by a *100% bootstrapped solo founder* (Dmytro Krasun) and has grown to roughly $12k\u2013$20k MRR and hundreds of customers with no external funding, which is widely taken as product\u2013market fit for a niche B2B SaaS. ([reddit.com](https://www.reddit.com/r/SaaS/comments/1j2f57o?utm_source=openai))  \n   - A solo founder bootstrapped a feedback\u2011widget SaaS from a weekend build to $8,200 MRR in 14 months, with ongoing expenses of about $1,400/month (hosting, Stripe fees, a VA). Over that timeline, total out\u2011of\u2011pocket spend is far below \u201ca few hundred grand,\u201d yet the product reached thousands in recurring revenue and a $285k exit, indicating strong market validation. ([reddit.com](https://www.reddit.com//r/SaaS/comments/1mn0eo9?utm_source=openai))\n\n2. **AI, low-cost infrastructure, and tooling have made one\u2011person companies building real SaaS products routine rather than exceptional.**  \n   - A 2025 piece on \u201cThe Solo AI Founder\u201d notes that in 2024 about **36% of founders are solo**, and emphasizes that accessible AI tools let a single developer build and launch an AI SaaS product in months. It highlights SiteGPT, built by one developer over a weekend and grown to around $15k MRR as a one\u2011person SaaS. ([plainenglish.io](https://plainenglish.io/blog/the-solo-ai-founder?utm_source=openai))  \n   - A 2025 analysis of the \u201cmicro\u2011SaaS revolution\u201d describes an *explosion of one\u2011person SaaS businesses*, explicitly crediting AI and automation for enabling a single person to run an entire SaaS company, and profiles solo founders like those behind Base44 and Writesonic who bootstrapped to large ARR without heavy external capital. ([msthgn.com](https://www.msthgn.com/articles/saas-is-dead-long-live-the-saas?utm_source=openai))\n\n3. **These examples existed by 2024\u20132025, well within the \u201cnext few years\u201d window.**  By March 2024 (when the prediction was made) such solo, low\u2011capital paths to product\u2013market fit were *already* being achieved and have only become more common by late 2025, with many credible, public case studies of solo, bootstrapped founders hitting meaningful MRR and PMF\u2011like traction on well under a few hundred thousand dollars of total spend. ([sidetool.co](https://www.sidetool.co/post/one-person-saas-success-stories-real-revenue-2025?utm_source=openai))\n\nBecause the prediction only requires that this path be realistically *possible* for a one\u2011person company, and multiple real\u2011world cases now demonstrate exactly that, the forecast is best scored as **right**.",
+      "sources": [
+        {
+          "end_index": 662,
+          "start_index": 582,
+          "title": "He Quit His Job, Had a Newborn, and Bootstrapped a $13K MRR SaaS \u2013 Here\u2019s How",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/SaaS/comments/1j2f57o?utm_source=openai"
+        },
+        {
+          "end_index": 1118,
+          "start_index": 1037,
+          "title": "Bootstrapped a tiny SaaS and finally sold (feels unreal)",
+          "type": "url_citation",
+          "url": "https://www.reddit.com//r/SaaS/comments/1mn0eo9?utm_source=openai"
+        },
+        {
+          "end_index": 1672,
+          "start_index": 1585,
+          "title": "The Solo AI\u00a0Founder",
+          "type": "url_citation",
+          "url": "https://plainenglish.io/blog/the-solo-ai-founder?utm_source=openai"
+        },
+        {
+          "end_index": 2109,
+          "start_index": 2012,
+          "title": "The Micro SaaS Revolution: From Giants to Solopreneurs | Misuta Hagane",
+          "type": "url_citation",
+          "url": "https://www.msthgn.com/articles/saas-is-dead-long-live-the-saas?utm_source=openai"
+        },
+        {
+          "end_index": 2662,
+          "start_index": 2549,
+          "title": "One-Person SaaS Success Stories: Real Revenue Numbers in 2025",
+          "type": "url_citation",
+          "url": "https://www.sidetool.co/post/one-person-saas-success-stories-real-revenue-2025?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction has come true as multiple examples of solo founders reaching product-market fit (PMF) with under $300k (often under $1k) exist post-March 2024, enabled by AI/no-code tools and organic growth. Key example: Reddit r/indiehackers post (Nov 29, 2025) details a solo founder building a workflow automation tool to $5,400 MRR in 5 months, spending ~$500 total (started with $1,600 savings, zero ad budget, costs: $127 directories, $15/mo hosting, etc.), with 92% organic traffic and profitability, indicating PMF via retention/growth. [Source](https://www.reddit.com/r/indiehackers/comments/1p9qnkd/built_to_5400_mrr_in_5_months_as_solo_founder/). Another: Indie Hackers post (Oct 8, 2024) on Robopost.ai, solo founder hit PMF in 6 months, scaled to $55k MRR in 1 year bootstrapped. [Source](https://www.indiehackers.com/post/the-journey-of-building-robopost-how-i-grew-to-55k-mrr-in-one-year-6098daa92f). Reddit r/SaaS (Aug 19, 2025): Solo founder $20k MRR, zero ads/employees. [Source](https://www.reddit.com/r/SaaS/comments/1muz5bq/solo_founder_20k_mrr_zero_ads_zero_employees/). Trends confirm AI lowers barriers for solo PMF. [Sources: Indie Hackers, Reddit searches 2024-2025]."
+    },
+    {
+      "id": "C-00:41:52.000",
+      "result": "right",
+      "explanation": "Evidence by late 2025 shows that licensing proprietary datasets to AI model providers has become a *standard, incremental revenue stream* for many operators of websites and apps with unique data, matching Chamath\u2019s prediction.\n\n- **Reddit** explicitly frames AI data licensing as a new business line: its IPO filings describe aggregate contracts of about $203M for licensing user-generated content to AI firms (including Google and later OpenAI), with at least $66.4M recognized as 2024 revenue. Coverage emphasizes that these data deals are a distinct, fast\u2011growing revenue stream alongside advertising, not a one\u2011off windfall. ([techcrunch.com](https://techcrunch.com/2024/02/22/reddit-says-its-made-203m-so-far-licensing-its-data/?utm_source=openai))\n- **News publishers and media platforms** (e.g., News Corp, Le Monde, Dotdash Meredith, Future, Axel Springer, Financial Times, Prisa Media, The Atlantic) have all signed multi\u2011year content licensing agreements with OpenAI and others, with reporting explicitly describing these as recurring revenue or \u201cnew revenue streams\u201d built on their proprietary archives. The News Corp\u2013OpenAI deal alone is reported to be worth over $250M across five years. ([apnews.com](https://apnews.com/article/a49144d381796df5729c746f52fbef19?utm_source=openai))\n- **Broader cross\u2011industry trend:** Surveys of 2024\u20132025 \u201cproprietary data licensing\u201d deals show a growing market where many data\u2011rich operators monetize specialized datasets\u2014Reddit (social discussion), Shutterstock (images), Google\u2013Stack Overflow (programming Q&A), Apple\u2013Shutterstock (images), Tempus (clinical/genomic data), Meta\u2013Reuters (news), and others\u2014specifically for AI training and model improvement. These are presented as structured, repeatable commercial arrangements, not experimental pilots. ([datafaire.ai](https://datafaire.ai/2025/01/06/proprietary-data-licensing-trends-in-2024/?utm_source=openai))\n- **Smaller operators and entrepreneurs are participating.** Market reports and Reuters coverage describe companies like Defined.ai aggregating niche, high\u2011signal datasets (e.g., medical imagery, crime\u2011scene photos, specialized audio) from individual entrepreneurs and content owners, then licensing them to major AI developers. The revenue is shared with those data owners, demonstrating that even relatively small operators with unique data can now sell into AI\u2011training pipelines. ([investing.com](https://www.investing.com/news/stock-market-news/inside-big-techs-underground-race-to-buy-ai-training-data-3367240?utm_source=openai))\n- **Regulatory and legal disputes reinforce that licensing is now the expected path.** Lawsuits by Reddit against Anthropic and Perplexity explicitly contrast alleged unauthorized scraping with Reddit\u2019s *licensed* deals with Google and OpenAI, underlining that selling access to the dataset is a normal, monetized option that counterparties are expected to pay for. ([investopedia.com](https://www.investopedia.com/reddit-sues-anthropic-alleging-unlawful-data-use-11748374?utm_source=openai))\n\nTaken together, by November 30, 2025 (less than two years after the March 2024 episode), there is a broad and growing ecosystem where operators of sites and apps with unique, high\u2011quality data *routinely* license that data to AI model providers as a distinct revenue line. While not every entrepreneur will succeed in doing so, it is clearly and commonly possible\u2014and already happening at scale\u2014so the core economic prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 788,
+          "start_index": 664,
+          "title": "Reddit says it's made $203M so far licensing its data | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2024/02/22/reddit-says-its-made-203m-so-far-licensing-its-data/?utm_source=openai"
+        },
+        {
+          "end_index": 1330,
+          "start_index": 1237,
+          "title": "OpenAI to start using news content from News Corp. as part of a multiyear deal",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/a49144d381796df5729c746f52fbef19?utm_source=openai"
+        },
+        {
+          "end_index": 1950,
+          "start_index": 1840,
+          "title": "Proprietary Data Licensing Trends in 2024 \u2013 DataFaire.ai",
+          "type": "url_citation",
+          "url": "https://datafaire.ai/2025/01/06/proprietary-data-licensing-trends-in-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 2587,
+          "start_index": 2436,
+          "title": "Inside Big Tech's underground race to buy AI training data By Reuters",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/stock-market-news/inside-big-techs-underground-race-to-buy-ai-training-data-3367240?utm_source=openai"
+        },
+        {
+          "end_index": 3081,
+          "start_index": 2955,
+          "title": "Reddit Sues Anthropic, Alleging Unlawful Data Use",
+          "type": "url_citation",
+          "url": "https://www.investopedia.com/reddit-sues-anthropic-alleging-unlawful-data-use-11748374?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction has come true. By December 2025, numerous websites and apps with unique datasets (e.g., Reddit, Yelp, Stack Overflow, X/Twitter) are licensing data to AI providers like OpenAI, Google, Anthropic as incremental revenue. Reddit's deals (e.g., $60M/year with Google) comprise ~10% of revenue ([ADWEEK](https://www.adweek.com/social-marketing/ai-licensing-deals-with-google-and-openai-make-up-10-of-reddits-revenue/), [Seeking Alpha](https://seekingalpha.com/article/4847638-reddit-stock-highly-valuable-data-in-ai-era)). Lists track 44+ deals by May 2025 ([Media and the Machine](https://mediaandthemachine.substack.com/p/the-7-deal-points-of-ai-content-licensing)), 52 by June ([Neudata](https://www.neudata.co/blog/ai-data-licensing-market-analysis)); Monda.ai lists 10+ including Shutterstock, Reuters ([Monda](https://www.monda.ai/blog/ultimate-list-of-data-licensing-deals-for-ai)); CB Insights details 20+ up to 2024 ([CB Insights](https://www.cbinsights.com/research/ai-content-licensing-deals/)). Trade groups, protocols (e.g., RSL, Real Simple Licensing) formed 2024-2025 indicate commonality ([TechCrunch](https://techcrunch.com/2025/09/10/rss-co-creator-launches-new-protocol-for-ai-data-licensing/)). Market booming, called a 'gold rush'."
+    },
+    {
+      "id": "A-01:07:12.550",
+      "result": "right",
+      "explanation": "Evidence since mid\u20112024 shows a clear wave of AI adoption specifically in phone-based customer support, matching Sacks\u2019 prediction about where AI in support would \u201cgo next.\u201d\n\n* Numerous vendors now market **AI phone agents / voicebots explicitly as IVR and call\u2011center replacements**, offering natural, multi\u2011turn conversations over the phone (e.g., Air AI, Insighto.ai, Five9 IVA, Talkdesk AI, Callin.io, Phonecall.bot). These platforms emphasize handling inbound and outbound calls, appointment scheduling, order support, and triage\u2014functions traditionally done by IVR trees and human call\u2011center agents. ([siit.co](https://siit.co/blog/top-ai-phone-calling-platforms-in-2025-boost-customer-support-with-24-7-answering-services/45629?utm_source=openai))\n* Industry and vendor blogs in 2024\u20132025 describe **AI voice agents as a major new wave in contact centers**: replacing rigid IVR menus with conversational agents and positioning AI receptionists/phone agents as a replacement for traditional call centers, especially for SMBs. Articles talk about AI voice receptionists \u201creplacing traditional call centers\u201d and AI phone calls becoming the \u201cnew normal\u201d in 2025, with SMBs and enterprises deploying these agents at scale. ([blog.peakflo.co](https://blog.peakflo.co/en/agentic-workflow/ai-phone-calls?utm_source=openai))\n* Contact\u2011center commentary notes that **voice remains over half of all customer interactions**, and AI is increasingly applied specifically to voice to make calls feel like natural conversations instead of menu trees\u2014exactly the IVR\u2011to\u2011AI transition Sacks described. ([techradar.com](https://www.techradar.com/pro/why-voice-still-rules-in-the-ai-powered-contact-center?utm_source=openai))\n* On realism and whether callers realize they\u2019re speaking to AI: AI\u2011phone vendors highlight **hyper\u2011realistic, human\u2011sounding voices** as a key feature, and at least one high\u2011profile case (Phonely\u2019s AI agents, deployed in real contact\u2011center environments and used to replace hundreds of human agents) reports accuracy above 99% and explicitly claims that **customers \u201ccan\u2019t tell they\u2019re not human.\u201d** ([venturebeat.com](https://venturebeat.com/ai/phonelys-new-ai-agents-hit-99-accuracy-and-customers-cant-tell-theyre-not-human/?utm_source=openai))\n* Research and product releases focused on low\u2011latency LLM\u2011based voice agents for telecom and call centers further confirm that **significant R&D and deployment are now aimed squarely at real\u2011time phone support**, not just text chat. ([arxiv.org](https://arxiv.org/abs/2508.04721?utm_source=openai))\n\nAdoption is not universal and many centers still use humans or hybrid human+AI. But by late 2025, there is a clear, industry\u2011recognized wave of AI **phone** agents replacing or front\u2011lining IVR/call\u2011center interactions, and several deployments show voices realistic enough that many callers do not realize they are speaking to AI. Directionally and qualitatively, Sacks\u2019 prediction has come true.",
+      "sources": [
+        {
+          "end_index": 790,
+          "start_index": 642,
+          "title": "Top AI Phone Calling Platforms In 2025: Boost Customer Support With 24/7 Answering Services | SIIT",
+          "type": "url_citation",
+          "url": "https://siit.co/blog/top-ai-phone-calling-platforms-in-2025-boost-customer-support-with-24-7-answering-services/45629?utm_source=openai"
+        },
+        {
+          "end_index": 1359,
+          "start_index": 1262,
+          "title": "Why AI Phone Calls Are Becoming the New Normal in 2025",
+          "type": "url_citation",
+          "url": "https://blog.peakflo.co/en/agentic-workflow/ai-phone-calls?utm_source=openai"
+        },
+        {
+          "end_index": 1750,
+          "start_index": 1629,
+          "title": "Why voice still rules in the AI-powered contact center",
+          "type": "url_citation",
+          "url": "https://www.techradar.com/pro/why-voice-still-rules-in-the-ai-powered-contact-center?utm_source=openai"
+        },
+        {
+          "end_index": 2299,
+          "start_index": 2153,
+          "title": "Phonely\u2019s new AI agents hit 99% accuracy\u2014and customers can\u2019t tell they\u2019re not human | VentureBeat",
+          "type": "url_citation",
+          "url": "https://venturebeat.com/ai/phonelys-new-ai-agents-hit-99-accuracy-and-customers-cant-tell-theyre-not-human/?utm_source=openai"
+        },
+        {
+          "end_index": 2600,
+          "start_index": 2535,
+          "title": "Toward Low-Latency End-to-End Voice Agents for Telecommunications Using Streaming ASR, Quantized LLMs, and Real-Time TTS",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2508.04721?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction has come true. Since March 2024, AI voice agents for phone-based customer support have emerged as a major focus, with vendors like Salesforce Agentforce, AWS, Five9, and startups (e.g., Sierra, Decagon via a16z) deploying human-like voices that marketing claims 'most callers won't realize' are AI (e.g., AceCall.ai, Nexlifa, AIConvi). Market exploded in H2 2024 per [a16z 2025 update](https://a16z.com/ai-voice-agents-2025-update/), with 22% of YC class building voice agents, targeting call centers. NoJitter (Oct 2025) reports 37.6% of companies plan full IVR replacement with AI triage, rising to 62.5% in leaders, predicting drastic reduction by 2030 but hybrid now. Salesforce positions Agentforce as IVR killer, human-sounding, in pilots (e.g., Engine). While not 100% widespread in giants, it's clearly the 'next major wave' post-2024, reshaping $135B industry per Salesforce."
+    },
+    {
+      "id": "B-01:04:15.760",
+      "result": "wrong",
+      "explanation": "Jason\u2019s scenario implied that if AI customer-support systems improved quickly enough, they could *actually* be handling ~98% of customer queries by the end of 2024. In reality, available data from 2024\u20132025 shows automation and AI assistance rising fast, but nowhere near 98% of queries being fully handled by AI.\n\nFor example, Comm100\u2019s 2025 Live Chat Benchmark (based on 220M+ interactions) reports that AI chatbots handled about 73.8% of live-chat interactions in 2024, *not* 98%. More importantly, only about 45\u201346% of chats were fully **resolved** by chatbots alone in both 2023 and 2024, meaning most conversations still required a human agent to finish the job. ([comm100.com](https://www.comm100.com/blog/ai-in-customer-service/?utm_source=openai))\n\nIndustry-wide summaries likewise talk about 60\u201385% of customer interactions being handled or assisted by AI/automation by 2024, and projections of ~75% handled by AI by 2025\u2014again, well below 98% complete automation. ([gitnux.org](https://gitnux.org/ai-in-the-contact-center-industry-statistics/?utm_source=openai)) Even leading-edge deployments aren\u2019t there: Reuters reports India-based LimeChat\u2019s bots currently handle about 70% of customer complaints for clients and *aim* for 90\u201395% within a year, i.e., still short of 98% and only for particular customers, not the whole market. ([reuters.com](https://www.reuters.com/world/india/meet-ai-chatbots-replacing-indias-call-center-workers-2025-10-15/?utm_source=openai))\n\nUser-experience studies also show that many customers still feel they need humans to get issues properly resolved: a 2024 UK survey found 54% of users say their problems are only truly solved by speaking with a human, and 40% would pay extra to avoid dealing with AI chatbots. ([techradar.com](https://www.techradar.com/pro/rude-britannia-42-of-brits-admit-they-are-ruder-to-ai-chatbots-compared-to-human-beings?utm_source=openai)) This is inconsistent with a world where ~98\u201399% of queries are fully resolved by AI.\n\nThe second part of Jason\u2019s statement (reaching 98\u201399% in about four years if improvement is only ~10% per year, i.e., around 2028) concerns a future date and can\u2019t yet be directly tested. But the concrete, time-bound claim that AI would be doing about 98% of queries **by the end of 2024** clearly did not happen. Therefore, overall this prediction is best classified as **wrong**.",
+      "sources": [
+        {
+          "end_index": 791,
+          "start_index": 704,
+          "title": "AI in Customer Service: A Comprehensive Guide",
+          "type": "url_citation",
+          "url": "https://www.comm100.com/blog/ai-in-customer-service/?utm_source=openai"
+        },
+        {
+          "end_index": 1110,
+          "start_index": 1012,
+          "title": "AI In The Contact Center Industry Statistics Statistics: Market Data Report 2025",
+          "type": "url_citation",
+          "url": "https://gitnux.org/ai-in-the-contact-center-industry-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 1515,
+          "start_index": 1379,
+          "title": "Meet the AI chatbots replacing India's call-center workers",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/india/meet-ai-chatbots-replacing-indias-call-center-workers-2025-10-15/?utm_source=openai"
+        },
+        {
+          "end_index": 1950,
+          "start_index": 1796,
+          "title": "Rude Britannia: 42% of Brits admit they are ruder to AI chatbots compared to human beings",
+          "type": "url_citation",
+          "url": "https://www.techradar.com/pro/rude-britannia-42-of-brits-admit-they-are-ruder-to-ai-chatbots-compared-to-human-beings?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction that AI customer-support systems would handle ~98% of queries by end of 2024 (under 10% monthly improvement) did not come true. Current data (as of late 2025) shows top AI chatbots handling 70% of requests (e.g., Tidio Lyro, Helpshift; [Tidio](https://www.tidio.com/blog/ai-customer-service-statistics/)). Industry predictions cited 95% by 2025 (e.g., Tidio, DevRev), but these remain projections, not actuals. Zendesk CEO predicts 80% resolution without humans 'soon' ([Zendesk](https://www.zendesk.com/blog/ai-customer-service-statistics/)). No sources report 98% or near by end-2024; actual adoption is lower (e.g., 70% conversations by chatbots per some stats). The slower scenario (98-99% by ~2028) aligns better, but the primary fast timeline failed."
+    },
+    {
+      "id": "C-00:22:59.000",
+      "result": "wrong",
+      "explanation": "Available data show that the condition Chamath described has effectively occurred, but the market reaction he predicted did not.\n\n1. **Google\u2019s search share has fallen from the low\u201190s to the high\u201180s.**\n   * StatCounter-based summaries put Google\u2019s global search share at about **91.5% in January 2024**.\u30101\u2020turn1search10\u3011\n   * By late 2024, StatCounter data showed Google **dropping below 90% for three consecutive months**, hitting **89.34% (Oct), 89.99% (Nov), 89.73% (Dec)**.\u30101\u2020turn1search5\u3011\n   * Business Insider, citing StatCounter, reports Google\u2019s global share fell from **~93% in March 2023 to 89.71% in March 2025**, and from about 91% in March 2024 to 89.71% in March 2025.\u30104\u2020turn4view0\u3011 Statista likewise puts Google at **89.62% in March 2025**.\u30101\u2020turn1search3\u3011\n   * Other 2024\u201325 overviews describe Google\u2019s share as **~89\u201390% worldwide**, confirming a sustained dip of a few percentage points from the earlier 91\u201393% range.\u30100\u2020turn0search7\u3011\u30100\u2020turn0search9\u3011\n\n   Taken together, this is roughly the 3\u2011percentage\u2011point erosion (from about 92\u201393% down to ~89\u201390%) that his scenario (\u201c300\u2013500 basis points of change\u201d) contemplated.\n\n2. **Alphabet\u2019s market cap did not get cut in half; it surged to record highs.**\n   * Alphabet\u2019s end\u2011of\u2011year market cap was about **$1.76T in 2023**, **$2.36T in 2024**, and is estimated around **$3.87T for 2025**, per compiled market\u2011cap histories.\u30102\u2020turn2search0\u3011\u30102\u2020turn2search4\u3011\n   * Real\u2011time and news coverage in late 2025 describe Alphabet **approaching a $4T valuation**, with the stock up roughly 70% year\u2011to\u2011date and near all\u2011time highs.\u30100\u2020turn0news12\u3011\u30102\u2020turn2news12\u3011\n\nGiven that (a) Google has indeed experienced on the order of a few\u2011percentage\u2011point drop in global search share from its prior ~92\u201393% dominance, yet (b) Alphabet\u2019s market capitalization has **risen dramatically instead of being cut in half**, the specific prediction that a 3\u20135 point share loss would trigger a ~50% market\u2011cap collapse is **not borne out by actual market behavior so far**.\n\nBecause the antecedent (a multi\u2011point share decline from the low\u201190s) has effectively occurred and the predicted consequence (halving of market cap in short order) clearly has not, the forecast is best classified as **wrong**, rather than merely \u201ctoo early to tell.\u201d",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Google's worldwide search engine market share (Statcounter, all devices) was approximately 91.6-92% around March 2024 ([Proceed Innovative, Mar 2024](https://www.proceedinnovative.com/blog/search-engine-market-share-2023-2024/); podcast claim). It dipped to ~89.6% (Statista Mar 2025; [Search Engine Land, Jan 2025](https://searchengineland.com/google-search-market-share-drops-2024-450497)), a ~2.4 percentage point drop, and latest Oct 2025 ~90% ([Statcounter](https://gs.statcounter.com/search-engine-market-share)). This is short of the predicted 3-5 point drop (300-500 basis points). Meanwhile, Alphabet's market cap rose from ~$1.75-1.9T (March 2024, [StatMuse](https://www.statmuse.com/money/ask/alphabet-inc-googl-market-cap-march-2024); [companiesmarketcap](https://companiesmarketcap.com/alphabet-google/marketcap/)) to $3.86T (Nov 2025, same sources). No 50% cut occurred despite a notable decline; instead, it more than doubled. The predicted market fragility did not materialize."
+    },
+    {
+      "id": "C-01:01:22.960",
+      "result": "wrong",
+      "explanation": "\u2022 **What was predicted.** Chamath said that *if* two or three more large companies publicly shared Klarna\u2011style AI customer\u2011support results with clear, quantitative gains, then Teleperformance (a large call\u2011center/BPO firm) would become \u201ca $1 billion company in short order.\u201d \n\n\u2022 **Did the precondition happen?** Since Klarna\u2019s early\u20112024 disclosure that its AI assistant handled about two\u2011thirds of customer\u2011service chats and replaced work equivalent to ~700 agents with faster resolution times and fewer repeat inquiries, multiple other large companies have publicized similarly substantial AI\u2011driven customer\u2011support efficiency gains with concrete metrics. ([reddit.com](https://www.reddit.com/r/economy/comments/1b2q4az?utm_source=openai))  \n  \u2013 **H&M** has reported that its generative\u2011AI chatbot cut customer\u2011service response times by up to ~70%. ([aiprm.com](https://www.aiprm.com/ai-in-customer-service-statistics/?utm_source=openai))  \n  \u2013 **Bank of America** has highlighted that its virtual assistant *Erica* has handled around three billion customer interactions and taken on work equivalent to roughly 11,000 employees, explicitly framing this as a major AI productivity lever in customer service and banking operations. ([reuters.com](https://www.reuters.com/business/finance/bofa-says-ai-is-boosting-bankers-productivity-revenue-2025-11-17/?utm_source=openai))  \n  \u2013 **Lyft** disclosed that its Claude\u2011powered AI customer assistant cut average support resolution time by about 87%. ([datagrom.com](https://www.datagrom.com/ai-news/lyft-integrates-anthropics-ai-for-customer-support.html?utm_source=openai))  \n  \u2013 Other well\u2011known firms (e.g., Octopus Energy, Vodafone, Sephora, Bank of America again via Erica) are cited in industry roundups as having materially reduced customer\u2011service workloads or response times using AI assistants. ([linkedin.com](https://www.linkedin.com/pulse/25-ai-driven-customer-support-statistics-every-business-hegde-ctgqc?utm_source=openai))  \n  These meet the spirit of \u201cbig companies\u201d publicly touting **measurable** AI customer\u2011support productivity gains, so the condition of the prediction is effectively satisfied.\n\n\u2022 **What actually happened to Teleperformance\u2019s market cap.**  \n  \u2013 Around the time of the prediction (late 2023), Teleperformance\u2019s market cap was roughly **\u20ac8.0\u20138.1 billion** (\u2248$8.9B) at year\u2011end 2023. ([stockanalysis.com](https://stockanalysis.com/quote/epa/TEP/market-cap/?utm_source=openai))  \n  \u2013 By year\u2011end 2024 it had fallen to about **\u20ac4.9 billion** (\u2248$5.1B), and by November 28, 2025 it was about **\u20ac3.4 billion** (\u2248$3.9\u20134.0B). ([stockanalysis.com](https://stockanalysis.com/quote/otc/TLPFF/market-cap/?utm_source=openai))  \n  \u2013 Historical data from multiple sources show no point in 2024\u20132025 where Teleperformance\u2019s market cap approached **$1 billion**; instead it has remained several times higher, even after a substantial multi\u2011year decline.\n\n\u2022 **Assessment.**  \n  \u2013 The *trigger* Chamath described (multiple big companies broadcasting Klarna\u2011like AI customer\u2011support productivity wins with hard numbers) has, in broad economic and public\u2011disclosure terms, occurred.  \n  \u2013 The *outcome* he forecast\u2014Teleperformance rapidly collapsing to roughly a $1B market cap once that happened\u2014did **not** occur; as of late 2025 Teleperformance is still around $3.5\u20134.0B. ([stockanalysis.com](https://stockanalysis.com/quote/otc/TLPFF/market-cap/?utm_source=openai))  \n\nBecause the condition has been met while the predicted consequence has clearly **failed to materialize even well beyond any plausible \u201cshort order\u201d window**, this prediction is best judged as **wrong**.",
+      "sources": [
+        {
+          "end_index": 778,
+          "start_index": 695,
+          "title": "Klarna's AI-powered chatbot is already taking on the load of 700 human workers",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/economy/comments/1b2q4az?utm_source=openai"
+        },
+        {
+          "end_index": 978,
+          "start_index": 889,
+          "title": "50+ AI in Customer Service Statistics 2024 \u00b7 AIPRM",
+          "type": "url_citation",
+          "url": "https://www.aiprm.com/ai-in-customer-service-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 1412,
+          "start_index": 1271,
+          "title": "BofA says AI is boosting bankers' productivity, revenue",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/finance/bofa-says-ai-is-boosting-bankers-productivity-revenue-2025-11-17/?utm_source=openai"
+        },
+        {
+          "end_index": 1659,
+          "start_index": 1535,
+          "title": "Lyft Integrates Anthropics AI for Customer Support",
+          "type": "url_citation",
+          "url": "https://www.datagrom.com/ai-news/lyft-integrates-anthropics-ai-for-customer-support.html?utm_source=openai"
+        },
+        {
+          "end_index": 2025,
+          "start_index": 1891,
+          "title": "25 AI Driven Customer Support Statistics for Businesses",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/pulse/25-ai-driven-customer-support-statistics-every-business-hegde-ctgqc?utm_source=openai"
+        },
+        {
+          "end_index": 2505,
+          "start_index": 2413,
+          "title": "Teleperformance SE (EPA:TEP) Market Cap & Net Worth",
+          "type": "url_citation",
+          "url": "https://stockanalysis.com/quote/epa/TEP/market-cap/?utm_source=openai"
+        },
+        {
+          "end_index": 2743,
+          "start_index": 2649,
+          "title": "Teleperformance SE (TLPFF) Market Cap & Net Worth",
+          "type": "url_citation",
+          "url": "https://stockanalysis.com/quote/otc/TLPFF/market-cap/?utm_source=openai"
+        },
+        {
+          "end_index": 3484,
+          "start_index": 3390,
+          "title": "Teleperformance SE (TLPFF) Market Cap & Net Worth",
+          "type": "url_citation",
+          "url": "https://stockanalysis.com/quote/otc/TLPFF/market-cap/?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The condition of 2-3 additional large companies publicly announcing (e.g., via tweets) Klarna-like AI customer support productivity gains with real, measurable results (such as handling 2/3 of chats or equivalent to hundreds of agents) did not occur post-March 2024. Searches for similar announcements returned primarily Klarna references or general AI adoption, no clear matches from large peers like HubSpot (scaled but unquantified), Allstate, or Bank of America (prior AI, not new post-Klarna gains). [Klarna press Feb 2024](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/), no equivalents found.\n\nTeleperformance market cap fell from ~$5B (2024 avg, companiesmarketcap.com) / ~\u20ac5.4B (March est. from price history) to ~$4B (Nov 2025, finance.yahoo.com/TEP.PA, companiesmarketcap.com), down ~20-40% amid AI fears and some layoffs (e.g., Portugal 200+, no confirmed 20k global AI replacement), but not to $1B. Post-Klarna drop was ~23% (cnbc.com Mar 2024), but recovered partially.\n\nWithout the specified trigger, the conditional prediction cannot be tested or falsified despite 21 months elapsed."
+    },
+    {
+      "id": "C-00:23:55.000",
+      "result": "wrong",
+      "explanation": "Chamath\u2019s claim was that if Perplexity or any other search engine \"clips off\" about 50\u2013100 basis points (0.5\u20131.0 percentage points) of search-market share from Google, Alphabet\u2019s stock would \"go straight down by 50%\" once that loss shows up in the data.\n\n**What happened to Google\u2019s search share?**\n- StatCounter-style data show Google\u2019s worldwide search share (all devices) falling from about 91.6% in February 2024 to roughly 89.6\u201390.4% in 2025, i.e., a decline of about 1\u20132 percentage points. Over the same period, Bing\u2019s share rose from about 3.3% to ~4.0%, with smaller gains for Yahoo and DuckDuckGo. ([proceedinnovative.com](https://www.proceedinnovative.com/blog/search-engine-market-share-2023-2024/?utm_source=openai)) That is exactly the kind of 50\u2013100 bps competitive gain Chamath described.\n- However, the specific AI upstart he named, Perplexity, still does *not* register anywhere near 0.5\u20131.0% of global search-engine share; industry writeups note that Perplexity\u2019s share of general web search is below major dataset detection thresholds (<0.1%), even if it has a few percent of the much smaller \"AI search\" niche. ([vedranmarkovic.com](https://vedranmarkovic.com/search-engines-whats-new/?utm_source=openai))\n\n**What happened to Alphabet\u2019s stock?**\n- On the podcast date (1 March 2024), Alphabet Class A (GOOGL) closed at about $136 per share. ([statmuse.com](https://www.statmuse.com/money/ask/googl-stock-price-in-march-2024?utm_source=openai)) By late November 2025 it trades around $320 and is near all\u2011time highs, with Alphabet\u2019s 2025 year\u2011high closing price above $320. ([macrotrends.net](https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/stock-price-history?utm_source=openai))\n- Over 2024\u20132025, the worst drawdowns visible in daily/annual data are on the order of 20\u201330% from recent highs, not anything close to a 50% collapse. ([macrotrends.net](https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/stock-price-history?utm_source=openai)) In fact, instead of crashing, Alphabet\u2019s market capitalization *rose* to about $3 trillion for the first time in September 2025, at then\u2011record stock prices. ([investopedia.com](https://www.investopedia.com/google-parent-alphabets-market-cap-hits-3-trillion-for-first-time-11809966?utm_source=openai))\n\n**Assessment**\nEven after Google visibly lost more than the 50\u2013100 bps of search share Chamath highlighted (mostly to Bing and other incumbents), the stock did not \"go straight down by 50%\"; it roughly doubled from the podcast date and set new highs. Because the antecedent (a ~0.5\u20131.0 percentage\u2011point competitive share gain at Google\u2019s expense) has effectively occurred while the predicted 50% price crash clearly has not, this prediction is best scored as **wrong**. The only caveat is that Perplexity itself hasn\u2019t yet taken that much *global* share\u2014but Chamath explicitly said \"Perplexity or anybody else,\" and that broader version has already been falsified by the data.",
+      "sources": [
+        {
+          "end_index": 768,
+          "start_index": 647,
+          "title": "Search Engine Market Share 2023-2024 - Google is still the leader",
+          "type": "url_citation",
+          "url": "https://www.proceedinnovative.com/blog/search-engine-market-share-2023-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 1268,
+          "start_index": 1174,
+          "title": "Search Engines In 2025: What\u2019s New, Who\u2019s Leading, And How To Optimize For The Future | Vedran Markovic",
+          "type": "url_citation",
+          "url": "https://vedranmarkovic.com/search-engines-whats-new/?utm_source=openai"
+        },
+        {
+          "end_index": 1509,
+          "start_index": 1407,
+          "title": "Googl Stock Price In March 2024 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/googl-stock-price-in-march-2024?utm_source=openai"
+        },
+        {
+          "end_index": 1754,
+          "start_index": 1639,
+          "title": "Alphabet - 21 Year Stock Price History | GOOGL | MacroTrends",
+          "type": "url_citation",
+          "url": "https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/stock-price-history?utm_source=openai"
+        },
+        {
+          "end_index": 2022,
+          "start_index": 1907,
+          "title": "Alphabet - 21 Year Stock Price History | GOOGL | MacroTrends",
+          "type": "url_citation",
+          "url": "https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/stock-price-history?utm_source=openai"
+        },
+        {
+          "end_index": 2324,
+          "start_index": 2181,
+          "title": "Google Parent Alphabet's Market Cap Hits $3 Trillion for First Time",
+          "type": "url_citation",
+          "url": "https://www.investopedia.com/google-parent-alphabets-market-cap-hits-3-trillion-for-first-time-11809966?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Google's search market share declined gradually from ~91.6% in early 2024 (Statcounter Feb 2024: [proceedinnovative.com](https://www.proceedinnovative.com/blog/search-engine-market-share-2023-2024/)) to ~89.7-90% by late 2024/2025 (Statcounter Oct 2024-Oct 2025: 90.04% [gs.statcounter.com](https://gs.statcounter.com/search-engine-market-share); end-2024 89.73% [webmasterworld.com](https://www.webmasterworld.com/google/5116692.htm)), a ~1-2% loss. However, no single competitor like Perplexity 'clipped off' 0.5-1% (Perplexity + ChatGPT ~0.13% total in 2025 [seranking.com](https://seranking.com/blog/top-search-engines/); Perplexity <1% overall, ~6% in AI-only [seoprofy.com](https://seoprofy.com/blog/perplexity-ai-statistics/)). Bing gained ~1% (3.3% to 4.3% [gs.statcounter.com](https://gs.statcounter.com/search-engine-market-share)). The loss was gradual, visible end-2024 ([searchengineland.com](https://searchengineland.com/google-search-market-share-drops-2024-450497)).\n\nAlphabet (GOOGL/GOOG) stock rose significantly: ~$151 avg March 2024 to ~$320 late Nov 2025 (up ~112%) ([digrin.com](https://www.digrin.com/stocks/detail/GOOG/price); Nasdaq recent $320 [nasdaq.com](https://www.nasdaq.com/market-activity/stocks/goog/historical)). No 50% decline occurred 'shortly after' any visible share loss; stock trended up despite share dip ([macrotrends.net](https://www.macrotrends.net/stocks/charts/GOOGL/alphabet/stock-price-history)). Prediction's condition not precisely met by Perplexity/etc., and consequence (50% drop) did not happen."
+    }
+  ]
+}

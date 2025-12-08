@@ -1,0 +1,536 @@
+{
+  "meta": {
+    "count": 11,
+    "count_by_result": {
+      "wrong": 5,
+      "ambiguous": 2,
+      "inconclusive": 3,
+      "right": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "chamath-00:37:05.000",
+      "result": "wrong",
+      "explanation": "Public information up to November 30, 2025 shows that Google has **not** fully open\u2011sourced its main large AI models in the way Chamath described.\n\n* **Gemini, Google\u2019s flagship LLM family (used in Search), is proprietary.** Gemini (including Gemini 3) remains closed\u2011source; Google exposes it through paid services (Search, Gemini app, APIs, Vertex AI), and the model weights are not released under an open\u2011source licence.\n  * Wikipedia and other references list Gemini\u2019s license as *proprietary* and describe it as a commercial product integrated into Google Search and other services, not an open\u2011source model. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Gemini_%28language_model%29?utm_source=openai))\n* **Google did release *open\u2011weights* models (Gemma), but they are explicitly *not* open source.** In February 2024 Google introduced Gemma, smaller LLMs whose weights are downloadable and free to use (including commercially), and later expanded the family with larger variants such as Gemma 2 (27B) and Gemma 3. ([arstechnica.com](https://arstechnica.com/information-technology/2024/02/google-goes-open-ai-with-gemma-a-free-open-weights-chatbot-family/?utm_source=openai))  However, multiple reports and even Google\u2019s own briefings emphasize that Gemma is an **\u201copen\u201d or \u201copen\u2011weights\u201d** model family, *not* open source in the traditional/OSI sense. TechCrunch and Forbes both stress that while the weights are widely available, the models are governed by custom terms and are \u201copen (but not open source)\u201d / \u201copen weight, not open source.\u201d ([techcrunch.com](https://techcrunch.com/2024/02/21/google-launches-two-new-open-llms/?utm_source=openai))\n* **The specific strategic move Chamath predicted has not occurred.** His claim was that \"Google will open source their models\" and \"scorch the earth\" by making them widely available and as free as possible to reinforce the value of Google Search. In reality:\n  * Google\u2019s **core search models (Gemini variants)** remain closed and proprietary. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Gemini_%28language_model%29?utm_source=openai))  \n  * The \"open\" initiative (Gemma) targets developers and the broader ecosystem and is not clearly positioned as a deliberate, search\u2011defensive \"scorch the earth\" strategy, nor does it involve fully open\u2011sourcing Google\u2019s main LLMs.\n\nBecause Google has **not open\u2011sourced its primary large AI models powering Search**\u2014only released smaller, open\u2011weights models under non\u2011OSI licences\u2014the prediction, taken at face value, **has not come true**, even if parts of the ecosystem (like Gemma) rhyme with the general idea of wider, cheaper access.",
+      "sources": [
+        {
+          "end_index": 747,
+          "start_index": 650,
+          "title": "Gemini (language model)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Gemini_%28language_model%29?utm_source=openai"
+        },
+        {
+          "end_index": 1222,
+          "start_index": 1062,
+          "title": "Google goes \u201copen AI\u201d with Gemma, a free, open-weights chatbot family - Ars Technica",
+          "type": "url_citation",
+          "url": "https://arstechnica.com/information-technology/2024/02/google-goes-open-ai-with-gemma-a-free-open-weights-chatbot-family/?utm_source=openai"
+        },
+        {
+          "end_index": 1696,
+          "start_index": 1590,
+          "title": "Google launches two new open LLMs | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2024/02/21/google-launches-two-new-open-llms/?utm_source=openai"
+        },
+        {
+          "end_index": 2145,
+          "start_index": 2048,
+          "title": "Gemini (language model)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Gemini_%28language_model%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Google has not open-sourced its large AI models such as Gemini (e.g., Gemini Ultra, Pro, 1.5, 2.0) or PaLM 2. Instead, it released the Gemma family of *lightweight* open-weight models (up to 27B parameters, e.g., Gemma 3 27B), explicitly described as smaller models built from Gemini research for on-device use ([Google AI Gemma docs](https://ai.google.dev/gemma/docs), [DeepMind Gemma](https://deepmind.google/models/gemma/), [Hugging Face google/gemma](https://huggingface.co/google)). These are not the frontier/large models, which remain proprietary and API-only ([Gemini Wikipedia](https://en.wikipedia.org/wiki/Gemini_%28language_model%29), [Vertex AI models](https://cloud.google.com/vertex-ai/generative-ai/docs/models)). No sources indicate release of large model weights; searches for 'Google open source Gemini Ultra/PaLM 2' yield zero confirmations, only API access or smaller Gemma mentions. Over 2.5+ years since Jan 2023 prediction, this has not occurred."
+    },
+    {
+      "id": "chamath-00:25:29.740",
+      "result": "wrong",
+      "explanation": "The core mechanism of Chamath\u2019s prediction\u2014that the swing from surplus to deficit would leave Gavin Newsom *unable* to significantly expand mental\u2011health and homelessness initiatives\u2014did not hold up, even though the deficit itself was real.\n\nAfter a near-$100 billion surplus, Newsom\u2019s January 2023 budget indeed projected about a $22.5 billion gap, a dramatic swing. But he explicitly argued the shortfall would not stop major ambitions in areas including homelessness and housing, and his 2023\u201324 plan continued funding for housing and homelessness programs such as Homekey and encampment resolution grants. ([edpolicyinca.org](https://edpolicyinca.org/news/ca-governor-newsom-addresses-deficit-2023-24-budget-proposal?utm_source=openai))\n\nSubsequent budgets under continued fiscal stress *preserved and expanded* homelessness and behavioral\u2011health spending. The 2024\u201325 proposal closed a roughly $37.9 billion shortfall while maintaining a multi\u2011year $15.3 billion homelessness plan, including $400 million for encampment resolution and $1 billion for Homeless Housing, Assistance and Prevention (HHAP) grants\u2014levels described as more than ever before in state history. ([gov.ca.gov](https://www.gov.ca.gov/2024/01/10/2024-25-state-budget-proposal-protects-core-priorities-and-ensures-fiscal-stability/?utm_source=openai)) In parallel, Newsom put a major behavioral\u2011health and housing overhaul on the March 2024 ballot (Proposition 1): a $6.4 billion bond plus Mental Health Services Act reforms, intended to build thousands of treatment beds and supportive housing units targeted heavily at people experiencing homelessness. Voters narrowly approved it, and state guidance describes 6,800 new behavioral\u2011health beds, 26,700 outpatient treatment slots, and 4,350 permanent supportive housing units (over half reserved for veterans). ([gov.ca.gov](https://www.gov.ca.gov/2023/10/12/governor-newsom-puts-historic-mental-health-transformation-on-march-2024-ballot/?utm_source=openai))\n\nImplementation since then confirms this is not a case of being \u201cunable to do any of this stuff.\u201d In May 2025, Newsom announced $3.3 billion in Proposition 1 grants to create more than 5,000 residential treatment beds and over 21,800 outpatient slots for mental\u2011health and substance\u2011use care, with a specific focus on people experiencing homelessness. ([gov.ca.gov](https://www.gov.ca.gov/2025/05/12/governor-newsom-announces-billions-of-dollars-for-behavioral-health-treatment-facilities-and-services-for-seriously-ill-and-homeless-thanks-to-prop-1/?utm_source=openai)) In February 2025 he also released $920 million in additional state homelessness funding tied to new accountability measures for local governments. ([gov.ca.gov](https://www.gov.ca.gov/2025/02/24/governor-newsom-announces-stronger-accountability-measures-launches-new-tool-measuring-local-progress-in-tackling-homelessness/?utm_source=openai)) These are large, new (or newly scaled) funding streams, not the absence of expansion.\n\nOn outcomes, California\u2019s homelessness problem *did* get somewhat worse in the short term, but not in the runaway way implied by a state unable to invest. HUD data show California\u2019s homeless population at about 181,399 people in 2023 and roughly 187,084 in January 2024\u2014a roughly 3% statewide increase. ([spesmea.org](https://spesmea.org/homeless?utm_source=openai)) State and federal summaries characterize this as continued growth but at a slower rate than the national average, with unsheltered homelessness in California rising less than 1% while increasing more sharply elsewhere. ([hcd.ca.gov](https://www.hcd.ca.gov/about-hcd/newsroom/california-outperforms-nation-reducing-growth-of-homelessness-state-sees-largest-decrease-veteran-homelessness-nation?utm_source=openai)) Preliminary 2025 information is mixed but suggests some local improvement: Newsom\u2019s office highlighted that early 2025 point\u2011in\u2011time data from several large communities show declines, and Los Angeles County reported a 4% drop in homelessness in 2025\u2014its second consecutive annual decline\u2014along with a larger fall in unsheltered and chronic homelessness in the City of L.A. ([gov.ca.gov](https://www.gov.ca.gov/2025/07/23/governor-newsom-announces-local-progress-in-reducing-homelessness/?utm_source=openai))\n\nNetting this out: (1) the specific fiscal claim\u2014that the deficit would prevent Newsom from materially expanding mental\u2011health and homelessness initiatives\u2014has been clearly falsified by the passage and implementation of large new programs like Proposition 1 and continued multi\u2011billion\u2011dollar state homelessness funding; (2) the outcome claim\u2014that homelessness would likely get worse in the near term\u2014was only partially borne out, with a modest statewide increase into 2024 followed by signs of stabilization or improvement in several major jurisdictions by 2025. Because the central budget\u2011constraint premise is wrong and the worsening of homelessness has been limited rather than driven by an inability to fund initiatives, the overall prediction is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 775,
+          "start_index": 645,
+          "title": "CA Governor Newsom addresses deficit in 2023\u201324 budget proposal | Policy Analysis for California Education",
+          "type": "url_citation",
+          "url": "https://edpolicyinca.org/news/ca-governor-newsom-addresses-deficit-2023-24-budget-proposal?utm_source=openai"
+        },
+        {
+          "end_index": 1362,
+          "start_index": 1210,
+          "title": "2024-25 State Budget Proposal Protects Core Priorities and Ensures Fiscal Stability | Governor of California",
+          "type": "url_citation",
+          "url": "https://www.gov.ca.gov/2024/01/10/2024-25-state-budget-proposal-protects-core-priorities-and-ensures-fiscal-stability/?utm_source=openai"
+        },
+        {
+          "end_index": 2021,
+          "start_index": 1873,
+          "title": "Governor Newsom Puts Historic Mental Health Transformation on March 2024 Ballot | Governor of California",
+          "type": "url_citation",
+          "url": "https://www.gov.ca.gov/2023/10/12/governor-newsom-puts-historic-mental-health-transformation-on-march-2024-ballot/?utm_source=openai"
+        },
+        {
+          "end_index": 2594,
+          "start_index": 2376,
+          "title": "Governor Newsom announces billions of dollars for behavioral health treatment facilities and services for seriously ill and homeless thanks to Prop 1 | Governor of California",
+          "type": "url_citation",
+          "url": "https://www.gov.ca.gov/2025/05/12/governor-newsom-announces-billions-of-dollars-for-behavioral-health-treatment-facilities-and-services-for-seriously-ill-and-homeless-thanks-to-prop-1/?utm_source=openai"
+        },
+        {
+          "end_index": 2937,
+          "start_index": 2742,
+          "title": "Governor Newsom announces stronger accountability measures, launches new tool measuring local progress in tackling homelessness | Governor of California",
+          "type": "url_citation",
+          "url": "https://www.gov.ca.gov/2025/02/24/governor-newsom-announces-stronger-accountability-measures-launches-new-tool-measuring-local-progress-in-tackling-homelessness/?utm_source=openai"
+        },
+        {
+          "end_index": 3393,
+          "start_index": 3330,
+          "title": "Homeless",
+          "type": "url_citation",
+          "url": "https://spesmea.org/homeless?utm_source=openai"
+        },
+        {
+          "end_index": 3806,
+          "start_index": 3613,
+          "title": "California Outperforms The Nation In Reducing The Growth Of Homelessness, State Sees Largest Decrease In Veteran Homelessness In The Nation | California Department of Housing and Community Development",
+          "type": "url_citation",
+          "url": "https://www.hcd.ca.gov/about-hcd/newsroom/california-outperforms-nation-reducing-growth-of-homelessness-state-sees-largest-decrease-veteran-homelessness-nation?utm_source=openai"
+        },
+        {
+          "end_index": 4314,
+          "start_index": 4180,
+          "title": "Governor Newsom announces local progress in reducing homelessness | Governor of California",
+          "type": "url_citation",
+          "url": "https://www.gov.ca.gov/2025/07/23/governor-newsom-announces-local-progress-in-reducing-homelessness/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "California's budget swung from a ~$97B surplus (2022) to a projected $22.5B deficit in Jan 2023 (matching Chamath's ~$25B), with ongoing deficits like $47B closed across 2022-25 and $18B projected 2025-26 ([CalMatters Nov 2025](https://calmatters.org/politics/2025/11/california-budget-lao-forecast/), [LAO Jan 2023](https://lao.ca.gov/Publications/Report/4662), [CalBudgetCenter](https://calbudgetcenter.org/resources/first-look-understanding-the-governors-proposed-2023-24-state-budget/)). Homelessness worsened: PIT counts rose from ~171K (2022) to 181K (2023) to ~187K (2024), up ~9% overall despite slowing growth ([CalMatters Sep 2024](https://calmatters.org/housing/homelessness/2024/09/pit-count-analysis-2024/), [Wikipedia](https://en.wikipedia.org/wiki/Homelessness_in_California), [PPIC Mar 2024](https://www.ppic.org/blog/an-update-on-homelessness-in-california/)). However, Newsom significantly increased funding for new initiatives despite deficits: Prop 1 (passed Mar 2024) authorized $6.38B bonds ($4.4B for MH/addiction treatment beds, rest for homeless vets/housing) with $3.3B grants announced May 2025 ([Gov.ca.gov May 2025](https://www.gov.ca.gov/2025/05/12/governor-newsom-announces-billions-of-dollars-for-behavioral-health-treatment-facilities-and-services-for-seriously-ill-and-homeless-thanks-to-prop-1/), [CalMatters Jun 2025](https://calmatters.org/health/mental-health/2025/06/prop-1-mental-health-awards/)); $24B total spent 2019-2024 ([KTLA Oct 2024](https://ktla.com/news/california/heres-how-much-california-spends-on-each-homeless-person/)). Prediction that deficit prevented increases is falsified."
+    },
+    {
+      "id": "jason-00:24:43.600",
+      "result": "wrong",
+      "explanation": "Jason\u2019s prediction was that, absent a fundamental shift in how society treats fentanyl\u2011type drugs, problems like addiction, overdoses, and visible street use would \u201cjust get worse\u201d from the 2023 baseline.\n\nEmpirically, U.S. overdose deaths have not continued to worsen since 2023. CDC data compiled by researchers show overdose deaths peaking around 110\u2013111k in 2022, then falling to about 108.6k in 2023 and about 81.7k in 2024, with roughly 76.5k deaths in the 12 months ending April 2025\u2014a substantial and continuing decline rather than further worsening. ([en.wikipedia.org](https://en.wikipedia.org/wiki/United_States_drug_overdose_death_rates_and_totals_over_time?utm_source=openai)) Independent analyses report that 2024 saw about an 27% drop in total overdose deaths versus 2023\u2014the steepest one\u2011year decline ever recorded\u2014and roughly a 37% reduction in deaths involving synthetic opioids like fentanyl. ([reuters.com](https://www.reuters.com/business/healthcare-pharmaceuticals/us-drug-overdose-deaths-dropped-5-year-low-2024-cdc-data-shows-2025-05-14/?utm_source=openai)) These are major improvements relative to the 2023 baseline Jason was referencing.\n\nLocal data from hard\u2011hit cities show similar patterns: San Francisco hit a record high in overdose deaths in 2023, driven largely by fentanyl, but 2024 saw roughly a 20\u201322% decline in overdose fatalities and the lowest monthly tolls in several years, even though levels remain elevated and there has been some rebound in early 2025. ([voz.us](https://voz.us/en/society/240118/10614/san-francisco-annual-record-overdose-deaths-2023.html?utm_source=openai)) That again contradicts a claim that things would *unambiguously* \u201cjust get worse\u201d from that point.\n\nOn the policy/recognition side, the U.S. has in fact increasingly singled out fentanyl and similar synthetics as a distinct, unusually dangerous threat. The Biden administration\u2019s National Drug Control Strategy and subsequent fact sheets emphasize targeted action on \u201cillicit fentanyl supply chains,\u201d large budget increases for fentanyl\u2011focused enforcement, and national campaigns like *Real Deal on Fentanyl*, plus historic expansion of naloxone access and other harm\u2011reduction and treatment measures. ([bidenwhitehouse.archives.gov](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2023/04/11/fact-sheet-biden-harris-administration-announces-strengthened-approach-to-crack-down-on-illicit-fentanyl-supply-chains/?utm_source=openai)) Legislatures have also advanced fentanyl\u2011specific criminal penalties (e.g., federal bills like the Felony Murder for Deadly Fentanyl Distribution Act) and broader tough\u2011on\u2011drug measures such as California\u2019s Proposition 36, along with local crackdowns on open\u2011air fentanyl markets in cities like San Francisco. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Anti-fentanyl_legislation_in_the_United_States?utm_source=openai))\n\nSocial harms from synthetic opioids are still severe\u2014overdose deaths remain far above pre\u20112019 levels, street drug scenes persist in many cities, and new ultra\u2011potent drugs (e.g., nitazenes, carfentanil) are emerging. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Drug_overdose?utm_source=openai)) But Jason\u2019s core forecast was that there was \u201cno path\u201d and that, from the 2023 baseline, these problems would continue to *worsen* over time unless society fundamentally reclassified and policed fentanyl\u2011type drugs differently. Instead, overdose mortality and some related indicators have measurably improved over 2023\u20132025 while recognition and targeted responses have intensified.\n\nBecause the key observable outcome he pointed to\u2014worsening overdose and visible drug problems from the 2023 baseline\u2014has moved in the opposite direction nationally (and in major hotspot cities), the prediction as stated is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 724,
+          "start_index": 594,
+          "title": "United States drug overdose death rates and totals over time",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/United_States_drug_overdose_death_rates_and_totals_over_time?utm_source=openai"
+        },
+        {
+          "end_index": 1116,
+          "start_index": 947,
+          "title": "US drug overdose deaths dropped to 5-year low in 2024, CDC data shows",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-drug-overdose-deaths-dropped-5-year-low-2024-cdc-data-shows-2025-05-14/?utm_source=openai"
+        },
+        {
+          "end_index": 1657,
+          "start_index": 1535,
+          "title": "San Francisco broke its annual record for overdose deaths in 2023",
+          "type": "url_citation",
+          "url": "https://voz.us/en/society/240118/10614/san-francisco-annual-record-overdose-deaths-2023.html?utm_source=openai"
+        },
+        {
+          "end_index": 2516,
+          "start_index": 2263,
+          "title": "FACT SHEET: Biden-Harris Administration Announces Strengthened Approach to Crack Down on Illicit Fentanyl Supply Chains | The White House",
+          "type": "url_citation",
+          "url": "https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2023/04/11/fact-sheet-biden-harris-administration-announces-strengthened-approach-to-crack-down-on-illicit-fentanyl-supply-chains/?utm_source=openai"
+        },
+        {
+          "end_index": 2943,
+          "start_index": 2827,
+          "title": "Anti-fentanyl legislation in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Anti-fentanyl_legislation_in_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 3248,
+          "start_index": 3165,
+          "title": "Drug overdose",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Drug_overdose?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The predicted worsening of fentanyl-related social problems (overdoses, addiction, visible street use) from the 2023 baseline did not occur. Instead, US drug overdose deaths declined sharply: total overdoses fell from 105,007 in 2023 to ~80,400 in 2024 (27% drop per JAMA), with provisional data showing ~76,516 for the 12 months ending April 2025 (CDC NVSS). Fentanyl deaths specifically dropped 1.4% in 2023 from 2022 and continued declining (USAFacts, NIDA). NSDUH data shows overall substance use disorder rates decreasing (9.7% in 2024 vs. 10.5% in 2022). Visible street use remains an issue in some cities (e.g., SF Chronicle, PBS LA), but national trends do not indicate worsening tied to fentanyl. Society has recognized fentanyl's unique potency (50-100x morphine; NIDA, DEA factsheets) as a 'super drug,' with stricter policies like the HALT Fentanyl Act (permanent Schedule I for analogs), state penalty increases (NCSL), fentanyl testing in 46 states (ASTHO), and massive DEA seizures. Thus, problems improved despite/owing to these measures, falsifying the prediction of inevitable worsening absent such recognition. Sources: [CDC NVSS](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm), [NIDA Trends](https://nida.nih.gov/research-topics/trends-statistics/overdose-death-rates), [USAFacts](https://usafacts.org/articles/are-fentanyl-overdose-deaths-rising-in-the-us/), [JAMA](https://jamanetwork.com/journals/jama/fullarticle/2835193)."
+    },
+    {
+      "id": "H-00:50:31.290",
+      "result": "ambiguous",
+      "explanation": "As of November 30, 2025, neither the legal system nor the market has clearly settled in the way Jason predicted, but there are meaningful moves in that direction, so the prediction can\u2019t be cleanly called right or wrong.\n\n**Legal requirements / permission for data owners**\n\n- In the U.S., there is still *no specific statute* that requires generative AI providers to get permission from all copyright holders whose works are used in training. Courts have issued early rulings treating some training on copyrighted books as fair use (e.g., Meta\u2019s Llama case and Anthropic\u2019s Claude case), confirming that permission is not categorically required, though the law remains unsettled and many lawsuits are ongoing. ([theguardian.com](https://www.theguardian.com/technology/2025/jun/26/meta-wins-ai-copyright-lawsuit-as-us-judge-rules-against-authors?utm_source=openai))\n- In the EU, the AI Act now imposes transparency and copyright-compliance duties on providers of general\u2011purpose AI models. They must publish a *summary* of training data and respect copyright, including honoring rights\u2011holders\u2019 opt\u2011out from text and data mining; if a rightsholder opts out, authorization is required. But the regime is based on exceptions plus opt\u2011outs, not a blanket \u201cpermission for everything\u201d rule. ([hoganlovells.com](https://www.hoganlovells.com/en/publications/copyright-provisions-in-the-ai-act-generative-ai-transparency-and-data-mining?utm_source=openai))\n- In China, interim measures for generative AI require use of \u201clegitimate data sources,\u201d non\u2011infringement of IP, and consent for personal data, again signaling stricter standards but not a globally uniform mandate that all training data be licensed. ([staticpacific.blob.core.windows.net](https://staticpacific.blob.core.windows.net/press-releases-attachments/3540931/Annual%20and%20transition%20report%20of%20foreign%20private%20issuers%20%5BSections%2013%20or%2015%28d%29%5D.htm?utm_source=openai))\n- In the U.S., the proposed **Generative AI Copyright Disclosure Act** would require companies to disclose which copyrighted works (with URLs) they used in training, but it explicitly does *not* ban use of copyrighted works for training and, as of late 2025, remains only proposed legislation, not enacted law. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Generative_AI_Copyright_Disclosure_Act?utm_source=openai))\n\n**Market pressure, licensing deals, and citations**\n\n- Major AI vendors have voluntarily struck content\u2011licensing deals with publishers (e.g., OpenAI with the Associated Press, Axel Springer, and Cond\u00e9 Nast; Perplexity with *Le Monde*), which allow use of that content for training and display, including attribution and links in answers. This is clear evidence of *market pressure* toward licensing and attribution, but it is selective and far from universal. ([cnbc.com](https://www.cnbc.com/2023/12/13/openai-and-axel-springer-strike-unprecedented-deal-to-offer-news-in-chatgpt.html?utm_source=openai))\n- At the same time, many high\u2011scale models still appear to rely heavily on large web scrapes and fair\u2011use/text\u2011and\u2011data\u2011mining theories rather than comprehensive opt\u2011in licensing, as reflected in ongoing copyright lawsuits by news and reference publishers against OpenAI and Perplexity. ([theverge.com](https://www.theverge.com/news/656044/ziff-davis-sues-openai-ign-cnet-pcmag?utm_source=openai))\n\n**Citation / linking behavior in products**\n\n- Some generative AI services, especially those positioned as search tools, now routinely provide citations and links. OpenAI\u2019s ChatGPT Search integrates a search engine that \u201cgenerates responses, including citations to external websites,\u201d and Deep Research is built explicitly to create *cited* reports. ([en.wikipedia.org](https://en.wikipedia.org/wiki/ChatGPT_Search?utm_source=openai))\n- Competing systems like Perplexity and Bing Copilot similarly foreground linked sources, but empirical work on \u201cattribution gaps\u201d shows that web\u2011enabled LLMs frequently fail to credit many of the pages they read, and many responses contain few or no clickable citations. This underscores that citation practices are product\u2011design choices, not mandatory legal obligations. ([arxiv.org](https://arxiv.org/abs/2508.00838?utm_source=openai))\n- There is, as of 2025, no law in the U.S. or EU that generically *requires* chatbots like ChatGPT to attach per\u2011answer citations to their training data or even to all web sources consulted, though EU rules do require public summaries of training data for large models and respect for copyright and opt\u2011outs. ([hoganlovells.com](https://www.hoganlovells.com/en/publications/copyright-provisions-in-the-ai-act-generative-ai-transparency-and-data-mining?utm_source=openai))\n\n**Why this is ambiguous rather than right or wrong**\n\n- Jason\u2019s claim had two parts: (1) services like ChatGPT would be **required to use citations and links**, and (2) they would be **required to get permission from data owners** to operate at scale. As of late 2025:\n  - Citations and links are common in some product modes (especially search) but not universally mandatory across all generative AI use cases.\n  - Permission/licensing is becoming more common for certain high\u2011value content and is reinforced by EU and Chinese rules, but large\u2011scale models can and do still operate relying on fair use or text\u2011and\u2011data\u2011mining exceptions without comprehensive opt\u2011in permission.\n- Because his statement is framed as an *ultimate* end state (\u201cthat\u2019s where this is all going to shake out\u201d) with no explicit time horizon, and regulatory and market trends are still evolving\u2014some in the direction he predicts, others not\u2014we cannot yet say his forecast has clearly succeeded or clearly failed.\n\nGiven this mix of partial convergence (more licensing, more attribution in some products, new transparency rules) and clear gaps (no global obligation for per\u2011answer citations or universal permissions, plus ongoing reliance on fair\u2011use/TDM), the fairest classification today is **ambiguous** rather than decisively right, wrong, or simply \u201ctoo early\u201d in a time\u2011bound sense.",
+      "sources": [
+        {
+          "end_index": 905,
+          "start_index": 751,
+          "title": "Meta wins AI copyright lawsuit as US judge rules against authors",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2025/jun/26/meta-wins-ai-copyright-lawsuit-as-us-judge-rules-against-authors?utm_source=openai"
+        },
+        {
+          "end_index": 1489,
+          "start_index": 1327,
+          "title": "Copyright provisions in the AI Act: generative AI, transparency, and data mining",
+          "type": "url_citation",
+          "url": "https://www.hoganlovells.com/en/publications/copyright-provisions-in-the-ai-act-generative-ai-transparency-and-data-mining?utm_source=openai"
+        },
+        {
+          "end_index": 1991,
+          "start_index": 1741,
+          "title": "Form 20-F",
+          "type": "url_citation",
+          "url": "https://staticpacific.blob.core.windows.net/press-releases-attachments/3540931/Annual%20and%20transition%20report%20of%20foreign%20private%20issuers%20%5BSections%2013%20or%2015%28d%29%5D.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2412,
+          "start_index": 2304,
+          "title": "Generative AI Copyright Disclosure Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Generative_AI_Copyright_Disclosure_Act?utm_source=openai"
+        },
+        {
+          "end_index": 3023,
+          "start_index": 2879,
+          "title": "OpenAI, Axel Springer strike deal to offer news in ChatGPT",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/12/13/openai-and-axel-springer-strike-unprecedented-deal-to-offer-news-in-chatgpt.html?utm_source=openai"
+        },
+        {
+          "end_index": 3422,
+          "start_index": 3312,
+          "title": "IGN and CNET owner Ziff Davis sues OpenAI",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/656044/ziff-davis-sues-openai-ign-cnet-pcmag?utm_source=openai"
+        },
+        {
+          "end_index": 3862,
+          "start_index": 3778,
+          "title": "ChatGPT Search",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/ChatGPT_Search?utm_source=openai"
+        },
+        {
+          "end_index": 4303,
+          "start_index": 4238,
+          "title": "The Attribution Crisis in LLM Search Results",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2508.00838?utm_source=openai"
+        },
+        {
+          "end_index": 4776,
+          "start_index": 4614,
+          "title": "Copyright provisions in the AI Act: generative AI, transparency, and data mining",
+          "type": "url_citation",
+          "url": "https://www.hoganlovells.com/en/publications/copyright-provisions-in-the-ai-act-generative-ai-transparency-and-data-mining?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction has not materialized. As of December 2025, no legal requirements exist mandating generative AI services like ChatGPT to provide citations or links to training data sources in their outputs or to obtain permissions from all data owners to operate at scale. \n\n**Citations to training data**: ChatGPT and similar services cite web sources for recent queries via browsing/search features but do not (and cannot practically) cite training data origins in responses, as knowledge is parametrically encoded ([OpenAI help](https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-language-models-are-developed); multiple sources confirm no training data citations). No laws require per-output citations to training sources.\n\n**EU AI Act (effective phased from 2024/25)**: GPAI providers must publish a high-level *summary* of training data content (template released July 2025) and comply with copyright (e.g., TDM opt-outs), but not individual citations/links or blanket permissions ([artificialintelligenceact.eu](https://artificialintelligenceact.eu/high-level-summary/); [EC guidelines](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai)).\n\n**US**: Copyright Office May 2025 report examines training as potential fair use (case-by-case); no mandates ([copyright.gov report](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf)). CA AB-2013 (Jan 2026) requires website disclosure of training data *descriptions/categories*, not citations or permissions ([leginfo.ca.gov](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2013)).\n\n**Permissions**: No universal requirement; US fair use defenses ongoing, EU exceptions apply. ~50 lawsuits (e.g., NYT/OpenAI) active Oct/Nov 2025, no rulings forcing permissions ([chatgptiseatingtheworld.com tracker](https://chatgptiseatingtheworld.com/2025/10/08/status-of-all-51-copyright-lawsuits-v-ai-oct-8-2025-no-more-decisions-on-fair-use-in-2025/); [Reuters](https://www.reuters.com/legal/government/openai-loses-bid-dismiss-part-us-authors-copyright-lawsuit-2025-10-28/)).\n\n**Market pressure**: Data scarcity and suits prompt some licensing (e.g., publishers), but not required\u2014OpenAI/ChatGPT scale massively without ([MIT Tech Review Jul 2024](https://www.technologyreview.com/2024/07/02/1094508/ai-companies-are-finally-being-forced-to-cough-up-for-training-data/)). Prediction unfulfilled after ~3 years."
+    },
+    {
+      "id": "I-00:55:56.400",
+      "result": "inconclusive",
+      "explanation": "Friedberg\u2019s claim is that **over the coming years** \u201cessentially all\u201d software-dependent business models rooted in traditional information retrieval would have to be rewritten to incorporate AI-driven synthesis.\n\nEvidence through late 2025 shows:\n\n- **Widespread but not universal adoption:** Surveys find ~72\u201378% of organizations use AI in at least one function and ~65\u201371% use generative AI, indicating rapid uptake but not near\u2011total penetration, and usually in specific functions rather than full business\u2011model rewrites. ([mckinsey.com](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024?utm_source=openai))\n- **Enterprise software not yet structurally transformed:** Gartner estimates **less than 10%** of enterprise software was multimodal/GenAI\u2011infused in 2024, projecting **80% by 2030**, which explicitly frames deep AI integration as a transformation still mostly in the future. ([gartner.com](https://www.gartner.com/en/newsroom/press-releases/2025-07-02-gartner-predicts-80-percent-of-enterprise-software-and-applications-will-be-multimodal-by-2030-up-from-less-than-10-in-2024?utm_source=openai))\n- **Core information\u2011retrieval businesses remain largely intact:** In web search, Google still holds ~89\u201391% share in 2025; AI\u2011native or AI\u2011centric search tools (ChatGPT, Perplexity, etc.) represent only about 5\u201310% of queries, and Google\u2019s business model is still primarily ad\u2011driven search, albeit with AI overlays. ([infront.com](https://www.infront.com/blog/defining-ai-search-and-search-engine-market-share-in-2025/?utm_source=openai)) This suggests IR\u2011based models have been augmented, not yet fundamentally replaced en masse.\n- **Most companies are still experimenting, not fully restructured:** Gartner, BCG, MIT and others report that although many firms are piloting or deploying GenAI, only a small minority achieve strong, measurable business value; many AI projects are siloed, underperforming, or stalled due to integration challenges and legacy systems. ([businessinsider.com](https://www.businessinsider.com/industries-seeing-value-from-ai-bcg-consulting-report-2025-10?utm_source=openai))\n\nThese data show a clear **direction of travel toward AI-driven synthesis inside software and workflows**, consistent with the spirit of the prediction, but they fall far short (so far) of \u201cessentially all\u201d IR\u2011based software business models being *restructured or replaced*. Because Friedberg\u2019s horizon was \u201cover the coming years\u201d and major analysts themselves place the bulk of this structural shift closer to 2030, it is **too early to decisively judge** the prediction as either right or wrong.\n\nHence, the status as of November 2025 is **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 690,
+          "start_index": 570,
+          "title": "The state of AI in early 2024 | McKinsey",
+          "type": "url_citation",
+          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024?utm_source=openai"
+        },
+        {
+          "end_index": 1189,
+          "start_index": 969,
+          "title": "Gartner Predicts 80% of Enterprise Software and Applications Will Be Multimodal by 2030, Up from Less Than 10% in 2024",
+          "type": "url_citation",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2025-07-02-gartner-predicts-80-percent-of-enterprise-software-and-applications-will-be-multimodal-by-2030-up-from-less-than-10-in-2024?utm_source=openai"
+        },
+        {
+          "end_index": 1631,
+          "start_index": 1509,
+          "title": "Defining \"AI Search\" and Search Engine Market Share in 2025 - Infront Webworks",
+          "type": "url_citation",
+          "url": "https://www.infront.com/blog/defining-ai-search-and-search-engine-market-share-in-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 2197,
+          "start_index": 2061,
+          "title": "BCG says only 5% of companies are deriving value from AI. Here are the industries it says are getting it right.",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/industries-seeing-value-from-ai-bcg-consulting-report-2025-10?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction claims 'essentially all' traditional IR-based business models will be restructured/replaced with AI synthesis 'over the coming years.' In late 2025 (~3 years later), AI integration is widespread (78% organizations use AI per Stanford AI Index/McKinsey; Google AI Overviews reach 1.5B users [*getpassionfruit.com*]), disrupting publishers and search (*McKinsey*: $750B impact by 2028). However, traditional search dominates (Google ~90% share [*omnius.so*], AI search 5-10% [*infront.com*]), with hybrids common. No evidence of 'essentially all' completion; trend strong but ongoing/partial. Too early for absolute claim. [*brightedge.com*, *ttms.com*]"
+    },
+    {
+      "id": "C-01:01:07.860",
+      "result": "right",
+      "explanation": "As of late 2025, the prediction that OpenAI\u2011like foundational capabilities would be widely available from multiple vendors and at least partially commoditized is essentially correct.\n\n**1. Multiple vendors with broadly similar foundational capabilities**\n\nSince early 2023, many large\u2011scale, general\u2011purpose LLMs comparable in kind to OpenAI\u2019s GPT family have been released and productized by different organizations:\n\n- **Anthropic**: Claude 3 (Opus, Sonnet, Haiku) and later Claude 3.5 models provide GPT\u20114\u2011class reasoning and are widely available via API and in third\u2011party products.\n- **Google**: Gemini (Ultra, Pro, Flash) and its successors are positioned as general\u2011purpose foundation models integrated across Google Cloud and consumer products (Search, Workspace, Android, etc.).\n- **Meta**: LLaMA 2 and LLaMA 3 are open\u2011weight models explicitly released as general foundation models for commercial and research use, widely adopted and fine\u2011tuned by many companies.\n- **Mistral** and other startups: Mistral\u2019s Mixtral and later models, plus many other open and closed LLMs, provide competitive capabilities and are accessible via standard APIs.\n\nThe net effect is that **core LLM capabilities (chat, coding assistance, summarization, Q&A, etc.) are no longer exclusive to a single vendor; they are available from several big tech companies and multiple startups, plus open\u2011weight models that anyone can deploy.**\n\n**2. Evidence of partial commoditization**\n\n\u201cCommoditized\u201d in the context of the quote means: the base capability (a strong general\u2011purpose LLM) is available from many suppliers with decreasing differentiation and with competition driven partly on price, latency, and deployment form factor rather than unique raw capability.\n\nBy 2024\u20132025, we see features of exactly this:\n\n- **Price competition and similar SKUs**: Major providers all expose comparable tiers (fast/cheap vs. large/expensive models) and frequently cut prices or introduce cheaper distilled models. This is classic commoditization behavior.\n- **Standardized interfaces**: Many providers follow very similar JSON/chat/completions APIs, and tools like LangChain, LlamaIndex, and various \u201cmulti\u2011provider\u201d SDKs treat models from OpenAI, Anthropic, Google, and open\u2011weights as largely swappable components.\n- **Open\u2011weight alternatives**: LLaMA 2/3, Mistral, and other open\u2011weight models allow enterprises to self\u2011host competitive models on their own infrastructure or edge devices, further eroding any exclusive moat around simply having a capable base LLM.\n- **Differentiation shifting up the stack**: Most competitive AI products now differentiate with *fine\u2011tuning, retrieval\u2011augmented generation, proprietary data, UX, integration, and domain\u2011specific tooling*, not just which base model they use. This is strong evidence that **the foundational model itself is treated more like a commodity input** in many contexts.\n\nAt the same time, it is *not* fully commoditized in a strict economic sense\u2014frontier models (e.g., the very top\u2011end proprietary models) are still concentrated in a few labs and can have meaningful capability gaps. But the prediction only claimed **\u201ceventually going to become commoditized or certainly much more widely available\u2026 there\u2019ll be multiple players that offer them\u201d** and that the durable advantage from the *core models themselves* would be reduced, not eliminated.\n\nGiven:\n\n- The existence of many broadly similar LLM providers.\n- Active price and performance competition.\n- Open\u2011weight models narrowing the gap and enabling self\u2011hosting.\n- Strategic focus shifting away from raw model access toward data, integration, and product.\n\n\u2026it is reasonable to conclude that the prediction has effectively come true in the **\u201cpartially commoditized, widely available from multiple players\u201d** sense that Sacks described.\n",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "By late 2025, OpenAI-like LLMs are widely available from multiple vendors including Anthropic (Claude), Google (Gemini), Meta (Llama), Mistral, xAI (Grok), and DeepSeek, via APIs and open-source releases. Commoditization is evident: OpenAI's enterprise market share dropped from 50% (end-2023) to 25% (mid-2025) per Menlo VC report; open-source models like Llama 3/4, DeepSeek R1 compete closely on benchmarks (Shakudo top LLMs Nov 2025, DataCamp top open-source 2025). Articles confirm trend: '2025 Predictions: Year of the Commoditization of LLMs' (RTInsights), 'Are LLMs becoming a commodity?' (Tech Monitor Aug 2025), reducing durable moats as predicted."
+    },
+    {
+      "id": "A-00:59:58.810",
+      "result": "wrong",
+      "explanation": "Chamath\u2019s claim was that, with about a year of intensive associate feedback (\u201cbang on some law model for a year\u201d), a legal-domain model\u2019s **precision and recall would be \u201coff the charts\u201d and effectively perfect**, suitable for high\u2011stakes legal use.\n\nSince early 2023, the closest real\u2011world tests of this hypothesis have been specialized legal LLMs (Harvey, Lexis+ AI, Westlaw AI tools, etc.) that have indeed had heavy use and feedback from thousands of lawyers over well more than a year.\n\n1. **Specialized legal tools are far from near\u2011perfect.**  \n   * A preregistered Stanford study of leading legal research tools (Lexis+ AI, Westlaw AI-Assisted Research, Ask Practical Law AI, GPT\u20114) found that even the best system (Lexis+ AI) **hallucinated 17\u201333% of the time** and answered only **about 65% of queries accurately**\u2014nowhere near \u201cperfect\u201d precision/recall.\n   ([arxiv.org](https://arxiv.org/abs/2405.20362?utm_source=openai))  \n   * A 2025 comparative evaluation likewise found Lexis+ AI to have **58% accuracy and ~20% fabricated responses**, with other tools doing worse\u2014again inconsistent with \u201coff\u2011the\u2011charts\u201d reliability suitable for unsupervised high\u2011stakes use.\n   ([cambridge.org](https://www.cambridge.org/core/journals/international-journal-of-legal-information/article/evaluating-ai-in-legal-operations-a-comparative-analysis-of-accuracy-completeness-and-hallucinations-in-chatgpt4-copilot-deepseek-lexis-ai-and-llama-3/64E4DA3715DFCAA99DF3A1AC4680CAC8?utm_source=openai))\n\n2. **Legal\u2011specialized vendors acknowledge substantial remaining error.**  \n   * Harvey\u2019s own BigLaw Bench results show its assistant model completing about **74% of a lawyer\u2011quality work product** on complex legal tasks and achieving a **68% \u201cSource Score\u201d** for correctly sourced answers, with the company explicitly noting \u201csubstantial room for improvement,\u201d not perfection.\n   ([harvey.ai](https://www.harvey.ai/blog/introducing-biglaw-bench?utm_source=openai))  \n   * In a follow\u2011up post, Harvey reports a low but non\u2011zero hallucination rate (~**1 in 500 claims, 0.2%**) on its internal benchmark\u2014impressive, but still not \u201cperfect,\u201d and limited to its own task distribution.\n   ([harvey.ai](https://www.harvey.ai/blog/biglaw-bench-hallucinations?utm_source=openai))\n\n3. **The \u201cone\u2011year of associates\u201d condition is effectively met in practice.**  \n   * Since late 2022, firms such as Allen & Overy (now A&O Shearman) have had thousands of lawyers using Harvey\u2014over **3,500 lawyers making ~40,000 queries** just in the early beta\u2014providing exactly the kind of intensive, expert feedback Chamath described.\n   ([arstechnica.com](https://arstechnica.com/information-technology/2023/02/generative-ai-is-coming-for-the-lawyers/?utm_source=openai))  \n   * Harvey then collaborated with OpenAI on a custom case\u2011law model, tested with **10 major law firms**, and tuned specifically to reduce hallucinations; lawyers preferred its outputs 97% of the time to baseline GPT\u20114, yet even Harvey presents this as a major improvement in *reliability* and *relevance*, not as achieving perfection.\n   ([openai.com](https://openai.com/index/harvey/?utm_source=openai))  \n   In other words, the industry has roughly executed the scenario Chamath imagined\u2014sustained legal\u2011expert RL on top models for more than a year\u2014without reaching anything close to universally \u201cperfect\u201d legal performance.\n\n4. **Courts, bar associations, and vendors still treat AI as non\u2011trustworthy for unsupervised high\u2011stakes work.**  \n   * Stanford and ABA\u2011linked work on \u201cHallucinating Law\u201d finds that general LLMs frequently hallucinate in core legal reasoning tasks, with hallucination rates **69\u201388%** overall on certain benchmarks and at least **75%** when asked about a court\u2019s holding, concluding that current models are **\u201cnot yet capable of the nuanced legal reasoning required\u201d** for tasks like evaluating precedential relationships.\n   ([americanbar.org](https://www.americanbar.org/groups/business_law/resources/newsletters/2025-fall-bclc/current-landscape-ai-in-courts?utm_source=openai))  \n   * Professional guidance and commentary from Thomson Reuters, law firms, and ethics authors consistently stress that AI systems are *tools*, **\u201cnot a substitute for a lawyer\u201d**, and that human oversight is \u201ccritical\u201d because outputs remain fallible and prone to hallucinations.\n   ([thomsonreuters.com](https://www.thomsonreuters.com/en-us/posts/ai-in-courts/ai-legal-court-video/?utm_source=openai))  \n   * Courts across multiple jurisdictions have sanctioned lawyers for filings containing fake AI\u2011generated citations, with judges explicitly warning that **\u201cno reasonably competent attorney should outsource research and writing\u201d** to AI without verification.\n   ([markets.chroniclejournal.com](https://markets.chroniclejournal.com/chroniclejournal/article/tokenring-2025-11-7-ais-legal-labyrinth-fabricated-cases-and-vigilante-justice-reshape-the-profession?utm_source=openai))\n\nGiven that:\n\n* Highly\u2011invested, domain\u2011specialized systems have had more than a year of intensive feedback from lawyers,  \n* Rigorous empirical studies show substantial error and hallucination rates, far from near\u2011perfect precision/recall, and  \n* The legal profession and courts still require human review and explicitly warn against relying on these tools in high\u2011stakes matters,\n\nChamath\u2019s prediction\u2014that a year of associate\u2011driven RL would yield effectively **perfect, high\u2011stakes\u2011grade legal performance**\u2014has not materialized. The technology has advanced dramatically, but empirical results and professional practice clearly contradict the level of reliability he forecast.\n\nSo the forecast is **wrong** rather than merely \u201cinconclusive.\u201d",
+      "sources": [
+        {
+          "end_index": 974,
+          "start_index": 909,
+          "title": "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2405.20362?utm_source=openai"
+        },
+        {
+          "end_index": 1534,
+          "start_index": 1223,
+          "title": "Evaluating AI in Legal Operations: A Comparative Analysis of Accuracy, Completeness, and Hallucinations in ChatGPT-4, Copilot, DeepSeek, Lexis+ AI, and Llama 3 | International Journal of Legal Information | Cambridge Core",
+          "type": "url_citation",
+          "url": "https://www.cambridge.org/core/journals/international-journal-of-legal-information/article/evaluating-ai-in-legal-operations-a-comparative-analysis-of-accuracy-completeness-and-hallucinations-in-chatgpt4-copilot-deepseek-lexis-ai-and-llama-3/64E4DA3715DFCAA99DF3A1AC4680CAC8?utm_source=openai"
+        },
+        {
+          "end_index": 2005,
+          "start_index": 1921,
+          "title": "Introducing BigLaw Bench",
+          "type": "url_citation",
+          "url": "https://www.harvey.ai/blog/introducing-biglaw-bench?utm_source=openai"
+        },
+        {
+          "end_index": 2313,
+          "start_index": 2226,
+          "title": "BigLaw Bench: Hallucinations",
+          "type": "url_citation",
+          "url": "https://www.harvey.ai/blog/biglaw-bench-hallucinations?utm_source=openai"
+        },
+        {
+          "end_index": 2793,
+          "start_index": 2659,
+          "title": "Generative AI is coming for the lawyers - Ars Technica",
+          "type": "url_citation",
+          "url": "https://arstechnica.com/information-technology/2023/02/generative-ai-is-coming-for-the-lawyers/?utm_source=openai"
+        },
+        {
+          "end_index": 3203,
+          "start_index": 3137,
+          "title": "Customizing models for legal professionals | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/index/harvey/?utm_source=openai"
+        },
+        {
+          "end_index": 4114,
+          "start_index": 3960,
+          "title": "Current Landscape of AI in Courts",
+          "type": "url_citation",
+          "url": "https://www.americanbar.org/groups/business_law/resources/newsletters/2025-fall-bclc/current-landscape-ai-in-courts?utm_source=openai"
+        },
+        {
+          "end_index": 4521,
+          "start_index": 4402,
+          "title": "AI in Courts: Need for human review of AI outputs in court operational workflows - Thomson Reuters Institute",
+          "type": "url_citation",
+          "url": "https://www.thomsonreuters.com/en-us/posts/ai-in-courts/ai-legal-court-video/?utm_source=openai"
+        },
+        {
+          "end_index": 5003,
+          "start_index": 4788,
+          "title": "AI\u2019s Legal Labyrinth: Fabricated Cases and Vigilante Justice Reshape the Profession | User | chroniclejournal.com",
+          "type": "url_citation",
+          "url": "https://markets.chroniclejournal.com/chroniclejournal/article/tokenring-2025-11-7-ais-legal-labyrinth-fabricated-cases-and-vigilante-justice-reshape-the-profession?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No legal AI model has achieved 'near-perfect' precision and recall on legal tasks after intensive RL training with lawyers/associates, as predicted. Leading tools like Harvey AI and CoCounsel score ~80-89% accuracy on benchmarks (e.g., Vals AI 2025 study: Harvey 80.2% matching lawyer baseline; BigLaw Bench: GPT-5 at 89%), with hallucinations persisting at ~17% (Stanford HAI 2024). Articles note 80%+ accuracy but emphasize supervision needed for high-stakes use, not perfection ([Vals AI](https://www.vals.ai/industry-reports/vlair-2-27-25), [Stanford HAI](https://hai.stanford.edu/news/ai-trial-legal-models-hallucinate-1-out-6-or-more-benchmarking-queries), [Artificial Lawyer](https://www.artificiallawyer.com/2025/04/28/if-we-achieve-legal-ai-perfection-everything-changes/)). RLHF mentioned in legal contexts (e.g., TrueLaw blog), but no claims of 'off the charts' performance."
+    },
+    {
+      "id": "H-01:03:07.600",
+      "result": "ambiguous",
+      "explanation": "Part of the prediction came true, but in a mixed and short\u2011lived way, and the 10\u201320x productivity claim is not clearly borne out.\n\n**1. Did \u201cprompt engineer\u201d emerge as a recognized job title and valued skill?**  \nYes, at least for a time. In 2023\u201324, major outlets reported \u201cprompt engineer\u201d as a new job title created by the rise of generative AI, explicitly describing it as a specialty focused on crafting prompts for systems like ChatGPT and quoting industry leaders on its importance.([axios.com](https://www.axios.com/2023/02/22/chatgpt-prompt-engineers-ai-job?utm_source=openai)) High\u2011profile postings such as Anthropic\u2019s \u201cPrompt Engineer and Librarian\u201d role with a six\u2011figure salary band, along with salary surveys and 2024\u201325 guides listing prompt engineer as a discrete role with defined ranges, show that the title was real, niche but visible, and often very well paid.([promptjobs.com](https://www.promptjobs.com/job/prompt-engineer-and-librarian-beVM7qEa?utm_source=openai)) Numerous training and certification providers now market prompt engineering as a core AI skill and \u201ccareer booster,\u201d reinforcing that it is a recognized and valued capability even when the exact job title is not used.([store.aicerts.ai](https://store.aicerts.ai/blog/how-ai-prompt-engineering-is-becoming-hot-skill/?utm_source=openai))\n\nHowever, by 2024\u201325 several analyses and labor\u2011market observers noted that job postings explicitly titled \u201cPrompt Engineer\u201d were relatively rare, with the work increasingly folded into broader roles like ML engineer, AI engineer, or automation architect. An economist at Indeed\u2019s Hiring Lab is quoted saying she rarely sees it as a standalone job title, and multiple 2025 articles argue that prompt engineering has effectively shifted from a distinct job to an embedded skill.([techspot.com](https://www.techspot.com/news/107874-prompt-engineering-no-longer-job-but-skill.html?utm_source=openai)) So the title did emerge and gain recognition, but it did not stabilize as a large, enduring standalone profession; instead, the *skill* became more mainstream while the dedicated role remained small and in some areas is already fading.\n\n**2. Are top practitioners widely *seen* as 10\u201320x more productive than average knowledge workers using AI tools?**  \nThere is a strong *narrative* that AI \u201cpower users\u201d or expert prompt engineers achieve order\u2011of\u2011magnitude gains, but this is mostly marketing language and anecdote, not a clearly established labor\u2011market consensus. Many blogs, courses, and webinars in 2024\u201325 explicitly claim that mastering prompt engineering or power\u2011user workflows can give \u201c10x better results\u201d or make people \u201c10x more productive,\u201d often positioning a small group of expert prompters against more casual AI users.([aitoolbook.ai](https://aitoolbook.ai/blogs/the-art-of-prompt-engineering-how-to-get-10x-better-results-from-ai-tools?utm_source=openai)) These claims echo the \u201c10x engineer\u201d trope the predictor referenced.\n\nThat said, this 10\u201320x figure is largely rhetorical. There is little rigorous, large\u2011scale evidence quantifying prompt engineers as being 10\u201320 times more productive than *average AI\u2011using knowledge workers*, and the messaging tends to lump prompt engineering into broader AI power\u2011use rather than a narrowly defined \u201cprompt engineer\u201d occupation. At the same time, other analyses emphasize that as models improve and tools help generate prompts automatically, the distinct advantage of specialist prompt engineers is shrinking and their work is being absorbed into more technical or hybrid roles.([techspot.com](https://www.techspot.com/news/107874-prompt-engineering-no-longer-job-but-skill.html?utm_source=openai))\n\n**Overall:**\n- The prediction that prompt engineering would become a recognizable title and valued professional skill within a few years is **partly right**: the title did appear, gained media and hiring visibility, and commanded high salaries in some postings, while the underlying skill became widely promoted and integrated into many roles.([axios.com](https://www.axios.com/2023/02/22/chatgpt-prompt-engineers-ai-job?utm_source=openai))  \n- The stronger claim\u2014that top prompt engineers would sustainably be seen as 10\u201320x more productive than average AI\u2011using knowledge workers\u2014is **not clearly established beyond hype and anecdotal marketing**, and the standalone role is already being questioned or downplayed in 2025.([techspot.com](https://www.techspot.com/news/107874-prompt-engineering-no-longer-job-but-skill.html?utm_source=openai))\n\nBecause some key elements materialized but others are overstated or weakly supported, the fairest overall judgment is **ambiguous rather than clearly right or wrong**.",
+      "sources": [
+        {
+          "end_index": 626,
+          "start_index": 529,
+          "title": "AI's rise generates new job title: Prompt engineer",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2023/02/22/chatgpt-prompt-engineers-ai-job?utm_source=openai"
+        },
+        {
+          "end_index": 1027,
+          "start_index": 920,
+          "title": "Prompt Engineer and Librarian at Anthropic",
+          "type": "url_citation",
+          "url": "https://www.promptjobs.com/job/prompt-engineer-and-librarian-beVM7qEa?utm_source=openai"
+        },
+        {
+          "end_index": 1363,
+          "start_index": 1245,
+          "title": "Why AI Prompt Engineering Is a Career Booster",
+          "type": "url_citation",
+          "url": "https://store.aicerts.ai/blog/how-ai-prompt-engineering-is-becoming-hot-skill/?utm_source=openai"
+        },
+        {
+          "end_index": 1963,
+          "start_index": 1843,
+          "title": "\"Prompt engineering\" is no longer a job, but a skill | TechSpot",
+          "type": "url_citation",
+          "url": "https://www.techspot.com/news/107874-prompt-engineering-no-longer-job-but-skill.html?utm_source=openai"
+        },
+        {
+          "end_index": 2944,
+          "start_index": 2806,
+          "title": "The Art Of Prompt Engineering How To Get 10x Better Results From Ai Tools | AI ToolBook Blog",
+          "type": "url_citation",
+          "url": "https://aitoolbook.ai/blogs/the-art-of-prompt-engineering-how-to-get-10x-better-results-from-ai-tools?utm_source=openai"
+        },
+        {
+          "end_index": 3733,
+          "start_index": 3613,
+          "title": "\"Prompt engineering\" is no longer a job, but a skill | TechSpot",
+          "type": "url_citation",
+          "url": "https://www.techspot.com/news/107874-prompt-engineering-no-longer-job-but-skill.html?utm_source=openai"
+        },
+        {
+          "end_index": 4178,
+          "start_index": 4081,
+          "title": "AI's rise generates new job title: Prompt engineer",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2023/02/22/chatgpt-prompt-engineers-ai-job?utm_source=openai"
+        },
+        {
+          "end_index": 4583,
+          "start_index": 4463,
+          "title": "\"Prompt engineering\" is no longer a job, but a skill | TechSpot",
+          "type": "url_citation",
+          "url": "https://www.techspot.com/news/107874-prompt-engineering-no-longer-job-but-skill.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction partially materialized: 'Prompt engineer' emerged as a recognized job title shortly after the 2023 podcast, with high-profile postings (e.g., Anthropic offering up to $335k), a 325% rise in Indeed job postings Jan-Aug 2023 per WSJ/Fortune, and hype as a top emerging role. The skill remains valued and is integrated into broader AI roles (e.g., AI engineer #1 in LinkedIn's 2025 fastest-growing jobs). However, by 2025, the standalone title has largely faded\u2014job postings minimal (Indeed data), 40% drop in LinkedIn profiles mid-2024 to early 2025, deemed 'obsolete' by WSJ, Fortune, FastCompany, SalesforceBen. No sources confirm top practitioners are viewed as 10-20x more productive than average knowledge workers; general AI prompting boosts productivity (e.g., '10x results') but not tied to this role. Thus, emergence happened but sustainability and exact productivity claim unclear. Sources: [WSJ via Fortune](https://fortune.com/2025/05/07/prompt-engineering-200k-six-figure-role-now-obsolete-thanks-to-ai/), [SalesforceBen](https://www.salesforceben.com/prompt-engineering-jobs-are-obsolete-in-2025-heres-why/), [LinkedIn 2025 Jobs](https://www.linkedin.com/business/talent/blog/talent-acquisition/worlds-fastest-growing-jobs-2025)."
+    },
+    {
+      "id": "H-01:03:57.590",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly gives a **3\u20135 year** horizon: Jason says that in \u201cthree or 4 or 5 years\u201d it may be possible to run a company like Twitter with **98% fewer employees** than its pre-layoff level.\n\n- The podcast was released on **January 13, 2023**.\n- A 3\u20135 year window from that date runs from **January 13, 2026** to **January 13, 2028**.\n- Today is **November 30, 2025**, which is **less than 3 years** after the prediction.\n\nSince the *earliest* deadline (3 years) has not yet arrived, we cannot say whether the prediction turns out right or wrong. There is also no evidence that such extreme automation has already been decisively proven impossible for the 2026\u20132028 period.\n\nTherefore, the correct classification as of now is: it is **too early to tell** whether the prediction is right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for AI/automation to make it *feasible* to run X (Twitter) with ~150 employees (98% fewer than pre-layoff ~7,500; confirmed e.g., [CNBC 2023](https://www.cnbc.com/2023/01/20/twitter-is-down-to-fewer-than-550-full-time-engineers.html), [Wikipedia](https://en.wikipedia.org/wiki/Twitter,_Inc.)). Current count (Dec 2025): ~2,840 total ([Demandsage Jun2025](https://www.demandsage.com/twitter-employees/), [ElectroIQ Aug2025](https://electroiq.com/stats/how-many-people-work-at-x/), [Market.us Nov2025](https://market.us/statistics/social-media/twitter/)) or ~1,000 full-time ([Backlinko Sep2025](https://backlinko.com/twitter-users))\u2014~62-87% reduction, but stabilized/grown from 2023 lows. No sources indicate feasibility at 150 yet (searches for low counts/AI sufficiency yield none). Timeframe: 3-5 years from Jan2023 (by 2026-2028); Dec2025 too early."
+    },
+    {
+      "id": "I-01:07:18.830",
+      "result": "inconclusive",
+      "explanation": "**Summary:** Parts of Friedberg\u2019s cluster of predictions have largely materialized (AI-written fiction from significant publishers, AI-composed music played by professional orchestras, and AI-generated films with wide online distribution). However, his 3\u20134 year timeline for mainstream text-to-game tools runs through ~2026\u20132027, so as of November 2025 it\u2019s too early to fully judge the whole bundle.\n\n**1) AI novel from a major publisher in 2023**  \n- In May 2023, *Death of an Author* by Stephen Marche (as \u201cAidan Marchine\u201d) was released by Pushkin Industries. Marche has said about **95%** of the text is AI\u2011generated using ChatGPT, Cohere, and Sudowrite; the cover and blurbs are also AI-generated. It has been widely described in major media (e.g., *The New York Times*) as an early or first \u201cAI novel.\u201d ([en.wikipedia.org](https://en.wikipedia.org/wiki/Death_of_an_Author_%28novella%29?utm_source=openai))  \n- Pushkin Industries, however, is primarily a prominent podcast/audiobook company, not one of the traditional \u201cBig Five\u201d book publishers; it does publish books but is mainly known as an audio-first media outfit. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Pushkin_Industries?utm_source=openai))  \n**Assessment:** There *was* a widely covered, mostly\u2011AI\u2011written long-form work released in 2023 by a serious, well\u2011funded publisher, but whether Pushkin counts as a *\u201cmajor book publisher\u201d* in the sense Friedberg probably meant (Penguin Random House, HarperCollins, etc.) is debatable. So this sub\u2011prediction is **partially but ambiguously fulfilled**.\n\n**2) AI symphony performed by a major symphony orchestra in the near term**  \n- Well before 2023, AI\u2011composed orchestral music was already being performed by professional orchestras. For example, the AI composer AIVA had works performed by the Avignon Symphonic Orchestra in 2017. ([en.wikipedia.org](https://en.wikipedia.org/wiki/AIVA?utm_source=openai))  \n- In 2021, the **Beethoven Orchestra Bonn** premiered *Beethoven X: The AI Project*, in which AI systems (with human musicologists) completed Beethoven\u2019s unfinished 10th Symphony; the AI-generated Scherzo and Rondo movements were performed in concert and recorded for commercial release. ([telekom.com](https://www.telekom.com/en/media/media-information/archive/the-exciting-path-to-the-completion-of-beethoven-s-10th-symphony-635670?utm_source=openai))  \n- Post\u2011podcast, additional projects appeared. For instance, Spain\u2019s national **RTVE Symphony Orchestra** performed two short symphonic works composed by AI at Madrid\u2019s Monumental Theater on November 17, 2023\u2014one rendered exactly as produced by the AI, another lightly rearranged by the conductor. ([english.elpais.com](https://english.elpais.com/technology/2024-02-10/spanish-orchestra-performs-work-made-with-ai-for-the-first-time-it-was-a-pastiche.html?utm_source=openai))  \n**Assessment:** If you interpret Friedberg as forecasting that *within a few years of early 2023*, a serious symphony orchestra would perform a piece whose musical material is primarily AI\u2011composed, that has clearly happened (and in fact had happened even before his prediction). The only quibble is that some early cases (Beethoven X, AIVA) are AI\u2011assisted/completion rather than entirely original AI symphonies. Overall this sub\u2011prediction is **substantively correct**.\n\n**3) Primarily AI\u2011generated screenplay \u2192 AI\u2011generated 3D/CG movie with broad public viewership in the near term**  \n- **AI\u2011written feature scripts:**\n  - *The Diary of Sisyphus* (Italy) is described as the first feature\u2011length film written by an AI (GPT\u2011Neo). It premiered at festivals in 2023 and was released in Italian cinemas in January 2024, though with human-shot live\u2011action visuals. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Diary_of_Sisyphus?utm_source=openai))  \n  - *The Last Screenwriter* (2024) is a Swiss feature whose screenplay was written by ChatGPT; the film is live-action and was released online for free distribution after its planned London premiere was canceled. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Last_Screenwriter?utm_source=openai))  \n- **Primarily AI\u2011generated movies with wide distribution:**\n  - *DreadClub: Vampire\u2019s Verdict* (2024) is an 87\u2011minute animated feature described as the **first fully AI\u2011generated animated feature film**. All visuals, animation, performances, music, sound, and even some editing were produced via AI tools; a single filmmaker orchestrated prompts and structure. It streams worldwide on Amazon Prime Video and other major platforms, making it widely accessible to the general public. ([en.wikipedia.org](https://en.wikipedia.org/wiki/DreadClub%3A_Vampire%27s_Verdict?utm_source=openai))  \n  - Industry is now moving toward larger\u2011budget AI\u2011heavy productions such as *Critterz*, a feature\u2011length animated film being developed with OpenAI\u2019s upcoming models (e.g., GPT\u20115, Sora), targeted for a 2026 premiere and explicitly marketed as a proof\u2011of\u2011concept for AI\u2011driven filmmaking. ([techradar.com](https://www.techradar.com/streaming/entertainment/this-new-openai-backed-movie-has-a-budget-of-just-usd30-million-but-will-it-prove-ai-can-make-movies-hollywood-cant?utm_source=openai))  \n**Assessment:** By 2024 there is at least one full\u2011length film whose script and all audiovisual elements are primarily AI\u2011generated and that is globally streamable, which substantially matches what he envisioned, even though *DreadClub* is 2D anime\u2011style rather than explicitly 3D CGI. Given how close the realized projects are to his description (and the trajectory toward larger mainstream releases), this sub\u2011prediction is **basically fulfilled in spirit**.\n\n**4) Within ~3\u20134 years (by ~2026\u20132027), consumer tools that let ordinary users create their own AI\u2011generated video games via natural\u2011language specs**  \n- Several tools already point in this direction, but are still limited:\n  - **Buildbox 4** (2024\u201325) adds AI features like *text\u2011to\u2011game translation*, where users describe game elements in text and the AI generates assets, scenes, and prototypes. It\u2019s explicitly aimed at non\u2011programmers who want to build games visually with AI assistance. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Buildbox?utm_source=openai))  \n  - **Rosebud AI** is a startup whose platform lets users upload textual descriptions of the game they want; the AI interprets this and generates graphics, characters, and game worlds, with creators showing off games made in minutes from prompts. ([ru.wikipedia.org](https://ru.wikipedia.org/wiki/Rosebud_AI?utm_source=openai))  \n  - Niche apps like **StoryGen** let ordinary users create interactive visual\u2011novel\u2011style games from text prompts, automatically adding characters, music, and branching choices. ([reddit.com](https://www.reddit.com/r/playmygame/comments/1hdoxvp?utm_source=openai))  \n  - Research and demos like **Oasis**, an AI\u2011generated playable Minecraft\u2011style world run entirely by generative models, show that full AI\u2011driven, code\u2011free game worlds are technically possible, though still glitchy and experimental. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Oasis_%28Minecraft_clone%29?utm_source=openai))  \n- However, these tools are still constrained\u2014usually 2D, template\u2011driven, or requiring significant iterative prompting and manual adjustment. They do not yet consistently deliver the robust, arbitrary, high\u2011fidelity games most people imagine when they hear \u201cdescribe any game you want and it appears.\u201d\n  \n**Assessment:** The **direction** of progress matches Friedberg\u2019s forecast, and early consumer\u2011facing text\u2011to\u2011game systems exist, but his explicit time horizon runs until approximately 2026\u20132027. As of late 2025, it\u2019s not yet clear whether truly mainstream, widely\u2011adopted tools that fully match his vision will arrive in that window. So this part is **still in progress and not yet judgeable**.\n\n**Overall verdict:**  \n- One component (AI symphony) is clearly right; another (AI film) is effectively right in spirit; the AI\u2011novel component is partially/arguably right but depends on how you define a \u201cmajor\u201d publisher; and the video\u2011game component\u2019s deadline hasn\u2019t arrived yet. Because **at least one major sub\u2011prediction is still within its time window and cannot yet be definitively graded**, the combined prediction set is best labeled **inconclusive** at this time.",
+      "sources": [
+        {
+          "end_index": 954,
+          "start_index": 852,
+          "title": "Death of an Author (novella)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Death_of_an_Author_%28novella%29?utm_source=openai"
+        },
+        {
+          "end_index": 1258,
+          "start_index": 1170,
+          "title": "Pushkin Industries",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Pushkin_Industries?utm_source=openai"
+        },
+        {
+          "end_index": 1974,
+          "start_index": 1900,
+          "title": "AIVA",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/AIVA?utm_source=openai"
+        },
+        {
+          "end_index": 2431,
+          "start_index": 2266,
+          "title": "The exciting path to the completion of Beethoven's 10th Symphony. Advance booking starts today | Deutsche Telekom",
+          "type": "url_citation",
+          "url": "https://www.telekom.com/en/media/media-information/archive/the-exciting-path-to-the-completion-of-beethoven-s-10th-symphony-635670?utm_source=openai"
+        },
+        {
+          "end_index": 2909,
+          "start_index": 2732,
+          "title": "Spanish orchestra performs work made with AI for the first time: \u2018It was a pastiche\u2019 | Technology | EL PA\u00cdS English",
+          "type": "url_citation",
+          "url": "https://english.elpais.com/technology/2024-02-10/spanish-orchestra-performs-work-made-with-ai-for-the-first-time-it-was-a-pastiche.html?utm_source=openai"
+        },
+        {
+          "end_index": 3872,
+          "start_index": 3781,
+          "title": "The Diary of Sisyphus",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/The_Diary_of_Sisyphus?utm_source=openai"
+        },
+        {
+          "end_index": 4180,
+          "start_index": 4089,
+          "title": "The Last Screenwriter",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/The_Last_Screenwriter?utm_source=openai"
+        },
+        {
+          "end_index": 4769,
+          "start_index": 4667,
+          "title": "DreadClub: Vampire's Verdict",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/DreadClub%3A_Vampire%27s_Verdict?utm_source=openai"
+        },
+        {
+          "end_index": 5263,
+          "start_index": 5061,
+          "title": "This new OpenAI-backed movie has a budget of just $30 million, but will it prove AI can make movies Hollywood can't?",
+          "type": "url_citation",
+          "url": "https://www.techradar.com/streaming/entertainment/this-new-openai-backed-movie-has-a-budget-of-just-usd30-million-but-will-it-prove-ai-can-make-movies-hollywood-cant?utm_source=openai"
+        },
+        {
+          "end_index": 6304,
+          "start_index": 6226,
+          "title": "Buildbox",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Buildbox?utm_source=openai"
+        },
+        {
+          "end_index": 6635,
+          "start_index": 6555,
+          "title": "Rosebud AI",
+          "type": "url_citation",
+          "url": "https://ru.wikipedia.org/wiki/Rosebud_AI?utm_source=openai"
+        },
+        {
+          "end_index": 6903,
+          "start_index": 6817,
+          "title": "[Mobile] StoryGen - Create & Play Interactive Visual Stories with AI",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/playmygame/comments/1hdoxvp?utm_source=openai"
+        },
+        {
+          "end_index": 7238,
+          "start_index": 7141,
+          "title": "Oasis (Minecraft clone)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Oasis_%28Minecraft_clone%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Prediction 1 failed: No evidence of a major book publisher (e.g., Penguin Random House, HarperCollins) publishing a primarily AI-generated novel in 2023. Searches showed AI use in covers/marketing (e.g., Bloomsbury/Sarah J. Maas) or self-publishing concerns, but no qualifying novel ([web:0] guardian.com 2023; multiple Jane Friedman articles).\n\nPrediction 2 partial but insufficient: RTVE Symphony Orchestra (Spain) performed an AI-composed symphonic *piece* in 2024 (elpais.com); AIVA with French orchestra claimed 'fully AI-composed symphony' 2023 (artevolves.com). Not a 'major symphony orchestra' like NY Phil/London Phil performing a full 'symphony primarily composed by AI' in near-term.\n\nPrediction 3 failed: No primarily AI-generated screenplay-to-AI-3D-movie with *broad* public viewership (e.g., theatrical hit). 'Post Truth' (2025 theaters, yahoo.com/finance) and 'Pirate Queen' (malaymail.com) are niche firsts, not broad; Critterz upcoming 2026 (wsj.com). Near-term passed without.\n\nPrediction 4 plausible but overall set wrong: Tools like Exists text-to-3D-game platform (gamesbeat.com 2024), Roblox AI assets/NPCs exist by 2025, but not fully end-to-end 'ordinary users' verbal/text spec full games yet. However, 1-3 core near-term claims missed.\n\nEnough time passed (2023 podcast to Dec 2025); hype didn't materialize as stated."
+    },
+    {
+      "id": "C-01:17:52.450",
+      "result": "wrong",
+      "explanation": "Merrick Garland\u2019s Department of Justice did *not* drop or scale back the classified-documents case against Donald Trump after the Biden documents discovery.\n\nKey facts:\n\n- On November 18, 2022, Attorney General Merrick Garland appointed Jack Smith as special counsel to oversee investigations involving Donald Trump, including the Mar-a-Lago classified-documents matter. The appointment remained in force after the January 2023 revelations about classified documents found at Biden\u2019s former office and residence.\n- On June 9, 2023, a federal grand jury in the Southern District of Florida indicted Trump on 37 counts related to retention of national defense information, obstruction, and false statements arising from his handling of classified documents at Mar-a-Lago. \n- On July 27, 2023, a superseding indictment added further charges and an additional defendant, expanding rather than narrowing the case. \n- As of late 2025, the Mar-a-Lago documents prosecution has not been dropped; it remains an active federal criminal case, with ongoing pretrial litigation and no indication that DOJ has abandoned or materially scaled back the core classified-documents charges.\n\nBecause the DOJ proceeded to charge Trump and has continued to pursue that prosecution, the prediction that Garland would \"have to drop the prosecution ... or at least that part\" related to the documents at Mar-a-Lago did not come true.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction, made on January 13, 2023, shortly after classified documents were discovered at Biden's properties, claimed that Attorney General Merrick Garland's DOJ would drop or significantly scale back prosecution of Trump specifically for mishandling classified documents at Mar-a-Lago due to the Biden discovery. This did not occur.\n\n- Trump was indicted on **37 felony counts** (later superseding to 40) on June 8, 2023, by Special Counsel Jack Smith (appointed by Garland) for willful retention of national defense documents, Espionage Act violations, and obstruction related to Mar-a-Lago ([Wikipedia: Federal prosecution of Donald Trump (classified documents case)](https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_%28classified_documents_case%29); [AP News timeline](https://apnews.com/article/trump-documents-investigation-timeline-087f0c9a8368bb983a16b67dd31dcd4c)).\n- The case proceeded with arraignments, motions, and delayed trial dates under Garland's DOJ until dismissed by Judge Cannon on July 15, 2024, on unrelated grounds (unconstitutional appointment of Smith); appealed but dropped by Smith on November 25, 2024, after Trump's election victory, citing DOJ policy against prosecuting sitting presidents ([CNN](https://www.cnn.com/2024/07/15/politics/classified-documents-case-trump-dismissed-aileen-cannon); [LiveNowFox](https://www.livenowfox.com/news/jack-smith-donald-trump-election-interference-classified-docs)).\n- Biden's investigation concluded February 2024 with no charges (Special Counsel Hur cited willful retention but insufficient evidence for conviction due to Biden's memory) ([DOJ Hur Report](https://www.justice.gov/storage/report-from-special-counsel-robert-k-hur-february-2024.pdf); [AP News](https://apnews.com/article/biden-classified-documents-age-trump-2024-4791639cc06cc0affee55aba80c7e6b3)).\n\nThe DOJ pursued Trump's case vigorously post-Biden discovery, contradicting the prediction. Dismissal was years later and unrelated to Biden's case or Garland dropping charges for fairness."
+    }
+  ]
+}

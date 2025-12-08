@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "count": 5,
+    "count_by_result": {
+      "wrong": 3,
+      "right": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "F-00:40:17.810",
+      "result": "wrong",
+      "explanation": "Breaking the prediction into components:\n\n1. **\"Shallow technical recession\" by Q2 2022** \u2013 This matches the data. BEA shows real U.S. GDP fell at an annualized \u20131.6% in Q1 2022 and \u20130.6% in Q2 2022, i.e., two consecutive negative quarters (a common \u201ctechnical recession\u201d rule of thumb). ([bea.gov](https://www.bea.gov/news/2022/gross-domestic-product-third-estimate-gdp-industry-and-corporate-profits-revised-first?utm_source=openai))\n\n2. **Return to positive real GDP in Q3 or Q4 2022** \u2013 This also happened. Real GDP turned positive in Q3 2022 (+2.6% annual rate, advance estimate) and remained positive in Q4 2022 (+2.7% in the second estimate). ([bea.gov](https://www.bea.gov/news/blog/2022-10-27/gross-domestic-product-third-quarter-2022-advance-estimate?utm_source=openai))\n\n3. **\"Double-dip\" recession in 2023 as rate hikes kick in (another downturn 6\u20139 months later)** \u2013 This did *not* occur. BEA data show real GDP **grew** in every quarter of 2023: Q1 (~1.1% advance), Q2 (2.1% second/third estimate), Q3 (4.9% third estimate), and Q4 (about 3.2\u20133.4%), with full\u2011year 2023 real GDP up 2.5% from 2022. ([bea.gov](https://www.bea.gov/index.php/news/2023/gross-domestic-product-first-quarter-2023-advance-estimate?utm_source=openai))  The National Bureau of Economic Research\u2019s official business\u2011cycle chronology (last updated March 14, 2023) lists the most recent recession as February\u2013April 2020 and does **not** show any new recession starting in 2023. ([nber.org](https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions))\n\nBecause the central, forward\u2011looking part of the prediction was a renewed recession in 2023 that never happened, the overall prediction is best classified as **wrong**, even though the short\u2011term call about a 2022 technical recession followed by a brief return to growth was accurate.",
+      "sources": [
+        {
+          "end_index": 472,
+          "start_index": 325,
+          "title": "Gross Domestic Product (Third Estimate), GDP by Industry, and Corporate Profits (Revised), First Quarter 2022 | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2022/gross-domestic-product-third-estimate-gdp-industry-and-corporate-profits-revised-first?utm_source=openai"
+        },
+        {
+          "end_index": 819,
+          "start_index": 689,
+          "title": "Gross Domestic Product, Third Quarter 2022 (Advance Estimate) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/blog/2022-10-27/gross-domestic-product-third-quarter-2022-advance-estimate?utm_source=openai"
+        },
+        {
+          "end_index": 1284,
+          "start_index": 1155,
+          "title": "Gross Domestic Product, First Quarter 2023 (Advance Estimate) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/index.php/news/2023/gross-domestic-product-first-quarter-2023-advance-estimate?utm_source=openai"
+        },
+        {
+          "end_index": 1601,
+          "start_index": 1507,
+          "title": "US Business Cycle Expansions and Contractions | NBER",
+          "type": "url_citation",
+          "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction partially succeeded but ultimately failed on the key second part. US real GDP growth (SAAR, BEA data via FRED A191RL1Q225SBEA and BEA releases): Q1 2022: -1.6%; Q2 2022: -0.6% (confirming shallow technical recession). Q3 2022: +3.2%; Q4 2022: +2.6% (positive growth as predicted). However, no renewed recession in 2023: Q1: +2.2%; Q2: +2.1%; Q3: +4.9%; Q4: +3.4%; annual +2.5% ([BEA](https://www.bea.gov/news/2024/gross-domestic-product-fourth-quarter-and-year-2023-second-estimate), [Statista](https://www.statista.com/statistics/188185/percent-change-from-preceding-period-in-real-gdp-in-the-us/)). NBER has not declared a recession since April 2020 ([NBER Business Cycle Dating](https://www.nber.org/research/business-cycle-dating)). Sources confirm robust growth despite rate hikes."
+    },
+    {
+      "id": "F-00:39:58.050",
+      "result": "wrong",
+      "explanation": "Evidence shows that while Fed rate hikes in 2022 **did sharply hit parts of U.S. housing/construction**, the broader U.S. economy did *not* exhibit clear, economy\u2011wide weakness by early\u2011to\u2011mid 2023.\n\n* On the construction side, single\u2011family housing starts fell 32% from March\u2013December 2022, and single\u2011family units under construction began their fastest sustained decline since 2006\u201309 starting in mid\u2011spring 2022, consistent with a strong and early impact from Fed tightening on that segment of construction. ([fredblog.stlouisfed.org](https://fredblog.stlouisfed.org/2023/11/multi-family-construction-slows-as-single-family-construction-picks-up/?utm_source=openai))\n* However, **macro indicators in early\u2013mid 2023 remained very strong**:\n  * The unemployment rate was just 3.4% in April 2023\u2014matching the lowest level since 1969\u2014and stayed in the mid\u20113% range through mid\u2011year, indicating a very tight labor market rather than broad weakness. ([bls.gov](https://www.bls.gov/opub/ted/2023/unemployment-rate-3-4-percent-in-april-2023.htm?utm_source=openai))\n  * Real GDP grew at a 2.2% annualized rate in Q1 2023, and for all of 2023 real GDP expanded 2.5%, faster than in 2022, which is inconsistent with a recession or clear economy\u2011wide downturn. ([bea.gov](https://www.bea.gov/index.php/news/2023/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-second-quarter?utm_source=openai))\n  * Retrospective assessments note that the widely predicted 2023 recession **never arrived**; instead, the U.S. economy \u201cdefied expectations\u201d with solid growth and a soft\u2011landing narrative. ([investopedia.com](https://www.investopedia.com/last-year-s-predictions-how-did-they-pan-out-8411505?utm_source=openai))\n* Even within construction, employment was not collapsing in 2022\u201323 in a way that would signal a broad downturn: BLS reports construction employment reached an all\u2011time high of about 8.0 million jobs in 2023, surpassing the 2006 housing\u2011boom peak, and AGC data show 45 states added construction jobs between June 2022 and June 2023. ([bls.gov](https://www.bls.gov/opub/btn/volume-14/whats-behind-the-projected-construction-employment-growth-from-2023-to-2033.htm?utm_source=openai))  Other analysts explicitly described this cycle as unusual because homebuilding and construction employment proved more resilient than past tightening episodes, helping explain why GDP and job growth \u201ckept on chugging\u201d despite sharply higher rates. ([axios.com](https://www.axios.com/2024/03/15/housing-construction-us-economy?utm_source=openai))\n\nBecause the **predicted broad economic weakness by early\u2011to\u2011mid 2023 did not materialize**\u2014the economy remained in expansion with very low unemployment and positive GDP growth\u2014the specific lagged\u2011propagation claim from construction to a clearly weak overall economy is best judged as **wrong**, even though the first step (construction being hit early) was partly correct.",
+      "sources": [
+        {
+          "end_index": 704,
+          "start_index": 546,
+          "title": "Multi-family construction slows as single-family construction picks up | FRED Blog",
+          "type": "url_citation",
+          "url": "https://fredblog.stlouisfed.org/2023/11/multi-family-construction-slows-as-single-family-construction-picks-up/?utm_source=openai"
+        },
+        {
+          "end_index": 1096,
+          "start_index": 984,
+          "title": "Unemployment rate 3.4 percent in April 2023 : The Economics Daily: U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/ted/2023/unemployment-rate-3-4-percent-in-april-2023.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1448,
+          "start_index": 1290,
+          "title": "Gross Domestic Product (Third Estimate), Corporate Profits (Revised Estimate), Second Quarter 2023 and Comprehensive Update | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/index.php/news/2023/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-second-quarter?utm_source=openai"
+        },
+        {
+          "end_index": 1762,
+          "start_index": 1641,
+          "title": "Last Year's Predictions: How Did They Pan Out?",
+          "type": "url_citation",
+          "url": "https://www.investopedia.com/last-year-s-predictions-how-did-they-pan-out-8411505?utm_source=openai"
+        },
+        {
+          "end_index": 2247,
+          "start_index": 2098,
+          "title": "What\u2019s behind the projected construction employment growth from 2023 to 2033? : Beyond the Numbers: U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/btn/volume-14/whats-behind-the-projected-construction-employment-growth-from-2023-to-2033.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2594,
+          "start_index": 2497,
+          "title": "Housing market puzzle: Interest rates didn't slow construction",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2024/03/15/housing-construction-us-economy?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction claimed that the impact of 2022 Fed rate hikes on construction would lead to clearly visible broader U.S. economic weakness by early-to-mid 2023 (6-9 months lag). While residential construction spending declined sharply after peaking in mid-2022 (e.g., from Census Bureau data, residential fell post-2022 highs due to high rates), this did not propagate broadly. U.S. GDP grew positively in Q1 2023 (+2.0% annualized per BEA third estimate) and Q2 (+2.1%), with full-year 2023 at ~2.5% (BEA, Statista). Unemployment remained low at 3.4-3.6% Jan-Apr 2023 (BLS/FRED). Construction employment grew ~16k/month avg. in 2023 (BLS). NBER has not declared a recession; expansion continues (NBER Business Cycle Dating). No clear broader weakness materialized\u2014'soft landing' achieved instead. Sources: BEA GDP releases, BLS employment, NBER chronology, Census construction spending."
+    },
+    {
+      "id": "F-01:00:31.070",
+      "result": "right",
+      "explanation": "Sacks\u2019 prediction has largely borne out.\n\n1. **Republicans rallied around Trump after the Mar\u2011a\u2011Lago raid.**  Within days of the 8 August 2022 FBI search, Republican leaders attacked the FBI and DOJ and publicly defended Trump, framing him as a victim of a politicized investigation. ([en.wikipedia.org](https://en.wikipedia.org/wiki/FBI_search_of_Mar-a-Lago?utm_source=openai))  Polling showed GOP voters consolidating behind him: a Politico/Morning Consult poll found 58% of Republican primary voters preferred Trump as the 2024 nominee\u2014his highest level of post\u2011presidency support\u2014and 71% said he should run; an Economist/YouGov poll saw his favorability among Republicans jump from 45% to 57% in a week. ([newsweek.com](https://www.newsweek.com/mar-lago-raid-made-trump-victim-boosts-support-gop-strategist-1735432?utm_source=openai))  This is consistent with Sacks\u2019 claim that the raid spurred Republicans to rally around Trump.\n\n2. **He became \u201cvery hard to beat\u201d and won the 2024 GOP nomination.**  Through late 2023 and early 2024, Trump held dominant leads in Republican primary polling in key states such as New Hampshire, South Carolina, and Georgia, often exceeding 55\u201360% support versus much lower numbers for rivals like Nikki Haley and Ron DeSantis. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_New_Hampshire_Republican_presidential_primary?utm_source=openai))  On March 12, 2024 he officially clinched the Republican nomination by surpassing the delegate threshold. ([forbes.com](https://www.forbes.com/sites/saradorn/2024/03/12/trump-clinches-republican-nomination/?utm_source=openai))  This matches Sacks\u2019 forecast that, after the raid, Trump would be very difficult to defeat for the 2024 Republican nomination.\n\n3. **Of the polarized outcomes Sacks named, the \u2018White House\u2019 branch occurred.**  In November 2024, Trump won the U.S. presidential election against Kamala Harris, securing 312 electoral votes to 226 and winning the popular vote 49.8% to 48.3%. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))  He took office again in January 2025. This is exactly the \u201cWhite House\u201d end of Sacks\u2019 \u201cbig house or White House\u201d framing.\n\n4. **The \u2018big house\u2019 (incarceration) outcome has not occurred, and legal actions did not derail his candidacy.**  Trump was convicted in New York state court in May 2024 on 34 felony counts related to hush\u2011money payments, but in January 2025 he received an \u201cunconditional discharge,\u201d meaning no jail time, fines, or probation. ([reuters.com](https://www.reuters.com/legal/trump-must-be-sentenced-hush-money-criminal-case-jan-10-judge-rules-2025-01-03/?utm_source=openai))  Other criminal cases\u2014federal election\u2011obstruction and classified\u2011documents prosecutions\u2014were dismissed or dropped after his 2024 victory, in part because DOJ policy bars prosecuting a sitting president and because a judge found the special counsel\u2019s appointment invalid. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_%28classified_documents_case%29?utm_source=openai))  None of these proceedings prevented him from securing the nomination or winning the presidency, so the caveat Sacks added (\u201cunless the FBI comes up with ironclad evidence\u2026that derails his candidacy\u201d) did not materialize in the sense of blocking his political comeback.\n\nTaken together, the central elements of Sacks\u2019 prediction\u2014that the Mar\u2011a\u2011Lago raid would rally Republican support around Trump, make him very hard to beat for the 2024 GOP nomination, and lead to a polarized outcome where he either returns to the White House or faces serious legal ruin\u2014have come true in the form of a strong rally, an easy nomination win, and an eventual return to the presidency rather than incarceration. Therefore, the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 413,
+          "start_index": 319,
+          "title": "FBI search of Mar-a-Lago",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/FBI_search_of_Mar-a-Lago?utm_source=openai"
+        },
+        {
+          "end_index": 873,
+          "start_index": 743,
+          "title": "Mar-a-Lago Raid Made Trump \u2018Victim,\u2019 Boosts Support: GOP Strategist - Newsweek",
+          "type": "url_citation",
+          "url": "https://www.newsweek.com/mar-lago-raid-made-trump-victim-boosts-support-gop-strategist-1735432?utm_source=openai"
+        },
+        {
+          "end_index": 1422,
+          "start_index": 1302,
+          "title": "2024 New Hampshire Republican presidential primary",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_New_Hampshire_Republican_presidential_primary?utm_source=openai"
+        },
+        {
+          "end_index": 1649,
+          "start_index": 1529,
+          "title": "Trump Wins 2024 Republican Nomination",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/saradorn/2024/03/12/trump-clinches-republican-nomination/?utm_source=openai"
+        },
+        {
+          "end_index": 2136,
+          "start_index": 2026,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 2734,
+          "start_index": 2590,
+          "title": "Trump must be sentenced in hush money case, judge signals no jail",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/legal/trump-must-be-sentenced-hush-money-criminal-case-jan-10-judge-rules-2025-01-03/?utm_source=openai"
+        },
+        {
+          "end_index": 3144,
+          "start_index": 3007,
+          "title": "Federal prosecution of Donald Trump (classified documents case)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_%28classified_documents_case%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Mar-a-Lago raid in August 2022 rallied Republican support around Trump, as evidenced by immediate backlash and loyalty from the base ([Miami Herald](https://www.miamiherald.com/news/nation-world/national/article265748356.html), [Guardian](https://www.theguardian.com/us-news/2022/aug/09/trump-fbi-raid-republican-reactions-2024-election), [BBC](https://www.bbc.com/news/world-us-canada-62486406)). Trump easily won the 2024 Republican nomination, clinching it in March 2024 after sweeping primaries ([Wikipedia](https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_primaries), [PBS](https://www.pbs.org/newshour/politics/trump-clinches-2024-republican-nomination), [CNN](https://www.cnn.com/election/2024/primaries-and-caucuses/results/republican-party/president)). He won the presidency on November 5, 2024, defeating Kamala Harris ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [CNN](https://www.cnn.com/election/2024/results/president), [NYT](https://www.nytimes.com/interactive/2024/11/05/us/elections/results-president.html)). Trump is not incarcerated; his NY felony conviction resulted in an unconditional discharge on January 10, 2025, with no prison time ([Wikipedia](https://en.wikipedia.org/wiki/Criminal_trial_of_Donald_Trump_in_New_York), [NPR](https://www.npr.org/2025/01/10/nx-s1-5253927/trump-sentencing-new-york)). No evidence derailed his candidacy, matching the predicted outcomes of White House or Big House\u2014with him returning to the White House."
+    },
+    {
+      "id": "A-01:02:07.990",
+      "result": "right",
+      "explanation": "**Portion about 10\u201315% believing evidence was planted**  \nMultiple polls after the Mar-a-Lago search show that at least this share of Americans believed or leaned toward believing the \u201cplanted evidence\u201d claim:\n\n- A YouGov poll summarized by *The Washington Post* found that shortly after the search, **38% of Republicans** said the FBI planted evidence at Mar\u2011a\u2011Lago, 23% disagreed, and 39% were unsure. With Republicans making up roughly a third of adults, that alone implies \u224811\u201313% of all U.S. adults affirmatively believed evidence was planted. A subsequent YouGov poll the next month found a **majority of Republicans** said it was at least \u201cprobably true\u201d the FBI planted classified documents, which would put the national share at or above 15%. ([washingtonpost.com](https://www.washingtonpost.com/politics/2024/02/14/gop-swift-superbowl/?utm_source=openai))  \n- A national survey summarized by Statista (Sept 3\u20136, 2022) reported **9% of all Americans** saying it was *definitely true* the FBI planted sensitive documents at Mar\u2011a\u2011Lago. That figure excludes additional respondents who said it was \u201cprobably true,\u201d so the total share who believed the claim is necessarily higher than 9%, plausibly in the low\u2011 to mid\u2011teens. ([statista.com](https://www.statista.com/statistics/1331646/fbi-planted-documents-mar-a-lago-us/?utm_source=openai))  \n\nTaken together, these data support Chamath\u2019s prediction that **at least 10\u201315% of the U.S. population would believe the documents were planted.**\n\n**Portion about an outcome that leaves people unsatisfied**  \nThe legal and political trajectory of the case fits his contention that whatever the outcome, it would not be broadly seen as satisfactory:\n\n- Early on, public opinion was sharply split: a Northeastern University survey conducted days after the search found **51% of Americans approved** of the raid and 27% disapproved, but **84% of Democrats** approved while **64% of Republicans** opposed it\u2014showing immediate, intense partisan division. ([news.northeastern.edu](https://news.northeastern.edu/2022/10/24/mar-a-lago-raid-support/?utm_source=openai))  \n- A Quinnipiac poll in late August 2022 found about **half of Americans thought Trump\u2019s conduct was criminal and that he should be prosecuted**, with 85% of Democrats and 52% of independents saying he should be charged\u2014versus strong opposition among Republicans. ([thepeninsulaqatar.com](https://thepeninsulaqatar.com/article/01/09/2022/half-of-americans-favor-trump-prosecution-over-documents-poll?utm_source=openai))  \n- By June 2023, an AP\u2013NORC poll found **53% of adults believed Trump had done something illegal** in his handling of the documents, but only **23% of Republicans** agreed; views on his guilt and the propriety of prosecution remained deeply polarized. ([apnorc.org](https://apnorc.org/projects/half-the-public-views-trumps-handling-of-classified-documents-as-illegal/?utm_source=openai))  \n- Legally, the case ended inconclusively for accountability advocates: Trump was federally indicted over the documents in 2023, but **Judge Aileen Cannon dismissed the case on Appointments Clause grounds in July 2024**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/FBI_search_of_Mar-a-Lago?utm_source=openai))  Democrats and many legal experts condemned the ruling as \u201cbreathtakingly misguided\u201d and \u201cstunning and wrong,\u201d while Republicans celebrated it as vindication and a major legal victory. ([missouriindependent.com](https://missouriindependent.com/2024/07/15/federal-judge-dismisses-trump-classified-documents-criminal-case/?utm_source=openai))  \n\nSo although some Republicans were clearly pleased by the dismissal, the broader pattern matches Chamath\u2019s point: **no resolution commanded widespread, cross\u2011partisan satisfaction.** One side\u2019s \u201cwin\u201d was treated by the other as proof of system failure.\n\n**Portion about both extremes getting angrier and more polarized**  \nEvidence also supports his forecast of intensified anger and polarization on both ends of the spectrum:\n\n- Surveys show a widening partisan gulf in trust toward the FBI and DOJ. A Marquette Law School national poll found Republicans far less confident in the FBI than Democrats; large shares of Republicans report \u201cvery little\u201d or \u201cno\u201d confidence in the bureau, while Democrats mostly express high confidence. ([law.marquette.edu](https://law.marquette.edu/poll/2022/09/22/new-marquette-law-school-national-survey-finds-a-third-of-the-public-and-three-fifths-of-republicans-dont-believe-trump-had-secret-documents-at-mar-a-lago-bidens-approval-rating-ris/?utm_source=openai))  \n- After Trump\u2019s subsequent indictment on the classified-documents charges, an ABC News/Ipsos and CBS/YouGov polling summary found **around two\u2011thirds to three\u2011quarters of Republicans** believed the charges were politically motivated and said they must support Trump to oppose his enemies\u2014while majorities of Americans overall (and overwhelming majorities of Democrats) thought his retention of the documents was a serious national\u2011security problem and that he should be charged. ([axios.com](https://www.axios.com/2023/06/12/trump-classified-documents-indictment-republican-voters-surveys?utm_source=openai))  \n- Broader opinion data around this period show majorities saying the country is on the \u201cwrong track,\u201d ranking \u201cthreats to democracy\u201d as a top national problem and expressing high willingness to protest\u2014indicators of elevated, cross\u2011ideological anger. ([statista.com](https://www.statista.com/chart/28059/poll-on-trump-investigations/?utm_source=openai))\n\n**Assessment**  \n- The **quantitative threshold** in the prediction\u2014at least 10\u201315% believing the evidence was planted\u2014is met by multiple independent polls. ([washingtonpost.com](https://www.washingtonpost.com/politics/2024/02/14/gop-swift-superbowl/?utm_source=openai))  \n- The **qualitative claims** that the investigation\u2019s outcomes would not bring a broadly legitimizing resolution, and that **both political extremes would grow angrier and more polarized**, are borne out by the sequence of a polarizing raid, a controversial indictment, and a highly disputed dismissal that each side alternately denounced or celebrated.\n\nWhile some wording (e.g., \u201cnobody will be satisfied\u201d) is somewhat hyperbolic, the core substance of Chamath\u2019s forecast\u2014**significant belief in planted evidence, no outcome widely accepted as fair, and heightened polarization on both ends**\u2014matches what happened closely enough to count as **essentially correct**.",
+      "sources": [
+        {
+          "end_index": 901,
+          "start_index": 788,
+          "title": "Many Republicans believe Taylor Swift-Travis Kelce conspiracy theory - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2024/02/14/gop-swift-superbowl/?utm_source=openai"
+        },
+        {
+          "end_index": 1383,
+          "start_index": 1267,
+          "title": "Public opinion: FBI planted documents at Mar-a-Lago U.S. 2022| Statista",
+          "type": "url_citation",
+          "url": "https://www.statista.com/statistics/1331646/fbi-planted-documents-mar-a-lago-us/?utm_source=openai"
+        },
+        {
+          "end_index": 2154,
+          "start_index": 2044,
+          "title": "Survey: American Public Largely Supported FBI Mar-a-Lago Raid",
+          "type": "url_citation",
+          "url": "https://news.northeastern.edu/2022/10/24/mar-a-lago-raid-support/?utm_source=openai"
+        },
+        {
+          "end_index": 2576,
+          "start_index": 2421,
+          "title": "Half of Americans favour Trump prosecution over documents: Poll | The Peninsula Qatar",
+          "type": "url_citation",
+          "url": "https://thepeninsulaqatar.com/article/01/09/2022/half-of-americans-favor-trump-prosecution-over-documents-poll?utm_source=openai"
+        },
+        {
+          "end_index": 2966,
+          "start_index": 2831,
+          "title": "Half the public views Trump\u2019s handling of classified documents as illegal - AP-NORC",
+          "type": "url_citation",
+          "url": "https://apnorc.org/projects/half-the-public-views-trumps-handling-of-classified-documents-as-illegal/?utm_source=openai"
+        },
+        {
+          "end_index": 3284,
+          "start_index": 3190,
+          "title": "FBI search of Mar-a-Lago",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/FBI_search_of_Mar-a-Lago?utm_source=openai"
+        },
+        {
+          "end_index": 3625,
+          "start_index": 3470,
+          "title": "Federal judge dismisses Trump classified documents criminal case \u2022 Missouri Independent",
+          "type": "url_citation",
+          "url": "https://missouriindependent.com/2024/07/15/federal-judge-dismisses-trump-classified-documents-criminal-case/?utm_source=openai"
+        },
+        {
+          "end_index": 4633,
+          "start_index": 4368,
+          "title": "New Marquette Law School national survey finds a third of the public and three-fifths of Republicans don\u2019t believe Trump had secret documents at Mar-a-Lago; Biden\u2019s approval rating rises to 45% from 36% in July \u2013 Marquette Law School Poll",
+          "type": "url_citation",
+          "url": "https://law.marquette.edu/poll/2022/09/22/new-marquette-law-school-national-survey-finds-a-third-of-the-public-and-three-fifths-of-republicans-dont-believe-trump-had-secret-documents-at-mar-a-lago-bidens-approval-rating-ris/?utm_source=openai"
+        },
+        {
+          "end_index": 5245,
+          "start_index": 5116,
+          "title": "New criminal charges haven't changed Republicans\u2019 view of Trump, polls say",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2023/06/12/trump-classified-documents-indictment-republican-voters-surveys?utm_source=openai"
+        },
+        {
+          "end_index": 5602,
+          "start_index": 5500,
+          "title": "Chart: Majority Say Trump Investigations Should Continue | Statista",
+          "type": "url_citation",
+          "url": "https://www.statista.com/chart/28059/poll-on-trump-investigations/?utm_source=openai"
+        },
+        {
+          "end_index": 5877,
+          "start_index": 5764,
+          "title": "Many Republicans believe Taylor Swift-Travis Kelce conspiracy theory - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2024/02/14/gop-swift-superbowl/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction was accurate. Polls shortly after the August 8, 2022, Mar-a-Lago search showed 19-28% of Americans believed the FBI planted the documents, exceeding the 10-15% threshold: Yahoo/YouGov (Aug 18-22, 2022) found 19% overall (38% Republicans) [https://d3nkl3psvxxpe9.cloudfront.net/documents/20220822_yahoo_tabs.pdf]; Economist/YouGov (Sep 3-6, 2022) 24% [https://docs.cdn.yougov.com/t1ravwgbet/econTabReport.pdf]; Oct 8-11, 2022 poll 28% [https://docs.cdn.yougov.com/y88jfebibi/econTabReport.pdf]. Public reaction was divided (~50% approved FBI search, per multiple polls like Politico/Ipsos 48% approve, Economist/YouGov 52% justified), with neither side satisfied (Dems 80-90% approve, Reps 70-80% disapprove). The raid fueled anger among right-wing extremes (e.g., 54% Reps said FBI irresponsible, Reuters/Ipsos) and deepened polarization, as evidenced by partisan splits in all polls and media analyses (e.g., Guardian: 'bitterly polarised reaction'). This held regardless of later legal outcomes (case dismissed 2024)."
+    },
+    {
+      "id": "A-01:04:32.820",
+      "result": "wrong",
+      "explanation": "Chamath framed the \u201cmiddle path\u201d as one where *nothing happens* legally to Trump from the Mar\u2011a\u2011Lago raid, but public trust in DOJ continues to erode.\n\nOn the **legal outcome**, that forecast did not hold:\n- The August 8, 2022 FBI search of Mar\u2011a\u2011Lago recovered over 13,000 government documents, including 337 marked classified. ([en.wikipedia.org](https://en.wikipedia.org/wiki/FBI_search_of_Mar-a-Lago?utm_source=openai))\n- On June 8, 2023, Trump was federally indicted in *United States v. Trump* on 37, later 40, felony counts (willful retention of national defense information, obstruction\u2011related offenses, false statements, etc.), a case explicitly arising from his retention of classified documents at Mar\u2011a\u2011Lago and evidence gathered through that investigation and search. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_%28classified_documents_case%29?utm_source=openai))\n- Trump surrendered, was arrested, booked, and arraigned in June 2023, with charges carrying potential multi\u2011year prison sentences\u2014an unprecedented federal criminal case against a former president. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_%28classified_documents_case%29?utm_source=openai))\n- The case was later dismissed in July 2024 on the ground that Special Counsel Jack Smith\u2019s appointment was unconstitutional; DOJ dropped its appeal after Trump\u2019s 2024 re\u2011election, and in February 2025 the FBI returned boxes seized in the 2022 search. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_%28classified_documents_case%29?utm_source=openai))\n\nEven though the charges were ultimately dismissed and no conviction or sentence resulted, being indicted on dozens of federal felonies, arrested, arraigned, and subjected to a multi\u2011year prosecution is a major legal consequence flowing directly from the Mar\u2011a\u2011Lago documents investigation and raid. That is materially different from \u201cnothing happens\u201d or \u201cno significant legal consequences.\u201d\n\nOn the **trust in DOJ** piece, the direction of his call is broadly consistent with the data:\n- Surveys since 2022 show low and worsening confidence in the justice system generally; Gallup found overall confidence in the U.S. judicial system at a record\u2011low 35% in 2024, with Trump\u2011related legal battles cited among the contributing factors. ([apnews.com](https://apnews.com/article/1d4d2e22e9699cc09b29ec6ac8f374e7?utm_source=openai))\n- Evaluations of DOJ\u2019s performance have been largely negative: a 2024 summary of Gallup and Pew data reports roughly seven in ten Americans rating DOJ\u2019s performance as only fair or poor, and Pew finds the public split roughly evenly between favorable and unfavorable views of DOJ. ([forbes.com](https://www.forbes.com/sites/bowmanmarsico/2024/11/19/performance-matters-public-views-on-government-departments/?utm_source=openai))\n- By 2025, only about 20% of Americans express strong confidence that DOJ and the FBI will act fairly and nonpartisan under Trump, and a Marquette national poll finds 55% saying DOJ has filed unjustified cases against Trump\u2019s political opponents\u2014clear evidence of widespread skepticism about DOJ\u2019s fairness. ([apnews.com](https://apnews.com/article/0f6856a163b1e8eab517e80df28580a8?utm_source=openai))\n\nSo, while Chamath was directionally right that trust in DOJ would be further eroded, the central, falsifiable part of his prediction\u2014that the Mar\u2011a\u2011Lago investigation would lead to effectively *no* significant legal consequences for Trump\u2014has been contradicted by the subsequent indictment and prosecution. Overall, this makes the prediction **wrong**.",
+      "sources": [
+        {
+          "end_index": 459,
+          "start_index": 365,
+          "title": "FBI search of Mar-a-Lago",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/FBI_search_of_Mar-a-Lago?utm_source=openai"
+        },
+        {
+          "end_index": 956,
+          "start_index": 819,
+          "title": "Federal prosecution of Donald Trump (classified documents case)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_%28classified_documents_case%29?utm_source=openai"
+        },
+        {
+          "end_index": 1293,
+          "start_index": 1156,
+          "title": "Federal prosecution of Donald Trump (classified documents case)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_%28classified_documents_case%29?utm_source=openai"
+        },
+        {
+          "end_index": 1684,
+          "start_index": 1547,
+          "title": "Federal prosecution of Donald Trump (classified documents case)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_%28classified_documents_case%29?utm_source=openai"
+        },
+        {
+          "end_index": 2518,
+          "start_index": 2425,
+          "title": "Americans' trust in nation's court system hits record low, survey finds",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/1d4d2e22e9699cc09b29ec6ac8f374e7?utm_source=openai"
+        },
+        {
+          "end_index": 2948,
+          "start_index": 2801,
+          "title": "Performance Matters: Public Views On Government Departments",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/bowmanmarsico/2024/11/19/performance-matters-public-views-on-government-departments/?utm_source=openai"
+        },
+        {
+          "end_index": 3351,
+          "start_index": 3258,
+          "title": "Few US adults confident Justice Department and FBI will act fairly under Trump, AP-NORC poll finds",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/0f6856a163b1e8eab517e80df28580a8?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Mar-a-Lago classified documents case stemming from the August 8, 2022 FBI raid resulted in Trump's June 2023 indictment on 40 felony counts, but no trial occurred. U.S. District Judge Aileen Cannon dismissed the case on July 15, 2024, ruling Special Counsel Jack Smith's appointment unconstitutional ([Wikipedia](https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_%28classified_documents_case%29); [Lyndon Law News](https://lyldenlawnews.com/2024/07/15/mar-a-lago-case-ended-for-now/)). Smith dropped the appeal post-Trump's 2024 election win, ending the case without conviction, prison, or penalties\u2014aligning with 'nothing happens' and no significant ultimate legal consequences.\n\nPublic trust in the DOJ eroded post-raid, particularly among Republicans. Pew (Aug 2024): 43% overall favorable ([Pew](https://www.pewresearch.org/short-reads/2024/08/12/americans-see-many-federal-agencies-favorably-but-republicans-grow-more-critical-of-justice-department/)); 56% Republicans unfavorable (up sharply). Pew (Aug 2025): 39% favorable overall, 46% unfavorable; Republicans rebounded slightly post-election, but Democrats soured ([Pew](https://www.pewresearch.org/politics/2025/08/27/republicans-views-of-justice-department-fbi-rebound-as-democrats-views-shift-more-negative/)). Gallup (2024): Judicial confidence record-low 35%, down 24 pts since 2020; DOJ rated poorly ([Gallup](https://news.gallup.com/poll/653897/americans-pass-judgment-courts.aspx); [Gallup Oct 2022](https://news.gallup.com/poll/402464/government-agency-ratings-cia-fbi-federal-reserve-down.aspx)). No pre-raid DOJ-specific polls found, but trends confirm erosion amid politicization perceptions."
+    }
+  ]
+}

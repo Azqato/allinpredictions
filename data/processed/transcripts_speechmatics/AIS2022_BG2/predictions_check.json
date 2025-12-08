@@ -1,0 +1,492 @@
+{
+  "meta": {
+    "count": 9,
+    "count_by_result": {
+      "right": 5,
+      "inconclusive": 2,
+      "wrong": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "E-00:06:53.000",
+      "result": "right",
+      "explanation": "Evidence indicates this prediction came true.\n\n- Around the time of the podcast, the *average* U.S. used-car price had indeed \u201cspiked to about $29,000\u201d: Edmunds data reported by AP put the average used-vehicle price at roughly $29,011 in late 2021, widely cited as \u201cabout $29,000,\u201d and Cox data show average listing prices hovering a bit above $28,000 into spring 2022. ([kvia.com](https://kvia.com/news/business-technology/ap-national-business/2022/01/03/29000-for-an-average-used-car-would-be-buyers-are-aghast/?utm_source=openai))\n- One year later, in May 2023, Cox Automotive/Kelley Blue Book report that the average used-vehicle listing/transaction price was $27,256, i.e., clearly *below* $29,000. ([kbb.com](https://www.kbb.com/car-news/average-used-car-price-topped-27000-in-may/?utm_source=openai))\n- Over that same March 2022\u2013May 2023 period, the Federal Reserve raised the federal funds rate from near 0% to a 5.0\u20135.25% target range, and data show average used-car loan APRs rising from about 14.1% in May 2022 to about 16.0% in May 2023, making financing more expensive. ([bankrate.com](https://www.bankrate.com/banking/federal-reserve/history-of-federal-funds-rate/?utm_source=openai))  Cox Automotive explicitly noted in late 2022 that higher interest rates were beginning to hurt used-vehicle demand and could push dealers to lower prices. ([coxautoinc.com](https://www.coxautoinc.com/insights-hub/used-vehicle-inventory-september-2022/?utm_source=openai))\n\nBecause the average used-car price by roughly May 2023 was noticeably *lower* than the cited ~$29,000 level, the core quantitative claim of the prediction was correct; the suggested mechanism (demand destruction from higher interest rates) is also consistent with contemporaneous commentary, though multiple factors influenced prices.",
+      "sources": [
+        {
+          "end_index": 568,
+          "start_index": 405,
+          "title": "$29,000 for an average used car? Would-be buyers are aghast - KVIA",
+          "type": "url_citation",
+          "url": "https://kvia.com/news/business-technology/ap-national-business/2022/01/03/29000-for-an-average-used-car-would-be-buyers-are-aghast/?utm_source=openai"
+        },
+        {
+          "end_index": 843,
+          "start_index": 740,
+          "title": "Average Used Car Price Topped $27,000 in May - Kelley Blue Book",
+          "type": "url_citation",
+          "url": "https://www.kbb.com/car-news/average-used-car-price-topped-27000-in-may/?utm_source=openai"
+        },
+        {
+          "end_index": 1235,
+          "start_index": 1120,
+          "title": "Federal Funds Rate History: 1980 Through The Present | Bankrate",
+          "type": "url_citation",
+          "url": "https://www.bankrate.com/banking/federal-reserve/history-of-federal-funds-rate/?utm_source=openai"
+        },
+        {
+          "end_index": 1508,
+          "start_index": 1392,
+          "title": "Used-Vehicle Market Stabilizes in Supply and Prices - Cox Automotive Inc.",
+          "type": "url_citation",
+          "url": "https://www.coxautoinc.com/insights-hub/used-vehicle-inventory-september-2022/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was correct. In May 2022, the average used car transaction price was approximately $28,312 according to Kelley Blue Book ([source](https://www.kbb.com/car-news/average-used-car-price-dropped-in-may/)). Cox Automotive reported the average used vehicle listing price at the end of May 2023 as $27,270 ([source](https://www.coxautoinc.com/insights-hub/used-vehicle-inventory-may-2023/)), which is lower than the ~$29,000 cited in the podcast. Multiple sources confirm used car prices peaked around mid-2022 (e.g., over $30,000 in some metrics) and declined into 2023 due to normalizing supply and higher rates impacting demand (e.g., CarEdge, CNBC reports)."
+    },
+    {
+      "id": "E-00:08:40.000",
+      "result": "right",
+      "explanation": "Evidence from the U.S. Consumer Price Index (CPI) shows that inflation did in fact \u201croll over\u201d from its early\u20112022 pace over the months following May 2022, although there were a couple of additional hot prints before the clear downshift.\n\n1. **Context at the time of the prediction (May 23, 2022)**  \n   - The latest data then available were for April 2022: headline CPI rose **0.3% month\u2011over\u2011month** after a very hot **1.2% in March**, suggesting a tentative cooling in sequential inflation. ([bls.gov](https://www.bls.gov/news.release/archives/cpi_05112022.htm?utm_source=openai))\n\n2. **Immediate subsequent prints (May\u2013June 2022)**  \n   - The May 2022 CPI release later showed a **1.0% m/m** gain for \u201call items,\u201d re\u2011accelerating from April\u2019s 0.3%. ([bls.gov](https://www.bls.gov/news.release/archives/cpi_06102022.htm?utm_source=openai))  \n   - The June 2022 release showed an even hotter **1.3% m/m** with a **9.1% y/y** inflation rate, the peak of the cycle. ([bls.gov](https://www.bls.gov/news.release/archives/cpi_07132022.htm?mf_ct_campaign=yahoo-synd-feed&utm_source=openai))  \n   - So in the *very* short run (May\u2013June), inflation did not yet roll over; it briefly intensified.\n\n3. **Behavior in the \u201censuing months\u201d after the mid\u20112022 peak**  \n   - A BLS\u2011derived summary table of monthly changes shows:  \n     - **All items CPI m/m:** May 2022 = 1.0%, June = 1.3%, then **July = 0.0%, August = 0.1%, September = 0.4%, October = 0.4%, November = 0.1%.** ([usinflation.org](https://usinflation.org/us-inflation-release-dates/?utm_source=openai))  \n   - These post\u2011June prints are dramatically lower than the 0.6%\u20131.3% range seen in early 2022, indicating a clear rollover in the *sequential* pace of inflation even though the level of prices remained high.\n\n4. **Peak and subsequent trend in year\u2011over\u2011year inflation**  \n   - BLS data on 12\u2011month changes show headline CPI **peaking at 9.1% in June 2022**, then falling to **8.5% (July), 8.3% (August), 8.2% (September), 7.7% (October), 7.1% (November), 6.5% (December)**, and continuing to decline to about **3.0% by June 2023**. ([bls.gov](https://www.bls.gov/beta/nextgen/cpi/consumer-price-index-2023-10-12.htm?utm_source=openai))  \n   - Later summaries note that inflation **peaked at 9.1% in June 2022** and then, after staying \u22656% for about 17 months, fell below **3% by late 2024**. ([usinflationcalculator.com](https://www.usinflationcalculator.com/inflation/u-s-inflation-rises-0-3-in-june-annual-rate-hits-2-7/100059114/?utm_source=openai))  \n   - By mid\u20112025, annual CPI is in the **mid\u20112% range**, far below the 8\u20139% zone of spring\u2013summer 2022. ([usinflationcalculator.com](https://www.usinflationcalculator.com/inflation/u-s-inflation-rises-0-3-in-june-annual-rate-hits-2-7/100059114/?utm_source=openai))\n\n5. **Assessment versus the normalized prediction**  \n   - The normalized claim is that U.S. inflation would **decline from peak levels on a sequential month\u2011over\u2011month basis over the ensuing months**, rather than remain at or above its then\u2011current elevated pace.\n   - The data show:\n     - A final lurch higher in May\u2013June 2022, with CPI m/m at 1.0\u20131.3%. ([bls.gov](https://www.bls.gov/news.release/archives/cpi_06102022.htm?utm_source=openai))  \n     - Starting in **July 2022**, monthly increases fell to 0.0\u20130.4% and stayed far below the earlier 1%+ readings, which is exactly the sort of rollover in sequential inflation he was describing. ([usinflation.org](https://usinflation.org/us-inflation-release-dates/?utm_source=openai))  \n     - Over the following year and beyond, year\u2011over\u2011year inflation decisively trended down from the June 2022 peak rather than persisting around 8\u20139%. ([bls.gov](https://www.bls.gov/beta/nextgen/cpi/consumer-price-index-2023-10-12.htm?utm_source=openai))\n\nGiven that inflation soon peaked and, from mid\u20112022 onward, the *month\u2011to\u2011month* pace of price increases and the *year\u2011over\u2011year* rate both moved lower instead of staying near their prior extremes, the prediction that inflation would \"roll\" rather than remain stuck at its elevated pace is **substantively correct**, even though it was a bit early relative to the final June spike.",
+      "sources": [
+        {
+          "end_index": 619,
+          "start_index": 530,
+          "title": "Consumer Price Index News Release - 2022 M04 Results",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/news.release/archives/cpi_05112022.htm?utm_source=openai"
+        },
+        {
+          "end_index": 881,
+          "start_index": 792,
+          "title": "Consumer Price Index News Release - 2022 M05 Results",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/news.release/archives/cpi_06102022.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1126,
+          "start_index": 1006,
+          "title": "Consumer Price Index News Release - 2022 M06 Results",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/news.release/archives/cpi_07132022.htm?mf_ct_campaign=yahoo-synd-feed&utm_source=openai"
+        },
+        {
+          "end_index": 1601,
+          "start_index": 1511,
+          "title": "US Inflation Report Release Dates - US Inflation",
+          "type": "url_citation",
+          "url": "https://usinflation.org/us-inflation-release-dates/?utm_source=openai"
+        },
+        {
+          "end_index": 2244,
+          "start_index": 2141,
+          "title": "BLS News Release",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/beta/nextgen/cpi/consumer-price-index-2023-10-12.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2562,
+          "start_index": 2402,
+          "title": "U.S. Inflation Rises 0.3% in June; Annual Rate Hits 2.7%",
+          "type": "url_citation",
+          "url": "https://www.usinflationcalculator.com/inflation/u-s-inflation-rises-0-3-in-june-annual-rate-hits-2-7/100059114/?utm_source=openai"
+        },
+        {
+          "end_index": 2830,
+          "start_index": 2670,
+          "title": "U.S. Inflation Rises 0.3% in June; Annual Rate Hits 2.7%",
+          "type": "url_citation",
+          "url": "https://www.usinflationcalculator.com/inflation/u-s-inflation-rises-0-3-in-june-annual-rate-hits-2-7/100059114/?utm_source=openai"
+        },
+        {
+          "end_index": 3282,
+          "start_index": 3193,
+          "title": "Consumer Price Index News Release - 2022 M05 Results",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/news.release/archives/cpi_06102022.htm?utm_source=openai"
+        },
+        {
+          "end_index": 3573,
+          "start_index": 3483,
+          "title": "US Inflation Report Release Dates - US Inflation",
+          "type": "url_citation",
+          "url": "https://usinflation.org/us-inflation-release-dates/?utm_source=openai"
+        },
+        {
+          "end_index": 3832,
+          "start_index": 3729,
+          "title": "BLS News Release",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/beta/nextgen/cpi/consumer-price-index-2023-10-12.htm?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "US CPI-U seasonally adjusted month-over-month (MoM) inflation peaked at 1.0% in both May and June 2022 (BLS releases: [May 2022](https://www.bls.gov/news.release/archives/cpi_06102022.pdf), [June 2022](https://www.bls.gov/news.release/archives/cpi_07132022.pdf)). In ensuing months after May 2022, it declined sharply rather than remaining at elevated ~1% pace: July 2022: 0.0%, August: +0.1%, September: +0.4%, October: +0.4%, November: +0.1%, December: -0.1% (BLS archives and [YCharts data](https://ycharts.com/indicators/us_consumer_price_index_mom)). It continued fluctuating but stayed low (mostly 0.0-0.5%) through 2023-2025, averaging ~0.2-0.3%, confirming rollover (FRED CPIAUCSL trends, BLS CPI summaries). This matches the prediction of MoM decline from peaks over ensuing months, not sustained high pace."
+    },
+    {
+      "id": "E-00:10:17.000",
+      "result": "right",
+      "explanation": "Evidence since May 2022 supports E\u2019s view that the U.S. would not enter a persistent \u201chyper\u2011inflation\u201d regime and that longer\u2011term inflation expectations would point to moderating, not runaway, inflation.\n\n* **Realized inflation moderated rather than exploded.** BLS data show annual CPI inflation of about **8.0% in 2022**, falling to **4.1% in 2023** and **about 3.0% in 2024**.([bls.gov](https://www.bls.gov/pir/spm/spm_chart6_2024data.htm?utm_source=openai)) By early 2025, year\u2011over\u2011year CPI was around **2.8%**, down sharply from the 2022 peak above 9%.([theguardian.com](https://www.theguardian.com/business/2025/mar/12/februrary-inflation-rate?utm_source=openai)) This is elevated but clearly a *cooling* pattern, not continuously accelerating prices.\n* **10\u2011year TIPS breakeven inflation has stayed in a normal, anchored range.** FRED\u2019s 10\u2011year breakeven series shows the market\u2019s expected 10\u2011year inflation was **2.69% in May 2022**, then moved down into roughly the **2.1\u20132.4%** band through 2023\u20132025; recent daily values are around **2.2\u20132.3%**.([fred.stlouisfed.org](https://fred.stlouisfed.org/data/T10YIEM)) This is consistent with moderate, near\u2011target inflation expectations rather than an expectation of sustained very high or explosive inflation.\n* **No sign of actual hyperinflation.** In standard economics (Cagan), *hyperinflation* is defined as monthly inflation above **50%**, which the U.S. never came close to; even at the 2022 peak, monthly CPI changes were in the low single digits.([en.wikipedia.org](https://en.wikipedia.org/wiki/Hyperinflation?utm_source=openai))\n\nGiven that (1) actual inflation has clearly rolled over from its 2022 highs toward the low\u2011single\u2011digit range and (2) 10\u2011year breakeven rates have remained around ~2\u20132.5% instead of blowing out, the bond market has indeed been signaling moderating, not runaway, inflation. That aligns with E\u2019s claim that investors should not believe the \u201chyper inflation narrative.\u201d",
+      "sources": [
+        {
+          "end_index": 497,
+          "start_index": 415,
+          "title": "spm_chart6_2024data.htm : U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/pir/spm/spm_chart6_2024data.htm?utm_source=openai"
+        },
+        {
+          "end_index": 706,
+          "start_index": 594,
+          "title": "US annual inflation rate in February remains relatively stable at 2.8%",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/2025/mar/12/februrary-inflation-rate?utm_source=openai"
+        },
+        {
+          "end_index": 1159,
+          "start_index": 1094,
+          "title": "Table Data - 10-Year Breakeven Inflation Rate | FRED | St. Louis Fed",
+          "type": "url_citation",
+          "url": "https://fred.stlouisfed.org/data/T10YIEM"
+        },
+        {
+          "end_index": 1632,
+          "start_index": 1548,
+          "title": "Hyperinflation",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Hyperinflation?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "In May 2022, the 10-year TIPS breakeven inflation rate was around 2.7% ([Schwab, May 23, 2022](https://www.schwabassetmanagement.com/content/are-tips-worth-considering-now)). It had peaked at 3.02% in April 2022 ([Trading Economics](https://tradingeconomics.com/united-states/10-year-breakeven-inflation-rate-fed-data.html)). Since then, it declined and stabilized around 2.2-2.3%, reaching 2.23% as of Nov 28, 2025 ([FRED T10YIE](https://fred.stlouisfed.org/series/T10YIE); [YCharts](https://ycharts.com/indicators/10_year_tipstreasury_breakeven_rate)). US CPI inflation peaked at 9.1% in June 2022, then moderated to 4.1% in 2023, 2.9% in 2024, and ~3% in late 2025 ([US Inflation Calculator](https://www.usinflationcalculator.com/inflation/current-inflation-rates/)). No hyperinflation occurred; breakevens reflected moderating inflation, rejecting persistent escalation."
+    },
+    {
+      "id": "E-00:15:32.000",
+      "result": "inconclusive",
+      "explanation": "By late 2025, it\u2019s still too early to definitively judge either vintage window E described.\n\n**1. Evidence on the \u201clast 18 months\u201d (roughly late 2020\u2013May 2022)**\n\n* Funds whose main deployment coincided with the 2021\u2013early\u20112022 peak do look weak so far:\n  * Carta\u2019s fund\u2011performance data show that the 2021 and 2022 VC vintages have **negative median IRRs and median TVPI below 1\u00d7**, and they underperform the 2017\u20132020 vintages when compared at the same number of quarters since inception. ([landonhowell.com](https://www.landonhowell.com/notes/new-startup-fundraising-landscape?utm_source=openai))  \n  * Institutional Investor, citing PitchBook, notes that **2021 vintage VC funds have a negative pooled IRR**, with analysts expecting further declines, and also highlights elevated rates of flat/down rounds in 2024\u20132025. ([institutionalinvestor.com](https://www.institutionalinvestor.com/article/venture-capitals-woes-could-get-worse?utm_source=openai))  \n  * Carta and related analyses point out much lower graduation rates from seed to Series A and from Series A to B for companies funded in 2021\u20132022 than for cohorts a few years earlier, consistent with weaker portfolio quality and returns pressure. ([landonhowell.com](https://www.landonhowell.com/notes/new-startup-fundraising-landscape?utm_source=openai))  \n\nThese early signals are directionally consistent with E\u2019s claim that the \u201cvintage of the last 18 months will be lousy.\u201d But they are **far from final**:\n\n* Venture funds typically take 7\u201310+ years to realize their true returns, and even 2017\u20132018 vintages still haven\u2019t fully distributed capital. ([carta.com](https://carta.com/uk/en/data/vc-fund-performance-q4-2024/?utm_source=openai))  \n* Commentary on the same Carta data explicitly warns that IRR/TVPI and quartile rankings for vintages 2021\u20132022 are not very reliable until about year 5\u20136. ([magmapartners.com](https://magmapartners.com/post/magma-partners-q2-2024-investor-letter?utm_source=openai))  \n\nSo while early performance of the 2021\u20132022 deployment period looks poor, we **cannot yet say with confidence** that those vintages will ultimately be \u201clousy\u201d on a final realized\u2011return basis.\n\n**2. Evidence on the \u201cupcoming vintage\u201d (2022\u20132023 onward)**\n\nE also predicted that the vintage immediately following May 2022 would be \u201ca good vintage.\u201d Here the data are even less conclusive:\n\n* Carta\u2019s Q1 2024 and subsequent updates show that **2022 vintage median IRR remains negative and median TVPI is still below 1\u00d7**, lagging earlier vintages at the same age. ([landonhowell.com](https://www.landonhowell.com/notes/new-startup-fundraising-landscape?utm_source=openai))  \n* Early reports for the 2023 vintage show **very strong top\u2011decile IRRs (>30%) driven by AI\u2011related markups**, but the **median performance for 2023 funds isn\u2019t yet clearly strong** and DPI is only just beginning to appear. ([sourcery.vc](https://www.sourcery.vc/p/breaking-cartas-vc-fund-performance?utm_source=openai))  \n\nGiven that these funds are only ~2\u20133 years into their lives, their ultimate performance could still swing significantly as exits (or write\u2011downs) materialize.\n\n**3. Overall assessment**\n\n* Early data broadly **support the intuition** that capital deployed at the very top of the 2021\u2013early\u20112022 bubble is struggling, relative to prior \u201ccheaper\u201d vintages.  \n* However, both the allegedly \u201clousy\u201d vintage (late\u20112020\u20132022) and the supposedly \u201cgood\u201d follow\u2011on vintage (2022\u20132023+) are **too young** to judge by normal venture standards, and respected analyses of the same datasets caution against drawing firm conclusions this early. ([magmapartners.com](https://magmapartners.com/post/magma-partners-q2-2024-investor-letter?utm_source=openai))  \n\nBecause these outcomes won\u2019t be knowable with high confidence until closer to the early\u20112030s, the correct classification as of November 2025 is **\u201cinconclusive (too early)\u201d**, even though preliminary evidence leans in the direction E anticipated for the 2021\u20132022 period.",
+      "sources": [
+        {
+          "end_index": 644,
+          "start_index": 536,
+          "title": "Navigating the new startup fundraising landscape | Landon Howell",
+          "type": "url_citation",
+          "url": "https://www.landonhowell.com/notes/new-startup-fundraising-landscape?utm_source=openai"
+        },
+        {
+          "end_index": 1002,
+          "start_index": 870,
+          "title": "Venture Capital\u2019s Woes Could Get Worse | Institutional Investor",
+          "type": "url_citation",
+          "url": "https://www.institutionalinvestor.com/article/venture-capitals-woes-could-get-worse?utm_source=openai"
+        },
+        {
+          "end_index": 1363,
+          "start_index": 1255,
+          "title": "Navigating the new startup fundraising landscape | Landon Howell",
+          "type": "url_citation",
+          "url": "https://www.landonhowell.com/notes/new-startup-fundraising-landscape?utm_source=openai"
+        },
+        {
+          "end_index": 1758,
+          "start_index": 1668,
+          "title": "VC Fund Performance: 2024",
+          "type": "url_citation",
+          "url": "https://carta.com/uk/en/data/vc-fund-performance-q4-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 2028,
+          "start_index": 1918,
+          "title": "Magma Partners Q2 2024 Investor Letter | Magma Partners",
+          "type": "url_citation",
+          "url": "https://magmapartners.com/post/magma-partners-q2-2024-investor-letter?utm_source=openai"
+        },
+        {
+          "end_index": 2710,
+          "start_index": 2602,
+          "title": "Navigating the new startup fundraising landscape | Landon Howell",
+          "type": "url_citation",
+          "url": "https://www.landonhowell.com/notes/new-startup-fundraising-landscape?utm_source=openai"
+        },
+        {
+          "end_index": 3034,
+          "start_index": 2938,
+          "title": "BREAKING: Carta's VC Fund Performance Report",
+          "type": "url_citation",
+          "url": "https://www.sourcery.vc/p/breaking-cartas-vc-fund-performance?utm_source=openai"
+        },
+        {
+          "end_index": 3785,
+          "start_index": 3675,
+          "title": "Magma Partners Q2 2024 Investor Letter | Magma Partners",
+          "type": "url_citation",
+          "url": "https://magmapartners.com/post/magma-partners-q2-2024-investor-letter?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction has two parts: poor returns for ~Nov 2020-May 2022 investments (mainly 2021 vintage) vs. strong for subsequent (2022-2023+). 2021 vintage shows poor early performance\u2014median IRR negative after 3-4 years (Carta Q3 2024/Q2 2025), low DPI (10% funds >0 DPI vs. 25% for 2017 at same stage), underperforming priors (*[WSJ Jun 2024](https://www.wsj.com/articles/why-venture-capital-is-weighed-down-by-its-2021-vintage-d120feb6)*, *[Carta](https://carta.com/data/recent-vc-fund-performance-q3-2024/)*). 2022 vintage also trailing early (median IRR <0, 33% dry powder; *[Carta Q2 2025](https://carta.com/data/vc-fund-performance-q2-2025/)*), but strong CY2024 return (25.3%; *[Cambridge Associates CY2024](https://www.cambridgeassociates.com/wp-content/uploads/2025/07/2025-07-US-PE-VC-Benchmark-Commentary-CY-2024-PUBLIC.pdf)*). 2023 very early (42% dry powder, but 15% DPI after 6q > priors at stage). VC returns mature over 10+ years; at 3.5 years post-May 2022, too early for full vintage assessment despite confirming prior poor."
+    },
+    {
+      "id": "E-00:15:59.000",
+      "result": "wrong",
+      "explanation": "The prediction said that the peak asset prices of late\u20112020\u2013early\u20112022, especially in venture and high\u2011growth equities, would *not* be seen again under normal conditions and would require something like another pandemic or nuclear war that forces interest rates back to zero.\n\nWhat actually happened by late 2025:\n\n- **Broad high\u2011growth equity indices exceeded their 2021 peaks under higher\u2011than\u2011zero rates and without a new pandemic or nuclear war.** The Nasdaq Composite, which hit a then\u2011record in November 2021, went on to set new all\u2011time highs in February 2024 and again in June 2025, reaching over 20,000\u2014well above its 2021 peak. ([investinglive.com](https://investinglive.com/news/nasdaq-index-closes-at-an-all-time-record-high-highest-close-since-november-2021-20240229/?utm_source=openai))\n- **Monetary policy never returned to zero rates during this run\u2011up.** The federal funds rate was 0% through late 2021, but then was hiked to a peak 5.25\u20135.50% in 2023, and as of October 2025 is still 3.75\u20134.00%\u2014well above zero\u2014while equities trade near record levels. ([ycharts.com](https://ycharts.com/indicators/target_federal_funds_rate?utm_source=openai)) This directly contradicts the claim that those prices would only come back if rates went back to zero.\n- **Top private \u201cventure / cloud / AI\u201d valuations are at new record highs.** Bessemer\u2019s 2025 Cloud 100 report shows the aggregate valuation of the top 100 private cloud companies at $1.117 trillion, a record and up 36% from 2024, even though average revenue multiples have fallen ~41% from their 2021 peak. ([bvp.com](https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai)) Within that group, AI leaders such as OpenAI (~$500B), Anthropic (~$183B), and Databricks (> $100B) have private valuations that substantially exceed almost any 2021 venture valuation, achieved without a return to zero rates. ([bvp.com](https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai))\n- **Public proxies for emerging cloud/high\u2011growth also show prices revisiting or approaching bubble levels.** The WisdomTree Cloud Computing Fund (WCLD), which tracks the BVP Nasdaq Emerging Cloud Index, reached an all\u2011time high of $41.87 on December 9, 2024, surpassing prior peaks, with Fed funds still over 4%. ([stockscan.io](https://stockscan.io/stocks/WCLD/price-history?utm_source=openai)) The underlying BVP Emerging Cloud Index (EMCLOUD) has been trading around 1,600\u20131,700 in 2025, far above its 2018 base and reflecting a strong recovery in public cloud valuations. ([indexes.nasdaqomx.com](https://indexes.nasdaqomx.com/index/overview/emcloud?utm_source=openai))\n\nThere *are* parts of the market where his caution was directionally right:\n\n- Many of the specific 2020\u20132021 darlings remain far below their peaks. ARK Innovation ETF\u2019s price is still roughly half its February 2021 all\u2011time high (~$160 vs. ~mid\u201170s\u201380s in late 2025). ([stockscan.io](https://stockscan.io/stocks/ARKK/price-history?utm_source=openai)) Individual high\u2011beta cloud names like 8x8 and nCino have valuations 65\u201395% below their all\u2011time highs. ([trueup.io](https://www.trueup.io/co/8x8?utm_source=openai)) And venture revenue multiples overall are materially below 2021 levels. ([bvp.com](https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai))\n\nHowever, the prediction was framed broadly\u2014\u201cprices we saw in the world over the last 18 months\u2026we\u2019re not getting back there\u2026unless\u2026rates go to zero.\u201d In reality, by 2024\u20132025 many major equity indices and leading venture/AI names *did* surpass their 2021 nominal price levels under normal (non\u2011zero) rate conditions and without the extreme shocks he specified. That makes the prediction, taken as stated, **wrong**, even though it captured the persistent reset in *multiples* and in many of the bubbliest names.",
+      "sources": [
+        {
+          "end_index": 837,
+          "start_index": 675,
+          "title": "NASDAQ index closes at an all-time record high. Highest close since November 2021 | investingLive",
+          "type": "url_citation",
+          "url": "https://investinglive.com/news/nasdaq-index-closes-at-an-all-time-record-high-highest-close-since-november-2021-20240229/?utm_source=openai"
+        },
+        {
+          "end_index": 1199,
+          "start_index": 1108,
+          "title": "Target Federal Funds Rate Lower Limit (Daily) - United Stat\u2026",
+          "type": "url_citation",
+          "url": "https://ycharts.com/indicators/target_federal_funds_rate?utm_source=openai"
+        },
+        {
+          "end_index": 1700,
+          "start_index": 1611,
+          "title": "The Cloud 100 Benchmarks Report 2025 - Bessemer Venture Partners",
+          "type": "url_citation",
+          "url": "https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai"
+        },
+        {
+          "end_index": 2016,
+          "start_index": 1927,
+          "title": "The Cloud 100 Benchmarks Report 2025 - Bessemer Venture Partners",
+          "type": "url_citation",
+          "url": "https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai"
+        },
+        {
+          "end_index": 2414,
+          "start_index": 2332,
+          "title": "Wisdomtree Cloud Computing Fund (WCLD) Stock Price History & Other Historical Data - StockScan",
+          "type": "url_citation",
+          "url": "https://stockscan.io/stocks/WCLD/price-history?utm_source=openai"
+        },
+        {
+          "end_index": 2692,
+          "start_index": 2595,
+          "title": "Overview for EMCLOUD",
+          "type": "url_citation",
+          "url": "https://indexes.nasdaqomx.com/index/overview/emcloud?utm_source=openai"
+        },
+        {
+          "end_index": 3048,
+          "start_index": 2966,
+          "title": "Ark Innovation Etf (ARKK) Stock Price History & Other Historical Data - StockScan",
+          "type": "url_citation",
+          "url": "https://stockscan.io/stocks/ARKK/price-history?utm_source=openai"
+        },
+        {
+          "end_index": 3213,
+          "start_index": 3152,
+          "title": "8x8 - Company Profile",
+          "type": "url_citation",
+          "url": "https://www.trueup.io/co/8x8?utm_source=openai"
+        },
+        {
+          "end_index": 3375,
+          "start_index": 3286,
+          "title": "The Cloud 100 Benchmarks Report 2025 - Bessemer Venture Partners",
+          "type": "url_citation",
+          "url": "https://www.bvp.com/atlas/the-cloud-100-benchmarks-report/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "High-growth equity prices, proxied by the Nasdaq Composite and Nasdaq-100, have surpassed their late 2021 peaks (Nasdaq Composite ~16,000 in Nov 2021; Nasdaq-100 ~16,200 [Macrotrends, Nasdaq historical data, Wikipedia]). As of late Nov 2025, Nasdaq Composite is ~23,365 and Nasdaq-100 ~25,400+ ([FRED St. Louis Fed, Yahoo Finance, Nasdaq]). S&P 500 exceeded its Jan 2022 peak of 4,796, reaching ~6,000+ by late 2024/early 2025 ([Multpl, Yahoo Finance]). This occurred under normal conditions: no pandemic or nuclear war, Fed funds rate ~4% ([FRED, Trading Economics]), not zero. While ARKK (~$159 peak 2021, now ~$74-79 [Yahoo Finance]) and some venture medians haven't fully recovered (e.g., later-stage pre-money ~$76M vs $83M 2021 peak [WilmerHale]), VC deployment nears 2021 levels ($324B YTD Oct 2025 [S&P Global]), and public high-growth equities have exceeded peaks, falsifying the prediction. Sources: PitchBook-NVCA, Crunchbase, FRED."
+    },
+    {
+      "id": "E-00:18:59.860",
+      "result": "wrong",
+      "explanation": "The prediction was that, over the three years after May 2022, only about **$25\u201330B** of the roughly **$100B** of \u201creal\u201d VC capital within a supposed **$250B** \u201cquarter\u2011trillion\u201d pool would actually be deployed into venture deals (\u2248$8\u201310B per year of *total* VC dollars), with most of the overall $250B instead deployed by traditional PE/LBO firms. In other words, it implied an extremely small annual flow of VC capital into startups.\n\nWhat actually happened:\n\n* **Global VC deal activity** remained vastly larger than the predicted ~$8\u201310B/year:\n  * 2022 global VC funding totaled **$435.7B**, per S&P Global Market Intelligence; 2023 totaled **$260B**.([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2024/1/global-venture-capital-investments-continue-downtrend-in-december-2023-80043834?utm_source=openai))  \n  * 2024 global VC investment came in on the order of **$314\u2013368B** depending on the source (Crunchbase via Barron\u2019s vs KPMG\u2019s Venture Pulse).([barrons.com](https://www.barrons.com/articles/venture-capital-investments-2024-ai-766c99dc?utm_source=openai))  \n  Even if you only count the period **after** the podcast (roughly H2 2022\u2013end 2024), that\u2019s **hundreds of billions of dollars** in VC investments, orders of magnitude above $25\u201330B.\n\n* **U.S. VC alone** massively exceeds the forecast \u201c$8B per year\u201d notion:\n  * NVCA/PitchBook data show **$170.6B** of U.S. VC deals in 2023.([nvca.org](https://nvca.org/press_releases/nvca-2024-yearbook-charting-the-new-path-forward-for-venture-capital/?utm_source=openai))  \n  * PitchBook data reported by Reuters show **$209B** of U.S. VC funding in 2024.([reuters.com](https://www.reuters.com/technology/artificial-intelligence/ai-startups-drive-vc-funding-resurgence-capturing-record-us-investment-2024-2025-01-07/?utm_source=openai))  \n  That\u2019s nearly **$380B** over just 2023\u201324 in one country, versus the podcast\u2019s implied global run rate of ~$24\u201330B over three years.\n\n* **Dry powder data** also contradict the idea that only a tiny fraction of committed VC capital would ever be deployed:\n  * Axios, using PitchBook, reported **$298.5B** of U.S. VC dry powder as of Sept. 30, 2022.([axios.com](https://www.axios.com/2023/01/14/venture-capital-dry-powder-2023?utm_source=openai))  \n  * NVCA\u2019s 2024 Yearbook shows U.S. VC firms ending 2023 with **$311.6B** in dry powder and **$1.21T** under management.([nvca.org](https://nvca.org/press_releases/nvca-2024-yearbook-charting-the-new-path-forward-for-venture-capital/?utm_source=openai))  \n  * Other analyses in 2024\u201325 similarly place global VC dry powder around **$300B+**, not near-zero, and not a world in which only ~$25\u201330B ever got deployed from the 2021\u201322 vintages.([eisneramper.com](https://www.eisneramper.com/insights/financial-services/venture-capital-q1-vc-blog-2024/?utm_source=openai))  \n  These figures imply large, ongoing deployment of VC funds (alongside continued fundraising), not a scenario where just ~25\u201330% of a $100B VC slice is used over three years.\n\n* On the **PE vs VC mix**, broad industry data do show that **buyout/private\u2011equity deal value remains much larger than classic VC**, and PE/LBO firms continued to deploy trillions globally. McKinsey\u2019s 2025 Global Private Markets report, for example, estimates **$2T** in global private equity and venture investments in 2024, with roughly **$1.5T** from buyout firms alone and dry powder still above **$2T**.([bebeez.eu](https://bebeez.eu/2025/02/14/in-2024-global-investments-of-private-equity-and-venture-funds-amounted-to-2-trillion-us-dollars-14-dry-powder-is-worth-2-1-trillion-11-yoy-mckinsey-says/?utm_source=openai))  That makes the *directional* claim (\u201cbuyout firms will deploy the bulk of the capital\u201d) broadly reasonable \u2014 but it doesn\u2019t rescue the very specific **$25\u201330B** limit he attached to VC deployment.\n\nGiven:\n\n* the speaker explicitly characterized this as **\u201clike eight billion of total VC dollars deployed a year\u201d**, and\n* observed VC deal volumes (both globally and in the U.S.) are **one to two orders of magnitude larger** than that over the relevant three\u2011year window,\n\nthe quantitative core of the prediction \u2014 that only ~$25\u201330B of VC dollars would be deployed over those three years \u2014 is decisively contradicted by realized investment data.\n\nTherefore, the prediction is **wrong** overall, even though the qualitative intuition that PE/LBO activity would dominate in aggregate was directionally consistent with later market statistics.",
+      "sources": [
+        {
+          "end_index": 885,
+          "start_index": 692,
+          "title": "Global venture capital investments continue downtrend in December 2023 | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2024/1/global-venture-capital-investments-continue-downtrend-in-december-2023-80043834?utm_source=openai"
+        },
+        {
+          "end_index": 1143,
+          "start_index": 1031,
+          "title": "Venture Capital Investments in AI Surged in 2024",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/venture-capital-investments-2024-ai-766c99dc?utm_source=openai"
+        },
+        {
+          "end_index": 1607,
+          "start_index": 1474,
+          "title": "NVCA 2024 Yearbook: Charting the New Path Forward for Venture Capital - National Venture Capital Association - NVCA",
+          "type": "url_citation",
+          "url": "https://nvca.org/press_releases/nvca-2024-yearbook-charting-the-new-path-forward-for-venture-capital/?utm_source=openai"
+        },
+        {
+          "end_index": 1873,
+          "start_index": 1692,
+          "title": "AI startups drive VC funding resurgence, capturing record US investment in 2024",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/ai-startups-drive-vc-funding-resurgence-capturing-record-us-investment-2024-2025-01-07/?utm_source=openai"
+        },
+        {
+          "end_index": 2326,
+          "start_index": 2229,
+          "title": "Venture capital has lots of dry powder in 2023",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2023/01/14/venture-capital-dry-powder-2023?utm_source=openai"
+        },
+        {
+          "end_index": 2583,
+          "start_index": 2450,
+          "title": "NVCA 2024 Yearbook: Charting the New Path Forward for Venture Capital - National Venture Capital Association - NVCA",
+          "type": "url_citation",
+          "url": "https://nvca.org/press_releases/nvca-2024-yearbook-charting-the-new-path-forward-for-venture-capital/?utm_source=openai"
+        },
+        {
+          "end_index": 2898,
+          "start_index": 2771,
+          "title": "Venture Capital Slowdown Continues into Q1 2024 | EisnerAmper",
+          "type": "url_citation",
+          "url": "https://www.eisneramper.com/insights/financial-services/venture-capital-q1-vc-blog-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 3705,
+          "start_index": 3489,
+          "title": "In 2024, global investments of private equity and venture funds amounted to 2 trillion US Dollars (+14%). Dry powder is worth 2.1 trillion (-11% yoy), McKinsey says \u2013 BeBeez International",
+          "type": "url_citation",
+          "url": "https://bebeez.eu/2025/02/14/in-2024-global-investments-of-private-equity-and-venture-funds-amounted-to-2-trillion-us-dollars-14-dry-powder-is-worth-2-1-trillion-11-yoy-mckinsey-says/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction claimed only ~$25-30B of VC capital (25-30% of ~$100B VC portion in $250B committed funds) would be deployed into venture deals from May 2022-May 2025, with most of the $250B by PE/LBO firms. This did not occur.\n\nUS VC invested far more: 2022 total $236B ([NVCA Q3 2025 Venture Monitor](https://nvca.org/wp-content/uploads/2025/10/Q3-2025-PitchBook-NVCA-Venture-Monitor.pdf)); 2023 $166B; 2024 $216B; H1 2025 $163B ([NVCA Q2 2025](https://nvca.org/wp-content/uploads/2025/07/Q2-2025-PitchBook-NVCA-Venture-Monitor-19728.pdf)). Period sum (approx. H2 2022 + 2023 + 2024 + H1 2025) >$650B, including ~$25B May 2022 onward adjustment.\n\nVC dry powder (context for $250-290B in 2022, e.g., [PitchBook Oct 2022](https://pitchbook.com/news/articles/dry-powder-save-startups-vc)) reached record $311B by 2025 ([NVCA Q3 2025](https://nvca.org/wp-content/uploads/2025/10/Q3-2025-PitchBook-NVCA-Venture-Monitor.pdf)), piling up due to fundraising despite high deployment. 2022-vintage funds deployed 67% capital by Q2 2025 (~3 years; [Carta Q2 2025](https://carta.com/data/vc-fund-performance-q2-2025/)), vs. predicted 25-30%.\n\nVC deployment vastly exceeded $25-30B; slowdown happened but not to predicted extent."
+    },
+    {
+      "id": "E-00:23:42.000",
+      "result": "inconclusive",
+      "explanation": "Market data from 2021\u20132025 strongly supports the *direction* of the prediction but cannot yet conclusively settle its strongest claims. Across public and private SaaS, revenue multiples have compressed dramatically from the 2021 bubble: median public SaaS EV/revenue fell from roughly 18\u201320x at the peak to about 6\u20138x by 2024\u20132025, with private deals commonly in the 4\u20136x range, i.e., back near pre\u2011boom norms and 60\u201370% below the highs. ([windsordrake.com](https://windsordrake.com/saas-valuation-multiples/?utm_source=openai)) Contemporary analyses document that in 2021\u2013early 2022 many late\u2011stage SaaS companies in roughly the $50\u201380M ARR band raised at 50\u2013100x ARR, and now face a world where public comps trade closer to 6\u20138x; even assuming ~60% annual growth and a return to ~10x public multiples, such companies need years merely to grow into their last-round valuations, implying substantial risk of down rounds and weak returns for investors who bought at the top. ([medium.com](https://medium.com/stellaris-venture-partners/why-saas-companies-can-withstand-the-funding-downcycle-better-a8369f681aa8?utm_source=openai)) That evidence is very consistent with the speaker\u2019s core view that the 100x\u2011ARR pricing for typical software names in 2020\u20132021 was a bubble and that investors in those rounds are, as of 2025, deeply underwater on paper. However, the prediction went further, asserting that such companies are highly likely *never* to see those price levels again and that investor returns from those rounds will be *absolutely* eviscerated. Many of the affected companies remain private or only a few years past those financings, and venture outcomes normally play out over a decade or more; some high-profile software/AI names are again securing 50\u2013100x+ ARR multiples in 2023\u20132025 (for example, Wiz and several frontier AI startups like Perplexity AI), showing that extreme revenue multiples can reappear for certain categories and narratives. ([fabricaventures.com](https://fabricaventures.com/100x-arr/?utm_source=openai)) It is also plausible that a subset of the 2020\u20132021 100x\u2011ARR cohort ultimately grows revenue enough over many years to deliver acceptable or even strong investor returns, despite today\u2019s compressed multiples. Because (a) the long\u2011run outcomes for that cohort are not yet observable, (b) the time horizon implied by words like \u2018never\u2019 and \u2018absolutely eviscerated\u2019 extends well beyond 2025, and (c) we already see counterexamples where very high multiples have resurfaced in adjacent parts of software, the strongest form of the prediction cannot yet be definitively classified as right or wrong. On the evidence available in late 2025, it remains unresolved rather than proven, so the fairest assessment is that the prediction is still inconclusive (too early).",
+      "sources": [
+        {
+          "end_index": 568,
+          "start_index": 478,
+          "title": "SaaS Revenue Multiples 2025| Sell-Side Mergers & Acquisitions Advisory",
+          "type": "url_citation",
+          "url": "https://windsordrake.com/saas-valuation-multiples/?utm_source=openai"
+        },
+        {
+          "end_index": 1168,
+          "start_index": 1014,
+          "title": "Why SaaS companies can withstand the funding downcycle better | by Stellaris Venture Partners | Stellaris Perspectives | Medium",
+          "type": "url_citation",
+          "url": "https://medium.com/stellaris-venture-partners/why-saas-companies-can-withstand-the-funding-downcycle-better-a8369f681aa8?utm_source=openai"
+        },
+        {
+          "end_index": 2079,
+          "start_index": 1999,
+          "title": "100x ARR \u2013 Fabrica Ventures",
+          "type": "url_citation",
+          "url": "https://fabricaventures.com/100x-arr/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "SaaS valuation multiples peaked in 2021 with private companies raising at 100x ARR ([Meritech Capital](https://www.meritechcapital.com/blog/the-10x-arr-club), [SaaS Capital](https://www.saas-capital.com/blog-posts/2022-private-saas-company-valuations/)), but have since collapsed and not recovered. Current medians are 6-8x ARR in 2025 ([SaaS Capital](https://www.saas-capital.com/blog-posts/saas-valuation-multiples-understanding-the-new-normal/), [Aventis Advisors](https://aventis-advisors.com/saas-valuation-multiples/)). Examples like Snowflake peaked at 80-123x ARR in 2021 ([Acquire.com](https://blog.acquire.com/saas-valuation-multiples/), [SaaS Capital](https://www.saas-capital.com/blog-posts/2021-private-saas-company-valuations/)) but now trade at ~10-23x ([Multiples.vc](https://multiples.vc/public-comps/snowflake-valuation-multiples)). Commentary confirms 2021 high-multiple companies face permanent resets due to dilution and growth deceleration ([Elad Gil](https://blog.eladgil.com/p/startup-decoupling-and-reckoning), [Clouded Judgement](https://cloudedjudgement.substack.com/p/clouded-judgement-11224-hard-truths)); no examples of such firms regaining 100x levels by 2025."
+    },
+    {
+      "id": "E-00:39:41.000",
+      "result": "right",
+      "explanation": "By mid\u20112022, U.S. headline CPI inflation peaked around 9% year\u2011over\u2011year during the pandemic surge, but then fell markedly: BLS-based averages drop from about 8.0% in 2022 to 4.1% in 2023, 2.9% in 2024, and roughly 2.3\u20132.7% so far in 2025, with 12\u2011month CPI running near 3%. This is a clear rollover of the 2020\u201322 spike rather than a shift to permanently very high inflation. ([usinflationcalculator.com](https://www.usinflationcalculator.com/inflation/annual-averages-for-rate-of-inflation/?utm_source=openai))\n\nBefore COVID (roughly 2000\u20132019), U.S. inflation mostly ran in a low band of about 1.5\u20132.5% per year. ([usinflationcalculator.com](https://www.usinflationcalculator.com/inflation/annual-averages-for-rate-of-inflation/?utm_source=openai)) Today\u2019s realized inflation of about 2.5\u20133% is only modestly above that range, and medium\u2011term forecasts for CPI over the next five years cluster around ~2.4\u20132.5%, which is close to the pre\u2011pandemic norm and well below the peak of the spike. ([ycharts.com](https://ycharts.com/indicators/median_forecasts_for_cpi_inflation_over_5_years?utm_source=openai))\n\nSome central\u2011bank and academic work does argue that structural forces\u2014like deglobalization, tighter labor markets, and higher green or defense spending\u2014may keep inflation somewhat higher or more persistent than in the 2000\u20132019 era, and the Federal Reserve\u2019s own projections now see inflation above its 2% target for several more years. ([frbsf.org](https://www.frbsf.org/research-and-insights/publications/economic-letter/2023/03/forward-looking-policy-in-real-time-world?utm_source=openai)) But even these analyses envisage inflation converging to low single digits rather than remaining at the 2021\u201322 highs.\n\nGiven that (1) the 2020\u201322 inflation spike has decisively rolled over and (2) inflation has returned to a low, near\u2011pre\u2011COVID range rather than a new high\u2011inflation regime, E\u2019s qualitative prediction\u2014that we would look back and see the spike as transitory, with something like the earlier disinflationary environment reasserting itself\u2014has been borne out by the data available through late 2025.",
+      "sources": [
+        {
+          "end_index": 545,
+          "start_index": 410,
+          "title": "Average Inflation Rates in the United States",
+          "type": "url_citation",
+          "url": "https://www.usinflationcalculator.com/inflation/annual-averages-for-rate-of-inflation/?utm_source=openai"
+        },
+        {
+          "end_index": 786,
+          "start_index": 651,
+          "title": "Average Inflation Rates in the United States",
+          "type": "url_citation",
+          "url": "https://www.usinflationcalculator.com/inflation/annual-averages-for-rate-of-inflation/?utm_source=openai"
+        },
+        {
+          "end_index": 1141,
+          "start_index": 1028,
+          "title": "Median Forecasts for CPI Inflation Over 5 Years (Quarterly)\u2026",
+          "type": "url_citation",
+          "url": "https://ycharts.com/indicators/median_forecasts_for_cpi_inflation_over_5_years?utm_source=openai"
+        },
+        {
+          "end_index": 1637,
+          "start_index": 1482,
+          "title": "Forward-Looking Policy in a Real-Time World - San Francisco Fed",
+          "type": "url_citation",
+          "url": "https://www.frbsf.org/research-and-insights/publications/economic-letter/2023/03/forward-looking-policy-in-real-time-world?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "US CPI inflation spiked to a peak of 9.1% in June 2022 (annual 6.5%), confirming the 2020-2022 spike. It subsequently rolled over, declining to 3.4% in 2023, 2.9% in 2024, and 3.0% YoY as of September 2025 ([US Inflation Calculator](https://www.usinflationcalculator.com/inflation/current-inflation-rates/), BLS CPI releases). Pre-COVID (2000-2019), annual CPI averaged ~2.1% with rates mostly 1-3%, a disinflationary trend of low/stable inflation. Post-peak, inflation has returned to this ~2-3% range, with disinflation continuing (though slowing), as noted in CEPR's 'rise and retreat' analysis and Fed reports (PCE at 2.6-2.9% in late 2024/2025). Looking back from 2025, the spike appears temporary, and low-inflation trends have resumed ([Trading Economics](https://tradingeconomics.com/united-states/inflation-cpi), [FRED CPIAUCSL](https://fred.stlouisfed.org/series/CPIAUCSL))."
+    },
+    {
+      "id": "E-00:48:01.660",
+      "result": "right",
+      "explanation": "Using broad large\u2011cap growth proxies, the core, time\u2011bound part of the prediction\u2014that \u201cgrowth stocks\u201d would be *higher* roughly one year later, after potentially going lower in the interim\u2014did come true, though the more specific claim about valuations reverting to trend is not well supported by the data.\n\n**1. Were growth stocks higher by around May 2023 than in May 2022?**\n\n- The Invesco QQQ ETF (a common proxy for large\u2011cap U.S. growth via the Nasdaq\u2011100) traded in a roughly $301\u2013308 range in May 2022 and a roughly $343\u2013348 range in May 2023, meaning May 2023 levels were clearly higher than a year earlier.\n  ([digrin.com](https://www.digrin.com/stocks/detail/QQQ/price?utm_source=openai))\n- Index ETFs tracking the Russell 1000 Growth Index, such as IWF and VONG, had very strong returns in calendar 2023 (about +42\u201343%) after a deep drawdown in 2022 (about \u201329%), implying that by mid\u2011/late\u20112023 they were well above their 2022 levels.\n  ([financecharts.com](https://www.financecharts.com/etfs/IWF/performance?utm_source=openai))\n- FTSE Russell\u2019s 2023 style commentary notes that growth and technology \u201cretook the lead\u201d over value over the year ending April 28, 2023, consistent with a rebound in large\u2011cap growth stocks over the period the prediction covered.\n  ([lseg.com](https://www.lseg.com/en/media-centre/press-releases/ftse-russell/2023/ftse-russell-begins-35th-annual-russell-us-indexes-reconstitution?utm_source=openai))\n\n**2. Did we \u201cget there by way of lower and potentially meaningfully lower\u201d prices?**\n\n- QQQ fell about 33% in 2022, substantially underperforming the S&P 500\u2019s roughly 19% decline, reflecting a sharp drawdown in large\u2011cap growth/tech during the tightening cycle before recovering in 2023.\n  ([marketwatch.com](https://www.marketwatch.com/story/tech-stocks-seem-to-have-ended-their-difficult-relationship-with-the-bond-market-88d90759?utm_source=openai))\n- The Russell 1000 Growth proxy ETFs (IWF, VONG) show large negative total returns in 2022 (around \u201329%), followed by a powerful rebound in 2023, matching the \u201cdown first, then up\u201d path described in the quote.\n  ([financecharts.com](https://www.financecharts.com/etfs/IWF/performance?utm_source=openai))\n\n**3. Did valuations revert toward their recent historical averages?**\n\n- A Q1 2023 letter from Boyar Value Group reports that large\u2011cap growth (Russell 1000 Growth) was trading at about 23.8\u00d7 earnings versus a long\u2011term average around 20.8\u00d7\u2014still meaningfully above its historical norm rather than \u201cback to\u201d it.\n  ([gurufocus.com](https://www.gurufocus.com/news/1974483/boyar-value-groups-1stquarter-2023-letter?utm_source=openai))\n- Later analyses reinforce that elevated growth valuations persisted: a 2024 BlackRock note cites the Russell 1000 Growth at 32.8\u00d7 earnings versus a 15\u2011year average of 25.0\u00d7, and BofA/Glenmede work referenced by MarketWatch places large\u2011cap growth valuations in the 90\u2011plus percentile versus history.\n  ([blackrock.com](https://www.blackrock.com/us/financial-professionals/insights/why-now-for-active-value?utm_source=openai))\n\n**Assessment**\n\n- **Correct:**\n  - Growth\u2011stock benchmarks (QQQ, Russell 1000 Growth) were significantly higher by roughly May 2023 than in May 2022.\n  - The path involved a large intervening drawdown in 2022 before the rebound, as anticipated.\n- **Partially/Not supported:**\n  - Valuations did *not* clearly \u201cbounce back\u201d merely to five\u2011year (or long\u2011term) averages; evidence shows they remained above historical norms.\n\nGiven that the clearly falsifiable core of the prediction (direction and timing of growth\u2011stock prices, with an intervening selloff) was borne out, while the valuation\u2011normalization detail was off, the overall judgment is **\u201cright\u201d** rather than ambiguous.",
+      "sources": [
+        {
+          "end_index": 737,
+          "start_index": 657,
+          "title": "Invesco QQQ Trust, Series 1 price | Digrin",
+          "type": "url_citation",
+          "url": "https://www.digrin.com/stocks/detail/QQQ/price?utm_source=openai"
+        },
+        {
+          "end_index": 1081,
+          "start_index": 990,
+          "title": "IWF Performance History & Total Returns",
+          "type": "url_citation",
+          "url": "https://www.financecharts.com/etfs/IWF/performance?utm_source=openai"
+        },
+        {
+          "end_index": 1484,
+          "start_index": 1317,
+          "title": "FTSE Russell begins 35th annual Russell US Indexes Reconstitution | LSEG",
+          "type": "url_citation",
+          "url": "https://www.lseg.com/en/media-centre/press-releases/ftse-russell/2023/ftse-russell-begins-35th-annual-russell-us-indexes-reconstitution?utm_source=openai"
+        },
+        {
+          "end_index": 1944,
+          "start_index": 1782,
+          "title": "Tech stocks seem to have ended their 'difficult relationship' with the bond market",
+          "type": "url_citation",
+          "url": "https://www.marketwatch.com/story/tech-stocks-seem-to-have-ended-their-difficult-relationship-with-the-bond-market-88d90759?utm_source=openai"
+        },
+        {
+          "end_index": 2250,
+          "start_index": 2159,
+          "title": "IWF Performance History & Total Returns",
+          "type": "url_citation",
+          "url": "https://www.financecharts.com/etfs/IWF/performance?utm_source=openai"
+        },
+        {
+          "end_index": 2688,
+          "start_index": 2571,
+          "title": "Boyar Value Group's 1st-Quarter 2023 Letter",
+          "type": "url_citation",
+          "url": "https://www.gurufocus.com/news/1974483/boyar-value-groups-1stquarter-2023-letter?utm_source=openai"
+        },
+        {
+          "end_index": 3117,
+          "start_index": 2994,
+          "title": "Why Now May Be An Opportune Time For Active Value? | BlackRock",
+          "type": "url_citation",
+          "url": "https://www.blackrock.com/us/financial-professionals/insights/why-now-for-active-value?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Growth stock prices were higher in May 2023 than May 2022, after first declining significantly (e.g., iShares Russell 1000 Growth ETF (IWF) adjusted close: May 2022 = 232.90, May 2023 = 254.98, +9.5%; 2022 annual return -29.31%, confirming interim decline). Valuations compressed in late 2022 due to price drops amid rising rates but moved toward historical norms by mid-2023 as earnings growth resumed and macro stabilized post-inflation peak. ARKK up 67.64% in 2023 after -66.97% in 2022, also higher overall. Sources: [Yahoo Finance IWF historical](https://finance.yahoo.com/quote/IWF/history?period1=1650624000&period2=1685577600&interval=1mo), [IWF performance](https://finance.yahoo.com/quote/IWF/performance/), [ARKK performance](https://finance.yahoo.com/quote/ARKK/performance/)."
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+{
+  "meta": {
+    "count": 13,
+    "count_by_result": {
+      "inconclusive": 7,
+      "right": 2,
+      "ambiguous": 1,
+      "wrong": 3
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:55:48.000",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly about what will become clear *over the coming GPU cycle*, with a time horizon of **\u201cby roughly 2030\u201d** for whether CoreWeave\u2019s economics work out given the assumed ~10\u2011year useful life of its Nvidia GPUs versus a shorter ~5\u2011year life. As of the current date (November 30, 2025), only about 8\u20139 months have passed since the podcast on March 8, 2025, and we are still several years away from 2030. There is not yet enough elapsed time or publicly available evidence to determine definitively whether CoreWeave has become a \u201ckiller business\u201d or is \u201cdeeply underwater\u201d due to GPU useful-life assumptions in its debt models. Therefore, the prediction\u2019s correctness **cannot yet be evaluated** and remains too early to call.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction states the outcome will become evident 'over the coming GPU cycle (by roughly 2030).' Only ~9 months have passed since the March 2025 podcast (current date: Dec 1, 2025). CoreWeave IPO'd in March 2025 at $40/share, stock up >200%; Q3 2025 revenue $1.4B (+134% YoY), strong growth despite $11B debt and debates on 6-year GPU depreciation (extended from 4 years; critics like Burry warn of 2-3 year obsolescence). No financial trouble evident yet; too early to assess long-term GPU useful life impact. Sources: CoreWeave investor site (Q3 earnings Nov 10, 2025), CNBC (Nov 14, 2025), Seeking Alpha (recent), Yahoo Finance."
+    },
+    {
+      "id": "A-00:34:41.670",
+      "result": "inconclusive",
+      "explanation": "The prediction gives a roughly three\u2011year window from the conversation date (8 March 2025) for Epirus to win back a specific U.S. defense contract it had previously lost to legacy contractors, i.e., by around early 2028.\n\nAs of the current date (30 November 2025), that window has not yet elapsed. Public reporting on Epirus through late 2025 focuses on:\n- its existing Army Indirect Fire Protection Capability \u2013 High Power Microwave (IFPC\u2011HPM) contract from January 2023 for Leonidas prototypes, with deliveries through 2024 and deployments into early 2025, not on regaining a prior lost competition,([en.wikipedia.org](https://en.wikipedia.org/wiki/Epirus_Leonidas?utm_source=openai))\n- a subsequent \u201cGeneration II\u201d / enhanced IFPC\u2011HPM sole\u2011source award on the order of $43\u201344M, which is a follow\u2011on to that earlier win rather than a recompete for a contract previously lost to legacy primes,([insidedefense.com](https://insidedefense.com/insider/marine-corps-wants-information...?utm_source=openai))\n- funding and demonstration news (e.g., a $250M Series D in March 2025 and high\u2011profile drone\u2011swarm demos later in 2025), again without mention of Epirus newly winning back a major U.S. defense program it had earlier lost.([reuters.com](https://www.reuters.com/business/aerospace-defense/defense-tech-startup-epirus-secures-250-million-make-anti-drone-weapons-2025-03-05/?utm_source=openai))\n\nBecause (1) the prediction\u2019s deadline is still more than two years in the future and (2) there is no clear public evidence yet that the specific \"previously lost\" contract has been re\u2011awarded to Epirus, the outcome cannot be judged at this time. Hence the result is **inconclusive (too early)** rather than right or wrong.",
+      "sources": [
+        {
+          "end_index": 729,
+          "start_index": 644,
+          "title": "Epirus Leonidas",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Epirus_Leonidas?utm_source=openai"
+        },
+        {
+          "end_index": 1046,
+          "start_index": 938,
+          "title": "The Insider | InsideDefense.com",
+          "type": "url_citation",
+          "url": "https://insidedefense.com/insider/marine-corps-wants-information...?utm_source=openai"
+        },
+        {
+          "end_index": 1439,
+          "start_index": 1270,
+          "title": "Defense tech startup Epirus secures $250 million to make anti-drone weapons",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/aerospace-defense/defense-tech-startup-epirus-secures-250-million-make-anti-drone-weapons-2025-03-05/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for Epirus to win a specific U.S. defense contract it **previously lost** to legacy contractors in a **subsequent competition** by ~early 2028 (3 years from March 2025 podcast). Current date (Dec 1, 2025) is only ~9 months into the window, leaving >2 years. No evidence of such a loss (pre-2025) or subsequent win: extensive searches for 'Epirus lost contract', 'Epirus defense contract loss to Raytheon/Lockheed', etc., returned no matches. Epirus won prior contracts (e.g., $66.1M Army Leonidas 2023; $17M mod 2024; **$43.5M IFPC-HPM Gen II July 2025** [Epirus](https://www.epirusinc.com/press-releases/epirus-receives-43-million-contract-from-u-s-army-for-ifpc-hpm-generation-ii-systems), [TWZ](https://www.twz.com/land/army-puts-50m-bet-on-next-gen-leonidas-high-power-microwave-counter-drone-tech)), but none described as reclaiming a lost bid vs. legacies. Too early to resolve."
+    },
+    {
+      "id": "F-01:01:58.000",
+      "result": "inconclusive",
+      "explanation": "The prediction was framed over a 1\u20132 year horizon from March 2025 (i.e., roughly until March 2027), so as of November 30, 2025 the full timeframe has not elapsed.\n\nEvidence so far is mixed:\n\n- **Hyperscalers are indeed massively expanding and bundling AI capacity.** AWS and Google Cloud have rolled out successive generations of custom AI chips (Trainium / Inferentia, TPU v5e/v5p, v6 Trillium, v7 Ironwood) and large-scale GPU clusters, explicitly marketed as cheaper, integrated options for AI training and inference. ([michaelbommarito.com](https://michaelbommarito.com/wiki/datacenters/technology/gpu/?utm_source=openai))  \n- **GPU compute prices are already under downward pressure.** Analyses of H100 rental markets in 2025 report a substantial increase in supply and intense competition, including a ~44% AWS price cut on H100 instances and broad price reductions across many clouds, with H100 rental rates drifting down across the market. ([intuitionlabs.ai](https://intuitionlabs.ai/articles/h100-rental-prices-cloud-comparison?utm_source=openai))  \n- **However, demand for specialized GPU clouds like CoreWeave has not \u201csignificantly reduced\u201d so far; it remains very strong.** CoreWeave has continued rapid expansion in 2025: it signed an ~US$12B, five\u2011year cloud deal with OpenAI, grew to 32 data centers with ~250,000 GPUs, became the first to offer Nvidia GB200 NVL72 (and later Blackwell Ultra) in the cloud, and completed a large IPO despite leverage and governance concerns. ([en.wikipedia.org](https://en.wikipedia.org/wiki/CoreWeave?utm_source=openai))  Analyst commentary in mid\u20112025 still highlights strong projected revenue growth into 2026\u201327 rather than collapsing demand. ([barrons.com](https://www.barrons.com/articles/coreweave-stock-buy-ai-microsoft-7438a6a0?utm_source=openai))  \n- **Other \u201cneo\u2011cloud\u201d GPU providers also show robust demand.** For example, Nebius (another specialized AI cloud) reported several\u2011hundred\u2011percent revenue growth in 2025 and signed multi\u2011billion\u2011dollar, multi\u2011year infrastructure deals with major customers including Meta and Microsoft, noting demand was strong enough that one deal had to be capped by available capacity. ([reuters.com](https://www.reuters.com/technology/ai-cloud-firm-nebius-signs-3-billion-deal-with-meta-posts-more-than-four-fold-2025-11-11/?utm_source=openai))\n\nSo far, the observable market aligns with the *pricing\u2011pressure* part of the thesis (falling GPU rental prices as capacity ramps), and with hyperscalers increasingly bundling AI compute into their platforms. But the *\u201csignificantly reduced demand for third\u2011party GPU clouds\u201d* component has not materialized yet; if anything, those providers are still rapidly scaling and signing large contracts. Because the prediction\u2019s endpoint is still ~16 months away and current data do not decisively confirm or refute a future demand drop by 2027, the outcome must be judged **inconclusive (too early)** rather than clearly right or wrong at this time.",
+      "sources": [
+        {
+          "end_index": 670,
+          "start_index": 565,
+          "title": "GPU Infrastructure: The 1M+ GPU Deployment Powering US AI | mike bommarito",
+          "type": "url_citation",
+          "url": "https://michaelbommarito.com/wiki/datacenters/technology/gpu/?utm_source=openai"
+        },
+        {
+          "end_index": 1102,
+          "start_index": 993,
+          "title": "H100 Rental Prices: A Cloud Cost Comparison (Nov 2025) | IntuitionLabs",
+          "type": "url_citation",
+          "url": "https://intuitionlabs.ai/articles/h100-rental-prices-cloud-comparison?utm_source=openai"
+        },
+        {
+          "end_index": 1617,
+          "start_index": 1538,
+          "title": "CoreWeave",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/CoreWeave?utm_source=openai"
+        },
+        {
+          "end_index": 1852,
+          "start_index": 1743,
+          "title": "CoreWeave Stock Jumps on Upgrade. Why Citi Analyst Says Buy.",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/coreweave-stock-buy-ai-microsoft-7438a6a0?utm_source=openai"
+        },
+        {
+          "end_index": 2387,
+          "start_index": 2228,
+          "title": "AI cloud firm Nebius signs $3 billion deal with Meta, posts more than four-fold rise in revenue",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/ai-cloud-firm-nebius-signs-3-billion-deal-with-meta-posts-more-than-four-fold-2025-11-11/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction targets 'by roughly 2027' (1-2 years from Mar 2025 podcast), but only ~9 months have passed as of Dec 1, 2025. CoreWeave IPO'd successfully in Mar 2025 (CRWV, up 200% by Oct) with explosive growth: Q3 2025 revenue $1.36B, FY2025 guidance $5.05-5.15B (133% YoY), $56B backlog (*investors.coreweave.com Nov 10; Reuters Nov 10*). Surging AI demand, no reduced demand/churn to hyperscalers (*Yahoo Nov 13; Seeking Alpha Nov 20*). Pricing stable/competitive (H100 ~$4.25-6.15/GPU/hr Sep 2025, often cheaper than AWS/Azure *thundercompute Sep 19; computeprices.com*). Hyperscalers expanding GPUs but CoreWeave thriving in niche, even serving them (*Holori Nov 14; Motley Fool Nov 30*). Future risks noted (e.g., hyperscaler buildouts), but no current evidence of obsolescence. Too early to judge."
+    },
+    {
+      "id": "F-01:13:21.300",
+      "result": "right",
+      "explanation": "Evidence to date lines up closely with Friedberg\u2019s forecast on both the debt\u2011refinancing and stock\u2011market\u2011tolerance components.\n\n1. **Context: Trump 2.0 and Bessent in key roles.** Donald Trump began his second, non\u2011consecutive term as president on January 20, 2025, and Scott Bessent was confirmed as Treasury secretary later that month, matching Friedberg\u2019s assumption that \u201cBessent and others\u201d would hold key economic posts in a new Trump administration. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Second_presidency_of_Donald_Trump?utm_source=openai))\n\n2. **Massive near\u2011term refinancing need (~$10\u201311T).** Treasury\u2019s Office of Debt Management reported in mid\u20112025 that about 31.4% of the roughly $36 trillion federal debt would mature within the following 12 months, meaning about $11 trillion in U.S. debt securities must be refinanced\u2014almost exactly the \u201c$10 trillion coming due in the next 12 months\u201d Friedberg referenced. ([foxbusiness.com](https://www.foxbusiness.com/economy/nearly-one-third-36t-national-debt-needs-refinancing-trump-demands-rate-cuts?utm_source=openai)) This refinancing window overlaps the 12\u2011month period he was talking about (roughly March 2025\u2013March 2026).\n\n3. **Administration actively trying to push rates down around that refinancing.** Early in the term, Bessent said the Trump administration\u2019s focus was on keeping longer\u2011term Treasury yields (especially the 10\u2011year) low, rather than directly browbeating the Fed, and confirmed that \u201cthe president wants lower rates,\u201d aiming to get borrowing costs down via deregulation, spending cuts, and energy policy. ([cnbc.com](https://www.cnbc.com/2025/02/06/bessent-says-trump-is-focused-on-the-10-year-yield-wont-push-fed-to-cut-rates.html?utm_source=openai)) As the year progressed and the refinancing wave loomed, Trump repeatedly demanded deep Fed cuts, arguing publicly that the policy rate was at least 3 percentage points too high and that each percentage point was costing the government roughly $360 billion per year in refinancing costs\u2014explicitly tying his push for lower rates to the cost of rolling the debt. ([reuters.com](https://www.reuters.com/world/us/trump-says-us-interest-rate-is-least-3-points-too-high-2025-07-09/?utm_source=openai)) Bessent later stated that the Fed\u2019s rate was \u201csignificantly higher than necessary\u201d and called for a series of cuts totaling about 150\u2013175 basis points, while also emphasizing that rising tariff revenues should be used to reduce debt and that rate cuts would ease pressure on rate\u2011sensitive sectors. ([upi.com](https://www.upi.com/Top_News/US/2025/08/13/scott-bessent-fed-rate/1611755117611/?utm_source=openai)) Together with Treasury\u2019s own acknowledgment that roughly $11T must be refinanced over a one\u2011year horizon, this amounts to exactly the sort of strategy Friedberg described: using political and policy pressure to push interest rates down during a huge refinancing window.\n\n4. **More willingness than in term one to tolerate stock\u2011market weakness.** In his first term, Trump frequently treated record stock prices as a core metric of success and regularly highlighted market gains. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Economic_policy_of_the_first_Trump_administration?utm_source=openai)) In 2025, by contrast, he pressed ahead with his sweeping \"Liberation Day\" tariff program even as it triggered the largest U.S. stock\u2011market crash since the pandemic and the worst first\u2011100\u2011days market performance for any president since Gerald Ford, with the S&P 500 down over 7% and trillions in equity value temporarily wiped out. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Stock_market_crash?utm_source=openai)) Investment research notes from March 2025 observed that markets were starting to question the old \u201cTrump put,\u201d explicitly commenting that the new administration appeared willing to tolerate a \u201ctemporary disturbance\u201d in economic activity and equity prices to pursue its policy agenda. ([ubs.com](https://www.ubs.com/us/en/wealth-management/insights/investment-research/potus-47/articles/quick-takes-on-the-second-trump-administration.html?utm_source=openai)) During sell\u2011offs, Trump himself said that while he didn\u2019t *want* stocks down, \u201csometimes you have to take medicine to fix something,\u201d and he openly acknowledged the risk of a recession, signaling acceptance of short\u2011term market and economic pain. ([reddit.com](https://www.reddit.com/r/StockMarket/comments/1jt9kwb?utm_source=openai)) This behavior is widely described by market commentators as a shift from his first term, when he was more visibly reactive to market declines.\n\n5. **Linking both elements together.** Commentary on the 2025 crash and tariff shock notes that some investors even speculated Trump might be willing to endure market turmoil in order to force or justify easier monetary policy, though he denied doing it \"on purpose.\" ([reuters.com](https://www.reuters.com/markets/us/global-markets-tariffs-trump-analysis-pix-2025-04-07/?utm_source=openai)) At the same time, reputable financial and policy outlets tied Trump\u2019s and Bessent\u2019s aggressive calls for lower rates directly to the government\u2019s need to refinance an ~$11 trillion debt wall and reduce exploding interest costs. ([foxbusiness.com](https://www.foxbusiness.com/economy/nearly-one-third-36t-national-debt-needs-refinancing-trump-demands-rate-cuts?utm_source=openai)) This is closely aligned with Friedberg\u2019s thesis that Trump 2.0 would be more willing than before to look past short\u2011term stock\u2011market \"rumblings\" in order to get rates down and refinance the debt on more favorable terms.\n\nGiven the documented combination of (a) an explicit, sustained push from Trump and Bessent to lower interest rates precisely as a massive ~$10\u201311T refinancing wave hits, and (b) a noticeably greater tolerance for equity\u2011market drawdowns compared with his first term, Friedberg\u2019s prediction has, by late 2025\u2014well within his 12\u2011month horizon\u2014substantially come true.",
+      "sources": [
+        {
+          "end_index": 599,
+          "start_index": 496,
+          "title": "Second presidency of Donald Trump",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Second_presidency_of_Donald_Trump?utm_source=openai"
+        },
+        {
+          "end_index": 1128,
+          "start_index": 977,
+          "title": "National debt interest costs soar as Treasury prepares massive refinancing | Fox Business",
+          "type": "url_citation",
+          "url": "https://www.foxbusiness.com/economy/nearly-one-third-36t-national-debt-needs-refinancing-trump-demands-rate-cuts?utm_source=openai"
+        },
+        {
+          "end_index": 1788,
+          "start_index": 1642,
+          "title": "Bessent says Trump is focused on the 10-year yield, won't push Fed to cut rates",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/02/06/bessent-says-trump-is-focused-on-the-10-year-yield-wont-push-fed-to-cut-rates.html?utm_source=openai"
+        },
+        {
+          "end_index": 2284,
+          "start_index": 2150,
+          "title": "Trump says U.S. interest rate is at least 3 points too high",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/trump-says-us-interest-rate-is-least-3-points-too-high-2025-07-09/?utm_source=openai"
+        },
+        {
+          "end_index": 2695,
+          "start_index": 2584,
+          "title": "Treasury Secretary Bessent wants the Fed to lower its lending rate - UPI.com",
+          "type": "url_citation",
+          "url": "https://www.upi.com/Top_News/US/2025/08/13/scott-bessent-fed-rate/1611755117611/?utm_source=openai"
+        },
+        {
+          "end_index": 3296,
+          "start_index": 3177,
+          "title": "Economic policy of the first Trump administration",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Economic_policy_of_the_first_Trump_administration?utm_source=openai"
+        },
+        {
+          "end_index": 3720,
+          "start_index": 3632,
+          "title": "Stock market crash",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Stock_market_crash?utm_source=openai"
+        },
+        {
+          "end_index": 4178,
+          "start_index": 4005,
+          "title": "POTUS 47: Quick takes on Trump 2.0 | UBS United States of America",
+          "type": "url_citation",
+          "url": "https://www.ubs.com/us/en/wealth-management/insights/investment-research/potus-47/articles/quick-takes-on-the-second-trump-administration.html?utm_source=openai"
+        },
+        {
+          "end_index": 4513,
+          "start_index": 4426,
+          "title": "Trump says he doesn't want stocks to fall, 'but sometimes you have to take medicine'",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/StockMarket/comments/1jt9kwb?utm_source=openai"
+        },
+        {
+          "end_index": 5053,
+          "start_index": 4930,
+          "title": "Tariff-whipped Wall Street wonders: will Trump blink?",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/markets/us/global-markets-tariffs-trump-analysis-pix-2025-04-07/?utm_source=openai"
+        },
+        {
+          "end_index": 5433,
+          "start_index": 5282,
+          "title": "National debt interest costs soar as Treasury prepares massive refinancing | Fox Business",
+          "type": "url_citation",
+          "url": "https://www.foxbusiness.com/economy/nearly-one-third-36t-national-debt-needs-refinancing-trump-demands-rate-cuts?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "~$10T US Treasury debt maturing in 2025 (calendar year, aligning with March 2025-2026): Confirmed by [FirstNational.ca (May 2025)](https://www.firstnational.ca/commercial/resources-insights/article/will-the--9-trillion-maturity-wall-in-2025-force-u.s.-treasury-yields-higher) ($9.2T), [Pine Financial (Sep 2025)](https://pinefinancialgroup.com/blog/mortgage-rates-explained/) (~$10T by Mar 2026), plus deficits push issuance >$10T.\n\nScott Bessent Treasury Sec., pushing lower rates for refinancing: [Treasury.gov (Nov 2025)](https://home.treasury.gov/news/press-releases/sb0314), [WSJ (Jul 2025)](https://www.wsj.com/finance/investing/trump-and-bessent-bring-new-style-to-managing-americas-debt-5c2de0cc) (wait for lower rates before long-term issuance).\n\nFed cuts under pressure: Sep/Oct 2025 (0.25% each to 3.75-4%), Trump threats to Bessent/Powell [CNN (Nov 2025)](https://www.cnn.com/2025/11/19/politics/bessent-trump-federal-reserve-powell).\n\nTolerating stock weakness > first term: 2025 crash from tariffs ([Wikipedia](https://en.wikipedia.org/wiki/2025_stock_market_crash), S&P -20% early 2025), Trump: \"take medicine\" [NYT (Apr/May 2025)](https://www.nytimes.com/live/2025/04/07/business/trump-tariffs-stock-market); higher tolerance noted [Reuters (Mar 2025)](https://www.reuters.com/markets/wealth/investors-question-trump-put-tariffs-rattle-stock-markets-2025-03-06/).\n\n9/12 months passed (Dec 1, 2025); strategy actively pursued, no reversal."
+    },
+    {
+      "id": "A-01:15:38.530",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, major corruption investigations in Ukraine have indeed exposed large embezzlement and kickback schemes involving senior officials and business figures close to President Zelensky, especially around the state nuclear energy company Energoatom. These probes have led to the resignation of the justice and energy ministers and allegations that Zelensky\u2019s former business partner Tymur Mindich masterminded a scheme involving 10\u201315% kickbacks on contracts, with Mindich fleeing the country. ([theguardian.com](https://www.theguardian.com/world/2025/nov/28/ukraines-anti-corruption-agencies-search-home-zelenskyy-chief-aide-andriy-yermak?utm_source=openai))  \n\nMore recently, Zelensky\u2019s powerful chief of staff and close confidant Andriy Yermak resigned after anti-corruption agencies searched his home in connection with the widening scandal, intensifying questions about the president\u2019s inner circle. However, reporting from multiple major outlets indicates that while Yermak and other senior officials are under scrutiny, investigators have not named Zelensky himself as a suspect or presented evidence that he personally diverted or embezzled Western aid funds. ([theguardian.com](https://www.theguardian.com/world/2025/nov/28/ukraines-anti-corruption-agencies-search-home-zelenskyy-chief-aide-andriy-yermak?utm_source=openai))  \n\nThe normalized prediction is that **in the next several years** evidence may emerge that Zelensky and close associates personally stole substantial Western aid money. Two key points make this inconclusive:\n\n1. **Timeframe not elapsed:** Only about eight and a half months have passed since the March 8, 2025 podcast release; \u201cthe next several years\u201d clearly extends beyond November 30, 2025. The prediction concerns a longer horizon, so it cannot yet be judged fully right or wrong.\n2. **Current evidence is insufficiently specific:** Existing scandals do show serious wartime corruption by high-level figures and some close associates, but so far they center on kickbacks and embezzlement tied to state energy and infrastructure contracts, not on clear, publicly documented proof that Zelensky personally diverted Western aid to himself. Whether future investigations will change this remains unknown.\n\nBecause the prediction is explicitly about what *may* be uncovered over a multi\u2011year period, and because the available record to date does not yet match the specific claim about Zelensky personally embezzling Western aid, the only fair verdict at this point is **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 717,
+          "start_index": 552,
+          "title": "Zelenskyy's top aide quits after anti-corruption searches of his home",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/world/2025/nov/28/ukraines-anti-corruption-agencies-search-home-zelenskyy-chief-aide-andriy-yermak?utm_source=openai"
+        },
+        {
+          "end_index": 1393,
+          "start_index": 1228,
+          "title": "Zelenskyy's top aide quits after anti-corruption searches of his home",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/world/2025/nov/28/ukraines-anti-corruption-agencies-search-home-zelenskyy-chief-aide-andriy-yermak?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence from investigations or disclosures has emerged showing President Zelensky or his close associates personally diverted or embezzled significant amounts of *Western aid money*. A major November 2025 corruption scandal implicated associates like Timur Mindich (Zelensky's former business partner) and led to the resignation of chief of staff Andriy Yermak amid a $100M kickback scheme at state nuclear firm Energoatom. However, the embezzled funds were from Energoatom's commercial contracts and operational revenues via forced 10-15% kickbacks to contractors, not Western aid ([NYT, Nov 14 & 19, 2025](https://www.nytimes.com/2025/11/14/world/europe/zelensky-corruption-investigation.html); [Washington Post, Nov 14, 2025](https://www.washingtonpost.com/world/2025/11/14/eu-ukraine-corruption-aid-zelensky/)). EU officials confirmed 'no evidence' of their aid being diverted ([WaPo](https://www.washingtonpost.com/world/2025/11/14/eu-ukraine-corruption-aid-zelensky/)); prior US statements found no credible diversion of defense aid ([Politifact, Feb 2025](https://www.politifact.com/factchecks/2025/feb/05/facebook-posts/zelenskyys-statement-about-ukraine-aid-didnt-revea/)). Zelensky faces no personal charges; he has supported probes and fired implicated officials. While Ukraine corruption persists, it does not match the specific prediction."
+    },
+    {
+      "id": "A-01:10:11.100",
+      "result": "ambiguous",
+      "explanation": "Evidence so far points in **mixed directions**, so the prediction can\u2019t be cleanly scored as right or wrong.\n\n**What matches the prediction**\n\n1. **Trump and Bessent are clearly pushing for lower interest rates and cheaper borrowing.**  \n   * Trump has repeatedly demanded immediate rate cuts and said rates should be lowered to go \u201chand in hand\u201d with his tariffs, despite the Fed\u2019s reluctance to move. ([washingtonpost.com](https://www.washingtonpost.com/business/2025/01/23/trump-federal-reserve/?utm_source=openai))  \n   * Treasury Secretary Scott Bessent has publicly called for a **50 bp cut and a *series* of rate cuts**, saying the policy rate should be 150\u2013175 bps lower than current levels. ([theguardian.com](https://www.theguardian.com/business/live/2025/aug/13/us-treasury-secretary-scott-bessent-half-point-interest-rate-cut-fed-inflation-business-live-?utm_source=openai))  \n   * In official remarks, Bessent explicitly links a **\u201clow risk\u2011free rate\u201d and lower Treasury yields** to lower mortgage, auto, and business borrowing costs, framing that as central to \u201cMake America Affordable Again\u201d and helping ordinary borrowers. ([home.treasury.gov](https://home.treasury.gov/news/press-releases/sb0314?utm_source=openai)) \n\n2. **They frame their agenda as focused on Main Street affordability and debt-service burdens.**  \n   * Bessent says he entered government to improve affordability and put the fiscal house in order, describing himself as \u201cthe primary caretaker of the Treasury market\u201d because Treasury yields determine what families pay on mortgages, car loans, and small\u2011business credit. ([home.treasury.gov](https://home.treasury.gov/news/press-releases/sb0314?utm_source=openai))  \n   * The administration has created an \u201caffordability council\u201d and plans an \u201caffordability czar,\u201d explicitly aiming to address high living costs for working\u2011class Americans. ([cnbc.com](https://www.cnbc.com/2025/03/05/the-us-is-getting-an-affordability-czar-what-that-means-for-you.html?utm_source=openai))\n\n3. **They have tolerated substantial market volatility and a major equity drawdown as a byproduct of their policies.**  \n   * Trump\u2019s sweeping \u201cLiberation Day\u201d tariffs (10% on nearly all imports, with higher rates on many countries) triggered the **2025 stock market crash**, wiping out over **$3 trillion** in market value before a later recovery. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Stock_market_crash?utm_source=openai))  \n   * Bessent later highlighted that, despite the earlier tariff\u2011driven turmoil, the **Treasury market had its best total return year since 2020**, presenting this as a success because it lowered borrowing costs for households and companies. ([americanbanker.com](https://www.americanbanker.com/news/bessent-credits-trump-policies-for-bond-market?utm_source=openai))  \n   This is at least consistent with being willing to live with asset\u2011price shocks in order to pursue the administration\u2019s broader economic program.\n\n**What cuts against the prediction**\n\n1. **Their flagship policies are not clearly designed around disinflation; in some cases they raise inflation risks.**  \n   * Broad new tariffs on Canada, Mexico, China and many other countries have been widely flagged as **inflationary**, with estimates of over $1,200 per year in extra costs for the typical U.S. household. Bessent himself acknowledged there could be a \u201cone\u2011time price adjustment,\u201d saying that \u201caccess to cheap goods is not the essence of the American dream.\u201d ([theguardian.com](https://www.theguardian.com/us-news/2025/mar/06/trump-tariffs-prices-scott-bessent?utm_source=openai))  \n   * CPI inflation in 2025 is running around **2.8\u20133.0%**, and forecasters see it drifting only slightly lower to roughly **2.6%** in 2026, with tariffs specifically cited as an ongoing source of price pressure. ([reuters.com](https://www.reuters.com/markets/us/view-tamer-feb-us-cpi-may-not-budge-fed-given-tariff-picture-2025-03-12/?utm_source=openai))  \n   That profile looks more like **\u201caccept moderate, sticky inflation plus tariffs\u201d** than a first\u2011order policy priority on disinflation.\n\n2. **\u201cDisinflation, even if it hurts assets\u201d is not the evident organizing principle; tariffs raised prices and also hit assets.**  \n   * The 2025 crash was caused by the **tariff shock itself**, which both hit equities and is expected to lift import prices\u2014exactly the opposite of \u201chit assets to *drive down* inflation.\u201d ([en.wikipedia.org](https://en.wikipedia.org/wiki/Stock_market_crash?utm_source=openai))  \n   * Bessent\u2019s later criticism of the Fed\u2019s large balance sheet and the \u201cample\u2011reserves\u201d framework, and his call for lower rates, are framed around market functioning and borrowing costs, not about tightening policy to crush inflation via asset\u2011price pain. ([reuters.com](https://www.reuters.com/world/us/us-treasury-secretary-takes-aim-feds-interest-rate-control-system-2025-11-25/?utm_source=openai))\n\n3. **Interest rates themselves remain relatively high; Fed easing has been limited.**  \n   * The Fed funds target has been held around **4.25\u20134.50%** through most of 2025 despite sustained pressure from Trump and Bessent, with only modest additional cuts expected (about 0.25\u20130.75 percentage points over late 2025\u20132026). ([foxbusiness.com](https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-june-2025?utm_source=openai))  \n   * That shows the administration\u2019s *preference* for substantially lower rates, but so far it hasn\u2019t translated into \u201cmeaningfully lower interest rates\u201d in practice; the central bank has largely resisted.\n\n**Why the verdict is ambiguous**\n\nThe prediction is multi-part:\n\n* They **have** clearly prioritized *lower rates* and *Main Street affordability* in both rhetoric and concrete Treasury actions (managing the Treasury market to lower borrowing costs, pushing the Fed for cuts). ([theguardian.com](https://www.theguardian.com/business/live/2025/aug/13/us-treasury-secretary-scott-bessent-half-point-interest-rate-cut-fed-inflation-business-live-?utm_source=openai))  \n* However, their **trade and fiscal choices** (broad tariffs, expansionary tax cuts, willingness to accept higher consumer prices) are not obviously those of an administration whose **top priority** is disinflation; tariffs in particular trade lower inflation for other goals. ([theguardian.com](https://www.theguardian.com/us-news/2025/mar/06/trump-tariffs-prices-scott-bessent?utm_source=openai))  \n* The willingness to tolerate a stock\u2011market crash came as a side effect of tariffs, not as a deliberate tool to *force* disinflation or reduce asset prices in order to get lower rates.\n\nSince some central elements (lower\u2011rate push, stated focus on affordability) support the prediction while others (tariffs\u2019 inflationary impact, lack of a clear \u201cdisinflation first even if assets fall\u201d doctrine) undermine it\u2014and because the term is still in its early phase\u2014the overall alignment of the Trump\u2013Bessent economic program with the specific **\u201cdisinflation + lower rates even at the cost of asset prices\u201d** thesis is **not cleanly established in either direction**. Hence, the fairest scoring at this point is **ambiguous** rather than definitively right or wrong.",
+      "sources": [
+        {
+          "end_index": 560,
+          "start_index": 445,
+          "title": "Trump pressures Federal Reserve to lower interest rates - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/business/2025/01/23/trump-federal-reserve/?utm_source=openai"
+        },
+        {
+          "end_index": 929,
+          "start_index": 743,
+          "title": "US treasury secretary Scott Bessent calls for half-point interest rate cut at next Fed meeting \u2013 as it happened | Business | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/live/2025/aug/13/us-treasury-secretary-scott-bessent-half-point-interest-rate-cut-fed-inflation-business-live-?utm_source=openai"
+        },
+        {
+          "end_index": 1276,
+          "start_index": 1183,
+          "title": "Remarks by Secretary of the Treasury Scott Bessent before the Treasury Market Conference | U.S. Department of the Treasury",
+          "type": "url_citation",
+          "url": "https://home.treasury.gov/news/press-releases/sb0314?utm_source=openai"
+        },
+        {
+          "end_index": 1747,
+          "start_index": 1654,
+          "title": "Remarks by Secretary of the Treasury Scott Bessent before the Treasury Market Conference | U.S. Department of the Treasury",
+          "type": "url_citation",
+          "url": "https://home.treasury.gov/news/press-releases/sb0314?utm_source=openai"
+        },
+        {
+          "end_index": 2057,
+          "start_index": 1925,
+          "title": "The U.S. is getting an 'affordability czar.' What that means for you",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/03/05/the-us-is-getting-an-affordability-czar-what-that-means-for-you.html?utm_source=openai"
+        },
+        {
+          "end_index": 2499,
+          "start_index": 2411,
+          "title": "Stock market crash",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Stock_market_crash?utm_source=openai"
+        },
+        {
+          "end_index": 2868,
+          "start_index": 2744,
+          "title": "Bessent credits Trump policies for bond market | American Banker",
+          "type": "url_citation",
+          "url": "https://www.americanbanker.com/news/bessent-credits-trump-policies-for-bond-market?utm_source=openai"
+        },
+        {
+          "end_index": 3664,
+          "start_index": 3543,
+          "title": "Cheap goods 'not essence of American dream', Trump official says amid tariff price fears",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2025/mar/06/trump-tariffs-prices-scott-bessent?utm_source=openai"
+        },
+        {
+          "end_index": 4022,
+          "start_index": 3880,
+          "title": "Tamer Feb US CPI may not budge Fed, given tariff picture",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/markets/us/view-tamer-feb-us-cpi-may-not-budge-fed-given-tariff-picture-2025-03-12/?utm_source=openai"
+        },
+        {
+          "end_index": 4577,
+          "start_index": 4489,
+          "title": "Stock market crash",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Stock_market_crash?utm_source=openai"
+        },
+        {
+          "end_index": 4983,
+          "start_index": 4838,
+          "title": "US Treasury secretary takes aim at Fed's interest rate control system",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/us-treasury-secretary-takes-aim-feds-interest-rate-control-system-2025-11-25/?utm_source=openai"
+        },
+        {
+          "end_index": 5432,
+          "start_index": 5309,
+          "title": "Federal Reserve leaves interest rates unchanged despite Trump pressure | Fox Business",
+          "type": "url_citation",
+          "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-june-2025?utm_source=openai"
+        },
+        {
+          "end_index": 6112,
+          "start_index": 5926,
+          "title": "US treasury secretary Scott Bessent calls for half-point interest rate cut at next Fed meeting \u2013 as it happened | Business | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/live/2025/aug/13/us-treasury-secretary-scott-bessent-half-point-interest-rate-cut-fed-inflation-business-live-?utm_source=openai"
+        },
+        {
+          "end_index": 6514,
+          "start_index": 6393,
+          "title": "Cheap goods 'not essence of American dream', Trump official says amid tariff price fears",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2025/mar/06/trump-tariffs-prices-scott-bessent?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Scott Bessent was confirmed as Treasury Secretary in January 2025 and has emphasized Main Street priorities ([CNBC, Apr 9, 2025](https://www.cnbc.com/2025/04/09/treasury-secretary-bessent-says-its-main-streets-turn-after-wall-street-grew-wealthier-for-4-decades.html)). The Trump team has pushed for lower interest rates, with Trump pressuring Bessent on Fed rates ([Fortune, Nov 20, 2025](https://fortune.com/2025/11/20/trump-tells-scott-bessent-fix-fed-high-interest-rates-or-im-going-to-fire-you/)) and Fed cutting to 3.75%-4.00% by Oct 2025 ([Trading Economics](https://tradingeconomics.com/united-states/interest-rate)). Bessent focused on lower long-term yields for debt relief ([Reuters, Apr 9, 2025](https://www.reuters.com/markets/rates-bonds/us-10-year-yield-wont-dance-bessents-tune-mcgeever-2025-04-08/); yields ~4%). Rhetoric supports disinflation ([Bloomberg video, Feb 20, 2025](https://www.bloomberg.com/news/videos/2025-02-20/bessent-says-everything-trump-s-doing-disinflationary-video)), with 3-3-3 goals including 3% inflation. Asset declines tolerated amid tariff-induced chaos (S&P 500 down 10-20% early 2025, 'crash' per Wikipedia; [Reuters, Mar 10, 2025](https://www.reuters.com/markets/us/investors-flee-equities-trump-driven-uncertainty-sparks-economic-worry-2025-03-10/)), yet policies proceeded. Matches prediction priorities despite mixed inflation outcomes (3% core Sep 2025, [Treasury, Nov 3, 2025](https://home.treasury.gov/news/press-releases/sb0301))."
+    },
+    {
+      "id": "F-01:22:45.000",
+      "result": "inconclusive",
+      "explanation": "The prediction\u2019s own timeline runs \u201cin the next couple of years\u201d from March 8, 2025 (roughly out to 2027\u20132028), so as of November 30, 2025, we are far from the end of the forecast window. It is therefore too early to say definitively whether it will prove right or wrong.\n\nEvidence so far is mixed and mostly *against* the idea that NATO is broadly seen as \u201cnot necessary\u201d:\n\n- **US and NATO elites are doubling down on the alliance, not deemphasizing it.** The 2024 Washington NATO summit and the 2025 The Hague summit reaffirmed NATO as central to Euro\u2011Atlantic security and produced a high\u2011profile pledge to raise defense spending to 5% of GDP by 2035, framed explicitly as a response to enduring Russian and other threats, with an \u201cironclad\u201d commitment to Article 5. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Washington_NATO_summit?utm_source=openai)) Senior US and NATO figures (e.g., Nancy Pelosi, Secretary\u2011General Mark Rutte) publicly stress that the US \u201cneeds NATO too\u201d and that this is \u201cnot the time to go it alone,\u201d describing NATO as irreplaceable for collective security. ([politico.com](https://www.politico.com/news/2025/05/07/pelosi-warns-the-us-needs-nato-too-00334512?utm_source=openai))\n\n- **US public opinion still broadly sees NATO as beneficial and necessary.** An April 2025 Pew survey finds 60% of Americans view NATO favorably and 66% say the US benefits from membership, with particularly strong support among Democrats. ([pewresearch.org](https://www.pewresearch.org/2025/04/17/how-americans-view-nato-and-u-s-nato-membership/?utm_source=openai)) A May\u2013June 2025 Chicago Council/Ipsos poll reports that 74% of Americans favor maintaining or increasing the US commitment to NATO and 57% say NATO makes the US safer. ([globalaffairs.org](https://globalaffairs.org/research/public-opinion-survey/americans-endorse-us-commitment-nato-though-gop-support-has-dipped?utm_source=openai)) A large YouGov survey likewise finds about 71% of Americans support NATO and 66% back its expansion. ([today.yougov.com](https://today.yougov.com/politics/articles/49677-the-yougov-big-survey-on-nato-and-war-overview?utm_source=openai))\n\n- **There is, however, a notable *segment* moving in the direction Friedberg describes.** Pew and Chicago Council data show Republican and especially conservative\u2011Republican skepticism about NATO has grown: only about half of Republicans say the US benefits from membership, and rising shares say the US does *not* benefit, while figures like Donald Trump and Elon Musk have openly floated reducing or even ending US participation. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_from_NATO?utm_source=openai)) That\u2019s a real elite\u2011and\u2011base shift, but it is still counterbalanced by strong overall support and increased alliance investment.\n\nGiven that (a) the prediction horizon runs to ~2028 and (b) current evidence shows strong but increasingly polarized support rather than a broad consensus that NATO is \u201cless necessary,\u201d the correct assessment as of late 2025 is that it is **too early to determine** whether the prediction will ultimately be right or wrong.",
+      "sources": [
+        {
+          "end_index": 911,
+          "start_index": 814,
+          "title": "2024 Washington NATO summit",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Washington_NATO_summit?utm_source=openai"
+        },
+        {
+          "end_index": 1261,
+          "start_index": 1141,
+          "title": "Pelosi warns the US needs NATO too",
+          "type": "url_citation",
+          "url": "https://www.politico.com/news/2025/05/07/pelosi-warns-the-us-needs-nato-too-00334512?utm_source=openai"
+        },
+        {
+          "end_index": 1631,
+          "start_index": 1505,
+          "title": "How Americans view NATO and U.S. NATO membership | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/2025/04/17/how-americans-view-nato-and-u-s-nato-membership/?utm_source=openai"
+        },
+        {
+          "end_index": 1964,
+          "start_index": 1800,
+          "title": "Americans Endorse US Commitment to NATO, Though GOP Support Has Dipped | Chicago Council on Global Affairs",
+          "type": "url_citation",
+          "url": "https://globalaffairs.org/research/public-opinion-survey/americans-endorse-us-commitment-nato-though-gop-support-has-dipped?utm_source=openai"
+        },
+        {
+          "end_index": 2201,
+          "start_index": 2066,
+          "title": "The YouGov Big Survey on NATO and war | YouGov",
+          "type": "url_citation",
+          "url": "https://today.yougov.com/politics/articles/49677-the-yougov-big-survey-on-nato-and-war-overview?utm_source=openai"
+        },
+        {
+          "end_index": 2727,
+          "start_index": 2637,
+          "title": "Withdrawal from NATO",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_from_NATO?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Only 9 months have passed since the March 2025 prediction (current date: Dec 1, 2025), far short of the ~3-year horizon to 2028. Recent polls show no shift toward viewing NATO as less necessary:\n- US: 74% favor maintaining/increasing support (Chicago Council, Jun 2025); 76% say maintain NATO (Gallup, Mar 2025); GOP endorsement dipped to 59% but overall stable/high ([globalaffairs.org](https://globalaffairs.org/research/public-opinion-survey/americans-endorse-us-commitment-nato-though-gop-support-has-dipped)).\n- Europe: Median 66% favorable (Pew, Jun 2025, 13 nations); 82% support membership (GLOBSEC, May 2025); high backing for defense hikes amid Russia threat ([pewresearch.org](https://www.pewresearch.org/global/2025/06/23/views-of-nato-2025/), [yougov.co.uk](https://yougov.co.uk/international/articles/53219-european-political-monthly-europeans-on-defence-and-nato)).\nElite discourse focuses on bolstering NATO (e.g., 5% GDP pledge at 2025 Hague summit) due to threats/US uncertainty, not reduced necessity ([csis.org](https://www.csis.org/analysis/natos-brain-death-hague)). Too early to assess long-term opinion shift."
+    },
+    {
+      "id": "F-00:17:02.000",
+      "result": "wrong",
+      "explanation": "Available evidence shows that discussion of replacing the U.S. income\u2011tax system with a consumption\u2011tax system (e.g., national sales tax, VAT\u2011style proposals) remained a **recurring but niche** theme in 2025, not a clearly *more prominent* or central topic than in the years immediately before.\n\n**Baseline (before 2025):**\n- In early 2023, the FairTax Act of 2023 (H.R. 25) to replace federal income, payroll, estate, and gift taxes with a national sales tax drew high\u2011level political fire: President Biden publicly attacked it as a national sales tax that would raise middle\u2011class costs, and Senate Democrats introduced a resolution condemning it, both widely covered in mainstream outlets. ([congress.gov](https://www.congress.gov/bill/118th-congress/house-bill/25/all-info?utm_source=openai))  \n- Media and policy analysis in 2023\u201324 already framed FairTax and related national sales\u2011tax ideas as significant Republican proposals, with fact\u2011checking and think\u2011tank pieces explaining their mechanics and distributional effects. ([fairtax.org](https://fairtax.org/active-legislation/h-r-25-the-fairtax-act-of-2023?utm_source=openai))  \n- By 2024, **Project 2025** was being heavily covered as a far\u2011right blueprint, explicitly highlighting its long\u2011term goal of replacing income and corporate taxes with a national consumption tax (national sales tax, VAT\u2011type options, flat consumption tax). Major outlets like the Guardian, Forbes, and advocacy groups dissected these consumption\u2011tax elements as a key part of the plan. ([forbes.com](https://www.forbes.com/sites/taxnotes/2024/07/08/your-guide-to-tax-policy-in-project-2025/?utm_source=openai))  \n\nThis means that *before* 2025 there was already visible, national\u2011level political and media debate about moving from income to consumption taxation.\n\n**During 2025:**\n- The main enacted tax legislation in 2025\u2014the **One Big Beautiful Bill Act**, signed July 4, 2025\u2014extends and tweaks income\u2011tax provisions (extending 2017 individual rate cuts, altering SALT caps, creating deductions for overtime, tips, etc.) but **does not** implement or seriously advance a federal consumption tax. The structure of federal revenue remains income\u2011tax\u2011centric. ([en.wikipedia.org](https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=openai))\n- Project 2025\u2019s consumption\u2011tax vision continues to be discussed in 2025 analysis pieces (e.g., Forbes Advisor; Center for American Progress), emphasizing that the blueprint *envisions eventually* moving from an income tax to a consumption tax and modeling how such a shift would affect middle\u2011class vs. wealthy households. But these are largely **continuations** of the 2024 debate over Project 2025, not a qualitative step\u2011change in salience. ([forbes.com](https://www.forbes.com/advisor/taxes/trump-project-2025-tax-plans-next-agenda/?utm_source=openai))\n- Congress has ongoing background work and CRS material on consumption taxes and the reintroduced FairTax\u2011style bill, but these remain at the level of \"one option for fundamental tax reform\" and \"an alternative model\" under consideration, with no major new legislative push in 2025 comparable to, say, the 2023 FairTax Act media moment. ([congress.gov](https://www.congress.gov/crs-product/R44342?utm_source=openai))\n\nPutting this together:\n- The **topic exists** in 2025 and continues to be discussed, especially in the context of Project 2025 and academic/CRS analyses.\n- However, the **visibility and intensity of discussion were already high in 2023\u201324**, with presidential speeches, Senate resolutions, and substantial media coverage centered on FairTax and national\u2011sales\u2011tax proposals. 2025 coverage largely **extends** those conversations rather than showing a clearly *noticeable increase* or making the shift to consumption taxation one of the dominant economic/political topics of the year (especially relative to tariffs, income\u2011tax cuts in the One Big Beautiful Bill, inflation, etc.).\n\nBecause the prediction specifically claimed we would \"hear about it a lot more this year\" and that the shift from income to consumption taxation would become a *prominent* topic in 2025 U.S. debate, and the evidence instead shows **continued but not clearly elevated or central** discussion, the prediction is best judged as **wrong**, not merely undecidable.",
+      "sources": [
+        {
+          "end_index": 832,
+          "start_index": 729,
+          "title": "All Info - H.R.25 - 118th Congress (2023-2024): FairTax Act of 2023 | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/bill/118th-congress/house-bill/25/all-info?utm_source=openai"
+        },
+        {
+          "end_index": 1172,
+          "start_index": 1068,
+          "title": "H.R.25 The FAIRtax Act of 2023 | FAIRtax | fairtax.org",
+          "type": "url_citation",
+          "url": "https://fairtax.org/active-legislation/h-r-25-the-fairtax-act-of-2023?utm_source=openai"
+        },
+        {
+          "end_index": 1686,
+          "start_index": 1562,
+          "title": "Your Guide To Tax Policy In Project 2025",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/taxnotes/2024/07/08/your-guide-to-tax-policy-in-project-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 2338,
+          "start_index": 2242,
+          "title": "One Big Beautiful Bill Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2898,
+          "start_index": 2786,
+          "title": "Trump Distances Himself From Project 2025, But Its Tax Plans Could Shape His Next Term \u2013 Forbes Advisor",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/advisor/taxes/trump-project-2025-tax-plans-next-agenda/?utm_source=openai"
+        },
+        {
+          "end_index": 3320,
+          "start_index": 3241,
+          "title": "Consumption Taxes: An Overview | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/crs-product/R44342?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction that discussions about shifting from income to consumption tax would increase noticeably and become prominent in 2025 did not materialize. While the FairTax Act (H.R. 25), proposing a national sales tax to replace income/payroll taxes, was reintroduced January 3, 2025 (congress.gov/bill/119th-congress/house-bill/25; Rep. Carter press release Jan 9, buddycarter.house.gov), this is a perennial bill since 1999 with no hearings, progress, or major debate in 2025 (no mentions in search results for progress/hearings). Coverage was limited: Washington Examiner (Jan 9), USA Today explainer (Jan 3), Tax Policy Center speculative article (Mar 26, taxpolicycenter.org/taxvox/we-may-be-watching-death-federal-income-tax) linking to Project 2025 (2024 plan) and IRS cuts. FAIRtax.org updates exist (Nov 21), but 2025 tax debates centered on TCJA extensions ('2025 tax cliff'), tariffs, and Trump cuts (e.g., bipartisanpolicy.org Apr 9; ey.com; cbpp.org), not consumption tax shifts. Trump tariff talk (taxfoundation.org) is partial/distortionary, not full model. No prominent mainstream coverage (e.g., NYT/WSJ absent); niche/regressive idea remained marginal."
+    },
+    {
+      "id": "B-01:04:55.000",
+      "result": "inconclusive",
+      "explanation": "Chamath\u2019s prediction is explicitly about a \u201csecular shift\u201d that will play out \u201cover the coming election cycles\u201d in the late 2020s, i.e., well beyond November 2025, so by definition the full forecast horizon has not elapsed. In the short period since the March 2025 podcast, there are some signs in the direction he describes: Trump\u2019s second-term economic agenda has prioritized sweeping protectionist tariffs that contributed to the April 2025 stock market crash, while Trump publicly downplayed near-term market performance, arguing the U.S. cannot operate on a quarter\u2011to\u2011quarter perspective. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration?utm_source=openai)) There is also rhetoric from Trump\u2011aligned institutions about crafting \u201cworker\u2011focused\u201d AI and industrial policies, suggesting at least a messaging shift toward workers and \u201cMain Street.\u201d ([washingtonpost.com](https://www.washingtonpost.com/politics/2025/11/24/afpi-ai-plan-trump-tech/?utm_source=openai))\n\nAt the same time, core Republican/MAGA economic proposals continue to include extending and expanding the 2017 corporate and high\u2011income tax cuts, a traditionally Wall Street\u2013friendly priority, and independent analyses argue that Trump\u2019s tariff program in practice raises costs for working\u2011 and middle\u2011class households rather than clearly privileging them. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai)) Because the prediction concerns a durable realignment \u201cover the coming election cycles\u201d into the late 2020s, and we have observed only the first year of a single term with mixed evidence, it is too early to determine whether Republican/MAGA strategists will *sustainably* de\u2011emphasize support for Wall Street and the stock market in the way Chamath envisioned. Hence the outcome is currently inconclusive, not yet demonstrably right or wrong.",
+      "sources": [
+        {
+          "end_index": 747,
+          "start_index": 635,
+          "title": "Tariffs in the second Trump administration",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration?utm_source=openai"
+        },
+        {
+          "end_index": 1052,
+          "start_index": 935,
+          "title": "Trump allies urge focus on workers as White House boosts AI development",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2025/11/24/afpi-ai-plan-trump-tech/?utm_source=openai"
+        },
+        {
+          "end_index": 1523,
+          "start_index": 1413,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": null
+    },
+    {
+      "id": "D-00:05:24.000",
+      "result": "right",
+      "explanation": "Episode metadata and show notes for **\u201cTariffs, Trump's Economic Endgame, Market Chaos, Bitcoin Reserve, CoreWeave IPO\u201d** (All-In Podcast, ~2h06m) show that in the latter part of the same episode, **David Sacks** joins Jason and then speaks through multiple dedicated segments:\n\n- At **1:37:34**, \u201c*David Sacks joins Jason to break down the Strategic Bitcoin Reserve and Digital Asset Stockpile*,\u201d explicitly focusing on the Bitcoin/crypto reserve policy.\n- At **1:48:30**, \u201c*Sacks addresses clearing all of his crypto-related positions prior to Inauguration Day*.\u201d\n- At **1:57:23**, they continue with \u201c*Importance of disclosures and updates on a market structure bill*,\u201d still with Sacks participating.\n\nThese segments are all in the **second half** of the episode (after ~1h37m in a ~2h+ show) and involve Sacks commenting at length on exactly the crypto reserve announcement and related topics. This matches Jason\u2019s prediction that Sacks would appear in the second half and \u201chave much to say\u201d about those issues.\n\nEvidence of these segments and timestamps appears consistently across multiple episode listings and summaries for this specific show, all naming David Sacks and the **Strategic Bitcoin Reserve / Digital Asset Stockpile** discussion in the later part of the same episode. ([iheart.com](https://www.iheart.com/podcast/867-all-in-with-chamath-jason-61290607/episode/tariffs-trumps-economic-endgame-market-chaos-269743374/?utm_source=openai))",
+      "sources": [
+        {
+          "end_index": 1497,
+          "start_index": 1330,
+          "title": "Tariffs, Trump's Economic Endgame, Market Chaos, Bitcoin Reserve, CoreWeave IPO - All-In with Chamath, Jason, Sacks & Friedberg | iHeart",
+          "type": "url_citation",
+          "url": "https://www.iheart.com/podcast/867-all-in-with-chamath-jason-61290607/episode/tariffs-trumps-economic-endgame-market-chaos-269743374/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction is correct. In the All-In Podcast episode 'Tariffs, Trump's Economic Endgame, Market Chaos, Bitcoin Reserve, CoreWeave IPO' (released March 8, 2025), Jason Calacanis states at ~4:55: 'And I'm sure our friend David Sachs will have much to say in the second half of the program,' in the context of the crypto reserve announcement ([Happyscribe transcript](https://podcasts.happyscribe.com/all-in-with-chamath-jason-sacks-friedberg/tariffs-trump-s-economic-endgame-market-chaos-bitcoin-reserve-coreweave-ipo)). David Sacks joins at 1:37:18 (~second half of the 2h7m episode), as confirmed by YouTube chapters ([YouTube](https://www.youtube.com/watch?v=RBoGJlpSdpY)) and transcript. He comments extensively on crypto policy, including the Strategic Bitcoin Reserve, Digital Asset Stockpile, Bitcoin's special status, government holdings/audits, divestments, and market structure bill\u2014directly addressing the crypto reserve announcement and related topics ([Happyscribe transcript](https://podcasts.happyscribe.com/all-in-with-chamath-jason-sacks-friedberg/tariffs-trump-s-economic-endgame-market-chaos-bitcoin-reserve-coreweave-ipo); [Latios.ai](https://www.latios.ai/episode/1502871393/459645b0-85c3-44c5-a786-bec6402d771b/apple)). Multiple sources note Sacks joining in the second half for crypto discussion ([Pod.wave.co](https://pod.wave.co/podcast/all-in-with-chamath-jason-sacks-friedberg-5677e821-bd3a-4ecf-bcc0-3e93f73d6b83/tariffs-trumps-economic-endgame-market-chaos-bitcoin-reserve-coreweave-ipo-92b93208))."
+    },
+    {
+      "id": "B-01:06:02.270",
+      "result": "wrong",
+      "explanation": "Key elements of Chamath\u2019s scenario did not play out as described during the roughly nine\u2011month window after early 2025.\n\n1. **Trump administration did trigger a tariff\u2011driven market break, but it was brief.** After Trump\u2019s January 20, 2025 inauguration, his second administration rolled out sweeping \u201creciprocal\u201d tariffs in late March/early April. This caused the April 2\u201310, 2025 stock market crash, with the S&P 500 dropping about 10% in two days and global equities shedding trillions in value, explicitly linked to Trump\u2019s tariffs. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Second_presidency_of_Donald_Trump?utm_source=openai)) That satisfies the *policy that cracks equity markets* part of the premise.\n\n2. **There was a short\u2011lived flight to safety that pushed 10\u2011year yields briefly into his target band, but not in a sustained way.** In the panic immediately after the tariff announcement, investors fled to Treasuries and the 10\u2011year yield fell into the high\u20113% range (lows around 3.86\u20133.95%) for a few days in early April. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2025_stock_market_crash?utm_source=openai)) However, yields quickly snapped back: by mid\u2011April they were around 4.4\u20134.6%, and subsequent 10\u2011year auctions in April and July cleared at roughly 4.36\u20134.44%, not at 3\u20134%. ([cnbc.com](https://www.cnbc.com/2025/04/25/us-treasury-yields-investors-hope-for-us-china-trade-deal-.html?utm_source=openai)) There was no nine\u2011month window of persistently 3\u20134% 10\u2011year yields that Treasury could lean on.\n\n3. **The U.S. did not refinance anything close to $10 trillion at 3\u20134%, and interest costs are rising, not yielding \u201ctrillions\u201d in savings.** Analyses of the Treasury\u2019s funding needs indicate about $3.1 trillion of debt maturing in 2025, not $10 trillion in the nine months after early 2025, and that refinancing has generally occurred at yields in the mid\u20114% range, not locked\u2011in near 3%. ([panewslab.com](https://www.panewslab.com/en/articles/0h0l5ibr?utm_source=openai)) Meanwhile, the national debt continued to climb\u2014from around $37 trillion in August 2025 to $38 trillion by October\u2014and interest payments are now over $1 trillion per year and projected around $14 trillion over the next decade, with rating agencies warning about worsening debt affordability. ([apnews.com](https://apnews.com/article/6f807c4aae78dcc96f29ff07a3c926f4?utm_source=openai)) This is the opposite of a clearly observable multi\u2011trillion interest\u2011saving windfall.\n\n4. **Consumption did not collapse; it was front\u2011loaded and then slowed modestly.** Retail data show a surge in March 2025 as households accelerated purchases ahead of tariffs, followed by a much weaker but still positive April (+0.1% m/m), with core retail sales slightly down\u2014but industry groups and Census\u2011based summaries repeatedly describe consumer spending as \u201csteady\u201d and \u201cresilient,\u201d not sharply depressed. ([tradingeconomics.com](https://tradingeconomics.com/articles/08152019123350.htm?utm_source=openai)) Later in 2025, retail sales growth cools and sentiment deteriorates, but September retail sales are still rising year\u2011on\u2011year and GDP growth remains solid, consistent with a gradual squeeze rather than a deliberate, deep consumption shock. ([reuters.com](https://www.reuters.com/business/retail-consumer/us-retail-sales-miss-expectations-september-2025-11-25/?utm_source=openai))\n\n5. **Inflation eased slightly, but tariffs are seen as adding upward pressure, not as a \u201cdeflationary tactic.\u201d** By April 2025, PCE inflation had fallen to about 2.1% year\u2011over\u2011year from 2.6% at end\u20112024, part of an ongoing disinflation trend that began before Trump\u2019s new tariffs. ([federalreserve.gov](https://www.federalreserve.gov/monetarypolicy/2025-06-mpr-part1.htm?utm_source=openai)) Federal Reserve and Treasury reports explicitly warn that the new import tariffs are likely to *raise* goods prices and have already contributed to an upturn in core goods inflation. ([federalreserve.gov](https://www.federalreserve.gov/monetarypolicy/2025-06-mpr-part1.htm?utm_source=openai)) By late 2025, CPI inflation is running around 3%, still above the Fed\u2019s 2% target, with tariffs cited as one of the drivers of elevated prices. ([theguardian.com](https://www.theguardian.com/business/2025/oct/24/consumer-price-index-report-inflation-september?utm_source=openai)) This does not match a \u201cmaterially reduced inflation via equity\u2011market rebasing\u201d story.\n\nTaken together: while Trump\u2019s tariff shock *did* crack equity markets and *briefly* pull 10\u2011year yields into the high\u20113% range, the core claims\u2014that this would sustainably depress consumption and inflation and allow roughly $10 trillion of debt to be refinanced at 3\u20134% yields, saving \u201ctrillions\u201d in interest\u2014have not occurred and are contradicted by observed borrowing costs, debt dynamics, inflation behavior, and spending data. Therefore this prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 674,
+          "start_index": 571,
+          "title": "Second presidency of Donald Trump",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Second_presidency_of_Donald_Trump?utm_source=openai"
+        },
+        {
+          "end_index": 1171,
+          "start_index": 1078,
+          "title": "2025 stock market crash",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2025_stock_market_crash?utm_source=openai"
+        },
+        {
+          "end_index": 1471,
+          "start_index": 1344,
+          "title": "U.S. Treasury yields: Investors hope for U.S.-China trade deal",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/04/25/us-treasury-yields-investors-hope-for-us-china-trade-deal-.html?utm_source=openai"
+        },
+        {
+          "end_index": 2044,
+          "start_index": 1961,
+          "title": "Arthur Hayes: A $10 trillion liquidity flood is coming, and Bitcoin will soar like a rocket | PANews",
+          "type": "url_citation",
+          "url": "https://www.panewslab.com/en/articles/0h0l5ibr?utm_source=openai"
+        },
+        {
+          "end_index": 2430,
+          "start_index": 2337,
+          "title": "US national debt reaches a record $37 trillion, the Treasury Department reports",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/6f807c4aae78dcc96f29ff07a3c926f4?utm_source=openai"
+        },
+        {
+          "end_index": 3034,
+          "start_index": 2934,
+          "title": "US Retail Sales Rise More than Expected",
+          "type": "url_citation",
+          "url": "https://tradingeconomics.com/articles/08152019123350.htm?utm_source=openai"
+        },
+        {
+          "end_index": 3414,
+          "start_index": 3275,
+          "title": "US retail sales growth cools; consumer sentiment sags amid job market worries",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/retail-consumer/us-retail-sales-miss-expectations-september-2025-11-25/?utm_source=openai"
+        },
+        {
+          "end_index": 3809,
+          "start_index": 3700,
+          "title": "The Fed - Monetary Policy: Monetary Policy Report (Branch)",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/monetarypolicy/2025-06-mpr-part1.htm?utm_source=openai"
+        },
+        {
+          "end_index": 4102,
+          "start_index": 3993,
+          "title": "The Fed - Monetary Policy: Monetary Policy Report (Branch)",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/monetarypolicy/2025-06-mpr-part1.htm?utm_source=openai"
+        },
+        {
+          "end_index": 4382,
+          "start_index": 4247,
+          "title": "US prices rose at a 3% annual rate in September, slightly beating forecasts",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/2025/oct/24/consumer-price-index-report-inflation-september?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "A significant US equity market decline occurred in March-April 2025, with the S&P 500 dropping up to 19% amid Trump's tariff policies ('Liberation Day' on April 2), losing $4T in value ([CNN](https://www.cnn.com/2025/11/04/markets/us-stock-market), [Wikipedia 2025 crash](https://en.wikipedia.org/wiki/2025_stock_market_crash), [Reuters](https://www.reuters.com/markets/us/investors-flee-equities-trump-driven-uncertainty-sparks-economic-worry-2025-03-10/)). Accusations and speculation suggest deliberate encouragement via tariffs ([NPR](https://www.npr.org/2025/04/10/nx-s1-5360062/why-some-are-accusing-trump-of-manipulating-stock-markets), [Fortune](https://fortune.com/2025/04/07/donald-trump-hard-reset-theory-video-truth-social/)). However, (a) no material reduction in consumption/inflation: CPI rose to 3% in Sep 2025 ([BLS](https://www.bls.gov/news.release/cpi.nr0.htm)), PCE ~2.4% Aug ([MacroMicro](https://en.macromicro.me/collections/5/us-price-relative/124178/pce-price-market-baed-yoy)), retail sales +0.5-0.6% MoM ([BEA](https://www.bea.gov/data/consumer-spending/main), [Trading Economics](https://tradingeconomics.com/united-states/retail-sales)); (b) 10y yields briefly hit 3.86% early April ([Fortune](https://fortune.com/2025/04/09/trump-didnt-care-that-the-stock-market-was-crashing-bond-yields-were-the-pain-point-that-finally-got-him-to-pause-tariffs/)) but spiked to 4.5%+ on tariff fears, prompting pause ([CNN](https://www.cnn.com/2025/04/11/business/bond-market-trump-treasury-yield-rates), [CNBC](https://www.cnbc.com/2025/04/10/trump-dodged-a-disaster-from-the-bond-market-but-the-damage-isnt-over-yet.html)); current ~4.0-4.02% Nov-Dec ([FRED](https://fred.stlouisfed.org/series/DGS10), [YCharts](https://ycharts.com/indicators/10_year_treasury_rate)). ~$9-10T debt refinanced in 2025 ([Treasury](https://home.treasury.gov/news/press-releases/sb0300), [FirstNational](https://www.firstnational.ca/commercial/resources-insights/article/will-the--9-trillion-maturity-wall-in-2025-force-u.s.-treasury-yields-higher)), but not at sustained 3-4% vs. 4.5-5.5%, no evidence of trillions saved as causal chain broke (crash brief, rebound strong, no deflation). Reddit mocks as failed '4D chess' ([r/allinpodofficial](https://www.reddit.com/r/allinpodofficial/comments/1jxidme/how_is_the_4d_chess_debt_financing_master_plan/))."
+    },
+    {
+      "id": "J-01:57:20.000",
+      "result": "wrong",
+      "explanation": "The podcast was released 8 March 2025, so 'in the next few weeks' / 'by early April 2025' implies a new FIT21-style digital asset market structure bill would be *formally introduced in the House* by roughly the first half of April.\n\nIn reality, Rep. French Hill and other House leaders released only a *discussion draft* of a digital asset market structure bill on 5 May 2025, which is already later than early April and was not a formally introduced bill. ([jdsupra.com](https://www.jdsupra.com/legalnews/cryptolink-may-2025-6945047/?utm_source=openai))  The actual new FIT21-style market structure bill, H.R. 3633, the Digital Asset Market Clarity (CLARITY) Act, was formally introduced by Chairman French Hill on 29 May 2025 as a comprehensive digital asset market structure framework that builds on and refines FIT21. ([congress.gov](https://www.congress.gov/index.php/committee-report/119th-congress/house-report/168/2?utm_source=openai))\n\nBecause Hill did introduce a new FIT21-style market structure bill, but *not* within 'the next few weeks' or by early April 2025 (it came about eleven weeks later), the prediction as normalized \u2014 which is explicitly time-bound \u2014 did not come true and is therefore classified as **wrong**.",
+      "sources": [
+        {
+          "end_index": 592,
+          "start_index": 495,
+          "title": "CryptoLink - May 2025 | Akin Gump Strauss Hauer & Feld LLP - JDSupra",
+          "type": "url_citation",
+          "url": "https://www.jdsupra.com/legalnews/cryptolink-may-2025-6945047/?utm_source=openai"
+        },
+        {
+          "end_index": 981,
+          "start_index": 860,
+          "title": "H. Rept. 119-168 - Digital Asset Market Clarity Act of 2025 | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/index.php/committee-report/119th-congress/house-report/168/2?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction specified that Rep. French Hill would introduce a new FIT21-style digital asset market structure bill by roughly early April 2025 (podcast recorded March 8, 2025). No such bill was introduced in March or April 2025. French Hill did sponsor H.R. 3633, the Digital Asset Market Clarity Act of 2025\u2014a bipartisan market structure bill establishing CFTC/SEC frameworks for digital commodities, akin to FIT21\u2014but it was formally introduced on May 29, 2025 ([congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/3633), [govtrack.us](https://www.govtrack.us/congress/bills/119/hr3633), Hill press release May 29). A discussion draft was released May 5, but formal House introduction occurred later, missing the timeline by ~7 weeks. No earlier bills found on congress.gov member page or searches for March/April introductions."
+    },
+    {
+      "id": "J-02:02:55.000",
+      "result": "inconclusive",
+      "explanation": "**Legislation piece (successor to FIT21): partly realized, but not yet law.**  \n- The House\u2019s *Digital Asset Market Clarity Act of 2025* (H.R. 3633), explicitly described by press and law firms as a successor building on the prior FIT21 market\u2011structure effort, was introduced May 29, 2025 and passed the House on July 17, 2025. It is now sitting in the Senate Banking Committee and has **not** become law as of Nov. 30, 2025.\n  - Congress.gov shows H.R. 3633 passed the House (294\u2013134) and was then \u201cReceived in the Senate and read twice and referred\u201d on Sept. 18, 2025, with no further action yet.\n  ([congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/3633/actions?utm_source=openai))  \n- Substantively, the CLARITY Act *does* contain the kind of disclosure regime Sacks described:\n  - It adds a new Securities Act \u00a74B that requires digital commodity issuers relying on an offering exemption to file offering statements with detailed issuer information, business operations, financial condition, distribution plans, and development plans for the blockchain system \u2013 effectively covering issuance mechanics. ([congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/3633/text/rh?utm_source=openai))  \n  - Later sections and committee materials describe \"transaction reporting and beneficial ownership disclosure obligations\" for **digital commodity related persons and affiliated persons** (i.e., founders, executives and other insiders) and impose limits and reporting on their token sales, which tracks the idea of insider token\u2011holding disclosure. ([congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/3633/text/rh?utm_source=openai))  \n  - Earlier FIT21 committee reports (which CLARITY builds on) also spelled out enhanced disclosures specific to digital assets, including the *launch and supply process, governance regime, development plan, and material risks* of the token \u2013 again, issuance mechanics in substance. ([congress.gov](https://www.congress.gov/committee-report/118th-congress/house-report/484/2?utm_source=openai))  \n- So on the **content** dimension, Sacks\u2019s claim that the next market\u2011structure bill after FIT21 would bake in these disclosure concepts is accurate; on the **enactment** dimension, that bill exists but has not yet cleared the Senate or been signed, so we cannot say the legislative prediction is fully realized.\n\n**SEC framework piece: still in development, not yet established.**  \n- The SEC created a Crypto Task Force in January 2025 to develop a comprehensive framework, and under new Chair Paul Atkins it launched *\u201cProject Crypto\u201d* in July 2025 to modernize securities rules for digital assets. These initiatives explicitly aim to craft \u201cclear and simple rules of the road for crypto asset distributions, custody, and trading,\u201d including tailored disclosures and safe harbors. ([sec.gov](https://www.sec.gov/Archives/edgar/data/1896677/000189667725000009/gsol_s-1_amendment_3.htm?utm_source=openai))  \n- However, the SEC\u2019s own regulatory agenda released in September 2025 lists **\u201cCrypto Assets\u201d** and **\u201cCrypto Market Structure Amendments\u201d** only at the *proposed rule stage* with target dates in 2026; market commentary notes that Project Crypto is in Phase 1 and final rules are expected around 2026, not yet adopted. ([jdsupra.com](https://www.jdsupra.com/legalnews/sec-releases-spring-2025-regulatory-1908519/?utm_source=openai))  \n- Recent speeches by Atkins outline a conceptual token taxonomy and intentions to offer purpose\u2011built disclosure regimes for ICOs, airdrops, and network rewards, but these remain policy blueprints and draft initiatives rather than completed, binding frameworks. ([sec.gov](https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto?utm_source=openai))  \n\n**Net assessment:**  \n- Sacks predicted **(a)** that the next FIT21\u2011style market\u2011structure legislation would contain robust disclosure terms (including insider and issuance\u2011mechanics style disclosures), and **(b)** that the SEC would, in parallel, create its own disclosure/market\u2011structure frameworks after its rule review.\n- As of Nov. 30, 2025: (a) is substantively borne out in the House\u2011passed CLARITY Act, but that bill is not yet law; (b) is clearly underway via the Crypto Task Force and Project Crypto, but the SEC has not yet *finalized* the promised frameworks in rule form.\n\nBecause the core SEC rulemaking is still in progress and the key market\u2011structure statute has not yet been enacted, the prediction cannot yet be judged clearly right or wrong. The most accurate rating as of today is **\"inconclusive (too early).\"**",
+      "sources": [
+        {
+          "end_index": 749,
+          "start_index": 645,
+          "title": "Actions - H.R.3633 - 119th Congress (2025-2026): Digital Asset Market Clarity Act of 2025 | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633/actions?utm_source=openai"
+        },
+        {
+          "end_index": 1278,
+          "start_index": 1174,
+          "title": "Text - H.R.3633 - 119th Congress (2025-2026): Digital Asset Market Clarity Act of 2025 | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633/text/rh?utm_source=openai"
+        },
+        {
+          "end_index": 1738,
+          "start_index": 1634,
+          "title": "Text - H.R.3633 - 119th Congress (2025-2026): Digital Asset Market Clarity Act of 2025 | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633/text/rh?utm_source=openai"
+        },
+        {
+          "end_index": 2135,
+          "start_index": 2024,
+          "title": "H. Rept. 118-484 - FINANCIAL INNOVATION AND TECHNOLOGY FOR THE 21ST CENTURY ACT | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/committee-report/118th-congress/house-report/484/2?utm_source=openai"
+        },
+        {
+          "end_index": 3048,
+          "start_index": 2926,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1896677/000189667725000009/gsol_s-1_amendment_3.htm?utm_source=openai"
+        },
+        {
+          "end_index": 3484,
+          "start_index": 3371,
+          "title": "SEC Releases Spring 2025 Regulatory Agenda | Seward & Kissel LLP - JDSupra",
+          "type": "url_citation",
+          "url": "https://www.jdsupra.com/legalnews/sec-releases-spring-2025-regulatory-1908519/?utm_source=openai"
+        },
+        {
+          "end_index": 3894,
+          "start_index": 3750,
+          "title": "SEC.gov | The SEC\u2019s Approach to Digital Assets: Inside \u201cProject Crypto\u201d",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/newsroom/speeches-statements/atkins-111225-secs-approach-digital-assets-inside-project-crypto?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": null
+    }
+  ]
+}

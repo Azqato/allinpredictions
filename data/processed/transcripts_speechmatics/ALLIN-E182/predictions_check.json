@@ -1,0 +1,373 @@
+{
+  "meta": {
+    "count": 10,
+    "count_by_result": {
+      "wrong": 4,
+      "right": 4,
+      "inconclusive": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:28:30.350",
+      "result": "wrong",
+      "explanation": "The prediction claimed that after the first 2024 Trump\u2013Biden debate in late June 2024, Joe Biden would perform so poorly that Democrats would *that same month* replace him with Gavin Newsom, leading to a Trump vs. Gavin Newsom general election.\n\nWhat actually happened:\n\n- The first 2024 Trump\u2013Biden presidential debate took place on June 27, 2024, hosted by CNN in Atlanta.\n- Joe Biden remained the presumptive Democratic nominee through the end of June 2024; there was no June \"hot swap\" to Gavin Newsom.\n- Biden later announced he would not seek re\u2011election on July 21, 2024, and endorsed Vice President Kamala Harris. Major media and party reports through late July 2024 document Harris, not Newsom, consolidating support and becoming the Democratic nominee; Gavin Newsom never became the party\u2019s presidential nominee.\n- The 2024 general election was not a Trump vs. Gavin Newsom matchup; the Democratic ticket was led by Kamala Harris.\n\nBecause Biden was not replaced in June 2024, and Gavin Newsom did not become the Democratic nominee or Trump\u2019s opponent, the specific prediction is **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The first 2024 Trump-Biden debate occurred on June 27, 2024 ([Wikipedia](https://en.wikipedia.org/wiki/2024_Joe_Biden%E2%80%93Donald_Trump_presidential_debate)). Biden withdrew on July 21, 2024\u2014not June\u2014and endorsed Kamala Harris, who became the Democratic nominee ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election); [NBC News](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867)). The general election was Trump vs. Harris, with Trump winning ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election); [CNN](https://www.cnn.com/election/2024/results/president)). Newsom was never the nominee ([searches confirm no such role](https://abcnews.go.com/Politics/revolving-door-minute-scramble-fill-gavin-newsoms-shoes/story?id=127805112))."
+    },
+    {
+      "id": "A-00:30:44.670",
+      "result": "wrong",
+      "explanation": "Jason predicted that in November 2024 the Democrats would be \u201cdemolished\u201d in a *landslide* loss to Donald Trump, conditional on not significantly changing course or replacing Biden.\n\nWhat actually happened:\n- Joe Biden withdrew from the race on July 21, 2024 and endorsed Kamala Harris, who became the Democratic nominee in early August, so the party *did* replace Biden and alter course. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))\n- In the November 5, 2024 election, Trump defeated Harris 312\u2013226 in the Electoral College and by roughly 1.5 percentage points in the national popular vote (about 77.3M vs. 75.0M votes). ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n\nOn the key \u201clandslide\u201d aspect, multiple post\u2011election analyses explicitly characterize Trump\u2019s win as *not* a landslide: the Council on Foreign Relations notes that, by either Electoral College or popular-vote standards, the 2024 result was far from historic blowouts like 1936, 1964, 1972, or 1984. ([cfr.org](https://www.cfr.org/article/2024-election-numbers?utm_source=openai))  Trump\u2019s popular\u2011vote margin is described as modest and one of the narrower wins in modern history. ([aljazeera.com](https://www.aljazeera.com/news/2024/11/24/how-big-was-donald-trumps-2024-election-victory?utm_source=openai))\n\nSo while Jason was directionally right that the Democrats would lose the presidency, his specific prediction of a *landslide* \u201cdemolition\u201d did **not** come true, and the conditional (\u201cif they don\u2019t replace Biden\u201d) was also violated. Overall, the prediction is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 568,
+          "start_index": 425,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 868,
+          "start_index": 758,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1252,
+          "start_index": 1172,
+          "title": "The 2024 Election by the Numbers | Council on Foreign Relations",
+          "type": "url_citation",
+          "url": "https://www.cfr.org/article/2024-election-numbers?utm_source=openai"
+        },
+        {
+          "end_index": 1479,
+          "start_index": 1353,
+          "title": "How big was Donald Trump\u2019s 2024 election victory? | Donald Trump News | Al Jazeera",
+          "type": "url_citation",
+          "url": "https://www.aljazeera.com/news/2024/11/24/how-big-was-donald-trumps-2024-election-victory?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Donald Trump defeated Kamala Harris in the 2024 election, winning 312-226 in the Electoral College and the popular vote ~77.3M (49.9%) to ~75.0M (48.3%), a margin of about 1.6-2%. However, this was not a landslide; multiple sources describe it as close, with one of the smallest popular vote margins for an incumbent-party loser ([NYT](https://www.nytimes.com/2024/11/22/us/politics/trump-election-landslide.html), [ABC](https://abcnews.go.com/538/2024-presidential-election-close-landslide/story?id=116240898), [The Hill](https://thehill.com/opinion/campaign/5094602-a-landslide-just-0-15-percent-of-all-voters-determined-trumps-2024-victory/)). Biden dropped out on July 21, 2024, endorsing Harris ([AP](https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/)), constituting a significant course change, but the predicted 'demolishing' landslide loss did not occur ([270toWin](https://www.270towin.com/2024-election), [American Presidency Project](https://www.presidency.ucsb.edu/statistics/elections/2024))."
+    },
+    {
+      "id": "A-00:31:25.250",
+      "result": "right",
+      "explanation": "Evidence shows that within 30 days of June 7, 2024, Trump publicly softened his anti\u2011EV stance and expressed support for electric vehicles:\n\n- At a rally captured in a June 7, 2024 clip, Trump said he was \"a big fan of electric cars\" and of Elon Musk, while still emphasizing that people should also have the option of gas cars.([zerohedge.com](https://www.zerohedge.com/markets/take-away-subsidies-musks-ev-price-war-enter-final-chapter-november-trump?utm_source=openai))  \n- On June 20, 2024, coverage of an Arizona rally quoted Trump again saying he was \"a big fan of electric cars\" and praising Tesla and Musk, explicitly framing this as a *shift* in his position on EVs and sustainability.([electrifynews.com](https://electrifynews.com/policy-politics/driving-america-forward-im-a-big-fan-of-electric-cars-says-donald-trump/?utm_source=openai))  \n- Subsequent reporting in July 2024 by Reuters and others described these June remarks as Trump saying he was \"a big fan of electric cars\" and a fan of Elon, treating them as a notable change from his prior anti\u2011EV rhetoric.([reuters.com](https://www.reuters.com/world/us/musk-donates-super-pac-working-elect-trump-bloomberg-reports-2024-07-12/?utm_source=openai))  \n- By contrast, earlier coverage of his 2024 campaign repeatedly stressed that he had \"made no secret his disdain for electric vehicles\" and was vowing to end what he called an EV \"mandate,\" underscoring that the June comments were a softening rather than a continuation of his prior line.([business-standard.com](https://www.business-standard.com/world-news/trump-pledges-action-to-end-electric-vehicle-mandate-on-day-one-in-office-124071900585_1.html?utm_source=openai))\n\nBecause these supportive/softened statements about EVs occurred in mid\u2011June 2024\u2014well within 30 days of June 7, 2024\u2014the prediction that Trump would \"come out magically in support of EVs\" in that timeframe is best scored as **right**.",
+      "sources": [
+        {
+          "end_index": 509,
+          "start_index": 365,
+          "title": "Musk Says \"Take Away Subsidies\" As EV Price-War Enters Final Chapter With Trump Win | ZeroHedge",
+          "type": "url_citation",
+          "url": "https://www.zerohedge.com/markets/take-away-subsidies-musks-ev-price-war-enter-final-chapter-november-trump?utm_source=openai"
+        },
+        {
+          "end_index": 889,
+          "start_index": 734,
+          "title": "Driving America Forward: 'I'm a Big Fan of Electric Cars,' Says Donald Trump",
+          "type": "url_citation",
+          "url": "https://electrifynews.com/policy-politics/driving-america-forward-im-a-big-fan-of-electric-cars-says-donald-trump/?utm_source=openai"
+        },
+        {
+          "end_index": 1259,
+          "start_index": 1119,
+          "title": "Musk donates to group working to elect Trump, Bloomberg reports",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/musk-donates-super-pac-working-elect-trump-bloomberg-reports-2024-07-12/?utm_source=openai"
+        },
+        {
+          "end_index": 1738,
+          "start_index": 1555,
+          "title": "Trump pledges action to end electric vehicle 'mandate' on day one in office | World News - Business Standard",
+          "type": "url_citation",
+          "url": "https://www.business-standard.com/world-news/trump-pledges-action-to-end-electric-vehicle-mandate-on-day-one-in-office-124071900585_1.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump did not publicly shift his stance to support EVs or soften/reverse his anti-EV rhetoric within 30 days (June 7 to July 7, 2024). He continued criticizing EVs and Biden's policies during this period. Examples: June 10 Las Vegas rally rant against EVs full of lies ([Electrek](https://electrek.co/2024/06/10/donald-trump-electric-car-rant-full-lies-hilarious-nonsense/)); June 13 vowed to reverse Biden EV policy ([Bloomberg](https://www.bloomberg.com/news/articles/2024-06-13/trump-tells-gop-he-plans-to-entirely-reverse-biden-s-ev-policy)); June 17 bashing EVs ([Washington Post](https://www.washingtonpost.com/politics/2024/06/17/electric-vehicles-evs-biden-trump-brown-tester/)). Claims of being a 'big fan' predate June 7 (e.g., June 6 Phoenix, reported June 11 [E&E News](https://www.eenews.net/articles/trump-says-hes-a-fan-of-evs-that-hasnt-stopped-the-lies/)) and distinguish personal preference from policy opposition to mandates/subsidies. Softening occurred later (e.g., July 19 end mandate vow [Bloomberg](https://www.bloomberg.com/news/articles/2024-07-19/trump-vows-action-to-end-electric-vehicle-mandate-on-day-one); August post-Musk [Newsmax](https://www.newsmax.com/scitech/evs-electric-vehicles/2024/08/07/id/1175610/))."
+    },
+    {
+      "id": "A-00:32:11.640",
+      "result": "right",
+      "explanation": "Biden\u2019s status condition was effectively met during the relevant period. Jason said this on June 7, 2024, and conditioned the prediction on Biden not being \u201cswapped out.\u201d Biden did not announce his withdrawal until July 21, 2024, and Kamala Harris was not formally made the Democratic nominee until August 6, 2024, so throughout most of the 30\u201360 day window (July 7\u2013August 6) Biden was still the presumptive nominee.\n\nWithin roughly 40 days of June 7, at least ten *very* high\u2011profile figures\u2014clearly better known to the general public than Chamath Palihapitiya, David Sacks, or Doug Leone\u2014publicly backed Trump:\n\n- **Elon Musk** explicitly endorsed Trump on X on July 13, 2024, shortly after the assassination attempt, saying \u201cI fully endorse President Trump and hope for his rapid recovery.\u201d ([slaynews.com](https://slaynews.com/news/elon-musk-attend-trumps-rally-butler-location-1st-assassination-attempt/?utm_source=openai))  \n- **Bill Ackman** formally endorsed Trump on X on July 14, 2024, after the same shooting. ([washingtonpost.com](https://www.washingtonpost.com/technology/2024/07/18/trump-jd-vance-silicon-valley-musk-gop/?utm_source=openai))  \n- **Marc Andreessen** and **Ben Horowitz**, co\u2011founders of Andreessen Horowitz, publicly said in a July 16, 2024 podcast that they were supporting and voting for Trump, explaining why they preferred his policies to Biden\u2019s. ([techcrunch.com](https://techcrunch.com/2024/07/16/andreessen-horowitz-co-founders-explain-why-theyre-supporting-trump/?utm_source=openai))  \n- At the **Republican National Convention** (July 15\u201318, 2024), multiple mainstream celebrities endorsed Trump from the stage, including **Hulk Hogan**, **Kid Rock**, **Dana White**, **Amber Rose**, and **Savannah Chrisley**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Republican_National_Convention?utm_source=openai))  \n- The same coverage notes **Azealia Banks** appearing at a Trump rally in support of him during the summer as well. ([fox5atlanta.com](https://www.fox5atlanta.com/news/celebrity-endorsements-2024-election-harris-trump?utm_source=openai))  \n\nCounting Musk, Ackman, Andreessen, Horowitz, Hogan, Kid Rock, Dana White, Amber Rose, Savannah Chrisley, and Azealia Banks gives at least ten individuals whose mainstream name recognition is, by ordinary standards, substantially higher than the three VCs Jason named. These endorsements occurred between July 13 and the RNC (July 15\u201318), squarely inside the 30\u201360 day post\u2013June 7 window, while Biden was still the presumptive nominee. Given that both the timing and the volume/visibility of endorsements match what Jason forecast, the prediction is best scored as **right**, acknowledging that \"extremely high\u2011profile\" is somewhat subjective but clearly satisfied by figures like Musk and Hogan.",
+      "sources": [
+        {
+          "end_index": 965,
+          "start_index": 831,
+          "title": "Elon Musk to Attend Trump's Rally in Butler at Location of 1st Assassination Attempt - Slay News",
+          "type": "url_citation",
+          "url": "https://slaynews.com/news/elon-musk-attend-trumps-rally-butler-location-1st-assassination-attempt/?utm_source=openai"
+        },
+        {
+          "end_index": 1193,
+          "start_index": 1059,
+          "title": "Silicon Valley titans show growing support for Trump, departing from Biden - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/technology/2024/07/18/trump-jd-vance-silicon-valley-musk-gop/?utm_source=openai"
+        },
+        {
+          "end_index": 1561,
+          "start_index": 1421,
+          "title": "Andreessen Horowitz co-founders explain why they're supporting Trump | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2024/07/16/andreessen-horowitz-co-founders-explain-why-theyre-supporting-trump/?utm_source=openai"
+        },
+        {
+          "end_index": 1896,
+          "start_index": 1791,
+          "title": "2024 Republican National Convention",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Republican_National_Convention?utm_source=openai"
+        },
+        {
+          "end_index": 2137,
+          "start_index": 2016,
+          "title": "2024 election: Which celebrities have made endorsements? | FOX 5 Atlanta",
+          "type": "url_citation",
+          "url": "https://www.fox5atlanta.com/news/celebrity-endorsements-2024-election-harris-trump?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction required at least 10 extremely high-profile public figures (higher profile than VCs Doug Leone, Chamath Palihapitiya, David Sacks) to publicly endorse Trump within July 7\u2013August 6, 2024, assuming Biden remained the Democratic nominee. Biden dropped out on July 21 (day 44), failing the assumption. Even without the condition, Wikipedia's list ([source](https://en.wikipedia.org/wiki/List_of_Donald_Trump_2024_presidential_campaign_non-political_endorsements)) shows few new qualifying endorsements post-assassination attempt:\n- Elon Musk (July 13, household-name billionaire).\n- Bill Ackman (July 13/14, billionaire hedge fund manager\u2014arguably comparable profile to named VCs).\nOthers like Hulk Hogan, Kid Rock, Dana White (RNC speeches ~July 18) were prior supporters; Amber Rose, David Portnoy, Jim Cramer (~July-Aug) not sufficiently higher profile. No evidence of 10 new 'extremely high-profile' figures (e.g., A-list celebs beyond 2\u20134). Searches for lists/timelines confirm no such wave ([Reuters on Musk/Ackman](https://www.reuters.com/world/us/elon-musk-says-he-fully-endorses-tough-trump-posts-photo-2024-07-13/), Wiki summaries)."
+    },
+    {
+      "id": "K-00:17:37.790",
+      "result": "right",
+      "explanation": "Evidence indicates that both products did, in fact, sell out of their initial available inventory shortly after launch:\n\n1. **Tesla Mezcal**  \n   * Tesla announced its $450 Tesla Mezcal around June 6, 2024; coverage notes that it \"has since sold out\" shortly after being announced and listed for sale on Tesla\u2019s site. ([autos.yahoo.com](https://autos.yahoo.com/teslas-450-lightning-shaped-bottle-172938582.html?utm_source=openai))  \n   * Multiple reports on the mezcal\u2019s first release state that the initial batch sold out quickly in June and then later returned to the store for a holiday restock. ([barrons.com](https://www.barrons.com/articles/tesla-mezcal-tequila-sale-79e6bfb0?utm_source=openai))  \n   * Secondary-market listings and specialist retailers describe it as a limited release that is *sold out* from Tesla, with bottles reselling at a premium, reinforcing that Tesla\u2019s own inventory was exhausted rapidly. ([poshmark.com](https://poshmark.com/listing/Rare-Tesla-Tequila-Limited-Edition-Mezcal-66e93e41bc6e1c26a4c72502?utm_source=openai))  \n   Together, these show the initial Tesla Mezcal run sold out soon after launch, consistent with the prediction.\n\n2. **All\u2011In branded liquor (Besties All\u2011In Tequila)**  \n   * The All\u2011In Podcast later launched a limited-release spirits line, *The Besties All\u2011In Tequila*. A TechCrunch report on June 24, 2025 notes that the tequila, launched that Saturday night, \"promptly sold out\" according to liquor e\u2011commerce sites. ([techcrunch.com](https://techcrunch.com/2025/06/24/the-all-in-podcasts-1200-tequila-has-already-sold-out/?utm_source=openai))  \n   * The All\u2011In podcast\u2019s own Wikipedia entry likewise records that the June 2025 tequila release (7,500 numbered bottles) **sold out within 48 hours**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai))  \n   This directly matches the claim that the forthcoming All\u2011In liquor would quickly sell through its available inventory.\n\nSince both the Tesla Mezcal and the All\u2011In tequila sold out their initial production runs shortly after launch, Sacks\u2019s prediction that *both* products would quickly sell out is **right**.",
+      "sources": [
+        {
+          "end_index": 468,
+          "start_index": 356,
+          "title": "Tesla sells out of its most expensive liquor yet \u2014 a $450 bottle of mezcal",
+          "type": "url_citation",
+          "url": "https://autos.yahoo.com/teslas-450-lightning-shaped-bottle-172938582.html?utm_source=openai"
+        },
+        {
+          "end_index": 740,
+          "start_index": 638,
+          "title": "Tesla Latches on to a New Trend. It Has Nothing to Do With EVs.",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/tesla-mezcal-tequila-sale-79e6bfb0?utm_source=openai"
+        },
+        {
+          "end_index": 1094,
+          "start_index": 963,
+          "title": "Tesla | Other | Rare Tesla Tequila Limited Edition Mezcal | Poshmark",
+          "type": "url_citation",
+          "url": "https://poshmark.com/listing/Rare-Tesla-Tequila-Limited-Edition-Mezcal-66e93e41bc6e1c26a4c72502?utm_source=openai"
+        },
+        {
+          "end_index": 1649,
+          "start_index": 1523,
+          "title": "The All-In Podcast\u2019s $1,200 tequila has already sold out | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2025/06/24/the-all-in-podcasts-1200-tequila-has-already-sold-out/?utm_source=openai"
+        },
+        {
+          "end_index": 1896,
+          "start_index": 1806,
+          "title": "All-In (podcast)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Both products sold out shortly after launch. **Tesla Mezcal**: Launched June 6-7, 2024 (~podcast date); sold out quickly per [Business Insider (Jun 17, 2024)](https://www.businessinsider.com/tesla-mezcal-bottle-for-sale-2024-6), [Mexico News Daily (Jun 18)](https://mexiconewsdaily.com/food/tesla-mezcal/), and Tesla site listings. **All-In Tequila**: 'Besties All-In Tequila' launched June 21-27, 2025; sold out immediately per [TechCrunch (Jun 24, 2025)](https://techcrunch.com/2025/06/24/the-all-in-podcasts-1200-tequila-has-already-sold-out/), [Business Wire (Jun 27)](https://www.businesswire.com/news/home/20250627255815/en/), and multiple reports (750 bottles pre-sold)."
+    },
+    {
+      "id": "L-01:10:57.500",
+      "result": "wrong",
+      "explanation": "The prediction claimed that the 2024 Atlantic hurricane season (the season following the June 7, 2024 episode) would produce hurricanes that were, in aggregate, **larger, stronger, and more frequent than in any previously recorded Atlantic season**.\n\nWhat actually happened in 2024:\n- The 2024 Atlantic season had **18 named storms, 11 hurricanes, and 5 major hurricanes**, with an Accumulated Cyclone Energy (ACE) of about **161.5**. It was **extremely active and the third\u2011costliest season on record**, but not record\u2011breaking in overall activity or intensity metrics.\n  ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Atlantic_hurricane_season?utm_source=openai))\n\nComparison with previous top seasons:\n- **2005** had **28 named storms, 15 hurricanes, 7 major hurricanes**, and ACE **~245.3**, with multiple Category 5 storms; it remains one of the most intense and active seasons ever recorded.\n  ([en.wikipedia.org](https://en.wikipedia.org/wiki/2005_Atlantic_hurricane_season?utm_source=openai))\n- **2020** had **30 named storms (record), 14 hurricanes, 7 major hurricanes**, and ACE **~180.3**; it is explicitly described as the **most active Atlantic hurricane season on record by number of storms**.\n  ([en.wikipedia.org](https://en.wikipedia.org/wiki/2020_Atlantic_hurricane_season?utm_source=openai))\n\nThus, while 2024 was **well above average** and very destructive, its storm counts and ACE were **lower than** those of 2005 and 2020 and did not set all\u2011time records for frequency or overall energy. It therefore did **not** produce hurricanes that were, in aggregate, larger/stronger/more frequent than *any* previously recorded season. The probabilistic forecast he referenced did not \u201cplay out\u201d in that strongest possible sense, so the normalized prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 710,
+          "start_index": 610,
+          "title": "2024 Atlantic hurricane season",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Atlantic_hurricane_season?utm_source=openai"
+        },
+        {
+          "end_index": 1049,
+          "start_index": 949,
+          "title": "2005 Atlantic hurricane season",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2005_Atlantic_hurricane_season?utm_source=openai"
+        },
+        {
+          "end_index": 1361,
+          "start_index": 1261,
+          "title": "2020 Atlantic hurricane season",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2020_Atlantic_hurricane_season?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The 2024 Atlantic hurricane season had 18 named storms, 11 hurricanes, and 5 major hurricanes (Cat 3+), with an ACE of 161.5\u2013162. This was above average and hyperactive (33% above avg ACE), but did not exceed historical records in aggregate for frequency (hurricanes), strength (ACE/major hurricanes), or size. Records per NHC data ([AtlanticStormTotalsTable.pdf](https://www.nhc.noaa.gov/climo/images/AtlanticStormTotalsTable.pdf)): most hurricanes=15 (2005); most major hurricanes=7 (2005,2020); highest ACE=~245 (2005). Wikipedia confirms 2024 broke records like earliest Cat 5 (Beryl), most late-season hurricanes (7 after Sep 25), but not overall ([2024 season](https://en.wikipedia.org/wiki/2024_Atlantic_hurricane_season); [records](https://en.wikipedia.org/wiki/List_of_Atlantic_hurricane_records)). No evidence of aggregate larger size. Prediction of record-breaking in all aspects failed ([NOAA](https://www.noaa.gov/news-release/atlantic-hurricane-season-races-to-finish-within-range-of-predicted-number-of-named-storms))."
+    },
+    {
+      "id": "L-01:12:21.000",
+      "result": "right",
+      "explanation": "Evidence from NOAA and related climate analyses shows that the broad conditional setup Friedberg described largely occurred, and the main real\u2011world consequence he warned about **did** materialize.\n\n1. **Sea surface temperatures in the Atlantic/MDR**  \n   * NOAA and other analyses note that the Atlantic Main Development Region (MDR) was at *record\u2011warm levels* going into the 2024 season, with SSTs in May\u2013June already comparable to, or above, what is normally seen near the peak of the season. ([climate.gov](https://www.climate.gov/media/16175?utm_source=openai))  \n   * CSU\u2019s post\u2011season assessment attributes the 2024 hurricane environment in August\u2013October to **\u201cextremely warm Atlantic sea surface temperatures\u201d** combined with cool\u2011neutral ENSO, producing record\u2011low vertical wind shear and extremely favorable late\u2011season conditions. ([newsmediarelations.colostate.edu](https://newsmediarelations.colostate.edu/2024/11/26/csu-researchers-slightly-over-predict-extremely-active-2024-atlantic-hurricane-season/?utm_source=openai))  \n   * However, a detailed climate review for August 2024 reports that the MDR had its **second\u2011warmest August on record**, not the absolute warmest. ([yaleclimateconnections.org](https://yaleclimateconnections.org/2024/09/earth-has-its-hottest-august-and-hottest-june-august-on-record/?utm_source=openai))  This means Friedberg\u2019s phrase \u201crecord sea surface temperatures in the August to October time frame\u201d is *slightly overstated* if interpreted as \u201ccalendar\u2011month all\u2011time record\u201d for August, though daily and sub\u2011regional SSTs were still near record and exceptionally high.\n\n2. **Multiple massive Atlantic hurricanes making U.S. landfall in 2024**  \n   * The 2024 Atlantic hurricane season was \u201cextremely active and destructive,\u201d with 18 named storms, 11 hurricanes, and 5 major hurricanes; NOAA and the NHC classify it as the **third\u2011costliest** Atlantic season on record. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Atlantic_hurricane_season?utm_source=openai))  \n   * NOAA\u2019s season wrap\u2011up notes that **five hurricanes made landfall on the continental U.S., two of them as major hurricanes**. ([nesdis.noaa.gov](https://www.nesdis.noaa.gov/news/2024-atlantic-hurricane-season-wraps?utm_source=openai))  Those included:  \n     - **Hurricane Helene (Category 4 at Florida landfall)**, which devastated the Big Bend region and parts of the Southeast and is described as one of the costliest and deadliest U.S. hurricanes on record. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Hurricane_Helene?utm_source=openai))  \n     - **Hurricane Milton (Category 5 over the Gulf; Category 3 at Florida landfall)**, with over $34 billion in damage and widespread destruction in Florida and neighboring states. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Hurricane_Milton?utm_source=openai))  \n     - Additional U.S. hurricane landfalls included **Beryl** (Texas, Category 1), **Debby** (Florida, Category 1), and **Francine** (Louisiana, Category 2), all of which caused significant flooding and damage. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Hurricane_Debby?utm_source=openai))  \n   * CSU explicitly links the late\u2011season hyperactivity and these intense storms to the extremely warm Atlantic SSTs and low shear environment during August\u2013October 2024. ([newsmediarelations.colostate.edu](https://newsmediarelations.colostate.edu/2024/11/26/csu-researchers-slightly-over-predict-extremely-active-2024-atlantic-hurricane-season/?utm_source=openai))\n\n**Bottom line:**  \nThe Atlantic did remain anomalously and in many respects record\u2011warm into the peak of the 2024 season, and this environment did in fact produce **multiple massive hurricanes from the Atlantic that struck the continental U.S. in 2024**, notably Helene and Milton, plus several other hurricane landfalls. While the \u201crecord\u201d wording for August MDR SST is not strictly perfect (it was second\u2011warmest by at least one metric), the core prediction\u2014that continued extraordinary Atlantic warmth would yield multiple major U.S. hurricane impacts in 2024\u2014was borne out. Hence the prediction is best judged as **right**, with a minor caveat on the precise SST superlative.",
+      "sources": [
+        {
+          "end_index": 603,
+          "start_index": 533,
+          "title": "Images and Media: ENSO-OISST-map-SSTA-graph-SST-v02.png | NOAA Climate.gov",
+          "type": "url_citation",
+          "url": "https://www.climate.gov/media/16175?utm_source=openai"
+        },
+        {
+          "end_index": 1075,
+          "start_index": 881,
+          "title": "CSU researchers slightly over predict extremely active 2024 Atlantic hurricane season | News & Media Relations | Colorado State University",
+          "type": "url_citation",
+          "url": "https://newsmediarelations.colostate.edu/2024/11/26/csu-researchers-slightly-over-predict-extremely-active-2024-atlantic-hurricane-season/?utm_source=openai"
+        },
+        {
+          "end_index": 1383,
+          "start_index": 1227,
+          "title": "Earth has its hottest August and hottest June-August on record \u00bb Yale Climate Connections",
+          "type": "url_citation",
+          "url": "https://yaleclimateconnections.org/2024/09/earth-has-its-hottest-august-and-hottest-june-august-on-record/?utm_source=openai"
+        },
+        {
+          "end_index": 2058,
+          "start_index": 1958,
+          "title": "2024 Atlantic hurricane season",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Atlantic_hurricane_season?utm_source=openai"
+        },
+        {
+          "end_index": 2300,
+          "start_index": 2192,
+          "title": "2024 Atlantic Hurricane Season Wraps Up | NESDIS | National Environmental Satellite, Data, and Information Service",
+          "type": "url_citation",
+          "url": "https://www.nesdis.noaa.gov/news/2024-atlantic-hurricane-season-wraps?utm_source=openai"
+        },
+        {
+          "end_index": 2615,
+          "start_index": 2529,
+          "title": "Hurricane Helene",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Hurricane_Helene?utm_source=openai"
+        },
+        {
+          "end_index": 2887,
+          "start_index": 2801,
+          "title": "Hurricane Milton",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Hurricane_Milton?utm_source=openai"
+        },
+        {
+          "end_index": 3187,
+          "start_index": 3102,
+          "title": "Hurricane Debby",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Hurricane_Debby?utm_source=openai"
+        },
+        {
+          "end_index": 3556,
+          "start_index": 3362,
+          "title": "CSU researchers slightly over predict extremely active 2024 Atlantic hurricane season | News & Media Relations | Colorado State University",
+          "type": "url_citation",
+          "url": "https://newsmediarelations.colostate.edu/2024/11/26/csu-researchers-slightly-over-predict-extremely-active-2024-atlantic-hurricane-season/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction required that, if SSTs continued their trajectory without tapering, Aug-Oct 2024 would set **new record-high SSTs** in the Atlantic MDR, leading to multiple massive hurricanes making US landfall. SSTs remained extremely warm (second warmest year on record after 2023; e.g., NOAA Aug 2024 MDR anomaly +1.50\u00b0C, 2nd warmest behind 2023's +1.63\u00b0C ([NOAA](https://www.ncei.noaa.gov/access/monitoring/monthly-report/global-regions/202408)); CSU notes 2024 MDR anomalies dropped below 2023's from July ([CSU](https://tropical.colostate.edu/Forecast/2024-11.pdf)); AMS State of Climate: 2024 MDR 2nd hottest ([AMS](https://blog.ametsoc.org/2025/08/14/state-of-the-climate-in-2024-takeaways-from-the-tropics/))). No new records set. SSTs did taper somewhat due to Atlantic Ni\u00f1a cooling ([Yale Climate](https://news.miami.edu/rosenstiel/stories/2025/06/new-study-reveals-record-heat-and-rapid-cooling-in-equatorial-atlantic-in-2024.html)). While multiple major hurricanes (Helene Cat 4, Milton Cat 3) did landfall on continental US ([Wikipedia](https://en.wikipedia.org/wiki/2024_Atlantic_hurricane_season); [NOAA](https://www.nhc.noaa.gov/data/tcr/index.php?season=2024&basin=atl)), the failure of the SST record condition and explicit prediction of new records makes it wrong."
+    },
+    {
+      "id": "B-01:17:57.000",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly concerns long\u2011term outcomes **over the next 20\u201340 years from 2024** (i.e., roughly 2024\u20132044 or even out to 2064). As of today (2025\u201111\u201130), at most ~1\u20132 years have elapsed since the prediction window began.\n\nWhether \u201ceconomic incentives\u201d (e.g., cheaper clean energy, new technologies) will, *by 2044\u20132064*, significantly push back on global warming relative to the current trajectory cannot be determined yet. Climate system responses and policy/market shifts that would validate or falsify this prediction unfold over decades, not a year or two. Current global temperature and emissions data only speak to very short\u2011term trends and say little about whether long\u2011run technological and economic dynamics will ultimately \u201cdo wonders\u201d to mitigate warming.\n\nBecause:\n- The forecasted timeframe (20\u201340 years) has **not remotely elapsed**, and\n- No reasonable, evidence\u2011based assessment can yet be made about what the world will look like by 2044\u20132064 in terms of warming and technology-driven mitigation,\n\nthe prediction\u2019s accuracy is **too early to judge**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction anticipates substantial progress in mitigating global warming trends over 2024-2064, driven by economic incentives rather than activism. With only ~1.5 years elapsed since June 2024 (as of Dec 2025), it is too early to assess. Recent data shows continued warming: 2024 was the hottest year on record ([NASA](https://science.nasa.gov/earth/explore/earth-indicators/global-temperature/), [NOAA](https://www.ncei.noaa.gov/access/monitoring/monthly-report/global/202507)); 2025 is second or third warmest ([WMO](https://wmo.int/news/media-centre/2025-set-be-second-or-third-warmest-year-record-continuing-exceptionally-high-warming-trend)). CO2 emissions rose ~1% in 2024 and are projected up 1.1% in 2025 to record highs ([IEA](https://www.iea.org/reports/global-energy-review-2025/co2-emissions), [Global Carbon Budget](https://globalcarbonbudget.org/fossil-fuel-co2-emissions-hit-record-high-in-2025/)). Clean energy deployment advances (e.g., US via IRA incentives), but no measurable reversal of temperature/emissions trajectories yet."
+    },
+    {
+      "id": "A-00:59:28.000",
+      "result": "wrong",
+      "explanation": "Jason described the Texas Stock Exchange (TXSE) plan as: file SEC registration documents later in 2024, start facilitating trades in 2025, and host its first new listing in 2026, based on contemporaneous reporting that BlackRock- and Citadel-backed TXSE intended exactly that timeline. ([business-standard.com](https://www.business-standard.com/amp/world-news/blackrock-citadel-backed-group-to-start-new-stock-exchange-in-texas-124060500126_1.html?utm_source=openai)) In reality, TXSE did not file with the SEC in 2024; instead, TXSE Group announced that the exchange had filed for registration around February 1, 2025, alongside news that it had raised about $161 million in capital. ([news.bloomberglaw.com](https://news.bloomberglaw.com/capital-markets/texas-stock-exchange-lands-161-million-sees-2026-trading-start?utm_source=openai)) Later, on September 30, 2025, the SEC approved TXSE to operate as a national securities exchange, with public statements now projecting that trading will begin in early 2026 rather than 2025, and that first listings are targeted for 2026. ([reuters.com](https://www.reuters.com/legal/government/txse-says-sec-approves-application-new-dallas-based-stock-exchange-2025-09-30/?utm_source=openai)) Because the predicted 2024 filing and 2025 trading milestones were both missed, the overall timeline Jason gave has already failed, even though the goal of first listings in 2026 remains in place and cannot yet be fully evaluated.",
+      "sources": [
+        {
+          "end_index": 500,
+          "start_index": 319,
+          "title": "BlackRock, Citadel Sec-backed group to start new stock exchange in Texas | World News - Business Standard",
+          "type": "url_citation",
+          "url": "https://www.business-standard.com/amp/world-news/blackrock-citadel-backed-group-to-start-new-stock-exchange-in-texas-124060500126_1.html?utm_source=openai"
+        },
+        {
+          "end_index": 871,
+          "start_index": 718,
+          "title": "Texas Stock Exchange Lands $161 Million, Sees 2026 Trading Start",
+          "type": "url_citation",
+          "url": "https://news.bloomberglaw.com/capital-markets/texas-stock-exchange-lands-161-million-sees-2026-trading-start?utm_source=openai"
+        },
+        {
+          "end_index": 1265,
+          "start_index": 1111,
+          "title": "TXSE says SEC approves application for new Dallas-based stock exchange",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/legal/government/txse-says-sec-approves-application-new-dallas-based-stock-exchange-2025-09-30/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction failed on the first two parts. TXSE filed its SEC Form 1 registration on January 31, 2025, not in 2024 as predicted ([TXSE press release](https://www.txse.com/press-releases/texas-stock-exchange-files-form-1-registration-to-operate-as-a-national-securities-exchange); [SEC notice](https://www.sec.gov/rules-regulations/other-commission-orders-notices-information/txse-form-1)). SEC approval came on September 30, 2025 ([Reuters](https://www.reuters.com/legal/government/txse-says-sec-approves-application-new-dallas-based-stock-exchange-2025-09-30/)). Trading is planned to begin in early 2026, not 2025 ([TXSE site](https://www.txse.com/press-releases/txse-group-inc-announces-sec-approval-of-texas-stock-exchange); [Wikipedia](https://en.wikipedia.org/wiki/Texas_Stock_Exchange); multiple sources like [Dallas Morning News](https://www.txse.com/)). No evidence of 2025 trading by December 2025. First listing is also slated for 2026, but prior parts invalidate the timeline."
+    },
+    {
+      "id": "B-01:05:35.370",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, it is too early to conclusively judge this multi\u2011year prediction.\n\nKey points:\n\n- **Timeframe:** Chamath framed this around what happens \"over the next few years\". Only ~1.5 years have passed since June 2024, and Apple\u2019s flagship AI initiative (Apple Intelligence, new Siri, deeper on\u2011device features) is still in a staggered rollout, with several major Siri/agentic capabilities delayed into 2026 and beyond.([9to5mac.com](https://9to5mac.com/2024/10/07/serious-apple-intelligence-performance-wont-arrive-until-2026-or-2027-says-analyst/?utm_source=openai))  The full consumer impact of those features on upgrade behavior isn\u2019t observable yet.\n\n- **No clear AI supercycle *yet*:** Some early data suggest **no obvious, already\u2011realized AI supercycle**. For example, an October 2024 analyst note reported that indicators showed iPhone sales for the first AI\u2011centric cycle were roughly on par with the prior year, and that people were not yet treating AI as a major draw for upgrades.([9to5mac.com](https://9to5mac.com/2024/10/07/serious-apple-intelligence-performance-wont-arrive-until-2026-or-2027-says-analyst/?utm_source=openai))  A March 2025 report based on Morgan Stanley\u2019s work similarly argued that delays and limitations in Apple Intelligence had *dented* enthusiasm and that a hoped\u2011for supercycle was being tempered into a more gradual upgrade path.([applemust.com](https://www.applemust.com/apple-intelligence-killed-the-iphone-super-cycle/?utm_source=openai))  A UBS/Barron\u2019s analysis in 2025 also found that Apple Intelligence had not yet spurred widespread upgrading, with the average iPhone age still around 37 months.([barrons.com](https://www.barrons.com/articles/apple-stock-price-ai-upgrade-a325f9c7?utm_source=openai))  These support the *direction* of Chamath\u2019s skepticism, but they only cover the initial phase, not the full \"few years\" horizon.\n\n- **But iPhone sales have recovered and AI is a factor:** At the same time, iPhone sales have been strong in 2024\u20132025. Apple\u2019s July\u2013September 2024 quarter showed iPhone revenue up about 6% year\u2011over\u2011year, with management and analysts explicitly linking part of the boost to the AI\u2011branded iPhone 16 lineup, even as they cautioned that sustained enthusiasm was uncertain.([apnews.com](https://apnews.com/article/377452ea3345de2981ea75f62b7cc840?utm_source=openai))  By Q3 2025 (Apple\u2019s 2025 fiscal quarter), the company reported record revenue and double\u2011digit iPhone growth, while heavily emphasizing ongoing AI investments and Apple Intelligence as a driver of its product roadmap.([businessinsider.com](https://www.businessinsider.com/apple-q3-earnings-aapl-stock-price-iphone-demand-ai-tariffs-2025-7?utm_source=openai))  This indicates AI is *helping* demand, but it does not clearly confirm or refute the notion of a multi\u2011year \u201csupercycle\u201d or eventual disappointment relative to internal expectations.\n\n- **Apple\u2019s expectations and \"disappointment\" are opaque:** The prediction hinges not just on whether a classic supercycle happens, but on whether Apple ends up **disappointed** with AI\u2011driven incremental iPhone sales relative to its own expectations. Apple has not published a quantitative target for AI\u2011induced upgrades that would let outsiders clearly say \u201cthey missed.\u201d Public commentary so far mixes optimism about AI with cautious language about gradual adoption and staggered feature rollouts, which is not the same as explicit disappointment.\n\nBecause the core claim is about behavior and company sentiment **over several years**, and much of Apple\u2019s more advanced on\u2011device AI functionality (and corresponding user response) is still ahead in 2026+, current evidence is insufficient to say the prediction is definitively right or wrong. Hence the status is best labeled **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 629,
+          "start_index": 480,
+          "title": "'Serious' Apple Intelligence performance won't arrive until 2026+",
+          "type": "url_citation",
+          "url": "https://9to5mac.com/2024/10/07/serious-apple-intelligence-performance-wont-arrive-until-2026-or-2027-says-analyst/?utm_source=openai"
+        },
+        {
+          "end_index": 1205,
+          "start_index": 1056,
+          "title": "'Serious' Apple Intelligence performance won't arrive until 2026+",
+          "type": "url_citation",
+          "url": "https://9to5mac.com/2024/10/07/serious-apple-intelligence-performance-wont-arrive-until-2026-or-2027-says-analyst/?utm_source=openai"
+        },
+        {
+          "end_index": 1545,
+          "start_index": 1433,
+          "title": "Apple Intelligence killed the iPhone super-cycle \u2013 Apple Must",
+          "type": "url_citation",
+          "url": "https://www.applemust.com/apple-intelligence-killed-the-iphone-super-cycle/?utm_source=openai"
+        },
+        {
+          "end_index": 1812,
+          "start_index": 1707,
+          "title": "Apple AI Upgrade Won't Come This Year, UBS Says. What It Means for the Stock.",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/apple-stock-price-ai-upgrade-a325f9c7?utm_source=openai"
+        },
+        {
+          "end_index": 2411,
+          "start_index": 2318,
+          "title": "Apple sells $46 billion worth of iPhones over the summer as AI helps end slump",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/377452ea3345de2981ea75f62b7cc840?utm_source=openai"
+        },
+        {
+          "end_index": 2771,
+          "start_index": 2630,
+          "title": "Apple roars back with stronger-than-expected iPhone sales and record $94 billion third-quarter revenue",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/apple-q3-earnings-aapl-stock-price-iphone-demand-ai-tariffs-2025-7?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction has held true over the ~1.5 years since June 2024. Apple Intelligence launched with iPhone 16 (Sep 2024), but did not trigger a major upgrade supercycle. Pre-orders dropped 12-13% YoY ([CNN](https://www.cnn.com/2024/09/30/tech/iphone-16-presales-apple-intelligence), [BI Jan 2025](https://www.businessinsider.com/apple-iphone-golden-upgrade-cycle-may-not-happen-ai-intelligence-2025-1)). Shipments flat at ~89M units ([Kuo Sep 2024](https://www.reddit.com/r/apple/comments/1fcjwd4/kuo_iphone_16_sales_demand_expected_to_be_mostly/)). Analysts noted no upgrade cycle, consumers unmoved by AI (MoffettNathanson 'sell', Kuo supply chain survey). Surveys: battery life (53%) top upgrade reason for iPhone 17, not AI ([MacRumors Sep 2025](https://www.macrumors.com/2025/09/01/nearly-70-of-users-plan-to-upgrade-to-iphone-17/), [ZDNet](https://www.zdnet.com/article/report-70-of-iphone-users-considering-an-upgrade-to-iphone-17-and-its-not-ai-related/)); 73% uninterested in Apple Intelligence ([CNET Dec 2024](https://www.cnet.com/tech/mobile/73-of-iphone-owners-say-no-thanks-to-apple-intelligence-new-data-echoes-cnets-findings/)). Upgrade cycles lengthening to ~3 years ([ZDNet Sep 2025](https://www.zdnet.com/article/why-im-skipping-the-iphone-17-this-year-and-its-not-just-about-the-money/)). Q4 FY2025 iPhone revenue up modestly 6% YoY to $49B ([Apple Oct 2025](https://www.apple.com/newsroom/2025/10/apple-reports-fourth-quarter-results/), [CNN](https://www.cnn.com/2025/10/30/tech/apple-earnings-q4-iphone-17-sales)), far below supercycle expectations (e.g., Wedbush 'golden cycle'). Delays/disappointments in AI features fueled criticism ([Yahoo Nov 2025](https://finance.yahoo.com/news/apple-delays-launch-next-iphone-122308044.html), [CNBC Jul 2025](https://www.cnbc.com/2025/07/30/apple-ai-hardware-devices.html)). Apple expressed optimism (Cook), but relative to hype, results underwhelmed\u2014no AI-driven sales boom."
+    }
+  ]
+}

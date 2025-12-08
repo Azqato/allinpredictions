@@ -1,0 +1,28 @@
+# Data artifacts (audio, feed snapshots, derived metadata)
+data/audio/
+data/raw/
+data/speakers/
+data/processed/*.png
+
+speechmatics_raw.json
+transcript.txt
+transcript_named.txt
+segments.json
+
+# Partial downloads
+*.part
+
+# Secrets
+.env
+
+# Python
+.venv
+__pycache__
+
+
+node_modules/
+.next
+web/out
+
+# Models
+pretrained_models/

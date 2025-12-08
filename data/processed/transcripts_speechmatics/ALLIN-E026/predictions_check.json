@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "count": 6,
+    "count_by_result": {
+      "inconclusive": 3,
+      "right": 1,
+      "ambiguous": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "friedberg-00:08:10.000",
+      "result": "inconclusive",
+      "explanation": "The prediction is that *at least one person who was alive as of March 2021 will eventually live past age 200*. As of November 2025:\n\n- No human has come close to this age; the **oldest verified age in history is 122 years (Jeanne Calment)**, far below 200.\n- The prediction concerns **future maximum lifespan** of currently living people. To declare it right or wrong, we would need to wait until **all individuals who were alive in March 2021 have died**, which will not be knowable for well over a century.\n\nSince the claim is about a still\u2011unfolding future outcome and there is no logical way yet to falsify or confirm it, the status of the prediction cannot be determined at this time.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns future extreme longevity (>200 years for someone alive in March 2021). As of December 2025, the oldest verified living person is Ethel Caterham (born 1909, age ~116) [Wikipedia: List of oldest living people; USA Today, May 2025]. The all-time record is Jeanne Calment at 122 years [Guinness World Records; Wikipedia]. No one has reached 200, and even the oldest in 2021 (e.g., ~117) would need 80+ more years, making verification impossible yet."
+    },
+    {
+      "id": "friedberg-00:25:10.000",
+      "result": "right",
+      "explanation": "As of November 29, 2025, there is **no quantum computer with ~4000 logical qubits capable of breaking RSA\u20112048**.\n\nCurrent leading systems (e.g., IBM, Google, Quantinuum, IonQ) report on the order of **hundreds to low thousands of *physical* qubits**, with only **small numbers of error\u2011corrected logical qubits** demonstrated in practice:\n\n- IBM\u2019s published roadmaps and recent devices discuss thousands of *physical* qubits, but logical qubits at scale remain a research goal, not an achieved capability.\n- Experimental demonstrations of logical qubits and small code distances exist (e.g., surface codes and other error\u2011correcting codes), but they are far from the **thousands of logical qubits** needed for factoring RSA\u20112048 using Shor\u2019s algorithm.\n- No credible report from major labs, peer\u2011reviewed papers, or industry announcements claims the ability to factor RSA\u20112048 or equivalently strong keys with an actual machine.\n\nBecause:\n\n1. The prediction\u2019s **time window for the event is 2040\u20132060**, and we are still in 2025.\n2. The sub\u2011claim that there is **<5% chance of such a machine *before* 2040** is equivalent (from today\u2019s vantage point) to saying \u201cit\u2019s very unlikely we\u2019ll have this before 2040,\u201d and nothing observed so far contradicts that; progress is significant but still orders of magnitude away in logical\u2011qubit scale and error correction.\n3. The specific event that would falsify him (a quantum computer with ~4011 logical qubits that can break RSA\u20112048) **has not occurred yet**.\n\nThe appropriate evaluation today is that the prediction **has not been falsified and is consistent with current reality**. Since the key part of the prediction is about *not* having such a machine before 2040, and we\u2019re still well before 2040 with no such machine, the prediction is best judged as **right (so far)** rather than wrong or ambiguous.\n\n*(No single specific source states \u201cno RSA\u20112048\u2011breaking quantum computer exists,\u201d but this is inferred from the absence of any such claim in the quantum computing literature and industry communications, and from the widely reported current scales of physical and logical qubits.)*",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction states <5% chance of a quantum computer with ~4011 logical qubits capable of breaking RSA-2048 existing *before 2040*. As of Dec 2025 (current date), no such computer exists\u2014current records are ~50 entangled logical qubits (Quantinuum, Dec 2024; [source](https://interestingengineering.com/innovation/50-logical-qubits-entangled-record-quantinuum)) or 24 logical qubits (Microsoft/Atom, Nov 2024; [source](https://azure.microsoft.com/en-us/blog/quantum/2024/11/19/microsoft-and-atom-computing-offer-a-commercial-quantum-machine-with-the-largest-number-of-entangled-logical-qubits-on-record/)). No RSA-2048 breaks achieved ([source](https://www.rsa.com/resources/blog/zero-trust/setting-the-record-straight-on-quantum-computing-and-rsa-encryption/); debunked claims like Chinese 2024). With 15 years until 2040, too early to confirm or refute."
+    },
+    {
+      "id": "friedberg-00:26:40.000",
+      "result": "inconclusive",
+      "explanation": "As of 29 November 2025, the 10\u2011year window Friedberg named (\"over the next ten years\" from 2021, i.e., roughly through 2031) is only about halfway over, and the key parts of his prediction are only partially testable.\n\n**What has clearly happened (supports parts of the claim):**\n\n1. **The area *is* being \u201cchased really hard\u201d this decade.**  \n   - Major pharma companies have launched explicit quantum\u2011chemistry and drug\u2011discovery collaborations (e.g., Boehringer Ingelheim with Google Quantum AI for molecular dynamics and drug design; Roche with Cambridge Quantum; Merck with SEEQC). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Boehringer_Ingelheim?utm_source=openai))  \n   - Cloud and platform providers have built chemistry/life\u2011science offerings around NISQ hardware, such as Microsoft\u2019s Azure Quantum Elements, explicitly targeted at materials, chemistry, and pharmaceutical R&D. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Microsoft_Azure_Quantum?utm_source=openai))  \n   - Investment vehicles like Novo Holdings have committed hundreds of millions of dollars to quantum\u2011computing startups with a stated focus on life sciences, including protein modeling and accelerating drug discovery. ([reuters.com](https://www.reuters.com/technology/novo-nordisk-owner-invest-200-million-quantum-computing-startups-2024-05-01/?utm_source=openai))  \n   - Numerous reviews and road\u2011mapping pieces in 2023\u20132025 outline quantum computing as a key near\u2011term application for generative chemistry and drug discovery, specifically emphasizing the use of noisy intermediate\u2011scale quantum (NISQ) devices. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/37331692/?utm_source=openai))  \n   **Conclusion:** The claim that this application area would be *actively and broadly pursued during the 2020s* is already correct.\n\n2. **Noisy / pre\u2011fault\u2011tolerant devices *are* being used for real molecular and materials simulations, including some non\u2011toy results.**  \n   - IBM\u2019s work on \"quantum utility\" shows noisy quantum processors (e.g., Heron) solving Ising\u2011model problems relevant to materials science beyond brute\u2011force classical simulation, marking a first practical regime where NISQ devices provide scientifically useful results. ([newswire.ca](https://www.newswire.ca/news-releases/ibm-launches-its-most-advanced-quantum-computers-fueling-new-scientific-value-and-progress-towards-quantum-advantage-883398912.html?utm_source=openai))  \n   - Hybrid quantum\u2013classical algorithms like Quantum\u2011Selected Configuration Interaction (QSCI) have been used by IBM and partners to push chemical computations \"beyond the scale of exact diagonalization\" on classical machines, demonstrating the largest\u2011scale chemistry simulations on quantum hardware to date. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Quantum-Selected_Configuration_Interaction?utm_source=openai))  \n   - Google\u2019s 2025 **Quantum Echoes** algorithm, running on the noisy 105\u2011qubit Willow processor, achieved a **quantum advantage** benchmark about 13,000\u00d7 faster than the best classical methods and was applied to NMR\u2011related molecular dynamics, uncovering previously unknown atomic structures in molecules with 15 and 28 atoms. ([reuters.com](https://www.reuters.com/technology/google-says-it-has-developed-landmark-quantum-computing-algorithm-2025-10-22/?utm_source=openai))  \n   - A 2024 Nature paper (summarized in Drug Discovery News) and related work show hybrid quantum computing applied to realistic drug\u2011discovery tasks (e.g., prodrug activation energetics and covalent KRAS\u2011G12C inhibition by sotorasib), demonstrating that small noisy quantum devices can contribute to modeling non\u2011toy chemical problems. ([drugdiscoverynews.com](https://www.drugdiscoverynews.com/quantum-techniques-offer-a-glimpse-of-next-generation-medicine-16815?utm_source=openai))  \n   **Conclusion:** We do see genuine research breakthroughs in quantum simulations of molecules and materials on noisy hardware, consistent with his claim that \u201csuper noisy, super low fidelity\u201d machines would start yielding breakthroughs this decade.\n\n**What has *not* clearly happened yet (limits of the claim as of 2025):**\n\n1. **No widely accepted, end\u2011to\u2011end \u201cpractical breakthrough\u201d in enzyme/drug design attributable to NISQ quantum computers.**  \n   Recent surveys and industry analyses still describe quantum computing for drug discovery as **early\u2011stage / emerging**, with tools \u201climited in availability\u201d as of mid\u20112025 and use cases framed as proofs of concept or pilots rather than standard industrial workhorses. ([mdpi.com](https://www.mdpi.com/1422-0067/26/13/6325?utm_source=openai))  \n   Reviews on quantum computing in drug discovery and medicine emphasize potential and early demonstrations, but do **not** report approved drugs, industrial enzymes, or nitrogen\u2011fixation catalysts that owe their discovery primarily to quantum computers. ([mdpi.com](https://www.mdpi.com/2076-3271/12/4/67?utm_source=openai))  \n   In other words, most impact so far is in *research demos and methodology*, not yet in widely acknowledged breakthroughs like new commercial enzymes or drugs designed thanks to quantum advantage.\n\n2. **His strong sub\u2011claim that \u201cwe already have enough compute power\u201d remains questionable.**  \n   Even in 2020\u20132022, experts in quantum\u2011accelerated drug discovery repeatedly noted that hardware was \u201cstill in its infancy\u201d and \"not quite at a scale\" to solve the toughest real\u2011world drug problems, and more recent work still frames many life\u2011science applications as contingent on further scaling and error\u2011correction over the next decade. ([pharmaceutical-technology.com](https://www.pharmaceutical-technology.com/features/quantum-brilliance-reimagining-drug-discovery-quantum-computing/?utm_source=openai))  \n   The most advanced 2024\u20132025 results (e.g., Willow + Quantum Echoes, hybrid pipelines) are still presented as **stepping stones toward** practical drug and materials design, not evidence that today\u2019s NISQ machines are already sufficient for the full class of industrially relevant problems Friedberg invoked. ([livescience.com](https://www.livescience.com/technology/computing/googles-breakthrough-quantum-echoes-algorithm-pushes-us-closer-to-useful-quantum-computing-running-13-000-times-faster-than-on-a-supercomputer?utm_source=openai))\n\n**Why the overall verdict is \u201cinconclusive\u201d rather than right or wrong:**\n\n- The **strongest, most specific part** of Friedberg\u2019s prediction is that within about 2021\u20132031, noisy quantum computers will deliver *practical breakthroughs* in simulating quantum states of materials/atoms/molecules that directly translate into things like **better enzymes for nitrogen fixation, drug discovery, or targeted proteins**, *using the compute power already available* at the time he spoke.  \n- By late 2025, we **do** have:  \n  - Widespread pursuit of exactly these applications in industry and academia. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Boehringer_Ingelheim?utm_source=openai))  \n  - Credible, noisy\u2011hardware demonstrations of non\u2011toy molecular simulations and even quantum advantage on chemistry\u2011related benchmarks. ([newswire.ca](https://www.newswire.ca/news-releases/ibm-launches-its-most-advanced-quantum-computers-fueling-new-scientific-value-and-progress-towards-quantum-advantage-883398912.html?utm_source=openai))  \n- But we **do not yet** have clear, broadly agreed\u2011upon *industrial* outcomes like new approved drugs or widely deployed enzymes that owe their discovery to these NISQ simulations; authoritative sources still characterize this as a developing, not yet fully realized, capability. ([mdpi.com](https://www.mdpi.com/1422-0067/26/13/6325?utm_source=openai))  \n- Since his horizon runs until roughly **2031**, there is still substantial time for such practical breakthroughs to emerge as hardware and algorithms continue to improve.\n\nBecause an essential part of his prediction concerns outcomes **by the end of the decade** and those outcomes have neither clearly materialized nor clearly failed by 2025, the fairest assessment today is **\u201cinconclusive (too early)\u201d** rather than definitively right or wrong.",
+      "sources": [
+        {
+          "end_index": 724,
+          "start_index": 634,
+          "title": "Boehringer Ingelheim",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Boehringer_Ingelheim?utm_source=openai"
+        },
+        {
+          "end_index": 1034,
+          "start_index": 941,
+          "title": "Microsoft Azure Quantum",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Microsoft_Azure_Quantum?utm_source=openai"
+        },
+        {
+          "end_index": 1403,
+          "start_index": 1257,
+          "title": "Novo Nordisk owner to invest $200 million in quantum computing startups",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/novo-nordisk-owner-invest-200-million-quantum-computing-startups-2024-05-01/?utm_source=openai"
+        },
+        {
+          "end_index": 1741,
+          "start_index": 1653,
+          "title": "Quantum computing for near-term applications in generative chemistry and drug discovery - PubMed",
+          "type": "url_citation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37331692/?utm_source=openai"
+        },
+        {
+          "end_index": 2500,
+          "start_index": 2296,
+          "title": "IBM Launches Its Most Advanced Quantum Computers, Fueling New Scientific Value and Progress towards Quantum Advantage",
+          "type": "url_citation",
+          "url": "https://www.newswire.ca/news-releases/ibm-launches-its-most-advanced-quantum-computers-fueling-new-scientific-value-and-progress-towards-quantum-advantage-883398912.html?utm_source=openai"
+        },
+        {
+          "end_index": 2929,
+          "start_index": 2817,
+          "title": "Quantum-Selected Configuration Interaction",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Quantum-Selected_Configuration_Interaction?utm_source=openai"
+        },
+        {
+          "end_index": 3408,
+          "start_index": 3261,
+          "title": "Google says it has developed landmark quantum computing algorithm",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/google-says-it-has-developed-landmark-quantum-computing-algorithm-2025-10-22/?utm_source=openai"
+        },
+        {
+          "end_index": 3896,
+          "start_index": 3749,
+          "title": "Quantum techniques offer a glimpse of next-generation medicine | Drug Discovery News",
+          "type": "url_citation",
+          "url": "https://www.drugdiscoverynews.com/quantum-techniques-offer-a-glimpse-of-next-generation-medicine-16815?utm_source=openai"
+        },
+        {
+          "end_index": 4703,
+          "start_index": 4630,
+          "title": "Quantum Mechanics in Drug Discovery: A Comprehensive Review of Methods, Applications, and Future Directions",
+          "type": "url_citation",
+          "url": "https://www.mdpi.com/1422-0067/26/13/6325?utm_source=openai"
+        },
+        {
+          "end_index": 5032,
+          "start_index": 4962,
+          "title": "Quantum Computing in Medicine",
+          "type": "url_citation",
+          "url": "https://www.mdpi.com/2076-3271/12/4/67?utm_source=openai"
+        },
+        {
+          "end_index": 5846,
+          "start_index": 5678,
+          "title": "Quantum Brilliance: reimagining drug discovery with quantum computing - Pharmaceutical Technology",
+          "type": "url_citation",
+          "url": "https://www.pharmaceutical-technology.com/features/quantum-brilliance-reimagining-drug-discovery-quantum-computing/?utm_source=openai"
+        },
+        {
+          "end_index": 6391,
+          "start_index": 6161,
+          "title": "Google's breakthrough 'Quantum Echoes' algorithm pushes us closer to useful quantum computing - running 13,000 times faster than on a supercomputer",
+          "type": "url_citation",
+          "url": "https://www.livescience.com/technology/computing/googles-breakthrough-quantum-echoes-algorithm-pushes-us-closer-to-useful-quantum-computing-running-13-000-times-faster-than-on-a-supercomputer?utm_source=openai"
+        },
+        {
+          "end_index": 7085,
+          "start_index": 6995,
+          "title": "Boehringer Ingelheim",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Boehringer_Ingelheim?utm_source=openai"
+        },
+        {
+          "end_index": 7430,
+          "start_index": 7226,
+          "title": "IBM Launches Its Most Advanced Quantum Computers, Fueling New Scientific Value and Progress towards Quantum Advantage",
+          "type": "url_citation",
+          "url": "https://www.newswire.ca/news-releases/ibm-launches-its-most-advanced-quantum-computers-fueling-new-scientific-value-and-progress-towards-quantum-advantage-883398912.html?utm_source=openai"
+        },
+        {
+          "end_index": 7787,
+          "start_index": 7714,
+          "title": "Quantum Mechanics in Drug Discovery: A Comprehensive Review of Methods, Applications, and Future Directions",
+          "type": "url_citation",
+          "url": "https://www.mdpi.com/1422-0067/26/13/6325?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction's core elements\u2014active pursuit of NISQ quantum simulations for materials/molecules/enzymes in the 2020s using available compute\u2014are confirmed: record $2B VC funding in 2024-25, \u20ac188M Novo Holdings investment in quantum life sciences ([quantuminsider.com](https://thequantuminsider.com/2025/11/11/novo-holdings-invests-in-quantums-convergence-with-ai-and-life-sciences/)), pharma partnerships (AstraZeneca, Pfizer [cen.acs.org](https://cen.acs.org/business/quantum-computing-chemistrys-next-AI/103/web/2025/11)). Demos include Qunova's chemical accuracy on NISQ for small molecules ([eurekalert.org](https://www.eurekalert.org/news-releases/1060438)), IonQ's record 12-aa protein folding and superior force sims for chem/drug apps ([ionq.com](https://ionq.com/news/ionq-and-kipu-quantum-break-new-performance-records-for-protein-folding-and), [ionq.com](https://ionq.com/news/ionq-quantum-computing-achieves-greater-accuracy-simulating-complex-chemical)). However, no practical breakthroughs yielding advances like improved enzymes (nitrogen fixation/drugs); efforts are small-scale proofs-of-concept without industrial quantum advantage or deployed results (C&EN Nov 2025 [cen.acs.org](https://cen.acs.org/business/quantum-computing-chemistrys-next-AI/103/web/2025/11), PMC reviews). As of Dec 2025, midway in 2021-2031 window, too early to verify full realization."
+    },
+    {
+      "id": "chamath-00:09:45.000",
+      "result": "ambiguous",
+      "explanation": "Chamath argued that as companies like Prenuvo gathered more data and improved ML, two things would happen: (1) full\u2011body MRI scan times would fall from ~60\u201390 minutes to roughly 40 minutes, and (2) prices would drop from ~$1,500\u2013$2,500 into the low hundreds of dollars while preserving diagnostic quality.\n\nFor Prenuvo itself, neither target has been reached as of late 2025. Prenuvo markets its whole\u2011body MRI as \u201cfast (under 1 hour)\u201d with typical scan times around 45\u201360 minutes, not ~40 minutes.([prenuvo.com](https://prenuvo.com/faq?utm_source=openai)) Its current U.S. pricing for a comprehensive whole\u2011body scan is about $2,499, with enhanced packages at $3,999\u2013$4,499, i.e., still in or above the original $1,500\u2013$2,500 range rather than in the low hundreds.([prenuvo.com](https://prenuvo.com/pricing?utm_source=openai)) Industry reporting likewise places Prenuvo\u2019s full\u2011body scans around $2,400\u2013$2,500.([bodyspec.com](https://www.bodyspec.com/blog/post/prenuvo_mri_cost_benefits_risks_comparison?utm_source=openai))\n\nAcross the broader \u201cfull\u2011body MRI\u201d market, typical consumer preventive scans remain roughly $1,000\u2013$2,500, with some lower\u2011cost offerings like SimonMed\u2019s simonONE Body scan at ~$650 and about an hour of scanner time\u2014cheaper, but still not \u201clow hundreds.\u201d([goodhousekeeping.com](https://www.goodhousekeeping.com/health/wellness/a65543625/full-body-mri-prenuvo/?utm_source=openai))\n\nAt the same time, newer AI\u2011driven services such as Ezra/Function Health have introduced substantially faster and cheaper MRI\u2011based screening. Function Health now offers an MRI scan (covering head, neck, abdomen, and pelvis) that takes about 22 minutes and costs $499, explicitly described as a reduction from earlier 60\u2011minute, ~$1,500 scans, and marketed as screening for hundreds of conditions.([functionhealth.com](https://www.functionhealth.com/article/function-scans-how-to-book-your-full-body-mri?utm_source=openai)) However, this product does not cover the entire body in the same way as Prenuvo\u2019s flagship scan (it omits chest, lungs, and limbs), and there is not yet clear, independent evidence that its diagnostic performance is fully equivalent to longer, more expensive protocols.\n\nBecause Chamath\u2019s prediction was framed around Prenuvo\u2011style full\u2011body MRI but the outcomes differ depending on which provider and definition of \u201cfull\u2011body\u201d you use\u2014and because equivalence of diagnostic resolution is not yet well established\u2014the evidence is mixed rather than clearly validating or falsifying his claim.",
+      "sources": [
+        {
+          "end_index": 595,
+          "start_index": 537,
+          "title": "FAQ",
+          "type": "url_citation",
+          "url": "https://prenuvo.com/faq?utm_source=openai"
+        },
+        {
+          "end_index": 866,
+          "start_index": 804,
+          "title": "Pricing",
+          "type": "url_citation",
+          "url": "https://prenuvo.com/pricing?utm_source=openai"
+        },
+        {
+          "end_index": 1062,
+          "start_index": 949,
+          "title": "Prenuvo MRI: Cost, Benefits, Risks & Comparison | BodySpec",
+          "type": "url_citation",
+          "url": "https://www.bodyspec.com/blog/post/prenuvo_mri_cost_benefits_risks_comparison?utm_source=openai"
+        },
+        {
+          "end_index": 1445,
+          "start_index": 1320,
+          "title": "I Tried a $1,850 Full-Body MRI. Here's What I Learned About My Health.",
+          "type": "url_citation",
+          "url": "https://www.goodhousekeeping.com/health/wellness/a65543625/full-body-mri-prenuvo/?utm_source=openai"
+        },
+        {
+          "end_index": 1971,
+          "start_index": 1845,
+          "title": "How to book advanced imaging with Function | Function",
+          "type": "url_citation",
+          "url": "https://www.functionhealth.com/article/function-scans-how-to-book-your-full-body-mri?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The scan duration for Prenuvo's Comprehensive Whole Body MRI has shrunk to 45 minutes ([Prenuvo pricing page](https://prenuvo.com/pricing); confirmed in recent reviews like Prevention Aug 2025 and London announcement), aligning closely with the predicted ~40 minutes from 60\u201390 minutes. However, the per-scan price remains $2,499 USD (same page; consistent across 2024\u20132025 sources like CNBC Feb 2025, TrueScan comparison May 2025), not declining to the low hundreds of dollars as predicted from $1,500\u2013$2,500. No evidence of price dropping to hundreds despite a minor adjustment post-100k scans (Fast Company Dec 2024). Diagnostic resolution appears maintained per Prenuvo claims. Since both time *and* price reductions were predicted, and price did not decline, the prediction is wrong."
+    },
+    {
+      "id": "B-00:57:40.000",
+      "result": "inconclusive",
+      "explanation": "As of 29 November 2025, the target year (2030) has not yet been reached, so it is too early to determine whether the prediction will ultimately be correct.\n\nAvailable data show that global venture capital (VC) investment has **not yet** reached $1 trillion annually, but that does not invalidate a \u201cby 2030\u201d prediction:\n\n- KPMG reports global VC investment hit a record **about $671 billion in 2021**, up from $347 billion in 2020. ([kpmg.com](https://kpmg.com/xx/en/media/press-releases/2022/01/global-venture-capital-annual-investment-shatters-records-following-another-healthy-quarter.html?utm_source=openai))  \n- S&P Global Market Intelligence data show global VC funding totaled **about $435.7 billion in 2022** and then fell to **about $260 billion in 2023**. ([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2024/1/global-venture-capital-investments-continue-downtrend-in-december-2023-80043834?utm_source=openai))  \n- Other analyses put 2023 and 2024 global VC investment in the **mid\u2013300 billions**, with Chambers & Partners citing **USD 345.7 billion in 2023** and **USD 368.3 billion in 2024**, reflecting a modest recovery but still well below 2021\u2019s peak. ([practiceguides.chambers.com](https://practiceguides.chambers.com/practice-guides/venture-capital-2025?utm_source=openai))\n\nIn all major data series, **annual global VC investment is far below $1 trillion as of 2024**, and 2025 data are incomplete. However, because the prediction\u2019s horizon is \u201cby 2030\u201d and there are roughly five years remaining, its truth value cannot yet be determined. Therefore the correct classification today is **\u201cinconclusive (too early).\u201d**",
+      "sources": [
+        {
+          "end_index": 656,
+          "start_index": 476,
+          "title": "Global venture capital annual investment shatters records following another healthy quarter",
+          "type": "url_citation",
+          "url": "https://kpmg.com/xx/en/media/press-releases/2022/01/global-venture-capital-annual-investment-shatters-records-following-another-healthy-quarter.html?utm_source=openai"
+        },
+        {
+          "end_index": 1004,
+          "start_index": 811,
+          "title": "Global venture capital investments continue downtrend in December 2023 | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2024/1/global-venture-capital-investments-continue-downtrend-in-december-2023-80043834?utm_source=openai"
+        },
+        {
+          "end_index": 1376,
+          "start_index": 1253,
+          "title": "Venture Capital 2025 | Global Practice Guides | Chambers and Partners",
+          "type": "url_citation",
+          "url": "https://practiceguides.chambers.com/practice-guides/venture-capital-2025?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for 2030, and the current date is December 2025, making it too early to verify definitively. Recent data shows global VC investment recovering but not near $1T: 2024 totaled ~$368B (KPMG), 2025 on pace for ~$400B+ (Q1 $121B BVK; Q2 $91-95B Crunchbase/CB Insights; Q3 $120B KPMG). 2021 peaked higher (~$600B+ historically), but post-drop recovery in AI hasn't projected to $1T annual by 2030 in searched sources. Possible with strong growth, but inconclusive without more time. Sources: [KPMG Venture Pulse](https://kpmg.com/xx/en/media/press-releases/2025/01/2024-global-vc-investment-rises-to-368-billion-dollars.html), [Crunchbase](https://news.crunchbase.com/venture/state-of-startups-q2-h1-2025-ai-ma-charts-data/), [Dealroom](https://dealroom.co/guides/global)."
+    },
+    {
+      "id": "A-01:06:48.000",
+      "result": "ambiguous",
+      "explanation": "The prediction is clearly stated in the All-In E26 transcript: Jason says that in 2021 they are *\u201con track this year to do five deals a month, 60 deals, and we\u2019ll put 50 million to work this year at thesyndicate.com.\u201d*([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e26-state-of-venture-capital-plus-fan-questions-on-longevity-decentralization-quantum-computing))\n\nTo judge this, we would need reliable, deal-by-deal or year-end figures for TheSyndicate.com\u2019s 2021 activity: number of SPVs/deals and total dollars deployed *through the syndicate SPVs specifically*.\n\nPublic data, however, are fragmentary and inconsistent:\n\n* VC and crypto databases attribute only a few dozen total investments to TheSyndicate.com across *all* years. For example, Cointime lists 29 investments with the most recent in November 2021, not broken out by amount syndicated or confirming 60 deals in that calendar year.([cointime.ai](https://www.cointime.ai/project/the-syndicate.com-12503a/leadiq?utm_source=openai)) Unicorn Nest similarly shows 44 total investments with 2021 as the \u201cpeak activity year,\u201d but again without a clear 2021 deal count or capital total, and its list is clearly incomplete relative to other sources.([unicorn-nest.com](https://unicorn-nest.com/funds/thesyndicate-com/?utm_source=openai))\n* Kingscrowd shows many separate 2021 SPVs titled \u201cX, a Series of Jason\u2019s Syndicate 2021,\u201d each raising hundreds of thousands to roughly $1.4M (e.g., Giggster, Kippo), confirming active 2021 syndicate deal flow but not giving a complete universe or roll\u2011up total.([kingscrowd.com](https://kingscrowd.com/giggster-a-series-of-jasons-syndicate-2021/?utm_source=openai))\n\nLater interviews show scale but not a backward-looking 2021 tally:\n\n* In an October 4, 2022 Acquired episode, Jason says his angel syndicate is the largest in the world and that he has deployed $185M in his career and is *\u201cdoing $50 million a year now.\u201d* This is a current run\u2011rate claim as of late 2022, not an audited statement about calendar\u2011year 2021 performance at TheSyndicate.com.([acquired.fm](https://www.acquired.fm/episodes/acq-sessions-jason-calacanis))\n* In a 2023 Meb Faber interview, he explains that only about half of the companies his fund invests in actually choose to do a syndicate; the syndicate thus represents only a subset of his overall capital deployment, which further complicates any attempt to infer 2021 syndicate volumes from his total investing activity.([mebfaber.com](https://mebfaber.com/2023/03/08/jason-calacanis/?utm_source=openai))\n\nBecause TheSyndicate.com is a private angel syndicate, there is no comprehensive, public, year\u2011end 2021 report of (a) exact number of syndicate deals closed or (b) total dollars deployed via those SPVs. Third\u2011party databases clearly undercount relative to known deals, so they can\u2019t be used to safely declare the prediction wrong, and Jason\u2019s later public comments don\u2019t explicitly confirm or deny whether the 2021 target of 60 deals and ~$50M through TheSyndicate.com was actually met.\n\nGiven the lack of authoritative, complete data, the accuracy of this specific 2021 forecast cannot be determined from public information, so the result has to be rated as **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 442,
+          "start_index": 255,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E26: State of Venture Capital, plus fan questions on longevity, decentralization & quantum computing Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e26-state-of-venture-capital-plus-fan-questions-on-longevity-decentralization-quantum-computing"
+        },
+        {
+          "end_index": 1081,
+          "start_index": 983,
+          "title": "The Syndicate.com - Web3 Crypto Company Profile, Funding, Valuation, Investors - Cointime",
+          "type": "url_citation",
+          "url": "https://www.cointime.ai/project/the-syndicate.com-12503a/leadiq?utm_source=openai"
+        },
+        {
+          "end_index": 1380,
+          "start_index": 1292,
+          "title": "TheSyndicate.com \u2013 Investors Database \u2013 Unicorn Nest",
+          "type": "url_citation",
+          "url": "https://unicorn-nest.com/funds/thesyndicate-com/?utm_source=openai"
+        },
+        {
+          "end_index": 1749,
+          "start_index": 1645,
+          "title": "Giggster, a Series of Jason\u2019s Syndicate 2021 - Kingscrowd",
+          "type": "url_citation",
+          "url": "https://kingscrowd.com/giggster-a-series-of-jasons-syndicate-2021/?utm_source=openai"
+        },
+        {
+          "end_index": 2220,
+          "start_index": 2142,
+          "title": "ACQ Sessions: Jason Calacanis: The Complete History and Strategy",
+          "type": "url_citation",
+          "url": "https://www.acquired.fm/episodes/acq-sessions-jason-calacanis"
+        },
+        {
+          "end_index": 2627,
+          "start_index": 2543,
+          "title": "Episode #469: Jason Calacanis on Democratizing Venture Capital, How to Handle Large Winners, & Why The Price You Pay Matters...Even in Venture Capital - Meb Faber Research - Stock Market and Investing Blog",
+          "type": "url_citation",
+          "url": "https://mebfaber.com/2023/03/08/jason-calacanis/?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "No reliable public sources provide the exact number of investment deals or total capital deployed by syndicate.com (Jason Calacanis's angel investing club at thesyndicate.com) specifically for calendar year 2021. Databases like Crunchbase ([The Syndicate.com profile](https://www.crunchbase.com/organization/thesyndicate-com)) and Cointime list only 10-44 total investments ever (as of recent data), with examples of 2021 deals like Grin (May 2021), Hop (June 2021), Density (Nov 2021), but far fewer than 60 and no aggregate capital figures. Unicorn Nest reports 44 total investments averaging $2M round size, but no yearly breakdown. The syndicate's website ([thesyndicate.com](https://thesyndicate.com/)) mentions Jason's career track record of 300+ startups over a decade but no 2021 specifics. Later statements by Calacanis (e.g., 2022 Acquired podcast: '$50M a year now'; 2022 Bloomberg: '100 deals a year') suggest scaling to those levels post-2021, consistent with being 'on track' in March 2021, but no direct confirmation or refutation for 2021 totals. Many syndicate SPVs may not be publicly reported, making verification impossible."
+    }
+  ]
+}

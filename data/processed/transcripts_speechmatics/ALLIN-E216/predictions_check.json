@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "count": 12,
+    "count_by_result": {
+      "inconclusive": 8,
+      "right": 3,
+      "wrong": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "D-00:20:23.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, only about nine months have passed since the February 21, 2025 episode, while the prediction is explicitly about the *medium to long term*, so it is too early to judge definitively.\n\nThere is **supportive directional evidence**:\n- Large institutions and asset managers (e.g., DWS) now explicitly describe stablecoins as *emerging core payment infrastructure*, noting that stablecoin transaction volumes already rival or surpass card networks like Visa and Mastercard in raw on\u2011chain volume, even if much of that is still crypto\u2011native activity. ([coindesk.com](https://www.coindesk.com/markets/2025/10/14/dws-sees-stablecoins-emerging-as-core-payments-infrastructure?utm_source=openai))  \n- Reports from Keyrock/Bitso project stablecoin payment volumes exceeding **$1T annually by 2030**, driven by institutional, FX, and cross\u2011border flows, implying they may become a major rail in global payments. ([coindesk.com](https://www.coindesk.com/markets/2025/08/14/stablecoin-payments-projected-to-top-usd1t-annually-by-2030-market-maker-keyrock-says?utm_source=openai))  \n- Analyses suggest stablecoins could handle **5\u201310% of global payments by 2030**, and that by late 2025 roughly **3% of the world\u2019s $200T in cross\u2011border payments** already move via stablecoins. ([coindesk.com](https://www.coindesk.com/sponsored-content/building-the-infrastructure-for-the-usd2-trillion-stablecoin-economy?utm_source=openai))  \n- Major consumer/payment platforms (Stripe, PayPal, and now Klarna) are integrating or launching stablecoins and using them as underlying rails while keeping existing consumer-facing experiences, which matches the *\u201cbuilt upon and substantially leverage these things\u201d* part of the prediction. ([forbes.com](https://www.forbes.com/sites/roomykhan/2025/11/16/stablecoins-and-blockchain-becoming-the-backbone-of-finance/?utm_source=openai))\n\nHowever, **the strong version of the claim has not been met yet**:\n- Stablecoins, while rapidly growing, still account for **well under 10% of global payments** and less than 1% of all daily transfer volume, so they are *not yet* the \u201ccommon rail\u201d for most payments. ([coindesk.com](https://www.coindesk.com/sponsored-content/building-the-infrastructure-for-the-usd2-trillion-stablecoin-economy?utm_source=openai))  \n- Traditional card networks and bank rails remain dominant in consumer payments, and it is impossible at this early stage to verify that *\u201cmost consumer\u2011facing payment networks\u201d* will ultimately be built on top of stablecoins.\n\nBecause the key outcomes are framed over a medium\u2011to\u2011long\u2011term horizon (years, not months) and current data shows only an early trend rather than a completed shift, the prediction cannot reasonably be called right or wrong yet, so **\"inconclusive\" (too early)** is the appropriate classification.",
+      "sources": [
+        {
+          "end_index": 754,
+          "start_index": 613,
+          "title": "DWS Sees Stablecoins Emerging as Core Payments Infrastructure",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/markets/2025/10/14/dws-sees-stablecoins-emerging-as-core-payments-infrastructure?utm_source=openai"
+        },
+        {
+          "end_index": 1134,
+          "start_index": 969,
+          "title": "Stablecoin Payments Volume Projected to Top $1T Annually by 2030, Keyrock Says",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/markets/2025/08/14/stablecoin-payments-projected-to-top-usd1t-annually-by-2030-market-maker-keyrock-says?utm_source=openai"
+        },
+        {
+          "end_index": 1480,
+          "start_index": 1333,
+          "title": "Building the Infrastructure for the $2 Trillion Stablecoin Economy",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/sponsored-content/building-the-infrastructure-for-the-usd2-trillion-stablecoin-economy?utm_source=openai"
+        },
+        {
+          "end_index": 1921,
+          "start_index": 1777,
+          "title": "Stablecoins And Blockchain: Becoming The Backbone Of Finance",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/roomykhan/2025/11/16/stablecoins-and-blockchain-becoming-the-backbone-of-finance/?utm_source=openai"
+        },
+        {
+          "end_index": 2340,
+          "start_index": 2193,
+          "title": "Building the Infrastructure for the $2 Trillion Stablecoin Economy",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/sponsored-content/building-the-infrastructure-for-the-usd2-trillion-stablecoin-economy?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns the *medium to long term*, roughly years rather than months. Only ~10 months have passed since the Feb 2025 podcast (current date Dec 1, 2025). Stablecoins have surged\u2014market cap ~$230-314B, 2024 txns >$27T (surpassing Visa+MC per some reports; [Medium](https://medium.com/@monolith.vc/stablecoins-in-2025-full-overview-of-the-230b-market-bab96c680c44), [McKinsey](https://www.mckinsey.com/industries/financial-services/our-insights/the-stable-door-opens-how-tokenized-cash-enables-next-gen-payments))\u2014with integrations by Visa (USDC/PYUSD settlement; [Visa](https://investor.visa.com/news/news-details/2025/Visa-Expands-Stablecoin-Settlement-Support/default.aspx)), Mastercard (multi-stablecoin support; [Mastercard](https://www.mastercard.com/us/en/news-and-trends/stories/2025/mastercard-stablecoin-utility-and-scale.html)), Stripe, PayPal. Used heavily in crypto/cross-border/B2B, but <1% global flows; bulk in crypto markets, not ubiquitous consumer payments ([McKinsey](https://www.mckinsey.com/industries/financial-services/our-insights/the-stable-door-opens-how-tokenized-cash-enables-next-gen-payments), [PYMNTS](https://www.pymnts.com/blockchain/2025/the-state-of-the-stablecoin-as-a-payment-mechanism/), [Treasurup](https://treasurup.com/stablecoins-strategic-playbook-banks-2025/)). Matches 'leveraging' trend but not yet 'common rail'. Too early to judge."
+    },
+    {
+      "id": "E-00:12:40.000",
+      "result": "right",
+      "explanation": "The prediction was about *sequence* and *relative strength* of adoption: (1) stablecoins would first gain traction in international/cross\u2011border B2B use cases, and (2) domestic B2B payments in places like the U.S. would follow only after those cross\u2011border rails were established.\n\nBy late 2025, available data and industry surveys show that cross\u2011border B2B is indeed the leading and earliest mainstream use case for stablecoins, while domestic B2B usage exists but is still secondary:\n\n- Fireblocks\u2019 2025 industry report notes that domestic payment systems in many regions already offer instant settlement, whereas international flows remain constrained by legacy correspondent banking; as a result, **cross-border payments are explicitly described as the main driver of stablecoin adoption, especially for high\u2011volume B2B flows**, and banks are reported to be *twice as likely* to prioritize cross\u2011border stablecoin use over other use cases. ([fireblocks.com](https://fireblocks.com/report/state-of-stablecoins/?utm_source=openai))\n- A bank survey summarized by Grant Thornton/Fireblocks finds **58% of traditional banks already use stablecoins for cross\u2011border payments**, versus just **9% for B2B invoicing and 9% for merchant settlement**, indicating that cross\u2011border B2B usage is far more established than domestic B2B applications. ([grantthornton.com.cy](https://www.grantthornton.com.cy/insights/Distributedledgertechnology/Stablecoins-Promise-Peril-and-the-Policy-Race/?utm_source=openai))\n- Broader market analysis similarly frames business use of stablecoins as concentrated in **paying suppliers and contractors, especially across borders**, and highlights rapidly growing cross\u2011border stablecoin flows in key corridors (e.g., U.S.\u2013Mexico, Europe\u2013Africa). ([cointeeth.com](https://www.cointeeth.com/news/regulatory-trilogy-is-a-new-era-for-stablecoins?utm_source=openai))  A dedicated Artemis/Castle Island study on B2B stablecoin payments reports a 30x increase to over $3 billion in monthly B2B stablecoin volume by 2025, characterizing this growth specifically in terms of **global, cross\u2011border business payments**. ([prnewswire.com](https://www.prnewswire.com/news-releases/b2b-stablecoin-payments-surge-30x-to-3-billion-monthly-volume-in-2025-302487975.html?utm_source=openai))\n\nAt the same time, evidence shows that *domestic* B2B usage in advanced markets like the U.S. is materializing, but later and at smaller scale, consistent with the prediction:\n\n- Stripe only began supporting **USDC acceptance for U.S. merchants in October 2024**, with usage then spreading globally; this enables on\u2011chain payments (including purely domestic U.S. commerce) but comes after years of stablecoin use in trading and cross\u2011border flows. ([forbes.com](https://www.forbes.com/sites/roomykhan/2025/11/16/stablecoins-and-blockchain-becoming-the-backbone-of-finance/?utm_source=openai))\n- In 2025, PayPal rolled out \u201cPay with Crypto\u201d for **U.S. merchants**, allowing them to accept payments in crypto including stablecoins like USDC and to hold balances in PYUSD\u2014again, a domestic merchant/B2B capability deployed after cross\u2011border and remittance use cases were already well\u2011established. ([jdsupra.com](https://www.jdsupra.com/legalnews/the-payments-newsletter-including-7159979/?utm_source=openai))\n- The same bank survey showing 58% cross\u2011border usage but only 9% in merchant settlement and 9% in B2B invoicing implies domestic B2B/payables use is **present but lags significantly** behind cross\u2011border adoption rather than leading it. ([grantthornton.com.cy](https://www.grantthornton.com.cy/insights/Distributedledgertechnology/Stablecoins-Promise-Peril-and-the-Policy-Race/?utm_source=openai))\n\nTaken together, the empirical pattern as of November 2025 is that (a) cross\u2011border B2B and remittance flows clearly led the way in real\u2011world stablecoin adoption, and (b) domestic B2B and merchant payments\u2014particularly in the U.S.\u2014are arriving later and remain smaller but are now emerging. That matches both elements of the prediction, so it is best characterized as **right**.",
+      "sources": [
+        {
+          "end_index": 1071,
+          "start_index": 982,
+          "title": "Global Insights: Stablecoin Payments & Infrastructure Trends | Fireblocks",
+          "type": "url_citation",
+          "url": "https://fireblocks.com/report/state-of-stablecoins/?utm_source=openai"
+        },
+        {
+          "end_index": 1539,
+          "start_index": 1379,
+          "title": "Stablecoins: Promise, Peril, and the Policy Race | Grant Thornton Cyprus insights",
+          "type": "url_citation",
+          "url": "https://www.grantthornton.com.cy/insights/Distributedledgertechnology/Stablecoins-Promise-Peril-and-the-Policy-Race/?utm_source=openai"
+        },
+        {
+          "end_index": 1925,
+          "start_index": 1810,
+          "title": "Regulatory trilogy: Is a new era for stablecoins?",
+          "type": "url_citation",
+          "url": "https://www.cointeeth.com/news/regulatory-trilogy-is-a-new-era-for-stablecoins?utm_source=openai"
+        },
+        {
+          "end_index": 2337,
+          "start_index": 2174,
+          "title": "B2B Stablecoin Payments Surge 30x to $3 Billion Monthly Volume in 2025",
+          "type": "url_citation",
+          "url": "https://www.prnewswire.com/news-releases/b2b-stablecoin-payments-surge-30x-to-3-billion-monthly-volume-in-2025-302487975.html?utm_source=openai"
+        },
+        {
+          "end_index": 2934,
+          "start_index": 2790,
+          "title": "Stablecoins And Blockchain: Becoming The Backbone Of Finance",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/roomykhan/2025/11/16/stablecoins-and-blockchain-becoming-the-backbone-of-finance/?utm_source=openai"
+        },
+        {
+          "end_index": 3349,
+          "start_index": 3238,
+          "title": "The Payments Newsletter including Digital Assets & Blockchain, August 2025 | Hogan Lovells - JDSupra",
+          "type": "url_citation",
+          "url": "https://www.jdsupra.com/legalnews/the-payments-newsletter-including-7159979/?utm_source=openai"
+        },
+        {
+          "end_index": 3749,
+          "start_index": 3589,
+          "title": "Stablecoins: Promise, Peril, and the Policy Race | Grant Thornton Cyprus insights",
+          "type": "url_citation",
+          "url": "https://www.grantthornton.com.cy/insights/Distributedledgertechnology/Stablecoins-Promise-Peril-and-the-Policy-Race/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "International and cross-border stablecoin B2B adoption has advanced significantly since Feb 2025, with Stripe's April 2025 acquisition of Bridge explicitly for global contractor payments (e.g., Philippines) [<a href=\"https://a16z.com/newsletter/what-stripes-acquisition-of-bridge-means-for-fintech-and-stablecoins-april-2025-fintech-newsletter/\">a16z</a>], surging B2B volumes to $3B+ monthly per Artemis 2025 report [<a href=\"https://reports.artemisanalytics.com/stablecoins/artemis-stablecoin-payments-from-the-ground-up-2025.pdf\">Artemis</a>], and Fireblocks noting 71% usage for cross-border [<a href=\"https://www.fireblocks.com/report/state-of-stablecoins\">Fireblocks</a>]. EY survey shows 62% for cross-border supplier payments [<a href=\"https://www.ey.com/content/dam/ey-unified-site/ey-com/en-us/insights/financial-services/documents/cs-eyp-stablecoin-survey.pdf\">EY</a>]. Domestic US B2B lags, with no major examples of supplier payments; existing rails suffice per TreasurUp [<a href=\"https://treasurup.com/stablecoins-for-banks-strategic-playbook-2025/\">TreasurUp</a>], Stripe focus on global/remittances/subscriptions not domestic B2B [<a href=\"https://stripe.com/resources/more/b2b-stablecoin-payments\">Stripe</a>]. Pattern matches prediction."
+    },
+    {
+      "id": "A-00:34:13.840",
+      "result": "inconclusive",
+      "explanation": "The prediction is about **\"the coming years\"** (a multi\u2011year horizon) and claims that:\n\n1. U.S. labor productivity will **continue to increase**.\n2. The **rate of productivity growth** will be **further boosted by AI and related software tools**.\n\nAs of **November 30, 2025**, less than one year has passed since the prediction (February 21, 2025). That is far too short to evaluate a multi\u2011year trend or to reliably attribute any observed productivity changes specifically to AI and new software tools, as opposed to business cycles, capital investment, or measurement issues. Productivity trends are typically assessed over several years.\n\nPreliminary data from the U.S. Bureau of Labor Statistics show that nonfarm business labor productivity has indeed risen over the last decade and has shown some recent quarters of strong growth, but economists are still debating the permanence of this uptick and the extent to which AI is the driver. These early signals are not enough to declare that a durable, AI\u2011driven acceleration in productivity growth has been established.\n\nBecause the **timeframe the predictor specified (\u201ccoming years\u201d) has not yet elapsed** and any causal impact of AI on trend productivity growth cannot yet be robustly established, the correct classification is **\u201cinconclusive (too early)\u201d**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction's baseline holds: U.S. nonfarm business sector labor productivity index (2017=100) rose from approximately 96 in Q1 2015 to 115.2 in Q1 2025 (implied ~20% over decade, consistent with BLS/FRED data and historical ~1.5-1.8% annual growth). Post-podcast (Feb 2025, near Q1 end): index dipped to 115.206 in Q1 2025 (-1.8% q/q annualized), then rose to 116.143 in Q2 (+3.3% q/q, +1.5% y/y; BLS Sep 4, 2025 release [https://www.bls.gov/news.release/prod2.nr0.htm]). Q3 2025 data scheduled Nov 6 but unavailable here. Only 9 months passed; quarterly volatility common, insufficient for 'coming years' or confirming AI-boosted *rate* (speculative articles note potential [e.g., Anthropic, Goldman Sachs], but no causal data). Too early to assess."
+    },
+    {
+      "id": "D-01:08:44.600",
+      "result": "inconclusive",
+      "explanation": "The prediction\u2019s time horizon is *\u201cover the next couple of years\u201d* from the release of Evo2 (and the podcast date was 21 Feb 2025). A \u201ccouple of years\u201d implies roughly until early 2027. As of today (30 Nov 2025), that window has **not** elapsed, so we cannot fairly judge whether there will be a \u201cCambrian explosion\u201d of practical applications built on DNA-based foundation models analogous to the GPT\u20112/3 app wave.\n\nSome early activity around biology foundation models is visible in 2024\u20132025 (e.g., models such as Evo/Evo-2 and other protein/DNA design models, with initial tools and startups building on them), but the prediction explicitly concerns what happens *over* the next few years, not just the initial year after release. Because the forecast period is still in progress, the correct status is that it is too early to call.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Evo2 was released on February 19, 2025, by Arc Institute ([source](https://arcinstitute.org/news/evo2), [bioRxiv preprint](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1)). The podcast prediction (Feb 21, 2025) anticipated a 'Cambrian explosion' of practical applications over the next ~2 years (to ~Feb 2027). Current date (Dec 1, 2025) is only 9.5 months post-release, insufficient for full assessment. Limited evidence of applications: NVIDIA fine-tuned variants ([BioNeMo](https://nvidia.github.io/bionemo-framework/models/evo2/)); iGEM 2025 team fine-tuned for synbio ([iGEM wiki](https://2025.igem.wiki/hpi-potsdam/model)); Goodfire AI for phylogeny (Aug 2025, [Goodfire](https://www.goodfire.ai/research/phylogeny-manifold)); Arc's own phage design (Sep 2025 ARK newsletter). No signs of rapid proliferation (e.g., startups, tools, apps) akin to GPT-3 ecosystem. Web searches for 'Evo2 applications', 'fine-tuned Evo2', 'startups using Evo2' yield mostly research/potential discussions, no explosion ([SynBioBeta](https://www.synbiobeta.com/read/evo2-one-bio-ai-model-to-rule-them-all), [GitHub](https://github.com/ArcInstitute/evo2)). Too early to judge."
+    },
+    {
+      "id": "D-01:11:13.450",
+      "result": "inconclusive",
+      "explanation": "Available evidence as of **30 Nov 2025** shows:\n\n1. **Arc\u2019s financial position today**  \n   Arc launched in 2021 with more than **$650M in philanthropic funding**, described in public materials as an endowment-scale pool intended to fully sustain its scientists for renewable eight\u2011year terms, with additional fundraising since then. This is philanthropic capital, not proceeds from commercial spinouts. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Arc_Institute?utm_source=openai))  \n\n2. **Spinout activity so far**  \n   Arc\u2019s model explicitly includes future for\u2011profit spinouts via its Translational Program, but its own materials and independent coverage focus on scientific tools (e.g., bridge RNA genome editing, the Evo DNA foundation model) rather than on mature commercial products or exits. ([arcinstitute.org](https://arcinstitute.org/model?utm_source=openai))  \n   \n   The clearest example of an Arc\u2011connected biotech startup is **Stylus Medicine**, which emerged from stealth in 2025 with an $85M Series A; its scientific foundation comes from academic founders including Arc co\u2011founder Patrick Hsu. This is an early\u2011stage therapeutics company with no approved drugs, revenues, or exit on anything like *Moderna* or *Ozempic* scale. ([app.dealroom.co](https://app.dealroom.co/companies/stylus_medicine?utm_source=openai))  \n\n3. **No Moderna/Ozempic\u2011scale outcome yet**  \n   Broad searches for Arc\u2011related spinouts, IPOs, acquisitions, or approved blockbuster drugs find **no evidence** that any Arc\u2011originated company has yet achieved a market cap, product revenue, or exit comparable to Moderna or Ozempic by late 2025. Coverage of Arc remains about research breakthroughs and partnerships (e.g., Nvidia) rather than monetization or massive liquidity events. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Arc_Institute?utm_source=openai))  \n\nBecause the prediction is explicitly **conditional and long\u2011term** \u2014 *if* a spinout reaches Moderna/Ozempic\u2011level success, *then* its returns could endow Arc and make it self\u2011sustaining \u2014 the relevant antecedent (a blockbuster Arc spinout) **has not occurred yet**, and realistically could take a decade or more to materialize.\n\nSo we **cannot** assess whether the claimed financial consequence would follow; we can only say that the condition has not yet been met. Given the long time horizon and the absence of a qualifying spinout so far, the status of this prediction is **\u201ctoo early to tell.\u201d",
+      "sources": [
+        {
+          "end_index": 530,
+          "start_index": 447,
+          "title": "Arc Institute",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Arc_Institute?utm_source=openai"
+        },
+        {
+          "end_index": 922,
+          "start_index": 852,
+          "title": "The Arc Model | Arc Institute",
+          "type": "url_citation",
+          "url": "https://arcinstitute.org/model?utm_source=openai"
+        },
+        {
+          "end_index": 1387,
+          "start_index": 1299,
+          "title": "Stylus Medicine company information, funding & investors | Dealroom.co",
+          "type": "url_citation",
+          "url": "https://app.dealroom.co/companies/stylus_medicine?utm_source=openai"
+        },
+        {
+          "end_index": 1912,
+          "start_index": 1829,
+          "title": "Arc Institute",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Arc_Institute?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is conditional on an Arc Institute spinout achieving 'Moderna or Ozempic' level success (blockbuster biotech: e.g., multi-billion market cap/revenues). No such spinout exists as of Dec 2025. Searches reveal Arc plans spinouts ([arcinstitute.org/model]), possible early links like Tahoe Therapeutics ($30M raise, Aug 2025; [forbes.com/sites/alexknapp/2025/08/11/...]), but none blockbuster. Biotech timelines (trials/approvals) make this unlikely in ~10 months. Arc has $650M donor endowment for self-sustenance ([arcinstitute.org/about], [en.wikipedia.org/wiki/Arc_Institute]), but prediction specifies spinout returns. Condition unmet; too early. **Sources:** arcinstitute.org, Wikipedia, Forbes (Tahoe), BioSpace, STAT News."
+    },
+    {
+      "id": "K-01:30:27.100",
+      "result": "inconclusive",
+      "explanation": "The asteroid in question is 2024 YR4, an Apollo\u2011type near\u2011Earth object whose orbit crosses Earth\u2019s and which has a possible close approach on 22 December 2032.\n\n\u2022 Around 19\u201320 February 2025, NASA\u2019s Center for Near\u2011Earth Object Studies (via Sentry) and ESA indeed reported that 2024 YR4 had an impact probability of about 1.5% for 2032, with an estimated size roughly 40\u201390 m (\u2248130\u2013300 ft) across. Multiple outlets summarized this as a 1.5% chance of impact after a peak of about 3.1%, matching Friedberg\u2019s \u201c~1.5%\u201d description tied explicitly to the then\u2011current trajectory estimates. ([snopes.com](https://www.snopes.com/news/2025/02/21/nasa-asteroid-hitting-earth-2032/?utm_source=openai))\n\n\u2022 Within days, new observations rapidly drove the modeled impact probability down: Sky at Night and other sources note that the chance fell from 3.1% to 1.5% on 19 Feb, to 0.28% on 20 Feb, and then to about 0.005% by 23 Feb 2025. ([skyatnightmagazine.com](https://www.skyatnightmagazine.com/space-science/asteroid-2024-yr4?utm_source=openai)) Subsequently, NASA and ESA further reduced the risk to roughly 0.001\u20130.004%, effectively zero, and the object was downgraded to Torino Scale 0. ([apnews.com](https://apnews.com/article/cce39c01ab94ac1edae00024dc35169c?utm_source=openai))\n\n\u2022 Energy\u2011yield estimates from NASA\u2011linked analyses and expert commentary put a 40\u201390 m stony asteroid like 2024 YR4 in the rough range of ~7\u201310 megatons of TNT if it actually hit Earth\u2014enough for severe city\u2011scale damage but not a global catastrophe. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_YR4?utm_source=openai)) Friedberg\u2019s \u201cup to ~20 megatons if it\u2019s near 300 feet\u201d is a back\u2011of\u2011the\u2011envelope extrapolation from the upper end of the size range and cannot be directly validated or falsified without an actual impact.\n\n\u2022 Crucially, the core of his statement is a probabilistic forecast about *whether* the asteroid will hit Earth in 2032 and, if so, the chance of human casualties. As of 30 November 2025, 2032 is still in the future, and 2024 YR4 has obviously not impacted Earth yet. The updated orbital solutions now imply an extremely small impact probability, but whether the true physical outcome in 2032 is \u201cno impact\u201d (which would mean the real ex ante probability was effectively near zero) cannot be definitively judged until after that date.\n\nBecause the underlying event (any 2032 impact and associated loss of life) has not yet occurred, the correctness of Friedberg\u2019s *forecasted* 1.5% impact chance and ~15% conditional fatality chance cannot be empirically evaluated. His descriptive claim about the then\u2011current NASA estimate (~1.5%) was accurate, but the predictive content about the actual 2032 outcome remains untestable at this time. Hence the status is **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 732,
+          "start_index": 626,
+          "title": "Why NASA keeps changing the probability of an asteroid impacting Earth in 2032 | Snopes.com",
+          "type": "url_citation",
+          "url": "https://www.snopes.com/news/2025/02/21/nasa-asteroid-hitting-earth-2032/?utm_source=openai"
+        },
+        {
+          "end_index": 1078,
+          "start_index": 966,
+          "title": "Asteroid 2024 YR4 and chance of hitting Earth, according to NASA | BBC Sky at Night Magazine",
+          "type": "url_citation",
+          "url": "https://www.skyatnightmagazine.com/space-science/asteroid-2024-yr4?utm_source=openai"
+        },
+        {
+          "end_index": 1316,
+          "start_index": 1223,
+          "title": "Asteroid 2024 YR4 is no longer a threat to Earth, scientists say",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/cce39c01ab94ac1edae00024dc35169c?utm_source=openai"
+        },
+        {
+          "end_index": 1649,
+          "start_index": 1571,
+          "title": "2024 YR4",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_YR4?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction accurately reported the scientific consensus around February 21, 2025, for asteroid 2024 YR4. NASA's JPL update on February 19, 2025, listed exactly a 1.5% (1-in-67) Earth impact probability for December 22, 2032 ([Wikipedia impact table](https://en.wikipedia.org/wiki/2024_YR4)). Initial size estimates were 40-90 m (130-300 ft), matching the quote ([NASA Science](https://science.nasa.gov/solar-system/asteroids/2024-yr4/), [Forbes Feb 18](https://www.forbes.com/sites/jamiecartereurope/2025/02/18/what-happens-if-asteroid-2024-yr4-strikes-earth---and-why-we-cant-nuke-it/)). Energy release for the upper size end was estimated up to 20-30 megatons ([AAS Nova Apr 1](https://aasnova.org/2025/04/01/an-update-on-asteroid-2024-yr4-from-jwst/); nominal ~7.7 Mt per [Astronomy.com Feb 20](https://www.astronomy.com/science/asteroid-2024-yr4s-odds-of-hitting-earth-just-got-a-lot-smaller/)). The 15% conditional loss-of-life probability is a reasonable speaker estimate for an airburst over populated areas (damage radius up to 50 km, but high ocean-hit chance; no official figure contradicts). Subsequent observations reduced Earth risk to near-zero by late Feb 2025, but the Feb 2025 snapshot was correct."
+    },
+    {
+      "id": "K-01:35:38.730",
+      "result": "right",
+      "explanation": "NASA\u2019s own Planetary Defense blog update on Feb. 20, 2025 reports that observations overnight on Feb. 19\u201320 reduced asteroid 2024 YR4\u2019s chance of impacting Earth on Dec. 22, 2032 to **0.28% (about 1 in 360)**, i.e., slightly under one\u2011third of one percent. Independent coverage of the same NASA update likewise cites a new impact probability of **0.28\u20130.3%**, often rounded to 0.3%, and describes it as \u201cabout 0.3%.\u201d This is consistent with Friedberg\u2019s wording that NASA had \u201cdropped the probability \u2026 to about a one third of 1%,\u201d so his characterization of the updated February 2025 NASA assessment is essentially accurate, even though NASA later reduced the probability much further (to ~0.004%) in subsequent days.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "The statement accurately reports NASA's updated assessment from February 19-20, 2025, which lowered the Earth impact probability for asteroid 2024 YR4 (close approach Dec. 22, 2032) to 0.28% per NASA's official channels. This matches 'approximately 0.33%' or 'one third of 1%'. Sources: [NASA Science blog](https://science.nasa.gov/blogs/planetary-defense/) (Feb 2025 archives note 0.28%); [NASA Facebook](https://www.facebook.com/NASA/posts/feb-20-update-new-data-gathered-last-night-feb-19-20-dropped-the-december-2032-i/1181950163300358/) (Feb 20: 0.28%); [USA Today](https://www.usatoday.com/story/news/nation/2025/02/21/nasa-odds-2024-yr4-asteroid-city-killer/79333551007/) (Feb 21: 0.28%); [Wikipedia 2024 YR4](https://en.wikipedia.org/wiki/2024_YR4) (JPL Feb 21: ~0.27%). Prior odds were higher (e.g., 3.1% on Feb 18), confirming the 'dropped' update."
+    },
+    {
+      "id": "E-01:40:46.830",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, it has been a little over 9 months since the recording date (February 21, 2025), so the 10\u2011year (2035) and 20\u2011year (2045) horizons have not yet arrived.\n\nCurrent evidence shows that the same founders are still running Stripe:\n- CNBC\u2019s 2025 Disruptor 50 profile lists **Patrick Collison (CEO)** and **John Collison** as the founders leading Stripe. ([cnbc.com](https://www.cnbc.com/2025/06/10/stripe-2025-cnbc-disruptor-50.html?utm_source=openai))\n- An org\u2011chart profile and multiple 2025 news articles describe Patrick Collison as **Co\u2011Founder & CEO of Stripe**. ([theorg.com](https://theorg.com/org/stripe/org-chart/patrick-collison?utm_source=openai))\n\nSince both future checkpoints (10 and 20 years out) are still in the future, we cannot yet know whether these leaders will *still* be running Stripe at those times, even though they currently are. Therefore the prediction\u2019s correctness cannot be evaluated yet and is **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 514,
+          "start_index": 416,
+          "title": "Stripe: 2025 CNBC Disruptor 50",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/06/10/stripe-2025-cnbc-disruptor-50.html?utm_source=openai"
+        },
+        {
+          "end_index": 722,
+          "start_index": 632,
+          "title": "Patrick Collison - Co-Founder & CEO at Stripe | The Org",
+          "type": "url_citation",
+          "url": "https://theorg.com/org/stripe/org-chart/patrick-collison?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction states that Stripe's founders/executives (likely Patrick and John Collison) will still be running the company in Feb 2035 (10 years) and Feb 2045 (20 years). As of Dec 1, 2025, only ~9.5 months have passed since the Feb 21, 2025 podcast, making it too early to verify. Current sources confirm they remain CEO (Patrick) and President (John): [Stripe Sessions AMA, May 2025](https://stripe.com/sessions/2025/ama-with-patrick-and-john-collison); [Irish Times, Oct 2025](https://www.irishtimes.com/life-style/people/2025/10/25/john-collison-of-stripe-ireland-is-going-backwards-heres-how-to-get-it-moving/); [Wikipedia](https://en.wikipedia.org/wiki/Patrick_Collison). No reports of departure."
+    },
+    {
+      "id": "A-01:41:51.690",
+      "result": "inconclusive",
+      "explanation": "As of late 2025, Stripe has **not** completed an initial public offering and remains a privately held company; multiple recent overviews of the company and its anticipated IPO explicitly note that there is still no IPO date or SEC filing and that Stripe is not yet publicly traded. ([fool.com](https://www.fool.com/investing/how-to-invest/stocks/how-to-invest-in-stripe/?utm_source=openai))  \n\nJason\u2019s prediction was that *\u201cStripe\u2019s going public in 2050\u201d*, interpreted as a specific future IPO year. Because:\n\n- 2050 is still in the future relative to today (November 30, 2025), and  \n- Stripe has not yet gone public in any **other** year (which would clearly falsify the 2050-specific prediction),  \n\nwe can\u2019t yet determine whether Stripe will in fact IPO in 2050 or at some other time (or never). Thus, the accuracy of the prediction **cannot currently be evaluated** and is best labeled **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 430,
+          "start_index": 322,
+          "title": "Can You Invest in Stripe in 2025? Pre-IPO Details | The Motley Fool",
+          "type": "url_citation",
+          "url": "https://www.fool.com/investing/how-to-invest/stocks/how-to-invest-in-stripe/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for Stripe to IPO specifically in 2050. With the current date being December 1, 2025\u201425 years early\u2014it is too soon to verify. Stripe remains privately held as of late 2025, with no IPO completed ([Motley Fool, late 2025](https://www.fool.com/investing/how-to-invest/stocks/how-to-invest-in-stripe/); [Fintech Weekly, Aug 2025](https://www.fintechweekly.com/magazine/articles/stripe-valuation-in-2025); multiple sources speculate on 2025/2026 IPO but confirm none occurred)."
+    },
+    {
+      "id": "A-01:42:36.000",
+      "result": "right",
+      "explanation": "Evidence shows that the core elements of Jason\u2019s prediction did occur:\n\n- The All-In team hosted **\u201cAll-In Live: Austin\u201d** on **Thursday, March 13** at the **Rollins Studio Theatre at The Long Center in Austin, TX**, with doors at 5pm and show at 6pm, followed by an **\u201cAll-In SXSW Reception\u201d** at Arena Hall with **open bar, food trucks, poker, music, and networking**\u2014i.e., a casual party with food and drinks for attendees. ([allin.com](https://allin.com/pages/sxsw?utm_source=openai))  SXSW 2025 ran March 7\u201315 in Austin, so March 13 is within the festival window. ([timeout.com](https://www.timeout.com/austin/sxsw-guide?utm_source=openai))\n- The venue (Rollins Studio Theatre) seats roughly **80\u2013229 people** depending on configuration, aligning with Jason\u2019s description of an intimate event with \u201ca couple hundred seats.\u201d ([nowplayingaustin.com](https://nowplayingaustin.com/venue/the-long-center-debra-kevin-rollins-studio-theatre/?utm_source=openai))\n- The live show was released as the episode **\u201cAll-In Live from Austin: Colin and Samir, Chris Williamson, and Bryan Johnson.\u201d** The episode description and transcript confirm **Jason Calacanis and David Friedberg hosting live from Austin**, with segments explicitly focused on the **creator economy, media evolution, YouTube\u2019s influence, content strategies, and business models for creatives**\u2014substantially matching \u201cthe future of media and building businesses in this new media ecosystem.\u201d ([allin.onpodcastai.com](https://allin.onpodcastai.com/episodes/KAHBn8Gwdeb?utm_source=openai))  The transcript opens with: \u201cFriedberg and Jason are live from Austin!\u201d and notes they \u201cwanted to do something around this sort of new media creator economy,\u201d which closely mirrors Jason\u2019s on-air framing in the earlier episode. ([audioscrape.com](https://www.audioscrape.com/podcast/all-in-with-chamath-jason-sacks--friedberg/episode/all-in-live-from-austin-colin-and-samir-chris-williamson-and-bryan-johnson?utm_source=openai))\n- A tweet (archived via TwiCopy) from the official **This Week in Startups** account recaps **\u201cThe All-In Podcast LIVE @ SXSW\u201d**, explicitly naming **@jason, Chamath Palihapitiya, and david friedberg** on stage with guests Bryan Johnson, Colin & Samir, and Chris Williamson, and mentions a \u201croom full of fans,\u201d corroborating that the live SXSW-affiliated show with Jason and Friedberg did in fact occur and drew a sizable audience. ([twicopy.com](https://twicopy.com/twistartups/tweet/1900366709992939596?utm_source=openai))\n\nWe do not have direct documentation confirming the **$30 application fee via allin.com/events**, but the main factual components Jason predicted\u2014**being in Austin for SXSW on March 13, Jason and Friedberg co-hosting live interviews focused on media/business, and an intimate event with food and drinks for a few hundred people\u2014are all borne out by the available sources.** Therefore, the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 523,
+          "start_index": 462,
+          "title": "All-In - All-In Live: Austin",
+          "type": "url_citation",
+          "url": "https://allin.com/pages/sxsw?utm_source=openai"
+        },
+        {
+          "end_index": 680,
+          "start_index": 604,
+          "title": "The Ultimate Guide to SXSW 2025",
+          "type": "url_citation",
+          "url": "https://www.timeout.com/austin/sxsw-guide?utm_source=openai"
+        },
+        {
+          "end_index": 995,
+          "start_index": 865,
+          "title": "The Long Center: Debra & Kevin Rollins Studio Theatre - NowPlayingAustin.com",
+          "type": "url_citation",
+          "url": "https://nowplayingaustin.com/venue/the-long-center-debra-kevin-rollins-studio-theatre/?utm_source=openai"
+        },
+        {
+          "end_index": 1585,
+          "start_index": 1490,
+          "title": "All-In Live from Austin: Colin and Samir, Chris Williamson, and Bryan Johnson - All-In Podcast",
+          "type": "url_citation",
+          "url": "https://allin.onpodcastai.com/episodes/KAHBn8Gwdeb?utm_source=openai"
+        },
+        {
+          "end_index": 2014,
+          "start_index": 1814,
+          "title": "All-In Live from Austin: Colin and Samir, Chris Williamson, and Bryan Johnson - All-In with Chamath, Jason, Sacks & Friedberg | Transcription & Insights | Audioscrape",
+          "type": "url_citation",
+          "url": "https://www.audioscrape.com/podcast/all-in-with-chamath-jason-sacks--friedberg/episode/all-in-live-from-austin-colin-and-samir-chris-williamson-and-bryan-johnson?utm_source=openai"
+        },
+        {
+          "end_index": 2540,
+          "start_index": 2448,
+          "title": "@twistartups : What a night at @theallinpod LIVE @ SXSW! @Jason, @chamath, and @friedberg were joined by very special guests @bryan_johnson, @ColinandSamir, AND @ChrisWillx. Plus a room full of fans. &bull; TwiCopy",
+          "type": "url_citation",
+          "url": "https://twicopy.com/twistartups/tweet/1900366709992939596?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction came true. Jason Calacanis and David Friedberg hosted 'All-In Live' in Austin on March 13, 2025, during SXSW, featuring a fireside chat (interviews) with guests including Colin & Samir, Chris Williamson, and Bryan Johnson on the future of media and creator economy/business building, followed by a reception/party. The event was intimate (sold out via application, couple hundred capacity implied), at Rollins Studio Theatre from 5-11 PM. Confirmed by official announcements on Instagram ([link](https://www.instagram.com/p/DGZUNIWSIk-/?hl=en)), X ([link](https://x.com/ALLIN_meetups)), River ([link](https://app.getriver.io/events/official-all-in-event-ft-jason-and-friedberg-in-austin-during-sxsw-1ua)), Reddit, and post-event YouTube episode 'All-In Live from Austin' released April 2025 ([YouTube channel](https://www.youtube.com/@allin)), Steno.fm transcript."
+    },
+    {
+      "id": "K-01:13:34.190",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly concerns a *\u201cpost\u2011AI era\u201d* over the coming **decades**, in which AI allegedly makes routine things like:\n\n- Deep mining toward the Earth\u2019s interior (\"500 miles down\") for rare earth minerals\n- Large\u2011scale space projects such as **colonizing the Moon**\n\nAs of **November 30, 2025**, none of this has occurred:\n\n- Current mining operations are limited to relatively shallow depths in the Earth\u2019s crust; there is no technology or active industrial practice approaching hundreds of miles deep extraction for rare earths or anything else.\n- Human activity on the Moon is limited to robotic missions and planning for future crewed missions (e.g., NASA\u2019s Artemis program and various commercial lunar initiatives). There is **no permanent lunar colony or routine colonization activity** in operation yet.\n- AI has advanced rapidly and is being used in engineering, logistics, and scientific research, but it has not yet demonstrably enabled the kind of massive, routine, planetary\u2011scale and space\u2011colonization projects described.\n\nBecause the prediction\u2019s implied time horizon is *\u201cthe post\u2011AI era\u201d over the coming decades*, and we are only in **2025**, it is **too early to determine** whether AI will in fact unlock the level of routine deep\u2011Earth mining and Moon colonization described. The relevant future period has not arrived, and the prediction is not framed to be testable this soon.\n\nTherefore, the status of the prediction is **inconclusive (too early to tell)** given the current date.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for the 'post-AI era' (coming decades), where AI enables routine ultra-deep mining (e.g., 500 miles/~800 km for rare earths) and Moon colonization. As of Dec 2025 (~10 months post-podcast), deepest borehole remains Kola Superdeep at 12.2 km ([Wikipedia](https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole)); deepest mine ~4 km (Mponeng Gold, [Wikipedia](https://en.wikipedia.org/wiki/List_of_deepest_mines)). China's 10.9 km well in Feb 2025 ([SCIO](http://english.scio.gov.cn/m/chinavoices/2025-02/21/content_117725400.html)) far short. Moon: Artemis II flyby 2025, landing 2026, no colonization ([NASA](https://www.nasa.gov/feature/artemis/)). AI aids mining efficiency ([Omdena](https://www.omdena.com/blog/top-24-global-mining-companies-driving-ai-transformation-in-2025)) but not these feats. Too early for long-term prediction."
+    },
+    {
+      "id": "A-01:43:39.350",
+      "result": "wrong",
+      "explanation": "Jason makes the prediction near the end of the Feb. 21, 2025 episode *\u201cThe Stablecoin Future, Milei's Memecoin, DOGE for the DoD, Grok 3, Why Stripe Stays Private,\u201d* saying about Friedberg\u2019s upcoming Celebrity Jeopardy! appearance: **\u201cWe are going to do a recap of every single question.\u201d** ([happyscribe.com](https://www.happyscribe.com/public/all-in-with-chamath-jason-sacks-friedberg/the-stablecoin-future-milei-s-memecoin-doge-for-the-dod-grok-3-why-stripe-stays-private?utm_source=openai))  \n\nFriedberg\u2019s Celebrity Jeopardy! episode then airs the following week (ABC\u2019s Celebrity Jeopardy! for Wednesday, Feb. 26, 2025, discussed in Jeopardy forums and coverage of that game with Ana Navarro and David Friedberg). ([reddit.com](https://www.reddit.com//r/Jeopardy/comments/1iz3cew?utm_source=openai))  \n\nAfter it airs, the All-In hosts do return to the topic in the Mar. 1, 2025 episode *\u201cEpstein Files Flop, State of the Market, Autonomous Robots, Trump's Gold Card, Friedberg on Jeopardy,\u201d* which has a segment explicitly titled **\u201cFriedberg recaps his experience on Celebrity Jeopardy!\u201d** from 4:40\u201314:22. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/epstein-files-flop-state-of-the-market-autonomous-robots-trumps-gold-card-friedberg-on-jeopardy))  However, the transcript of that segment shows they:\n\n- Play and react to a few highlight clues (e.g., the African geography Daily Double about Mount Kilimanjaro and the Hoosiers sports-movie Daily Double),\n- Talk about his nerves, buzzer timing strategy, preparation, and the charity payout,\n- Then move on to the next topic around the 14:22 mark.\n\nThey **do not** systematically walk through each clue from the game or attempt a question\u2011by\u2011question recap; only a handful of specific questions are mentioned before the conversation shifts to other subjects. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/epstein-files-flop-state-of-the-market-autonomous-robots-trumps-gold-card-friedberg-on-jeopardy))  \n\nSearch across later episode descriptions and transcript indices for the All-In feed shows no separate episode or extended segment where they later go back and cover *every* question from Friedberg\u2019s Jeopardy game\u2014this Mar. 1 recap is the only substantial Jeopardy-focused segment. ([everand.com](https://www.everand.com/podcast/834047929/Epstein-Files-Flop-State-of-the-Market-Autonomous-Robots-Trump-s-Gold-Card-Friedberg-on-Jeopardy-0-00-Bestie-intros-1-41-Epstein-files-first?utm_source=openai))  \n\nSince the follow-up content is a general highlight/experience recap and not a comprehensive, question-by-question rundown of the entire episode, Jason\u2019s prediction that they would **\u201cdo a recap of every single question\u201d** did **not** come true.",
+      "sources": [
+        {
+          "end_index": 527,
+          "start_index": 324,
+          "title": "Transcript of The Stablecoin Future, ... | HappyScribe",
+          "type": "url_citation",
+          "url": "https://www.happyscribe.com/public/all-in-with-chamath-jason-sacks-friedberg/the-stablecoin-future-milei-s-memecoin-doge-for-the-dod-grok-3-why-stripe-stays-private?utm_source=openai"
+        },
+        {
+          "end_index": 838,
+          "start_index": 753,
+          "title": "Celebrity Jeopardy! discussion thread for Wed., Feb. 26",
+          "type": "url_citation",
+          "url": "https://www.reddit.com//r/Jeopardy/comments/1iz3cew?utm_source=openai"
+        },
+        {
+          "end_index": 1336,
+          "start_index": 1149,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - Epstein Files Flop, State of the Market, Autonomous Robots, Trump's Gold Card, Friedberg on Jeopardy Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/epstein-files-flop-state-of-the-market-autonomous-robots-trumps-gold-card-friedberg-on-jeopardy"
+        },
+        {
+          "end_index": 2090,
+          "start_index": 1903,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - Epstein Files Flop, State of the Market, Autonomous Robots, Trump's Gold Card, Friedberg on Jeopardy Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/epstein-files-flop-state-of-the-market-autonomous-robots-trumps-gold-card-friedberg-on-jeopardy"
+        },
+        {
+          "end_index": 2594,
+          "start_index": 2377,
+          "title": "Epstein Files Flop, State of the Market, Autonomous Robots, Trump's Gold Card, Friedberg on Jeopardy | All-In with Chamath, Jason, Sacks & Friedberg Podcast",
+          "type": "url_citation",
+          "url": "https://www.everand.com/podcast/834047929/Epstein-Files-Flop-State-of-the-Market-Autonomous-Robots-Trump-s-Gold-Card-Friedberg-on-Jeopardy-0-00-Bestie-intros-1-41-Epstein-files-first?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "David Friedberg's Celebrity Jeopardy! quarterfinal episode aired on Feb 26, 2025 ([IMDb](https://www.imdb.com/title/tt35432838/), [JeopardyFan](https://thejeopardyfan.com/2025/02/celebrity-jeopardy-2-26-2025.html)). He advanced to semifinal (Apr 16) and final (Apr 23, raised $175k for Humane Society; [Jeopardy.com](https://www.jeopardy.com/track/celebrity-jeopardy/season-3)).\n\nAll-In Podcast episode 'Epstein Files Flop...' (Feb 28, 2025; [YouTube](https://www.youtube.com/watch?v=Of-qGF1YsgI)) includes Friedberg recapping his experience (4:40-14:22; [pod.wave.co summary](https://pod.wave.co/podcast/all-in-with-chamath-jason-sacks-friedberg/epstein-files-flop-state-of-the-market-autonomous-robots-trumps-gold-card-friedberg-on-jeopardy)). It covers general highlights (prep, nerves, buzzing, charity), 2 specific clues (Kilimanjaro wager, Hoosiers Daily Double miss), but **not every question**\u2014a general recap, not comprehensive ([YouTube browse](https://www.youtube.com/watch?v=Of-qGF1YsgI)). No such detailed recap for later episodes; only promotions ([X/Twitter](https://x.com/theallinpod/status/1915094371357122595)). Prediction unmet as of Dec 2025."
+    }
+  ]
+}

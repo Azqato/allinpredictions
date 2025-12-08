@@ -1,0 +1,798 @@
+{
+  "meta": {
+    "count": 19,
+    "count_by_result": {
+      "inconclusive": 11,
+      "wrong": 3,
+      "ambiguous": 1,
+      "right": 4
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:21:50.000",
+      "result": "inconclusive",
+      "explanation": "Chamath\u2019s statement is documented in the episode transcript, where he says that within about two years the basic AI building blocks will be standardized, after which the *real* businesses will be built, and that the *Facebook of AI* has not yet been created as of May 2024. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/gpt-4o-launches-glue-demo-ohalo-breakthrough-drucks-argentina-bet-did-google-kill-perplexity?utm_source=openai))\n\nAs of today (30 November 2025), less than two years have elapsed since May 2024, so his core timeline (standardization by roughly May 2026, and dominant application companies arising only after that) has not yet reached its decision point. Architecturally, major players are converging on broadly similar multimodal, transformer-based, agentic models (e.g., OpenAI\u2019s GPT\u20115, Google\u2019s Gemini 2.x/3, Meta\u2019s Llama 4 family), but the ecosystem is still evolving rapidly, and there is no widely agreed industry standard \u201cfinished state\u201d to judge against his forecast. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GPT-5?utm_source=openai))\n\nThere are *some* signs that cut against his narrative: by 2025, OpenAI/ChatGPT already looks like a dominant consumer AI application platform, with hundreds of millions of weekly active users, top positions in app-store downloads, and extensive cultural and economic impact, making it a plausible candidate for the kind of winner he had in mind. ([en.wikipedia.org](https://en.wikipedia.org/wiki/ChatGPT?utm_source=openai)) But because his prediction ties the emergence of the eventual dominant AI application companies specifically to a post\u20112026 period, and we have not yet reached that phase, we cannot definitively say whether his overall forecast will prove right or wrong. Therefore, the prediction is best classified as **inconclusive (too early to judge)**.",
+      "sources": [
+        {
+          "end_index": 516,
+          "start_index": 314,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - GPT-4o launches, Glue demo, Ohalo breakthrough, Druck's Argentina bet, did Google kill Perplexity? Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/gpt-4o-launches-glue-demo-ohalo-breakthrough-drucks-argentina-bet-did-google-kill-perplexity?utm_source=openai"
+        },
+        {
+          "end_index": 1157,
+          "start_index": 1082,
+          "title": "GPT-5",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GPT-5?utm_source=openai"
+        },
+        {
+          "end_index": 1584,
+          "start_index": 1507,
+          "title": "ChatGPT",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/ChatGPT?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction anticipates standardization of AI basic building blocks by ~May 2026 and dominant 'Facebook of AI'-like consumer application companies emerging only around 2026. As of Dec 2025 (19 months post-May 2024), no industry-wide standardization is evident (e.g., [Stanford AI Index 2025](https://hai.stanford.edu/ai-index/2025-ai-index-report) notes ongoing model advancements and rising incidents without standardization; Sequoia Dec 2024 article describes 2025 as 'foundations solidifying' post-2024 'primordial soup'; Bessemer State of AI 2025 mentions converging performance but private evals). ChatGPT leads with ~800M weekly users ([TechCrunch Oct 2025](https://techcrunch.com/2025/10/06/sam-altman-says-chatgpt-has-hit-800m-weekly-active-users/)), but faces competition (Doubao, Gemini; [Backlinko Oct 2025](https://backlinko.com/most-popular-ai-apps)), lacks Facebook-scale dominance/network effects, and no consensus names OpenAI as such ([Stratechery Jun 2025](https://stratechery.com/2025/checking-in-on-ai-and-the-big-five/)). Chamath's 2025 comments suggest ongoing race won by incumbents ([Benzinga Oct 2025](https://www.benzinga.com/markets/equities/25/10/48295274/chamath-palihapitiya-sees-current-tech-giants-having-an-upper-hand-in-ai-wars-google-has-a-huge-runway)). Too early to verify full timeline."
+    },
+    {
+      "id": "H-00:23:21.000",
+      "result": "inconclusive",
+      "explanation": "Only about 1.5 years have passed since the May 17, 2024 prediction, which explicitly talks about an *ongoing* trend of models becoming ~90% cheaper per year and being ~99% cheaper over any two\u2011year span. The first full two\u2011year window (to compare \u201cmodels two years prior\u201d) would end around May 2026, which hasn\u2019t occurred yet.\n\nWe do see substantial price drops and efficiency gains around the time of, and shortly after, the prediction:\n\n- Between the original GPT\u20114 (March 2023) at $30 per million input tokens for the 8k context model and GPT\u20114\u2011Turbo (April 2024) at $10 per million, OpenAI cut the per\u2011token price by about 3\u00d7 in a bit over a year, a ~67% cost reduction but not a full 90%. ([help.openai.com](https://help.openai.com/en/articles/7127956-how-much-does-gpt-4-cost%3F.ejs?utm_source=openai))\n- GPT\u20114o, launched May 2024, was announced as delivering GPT\u20114\u2011level intelligence at *half the cost* and *twice the speed* of GPT\u20114\u2011Turbo, a further ~2\u00d7 drop in price at similar or better quality, but again not a clean 10\u00d7 year\u2011over\u2011year step. ([investopedia.com](https://www.investopedia.com/microsoft-backed-openai-unveils-most-capable-ai-model-gpt-4o-8647639?utm_source=openai))\n- GPT\u20114o mini (July 2024) is priced at $0.15 per million input tokens and $0.60 per million output tokens\u2014roughly two orders of magnitude cheaper than the original GPT\u20114 pricing for frontier\u2011level models\u2014and OpenAI describes it as \u201can order of magnitude more affordable than previous frontier models\u201d while often outperforming GPT\u20114 in chat preferences. ([openai.com](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence//?utm_source=openai))\n- In 2025, newer models like GPT\u20114.1 and o3\u2011mini are described as cheaper than their immediate predecessors (e.g., GPT\u20114.1 about 26% cheaper than GPT\u20114o; o3\u2011mini about 63% cheaper than o1\u2011mini), continuing the downward trend but at increments far short of a consistent 10\u00d7 drop each year. ([theverge.com](https://www.theverge.com/news/647896/openai-chatgpt-gpt-4-1-mini-nano-launch-availability?utm_source=openai))\n\nHowever, the prediction is about *future* sustained rates (\u201cwill continue to become about 90% cheaper every year \u2026 every two years these things are gonna be 99% cheaper and better\u201d), not just the one\u2011off transition up to GPT\u20114o. We have:\n\n- Less than the two years he explicitly uses as the benchmark window.\n- No standardized, industry\u2011wide metric for \u201ccost to run\u201d across all \u201cAI foundation models,\u201d since provider prices mix model quality, context length, and product strategy.\n\nBecause (a) the forecast period he specifies has not fully elapsed, and (b) existing data, while showing large cost reductions, is not sufficient to confirm or falsify a *continuing* ~90%\u2011per\u2011year drop, the status of this prediction as of November 30, 2025 is **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 852,
+          "start_index": 738,
+          "title": "How much does GPT-4 cost? | OpenAI Help Center",
+          "type": "url_citation",
+          "url": "https://help.openai.com/en/articles/7127956-how-much-does-gpt-4-cost%3F.ejs?utm_source=openai"
+        },
+        {
+          "end_index": 1235,
+          "start_index": 1098,
+          "title": "Microsoft-Backed OpenAI Unveils Most Capable AI Model, GPT-4o",
+          "type": "url_citation",
+          "url": "https://www.investopedia.com/microsoft-backed-openai-unveils-most-capable-ai-model-gpt-4o-8647639?utm_source=openai"
+        },
+        {
+          "end_index": 1701,
+          "start_index": 1591,
+          "title": "GPT-4o mini: advancing cost-efficient intelligence | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence//?utm_source=openai"
+        },
+        {
+          "end_index": 2117,
+          "start_index": 1992,
+          "title": "OpenAI debuts its GPT-4.1 flagship AI model",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/647896/openai-chatgpt-gpt-4-1-mini-nano-launch-availability?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction has held true based on data through mid-2025. Epoch AI reports LLM inference prices for state-of-the-art models fell 9x-900x per year (median 50x/year) across benchmarks like MMLU, GPQA, MATH from 2022-2025, accelerating post-2024 to median 200x/year for equivalent performance ([Epoch AI](https://epoch.ai/data-insights/llm-inference-price-trends)). a16z confirms ~10x annual reduction (90% cheaper/year) for equivalent MMLU performance, e.g., 1000x drop 2021-2024 from $60/M to $0.06/M tokens ([a16z LLMflation](https://a16z.com/llmflation-llm-inference-cost/)). OpenAI frontier pricing evolved: GPT-4o (~$2.50-$5/M input 2024) to GPT-4.1/GPT-5 variants ($1.25-$3/M input by 2025), with cheaper alternatives like DeepSeek/Llama achieving/bettering prior perf at <10% cost. Models also improved (e.g., o1, GPT-5 series). 1.5 years post-May 2024 aligns with >10x effective reduction for equiv. perf."
+    },
+    {
+      "id": "H-00:23:40.000",
+      "result": "wrong",
+      "explanation": "OpenAI has indeed pushed more powerful models and tools into the free tier (for example, making GPT\u20114o and several advanced capabilities available to ChatGPT Free users), which aligns partially with the \u201cmake it free or close to free\u201d part of the prediction. ([openai.com](https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/?utm_source=openai)) However, the company still clearly relies on large numbers of *individual* paid subscribers via Plus and Pro plans: as of July 2025 around 35 million users (about 5% of weekly actives) were paying $20 or $200 per month for these individual tiers, and OpenAI internally projects around 220 million paying ChatGPT subscribers by 2030. ([cio.economictimes.indiatimes.com](https://cio.economictimes.indiatimes.com/news/next-gen-technologies/openai-projects-220-million-paying-chatgpt-users-by-2030/125578931?utm_source=openai)) OpenAI\u2019s own pricing page in late 2025 still positions Free as limited, with substantial additional reasoning power, usage, memory, and tools reserved for individual Plus and Pro users at $20 and $200 per month, respectively. ([openai.com](https://openai.com/business/chatgpt-pricing/?utm_source=openai)) While OpenAI also sells multi\u2011user \u201cTeam,\u201d \u201cEnterprise,\u201d and other business offerings that emphasize collaboration, these exist *alongside* and not instead of a major consumer subscription business, and the firm is also exploring new revenue such as shopping and advertising features. ([openai.com](https://openai.com/index/introducing-chatgpt-team?utm_source=openai)) Given that individual subscriptions remain central to both current revenue and long\u2011term projections, the specific prediction that OpenAI would \u201cmaybe just charge for a multiplayer version\u201d does not match the observable strategy as of late 2025.",
+      "sources": [
+        {
+          "end_index": 389,
+          "start_index": 292,
+          "title": "Introducing GPT-4o and more tools to ChatGPT free users | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/?utm_source=openai"
+        },
+        {
+          "end_index": 913,
+          "start_index": 723,
+          "title": "OpenAI projects 220 million paying ChatGPT users by 2030, ETCIO",
+          "type": "url_citation",
+          "url": "https://cio.economictimes.indiatimes.com/news/next-gen-technologies/openai-projects-220-million-paying-chatgpt-users-by-2030/125578931?utm_source=openai"
+        },
+        {
+          "end_index": 1218,
+          "start_index": 1140,
+          "title": "ChatGPT Pricing | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/business/chatgpt-pricing/?utm_source=openai"
+        },
+        {
+          "end_index": 1587,
+          "start_index": 1504,
+          "title": "Introducing ChatGPT Team | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/index/introducing-chatgpt-team?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Core individual usage of ChatGPT is effectively free via the Free tier, providing basic access to GPT-5.1, messages, chat history, and features like search/canvas/projects (limited) \u2014 matching the first part of the prediction ([ChatGPT Pricing](https://chatgpt.com/pricing)). However, OpenAI does not monetize *primarily* via multi-user/collaborative versions. Paid individual tiers (Plus $20/mo, Pro $200/mo) drive the largest revenue share (~55-65% from subscriptions, dominated by ~20M Plus subscribers generating ~$4.8B ARR; [Saastr $12B ARR analysis](https://www.saastr.com/openai-crosses-12-billion-arr-the-3-year-sprint-that-redefined-whats-possible-in-scaling-software/), [LinkedIn breakdown](https://www.linkedin.com/posts/manu-sinha_here-is-the-cost-breakdown-from-chatgpt-about-activity-7363773154659364865-8I-b), [Nerdynav stats](https://nerdynav.com/chatgpt-statistics/)). Multi-user (Business $25/user/mo, Enterprise custom) has 7M seats (~25-30% revenue; [OpenAI blog](https://openai.com/index/1-million-businesses-putting-ai-to-work/)), with collaborative features (shared projects/workspaces) limited to those tiers. API adds 15-25%. No evidence primary shift occurred by Dec 2025."
+    },
+    {
+      "id": "C-00:23:21.350",
+      "result": "inconclusive",
+      "explanation": "As of 30 November 2025, OpenAI\u2019s *current* revenue mix still appears to be dominated by subscriptions to ChatGPT rather than by a B2B app\u2011platform model, but the company is clearly pushing harder into B2B, so it\u2019s too early to judge the long\u2011term claim.\n\nKey evidence:\n- Multiple analyses report that the majority of OpenAI\u2019s revenue comes from ChatGPT subscriptions (Plus, Team, Enterprise). One strategy analysis notes that product subscriptions (ChatGPT Plus/Team/Enterprise) make up the bulk of revenue, while API usage is a smaller portion. ([deepstarstrategic.com](https://www.deepstarstrategic.com/insights/openai-platform-consolidation-pattern?utm_source=openai))  An essay summarizing reporting from *The Information* similarly estimates that **over 70%** of OpenAI\u2019s revenue comes from premium ChatGPT access. ([johncandeto.com](https://johncandeto.com/information-flow/openai-is-a-bad-business?utm_source=openai))  A *Financial Times* piece from mid\u20112025 says OpenAI\u2019s ARR nearly doubled to $10B, driven largely by demand for ChatGPT subscriptions, again underscoring subscription\u2011centric economics. ([ft.com](https://www.ft.com/content/1ffc5fe7-6872-42a0-8b98-dc685f9c33c6?utm_source=openai))  Reuters, citing *The Information*, also frames OpenAI\u2019s long\u2011term projections in terms of hundreds of millions of paying ChatGPT subscribers by 2030, positioning ChatGPT as one of the world\u2019s largest subscription services. ([reuters.com](https://www.reuters.com/technology/openai-projected-least-220-million-people-will-pay-chatgpt-by-2030-information-2025-11-26/?utm_source=openai))  Collectively, this suggests that, so far, the **primary business model has *not* moved away from subscription access to ChatGPT.**\n- At the same time, OpenAI is clearly intensifying its B2B focus: it has a dedicated \"Growth & GTM Strategy \u2013 B2B Monetization\" team tasked with shaping commercial strategy across B2B channels, including pricing, packaging, and enterprise GTM. ([openai.com](https://openai.com/careers/growth-and-gtm-strategy-b2b-monetization/?utm_source=openai))  There are also large\u2011scale enterprise and platform deals (e.g., PwC\u2011sold enterprise offerings, Intuit\u2019s multiyear strategic partnership, and a $100M+ agents/AI\u2011services partnership with Databricks) that are explicitly about monetizing business use and embedding OpenAI models into other companies\u2019 products. ([johncandeto.com](https://johncandeto.com/information-flow/openai-is-a-bad-business?utm_source=openai))  These moves support the *directional* part of the prediction (\u201cmove in more of a B2B direction\u201d).\n- Regarding \u201cmonetizing all the apps that are built on top of it\u201d: OpenAI launched the GPT Store in January 2024, allowing third parties to create and publish custom GPTs and introducing a builder revenue program where creators are paid based on engagement. ([openai.com](https://openai.com/index/introducing-the-gpt-store/?utm_source=openai))  This is indeed a platform for apps built on top of OpenAI models, but available reporting focuses on it as an additional ecosystem and creator\u2011payout mechanism; there is no strong evidence that **OpenAI\u2019s main revenue now comes from taking a cut of third\u2011party apps**, as opposed to continuing to monetize via ChatGPT subscriptions (consumer and business tiers) and direct API/enterprise contracts.\n\nPutting this together:\n- **Parts that are directionally supported:** OpenAI *has* moved more into B2B (enterprise tiers, big corporate partnerships, dedicated B2B monetization org). That aligns with the prediction\u2019s general direction of a stronger B2B focus.\n- **Parts not yet observed:** Available data indicates that ChatGPT subscriptions (a mix of B2C and seat\u2011based B2B) still account for the majority of revenue, so we do *not* yet see a clear shift of the *primary* business model away from subscription access. Nor is there evidence that revenue from monetizing third\u2011party apps built on top of OpenAI (via the GPT Store, etc.) has become the main business model.\n- **Time horizon:** The prediction is explicitly framed as a long\u2011term, \u201cover time\u201d shift. Given that only ~18 months have passed since the May 2024 podcast and OpenAI is still rapidly evolving, the current evidence doesn\u2019t conclusively validate or falsify a long\u2011run business\u2011model change.\n\nBecause (1) the core business is still subscription\u2011centric today, but (2) OpenAI is clearly moving more deeply into B2B and platform plays, and (3) the prediction is explicitly long\u2011term, the fairest judgment as of late 2025 is that it\u2019s **too early to tell** whether Sacks\u2019s full prediction will ultimately be correct.",
+      "sources": [
+        {
+          "end_index": 714,
+          "start_index": 589,
+          "title": "The OpenAI Platform Consolidation Pattern: Learning From Microsoft, AWS, and Meta | Deepstar Strategic",
+          "type": "url_citation",
+          "url": "https://www.deepstarstrategic.com/insights/openai-platform-consolidation-pattern?utm_source=openai"
+        },
+        {
+          "end_index": 967,
+          "start_index": 863,
+          "title": "Essay | Edward Zitron | OpenAI Is A Bad Business",
+          "type": "url_citation",
+          "url": "https://johncandeto.com/information-flow/openai-is-a-bad-business?utm_source=openai"
+        },
+        {
+          "end_index": 1247,
+          "start_index": 1154,
+          "title": "OpenAI expects subscription revenue to nearly double to $10bn",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/1ffc5fe7-6872-42a0-8b98-dc685f9c33c6?utm_source=openai"
+        },
+        {
+          "end_index": 1632,
+          "start_index": 1472,
+          "title": "OpenAI projects 220 million paying ChatGPT users by 2030, The Information Reports",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/openai-projected-least-220-million-people-will-pay-chatgpt-by-2030-information-2025-11-26/?utm_source=openai"
+        },
+        {
+          "end_index": 2114,
+          "start_index": 2012,
+          "title": "Growth & GTM Strategy - B2B Monetization | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/careers/growth-and-gtm-strategy-b2b-monetization/?utm_source=openai"
+        },
+        {
+          "end_index": 2528,
+          "start_index": 2424,
+          "title": "Essay | Edward Zitron | OpenAI Is A Bad Business",
+          "type": "url_citation",
+          "url": "https://johncandeto.com/information-flow/openai-is-a-bad-business?utm_source=openai"
+        },
+        {
+          "end_index": 2972,
+          "start_index": 2887,
+          "title": "Introducing the GPT Store | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/index/introducing-the-gpt-store/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "OpenAI's revenue remains heavily reliant on direct B2C subscriptions (e.g., ChatGPT Plus/Pro). As of late 2025, sources indicate consumer subscriptions comprise 55-75% of revenue: Guardian (Nov 2025) states 75%; Observer (Nov 2025) 55-60%; mid-2025 LinkedIn post notes even split between consumer subs and enterprise/API (~$12B ARR total). 2024 data (Bloomberg Oct 2024, CFO Sarah Friar) showed 75% consumer. No evidence of primary shift to B2B or new monetization of third-party apps beyond longstanding API usage fees. Enterprise growth noted (3M business users, SaaStr Aug 2025), but B2C subs still dominant. [Sources: Bloomberg, Guardian, Observer, LinkedIn post, Medium breakdown (73% ChatGPT subs in 2024 incl. some business), Sacra]."
+    },
+    {
+      "id": "C-00:26:10.130",
+      "result": "ambiguous",
+      "explanation": "Evidence since GPT\u20114o\u2019s May 2024 launch shows that frontier foundation models *have* rapidly become the core of many new and existing customer\u2011support agents, but there isn\u2019t clear, measurable proof that **most** of the R&D from the previous 2\u20135 years is now obsolete or that new 2024\u2011era startups have a durable structural advantage.\n\n**What clearly did happen**\n\n- GPT\u20114o and GPT\u20114o mini were explicitly positioned and priced for high\u2011volume automation use cases like customer\u2011service agents; OpenAI and industry coverage highlight customer\u2011support automation as a prime application, with lower costs and better latency than earlier models. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Products_and_applications_of_OpenAI?utm_source=openai))  Case\u2011study style pieces describe GPT\u20114o cutting support costs and handling large fractions of customer inquiries for companies like Octopus Energy or Lunar Bank, reinforcing that these models are now central to modern support stacks. ([ptolemay.com](https://www.ptolemay.com/post/what-is-chatgpt-omni-used-for-top-benefits-for-your-business?utm_source=openai))\n- Major CX platforms such as Zendesk quickly rolled GPT\u20114o into production. Zendesk announced in May 2024 that it rolled out GPT\u20114o across its AI offering within 24 hours to improve speed and quality for bots and agents. ([zendesk.com](https://www.zendesk.com/newsroom/articles/gpt-4o/?utm_source=openai))  By March 2025, Zendesk was piloting a new class of agentic AI agents powered by OpenAI models (including GPT\u20114o), explicitly moving away from older intent\u2011based bots toward generative, reasoning\u2011based agents. ([openai.com](https://openai.com/index/zendesk/?utm_source=openai))  This supports the *direction* of Sacks\u2019s claim: older, rule/intent\u2011driven conversational tech is being superseded by LLM\u2011centric agents.\n- Many new tools and indie products for \u201cAI support teams\u201d launched in 2024\u20132025 are built directly on GPT\u20114o, Claude, Gemini, etc., without proprietary base models, and claim high automation rates (e.g., founders reporting ~80% of tickets auto\u2011handled using GPT\u20114o\u2011plus\u2011other\u2011LLMs pipelines). ([reddit.com](https://www.reddit.com/r/aiagents/comments/1kd0yac?utm_source=openai))  This shows that **new entrants can reach strong performance quickly** by standing on top of the latest foundation models, consistent with the idea that the bar for proprietary conversational tech has been raised.\n\n**Why the prediction can\u2019t be cleanly scored as right or wrong**\n\n- Zendesk and similar incumbents are *not* being structurally displaced by 2024\u2011born startups; they are themselves integrating GPT\u20114o and newer models, leveraging extensive pre\u2011existing R&D in routing, workflows, data infrastructure, UI, and distribution. Their own case study emphasizes that they can benchmark and deploy new models (including OpenAI\u2019s reasoning models) in under 24 hours, specifically to *reuse* their existing platform rather than scrap it. ([openai.com](https://openai.com/index/zendesk/?utm_source=openai))  That\u2019s very different from \u201cyour work is obsolete\u201d in the sense of wasted R&D.\n- Industry\u2011level data still show that end\u2011to\u2011end AI agents handle a minority of total customer\u2011service volume; human agents and traditional systems remain the backbone. For example, Gartner\u2019s projection that only about 10% of customer\u2011service interactions will be fully automated by AI by 2026 implies that earlier investments in knowledge bases, workflows, and tooling continue to matter significantly alongside new LLM agents. ([linkedin.com](https://www.linkedin.com/pulse/20-ai-future-call-centers-dino-cajic-ftf2c?utm_source=openai))\n- There is **no public, quantitative evidence** that \u201chundreds of millions of dollars\u201d of R&D from 2019\u20132022 virtual\u2011agent startups has literally \u201cgone out the window.\u201d Many such companies have simply swapped or layered in GPT\u20114/4o (or competitors) under the hood rather than discarding their products entirely; public announcements tend to frame this as an upgrade, not a write\u2011off.\n- Some large enterprises have moved *away* from proprietary access to OpenAI\u2019s models toward custom or open\u2011source stacks for cost, latency, or privacy reasons. A prominent example is AT&T, which initially used ChatGPT/GPT\u20114 to analyze customer\u2011service call summaries, then replaced it with a hybrid system of distilled and open\u2011source models (including Llama 70B), cutting costs to about 35% of the ChatGPT\u2011based solution while retaining most of the accuracy. ([businessinsider.com](https://www.businessinsider.com/att-open-source-ai-better-than-chatgpt-customer-service-calls-2025-5?utm_source=openai))  This suggests that, even post\u2011GPT\u20114o, there is still strategic value in investing in custom modeling rather than that R&D being per se obsolete.\n\n**Net assessment**\n\n- Directionally, Sacks\u2019s intuition\u2014that frontier models like GPT\u20114o would make it much easier for new teams to build high\u2011quality, fast conversational agents and would undermine older, intent\u2011based/hand\u2011rolled conversational tech\u2014has been borne out in practice.\n- However, the *strong form* of the claim (\u201cmost\u201d 2\u20135\u2011year R&D in virtual agents is now obsolete; new GPT\u20114o\u2011era startups have a structural advantage over earlier efforts) is not something we can confirm or falsify from available data: incumbents have generally adapted by integrating the same models, and there\u2019s no systematic evidence that earlier R&D has been rendered worthless or that pre\u20112022 startups are being displaced en masse.\n\nBecause the observable facts support the general *trend* but do not let us decisively judge the **extent** (\u201cmost,\u201d \u201chundreds of millions\u2026 out the window,\u201d \u201cstructural advantage\u201d), the prediction is best classified as **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 789,
+          "start_index": 684,
+          "title": "Products and applications of OpenAI",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Products_and_applications_of_OpenAI?utm_source=openai"
+        },
+        {
+          "end_index": 1151,
+          "start_index": 1025,
+          "title": "What Can ChatGPT Omni Do for Your Startup? The Key Benefits",
+          "type": "url_citation",
+          "url": "https://www.ptolemay.com/post/what-is-chatgpt-omni-used-for-top-benefits-for-your-business?utm_source=openai"
+        },
+        {
+          "end_index": 1458,
+          "start_index": 1374,
+          "title": "Zendesk Rolls Out OpenAI's GPT-4o, Enhancing AI-Powered Customer Interactions",
+          "type": "url_citation",
+          "url": "https://www.zendesk.com/newsroom/articles/gpt-4o/?utm_source=openai"
+        },
+        {
+          "end_index": 1736,
+          "start_index": 1669,
+          "title": "Moving from intent-based bots to proactive AI agents | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/index/zendesk/?utm_source=openai"
+        },
+        {
+          "end_index": 2254,
+          "start_index": 2170,
+          "title": "\ud83d\udea8 Support Tickets Were Killing My Time\u2026 So I Built an AI Support Team That Handles It All",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/aiagents/comments/1kd0yac?utm_source=openai"
+        },
+        {
+          "end_index": 3068,
+          "start_index": 3001,
+          "title": "Moving from intent-based bots to proactive AI agents | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/index/zendesk/?utm_source=openai"
+        },
+        {
+          "end_index": 3688,
+          "start_index": 3579,
+          "title": "20). AI and the Future of Call Centers",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/pulse/20-ai-future-call-centers-dino-cajic-ftf2c?utm_source=openai"
+        },
+        {
+          "end_index": 4679,
+          "start_index": 4536,
+          "title": "AT&T's switch from ChatGPT to open-source AI helped it hang on to thousands of customers",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/att-open-source-ai-better-than-chatgpt-customer-service-calls-2025-5?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction holds: Advances like GPT-4o obsoleted proprietary R&D on core conversational abilities (e.g., custom NLU/dialogue systems from 2019-2022), as firms shifted to foundation models. Simple pre-LLM chatbot builders failed post-ChatGPT/GPT-4o ([Medium: ChatGPT Killed These 3 Startups, Sep 2025](https://hajimohamadi.medium.com/chatgpt-killed-these-3-startups-105552438c8b)). Older players like PolyAI (built own Raven v2 LLM atop foundations, supports GPT [PolyAI blog Aug 2025](https://poly.ai/blog/polyai-raven-v2-large-language-model/)) and Rasa (ongoing 2025 updates integrating modern AI [Rasa blog Jul/Nov 2025](https://rasa.com/blog)) adapted but face challenges from new entrants. Post-2024 startups like Sierra (founded 2023, $100M ARR in 21mo, $350M at $10B val [TechCrunch Sep 2025](https://techcrunch.com/2025/09/04/bret-taylors-sierra-raises-350m-at-a-10b-valuation/)) dominate funding/market share ([Crunchbase Sep 2025](https://news.crunchbase.com/ai/customer-service-venture-funding-data/), [CBInsights Nov 2025: new gen AI challengers](https://www.cbinsights.com/research/report/customer-service-ai-market-share-2025/)). Transition confirmed ([Medium May 2025](https://medium.com/@sam.r.bobo/the-transition-from-conversational-ai-to-generative-ai-4717b44dcd82))."
+    },
+    {
+      "id": "C-00:27:22.780",
+      "result": "right",
+      "explanation": "Evidence since mid\u20112024 supports sacks\u2019s conditional claim that app features which closely overlap with frontier models tend to be wiped out within months of major upgrades.\n\nEven before GPT\u20114o, this pattern was visible: when ChatGPT added native PDF upload and Q&A in late 2023, TechCrunch reported that a single feature change made the core offering of multiple PDF\u2011wrapper startups redundant, sharply undercutting businesses like PDF.ai, ChatPDF, AskYourPDF and similar tools almost overnight. Later analysis of these events describes how those wrappers saw significant usage drops once ChatGPT could do the same job natively. ([techcrunch.com](https://techcrunch.com/2023/11/06/get-the-pdf-outta-here/))\n\nAfter GPT\u20114o\u2019s May 2024 release and its follow\u2011on upgrades, OpenAI rapidly folded more capabilities directly into the base models: real\u2011time multimodal chat, advanced voice agents, cheaper small models like GPT\u20114o\u2011mini, and then native image generation that replaced DALL\u2011E 3 inside ChatGPT. Each wave reduced the gap between what a generic model could do out\u2011of\u2011the\u2011box and what many specialized \u201cAI apps\u201d were selling as standalone products. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Products_and_applications_of_OpenAI?utm_source=openai))\n\nMarket analyses now describe almost exactly what sacks warned about. A 2025 review from Market Clarity estimates that for thin \u201cwrapper\u201d startups, the next GPT iteration creates a high (70\u201380%) chance of serious impact, with the startup\u2019s differentiating features typically absorbed into the platform within 6\u201312 months of a major model release. ([mktclarity.com](https://mktclarity.com/blogs/news/launching-ai-wrapper-reality-check?utm_source=openai)) Another Market Clarity piece documents how previous OpenAI launches immediately threatened successful wrappers, and notes Sam Altman\u2019s explicit warning that companies which merely wrap GPT\u20114 will be \u201csteamrolled\u201d once those features are shipped natively. ([mktclarity.com](https://mktclarity.com/blogs/news/will-ai-wrappers-survive?utm_source=openai))\n\nFounder and investor commentary in 2024\u201325 ties this directly to GPT\u20114o and its peers. A widely shared LinkedIn analysis notes that each time a major LLM update lands\u2014specifically naming GPT\u20114o, Claude 3.5, and Gemini 2\u2014dozens of niche products like generic summarizers, copilots, and research helpers become unnecessary because the base models now perform those tasks better and more cheaply. ([linkedin.com](https://www.linkedin.com/posts/rajeswarikannan_90-of-ai-startups-are-wrappers-who-will-activity-7374530048135061504-4Q3I)) Another investor piece describes many \u201cChatGPT wrapper\u201d founders openly telling VCs they must raise funding before OpenAI ships their entire product as a first\u2011party feature, underscoring that platform obsolescence is already a lived risk, not just a theoretical one. ([linkedin.com](https://www.linkedin.com/posts/deanhoffman_heres-what-nobody-will-say-out-loud-nine-activity-7374063517563371520-U5we?utm_source=openai))\n\nPlenty of application\u2011layer companies are still alive\u2014but the ones surviving are those that add proprietary data, deep workflow integration, or distribution advantages that go beyond what the raw models provide. That is precisely the boundary sacks highlighted between model innovation and app\u2011layer innovation. Given the documented cases where overlapping wrappers were effectively made obsolete within a few months of new GPT\u20114o\u2011class or similar releases, his prediction is borne out by what has actually happened in the market.",
+      "sources": [
+        {
+          "end_index": 742,
+          "start_index": 665,
+          "title": "Startups learn the hard way that relying on OpenAI\u2019s tech can burn them | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2023/11/06/get-the-pdf-outta-here/"
+        },
+        {
+          "end_index": 1295,
+          "start_index": 1190,
+          "title": "Products and applications of OpenAI",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Products_and_applications_of_OpenAI?utm_source=openai"
+        },
+        {
+          "end_index": 1751,
+          "start_index": 1645,
+          "title": "Launching an AI Wrapper Today: (Brutal) Reality Check \u2013 Market Clarity",
+          "type": "url_citation",
+          "url": "https://mktclarity.com/blogs/news/launching-ai-wrapper-reality-check?utm_source=openai"
+        },
+        {
+          "end_index": 2103,
+          "start_index": 2007,
+          "title": "Will AI Wrappers Survive? (28 Data to Understand) \u2013 Market Clarity",
+          "type": "url_citation",
+          "url": "https://mktclarity.com/blogs/news/will-ai-wrappers-survive?utm_source=openai"
+        },
+        {
+          "end_index": 2639,
+          "start_index": 2501,
+          "title": "Most AI startups are wrappers, not moats. Who will be the exception? | Raji Kannan posted on the topic | LinkedIn",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/posts/rajeswarikannan_90-of-ai-startups-are-wrappers-who-will-activity-7374530048135061504-4Q3I"
+        },
+        {
+          "end_index": 3061,
+          "start_index": 2908,
+          "title": "The truth about AI startups: ChatGPT wrappers and VC games | Dean Hoffman posted on the topic | LinkedIn",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/posts/deanhoffman_heres-what-nobody-will-say-out-loud-nine-activity-7374063517563371520-U5we?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction has held true, as numerous AI startups and app features overlapping with native frontier model capabilities have been rendered obsolete shortly after major upgrades. For instance, OpenAI's releases like Agent Kit (Oct 2025) 'killed half the AI agent builder startups' according to Reddit discussions ([r/productivity](https://www.reddit.com/r/productivity/comments/1o2h2vk/openai_just_killed_half_the_ai_agent_builder/), [r/OpenAI](https://www.reddit.com/r/OpenAI/comments/1o2h3xo/openai_just_killed_half_the_ai_agent_builder/)). Similar impacts hit automation tools, meeting note-takers, and wrappers ([r/ProductManagement](https://www.reddit.com/r/ProductManagement/comments/1l3qa69/in_every_release_openai_is_killing_startups_with/)). Broader analyses confirm: '99% of AI Startups Will Be Dead by 2026' due to wrappers lacking moats ([Medium](https://skooloflife.medium.com/99-of-ai-startups-will-be-dead-by-2026-heres-why-bfc974edd968)); '80% of AI Startups Will Disappear by 2026' ([Medium](https://medium.com/@Binoykumarbalan/the-ai-wrapper-problem-why-80-of-ai-startups-will-disappear-by-2026-6b4a873b0ad3)); many failed for dependency on static models ([dev.to](https://dev.to/koolkamalkishor/why-most-ai-startups-will-fail-in-2025-and-what-the-survivors-will-have-in-common-242c)). This pattern emerged within months of upgrades like GPT-4o (May 2024), o1 (Sep 2024), and later tools, aligning precisely with Sacks' warning."
+    },
+    {
+      "id": "A-00:28:35.400",
+      "result": "wrong",
+      "explanation": "Available evidence up to November 2025 does not show the pattern Chamath described.\n\n1. **Companies like Klarna have *not* open\u2011sourced their internal customer\u2011support agents.** Klarna\u2019s widely covered AI assistant (used for two\u2011thirds of its customer\u2011service chats and doing the work of ~700 FTEs) is an internal, OpenAI\u2011powered deployment with no indication that the system or its orchestration code has been released as open source. It remains a proprietary capability used to drive profit improvement for Klarna, not a community project.\n   \n   * Evidence: Klarna\u2019s own press and OpenAI\u2019s case study describe the AI assistant as a Klarna product powered by OpenAI, with no mention of open\u2011sourcing the system or its components.\n   ([klarna.com](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/?utm_source=openai))\n\n2. **The dominant trend for customer\u2011service / internal \u201cagent\u201d systems is proprietary SaaS, not enterprises open\u2011sourcing their own agents.**\n   * Major CX and contact\u2011center vendors \u2014 Intercom (Fin 2), NICE CXone Mpower, Cisco\u2019s Webex AI Agent, Zendesk\u2019s Resolution Platform, Oracle\u2019s AI agents for sales, and others \u2014 are all sold as proprietary products, not open\u2011sourced internal tools handed to the community.([en.wikipedia.org](https://en.wikipedia.org/wiki/Intercom%2C_Inc.?utm_source=openai))\n   * Telecom and large\u2011enterprise use cases similarly do *not* match the prediction. AT&T, for example, switched from ChatGPT to a **hybrid system built on open\u2011source models (H2O.ai + Meta\u2019s Llama 70B)** to analyze customer\u2011service calls, but this is just internal use of open\u2011source components; AT&T has not open\u2011sourced its own end\u2011to\u2011end system.([businessinsider.com](https://www.businessinsider.com/att-open-source-ai-better-than-chatgpt-customer-service-calls-2025-5?utm_source=openai))\n\n3. **Where open source is strong, it is mostly from *AI vendors and research groups*, not ordinary enterprises pushing out their non\u2011core agents.**\n   * Open\u2011weight / open\u2011source models from Meta (Llama 3.x), DeepSeek, AI2\u2019s OLMo, etc., plus tooling like Langtrace, form a vibrant open ecosystem, but these are purpose\u2011built open projects by AI labs and dev\u2011tool startups, not companies dumping internal customer\u2011support agents onto GitHub.([en.wikipedia.org](https://en.wikipedia.org/wiki/Open-source_artificial_intelligence?utm_source=openai))\n   * There *are* open\u2011source customer\u2011support platforms with AI agents (e.g., Chatwoot with its \u201cCaptain\u201d AI agent), but these were conceived as open\u2011source products from the outset. They are not examples of mainstream enterprises open\u2011sourcing their previously internal, non\u2011core AI systems to offload maintenance.([github.com](https://github.com/chatwoot/chatwoot?utm_source=openai))\n\n4. **The broader structure of the AI market contradicts the claim that incentives here push toward open source *more than in prior software markets*.**\n   * Analyses of open\u2011source AI note a mixed landscape: some major models and tools are open or open\u2011weight, but many key components (frontier models, data, and cloud platforms) remain closed and are used to reinforce proprietary ecosystems.([en.wikipedia.org](https://en.wikipedia.org/wiki/Open-source_artificial_intelligence?utm_source=openai))\n   * Historically, previous software eras (e.g., operating systems, web servers, databases) also had massive open\u2011source pushes (Linux, Apache, MySQL, PostgreSQL). Current AI looks *at best* comparable in openness and, in core model access, often *more closed*, not clearly \u201cmore meaningfully\u201d open\u2011source than any other market.\n\nGiven these points, the specific prediction \u2014 that companies building internal, non\u2011core AI systems like customer\u2011support agents will naturally choose to open\u2011source them, driving a uniquely strong open\u2011source infrastructure wave in AI \u2014 has **not materialized** by late 2025 and is contradicted by how most enterprises are actually behaving. Therefore, it is best classified as **wrong**.",
+      "sources": [
+        {
+          "end_index": 934,
+          "start_index": 773,
+          "title": "Klarna AI assistant handles two-thirds of customer service chats in its first month | Klarna International",
+          "type": "url_citation",
+          "url": "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/?utm_source=openai"
+        },
+        {
+          "end_index": 1440,
+          "start_index": 1354,
+          "title": "Intercom, Inc.",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Intercom%2C_Inc.?utm_source=openai"
+        },
+        {
+          "end_index": 1934,
+          "start_index": 1791,
+          "title": "AT&T's switch from ChatGPT to open-source AI helped it hang on to thousands of customers",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/att-open-source-ai-better-than-chatgpt-customer-service-calls-2025-5?utm_source=openai"
+        },
+        {
+          "end_index": 2484,
+          "start_index": 2379,
+          "title": "Open-source artificial intelligence",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Open-source_artificial_intelligence?utm_source=openai"
+        },
+        {
+          "end_index": 2871,
+          "start_index": 2801,
+          "title": "GitHub - chatwoot/chatwoot: Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. \ud83d\udd25\ud83d\udcac",
+          "type": "url_citation",
+          "url": "https://github.com/chatwoot/chatwoot?utm_source=openai"
+        },
+        {
+          "end_index": 3374,
+          "start_index": 3269,
+          "title": "Open-source artificial intelligence",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Open-source_artificial_intelligence?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence of companies increasingly open-sourcing non-core internal AI systems like customer support agents (e.g., Klarna's remains proprietary, powered by OpenAI, and they rehired humans per [Customer Experience Dive, May 2025](https://www.customerexperiencedive.com/news/klarna-reinvests-human-talent-customer-service-AI-chatbot/747586/)). Searches for examples (e.g., 'companies open-sourcing AI customer support agents 2024 2025') yield startups, open-source frameworks, or demos like OpenAI's agent SDK ([VentureBeat, Jun 2025](https://venturebeat.com/programming-development/openai-open-sourced-a-new-customer-service-agent-framework-learn-more-about-its-growing-enterprise-strategy)), not internal tools from non-AI firms offloaded for community maintenance. Trends favor proprietary agents (e.g., Fin.ai, Sierra) or open foundation models, not non-core apps as predicted ([McKinsey, Apr 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/open-source-technology-in-the-age-of-ai))."
+    },
+    {
+      "id": "C-00:38:15.720",
+      "result": "right",
+      "explanation": "By late 2025, several enterprise chat/assistant products are doing essentially what Sacks predicted: models automatically route to the relevant internal data sources without users having to name a specific repository each time.\n\n1. **Glue itself has moved in this direction.** Glue AI now:\n   * Sits in every conversation and \"leverages context from your workspace\" (threads, attachments) and web data when you simply @\u2011mention it and ask a question, rather than you pointing it to a particular thread or file each time.\n   * Is described as using context from \"threads, attachments, and connected apps (with permission)\" to answer questions, implying it can pull from whatever connected sources are relevant rather than requiring the user to specify which one on each query.\n   ([docs.glue.ai](https://docs.glue.ai/glue-ai/glue-ai?utm_source=openai))\n\n2. **Glue added MCP-based integrations that let the model pick the right external tool.** In 2025 Glue shipped MCP support and a curated directory of MCP servers for apps like Linear, Asana, Notion, Sentry, Stripe, Vercel, etc. In use, you can just ask Glue AI in a thread to do things like \"create a Linear issue\" or \"look up data from an internal system,\" and the system invokes the appropriate MCP server/tool behind the scenes rather than you manually choosing an API endpoint.\n   ([docs.glue.ai](https://docs.glue.ai/labs/mcp-servers/mcp-server-directory?utm_source=openai))\n\n3. **Anthropic\u2019s Claude Enterprise Search is a clear realization of the prediction in a \u201csimilar enterprise chat tool.\u201d** Claude\u2019s 2025 Microsoft 365 connector and Enterprise Search feature are explicitly designed so that *one* question to Claude can search across a company\u2019s connected data sources\u2013SharePoint, OneDrive, Outlook, Teams, and other apps\u2013in a single shot. Anthropic\u2019s own example: ask about your company\u2019s remote\u2011work policy and Claude automatically pulls from HR documents in SharePoint, email discussions in Outlook, and team guidelines from various sources into one answer. Users no longer have to say \"now search SharePoint\" vs. \"now search Outlook\"\u2014the model infers which repositories to query based on the question.\n   ([anthropic.com](https://www.anthropic.com/news/productivity-platforms?utm_source=openai))\n\n4. **Broader ecosystem trend confirms the direction.** Microsoft 365 Copilot\u2019s Researcher agent similarly leans on Microsoft Graph to draw from meetings, emails, chats, and SharePoint files, with users mainly expressing *what they want* rather than formulating per\u2011repository queries\u2014evidence that mainstream enterprise assistants are converging on automatic source selection. ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--october-2025/4464046?utm_source=openai))\n\nGiven these shipped capabilities in Glue and closely related enterprise assistants like Claude for Enterprise and Microsoft 365 Copilot, the world has clearly moved toward exactly what Sacks described: AI models in enterprise chat that mostly \u201cfigure out on their own\u201d which internal data sources to hit, making assistance more seamless than it was in May 2024. Therefore, the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 893,
+          "start_index": 821,
+          "title": "Using Glue AI | Glue Guide",
+          "type": "url_citation",
+          "url": "https://docs.glue.ai/glue-ai/glue-ai?utm_source=openai"
+        },
+        {
+          "end_index": 1481,
+          "start_index": 1387,
+          "title": "MCP Server Directory | Glue Guide",
+          "type": "url_citation",
+          "url": "https://docs.glue.ai/labs/mcp-servers/mcp-server-directory?utm_source=openai"
+        },
+        {
+          "end_index": 2320,
+          "start_index": 2230,
+          "title": "Claude and your productivity platforms \\ Anthropic",
+          "type": "url_citation",
+          "url": "https://www.anthropic.com/news/productivity-platforms?utm_source=openai"
+        },
+        {
+          "end_index": 2882,
+          "start_index": 2701,
+          "title": "What\u2019s new in Microsoft 365 Copilot | October 2025 | Microsoft Community Hub",
+          "type": "url_citation",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--october-2025/4464046?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By October-November 2025, Glue.ai (co-founded by David Sacks) implemented **agentic AI features** explicitly allowing the AI to **automatically select tools/services/data sources** for tasks without user specification. Key evidence:\n- [Pulse2 funding article (Oct 15, 2025)](https://pulse2.com/glue-20-million-series-a/): \"Glue\u2019s AI to select the appropriate tool or service for each task automatically.\" Supports integrations like Notion, Google Drive (internal repos).\n- [Business Wire (Oct 8, 2025)](https://www.businesswire.com/news/home/20251008293325/en/Glue-Raises-%252420M-for-Agentic-Team-Chat): AI uses **Model Context Protocol (MCP)** to \"infer and decide at each step which app and tool to use,\" enabling seamless queries across internal apps/data without leaving chat.\n- [Glue.ai homepage & blog (Nov 20, 2025)](https://glue.ai/): Agentic multiplayer AI queries **internal APIs/analytics** autonomously from context; docs confirm multi-step tool use ([Glue release notes](https://docs.glue.ai/release-notes/release-notes)).\nThis evolved from May 2024 launch (basic integrations) to full automatic inference, matching prediction for Glue/similar tools."
+    },
+    {
+      "id": "C-00:38:23.800",
+      "result": "right",
+      "explanation": "GPT\u20115, a \u201cGPT\u20115\u2011class\u201d multimodal foundation model from OpenAI, was released on August 7, 2025 and is now widely available via ChatGPT and Microsoft Copilot, satisfying the timeline condition \u201cby the time a GPT\u20115\u2011class model is available.\u201d([en.wikipedia.org](https://en.wikipedia.org/wiki/GPT-5?utm_source=openai))  \n\nBy that point, at least some enterprise chat environments *do* support effectively \u201cpromptless\u201d AI behavior very close to what Sacks described:\n\n* **Doti Autopilot for Slack** is an AI assistant specifically designed to sit in Slack channels and *listen in the background*. Its documentation states that Autopilot:\n  * \u201cmonitors messages in enabled channels,\u201d\n  * \u201cdetects valid questions,\u201d\n  * \u201creplies automatically when it can confidently help,\u201d and\n  * does so \u201cwithout requiring the user to tag `@doti`,\u201d adding that \u201cusers might not even know Doti is there \u2013 and yet their questions get answered within seconds.\u201d([help.doti.ai](https://help.doti.ai/doti-in-slack/autopilot-automatic-answers-in-channels?utm_source=openai))  \n  This matches the prediction\u2019s idea of an AI that \u201cjust [chimes] in\u201d with relevant, helpful information in a team chat without being explicitly summoned.\n\n* Slack\u2019s own AI/agent framework describes **AI agents in Slack** as \u201cautonomous, proactive applications\u201d that can operate inside channels and DMs, analyze conversational context, and take actions or respond based on automated triggers rather than only direct prompts.([docs.slack.dev](https://docs.slack.dev/ai?utm_source=openai))  This supports the claim that the *enterprise chat stack* is moving toward embedded, always\u2011on agents.\n\nGlue itself, the product Sacks co\u2011founded, has shipped extensive **agentic AI** features\u2014MCP integration so Glue AI can act across external tools, multi\u2011step tool use, and AI Rules/Suggestion Rules that let it propose thread names and recipients and run complex actions once a user asks for help.([docs.glue.ai](https://docs.glue.ai/release-notes/release-notes))  However, the publicly documented behavior still appears to be user\u2011initiated (via @\u2011mentions, AI sessions, or explicit actions) rather than a fully autonomous \u201cchime\u2011in on any conversation\u201d mode.\n\nTaken literally as a prediction about Glue\u2019s own feature set, the claim is not yet clearly fulfilled. But as normalized\u2014\u201centerprise chat tools like Glue will be able to support effectively promptless AI behavior by the GPT\u20115 era\u201d\u2014the ecosystem now includes Slack\u2011based tools (e.g., Doti Autopilot) that deliver exactly this: background agents in enterprise chat that autonomously interject when they detect they can help, by or before the GPT\u20115 timeframe. On that broader reading, the prediction has effectively come true.",
+      "sources": [
+        {
+          "end_index": 347,
+          "start_index": 272,
+          "title": "GPT-5",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GPT-5?utm_source=openai"
+        },
+        {
+          "end_index": 1087,
+          "start_index": 977,
+          "title": "Autopilot - Automatic answers in channels | Doti AI",
+          "type": "url_citation",
+          "url": "https://help.doti.ai/doti-in-slack/autopilot-automatic-answers-in-channels?utm_source=openai"
+        },
+        {
+          "end_index": 1580,
+          "start_index": 1517,
+          "title": "AI in Slack apps overview | Slack Developer Docs",
+          "type": "url_citation",
+          "url": "https://docs.slack.dev/ai?utm_source=openai"
+        },
+        {
+          "end_index": 2049,
+          "start_index": 1983,
+          "title": "Release Notes | Glue Guide",
+          "type": "url_citation",
+          "url": "https://docs.glue.ai/release-notes/release-notes"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "GPT-5 was released on August 7, 2025 ([OpenAI](https://openai.com/index/introducing-gpt-5/), [Wikipedia](https://en.wikipedia.org/wiki/GPT-5), [Wired](https://www.wired.com/story/openais-gpt-5-is-here/)), making a GPT-5-class model available over 3 months ago. However, Glue ([glue.ai](https://glue.ai/), [blog](https://glue.ai/blog/introducing-glue-work-chat-for-the-ai-era)) and similar tools like Slack AI or Microsoft Teams Copilot do not support effectively 'promptless' AI behavior where AI autonomously interjects relevant info without explicit summoning. Glue AI requires users to add/invite it to threads or send questions; no mentions of auto-detection/interjection in docs or reviews. Enterprise searches yielded no evidence of such features in chats (only meeting note-takers auto-join calls)."
+    },
+    {
+      "id": "B-00:49:50.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, there is no evidence that Ohalo\u2019s Boosted Breeding technology has been **applied across nearly every major crop worldwide** or that it has had a visible, system\u2011wide impact on global food prices and sustainability metrics\u2014but the time horizon for such a sweeping prediction is inherently long, so it is too early to call it definitively right or wrong.\n\nKey points:\n\n1. **Current scope of deployment is narrow, not \u201cnearly every major crop worldwide.\u201d**  \n   - Ohalo\u2019s own materials describe Boosted Breeding as a platform that *can* be applied to nearly every crop on Earth, but they highlight active programs mainly in potatoes, strawberries, and some other specialty or pilot crops, not a broad, global rollout across all major cereals and oilseeds.([ohalo.com](https://www.ohalo.com/?utm_source=openai))  \n   - The May 23, 2024 press release and subsequent coverage emphasize that the technology has been discovered and that Ohalo is **implementing Boosted Breeding to drive breakthroughs across a \u201cmultitude of crops\u201d** with partners and plans to expand, which indicates early rollout and R&D rather than mature, global adoption.([prnewswire.com](https://www.prnewswire.com/news-releases/ohalo-announces-the-discovery-of-boosted-breeding-302153934.html?utm_source=openai))  \n   - Concrete commercial efforts mentioned publicly include Boosted Potato (true potato seed and value\u2011added traits) and the Ohalo Strawberry Consortium launched in 2025, again pointing to specific crops and regions rather than most major crops worldwide.([ohalo.com](https://www.ohalo.com/ohalo-products/potato?utm_source=openai))\n\n2. **No evidence that the technology has materially lowered global food prices.**  \n   - Global food prices over 2024\u20132025 have been driven mainly by macro factors like weather, energy, and geopolitical shocks. The FAO Food Price Index in 2025 is volatile and in many months **higher year\u2011on\u2011year than in 2024**, even if well below the 2022 peak.([tradingeconomics.com](https://tradingeconomics.com/world/food-price-index?utm_source=openai))  \n   - There is no attribution in FAO, Reuters, or other major analyses of food prices to Ohalo\u2019s technology, which is still at an early\u2011adoption stage; any acreage under Boosted varieties is far too small (and geographically limited) to measurably affect global commodity prices.\n\n3. **Sustainability and yield claims remain mostly at the trial / promise stage.**  \n   - Ohalo reports large yield gains (50\u2013100%+ in early trials) and theoretical sustainability benefits (less land, water, and inputs per unit of food), but these are framed as **potential** or early\u2011trial outcomes, not as measured, global\u2011scale impacts across major crops.([ohalo.com](https://www.ohalo.com/boosted-breeding?utm_source=openai))  \n   - Job postings and materials emphasize field trials, early adopter farmers, and development of agronomic protocols for true seed systems, again indicating that the technology is in scale\u2011up and validation rather than mature, industry\u2011wide deployment.([jobs.valorcapitalgroup.com](https://jobs.valorcapitalgroup.com/companies/ohalo-genetics-2/jobs/52460576-field-technology-development-agronomy-lead?utm_source=openai))\n\n4. **Why this is \u201cinconclusive\u201d rather than \u201cwrong.\u201d**  \n   - The prediction did not specify a time frame. Transforming breeding systems and seed supply chains **across nearly every major crop worldwide** would, in realistic agricultural timelines, likely take well over a decade. Only ~18 months have passed since the podcast (May 17, 2024), which is far too short to judge such a structural, global claim.  \n   - What we can say confidently is that the *predicted end state has not yet materialized* by late 2025; what we cannot say is that it **will not** materialize over the longer term. Hence, the correct classification is that it is **too early to evaluate definitively**.\n\nSo, the prediction is **unfulfilled so far**, but given the inherently long adoption cycle in global agriculture and the lack of a stated deadline, it is best categorized as *inconclusive (too early)* rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 877,
+          "start_index": 822,
+          "title": "Ohalo | Accelerating evolution to unlock nature's potential",
+          "type": "url_citation",
+          "url": "https://www.ohalo.com/?utm_source=openai"
+        },
+        {
+          "end_index": 1348,
+          "start_index": 1205,
+          "title": "Ohalo\u2122 Announces the Discovery of Boosted Breeding\u2122",
+          "type": "url_citation",
+          "url": "https://www.prnewswire.com/news-releases/ohalo-announces-the-discovery-of-boosted-breeding-302153934.html?utm_source=openai"
+        },
+        {
+          "end_index": 1683,
+          "start_index": 1607,
+          "title": "Ohalo Potatoes",
+          "type": "url_citation",
+          "url": "https://www.ohalo.com/ohalo-products/potato?utm_source=openai"
+        },
+        {
+          "end_index": 2129,
+          "start_index": 2034,
+          "title": "World Food Price Index",
+          "type": "url_citation",
+          "url": "https://tradingeconomics.com/world/food-price-index?utm_source=openai"
+        },
+        {
+          "end_index": 2845,
+          "start_index": 2774,
+          "title": "Ohalo's Boosted Breeding Technology",
+          "type": "url_citation",
+          "url": "https://www.ohalo.com/boosted-breeding?utm_source=openai"
+        },
+        {
+          "end_index": 3270,
+          "start_index": 3102,
+          "title": "True Seed Technical Development Lead @ Ohalo Genetics | Valor Capital Group Job Board",
+          "type": "url_citation",
+          "url": "https://jobs.valorcapitalgroup.com/companies/ohalo-genetics-2/jobs/52460576-field-technology-development-agronomy-lead?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction envisions Ohalo's Boosted Breeding technology being applied across nearly every major crop worldwide, resulting in higher yields, cheaper seeds, lower food prices, and improved sustainability at a global scale. As of December 2025 (19 months post-podcast), Ohalo offers the technology for select crops like potatoes (true seed varieties available with claimed higher yields; [Ohalo potato page](https://www.ohalo.com/ohalo-products/potato)), strawberries (consortium launched March 2025 for true seed varieties; [Ohalo strawberry consortium](https://www.ohalo.com/strawberry-consortium), [PR Newswire](https://www.prnewswire.com/news-releases/ohalo-launches-the-ohalo-strawberry-consortium-a-groundbreaking-collaboration-with-industry-leaders-to-develop-more-flavorful-strawberries-while-benefiting-farmers-by-bringing-them-to-market-as-true-seed-302397157.html)), corn, and berries, with trials showing potential 50-100% yield gains ([Ohalo boosted breeding](https://www.ohalo.com/boosted-breeding), [AgFunderNews Mar 2025](https://agfundernews.com/%25F0%259F%258E%25A5ohalo-ceo-on-boosted-breeding-yields-are-through-the-roof)). However, there is no evidence of widespread commercial adoption, farmer usage at scale, or application to nearly every major crop (e.g., no mentions of rice, wheat, soy). No reports link Ohalo to global food price reductions or sustainability metric improvements ([web searches on impact]). Ag biotech deployment typically takes years; thus, too early to confirm or refute the full prediction. ([Ohalo homepage](https://www.ohalo.com/), [VanTrump Report Jul 2025](https://www.vantrumpreport.com/2025/07/14/the-worlds-first-true-potato-seeds-how-ohalo-is-transforming-agriculture/))."
+    },
+    {
+      "id": "B-00:50:04.690",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, there is not enough independent, quantitative evidence to say whether Ohalo\u2019s boosted\u2011breeding crops *actually* use less water, land, and energy per unit of output in real\u2011world farming.\n\nWhat we do know:\n- Ohalo and David Friedberg report very large yield gains (often 50\u2013100%+ in early potato trials) from Boosted Breeding, which *would* mechanically reduce land required per unit of output if input use per acre stayed similar. These claims are based on company trials and press materials, not yet large-scale independent field data. ([ohalo.com](https://www.ohalo.com/boosted-breeding?utm_source=openai))\n- Friedberg has explicitly claimed that the technology will enable \u201cmore food per acre using less water, less land, less fertilizer per unit output,\u201d but this is framed as the *potential* impact of the platform, not as results from long\u2011term commercial deployment. ([freethink.com](https://www.freethink.com/energy/agtech-end-world-hunger?utm_source=openai))\n- Ohalo is still early in commercialization: potatoes and strawberries are in programs and consortia, and an almond variety (FruitionOne) with a *projected* ~50% reduction in water per almond is only in trial orchards, with first commercial deliveries targeted for 2027. ([ohalo.com](https://www.ohalo.com/fruitionone?utm_source=openai))\n- Regulatory milestones (e.g., USDA APHIS review of an Ohalo potato line) and initial product offerings show the tech is moving toward market, but they do not provide measured data on water, energy, or land use per ton of output relative to conventional varieties. ([agtechnavigator.com](https://www.agtechnavigator.com/Article/2024/05/24/The-yield-gains-are-insane-.-David-Friedberg-unwraps-Ohalo-s-much-awaited-Boosted-Breeding-tech?int_campaign=Spotlight&int_campaign_type=Right_column&utm_source=openai))\n\nBecause the public record so far is dominated by company\u2011reported trials and forward\u2011looking statements, and there are no peer\u2011reviewed or large\u2011scale independent studies quantifying water, land, and energy use per unit yield for Ohalo\u2019s boosted crops versus conventional varieties, Friedberg\u2019s multi\u2011part efficiency prediction cannot yet be judged as clearly correct or incorrect. It remains **too early** to call.",
+      "sources": [
+        {
+          "end_index": 676,
+          "start_index": 605,
+          "title": "Ohalo's Boosted Breeding Technology",
+          "type": "url_citation",
+          "url": "https://www.ohalo.com/boosted-breeding?utm_source=openai"
+        },
+        {
+          "end_index": 1036,
+          "start_index": 943,
+          "title": "Boosted Breeding and beyond: 3 tech trends that could end hunger",
+          "type": "url_citation",
+          "url": "https://www.freethink.com/energy/agtech-end-world-hunger?utm_source=openai"
+        },
+        {
+          "end_index": 1375,
+          "start_index": 1309,
+          "title": "Ohalo's FruitionOne\u2122 I The World\u2019s First Self-Fertile Nonpareil Almond Variety",
+          "type": "url_citation",
+          "url": "https://www.ohalo.com/fruitionone?utm_source=openai"
+        },
+        {
+          "end_index": 1885,
+          "start_index": 1642,
+          "title": "\u2018The yield gains are insane\u2019. David Friedberg unwraps Ohalo\u2019s much-awaited \u2018Boosted Breeding\u2019 tech",
+          "type": "url_citation",
+          "url": "https://www.agtechnavigator.com/Article/2024/05/24/The-yield-gains-are-insane-.-David-Friedberg-unwraps-Ohalo-s-much-awaited-Boosted-Breeding-tech?int_campaign=Spotlight&int_campaign_type=Right_column&utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Ohalo Genetics announced Boosted Breeding in May 2024, claiming 50-100%+ higher yields in early trials for crops like potatoes, corn, and almonds (e.g., FruitionOne variety improves yields per acre for sustainability). Their site states it enables 'more food with fewer natural resources' and 'better resource efficiency,' implying less land per unit output via higher yields. However, no public field trial data, scientific papers, or independent verification confirm reduced water or energy use per unit output compared to conventional varieties. Ongoing collaborations (e.g., strawberry in 2025) exist, but 18 months post-announcement is too early for commercialization and proven metrics in agriculture. Sources: [Ohalo.com](https://www.ohalo.com/), [Boosted Breeding page](https://www.ohalo.com/boosted-breeding), PR Newswire May 2024 & 2025 releases, AgFunderNews Mar 2025."
+    },
+    {
+      "id": "B-00:50:12.530",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, there is not enough real\u2011world data to determine whether Ohalo\u2019s Boosted Breeding crops actually use **significantly less fertilizer per pound of harvested output** in commercial settings.\n\nKey points:\n\n1. **Stage of deployment:** After unveiling Boosted Breeding in May 2024, Ohalo reported large yield gains (50\u2013100%+) in early internal trials, but described the platform as moving **toward** commercial trials and looking for partners, not yet in broad commercial deployment.([agtechnavigator.com](https://www.agtechnavigator.com/Article/2024/05/24/The-yield-gains-are-insane-.-David-Friedberg-unwraps-Ohalo-s-much-awaited-Boosted-Breeding-tech/))  A June 2024 Freethink piece explicitly says Ohalo is *preparing for commercial trials* and seeking partners.([freethink.com](https://www.freethink.com/energy/agtech-end-world-hunger))  A 2025 job posting for a \"Field Technology Development & Agronomy Lead\" to support \"early adopter farmers\" with true potato seed further indicates they are still building out field systems and protocols rather than operating at mature commercial scale.([s32.getro.com](https://s32.getro.com/companies/ohalo-genetics-2/jobs/52460576-field-technology-development-agronomy-lead?utm_source=openai))\n\n2. **Claims vs. measured fertilizer data:** Friedberg and Ohalo repeatedly *claim* that Boosted Breeding will enable more food per acre with **less fertilizer per unit output**, echoing the prediction.([freethink.com](https://www.freethink.com/energy/agtech-end-world-hunger))  However, public materials (press releases, interviews, product pages) focus on yield, disease resistance, true seed, and reduced pesticide use; they do **not** provide quantified fertilizer\u2011input data (e.g., N/P/K rates or fertilizer per ton of yield) from commercial or large\u2011scale field trials.([prnewswire.com](https://www.prnewswire.com/news-releases/ohalo-announces-the-discovery-of-boosted-breeding-302153934.html?utm_source=openai))  No independent agronomic studies or multi\u2011season commercial trial results reporting fertilizer use per unit yield for Boosted crops appear in the literature or trade press.\n\n3. **Timeline for full commercial products:** The only clearly dated commercial roadmap item with regulatory detail, the FruitionOne self\u2011fertile Nonpareil almond variety, has trial orchards underway with first commercial deliveries not expected until 2027, again suggesting the broader product portfolio is still pre\u2011mass\u2011deployment.([prnewswire.com](https://www.prnewswire.com/news-releases/ohalo-announces-fruitionone-the-worlds-first-self-fertile-nonpareil-almond-variety-302289195.html?utm_source=openai))\n\nBecause:\n\n- Boosted Breeding crops are only in early adopter / preparatory commercial\u2011trial phases, and\n- There is no published evidence yet on **actual fertilizer applied per pound of harvested crop** in those trials or deployments,\n\nwe cannot say whether fertilizer intensity has in fact fallen \"significantly\" as predicted. The prediction is therefore **too early to evaluate**, not clearly right or wrong at this time.",
+      "sources": [
+        {
+          "end_index": 719,
+          "start_index": 547,
+          "title": "\u2018The yield gains are insane\u2019. David Friedberg unwraps Ohalo\u2019s much-awaited \u2018Boosted Breeding\u2019 tech",
+          "type": "url_citation",
+          "url": "https://www.agtechnavigator.com/Article/2024/05/24/The-yield-gains-are-insane-.-David-Friedberg-unwraps-Ohalo-s-much-awaited-Boosted-Breeding-tech/"
+        },
+        {
+          "end_index": 904,
+          "start_index": 829,
+          "title": "Boosted Breeding and beyond: 3 tech trends that could end hunger",
+          "type": "url_citation",
+          "url": "https://www.freethink.com/energy/agtech-end-world-hunger"
+        },
+        {
+          "end_index": 1304,
+          "start_index": 1162,
+          "title": "True Seed Technical Development Lead @ Ohalo Genetics | S32 Job Board",
+          "type": "url_citation",
+          "url": "https://s32.getro.com/companies/ohalo-genetics-2/jobs/52460576-field-technology-development-agronomy-lead?utm_source=openai"
+        },
+        {
+          "end_index": 1584,
+          "start_index": 1509,
+          "title": "Boosted Breeding and beyond: 3 tech trends that could end hunger",
+          "type": "url_citation",
+          "url": "https://www.freethink.com/energy/agtech-end-world-hunger"
+        },
+        {
+          "end_index": 2025,
+          "start_index": 1882,
+          "title": "Ohalo\u2122 Announces the Discovery of Boosted Breeding\u2122",
+          "type": "url_citation",
+          "url": "https://www.prnewswire.com/news-releases/ohalo-announces-the-discovery-of-boosted-breeding-302153934.html?utm_source=openai"
+        },
+        {
+          "end_index": 2713,
+          "start_index": 2537,
+          "title": "Ohalo\u2122 Announces FruitionOne\u2122: The World's First Self-Fertile Nonpareil Almond Variety",
+          "type": "url_citation",
+          "url": "https://www.prnewswire.com/news-releases/ohalo-announces-fruitionone-the-worlds-first-self-fertile-nonpareil-almond-variety-302289195.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Ohalo has reached commercial trials for potatoes (USDA approval, trials underway as of Jul 2025 per [Van Trump Report](https://www.vantrumpreport.com/2025/07/14/the-worlds-first-true-potato-seeds-how-ohalo-is-transforming-agriculture/); almond trial plantings started 2024, strawberry field trials planned for 2026). Deployment at scale is expected 2026-2027 (e.g., potato rollout 1-2 years from Jul 2025; almond commercial deliveries 2027). Yields show 50-100% gains in early trials ([Ohalo site](https://www.ohalo.com/boosted-breeding), [Freethink](https://www.freethink.com/energy/agtech-end-world-hunger)). However, no public data confirms significant fertilizer reduction per pound of output in these trials (general claims of 'fewer resources' or 'lower inputs' in promo materials like [Fello 100](https://www.fello.agency/blog/the-fello-100-2025), but no metrics). Too early to verify as deployment pending and key metric unreported."
+    },
+    {
+      "id": "H-01:21:22.170",
+      "result": "inconclusive",
+      "explanation": "As of late 2025, the prediction looks directionally consistent with the data so far, but the stated time horizon (\u201cover the coming years of the AI-driven productivity boom\u201d) clearly extends beyond the ~18 months since May 2024, so it\u2019s too early to call it definitively right or wrong.\n\nOn unemployment: The U.S. unemployment rate did rise modestly from around 3.8% in late 2023 to an average of about 4.2% in Q4 2024, according to the Bureau of Labor Statistics, but remained in what economists generally consider a historically low range. ([bls.gov](https://www.bls.gov/opub/mlr/2025/article/unemployment-rate-increases-in-the-first-half-of-2024-before-leveling-off-while-the-labor-force-participation-rate-holds-fairly-steady.htm?mf_ct_campaign=yahoo-synd-feed&utm_source=openai))  By September\u2013October 2025, estimates put unemployment around 4.3\u20134.4%, a four\u2011year high but still low compared with past recessions and still among the lowest rates in the G7. ([ft.com](https://www.ft.com/content/4132f636-ebe6-4a30-8ced-575213f6b3f2?utm_source=openai))  Weekly jobless claims in November 2025 are at a seven\u2011month low, indicating layoffs remain subdued even as hiring slows. ([reuters.com](https://www.reuters.com/business/world-at-work/us-weekly-jobless-claims-fall-amid-steady-labor-market-conditions-2025-11-26/?utm_source=openai))  So there has been no surge into high unemployment or \u201cwidespread joblessness\u201d so far.\n\nOn \u201cmore companies\u201d: New business formation has remained unusually strong. The U.S. saw about 5.21 million business applications in 2024, after a record 5.48 million in 2023, both far above the ~3.5 million pre\u2011pandemic level. ([finder.com](https://www.finder.com/small-business/new-businesses?utm_source=openai))  Through 2025 to date, applications are slightly *up* relative to the same period in 2024, suggesting continued elevated entrepreneurial activity. ([finder.com](https://www.finder.com/small-business/new-businesses?utm_source=openai))  This supports the idea that adjustment so far has included a large number of (often small) new firms rather than a collapse in employment.\n\nHowever, because the claim was about the *entire* AI\u2011driven boom over \u201cthe coming years,\u201d and structural effects of AI on labor markets can take several years to fully manifest, the available data window is too short to conclusively validate or falsify the long\u2011run prediction. Hence the classification: **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 825,
+          "start_index": 583,
+          "title": "Unemployment rate increases in the first half of 2024, before leveling off, while the labor force participation rate holds fairly steady : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/mlr/2025/article/unemployment-rate-increases-in-the-first-half-of-2024-before-leveling-off-while-the-labor-force-participation-rate-holds-fairly-steady.htm?mf_ct_campaign=yahoo-synd-feed&utm_source=openai"
+        },
+        {
+          "end_index": 1096,
+          "start_index": 1003,
+          "title": "School IB economics: US adds 119,000 jobs in September but unemployment hits four-year peak",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/4132f636-ebe6-4a30-8ced-575213f6b3f2?utm_source=openai"
+        },
+        {
+          "end_index": 1378,
+          "start_index": 1219,
+          "title": "US weekly jobless claims at seven-month low as layoffs remain low",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/world-at-work/us-weekly-jobless-claims-fall-amid-steady-labor-market-conditions-2025-11-26/?utm_source=openai"
+        },
+        {
+          "end_index": 1782,
+          "start_index": 1696,
+          "title": "How many new businesses start in the US each year? [updated monthly]",
+          "type": "url_citation",
+          "url": "https://www.finder.com/small-business/new-businesses?utm_source=openai"
+        },
+        {
+          "end_index": 2016,
+          "start_index": 1930,
+          "title": "How many new businesses start in the US each year? [updated monthly]",
+          "type": "url_citation",
+          "url": "https://www.finder.com/small-business/new-businesses?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction covers 'the coming years' (several years post-2024) during the AI productivity boom. Only ~1.5 years have passed (podcast May 2024 to Dec 2025). US unemployment rose modestly from 4.0% in May 2024 ([BLS](https://www.bls.gov/news.release/archives/laus_06252024.pdf), [CNBC](https://www.cnbc.com/2024/06/07/jobs-report-may-2024-us-job-gains-totaled-272000-in-may.html)) to 4.4% in Sep 2025 ([FRED UNRATE](https://fred.stlouisfed.org/series/UNRATE), [BLS Sep 2025](https://www.bls.gov/news.release/pdf/empsit.pdf)), still historically low (long-term avg ~5.7%). No significant rise or joblessness. Business formations remained high: ~430k apps/month in 2024 (50% > pre-COVID, [Treasury](https://home.treasury.gov/news/featured-stories/small-business-and-entrepreneurship-in-the-post-covid-expansion)), continued strong in 2025 ([Census BFS](https://www.census.gov/econ/bfs/current/index.html), [Gusto](https://gusto.com/resources/gusto-insights/new-business-formation-report-2025)). Matches so far, but too early to confirm over full multi-year period."
+    },
+    {
+      "id": "H-01:23:11.000",
+      "result": "right",
+      "explanation": "Evidence since mid\u20112024 shows the emergence, and growing scale, of specialized intermediaries that clear or license publisher/creator content for AI systems, including answer/search products:\n\n- The long\u2011standing Copyright Clearance Center (CCC) created new AI\u2011specific collective licenses in 2024\u20132025 that let organizations ingest and use large corpora of copyrighted works in AI systems via a central license, and then expanded this to an **AI Systems Training License** for models whose outputs are used externally\u2014i.e., commercial, customer\u2011facing generative AI products. CCC acts as an intermediary between thousands of publishers and AI developers, and reports strong publisher uptake. ([grokipedia.com](https://grokipedia.com/page/Copyright_Clearance_Center?utm_source=openai))\n- In the U.K., the Copyright Licensing Agency (CLA), Authors\u2019 Licensing and Collecting Society (ALCS), and Publishers\u2019 Licensing Services (PLS) are rolling out a **collective licensing framework for AI training and retrieval\u2011augmented generation (RAG)**, explicitly designed so AI developers can get permission to use a wide range of text\u2011based published works through a single license, with CLA administering fees and distributions to rightsholders. This is exactly an intermediary model for AI training/RAG at national scale. ([ailawandpolicy.com](https://www.ailawandpolicy.com/2025/05/uks-collective-licensing-initiative-aims-to-harmonize-ai-and-copyright-law/?utm_source=openai))\n- A Bloomberg Law report describes a wave of **\u201cAI licensing startups\u201d** that aggregate and license copyrighted works for AI, including **Created by Humans** (authors and book publishers licensing to AI systems), **Narrativ** (voice actors\u2019 likenesses), and **ProRata**, whose tools decompose AI outputs and route compensation back to contributors. These are explicitly characterized as \"middlemen startups\" aggregating many rightsholders into a single licensing package. ([news.bloomberglaw.com](https://news.bloomberglaw.com/tech-and-telecom-law/ai-licensing-startups-bloom-in-wake-of-copyright-legal-battles?utm_source=openai))\n- Separate coverage of **ProRata AI** shows it has enrolled **400+** (later **500+**) publications\u2014among them major brands like the Financial Times, Axel Springer titles, The Atlantic, Fortune, Vox Media, The Boston Globe, and others\u2014into a 50/50 revenue\u2011share model. ProRata analyzes generative\u2011AI outputs, attributes them back to source publishers, and distributes revenue accordingly, functioning as a rights\u2011clearing and payment intermediary between publishers and AI services. ([axios.com](https://www.axios.com/2025/01/24/prorata-ai-plans-pay-creators-shoplifting-content?utm_source=openai))\n- ProRata also operates **Gist.ai**, an AI\u2011powered search/answer engine that uses this licensed publisher content to generate responses, a concrete example of an AI\u2011answer product built on top of a specialized rights\u2011clearing intermediary rather than purely on unlicensed web scraping. ([digiday.com](https://digiday.com/media/boston-globe-future-vox-media-join-proratas-generative-ai-licensing-model/?utm_source=openai))\n\nWhile Google specifically has not publicly outsourced AI Overviews licensing to a single neutral clearinghouse, the broader substance of the prediction\u2014that a *new class of intermediaries*, whose core business is clearing/licensing publisher and creator content for AI answer/search and other generative uses, would emerge and reach meaningful scale\u2014has clearly materialized by late 2025. The combination of large, AI\u2011specific collective licenses (CCC, CLA/ALCS/PLS) and scaled startups like ProRata/Created by Humans matches the predicted pattern closely enough to count this as **right**.",
+      "sources": [
+        {
+          "end_index": 823,
+          "start_index": 731,
+          "title": "Copyright Clearance Center",
+          "type": "url_citation",
+          "url": "https://grokipedia.com/page/Copyright_Clearance_Center?utm_source=openai"
+        },
+        {
+          "end_index": 1509,
+          "start_index": 1353,
+          "title": "UK's Collective Licensing Initiative Aims to Harmonize AI and Copyright Law | AI Law and Policy",
+          "type": "url_citation",
+          "url": "https://www.ailawandpolicy.com/2025/05/uks-collective-licensing-initiative-aims-to-harmonize-ai-and-copyright-law/?utm_source=openai"
+        },
+        {
+          "end_index": 2143,
+          "start_index": 1985,
+          "title": "AI Licensing Startups Bloom in Wake of Copyright Legal Battles",
+          "type": "url_citation",
+          "url": "https://news.bloomberglaw.com/tech-and-telecom-law/ai-licensing-startups-bloom-in-wake-of-copyright-legal-battles?utm_source=openai"
+        },
+        {
+          "end_index": 2742,
+          "start_index": 2627,
+          "title": "ProRata AI plans to pay creators despite era of AI \"shoplifting content,\" founder says",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2025/01/24/prorata-ai-plans-pay-creators-shoplifting-content?utm_source=openai"
+        },
+        {
+          "end_index": 3165,
+          "start_index": 3030,
+          "title": "Boston Globe, Future, Vox Media join ProRata AI licensing program",
+          "type": "url_citation",
+          "url": "https://digiday.com/media/boston-globe-future-vox-media-join-proratas-generative-ai-licensing-model/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By December 2025, new intermediaries have emerged and gained relevance for licensing publisher/content rights to AI platforms, including for answer-generation products. Key examples: \n- **Dataset Providers Alliance (DPA)** formed June 2024 by 7+ companies licensing text/music/video datasets for AI training ([Reuters](https://www.reuters.com/technology/artificial-intelligence/ai-dataset-licensing-companies-form-trade-group-2024-06-26/), [thedpa.ai](https://www.thedpa.ai/)); includes text/publisher content, acting as IP intermediaries. \n- **Microsoft's Publisher Content Marketplace** launched Sep/Oct 2025; major publishers (Gannett, People Inc., Arena Group, BuzzFeed, Vox Media, USA Today) joined for licensing to Copilot AI answers ([Axios](https://www.axios.com/2025/09/23/microsoft-ai-marketplace-publishers), [Gannett](https://investors.gannett.com/news/news-details/2025/Gannett-Announces-Third-Quarter-2025-Results-New-AI-Licensing-Deal-with-Microsoft--Updated-Business-Outlook/default.aspx)). \n- Cloudflare's Pay-Per-Crawl marketplace (Jul 2025) enables site owners to license access to AI crawlers for products like AI Overviews ([Cloudflare](https://blog.cloudflare.com/introducing-pay-per-crawl/)). \n- RSL protocol (Sep 2025) backed by Reddit/Quora/Yahoo/publishers for automated licensing ([TechCrunch](https://techcrunch.com/2025/09/10/rss-co-creator-launches-new-protocol-for-ai-data-licensing/)). \nThese fit the 'new type' (post-May 2024), intermediary role at scale alongside direct deals, enabling AI answers via licensed content."
+    },
+    {
+      "id": "A-01:24:39.130",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, Isomorphic Labs is still an Alphabet-controlled AI drug\u2011discovery subsidiary, not an independently listed or otherwise separately valued company, so there is no observable enterprise value on the order of hundreds of billions of dollars to confirm or falsify Chamath\u2019s long\u2011run claim. The company remains in the R&D and early\u2011commercialization phase: it has struck multibillion\u2011dollar potential collaboration deals with Eli Lilly and Novartis, together worth up to about $3 billion in milestones and royalties, but these are contingent and long\u2011dated rather than mature cash flows. ([prnewswire.com](https://www.prnewswire.com/news-releases/isomorphic-labs-announces-strategic-multi-target-research-collaboration-with-lilly-302027392.html?utm_source=openai)) In March 2025, Isomorphic raised $600 million in its first external funding round (one of the largest UK AI\u2011biotech raises), yet the round did not disclose a valuation, and industry reporting only notes that Alphabet remains the majority owner. ([prnewswire.com](https://www.prnewswire.com/news-releases/isomorphic-labs-announces-600-million-funding-to-further-develop-its-next-generation-ai-drug-design-engine-and-advance-therapeutic-programs-into-the-clinic-302415532.html?utm_source=openai)) The company expects its first AI\u2011designed drugs to enter human trials around the end of 2025, underscoring that the business is still far from a \u201cmature\u201d steady\u2011state where ultimate enterprise value could be credibly assessed; drug development timelines are typically 10\u201315 years. ([cnbc.com](https://www.cnbc.com/2025/04/09/inside-isomorphic-labs-google-deepminds-ai-life-sciences-spinoff.html?utm_source=openai)) Because the prediction concerns Isomorphic\u2019s eventual value once its business is fully mature, and the company has not yet reached anything close to that stage, there is currently insufficient evidence to judge the forecast as either correct or incorrect.",
+      "sources": [
+        {
+          "end_index": 823,
+          "start_index": 647,
+          "title": "ISOMORPHIC LABS ANNOUNCES STRATEGIC MULTI-TARGET RESEARCH COLLABORATION WITH LILLY",
+          "type": "url_citation",
+          "url": "https://www.prnewswire.com/news-releases/isomorphic-labs-announces-strategic-multi-target-research-collaboration-with-lilly-302027392.html?utm_source=openai"
+        },
+        {
+          "end_index": 1318,
+          "start_index": 1069,
+          "title": "Isomorphic Labs announces $600 million funding to further develop its next-generation AI drug design engine and advance therapeutic programs into the clinic",
+          "type": "url_citation",
+          "url": "https://www.prnewswire.com/news-releases/isomorphic-labs-announces-600-million-funding-to-further-develop-its-next-generation-ai-drug-design-engine-and-advance-therapeutic-programs-into-the-clinic-302415532.html?utm_source=openai"
+        },
+        {
+          "end_index": 1733,
+          "start_index": 1600,
+          "title": "Inside Isomorphic Labs, Google DeepMind\u2019s AI life sciences spinoff",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/04/09/inside-isomorphic-labs-google-deepminds-ai-life-sciences-spinoff.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Isomorphic Labs, spun out from Google DeepMind, raised $600M in its first external round in March 2025 ([official announcement](https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-600m-external-investment-round)), led by Thrive Capital with GV and Alphabet. Valuation undisclosed, but estimated at $3.5B-$5B post-money ([Asymmetrix Intelligence](https://asymmetrixintelligence.substack.com/p/600m-raise-for-isomorphic-labs-and)). It has partnerships with Eli Lilly and Novartis potentially worth up to $3B in milestones ([Wikipedia](https://en.wikipedia.org/wiki/Isomorphic_Labs)), and is advancing programs toward clinical trials as of July 2025 ([Fortune](https://fortune.com/2025/07/06/deepmind-isomorphic-labs-cure-all-diseases-ai-now-first-human-trials/)). No revenue or approved drugs reported; still early-stage R&D ([PitchBook](https://pitchbook.com/profiles/company/538055-20), [Tracxn](https://tracxn.com/d/companies/isomorphic-labs/__NeR0B9OwN1j6VmvXJhpEk33vyXBIiwzRwNqeBH3Mp_o)). With only ~19 months since the May 2024 prediction and biotech maturity taking 10+ years, insufficient time has passed to assess if it will reach multi-hundred-billion-dollar enterprise value when mature."
+    },
+    {
+      "id": "C-01:34:33.720",
+      "result": "inconclusive",
+      "explanation": "As of the latest available data (close of trading on 2025-11-28), Alphabet Inc. (GOOGL) has a market capitalization of about **$2.94 trillion**, well below the **$5 trillion** level mentioned in the prediction.   \n\nHowever, the prediction is explicitly open-ended: Alphabet/Google will become *\"a $5 trillion company\"* **\"at some point\"** in the future, with no time horizon specified. Since there is still ample time for Alphabet\u2019s market cap to potentially reach ~$5T, the prediction cannot yet be judged as definitively right or wrong. We only know that it has **not** come true *yet* by 2025-11-30, not that it will never come true.  \n\nTherefore, the appropriate status is **inconclusive (too early)** rather than right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Alphabet's market cap grew from ~$2.37T at end of 2024 to $3.86T as of Nov 30, 2025 ([companiesmarketcap.com/alphabet-google/marketcap/], [macrotrends.net/stocks/charts/GOOGL/alphabet/market-cap]). It reached $3T in Sep 2025 ([en.wikipedia.org/wiki/Alphabet_Inc.]) and is approaching $4T amid AI rally ([reuters.com/business/alphabet-pace-hit-4-trillion-market-value-ai-gains-momentum-2025-11-25/]), but has not hit $5T. No sources indicate it ever reached ~$5T since May 2024. With rapid growth continuing, too early to confirm or refute the prediction."
+    },
+    {
+      "id": "C-01:32:51.750",
+      "result": "inconclusive",
+      "explanation": "As of November 2025, Gemini-powered AI Overviews are clearly a major part of Google Search, but it\u2019s not yet possible to say they have definitively *displaced* the traditional \u201c10 blue links\u201d as the primary way users consume results, and the prediction had no explicit time horizon.\n\nEvidence that AI Overviews are becoming central:\n\n- Google\u2019s own posts and earnings calls describe AI Overviews as a major new layer in Search, rolled out to over 100 countries and reaching more than 1\u20132 billion users monthly by early\u2013mid 2025. ([blog.google](https://blog.google/products/search/ai-overviews-search-october-2024/?utm_source=openai))\n- Multiple independent studies show AI Overviews now appear in a substantial share of queries. Semrush/Datos found they appeared in ~13% of U.S. desktop searches as of March 2025, up from 6.5% in January. ([searchengineland.com](https://searchengineland.com/google-ai-overviews-13-searches-455057?utm_source=openai)) Ahrefs data from June 2025 estimated AI Overviews on about 12.8% of all Google searches, and a later Ahrefs-based analysis in late 2025 put their presence at roughly 20\u201321% of all queries across 146 million results, especially for long, informational, question-style searches. ([ahrefs.com](https://ahrefs.com/blog/insights-from-56-million-ai-overviews/?utm_source=openai))\n- One smaller 8,000-keyword study (Advanced Web Ranking, summarized by an agency blog) reported AI Overviews on ~60% of U.S. queries and called them the \u201cdominant experience in Google\u2019s interface,\u201d showing how, at least in some sampled keyword sets, the AI box now visually dominates the SERP. ([xponent21.com](https://xponent21.com/insights/google-ai-overviews-surpass-60-percent/?utm_source=openai))\n\nEvidence that the \u201c10 blue links\u201d paradigm has *not* been fully displaced:\n\n- Even in the more aggressive studies, AI Overviews *appear above* traditional results; they do not fully remove organic listings from the default \u201cAll\u201d tab. For a large fraction\u2014and likely a majority\u2014of total search volume, users still see and can scroll through standard link lists, especially on commercial, navigational, local, and news queries where AI Overviews are relatively rare. ([digitalinformationworld.com](https://www.digitalinformationworld.com/2025/11/googles-ai-overviews-now-show-up-in-one.html?utm_source=openai))\n- Google\u2019s experimental AI-only \u201cAI Mode,\u201d which truly replaces the link list with an AI summary, is opt-in and paywalled for Google One AI Premium subscribers, not the default interface for the mass user base. ([reuters.com](https://www.reuters.com/technology/artificial-intelligence/google-tests-an-ai-only-version-its-search-engine-2025-03-05/?utm_source=openai))\n- A Google public-policy VP explicitly stated in September 2025 that \u201cwe\u2019re not going to abandon\u201d the 10-blue-links model and framed AI summaries as an additional, not replacement, experience\u2014even while acknowledging that users are increasingly asking for contextual AI answers. ([edexlive.com](https://www.edexlive.com/news/2025/Sep/16/users-want-ai-summary-over-10-blue-links-google-responds-as-publishers-slam-ai-summaries-feature?utm_source=openai))\n- Other analyses note that, as of 2025, the main Google Search experience is still a familiar list of links with AI Overviews added on top, and that AI Mode remains a separate, optional tab. ([paadiatech.com](https://www.paadiatech.com/post/the-future-of-google-search-what-ai-mode-means-for-the-internet-as-we-know-it?utm_source=openai))\n\nInterpretation:\n\n- Sacks\u2019 *directional* claim\u2014that Gemini-powered one-box/AI answers are the future of Google Search and will take a large bite out of traditional link-based behavior\u2014is strongly supported by current trends: AI Overviews are widely deployed, visually dominant on many informational SERPs, and associated with declining organic click-through rates.\n- But his *stronger* version\u2014that this experience will \"eat the rest of Google\u2019s search\" and become the clearly dominant, primary interface displacing the 10 blue links paradigm\u2014has not yet fully materialized as of late 2025. Traditional results remain core, AI-only mode is niche, and measured AI Overview coverage (especially in large-scale datasets) is still well below 100% of queries.\n\nBecause the prediction is framed about the long-term \u201cfuture\u201d of Google Search rather than by a specific date, and current evidence shows a strong but incomplete shift rather than a clear, completed displacement, the fairest assessment as of November 30, 2025 is **\u201cinconclusive (too early)\u201d** rather than definitively right or wrong.",
+      "sources": [
+        {
+          "end_index": 677,
+          "start_index": 573,
+          "title": "AI Overviews in Google Search expanding to more than 100 countries",
+          "type": "url_citation",
+          "url": "https://blog.google/products/search/ai-overviews-search-october-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 995,
+          "start_index": 884,
+          "title": "Google AI Overviews now show on 13% of searches: Study",
+          "type": "url_citation",
+          "url": "https://searchengineland.com/google-ai-overviews-13-searches-455057?utm_source=openai"
+        },
+        {
+          "end_index": 1369,
+          "start_index": 1273,
+          "title": "Insights From 55.8M AI Overviews Across 590M Searches\u2014A Study by Ahrefs",
+          "type": "url_citation",
+          "url": "https://ahrefs.com/blog/insights-from-56-million-ai-overviews/?utm_source=openai"
+        },
+        {
+          "end_index": 1772,
+          "start_index": 1665,
+          "title": "New Data: Google AI Overviews Now Appear in 60% of Searches",
+          "type": "url_citation",
+          "url": "https://xponent21.com/insights/google-ai-overviews-surpass-60-percent/?utm_source=openai"
+        },
+        {
+          "end_index": 2386,
+          "start_index": 2243,
+          "title": "Google\u2019s AI Overviews Now Show Up in One of Every Five Searches, New Data Finds",
+          "type": "url_citation",
+          "url": "https://www.digitalinformationworld.com/2025/11/googles-ai-overviews-now-show-up-in-one.html?utm_source=openai"
+        },
+        {
+          "end_index": 2754,
+          "start_index": 2599,
+          "title": "Google tests an AI-only version of its search engine",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/google-tests-an-ai-only-version-its-search-engine-2025-03-05/?utm_source=openai"
+        },
+        {
+          "end_index": 3209,
+          "start_index": 3035,
+          "title": "AI Search Overviews: Google Faces Legal Scrutiny from Publishers",
+          "type": "url_citation",
+          "url": "https://www.edexlive.com/news/2025/Sep/16/users-want-ai-summary-over-10-blue-links-google-responds-as-publishers-slam-ai-summaries-feature?utm_source=openai"
+        },
+        {
+          "end_index": 3549,
+          "start_index": 3402,
+          "title": "The future of Google search: What AI mode means for the internet as we know it",
+          "type": "url_citation",
+          "url": "https://www.paadiatech.com/post/the-future-of-google-search-what-ai-mode-means-for-the-internet-as-we-know-it?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By late 2025, Google AI Overviews (powered by Gemini) appear in ~60% of U.S. searches ([Xponent21, Nov 2025](https://xponent21.com/insights/google-ai-overviews-surpass-60-percent/); McKinsey estimates 50% with growth to 75% by 2028 ([Oct 2025](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/new-front-door-to-the-internet-winning-in-the-age-of-ai-search))), making it the dominant feature. Organic CTR drops 61% when present (Seer Interactive, Nov 2025: [link](https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-september-2025-update)), with 27% zero-click searches ([Firstlinks, Nov 2025](https://www.firstlinks.com.au/how-ai-is-changing-search-and-what-it-means-for-google)), shifting primary consumption to AI summaries over traditional 10 blue links. AI Mode further evolves this ([Google Blog, May 2025](https://blog.google/products/search/google-search-ai-mode-update/)). This fulfills the prediction of AI Overviews 'eating the rest of Google\u2019s search' as the main interface."
+    },
+    {
+      "id": "C-01:33:05.070",
+      "result": "wrong",
+      "explanation": "Evidence since May 2024 shows Perplexity has *grown rapidly* and remained independent despite Google rolling out AI Overviews, rather than being \u201ckind of screwed\u201d or pushed into an acquisition.\n\nKey points:\n\n- **Strong funding and soaring valuation:** Perplexity was valued just over $1 billion in April 2024, but after Google\u2019s AI Overviews launch it went on to raise a $500 million round in June 2025 at a $14 billion valuation, and by September 2025 its valuation was reported around $20 billion\u2014hardly the profile of a company failing competitively. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Perplexity_AI?utm_source=openai))\n\n- **Rapid user and usage growth:** Analyses report Perplexity handling around 30 million queries per day (780 million in May 2025) with more than 20% month\u2011over\u2011month growth and over 22 million active users, giving it about a 6.2% share of the AI search segment. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Perplexity_AI?utm_source=openai)) This is growth *after* Google\u2019s AI Overviews became a mainstream feature in search.\n\n- **Still independent; acquisition only speculative:** Multiple reports in mid\u20112025 describe Apple internally *discussing* a potential bid for Perplexity, but both Apple and Perplexity declined to confirm any deal, and coverage characterizes talks as early and uncertain. Perplexity\u2019s CEO has explicitly said he does *not* want to sell to Big Tech and wants the company to remain independent. ([macrumors.com](https://www.macrumors.com/2025/06/20/apple-discussing-perplexity-ai-bid/?utm_source=openai)) As of late 2025, there is no credible report that Perplexity has been acquired.\n\n- **Behavior of a confident competitor, not a distressed target:** Perplexity has launched major new products (e.g., the Comet AI browser) and even made bold proposals to merge with TikTok U.S. and to buy Google Chrome, positioning itself as an acquirer or strategic partner rather than a company forced into a sale. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Perplexity_AI?utm_source=openai))\n\n- **Google competition did not wipe it out:** Google\u2019s AI Overviews now reaches over 1.5 billion monthly users worldwide, embedding generative AI deeply into Google Search. ([mlq.ai](https://mlq.ai/news/googles-ai-overviews-now-reach-over-15-billion-users-monthly/?utm_source=openai)) Despite this, Perplexity has continued to raise large rounds, sign major partnerships, and grow usage, contradicting the idea that Google copying its approach would effectively kill its prospects.\n\nGiven that (1) Perplexity has not been acquired, (2) it is expanding and highly valued, and (3) it remains a notable independent competitor in AI search, the prediction that it was \u201cscrewed\u201d and that acquisition was its main viable outcome has not come true as of November 30, 2025.",
+      "sources": [
+        {
+          "end_index": 674,
+          "start_index": 591,
+          "title": "Perplexity AI",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Perplexity_AI?utm_source=openai"
+        },
+        {
+          "end_index": 1024,
+          "start_index": 941,
+          "title": "Perplexity AI",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Perplexity_AI?utm_source=openai"
+        },
+        {
+          "end_index": 1614,
+          "start_index": 1505,
+          "title": "Apple Internally Discussing Whether to Bid to Acquire Perplexity AI - MacRumors",
+          "type": "url_citation",
+          "url": "https://www.macrumors.com/2025/06/20/apple-discussing-perplexity-ai-bid/?utm_source=openai"
+        },
+        {
+          "end_index": 2098,
+          "start_index": 2015,
+          "title": "Perplexity AI",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Perplexity_AI?utm_source=openai"
+        },
+        {
+          "end_index": 2386,
+          "start_index": 2275,
+          "title": "MLQ.ai | AI for investors",
+          "type": "url_citation",
+          "url": "https://mlq.ai/news/googles-ai-overviews-now-reach-over-15-billion-users-monthly/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Perplexity.ai has thrived as an independent company despite Google's AI Overviews. It remains standalone with no acquisition (CEO rejected Big Tech buyouts; rumors like Apple talks fizzled). Valuation surged to $20B in Sep 2025 after $200M raise (total funding ~$1.5B), up from $520M in Jan 2024. Revenue hit $148M annualized (Jun 2025), >$150M ARR mid-year, $100M+ in 2025. Users: 22M active, 780M queries (May 2025). Market share ~6-8% in AI chatbots (302% YoY growth), 4th behind ChatGPT/Gemini/Copilot. Active launches: Comet AI browser (Android Nov 2025, iOS soon), shopping assistants. Some criticism (misinfo claims, 'most likely to fail' vote Nov 2025, lawsuits), but metrics show large-scale success. Sources: Bloomberg, TechCrunch (Nov 2025 articles), Sacra, Business of Apps, Wikipedia, FirstPageSage."
+    },
+    {
+      "id": "A-01:20:35.490",
+      "result": "inconclusive",
+      "explanation": "The prediction concerns how companies will operate *5\u201310 years* after May 2024 (i.e., roughly 2029\u20132034). As of the current date, 2025-11-30, we are only about 1.5 years past the prediction date, well before the start of the forecast window (2029). There is no way yet to evaluate whether organizational structures and workflows will, by then, be \u201cbarely recognizable\u201d compared to today. Therefore, the correctness of this prediction cannot currently be determined.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": null
+    }
+  ]
+}

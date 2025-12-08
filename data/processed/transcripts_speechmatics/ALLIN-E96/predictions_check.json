@@ -1,0 +1,400 @@
+{
+  "meta": {
+    "count": 9,
+    "count_by_result": {
+      "inconclusive": 1,
+      "wrong": 4,
+      "right": 4
+    }
+  },
+  "predictions": [
+    {
+      "id": "sacks-00:07:57.720",
+      "result": "inconclusive",
+      "explanation": "Sacks\u2019 forecast was that Figma\u2019s *annual recurring revenue (ARR)* would reach roughly **$1.5\u20132.0 billion within about two years after end\u20112023**, i.e., by late 2025 or very early 2026. This is clear from the episode transcript, where he walks through Figma\u2019s ARR ramp and then says Adobe is paying ~25\u00d7 end\u2011of\u2011next\u2011year (2023) ARR and that \u201cwithin say two years after that\u201d Figma would be at $1.5\u20132B of ARR. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e96-adobe-acquires-figma-for-20b-tpb-spac-fedex-ceos-recession-warning-macro-picture-more?utm_source=openai))\n\nWhat we know today:\n\n* Independent estimates put Figma at about **$600M ARR at the end of 2023**, not the ~$800M 2023 ARR Sacks was assuming. ([auditshq.com](https://www.auditshq.com/blog/figma-statistics?utm_source=openai))\n* As a now\u2011public company, Figma reports **revenue, not total ARR**, in its SEC filings and earnings releases. Recent results show:\n  * Q1\u2013Q3 2025 revenue totaling about **$752M**, with Q3 2025 revenue of **$274.2M**, which management describes as an \u201cannual revenue run-rate of over $1.0 billion.\u201d ([investor.figma.com](https://investor.figma.com/news-events/news/news-details/2025/Figma-Announces-Third-Quarter-2025-Financial-Results/default.aspx?utm_source=openai))\n  * Figma\u2019s updated full\u2011year 2025 guidance is **$1.044\u20131.046B in revenue**, implying a revenue (and likely ARR) level **around ~$1B, not yet at $1.5B+** by late 2025. ([y94.com](https://y94.com/2025/11/05/figma-raises-annual-revenue-forecast-on-strong-design-software-demand/?utm_source=openai))\n* Figma\u2019s IPO S\u20111 and 10\u2011Q filings define ARR and give customer counts by ARR bands (e.g., number of customers over $10k and over $100k ARR), but **do not disclose a single aggregate ARR figure** for 2024\u20132025 that we could directly compare to the $1.5\u20132B target. ([sec.gov](https://www.sec.gov/Archives/edgar/data/0001579878/000162827925000272/filename1.htm?utm_source=openai))\n\nBecause:\n\n1. The **prediction window has not fully elapsed** (we are still before \u201cvery early 2026\u201d), and\n2. Figma has **not published a total ARR number** for late 2025 that would definitively confirm or refute the $1.5\u20132B range,\n\nwe cannot say yet whether the prediction ultimately proves right or wrong. Available data suggest Figma is **well below** $1.5B ARR as of late 2025, but it is not mathematically impossible for ARR to grow substantially into early 2026, and the exact ARR figures are undisclosed.\n\nGiven both the remaining time in the forecast window and the lack of a published aggregate ARR metric, the correct status is **\u201cinconclusive (too early)\u201d rather than definitively right, wrong, or permanently ambiguous.",
+      "sources": [
+        {
+          "end_index": 647,
+          "start_index": 448,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E96: Adobe acquires Figma for $20B, TPB SPAC, FedEx CEO's recession warning, macro picture & more Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e96-adobe-acquires-figma-for-20b-tpb-spac-fedex-ceos-recession-warning-macro-picture-more?utm_source=openai"
+        },
+        {
+          "end_index": 877,
+          "start_index": 795,
+          "title": "Figma Statistics: Valuation, Funding & More (March 2024)",
+          "type": "url_citation",
+          "url": "https://www.auditshq.com/blog/figma-statistics?utm_source=openai"
+        },
+        {
+          "end_index": 1348,
+          "start_index": 1179,
+          "title": "Figma Announces Third Quarter 2025 Financial Results | Figma, Inc.",
+          "type": "url_citation",
+          "url": "https://investor.figma.com/news-events/news/news-details/2025/Figma-Announces-Third-Quarter-2025-Financial-Results/default.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 1646,
+          "start_index": 1518,
+          "title": "Figma raises annual revenue forecast on strong design software demand | Y94",
+          "type": "url_citation",
+          "url": "https://y94.com/2025/11/05/figma-raises-annual-revenue-forecast-on-strong-design-software-demand/?utm_source=openai"
+        },
+        {
+          "end_index": 2026,
+          "start_index": 1912,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001579878/000162827925000272/filename1.htm?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Figma's annual revenue run rate (synonymous with ARR in SaaS reporting) crossed $1B by end of Q3 2025 (Sep 30), per their Q3 earnings release ([investor.figma.com](https://investor.figma.com/news-events/news/news-details/2025/Figma-Announces-Third-Quarter-2025-Financial-Results/default.aspx); earnings call transcript). Q3 revenue was $274.2M (38% YoY), with Q4 guidance $292-294M and FY2025 revenue guidance $1.044-1.046B (40% YoY). Implied end-2025 ARR ~$1.17B (Q4*4). Earlier: $1B ARR at June 30, 2025 ([saastr.com](https://www.saastr.com/how-figmas-1b-arr-performance-stacks-up-against-snowflake-hubspot-and-6-other-saas-giants/)). This falls short of $1.5-2B by end-2025/early-2026; current date Dec 1, 2025 confirms timeline passed without meeting target."
+    },
+    {
+      "id": "chamath-00:31:55.600",
+      "result": "wrong",
+      "explanation": "Chamath predicted that Adobe\u2019s proposed $20B acquisition of Figma, announced in September 2022, would ultimately receive regulatory approval and close. In fact, the opposite occurred.\n\nOn December 18, 2023, Adobe and Figma publicly announced that they had **mutually agreed to terminate** the merger agreement, explicitly citing that there was **\u201cno clear path to receive necessary regulatory approvals\u201d** from the European Commission and the UK Competition and Markets Authority. ([news.adobe.com](https://news.adobe.com/news/news-details/2023/adobe-and-figma-mutually-agree-to-terminate-merger-agreement?utm_source=openai))  News coverage from multiple outlets (CNBC, Associated Press, Forbes, TechCrunch, Ars Technica) confirms that the $20B deal was **abandoned** due to regulatory pushback and that Adobe paid Figma a $1B termination fee. ([cnbc.com](https://www.cnbc.com/2023/12/18/adobe-and-figma-call-off-20-billion-merger.html?utm_source=openai))  \n\nFigma\u2019s later move to file for an IPO and its SEC filings further describe the Adobe deal as an **\u201cabandoned merger\u201d** terminated in December 2023, underscoring that it never closed. ([sec.gov](https://www.sec.gov/Archives/edgar/data/1579878/000162828025037014/figma424b4.htm?utm_source=openai))  \n\nBecause the acquisition did *not* receive final regulatory approval and *did not* close, Chamath\u2019s prediction that \u201cthis thing is going to close\u201d was **wrong**.",
+      "sources": [
+        {
+          "end_index": 660,
+          "start_index": 516,
+          "title": "Adobe and Figma Mutually Agree to Terminate Merger Agreement",
+          "type": "url_citation",
+          "url": "https://news.adobe.com/news/news-details/2023/adobe-and-figma-mutually-agree-to-terminate-merger-agreement?utm_source=openai"
+        },
+        {
+          "end_index": 990,
+          "start_index": 879,
+          "title": "Adobe and Figma call off $20 billion acquisition after scrutiny",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/12/18/adobe-and-figma-call-off-20-billion-merger.html?utm_source=openai"
+        },
+        {
+          "end_index": 1291,
+          "start_index": 1179,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1579878/000162828025037014/figma424b4.htm?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The Adobe-Figma acquisition, announced in September 2022, was mutually terminated on December 18, 2023, after failing to gain regulatory approval from the EU and UK authorities. Adobe paid Figma a $1 billion termination fee. Official sources confirm no path to approval existed after 15 months of review: [Adobe press release](https://news.adobe.com/news/news-details/2023/adobe-and-figma-mutually-agree-to-terminate-merger-agreement), [Figma blog](https://www.figma.com/blog/figma-adobe-abandon-proposed-merger/). News coverage from Reuters, CNBC, NYT, and WSJ in Dec 2023 reports the same outcome, with no revival by 2025 (e.g., Figma pursuing IPO per Business Insider Jul 2025)."
+    },
+    {
+      "id": "jason-00:32:00.720",
+      "result": "wrong",
+      "explanation": "Adobe\u2019s proposed $20 billion acquisition of Figma, announced in September 2022, was *not* completed. On December 18, 2023, Adobe and Figma issued a joint statement saying they had **mutually agreed to terminate the merger agreement**, citing \u201cno clear path to receive necessary regulatory approvals\u201d from the European Commission and the UK Competition and Markets Authority.([news.adobe.com](https://news.adobe.com/news/news-details/2023/Adobe-and-Figma-Mutually-Agree-to-Terminate-Merger-Agreement/default.aspx?utm_source=openai))  \n\nMajor coverage from outlets such as CNBC, Forbes, The Guardian, and TechCrunch confirms that the deal was abandoned and that Adobe is paying Figma a $1 billion termination/breakup fee.([cnbc.com](https://www.cnbc.com/2023/12/18/adobe-and-figma-call-off-20-billion-merger.html?utm_source=openai))  \n\nBecause the prediction was that the deal *\u201cwill successfully close (i.e., will not be blocked or abandoned)\u201d* and the deal was in fact terminated and never closed, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 564,
+          "start_index": 407,
+          "title": "Adobe and Figma Mutually Agree to Terminate Merger Agreement",
+          "type": "url_citation",
+          "url": "https://news.adobe.com/news/news-details/2023/Adobe-and-Figma-Mutually-Agree-to-Terminate-Merger-Agreement/default.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 865,
+          "start_index": 754,
+          "title": "Adobe and Figma call off $20 billion acquisition after scrutiny",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/12/18/adobe-and-figma-call-off-20-billion-merger.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The Adobe-Figma $20B acquisition, announced in September 2022, was mutually terminated on December 18, 2023, due to regulatory opposition from the UK CMA and EU, with no path to approval. Adobe paid Figma a $1B termination fee. Figma later IPO'd in 2025. Sources: [Adobe official announcement](https://news.adobe.com/news/news-details/2023/adobe-and-figma-mutually-agree-to-terminate-merger-agreement), [Figma blog](https://www.figma.com/blog/figma-adobe-abandon-proposed-merger/), [The Verge](https://www.theverge.com/2023/12/18/24005996/adobe-figma-acquisition-abandoned-termination-fee), Reuters, WSJ."
+    },
+    {
+      "id": "H-01:21:02.500",
+      "result": "right",
+      "explanation": "Evidence since 2022 shows a large, war\u2011linked shock to global food security that plausibly pushed **tens of millions** of additional people into serious hunger, in line with the low end of Friedberg\u2019s range, but **not** the extreme 300\u2013400 million figure.\n\nKey points:\n\n- The UN\u2019s State of Food Security and Nutrition in the World (SOFI) 2023 report estimates **735 million people were chronically undernourished in 2022**, about **122 million more people than in 2019**. It explicitly attributes this rise to *multiple crises*, including COVID\u201119, climate extremes, and the repercussions of the war in Ukraine on food and fertilizer prices.([who.int](https://www.who.int/news/item/12-07-2023-122-million-more-people-pushed-into-hunger-since-2019-due-to-multiple-crises--reveals-un-report?utm_source=openai))\n- SOFI\u2019s forward\u2011looking analysis projects that by **2030** there will be almost **600 million chronically undernourished people**, around **119 million more** than in a scenario with neither the pandemic nor the Ukraine war, and about **23 million more** than in a scenario where the war in Ukraine did *not* occur. This implies the war\u2019s contribution alone is on the order of **tens of millions** of extra undernourished people, not hundreds of millions.([nutritionconnect.org](https://nutritionconnect.org/resource-center/state-food-security-and-nutrition-world-2023?utm_source=openai))\n- The Global Report on Food Crises (GRFC) finds that people facing *acute* food insecurity at crisis or worse levels (IPC Phase 3+) rose from **193 million in 2021** to **258 million in 2022**, with the report stating that economic shocks including the ripple effects of the war in Ukraine (through higher food, fuel, and fertilizer prices) became major drivers of hunger.([wfp.org](https://www.wfp.org/news/global-report-food-crises-number-people-facing-acute-food-insecurity-rose-258-million-58?utm_source=openai)) By 2024, nearly **300 million** people in 53 countries were in acute food crisis, a further increase, again driven by conflict, economic shocks, climate events, and reduced aid.([theguardian.com](https://www.theguardian.com/global-development/2025/may/16/300m-people-at-risk-of-death-through-starvation-global-report-food-crises?utm_source=openai))\n- On the fertilizer\u2011specific mechanism Friedberg emphasized, FAO/AMIS analysis indicates that **global fertilizer trade volumes were not severely curtailed over the medium term**; by 2024 total fertilizer trade was actually slightly *higher* (about 2 million tonnes) than in 2020\u20132021, even though prices spiked in 2022 after the invasion.([scribd.com](https://www.scribd.com/document/888409724/cd5655en?utm_source=openai)) Food commodity prices also peaked in March 2022 and then fell; by mid\u20112025 global cereal prices were more than **20% below** that peak, and FAO was forecasting **record global cereal production** for 2025.([reuters.com](https://www.reuters.com/business/world-food-prices-dip-may-cereal-sugar-vegoils-drop-2025-06-06/?utm_source=openai)) This undermines the most catastrophic fertilizer\u2011shortage scenario.\n\nPutting this together:\n\n- **Direction and order of magnitude (low end):** The data support the claim that the Ukraine war and associated input\u2011price shocks produced **an additional tens of millions of people suffering serious, long\u2011lasting hunger** relative to a no\u2011war baseline. UN projections that isolate the Ukraine war\u2019s effect (~23 million extra chronically undernourished by 2030) sit squarely in the \"tens of millions\" range Friedberg mentioned.([nutritionconnect.org](https://nutritionconnect.org/resource-center/state-food-security-and-nutrition-world-2023?utm_source=openai))\n- **Upper bound clearly too high:** There is **no evidence** that the war\u2011and\u2011fertilizer channel has created an extra **300\u2013400 million** people consuming near\u2011starvation rations, and global fertilizer trade and cereal output recovered more than feared. The extreme upper end of his range has not materialized and is inconsistent with current projections.\n- **Measurement caveat:** Friedberg defined starvation as under 1,200 calories per day for a year, but global monitoring uses different thresholds (undernourishment, severe food insecurity, IPC phases). That makes an exact numerical test impossible, but all available metrics point to increases on the scale of **tens of millions, not hundreds of millions**.\n\nOverall, the **core prediction that the Ukraine war\u2019s food and fertilizer shock would add at least tens of millions of people to the global ranks of the starving or severely hungry is supported by subsequent UN analyses**, even though his most alarming figure of 300\u2013400 million additional starving people has not occurred and now looks exaggerated.",
+      "sources": [
+        {
+          "end_index": 845,
+          "start_index": 678,
+          "title": "122 million more people pushed into hunger since 2019 due to multiple crises, reveals UN report",
+          "type": "url_citation",
+          "url": "https://www.who.int/news/item/12-07-2023-122-million-more-people-pushed-into-hunger-since-2019-due-to-multiple-crises--reveals-un-report?utm_source=openai"
+        },
+        {
+          "end_index": 1436,
+          "start_index": 1303,
+          "title": "The State of Food Security and Nutrition in the World 2023 | Nutrition Connect",
+          "type": "url_citation",
+          "url": "https://nutritionconnect.org/resource-center/state-food-security-and-nutrition-world-2023?utm_source=openai"
+        },
+        {
+          "end_index": 1954,
+          "start_index": 1810,
+          "title": "Global report on food crises: Number of people facing acute food insecurity rose to 258 million in 58 countries in 2022 | World Food Programme",
+          "type": "url_citation",
+          "url": "https://www.wfp.org/news/global-report-food-crises-number-people-facing-acute-food-insecurity-rose-258-million-58?utm_source=openai"
+        },
+        {
+          "end_index": 2303,
+          "start_index": 2132,
+          "title": "Almost 300m people at risk of death through starvation - report",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/global-development/2025/may/16/300m-people-at-risk-of-death-through-starvation-global-report-food-crises?utm_source=openai"
+        },
+        {
+          "end_index": 2728,
+          "start_index": 2644,
+          "title": "CD 5655 en | PDF | Cereals | Creative Commons License",
+          "type": "url_citation",
+          "url": "https://www.scribd.com/document/888409724/cd5655en?utm_source=openai"
+        },
+        {
+          "end_index": 3065,
+          "start_index": 2934,
+          "title": "World food prices dip in May as cereal, sugar and vegoils drop",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/world-food-prices-dip-may-cereal-sugar-vegoils-drop-2025-06-06/?utm_source=openai"
+        },
+        {
+          "end_index": 3727,
+          "start_index": 3594,
+          "title": "The State of Food Security and Nutrition in the World 2023 | Nutrition Connect",
+          "type": "url_citation",
+          "url": "https://nutritionconnect.org/resource-center/state-food-security-and-nutrition-world-2023?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Global hunger levels, as measured by FAO's Prevalence of Undernourishment (PoU), have declined since the 2022 podcast: 8.7% (~735 million) in 2022, 8.5% in 2023, and 8.2% (~673 million) in 2024 per SOFI 2025 report ([WHO](https://www.who.int/news/item/28-07-2025-global-hunger-declines-but-rises-in-africa-and-western-asia-un-report), [FAO Hunger Map](https://www.fao.org/interactive/hunger-map/en/)). Pre-war baseline (2019-2021) was similar or higher (~8-9%). Acute food insecurity affected ~295 million in 2024 (GRFC 2025, [WFP](https://www.wfp.org/publications/global-report-food-crises-grfc)), up modestly but far below tens/hundreds of millions additional. Famine conditions affect ~770k ([ConcernUSA](https://concernusa.org/news/world-hunger-facts/)). No data shows increase to 300-400M under 1,200 kcal/day/year; FAO predicted only 11-19M additional hungry from Ukraine war in 2022 ([Reuters](https://www.reuters.com/article/ukraine-crisis-un-food/ukraine-war-risks-11-mln-19-mln-more-hungry-people-over-next-year-fao-idUKL8N2XX2N2/)), later revised to ~23M more chronic hunger by 2030 ([FAO](https://openknowledge.fao.org/server/api/core/bitstreams/813794e0-96b6-4a56-8705-8cdab0bfc65e/content)). Fertilizer disruptions occurred but were mitigated; no evidence of predicted starvation surge."
+    },
+    {
+      "id": "I-01:24:23.070",
+      "result": "right",
+      "explanation": "Evaluating the prediction against outcomes through late 2025:\n\n* **Path and level of rates.** Chamath said the Fed would take short\u2011term rates to about 4.5\u20135.0%. In reality, the federal funds target range reached 4.25\u20134.50% by December 2022, then peaked at 5.25\u20135.50% in July 2023 and stayed there through the end of 2023 and into mid\u20112024, before easing in late 2024\u20132025.([forbes.com](https://www.forbes.com/advisor/investing/federal-funds-rate/?utm_source=openai)) He slightly **under\u2011shot** the eventual peak (5.5% vs. his 4.5\u20135%), but correctly anticipated that rates would end up roughly around 5%, not stay near zero or top out in the 3s.\n\n* **\u201cHigher and longer than people expect.\u201d** In mid\u20112022, fed funds futures priced a peak around the low\u20113% range in early 2023 followed by cuts.([investing.com](https://www.investing.com/news/economy/us-interest-rates-peak-seen-in-six-months--futures-2852695?utm_source=openai)) By December 2022, markets still expected cuts by late 2023 even as economists were revising terminal\u2011rate forecasts up toward ~5.25\u20135.5%.([bankrate.com](https://www.bankrate.com/banking/federal-reserve/fomc-meeting-recap-december-2022/?utm_source=openai)) Instead, the Fed took rates above 5% and held them at 5.25\u20135.50% from July 2023 through July 2024, only beginning to cut later.([cnbc.com](https://www.cnbc.com/2024/05/01/fed-rate-decision-may-2024-.html?utm_source=openai)) That is broadly consistent with his claim that rates would go higher and stay elevated longer than markets were then pricing.\n\n* **Economic impact in 2023.** The normalized summary adds \u201cnoticeable slowdown or recessionary impact in 2023,\u201d but Chamath\u2019s actual quote only says the high rates \u201cwill have an impact to the economy.\u201d There clearly *was* impact, especially in interest\u2011sensitive sectors: 2023 existing home sales fell 18.7% from 2022 to their lowest level since 1995, largely because mortgage rates surged to two\u2011decade highs.([pbs.org](https://www.pbs.org/newshour/economy/u-s-existing-home-sales-drop-to-near-30-year-low?utm_source=openai)) However, at the aggregate level the U.S. did **not** fall into recession in 2023. Real GDP grew 2.5% for the year, faster than 2022, with very strong Q3\u2013Q4 growth, and unemployment remained low.([bea.gov](https://www.bea.gov/index.php/news/2024/gross-domestic-product-fourth-quarter-and-year-2023-third-estimate-gdp-industry-and?utm_source=openai)) Commentators later described 2023 as a \u201csoft landing\u201d or even an economic \u201cmiracle,\u201d precisely because the widely predicted deep recession never arrived.([wamc.org](https://www.wamc.org/commentary-opinion/2024-02-16/why-was-there-no-recession-in-2023?utm_source=openai)) So if one interprets his prediction as an outright 2023 recession, that part would be wrong; if one sticks to his actual wording (\u201can impact\u201d), it is correct but somewhat underspecified.\n\n* **Impact in 2024\u20132025 \u201cnot that great.\u201d** By 2024\u20132025, this part holds up well. Real U.S. GDP grew about 2.9% in 2023 and 2.8% in 2024, with continued positive growth into 2025 and unemployment around 4\u20134.3%, indicating a still\u2011solid expansion rather than a prolonged slump.([bea.gov](https://www.bea.gov/news/2025/gross-domestic-product-4th-quarter-and-year-2024-third-estimate-gdp-industry-and?utm_source=openai)) The IMF\u2019s 2024 Article IV report explicitly notes that the disinflation from the Fed\u2019s 525 bps of tightening came at a \u201crelatively light toll\u201d on activity, with output and employment above pre\u2011pandemic expectations and inflation headed back toward 2%.([imf.org](https://www.imf.org/en/news/articles/2024/07/18/pr24281-usa-imf-exec-board-concludes-2024-art-iv-consult?utm_source=openai)) That matches his view that, by 2024\u20132025, the economic damage from the high\u2011rate period would no longer be \u201cthat great.\u201d\n\n**Overall:**\n\n- He was directionally accurate on the level of rates (around 5%) and clearly correct that they would end up higher and stay elevated longer than markets initially expected.\n- High rates did materially hit sensitive sectors like housing, so his claim of an \u201cimpact\u201d is true, though the normalized paraphrase overstates this as a macro recession that never occurred.\n- His forward\u2011looking assessment that by 2024\u20132025 the impact would be relatively modest is consistent with actual outcomes: growth remained positive, unemployment only slightly higher, and inflation largely contained.\n\nTaking the prediction as a whole\u2014especially the *core macro call* of a ~5% \u201chigher\u2011for\u2011longer\u201d Fed and limited long\u2011run damage\u2014the forecast is best judged **mostly right**, with the caveat that the 2023 recession/slowdown component (as phrased in the normalized version) did not materialize.",
+      "sources": [
+        {
+          "end_index": 502,
+          "start_index": 408,
+          "title": "Federal Funds Rate History 1990 to 2025 \u2013 Forbes Advisor",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/advisor/investing/federal-funds-rate/?utm_source=openai"
+        },
+        {
+          "end_index": 964,
+          "start_index": 830,
+          "title": "U.S. interest rates peak seen by January 2023 - fed funds futures By Reuters",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/economy/us-interest-rates-peak-seen-in-six-months--futures-2852695?utm_source=openai"
+        },
+        {
+          "end_index": 1220,
+          "start_index": 1102,
+          "title": "Fed Raises Rates By Half A Point, Sees Rates Topping 5% In 2023 | Bankrate",
+          "type": "url_citation",
+          "url": "https://www.bankrate.com/banking/federal-reserve/fomc-meeting-recap-december-2022/?utm_source=openai"
+        },
+        {
+          "end_index": 1444,
+          "start_index": 1348,
+          "title": "Fed rate decision May 2024: Fed holds rate steady",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/05/01/fed-rate-decision-may-2024-.html?utm_source=openai"
+        },
+        {
+          "end_index": 2101,
+          "start_index": 1985,
+          "title": "U.S. existing home sales drop to near 30-year low | PBS News",
+          "type": "url_citation",
+          "url": "https://www.pbs.org/newshour/economy/u-s-existing-home-sales-drop-to-near-30-year-low?utm_source=openai"
+        },
+        {
+          "end_index": 2450,
+          "start_index": 2296,
+          "title": "Gross Domestic Product, Fourth Quarter and Year 2023 (Third Estimate), GDP by Industry, and Corporate Profits | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/index.php/news/2024/gross-domestic-product-fourth-quarter-and-year-2023-third-estimate-gdp-industry-and?utm_source=openai"
+        },
+        {
+          "end_index": 2721,
+          "start_index": 2604,
+          "title": "Why was there no recession in 2023? | WAMC",
+          "type": "url_citation",
+          "url": "https://www.wamc.org/commentary-opinion/2024-02-16/why-was-there-no-recession-in-2023?utm_source=openai"
+        },
+        {
+          "end_index": 3330,
+          "start_index": 3189,
+          "title": "Gross Domestic Product, 4th Quarter and Year 2024 (Third Estimate), GDP by Industry, and Corporate Profits | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2025/gross-domestic-product-4th-quarter-and-year-2024-third-estimate-gdp-industry-and?utm_source=openai"
+        },
+        {
+          "end_index": 3717,
+          "start_index": 3582,
+          "title": "IMF Executive Board Concludes 2024 Article IV Consultation with the United States",
+          "type": "url_citation",
+          "url": "https://www.imf.org/en/news/articles/2024/07/18/pr24281-usa-imf-exec-board-concludes-2024-art-iv-consult?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "Chamath's prediction on Fed rates was largely accurate: the federal funds rate peaked at 5.25-5.50% in July 2023 ([Forbes](https://www.forbes.com/advisor/investing/fed-funds-rate-history/)), higher than the FOMC's September 2022 median projection of 4.6% for end-2023 ([Federal Reserve](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20220921.htm)), and remained elevated (around 4-5% through much of 2024-2025) longer than some market expectations before cuts to ~3.75-4.00% by late 2025 ([FRED](https://fred.stlouisfed.org/series/FEDFUNDS), [Trading Economics](https://tradingeconomics.com/united-states/interest-rate)). However, the predicted 'noticeable slowdown or recessionary impact in 2023' did not materialize: no NBER-declared recession ([NBER](https://www.nber.org/research/business-cycle-dating)), real GDP grew 2.9% in 2023 (up from 2.5% in 2022) ([FRED](https://fred.stlouisfed.org/series/A191RL1A225NBEA), [Macrotrends](https://www.macrotrends.net/global-metrics/countries/usa/united-states/gdp-growth-rate)), defying recession forecasts ([White House CEA](https://www.bidenwhitehouse.archives.gov/cea/written-materials/2023/12/19/ten-charts-that-explain-the-u-s-economy-in-2023/)). Growth continued solidly into 2024 (~2.5%) and 2025 (Q2 3.8%, Q3 ~3.9%) ([BEA](https://www.bea.gov/data/gdp/gross-domestic-product)). The later part (reduced impact by 2024-2025) holds as rates eased and growth persisted, but the 2023 impact's severity is debatable (mild unemployment rise to ~3.8%, no contraction), making overall verdict ambiguous."
+    },
+    {
+      "id": "B-01:09:21.100",
+      "result": "wrong",
+      "explanation": "Evidence from major international institutions shows that the world experienced a *slowdown* and high inflation after mid\u20112022, but not a global recession starting in late 2022.\n\nKey points:\n- The IMF\u2019s World Economic Outlook and subsequent updates report that global real GDP *grew* by roughly 3.5% in 2022 and about 3.0\u20133.2% in 2023\u20132024, i.e., the world economy kept expanding, albeit more slowly. ([archive.yardeni.com](https://archive.yardeni.com/morning-briefing-2023/?utm_source=openai))\n- The OECD\u2019s November 2022/early\u20112023 outlook projected global growth of about 3.1% in 2022 and 2.2% in 2023, explicitly stating that their **baseline scenario was not a global recession but a significant slowdown**. ([marmomacchineinternational.com](https://www.marmomacchineinternational.com/en/oecd-no-global-recession-in-2023-but-growth-will-slow/?utm_source=openai))\n- In early 2023, the IMF *upgraded* its outlook and stated that output would be more resilient than previously expected and that a **global recession would probably be avoided**, reinforcing that the expected outcome was slowdown, not worldwide recession. ([industryslice.com](https://industryslice.com/Newsletter/17_492?utm_source=openai))\n- The IMF\u2019s own definition and historical list of global recessions (based on declines in per\u2011capita world GDP and other global indicators) recognize recessions in 1975, 1982, 1991, 2009 and the COVID\u201119 recession of 2020\u2014but **do not list any new global recession beginning in 2022 or 2023**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Global_recession?utm_source=openai))\n- While some major economies did enter recession or technical recession (for example, Germany in 2023 and the U.K. in the second half of 2023), these were country\u2011specific downturns within an overall *growing* world economy, not a synchronized global recession. ([en.wikipedia.org](https://en.wikipedia.org/wiki/German_economic_crisis_%282022%E2%80%93present%29?utm_source=openai))\n\nBecause the \"world headed for a global recession\" scenario did **not** materialize\u2014global growth slowed but remained positive, and leading institutions explicitly say a global recession was avoided\u2014the prediction that a global recession would begin around late 2022 is best classified as **wrong**.",
+      "sources": [
+        {
+          "end_index": 530,
+          "start_index": 437,
+          "title": "Morning Briefing - 2023 \u2022 Yardeni Research",
+          "type": "url_citation",
+          "url": "https://archive.yardeni.com/morning-briefing-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 903,
+          "start_index": 749,
+          "title": "OECD: no global recession in 2023 but growth will slow \u2013 Marmo Macchine International",
+          "type": "url_citation",
+          "url": "https://www.marmomacchineinternational.com/en/oecd-no-global-recession-in-2023-but-growth-will-slow/?utm_source=openai"
+        },
+        {
+          "end_index": 1245,
+          "start_index": 1161,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://industryslice.com/Newsletter/17_492?utm_source=openai"
+        },
+        {
+          "end_index": 1627,
+          "start_index": 1541,
+          "title": "Global recession",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Global_recession?utm_source=openai"
+        },
+        {
+          "end_index": 2010,
+          "start_index": 1891,
+          "title": "German economic crisis (2022\u2013present)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/German_economic_crisis_%282022%E2%80%93present%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction of a global recession beginning around late 2022 did not materialize. IMF World Economic Outlook data shows global GDP growth at ~3.4-3.5% in 2022, slowing to ~2.9-3.0% in 2023, and ~3.0-3.2% in 2024\u2014all positive, with no contraction (typically required for recession). While fears were high (e.g., IMF's Jan 2023 note on one-third of world economy in recession, meaning select countries), major economies like the US avoided recession, and no global recession was declared by IMF or World Bank. Quarterly global aggregates also showed no sustained negative growth. FedEx faced demand issues, but broader economy proved resilient. Sources: [IMF WEO Oct 2023](https://www.imf.org/en/publications/weo/issues/2023/10/10/world-economic-outlook-october-2023), [Jan 2023 Update](https://www.imf.org/en/publications/weo/issues/2023/01/31/world-economic-outlook-update-january-2023), search results confirming no recession occurrence."
+    },
+    {
+      "id": "B-01:03:32.400",
+      "result": "right",
+      "explanation": "As of November 30, 2025, *Obergefell v. Hodges* (2015), which recognized a constitutional right to same\u2011sex marriage nationwide, has **not** been overturned or limited in a way that ends nationwide legal recognition of same\u2011sex marriage. The Supreme Court\u2019s 2022 decision in *Dobbs v. Jackson Women\u2019s Health Organization* overturned *Roe v. Wade* and *Casey*, but it did not address *Obergefell*, and subsequent Supreme Court terms (2022\u20132025) have not included any decision reversing *Obergefell*.\n\nPost\u2011*Dobbs* discussion has included concerns and speculation from some justices and commentators about revisiting substantive due process precedents, but no majority opinion has moved to overturn *Obergefell*. The Court has decided some related religious\u2011liberty cases (e.g., *303 Creative LLC v. Elenis* in 2023) that refined the interaction between LGBTQ rights and the First Amendment, but these decisions left the underlying right to same\u2011sex civil marriage intact.\n\nGiven that more than three years have passed since the podcast (September 17, 2022) and more than three Supreme Court terms have elapsed after *Dobbs* without any reversal of nationwide legal recognition of same\u2011sex marriage, the prediction that \u201cgay marriage is [not] at any risk of being overturned by the Supreme Court\u201d has been **accurate so far**. Therefore, the prediction is best scored as **right** as of the current date.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Obergefell v. Hodges has not been overturned. In November 2025, the Supreme Court declined certiorari in *Davis v. Ermold* (also referenced as *Ermold v. Davis*), rejecting a petition by former Kentucky clerk Kim Davis that explicitly asked to overrule Obergefell and end nationwide same-sex marriage recognition ([SCOTUSblog](https://www.scotusblog.com/2025/11/supreme-court-declines-to-hear-case-on-constitutionality-of-same-sex-marriage/), [CNN](https://www.cnn.com/2025/11/10/politics/supreme-court-same-sex-marriage-obergefell-kim-davis), [NPR](https://www.npr.org/2025/11/10/nx-s1-5604293/scotus-rejects-gay-marriage-appeal)). This followed Dobbs (2022) by over three years, confirming the prediction holds as of December 2025; same-sex marriage remains legally recognized nationwide with no reversal."
+    },
+    {
+      "id": "I-01:26:58.800",
+      "result": "right",
+      "explanation": "Chamath predicted in September 2022 that the Russia\u2013Ukraine war would not end quickly but \"drag on for a really long time.\" That implied many more months and likely years of continued conflict rather than a rapid Russian collapse or a near\u2011term negotiated settlement.\n\nAs of November 30, 2025:\n\n- The large\u2011scale Russo\u2011Ukrainian war that began on 24 February 2022 is still formally characterized as **ongoing** (\u201c2022\u2013present\u201d) by major reference sources, with active combat and no peace treaty or stable ceasefire in place.\u3010([en.wikipedia.org](https://en.wikipedia.org/wiki/Russo-Ukrainian_war_%282022%E2%80%93present%29?utm_source=openai))  \n- Russia continues to occupy roughly one\u2011fifth of Ukraine\u2019s territory, with estimates around 18\u201320% of the country under Russian control as of 2025.\u3010([en.wikipedia.org](https://en.wikipedia.org/wiki/Russo-Ukrainian_war_%282022%E2%80%93present%29?utm_source=openai))  \n- Major named operations and offensives in 2024\u20132025 (e.g., the Pokrovsk offensive, Novopavlivka offensive, Kupiansk offensive, and Huliaipole offensive) are explicitly described as **ongoing**, underscoring that large\u2011scale fighting is still happening more than three years after the full\u2011scale invasion began.\u3010([en.wikipedia.org](https://en.wikipedia.org/wiki/Pokrovsk_offensive?utm_source=openai))  \n- Recent reporting in late November 2025 describes large Russian drone and missile barrages on Kyiv and other cities, with continuing casualties and infrastructure damage, again confirming that the war has not been resolved by a settlement or decisive collapse.\u3010([reuters.com](https://www.reuters.com/world/europe/russian-missile-drone-attacks-kill-least-4-kyiv-overnight-official-says-2025-11-25/?utm_source=openai))  \n- Analyses marking the war\u2019s third year describe it as a prolonged war of attrition that has \"settled\" into long\u2011term grinding conflict after the 2023 counteroffensive, not as a short, concluded campaign.\u3010([kyivindependent.com](https://kyivindependent.com/how-ukraine-has-pushed-back-and-held-the-line-against-russia-for-3-years/?utm_source=openai))\n\nBecause the war has continued for years after September 2022, with no quick negotiated peace and no sudden, war\u2011ending collapse of Russian forces, Chamath\u2019s broad directional prediction\u2014that the conflict would drag on for a long time\u2014has been borne out by events.",
+      "sources": [
+        {
+          "end_index": 685,
+          "start_index": 569,
+          "title": "Russo-Ukrainian war (2022\u2013present)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Russo-Ukrainian_war_%282022%E2%80%93present%29?utm_source=openai"
+        },
+        {
+          "end_index": 959,
+          "start_index": 843,
+          "title": "Russo-Ukrainian war (2022\u2013present)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Russo-Ukrainian_war_%282022%E2%80%93present%29?utm_source=openai"
+        },
+        {
+          "end_index": 1368,
+          "start_index": 1280,
+          "title": "Pokrovsk offensive",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Pokrovsk_offensive?utm_source=openai"
+        },
+        {
+          "end_index": 1794,
+          "start_index": 1639,
+          "title": "Russian barrage on Kyiv kills seven, disrupts energy supplies",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/europe/russian-missile-drone-attacks-kill-least-4-kyiv-overnight-official-says-2025-11-25/?utm_source=openai"
+        },
+        {
+          "end_index": 2154,
+          "start_index": 2010,
+          "title": "How Ukraine has pushed back and held the line against Russia for 3 years",
+          "type": "url_citation",
+          "url": "https://kyivindependent.com/how-ukraine-has-pushed-back-and-held-the-line-against-russia-for-3-years/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Russia-Ukraine war, which began in February 2022, was ongoing as of December 2025, more than three years after Chamath's September 2022 prediction. Recent reports confirm active fighting, including Russian advances near Pokrovsk and Kostyantynivka (Washington Post, Nov 25, 2025; ISW, Nov 21, 2025), Ukrainian incursions into Kursk (CFR Global Conflict Tracker), ongoing missile strikes on Kyiv (Sky News, Dec 1, 2025), and stalled peace talks (CSIS, Oct 2025; NPR, Nov 24, 2025). No collapse of Russian forces or near-term settlement occurred, matching the prediction of a prolonged conflict lasting 'many more months, and likely years.'"
+    },
+    {
+      "id": "I-01:27:13.600",
+      "result": "wrong",
+      "explanation": "Available market data show that equity volatility did **not** stay unusually high for a prolonged period (\u22651 year) after September 2022, and in fact normalized faster than many late\u20112022 outlooks anticipated.\n\nKey evidence:\n\n1. **Volatility levels fell sharply in 2023 vs. 2022**  \n   * The average level of the Cboe Volatility Index (VIX) in 2022 was **25.64**, about 30% above its long\u2011term average and the **sixth\u2011highest yearly average ever**, reflecting persistently elevated implied volatility that year. ([gia.com](https://www.gia.com/high-demand-for-index-options-kept-implied-volatility-elevated-in-2022/?utm_source=openai))  \n   * In 2023, VIX behavior changed dramatically: it **averaged 16.85**, with implied volatility \u201cdrifting lower\u201d over the year. Realized volatility of the S&P 500 was **13.10%** in 2023. ([gia.com](https://www.gia.com/december-2023-market-recap/?utm_source=openai))  \n   * S&P Dow Jones Indices similarly notes that by late 2023 the S&P 500\u2019s annualized daily volatility was a **\u201crelatively low\u201d 13.6%**, and that trailing one\u2011year volatility had **decreased across all 11 sectors** between mid\u20112023 and late\u20112023. ([indexologyblog.com](https://www.indexologyblog.com/2023/11/27/the-november-2023-rebalance-of-the-sp-500-low-volatility-index/?utm_source=openai))  \n   These levels are near or below long\u2011run norms and are not consistent with a regime of **sustained, unusually high, choppy volatility** for another full year.\n\n2. **Price action was a strong, sustained rally, not a long choppy sideways market**  \n   * After the 2022 bear market (S&P 500 total return **\u201118.11%**), the index delivered **+26.29% in 2023** and **+25.02% in 2024**, producing the best two\u2011year gain of the 21st century. ([slickcharts.com](https://www.slickcharts.com/sp500/returns?utm_source=openai))  \n   * This pattern\u2014large, mostly trending gains with only brief volatility spikes (e.g., the regional banking stress in March 2023)\u2014is not what investors typically describe as markets remaining \u201chighly volatile and choppy\u201d for an extended period.\n\n3. **Consensus expectations in late 2022 actually leaned toward *continued* volatility, which did *not* fully materialize**  \n   Several major houses in late 2022 expected **elevated volatility into 2023**:  \n   * JPMorgan projected that market volatility would **\u201cremain elevated (VIX averaging ~25)\u201d** with another equity drawdown and a likely retest of 2022 lows in 1H23. ([tker.co](https://www.tker.co/p/wall-street-2023-stock-market-outlook?utm_source=openai))  \n   * Rothschild & Co\u2019s survey of broker forecasts notes that at end\u20112022, brokers projected **flat U.S. equity returns for 2023**, with **volatility expected to remain elevated** and some predicting a retest of the 2022 lows. ([rothschildandco.com](https://www.rothschildandco.com/en/newsroom/insights/2023/07/wealth-management-consensus-outlooks-2023/?utm_source=openai))  \n   * Northern Trust\u2019s 2023 outlook similarly described 2023 as a **\u201cturbulent\u201d** and volatile year, even while expecting some tempering later on. ([businesswire.com](https://www.businesswire.com/news/home/20221218005039/en/Northern-Trust-2023-Outlook-Markets-and-Economy-Pivot-from-Inflation-and-Monetary-Policy-Fears-to-a-Weak-Global-Economy?utm_source=openai))  \n\n   In reality, VIX did **not** average around 25 in 2023; it averaged **~16.9**, well below both 2022 levels and the long\u2011term mean. ([gia.com](https://www.gia.com/december-2023-market-recap/?utm_source=openai))  Volatility subsided **sooner**, not \u201cfor much longer,\u201d than many of these contemporaneous expectations.\n\nGiven (a) the clear drop in both implied and realized volatility by 2023, (b) the strong, relatively smooth upward trend in major equity indices starting in late 2022, and (c) the fact that consensus late\u20112022 forecasts already anticipated more persistent volatility than actually occurred, Chamath\u2019s claim that the choppy, high\u2011vol regime would persist for \u201cmuch longer than people think\u201d (on the order of at least another year) does **not** match subsequent market behavior. Hence the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 671,
+          "start_index": 549,
+          "title": "High Demand for Index Options Kept Implied Volatility Elevated in 2022 - Gateway Investment Advisers",
+          "type": "url_citation",
+          "url": "https://www.gia.com/high-demand-for-index-options-kept-implied-volatility-elevated-in-2022/?utm_source=openai"
+        },
+        {
+          "end_index": 940,
+          "start_index": 862,
+          "title": "December 2023 Market Recap - Gateway Investment Advisers",
+          "type": "url_citation",
+          "url": "https://www.gia.com/december-2023-market-recap/?utm_source=openai"
+        },
+        {
+          "end_index": 1338,
+          "start_index": 1191,
+          "title": "The November 2023 Rebalance of the S&P 500 Low Volatility Index \u2013 Indexology\u00ae Blog | S&P Dow Jones Indices",
+          "type": "url_citation",
+          "url": "https://www.indexologyblog.com/2023/11/27/the-november-2023-rebalance-of-the-sp-500-low-volatility-index/?utm_source=openai"
+        },
+        {
+          "end_index": 1861,
+          "start_index": 1781,
+          "title": "S&P 500 Total Returns by Year Since 1926",
+          "type": "url_citation",
+          "url": "https://www.slickcharts.com/sp500/returns?utm_source=openai"
+        },
+        {
+          "end_index": 2581,
+          "start_index": 2491,
+          "title": "Wall Street's 2023 outlook for stocks \ud83d\udd2d - by Sam Ro, CFA",
+          "type": "url_citation",
+          "url": "https://www.tker.co/p/wall-street-2023-stock-market-outlook?utm_source=openai"
+        },
+        {
+          "end_index": 2957,
+          "start_index": 2811,
+          "title": "Rothschild & Co \u2013 WM: Consensus outlook: mid-year update",
+          "type": "url_citation",
+          "url": "https://www.rothschildandco.com/en/newsroom/insights/2023/07/wealth-management-consensus-outlooks-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 3323,
+          "start_index": 3107,
+          "title": "Northern Trust 2023 Outlook: Markets and Economy Pivot from Inflation and Monetary Policy Fears to a Weak Global Economy",
+          "type": "url_citation",
+          "url": "https://www.businesswire.com/news/home/20221218005039/en/Northern-Trust-2023-Outlook-Markets-and-Economy-Pivot-from-Inflation-and-Monetary-Policy-Fears-to-a-Weak-Global-Economy?utm_source=openai"
+        },
+        {
+          "end_index": 3540,
+          "start_index": 3462,
+          "title": "December 2023 Market Recap - Gateway Investment Advisers",
+          "type": "url_citation",
+          "url": "https://www.gia.com/december-2023-market-recap/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath predicted high volatility and choppiness in financial markets would persist for at least another year after September 2022 (i.e., through mid-2023 or longer), longer than most investors expected. However, VIX (key volatility measure, historical avg. ~19-21) averaged 25.64 in 2022 (high, with Sep-Oct spikes to 30+), but dropped sharply to 16.85 in 2023 and 15.55 in 2024, below average ([FRED VIXCLS annual data](https://fred.stlouisfed.org/graph/?g=A58O)). 2025 YTD avg. 19.25, with spikes (e.g., April 2025 to 50+), but not relevant to the initial period. S&P 500 bottomed Oct 2022 (~3577), rallied +24% in 2023 and +25% in 2024 with low sustained vol, not 'choppy' (steady uptrend, max drawdowns <10% early 2023) ([Macrotrends](https://www.macrotrends.net/2526/sp-500-historical-annual-returns), [Visual Capitalist](https://www.visualcapitalist.com/charted-the-rise-of-stock-market-volatility-2017-2025/)). Volatility subsided faster than Sep 2022 bearish expectations of prolonged Fed hikes/recession, contradicting the prediction. Sources: FRED, Yahoo Finance VIX history, S&P performance timelines."
+    }
+  ]
+}

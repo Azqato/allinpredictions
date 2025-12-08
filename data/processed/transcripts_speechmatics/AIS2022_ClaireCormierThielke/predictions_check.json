@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "count": 5,
+    "count_by_result": {
+      "wrong": 2,
+      "ambiguous": 1,
+      "inconclusive": 1,
+      "right": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:13:40.000",
+      "result": "wrong",
+      "explanation": "Available data show that China\u2019s high\u2011speed rail (HSR) network did **not** grow from about **23,000 miles** to **~40,000 miles** in the years after 2022, and no official plan even targets 40,000 miles (\u224864,000 km) in that timeframe.\n\n**Baseline ~23,000 miles**  \n\u2022 Multiple sources around 2020\u20132021 state that China had **about 23,000 miles** of HSR. For example, President Biden\u2019s April 30, 2021 remarks say: *\u201cChina already has 23,000 miles of high\u2011speed rail\u201d* ([bidenwhitehouse.archives.gov](https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2021/04/30/remarks-by-president-biden-at-an-event-marking-amtraks-50th-anniversary/?utm_source=openai)).  \n\u2022 Technical/statistical sources put this at **37,900 km** by the end of 2020, which converts to ~23,560 miles, matching that figure ([en.wikipedia.org](https://en.wikipedia.org/wiki/High-speed_rail_in_China?utm_source=openai)).\n\n**What actually happened afterward**  \n\u2022 By the end of **2021**, China\u2019s HSR operating length had already exceeded **40,000 km** (about **24,800 miles**), according to China State Railway Group and China Daily reports ([chinadaily.com.cn](https://www.chinadaily.com.cn/a/202201/02/WS61d1b5f1a310cdd39bc7ebe1.html?utm_source=openai)).  \n\u2022 Subsequent expansion continued, but on the order of tens of thousands of **kilometers**, not to 40,000 **miles**:\n  - End of **2024**: official/statistical summaries put HSR length at **47,000\u201348,000 km** (roughly **29,000\u201329,800 miles**) ([thedailycpec.com](https://thedailycpec.com/chinas-high-speed-rail-network-reaches-47000-kilometers/?utm_source=openai)).\n\n**Official targets contradict 40,000 miles**  \n\u2022 China\u2019s 14th Five\u2011Year railway plan aimed to expand HSR from about **38,000 km** to **50,000 km by 2025**, and later strategies envision **60,000 km by 2030** and **70,000 km by 2035**\u2014all well below **40,000 miles (~64,000 km)** in the 2020s ([brixsweden.org](https://brixsweden.org/china-to-expand-high-speed-rail-network-to-50000-kilometers-by-2025/?utm_source=openai)).\n\n**Interpretation of the quote**  \n\u2022 In the podcast, the speaker references **23,000 miles** of Chinese HSR (a common U.S. talking point drawn from speeches like Biden\u2019s) and then says \u201cthat number will soon be 40,000 as they continue to build,\u201d clearly implying **miles**, not kilometers.  \n\u2022 If she actually meant **kilometers**, the network had **already** passed 40,000 km before the May 2022 episode, so it was not a *future* prediction at all; it was already true by end\u20112021.\n\nGiven that:\n1. Starting point (~23,000 miles) is accurate for ~2020;  \n2. As of late 2025 the HSR network is only ~29\u201330k miles, **far short of 40,000 miles**; and  \n3. Even China\u2019s official long\u2011term plans don\u2019t reach 40,000 miles within \u201cseveral years\u201d of 2022,\n\nthe normalized prediction that China\u2019s HSR mileage would rise from about **23,000 miles** to **~40,000 miles in the near future** is **wrong**.",
+      "sources": [
+        {
+          "end_index": 703,
+          "start_index": 500,
+          "title": "Remarks by President Biden at an Event Marking Amtrak's 50th Anniversary | The White House",
+          "type": "url_citation",
+          "url": "https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2021/04/30/remarks-by-president-biden-at-an-event-marking-amtraks-50th-anniversary/?utm_source=openai"
+        },
+        {
+          "end_index": 934,
+          "start_index": 840,
+          "title": "High-speed rail in China",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/High-speed_rail_in_China?utm_source=openai"
+        },
+        {
+          "end_index": 1272,
+          "start_index": 1158,
+          "title": "China's high-speed railway network exceeds 40,000 km - Chinadaily.com.cn",
+          "type": "url_citation",
+          "url": "https://www.chinadaily.com.cn/a/202201/02/WS61d1b5f1a310cdd39bc7ebe1.html?utm_source=openai"
+        },
+        {
+          "end_index": 1640,
+          "start_index": 1519,
+          "title": "China\u2019s high-speed rail network reaches 47,000 kilometers - The Daily CPEC",
+          "type": "url_citation",
+          "url": "https://thedailycpec.com/chinas-high-speed-rail-network-reaches-47000-kilometers/?utm_source=openai"
+        },
+        {
+          "end_index": 2067,
+          "start_index": 1938,
+          "title": "China to Expand High-Speed Rail Network to 50,000 Kilometers by 2025 - Belt & Road Institute in Sweden",
+          "type": "url_citation",
+          "url": "https://brixsweden.org/china-to-expand-high-speed-rail-network-to-50000-kilometers-by-2025/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "In May 2022, China's HSR network was approximately 40,000 km (~24,855 miles), aligning with the quote's 'about 23,000 miles' (minor rounding difference). By end-2024, it reached 48,000 km (~29,800 miles); projected to exceed 50,000 km (~31,000 miles) by end-2025 [Wikipedia: High-speed rail in China table; China State Railway Group via gov.cn, Jan 2025; Statista Sep 2025]. This is far short of the predicted 40,000 miles (~64,000 km). Plans target 60,000 km (~37,300 miles) by 2030 [gov.cn Jan 2025]. After 3.5 years, growth has been steady but insufficient to meet the prediction, marking it as wrong."
+    },
+    {
+      "id": "F-00:35:40.000",
+      "result": "wrong",
+      "explanation": "Evidence shows that when the ILWU\u2013PMA West Coast longshore contract expired on July 1, 2022, there was **no U.S. West Coast port strike**, nor a shutdown comparable to 2014\u20132015.\n\n- The ILWU and PMA jointly stated in mid\u2011June 2022 that although they were unlikely to reach a deal before the July 1 expiration, **\u201cneither party is preparing for a strike or a lockout\u201d** and that cargo operations would continue beyond the contract\u2019s expiration. ([ilwu13.com](https://ilwu13.com/for-immediate-release-june-14-2022/?utm_source=openai))\n- On July 1, 2022, after the contract lapsed, both sides again issued a joint statement that **\u201ccargo will keep moving\u201d and \u201cnormal operations will continue at the ports until an agreement can be reached\u201d**, confirming there was no work stoppage as of the renewal date. ([supplychaindive.com](https://www.supplychaindive.com/news/west-coast-port-contract-expires-ilwu/626429/?utm_source=openai))\n- Contemporary coverage emphasized that the U.S. had not seen a nationwide dockworker strike in over 50 years, underscoring that what followed were negotiations and localized issues, not a coast\u2011wide strike. ([ppai.org](https://www.ppai.org/media-hub/negotiations-continue-as-west-coast-port-labor-contract-expires/?utm_source=openai))\n- Negotiations continued with ports operating while workers were under an expired contract; reports from early July 2022 note that ports would **\u201ckeep functioning\u201d** despite the lack of a new agreement. ([supplychainbrain.com](https://www.supplychainbrain.com/articles/35256-west-coast-dockworkers-extend-labor-talks-without-contract?utm_source=openai))\n- Eventually, the ILWU and PMA reached a tentative deal in June 2023, and the union ratified a six\u2011year contract that was made retroactive to July 1, 2022, explicitly described as ending more than a year of uncertainty and *fears* of a possible strike\u2014again indicating that such a strike never occurred. ([supplychaindive.com](https://www.supplychaindive.com/news/ilwu-vote-ratify-6-year-contract-pma-west-coast-ports-strike-fears/692544/?utm_source=openai))\n\nBecause no significant U.S. West Coast port strike began around July 1, 2022, and there was no comparable, prolonged shutdown of imports, the forecast that there was a significant likelihood of such a strike (\"might happen again July 1st\") did **not** materialize. Hence the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 567,
+          "start_index": 479,
+          "title": "FOR IMMEDIATE RELEASE: June 14, 2022 \u2013 ILWU 13",
+          "type": "url_citation",
+          "url": "https://ilwu13.com/for-immediate-release-june-14-2022/?utm_source=openai"
+        },
+        {
+          "end_index": 964,
+          "start_index": 839,
+          "title": "West Coast dockworkers fail to reach labor agreement with port employers | Supply Chain Dive",
+          "type": "url_citation",
+          "url": "https://www.supplychaindive.com/news/west-coast-port-contract-expires-ilwu/626429/?utm_source=openai"
+        },
+        {
+          "end_index": 1301,
+          "start_index": 1174,
+          "title": "Negotiations Continue As West Coast Port Labor Contract Expires - PPAI - Promotional Products Association International",
+          "type": "url_citation",
+          "url": "https://www.ppai.org/media-hub/negotiations-continue-as-west-coast-port-labor-contract-expires/?utm_source=openai"
+        },
+        {
+          "end_index": 1656,
+          "start_index": 1506,
+          "title": "West Coast Dockworkers Extend Labor Talks Without Contract | SupplyChainBrain",
+          "type": "url_citation",
+          "url": "https://www.supplychainbrain.com/articles/35256-west-coast-dockworkers-extend-labor-talks-without-contract?utm_source=openai"
+        },
+        {
+          "end_index": 2116,
+          "start_index": 1962,
+          "title": "ILWU ratifies 6-year contract | Supply Chain Dive",
+          "type": "url_citation",
+          "url": "https://www.supplychaindive.com/news/ilwu-vote-ratify-6-year-contract-pma-west-coast-ports-strike-fears/692544/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No U.S. West Coast port strike occurred around July 1, 2022, despite the ILWU-PMA contract expiring on that date. Negotiations continued without a work stoppage, averting disruptions. A tentative agreement was reached in June 2023 and ratified in September 2023, retroactive to July 2022. Sources: [Reuters (Jul 1, 2022)](https://www.reuters.com/world/us/dreaded-us-west-coast-port-labor-contract-expiration-ticks-closer-2022-07-01/), [Supply Chain Dive (Sep 1, 2023)](https://www.supplychaindive.com/news/ilwu-vote-ratify-6-year-contract-pma-west-coast-ports-strike-fears/692544/), [Everstream Analytics timeline](https://www.everstream.ai/risk-centers/california-dock-workers-strike-timeline/), multiple reports confirm strike was 'averted' or 'unlikely' (e.g., Riverside Logistics, Jun 27, 2022)."
+    },
+    {
+      "id": "F-00:34:44.000",
+      "result": "ambiguous",
+      "explanation": "Flexport is a private company and does not publish audited annual revenue figures, so we must rely on third\u2011party estimates and trade\u2011press reports, which disagree.\n\nEvidence suggesting the prediction **was roughly correct**:\n- A CB Insights analysis lists Flexport\u2019s **total revenue for 2022 as $5B**. ([cbinsights.com](https://www.cbinsights.com/research/flexport-valuation/?utm_source=openai))\n- Contrary Research states that Flexport\u2019s revenue **\u201cpeaked at approximately $5 billion in 2022\u201d** before falling in 2023. ([research.contrary.com](https://research.contrary.com/company/flexport?utm_source=openai))\n- An American Journal of Transportation (AJOT) article reports that, according to Ryan Petersen, **Flexport\u2019s estimated 2022 revenue was $5 billion**. ([ajot.com](https://www.ajot.com/insights/full/ai-flexports-ceo-clark-promises-to-bring-amazon-values-to-freight-forwarding?utm_source=openai))\n\nEvidence suggesting a **lower figure (~$4.1B)**:\n- Sacra\u2019s more recent research and dataset estimate that Flexport **\u201creached a peak of approximately $4.1 billion in 2022\u201d** during post\u2011COVID supply chain bottlenecks. ([sacra.com](https://sacra.com/research/flexport/?utm_source=openai))\n- In a separate Q&A, Sacra clarifies that its earlier **$5B** figure for 2022 was an *estimate* derived from Petersen\u2019s own late\u20112022 projection (a tweet), and not from disclosed actuals. ([sacra.com](https://sacra.com/q/flexport-2022-gross-revenue/?utm_source=openai))\n\nBecause:\n- There is **no official, audited 2022 revenue** disclosed by Flexport.\n- Credible sources conflict between ~**$4.1B** and **$5B**.\n- The $5B number itself is acknowledged in at least one analysis as a **projection\u2011based estimate**, not a confirmed actual.\n\nWe can say the forecast was directionally very close (multi\u2011billion, in the 4\u20135B range), but we **cannot definitively confirm** that calendar\u2011year 2022 revenue was \u201capproximately $5B\u201d based on public data. That makes the outcome **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 436,
+          "start_index": 343,
+          "title": "Flexport\u2019s valuation is likely 80% lower than its last valuation of $8B - CB Insights Research",
+          "type": "url_citation",
+          "url": "https://www.cbinsights.com/research/flexport-valuation/?utm_source=openai"
+        },
+        {
+          "end_index": 653,
+          "start_index": 562,
+          "title": "Report: Flexport Business Breakdown & Founding Story | Contrary Research",
+          "type": "url_citation",
+          "url": "https://research.contrary.com/company/flexport?utm_source=openai"
+        },
+        {
+          "end_index": 949,
+          "start_index": 806,
+          "title": "Flexport\u2019s CEO Clark promises to bring Amazon values to freight forwarding | AJOT.COM",
+          "type": "url_citation",
+          "url": "https://www.ajot.com/insights/full/ai-flexports-ceo-clark-promises-to-bring-amazon-values-to-freight-forwarding?utm_source=openai"
+        },
+        {
+          "end_index": 1241,
+          "start_index": 1172,
+          "title": "Flexport | Sacra",
+          "type": "url_citation",
+          "url": "https://sacra.com/research/flexport/?utm_source=openai"
+        },
+        {
+          "end_index": 1512,
+          "start_index": 1431,
+          "title": "Can you confirm that Flexport's gross revenue for 2022 hit $5B? | Sacra",
+          "type": "url_citation",
+          "url": "https://sacra.com/q/flexport-2022-gross-revenue/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Multiple reliable sources confirm Flexport's 2022 gross revenue was approximately $5 billion, matching the prediction made in May 2022. Ryan Petersen himself estimated 2022 revenue at $5B in post-year interviews (e.g., [TechCrunch July 2023](https://techcrunch.com/2023/07/10/flexports-ryan-petersen-joins-venture-firm-founders-fund-as-a-partner/), [AJOT March 2023](https://www.ajot.com/insights/full/ai-flexports-ceo-clark-promises-to-bring-amazon-values-to-freight-forwarding), [WSJ Jan 2023](https://www.wsj.com/articles/flexport-names-former-amazon-executive-as-president-11672946927)). Other confirmations include [FreightWaves Sep 2023](https://www.freightwaves.com/news/flexport-founder-says-ousted-ceo-lost-customer-focus-spending-discipline) ('$5 billion in gross revenue'), [CB Insights Sep 2023](https://www.cbinsights.com/research/flexport-valuation/) ('2022 \u2013 $5B'), [Notice.co Report Dec 2024](https://notice-reports.s3.amazonaws.com/Flexport%20Report%202024.12.24_16.20.34.pdf) ('$5.0 B in 2022'), [Contrary Research May 2025](https://research.contrary.com/company/flexport) ('peaked at approximately $5 billion'), and [StockAnalysis Oct 2024](https://stockanalysis.com/article/invest-in-flexport-stock/) ('$5 billion in 2022'). One outlier ([Sacra](https://sacra.com/c/flexport/)) reports ~$4.1B gross, likely a net or adjusted figure, but consensus aligns with ~$5B gross revenue, consistent with the company's reporting convention (e.g., 2021 at $3.3B)."
+    },
+    {
+      "id": "jason-00:56:33.180",
+      "result": "inconclusive",
+      "explanation": "It is **too early** to evaluate this prediction.\n\nThe claim is about events unfolding *over the remaining lifetimes of the speakers* (likely several decades, roughly toward the late 21st century). As of late 2025:\n\n- **Extreme/abject poverty still clearly exists** in many countries, both democratic and authoritarian, so the prediction has not yet had time to either be fulfilled or definitively fail.\n- The timeline specified (\"in our lifetime\") extends well beyond 2025, so we cannot know yet whether global abject poverty will be eliminated everywhere except in dictatorships.\n\nBecause the prediction is explicitly long\u2011term and its deadline is far in the future, its truth value **cannot yet be determined**, so the appropriate classification is **\"inconclusive\"** rather than right, wrong, or ambiguous.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns the elimination of global abject (extreme) poverty\u2014defined as living below ~$2.15/day per World Bank standards\u2014within the speakers' lifetimes (roughly late 21st century, 50-80+ years from 2022). As of 2025, only ~3.5 years have passed. World Bank data (June/Sept 2025 updates: [blogs.worldbank.org](https://blogs.worldbank.org/en/opendata/june-2025-global-poverty-update-from-the-world-bank--2021-ppps-a), [blogs.worldbank.org](https://blogs.worldbank.org/en/opendata/september-2025-global-poverty-update-from-the-world-bank--new-da)) shows ~800-831 million people (9.9-10.1%) still in extreme poverty, with progress stalling ([vox.com](https://www.vox.com/future-perfect/470491/extreme-poverty-sub-saharan-africa-world-bank-conflict-climate-change), [ourworldindata.org](https://ourworldindata.org/poverty)). Poverty persists globally, including democracies. Far too early to assess fulfillment."
+    },
+    {
+      "id": "friedberg-00:57:15.000",
+      "result": "right",
+      "explanation": "Evidence since 2022 shows two key things:\n\n1. **The condition (\u201cif the delays stay the way they are\u201d) did *not* hold.**\n   * Global container schedule reliability improved strongly through 2022\u20132023, with Sea\u2011Intelligence estimating a jump from 42.6% to 62.1% and average delays falling from 6.38 to 4.83 days in 2023, i.e., congestion eased compared with the 2021\u2013early\u20112022 peak. ([sea-intelligence.com](https://www.sea-intelligence.com/press-room/249-2023-fy-schedule-reliability-overview?utm_source=openai))  So the specific antecedent of his conditional forecast (2022\u2011level delays persisting) was not met.\n\n2. **However, the main claim\u2014that brands would increasingly shift production/sourcing closer to end markets (nearshoring, especially to Mexico)\u2014*did* materialize.**\n   * Mexico surpassed China as the United States\u2019 largest goods import partner by 2023\u20132024; analyses attribute this shift partly to firms moving production closer to the U.S. (nearshoring) in response to supply\u2011chain risk, tariffs, and cost pressures. ([investopedia.com](https://www.investopedia.com/us-imports-from-mexico-11731277?utm_source=openai))\n   * Nearshoring to Mexico is widely described as \u201cbooming,\u201d with U.S., Canadian and South American companies deliberately bringing supply chains nearer to consumers and Mexico becoming a key manufacturing hub feeding the U.S. market. ([supplychainbrain.com](https://www.supplychainbrain.com/blogs/1-think-tank/post/39226-nearshoring-is-booming-in-mexico-here-are-five-numbers-to-prove-it?utm_source=openai))\n   * Mexico\u2019s FDI has hit record or near\u2011record levels since 2022, with a large share in manufacturing; government and industry reports explicitly link this inflow to nearshoring and relocation of production to serve the U.S. more directly. ([mexiconewsdaily.com](https://mexiconewsdaily.com/business/foreign-direct-investment-in-mexico-totaled-over-us-36b-in-2023/?utm_source=openai))\n   * U.S. data and Federal Reserve analysis show Mexico\u2019s share of U.S. imports rising while China\u2019s falls between 2017 and 2024, consistent with companies shifting sourcing out of China toward Mexico and other nearby locations. ([dallasfed.org](https://www.dallasfed.org/research/economics/2024/1205?utm_source=openai))\n\nGiven that (a) enough time has elapsed since mid\u20112022, (b) the *condition* of unchanged 2022\u2011level delays failed, but (c) the **substantive prediction\u2014more brands shifting production/sourcing closer to home, especially to Mexico\u2014clearly did occur**, the fairest overall judgment is that the prediction was **right** in its core directional claim, albeit for a broader mix of reasons (tariffs, geopolitics, resilience) than just sustained shipping delays.",
+      "sources": [
+        {
+          "end_index": 547,
+          "start_index": 418,
+          "title": "Sea-Intelligence - 2023-FY schedule reliability overview",
+          "type": "url_citation",
+          "url": "https://www.sea-intelligence.com/press-room/249-2023-fy-schedule-reliability-overview?utm_source=openai"
+        },
+        {
+          "end_index": 1170,
+          "start_index": 1070,
+          "title": "Here's How Much the U.S. Imports From Mexico",
+          "type": "url_citation",
+          "url": "https://www.investopedia.com/us-imports-from-mexico-11731277?utm_source=openai"
+        },
+        {
+          "end_index": 1580,
+          "start_index": 1407,
+          "title": "Nearshoring Is Booming in Mexico. Here Are Five Numbers to Prove It | SupplyChainBrain",
+          "type": "url_citation",
+          "url": "https://www.supplychainbrain.com/blogs/1-think-tank/post/39226-nearshoring-is-booming-in-mexico-here-are-five-numbers-to-prove-it?utm_source=openai"
+        },
+        {
+          "end_index": 1967,
+          "start_index": 1823,
+          "title": "Foreign direct investment in Mexico totaled over US $36B in 2023",
+          "type": "url_citation",
+          "url": "https://mexiconewsdaily.com/business/foreign-direct-investment-in-mexico-totaled-over-us-36b-in-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 2289,
+          "start_index": 2198,
+          "title": "Mexico nearshoring yet to yield big investment despite global trade tensions - Dallasfed.org",
+          "type": "url_citation",
+          "url": "https://www.dallasfed.org/research/economics/2024/1205?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Shipping delays from China to the US improved significantly post-2022 peak crisis levels (e.g., transit times doubled to 36 days in 2021-22 per SeaTrade Maritime; Flexport Nov 2025 reports 33.4 days China-US West Coast, down from prior highs and stable, vs. normal 13-22 days Shanghai-LA per Freightos/Waytron). However, the predicted shift to nearshoring occurred substantially: Mexico surpassed China as top US import source by 2023 (US Census: China $536B in 2022 vs Mexico $455B; 2025 data shows China imports down ~16% YOY in some periods, Mexico up 36% per CNBC/PIIE), with brands increasingly sourcing from Mexico, Vietnam (share +211% per Forbes), driven by supply chain resilience post-COVID delays, tariffs, and geopolitics (QIMA, Alvarez & Marsal reports). The trend matches the prediction's expectation over subsequent years."
+    }
+  ]
+}

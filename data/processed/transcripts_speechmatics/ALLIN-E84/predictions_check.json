@@ -1,0 +1,712 @@
+{
+  "meta": {
+    "count": 18,
+    "count_by_result": {
+      "wrong": 11,
+      "right": 4,
+      "inconclusive": 1,
+      "ambiguous": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:10:30.000",
+      "result": "wrong",
+      "explanation": "Chamath\u2019s prediction had two main components:\n\n1. **Duration of liquidity withdrawal / QT**  \n   - The Federal Reserve began balance-sheet runoff (quantitative tightening) in **June 2022** and has been shrinking its securities holdings continuously since then. Fed reports note that securities holdings had fallen by about **$1.8\u20132.1 trillion** from June 2022 through late 2024 and March 2025, explicitly dating the start of runoff to June 2022 and describing it as an ongoing process. ([federalreserve.gov](https://www.federalreserve.gov/monetarypolicy/December-2024-Federal-Reserve-Balance-Sheet-Developments.htm?utm_source=openai))  \n   - By late 2025, reporting describes this as a roughly **three\u2011year QT program** that is now ending or about to end. ([ft.com](https://www.ft.com/content/3c8e1d44-6156-4cbe-86fb-b45c66881cea?utm_source=openai))  \n   - So his statement that it would take \u201c**three years**\u201d of slowly running off excess money is broadly consistent with how long QT actually lasted.\n\n2. **Timing of the equity bear\u2011market bottom (~18 months later)**  \n   - The S&P 500\u2019s 2022 bear market is widely documented as having **bottomed on October 12, 2022**, with a decline of about 25% from the January 2022 peak. ([campaignforamillion.com](https://www.campaignforamillion.com/post/corrections-and-bear-markets?utm_source=openai))  \n   - Subsequent analyses in 2025 describe a bull market that began from that **October 12, 2022 low**, with the bull run approaching its **three\u2011year anniversary** and gains of roughly 80\u201390% since that trough\u2014confirming that October 12, 2022 is treated in hindsight as the cycle low. ([reuters.com](https://www.reuters.com/business/wall-streets-bull-market-nears-three-years-old-history-shows-it-may-still-have-2025-10-09/?utm_source=openai))  \n   - Chamath said in June 2022 that \u201cthe bottom doesn\u2019t happen for another **18 months**,\u201d which would point to roughly **late 2023**. In reality, the low occurred about **4 months** after his comment, and the index did **not** set a lower low in late 2023; there were only corrections within an ongoing bull market.\n\n**Overall assessment**  \n- The **QT duration** part of the call is roughly right (about three years of balance-sheet runoff).  \n- The **core market-timing claim**\u2014that the equity bear-market bottom was still ~18 months away\u2014was clearly **wrong**, as the bottom had already occurred by October 2022 and has held for several years.  \n\nBecause the prediction as quoted explicitly ties the drawn\u2011out QT process to an equity bottom \u201canother 18 months\u201d out, and that key timing element failed, the overall prediction is best classified as **wrong**, despite being directionally accurate on the length of QT.",
+      "sources": [
+        {
+          "end_index": 670,
+          "start_index": 522,
+          "title": "The Fed - December 2024",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/monetarypolicy/December-2024-Federal-Reserve-Balance-Sheet-Developments.htm?utm_source=openai"
+        },
+        {
+          "end_index": 886,
+          "start_index": 793,
+          "title": "Federal Reserve nears end of QT amid signs of stress in money markets",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/3c8e1d44-6156-4cbe-86fb-b45c66881cea?utm_source=openai"
+        },
+        {
+          "end_index": 1385,
+          "start_index": 1269,
+          "title": "Corrections and Bear Markets",
+          "type": "url_citation",
+          "url": "https://www.campaignforamillion.com/post/corrections-and-bear-markets?utm_source=openai"
+        },
+        {
+          "end_index": 1832,
+          "start_index": 1674,
+          "title": "Wall Street's bull market nears three years old; history shows it may still have life",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/wall-streets-bull-market-nears-three-years-old-history-shows-it-may-still-have-2025-10-09/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The equity bear market bottom occurred on October 12, 2022 (S&P 500 low close of 3,577.03), about 4 months after the June 24, 2022 podcast, not ~18 months later in late 2023 as predicted. The S&P 500 then rallied sharply, up ~24% in 2023, ~25% in 2024, and continued higher into 2025 ([Macrotrends S&P historical](https://www.macrotrends.net/2324/sp-500-historical-chart-data), [YCharts monthly data](https://ycharts.com/indicators/sp_500), [Wikipedia 2022 decline](https://en.wikipedia.org/wiki/2022_stock_market_decline)). Fed QT started June 1, 2022, and ended December 1, 2025 (~3.5 years, roughly matching 'three years'), but the prediction tied prolonged QT to a delayed bear market bottom, which did not happen ([Fed QT timeline](https://www.atlanticcouncil.org/blogs/econographics/deploying-qt-the-fed-readies-its-new-tool-to-fight-inflation/), [SVB on QT end](https://www.svb.com/market-insights/market-analysis/the-federal-reserve-ends-qt-key-market-liquidity-insights/))."
+    },
+    {
+      "id": "C-00:11:58.240",
+      "result": "wrong",
+      "explanation": "Evidence since mid\u20112022 shows that broad **U.S. residential real estate did not experience the kind of follow\u2011on \u201ccarnage\u201d or large further price declines** Sacks was anticipating.\n\n* The S&P CoreLogic Case\u2011Shiller U.S. National Home Price Index **peaked around June 2022**, then fell only about 5% through January 2023 before rebounding. By July 2023 it had already **fully erased that dip and reached a new all\u2011time high**, and it went on to post a long streak of consecutive record highs through late 2024. ([spglobal.com](https://www.spglobal.com/spdji/en/index-announcements/article/sp-corelogic-case-shiller-index-continues-to-trend-upward-in-july/?utm_source=openai))\n* Articles summarizing the index show **home prices hitting yet another record high in June 2024**, with prices nationally up 5.4% year\u2011over\u2011year. ([cnbc.com](https://www.cnbc.com/2024/08/27/home-prices-hit-record-high-in-june-on-sp-case-shiller-index.html?utm_source=openai))  A June 2024 analysis likewise notes continued national price gains rather than a major downturn. ([nasdaq.com](https://www.nasdaq.com/articles/sp-corelogic-case-shiller-index-hits-new-high-april-2024?utm_source=openai))\n* By 2025, transaction data show **record or near\u2011record median sale prices**, not a sustained crash: e.g., the national median existing\u2011home price hit an all\u2011time high of about $435,300 in June 2025, and March 2025 also set a record high for that month. ([nypost.com](https://nypost.com/2025/04/24/business/home-sales-fall-5-9-in-march-biggest-drop-since-2022/?utm_source=openai))  The main problems in housing have been low affordability and weak sales volumes, not deep nationwide price declines.\n\nSo while some *other* asset classes did suffer significant pain after mid\u20112022\u2014most notably:\n\n* **Bonds**, with the Bloomberg U.S. Aggregate Bond Index posting about a **\u201314% loss in 2022, its worst year on record**, and a historically rare stretch of weak bond returns over 2022\u20132024. ([statmuse.com](https://www.statmuse.com/money/ask/bloomberg-u.s.-aggregate-bond-index-return-by-year?utm_source=openai))\n* **Commercial office real estate**, where U.S. office building prices have dropped roughly **37% from 2019 levels and another 11% in 2024 alone**, with vacancy rates near records. ([businessinsider.com](https://www.businessinsider.com/return-to-office-wfh-commercial-real-estate-market-price-outlook-2025-2?utm_source=openai))\n\n\u2026the specific, emphasized part of the prediction\u2014that the \u201ccarnage\u201d in growth stocks would rotate into **major asset classes like residential real estate and cause further significant drops there**\u2014did **not** occur at the national level. National home prices are higher today than at the time of the prediction. On that basis, the prediction is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 709,
+          "start_index": 545,
+          "title": "S&P CoreLogic Case-Shiller Index Continues to Trend Upward in July - Index Announcements | S&P Dow Jones Indices",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/spdji/en/index-announcements/article/sp-corelogic-case-shiller-index-continues-to-trend-upward-in-july/?utm_source=openai"
+        },
+        {
+          "end_index": 987,
+          "start_index": 858,
+          "title": "Home prices hit record high in June on S&P Case-Shiller Index",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/08/27/home-prices-hit-record-high-in-june-on-sp-case-shiller-index.html?utm_source=openai"
+        },
+        {
+          "end_index": 1208,
+          "start_index": 1086,
+          "title": "S&P CoreLogic Case-Shiller Index Hits New High in April 2024 | Nasdaq",
+          "type": "url_citation",
+          "url": "https://www.nasdaq.com/articles/sp-corelogic-case-shiller-index-hits-new-high-april-2024?utm_source=openai"
+        },
+        {
+          "end_index": 1591,
+          "start_index": 1465,
+          "title": "Home sales slump at start of crucial spring buying season as high mortgage rates and rising prices deter buyers",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/04/24/business/home-sales-fall-5-9-in-march-biggest-drop-since-2022/?utm_source=openai"
+        },
+        {
+          "end_index": 2122,
+          "start_index": 2001,
+          "title": "Bloomberg U.s. Aggregate Bond Index Return By Year | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/bloomberg-u.s.-aggregate-bond-index-return-by-year?utm_source=openai"
+        },
+        {
+          "end_index": 2451,
+          "start_index": 2305,
+          "title": "The return-to-office push hasn't helped boost America's struggling office market",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/return-to-office-wfh-commercial-real-estate-market-price-outlook-2025-2?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "US residential real estate prices did not experience 'carnage' or significant drops after mid-2022. The S&P CoreLogic Case-Shiller National Home Price Index (SA) peaked near 305 in June 2022, dipped ~4% to 293 by early 2023, then recovered and hit new highs, reaching 327.64 by Sep 2025 (up ~7% from peak; sources: FRED CSUSHPISA, YCharts). FHFA House Price Index rose 2.2% yoy Q3 2024-Q3 2025. Median sales prices remained elevated (e.g., Q2 2025: $410k; FRED MSPUS). Recent softening (e.g., 1.3% yoy Oct 2025 per Redfin) is minor compared to stock selloff (~30-50% for growth stocks). No spread of significant declines to RE; prices trended up overall. ([FRED](https://fred.stlouisfed.org/series/CSUSHPISA), [FHFA](https://www.fhfa.gov), [YCharts](https://ycharts.com))"
+    },
+    {
+      "id": "A-00:22:33.520",
+      "result": "right",
+      "explanation": "From June 2022\u2019s peak of 9.1% year-over-year CPI inflation, the subsequent U.S. CPI prints for the next five months were:\n\n- July 2022: 8.5%\n- August 2022: 8.3%\n- September 2022: 8.2%\n- October 2022: 7.7%\n- November 2022: 7.1%\n\nThese values, taken from BLS-based monthly inflation summaries, all fall within the 7\u20139% range during the roughly 3\u20135 months after late June 2022. ([statistico.com](https://www.statistico.com/s/us-inflation-rate-by-month?utm_source=openai))  \n\nSince Chamath predicted that the next 3\u20135 CPI prints would be \u201cvery, very bad\u201d in the *7\u20139%* range, and the July\u2013November 2022 CPI year-over-year rates indeed stayed between about 7% and 9%, the prediction was **right**.",
+      "sources": [
+        {
+          "end_index": 509,
+          "start_index": 416,
+          "title": "U.S.: Inflation Rate, by month | Statistico",
+          "type": "url_citation",
+          "url": "https://www.statistico.com/s/us-inflation-rate-by-month?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The U.S. CPI-U YoY (not seasonally adjusted, 12-month percent change) for the predicted period was: July 2022: 8.5%, August 2022: 8.3%, September 2022: 8.2%, October 2022: 7.7%, November 2022: 7.1%. All values fall within the predicted 7\u20139% range. Sources: [BLS CPI Historical Tables](https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm), [US Inflation Calculator](https://www.usinflationcalculator.com/inflation/current-inflation-rates/) (citing BLS data)."
+    },
+    {
+      "id": "A-00:25:25.300",
+      "result": "inconclusive",
+      "explanation": "Friedberg\u2019s statement was explicitly conditional on U.S. residential real estate prices falling roughly 30% from then\u2011current levels. National data show that this trigger has not occurred. Zillow\u2019s Home Value Index shows the typical U.S. home value in December 2022 was only about 0.7% below its June 2022 peak, not anywhere near 30%. ([zillow.com](https://www.zillow.com/research/december-2022-market-report-32009/?utm_source=openai)) Redfin estimates the total value of U.S. housing fell about 4.9% from June to December 2022, again far short of a 30% price collapse. ([foxbusiness.com](https://www.foxbusiness.com/economy/us-housing-market-sees-drop-value-biggest-2008?utm_source=openai)) The National Association of Realtors reported that the median existing\u2011home price hit a record for 2023 and remained at or near record highs in 2024 and mid\u20112025, with June 2025\u2019s national median around $435,300. ([pbs.org](https://www.pbs.org/newshour/economy/u-s-existing-home-sales-drop-to-near-30-year-low?utm_source=openai)) Case\u2011Shiller data and subsequent reporting show home prices still rising year\u2011over\u2011year (albeit slowly) into 2025, not falling on a crash scale. ([wsj.com](https://www.wsj.com/economy/housing/u-s-home-prices-slow-further-amid-affordability-concerns-8ebb0f18?utm_source=openai)) Even in particularly weak markets such as San Francisco, peak\u2011to\u2011trough nominal declines have generally been in the 10\u201315% range, not 30%. ([nypost.com](https://nypost.com/2024/12/28/real-estate/san-francisco-house-prices-plunge-amid-widespread-tech-layoffs/?utm_source=openai)) Meanwhile, mortgage delinquency and foreclosure rates, while ticking up for some FHA/VA borrowers, remain low by historical standards and far from a 2008\u2011style crisis. ([mba.org](https://www.mba.org/news-and-research/newsroom/news/2025/08/14/mortgage-delinquencies-decrease-slightly-in-the-second-quarter-of-2025?utm_source=openai)) Because the antecedent of his conditional prediction (a ~30% national home\u2011price correction) has not happened, we have no empirical basis to judge whether the consequent (widespread serious financial problems for Americans driven by that price drop plus high rates and inability to refinance) would have occurred. The correct evaluation is therefore that the prediction is inconclusive rather than right or wrong.",
+      "sources": [
+        {
+          "end_index": 475,
+          "start_index": 375,
+          "title": "Home Prices Kept Dropping in December Before Mortgage Rate Relief Arrived (December 2022 Market Report) - Zillow Research",
+          "type": "url_citation",
+          "url": "https://www.zillow.com/research/december-2022-market-report-32009/?utm_source=openai"
+        },
+        {
+          "end_index": 731,
+          "start_index": 610,
+          "title": "US housing market sees $2.3T drop in value, biggest since 2008 | Fox Business",
+          "type": "url_citation",
+          "url": "https://www.foxbusiness.com/economy/us-housing-market-sees-drop-value-biggest-2008?utm_source=openai"
+        },
+        {
+          "end_index": 1061,
+          "start_index": 945,
+          "title": "U.S. existing home sales drop to near 30-year low | PBS News",
+          "type": "url_citation",
+          "url": "https://www.pbs.org/newshour/economy/u-s-existing-home-sales-drop-to-near-30-year-low?utm_source=openai"
+        },
+        {
+          "end_index": 1339,
+          "start_index": 1207,
+          "title": "U.S. Home Prices Slow Further Amid Affordability Concerns",
+          "type": "url_citation",
+          "url": "https://www.wsj.com/economy/housing/u-s-home-prices-slow-further-amid-affordability-concerns-8ebb0f18?utm_source=openai"
+        },
+        {
+          "end_index": 1618,
+          "start_index": 1479,
+          "title": "San Francisco house prices plunge amid widespread tech layoffs",
+          "type": "url_citation",
+          "url": "https://nypost.com/2024/12/28/real-estate/san-francisco-house-prices-plunge-amid-widespread-tech-layoffs/?utm_source=openai"
+        },
+        {
+          "end_index": 1951,
+          "start_index": 1787,
+          "title": "Mortgage Delinquencies Decrease Slightly in the Second Quarter of 2025 | MBA",
+          "type": "url_citation",
+          "url": "https://www.mba.org/news-and-research/newsroom/news/2025/08/14/mortgage-delinquencies-decrease-slightly-in-the-second-quarter-of-2025?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is conditional on U.S. residential real estate prices falling ~30% from June 2022 levels. This did not occur; prices remained elevated. As of June 2025, FHFA HPI was 11.8% above its June 2022 peak and Case-Shiller 7.9% above ([HUD Housing Market Indicators, June 2025](https://www.huduser.gov/portal/sites/default/files/pdf/Housing-Market-Indicators-Report-June-2025.pdf)). Latest data: FHFA Q3 2025 up 2.2% yoy ([FHFA release](https://www.fhfa.gov/news/news-release/u.s.-house-prices-rise-2.2-percent-year-over-year-up-0.2-percent-quarter-over-quarter)); Case-Shiller Sep 2025 NSA 328.94, up 1.3% yoy ([S&P, FRED](https://fred.stlouisfed.org/series/CSUSHPINSA)). No national 30% drop, though some local declines (e.g., Austin -24% from peak). Antecedent false, so prediction untested even after 3.5 years."
+    },
+    {
+      "id": "C-00:28:21.960",
+      "result": "wrong",
+      "explanation": "Using the standard U.S. benchmarks, this prediction has not come true.\n\n* **Official recession dating (NBER):** The National Bureau of Economic Research\u2019s Business Cycle Dating Committee shows the last U.S. recession ended in April 2020, with expansion ongoing from May 2020 onward and no new peaks or troughs announced since then.([nber.org](https://www.nber.org/research/business-cycle-dating?utm_source=openai))  Quarterly NBER-based recession indicator data likewise remain at 0 (\"no recession\") through at least Q3 2025.([ycharts.com](https://ycharts.com/indicators/nber_based_us_recession_indicators_from_the_peak_through_the_trough_quarterly?utm_source=openai))\n* **GDP performance:** BEA data show real GDP **grew** in 2022, 2023, and 2024 (about 1.9%, 2.5%, and 2.8% respectively), with solid positive quarterly growth from mid\u20112022 through end\u20112024.([apps.bea.gov](https://apps.bea.gov/scb/issues/2025/03-march/0325-gdp-economy.htm?utm_source=openai))  A compiled quarterly series shows only one negative quarter after the pandemic (Q1 2025 at \u20130.3%), with preceding and subsequent quarters positive, so even the \"two consecutive negative quarters\" rule of thumb is not met in the period after the June 24, 2022 prediction.([visualcapitalist.com](https://www.visualcapitalist.com/charted-americas-gdp-decline-in-q1-2025/?utm_source=openai))\n* **Contemporary assessments:** Major forecasters and analysts have repeatedly characterized the outcome as a *soft landing* or continued expansion rather than a recession, noting that the economy \u201cdefied recession fears\u201d and remained on course for growth despite aggressive Fed tightening.([goldmansachs.com](https://www.goldmansachs.com/insights/articles/the-us-economy-is-on-its-final-descent-to-a-soft-landing?utm_source=openai))\n\nGiven that more than three years have passed since the June 2022 prediction, the Fed did tighten aggressively, and yet no NBER\u2011defined recession or broadly recognized downturn occurred in the \u201cnear term\u201d afterward, the best judgment is that Sacks\u2019s call for an imminent U.S. recession was **wrong**.",
+      "sources": [
+        {
+          "end_index": 449,
+          "start_index": 366,
+          "title": "Business Cycle Dating | NBER",
+          "type": "url_citation",
+          "url": "https://www.nber.org/research/business-cycle-dating?utm_source=openai"
+        },
+        {
+          "end_index": 705,
+          "start_index": 562,
+          "title": "NBER-based US Recession Indicators from the Peak through th\u2026",
+          "type": "url_citation",
+          "url": "https://ycharts.com/indicators/nber_based_us_recession_indicators_from_the_peak_through_the_trough_quarterly?utm_source=openai"
+        },
+        {
+          "end_index": 999,
+          "start_index": 897,
+          "title": "SCB, GDP & the Economy, March 2025",
+          "type": "url_citation",
+          "url": "https://apps.bea.gov/scb/issues/2025/03-march/0325-gdp-economy.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1390,
+          "start_index": 1273,
+          "title": "Charted: America's GDP Decline in Q1 2025",
+          "type": "url_citation",
+          "url": "https://www.visualcapitalist.com/charted-americas-gdp-decline-in-q1-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 1825,
+          "start_index": 1682,
+          "title": "The US economy is on its final descent to a soft landing | Goldman Sachs",
+          "type": "url_citation",
+          "url": "https://www.goldmansachs.com/insights/articles/the-us-economy-is-on-its-final-descent-to-a-soft-landing?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction of a US recession in the near term (post-June 2022) due to Fed tightening did not occur. The NBER has not declared any recession since the COVID-era one ending in April 2020 ([NBER Business Cycle Dating](https://www.nber.org/research/business-cycle-dating); FRED USREC indicator). While Q1-Q2 2022 saw negative GDP growth (-1.6% and -0.6%, later Q2 revised positive per BEA), NBER did not call it a recession, and subsequent quarters showed growth: Q3 2022 +2.9%, Q4 +2.8%, all 2023/2024 positive, Q1 2025 -0.5% but Q2 +3.8% ([BEA GDP data](https://www.bea.gov/data/gdp/gross-domestic-product); [Trading Economics](https://tradingeconomics.com/united-states/gdp-growth)). Unemployment stable ~4.3-4.4% in 2025, Sahm rule not triggered. Economy achieved 'soft landing' with inflation cooling sans recession ([Guardian, 2024](https://www.theguardian.com/us-news/article/2024/may/22/poll-economy-recession-biden)). Over 3+ years later, sufficient time passed to deem wrong."
+    },
+    {
+      "id": "A-00:43:16.380",
+      "result": "wrong",
+      "explanation": "Available data on U.S. national average retail gasoline prices show that they **never reached $7 per gallon on a nationwide average** during the post\u2011mid\u20112022 inflation and energy-price cycle.\n\nKey points:\n\n1. **Peak national average price in 2022**  \n   - The U.S. national average regular gasoline price peaked at around **$5.01\u2013$5.02 per gallon** in mid\u2011June 2022, according to AAA and the U.S. Energy Information Administration (EIA).  \n   - AAA\u2019s historical data and contemporaneous reporting consistently refer to this ~$5 level as a record high; there is no record of a $7 national average.\n\n2. **Subsequent trajectory (2022\u20132025)**  \n   - After the June 2022 peak, national average gas prices declined through late 2022 and fluctuated mostly in the $3\u2013$4+ range thereafter, depending on the period, per AAA and EIA datasets covering 2023\u20132025.  \n   - While some *local* markets (especially in parts of California) at times saw posted prices near or above $7/gal at individual stations, the **U.S. *average*** price never approached $7.\n\n3. **Match to the prediction wording**  \n   - Chamath said: *\u201cWe could have $7 gas... Broadly, broadly, we could have $7 gas all throughout the country.\u201d*  \n   - This clearly implies a **broad, nationwide average level** around $7/gal, not isolated high-priced stations or specific metro areas.  \n   - Since the nationwide average never exceeded roughly $5.02/gal through November 30, 2025, this scenario did not materialize.\n\nBecause the required condition\u2014a roughly $7-per-gallon nationwide average\u2014has **not occurred at any point** up to the current date, the prediction is **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The peak U.S. national average retail price for regular gasoline since mid-2022 was **$5.016 per gallon** on June 14, 2022 (per AAA and EIA data), occurring just before the podcast release on June 24, 2022. Prices then declined sharply, with 2022 monthly averages around $3.61 max (EIA), and later years even lower (e.g., ~$3.39 in 2023). Current prices (Nov 2025) are ~$3.06/gal. Never reached ~$7/gal nationwide.\n\nSources:\n- [EIA U.S. Gasoline Retail Prices](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=emm_epmr_pte_nus_dpg&f=w)\n- [EIA: Retail prices rose in summer 2022](https://www.eia.gov/todayinenergy/detail.php?id=55099) ($5.01/gal peak)\n- [AAA Fuel Prices](https://gasprices.aaa.com/) (confirms $5.016 peak)\n- [Rigzone/EIA](https://www.rigzone.com/news/usa_eia_reveals_latest_gasoline_price_forecast-16-jul-2025-181167-article/)"
+    },
+    {
+      "id": "A-00:45:17.030",
+      "result": "wrong",
+      "explanation": "Chamath tied his forecast to the Fed removing roughly $3\u20135T of liquidity. The Fed\u2019s own balance\u2011sheet data show total assets peaked around $8.9T at end\u2011March 2022 and had fallen only to about $6.7T by June 11 2025 and about $6.5T by November 2025, a reduction of roughly $2.2\u20132.4T since runoff began in June 2022, and QT is scheduled to end December 1 2025, so the envisaged $3\u20135T balance\u2011sheet shrinkage never occurred. ([federalreserve.gov](https://www.federalreserve.gov/monetarypolicy/May-2022-Federal-Reserve-Balance-Sheet-Developments.htm?utm_source=openai)) Despite that, US equities did not lose trillions more in value from mid\u20112022 onward. One widely cited series shows total US stock\u2011market capitalization around $50.8T at end\u20112021 and $40.3T at end\u20112022 during the bear market, but then above $60T by late 2024 and roughly $68\u201371T by October 2025, well above mid\u20112022 levels rather than $3\u20135T lower. ([exodnexrn.blob.core.windows.net](https://exodnexrn.blob.core.windows.net/us-stock-market-capitalization.html?utm_source=openai)) The S&P 500 closed around 3,900 in late June 2022, dipped to a low near 3,577 in October 2022, then went on to record highs above 6,800 by October 2025, implying a large net gain rather than an additional 20\u201330% downside from mid\u20112022. ([statmuse.com](https://www.statmuse.com/money/ask/s-and-p-close-june-2022?utm_source=openai)) Valuation and index data show that 2022 delivered a roughly 19% full\u2011year drop in the broad FT Wilshire 5000 and an initial valuation compression, but by 2025 US tech and growth stocks were trading at forward P/E multiples (for example, Nasdaq\u2019s forward P/E near 29 in Q3 2025) above their 10\u2011year averages, not 20\u201330% below prior baselines. ([wilshire.com](https://www.wilshire.com/blog/2022-performance-review-six-key-observations-from-an-annus-horribilis?utm_source=openai)) Because neither the projected 3\u20135T of Fed balance\u2011sheet runoff nor the sustained combination of at least that much equity\u2011market wealth destruction plus an extra 20\u201330% valuation decline from mid\u20112022 actually materialized, the prediction is best judged as wrong.",
+      "sources": [
+        {
+          "end_index": 597,
+          "start_index": 454,
+          "title": "The Fed - May 2022",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/monetarypolicy/May-2022-Federal-Reserve-Balance-Sheet-Developments.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1075,
+          "start_index": 945,
+          "title": "Us Stock Market Capitalization at Richard Clayton blog",
+          "type": "url_citation",
+          "url": "https://exodnexrn.blob.core.windows.net/us-stock-market-capitalization.html?utm_source=openai"
+        },
+        {
+          "end_index": 1406,
+          "start_index": 1312,
+          "title": "S And P Close June 2022 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/s-and-p-close-june-2022?utm_source=openai"
+        },
+        {
+          "end_index": 1884,
+          "start_index": 1749,
+          "title": "2022 performance review: Six key observations from an \u2018annus horribilis\u2019 | Wilshire",
+          "type": "url_citation",
+          "url": "https://www.wilshire.com/blog/2022-performance-review-six-key-observations-from-an-annus-horribilis?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction expected a $3-5T loss in US equity market cap due to Fed QT from mid-2022, plus another 20-30% decline from earnings repricing. Fed balance sheet shrank from ~$9T (June 2022) to ~$6.6T (Dec 2025), a ~$2.3-2.4T reduction ([Federal Reserve reports](https://www.federalreserve.gov/publications/files/balance_sheet_developments_report_202511.pdf), Powell speech). US total market cap was ~$37T in June 2022 (YCharts Total MC/GDP 145.3% of ~$25.5T GDP; S&P 500 MC $31.9T end-June per [YCharts](https://ycharts.com/indicators/sp_500_market_cap)). It dipped to ~$36T (S&P $30.1T Sep 2022), a temporary ~$1T loss, but recovered to ~$67-68T by late 2025 ([Siblis Research Oct 2025 $67.8T](https://siblisresearch.com/data/us-stock-market-value/), CRSP ~$64T, Wilshire-linked estimates). Net gain ~$30T, no sustained loss, no further 20-30% drop; earnings grew and valuations re-rated higher."
+    },
+    {
+      "id": "C-00:47:12.720",
+      "result": "wrong",
+      "explanation": "The prediction had two key parts: (1) that by roughly mid\u20112023 the U.S. would be \u201cin the middle of a recession,\u201d and (2) that venture capital availability would be down about 75%, implying startups needed 3\u20134 years of runway.\n\n**1. U.S. recession call (mid\u20112023)**  \nBy standard benchmarks this did *not* happen:\n- The NBER recession indicator is 0 (no recession) for every quarter from 2021 through at least the end of 2023, including Q2 2023 and Q3 2023. ([ycharts.com](https://ycharts.com/indicators/nber_based_us_recession_indicators_from_the_peak_through_the_period_preceding_the_trough_quarterly?utm_source=openai))  \n- Real GDP grew at an annual rate of **2.0\u20132.1% in Q1\u2013Q2 2023** and **5.2% in Q3 2023**, indicating solid expansion rather than contraction. ([bea.gov](https://www.bea.gov/news/2023/gross-domestic-product-second-quarter-2023-second-estimate-and-corporate-profits?utm_source=openai))  \n- For the full year 2023, real GDP grew **2.5%** and unemployment averaged **3.6%**, with commentators explicitly noting that widely expected 2023 recession fears \u201cproved unfounded.\u201d ([en.wikipedia.org](https://en.wikipedia.org/wiki/Economic_policy_of_the_Biden_administration?utm_source=openai))  \n\nSo the core timing claim that the U.S. would be \u201cin the middle of a recession\u201d about a year after June 2022 is clearly false.\n\n**2. Venture capital availability down ~75%**  \nThere *was* a sharp VC downturn, but the size was smaller than the predicted 75% in broad aggregates:\n- Globally, **Q2 2023 venture funding was down about 49% year\u2011over\u2011year**, and total funding in **H1 2023 was down about 51% vs H1 2022**. ([news.crunchbase.com](https://news.crunchbase.com/venture/vc-funding-falling-report-data-q2-2023-global/?utm_source=openai))  \n- Another analysis using PitchBook data reports global VC funding in H1 2023 down **48%**, with the U.S. and Europe each down on the order of **~65\u201370%** from earlier levels, depending on the comparison baseline. ([benzinga.com](https://www.benzinga.com/news/23/07/33228901/the-great-venture-capital-paradox-ai-hype-soars-funding-drops-in-first-half-of-2023?utm_source=openai))  \n- By 2024, global VC activity was still **~55% below its 2021 peak**, showing a prolonged but not 75% collapse from the high\u2011water mark. ([barrons.com](https://www.barrons.com/articles/venture-capital-investments-2024-ai-766c99dc?utm_source=openai))  \n- U.S. VC fundraising in 2023 was reported at under **$70B**, roughly a **60% drop from peak levels** rather than 75%. ([reddit.com](https://www.reddit.com//r/ThinkingDeeplyAI/comments/1m2av4b?utm_source=openai))  \n\nSo the direction (big funding crunch) was correct, but the ~75% figure is an overstatement for the market as a whole.\n\n**Overall evaluation**  \nBecause the prediction hinges on *both* being in the middle of a U.S. recession by mid\u20112023 (which clearly did not occur) and on a roughly 75% drop in capital availability (where the actual decline was large but closer to 50\u201365% in broad measures), the combined forecast did **not** come true. Hence the result is **\u201cwrong.\u201d**",
+      "sources": [
+        {
+          "end_index": 658,
+          "start_index": 494,
+          "title": "NBER-based US Recession Indicators from the Peak through th\u2026",
+          "type": "url_citation",
+          "url": "https://ycharts.com/indicators/nber_based_us_recession_indicators_from_the_peak_through_the_period_preceding_the_trough_quarterly?utm_source=openai"
+        },
+        {
+          "end_index": 944,
+          "start_index": 803,
+          "title": "Gross Domestic Product, Second Quarter 2023 (Second Estimate) and Corporate Profits (Preliminary) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2023/gross-domestic-product-second-quarter-2023-second-estimate-and-corporate-profits?utm_source=openai"
+        },
+        {
+          "end_index": 1244,
+          "start_index": 1131,
+          "title": "Economic policy of the Biden administration",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Economic_policy_of_the_Biden_administration?utm_source=openai"
+        },
+        {
+          "end_index": 1795,
+          "start_index": 1670,
+          "title": "AI Was Q2's Big Hope To Reverse The Global Venture Funding Slowdown. It Wasn't Enough",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/vc-funding-falling-report-data-q2-2023-global/?utm_source=openai"
+        },
+        {
+          "end_index": 2176,
+          "start_index": 2012,
+          "title": "The Great Venture Capital Paradox: AI Hype Soars, Funding Drops in First Half of 2023 - Benzinga",
+          "type": "url_citation",
+          "url": "https://www.benzinga.com/news/23/07/33228901/the-great-venture-capital-paradox-ai-hype-soars-funding-drops-in-first-half-of-2023?utm_source=openai"
+        },
+        {
+          "end_index": 2429,
+          "start_index": 2317,
+          "title": "Venture Capital Investments in AI Surged in 2024",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/venture-capital-investments-2024-ai-766c99dc?utm_source=openai"
+        },
+        {
+          "end_index": 2645,
+          "start_index": 2552,
+          "title": "Venture Capital's Creative Destruction Moment: Why the Innovation Funders Must Become the Innovators",
+          "type": "url_citation",
+          "url": "https://www.reddit.com//r/ThinkingDeeplyAI/comments/1m2av4b?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The US was not in a recession around mid-2023. NBER has not declared a recession since 2020; GDP grew ~2.5% in 2023 with unemployment averaging ~3.6-3.7% ([NBER Business Cycle Dating](https://www.nber.org/research/business-cycle-dating), [CBPP Economy Strong 2023](https://www.cbpp.org/research/economy/economy-strong-as-2023-ended), [WAMC no recession 2023](https://www.wamc.org/commentary-opinion/2024-02-16/why-was-there-no-recession-in-2023)). VC funding declined significantly but not ~75%: US totals per PitchBook-NVCA were ~$329B in 2021, $241B in 2022 (-27%), $171B in 2023 (-29%), a ~48% drop from 2021 peak ([Reuters/PitchBook 2023 VC](https://www.reuters.com/technology/us-startup-funding-continues-drop-despite-ai-frenzy-2024-01-11/), [NVCA Yearbook](https://nvca.org/nvca-yearbook/)). While advice to extend runways to 24-36 months emerged amid VC slowdown (e.g., Carta reports longer waits), no evidence of a new '3-4 year standard' tied to 75% VC drop in recession."
+    },
+    {
+      "id": "A-00:51:48.240",
+      "result": "ambiguous",
+      "explanation": "Key elements of Chamath\u2019s call were borne out, but others were clearly off, making the overall prediction mixed rather than cleanly right or wrong.\n\n**Parts that aged well**\n\n- **Not \u201c2\u20133 hikes and a few months\u201d**: From March 2022 to July 2023 the Fed hiked rates 11 times, taking the federal funds rate from near zero to 5.25\u20135.50%, far more than the \u201c2 or 3\u201d hikes he said people were counting on. These elevated rates persisted into 2025, with only gradual expectations of cuts. ([forbes.com](https://www.forbes.com/advisor/investing/fomc-meeting-federal-reserve/?utm_source=openai))\n- **Multi\u2011year macro adjustment, not a quick blip**: U.S. inflation peaked around 8% in 2022 and only dropped back toward ~3% in 2023\u201325, still above the Fed\u2019s pre\u2011COVID norm, implying a multi\u2011year disinflation and policy\u2011tightening process rather than a few\u2011month event. ([officialdata.org](https://www.officialdata.org/inflation-rate-in-2025/current-inflation-rate?utm_source=openai)) Global growth through 2023\u201325 has been notably weaker than the 2010s, with the World Bank describing the early\u20112020s as the worst half\u2011decade of growth in 30 years. ([worldbank.org](https://www.worldbank.org/en/news/press-release/2024/01/09/global-economic-prospects-january-2024-press-release?utm_source=openai)) This matches his broad idea of a drawn\u2011out adjustment to excess liquidity and debt.\n- **Russia\u2013Ukraine war not quickly \u201covercome\u201d**: The war is still ongoing in late 2025, with active major offensives such as the Novopavlivka and Huliaipole operations and continued Russian territorial gains, and no final peace settlement in place. ([russiamatters.org](https://www.russiamatters.org/news/russia-ukraine-war-report-card/russia-ukraine-war-report-card-nov-12-2025?utm_source=openai)) This supports his claim that the conflict would be a prolonged overhang rather than a brief headline cycle.\n\n**Parts that did *not* materialize as he framed them**\n\n- **No new U.S. recession so far**: Chamath talked about having to work through \u201ca recession,\u201d but as of November 2025 the NBER\u2019s business\u2011cycle chronology still shows the last U.S. recession ending in April 2020, with no subsequent recession dated yet. ([nber.org](https://www.nber.org/research/business-cycle-dating?utm_source=openai)) Instead, the U.S. economy has experienced a slowdown but continued expansion.\n- **Market experience unlike a 2000\u201303 style four\u2011year \u201csheer hell\u201d**: The S&P 500 fell about 25% from its January 2022 high to its October 2022 low (a classic bear market), but then recovered strongly. By 2024 and 2025 it was setting repeated all\u2011time highs, reaching over 6,100 in June 2025 and around 6,600 in October 2025, driven in part by an AI\u2011related boom. ([forbes.com](https://www.forbes.com/sites/greatspeculations/2025/10/16/sp-500-poised-for-a-40-crash/?utm_source=openai)) That is very different from the drawn\u2011out 2000\u201303 bust with multi\u2011year depressed equity prices.\n\n**Why this is classified as \u2018ambiguous\u2019**\n\nHis *central contrast*\u2014that the 2022 bear market and macro shock were the start of a multi\u2011year adjustment involving sustained tightening, sticky inflation, and an ongoing war, not something \u201cfixed\u201d in 5\u20136 months\u2014looks broadly correct. But his more specific analogies and components (a clear new recession and a 2000\u201303\u2011style, four\u2011year grind for markets) did not occur; instead, the U.S. stayed in expansion and equities entered a powerful new bull market relatively quickly.\n\nBecause substantial parts of the prediction are validated (multi\u2011year adjustment, extended tightening cycle, long war) while other concrete elements are clearly wrong (no new U.S. recession; markets not stuck in a 2000\u201303\u2011like slog), the overall forecast cannot be cleanly judged as simply right or wrong. Hence the **\u2018ambiguous\u2019** rating.",
+      "sources": [
+        {
+          "end_index": 627,
+          "start_index": 523,
+          "title": "Federal Funds Rate History 1990 to 2025 \u2013 Forbes Advisor",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/advisor/investing/fomc-meeting-federal-reserve/?utm_source=openai"
+        },
+        {
+          "end_index": 1015,
+          "start_index": 901,
+          "title": "Current U.S. Inflation Rate, July 2025 | Finance Reference",
+          "type": "url_citation",
+          "url": "https://www.officialdata.org/inflation-rate-in-2025/current-inflation-rate?utm_source=openai"
+        },
+        {
+          "end_index": 1329,
+          "start_index": 1181,
+          "title": "Global Economy Set for Weakest Half-Decade Performance in 30 Years",
+          "type": "url_citation",
+          "url": "https://www.worldbank.org/en/news/press-release/2024/01/09/global-economic-prospects-january-2024-press-release?utm_source=openai"
+        },
+        {
+          "end_index": 1813,
+          "start_index": 1664,
+          "title": "The Russia-Ukraine War Report Card, Nov. 12, 2025 | Russia Matters",
+          "type": "url_citation",
+          "url": "https://www.russiamatters.org/news/russia-ukraine-war-report-card/russia-ukraine-war-report-card-nov-12-2025?utm_source=openai"
+        },
+        {
+          "end_index": 2320,
+          "start_index": 2237,
+          "title": "Business Cycle Dating | NBER",
+          "type": "url_citation",
+          "url": "https://www.nber.org/research/business-cycle-dating?utm_source=openai"
+        },
+        {
+          "end_index": 2886,
+          "start_index": 2765,
+          "title": "S&P 500 Poised For A 40% Crash?",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/greatspeculations/2025/10/16/sp-500-poised-for-a-40-crash/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction claimed the bear market and macro adjustment would take several years (like the 2000-2003 grind of ~4 years), involving working through excess liquidity, a recession, and the Russia-Ukraine war, rather than quick resolution via a few rate hikes. In reality:\n\n- **Bear market short & quick recovery**: S&P 500 peaked at 4,796 on Jan 3, 2022; low ~3,577 Oct 2022 (~25% drop, 9 months); new highs by Jan 2024 (~2 years from peak), now ~6,800+ Dec 2025 (Yahoo Finance, YCharts, Wealth of Common Sense). From podcast date (3,912 on Jun 24, 2022), massive gains since.\n\n- **No recession**: NBER has not declared any 2022-2025 (NBER Business Cycle Dating, FRED USRECD).\n\n- **Liquidity adjusted aggressively**: 11 Fed hikes Mar 2022-Jul 2023 (0% to 5.5%), plus QT (Forbes, Investopedia).\n\n- **War ongoing**: Still active Dec 2025 (day 1,374+; recent strikes, peace talks) (Al Jazeera, Guardian, ISW), but markets ignored it post-2022.\n\nUnlike 2000-2003 (S&P took ~7 years to peak), this was a brief downturn followed by bull market 2023-2025. Enough time (3.5 years) passed to falsify the 'several years of hell' claim."
+    },
+    {
+      "id": "A-00:51:53.520",
+      "result": "wrong",
+      "explanation": "Chamath\u2019s prediction was that the post\u20112021 downturn, driven by excess debt, recession, and the Russia\u2013Ukraine war, would resemble the 2000 dot\u2011com bust in duration and take on the order of four years of grinding pain to work through, rather than resolving within a few quarters.\n\nIn reality, the U.S. did not experience a prolonged, dot\u2011com\u2011style recession. After the brief COVID recession ending in April 2020, the NBER has not dated any new recession through at least mid\u20112024, meaning the subsequent period has been classified as an ongoing expansion. ([congress.gov](https://www.congress.gov/crs_external_products/IF/HTML/IF10411.web.html?utm_source=openai)) U.S. real GDP grew each year from 2022 through 2024 (roughly 1.9% in 2022, 2.5\u20132.9% in 2023, and about 2.6\u20132.8% in 2024), with unemployment staying in the 3.5\u20134.2% range, consistent with a soft\u2011landing rather than a multi\u2011year recessionary grind. ([tradingeconomics.com](https://tradingeconomics.com/united-states/full-year-gdp-growth?utm_source=openai))\n\nFinancial markets also recovered much faster than a four\u2011year bust. The S&P 500 fell about 25% from its January 2022 high to an October 2022 low, but by June 8, 2023 it had rallied more than 20% off that low, exiting bear\u2011market territory. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_stock_market_decline?utm_source=openai)) The index then gained roughly 24% in 2023 and another ~23\u201325% in 2024, setting new all\u2011time highs and closing above 5,000 in February 2024 and 6,000 in November 2024, with a further record high near 6,875 in October 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/S%26P_500?utm_source=openai)) The Nasdaq likewise surpassed its 2021 peak by February 2024, driven by AI\u2011related tech strength. ([reuters.com](https://www.reuters.com/markets/us/futures-ease-caution-prevails-ahead-inflation-data-2024-02-29/?utm_source=openai)) This pattern is a relatively quick bear\u2011market-and-recovery sequence, not a drawn\u2011out four\u2011year equity bust like the early 2000s.\n\nCrypto markets, which had collapsed in 2022, also rebounded strongly instead of remaining in a long winter. Bitcoin exceeded its 2021 all\u2011time high in March 2024 and went on to set higher peaks, including a run to around 90,000\u2013109,000 in early 2025. ([coindesk.com](https://www.coindesk.com/markets/2024/03/05/bitcoin-soars-to-new-all-time-high-above-69k?utm_source=openai)) That is again inconsistent with a multi\u2011year period of unrelenting pain comparable to 2000\u20132003.\n\nThe Russia\u2013Ukraine war did persist into late 2025, with active fighting and only evolving peace\u2011framework talks, so that specific risk did not \u201cresolve in a few quarters.\u201d ([theguardian.com](https://www.theguardian.com/world/2025/nov/24/ukraine-war-briefing-russian-drones-kill-four-in-kharkiv-as-officials-discuss-proposal-to-end-war?utm_source=openai)) However, Chamath\u2019s central quantitative claim was about the duration and character of the macro downturn and market bust, and on those dimensions the world saw a relatively fast recovery and soft landing rather than four years of sheer hell.\n\nGiven the lack of a multi\u2011year recession and the strong, early return to record highs in both stocks and crypto, the prediction that the post\u20112021 downturn would resemble the four\u2011year dot\u2011com bust is best classified as wrong.",
+      "sources": [
+        {
+          "end_index": 698,
+          "start_index": 591,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/crs_external_products/IF/HTML/IF10411.web.html?utm_source=openai"
+        },
+        {
+          "end_index": 1053,
+          "start_index": 946,
+          "title": "United States Full Year GDP Growth",
+          "type": "url_citation",
+          "url": "https://tradingeconomics.com/united-states/full-year-gdp-growth?utm_source=openai"
+        },
+        {
+          "end_index": 1392,
+          "start_index": 1297,
+          "title": "2022 stock market decline",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_stock_market_decline?utm_source=openai"
+        },
+        {
+          "end_index": 1694,
+          "start_index": 1615,
+          "title": "S&P 500",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/S%26P_500?utm_source=openai"
+        },
+        {
+          "end_index": 1925,
+          "start_index": 1793,
+          "title": "Nasdaq notches first record high close since 2021",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/markets/us/futures-ease-caution-prevails-ahead-inflation-data-2024-02-29/?utm_source=openai"
+        },
+        {
+          "end_index": 2434,
+          "start_index": 2310,
+          "title": "Bitcoin Soars to New All-Time High Above $69K",
+          "type": "url_citation",
+          "url": "https://www.coindesk.com/markets/2024/03/05/bitcoin-soars-to-new-all-time-high-above-69k?utm_source=openai"
+        },
+        {
+          "end_index": 2889,
+          "start_index": 2707,
+          "title": "Ukraine war briefing: Russian drones kill four in Kharkiv as officials discuss proposal to end war",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/world/2025/nov/24/ukraine-war-briefing-russian-drones-kill-four-in-kharkiv-as-officials-discuss-proposal-to-end-war?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath predicted a multi-year downturn (around 4 years, like the dot-com bust's 'sheer hell and grind') driven by debt, recession, and war, starting from June 2022. However, major indices recovered rapidly: S&P 500 peaked ~4,800 in Jan 2022, bottomed ~3,577 in Oct 2022, surpassed peak by Jan 2024, and reached ~6,840-6,889 by Dec 2025 (YCharts, Multpl, Slickcharts YTD 2025 +17.81%). Nasdaq dropped -33% in 2022 but surged +54% 2023, +25% 2024, +21% 2025 YTD (Slickcharts). Bitcoin ~$20k in June 2022 vs. ~$87k-90k Dec 2025, ATH >$120k in 2025 (Yahoo Finance, CoinMarketCap). No NBER-declared recession post-2022 despite Q1-Q2 2022 GDP dips (revised, no official call; NBER site, Dallas Fed). Markets resolved in ~1-2 years, not 4, amid bull run. Dot-com Nasdaq took ~2.5 years to bottom, 15 to full recovery (Wikipedia, Goldman Sachs), but 2022-25 was quicker V-shaped. Sources: web searches on indices, BTC, recession."
+    },
+    {
+      "id": "D-01:02:42.910",
+      "result": "right",
+      "explanation": "From mid\u20112022 through 2024 there was a clear surge of U.S. regulatory and prosecutorial activity against crypto entities and individuals, matching Friedberg\u2019s forecast of \u201ca lot of action \u2026 over the next couple of years.\u201d\n\nEvidence:\n- The SEC made crypto a top enforcement priority. Cornerstone Research reports a record 46 crypto\u2011related SEC enforcement actions in 2023\u2014up 53% from 2022\u2014followed by 33 more in 2024; 2024 also saw nearly $5 billion in crypto-related monetary recoveries, by far the highest ever. ([cornerstone.com](https://www.cornerstone.com/insights/press-releases/sec-enforcement-of-cryptocurrency-reaches-a-new-high/?utm_source=openai))  An SEC FY 2023 enforcement release highlights major crypto cases (FTX/Sam Bankman\u2011Fried, Terraform Labs/Do Kwon, Celsius, Kraken, Genesis/Gemini, Nexo, NFT issuers, etc.). ([sec.gov](https://www.sec.gov/newsroom/press-releases/2023-234?utm_source=openai))\n- The DOJ ramped up prosecutions through the National Cryptocurrency Enforcement Team (NCET), established in 2022 and actively bringing cases such as Bitzlato (unlicensed exchange processing over $700M in illicit funds) and Tornado Cash founders (money laundering and sanctions\u2011evasion charges). ([justice.gov](https://www.justice.gov/criminal/national-cryptocurrency-enforcement-team?utm_source=openai))  High\u2011profile criminal actions included the FTX/Bankman\u2011Fried prosecution, which ended in conviction in 2023 and a 25\u2011year sentence in March 2024, and the Binance case, where founder Changpeng Zhao pled guilty and Binance agreed to a $4.3B settlement. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Trial_of_Sam_Bankman-Fried?utm_source=openai))\n- State\u2011level authorities also pursued large crypto matters. For example, the New York Attorney General secured a $2B settlement from bankrupt crypto lender Genesis in 2024, one of the largest state crypto enforcement resolutions. ([theguardian.com](https://www.theguardian.com/technology/article/2024/may/20/genesis-crypto-fraud-settlement?utm_source=openai))\n\nAcross SEC, DOJ/NCET, and state regulators, the 2022\u20132024 period saw dozens of actions per year, several multibillion\u2011dollar settlements, and landmark criminal prosecutions. That level and breadth of enforcement activity fits well with the prediction of a large volume of regulatory and prosecutorial actions over the ensuing \u201ccouple of years,\u201d so the prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 693,
+          "start_index": 549,
+          "title": "SEC Enforcement of Cryptocurrency Reaches a New High | Cornerstone Research",
+          "type": "url_citation",
+          "url": "https://www.cornerstone.com/insights/press-releases/sec-enforcement-of-cryptocurrency-reaches-a-new-high/?utm_source=openai"
+        },
+        {
+          "end_index": 950,
+          "start_index": 867,
+          "title": "SEC.gov | SEC Announces Enforcement Results for Fiscal Year 2023",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/newsroom/press-releases/2023-234?utm_source=openai"
+        },
+        {
+          "end_index": 1356,
+          "start_index": 1248,
+          "title": "Criminal Division | National Cryptocurrency Enforcement Team | United States Department of Justice",
+          "type": "url_citation",
+          "url": "https://www.justice.gov/criminal/national-cryptocurrency-enforcement-team?utm_source=openai"
+        },
+        {
+          "end_index": 1705,
+          "start_index": 1609,
+          "title": "Trial of Sam Bankman-Fried",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Trial_of_Sam_Bankman-Fried?utm_source=openai"
+        },
+        {
+          "end_index": 2067,
+          "start_index": 1938,
+          "title": "New York reaches $2bn settlement with crypto lender Genesis over fraud claims",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/article/2024/may/20/genesis-crypto-fraud-settlement?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was accurate. SEC brought a record 46 crypto-related enforcement actions in 2023 (up 53% from 2022's 30), followed by 33 in 2024, totaling over 100 SEC actions in 2022-2024 (*Cornerstone Research: SEC Cryptocurrency Enforcement reports*, [cornerstone.com](https://www.cornerstone.com/insights/reports/sec-cryptocurrency-enforcement/); SEC FY2024 results). DOJ pursued numerous prosecutions, e.g., FTX/Sam Bankman-Fried (2022 charges, 2023 conviction), Binance/CZ plea (2023), and many fraud cases (e.g., Merkle Science: 8 defendants charged H1 2022 alone). NY DFS fined Robinhood Crypto $30M (2022). High-profile volume matches 'large volume of ... enforcement actions.' Sources: SEC.gov, justice.gov, CNBC/DOJ shifts (post-2024)."
+    },
+    {
+      "id": "C-01:22:40.010",
+      "result": "wrong",
+      "explanation": "The core mechanisms Sacks predicted for winter 2022\u201323 largely did **not** materialize.\n\n1. **Energy shortages and Putin\u2019s leverage**  \n   Europe certainly faced a serious energy *price* shock, but not the widespread **physical shortages** implied. EU gas storage was filled to ~95% before winter, a mild season plus demand reduction cut consumption sharply, and Europe got through winter without major blackouts or rationing of household heating.([iea.org](https://www.iea.org/reports/never-too-early-to-prepare-for-next-winter?utm_source=openai))  In parallel, the EU rapidly diversified away from Russian gas under the REPowerEU plan, with Russian pipeline supplies collapsing from about 155 bcm in 2021 to roughly 62 bcm in 2022 and 28 bcm in 2023, and Russian fossil fuels\u2019 share of EU imports plunging thereafter.([en.wikipedia.org](https://en.wikipedia.org/wiki/2022%E2%80%932023_Russia%E2%80%93European_Union_gas_dispute?utm_source=openai))  By May 2023, the EU energy commissioner was publicly saying that **Putin\u2019s attempt to blackmail Europe with energy had failed**, precisely because Europe had managed the winter and accelerated diversification.([energynow.ca](https://energynow.ca/2023/05/putins-energy-blackmail-of-europe-has-failed-commissioner-says/?utm_source=openai))  In other words, Russia *lost* long\u2011term leverage over Europe\u2019s energy system rather than gaining it.\n\n2. **\u201cReal fracture in the Western alliance\u201d**  \n   There were notable protests and political stresses over energy prices (e.g., large demonstrations in Prague against high bills and sanctions), which showed domestic discontent.([euronews.com](https://www.euronews.com/2022/09/04/70000-czechs-take-to-the-streets-against-government-eu-and-nato?utm_source=openai))  But at the level of governments and alliances, the predicted **fracture** did not occur. Through and after that winter, the EU and NATO continued to pass new sanctions packages, send increasingly heavy weapons, and admit or advance new members (Finland and then Sweden) \u2013 all signs of institutional cohesion, not breakdown. Survey work for the European Council on Foreign Relations in January 2023 found that, one year into the war and just after the first wartime winter, \u201ccracks in the Western coalition have got smaller rather than larger,\u201d with Europeans \u201csurprisingly united\u201d on supporting Ukraine and seeing the EU as as strong or stronger than before the invasion.([ecfr.eu](https://ecfr.eu/publication/fragile-unity-why-europeans-are-coming-together-on-ukraine/?utm_source=openai))  A separate analysis summarised this as the West regaining \u201cunity and purpose,\u201d noting that Europeans felt they had **weathered the difficult winter** and could sustain their stance against Russia.([voanews.com](https://www.voanews.com/a/west-regains-unity-purpose-in-light-of-russian-ukraine-war-poll-indicates-/7021274.html?utm_source=openai))\n\n3. **Overall assessment**  \n   Winter 2022\u201323 did bring economic pain and some social unrest, but it **did not significantly increase Putin\u2019s leverage over Europe**, and it **did not cause the kind of visible, structural fracture in the Western alliance** that Sacks predicted. If anything, that winter reinforced a strategic shift away from Russian energy and coincided with polling and policy evidence of continued or even strengthened Western unity on Ukraine. Taken against the specific claims in the quote, the prediction is best judged as **wrong**.",
+      "sources": [
+        {
+          "end_index": 584,
+          "start_index": 483,
+          "title": "Never Too Early to Prepare for Next Winter \u2013 Analysis - IEA",
+          "type": "url_citation",
+          "url": "https://www.iea.org/reports/never-too-early-to-prepare-for-next-winter?utm_source=openai"
+        },
+        {
+          "end_index": 984,
+          "start_index": 855,
+          "title": "2022\u20132023 Russia\u2013European Union gas dispute",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022%E2%80%932023_Russia%E2%80%93European_Union_gas_dispute?utm_source=openai"
+        },
+        {
+          "end_index": 1323,
+          "start_index": 1195,
+          "title": "Putin's energy blackmail of Europe has failed, commissioner says - Canadian Energy News, Top Headlines, Commentaries, Features & Events - EnergyNow",
+          "type": "url_citation",
+          "url": "https://energynow.ca/2023/05/putins-energy-blackmail-of-europe-has-failed-commissioner-says/?utm_source=openai"
+        },
+        {
+          "end_index": 1793,
+          "start_index": 1658,
+          "title": "70,000 Czechs take to the streets against government, EU and NATO | Euronews",
+          "type": "url_citation",
+          "url": "https://www.euronews.com/2022/09/04/70000-czechs-take-to-the-streets-against-government-eu-and-nato?utm_source=openai"
+        },
+        {
+          "end_index": 2584,
+          "start_index": 2466,
+          "title": "Fragile unity: Why Europeans are coming together on Ukraine (and what might drive them apart) | ECFR",
+          "type": "url_citation",
+          "url": "https://ecfr.eu/publication/fragile-unity-why-europeans-are-coming-together-on-ukraine/?utm_source=openai"
+        },
+        {
+          "end_index": 2930,
+          "start_index": 2782,
+          "title": "West Regains \u2018Unity, Purpose\u2019 in Light of Russian Ukraine War, Poll Indicates",
+          "type": "url_citation",
+          "url": "https://www.voanews.com/a/west-regains-unity-purpose-in-light-of-russian-ukraine-war-poll-indicates-/7021274.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Europe faced severe energy pressures in winter 2022-2023 due to reduced Russian gas supplies, with consumption dropping 19% and Russian share falling from 41% to ~12% (*IEA Gas Market Lessons from the 2022-2023 Energy Crisis*; *EU Commission*). However, mild weather, LNG imports, demand reduction, and no blackouts meant no collapse (*Reuters Nov 2023: 'Europe's energy crisis is over'*; *CS Monitor Jan 2023: 'No winter of discontent... war has united [the West]'*). Putin's leverage did not increase; Europe accelerated diversification and sanctions (*Brookings Jun 2024*). No visible fractures in Western alliance: unity strengthened, NATO aid continued unabated (*NATO reports*; no major sources confirm fractures from energy, only pre-winter fears like *CNN Sep 2022* that proved unfounded)."
+    },
+    {
+      "id": "D-01:22:55.050",
+      "result": "right",
+      "explanation": "Evidence since mid\u20112022 indicates that nationalist and right\u2011wing populist forces have generally strengthened, and that the Ukraine war\u2019s economic and political fallout has been one of the catalysts, consistent with Friedberg\u2019s prediction.\n\nPolitical\u2011science analyses from the European Center for Populism Studies (ECPS) conclude that the Russian invasion of Ukraine produced major economic insecurity (energy shock, inflation, looming recession) and that radical\u2011right populist parties \"seized the opportunity\" to instrumentalize war\u2011related economic anxieties\u2014especially energy prices and cost\u2011of\u2011living\u2014to advance anti\u2011elite, national\u2011interest\u2011first narratives.([populismstudies.org](https://www.populismstudies.org/conclusion-for-the-report-on-the-impact-of-the-russia-ukraine-war-on-right-wing-populism-in-europe/?utm_source=openai))  This directly matches the idea that the war would act as a further *catalyzing event* rather than reversing nationalist trends.\n\nEmpirically, nationalist and far\u2011right parties have made notable gains across Europe after 2022. Giorgia Meloni\u2019s national\u2011conservative Brothers of Italy won power in 2022, giving Italy its most right\u2011wing government since World War II.([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_Italian_general_election?utm_source=openai))  A survey of 2022\u201324 results notes strengthened positions for nationalist or far\u2011right parties such as Meloni\u2019s Fratelli d\u2019Italia, the Sweden Democrats, Hungary\u2019s Fidesz, Germany\u2019s AfD, and Austria\u2019s FP\u00d6, describing this as part of a broader nationalist rise.([debuglies.com](https://debuglies.com/2025/08/21/report-the-strategic-marginalization-of-europe-in-the-emerging-post-ukraine-war-global-order-2022-2025/?utm_source=openai))  A 2025 overview by *Le Monde* similarly describes Europe three years into the invasion as weakened by anti\u2011system and far\u2011right movements, with Russia exploiting energy\u2011price discontent and insecurity.([lemonde.fr](https://www.lemonde.fr/en/international/article/2025/02/24/three-years-into-russia-s-invasion-of-ukraine-europe-weakened-by-anti-system-and-far-right-movements_6738518_4.html?utm_source=openai))\n\nCase studies tie these gains explicitly to war\u2011related economic fallout. In France, ECPS finds that Marine Le Pen successfully pivoted to a social\u2011populist and economic\u2011nationalist message centered on energy and rising prices linked to the war, and that these issues were paramount for 2022 voters\u2014helping her radical\u2011right party despite earlier pro\u2011Putin associations.([populismstudies.org](https://www.populismstudies.org/the-impact-of-the-russia-ukraine-war-on-radical-right-wing-populism-in-france/?utm_source=openai))  Analysis of the 2024 European Parliament elections notes that in Germany, internal polling showed the Ukraine war and \u201csecuring peace\u201d as the top voter concern, and that parties most critical of the war effort (AfD and the Wagenknecht alliance) outperformed governing pro\u2011war parties, framed as \u201cEurope votes against the Ukraine war.\u201d([theamericanconservative.com](https://www.theamericanconservative.com/europe-votes-against-the-ukraine-war/?utm_source=openai))  Other commentary and reporting in 2024\u201325 describe a \u201crising far right\u201d across Europe and link its appeal partly to economic strain from the energy crisis triggered by the war.([theguardian.com](https://www.theguardian.com/commentisfree/2025/jan/13/trump-nationalist-europe-meloni-orban-rightwing?utm_source=openai))\n\nScholars caution that the effect is heterogeneous\u2014some radical\u2011right parties did not gain everywhere, and multiple factors (COVID aftershocks, long\u2011term economic stagnation, migration) also drive nationalism.([populismstudies.org](https://www.populismstudies.org/conclusion-for-the-report-on-the-impact-of-the-russia-ukraine-war-on-right-wing-populism-in-europe/?utm_source=openai))  But Friedberg\u2019s claim was qualitative and directional: that the \"slow march of nationalism will continue\" and the Ukraine war would be \"another catalyzing event.\" The post\u20112022 record shows continued or heightened nationalist politics in many countries, with clear evidence that the war\u2019s economic and security fallout has been used by nationalist actors and has shaped voter concerns. That makes the prediction broadly accurate rather than refuted by events.",
+      "sources": [
+        {
+          "end_index": 875,
+          "start_index": 701,
+          "title": "Conclusion for the report on the impact of the Russia\u2013Ukraine War on right-wing populism in Europe - ECPS",
+          "type": "url_citation",
+          "url": "https://www.populismstudies.org/conclusion-for-the-report-on-the-impact-of-the-russia-ukraine-war-on-right-wing-populism-in-europe/?utm_source=openai"
+        },
+        {
+          "end_index": 1343,
+          "start_index": 1244,
+          "title": "2022 Italian general election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_Italian_general_election?utm_source=openai"
+        },
+        {
+          "end_index": 1776,
+          "start_index": 1603,
+          "title": "REPORT - The Strategic Marginalization of Europe in the Emerging Post-Ukraine War Global Order (2022\u20132025) - https://debuglies.com",
+          "type": "url_citation",
+          "url": "https://debuglies.com/2025/08/21/report-the-strategic-marginalization-of-europe-in-the-emerging-post-ukraine-war-global-order-2022-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 2187,
+          "start_index": 1979,
+          "title": "Three years into Russia's invasion of Ukraine, Europe weakened by anti-system and far-right movements",
+          "type": "url_citation",
+          "url": "https://www.lemonde.fr/en/international/article/2025/02/24/three-years-into-russia-s-invasion-of-ukraine-europe-weakened-by-anti-system-and-far-right-movements_6738518_4.html?utm_source=openai"
+        },
+        {
+          "end_index": 2713,
+          "start_index": 2560,
+          "title": "The impact of the Russia-Ukraine War on radical right-wing populism in France - ECPS",
+          "type": "url_citation",
+          "url": "https://www.populismstudies.org/the-impact-of-the-russia-ukraine-war-on-radical-right-wing-populism-in-france/?utm_source=openai"
+        },
+        {
+          "end_index": 3177,
+          "start_index": 3049,
+          "title": "Europe Votes Against the Ukraine War - The American Conservative",
+          "type": "url_citation",
+          "url": "https://www.theamericanconservative.com/europe-votes-against-the-ukraine-war/?utm_source=openai"
+        },
+        {
+          "end_index": 3495,
+          "start_index": 3355,
+          "title": "As Trump enters the fray, the danger is that a nationalist Europe will fragment, not stick together",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/commentisfree/2025/jan/13/trump-nationalist-europe-meloni-orban-rightwing?utm_source=openai"
+        },
+        {
+          "end_index": 3881,
+          "start_index": 3707,
+          "title": "Conclusion for the report on the impact of the Russia\u2013Ukraine War on right-wing populism in Europe - ECPS",
+          "type": "url_citation",
+          "url": "https://www.populismstudies.org/conclusion-for-the-report-on-the-impact-of-the-russia-ukraine-war-on-right-wing-populism-in-europe/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction has held true. Since the June 2022 podcast, nationalist and right-wing populist politics have surged globally, reinforcing the pre-existing trend. Key examples include: Italy's Giorgia Meloni (nationalist) winning power in 2022; Netherlands' Geert Wilders in 2023; Argentina's Javier Milei (populist) in 2023; strong far-right performances in 2024 EU Parliament elections (e.g., France's National Rally, Germany's AfD); Austria's FP\u00d6 topping polls in Sep 2024; Germany's AfD reaching 20-24% and second place in Feb 2025 election; and U.S. Republicans/Trump winning the 2024 presidency and Congress majorities (Pew Research, Dec 2024). Far-right parties now in government in 7 European countries (IBA, Sep 2024). The Ukraine war acted as a catalyst via economic fallout\u2014Europe's energy crisis and inflation (peaking 2022-2023 from Russian gas cuts)\u2014fueling voter discontent, war fatigue, and anti-incumbent revolts, with nationalists criticizing EU sanctions/aid costs (Conducive Space, early 2025; Responsible Statecraft, 2024; Euronews, Apr 2024). This aligns with the 'slow march of nationalism continuing' amid the war. Sources: Pew Research (2024 elections); Conducive Space (Europe nationalism 2025); Vox (far-right surge); Atlas Institute (far-right trends); web searches on elections and war impacts."
+    },
+    {
+      "id": "C-01:30:21.830",
+      "result": "wrong",
+      "explanation": "Available evidence through late 2025 shows that the United States has **not** shifted to a posture where European NATO members are expected to bear essentially all (near 100%) of the financial cost of their own defense against Russia.\n\n* **US still pays the largest share of NATO defense.** NATO data and independent analyses show that in 2024\u20132025 the US accounts for roughly **60\u201370% of total NATO military spending**\u2014around $980\u2013$997 billion out of about $1.5\u2013$1.6 trillion\u2014far more than all European allies combined.([ukdefencejournal.org.uk](https://ukdefencejournal.org.uk/nato-releases-2025-defence-expenditure-figures/?utm_source=openai))  \n* **Common NATO budgets remain shared, not shifted to Europe.** For NATO\u2019s joint civil/military/ investment budgets, the US and Germany each contribute about **16%**; the US does not expect Europe to cover nearly all of these costs.([ft.com](https://www.ft.com/content/aa4d5bad-235c-4c94-b73e-dfe4e53241d4?utm_source=openai))  \n* **US-funded European posture persists.** The European Deterrence Initiative and related deployments in Europe continue to be funded out of the **US Department of Defense budget**, underscoring ongoing American financial responsibility for deterring Russia in Europe.([en.wikipedia.org](https://en.wikipedia.org/wiki/European_Deterrence_Initiative?utm_source=openai))  \n* **Policy changes aim at *burden sharing*, not US withdrawal from paying.** NATO has raised its target from 2% to **5% of GDP by 2035** for *all* allies, including the United States, and leaders repeatedly reaffirm an \u201cironclad\u201d US Article 5 commitment rather than signaling that Europe must self-fund its defense entirely.([en.wikipedia.org](https://en.wikipedia.org/wiki/Agreement_on_5%25_NATO_defence_spending_by_2035?utm_source=openai))  \n\nEuropean countries are clearly being pushed to spend more, but the factual pattern in budgets, initiatives, and official communiqu\u00e9s shows continued heavy US funding rather than a move toward Europeans paying anything close to 100% of the cost of their defense. Therefore, Sacks\u2019s prediction has **not** come true as of November 30, 2025.",
+      "sources": [
+        {
+          "end_index": 681,
+          "start_index": 555,
+          "title": "NATO releases 2025 defence expenditure figures",
+          "type": "url_citation",
+          "url": "https://ukdefencejournal.org.uk/nato-releases-2025-defence-expenditure-figures/?utm_source=openai"
+        },
+        {
+          "end_index": 1010,
+          "start_index": 917,
+          "title": "Who pays for Nato?",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/aa4d5bad-235c-4c94-b73e-dfe4e53241d4?utm_source=openai"
+        },
+        {
+          "end_index": 1382,
+          "start_index": 1282,
+          "title": "European Deterrence Initiative",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/European_Deterrence_Initiative?utm_source=openai"
+        },
+        {
+          "end_index": 1827,
+          "start_index": 1710,
+          "title": "Agreement on 5% NATO defence spending by 2035",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Agreement_on_5%25_NATO_defence_spending_by_2035?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction has not materialized. While there has been significant progress in European NATO defense spending\u2014all 32 allies are projected to meet the 2% GDP target in 2025 (up from 3 in 2014), with a new pledge for 5% by 2035\u2014and the US share of total NATO spending has declined from 70.1% in 2022 to an estimated 61.7% in 2025 (NATO Defence Expenditure report 2014-2025: <https://www.nato.int/content/dam/nato/webready/documents/finance/def-exp-2025-en.pdf>; Atlantic Council NATO Tracker), this is far from Europe bearing 'near 100%' of their defense costs against Russia. The US still accounts for the majority (~62%) of total NATO expenditures (US ~\u20ac891B vs. Europe+Canada ~\u20ac553B in 2025e), provides critical capabilities like nuclear deterrence, and maintains troop presence. Recent Trump administration moves to cut specific aid (e.g., Section 333 programs for Eastern Europe; NYT Sep 2025, Reuters Sep 2025) signal pressure for more burden-sharing, but the US posture remains one of substantial involvement, not expecting Europe to fund 'essentially all' costs independently. Sources: NATO.int, AtlanticCouncil.org, SIPRI, Reuters."
+    },
+    {
+      "id": "B-01:33:32.090",
+      "result": "right",
+      "explanation": "Joe Biden did *not* ultimately run for re\u2011election in 2024. Although he formally announced a re\u2011election bid on April 25, 2023 and became the presumptive Democratic nominee after winning the primaries, he later withdrew from the 2024 presidential race on July 21, 2024, ending his campaign and stating he would focus on serving out the remainder of his term instead of seeking a second one.([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai)) In his withdrawal letter and subsequent Oval Office address, Biden said it was in the best interest of his party and the country for him to stand down, and framed the decision around defending democracy and the nation\u2019s future.([aljazeera.com](https://www.aljazeera.com/news/2024/7/21/full-text-bidens-letter-announcing-withdrawal-from-presidential-race?utm_source=openai)) Reporting at the time made clear that party concerns over his age, electability, and poor debate performance were central pressures pushing him to step aside.([reuters.com](https://www.reuters.com/world/us/biden-81-pulls-out-presidential-race-2024-07-21/?utm_source=openai)) Biden then endorsed Kamala Harris, who became the Democratic nominee, while Biden retired when Donald Trump was inaugurated on January 20, 2025.([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai)) This matches the core of the prediction: that Biden would ultimately choose not to seek a second term and would announce that he was not running again, even though the podcast did not anticipate that he would first launch a re\u2011election campaign and only later withdraw.",
+      "sources": [
+        {
+          "end_index": 566,
+          "start_index": 423,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 940,
+          "start_index": 794,
+          "title": "The full text of Biden\u2019s letter on exiting the presidential election race | US Election 2024 News | Al Jazeera",
+          "type": "url_citation",
+          "url": "https://www.aljazeera.com/news/2024/7/21/full-text-bidens-letter-announcing-withdrawal-from-presidential-race?utm_source=openai"
+        },
+        {
+          "end_index": 1215,
+          "start_index": 1099,
+          "title": "Biden ends failing reelection campaign, backs Harris as nominee",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/biden-81-pulls-out-presidential-race-2024-07-21/?utm_source=openai"
+        },
+        {
+          "end_index": 1503,
+          "start_index": 1360,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Joe Biden announced on July 21, 2024, via letter that he would not seek a second term: \"while it has been my intention to seek reelection, I believe it is in the best interest of my party and the country for me to stand down\" ([full text via NPR](https://www.npr.org/2024/07/21/g-s1-12544/biden-letter-withdraw-harris-endorsement), [PBS](https://www.pbs.org/newshour/politics/read-bidens-full-letter-announcing-the-end-of-his-2024-reelection-bid), [BBC](https://www.bbc.com/news/articles/c25lrvz1jrxo)). He endorsed Kamala Harris as nominee and did not run ([NBC News](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867), [Wikipedia](https://en.wikipedia.org/wiki/Joe_Biden_2024_presidential_campaign)). Though the letter avoided explicit reasons, age concerns post-debate were pivotal ([AP](https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/)); economy/polls factored into context (2022 prediction amid inflation). Matches core: did not run, announced retirement from reelection, citing age amid difficulties."
+    },
+    {
+      "id": "C-01:34:01.970",
+      "result": "wrong",
+      "explanation": "The prediction was that **the 2024 U.S. presidential election would feature Ron DeSantis as the Republican nominee and Gavin Newsom as the Democratic nominee**.\n\nIn reality, the general election held on November 5, 2024 featured **Donald Trump** as the Republican nominee and **Kamala Harris** as the Democratic nominee.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))  Joe Biden initially ran and became the presumptive Democratic nominee, but he later withdrew in July 2024 and endorsed Harris, who was then formally nominated by the Democratic Party; Newsom was never the nominee.([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  On the Republican side, Ron DeSantis ran in the primaries but dropped out after Trump\u2019s dominant performance in early contests, and Trump secured the nomination.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))  \n\nBecause **neither DeSantis nor Newsom was their party\u2019s 2024 presidential nominee**, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 465,
+          "start_index": 355,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 823,
+          "start_index": 680,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1096,
+          "start_index": 986,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The 2024 Republican nominee was Donald Trump, not Ron DeSantis ([Ballotpedia](https://ballotpedia.org/Republican_presidential_nomination%2C_2024), [Wikipedia](https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_primaries), [PBS](https://www.pbs.org/newshour/politics/trump-clinches-2024-republican-nomination)). The Democratic nominee was Kamala Harris, not Gavin Newsom, after Joe Biden withdrew ([BBC](https://www.bbc.com/news/articles/c4ng1my55vno), [American Presidency Project](https://www.presidency.ucsb.edu/statistics/elections/2024), [Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election)). Election held November 5, 2024; Trump won."
+    },
+    {
+      "id": "A-01:38:52.800",
+      "result": "wrong",
+      "explanation": "Ron DeSantis did run for president in the 2024 election cycle, announcing his candidacy for the Republican nomination on May 24, 2023 and later suspending his campaign on January 21, 2024, after a poor primary showing. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ron_DeSantis_2024_presidential_campaign?utm_source=openai)) However, he did not become the Republican nominee and therefore could not, and did not, win the 2024 general election\u2014let alone by a \u201clandslide.\u201d The prediction bundled two claims (that he would run and that he would win in a landslide); since the second, outcome-defining part is clearly false, the overall prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 361,
+          "start_index": 252,
+          "title": "Ron DeSantis 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Ron_DeSantis_2024_presidential_campaign?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Ron DeSantis announced his 2024 presidential candidacy on May 24, 2023 ([Wikipedia](https://en.wikipedia.org/wiki/Ron_DeSantis_2024_presidential_campaign)), satisfying the 'run' part. However, he suspended his campaign on January 21, 2024, after a weak Iowa showing and endorsed Donald Trump ([CNN](https://www.cnn.com/2024/01/21/politics/desantis-ends-2024-campaign), [BBC](https://www.bbc.com/news/world-us-canada-68051757)). Trump won the 2024 general election with 312 electoral votes against Kamala Harris ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [270toWin](https://www.270towin.com/2024-election)). DeSantis did not win the nomination or general election, let alone by a landslide."
+    },
+    {
+      "id": "C-01:38:57.120",
+      "result": "ambiguous",
+      "explanation": "There are three conditional predictions here, and only one of the conditions actually occurred; the others never happened, so we cannot strictly mark them right or wrong.\n\n1. **If Biden runs as the Democratic nominee, any Republican wins.**  \n   In reality, the 2024 general election was **Joe Biden (D) vs. Donald Trump (R)**, and Biden won the presidency (Democrats retained the White House).   \n   Under the condition that *did* happen (Biden as the nominee), Sacks\u2019s prediction that \u201cany Republican wins\u201d is **wrong**.\n\n2. **If it\u2019s DeSantis vs. Newsom, DeSantis wins.**  \n   This matchup never occurred: Ron DeSantis did not become the GOP nominee, and Gavin Newsom was not the Democratic nominee. Because the underlying condition failed, this part of the prediction cannot be evaluated against reality and remains **counterfactual**.\n\n3. **If it\u2019s Newsom vs. Trump, Republicans could lose (Newsom probably defeats Trump).**  \n   This matchup also never occurred: Newsom did not run as the Democratic nominee, so this too is counterfactual and not testable.\n\n**Overall:** Part (1) is clearly falsified by the 2024 result, but parts (2) and (3) are untestable counterfactuals. Because the user bundled all three into a single prediction, the combined evaluation is **ambiguous**: one tested component is wrong, while the others never faced real-world verification. If we evaluated only the scenario that actually occurred, it would be **wrong**, but as a set of branching scenarios, the overall judgment is best labeled **\"ambiguous\"**.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The 2024 election featured Kamala Harris (D) vs. Donald Trump (R), with Trump winning 312-226 electoral votes ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [CNN](https://www.cnn.com/election/2024/results/president), [FEC](https://www.fec.gov/documents/5644/2024presgeresults.pdf)). Biden withdrew July 21, 2024, and was not the nominee ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [NBC](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867)). Harris was Democratic nominee ([BBC](https://www.bbc.com/news/articles/c4ng1my55vno), [AP](https://apnews.com/article/harris-democratic-presidential-nomination-eb43b6b346cc644b2d195315cb2bfb20)). None of the predicted matchups (Biden vs. any R, DeSantis vs. Newsom, Newsom vs. Trump) occurred, making the conditional predictions untestable."
+    }
+  ]
+}

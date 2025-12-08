@@ -1,0 +1,570 @@
+{
+  "meta": {
+    "count": 14,
+    "count_by_result": {
+      "right": 3,
+      "inconclusive": 8,
+      "ambiguous": 1,
+      "wrong": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:20:45.000",
+      "result": "right",
+      "explanation": "OpenAI did publicly announce and ship a formal agents product well within 12 months of September 27, 2024.\n\n- On **March 11, 2025**, OpenAI published \u201cNew tools for building agents,\u201d introducing the **Responses API** (with built\u2011in tools like web search, file search, and computer use) explicitly framed as \u201cbuilding blocks that will help developers and enterprises build useful and reliable agents,\u201d and defining agents as systems that independently accomplish tasks on behalf of users. The post states that the Responses API is **available to all developers starting today**, i.e., a shipped product rather than a research demo.\n  ([openai.com](https://openai.com/index/new-tools-for-building-agents/?utm_source=openai))\n- The same day, TechCrunch reported that \u201cOpenAI **launched new tools** designed to help developers and enterprises build AI agents,\u201d describing the Responses API and the open\u2011source **Agents SDK** as OpenAI\u2019s new platform for creating production agents that can search the web, navigate sites, and work with company data. ([techcrunch.com](https://techcrunch.com/2025/03/11/openai-launches-new-tools-to-help-businesses-build-ai-agents/?utm_source=openai))\n- OpenAI\u2019s later **AgentKit** and \u201cAPI Agents\u201d documentation explicitly build on the March 2025 Responses API and Agents SDK as a unified platform for designing, deploying, and optimizing agents (Agent Builder, Agents SDK, ChatKit, etc.), reinforcing that these earlier releases were a formal agents product line, not just experiments. ([openai.com](https://openai.com/index/introducing-agentkit/?utm_source=openai))\n- Separately, on **January 23, 2025**, OpenAI launched **Operator**, a browser\u2011controlling AI agent, as a research preview for paying Pro users, further confirming that OpenAI had moved from mere demos to a user\u2011facing agent product within the window, even if branded as \u201cresearch preview.\u201d ([openai.com](https://openai.com/index/introducing-operator/?utm_source=openai))\n\nBecause OpenAI\u2019s Responses API + Agents SDK (and associated tooling) constitute a clearly labeled, widely available **agents platform** announced and shipped about 5\u00bd months after September 27, 2024\u2014well inside the ~12\u2011month horizon\u2014the prediction that OpenAI would \u201cpublicly announce and ship a formal \u2018agents\u2019 product\u201d in that timeframe is **fulfilled**.",
+      "sources": [
+        {
+          "end_index": 758,
+          "start_index": 669,
+          "title": "New tools for building agents | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/index/new-tools-for-building-agents/?utm_source=openai"
+        },
+        {
+          "end_index": 1216,
+          "start_index": 1083,
+          "title": "OpenAI launches new tools to help businesses build AI agents | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2025/03/11/openai-launches-new-tools-to-help-businesses-build-ai-agents/?utm_source=openai"
+        },
+        {
+          "end_index": 1634,
+          "start_index": 1554,
+          "title": "Introducing AgentKit | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/index/introducing-agentkit/?utm_source=openai"
+        },
+        {
+          "end_index": 2007,
+          "start_index": 1927,
+          "title": "Introducing Operator | OpenAI",
+          "type": "url_citation",
+          "url": "https://openai.com/index/introducing-operator/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "OpenAI publicly announced and shipped formal AI agent products within 12 months of Sep 27, 2024. On Jan 23, 2025 (~4 months later), OpenAI released Operator, a research preview agent available to Pro users in the US for real tasks like browser interactions ([OpenAI blog](https://openai.com/index/introducing-operator/)). This evolved into ChatGPT agent on Jul 17, 2025 (~10 months later), a formal product integrated into ChatGPT, rolled out publicly to Pro, Plus, and Team users, enabling proactive task completion beyond previews ([OpenAI blog](https://openai.com/index/introducing-chatgpt-agent/)). These fulfill the prediction of a shipped 'agents' product post-o1, as referenced in the roadmap quote."
+    },
+    {
+      "id": "C-00:32:18.000",
+      "result": "inconclusive",
+      "explanation": "The prediction has a **5\u201310 year horizon starting from September 27, 2024**, i.e., it is specifically about market conditions sometime between **2029 and 2034**. As of today (late 2025), we are only ~1 year into that window, so it is too early to know whether \u201cmost enterprises\u201d will abandon legacy-priced systems of record.\n\nWhat we can see so far:\n\n- There is **active technical work and industry interest** in AI/agent-based enterprise systems (e.g., agentic ERP and generalist enterprise agents), but these are still framed as emerging approaches or roadmaps, not yet as mainstream replacements for core CRM/ERP/HRIS across most enterprises. ([arxiv.org](https://arxiv.org/abs/2506.01423?utm_source=openai))  \n- Some high\u2011profile cases, like Klarna reportedly decommissioning around 1,200 SaaS apps including Salesforce in favor of an internal AI platform, show that **early adopters can justify replacing traditional SaaS with AI systems**, but this is one company, not evidence about the majority of enterprises. ([medium.com](https://medium.com/%40atomcapital/the-end-of-saas-how-ai-agents-are-rewiring-enterprise-software-and-services-8e4859c411e3?utm_source=openai))  \n- Analyst and industry pieces project that by the early\u2011to\u2011mid 2030s, **AI\u2011driven \u201cservices\u2011as\u2011software\u201d or RaaS/agent models may erode traditional license\u2011based SaaS**, but these are forward\u2011looking forecasts, not outcomes already realized. ([horsesforsources.com](https://www.horsesforsources.com/sas_1-5-trillion-dollar-opportunity_020725/?utm_source=openai))  \n- Current pricing and deployment patterns show that **traditional enterprise systems of record (CRM/ERP, etc.) remain widely used and expensive**, even as AI features are added on top and some vendors begin experimenting with consumption or agent\u2011interaction pricing rather than strictly per\u2011seat licenses. ([cqlsys.com](https://www.cqlsys.com/intelligent-enterprise-ai-erp-2025?utm_source=openai))\n\nBecause the prediction is explicitly about what *will* happen over 5\u201310 years and we are far from the end of that period, and because current evidence shows only **early movement** rather than a decisive, broad shift where \u201cmost enterprises\u201d can no longer justify legacy pricing, the correctness of Chamath\u2019s prediction **cannot yet be determined**.",
+      "sources": [
+        {
+          "end_index": 755,
+          "start_index": 690,
+          "title": "FinRobot: Generative Business Process AI Agents for Enterprise Resource Planning in Finance",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2506.01423?utm_source=openai"
+        },
+        {
+          "end_index": 1220,
+          "start_index": 1064,
+          "title": "The End of SaaS? How AI Agents Are Rewiring Enterprise Software and Services | by Atom Capital | Medium",
+          "type": "url_citation",
+          "url": "https://medium.com/%40atomcapital/the-end-of-saas-how-ai-agents-are-rewiring-enterprise-software-and-services-8e4859c411e3?utm_source=openai"
+        },
+        {
+          "end_index": 1586,
+          "start_index": 1466,
+          "title": "Services-as-Software presents a $1.5 Trillion Opportunity for both Software and Services firms - Horses for Sources | No Boundaries",
+          "type": "url_citation",
+          "url": "https://www.horsesforsources.com/sas_1-5-trillion-dollar-opportunity_020725/?utm_source=openai"
+        },
+        {
+          "end_index": 1988,
+          "start_index": 1897,
+          "title": "AI-Powered ERP Systems in 2025 | Intelligent Enterprise Guide",
+          "type": "url_citation",
+          "url": "https://www.cqlsys.com/intelligent-enterprise-ai-erp-2025?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies a 5\u201310 year timeframe from September 2024 (i.e., by 2029\u20132034), but the current date is December 1, 2025\u2014only ~14 months later, far too early to assess fulfillment. While AI agents are hyped for disrupting enterprise software (e.g., [AI Agents Are Rewriting the Enterprise Software Playbook](https://www.mvp.vc/research-industry-sector-report/ai-agents-are-rewriting-the-enterprise-software-playbook), [How AI Agents Are Replacing Traditional SaaS Workflows in 2025](https://axorainfotech.com/blog/ai-agents-replacing-saas-workflows-2025)), incumbents like Salesforce (Agentforce), Oracle (50+ AI agents), and Microsoft are integrating them into existing SaaS rather than being replaced ([Salesforce Announces the Agentic Enterprise](https://www.salesforce.com/news/press-releases/2025/10/13/agentic-enterprise-announcement/), [Is agentic AI the beginning of the end for ERP?](https://www.computerweekly.com/feature/Is-agentic-AI-the-beginning-of-the-end-for-ERP)). No evidence of 'most enterprises' abandoning legacy CRM/ERP/HRIS due to cheaper AI alternatives; CRM market grows to ~$82B by 2025 with AI as an enhancer ([AI CRM vs Traditional CRM](https://superagi.com/ai-crm-vs-traditional-crm-a-head-to-head-comparison-of-features-benefits-and-roi-for-businesses-of-all-sizes/)). Counterviews exist ([No, AI will not replace SaaS](https://www.duperrin.com/english/2025/07/30/ai-replace-saas/))."
+    },
+    {
+      "id": "G-00:55:42.000",
+      "result": "inconclusive",
+      "explanation": "The prediction concerns the state of personal computing and interface paradigms *around ten years* after the episode date of September 27, 2024, i.e., roughly September 2034. Today is November 30, 2025, so fewer than two years have passed since the prediction was made and about nine years remain before the stated horizon. It is therefore too early to determine whether traditional smartphones will have largely disappeared as the dominant personal computing device or whether browser-based interaction will have largely ceased to be primary by that time. Because the forecast is explicitly about a future state well beyond the current date, its correctness cannot yet be evaluated.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction targets roughly September 2034 (10 years from the September 2024 podcast). The current date is December 2025, only ~14 months later. Smartphones remain the dominant personal computing device, with touch interfaces and web browsers still primary for online interaction (e.g., global smartphone shipments ~1.2B/year in 2025 per IDC/Counterpoint Research; no widespread replacement by AR glasses or voice/AI interfaces yet). Far too early to evaluate."
+    },
+    {
+      "id": "A-00:58:52.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, the preconditions for Jason\u2019s prediction have not been met, and the time horizon (\u201conce these things weigh a lot less\u2026\u201d, implicitly \u201cover the next several years\u201d) is far from exhausted.\n\nSmart\u2011glasses are clearly progressing but are still a niche, early\u2011adopter product rather than a mature, mass\u2011market replacement for a large share of smartphone usage. Meta\u2019s Ray\u2011Ban line has sold only a few million units since launch and, while successful within its niche, is described as a specialty gadget whose U.S. smart\u2011glasses market remains small, despite sales roughly tripling in 2025. ([reuters.com](https://www.reuters.com/business/big-buzz-small-market-metas-smartglasses-are-specialty-gadget-this-holiday-2025-11-25/?utm_source=openai)) Surveys likewise show modest ownership (around mid\u2011single\u2011digit percentages) and only partial consumer interest, not anything close to universal usage. ([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/09/metaverse-survey-nearly-half-of-consumers-interested-in-buying-smart-glasses?utm_source=openai)) That level of adoption is far below what would be needed for glasses to handle \u201cabout one\u2011third\u201d of everyday phone tasks for the average person.\n\nOn the hardware side, major players still struggle to deliver lightweight, all\u2011day AR glasses with phone\u2011class performance and battery life. Apple, for example, has repeatedly postponed or canceled AR\u2011glasses projects because current technology cannot yet deliver a comfortable, glasses\u2011sized device with sufficient power and thermal characteristics, and is instead focusing on headsets or future smart\u2011glasses concepts. ([macworld.com](https://www.macworld.com/article/1476453/apple-ar-glasses-postponed-technical-challenges.html?utm_source=openai)) Industry analyses also highlight unresolved constraints around weight (roughly 50 g as a practical limit), battery life, and full AR capability. ([ainvest.com](https://www.ainvest.com/news/meta-smart-glasses-sales-triple-aiming-10-million-units-2026-2509/?utm_source=openai)) \n\nSince (1) the envisioned hardware (\u201conce these things weigh a lot less\u201d) is not yet fully realized, (2) mainstream behavior has not shifted so that glasses routinely take over ~\u2153 of smartphone tasks, and (3) the prediction\u2019s timeframe is multi\u2011year and has not elapsed, it is too early to judge definitively whether Jason\u2019s forecast will prove right or wrong.",
+      "sources": [
+        {
+          "end_index": 805,
+          "start_index": 651,
+          "title": "Big buzz, small market: Meta's smartglasses are a specialty gadget this holiday",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/big-buzz-small-market-metas-smartglasses-are-specialty-gadget-this-holiday-2025-11-25/?utm_source=openai"
+        },
+        {
+          "end_index": 1149,
+          "start_index": 958,
+          "title": "Metaverse Survey: Nearly half of consumers interested in buying smart glasses | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/09/metaverse-survey-nearly-half-of-consumers-interested-in-buying-smart-glasses?utm_source=openai"
+        },
+        {
+          "end_index": 1848,
+          "start_index": 1719,
+          "title": "Apple is reportedly no longer developing AR glasses due to 'technical challenges' | Macworld",
+          "type": "url_citation",
+          "url": "https://www.macworld.com/article/1476453/apple-ar-glasses-postponed-technical-challenges.html?utm_source=openai"
+        },
+        {
+          "end_index": 2124,
+          "start_index": 1994,
+          "title": "Meta's Smart Glasses Sales Triple, Aiming for 10 Million Units by 2026",
+          "type": "url_citation",
+          "url": "https://www.ainvest.com/news/meta-smart-glasses-sales-triple-aiming-10-million-units-2026-2509/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is conditional on AR glasses becoming 'lighter and more mature,' implicitly in 'the next several years' from Sep 2024. As of Dec 2025 (~14 months later), smart glasses like Meta Ray-Ban (sales >2M units, shipments up 110% YoY per [Counterpoint Research](https://counterpointresearch.com)) are lighter (~50g) and popular for AI/audio/camera tasks, with new Display models ($799, Sep 2025) adding small in-lens displays for notifications/captions ([Meta](https://about.fb.com/news/2025/09/meta-ray-ban-display-ai-glasses-emg-wristband/)). However, true AR glasses (e.g., Meta Orion prototype, consumer ~2027; Apple ~2026) remain immature ([Bank of America](https://institute.bankofamerica.com), [IDC](https://blogs.idc.com)). No data shows glasses handling ~1/3 phone tasks or 'common' multi-device interaction replacing phones; AR usage mostly smartphone-based (60% US via phones, [SQ Magazine](https://sqmagazine.co.uk)); glasses are symbiotic/specialty ([InAirspace](https://inairspace.com)). Too early to verify."
+    },
+    {
+      "id": "B-01:00:37.000",
+      "result": "right",
+      "explanation": "Evidence through November 30, 2025 shows that Apple Vision Pro has remained a niche, short\u2011lived product rather than a widely adopted, enduring platform.\n\n**Lack of mainstream traction**\n- IDC estimates that Apple shipped only about **400,000 Vision Pros in 2024**, versus **5.6 million** Meta headsets, and notes that premium headsets over $1,000 (including Vision Pro) account for just **5\u20136%** of the market and are largely bought by enterprises and enthusiasts, not the mass consumer market. ([theverge.com](https://www.theverge.com/tech/820416/vr-xr-headsets-vision-pro-galaxy-xr-steam-frame-enterprise?utm_source=openai))\n- Business and market reports repeatedly describe Vision Pro\u2019s reception as **lukewarm** and the device as a **niche product**: for example, Jefferies cited a \u201clukewarm reception\u201d when discussing Apple\u2019s outlook, and broader AR/VR headset shipments are projected to **decline ~12% in 2025**, reinforcing that this category has not gone mainstream. ([investing.com](https://www.investing.com/news/stock-market-news/jefferies-maintains-buy-on-apple-keeps-205-price-target-93CH-3334781?utm_source=openai))\n- An August 2025 report notes that Vision Pro is \u201c**struggling to gain traction**,\u201d with **fewer than 1 million units sold in the U.S.** after roughly a year and a half, despite OS and app improvements. ([benzinga.com](https://www.benzinga.com/markets/tech/25/08/47175191/apples-vision-pro-struggles-to-gain-traction-amid-slow-release-of-immersive-video/?utm_source=openai))  These numbers are far from the scale associated with a mainstream Apple platform (hundreds of millions of users).\n\n**Brief relevance and signs of fading prominence**\n- By April 2024 Apple had already **cut shipment forecasts** for Vision Pro due to cooling demand in its core U.S. market, signaling that initial hype did not translate into sustained broad interest. ([technewsday.com](https://technewsday.com/apple-reduces-forecasts-for-vision-pro-as-demand-cools-in-key-us-market/?utm_source=openai))\n- In 2025, multiple reports indicate Apple has **scaled back or paused development** of major follow\u2011on headsets: Reuters, summarizing Bloomberg reporting, says Apple **halted work on a next\u2011generation Vision Pro and a cheaper N100 model** to shift resources toward AI smart glasses, citing \u201cdeclining momentum\u201d and limited mainstream content. ([reuters.com](https://www.reuters.com/technology/apple-halts-vision-pro-overhaul-focus-ai-glasses-bloomberg-news-reports-2025-10-01/?utm_source=openai))  MacRumors likewise reports that development of both the lighter \u201cVision Air\u201d and a redesigned Vision Pro has been **paused**, with only an incremental M5 refresh planned, and explicitly notes the product is still **unlikely to enjoy mass appeal**. ([macrumors.com](https://www.macrumors.com/2025/10/11/vision-pro-future-uncertain/?utm_source=openai))\n- Analyst roadmaps for the M5 refresh forecast **only 150,000\u2013200,000 units shipped in 2025** and describe Vision Pro as likely to \u201cremain a niche product,\u201d essentially a stopgap to maintain minimal market presence rather than a growing mass platform. ([macrumors.com](https://www.macrumors.com/2025/06/30/report-reveals-apple-vision-roadmap/?utm_source=openai))  Meanwhile, French\u2011language coverage notes that production of the original M2 model was **stopped in 2025 due to disappointing sales**, further underscoring its short commercial life. ([fr.wikipedia.org](https://fr.wikipedia.org/wiki/Apple_Vision_Pro?utm_source=openai))\n\n**Synthesis**\n- By late 2025, Vision Pro has **not** achieved mainstream adoption by any reasonable metric (shipments, user base, or app ecosystem scale) and is widely characterized as **niche and struggling to gain traction**.\n- Apple\u2019s strategic pivot away from expanding the Vision Pro headset line and toward smart glasses, combined with very modest projected shipments and the end of production for the initial model, supports the view that Vision Pro\u2019s window of prominence has been relatively **brief** and is **waning**, rather than expanding into a dominant, long\u2011lived platform.\n\nGiven this evidence, Sack\u2019s normalized prediction\u2014that Vision Pro would fail to gain sustained mainstream traction and would fade rather than become a broadly adopted, durable platform\u2014is **substantially borne out** by the data available as of November 30, 2025.",
+      "sources": [
+        {
+          "end_index": 663,
+          "start_index": 532,
+          "title": "Who is buying VR and XR headsets anyway?",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/tech/820416/vr-xr-headsets-vision-pro-galaxy-xr-steam-frame-enterprise?utm_source=openai"
+        },
+        {
+          "end_index": 1167,
+          "start_index": 1013,
+          "title": "Jefferies maintains Buy on Apple, keeps $205 price target By Investing.com",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/stock-market-news/jefferies-maintains-buy-on-apple-keeps-205-price-target-93CH-3334781?utm_source=openai"
+        },
+        {
+          "end_index": 1543,
+          "start_index": 1372,
+          "title": "Apple's Vision Pro Struggles To Gain Traction Amid Slow Release Of Immersive Video - Apple (NASDAQ:AAPL) - Benzinga",
+          "type": "url_citation",
+          "url": "https://www.benzinga.com/markets/tech/25/08/47175191/apples-vision-pro-struggles-to-gain-traction-amid-slow-release-of-immersive-video/?utm_source=openai"
+        },
+        {
+          "end_index": 2049,
+          "start_index": 1914,
+          "title": "Apple reduces forecasts for Vision Pro as demand cools in key US market \u2013 Tech Newsday",
+          "type": "url_citation",
+          "url": "https://technewsday.com/apple-reduces-forecasts-for-vision-pro-as-demand-cools-in-key-us-market/?utm_source=openai"
+        },
+        {
+          "end_index": 2548,
+          "start_index": 2395,
+          "title": "Apple halts Vision Pro overhaul to focus on AI glasses, Bloomberg News reports",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/apple-halts-vision-pro-overhaul-focus-ai-glasses-bloomberg-news-reports-2025-10-01/?utm_source=openai"
+        },
+        {
+          "end_index": 2900,
+          "start_index": 2798,
+          "title": "Vision Pro Future Uncertain as All Headset Development Is Seemingly Paused - MacRumors",
+          "type": "url_citation",
+          "url": "https://www.macrumors.com/2025/10/11/vision-pro-future-uncertain/?utm_source=openai"
+        },
+        {
+          "end_index": 3264,
+          "start_index": 3154,
+          "title": "Report Reveals Apple's Secretive Vision Products Roadmap - MacRumors",
+          "type": "url_citation",
+          "url": "https://www.macrumors.com/2025/06/30/report-reveals-apple-vision-roadmap/?utm_source=openai"
+        },
+        {
+          "end_index": 3535,
+          "start_index": 3449,
+          "title": "Apple Vision Pro",
+          "type": "url_citation",
+          "url": "https://fr.wikipedia.org/wiki/Apple_Vision_Pro?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "As of December 2025, over 14 months after the September 2024 prediction, Apple Vision Pro has not achieved sustained mainstream traction. Lifetime sales estimates remain under 1 million units worldwide ([MacRumors](https://www.macrumors.com/2025/08/01/tim-cook-comments-on-apple-vision-pro/), [IDC via various](https://www.cnbc.com/2025/02/21/apples-vision-pro-has-a-problem-a-year-into-existence-too-few-apps.html), ~500k by mid-2025), far below mainstream thresholds like iPhone or even Quest. Production halted early 2025 due to sluggish demand ([SiliconAngle](https://siliconangle.com/2025/01/01/apple-reportedly-ceases-vision-pro-production-amid-sluggish-sales/)), with inventory sufficient through year-end. Google Trends interest peaked at 2024 launch and declined sharply, spiking only on announcements ([FastCompany](https://www.fastcompany.com/91112727/vision-pro-sales-tanking-supply-chain-data-meta-quest)). Adoption is niche\u2014enterprise/medical gains but consumer stalled by $3,499 price and limited apps/content ([TechRepublic](https://www.techrepublic.com/article/news-apple-pro-vision-adoption-stalled/), [Wired](https://www.wired.com/story/the-vision-pro-was-an-expensive-misstep-now-apple-has-to-catch-up-with-smart-glasses/)). October 2025 M5 refresh (low shipments ~150-200k) addresses comfort/performance but retains high price, no mass-market shift. Widely deemed 'failure' or 'misstep' for consumer ([Next Reality](https://virtual.reality.news/news/apple-vision-pro-2025-m5-chip-7-new-xr-projects-revealed/)). Apple pivoting to glasses, confirming no long-lived mainstream platform status."
+    },
+    {
+      "id": "C-01:01:21.770",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, only about 14 months have passed since the September 27, 2024 episode. That is too little time to judge \"near to medium term\" commercial success or long\u2011run dominance 25\u201330 years out.\n\nEarly evidence does suggest Meta's Ray\u2011Ban smart glasses are gaining traction: Meta and EssilorLuxottica report that the Ray\u2011Ban Meta glasses have been top\u2011selling products in many Ray\u2011Ban stores across EMEA and have driven significant sales growth, leading the companies to extend their partnership. ([techcrunch.com](https://techcrunch.com/2024/10/21/metas-smart-glasses-outsell-traditional-ray-bans-in-some-stores-even-before-ai-features-roll-out/?utm_source=openai)) Independent reporting and industry analysis also indicate more than 2 million units sold by mid\u20112025 with shipments roughly tripling year\u2011over\u2011year, framing the line as an early commercial success in a still\u2011nascent category. ([ai-daily.news](https://www.ai-daily.news/articles/meta-ray-bans-ai-glasses-5-key-insights-2025-review?utm_source=openai))\n\nHowever, \"commercially successful in the near to medium term\" remains a forward\u2011looking claim, and the bolder part of the prediction\u2014that the eventual iconic \"killer\" AI hardware device 25\u201330 years from now will not resemble today's phones, glasses, pins, etc.\u2014is about technology adoption in the 2050s, which cannot yet be assessed. Since both elements hinge on future outcomes, the prediction cannot currently be judged fully right or wrong.",
+      "sources": [
+        {
+          "end_index": 724,
+          "start_index": 555,
+          "title": "Meta's smart glasses outsell traditional Ray-Bans in some stores, even before AI features roll out | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2024/10/21/metas-smart-glasses-outsell-traditional-ray-bans-in-some-stores-even-before-ai-features-roll-out/?utm_source=openai"
+        },
+        {
+          "end_index": 1074,
+          "start_index": 951,
+          "title": "Meta & Ray-Ban AI Glasses: 5 Key Insights (2025) | AI Daily",
+          "type": "url_citation",
+          "url": "https://www.ai-daily.news/articles/meta-ray-bans-ai-glasses-5-key-insights-2025-review?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The prediction has two parts: (1) Meta's AR glasses (referring to the Orion prototype unveiled at Meta Connect 2024, shortly before the Sep 27, 2024 podcast) will be commercially successful in the near-to-medium term; (2) the iconic 'killer' AI hardware device in 25\u201330 years (2049\u20132054) will not resemble current form factors like Orion AR glasses.\n\nAs of Dec 1, 2025, Orion remains a prototype, available only to Meta employees and planned for developers in 2026 with consumer launch ~2027 ([Meta blog](https://about.fb.com/news/2024/09/introducing-orion-our-first-true-augmented-reality-glasses/), [UploadVR](https://www.uploadvr.com/meta-to-reportedly-offer-orion-ar-glasses-to-developers-2026/), [Tom's Guide](https://www.tomsguide.com/computing/vr-ar/no-not-orion-metas-first-real-ar-glasses-tipped-to-debut-in-2027)). No commercial release or sales data exists, so success cannot be assessed yet. Meta's Ray-Ban smart glasses (e.g., Ray-Ban Display launched Sep 2025 with HUD, not full holographic AR like Orion) have strong sales (tripled YoY, ~2M+ units, 70-80% market share; [WIRED](https://www.wired.com/story/meta-has-already-won-the-smart-glasses-race/), [Counterpoint](https://counterpointresearch.com/en/insights/post-insight-research-briefs-blogs-global-smart-glasses-shipments-soared-110-yoy-in-h1-2025-with-meta-capturing-over-70-share)), but these are distinct products ([Meta blog](https://www.meta.com/blog/meta-ray-ban-display-ai-glasses-connect-2025/)).\n\nPart (2) is far future, unverifiable now. ~14 months post-podcast is too early for both parts."
+    },
+    {
+      "id": "C-01:07:29.770",
+      "result": "ambiguous",
+      "explanation": "As of November 30, 2025, the prediction splits into two parts with different levels of support.\n\n1. **\"AirPods\u2011style earbuds will evolve into effective hearing aids\" \u2013 largely *correct***  \n   * In September 2024, the U.S. FDA authorized Apple\u2019s Hearing Aid Feature software, allowing AirPods Pro 2 to function as over\u2011the\u2011counter (OTC) hearing aids for adults with mild to moderate hearing loss. The FDA notes that in a clinical study, users of the self\u2011fitting AirPods setup achieved similar perceived benefit and amplification performance as professionally fitted hearing aids, and the feature is explicitly regulated as an OTC hearing\u2011aid device. ([fda.gov](https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-over-counter-hearing-aid-software?utm_source=openai))  \n   * Multiple reports in 2025 describe AirPods Pro 2 as \u201cclinical grade\u201d hearing aids once the software is enabled, and regulators in countries like the UK and Australia have also cleared them as medical devices for mild\u2011to\u2011moderate hearing loss. ([thetimes.co.uk](https://www.thetimes.co.uk/article/apple-airpods-can-function-as-clinical-grade-hearing-aid-vtgm69fff?utm_source=openai))  \n   * Coverage emphasizes that these AirPods\u2011based aids can meaningfully improve speech understanding and provide benefits comparable to traditional devices for the indicated population. ([opb.org](https://www.opb.org/article/2024/09/14/fda-approves-some-apple-airpods-to-be-used-as-hearing-aids/))  \n   **Conclusion:** The technical/medical part of the prediction\u2014that AirPods\u2011style earbuds would become genuinely effective hearing aids\u2014has clearly materialized.\n\n2. **\"\u2026and will become socially acceptable to wear almost continuously (effectively 24/7)\" \u2013 *not yet realized, and constrained***  \n   * Battery and design limitations make continuous or all\u2011day wear impractical. Typical hearing aids are designed for 12\u201316+ hours per charge, whereas AirPods Pro 2 used as hearing aids get on the order of 4\u20136 hours before needing to go back in the case, a gap explicitly noted in consumer and tech reviews that recommend them for **occasional or situational use rather than full\u2011time wear**. ([cnbc.com](https://www.cnbc.com/2024/09/12/apple-turns-airpods-into-hearing-aids-focusing-on-big-health-market.html?utm_source=openai))  \n   * Experts commenting on the new AirPods hearing\u2011aid capabilities in markets like Australia and in U.S. coverage emphasize that they are **\u201cnot ideal for all\u2011day wear\u201d** and best suited to situations like restaurants or TV watching, not round\u2011the\u2011clock use. ([theguardian.com](https://www.theguardian.com/australia-news/2025/mar/26/apple-airpods-pro-2-hearing-aids-use-australia-tga?utm_source=openai))  \n   * Health guidance continues to warn against wearing earbuds all day because of ear\u2011wax build\u2011up, infection risk, and potential hearing damage from long exposures\u2014again at odds with normalized 24/7 use. ([gadget-faqs.com](https://gadget-faqs.com/is-it-bad-to-have-airpods-in-all-day/?utm_source=openai))  \n   * Socially, while AirPods\u2011like devices clearly reduce the *stigma* of visible hearing aids and are framed as a way to make hearing support more acceptable, etiquette commentary still notes that keeping AirPods in during conversations tends to be read as rude rather than neutral, indicating norms have not shifted to \u201c24/7 is fine\u201d across everyday interactions. ([opb.org](https://www.opb.org/article/2024/09/14/fda-approves-some-apple-airpods-to-be-used-as-hearing-aids/))  \n   * Adoption data are still early: only a fraction of adults with hearing loss use any hearing aids at all, and reporting describes AirPods hearing\u2011aid features primarily as an entry point or situational assistive tech, not as a widely adopted, full\u2011time replacement for traditional hearing aids. ([opb.org](https://www.opb.org/article/2024/09/14/fda-approves-some-apple-airpods-to-be-used-as-hearing-aids/))  \n   **Conclusion:** The specific claim that these devices would become socially acceptable to wear *almost continuously* (effectively 24/7) has not come true yet and is actively limited by battery life, comfort, health concerns, and remaining etiquette norms.\n\n3. **Why the overall verdict is \u201cambiguous\u201d rather than \u201cright\u201d or \u201cwrong\u201d**  \n   * The **core technological prediction** (earbuds becoming real hearing aids) is clearly correct.  \n   * The **social/behavioral prediction** (24/7 socially acceptable continuous wear) is clearly *not* our present reality, but the prediction did not include a concrete time horizon, and social norms around wearables can evolve over many years.  \n   * Because one major component is already correct while the other is both unfulfilled *and* open\u2011ended in timing\u2014and because \u201csocial acceptability\u201d is inherently hard to measure definitively\u2014it\u2019s not accurate to call the entire prediction simply \u201cright\u201d or \u201cwrong\u201d at this point.\n\nOn balance, the evidence supports a **mixed outcome**: technically right, socially unfulfilled. Given the lack of a clear deadline and the normative nature of the second part, the fairest single label today is **\"ambiguous.\"**",
+      "sources": [
+        {
+          "end_index": 830,
+          "start_index": 693,
+          "title": "FDA Authorizes First Over-the-Counter Hearing Aid Software | FDA",
+          "type": "url_citation",
+          "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-over-counter-hearing-aid-software?utm_source=openai"
+        },
+        {
+          "end_index": 1220,
+          "start_index": 1081,
+          "title": "Apple AirPods can function as 'clinical grade' hearing aid",
+          "type": "url_citation",
+          "url": "https://www.thetimes.co.uk/article/apple-airpods-can-function-as-clinical-grade-hearing-aid-vtgm69fff?utm_source=openai"
+        },
+        {
+          "end_index": 1521,
+          "start_index": 1410,
+          "title": "FDA approves some Apple AirPods to be used as hearing aids - OPB",
+          "type": "url_citation",
+          "url": "https://www.opb.org/article/2024/09/14/fda-approves-some-apple-airpods-to-be-used-as-hearing-aids/"
+        },
+        {
+          "end_index": 2357,
+          "start_index": 2221,
+          "title": "Apple turns AirPods into hearing aids, focusing on big health market",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/09/12/apple-turns-airpods-into-hearing-aids-focusing-on-big-health-market.html?utm_source=openai"
+        },
+        {
+          "end_index": 2765,
+          "start_index": 2621,
+          "title": "Australians can now use Apple AirPods Pro as hearing aids - but experts warn they're not for everyone",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/australia-news/2025/mar/26/apple-airpods-pro-2-hearing-aids-use-australia-tga?utm_source=openai"
+        },
+        {
+          "end_index": 3074,
+          "start_index": 2974,
+          "title": "Is it bad to have AirPods in all day? - gadget-faqs.com",
+          "type": "url_citation",
+          "url": "https://gadget-faqs.com/is-it-bad-to-have-airpods-in-all-day/?utm_source=openai"
+        },
+        {
+          "end_index": 3554,
+          "start_index": 3443,
+          "title": "FDA approves some Apple AirPods to be used as hearing aids - OPB",
+          "type": "url_citation",
+          "url": "https://www.opb.org/article/2024/09/14/fda-approves-some-apple-airpods-to-be-used-as-hearing-aids/"
+        },
+        {
+          "end_index": 3967,
+          "start_index": 3856,
+          "title": "FDA approves some Apple AirPods to be used as hearing aids - OPB",
+          "type": "url_citation",
+          "url": "https://www.opb.org/article/2024/09/14/fda-approves-some-apple-airpods-to-be-used-as-hearing-aids/"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "AirPods Pro 2 received FDA approval as OTC hearing aids for mild-moderate loss in Sep 2024 ([FDA](https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-over-counter-hearing-aid-software), [Apple](https://www.apple.com/newsroom/2024/09/apple-introduces-airpods-4-and-a-hearing-health-experience-with-airpods-pro-2/)), rolled out via software update, expanded globally by mid-2025 ([MacRumors](https://www.macrumors.com/2025/07/15/airpods-pro-2-hearing-aid-expansion/)). Effective for many per reviews ([NYT Wirecutter](https://www.nytimes.com/wirecutter/reviews/airpods-pro-2-hearing-aids-review/), [Apple](https://www.apple.com/airpods-pro/hearing-health/)). Social acceptability increased\u2014ubiquitous design reduces stigma, enables wear in meetings/social settings ([Reddit r/apple](https://www.reddit.com/r/apple/comments/1fcwwuk/the_airpods_pro_2_will_soon_double_as_hearing_aids/), [9to5Mac](https://9to5mac.com/2024/09/11/airpods-hearing-aid-social-norms/)). However, no evidence of widespread 24/7 norm: battery 5-10hrs limits continuous use ([NYT](https://www.nytimes.com/wirecutter/reviews/airpods-pro-2-hearing-aids-review/), [Apple](https://www.apple.com/airpods-pro/hearing-health/)); reviews note not full-time replacement; no adoption stats for continuous wear. 14 months post-release too early for full cultural shift to 24/7 acceptability."
+    },
+    {
+      "id": "G-01:08:45.750",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, less than two years have passed since the prediction was made and roughly 19 years remain until the ~2044 horizon implied by \u201cin 20 years.\u201d The claim is specifically about what will *predominate* as the dominant form of human\u2013computer interaction for the next generation (his children\u2019s generation) around that time, not about the situation in the mid\u20112020s. \n\nCurrently, traditional direct control methods\u2014keyboards, touchscreens, mice, and manual UI navigation\u2014still dominate mainstream computing on phones, PCs, and tablets, even though ambient and AI\u2011mediated interactions (voice assistants, context\u2011aware services, generative\u2011AI copilots, etc.) are growing. There is no way to definitively assess now whether these ambient interactions will become the *dominant* mode by ~2044.\n\nBecause the prediction is explicitly about a 20\u2011year future state and that date has not yet arrived, its accuracy cannot yet be judged.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction targets ~2044 (20 years from Sep 2024), but only ~14 months have passed as of Dec 2025. Far too early to assess if ambient, AI-mediated interaction has become the dominant HCI for the next generation, displacing typing/UI navigation."
+    },
+    {
+      "id": "G-01:17:39.330",
+      "result": "inconclusive",
+      "explanation": "The prediction is framed over the \u201ccoming years,\u201d which implies a multi\u2011year structural shift rather than something that should be fully visible by late 2025, only about a year after the podcast.\n\nThere are *early* signs consistent with stronger demand for in\u2011person human\u2011service work:\n- Recent U.S. data show that **health care and social assistance plus leisure and hospitality** accounted for more than 100% of net job gains over the latest year, with other sectors stagnating or shrinking, indicating rising relative demand for face\u2011to\u2011face services. ([axios.com](https://www.axios.com/2025/11/25/ai-unemployment-rate-jobs-gdp?utm_source=openai))\n- BLS **long\u2011term projections to 2033\u20132034** expect particularly fast growth in human\u2011service\u2011heavy categories such as home health and personal care aides (+20.7%), personal care and service occupations overall (+6.4%), and construction and extraction (+5.6%), all above the average for all occupations. ([blog.dol.gov](https://blog.dol.gov/2024/09/06/new-bls-employment-projections-3-charts?utm_source=openai))\n\nHowever, the specific claim is that *as AI and automation advance*, there will be a \u201cburgeoning and blossoming\u201d of salaries, availability, and demand for **in\u2011person human services**. On that causal and magnitude question, the evidence is not yet clear:\n- Global AI labor analyses (e.g., PwC\u2019s 2025 AI Jobs Barometer) find the strongest wage and productivity gains in *AI\u2011exposed sectors* like finance and ICT, while less AI\u2011exposed sectors such as hospitality and some personal services show lower productivity gains and are not (yet) singled out for exceptional wage acceleration. ([pwc.com](https://www.pwc.com/id/en/media-centre/press-release/2025/english/ai-linked-to-fourfold-productivity-growth-and-56-percent-wage-premium-jobs-grow-despite-automation-pwc-2025-global-ai-jobs-barometer.html?utm_source=openai))\n- BLS projections attribute much of the growth in care and service jobs to demographics (aging population, chronic conditions) rather than to AI\u2011driven substitution elsewhere, and we do not yet have several years of realized wage data isolating the AI effect in trades, hospitality, fitness instruction, tutoring, and similar roles. ([bls.gov](https://www.bls.gov/news.release/archives/ecopro_08282025.htm?utm_source=openai))\n\nBecause (1) the stated horizon is longer than the time that has elapsed, and (2) the available data do not yet clearly show a broad, AI\u2011driven *surge* in both pay and job counts across the full range of in\u2011person human\u2011service roles he described, it is too early to say whether the prediction is ultimately right or wrong. Hence, **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 694,
+          "start_index": 599,
+          "title": "Key economic sectors show weak job growth",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2025/11/25/ai-unemployment-rate-jobs-gdp?utm_source=openai"
+        },
+        {
+          "end_index": 1107,
+          "start_index": 1000,
+          "title": "New BLS employment projections: 3 charts | U.S. Department of Labor Blog",
+          "type": "url_citation",
+          "url": "https://blog.dol.gov/2024/09/06/new-bls-employment-projections-3-charts?utm_source=openai"
+        },
+        {
+          "end_index": 1929,
+          "start_index": 1695,
+          "title": "AI is linked to a fourfold increase in productivity growth and a 56% wage premium, while jobs continue to grow even in the most easily automated roles, according to the PwC 2025 Global AI Jobs Barometer",
+          "type": "url_citation",
+          "url": "https://www.pwc.com/id/en/media-centre/press-release/2025/english/ai-linked-to-fourfold-productivity-growth-and-56-percent-wage-premium-jobs-grow-despite-automation-pwc-2025-global-ai-jobs-barometer.html?utm_source=openai"
+        },
+        {
+          "end_index": 2356,
+          "start_index": 2264,
+          "title": "Employment Projections and Occupational Outlook Handbook News Release - 2024 A01 Results",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/news.release/archives/ecopro_08282025.htm?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction anticipates significant increases in wages, demand, and job availability for in-person human-service roles (trades, hospitality, fitness, tutoring, personal services) 'over the coming years' due to AI/automation. From Sep 2024 to Dec 2025 (~14 months), data shows mixed but not dramatically surging trends. <br><br>**Hospitality/Leisure**: Added ~47k jobs in Sep 2025 (BLS Employment Situation, Nov 20, 2025; CNN), consistent monthly gains, but part of ongoing post-pandemic recovery rather than new boom. <br>**Construction/Trades**: +19k jobs Sep 2025 (NYT, Nov 20, 2025); avg hourly wage rose from ~$38.30 (Jul 2024, HBI report) to $40.07 (Sep 2025, FRED/BLS), ~4-5% YoY, matching overall private sector 3.8% rise (BLS). Job openings cooling (e.g., construction openings low, ABC). <br>**Personal Care/Fitness/Tutoring**: Projections show growth (e.g., home health aides +17% to 2034, BLS Aug 2025; fitness trainers median $46k May 2024), but actual short-term data limited; wages stable/low. <br><br>Overall labor market cooling (JOLTS openings down to 7.18M Jul 2025, lowest since Sep 2024; Trading Economics). No evidence of 'burgeoning' expansion yet; too early for multi-year prediction."
+    },
+    {
+      "id": "G-01:20:46.400",
+      "result": "wrong",
+      "explanation": "The prediction has two parts:\n\n1. **Short\u2011term escalation into Lebanon (by the time the show aired)**  \n   This *did* occur. On 23\u201330 September 2024, Israel launched Operation *Northern Arrows*, carrying out more than 1,700 airstrikes across Lebanon\u2014over a 125% increase in Israeli strikes compared with August\u2014killing hundreds and displacing large numbers of civilians. This marked a sharp expansion from earlier, more limited cross\u2011border fire. ([en.wikipedia.org](https://en.wikipedia.org/wiki/September_2024_Israeli_attacks_against_Lebanon?utm_source=openai))  On 30 September/1 October 2024 Israel then began a ground invasion of southern Lebanon, formally described as the **2024 Israeli invasion of Lebanon**, confirming that the incursion had indeed \u201cgotten bigger\u201d in the days around airing. ([downloads.regulations.gov](https://downloads.regulations.gov/ICEB-2024-0010-0001/content.htm?utm_source=openai))  So the near\u2011term escalation call was accurate.\n\n2. **Probability (>30\u201340%) of a full\u2011blown multinational Middle East war before the November 2024 US election**  \n   Here the specific scenario he highlighted **did not happen**:\n   * The Lebanon front evolved into a large Israel\u2013Hezbollah war plus an Israeli invasion of Lebanon, but contemporaneous descriptions frame it as the *2024 Israeli invasion of Lebanon* and the Israel\u2013Hezbollah conflict\u2014not as a multi\u2011state regional war. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Israeli_invasion_of_Lebanon?utm_source=openai))  \n   * Although Iran did launch direct missile/drone attacks on Israel in 2024 and multiple Iran\u2011aligned militias (in Iraq, Syria, Yemen) were active, mainstream assessments consistently spoke of the **risk** of a broader regional war rather than a realized multi\u2011state war, and noted that these conflicts had *not* escalated into wider regional wars by late 2024. ([streetinsider.com](https://www.streetinsider.com/SEC%2BFilings/Form%2B20-F%2BKAMADA%2BLTD%2BFor%3A%2BDec%2B31/24454457.html?utm_source=openai))  \n   * Instead of widening into a multinational war before the US election (5 November 2024), the Israel\u2013Hezbollah war was halted shortly afterward by a US\u2011 and France\u2011mediated Israel\u2013Lebanon ceasefire agreement signed 26 November and effective 27 November 2024, explicitly aimed at ending hostilities between Israel and Hezbollah/Lebanon. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Israel%E2%80%93Lebanon_ceasefire_agreement?utm_source=openai))  No Arab state (e.g., Egypt, Jordan, Saudi Arabia) or Iran entered into open conventional war with Israel in that period, nor did the US.\n\nBecause the **core forecasted outcome**\u2014\u201ca full blown multinational war in the Middle East\u201d triggered by the Israel\u2013Lebanon front *before* the 2024 US election\u2014did not occur, the prediction is judged **wrong** for scoring purposes, even though one component (rapid escalation of Israel\u2019s Lebanon operation between recording and airing) was correct and his stated probability (30\u201340%) was not a categorical claim of certainty.",
+      "sources": [
+        {
+          "end_index": 599,
+          "start_index": 483,
+          "title": "September 2024 Israeli attacks against Lebanon",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/September_2024_Israeli_attacks_against_Lebanon?utm_source=openai"
+        },
+        {
+          "end_index": 951,
+          "start_index": 837,
+          "title": "Federal Register, Volume 89 Issue 229 (Wednesday, November 27, 2024)",
+          "type": "url_citation",
+          "url": "https://downloads.regulations.gov/ICEB-2024-0010-0001/content.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1541,
+          "start_index": 1439,
+          "title": "2024 Israeli invasion of Lebanon",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Israeli_invasion_of_Lebanon?utm_source=openai"
+        },
+        {
+          "end_index": 2053,
+          "start_index": 1908,
+          "title": "Form 20-F KAMADA LTD For: Dec 31",
+          "type": "url_citation",
+          "url": "https://www.streetinsider.com/SEC%2BFilings/Form%2B20-F%2BKAMADA%2BLTD%2BFor%3A%2BDec%2B31/24454457.html?utm_source=openai"
+        },
+        {
+          "end_index": 2512,
+          "start_index": 2395,
+          "title": "2024 Israel\u2013Lebanon ceasefire agreement",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Israel%E2%80%93Lebanon_ceasefire_agreement?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction did not come true. Israel's military operations in Lebanon significantly expanded shortly after the podcast aired on Sep 27, 2024, with the killing of Hezbollah leader Hassan Nasrallah on that day via airstrike and a ground incursion starting Sep 30/Oct 1, 2024 ([Wikipedia: 2024 Israeli invasion of Lebanon](https://en.wikipedia.org/wiki/2024_Israeli_invasion_of_Lebanon); [BBC](https://www.bbc.com/news/articles/c9vp7dg3ml1o)). However, the conflict did not escalate into a 'full-blown multinational war in the Middle East involving multiple regional states' before the Nov 5, 2024, US election. It remained primarily Israel vs. Hezbollah, with limited direct Iranian involvement (Iran missile attack Oct 1; Israel response Oct 26) ([Wikipedia: October 2024 Israeli strikes on Iran](https://en.wikipedia.org/wiki/October_2024_Israeli_strikes_on_Iran); [NPR](https://www.npr.org/2024/10/01/g-s1-25707/iran-israel-hezbollah-lebanon-attack)). No other regional states (e.g., Syria beyond incidents, Jordan, Saudi Arabia) became direct belligerents in a multinational war. A ceasefire took effect Nov 27, 2024 ([Wikipedia: 2024 Israel\u2013Lebanon ceasefire](https://en.wikipedia.org/wiki/2024_Israel%25E2%2580%2593Lebanon_ceasefire_agreement)). Searches for such a war yielded no confirmation ([web searches on multinational war Middle East 2024])."
+    },
+    {
+      "id": "B-01:29:32.000",
+      "result": "wrong",
+      "explanation": "The prediction tied a clear time window to Ukraine\u2019s supposed military collapse: the speaker said Ukraine was \u201cgetting close to being combat incapable\u201d and could collapse \u201cin the next month\u2026 two months\u2026 six months\u201d from the Sept 27, 2024 episode\u2014i.e., by roughly late March 2025.\n\nOpen-source assessments of the front as of March 2025 show a severely strained but still functioning Ukrainian military, not a force that had become combat\u2011incapable or collapsed:\n\n- A March 2025 campaign review notes that Russia was making **slow, incremental territorial gains** (about 73 square miles in the month) but that the overall strategic picture \u201cremained largely unchanged,\u201d with intense fighting and Ukrainian defenses still holding on multiple axes\u2014indicating continued organized resistance, not collapse. ([globalsecurity.org-www.globalsecurity.org](https://www.globalsecurity.org-www.globalsecurity.org/military/world/war/russo-ukraine-2025-03.htm?utm_source=openai))\n- March 27\u201328 operational summaries describe Ukrainian Defense Forces conducting **coordinated strikes** that destroyed Russian armored vehicles, radar, ammunition depots, and command/logistics hubs, and inflicting large daily Russian losses in personnel and equipment\u2014evidence that Ukraine retained the ability to plan and execute combined-arms operations. ([amazing-ukraine.com](https://amazing-ukraine.com/en/ukraine-war-updates-key-events-as-of-march-28-2025/?utm_source=openai))\n- On March 25, 2025, Ukraine carried out a **cross\u2011border HIMARS strike** in Russia\u2019s Belgorod region, reportedly destroying four Russian helicopters and operating on Russian territory\u2014again inconsistent with a force that had become combat\u2011incapable. ([theguardian.com](https://www.theguardian.com/world/2025/mar/25/ukraine-war-briefing-belgorod-strike-destroys-four-russian-helicopters?utm_source=openai))\n- New large\u2011scale engagements beginning in late March and February 2025 (e.g., the Novopavlivka offensive and the Sumy offensive) explicitly list multiple Ukrainian brigades and corps as active combatants, showing that Ukrainian forces remained organized and field\u2011capable well beyond the six\u2011month horizon. ([fr.wikipedia.org](https://fr.wikipedia.org/wiki/Offensive_de_Novopavlivka?utm_source=openai))\n\nLooking beyond the prediction window, by late 2025 Ukraine\u2019s armed forces are still clearly functioning: major battles and offensives on multiple fronts continue, and Western and Ukrainian officials are planning around Ukraine maintaining a **strong post\u2011war army**, not around a collapsed military. ([reuters.com](https://www.reuters.com/world/europe/germanys-merz-ukraine-will-need-strong-army-after-any-peace-deal-2025-11-27/?utm_source=openai))\n\nBecause Ukraine did not become \u201ccombat\u2011incapable\u201d and did not \u201ceventually\u2026 collapse\u201d within roughly 1\u20136 months after the Sept 27, 2024 episode, the prediction is best classified as **wrong**.",
+      "sources": [
+        {
+          "end_index": 1001,
+          "start_index": 838,
+          "title": "Russo-Ukraine War - March 2025",
+          "type": "url_citation",
+          "url": "https://www.globalsecurity.org-www.globalsecurity.org/military/world/war/russo-ukraine-2025-03.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1486,
+          "start_index": 1361,
+          "title": "Ukraine War Updates: Key events as of March 28, 2025",
+          "type": "url_citation",
+          "url": "https://amazing-ukraine.com/en/ukraine-war-updates-key-events-as-of-march-28-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 1894,
+          "start_index": 1739,
+          "title": "Ukraine war briefing: Strike into Belgorod 'destroys four Russian helicopters'",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/world/2025/mar/25/ukraine-war-briefing-belgorod-strike-destroys-four-russian-helicopters?utm_source=openai"
+        },
+        {
+          "end_index": 2299,
+          "start_index": 2204,
+          "title": "Offensive de Novopavlivka",
+          "type": "url_citation",
+          "url": "https://fr.wikipedia.org/wiki/Offensive_de_Novopavlivka?utm_source=openai"
+        },
+        {
+          "end_index": 2751,
+          "start_index": 2603,
+          "title": "Germany's Merz: Ukraine will need strong army after any peace deal",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/europe/germanys-merz-ukraine-will-need-strong-army-after-any-peace-deal-2025-11-27/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "As of December 1, 2025, Ukraine's armed forces have not become combat-incapable or militarily collapsed, either by late March 2025 or subsequently. The war continues with Ukrainian forces actively resisting Russian advances. Key evidence:\n- ISW assessments (e.g., [March 22, 2025](https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-march-22-2025), [March 31, 2025](https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-march-31-2025), [Nov 30, 2025](https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-30-2025)) report ongoing Ukrainian operations, no collapse, and dismiss Russian claims of imminent Ukrainian frontline failure.\n- BBC tracking ([Ukraine in maps](https://www.bbc.com/news/articles/c0l0k4389g2o)) shows gradual Russian gains but fierce Ukrainian opposition.\n- CFR Global Conflict Tracker: Russia occupies ~20% of Ukraine, with limited 2024-2025 gains; no mention of collapse.\n- Recent reports (e.g., Reuters Nov 27, 2025 on Pokrovsk; WaPo Nov 25, 2025) indicate Russian advances but Ukrainian defenses holding amid peace talks.\nPro-Russian sources speculate future collapse, but no mainstream confirmation of the predicted event by late March 2025."
+    },
+    {
+      "id": "B-01:29:32.500",
+      "result": "right",
+      "explanation": "Evidence since the podcast (27 Sep 2024) broadly matches both parts of the prediction:\n\n1. **Ukraine\u2019s military position deteriorated toward potential collapse.**  \n   * By November 2024, major outlets were explicitly warning that parts of the Ukrainian frontline were at risk of *collapse* as Russian forces advanced \u201cvillage after village\u201d amid severe Ukrainian manpower and equipment shortages.([news.sky.com](https://news.sky.com/story/ukraine-frontline-at-risk-of-collapse-as-russian-troops-advance-towards-key-town-13258214?utm_source=openai))  \n   * Analyses in 2024\u201325 repeatedly noted that delays in Western aid and ammunition put Ukrainian lines \"at risk of collapse\" and highlighted Ukraine\u2019s serious manpower problems.([hudson.org](https://www.hudson.org/defense-strategy/ukraine-military-situation-report-april-10-can-kasapoglu?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/Ukrainian_desertion_crisis?utm_source=openai))  \n   * In 2025 Russia mounted a large spring and then summer offensive, capturing places such as Kurakhove (announced by Russia in January 2025) and pushing toward key hubs like Dobropillia and Pokrovsk, with Ukrainian officers describing the situation as \"very difficult.\"([en.wikipedia.org](https://en.wikipedia.org/wiki/Battle_of_Kurakhove?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/Dobropillia_offensive?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/2025_Russian_spring_offensive?utm_source=openai))  \n   * Russia also opened a new front in Sumy Oblast, seizing Kostiantynivka in June 2025 and bringing Russian forces within 20\u201325 km of Sumy city, further straining Ukraine\u2019s defenses.([en.wikipedia.org](https://en.wikipedia.org/wiki/Capture_of_Kostiantynivka?utm_source=openai))  \n   Collectively, this supports the claim that Ukraine\u2019s military situation continued to worsen and was widely discussed in terms of possible local or broader front-line collapse.\n\n2. **Western political/strategic pressure to intervene more directly increased as the situation worsened.**  \n   * Even before the podcast, France\u2019s President Emmanuel Macron had broken a taboo in February 2024 by saying that sending Western ground troops to Ukraine could not be ruled out, explicitly arguing that \u201cnothing should be excluded\u201d to prevent a Russian victory.([reuters.com](https://www.reuters.com/world/europe/frances-macron-says-sending-troops-ukraine-cannot-be-ruled-out-2024-02-26/?utm_source=openai))([kyivpost.com](https://www.kyivpost.com/post/28687?utm_source=openai))  \n   * As Russian advances and Ukrainian shortages mounted, this debate evolved into concrete planning for Western troop deployments inside Ukraine (even if framed as non-frontline). In 2025 the UK and France began leading a **\u201cCoalition of the Willing\u201d** to prepare a multinational **reassurance force** to be deployed in Ukraine after a ceasefire, with around 30 countries involved in operational talks about troop contributions.([en.wikipedia.org](https://en.wikipedia.org/wiki/Coalition_of_the_willing_%28Russo-Ukrainian_war%29?utm_source=openai))([euronews.com](https://www.euronews.com/my-europe/2025/04/10/defence-ministers-from-coalition-of-the-willing-for-ukraine-meet-once-again-without-the-us?utm_source=openai))  \n   * European and UK leaders repeatedly discussed this force as part of security guarantees needed because of ongoing Russian offensives and Ukraine\u2019s vulnerability, and Zelensky himself urged coalition members to establish a framework for deploying such a reassurance force under a U.S.-backed peace plan.([reuters.com](https://www.reuters.com/world/europe/zelenskiy-says-kyiv-ready-move-forward-with-peace-plan-2025-11-25/?utm_source=openai))([theguardian.com](https://www.theguardian.com/world/live/2025/nov/25/us-russia-ukraine-peace-talks-abu-dhabi-kyiv-strikes-zelenskyy-putin-europe-live-news?utm_source=openai))  \n   * At the same time, there was strong resistance from many NATO members to full-scale combat deployments, and official positions continued to rule out NATO combat troops. But the fact that serious planning for multinational troops in Ukraine became a live issue at all \u2013 after being unthinkable early in the war \u2013 shows that political and strategic pressure to consider more direct involvement did increase as Ukraine\u2019s position worsened.([theguardian.com](https://www.theguardian.com/world/2024/feb/27/sweden-rules-out-sending-troops-to-ukraine-after-nato-membership-agreed?utm_source=openai))([globalsecurity.org-www.globalsecurity.org](https://www.globalsecurity.org-www.globalsecurity.org/military/world/war/russo-ukraine-2025-03.htm?utm_source=openai))  \n\nBecause (a) Ukraine\u2019s military position clearly deteriorated and was widely described as being at risk of collapse in parts of the front, and (b) Western leaders moved from flat rejection of any troops toward openly debating and planning for deployments of multinational forces on Ukrainian soil (even if limited and post\u2011ceasefire), the core directional claim of the prediction is borne out. The prediction did *not* say that the West would actually send combat forces, only that the **temptation and pressure** to intervene directly would grow as Ukraine approached collapse, which has happened in a qualified but real way.",
+      "sources": [
+        {
+          "end_index": 585,
+          "start_index": 433,
+          "title": "Ukraine frontline at risk of 'collapse' as Russian troops advance towards key town | World News | Sky News",
+          "type": "url_citation",
+          "url": "https://news.sky.com/story/ukraine-frontline-at-risk-of-collapse-as-russian-troops-advance-towards-key-town-13258214?utm_source=openai"
+        },
+        {
+          "end_index": 899,
+          "start_index": 769,
+          "title": "Ukraine Military Situation Report | April 10 | Hudson Institute",
+          "type": "url_citation",
+          "url": "https://www.hudson.org/defense-strategy/ukraine-military-situation-report-april-10-can-kasapoglu?utm_source=openai"
+        },
+        {
+          "end_index": 995,
+          "start_index": 899,
+          "title": "Ukrainian desertion crisis",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Ukrainian_desertion_crisis?utm_source=openai"
+        },
+        {
+          "end_index": 1361,
+          "start_index": 1272,
+          "title": "Battle of Kurakhove",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Battle_of_Kurakhove?utm_source=openai"
+        },
+        {
+          "end_index": 1452,
+          "start_index": 1361,
+          "title": "Dobropillia offensive",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dobropillia_offensive?utm_source=openai"
+        },
+        {
+          "end_index": 1551,
+          "start_index": 1452,
+          "title": "2025 Russian spring offensive",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2025_Russian_spring_offensive?utm_source=openai"
+        },
+        {
+          "end_index": 1833,
+          "start_index": 1738,
+          "title": "Capture of Kostiantynivka",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Capture_of_Kostiantynivka?utm_source=openai"
+        },
+        {
+          "end_index": 2539,
+          "start_index": 2393,
+          "title": "France's Macron says sending troops to Ukraine cannot be ruled out",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/europe/frances-macron-says-sending-troops-ukraine-cannot-be-ruled-out-2024-02-26/?utm_source=openai"
+        },
+        {
+          "end_index": 2610,
+          "start_index": 2539,
+          "title": "Macron Not Ruling Out Sending Western Troops to Ukraine",
+          "type": "url_citation",
+          "url": "https://www.kyivpost.com/post/28687?utm_source=openai"
+        },
+        {
+          "end_index": 3163,
+          "start_index": 3043,
+          "title": "Coalition of the willing (Russo-Ukrainian war)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Coalition_of_the_willing_%28Russo-Ukrainian_war%29?utm_source=openai"
+        },
+        {
+          "end_index": 3335,
+          "start_index": 3163,
+          "title": "'Coalition of the Willing' plans now 'well developed' but timeline, numbers still to be worked out | Euronews",
+          "type": "url_citation",
+          "url": "https://www.euronews.com/my-europe/2025/04/10/defence-ministers-from-coalition-of-the-willing-for-ukraine-meet-once-again-without-the-us?utm_source=openai"
+        },
+        {
+          "end_index": 3783,
+          "start_index": 3645,
+          "title": "Zelenskiy says Kyiv ready to move forward with peace plan",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/europe/zelenskiy-says-kyiv-ready-move-forward-with-peace-plan-2025-11-25/?utm_source=openai"
+        },
+        {
+          "end_index": 3958,
+          "start_index": 3783,
+          "title": "Zelenskyy says Ukraine ready to move forward with US plan and discuss 'sensitive points' with Trump - as it happened",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/world/live/2025/nov/25/us-russia-ukraine-peace-talks-abu-dhabi-kyiv-strikes-zelenskyy-putin-europe-live-news?utm_source=openai"
+        },
+        {
+          "end_index": 4558,
+          "start_index": 4402,
+          "title": "Macron faces EU backlash after suggesting sending troops to Ukraine | France | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/world/2024/feb/27/sweden-rules-out-sending-troops-to-ukraine-after-nato-membership-agreed?utm_source=openai"
+        },
+        {
+          "end_index": 4721,
+          "start_index": 4558,
+          "title": "Russo-Ukraine War - March 2025",
+          "type": "url_citation",
+          "url": "https://www.globalsecurity.org-www.globalsecurity.org/military/world/war/russo-ukraine-2025-03.htm?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Ukraine's military position has deteriorated since September 2024, with Russian forces making gradual gains (e.g., advances toward Pokrovsk and Myrnohrad per ISW November 2025 assessments; BBC maps showing front-line shifts; Russia occupying 115,413 sq km as of Nov 11, 2025 per Russia-Ukraine War Report Card). Reports highlight Ukrainian fatigue, manpower shortages, and risks of collapse (e.g., Zaluzhnyi warnings, Gallup poll on collapsing support). However, there is no evidence of *growing political and strategic pressure* on the US or allies to *intervene directly* (i.e., deploy combat troops during the war to prevent collapse). Instead: <br/>\n\u2022 Active US-led peace talks (28-point plan Nov 2025 explicitly barring NATO troops, per PBS, Axios, CSIS). <br/>\n\u2022 Pledges for *post-war* peacekeeping (26 European countries committed post-ceasefire, per Atlantic Council Sep 2025; UK/France Coalition of the Willing announced Mar 2025, Wikipedia). <br/>\n\u2022 No troop deployments (NATO site confirms aid only, no troops; World Population Review: no NATO soldiers sent). <br/>\n\u2022 French proposals limited to post-ceasefire (Macron Nov 2025 rules out sending youth to Ukraine now, per RFI; potential after ceasefire per Prensa Latina). Putin warned Western troops would be targets (Guardian Sep 2025), deterring escalation. Pressure is for negotiations/diplomacy amid Trump push, not direct intervention (Reuters, Al Jazeera Nov 2025)."
+    },
+    {
+      "id": "G-00:55:40.000",
+      "result": "inconclusive",
+      "explanation": "It is too early to determine whether this prediction is right or wrong.\n\nThe claim is explicitly about the world roughly **10 years after September 27, 2024** (around late 2034). Today\u2019s date is **November 30, 2025**, so only a little over one year has passed. The scenario the predictor is talking about (late 2034) has not occurred yet, so we cannot judge outcomes that depend on that future date.\n\nWhat we *can* say about the present is that smartphones are still the dominant personal computing interface:\n- In 2025, **~59\u201364% of global web traffic** comes from mobile devices (primarily smartphones), with desktop around 36\u201340%. ([mynewitguys.com](https://mynewitguys.com/what-percentage-of-web-traffic-is-on-mobile-in-2025/?utm_source=openai))\n- Articles summarizing 2025 data repeatedly describe smartphones as the **main way people access the internet**, indicating they remain the central personal computing device. ([techgaged.com](https://www.techgaged.com/smartphones-global-web-traffic-2025/?utm_source=openai))\n- Major tech leaders (e.g., Sundar Pichai at Google and Andrew Bosworth at Meta) say smartphones will stay dominant for at least the next several years, even as AR/smart glasses and ambient computing evolve. ([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/technology/tech-news/google-ceo-sundar-pichai-says-smartphones-are-not-going-anywhere-not-for-next-/articleshow/122881636.cms?utm_source=openai))\n\nHowever, these observations only tell us that the transition has **not** happened *yet* in 2025; they do **not** prove that it *won\u2019t* happen by ~2034. Because the prediction\u2019s target date is still almost nine years away, the correct evaluation status is **\"inconclusive\" (too early)** rather than \"right\" or \"wrong.\"",
+      "sources": [
+        {
+          "end_index": 794,
+          "start_index": 679,
+          "title": "What Percentage of Web Traffic Is on Mobile in 2025?",
+          "type": "url_citation",
+          "url": "https://mynewitguys.com/what-percentage-of-web-traffic-is-on-mobile-in-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 1070,
+          "start_index": 971,
+          "title": "Smartphones now power 64% of global web traffic, marking a new all-time high | TechGaged.com",
+          "type": "url_citation",
+          "url": "https://www.techgaged.com/smartphones-global-web-traffic-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 1492,
+          "start_index": 1280,
+          "title": "Google CEO Sundar Pichai says, smartphones are not going anywhere, not for next ...",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/google-ceo-sundar-pichai-says-smartphones-are-not-going-anywhere-not-for-next-/articleshow/122881636.cms?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": null
+    },
+    {
+      "id": "A-00:39:45.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, we are only about 14 months past the prediction date of September 27, 2024. Jason\u2019s prediction explicitly referred to outcomes **over the subsequent 2\u20133 years** (i.e., roughly late 2026 to late 2027) for revenue-per-employee at Google, Uber, Airbnb, and Meta. Because that time window has not yet arrived, we cannot yet evaluate whether each company has in fact doubled its revenue per employee relative to the 2023\u20132024 baseline. Any current financial or headcount data would only show *partial progress* toward a 2026\u20132027 target, not whether the prediction ultimately holds. Therefore, it is too early to judge the prediction\u2019s accuracy.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies that revenue per employee will approximately double by late 2026 to late 2027 (2-3 years after September 2024). As of December 1, 2025, only about 14 months have passed, which is insufficient time to verify the outcome. Current data shows revenue per employee has increased modestly (e.g., Alphabet: ~$1.68M in 2023 to ~$1.91M in 2024 and ~$2.03M TTM Q3 2025 [Macrotrends, YCharts]; Uber: $1.23M to $1.41M [MLQ.ai]; Airbnb: ~$1.43M to ~$1.52M [Macrotrends]; Meta: ~$2.0M in 2023 with headcount growth to 74k+ [Macrotrends]), but not yet doubled, and headcount has not remained flat across all companies. Sources: [Macrotrends](https://www.macrotrends.net), [Bullfincher](https://bullfincher.io), [YCharts](https://ycharts.com)."
+    }
+  ]
+}

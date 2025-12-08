@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "count": 6,
+    "count_by_result": {
+      "inconclusive": 4,
+      "right": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:31:50.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, no company (including Google) has demonstrated a **large\u2011scale, fault\u2011tolerant quantum computer** capable of practically running Shor\u2019s algorithm at scales that would *actually* break standard public\u2011key cryptosystems (e.g., 2048\u2011bit RSA, standard ECC curves) used on the internet.\n\nRelevant current facts:\n\n- Google\u2019s major public milestones are still in the **noisy intermediate\u2011scale quantum (NISQ)** regime. After its 2019 \u201cquantum supremacy\u201d result with the 53\u2011qubit *Sycamore* processor, later work has focused on better qubits and error\u2011correction, not on a full\u2011scale, cryptography\u2011breaking device.\n- Research papers and Google blog posts since then describe progress on **error-corrected logical qubits** and improved fidelities, but they do *not* claim any machine that can run Shor\u2019s algorithm at cryptographically relevant sizes.\n- Government and standards bodies are still operating under the assumption that **cryptography\u2011breaking quantum computers do *not* yet exist**, and are preparing via post\u2011quantum cryptography precisely because such machines are expected only in the future, on an uncertain timeline.\n\nThe prediction, however, explicitly allowed **3\u20137 years from around 2024** (i.e., roughly 2027\u20132031) for such a machine to exist *in principle* if Google continues on its trajectory. As of late 2025 we are only about **1\u20132 years** into that window. There is not yet evidence that Google has achieved this, but there is also not yet enough time elapsed to say definitively that it *won\u2019t* by 2027\u20132031.\n\nBecause the prediction is about capabilities **by a future date that has not arrived yet**, and current evidence doesn\u2019t falsify the possibility that Google might get there within that 3\u20137 year window, the correct status today is **\u201ctoo early to tell.\u201d**",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction targets 2027\u20132031 for large-scale quantum computers running Shor's algorithm to break current encryption (e.g., RSA-2048). As of Dec 1, 2025 (1 year after podcast), no such computers exist. Google's Willow chip (105 qubits, Dec 2024) achieved quantum advantage via 'Quantum Echoes' algorithm (Oct 2025, [Google Blog](https://blog.google/technology/research/quantum-echoes-willow-verifiable-quantum-advantage/), [Reuters](https://www.reuters.com/technology/google-says-it-has-developed-landmark-quantum-computing-algorithm-2025-10-22/)), but not Shor's or encryption-breaking; millions of qubits needed ([Quantum Insider, May 2025](https://thequantuminsider.com/2025/05/24/google-researcher-lowers-quantum-bar-to-crack-rsa-encryption/), [Cato Networks](https://www.catonetworks.com/blog/is-recent-quantum-hype-by-google-willows-chip-a-threat-to-rsa-algorithm/)). RSA unbroken ([PostQuantum, Apr 2025](https://postquantum.com/post-quantum/breaking-rsa-quantum-hype/)). Too early to evaluate."
+    },
+    {
+      "id": "D-00:35:50.900",
+      "result": "inconclusive",
+      "explanation": "Keith\u2019s prediction is explicitly about a **10\u2011year horizon** (\u201cat least a decade out\u201d) from 2024, i.e., roughly until 2034, so by November 2025 only ~1 year of that window has elapsed.\n\nWhat we can check now is whether it has already been *falsified* by the emergence of clear commercial products or applications based on Google\u2019s Willow\u2011type quantum computing:\n\n- Google\u2019s own announcement of the 105\u2011qubit Willow chip (Dec 9, 2024) frames it as a **research processor** demonstrating error correction and benchmark performance (Random Circuit Sampling), not as a commercial product, and emphasizes it as a step along a long\u2011term roadmap to *future* commercially relevant applications. ([blog.google](https://blog.google/technology/research/google-willow-quantum-chip/?utm_source=openai))\n- Analyses in outlets like Forbes and think\u2011tank commentary likewise describe Willow as a **major research milestone** whose primary achievement is record\u2011breaking benchmarks and improved error correction; they note that practical or widespread commercial applications are still *several years away* and that current benchmarks (like RCS) have virtually no immediate practical utility. ([forbes.com](https://www.forbes.com/sites/moorinsights/2025/01/28/googles-105-qubit-willow-chip-achieves-major-quantum-milestones/?utm_source=openai))\n- Coverage in The Verge and other sources underscores that Willow is *not yet* at the scale needed for real\u2011world cryptanalytic or other mission\u2011critical applications, with timelines for such impact still estimated at least many years out. ([theverge.com](https://www.theverge.com/2024/12/12/24319879/google-willow-cant-break-rsa-cryptography?utm_source=openai))\n- Google continues to report **research achievements** with Willow\u2014e.g., a 2025 \u201cverifiable quantum advantage\u201d experiment\u2014again framed as a scientific milestone rather than a commercial product offering to customers. ([blog.google](https://blog.google/technology/research/quantum-hardware-verifiable-advantage/?utm_source=openai))\n\nAs of Nov 30, 2025, there is **no evidence** that Willow or closely related Google superconducting, error\u2011corrected processors have been turned into generally available, revenue\u2011driving commercial products or deployed applications with clear business value; they remain in the realm of advanced research and experimental cloud access.\n\nHowever, because the claim is that **no true commercial products or applications will emerge for about 10 years**, and we are nowhere near 2034 yet, we can\u2019t say whether the 10\u2011year timescale will ultimately prove right or wrong. So the prediction is **not yet falsified**, but also **not yet confirmed**.\n\nTherefore the correct status as of now is: it\u2019s **too early to tell** \u2014 *inconclusive*.",
+      "sources": [
+        {
+          "end_index": 833,
+          "start_index": 731,
+          "title": "Meet Willow, our state-of-the-art quantum chip",
+          "type": "url_citation",
+          "url": "https://blog.google/technology/research/google-willow-quantum-chip/?utm_source=openai"
+        },
+        {
+          "end_index": 1372,
+          "start_index": 1221,
+          "title": "Google\u2019s 105-Qubit Willow Chip Achieves Major Quantum Milestones",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/moorinsights/2025/01/28/googles-105-qubit-willow-chip-achieves-major-quantum-milestones/?utm_source=openai"
+        },
+        {
+          "end_index": 1736,
+          "start_index": 1614,
+          "title": "Google says its breakthrough quantum chip can't break modern cryptography",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/2024/12/12/24319879/google-willow-cant-break-rsa-cryptography?utm_source=openai"
+        },
+        {
+          "end_index": 2068,
+          "start_index": 1955,
+          "title": "Google hardware is powering quantum breakthroughs",
+          "type": "url_citation",
+          "url": "https://blog.google/technology/research/quantum-hardware-verifiable-advantage/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The podcast prediction from Dec 13, 2024, states that quantum computing like Google's Willow chip won't yield *true commercial products or applications* for at least ~10 years (until ~2034), viewing it as basic research. As of Dec 1, 2025\u2014only ~11 months later\u2014it's too early to verify. Recent advances include Google's Oct 2025 'Quantum Echoes' algorithm on Willow claiming verifiable quantum advantage ([Google Blog](https://blog.google/technology/research/quantum-echoes-willow-verifiable-quantum-advantage/)), but these are research demos, not commercial products. No sources report Willow-derived commercial applications; Google's roadmap still positions it as paving the way to useful quantum computers ([Google Willow Blog](https://blog.google/technology/research/google-willow-quantum-chip/)). Quantum AI head predicted commercial apps in 5 years (Feb 2025, [The Quantum Insider](https://thequantuminsider.com/2025/02/05/google-quantum-ai-head-sees-commercial-quantum-within-five-years/)), aligning with ongoing research phase."
+    },
+    {
+      "id": "D-00:10:50.410",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, Keith Rabois is publicly described as a technology executive and investor, serving as a managing director at Khosla Ventures, with no indication that he has taken on a formal political role such as running for or holding elected office, or accepting an appointed government position.([en.wikipedia.org](https://en.wikipedia.org/wiki/Keith_Rabois?utm_source=openai))  \n\nHis recent political activity consists of donor/advocacy behavior\u2014e.g., being a major contributor to the lobbying group FWD.us, making statements about U.S. politics and candidates, and co\u2011hosting a fundraiser with his husband Jacob Helberg for J.D. Vance to benefit Donald Trump\u2019s presidential campaign on September 12, 2024.([en.wikipedia.org](https://en.wikipedia.org/wiki/Keith_Rabois?utm_source=openai))  These are consistent with the kind of political engagement he has had for years, not evidence of him personally \u201cgetting involved in politics\u201d in the sense of assuming a political office or formal political role.\n\nBecause his prediction on December 13, 2024 was that his own political involvement of that kind is \u201ca decade out,\u201d i.e., roughly around 2034, and the current date is still 2025, there has not yet been enough time to determine whether he will in fact enter politics on that timeline. The prediction also has not been falsified, since he has not taken a formal political role earlier than he forecast. Therefore, the status of this prediction is **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 430,
+          "start_index": 348,
+          "title": "Keith Rabois",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Keith_Rabois?utm_source=openai"
+        },
+        {
+          "end_index": 844,
+          "start_index": 762,
+          "title": "Keith Rabois",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Keith_Rabois?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Only ~11 months have passed since the Dec 13, 2024 podcast. Searches show no evidence Keith Rabois has taken a political role or government position. He remains Managing Director at Khosla Ventures [Wikipedia, Oct 2025; Khosla site], Chairman of Opendoor [Fortune Sep 16, 2025; Opendoor Sep 10, 2025], and active in VC deals [Forbes May 1, 2025]. He is politically active as a donor/supporter but not in an official role (e.g., his husband Jacob Helberg is Trump's nominee for Undersecretary of State [NY Post Feb 28, 2025; Barron's Mar 27, 2025]). Too early to verify if involvement begins ~2034."
+    },
+    {
+      "id": "D-01:15:16.280",
+      "result": "right",
+      "explanation": "Trump\u2019s second administration implemented aggressive trade measures in 2025 that directly hit Shein\u2019s U.S. business model. In April\u2013May 2025, Trump imposed minimum tariffs of about 145% on Chinese goods and moved to end the de minimis exemption that had allowed most Shein shipments under $800 to enter the U.S. duty\u2011free, a provision specifically cited as crucial to the growth of Shein and Temu. ([washingtonpost.com](https://www.washingtonpost.com/world/2025/04/15/china-tariffs-shein-temu-de-minimis/?utm_source=openai)) Facing these policy changes, Shein warned U.S. customers of price hikes, cut advertising, and experienced a sharp decline in U.S. sales, according to market and retail reporting. ([washingtonpost.com](https://www.washingtonpost.com/technology/2025/11/28/temu-shein-black-friday-sales/?utm_source=openai)) Reuters and other outlets reported that Shein began considering a restructuring of its U.S. operations and exploring relocation of production for U.S.-bound goods in response to the new tariff risks, which were also clouding its planned London IPO. ([reuters.com](https://www.reuters.com/business/retail-consumer/shein-weighs-us-restructuring-tariff-risks-cloud-london-ipo-ft-reports-2025-04-30/?utm_source=openai)) Later in 2025, Trump signed an order globally suspending the de minimis exemption, further tightening the trade environment for firms like Shein. ([forbes.com](https://www.forbes.com/sites/zacharyfolk/2025/07/30/trump-suspends-de-minimis-tariff-exemption-for-goods-under-800/?utm_source=openai)) Although Shein remains active in the U.S. and has started to recover some demand, contemporaneous coverage describes the tariffs and shipping\u2011rule changes as having caused significant operational and growth challenges for Shein and similar platforms. ([washingtonpost.com](https://www.washingtonpost.com/technology/2025/11/28/temu-shein-black-friday-sales/?utm_source=openai)) These developments align closely with the prediction that Shein would face \u201creal problems\u201d in the new Trump administration via regulatory, tariff, or trade actions that materially impede its U.S. operations and growth.",
+      "sources": [
+        {
+          "end_index": 557,
+          "start_index": 431,
+          "title": "China\u2019s Shein, Temu and online sellers face uncertainty amid U.S. tariffs - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/world/2025/04/15/china-tariffs-shein-temu-de-minimis/?utm_source=openai"
+        },
+        {
+          "end_index": 862,
+          "start_index": 737,
+          "title": "Americans can't quit buying cheap Chinese stuff",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/technology/2025/11/28/temu-shein-black-friday-sales/?utm_source=openai"
+        },
+        {
+          "end_index": 1278,
+          "start_index": 1112,
+          "title": "Shein weighs US restructuring as tariff risks cloud London IPO, FT reports",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/retail-consumer/shein-weighs-us-restructuring-tariff-risks-cloud-london-ipo-ft-reports-2025-04-30/?utm_source=openai"
+        },
+        {
+          "end_index": 1574,
+          "start_index": 1425,
+          "title": "Trump Globally Suspends Key Tariff Exemption That Let Temu And Shein Ship Most Goods Tariff-Free",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/zacharyfolk/2025/07/30/trump-suspends-de-minimis-tariff-exemption-for-goods-under-800/?utm_source=openai"
+        },
+        {
+          "end_index": 1951,
+          "start_index": 1826,
+          "title": "Americans can't quit buying cheap Chinese stuff",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/technology/2025/11/28/temu-shein-black-friday-sales/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Trump administration closed the de minimis trade loophole in April/May 2025, imposing tariffs (initially 30%/$25 per item, later adjusted to 54% then 30%) on small Chinese shipments under $800, directly targeting Shein's model ([Axios, Apr 2, 2025](https://www.axios.com/2025/04/02/trump-temu-shein-de-minimis-tariffs-pdd)). This caused significant US difficulties: sales declined significantly, with monthly US sales down ~11% post-change (Second Measure via [BoF, Oct 10, 2025](https://www.businessoffashion.com/news/retail/sheins-robust-us-growth-evaporates-after-trump-tariff-hit/)); demand plunged (Shein US DAUs -25%, MAUs -12% May vs Mar 2025; ad spend -70% YoY) ([CNBC, Jun 5, 2025](https://www.cnbc.com/2025/06/05/shein-temu-see-us-demand-plunge-on-de-minimis-trade-loophole-closure.html)); US revenue growth slowed to 20% in 2025 from 50% prior ([Reuters, Oct 9, 2025](https://www.reuters.com/sustainability/boards-policy-regulation/shein-hit-with-big-fines-boosts-internal-controls-2025-10-09/)). Shein warned of tariff uncertainty impeding operations ([Guardian/BoF, Oct 15/16, 2025](https://www.theguardian.com/business/2025/oct/15/shein-warns-on-trump-tariff-uncertainty-after-profits-slip)), adapted via price hikes/Vietnam sourcing, but US growth materially impeded."
+    },
+    {
+      "id": "D-01:15:54.250",
+      "result": "right",
+      "explanation": "Evidence shows that after Trump took office again in January 2025, the U.S. did in fact implement substantial new tariff measures specifically targeting imports from China, beyond the tariff regime in place as of December 2024 under Biden.\n\nBy late 2024, Chinese imports were already subject to Section 301 tariffs, and the Biden administration had *finalized* and begun implementing additional increases on selected Chinese products\u2014such as EVs, solar cells, semiconductors, batteries, and certain metals\u2014raising many of these duties to 25\u2013100% on a limited, sectoral basis.([ustr.gov](https://ustr.gov/about-us/policy-offices/press-office/press-releases/2024/may/us-trade-representative-katherine-tai-take-further-action-china-tariffs-after-releasing-statutory?utm_source=openai)) These were in place or scheduled prior to Trump\u2019s January 2025 inauguration and form the December 2024 baseline.\n\nIn Trump\u2019s second term, however, the White House introduced **broad, additional tariffs across essentially all imports from China**, clearly exceeding that baseline:\n\n* On **February 1, 2025**, Trump signed executive orders imposing a new 10% tariff on *all* Chinese imports **on top of existing China duties**, with effect from February 4, 2025.([en.wikipedia.org](https://en.wikipedia.org/wiki/2025_United_States_trade_war_with_Canada_and_Mexico?utm_source=openai))  \n* On **March 3, 2025**, he raised this China-wide surcharge from 10% to 20%, again in addition to the existing Section 301 rates.([zh.wikipedia.org](https://zh.wikipedia.org/wiki/%E4%B8%AD%E7%BE%8E%E8%B4%B8%E6%98%93%E6%88%98?utm_source=openai))  \n* On **April 2, 2025**, Trump announced further sweeping tariffs, including an **additional 34% on Chinese goods**. Reporting and official/analytical sources describe this package as lifting total U.S. tariffs on Chinese products to around **54%**, and closing the de minimis loophole for low-value Chinese shipments (e.g., Shein, Temu) so they no longer enter duty-free.([theguardian.com](https://www.theguardian.com/us-news/2025/apr/03/china-condemns-unilateral-bullying-as-it-calls-on-us-to-drop-tariffs?utm_source=openai))  \n\nThese measures were widely characterized as the most significant U.S. protectionist action since the 1930s, with China singled out for especially high combined rates.([pt.wikipedia.org](https://pt.wikipedia.org/wiki/Tarifas_do_Dia_da_Liberta%C3%A7%C3%A3o?utm_source=openai)) Although a federal court later struck down much of the broad \u201cLiberation Day\u201d tariff program, it did so **after** these China-focused surcharges had been imposed, and some product-specific measures remained in effect.([washingtonpost.com](https://www.washingtonpost.com/business/2025/05/28/trump-tariffs-trade-court-ruling/?utm_source=openai))\n\nGiven that (1) a Trump administration did begin in January 2025, and (2) that administration **implemented large, new, China-targeted tariffs on top of the December 2024 regime**, Keith Rabois\u2019s prediction that \u201cyou\u2019re going to see real tariffs, especially against China\u201d is **right** in substance.",
+      "sources": [
+        {
+          "end_index": 817,
+          "start_index": 610,
+          "title": "U.S. Trade Representative Katherine Tai to Take Further Action on China Tariffs After Releasing Statutory Four-Year Review | United States Trade Representative",
+          "type": "url_citation",
+          "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases/2024/may/us-trade-representative-katherine-tai-take-further-action-china-tariffs-after-releasing-statutory?utm_source=openai"
+        },
+        {
+          "end_index": 1403,
+          "start_index": 1282,
+          "title": "2025 United States trade war with Canada and Mexico",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2025_United_States_trade_war_with_Canada_and_Mexico?utm_source=openai"
+        },
+        {
+          "end_index": 1651,
+          "start_index": 1536,
+          "title": "\u4e2d\u7f8e\u8d38\u6613\u6218",
+          "type": "url_citation",
+          "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E7%BE%8E%E8%B4%B8%E6%98%93%E6%88%98?utm_source=openai"
+        },
+        {
+          "end_index": 2181,
+          "start_index": 2026,
+          "title": "China condemns 'unilateral bullying' as it calls on US to drop tariffs",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2025/apr/03/china-condemns-unilateral-bullying-as-it-calls-on-us-to-drop-tariffs?utm_source=openai"
+        },
+        {
+          "end_index": 2461,
+          "start_index": 2353,
+          "title": "Tarifas do Dia da Liberta\u00e7\u00e3o",
+          "type": "url_citation",
+          "url": "https://pt.wikipedia.org/wiki/Tarifas_do_Dia_da_Liberta%C3%A7%C3%A3o?utm_source=openai"
+        },
+        {
+          "end_index": 2805,
+          "start_index": 2679,
+          "title": "Trump's 'Liberation Day' tariffs halted by Court of International Trade",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/business/2025/05/28/trump-tariffs-trade-court-ruling/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Trump administration implemented substantial new tariffs on Chinese imports in 2025, including a 10-20% 'fentanyl tariff' on all Chinese goods starting February 2025 (new under IEEPA, absent pre-2025), escalating to 34%+ 'reciprocal/Liberation Day' tariffs in April (peaking at 145% combined before pauses), de minimis closure for China (120% on low-value shipments), and Section 232 expansions (e.g., 50% on steel/aluminum derivatives June 2025). These exceeded December 2024 levels (primarily Section 301 at ~20-25% on select lists). Later reductions (e.g., to 10% fentanyl +10% reciprocal via Nov 2025 deal) followed implementation. Average US tariff rate rose from 2.5% (Jan) to 27% (April). Sources: [Tax Foundation](https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/), [Wikipedia](https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration), [China Briefing](https://www.china-briefing.com/news/us-china-tariff-rates-2025/), White House fact sheets."
+    },
+    {
+      "id": "B-00:32:19.480",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, it is too early to judge Chamath\u2019s 2\u20135 year prediction.\n\nKey facts:\n- Google\u2019s Willow processor, announced in December 2024, has 105 *physical* superconducting qubits and demonstrates a few *logical* qubits with below\u2011threshold error correction, not thousands of logical qubits.([blog.google](https://blog.google/technology/research/google-willow-quantum-chip/?utm_source=openai))\n- Google itself and outside analysts emphasize that Willow is **far** from a \u201ccryptanalytically relevant quantum computer\u201d: estimates for breaking RSA\u20112048 still sit around **millions of physical qubits** (roughly 4 million), with timelines typically **a decade or more away**, not 1\u20132 years.([theverge.com](https://www.theverge.com/2024/12/12/24319879/google-willow-cant-break-rsa-cryptography?utm_source=openai))\n- Current overviews of quantum progress in 2025 describe systems in the ~10\u00b2\u201310\u00b3 qubit range and consistently state that we are still far from the fault\u2011tolerant, large\u2011scale machines needed to break RSA\u20112048 or Bitcoin\u2019s SHA\u2011256/ECDSA security; those capabilities are generally projected into the 2030s or later.([forbes.com](https://www.forbes.com/sites/leeorshimron/2025/06/30/quantum-threat-bitcoins-fight-to-secure-our-digital-future/?utm_source=openai))\n- Policy and cybersecurity guidance (e.g., UK NCSC) likewise targets around **2035** as the planning horizon for serious quantum decryption threats, reinforcing that no such capability exists yet.([theguardian.com](https://www.theguardian.com/technology/2025/mar/20/uk-cybersecurity-agency-quantum-hackers?utm_source=openai))\n- There is no public evidence by late 2025 that RSA\u20112048 has been broken by a quantum computer or that Bitcoin\u2019s core cryptography has been compromised; instead, industry and governments are still treating this as a **future** risk and rolling out post\u2011quantum standards (e.g., NIST PQC).([en.wikipedia.org](https://en.wikipedia.org/wiki/NIST_Post-Quantum_Cryptography_Standardization?utm_source=openai))\n\nBecause Chamath\u2019s stated window is **2\u20135 years from 2024** (roughly 2026\u20132029), and only about one year has elapsed, we cannot yet say definitively whether quantum hardware will fail or succeed in reaching the ~4,000\u20138,000 logical\u2011qubit scale in that period. The current trajectory makes the prediction look very optimistic, but the deadline has not passed, so the correct classification for now is **\"inconclusive (too early)\"**.",
+      "sources": [
+        {
+          "end_index": 448,
+          "start_index": 346,
+          "title": "Meet Willow, our state-of-the-art quantum chip",
+          "type": "url_citation",
+          "url": "https://blog.google/technology/research/google-willow-quantum-chip/?utm_source=openai"
+        },
+        {
+          "end_index": 864,
+          "start_index": 742,
+          "title": "Google says its breakthrough quantum chip can't break modern cryptography",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/2024/12/12/24319879/google-willow-cant-break-rsa-cryptography?utm_source=openai"
+        },
+        {
+          "end_index": 1325,
+          "start_index": 1179,
+          "title": "Quantum Threat: Bitcoin\u2019s Fight To Secure Our Digital Future",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/leeorshimron/2025/06/30/quantum-threat-bitcoins-fight-to-secure-our-digital-future/?utm_source=openai"
+        },
+        {
+          "end_index": 1652,
+          "start_index": 1523,
+          "title": "UK cybersecurity agency warns over risk of quantum hackers",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2025/mar/20/uk-cybersecurity-agency-quantum-hackers?utm_source=openai"
+        },
+        {
+          "end_index": 2058,
+          "start_index": 1942,
+          "title": "NIST Post-Quantum Cryptography Standardization",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/NIST_Post-Quantum_Cryptography_Standardization?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "As of December 2025, no quantum computer has achieved 4,000 logical qubits. Highest records include Quantinuum's 50 entangled logical qubits (Dec 2024) and Helios with 48 logical qubits from 98 physical qubits (Nov 2025); Microsoft/Atom with 24 logical qubits (Nov 2024). Google's Willow (105 physical qubits, Dec 2024) demonstrates error-corrected logical qubits like a 7x7 surface code (one logical qubit), equated by the predictor to ~1 stable logical qubit, far below thresholds for breaking RSA-2048 (~4,000 logical) or SHA-256 (~8,000). Articles confirm Willow cannot threaten cryptography, needing millions of qubits. Prediction timeframe: 2-5 years from Dec 2024 (2026-2029); only ~11 months passed. Sources: [Google Willow blog](https://blog.google/technology/research/google-willow-quantum-chip/), [Quantinuum Helios](https://www.quantinuum.com/blog/introducing-helios...), [HPCwire on Willow](https://www.hpcwire.com/2025/10/22/google-claims-quantum-advantage-with-willow-chip/), [Science.org](https://www.science.org/content/article/new-more-stable-qubits...), CCN Bitcoin risk article."
+    }
+  ]
+}

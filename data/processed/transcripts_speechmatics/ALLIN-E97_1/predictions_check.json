@@ -1,0 +1,530 @@
+{
+  "meta": {
+    "count": 11,
+    "count_by_result": {
+      "ambiguous": 1,
+      "right": 6,
+      "wrong": 3,
+      "inconclusive": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "E-00:01:35.000",
+      "result": "ambiguous",
+      "explanation": "Using straightforward **total-return** comparison for the 5\u20136 months after the Sept 23, 2022 podcast, broad equities clearly did better than a cash\u2011in\u2011SPAC\u2011trust strategy, but on a **risk\u2011adjusted** basis (which is how you\u2019ve normalized the claim) the answer depends on subjective assumptions, so it can\u2019t be cleanly scored.\n\n**1. What happened to the broad equity market?**\n- The S&P 500 closed at **3,693.23** on Sept 23, 2022 and **4,109.31** on Mar 31, 2023, a price gain of about **11.3%** over roughly 6 months; by Feb 28, 2023 it was already up about **7.5%** from the Sept 23 level.\n  - Sept 23, 2022 close: 3,693.23\u30101search1\u3011  \n  - Feb 28, 2023 close: 3,970.15\u30101search0\u3011  \n  - Mar 31, 2023 close: 4,109.31\u30101search3\u3011  \n- Adding dividends (roughly 1\u20132% annually) puts the S&P 500 total return in the **~8\u201312%** range over that 5\u20136 month window, depending on exact start/end dates.\n\n**2. What did \u201ccash in a SPAC trust\u201d offer over that window?**\n- Pre\u2011combination SPACs hold IPO proceeds in a trust invested in **T\u2011bills or equivalents**, and common shareholders can redeem for the **$10 trust value plus accrued interest**, making the downside similar to a short\u2011term Treasury plus a small equity option.\u30102search2\u30112search5\u3011\n- In October 2022 (right around the prediction date), Pender\u2019s arbitrage commentary notes that SPACs searching for targets were trading at discounts to trust implying **yield\u2011to\u2011maturity in excess of 7.1%**, and they were \u201ctargeting yields in excess of 6%\u201d from SPAC arbitrage.\u30102search9\u3011\n- Accelerate\u2019s Julian Klymochko reported that through 2022 SPAC arbitrage yields roughly **doubled from 2.4% to 4.3%**, and by early 2023 they saw **SPAC arbitrage yields \u22484.5%**, with their arbitrage fund\u2019s unlevered underlying portfolio yield around **7.1%**, 75% of which was SPAC arbitrage.\u30102search1\u3011\n- Translating those **annualized yields** into a 5\u20136 month holding period implies a realized return on the order of **~2\u20134%**, assuming you just sit in diversified pre\u2011deal SPACs and redeem/liquidate rather than take post\u2011merger equity risk.\n\n**3. Raw performance vs. risk\u2011adjusted performance**\n- On **raw return**, the S&P 500\u2019s ~8\u201312% total return over the period **materially exceeded** the ~2\u20134% you\u2019d expect from parking in SPAC trusts at 6\u20137% annualized yields. So if \u201cbetter\u201d meant simply \u201cmakes more money,\u201d the prediction was **wrong**.\n- However, Chamath\u2019s actual wording refers to the SPAC\u2011trust approach as effectively a superior **cash\u2011like alternative**, and your normalized version emphasizes a **\u201crisk\u2011adjusted basis.\u201d**  Pre\u2011deal SPAC trusts in late 2022 and early 2023 were widely marketed and analyzed as a **low\u2011risk, T\u2011bill\u2011backed \u201cfixed\u2011income alternative\u201d** with capital protection via redemption and modest positive carry.\u30102search9\u30112search1\u3011\n- Over the same window, equity markets were still **volatile**, with stress peaking around the March 2023 regional banking turmoil (e.g., Silicon Valley Bank\u2019s collapse on March 10, 2023\u30104search16\u3011 and volatility indices spiking in March 2023\u30104search0\u3011). That implies a much higher standard deviation of returns for a broad\u2011equity position than for a portfolio of near\u2011par SPAC trusts.\n\nPutting it together:\n- **We can measure ex\u2011post raw returns precisely** and they favor equities, contradicting the idea that SPAC\u2011trust cash would simply \u201cdo better\u201d in absolute performance.\n- **We do not have a single, objective standard** for how Chamath intended \u201crisk\u2011adjusted\u201d (Sharpe vs. Sortino vs. drawdown\u2011sensitivity, investor risk aversion, which exact \"market\" index, which exact set of SPACs, etc.). With SPAC arbitrage offering ~6\u20137% annualized yields at T\u2011bill\u2011like risk and equities delivering higher but much more volatile returns, a reasonable person could argue either that:\n  - Equities were better (higher realized return justifies the risk), or\n  - SPAC trusts were better **per unit of risk** (higher Sharpe\u2011type ratio),\n  depending on model and preferences.\n\nBecause the **truth value of the claim hinges on a subjective, unspecified risk\u2011adjustment standard**, and the data can support different conclusions depending on that standard, the prediction is best classified as **ambiguous rather than clearly right or wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The S&P 500 delivered a price return of approximately 7.0% from its close of 3,693.23 on Sep 23, 2022, to 3,951.39 on Mar 1, 2023 ([Yahoo Finance](https://finance.yahoo.com/quote/%5EGSPC/history/), StatMuse). Including dividends (~1.5% annualized, or ~0.6% over the period), total return was ~7.6%. SPAC trusts returned ~1.7-2.5% (principal $10/share plus interest from T-bills averaging ~4.5% annualized; e.g., many liquidated near $10.20/share per SPACInsider and SEC filings). The market outperformed on raw returns. On risk-adjusted basis, the S&P 500 had a positive Sharpe ratio (~0.65-0.7, based on ~20% annualized volatility, excess return over ~2% rf annualized to ~13%), while SPAC (near risk-free) did not exceed this meaningfully. Market rallied post-Oct 2022 bottom (low 3,577), contradicting expectation of underperformance. Sources: Yahoo Finance historical data, Macrotrends S&P monthly, FRED T-bill rates."
+    },
+    {
+      "id": "E-00:10:50.000",
+      "result": "right",
+      "explanation": "Available data on the post\u2011boom SPAC market indicate that a *majority* of the 2020\u20132021 SPAC cohort ultimately liquidated and returned capital, with technology/TMT-focused vehicles making up a disproportionate share of those liquidations\u2014consistent with Chamath\u2019s prediction that the \u201coverwhelming majority\u201d of tech SPACs still searching in late 2022 would \u201cwind up.\u201d\n\nKey points:\n\n1. **Large overhang of SPACs still searching in late 2022**  \n   By December 2022 there were still *more than 400* SPACs \u201clooking for acquisition partners\u201d and \u201cover 400 SPACs still searching for capital,\u201d many of them from the 2020\u20132021 boom period and heavily tech-oriented. ([marketbrief.edweek.org](https://marketbrief.edweek.org/financing-investment/what-the-retreat-from-spacs-means-for-education-companies-and-investors/2022/12?utm_source=openai))  This is essentially the set Chamath was talking about (the \u201cseveral hundred\u201d still searching).\n\n2. **Liquidations ended up exceeding completed mergers for the backlog**  \n   SPAC Research data summarized by The Logic show that from January 2022 through July 2023, **274 SPACs dissolved without finding a merger candidate, versus only 147 that successfully completed mergers** during the same period\u2014about 65% liquidations among SPACs whose fate was decided in that window. ([thelogic.co](https://thelogic.co/news/canadian-spacs-still-hope-for-deals-as-investors-pull-cash/?utm_source=openai))  That is already well above the 50% threshold Chamath was pointing to, and this liquidation wave was drawn largely from the backlog of SPACs that were still searching in 2022.\n\n3. **By cohort: a majority of 2021 SPACs liquidated**  \n   SPACInsider\u2019s full\u2011year 2024 review reports that of the **613 SPAC IPOs from 2021, 314 (51.2%) had opted to liquidate** by the end of 2024, while 227 had completed de\u2011SPAC mergers and 72 were still searching or in the \u201cannounced\u201d stage. ([spacinsider.com](https://www.spacinsider.com/news/intel/full-year-2024-spac-review?utm_source=openai))  Among the 541 SPACs from that cohort whose outcome was resolved (liquidated *or* merged), about **58%** liquidated (314 / (314+227)). Those 2021 IPOs constitute the bulk of the \u201cseveral hundred\u201d SPACs still searching as of late 2022, so their realized outcomes are a direct test of the prediction.\n\n4. **Boom\u2011era SPACs overall: about half failed to find any target**  \n   A 2025 Reuters Breakingviews analysis, drawing on SPACInsider data, notes that during the 2020\u20132021 boom **about 860 SPAC IPOs raised roughly $250 billion**, and that *\u201croughly half of them\u2026failed to find a target within their typical two-year deadline, instead returning the cash to shareholders.\u201d* ([reuters.com](https://www.reuters.com/breakingviews/spacs-trigger-bad-case-wall-street-amnesia-2025-05-28/?utm_source=openai))  That is again squarely in line with a \u201cmore than 50% will liquidate\u201d view for the overall pool of boom\u2011era SPACs.\n\n5. **Tech/TMT SPACs were particularly prone to liquidate**  \n   A SPAC Consultants 2023 outlook notes that as of February 7, 2023 there were **348 SPACs scheduled to expire in 2023**, and that **SPACs looking for targets in the technology, media, and telecom (TMT) sector accounted for the majority of the 2023 liquidations so far**; it also counted **158 TMT\u2011focused SPACs** still seeking targets and projected that 2023 liquidations would exceed those of 2021 and 2022 combined. ([spacconsultants.com](https://spacconsultants.com/2023-spac-outlook/?utm_source=openai))  Given that tech/TMT-focused SPACs were a large and *above\u2011average* share of liquidations, the liquidation rate for the tech\u2011focused subset Chamath described is, if anything, higher than the already\u2011documented >50% rate for the 2021 cohort overall.\n\n6. **Cumulative liquidation numbers support the >50% threshold**  \n   Aggregating SPAC Research figures cited in legal and market analyses shows **~140 liquidations in 2022**, **193 in 2023**, and **58 in 2024**, for roughly **391 liquidations** since the start of 2022 alone\u2014most of them from the 2020\u20132021 IPO cohorts that formed the backlog still searching in late 2022. ([businesslawtoday.org](https://businesslawtoday.org/month-in-brief/march-in-brief-mergers-and-acquisitions-2023/?utm_source=openai))  That scale of liquidations, relative to the roughly 800\u2013900 boom\u2011era SPACs, is consistent with (and in some cuts clearly above) a 50% liquidation rate.\n\n**Caveat:** No public dataset slices the universe *exactly* as \u201ctech-focused SPACs still searching as of September 2022,\u201d so we cannot compute a precise denominator just for that subset. However:\n\n- The majority of liquidations in 2023 were in TMT-focused SPACs. ([spacconsultants.com](https://spacconsultants.com/2023-spac-outlook/?utm_source=openai))  \n- For the main 2021 SPAC cohort\u2014which provided most of those tech vehicles\u2014more than half have already liquidated, and among resolved outcomes, liquidations significantly outnumber mergers. ([spacinsider.com](https://www.spacinsider.com/news/intel/full-year-2024-spac-review?utm_source=openai))  \n\nTaken together, the best available evidence strongly supports that **more than 50%** of the \u201cseveral hundred\u201d tech\u2011oriented SPACs still hunting for deals in September 2022 ultimately failed to complete a business combination and instead liquidated and returned cash. That makes Chamath\u2019s normalized prediction essentially correct.",
+      "sources": [
+        {
+          "end_index": 874,
+          "start_index": 697,
+          "title": "What the Retreat From SPACs Means for Education Companies and Investors",
+          "type": "url_citation",
+          "url": "https://marketbrief.edweek.org/financing-investment/what-the-retreat-from-spacs-means-for-education-companies-and-investors/2022/12?utm_source=openai"
+        },
+        {
+          "end_index": 1471,
+          "start_index": 1352,
+          "title": "Canadian SPACs still hope for deals as investors pull cash - The Logic",
+          "type": "url_citation",
+          "url": "https://thelogic.co/news/canadian-spacs-still-hope-for-deals-as-investors-pull-cash/?utm_source=openai"
+        },
+        {
+          "end_index": 2052,
+          "start_index": 1948,
+          "title": "Full-Year 2024 SPAC Review\uff5c<!-- -->SPACInsider",
+          "type": "url_citation",
+          "url": "https://www.spacinsider.com/news/intel/full-year-2024-spac-review?utm_source=openai"
+        },
+        {
+          "end_index": 2856,
+          "start_index": 2729,
+          "title": "SPACs trigger bad case of Wall Street amnesia",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/breakingviews/spacs-trigger-bad-case-wall-street-amnesia-2025-05-28/?utm_source=openai"
+        },
+        {
+          "end_index": 3546,
+          "start_index": 3457,
+          "title": "2023 SPAC Outlook - SPAC Consultants %",
+          "type": "url_citation",
+          "url": "https://spacconsultants.com/2023-spac-outlook/?utm_source=openai"
+        },
+        {
+          "end_index": 4307,
+          "start_index": 4174,
+          "title": "Months In Brief Archive - Business Law Today from ABA",
+          "type": "url_citation",
+          "url": "https://businesslawtoday.org/month-in-brief/march-in-brief-mergers-and-acquisitions-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 4818,
+          "start_index": 4729,
+          "title": "2023 SPAC Outlook - SPAC Consultants %",
+          "type": "url_citation",
+          "url": "https://spacconsultants.com/2023-spac-outlook/?utm_source=openai"
+        },
+        {
+          "end_index": 5116,
+          "start_index": 5012,
+          "title": "Full-Year 2024 SPAC Review\uff5c<!-- -->SPACInsider",
+          "type": "url_citation",
+          "url": "https://www.spacinsider.com/news/intel/full-year-2024-spac-review?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath predicted >50% of several hundred tech-focused SPACs searching for targets in Sep 2022 would liquidate rather than complete a business combination. Data confirms high liquidation rates for relevant cohorts. Spring 2022 had 369 tech SPACs searching ([AGC Partners](https://www.agcpartners.com/insights/spring-2022-flash-spac-update-zombie-spacs-walk-the-land-in-search-of-healthy-companies)). Most 2021 SPAC IPOs (613 total, heavily tech-focused) were still searching then. Of these, 314-324 (51.2-53%) liquidated overall ([SPACInsider 2024 Review](https://www.spacinsider.com/news/headline-post/full-year-2024-spac-review); [High Growth Investing](https://hightechinvesting.substack.com/p/the-revival-of-spacs-the-backdoor)). For those searching late 2022, the rate was higher (~65% per AlphaRank on matured SPACs), exceeding 50% after accounting for prior deals/liqs. 2020 cohort: 82% liquidated (203/248, [SPACInsider stats](https://www.spacinsider.com/data/stats)). Post-2022 liquidations: 193 in 2023, 58 in 2024 ([D&O Diary](https://www.dandodiary.com/2025/05/articles/director-and-officer-liability/guest-post-spacs-are-back/); SPACInsider). Tech SPACs underperformed worse, aligning with 'overwhelming majority' liquidating."
+    },
+    {
+      "id": "F-00:12:34.570",
+      "result": "right",
+      "explanation": "Available data show that from mid\u20112022 through roughly mid\u20112024, the IPO/SPAC/direct\u2011listing market for late\u2011stage, venture\u2011backed tech companies was historically weak, with only a handful of notable exits, which matches Sacks\u2019s \u201cfrozen for two years / very few exits\u201d characterization.\n\n* Macro view of the window:\n  * Multiple analyses describe **2022\u20132024 as an IPO \u201cwinter,\u201d with the IPO window effectively closed in 2022 and the SPAC market largely collapsed**, forcing private tech companies to delay liquidity and stay private longer. ([sampfordadvisors.com](https://www.sampfordadvisors.com/blog/2025/10/31/the-state-of-the-tech-ipo-market-what-it-means-for-the-broader-mampa-landscape?utm_source=openai))\n  * Jay Ritter\u2019s VC\u2011exit data (as summarized in a 2025 review of unicorns) report that **VC\u2011backed IPOs averaged just 22 per year from 2022\u20132024, versus 156 in 2021, the lowest level since the financial crisis**, indicating a dramatic drying\u2011up of public exits. ([reddit.com](https://www.reddit.com/r/startup/comments/1l4th3a?utm_source=openai))\n\n* Evidence specific to late\u2011stage tech IPOs:\n  * By June 29, 2023, CNBC reported **there had not been a single \u201cnotable venture\u2011backed tech IPO\u201d in the U.S. since December 2021**, implying essentially zero high\u2011profile tech IPOs over ~18 months that include the second half of 2022. ([cnbc.com](https://www.cnbc.com/2023/06/29/tech-ipo-drought-reaches-18-months-despite-nasdaq-first-half-rally.html?utm_source=openai))\n  * TechCrunch\u2019s 2023 look at the drought counted **only one meaningful U.S. tech IPO from private\u2011capital\u2011backed companies between the start of 2022 and late August 2023**, underscoring how closed the window was for the kind of late\u2011stage startups Sacks was talking about. ([techcrunch.com](https://techcrunch.com/2023/08/29/ipo-drought-2023/?utm_source=openai))\n  * A 2025 overview of venture exits notes that **2022 IPO exit value collapsed by ~90% vs. 2021; the IPO window \u201cslammed shut\u201d in 2022 and 2023 remained very slow, with Arm, Instacart, and Klaviyo in late 2023 described as the *first significant* IPOs after a long drought**\u2014just a few flagship deals, not a broadly open window. ([afurrier.com](https://afurrier.com/blog/the-current-state-of-the-us-venture-capital-industry-2025?utm_source=openai))\n\n* Activity in late 2023\u2013mid\u20112024:\n  * The late\u20112023 IPOs of **Arm, Instacart, and Klaviyo** and early\u20112024 IPOs such as **Reddit, Astera Labs, and Rubrik** are widely described as *ending* or *thawing* a two\u2011year tech IPO drought, not as part of a normal pipeline. ([cnbc.com](https://www.cnbc.com/2023/09/18/tech-ipos-are-back-deal-valuations-are-rising-dont-get-fooled-again.html?utm_source=openai))\n  * Even counting those, the volumes stayed very low: Renaissance Capital reported that **as of October 31, 2024, only five VC\u2011backed tech IPOs had occurred in all of 2024**, versus a 10\u2011year historical average of 23 per year, and that private VC\u2011backed tech companies had largely stayed on the sidelines for the prior three years. ([renaissancecapital.com](https://www.renaissancecapital.com/IPO-Center/News/107552/The-year%E2%80%99s-VC-backed-tech-IPOs-average-a-73-percent-return.-Here%E2%80%99s-what-it-?utm_source=openai))\n  * Across all sectors, the Wall Street Journal noted **only 15 U.S. venture\u2011backed IPOs in the first half of 2024**, far below the historical average of ~82 per year, confirming that the first half of 2024 was still extremely muted. Digital\u2011health data from Rock Health show **a 21\u2011month stretch with *no* IPO/SPAC exits until Q2 2024**, another sign that public exits in tech\u2011adjacent verticals were essentially frozen until mid\u20112024. ([wsj.com](https://www.wsj.com/articles/vc-backed-ipos-had-a-tepid-first-half-squeezing-venture-capital-more-95dc6ff2?utm_source=openai))\n\n* SPACs/direct listings:\n  * SPACs, which had been an alternative exit path, also collapsed: SPAC IPOs fell from **613 in 2021 to 86 in 2022 and just 31 in 2023**, and hundreds of SPACs were liquidated without completing mergers, meaning this route was largely shut off for late\u2011stage tech as well. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Special-purpose_acquisition_company?utm_source=openai))\n\nTaken together, the record shows that from mid\u20112022 through about mid\u20112024, late\u2011stage private tech companies faced **an exceptionally sparse set of IPO/SPAC/direct\u2011listing opportunities\u2014only a few high\u2011profile exceptions against a backdrop of a shut or nearly shut window**. That reality fits Sacks\u2019s prediction (\u201cexit ideas frozen for two years\u2026 very few exits\u201d) materially well, so the prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 749,
+          "start_index": 578,
+          "title": "The State of the Tech IPO Market: What It Means for the Broader M&A Landscape \u2014 Sampford Advisors - Expert Tech M&A Advisor (Software, IT Services, SaaS, Hardware)",
+          "type": "url_citation",
+          "url": "https://www.sampfordadvisors.com/blog/2025/10/31/the-state-of-the-tech-ipo-market-what-it-means-for-the-broader-mampa-landscape?utm_source=openai"
+        },
+        {
+          "end_index": 1096,
+          "start_index": 1013,
+          "title": "What's going to happen to all these unicorns?",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/startup/comments/1l4th3a?utm_source=openai"
+        },
+        {
+          "end_index": 1519,
+          "start_index": 1384,
+          "title": "Tech IPO drought reaches 18 months despite Nasdaq first half rally",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/06/29/tech-ipo-drought-reaches-18-months-despite-nasdaq-first-half-rally.html?utm_source=openai"
+        },
+        {
+          "end_index": 1884,
+          "start_index": 1795,
+          "title": "The IPO drought was worse than you thought | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2023/08/29/ipo-drought-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 2335,
+          "start_index": 2216,
+          "title": "The Current State of the U.S. Venture Capital Industry (2025) - Alexander Furrier | Alexander Furrier",
+          "type": "url_citation",
+          "url": "https://afurrier.com/blog/the-current-state-of-the-us-venture-capital-industry-2025?utm_source=openai"
+        },
+        {
+          "end_index": 2741,
+          "start_index": 2605,
+          "title": "Tech IPOs are back, deal valuations are rising. Don't get fooled again",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/09/18/tech-ipos-are-back-deal-valuations-are-rising-dont-get-fooled-again.html?utm_source=openai"
+        },
+        {
+          "end_index": 3270,
+          "start_index": 3075,
+          "title": "IPO News - The year\u2019s VC-backed tech IPOs average a 73% return. Here\u2019s what it means for 2025. | Renaissance Capital",
+          "type": "url_citation",
+          "url": "https://www.renaissancecapital.com/IPO-Center/News/107552/The-year%E2%80%99s-VC-backed-tech-IPOs-average-a-73-percent-return.-Here%E2%80%99s-what-it-?utm_source=openai"
+        },
+        {
+          "end_index": 3846,
+          "start_index": 3709,
+          "title": "VC-Backed IPOs Had a Tepid First Half, Squeezing Venture Capital More",
+          "type": "url_citation",
+          "url": "https://www.wsj.com/articles/vc-backed-ipos-had-a-tepid-first-half-squeezing-venture-capital-more-95dc6ff2?utm_source=openai"
+        },
+        {
+          "end_index": 4255,
+          "start_index": 4150,
+          "title": "Special-purpose acquisition company",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Special-purpose_acquisition_company?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was accurate: the IPO/SPAC/direct-listing market for late-stage private tech companies was effectively frozen with very few exits from mid-2022 to mid-2024. Sources confirm a severe drought\u2014e.g., 90 tech IPOs in 2021 vs. only 5 combined in 2022-2023 ([BofA](https://business.bofa.com/en-us/content/tech-outlook/venture-funding-drops.html)); Barclays data: 2 tech IPOs in 2023, 5 in early 2024. Notable exceptions were clustered late: Arm, Instacart, Klaviyo (Sep 2023), Reddit/Astera Labs (Mar 2024), but overall a 'paucity' after 2021 boom, termed a 'tech IPO freeze' ([BDO](https://www.bdo.com/insights/advisory/the-tech-ipo-freeze)). SPACs collapsed with minimal tech de-SPACs; no major tech direct listings. Market thawed post-mid-2024."
+    },
+    {
+      "id": "F-00:23:28.340",
+      "result": "wrong",
+      "explanation": "Key facts:\n- PitchBook\u2013NVCA data show that U.S. VC deal value in 2021 was about $330B ($329.9B) \u2013 the peak year for deployment. ([nvca.org](https://nvca.org/pressreleases/u-s-venture-capital-soars-to-new-highs-in-2021/?utm_source=openai))\n- In 2022, U.S. VC deal value was $238.3B, down only ~30% from 2021 (about 70% of the 2021 level), not to one\u2011third. ([gamesbeat.com](https://gamesbeat.com/vc-investments-and-exits-plummeted-in-2022-nvca?utm_source=openai))\n- In 2023, U.S. venture deal value fell further to $170.6B\u2014roughly half of 2021, still well above one\u2011third. ([en.ain.ua](https://en.ain.ua/2024/01/04/over-2023-investors-put-345-7b-into-startups-bloomberg-report/?utm_source=openai))\n- In 2024, U.S. startup funding rebounded to about $209B, roughly 60% of 2021\u2019s level, again nowhere near one\u2011third. ([reuters.com](https://www.reuters.com/technology/artificial-intelligence/ai-startups-drive-vc-funding-resurgence-capturing-record-us-investment-2024-2025-01-07/?utm_source=openai))\n- By 2025, AI-driven megadeals had pushed U.S. VC investing back to its highest levels since 2021; H1 2025 already totaled about $163B and Q1 2025 dealmaking was described as a \u201cbiggest splurge in three years,\u201d putting 2025 on track to rival 2021 rather than remain at one\u2011third of it. ([rothschildandco.com](https://www.rothschildandco.com/en/newsroom/insights/2025/07/ga_growth_equity_update_edition_40/?utm_source=openai))\n\nAcross 2022\u20132024 (and into 2025), annual U.S. VC deployment has generally been in the ~50\u201370% of 2021 range and is now rebounding toward prior highs, not stabilizing around one\u2011third of 2021. That makes Sacks\u2019s quantitative prediction about future annual deployment levels substantially incorrect.",
+      "sources": [
+        {
+          "end_index": 272,
+          "start_index": 162,
+          "title": "U.S. Venture Capital Activity Soars to New Highs in 2021 as Deal Value Exceeds $300 Billion and Fundraising Tops $100 Billion - National Venture Capital Association - NVCA",
+          "type": "url_citation",
+          "url": "https://nvca.org/pressreleases/u-s-venture-capital-soars-to-new-highs-in-2021/?utm_source=openai"
+        },
+        {
+          "end_index": 497,
+          "start_index": 391,
+          "title": "U.S. VC investments and exits plummeted in 2022 | NVCA - GamesBeat",
+          "type": "url_citation",
+          "url": "https://gamesbeat.com/vc-investments-and-exits-plummeted-in-2022-nvca?utm_source=openai"
+        },
+        {
+          "end_index": 732,
+          "start_index": 608,
+          "title": "Over 2023, investors put $345.7B into startups, it\u2019s the lowest level since 2017 \u2014 Pitchbook - AIN",
+          "type": "url_citation",
+          "url": "https://en.ain.ua/2024/01/04/over-2023-investors-put-345-7b-into-startups-bloomberg-report/?utm_source=openai"
+        },
+        {
+          "end_index": 1032,
+          "start_index": 851,
+          "title": "AI startups drive VC funding resurgence, capturing record US investment in 2024",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/ai-startups-drive-vc-funding-resurgence-capturing-record-us-investment-2024-2025-01-07/?utm_source=openai"
+        },
+        {
+          "end_index": 1459,
+          "start_index": 1320,
+          "title": "Growth Equity Update | Edition 40",
+          "type": "url_citation",
+          "url": "https://www.rothschildandco.com/en/newsroom/insights/2025/07/ga_growth_equity_update_edition_40/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction claimed US VC annual deployment would fall to roughly one-third (~$118B) of 2021's level (~$355B) starting 2022 due to reverting from a 1-year to 2.5-3 year deployment cycle. Actual PitchBook-NVCA data: 2021: $354.6B; 2022: $238.2B (67%); 2023: $162.2B (46%); 2024: $209.0B (59%). Lowest was 46% of 2021, not 33%, with rebound in 2024 driven by AI megadeals. Q1 2025: $91.5B suggests continued high pace. Average 2022-2024: ~$203B (57%). [Q4 2024 PitchBook-NVCA Venture Monitor](https://nvca.org/wp-content/uploads/2025/01/Q4-2024-PitchBook-NVCA-Venture-Monitor.pdf); [Q1 2025 report](https://nvca.org/wp-content/uploads/2025/04/Q1-2025-PitchBook-NVCA-Venture-Monitor-19001.pdf)."
+    },
+    {
+      "id": "F-00:23:28.340-2",
+      "result": "wrong",
+      "explanation": "Real\u2011time and revised data show that after the weak first half of 2022, the U.S. economy did *not* experience the double\u2011dip pattern Sacks described.\n\n- BEA data show real GDP growth was positive in every quarter from Q3 2022 through Q4 2024 (e.g., Q4 2023 +3.4% annualized; Q1 2024 +1.4%; Q4 2024 +2.3\u20132.4%). This is a sustained expansion, not a brief, \u201cslightly positive\u201d pause before another downturn beginning soon after late 2022. ([apps.bea.gov](https://apps.bea.gov/scb/issues/2024/04-april/0424-gdp-economy.htm?utm_source=openai))\n- A summary table of quarterly real GDP growth through Q1 2025 shows continuous positive growth from Q3 2022 onward, with the *first* negative quarter after early 2022 only appearing in Q1 2025 (\u20130.3% annualized). ([visualcapitalist.com](https://www.visualcapitalist.com/charted-americas-gdp-decline-in-q1-2025/?utm_source=openai)) That is far later than \u201conce the full impact of [2022] interest\u2011rate hikes is felt\u201d and follows more than two years of solid growth.\n- Even with the Q1 2025 contraction, there has been only *one* negative GDP quarter so far; by either the popular \u201ctwo consecutive negative quarters\u201d rule or the broader NBER standard, this does not yet constitute a new recession or a clear \u201csecond dip.\u201d Major coverage notes that Q1 2025\u2019s drop has raised concerns but does not itself mark a recession. ([theguardian.com](https://www.theguardian.com/business/live/2025/apr/30/eurozone-gdp-growth-france-germany-italy-growth-recession-us-china-trade-war-business-live-news?utm_source=openai))\n- The National Bureau of Economic Research, which is the arbiter of U.S. business\u2011cycle dates, still lists the last recession as the COVID downturn that ended in April 2020 and has not announced any new peak or trough since then\u2014implying one long expansion from mid\u20112020 onward, not a double\u2011dip sequence. ([nber.org](https://www.nber.org/research/business-cycle-dating?utm_source=openai))\n\nBecause (1) there was no downturn beginning shortly after late 2022, (2) growth instead remained robust through 2023\u201324, and (3) as of late 2025 there is still no officially recognized second recession following a brief positive blip, Sacks\u2019s prediction of a double\u2011dip recession with the second dip starting after late 2022 has not materialized and is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 573,
+          "start_index": 471,
+          "title": "SCB, GDP and the Economy, April 2024",
+          "type": "url_citation",
+          "url": "https://apps.bea.gov/scb/issues/2024/04-april/0424-gdp-economy.htm?utm_source=openai"
+        },
+        {
+          "end_index": 906,
+          "start_index": 789,
+          "title": "Charted: America's GDP Decline in Q1 2025",
+          "type": "url_citation",
+          "url": "https://www.visualcapitalist.com/charted-americas-gdp-decline-in-q1-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 1583,
+          "start_index": 1395,
+          "title": "Trump claims shrinking US economy 'nothing to do with tariffs' as GDP drop raises risk of recession - as it happened",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/live/2025/apr/30/eurozone-gdp-growth-france-germany-italy-growth-recession-us-china-trade-war-business-live-news?utm_source=openai"
+        },
+        {
+          "end_index": 1974,
+          "start_index": 1891,
+          "title": "Business Cycle Dating | NBER",
+          "type": "url_citation",
+          "url": "https://www.nber.org/research/business-cycle-dating?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "US real GDP contracted -1.6% (annualized) in Q1 2022 and -0.6% in Q2 2022, meeting the technical definition of recession briefly. However, growth then turned strongly positive for **10 consecutive quarters** from Q3 2022 (+3.2%) through Q4 2024 (e.g., Q3 2023 +4.9%, Q4 2023 +3.4%, Q1 2024 +1.4%, Q2 2024 +3.0%), far from a 'slightly positive short period.' A single contraction occurred in Q1 2025 (-0.6%, revised, due to import surge pre-tariffs), followed by +3.8% in Q2 2025 and +3.9% estimated Q3 2025. No second downturn or recession after late 2022; NBER confirms no recession since April 2020 trough. No double-dip occurred. Sources: [BEA GDP](https://www.bea.gov/data/gdp/gross-domestic-product), [NBER Business Cycle Dating](https://www.nber.org/research/business-cycle-dating), [FRED GDPC1](https://fred.stlouisfed.org/series/GDPC1), Multpl.com GDP table."
+    },
+    {
+      "id": "E-00:25:29.540",
+      "result": "wrong",
+      "explanation": "Assessing the 18\u2011month window from roughly October 2022 through March 2024:\n\n1. **Unemployment \u201cwill go back up\u201d**  \n   *The data*: The U.S. unemployment rate was about 3.6% in Q4 2022 and only edged up to 3.8% by Q4 2023, with BLS explicitly describing the labor market as still \u201cstrong.\u201d([bls.gov](https://www.bls.gov/opub/mlr/2024/article/unemployment-rate-inches-up-during-2023-labor-force-participation-rises.htm?utm_source=openai))  It did not meaningfully deteriorate during 2023; the more noticeable rise to around 4.1% came later, in mid\u20112024, i.e., after most of his 18\u2011month window.([reuters.com](https://www.reuters.com/markets/us/us-employment-wage-growth-expected-moderate-june-2024-07-05/?utm_source=openai))  \n   **Verdict**: At best **marginally** correct and much milder than implied.\n\n2. **\u201cInflation will be sticky\u201d**  \n   *The data*: CPI inflation averaged 8.0% in 2022, then fell to 4.1% in 2023 and 2.9% in 2024.([usinflationcalculator.com](https://www.usinflationcalculator.com/inflation/annual-averages-for-rate-of-inflation/?utm_source=openai))  Year\u2011over\u2011year CPI was about 3% by mid\u20112023 and mid\u20113% by early 2024, well down from 2022\u2019s peak.([beautifydata.com](https://beautifydata.com/economics/united-states/consumer-price-index-and-inflation-rate/all-urban-consumers/seasonally-adjusted/by-area-per-month/us-city-average/2023/june?utm_source=openai))  Inflation remained above the Fed\u2019s 2% target but clearly decelerated instead of staying near 2022\u2019s highs.\n   **Verdict**: **Partly** right in the sense of remaining above target in 2023, but **wrong** on it staying broadly \u201csticky\u201d at 2022\u2011like stress levels.\n\n3. **\u201cReal earnings will shrink\u201d**  \n   *The data*: For 2023, BLS reports median usual weekly earnings up 5.5% while CPI rose 4.1%, meaning real median weekly pay **increased**.([bls.gov](https://www.bls.gov/opub/mlr/2024/article/unemployment-rate-inches-up-during-2023-labor-force-participation-rises.htm?utm_source=openai))  BLS real\u2011earnings series show real average hourly earnings rising in 2023\u201324 (e.g., +1.4% Jan 2023\u2013Jan 2024, with real weekly earnings roughly flat to slightly down, then positive into late 2024).([bls.gov](https://www.bls.gov/opub/ted/2024/real-average-hourly-earnings-increased-1-4-percent-from-january-2023-to-january-2024.htm?utm_source=openai))  Earlier in 2022 real earnings had been falling, but over most of his forecast window they recovered or at worst stagnated, not persistently shrank.\n   **Verdict**: **Wrong** for the forecast period.\n\n4. **\u201cConsumption will ebb\u201d for the U.S. consumer**  \n   *The data*: Personal consumption expenditures (PCE) kept growing. Current\u2011dollar PCE rose 9.8% in 2022 and another 6.4% in 2023.([fraser.stlouisfed.org](https://fraser.stlouisfed.org/title/bureau-economic-analysis-bea-news-releases-6148/personal-consumption-expenditures-state-2023-678295/content/fulltext/bea_newsreleases_20241003?utm_source=openai))  Real PCE for the nation increased 2.5% in 2023, with real PCE rising in 48 states and D.C.([bea.gov](https://www.bea.gov/news/2024/real-personal-consumption-expenditures-state-and-real-personal-income-state-and?utm_source=openai))  That is **slower** growth than 2021\u201322 but still healthy expansion, not an ebb or contraction.\n   **Verdict**: **Wrong**; consumer spending remained resilient in real terms.\n\n5. **\u201cEarnings will not be that great\u201d (corporate earnings)**  \n   *The data*: S&P 500 earnings growth for full\u2011year 2023 was about **0.6%**, far below the 10\u2011year average (~8%), with actual quarterly earnings declines in 1H23.([insight.factset.com](https://insight.factset.com/sp-500-cy-2023-earnings-preview-less-than-1-growth-expected?utm_source=openai))  That fits \u201cnot that great.\u201d However, by 2024, S&P 500 earnings rebounded strongly: estimates and realized data point to roughly 9\u201313% earnings growth for 2024, and Q4 2024 earnings were ~15% higher year\u2011over\u2011year.([apnews.com](https://apnews.com/article/d8cd65350e9af7e19aff92b8ce7dd5ea?utm_source=openai))  His timeframe\u2014\u201cthrough 2023 and possibly even a little bit of 24\u201d\u2014captures both a weak 2023 and the start of a strong 2024 rebound.\n   **Verdict**: **Largely right for 2023**, but **wrong** once 2024\u2019s rebound is included in his own stated horizon.\n\n6. **Overall consumer conditions (\u201creally tough, sticky time\u201d)**  \n   Pulling this together:\n   * Labor market stayed historically tight with only a slight uptick in unemployment through 2023.([bls.gov](https://www.bls.gov/opub/mlr/2024/article/unemployment-rate-inches-up-during-2023-labor-force-participation-rises.htm?utm_source=openai))  \n   * Inflation fell sharply from 2022 levels, even if still a bit above target.([usinflationcalculator.com](https://www.usinflationcalculator.com/inflation/annual-averages-for-rate-of-inflation/?utm_source=openai))  \n   * Real incomes and real consumption generally **rose**, not fell.([bls.gov](https://www.bls.gov/opub/mlr/2024/article/unemployment-rate-inches-up-during-2023-labor-force-participation-rises.htm?utm_source=openai))  \n   * Corporate earnings were flat/weak in 2023 but then strong in 2024.([insight.factset.com](https://insight.factset.com/sp-500-cy-2023-earnings-preview-less-than-1-growth-expected?utm_source=openai))  \n\n   Households certainly felt a squeeze from prior price jumps and high interest rates, but the **quantitative** indicators do not show the broad, sustained deterioration he predicted for the 18\u2011month period starting late 2022.\n\n**Bottom line:** Some narrow elements (slightly higher unemployment, lackluster 2023 earnings, above\u2011target inflation) align with his view, but the core of the prediction\u2014shrinking real earnings, ebbing consumption, and a generally \u201creally tough\u201d grind for consumers through 2023\u2013early 2024\u2014runs contrary to observed data. Overall the prediction is best characterized as **wrong**.",
+      "sources": [
+        {
+          "end_index": 473,
+          "start_index": 325,
+          "title": "Unemployment rate inches up during 2023, labor force participation rises : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/mlr/2024/article/unemployment-rate-inches-up-during-2023-labor-force-participation-rises.htm?utm_source=openai"
+        },
+        {
+          "end_index": 759,
+          "start_index": 629,
+          "title": "US labor market losing steam as unemployment rate climbs to 4.1%",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/markets/us/us-employment-wage-growth-expected-moderate-june-2024-07-05/?utm_source=openai"
+        },
+        {
+          "end_index": 1110,
+          "start_index": 975,
+          "title": "Average Inflation Rates in the United States",
+          "type": "url_citation",
+          "url": "https://www.usinflationcalculator.com/inflation/annual-averages-for-rate-of-inflation/?utm_source=openai"
+        },
+        {
+          "end_index": 1421,
+          "start_index": 1209,
+          "title": "United States Consumer Price Index for All Urban Consumers (CPI-U) and Inflation Rate: US city average in June 2023 (Seas Adj.)",
+          "type": "url_citation",
+          "url": "https://beautifydata.com/economics/united-states/consumer-price-index-and-inflation-rate/all-urban-consumers/seasonally-adjusted/by-area-per-month/us-city-average/2023/june?utm_source=openai"
+        },
+        {
+          "end_index": 2014,
+          "start_index": 1866,
+          "title": "Unemployment rate inches up during 2023, labor force participation rises : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/mlr/2024/article/unemployment-rate-inches-up-during-2023-labor-force-participation-rises.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2365,
+          "start_index": 2212,
+          "title": "Real average hourly earnings increased 1.4 percent from January 2023 to January 2024 : The Economics Daily: U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/ted/2024/real-average-hourly-earnings-increased-1-4-percent-from-january-2023-to-january-2024.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2979,
+          "start_index": 2756,
+          "title": "Full text of Bureau of Economic Analysis (BEA) News Releases : Personal Consumption Expenditures by State, 2023, BEA 24\u201346 : Full Release & Tables | FRASER | St. Louis Fed",
+          "type": "url_citation",
+          "url": "https://fraser.stlouisfed.org/title/bureau-economic-analysis-bea-news-releases-6148/personal-consumption-expenditures-state-2023-678295/content/fulltext/bea_newsreleases_20241003?utm_source=openai"
+        },
+        {
+          "end_index": 3211,
+          "start_index": 3071,
+          "title": "Real Personal Consumption Expenditures by State and Real Personal Income by State and Metropolitan Area, 2023 | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2024/real-personal-consumption-expenditures-state-and-real-personal-income-state-and?utm_source=openai"
+        },
+        {
+          "end_index": 3749,
+          "start_index": 3619,
+          "title": "S&P 500 CY 2023 Earnings Preview: Less Than 1% Growth Expected",
+          "type": "url_citation",
+          "url": "https://insight.factset.com/sp-500-cy-2023-earnings-preview-less-than-1-growth-expected?utm_source=openai"
+        },
+        {
+          "end_index": 4057,
+          "start_index": 3964,
+          "title": "Corporate earnings growth faces uncertainty amid inflation worries, policy shift impact",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/d8cd65350e9af7e19aff92b8ce7dd5ea?utm_source=openai"
+        },
+        {
+          "end_index": 4654,
+          "start_index": 4506,
+          "title": "Unemployment rate inches up during 2023, labor force participation rises : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/mlr/2024/article/unemployment-rate-inches-up-during-2023-labor-force-participation-rises.htm?utm_source=openai"
+        },
+        {
+          "end_index": 4872,
+          "start_index": 4737,
+          "title": "Average Inflation Rates in the United States",
+          "type": "url_citation",
+          "url": "https://www.usinflationcalculator.com/inflation/annual-averages-for-rate-of-inflation/?utm_source=openai"
+        },
+        {
+          "end_index": 5092,
+          "start_index": 4944,
+          "title": "Unemployment rate inches up during 2023, labor force participation rises : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/mlr/2024/article/unemployment-rate-inches-up-during-2023-labor-force-participation-rises.htm?utm_source=openai"
+        },
+        {
+          "end_index": 5297,
+          "start_index": 5167,
+          "title": "S&P 500 CY 2023 Earnings Preview: Less Than 1% Growth Expected",
+          "type": "url_citation",
+          "url": "https://insight.factset.com/sp-500-cy-2023-earnings-preview-less-than-1-growth-expected?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath's prediction of deteriorating US consumer conditions from late 2022 through end-2023 (possibly early 2024)\u2014with rising unemployment, sticky elevated inflation, declining real wages, weakening consumption, and poor corporate earnings\u2014did not fully materialize, as the US achieved a 'soft landing' without recession.\n\n- **Unemployment**: Stable at historic lows ~3.5-3.7% through 2023 (Sep 2022: 3.5% per BLS; annual avg 2023: 3.6% per Statista), only rising later (4.0% 2024 avg, 4.4% Sep 2025 per BLS/FRED). Did not rise as predicted. [BLS Sep 2022](https://www.bls.gov/news.release/archives/empsit_10072022.pdf), [YCharts](https://ycharts.com/indicators/us_unemployment_rate), [Statista](https://www.statista.com/statistics/193290/unemployment-rate-in-the-usa-since-1990/).\n\n- **Inflation**: Declined from 6.5% (2022 annual) to 3.4% (2023), 2.9% (2024), sticky above 2% target but not as persistent/severe. [USInflationCalculator](https://www.usinflationcalculator.com/inflation/current-inflation-rates/).\n\n- **Real wages**: Declined in 2022 amid high inflation but recovered (e.g., +1.4% Jan 2023-24 per BLS; +0.8% Sep 2024-25). [BLS Real Earnings](https://www.bls.gov/news.release/realer.nr0.htm).\n\n- **Consumption**: PCE growth slowed (current-dollar: 9.8% 2022 to 6.4% 2023; real +2.5% 2023) but remained positive/robust. [BEA](https://www.bea.gov/news/2024/personal-consumption-expenditures-state-2023).\n\n- **Corporate earnings**: S&P 500 poor in late 2022 (-12.7% Q4) but rebounded +11.4% annual 2023, +9.2% 2024. [Multpl](https://www.multpl.com/s-p-500-earnings-growth/table/by-year).\n\nConsumer conditions held up better than predicted, with low unemployment and resilient spending/earnings."
+    },
+    {
+      "id": "E-00:25:29.540-2",
+      "result": "right",
+      "explanation": "Evidence on the major U.S. equity indices lines up with Chamath\u2019s call that the 2022 bear market was in a *bottoming process* that would largely complete by late 2022 / early 2023, after which markets would base and move higher rather than making materially lower lows:\n\n- **S&P 500:** The index\u2019s lowest close of the 2022 bear market was 3,577.03 on October 12, 2022, and this level has not been undercut since. Market data and commentary widely treat that date as the bear\u2011market low, with the subsequent advance described as a new bull run that began from that October 12, 2022 bottom. ([statmuse.com](https://www.statmuse.com/money/ask/s-and-p-500-lowest-price-2022?utm_source=openai))\n- **Nasdaq Composite:** The Nasdaq\u2019s bear\u2011market closing low was 10,213.29 on December 28, 2022, the lowest close in 2022 and in the entire 2022\u20132024 window; after that, it trended higher and never printed a lower close through at least early 2024. ([statmuse.com](https://www.statmuse.com/money/ask/nasdaq-lowest-closing-in-2022?utm_source=openai))\n- **Russell 2000 (small caps):** Quarterly data show its 2022 lows occurring by mid\u20112022, with subsequent quarterly lows in late 2022 and through 2023 all above those levels, indicating the small\u2011cap bear phase had also bottomed by late 2022 and then based at higher levels. ([sec.gov](https://www.sec.gov/Archives/edgar/data/886982/000119312525299154/womrs009_prelim.htm?utm_source=openai))\n- **Post\u2011bottom behavior:** By June 2023, the S&P 500 had risen more than 20% from its October 2022 low\u2014meeting a common definition of a new bull market\u2014and subsequent drawdowns in 2023\u20132024 were corrections from significantly higher prices, not breaks to new cycle lows. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Closing_milestones_of_the_S%26P_500?utm_source=openai))\n\nTaken together, U.S. equity markets did finish their bottoming process roughly by the end of 2022 (S&P in October, Nasdaq by late December), and from early 2023 onward they formed a base and advanced without making substantially lower lows from those 2022 troughs. That matches the essence and timing of Chamath\u2019s prediction, so it is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 724,
+          "start_index": 624,
+          "title": "S And P 500 Lowest Price 2022 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/s-and-p-500-lowest-price-2022?utm_source=openai"
+        },
+        {
+          "end_index": 1075,
+          "start_index": 975,
+          "title": "Nasdaq Lowest Closing In 2022 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/nasdaq-lowest-closing-in-2022?utm_source=openai"
+        },
+        {
+          "end_index": 1468,
+          "start_index": 1352,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312525299154/womrs009_prelim.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1847,
+          "start_index": 1742,
+          "title": "Closing milestones of the S&P 500",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Closing_milestones_of_the_S%26P_500?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The S&P 500 reached its 2022 bear market low in October 2022, with the lowest closing price around 3,577 on October 12 (confirmed via multiple sources including Wikipedia's 2022 stock market decline page noting the yearly low in October, and analyst reports like Fundstrat calling it the bottom). The lowest close in early 2023 was 3,808.10 on January 5, 2023 (StatMuse Money), higher than the October low. End-2022 close was 3,839.50 (various historical data). After October 2022, the index did not make substantially lower lows, instead rallying 24% in 2023 and reaching new highs, forming a base as predicted (Macrotrends historical chart, YCharts data, Seeking Alpha articles confirming no S&P 500 new lows post-October 2022)."
+    },
+    {
+      "id": "E-00:25:29.540-3",
+      "result": "right",
+      "explanation": "Evidence from the major U.S. equity indices matches Chamath\u2019s call that by roughly late 2022 / early 2023 the market would have *bottomed and begun base\u2011building* rather than continuing its 2022 downtrend.\n\n1. **S&P 500 timing and bottom**  \n   * The S&P 500\u2019s bear\u2011market low is widely identified as **October 12, 2022**, when it closed at **3,577.03**; SEC tables list 3,577.03 as the low for Q4 2022. ([cnbc.com](https://www.cnbc.com/2022/10/11/stock-market-futures-open-to-close-news.html?utm_source=openai))  \n   * In Q1 2023 the S&P 500 traded in a higher range (low 3,808.10; high 4,179.76; quarter\u2011end 4,109.31), i.e., it *did not* make a lower low after October 2022. ([sec.gov](https://www.sec.gov/Archives/edgar/data/1045520/000110465925099566/tm2527656d28_424b2.htm?utm_source=openai))  \n   * By June 8, 2023 the index had risen more than 20% off its October 12 low, and multiple market commentaries and data providers marked this as the official end of the bear market and start of a new cyclical bull, with the bull market\u2019s start date defined as the **October 12, 2022** trough. ([rbcapitalmanagement.com](https://www.rbcapitalmanagement.com/blog/2nd-quarter-2023-a-new-bull-market?utm_source=openai))  \n   * By late 2024\u20132025, S&P 500 analyses and Reuters describe the ongoing advance as the same bull market that began from the October 12, 2022 bottom, with the index up on the order of ~90% from that low by October 2025. ([reuters.com](https://www.reuters.com/business/wall-streets-bull-market-nears-three-years-old-history-shows-it-may-still-have-2025-10-09/?utm_source=openai))  \n   Collectively, this shows the S&P 500 put in a **cyclical bottom in October 2022** (within Chamath\u2019s \u201cby the end of this year\u201d window) and then moved into a base\u2011and\u2011rally phase rather than continuing its prior steep downtrend.\n\n2. **Nasdaq Composite timing and bottom**  \n   * Reuters and other reports document that the **Nasdaq Composite** made its bear\u2011market closing low on **December 28, 2022**, at **10,213.29**, the lowest level of the decline that began in late 2021. ([investing.com](https://www.investing.com/news/economy/us-stocks-drop-on-recession-fears-nasdaq-closes-at-new-bear-market-low-2970691?utm_source=openai))  \n   * Historical summaries of Nasdaq closing milestones likewise identify **10,213.29 on December 28, 2022** as the \u201cultimate low\u201d of the 2022 bear market. ([grokipedia.com](https://grokipedia.com/page/Closing_milestones_of_the_Nasdaq_Composite?utm_source=openai))  \n   * From early 2023 onward, the Nasdaq began a powerful recovery: by the end of 2023 it was up more than **40% for the year**, largely driven by a renewed tech/AI rally, and by late 2024 it had roughly **doubled** from its 2022 low, surpassing 20,000. ([cnbc.com](https://www.cnbc.com/2023/12/28/stock-market-today-live-updates.html?utm_source=openai))  \n   These data show the Nasdaq\u2019s **cyclical bottom occurred in late December 2022**\u2014again squarely inside Chamath\u2019s \u201cend of this year\u201d timeframe\u2014with early 2023 marking the transition into a new uptrend/base rather than a continuation of the 2022 slide.\n\n3. **No undercut of those lows after Q1 2023**  \n   * SEC and index data through at least late 2024/2025 show that the S&P 500 never revisited or broke below its October 12, 2022 low: subsequent quarterly lows stayed hundreds of points above 3,577.03. ([sec.gov](https://www.sec.gov/Archives/edgar/data/1045520/000110465925099566/tm2527656d28_424b2.htm?utm_source=openai))  \n   * Similarly, later volatility and even new bear markets (e.g., for the Russell 2000 and a 2025 Nasdaq bear from much higher levels) occurred **far above** the 2022 troughs, consistent with those 2022 lows being the prior cycle\u2019s bottom rather than waypoints in a still\u2011ongoing decline. ([cnbc.com](https://www.cnbc.com/2025/04/03/small-cap-benchmark-russell-2000-becomes-first-major-us-stock-measure-to-enter-bear-market.html?utm_source=openai))  \n\n4. **Match to Chamath\u2019s prediction**  \n   * He predicted that **\u201cby the end of this year, beginning of next year\u201d** (i.e., roughly late 2022 into early 2023) the major U.S. indices would **have bottomed and begin building a base**, rather than continuing the sharp downtrend.  \n   * In reality, the S&P 500 and Nasdaq Composite **did** put in their cycle lows in **October 2022** and **December 2022**, respectively, and by Q1 2023 were trading in higher ranges that, in hindsight, marked the early phase of the current bull market. ([sec.gov](https://www.sec.gov/Archives/edgar/data/1045520/000110465925099566/tm2527656d28_424b2.htm?utm_source=openai))  \n\nGiven that both key benchmarks (S&P 500 and Nasdaq) bottomed within his stated window and then transitioned into a base\u2011and\u2011advance phase that has, with hindsight, been recognized as the start of a new bull market, the prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 548,
+          "start_index": 440,
+          "title": "S&P 500 closes lower, notching six days of losses ahead of key inflation report",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/10/11/stock-market-futures-open-to-close-news.html?utm_source=openai"
+        },
+        {
+          "end_index": 834,
+          "start_index": 714,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045520/000110465925099566/tm2527656d28_424b2.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1254,
+          "start_index": 1132,
+          "title": "2nd Quarter 2023: A New Bull Market? | RB Capital Management, LLC",
+          "type": "url_citation",
+          "url": "https://www.rbcapitalmanagement.com/blog/2nd-quarter-2023-a-new-bull-market?utm_source=openai"
+        },
+        {
+          "end_index": 1637,
+          "start_index": 1479,
+          "title": "Wall Street's bull market nears three years old; history shows it may still have life",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/wall-streets-bull-market-nears-three-years-old-history-shows-it-may-still-have-2025-10-09/?utm_source=openai"
+        },
+        {
+          "end_index": 2277,
+          "start_index": 2123,
+          "title": "U.S. stocks drop on recession fears, Nasdaq closes at new bear market low By Reuters",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/economy/us-stocks-drop-on-recession-fears-nasdaq-closes-at-new-bear-market-low-2970691?utm_source=openai"
+        },
+        {
+          "end_index": 2544,
+          "start_index": 2436,
+          "title": "Closing milestones of the Nasdaq Composite",
+          "type": "url_citation",
+          "url": "https://grokipedia.com/page/Closing_milestones_of_the_Nasdaq_Composite?utm_source=openai"
+        },
+        {
+          "end_index": 2901,
+          "start_index": 2801,
+          "title": "Stock market today: Live updates",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/12/28/stock-market-today-live-updates.html?utm_source=openai"
+        },
+        {
+          "end_index": 3534,
+          "start_index": 3414,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045520/000110465925099566/tm2527656d28_424b2.htm?utm_source=openai"
+        },
+        {
+          "end_index": 3986,
+          "start_index": 3827,
+          "title": "Small-cap benchmark Russell 2000 becomes first major U.S. stock measure to enter bear market",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/04/03/small-cap-benchmark-russell-2000-becomes-first-major-us-stock-measure-to-enter-bear-market.html?utm_source=openai"
+        },
+        {
+          "end_index": 4647,
+          "start_index": 4527,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045520/000110465925099566/tm2527656d28_424b2.htm?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The S&P 500 reached its 2022 bear market low closing price of 3,577.03 on October 12, 2022 ([StatMuse](https://www.statmuse.com/money/ask?q=s%2Band%2Bp%2B500%2Bclose%2Bon%2Boctober%2B12%252C%2B2022), [Yahoo Finance](https://finance.yahoo.com/quote/%5EGSPC/history/)). It closed at 3,839.50 on December 30, 2022 ([StatMuse](https://www.statmuse.com/money/ask?q=s%2Band%2Bp%2Bclose%2Bdecember%2B30%252C%2B2022), [FRED](https://fred.stlouisfed.org/data/SP500)), up ~7.4% from the low. By March 31, 2023, it closed around 4,109-4,121 ([DataHub](https://datahub.io/core/s-and-p-500)), up ~15% from the low. The Nasdaq Composite also bottomed mid-October 2022 (e.g., low closes around Oct 14; [Wikipedia 2022 decline](https://en.wikipedia.org/wiki/2022_stock_market_decline)). Post-October, indices rallied with volatility but no new lows until later 2023 corrections above 2022 bottoms ([Business Insider](https://markets.businessinsider.com/news/stocks/stock-market-likely-bottom-october-fundstrat-new-bull-rally-sp500-2023-3), [Seeking Alpha](https://seekingalpha.com/article/4644954-small-caps-broke-october-2022-lows-the-s-and-p-500-and-nasdaq-can-too)). This ended the pronounced 2022 downtrend, entering base-building/uptrend phase within the predicted window, confirming a cyclical bottom by Dec 2022-Mar 2023."
+    },
+    {
+      "id": "E-00:27:33.700",
+      "result": "right",
+      "explanation": "Multiple official and secondary sources show that during the post\u2011COVID inflation tightening cycle the Federal Reserve raised the target federal funds rate well above 5%. The FOMC began hiking from 0.00\u20130.25% in March 2022 and, through a sequence of increases, brought the target range to 4.75\u20135.00% on March 22, 2023, 5.00\u20135.25% on May 3, 2023, and then 5.25\u20135.50% on July 26, 2023, where it peaked. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Federal_funds_rate?utm_source=openai))  \n\nThese levels are consistent with data on the effective federal funds rate, which reached about 5.33% in August 2023. ([statista.com](https://www.statista.com/statistics/187616/effective-rate-of-us-federal-funds-monthly/?utm_source=openai))  \n\nBecause Chamath predicted on Sept 23, 2022 that the Fed funds rate in this inflationary tightening cycle would be \"at or breaching 5%,\" and the rate in fact rose to and above 5% in 2023, his prediction was **right**.",
+      "sources": [
+        {
+          "end_index": 522,
+          "start_index": 434,
+          "title": "Federal funds rate",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Federal_funds_rate?utm_source=openai"
+        },
+        {
+          "end_index": 767,
+          "start_index": 645,
+          "title": "U.S. federal funds rate 1954-2025| Statista",
+          "type": "url_citation",
+          "url": "https://www.statista.com/statistics/187616/effective-rate-of-us-federal-funds-monthly/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Federal Reserve raised the target range for the federal funds rate to 5.25%-5.50% on July 26, 2023, exceeding 5.0%. This was the peak of the tightening cycle that began in March 2022 in response to the 2021-2023 inflation surge, and the range was held there until September 2024. Sources: [Federal Reserve FOMC statements](https://www.federalreserve.gov/newsevents/pressreleases/monetary20230503a1.htm) (May 2023: 5.00-5.25%); [FRED data](https://fred.stlouisfed.org/series/DFEDTARU); [Forbes history](https://www.forbes.com/advisor/investing/fed-funds-rate-history/) confirms peak at 5.25-5.5% in 2023."
+    },
+    {
+      "id": "E-00:27:33.700-2",
+      "result": "right",
+      "explanation": "Multiple major \u201crisk asset\u201d benchmarks put in decisive cycle lows in late 2022 and have not undercut those lows through late 2025.\n\n* **U.S. equities:** The S&P 500\u2019s bear\u2011market closing low was 3,577.03 on October 12, 2022, which is widely cited as the bear\u2011market bottom; by June 2023 it had risen more than 20% off that level, marking the start of a new bull market, and later data still reference 3,577.03 as the 52\u2011week/bear\u2011market low. These lows have not been broken in subsequent corrections. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Closing_milestones_of_the_S%26P_500?utm_source=openai))  \n* **Growth/tech equities:** The Nasdaq Composite\u2019s bear\u2011market **closing** low occurred on December 28, 2022 at 10,213.29; later corrections in 2023\u20132025 have all occurred at much higher index levels, confirming that the trough remained in late 2022. ([investing.com](https://www.investing.com/news/economy/us-stocks-drop-on-recession-fears-nasdaq-closes-at-new-bear-market-low-2970691?utm_source=openai))  \n* **Crypto as a high\u2011beta risk asset:** Bitcoin\u2019s cycle low occurred around November 21, 2022, when it traded below $16,000; later on\u2011chain and market analyses explicitly identify that sub\u2011$16k level in November 2022 as the bear\u2011market bottom, and prices in 2024\u20132025 remain many multiples above it despite volatility. ([statmuse.com](https://www.statmuse.com/money/ask/bitcoin-lowers-price-november-2022?utm_source=openai))  \n* **Global equity risk:** Analyses of the 2022 stock market decline and MSCI ACWI performance note that global equities, including ACWI, reached their nadir in October 2022 before beginning a sustained recovery; by 2025 ACWI is trading far above its 2022 levels, consistent with an October\u20112022 global risk\u2011asset bottom. ([grokipedia.com](https://grokipedia.com/page/2022_stock_market_decline?utm_source=openai))\n\nGiven that the broad U.S. equity market, global equities, and a canonical high\u2011beta risk asset (Bitcoin) all made durable cycle lows in **late 2022** (October\u2013December) and have not set new lows since, Chamath\u2019s prediction that \u201crisk assets will bottom out by the end of this year, beginning of next year\u201d is well aligned with how the cycle actually played out.",
+      "sources": [
+        {
+          "end_index": 641,
+          "start_index": 536,
+          "title": "Closing milestones of the S&P 500",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Closing_milestones_of_the_S%26P_500?utm_source=openai"
+        },
+        {
+          "end_index": 1050,
+          "start_index": 896,
+          "title": "U.S. stocks drop on recession fears, Nasdaq closes at new bear market low By Reuters",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/economy/us-stocks-drop-on-recession-fears-nasdaq-closes-at-new-bear-market-low-2970691?utm_source=openai"
+        },
+        {
+          "end_index": 1478,
+          "start_index": 1373,
+          "title": "Bitcoin Lowers Price November 2022 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/bitcoin-lowers-price-november-2022?utm_source=openai"
+        },
+        {
+          "end_index": 1894,
+          "start_index": 1803,
+          "title": "2022 stock market decline",
+          "type": "url_citation",
+          "url": "https://grokipedia.com/page/2022_stock_market_decline?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The 2022 bear market saw broad risk assets reach cycle lows in late 2022. S&P 500 bottomed on Oct 12, 2022 ([PBS](https://www.pbs.org/newshour/economy/is-another-bear-market-coming-out-of-hibernation-heres-what-to-know), [Wikipedia](https://en.wikipedia.org/wiki/2022_stock_market_decline), [Venn](https://www.venn.twosigma.com/insights/safe-haven-assets-2022)). Nasdaq Composite neared its yearly low in late December 2022 ([Citizens Business Bank](https://www.cbbank.com/news-media/market-perspective-fourth-quarter-2022/)). No new cycle lows occurred in 2023-2025; S&P 500 rallied sharply (now ~6840, [YCharts](https://ycharts.com/indicators/sp_500)), up 25% in 2024, confirming late 2022 bottoms within the predicted timeframe."
+    },
+    {
+      "id": "E-00:54:47.640",
+      "result": "inconclusive",
+      "explanation": "The prediction has a 6\u20137 year horizon from 2022, i.e., through roughly 2028\u20132029, while the current date is November 30, 2025. That means only about 3 years of the forecast window have elapsed, so we cannot yet know whether prices will in fact \u201cdouble again\u201d by the end of the stated period.\n\nWhat we *can* check so far:\n\n- U.S. Energy Information Administration (EIA) data show that California\u2019s average retail electricity prices for residential customers have indeed risen substantially since 2022 (following strong increases that began earlier in the decade), but the final cumulative increase and full 6\u20137\u2011year path are not yet observable. Current prices do not yet represent a completed doubling from 2022 levels, nor do they show a clear, sustained *reversal* that would falsify the claim early; instead, they remain on an elevated, rising trajectory consistent with higher year\u2011over\u2011year growth, though exact annualized percentages vary by year and customer class. \n\nBecause (a) the forecast period is not over, and (b) nothing in the realized data so far definitively contradicts the possibility of doubling by 2028\u20132029, the only defensible judgment as of late 2025 is that the prediction\u2019s accuracy is **inconclusive (too early to tell)**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction requires retail electricity prices to double from 2022 levels within ~6-7 years (by 2028-2029). As of Dec 2025 (~3.25 years later), only ~3 years have passed, which is too early to verify the full timeframe. Trends so far are consistent with 7-11% annual increases: EIA data shows CA residential average price at 29.51 \u00a2/kWh (2023), 31.97 \u00a2/kWh (2024) [+8.3%]; CPUC reports IOU residential rates up ~24-41% from Jan 2022 to mid-2025 (e.g., PG&E ~27.4\u00a2 to 38.6\u00a2, ~12% CAGR). Estimated 2022 state avg ~27-28\u00a2 (inferred from CPUC Jan 2022 IOU rates & prior trends) to ~32\u00a2 now (~7-10% annual so far), but insufficient time elapsed for doubling. Sources: [EIA Electric Power Annual Table 2.10](https://www.eia.gov/electricity/annual/html/epa_02_10.html), [EIA Sales/Revenue Table 4](https://www.eia.gov/electricity/sales_revenue_price/pdf/table_4.pdf), [CPUC Public Advocates Q2 2025 Rates Report](https://www.publicadvocates.cpuc.ca.gov/-/media/cal-advocates-website/files/press-room/reports-and-analyses/250827-public-advocates-office-q2-2025-rates-report.pdf)."
+    }
+  ]
+}

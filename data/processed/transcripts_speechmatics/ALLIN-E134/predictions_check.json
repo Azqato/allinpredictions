@@ -1,0 +1,514 @@
+{
+  "meta": {
+    "count": 14,
+    "count_by_result": {
+      "ambiguous": 2,
+      "right": 4,
+      "inconclusive": 6,
+      "wrong": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:02:30.000",
+      "result": "ambiguous",
+      "explanation": "The concrete event referenced\u2014**a U.S. \u201chard landing\u201d (recession) in Q4 2023 or Q1 2024**\u2014did *not* occur. Real U.S. GDP grew at a 3.3% annualized rate in Q4 2023 and continued to expand at about 1.6% in Q1 2024, not contract. ([cnbc.com](https://www.cnbc.com/2024/01/25/gdp-q4-2023-the-us-economy-grew-at-a-3point3percent-pace-in-the-fourth-quarter.html?utm_source=openai)) NBER-based recession indicators show no officially dated U.S. recession in any quarter of 2023 or the first quarter of 2024, consistent with wider commentary that the U.S. economy avoided the widely forecast 2023 recession and instead achieved something close to a soft landing. ([ycharts.com](https://ycharts.com/indicators/nber_based_us_recession_indicators_from_the_peak_through_the_period_preceding_the_trough_quarterly?utm_source=openai))\n\nHowever, the *prediction itself* is a **probability assignment** (\u201cabout a 30% chance of a hard landing in Q4 or Q1\u201d), not a categorical claim that a recession would happen. Even though the event ultimately did *not* occur, a 30% ex\u2011ante probability is not falsified by a single non-occurrence; evaluating whether that probability was well calibrated would require many such forecasts, not one. Because we can clearly judge the outcome but **cannot rigorously judge the correctness of the 30% probability from a single realization**, the forecast is best classified as **ambiguous** rather than right or wrong.",
+      "sources": [
+        {
+          "end_index": 411,
+          "start_index": 264,
+          "title": "GDP Q4 2023: The U.S. economy grew at a 3.3% pace in the fourth quarter",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/01/25/gdp-q4-2023-the-us-economy-grew-at-a-3point3percent-pace-in-the-fourth-quarter.html?utm_source=openai"
+        },
+        {
+          "end_index": 855,
+          "start_index": 691,
+          "title": "NBER-based US Recession Indicators from the Peak through th\u2026",
+          "type": "url_citation",
+          "url": "https://ycharts.com/indicators/nber_based_us_recession_indicators_from_the_peak_through_the_period_preceding_the_trough_quarterly?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence found that Druckenmiller, Sternlicht, or Summers estimated ~30% probability of U.S. hard landing/recession specifically in Q4 2023 or Q1 2024 as of June 2023. Druckenmiller expected a hard landing (Reuters, Jun 7, 2023; Fortune, Jun 7, 2023) but no probability cited. Sternlicht predicted hard landing earlier (CNBC, Mar 23, 2023) and recession later (BI, Jul 27, 2023), no 30%. Summers cited 70% recession odds in next year (BI, May 1, 2023), higher than 30%. Apollo Global outlook (Jun 6, 2023) had 60% hard landing odds, but not attributed to these individuals. Extensive searches yielded no matching quotes."
+    },
+    {
+      "id": "B-00:18:30.000",
+      "result": "right",
+      "explanation": "Sacks\u2019 prediction was that Ukraine\u2019s June 2023 counteroffensive would make only minimal territorial gains and would fail to break through Russia\u2019s prepared defensive lines in a way that significantly reversed Russian territorial gains. In fact, the 2023 offensive (June\u2013Dec 2023) is now widely characterized as an \u201coperational failure,\u201d with Ukraine recapturing only 14 villages and roughly a few hundred square kilometers (about 370 km\u00b2) of territory\u2014incremental gains relative to the front\u2019s overall size and to Russian holdings. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2023_Ukrainian_counteroffensive)) Analyses at the end of 2023 noted that \u201cthe territorial lines of June 2023 have barely changed\u201d and that Ukraine had retaken only about 200 square miles (~520 km\u00b2) in 2023, underscoring the limited territorial impact. ([washingtonpost.com](https://www.washingtonpost.com/world/2023/12/04/ukraine-counteroffensive-stalled-russia-war-defenses/?utm_source=openai)) Key operational objectives\u2014such as breaching Russian defenses deeply enough to reach Tokmak or the Sea of Azov and sever the land bridge to Crimea\u2014were not achieved, and by early December 2023 multiple international outlets described the counteroffensive as stalled or failed. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2023_Ukrainian_counteroffensive)) Later, by May 2025, Russia had even recaptured all 14 villages Ukraine had gained in the 2023 offensive, meaning there was no lasting significant reversal of Russian territorial control from that operation. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2023_Ukrainian_counteroffensive?utm_source=openai)) Given the small, temporary territorial gains and the failure to achieve the main breakthrough and rollback objectives, Sacks\u2019 forward-looking assessment that the counteroffensive was \u201cnot going anywhere\u201d in strategic terms aligns with subsequent outcomes.",
+      "sources": [
+        {
+          "end_index": 648,
+          "start_index": 565,
+          "title": "2023 Ukrainian counteroffensive - Wikipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2023_Ukrainian_counteroffensive"
+        },
+        {
+          "end_index": 1010,
+          "start_index": 867,
+          "title": "In Ukraine, a war of incremental gains after counteroffensive stalls - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/world/2023/12/04/ukraine-counteroffensive-stalled-russia-war-defenses/?utm_source=openai"
+        },
+        {
+          "end_index": 1371,
+          "start_index": 1288,
+          "title": "2023 Ukrainian counteroffensive - Wikipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2023_Ukrainian_counteroffensive"
+        },
+        {
+          "end_index": 1680,
+          "start_index": 1579,
+          "title": "2023 Ukrainian counteroffensive",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2023_Ukrainian_counteroffensive?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction accurately foresaw minimal territorial gains persisting 2\u20133 weeks into the June 2023 counteroffensive (late June/early July) and the operation's overall failure to breach Russia's prepared defensive lines or significantly reverse gains. Early reports confirmed small initial advances (~90\u2013250 sq km by mid-July, per [Reuters June 12](https://www.reuters.com/world/europe/ukraine-reports-small-gains-early-stages-counteroffensive-2023-06-12/) and [Al Jazeera July 12](https://www.aljazeera.com/news/2023/7/12/analysis-ukraine-rolls-back-6-months-of-russian-gains-in-5-weeks)), but progress stalled amid strong defenses ([CNN June 23](https://www.cnn.com/2023/06/22/politics/ukraine-counteroffensive-western-assessment); [NBC Aug 4](https://www.nbcnews.com/news/investigations/ukraine-war-counteroffensive-russia-success-failure-rcna98054)). Total gains were ~370 sq km ([Wikipedia](https://en.wikipedia.org/wiki/2023_Ukrainian_counteroffensive)), negligible vs. Russia's ~100,000 sq km occupation. No major breakthrough occurred\u2014first lines breached locally by Sept (e.g., Verbove, per [Guardian Sep 2](https://www.theguardian.com/world/2023/sep/02/everything-is-ahead-of-us-ukraine-breaks-russias-first-line-of-defence-in-stronghold)), but second/third lines held, failing objectives like severing Crimea land bridge ([Reuters Dec 21](https://www.reuters.com/graphics/UKRAINE-CRISIS/MAPS/klvygwawavg/)). Consensus: stalled/failed ([NYT Dec 11](https://www.nytimes.com/2023/12/11/us/politics/us-ukraine-war-strategy.html); [WaPo Dec 4](https://www.washingtonpost.com/world/2023/12/04/ukraine-counteroffensive-stalled-russia-war-defenses/))."
+    },
+    {
+      "id": "B-00:31:20.000",
+      "result": "right",
+      "explanation": "Open sources indicate that Russia had **far more than 150,000 additional troops under arms for the Ukraine war by the end of 2023**, so Sacks\u2019 prediction that they would reach roughly that scale is directionally correct (if anything, conservative).\n\nKey points:\n\n1. **Partial mobilization before 2023 already added 300,000 reservists.** Putin\u2019s September 2022 decree mobilized about 300,000 reservists for the war.([the-independent.com](https://www.the-independent.com/news/vladimir-putin-ap-ukraine-moscow-kremlin-b2473424.html?utm_source=openai)) Those men were in addition to Russia\u2019s pre\u2011war active-duty force and were explicitly called up for the Ukraine campaign.\n\n2. **Russia then reported hundreds of thousands of new contract recruits in 2023.** At his year\u2011end press conference on December 14, 2023, Putin said that **486,000 people had signed contracts with the armed forces in 2023** and that there were **617,000 Russian personnel in the \u201ccombat zone.\u201d([themoscowtimes.com](https://www.themoscowtimes.com/2023/12/14/putin-says-over-600k-russian-servicemen-in-ukraine-a83429?utm_source=openai)) Independent outlet Meduza, citing the Defense Ministry, likewise reported **over 640,000 contract soldiers** in the army by late December 2023 and repeated the figure of **486,000 volunteers signed up in 2023.([meduza.io](https://meduza.io/en/news/2023/12/28/russian-defense-ministry-says-over-640-000-contract-soldiers-currently-serving-in-russian-army?utm_source=openai))  \n\n3. **Even critical analyses still imply additions well above 150,000.** RealClearDefense notes that some of the official recruitment figures are likely inflated or double\u2011count certain contract renewals, but concludes that the true number of people who actually signed contracts in 2023 is still \u201cseveral times lower than 490,000,\u201d not an order of magnitude lower. Even if one takes a very skeptical view\u2014say, only ~150,000\u2013200,000 net new contracts\u2014that still meets or slightly exceeds Sacks\u2019 150,000\u2011extra\u2011troops benchmark.([realcleardefense.com](https://www.realcleardefense.com/articles/2023/12/23/russian_armed_forces_remain_severely_understaffed_1000846.html?utm_source=openai))\n\n4. **Total active-force growth is consistent with a ~150,000+ net increase.** A 2025 U.S. Senate assessment, using NATO\u2011linked data, estimates Russia\u2019s active armed forces at about **1,134,000 troops in early 2025, up from ~900,000 pre\u2011war**\u2014a net increase of roughly **234,000**. This is consistent with Russia having added on the order of hundreds of thousands of personnel for the war by late 2023, and therefore at least 150,000.([congress.gov](https://www.congress.gov/event/119th-congress/senate-event/LC74771/text?utm_source=openai))\n\nGiven that **all plausible counts of Russian wartime force generation by end\u20112023 are at or well above 150,000 additional troops**, Sacks\u2019 prediction that Russia would have on the order of 150,000 extra men under arms for the Ukraine conflict by the end of 2023 is **substantively correct**, though actual numbers appear significantly higher than he suggested.",
+      "sources": [
+        {
+          "end_index": 585,
+          "start_index": 451,
+          "title": "Putin speeds up a citizenship path for foreigners who enlist in the Russian military | The Independent",
+          "type": "url_citation",
+          "url": "https://www.the-independent.com/news/vladimir-putin-ap-ukraine-moscow-kremlin-b2473424.html?utm_source=openai"
+        },
+        {
+          "end_index": 1145,
+          "start_index": 1004,
+          "title": "Putin Says Over 600K Russian Servicemen in Ukraine - The Moscow Times",
+          "type": "url_citation",
+          "url": "https://www.themoscowtimes.com/2023/12/14/putin-says-over-600k-russian-servicemen-in-ukraine-a83429?utm_source=openai"
+        },
+        {
+          "end_index": 1519,
+          "start_index": 1355,
+          "title": "Russian Defense Ministry says over 640,000 contract soldiers currently serving in Russian army \u2014 Meduza",
+          "type": "url_citation",
+          "url": "https://meduza.io/en/news/2023/12/28/russian-defense-ministry-says-over-640-000-contract-soldiers-currently-serving-in-russian-army?utm_source=openai"
+        },
+        {
+          "end_index": 2209,
+          "start_index": 2050,
+          "title": "Russian Armed Forces Remain Severely Understaffed | RealClearDefense",
+          "type": "url_citation",
+          "url": "https://www.realcleardefense.com/articles/2023/12/23/russian_armed_forces_remain_severely_understaffed_1000846.html?utm_source=openai"
+        },
+        {
+          "end_index": 2753,
+          "start_index": 2646,
+          "title": "S.Hrg. 119-160 \u2014 NATO SUMMIT 2025: AN ASSESSMENT OF TRANSATLANTIC SECURITY COOPERATION | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/event/119th-congress/senate-event/LC74771/text?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Russia did not conduct a formal 'partial mobilization' in 2023, but expanded its military significantly via contract soldiers specifically for the Ukraine war. On Dec 1, 2023, Putin decreed an increase of ~170,000 troops to a total of 1.32 million service personnel amid the war ([Al Jazeera](https://www.aljazeera.com/news/2023/12/2/russia-to-boost-size-of-armed-forces-by-170000-troops), [AP](https://apnews.com/article/russia-ukraine-putin-army-expansion-a2bf0b035aabab20c8b120a1c86c9e38)). Shoigu reported 335,000 contract sign-ups by Oct 2023 and 452,000 by Dec 1 ([Reuters](https://www.reuters.com/world/europe/russia-vows-no-new-mobilisation-335000-sign-up-fight-2023-10-03/), Al Jazeera). Troops in Ukraine grew from 410,000 (June 2023) to 470,000 (end 2023) per RUSI, and Putin cited 617,000 total there Dec 14 ([Moscow Times](https://www.themoscowtimes.com/2023/12/14/putin-says-over-600k-russian-servicemen-in-ukraine-a83429), [RUSI](https://www.rusi.org/explore-our-research/publications/commentary/russian-military-objectives-and-capacity-ukraine-through-2024)). This ~150k-170k addition via recruitment matches 'approximately 150,000 additional troops... added for this conflict,' equating to 'men under arms' in the original quote."
+    },
+    {
+      "id": "B-00:31:55.000",
+      "result": "inconclusive",
+      "explanation": "Available data show that the U.S. has **not yet** reached 90,000 155mm shells per month, but the prediction\u2019s time horizon (\u201caround 2028\u201d) is still in the future, so it cannot be definitively judged.\n\nKey points:\n- A Congressional Research Service report states that U.S. 155mm projectile output rose from about 14,400 per month in 2022 to **40,000 per month by 2024**, with a *target* of 100,000 per month by the end of 2025, not yet achieved as of September 2024. ([everycrsreport.com](https://www.everycrsreport.com/files/2024-09-16_R48182_efc76a6f433ff6ce906b442a0bf41d9f81667852.html?utm_source=openai))\n- Reporting based on an interview with the head of the U.S. Army\u2019s Program Executive Office for Ammunition and Armaments says that **as of June 2025** total U.S. production of complete 155mm rounds was still about **40,000 per month**, well below planned milestones (75,000 by April 2025, 100,000 by October 2025). ([en.defence-ua.com](https://en.defence-ua.com/analysis/us_is_falling_short_on_155mm_artillery_shell_production_current_output_and_1_million_goal_timeline-14894.html?utm_source=openai))\n- An August 14, 2025 article in *National Defense Magazine* quotes an Army spokesperson saying the service is **currently producing 40,000 rounds per month** and now does **not expect to reach 100,000 per month until mid\u20112026**, meaning even the revised goal precedes 2028 but has not yet been met. ([nationaldefensemagazine.org](https://www.nationaldefensemagazine.org/articles/2025/8/14/army-falls-short-of-155mm-production-goal?utm_source=openai))\n- NATO\u2011related and analytical reporting similarly notes that U.S. manufacturers are at roughly **40,000 rounds per month in 2025**, with ambitions of 100,000 per month slipping to 2026, again indicating current output is far under 90,000. ([businessinsider.com](https://www.businessinsider.com/nato-chief-mark-rutte-turning-the-tide-russia-ammo-production-2025-11?utm_source=openai))\n\nBecause:\n1. There is **no evidence** that U.S. production has already reached a sustained ~90,000 shells per month (which would clearly falsify the prediction), and\n2. The prediction asserts this level *won\u2019t* be reached **until around 2028**, a date still in the future as of November 30, 2025,\n\nwe cannot yet say whether Sacks\u2019s timeline is ultimately correct or incorrect. The most we can say is that, so far, reality (40k/month and delayed goals) is **compatible** with his pessimistic view, but the decisive 2026\u20132028 period has not arrived, so the prediction remains unresolved.",
+      "sources": [
+        {
+          "end_index": 651,
+          "start_index": 509,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.everycrsreport.com/files/2024-09-16_R48182_efc76a6f433ff6ce906b442a0bf41d9f81667852.html?utm_source=openai"
+        },
+        {
+          "end_index": 1153,
+          "start_index": 968,
+          "title": "U.S. is Falling Short on 155mm Artillery Shell Production: Current Output and 1 Million Goal Timeline | Defense Express",
+          "type": "url_citation",
+          "url": "https://en.defence-ua.com/analysis/us_is_falling_short_on_155mm_artillery_shell_production_current_output_and_1_million_goal_timeline-14894.html?utm_source=openai"
+        },
+        {
+          "end_index": 1605,
+          "start_index": 1454,
+          "title": "Army Falls Short of 155mm Production Goal",
+          "type": "url_citation",
+          "url": "https://www.nationaldefensemagazine.org/articles/2025/8/14/army-falls-short-of-155mm-production-goal?utm_source=openai"
+        },
+        {
+          "end_index": 1990,
+          "start_index": 1846,
+          "title": "NATO's chief says the West is finally 'turning the tide' on Russia's ammo advantage",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/nato-chief-mark-rutte-turning-the-tide-russia-ammo-production-2025-11?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "As of November/December 2025, US production of 155mm artillery shells remains at a sustained rate of approximately 40,000 per month, far below 90,000 (sources: [Military Times Nov 25, 2025](https://www.militarytimes.com/news/your-military/2025/11/25/us-army-wants-to-manufacture-30000-155mm-cluster-shells-per-year/), [Inside Defense Jul 2025](https://insidedefense.com/daily-news/armys-155mm-production-rate-stalls-100000-month-mark-delayed-till-spring-2026), [National Defense Mag Aug 2025](https://www.nationaldefensemagazine.org/articles/2025/8/14/army-falls-short-of-155mm-production-goal), AUSA posts). Official goals for 100,000/month have been delayed from late 2025 to mid-2026. No evidence of reaching ~90,000 sustained yet, but with 2+ years until 2028, too early to confirm if/when it will be achieved."
+    },
+    {
+      "id": "B-00:46:50.000",
+      "result": "wrong",
+      "explanation": "Taiwan held its combined presidential and legislative elections on January 13, 2024. In the presidential race, Lai Ching\u2011te of the incumbent, more China\u2011skeptical / pro\u2011U.S. Democratic Progressive Party (DPP) won with about 40% of the vote, defeating Hou Yu\u2011ih of the Kuomintang (KMT), which is generally viewed as more China\u2011friendly and Beijing\u2019s preferred interlocutor. Lai\u2019s victory gave the DPP an unprecedented third consecutive presidential term, meaning the pro\u2011West party *remained* in control of the presidency rather than being replaced by the more China\u2011friendly opposition. ([cnbc.com](https://www.cnbc.com/2024/01/13/taiwan-2024-election-dpps-lai-ching-te-wins.html?utm_source=openai))\n\nIn the legislative elections held the same day, the DPP did lose its majority, and the KMT became the largest single party in the Legislative Yuan (52 seats to the DPP\u2019s 51), with the Taiwan People\u2019s Party holding the balance of power. However, no party secured a majority, and executive power stayed with the DPP president. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Taiwanese_legislative_election?utm_source=openai))\n\nThe normalized prediction describes the China\u2011friendlier party as *winning power and replacing* the then\u2011ruling, more pro\u2011West party in the 2024 national election. Since the presidency\u2014the key lever of national executive power\u2014remained with the DPP, and the DPP was not replaced as the ruling party, this outcome contradicts the prediction. The partial legislative gains by the KMT do not amount to the pro\u2011China side \u201ctaking power\u201d in the sense of forming a new national government. Therefore, the prediction is best scored as **wrong**.",
+      "sources": [
+        {
+          "end_index": 732,
+          "start_index": 620,
+          "title": "Taiwan 2024 election: China skeptic Lai Ching-te wins presidential vote",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/01/13/taiwan-2024-election-dpps-lai-ching-te-wins.html?utm_source=openai"
+        },
+        {
+          "end_index": 1166,
+          "start_index": 1061,
+          "title": "2024 Taiwanese legislative election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Taiwanese_legislative_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Taiwan's 2024 presidential election occurred on January 13, 2024. Lai Ching-te of the Democratic Progressive Party (DPP, the incumbent pro-West party) won with 40.05% of the vote, defeating Hou Yu-ih of the Kuomintang (KMT, pro-China party) who received 33.49%. The DPP retained the presidency, and the pro-China KMT did not take power or replace the DPP. KMT gained seats in the legislature but no majority. Sources: [Wikipedia](https://en.wikipedia.org/wiki/2024_Taiwanese_presidential_election), [Al Jazeera](https://www.aljazeera.com/news/2024/1/13/taiwan-ruling-partys-lai-wins-presidential-election), [CSIS](https://www.csis.org/analysis/taiwans-2024-elections-results-and-implications)."
+    },
+    {
+      "id": "E-00:37:30.000",
+      "result": "right",
+      "explanation": "Antony Blinken visited Beijing on June 18\u201319, 2023, meeting with Foreign Minister Qin Gang, top diplomat Wang Yi, and President Xi Jinping in what was framed as a restart of senior-level engagement between the U.S. and China.\u3010([cnbc.com](https://www.cnbc.com/2023/06/20/us-china-relations-takeaways-from-blinkens-beijing-visit.html?utm_source=openai))\u3011  \n\nIn the following months, multiple additional high\u2011level U.S.\u2013China diplomatic visits took place:\n\n- **Janet Yellen (U.S. Treasury Secretary)** traveled to Beijing July 6\u20139, 2023, for meetings with senior Chinese officials. Her trip was explicitly described as part of ongoing efforts to stabilize U.S.\u2013China relations and came just weeks after Blinken\u2019s visit, making her the second U.S. cabinet member to visit China in a month.\u3010([home.treasury.gov](https://home.treasury.gov/news/press-releases/jy1588?utm_source=openai))\u3011  \n- **John Kerry (U.S. Special Presidential Envoy for Climate)** visited Beijing July 16\u201319, 2023, for talks with his Chinese counterparts; media noted this would be the *third* high\u2011level U.S. official trip to China in about a month, following Blinken and Yellen.\u3010([cnbc.com](https://www.cnbc.com/2023/07/12/john-kerry-to-visit-beijing-as-us-china-climate-talks-pick-up-again.html?utm_source=openai))\u3011  \n- **Gina Raimondo (U.S. Secretary of Commerce)** traveled to Beijing and Shanghai August 27\u201330, 2023, for meetings with senior PRC officials on the U.S.\u2013China commercial relationship, explicitly framed as deepening communication between the countries.\u3010([commerce.gov](https://www.commerce.gov/news/press-releases/2023/08/us-secretary-commerce-gina-raimondo-travel-peoples-republic-china?utm_source=openai))\u3011  \n- Later that year, **President Joe Biden and President Xi Jinping** met near San Francisco during the APEC summit in November 2023, an encounter reported as coming after a series of efforts to increase high\u2011level communication between the two governments.\u3010([cnbc.com](https://www.cnbc.com/2023/11/15/xi-biden-at-apec-summit-china-us-leaders-meet-in-san-francisco.html?utm_source=openai))\u3011  \n\nThese cabinet\u2011level and leader\u2011level visits are clearly *high\u2011level diplomatic meetings* and occurred in the months following Blinken\u2019s June 2023 trip, in line with the idea that there would be \u201cfollow on meetings coming out of this.\u201d Thus, the prediction that further senior U.S.\u2013China diplomatic engagements would follow Blinken\u2019s June 2023 Beijing visit was borne out by subsequent events.",
+      "sources": [
+        {
+          "end_index": 384,
+          "start_index": 259,
+          "title": "U.S.-China relations: Takeaways from Blinken's Beijing visit",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/06/20/us-china-relations-takeaways-from-blinkens-beijing-visit.html?utm_source=openai"
+        },
+        {
+          "end_index": 916,
+          "start_index": 823,
+          "title": "Media Advisory: Secretary of the Treasury Janet L. Yellen to Travel to the People\u2019s Republic of China | U.S. Department of the Treasury",
+          "type": "url_citation",
+          "url": "https://home.treasury.gov/news/press-releases/jy1588?utm_source=openai"
+        },
+        {
+          "end_index": 1320,
+          "start_index": 1184,
+          "title": "John Kerry to visit Beijing as U.S.-China climate talks pick up again",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/07/12/john-kerry-to-visit-beijing-as-us-china-climate-talks-pick-up-again.html?utm_source=openai"
+        },
+        {
+          "end_index": 1731,
+          "start_index": 1577,
+          "title": "U.S. Secretary of Commerce Gina Raimondo to Travel to the People\u2019s Republic of China | U.S. Department of Commerce",
+          "type": "url_citation",
+          "url": "https://www.commerce.gov/news/press-releases/2023/08/us-secretary-commerce-gina-raimondo-travel-peoples-republic-china?utm_source=openai"
+        },
+        {
+          "end_index": 2123,
+          "start_index": 1992,
+          "title": "Xi, Biden at APEC summit: China, U.S. leaders meet in San Francisco",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/11/15/xi-biden-at-apec-summit-china-us-leaders-meet-in-san-francisco.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Blinken's June 18-19, 2023, visit to Beijing explicitly led to agreements for follow-on high-level engagements, as stated by the U.S. State Department: 'Both sides agreed on follow-on senior engagements in Washington and Beijing' ([CNBC](https://www.cnbc.com/2023/06/20/us-china-relations-takeaways-from-blinkens-beijing-visit.html)). Subsequent meetings included: Treasury Sec. Yellen's July 2023 Beijing visit; Biden-Xi summit Nov. 2023 at APEC ([CFR Timeline](https://www.cfr.org/timeline/us-china-relations)); Blinken's April 2024 China trip ([USIP](https://www.usip.org/publications/2024/04/blinkens-china-trip-shows-both-sides-want-stabilize-ties)); and multiple Sullivan-Wang Yi talks in 2023-2024. These confirm additional U.S.-China high-level diplomatic meetings in subsequent months as a direct continuation."
+    },
+    {
+      "id": "E-00:49:55.000",
+      "result": "inconclusive",
+      "explanation": "The prediction ties wealthy Taiwanese families\u2019 relocation to a specific trigger: when the *fifth* advanced semiconductor fab in Arizona comes online, a milestone E thought would be around 2025\u201326.\n\nAs of November 30, 2025, that trigger has not clearly occurred:\n- TSMC\u2019s Arizona complex is planned as a six\u2011fab \u201cgigafab\u201d cluster, but only the first fab is in production (4 nm). The second fab\u2019s construction is complete but is not in high\u2011volume 3 nm production yet; additional fabs (including those that would be numbered fourth through sixth) remain in earlier planning or construction phases, with volume production for 3 nm and 2 nm now targeted closer to 2028\u201329 rather than mid\u20112020s. ([en.wikipedia.org](https://en.wikipedia.org/wiki/TSMC_Arizona?utm_source=openai))\n- Intel\u2019s new Fab 52 in Chandler, Arizona, is described as the fifth high\u2011volume fab on the Ocotillo campus and only began (or is just beginning) high\u2011volume 18A production in 2025, with Fab 62 following later; broader CHIPS\u2011Act\u2011driven build\u2011out timelines have slipped relative to early political rhetoric. ([all-about-industries.com](https://www.all-about-industries.com/intels-fab-52-in-arizona-starts-18a-production-a-1f1384dccbe7826ad85e02059431ec03/?utm_source=openai))\n\nSo the semiconductor build\u2011out that E anchored to a \u2018fifth fab\u2019 coming online in 2025\u201326 has not fully materialized yet; the relevant milestone is still in the future or at least not well defined in public data.\n\nOn the other side of the prediction \u2013 that by that time at least some wealthy Taiwanese families would have moved most of their family members out of Taiwan \u2013 this concerns private family decisions. Public reporting does note some Taiwanese engineers relocating with families to Arizona for multi\u2011year TSMC assignments, sometimes seeing it as an opportunity for their children to gain U.S. citizenship, but these are tied to employment rotations and not documented as permanent political\u2011risk flight timed to a specific fab count. ([restofworld.org](https://restofworld.org/2024/tsmc-arizona-expansion/?utm_source=openai)) There is no way from open sources to verify whether the particular \u2018very influential Taiwanese family\u2019 E mentioned has in fact moved most of its members abroad.\n\nBecause (a) the specific triggering condition (the fifth advanced fab coming online in Arizona under the CHIPS build\u2011out) has not clearly been reached yet, and (b) the family\u2011relocation outcome is inherently opaque to public data, the prediction cannot be evaluated at this time.\n\nTherefore, the correct status is: it is too early and not practically observable \u2192 inconclusive.",
+      "sources": [
+        {
+          "end_index": 817,
+          "start_index": 735,
+          "title": "TSMC Arizona",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/TSMC_Arizona?utm_source=openai"
+        },
+        {
+          "end_index": 1293,
+          "start_index": 1126,
+          "title": "Intel's Fab 52 in Arizona: 18A Mass Production Begins",
+          "type": "url_citation",
+          "url": "https://www.all-about-industries.com/intels-fab-52-in-arizona-starts-18a-production-a-1f1384dccbe7826ad85e02059431ec03/?utm_source=openai"
+        },
+        {
+          "end_index": 2134,
+          "start_index": 2043,
+          "title": "Inside TSMC\u2019s Phoenix, Arizona expansion struggles - Rest of World",
+          "type": "url_citation",
+          "url": "https://restofworld.org/2024/tsmc-arizona-expansion/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The fifth advanced semiconductor fab in Arizona under the CHIPS Act is not yet operational as of December 2025. TSMC's first Arizona fab began high-volume N4 production in Q4 2024/early 2025; second fab construction completed in 2025 with production slated for 2027-2028; third fab groundbreaking in April 2025, later production. Plans exist for more fabs (up to 6), but no fifth operational. Intel's Fab 52 (fifth at its campus) is operational in 2025, but predates CHIPS focus and is not TSMC/contextual. No evidence of wealthy Taiwanese families relocating most members out of Taiwan by this time, anticipating reduced U.S. defense post-fab; instead, Taiwanese workers/families have moved *to* Arizona for TSMC jobs, forming communities like 'Tiny Taipei'. Polls show low fear of imminent Chinese invasion. Too early to assess as trigger event (2025-2026) ongoing. **Sources**: TSMC.com, Wikipedia TSMC Arizona, Reuters (Jan 2025), NYT (Jan 2025), TrendForce, Reuters polls (Oct 2024)."
+    },
+    {
+      "id": "E-01:13:09.000",
+      "result": "inconclusive",
+      "explanation": "Available data show *many* unicorns have been marked down or raised down rounds since 2022, but they fall far short of \u201cessentially all,\u201d and the prediction is framed with an open\u2011ended \u201ceventually,\u201d so it cannot yet be definitively judged.\n\nKey points:\n\n- The order of magnitude in the setup is correct: multiple sources put the global unicorn count around 1,200\u20131,400 in the early\u2011 to mid\u20112020s, matching E\u2019s reference to ~1,400 unicorns at the end of 2022.([endeavor.org](https://endeavor.org/catalyst/unicorn-tracker/?utm_source=openai))\n- A detailed analysis by Peter Walker of unicorns minted before the 2022 downturn (a 616\u2011company subset) found that, as of 2024: only ~29% had raised *any* new financing after the start of 2022, only 112 had true primary follow\u2011on rounds, and just 67 companies (about 13% of that cohort) had raised down rounds\u2014though down rounds were 45% of the rounds *that did happen*.([linkedin.com](https://www.linkedin.com/posts/peterjameswalker_startups-unicorns-founders-activity-7296952370142265345-XRY2)) This is dramatically below \u201c100%,\u201d but most of the cohort hasn\u2019t tested the market yet.\n- Other broad data sets also show down rounds are elevated but still a minority of financings: Morningstar/PitchBook report that 11% of unicorn financing rounds in 2022 were down rounds, up from 7% in 2021;([indexes.morningstar.com](https://indexes.morningstar.com/insights/index-ip/blt2bdca61bcec5e96e/down-rounds-up-according-to-morningstar-pitchbook-global-unicorn-indexes?utm_source=openai)) and PitchBook data cited in 2025 show 15.9% of all VC deals that year to date were down rounds, a decade high but far from universal.([businesspostcorner.com](https://businesspostcorner.com/startup-down-rounds-are-at-a-ten-year-high-according-to-pitchbook-data/?utm_source=openai)) A Financial Times review of European unicorns notes only about half have raised since the 2021\u201322 peak, and roughly two in five of those fundraising startups took down rounds.([ft.com](https://www.ft.com/content/b83cab76-5364-47ed-abf2-48e4bbc76228?utm_source=openai))\n- At the same time, some evidence supports the *magnitude* part of the prediction: secondary trading data from Forge show that, for late\u2011stage private companies that *did* trade between Q4 2021 and Q4 2022, median prices were about 50% below the last primary round, implying very large valuation resets among active traders.([forgeglobal.com](https://forgeglobal.com/insights/reports/investors-eye-next-wave-of-2023-unicorns/?utm_source=openai)) So where repricing occurs, 50%+ declines are common.\n- However, commentary on the current unicorn landscape emphasizes that a large fraction of the ~1,400 private unicorns as of 2024 have not been repriced and may never raise new equity at all (because they run on existing cash, reach profitability, exit via M&A/IPO without another private round, or quietly wind down).([duetpartners.com](https://www.duetpartners.com/newsletter/27th-january-2022/?utm_source=openai)) If a unicorn is acquired for cash or IPOs and never does a private down round, E\u2019s \u201c100% will do a down round\u201d assertion would be false for that firm\u2014but systematically proving that for the entire 2022 cohort is not yet possible.\n\nTaken together, the data clearly contradict the *spirit* of \u201c100% of unicorns will do a down round soon,\u201d because only a minority have actually raised down rounds so far, even in a very tough market. But since the forecast is explicitly about what will happen *eventually* over the full remaining life of these ~1,400 companies, and most of them have not yet raised again, we cannot conclusively say today that the universal-quantifier claim (\u2248100% of them) has failed. Likewise, the average eventual valuation decline across the whole cohort cannot yet be measured. Thus, under a strict standard of whether the prediction has definitively come true or been definitively falsified, the correct rating is **inconclusive**.",
+      "sources": [
+        {
+          "end_index": 585,
+          "start_index": 503,
+          "title": "Unicorn Tracker - Endeavor",
+          "type": "url_citation",
+          "url": "https://endeavor.org/catalyst/unicorn-tracker/?utm_source=openai"
+        },
+        {
+          "end_index": 1084,
+          "start_index": 958,
+          "title": "What will happen to all the unicorn companies created before venture took a nosedive in 2022? | Peter Walker",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/posts/peterjameswalker_startups-unicorns-founders-activity-7296952370142265345-XRY2"
+        },
+        {
+          "end_index": 1569,
+          "start_index": 1380,
+          "title": "Down Rounds Up, According to Morningstar PitchBook Global Unicorn Indexes | Morningstar Indexes",
+          "type": "url_citation",
+          "url": "https://indexes.morningstar.com/insights/index-ip/blt2bdca61bcec5e96e/down-rounds-up-according-to-morningstar-pitchbook-global-unicorn-indexes?utm_source=openai"
+        },
+        {
+          "end_index": 1851,
+          "start_index": 1703,
+          "title": "Startup down rounds are at a ten-year high, according to PitchBook data - BusinessPostCorner.com",
+          "type": "url_citation",
+          "url": "https://businesspostcorner.com/startup-down-rounds-are-at-a-ten-year-high-according-to-pitchbook-data/?utm_source=openai"
+        },
+        {
+          "end_index": 2120,
+          "start_index": 2027,
+          "title": "Europe can still birth the occasional unicorn",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/b83cab76-5364-47ed-abf2-48e4bbc76228?utm_source=openai"
+        },
+        {
+          "end_index": 2567,
+          "start_index": 2446,
+          "title": "Private Market Update: Data Indicates More Balance in 2023 - Forge",
+          "type": "url_citation",
+          "url": "https://forgeglobal.com/insights/reports/investors-eye-next-wave-of-2023-unicorns/?utm_source=openai"
+        },
+        {
+          "end_index": 3038,
+          "start_index": 2940,
+          "title": "27th January 2022 - Duet Partners",
+          "type": "url_citation",
+          "url": "https://www.duetpartners.com/newsletter/27th-january-2022/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction claimed \u2248100% of ~1,400 end-2022 unicorns would eventually raise down rounds, with average decline >50% from peak private vals. By Dec 2025 (2.5 years later), this has not occurred. CB Insights reports ~1,276 unicorns as of Jul/Nov 2025, similar to 2022 levels (~1,200-1,400 per sources like Statista/CB Insights). Industry Ventures (Jul 2024, n=391 sample): >80% at lower FMV than 2021/22 peaks, ~30% de-horned (<$1B), but FMV \u2260 down rounds (new funding). PitchBook/Crunchbase: 350+ US unicorns (of ~700-800) raised no new rounds since 2022 (Aug 2025 Crunchbase/LinkedIn); down rounds are 11-20% of VC deals (2023-25, PitchBook), rising to 16% YTD 2025 but far from 100%. Late-stage down rounds ~28% in Q3 2025 (Aumni). Many stagnant, AI unicorns up (100+ since 2022, CB Insights), VC rebounding (highest since 2022). No data shows near-100% down rounds or avg >50% decline for those raising; many exited/IPO without down rounds. Prediction hyperbolic and falsified by data. Sources: [CB Insights Unicorn Map](https://www.cbinsights.com/research/report/unicorn-startups-valuations-headcount-investors/), [Industry Ventures](https://www.industryventures.com/insight/thinning-the-herd/), PitchBook reports, Crunchbase."
+    },
+    {
+      "id": "E-01:14:46.670",
+      "result": "inconclusive",
+      "explanation": "The prediction concerns the *ultimate* fate of the cohort of roughly 1,200\u20131,400 unicorns valued over $1B at the end of 2022, asserting that about 30\u201340% will eventually fail and effectively disappear as independent companies. No time horizon was specified, so this is a long\u2011run claim.\n\nAvailable data show:\n- Estimates put the global unicorn count around 1,200\u20131,300 at the end of 2022.\u00a0([pwc.co.uk](https://www.pwc.co.uk/services/audit/insights/global-top-100-unicorns/2023.html?utm_source=openai))\n- By late 2023 and early 2024, the total number of active unicorns had *increased* to roughly 1,400\u20131,500, with exits and shutdowns relatively scarce.\u00a0([news.crunchbase.com](https://news.crunchbase.com/venture/unicorn-board-ye-december-2023-ai/?utm_source=openai))\n- As of 2025, CB Insights and PwC still count roughly 1,300\u20131,600 unicorns globally, again indicating that most of the earlier cohort remain in existence.\u00a0([cbinsights.com](https://www.cbinsights.com/research-unicorn-companies?utm_source=openai))\n- Analyses of the Crunchbase Unicorn Board suggest only a small number of unicorns have dropped off the list due to closure or down\u2011rounds since 2022 (around a few dozen), far below 30\u201340% of the global unicorn population, and exits via IPO/M&A are also running at a modest annual pace.\u00a0([africatalksbusiness.com](https://www.africatalksbusiness.com/2025/06/18/the-great-unicorn-backlog-visualizing-a-decade-of-private-market-buildup/?utm_source=openai))\n\nHowever, these figures do *not* track, in a clean way, the specific end\u20112022 cohort over its full remaining lifespan, nor do they tell us what share of that cohort will eventually shut down or be absorbed in distressed sales. Since many unicorns are still private and may fail or be written down years from now, and because we do not yet observe anything close to a final outcome for that cohort, it is too early to verify or falsify the claim that 30\u201340% will ultimately disappear.\n\nGiven the open\u2011ended timeframe and incomplete outcome data on the 2022 unicorn cohort, the prediction cannot yet be judged as clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 549,
+          "start_index": 437,
+          "title": "2023 December - Global Top 100 Unicorns - PwC UK",
+          "type": "url_citation",
+          "url": "https://www.pwc.co.uk/services/audit/insights/global-top-100-unicorns/2023.html?utm_source=openai"
+        },
+        {
+          "end_index": 820,
+          "start_index": 707,
+          "title": "AI Leads New Unicorn Creation As Ranks Of $1B Startups Swells",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/unicorn-board-ye-december-2023-ai/?utm_source=openai"
+        },
+        {
+          "end_index": 1073,
+          "start_index": 982,
+          "title": "The Complete List Of Unicorn Companies",
+          "type": "url_citation",
+          "url": "https://www.cbinsights.com/research-unicorn-companies?utm_source=openai"
+        },
+        {
+          "end_index": 1534,
+          "start_index": 1367,
+          "title": "The Great Unicorn Backlog: Visualizing A Decade Of Private-Market Buildup - Africa Talks Business",
+          "type": "url_citation",
+          "url": "https://www.africatalksbusiness.com/2025/06/18/the-great-unicorn-backlog-visualizing-a-decade-of-private-market-buildup/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns the *ultimate* fate of ~1,400 end-2022 unicorns, with 30-40% (420-560) expected to shutdown or undergo distressed acqui-hires due to lacking product-market fit, rather than growing. As of Dec 2025 (~3 years later), unicorn counts have *grown* to 1,314 (CB Insights, Nov 2025), 1,539 (PitchBook, Oct 2025), or 1,637 (Crunchbase, Nov 2025) from ~1,200-1,400 end-2022. Hurun reports show minor demotions: 42 lost unicorn status in 2023, 52 in 2025 (mostly down rounds, not shutdowns). Shutdowns are a 'handful' annually (e.g., Olive AI 2023, Northvolt 2024/25, Veev, Convoy), totaling dozens far below 30-40% ([Fortune](https://fortune.com/longform/failed-unicorn-startups-billion-dollar-valuation-unicorpses/), [Crunchbase stalled unicorns](https://news.crunchbase.com/public/stalled-unicorn-venture-funding-ai-saas-healthcare/)). Hundreds stalled (no funding since 2021) support PMF concerns, but not 'disappeared.' Median unicorn lifespan to exit/IPOs is 7+ years; too early for 'ultimate' outcomes ([Visual Capitalist](https://www.visualcapitalist.com/cp/unicorns-exit-years/), Chicago Booth)."
+    },
+    {
+      "id": "E-01:15:06.000",
+      "result": "ambiguous",
+      "explanation": "Available data confirms a *broad* pattern of large markdowns among 2020\u20132022-vintage unicorns, but it does **not** allow us to rigorously test the *specific* quantitative claim that ~40% of the end\u20112022 unicorn cohort are \u201creal but overvalued\u201d and will see 50\u201380% valuation cuts before raising more capital or going public.\n\nKey points:\n\n1. **Evidence of widespread markdowns among recent unicorns**  \n   - Analyses from 2023\u20132025 (e.g., from CB Insights, PitchBook, and other venture reports) consistently describe a large share of 2021\u20132022 unicorns facing significant valuation pressure, down rounds, and internal markdowns by crossover funds and late\u2011stage investors, often in the 50%+ range from peak private valuations.   \n   - Many well\u2011known late\u2011stage startups (e.g., fintech, enterprise SaaS, quick\u2011commerce, and consumer marketplaces) have had reported or implied valuation cuts in that ballpark when they eventually raised again or repriced internally, supporting the *direction* of the prediction.\n\n2. **But no comprehensive dataset that cleanly maps to the claim**  \n   To directly verify the prediction we would need:\n   - A clearly defined list of all *end\u20112022 unicorns* (not just U.S., but globally, if that was implied).  \n   - Company\u2011level data on *peak private valuation* vs *subsequent valuation marks* (including internal marks by major funds, secondary transactions, and priced rounds) through late 2025.  \n   - The ability to categorize each unicorn as:  \n     1) a \u201creal but overvalued\u201d business, versus  \n     2) fundamentally unsound / should not have been funded at all, versus  \n     3) still reasonably fairly valued.  \n   None of the public datasets or reports aggregate data with these exact buckets or provide a clean percentage of companies that suffered 50\u201380% markdowns from their peak.\n\n3. **Conceptual and measurement issues**  \n   - *\u201cReal but overvalued\u201d* is a qualitative classification that different analysts would apply inconsistently. Public reports and databases do not encode this label.  \n   - Many unicorns remain private and opaque: internal fund marks, secondary prices, and structured rounds are often undisclosed, so even the true magnitude of markdowns is unknown for a large subset.  \n   - The condition *\u201cbefore they can access new capital or public markets\u201d* is also hard to verify. Some firms raised flat or slightly down rounds with hidden structure (e.g., liquidation preferences, ratchets) that obscure the effective markdown; others raised insider extension rounds without public valuation disclosure. These nuances are not captured in simple headline-valuation datasets.\n\n4. **Directionally plausible but not verifiable at the 40% level**  \n   Qualitatively, the prediction aligns with what\u2019s been widely reported:\n   - A minority of unicorns have held up or grown into their valuations.  \n   - A substantial fraction have seen very large valuation cuts, often in a 50\u201380% band from 2021\u20132022 peaks.  \n   - Some have effectively failed or become \u201cwalking dead.\u201d  \n   However, we do not have robust, public, granular data to state that *roughly 40%* of the end\u20112022 unicorn cohort specifically fall into this \u201creal but overvalued, marked down 50\u201380%\u201d bucket.\n\nBecause the necessary cohort\u2011level, company\u2011level, and classification data do not exist in public sources in a way that would let us test the claim with any precision, the prediction cannot be cleanly judged right or wrong, even though enough time has passed. Hence the result is **ambiguous**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction claimed ~40% of end-2022 unicorns (~1,200 per CB Insights reports around late 2022, e.g., [State of Venture 2022](https://www.cbinsights.com/research/report/venture-trends-2022/)) would be real but overvalued businesses marked down 50-80% from peak private valuations before new capital/public markets. However, by late 2025, CB Insights lists over 1,300 active unicorns, Crunchbase ~1,500+. Only ~40 unicorns dropped off Crunchbase board since 2022 due to lowered valuations or closures ([Crunchbase](https://news.crunchbase.com/startups/decade-private-market-unicorn-backlog/)). Down rounds rose (15.9% of 2025 VC deals per PitchBook), but affected few unicorns; >60% haven't raised disclosed rounds in 3+ years, keeping peak valuations on paper. Hurun noted 128 drops in 2023 (of ~1,200), but not 50-80% scale or 40% of cohort. No evidence of widespread 50-80% markdowns for ~40%; many stalled without resets ([LinkedIn](https://www.linkedin.com/posts/drorfutter_lies-damn-lies-and-startup-valuations-activity-7348405892758884354-tzbZ), [Crunchbase](https://news.crunchbase.com/public/stalled-unicorn-venture-funding-ai-saas-healthcare/))."
+    },
+    {
+      "id": "E-01:15:28.500",
+      "result": "inconclusive",
+      "explanation": "The prediction is forward\u2011looking and tied to *eventual* fair valuations of end\u20112022 unicorns:\n\n> \u201cless than 10% of the companies\u2026 whose growth has been so robust through this period that they\u2019ve actually grown into or within ten, 15% of those prior prices.\u201d\n\nKey reasons it\u2019s too early to score:\n\n1. **Horizon is explicitly long\u2011term.** The phrase \u201ceventual fair valuations\u201d implies a steady\u2011state or exit valuation (IPO, acquisition, or mature private pricing), not just temporary marks in 2023\u20132025. Many 2020\u20132022 unicorns remain private and have not had clear price\u2011setting events yet (no IPO, no major primary round, or only internal 409A marks), so their *eventual* valuations are unknown.\n\n2. **Data on the exact fraction is not yet observable.** Analysts have documented a broad reset in late\u2011stage startup valuations post\u20112022, with widespread markdowns and down rounds across unicorns, especially in sectors like fintech and consumer tech. However, public reports only give partial coverage of unicorns and do not quantify with enough precision what *percentage* have already grown revenues enough to be within ~10\u201315% of their prior peak valuations without major down rounds. The majority of unicorns either:\n   - have not raised new priced rounds since 2021\u20132022, or\n   - have had internal marks that are not fully disclosed, or\n   - are still growing into their prior valuations with uncertain exit values.\n\n3. **Prediction extends beyond November 30, 2025.** Because the claim is about who *ultimately* grows into their peak valuations, the outcome depends on how these businesses perform and are valued over many years. As of late 2025, only a subset of the end\u20112022 unicorn cohort has gone through definitive repricing events (IPOs, major acquisitions, or large new rounds), so the final fraction that succeed vs. need large down rounds cannot yet be measured.\n\nGiven these factors, we do not yet have enough observable data to know whether **<10%** of the end\u20112022 unicorn cohort will *eventually* grow into their peak valuations. The correct assessment at this time is that the prediction\u2019s accuracy is still unresolved.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns the *eventual* fair valuations of ~1,205 unicorns as of end-2022 (CB Insights State of Venture 2022), requiring long-term outcomes like IPOs or late-stage rounds. By Dec 2025 (1,314 current unicorns per CB Insights Nov 2025), only a fraction have new valuations: Industry Ventures (Jul 2024) analyzed 391 unicorns (~1/3 sample), finding >80% at lower FMV than 2021/2022 peaks and ~30% below $1B. Down rounds rose to 15-20% of VC deals (PitchBook/SG Analytics 2025). Few IPOs occurred, often below peaks (SaaStr: IPOs only 11% of exits 2024). However, most end-2022 unicorns remain private without updated 'fair' valuations, and unicorns average 7-10+ years to exit. Insufficient resolution for all to determine if <10% grew revenues to justify ~85-90% of peak private vals. [CB Insights](https://www.cbinsights.com/research-unicorn-companies), [Industry Ventures](https://www.industryventures.com/insight/thinning-the-herd/), [PitchBook](https://pitchbook.com/news/articles/unicorn-startups-list-trends)."
+    },
+    {
+      "id": "E-01:16:04.000",
+      "result": "right",
+      "explanation": "**Assessment**\nThe prediction was that in the 18 months after June 2023 (through roughly the end of 2024) there would be a *noticeable acceleration* in \u201cmarket\u2011clearing events\u201d for late\u2011stage private tech companies (down rounds, recapitalizations, secondary sales, acquisitions, IPOs) driven by capital needs and employee liquidity. Available data and reporting on 2023\u20132024 show exactly this pattern: elevated late\u2011stage down rounds and valuation resets, a sharp pickup in secondary liquidity for employees and early investors, and a partial reopening of the IPO/exit window compared with the prior freeze. \n\n**Key evidence**\n- **Late\u2011stage down rounds and valuation resets accelerated.** Carta\u2019s 2023 data show that down rounds were about 19\u201320% of U.S. venture deals every quarter in 2023, the highest rates since at least 2018, and describe 2023 as dominated by valuation resets across stages. ([carta.com](https://carta.com/data/state-of-private-markets-q4-2023/?utm_source=openai))  A Canadian deal-points study finds 2023 down rounds were 2.25\u00d7 the 2020\u20132022 average and notes that many companies that raised at high pandemic valuations and used bridge financing in 2022 were *forced* back to market in 2023 at much lower valuations, with the highest incidence of down rounds in later-stage (Series C and beyond) financings. ([mondaq.com](https://www.mondaq.com/canada/corporate-and-company-law/1453432/2023-deal-points-report-venture-capital-financings?utm_source=openai))  Aumni\u2019s H1 2024 Venture Beacon report shows this pressure intensified at late stage: down rounds for late\u2011stage startups jumped from 28% of rounds in H2 2023 to about 39% in H1 2024, with nearly half of late\u2011stage rounds flat or down, underscoring aggressive repricing to clear overvalued 2021\u201322 vintages. ([aumni.fund](https://www.aumni.fund/first-half-2024-venture-beacon?utm_source=openai))  Carta\u2019s 2024 review further notes that, after late\u2011stage companies felt the sharpest fundraising slowdown in 2022\u20132023, 2024 became a year of *recovery* in middle\u2011 and late\u2011stage markets, with capital invested at Series C up 41.8% and Series D up 78.8% versus 2023 \u2013 a sign that more companies were finally taking priced rounds and accepting new clearing prices. ([edwardconard.com](https://www.edwardconard.com/macro-roundup/cartainc-finds-venture-valuations-have-undergone-a-reset-in-the-last-two-years-with-the-rate-of-down-rounds-running-20-in-the-last-two-years-up-from-10-between-2019-and-mid-20/?view=detail&utm_source=openai))  Together, these point to a clear acceleration in valuation\u2011resetting financings at later stages during the 18\u2011month window.\n\n- **Secondary transactions for investor and employee liquidity surged.** Reporting shows a pronounced shift by major venture firms into secondary purchases of existing shares from employees and early investors. For example, Lightspeed Venture Partners moved to become a registered investment adviser specifically to do more secondary deals, buying discounted stakes in late\u2011stage companies like Anduril, Rippling, and Stripe, in response to a downturn in IPOs and M&A and corresponding liquidity constraints. ([ft.com](https://www.ft.com/content/81ecfd39-ae5b-44af-9a13-a92c40f38a2f?utm_source=openai))  A TechCrunch analysis in March 2024 argued that VCs would get much of their liquidity in 2024 from secondary markets rather than IPOs, highlighting Stripe\u2019s large 2024 secondary sale that provided significant employee liquidity at a valuation reset from its 2021 peak. ([techcrunch.com](https://techcrunch.com/2024/03/14/vcs-liquidity-secondary-markets-ipos/?utm_source=openai))  G Squared raised a $1.1 billion fund in August 2024 explicitly to buy *existing* stakes from startup employees and early investors, with coverage noting that the secondary market was \u201cflourishing\u201d because IPOs and takeovers were scarce. ([pymnts.com](https://www.pymnts.com/news/investment-tracker/2024/g-squared-raises-1-1-billion-amid-secondary-market-interest/?utm_source=openai))  In India\u2019s startup ecosystem, secondary stake sales and buyouts accounted for 62% of large ($50\u2013500 million) startup deals in the first half of 2024, as VCs pressed late\u2011stage startups for partial exits \u2013 clear evidence of secondary transactions becoming a dominant mechanism for liquidity. ([economictimes.indiatimes.com](https://economictimes.indiatimes.com/tech/funding/pe-vc-funding-slows-in-first-half-of-2024-secondary-deals-become-prominent/articleshow/111495240.cms?utm_source=openai))  A Forbes piece from late 2023 similarly emphasizes that the lack of IPO/M&A exits, valuation cuts, and layoffs pushed investors and employees toward secondary platforms, and concludes that secondaries were becoming a durable way to unlock liquidity for late\u2011stage companies. ([forbes.com](https://www.forbes.com/sites/josipamajic/2023/10/27/startup-stakeholders-see-early-returns-from-secondary-shares/?utm_source=openai))  This growth in employee and investor secondaries is directly aligned with the prediction\u2019s mechanism of employees wanting to get liquid and companies needing fresh capital.\n\n- **IPO and exit activity partially reopened from a prior freeze.** After an extended tech IPO drought, CNBC reported that the listings of Arm, Instacart, and Klaviyo in September 2023 cracked open the window after about a 21\u2011month freeze, explicitly linking those IPOs to providing liquidity for employees and early investors, albeit at valuations below prior private marks. ([cnbc.com](https://www.cnbc.com/2023/09/21/tech-ipos-get-meh-response-from-wall-street-arm-instacart-klaviyo.html?utm_source=openai))  In April 2024, Axios noted that Ibotta\u2019s successful IPO (pricing above its range and raising roughly $577 million) was another sign that the IPO window was reopening and called out the offering as a substantial liquidity event for many individual early shareholders. ([axios.com](https://www.axios.com/2024/04/18/walmart-backed-ibotta-577-million-ipo?utm_source=openai))  A Reuters summary of 2024 venture activity reported that overall exit value rose to about $149.2 billion in 2024, up from depressed 2023 levels (though still far below 2021\u2019s peak), indicating some recovery in IPOs and M&A from the prior near\u2011standstill. ([reuters.com](https://www.reuters.com/technology/artificial-intelligence/ai-startups-drive-vc-funding-resurgence-capturing-record-us-investment-2024-2025-01-07/?utm_source=openai))  While exit markets remained weak in absolute terms, the movement from a near\u2011frozen window in 2022\u2013early 2023 to a modestly more active one in late 2023\u20132024 is consistent with an acceleration in market\u2011clearing events.\n\n**Conclusion**\nRelative to the preceding period (late 2021 through mid\u20112023), the mid\u20112023\u2013end\u20112024 window did in fact see:\n- much higher and rising rates of late\u2011stage down rounds and valuation resets,\n- a pronounced expansion of secondary share sales and funds explicitly structured to buy from employees and early investors, and\n- a modest but real reopening of IPO and exit activity from an earlier freeze.\n\nThese developments match both the *direction* and the *mechanism* of the prediction: as cash\u2011hungry late\u2011stage companies exhausted runways and as employees and early backers sought liquidity, the market saw a clear pickup in market\u2011clearing transactions of the types E described. On that basis, the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 1024,
+          "start_index": 935,
+          "title": "State of Private Markets: Q4 2023 | Carta",
+          "type": "url_citation",
+          "url": "https://carta.com/data/state-of-private-markets-q4-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 1517,
+          "start_index": 1369,
+          "title": "2023 Deal Points Report: Venture Capital Financings - Corporate and Company Law - Canada",
+          "type": "url_citation",
+          "url": "https://www.mondaq.com/canada/corporate-and-company-law/1453432/2023-deal-points-report-venture-capital-financings?utm_source=openai"
+        },
+        {
+          "end_index": 1913,
+          "start_index": 1826,
+          "title": "First Half 2024 Venture Beacon | Aumni",
+          "type": "url_citation",
+          "url": "https://www.aumni.fund/first-half-2024-venture-beacon?utm_source=openai"
+        },
+        {
+          "end_index": 2549,
+          "start_index": 2278,
+          "title": "State of Private Markets: Q4 and 2024 in Review",
+          "type": "url_citation",
+          "url": "https://www.edwardconard.com/macro-roundup/cartainc-finds-venture-valuations-have-undergone-a-reset-in-the-last-two-years-with-the-rate-of-down-rounds-running-20-in-the-last-two-years-up-from-10-between-2019-and-mid-20/?view=detail&utm_source=openai"
+        },
+        {
+          "end_index": 3280,
+          "start_index": 3187,
+          "title": "Silicon Valley's Lightspeed shifts focus to secondary markets",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/81ecfd39-ae5b-44af-9a13-a92c40f38a2f?utm_source=openai"
+        },
+        {
+          "end_index": 3660,
+          "start_index": 3551,
+          "title": "VCs will get liquidity in 2024 from the secondary market, not IPOs",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2024/03/14/vcs-liquidity-secondary-markets-ipos/?utm_source=openai"
+        },
+        {
+          "end_index": 4045,
+          "start_index": 3899,
+          "title": "G Squared Raises $1.1 Billion Amid \u2018Secondary Market\u2019 Interest",
+          "type": "url_citation",
+          "url": "https://www.pymnts.com/news/investment-tracker/2024/g-squared-raises-1-1-billion-amid-secondary-market-interest/?utm_source=openai"
+        },
+        {
+          "end_index": 4540,
+          "start_index": 4338,
+          "title": "Startup funding: PE, VC funding slows in first half of 2024; secondary deals become prominent - The Economic Times",
+          "type": "url_citation",
+          "url": "https://economictimes.indiatimes.com/tech/funding/pe-vc-funding-slows-in-first-half-of-2024-secondary-deals-become-prominent/articleshow/111495240.cms?utm_source=openai"
+        },
+        {
+          "end_index": 4964,
+          "start_index": 4817,
+          "title": "Startup Stakeholders See Early Returns From Secondary Shares",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/josipamajic/2023/10/27/startup-stakeholders-see-early-returns-from-secondary-shares/?utm_source=openai"
+        },
+        {
+          "end_index": 5652,
+          "start_index": 5518,
+          "title": "Tech IPOs get 'meh' response from Wall Street: Arm, Instacart, Klaviyo",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/09/21/tech-ipos-get-meh-response-from-wall-street-arm-instacart-klaviyo.html?utm_source=openai"
+        },
+        {
+          "end_index": 6024,
+          "start_index": 5921,
+          "title": "Walmart-backed Ibotta raises $577M in IPO",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2024/04/18/walmart-backed-ibotta-577-million-ipo?utm_source=openai"
+        },
+        {
+          "end_index": 6462,
+          "start_index": 6281,
+          "title": "AI startups drive VC funding resurgence, capturing record US investment in 2024",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/ai-startups-drive-vc-funding-resurgence-capturing-record-us-investment-2024-2025-01-07/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction held true, with noticeable acceleration in market-clearing events for late-stage private tech companies from mid-2023 to end-2024. Down rounds reached decade highs: ~25% of US VC rounds in 2024 (PitchBook, Feb 2025), up marginally from 2023 but with Q1 2024 at 23% (highest in 5+ years, Carta Q1 2024 report) and Q3 2023 at 17.1% (PitchBook). Secondary sales exploded to record $162B in 2024, +45% from ~$112B in 2023 (Jefferies via WSJ Jan 2025), driven by LP/employee liquidity needs amid slow exits. IPOs rose 46% to 225 US listings in 2024 vs 154 in 2023 (Stout Feb 2025), with tech recovering (e.g., AI-driven like Astera Labs). Exits totaled 1,297 events/$149B value in 2024, +10% count/+24% value YoY (PitchBook-NVCA Q4 2024). Late-stage saw distressed financings (e.g., 26% bridge rounds at Series D, Carta), aligning with capital/liquidity pressures. While late-stage deal counts dipped (Carta 'late-stage lull'), prevalence of down rounds/secondaries accelerated 'clearing' at lower valuations."
+    },
+    {
+      "id": "C-01:17:43.600",
+      "result": "inconclusive",
+      "explanation": "The prediction is specifically about Ford selling **around 2.5 million EVs annually by 2026\u20132027**, and other large automakers like GM following a similar EV-and-batteries ramp over that same 2026\u20132027 timeframe.\n\nAs of **November 30, 2025**, those years have **not yet occurred**, so we cannot directly verify actual 2026\u20132027 annual EV sales volumes or the exact realized pace of the ramp.\n\nAvailable data up to 2024\u20132025 shows:\n\n- Ford\u2019s global EV sales are in the **hundreds of thousands per year, not millions**, and the company has **scaled back or delayed some EV investment and production targets** amid softer-than-expected demand and profitability concerns.   \n- GM similarly has **revised and slowed aspects of its EV rollout and battery plant ramp**, although it continues to invest in EVs and batteries; its realized EV volumes so far are well below the multi\u2011million\u2011per\u2011year level. \n\nThese trends *suggest* the original forecast of 2.5M Ford EVs annually by 2026\u20132027 is increasingly unlikely, but because those model years and sales outcomes are **still in the future**, the prediction cannot yet be definitively labeled right or wrong.\n\nTherefore the appropriate status is **\"inconclusive\" (too early)**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns Ford achieving ~2.5 million annual EV sales by 2026-2027, with GM and others following suit. As of December 2025, full-year 2026 sales data does not exist, making it too early to verify. Ford's US EV sales were ~98k in 2024 ([Reddit analysis](https://www.reddit.com/r/electricvehicles/comments/1hsplbi/ford_2024_us_ev_sales_97865_up_348_47_of_fords/)) and saw records in 2025 Q3 amid tax credit rush, but global totals remain low (~few hundred thousand projected). Ford abandoned its prior 2M EV capacity target by 2026 ([NYT Aug 2024](https://www.nytimes.com/2024/08/21/business/economy/ford-ev-plant-delay.html); [FordAuthority Aug 2023](https://fordauthority.com/2023/08/two-million-ford-ev-production-run-rate-target-now-flexible/)). CEO Farley expects EVs at ~5% US market share near-term ([FordAuthority Nov 2025](https://fordauthority.com/2025/11/ford-ceo-jim-farley-says-evs-will-be-small-part-of-u-s-market/)). GM reports EV losses and low demand into 2026 ([Argus Oct 2025](https://www.argusmedia.com/en/news-and-insights/latest-market-news/2744797-ev-demand-low-into-early-2026-gm)). Trajectory suggests unlikely, but actual 2026-27 figures unavailable."
+    },
+    {
+      "id": "A-01:06:20.220",
+      "result": "wrong",
+      "explanation": "Pulitzer rules for journalism specify that entries must be work **published in the previous calendar year**; for the 2024 journalism prizes, eligible work was material published in 2023, with a submission deadline in early 2024. Older work is not eligible in later cycles. ([grokipedia.com](https://grokipedia.com/page/Pulitzer_Prize?utm_source=openai))\n\nThe reporting Jason referred to is the June 2023 investigation by Michael Shellenberger (and colleagues) on Substack\u2019s *Public*, naming three Wuhan Institute of Virology researchers (including Ben Hu) as the alleged first COVID-19 patients conducting gain\u2011of\u2011function work, which was then echoed in a June 20, 2023 Wall Street Journal article citing U.S. officials. ([marshall.senate.gov](https://www.marshall.senate.gov/newsroom/press-releases/wall-street-journal-exclusive-u-s-funded-scientist-who-worked-at-wuhan-lab-one-of-the-first-presumptive-positive-cases/?utm_source=openai))  That work therefore would have been eligible for the **2024 Pulitzers** (covering 2023 journalism) if it were going to be honored.\n\nHowever, the **2024 Pulitzer winners** in journalism did not include any award for COVID\u201119 origins or the Wuhan lab; the Investigative Reporting prize went to Hannah Dreier of *The New York Times* for her series on migrant child labor in the U.S., and the Public Service medal went to ProPublica for its Supreme Court ethics reporting. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Pulitzer_Prize?utm_source=openai))  Likewise, the **2025 Pulitzers** (for 2024 work) honored Reuters for its \u201cFentanyl Express\u201d series in Investigative Reporting and honored *The Wall Street Journal* for national reporting on Elon Musk, not for any COVID\u2011origins coverage. ([reuters.com](https://www.reuters.com/world/china/reuters-wins-pulitzer-investigation-fentanyl-trade-2025-05-05/?utm_source=openai))  Comprehensive winner lists for 2023\u20132025 show no Pulitzer at all awarded for COVID\u201119 origin or \u201cpatient zero\u201d reporting, and no Pulitzer in Shellenberger\u2019s biography. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2023_Pulitzer_Prize?utm_source=openai))\n\nSeparately, declassified U.S. intelligence released under the COVID\u201119 Origin Act of 2023 explicitly **rejected key arguments** advanced by lab\u2011leak proponents about sick Wuhan researchers, and a detailed FactCheck.org review concluded there was \u201cno bombshell\u201d confirming those claims or settling COVID\u201119\u2019s origin. ([en.wikipedia.org](https://en.wikipedia.org/wiki/COVID-19_Origin_Act_of_2023?utm_source=openai))  That undercut the central premise of the \u201cpatient zero\u201d narrative rather than establishing it as proven.\n\nBecause (1) the only Pulitzer cycles in which this specific 2023 reporting could plausibly have been recognized have already passed without any award, and (2) Pulitzer eligibility rules make later recognition for the same 2023 stories effectively impossible, Jason\u2019s prediction that this particular Wuhan\u2011lab \"patient zero\" reporting **\u201cwill wind up being a Pulitzer\u201d** has not come true and is now best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 386,
+          "start_index": 306,
+          "title": "Pulitzer Prize",
+          "type": "url_citation",
+          "url": "https://grokipedia.com/page/Pulitzer_Prize?utm_source=openai"
+        },
+        {
+          "end_index": 974,
+          "start_index": 756,
+          "title": "Wall Street Journal Exclusive: U.S.-Funded Scientist Who Worked at Wuhan Lab One of The First Presumptive Positive Cases. - Senator Roger Marshall",
+          "type": "url_citation",
+          "url": "https://www.marshall.senate.gov/newsroom/press-releases/wall-street-journal-exclusive-u-s-funded-scientist-who-worked-at-wuhan-lab-one-of-the-first-presumptive-positive-cases/?utm_source=openai"
+        },
+        {
+          "end_index": 1536,
+          "start_index": 1447,
+          "title": "2024 Pulitzer Prize",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Pulitzer_Prize?utm_source=openai"
+        },
+        {
+          "end_index": 1908,
+          "start_index": 1775,
+          "title": "Reuters wins Pulitzer for fentanyl investigation; New York Times takes four prizes",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/china/reuters-wins-pulitzer-investigation-fentanyl-trade-2025-05-05/?utm_source=openai"
+        },
+        {
+          "end_index": 2167,
+          "start_index": 2078,
+          "title": "2023 Pulitzer Prize",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2023_Pulitzer_Prize?utm_source=openai"
+        },
+        {
+          "end_index": 2584,
+          "start_index": 2487,
+          "title": "COVID-19 Origin Act of 2023",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COVID-19_Origin_Act_of_2023?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The reporting by Michael Shellenberger on Public (June 2023), identifying WIV researchers Ben Hu, Yu Ping, and Yan Zhu (performing coronavirus research, including U.S.-funded work debated as gain-of-function) as potential Patient Zeros, was picked up by the Wall Street Journal on June 20, 2023 ([WSJ article](https://www.wsj.com/world/u-s-funded-scientist-among-three-chinese-researchers-who-fell-ill-amid-early-covid-19-outbreak-3f919567)). This work was eligible for the 2024 Pulitzer Prizes (for 2023 journalism), but the Investigative Reporting category was awarded to Hannah Dreier of The New York Times for migrant child labor ([Pulitzer 2024](https://www.pulitzer.org/prize-winners-by-year/2024)). The 2025 Pulitzer for Investigative Reporting went to Reuters for fentanyl supply chain reporting ([Pulitzer 2025](https://www.pulitzer.org/prize-winners-by-year)). No Pulitzer has been awarded for this specific COVID origins reporting, and Pulitzers are awarded annually for recent work, not retroactively ([Pulitzer rules](https://www.pulitzer.org/prize-winners-by-category/206)). Thus, the prediction did not come true."
+    }
+  ]
+}

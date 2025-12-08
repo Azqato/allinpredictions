@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "count": 4,
+    "count_by_result": {
+      "inconclusive": 3,
+      "wrong": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "chamath-00:10:20.000",
+      "result": "inconclusive",
+      "explanation": "The prediction deadline is **December 31, 2025**. Today is **November 30, 2025**, so there is still one month left for the 10-year and 30-year U.S. Treasury yields to potentially reach or exceed the levels Chamath specified (10-year > 5.0%, 30-year > 6.25%).\n\nAs of late November 2025, publicly reported market data shows:\n- The **10-year U.S. Treasury yield** is below 5%.\n- The **30-year U.S. Treasury yield** is below 6.25%.\n\nThese current levels mean the prediction has **not yet** come true, but because the target date has not passed, it **could still** become correct (or definitively wrong) by year\u2011end. Therefore, the only appropriate evaluation at this time is **\u201cinconclusive (too early)\u201d**.\n\n*Note: Once data for yields on or after December 31, 2025 is available, the prediction can be definitively scored as right or wrong based on whether those thresholds were ever exceeded by that date.*",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies yields by December 31, 2025, but the current date is December 1, 2025, leaving one month remaining. As of December 1, the 10-year Treasury yield is approximately 4.04% [Trading Economics](https://tradingeconomics.com/united-states/government-bond-yield), and the 30-year is 4.69% [Trading Economics](https://tradingeconomics.com/united-states/30-year-bond-yield), both well below the predicted thresholds of >5.0% and >6.25%, respectively. Earlier data from FRED shows 10-year at 4.01% on Nov 25 and 30-year at 4.64% on Nov 26. It is too early to confirm if the levels will be reached by year-end."
+    },
+    {
+      "id": "chamath-00:32:10.000",
+      "result": "wrong",
+      "explanation": "The condition for the prediction was effectively met:\n\n- The **One Big Beautiful Bill Act** (OBBBA), the \"big beautiful bill,\" passed the House on May 22, 2025, the Senate on July 1, 2025, and was signed into law on July 4, 2025.([en.wikipedia.org](https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=openai))  \n- CBO and independent estimates for both the House version and the enacted law show it **raises**, not lowers, deficits by roughly $2.8\u20133.4T over 2025\u20132034, i.e., there was no net \u201cmaterial fiscal tightening.\u201d([reuters.com](https://www.reuters.com/world/us/forecaster-says-us-house-version-trump-bill-cost-28-trillion-despite-economic-2025-06-17/?utm_source=openai))  \n\nChamath\u2019s *then*-clause was that **within 60\u201390 days of passage**, bond markets would \u201creact negatively\u201d by demanding **higher yields** and/or showing clear **stress in Treasury demand** relative to prevailing long-term real/nominal rates (~5\u20135.5% on long bonds at the time).\n\n**What actually happened (July\u2013early October 2025):**\n\n- Long-dated nominal yields were already near or above 5% *before* and around House passage and the Moody\u2019s downgrade: the 30\u2011year hit about **5.15%** on May 22 when the House first passed the bill.([webull.ca](https://www.webull.ca/news-detail/12859046685377536?utm_source=openai))  \n- Around enactment, monthly 30\u2011year yields were ~4.9%: May 4.90%, June 4.89%, July 4.92%. In the **60\u201390 days after signing** (roughly Sept 2\u2013Oct 2), the 30\u2011year averaged **~4.7\u20134.8%**, *slightly lower* than the levels around passage (August 4.87%, September 4.74, October 4.64).([ycharts.com](https://ycharts.com/indicators/30_year_treasury_rate_monthly?utm_source=openai))  There was no clear new spike above prior peaks; if anything, yields drifted modestly down from their May\u2013July highs.\n- A widely cited Reuters wrap on July 7 explicitly noted that the bond market\u2019s reaction to final passage was **\u201crelatively muted\u201d** and that the expected deficit expansion from Trump\u2019s agenda had \"already been priced in\"; investors were more focused on growth data and Fed policy than on the bill itself.([reuters.com](https://www.reuters.com/world/us/trump-tax-bill-averts-one-debt-crisis-makes-future-financial-woes-worse-2025-07-03/))  \n\n**Auction / demand stress evidence:**\n\n- There *was* a weak 20\u2011year auction and a sharp jump in long yields **before** final passage (May 21\u201322), reflecting concerns about fiscal policy and the Moody\u2019s downgrade.([wsj.com](https://www.wsj.com/finance/investing/global-stocks-markets-dow-news-05-21-2025-f2e9c9cc?utm_source=openai))  Those events predate the 60\u201390\u2011day post\u2011enactment window Chamath pointed to.\n- Inside and around the window, the picture is mixed rather than clearly \u201ccrisis-like.\u201d For example, an August 21 **30\u2011year TIPS** reopening cleared at a very high **real yield of 2.65%** (a 24\u2011year high) but with **strong demand** (bid\u2011to\u2011cover 2.78, yield stopping through when\u2011issued), which is the opposite of an impaired auction.([tipswatch.com](https://tipswatch.com/2025/08/21/30-year-tips-reopening-gets-real-yield-of-2-650-highest-in-nearly-24-years/?utm_source=openai))  \n- Some analyses in late September describe *general* auction strains (lower bid\u2011to\u2011cover, wider tails, waning foreign demand), but they tie this to the broader combination of heavy issuance, drained Fed reverse\u2011repo balances, and global fiscal worries\u2014not to a discrete, new repricing of U.S. risk specifically in the 60\u201390 days after OBBBA\u2019s enactment.([universalvalueadvisors.com](https://universalvalueadvisors.com/janet-yellen-2/29-september-2025-the-u-s-treasury-yield-curve-how-issuance-is-warping-global-markets/?utm_source=openai))  Other auctions (e.g., the September 10\u2011year note) actually showed **strong demand and a stop\u2011through yield**, again undercutting the notion of clear, generalized stress in that specific window.([streetinsider.com](https://www.streetinsider.com/Investing/US%2BTreasury%2Bsells%2B%2439B%2B10-year%2Bnotes%2Bat%2Blower-than-expected%2Byield%2Bas%2Bdemand%2Bclimbs/25320284.html?utm_source=openai))\n\nPutting this together:\n\n- The bill did become law with overall **fiscal loosening**, so the condition trigger was satisfied.\n- By 60\u201390 days after enactment, **long-term yields were not meaningfully higher than at passage or the pre\u2011passage peak; they were marginally lower**.\n- Auction results in that interval show **pockets of strain but also episodes of very strong demand**, not an unambiguous negative repricing that would make it obvious \u201cin the next 60 to 90 days\u201d that markets had re\u2011underwritten U.S. fiscal risk at even higher required yields.\n\nGiven the time\u2011bound and directional nature of Chamath\u2019s forecast (a *distinct*, clearly negative bond-market reaction **after** the bill became law), the realized data don\u2019t match it. The structural fiscal concerns he highlighted are real and widely discussed, but **the specific prediction about how and when bond markets would respond is not borne out by yields or auction behavior in that 60\u201390\u2011day window.**",
+      "sources": [
+        {
+          "end_index": 362,
+          "start_index": 266,
+          "title": "One Big Beautiful Bill Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=openai"
+        },
+        {
+          "end_index": 732,
+          "start_index": 575,
+          "title": "Forecaster says US House version of Trump bill to cost $2.8 trillion despite economic gains",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/forecaster-says-us-house-version-trump-bill-cost-28-trillion-despite-economic-2025-06-17/?utm_source=openai"
+        },
+        {
+          "end_index": 1356,
+          "start_index": 1272,
+          "title": "Trump's Big Tax Bill Clears The House: 30-Year Yields Jump To 5.15% As Bond Market Freaks",
+          "type": "url_citation",
+          "url": "https://www.webull.ca/news-detail/12859046685377536?utm_source=openai"
+        },
+        {
+          "end_index": 1734,
+          "start_index": 1639,
+          "title": "30 Year Treasury Rate (Monthly) - United States - Historica\u2026",
+          "type": "url_citation",
+          "url": "https://ycharts.com/indicators/30_year_treasury_rate_monthly?utm_source=openai"
+        },
+        {
+          "end_index": 2294,
+          "start_index": 2161,
+          "title": "Trump tax bill averts one debt crisis but makes future financial woes worse | Reuters",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/trump-tax-bill-averts-one-debt-crisis-makes-future-financial-woes-worse-2025-07-03/"
+        },
+        {
+          "end_index": 2633,
+          "start_index": 2514,
+          "title": "Weak Auction of Government Debt Jolts Markets",
+          "type": "url_citation",
+          "url": "https://www.wsj.com/finance/investing/global-stocks-markets-dow-news-05-21-2025-f2e9c9cc?utm_source=openai"
+        },
+        {
+          "end_index": 3192,
+          "start_index": 3047,
+          "title": "30-year TIPS reopening gets real yield of 2.650%, highest in nearly 24 years | Treasury Inflation-Protected Securities",
+          "type": "url_citation",
+          "url": "https://tipswatch.com/2025/08/21/30-year-tips-reopening-gets-real-yield-of-2-650-highest-in-nearly-24-years/?utm_source=openai"
+        },
+        {
+          "end_index": 3735,
+          "start_index": 3549,
+          "title": "29 September 2025 The U.S. Treasury Yield Curve: How Issuance Is Warping Global Markets - Universal Value Advisors",
+          "type": "url_citation",
+          "url": "https://universalvalueadvisors.com/janet-yellen-2/29-september-2025-the-u-s-treasury-yield-curve-how-issuance-is-warping-global-markets/?utm_source=openai"
+        },
+        {
+          "end_index": 4131,
+          "start_index": 3930,
+          "title": "US Treasury sells $39B 10-year notes at lower-than-expected yield as demand climbs",
+          "type": "url_citation",
+          "url": "https://www.streetinsider.com/Investing/US%2BTreasury%2Bsells%2B%2439B%2B10-year%2Bnotes%2Bat%2Blower-than-expected%2Byield%2Bas%2Bdemand%2Bclimbs/25320284.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The One Big Beautiful Bill Act (H.R.1) passed the House on May 22, 2025, was amended and passed by the Senate on July 1 (51-50), concurred by the House on July 3, and signed into law on July 4, 2025. It included major tax cuts adding ~$3.4T-$5T to deficits over 10 years with partial offsets (e.g., some spending cuts like SNAP, but net fiscal expansion, no 'material tightening' per analyses from CRFB, Tax Foundation, Yale Budget Lab, BPC). Condition arguably met.\n\nHowever, within 60-90 days (by ~Oct 3), no predicted reaction: 10y Treasury yields ~4.35-4.44% late July, ~4.5-4.6% Oct (Yahoo Finance ^TNX/^TYX); 30y ~4.6%; real 10y TIPS ~1.7-1.8% (Trading Economics). No spike to 5-5.5% real rates. Auctions had some weakness (e.g., Aug 30y 'poorly', Sep end-user demand low per Reuters/WSJ), but Treasury reported 'robust demand' overall (Jul 30 report). No bond crisis or visible stress tied to bill; markets focused on growth/inflation (Reuters Jul 1). Yields stable/slightly lower by Dec (~4.0% 10y, 4.67% 30y). Prediction failed. Sources: Congress.gov, CRFB, TaxFoundation, YaleBudgetLab, FRED/YCharts/TradingEconomics, Reuters, WSJ."
+    },
+    {
+      "id": "chamath-00:45:30.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025 (about six months after the podcast), Google Search still opens with the familiar query box and a results page where AI Overviews and other AI features appear above or alongside traditional links, but not as a standalone, chat-style \u201cAI Mode\u201d default interface for most users. Google has expanded AI Overviews to 100+ countries and says they reach over 1\u20132 billion users monthly and now appear on a majority of U.S. queries, yet they are integrated into the classic results page and cannot be turned off, rather than replacing it entirely. ([blog.google](https://blog.google/products/search/ai-overviews-search-october-2024/?utm_source=openai)) AI Mode itself is an optional, more conversational experience (initially available only to a small percentage of U.S. users and later exposed as a tab/feature), and by mid\u20112025 had around 100 million monthly active users in the U.S. and India\u2014substantial, but still a minority of Google\u2019s total search base and not the universal default \u201cfront door.\u201d ([theverge.com](https://www.theverge.com/news/659448/google-ai-mode-search-public-test-us?utm_source=openai)) Because the prediction\u2019s deadline is May 2026 and we are only in November 2025, we cannot yet know whether Google will make this AI\u2011mode experience the default interface for a large share of users by that date, so the status of the prediction is currently too early to call.",
+      "sources": [
+        {
+          "end_index": 708,
+          "start_index": 604,
+          "title": "AI Overviews in Google Search expanding to more than 100 countries",
+          "type": "url_citation",
+          "url": "https://blog.google/products/search/ai-overviews-search-october-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 1169,
+          "start_index": 1060,
+          "title": "Google is putting AI Mode right in Search",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/659448/google-ai-mode-search-public-test-us?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction requires Google to make AI Mode the default front-door search interface (replacing traditional ten-blue-links) for a large share of users by May 2026. As of December 1, 2025 (~6.5 months into the 12-month window), AI Mode is widely available (rolled out May 2025, U.S. and global; [Google Blog May 20, 2025](https://blog.google/products/search/google-search-ai-mode-update/)), accessible via tab or google.com/ai, and users can set it as personal default via toggle. However, Google clarified no plans to make it default for all users ([Search Engine Land Sep 7, 2025](https://searchengineland.com/google-ai-mode-may-become-the-default-google-search-experience-soon-461649), [BleepingComputer Sep 7, 2025](https://www.bleepingcomputer.com/news/google/google-to-make-it-easier-to-access-ai-mode-as-default/)). Traditional search remains the default, with low AI Mode usage (~1% U.S. desktop in July 2025). With 5.5 months remaining, too early to determine if it will occur by deadline. AI Overviews appear for ~30% queries but do not replace the interface ([Digital Marketing Institute Oct 22, 2025](https://digitalmarketinginstitute.com/blog/google-ai-overviews-what-do-they-mean-for-search))."
+    },
+    {
+      "id": "A-00:56:19.660",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, OpenAI and Jony Ive have **not yet fully revealed or shipped** their consumer AI hardware device; only prototypes and high\u2011level descriptions have been discussed publicly, with launch timing pushed to 2026 or later. ([theverge.com](https://www.theverge.com/news/827607/openai-hardware-prototype-chatgpt-jony-ive-sam-altman?utm_source=openai))\n\nLeaked internal details reported by MacRumors (from a staff call reviewed by *The Wall Street Journal*) say the device **will not be glasses** and is instead a \"third core device\" that sits in your pocket or on your desk, not a phone and not something worn on the body. ([macrumors.com](https://www.macrumors.com/2025/05/22/jony-ive-openai-product-third-core-device/?utm_source=openai))  Subsequent court filings by OpenAI hardware chief Tang Tan, summarized by MacRumors and India Today, go further and state that the first product \"is not an in\u2011ear device, nor a wearable device\" and is at least a year away from being sold. ([macrumors.com](https://www.macrumors.com/2025/06/24/jony-ive-openai-device-wont-be-wearable/?utm_source=openai))  That language strongly **contradicts** a pendant or smart\u2011glasses form factor.\n\nHowever, because the **final consumer device has not yet been launched or formally unveiled with its definitive form factor**, there is still a theoretical chance that plans change before release. The available evidence today points against Jason\u2019s pendant/glasses prediction, but since the decisive event (the ultimate public reveal of the shipping product) has not occurred yet, the outcome must be scored as **\u201cinconclusive (too early)\u201d rather than definitively right or wrong.",
+      "sources": [
+        {
+          "end_index": 407,
+          "start_index": 281,
+          "title": "Jony Ive and Sam Altman say they finally have an AI hardware prototype",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/827607/openai-hardware-prototype-chatgpt-jony-ive-sam-altman?utm_source=openai"
+        },
+        {
+          "end_index": 799,
+          "start_index": 683,
+          "title": "Jony Ive's AI Product 'Third Core Device' After MacBook and iPhone - MacRumors",
+          "type": "url_citation",
+          "url": "https://www.macrumors.com/2025/05/22/jony-ive-openai-product-third-core-device/?utm_source=openai"
+        },
+        {
+          "end_index": 1156,
+          "start_index": 1042,
+          "title": "Jony Ive's OpenAI Device Won't Be Wearable, Court Filings Reveal - MacRumors",
+          "type": "url_citation",
+          "url": "https://www.macrumors.com/2025/06/24/jony-ive-openai-device-wont-be-wearable/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "OpenAI and Jony Ive have prototypes of their AI hardware device as of November 2025 (e.g., [CNBC](https://www.cnbc.com/2025/11/24/openai-hardware-jony-ive-sam-altman-emerson-collective.html), [The Verge](https://www.theverge.com/news/827607/openai-hardware-prototype-chatgpt-jony-ive-sam-altman)), but have not publicly revealed it. Launch is planned in less than 2 years (by ~Nov 2027). Rumors describe it as screenless, pocket-sized (like iPod Shuffle), explicitly *not* glasses or body-wearable like Humane Pin ([WSJ via Verge](https://www.theverge.com/news/672357/openai-ai-device-sam-altman-jony-ive), court filings [TechCrunch](https://techcrunch.com/2025/06/23/court-filings-reveal-openai-and-ios-early-work-on-an-ai-device/)). Too early to verify prediction, 6 months post-podcast."
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "meta": {
+    "count": 9,
+    "count_by_result": {
+      "wrong": 7,
+      "ambiguous": 1,
+      "right": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "D-00:06:36.000",
+      "result": "wrong",
+      "explanation": "**Summary**\nChamath predicted that after Amy Coney Barrett\u2019s quick confirmation, a Clarence\u2011Thomas\u2011style challenge to Section 230 would be fast\u2011tracked to the Supreme Court and, as a result, Section 230\u2019s current liability shield would effectively be ended or fundamentally overturned \u201cwithin the subsequent few years.\u201d That has not happened as of November 29, 2025.\n\n**What actually happened**\n\n1. **Amy Coney Barrett was confirmed quickly, as assumed.**  \n   The Senate confirmed Barrett to the Supreme Court on October 26, 2020, just days after the podcast, matching the predicate of his forecast. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Amy_Coney_Barrett?utm_source=openai))\n\n2. **A major Section 230\u2013related case *did* reach the Supreme Court, but the Court declined to change the law.**  \n   *Gonzalez v. Google LLC* (about whether Section 230 immunity covers recommendation algorithms) and *Twitter, Inc. v. Taamneh* were heard in February 2023 and decided in May 2023. The Court unanimously ruled for the tech companies in *Taamneh* and then vacated and remanded *Gonzalez* **without** deciding the scope of Section 230, explicitly \u201cdeclin[ing] to address\u201d Section 230 and leaving its broad liability shield intact. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Gonzalez_v._Google_LLC?utm_source=openai))  \n   This is the opposite of the \u201cfundamental overturning\u201d Chamath envisioned.\n\n3. **Subsequent Supreme Court actions have reinforced, not dismantled, Section 230.**  \n   In October 2025, the Supreme Court refused to hear an appeal in a case where a plaintiff alleged Grindr\u2019s design enabled his sexual assault; the Ninth Circuit had held that Section 230 barred the suit. By denying certiorari, the Court let that broad Section 230 immunity ruling stand. ([reuters.com](https://www.reuters.com/sustainability/boards-policy-regulation/us-supreme-court-rebuffs-challenge-federal-protections-tech-platforms-2025-10-14/?utm_source=openai))\n\n4. **Section 230 remains the baseline federal liability shield as of late 2025.**  \n   Authoritative overviews of Section 230 note that, after *Gonzalez*/*Taamneh*, the Supreme Court \u201ceffectively avoided\u201d changing Section 230, and the statute continues to provide broad immunity to platforms for user\u2011generated content. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Section_230?utm_source=openai))  \n   Some lower\u2011court cases (like *Anderson v. TikTok* in 2024) have narrowed immunity at the margins (e.g., for certain algorithmic \u201crecommendations\u201d), and Congress has repeatedly introduced\u2014but not passed\u2014bills to amend or sunset Section 230 (EARN IT Act, Algorithm Accountability proposals, etc.). Those efforts show political pressure but **do not amount to Section 230\u2019s liability regime being \u201cended\u201d or fundamentally overturned.** ([en.wikipedia.org](https://en.wikipedia.org/wiki/EARN_IT_Act?utm_source=openai))\n\n**Evaluation of the prediction**\n\n- **Correct components:** Barrett was indeed confirmed within days, and significant Section 230\u2013related cases did reach the Supreme Court relatively soon afterward.\n- **Crucial failure:** The key claim\u2014that these developments would lead the Court to effectively end or fundamentally overturn Section 230\u2019s liability shield \u201cwithin the subsequent few years\u201d\u2014is clearly contradicted by the Court\u2019s 2023 decisions (which sidestepped changing Section 230) and its 2025 refusal to take up another challenge to those protections.\n\nBecause the core outcome he \u201cbet\u201d on (Section 230\u2019s days being \u201cnumbered\u201d) has not materialized more than five years later and the law\u2019s central immunity remains intact, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 727,
+          "start_index": 640,
+          "title": "Amy Coney Barrett",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Amy_Coney_Barrett?utm_source=openai"
+        },
+        {
+          "end_index": 1368,
+          "start_index": 1276,
+          "title": "Gonzalez v. Google LLC",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Gonzalez_v._Google_LLC?utm_source=openai"
+        },
+        {
+          "end_index": 2009,
+          "start_index": 1829,
+          "title": "US Supreme Court rebuffs challenge to federal protections for tech platforms",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-supreme-court-rebuffs-challenge-federal-protections-tech-platforms-2025-10-14/?utm_source=openai"
+        },
+        {
+          "end_index": 2415,
+          "start_index": 2334,
+          "title": "Section 230",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Section_230?utm_source=openai"
+        },
+        {
+          "end_index": 2936,
+          "start_index": 2855,
+          "title": "EARN IT Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/EARN_IT_Act?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Amy Coney Barrett was confirmed to the Supreme Court on October 26, 2020, shortly after the October 16 podcast ([Senate.gov](https://www.senate.gov/legislative/LIS/roll_call_votes/vote1162/vote_116_2_00224.htm)). No case challenging Section 230 along Justice Thomas's lines (e.g., his 2020 concurrence questioning its breadth) was fast-tracked post-confirmation to overturn its liability shield. Key cases include *Gonzalez v. Google* (May 2023), where SCOTUS dismissed cert on the main 230 question but upheld immunity ([SCOTUS opinion](https://www.supremecourt.gov/opinions/22pdf/21-1333_6j7a.pdf)); companion *Twitter v. Taamneh*; and *Moody v. NetChoice* (July 2024), addressing state moderation laws under the First Amendment without altering 230 ([SCOTUS opinion](https://www.supremecourt.gov/opinions/23pdf/22-277_d18f.pdf)). Thomas reiterated concerns in concurrences, but no fundamental overturn occurred. As of October 2025, SCOTUS declined further 230 cases, and the shield persists ([Reason.com](https://reason.com/2025/10/08/supreme-court-declines-to-address-section-230-in-two-cases-for-this-term/), [Stanford Law PDF](https://law.stanford.edu/wp-content/uploads/2025/02/A-Juridical-History-of-Section-230.pdf)). Over 5 years later, the prediction failed."
+    },
+    {
+      "id": "D-00:17:06.609",
+      "result": "ambiguous",
+      "explanation": "There is no clear empirical test of Chamath\u2019s quantitative claim, so its correctness can\u2019t be determined from available evidence.\n\n* **No major ad\u2011supported social network has actually done what the prediction describes.** Since 2020, Facebook, Instagram, and X/Twitter have all kept algorithmic feeds as the default, while offering *optional* reverse\u2011chronological modes (e.g., Facebook/Instagram\u2019s \u201cMost Recent\u201d / \u201cFollowing,\u201d X/Twitter\u2019s \u201cFollowing\u201d vs. \u201cFor You\u201d). None has permanently replaced the algorithmic feed with a *purely* reverse\u2011chronological feed for all users, which is the scenario the prediction is about. ([wired.com](https://www.wired.com/story/meta-just-proved-people-hate-chronological-feeds))  TikTok remains entirely algorithmic, and alternative platforms that *are* chronological by default (e.g., Mastodon) are not large, ad\u2011driven networks comparable to Facebook or Twitter. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Mastodon_%28social_network%29?utm_source=openai))\n\n* **Internal and academic experiments compare algorithmic vs. chronological feeds but don\u2019t publish the key metric Chamath specifies (revenue per page/impression).** Twitter ran a large randomized experiment committing nearly 2 million users to a reverse\u2011chronological feed to study political amplification, not monetization. ([arxiv.org](https://arxiv.org/abs/2110.11010?utm_source=openai))  Meta\u2019s 2020 election\u2011period experiment forced some users on Facebook and Instagram into chronological feeds for months; results published in *Science* and summarized by *Wired* show users on chronological feeds encountered more political and untrustworthy content and spent less time on Meta apps, often shifting that time to TikTok/YouTube. ([wired.com](https://www.wired.com/story/meta-just-proved-people-hate-chronological-feeds))  Earlier internal Facebook tests in 2014 and 2018 similarly reported lower engagement when ranking was removed, but again, not a quantified 90% drop in per\u2011impression revenue. ([wired.com](https://www.wired.com/story/meta-just-proved-people-hate-chronological-feeds))\n\n* **One leaked Facebook test even suggests ad impressions (and thus total ad revenue) *increased* when feeds were chronological\u2011only**, because people initially scrolled more and saw more ads, according to whistleblower\u2011derived reporting cited by the Chamber of Progress. ([progresschamber.org](https://progresschamber.org/act/digital-bills-could-hurt-teens-ny/))  That cuts against the idea of an automatic catastrophic revenue collapse, but it still doesn\u2019t tell us whether *revenue per page/per impression* fell by anything close to 90%.\n\nBecause (1) no major platform has fully and durably made the switch described, and (2) the experiments that do exist don\u2019t disclose the specific monetization metric Chamath predicts (90% per\u2011page/per\u2011impression decline), the prediction remains untestable with public data. Hence it must be classified as **ambiguous**, not clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 755,
+          "start_index": 664,
+          "title": "Meta Just Proved People Hate Chronological Feeds | WIRED",
+          "type": "url_citation",
+          "url": "https://www.wired.com/story/meta-just-proved-people-hate-chronological-feeds"
+        },
+        {
+          "end_index": 1041,
+          "start_index": 942,
+          "title": "Mastodon (social network)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Mastodon_%28social_network%29?utm_source=openai"
+        },
+        {
+          "end_index": 1436,
+          "start_index": 1371,
+          "title": "Algorithmic Amplification of Politics on Twitter",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2110.11010?utm_source=openai"
+        },
+        {
+          "end_index": 1871,
+          "start_index": 1780,
+          "title": "Meta Just Proved People Hate Chronological Feeds | WIRED",
+          "type": "url_citation",
+          "url": "https://www.wired.com/story/meta-just-proved-people-hate-chronological-feeds"
+        },
+        {
+          "end_index": 2139,
+          "start_index": 2048,
+          "title": "Meta Just Proved People Hate Chronological Feeds | WIRED",
+          "type": "url_citation",
+          "url": "https://www.wired.com/story/meta-just-proved-people-hate-chronological-feeds"
+        },
+        {
+          "end_index": 2506,
+          "start_index": 2415,
+          "title": "NY Digital Bills Could Hurt Teens - Chamber of Progress Action",
+          "type": "url_citation",
+          "url": "https://progresschamber.org/act/digital-bills-could-hurt-teens-ny/"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "No major social network (Facebook, Twitter/X, etc.) has fully replaced its algorithmic feed with a purely reverse-chronological feed as the default, so the hypothetical condition has not been tested in practice. Meta's 2020 randomized study on ~16,000 users (published 2023) switched some to chronological feeds for 3 months, finding substantial decreases in time spent (e.g., Instagram users spent ~8 hours less over 3 months), activity, likes/comments, and users migrating to competitors like TikTok/YouTube [https://www.science.org/doi/10.1126/science.abp9364; https://www.wired.com/story/meta-just-proved-people-hate-chronological-feeds/]. Platforms prefer algorithmic feeds to maximize engagement, critical for ad revenue. Threads (Meta) launched chronological in 2023 but shifted algorithmic and added ads in 2025 without reported 90% drop. X has optional chronological tab but defaults to algorithmic 'For You'. No data quantifies per-page/impression revenue drop at 90%; engagement drops align with revenue risk but specifics undetermined."
+    },
+    {
+      "id": "C-00:39:55.070",
+      "result": "wrong",
+      "explanation": "**Why this prediction was wrong**\n\n1. **The pandemic did *not* wind down in the ensuing months after October 2020.**  In the U.S., the deadliest wave up to that point hit immediately afterward: CDC data show the 7\u2011day average of new COVID\u201119 deaths peaked on January 11, 2021, and by March 17, 2021, the U.S. had recorded over 535,000 deaths. ([archive.cdc.gov](https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/covid-data/covidview/past-reports/03192021.html?utm_source=openai)) Globally, cases and deaths continued to climb through 2021, reaching about 292 million reported cases and 5.43 million deaths by January 1, 2022, and more than 652 million cases and 6.7 million deaths by late December 2022. ([emro.who.int](https://www.emro.who.int/pandemic-epidemic-diseases/covid-19/covid-19-situation-updates-for-week-52-26-december-2021-1-january-2022.html?utm_source=openai)) The Omicron wave (Dec 2021\u2013Feb 2022) then produced the largest U.S. case surge, with ~30 million cases and ~170,000 deaths in just three months. ([mdpi.com](https://www.mdpi.com/2414-6366/8/7/349?utm_source=openai))\n\n2. **The crisis phase lasted years, not months.**  The World Health Organization did not declare the end of COVID\u201119 as a Public Health Emergency of International Concern until May 5, 2023\u2014over 2.5 years after the October 2020 podcast. ([who.int](https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing---5-may-2023?utm_source=openai)) Even after the emergency status ended, WHO and regional offices emphasized that COVID\u201119 remained a significant ongoing health burden, requiring long\u2011term management. ([paho.org](https://www.paho.org/en/news/8-5-2023-covid-19-no-longer-constitutes-public-health-emergency-international-concern?utm_source=openai))\n\n3. **Remdesivir and monoclonal antibodies did not dramatically end the crisis.**  WHO\u2019s large Solidarity trial and related analyses concluded that remdesivir has little or no effect on overall COVID\u201119 mortality, contradicting hopes it would substantially change outcomes. ([who.int](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov/solidarity-clinical-trial-for-covid-19-treatments/interim-results?utm_source=openai)) While some monoclonal antibodies helped in early variants, many lost effectiveness as the virus evolved; by late 2024 the FDA had fully revoked emergency authorizations for several major COVID antibody products because circulating variants were resistant and the drugs were no longer in use. ([reuters.com](https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-revokes-authorization-five-covid-treatments-2024-12-23/?utm_source=openai))\n\nOverall, the COVID\u201119 crisis *intensified* after mid\u2011October 2020 and only gradually shifted into a more endemic, manageable phase over several years, driven largely by vaccination and accumulated immunity rather than a rapid wind\u2011down over the \u201censuing months\u201d via remdesivir and monoclonal antibodies.",
+      "sources": [
+        {
+          "end_index": 522,
+          "start_index": 378,
+          "title": "Hindsight is 2020: A Year of Heartbreak and Hope | CDC",
+          "type": "url_citation",
+          "url": "https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/covid-data/covidview/past-reports/03192021.html?utm_source=openai"
+        },
+        {
+          "end_index": 919,
+          "start_index": 747,
+          "title": "WHO EMRO - COVID-19 situation updates for week 52 (26 December 2021 \u2013 1 January 20 22)",
+          "type": "url_citation",
+          "url": "https://www.emro.who.int/pandemic-epidemic-diseases/covid-19/covid-19-situation-updates-for-week-52-26-december-2021-1-january-2022.html?utm_source=openai"
+        },
+        {
+          "end_index": 1135,
+          "start_index": 1065,
+          "title": "Spatiotemporal Patterns of the Omicron Wave of COVID-19 in the United States",
+          "type": "url_citation",
+          "url": "https://www.mdpi.com/2414-6366/8/7/349?utm_source=openai"
+        },
+        {
+          "end_index": 1523,
+          "start_index": 1375,
+          "title": "WHO Director-General's opening remarks at the media briefing \u2013 5 May 2023",
+          "type": "url_citation",
+          "url": "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing---5-may-2023?utm_source=openai"
+        },
+        {
+          "end_index": 1837,
+          "start_index": 1691,
+          "title": "COVID-19 no longer constitutes a public health emergency of international concern - PAHO/WHO | Pan American Health Organization",
+          "type": "url_citation",
+          "url": "https://www.paho.org/en/news/8-5-2023-covid-19-no-longer-constitutes-public-health-emergency-international-concern?utm_source=openai"
+        },
+        {
+          "end_index": 2321,
+          "start_index": 2114,
+          "title": "Interim results",
+          "type": "url_citation",
+          "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov/solidarity-clinical-trial-for-covid-19-treatments/interim-results?utm_source=openai"
+        },
+        {
+          "end_index": 2771,
+          "start_index": 2614,
+          "title": "US FDA revokes authorization for four COVID antibody drugs",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-revokes-authorization-five-covid-treatments-2024-12-23/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction stated that as of mid-October 2020, COVID-19 was entering its final phase and would substantially wind down in severity and societal impact over ensuing months (e.g., by early 2021), aided by treatments like remdesivir and monoclonal antibodies. This did not occur. Instead, the US and Europe saw severe second waves: US daily deaths peaked at ~4,000 in January 2021 (up from ~700 in Oct 2020), with ~350,000 deaths from Oct 2020-Jan 2021 alone; cumulative US cases reached ~28M by Jan 2021 end (CDC, Worldometer). Europe had similar surges (WHO dashboard). Remdesivir had modest effects (shortened hospital stays slightly, per reviews); monoclonals (authorized Nov 2020) were limited in supply/impact and later obsolete vs. variants. Pandemic severity persisted through 2021-2022 waves. Sources: [CDC Timeline](https://www.cdc.gov/museum/timeline/covid19.html), [Wikipedia US COVID](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States), [Worldometer US](https://www.worldometers.info/coronavirus/country/us/), [AJMC 2020 Timeline](https://www.ajmc.com/view/a-timeline-of-covid19-developments-in-2020)."
+    },
+    {
+      "id": "A-00:44:23.000",
+      "result": "right",
+      "explanation": "Contemporaneous coverage of NBC\u2019s October 15, 2020 Trump town hall consistently described moderator Savannah Guthrie\u2019s approach as unusually tough and adversarial, matching the prediction that NBC would \u201ccome out swinging.\u201d\n\n* Multiple mainstream outlets called it one of Trump\u2019s toughest grillings as president. The Washington Post wrote that fears of a free pro\u2011Trump infomercial were unfounded because it became \u201cone of the toughest grillings he has faced as president,\u201d with Guthrie repeatedly challenging his evasions on topics like white supremacy, COVID\u201119 deaths, and taxes.([washingtonpost.com](https://www.washingtonpost.com/media/2020/10/15/trump-town-hall-savannah-guthrie-biden/?utm_source=openai)) CBS News similarly said Guthrie gave Trump \u201cone of the most aggressive interviews he\u2019s experienced as president.\u201d([cbsnews.com](https://www.cbsnews.com/news/savannah-guthrie-trump-town-hall/?utm_source=openai)) CNBC\u2019s write\u2011up described an \u201cintense line of questioning\u201d and noted Guthrie \u201cgrilling\u201d Trump from the outset.([cnbc.com](https://www.cnbc.com/2020/10/15/trump-town-hall-president-grilled-on-coronavirus-qanon-white-supremacy.html?utm_source=openai)) The Guardian emphasized that she fact\u2011checked him in real time and \u201cpushed back\u201d on his rhetoric in ways he rarely faced.([theguardian.com](https://www.theguardian.com/us-news/2020/oct/15/savannah-guthrie-trump-town-hall-moderator?utm_source=openai))\n\n* Conservative and pro\u2011Trump commentators also framed the town hall as an aggressive attempt to take him down, reinforcing that the tone was perceived as combative. Sean Hannity opened his show by calling it an \u201cambush,\u201d saying Trump had effectively debated Guthrie, whom he labeled \u201cJoe Biden\u2019s surrogate.\u201d([thewrap.com](https://www.thewrap.com/hannity-complains-trump-town-hall-was-an-ambush-by-savannah-guthrie-and-nbc-video/?utm_source=openai)) Other Fox and right\u2011leaning figures said she was \u201cbadgering,\u201d \u201cembarrassing,\u201d and acting as a \u201cdebate opponent,\u201d and compared NBC\u2019s town hall to an \u201cinterrogation\u201d versus ABC\u2019s \u201cpicnic\u201d with Biden.([thedailybeast.com](https://www.thedailybeast.com/fox-news-stars-horrified-by-savannah-guthries-trump-ambush-at-nbc-town-hall/?utm_source=openai))\n\n* Coverage explicitly linked Guthrie\u2019s tough performance to NBC\u2019s need to offset or atone for the controversial decision to give Trump a simultaneous prime\u2011time platform opposite Biden. NBC had been heavily criticized, including by its own staff, for scheduling the dueling town hall.([journalism.arizona.edu](https://journalism.arizona.edu/news/journalists-hail-alumna-guthrie-after-trump-town-hall?utm_source=openai)) Post\u2011event analysis noted that Guthrie\u2019s \u201cgrilling\u201d helped \u201ctake the heat off NBC for its town hall\u201d and that she served as the face of a network decision many critics thought was not in the public interest.([journalism.arizona.edu](https://journalism.arizona.edu/news/journalists-hail-alumna-guthrie-after-trump-town-hall?utm_source=openai)) This is broadly in line with the user\u2019s phrasing that NBC would try to \u201ctake down Trump\u201d as a form of \u201cpenance.\u201d While NBC\u2019s internal motives can\u2019t be proven, the observable outcome (a notably aggressive, prosecutorial town hall that reduced some of the backlash toward the network) matches that prediction.\n\nBecause the central, testable part of the prediction\u2014NBC would \u201ccome out swinging\u201d in a highly aggressive, challenging format toward Trump during that specific town hall\u2014was borne out by both supportive and critical contemporaneous accounts, it is reasonable to judge the prediction as **right**, even though the subjective motive (\u201cpenance\u201d) cannot be definitively verified.",
+      "sources": [
+        {
+          "end_index": 746,
+          "start_index": 617,
+          "title": "Savannah Guthrie grilled Trump like few others have, taking the heat off NBC for its town hall - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/media/2020/10/15/trump-town-hall-savannah-guthrie-biden/?utm_source=openai"
+        },
+        {
+          "end_index": 957,
+          "start_index": 860,
+          "title": "Savannah Guthrie calls out Trump: \"You're the president \u2014 you're not like someone's crazy uncle\" - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/savannah-guthrie-trump-town-hall/?utm_source=openai"
+        },
+        {
+          "end_index": 1207,
+          "start_index": 1068,
+          "title": "Trump town hall: President grilled on coronavirus, QAnon, White supremacy",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2020/10/15/trump-town-hall-president-grilled-on-coronavirus-qanon-white-supremacy.html?utm_source=openai"
+        },
+        {
+          "end_index": 1458,
+          "start_index": 1329,
+          "title": "Moderator Savannah Guthrie hailed for keeping Trump in check at town hall | US elections 2020 | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2020/oct/15/savannah-guthrie-trump-town-hall-moderator?utm_source=openai"
+        },
+        {
+          "end_index": 1910,
+          "start_index": 1769,
+          "title": "Hannity Complains Trump Town Hall Was an 'Ambush' by Savannah Guthrie and NBC (Video) - TheWrap",
+          "type": "url_citation",
+          "url": "https://www.thewrap.com/hannity-complains-trump-town-hall-was-an-ambush-by-savannah-guthrie-and-nbc-video/?utm_source=openai"
+        },
+        {
+          "end_index": 2255,
+          "start_index": 2108,
+          "title": "Fox News Stars Horrified by Savannah Guthrie\u2019s Trump \u2018Ambush\u2019 at NBC Town Hall",
+          "type": "url_citation",
+          "url": "https://www.thedailybeast.com/fox-news-stars-horrified-by-savannah-guthries-trump-ambush-at-nbc-town-hall/?utm_source=openai"
+        },
+        {
+          "end_index": 2678,
+          "start_index": 2543,
+          "title": "Journalists hail alumna Guthrie after Trump town hall | School of Journalism",
+          "type": "url_citation",
+          "url": "https://journalism.arizona.edu/news/journalists-hail-alumna-guthrie-after-trump-town-hall?utm_source=openai"
+        },
+        {
+          "end_index": 3021,
+          "start_index": 2886,
+          "title": "Journalists hail alumna Guthrie after Trump town hall | School of Journalism",
+          "type": "url_citation",
+          "url": "https://journalism.arizona.edu/news/journalists-hail-alumna-guthrie-after-trump-town-hall?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was accurate. NBC moderator **Savannah Guthrie** was notably aggressive during the Oct 15, 2020 Trump town hall, grilling him on COVID-19, white supremacy, QAnon, and fact-checking responses, as widely reported. Trump complained she was 'totally crazy' and tougher than Biden's moderator ([Variety](https://variety.com/2020/politics/news/trump-savannah-guthrie-crazy-nbc-town-hall-1234807920/), [CBS News](https://www.cbsnews.com/news/savannah-guthrie-trump-town-hall/)). Sources describe it as her 'toe-to-toe' ([CBS](https://www.cbsnews.com/news/savannah-guthrie-trump-town-hall/)), 'grilling like few others' ([WaPo](https://www.washingtonpost.com/media/2020/10/15/trump-town-hall-savannah-guthrie-biden/)), 'tough persistence' ([Politico](https://www.politico.com/news/magazine/2020/10/16/dueling-town-halls-revealed-that-tough-questions-really-work-429770)), confirming strong challenges opposite Biden's ABC event."
+    },
+    {
+      "id": "A-01:01:40.610",
+      "result": "wrong",
+      "explanation": "**What actually happened in the Nov. 3, 2020 U.S. presidential election**\n\n- Joe Biden defeated incumbent President Donald Trump with **306 electoral votes to 232**.\n- Biden won the **popular vote** with about **51.3% to Trump\u2019s 46.8%**, a margin of roughly **7 million votes**.\n\nThese figures are documented in official tallies and widely cited summaries of the 2020 election results. ([cfr.org](https://www.cfr.org/blog/2020-election-numbers?utm_source=openai))\n\n**Was Biden\u2019s win a \u201clandslide\u201d?**\n\nMultiple nonpartisan fact\u2011checking and analysis outlets explicitly concluded that Biden\u2019s victory, while clear and decisive, **does not qualify as a landslide by common historical standards**:\n\n- PolitiFact: Biden\u2019s win \u201c**wasn\u2019t a landslide, but it was decisive**,\u201d noting that 306 electoral votes and his popular\u2011vote margin are solid but not historically large. ([politifact.com](https://www.politifact.com/article/2020/nov/13/how-narrow-was-joe-biden-victory-over-donald-trump/?utm_source=openai))\n- FactCheck.org similarly found that **neither Trump\u2019s 2016 win nor Biden\u2019s 2020 win** at the 306\u2013232 level counts as a landslide by customary measures, placing such results well below classic landslides in U.S. history. ([factcheck.org](https://www.factcheck.org/2020/11/no-landslide-for-biden-either/?utm_source=openai))\n- Political science and historical discussions typically reserve the term *landslide* for elections with **overwhelming electoral and/or popular\u2011vote margins** (e.g., Johnson 1964, Nixon 1972, Reagan 1984), far exceeding Biden\u2019s 2020 margin. ([presidency.ucsb.edu](https://www.presidency.ucsb.edu/statistics/data/presidential-election-mandates?utm_source=openai))\n\n**Evaluation of the prediction**\n\nJason\u2019s prediction had two key components:\n\n1. **Trump will lose to Biden.**  \n   - This was **correct**: Trump did lose, and Biden won both the Electoral College and the popular vote. ([cfr.org](https://www.cfr.org/blog/2020-election-numbers?utm_source=openai))\n\n2. **The result will be a landslide.**  \n   - By widely used historical and analytical standards, Biden\u2019s 2020 margin is **decisive but not a landslide**; expert analyses explicitly reject calling it a landslide. ([politifact.com](https://www.politifact.com/article/2020/nov/13/how-narrow-was-joe-biden-victory-over-donald-trump/?utm_source=openai))\n\nBecause the prediction specifically claimed a *landslide* (not just a clear win), and that core qualitative part did **not** occur by prevailing definitions and expert assessments, the overall prediction is best scored as **wrong** rather than fully correct, even though it correctly anticipated the winner.",
+      "sources": [
+        {
+          "end_index": 504,
+          "start_index": 427,
+          "title": "The 2020 Election by the Numbers | Council on Foreign Relations",
+          "type": "url_citation",
+          "url": "https://www.cfr.org/blog/2020-election-numbers?utm_source=openai"
+        },
+        {
+          "end_index": 1049,
+          "start_index": 913,
+          "title": "PolitiFact | How narrow was Joe Biden\u2019s victory over Donald Trump?",
+          "type": "url_citation",
+          "url": "https://www.politifact.com/article/2020/nov/13/how-narrow-was-joe-biden-victory-over-donald-trump/?utm_source=openai"
+        },
+        {
+          "end_index": 1373,
+          "start_index": 1272,
+          "title": "No 'Landslide' for Biden, Either - FactCheck.org",
+          "type": "url_citation",
+          "url": "https://www.factcheck.org/2020/11/no-landslide-for-biden-either/?utm_source=openai"
+        },
+        {
+          "end_index": 1738,
+          "start_index": 1617,
+          "title": "Presidential Election Margin of Victory | The American Presidency Project",
+          "type": "url_citation",
+          "url": "https://www.presidency.ucsb.edu/statistics/data/presidential-election-mandates?utm_source=openai"
+        },
+        {
+          "end_index": 2043,
+          "start_index": 1966,
+          "title": "The 2020 Election by the Numbers | Council on Foreign Relations",
+          "type": "url_citation",
+          "url": "https://www.cfr.org/blog/2020-election-numbers?utm_source=openai"
+        },
+        {
+          "end_index": 2397,
+          "start_index": 2261,
+          "title": "PolitiFact | How narrow was Joe Biden\u2019s victory over Donald Trump?",
+          "type": "url_citation",
+          "url": "https://www.politifact.com/article/2020/nov/13/how-narrow-was-joe-biden-victory-over-donald-trump/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Jason correctly predicted Trump would lose to Biden, but incorrectly predicted a landslide victory for Biden in both the Electoral College and popular vote. Actual results: Biden won 306-232 in the EC (56.9%-43.1%) and 51.3%-46.8% (~4.5% margin, 7+ million votes) in the popular vote ([Wikipedia](https://en.wikipedia.org/wiki/2020_United_States_presidential_election), [270toWin](https://www.270towin.com/2020-election/), [National Archives](https://www.archives.gov/electoral-college/2020)). This was a solid win but not a landslide, which typically requires ~10%+ popular vote margin or overwhelming EC dominance (e.g., Reagan 1984: 525-13 EC, 58.8% popular); sources like FactCheck.org explicitly state ['No Landslide for Biden'](https://www.factcheck.org/2020/11/no-landslide-for-biden-either/) and PolitiFact describe it as narrow in key states."
+    },
+    {
+      "id": "D-01:01:56.050",
+      "result": "wrong",
+      "explanation": "Joe Biden did win the Nov. 3, 2020 U.S. presidential election, but the size of his victory was not \"enormous\" by historical standards.\n\n**Key facts:**\n- Biden won 51.3% of the popular vote to Donald Trump\u2019s 46.8%, a margin of about 4.5 percentage points and roughly 7.1 million votes. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai))\n- He won the Electoral College 306\u2013232. This Electoral College margin is relatively modest historically and comparable to Trump\u2019s 2016 result, which fact\u2011checkers have explicitly said was not a \"massive landslide.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai))\n- Several decisive swing states were very close: Arizona, Georgia, and Wisconsin were all decided by under 1 percentage point, with combined margins in the tens of thousands of votes. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai))\n- Election analysts generally characterize Biden\u2019s win as clear/decisive but not a landslide; it falls near the middle of post\u20111960 presidential victory margins, not at the \u201cenormous\u201d end. ([politifact.com](https://www.politifact.com/article/2020/nov/13/how-narrow-was-joe-biden-victory-over-donald-trump/?utm_source=openai))\n\nThus, while the prediction correctly anticipated that Biden would win, it specifically forecast an **\u201cenormous\u201d** victory\u2014implying a landslide\u2011scale margin\u2014which did not occur. The winner was right, but the predicted magnitude of the win was substantially overstated, so overall the prediction is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 433,
+          "start_index": 323,
+          "title": "2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 762,
+          "start_index": 652,
+          "title": "2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1058,
+          "start_index": 948,
+          "title": "2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1385,
+          "start_index": 1249,
+          "title": "PolitiFact | How narrow was Joe Biden\u2019s victory over Donald Trump?",
+          "type": "url_citation",
+          "url": "https://www.politifact.com/article/2020/nov/13/how-narrow-was-joe-biden-victory-over-donald-trump/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Joe Biden won the 2020 election with 306 electoral votes to Donald Trump's 232 and a popular vote margin of 4.5 percentage points (81.3M to 74.2M votes), but this was not an 'enormous' or landslide victory. Key battleground states like Arizona, Georgia, and Wisconsin were decided by razor-thin margins totaling ~44,000 votes across them. Sources describe it as narrow in swing states despite the national popular lead: [FactCheck.org](https://www.factcheck.org/2020/11/no-landslide-for-biden-either/) ('No Landslide'), [PolitiFact](https://www.politifact.com/article/2020/nov/13/how-narrow-was-joe-biden-victory-over-donald-trump/) ('narrow'), [Pew Research](https://www.pewresearch.org/short-reads/2020/12/11/bidens-victory-another-example-of-how-electoral-college-wins-are-bigger-than-popular-vote-ones/) (4.45% margin), [Wikipedia](https://en.wikipedia.org/wiki/2020_United_States_presidential_election), [CNN](https://www.cnn.com/election/2020/results/president)."
+    },
+    {
+      "id": "C-01:01:56.050",
+      "result": "wrong",
+      "explanation": "**Why this prediction is rated \u201cwrong\u201d**\n\n1. **No Biden \u201clandslide\u201d in the actual 2020 result**  \n   - Final outcome: Joe Biden won 306 electoral votes to Donald Trump\u2019s 232, the exact reverse of Trump\u2019s 2016 total. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai))  \n   - Popular vote: Biden 51.3% vs. Trump 46.8%, a margin of about **4.5 percentage points**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Nationwide_opinion_polling_for_the_2020_United_States_presidential_election?utm_source=openai))  \n   - Political science and media usage of *\u201clandslide\u201d* generally implies an overwhelming or unusually large margin; there is no fixed threshold, but it connotes a decisive blowout well beyond a typical competitive race. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Landslide_victory?utm_source=openai))  \n   - A 4.5\u2011point popular\u2011vote margin and a 306\u2013232 Electoral College result (with several tipping\u2011point states decided by less than 2 points) are widely regarded as a solid but **not** overwhelming win. This falls short of what most observers would call a \u201clandslide.\u201d\n\n2. **Trump *did* significantly cut Biden\u2019s polling lead after mid\u2011October**  \n   The prediction added that Trump was \u201crunning out of time to change the polls,\u201d implying the October polling picture would mostly hold.\n   - Around three weeks before Election Day (mid\u2011October 2020), national polling averages had Biden ahead by **about 10 points** (e.g., RealClearPolitics and FiveThirtyEight both had Biden +10.6 on Oct. 13). ([reddit.com](https://www.reddit.com/r/fivethirtyeight/comments/jal0ur?utm_source=openai))  \n   - In the final days before the election, a composite of major polling averages showed Biden ahead by roughly **7.9 points** nationally (51.4% to 43.5%). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Nationwide_opinion_polling_for_the_2020_United_States_presidential_election?utm_source=openai))  \n   - The **actual** popular\u2011vote margin was Biden +4.5. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Nationwide_opinion_polling_for_the_2020_United_States_presidential_election?utm_source=openai))  \n   - From mid\u2011October to the vote count, Trump effectively narrowed Biden\u2019s advantage by about **5\u20136 points** relative to early/mid\u2011October polling, which is a **substantial shift** in the trajectory, even though it wasn\u2019t enough to win.\n\n**Conclusion**  \nThe prediction contained two key claims:\n- The race was \u201ctracking toward a Biden landslide.\u201d  \n- Trump had too little time left to significantly change the polls.\n\nBiden\u2019s eventual victory was **neither a landslide** by common standards nor a freezing of the mid\u2011October polling picture; Trump **did** meaningfully erode Biden\u2019s lead before Election Day, though he still lost. Therefore, taken as stated, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 362,
+          "start_index": 252,
+          "title": "2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 604,
+          "start_index": 459,
+          "title": "Nationwide opinion polling for the 2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Nationwide_opinion_polling_for_the_2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 916,
+          "start_index": 829,
+          "title": "Landslide victory",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Landslide_victory?utm_source=openai"
+        },
+        {
+          "end_index": 1708,
+          "start_index": 1618,
+          "title": "Some interesting comparison polls three weeks before election 2016/2020",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/fivethirtyeight/comments/jal0ur?utm_source=openai"
+        },
+        {
+          "end_index": 2013,
+          "start_index": 1868,
+          "title": "Nationwide opinion polling for the 2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Nationwide_opinion_polling_for_the_2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 2218,
+          "start_index": 2073,
+          "title": "Nationwide opinion polling for the 2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Nationwide_opinion_polling_for_the_2020_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction claimed the 2020 election was tracking toward a Biden **landslide** with insufficient time for Trump to alter polls before November 3. Actual results: Biden won 306-232 electoral votes (same as Trump's 2016 margin, which Trump called a landslide but others did not) and the popular vote 51.3%-46.8% (~4.5% margin, 7M votes), not a landslide by standard definitions (typically 10%+ popular vote or sweeping EC like Reagan's 525). Sources like [FactCheck.org](https://www.factcheck.org/2020/11/no-landslide-for-biden-either/) explicitly state 'No Landslide for Biden'; [PolitiFact](https://www.politifact.com/article/2020/nov/13/how-narrow-was-joe-biden-victory-over-donald-trump/) and [Pew Research](https://www.pewresearch.org/short-reads/2020/12/11/bidens-victory-another-example-of-how-electoral-college-wins-are-bigger-than-popular-vote-ones/) describe it as narrow in key battlegrounds despite national margin. October polls showed Biden up 8-10pts nationally (e.g., [Quinnipiac](https://poll.qu.edu/poll-release?releaseid=3803), [538](https://fivethirtyeight.com/features/final-2020-presidential-election-forecast/)), but overestimated; Trump narrowed the gap, preventing a landslide."
+    },
+    {
+      "id": "C-01:03:46.130",
+      "result": "wrong",
+      "explanation": "Donald Trump did **not** resign during the lame-duck period after losing the 2020 election, nor did Mike Pence become president and issue Trump a pardon.\n\nKey facts:\n\n- Joe Biden won the 2020 U.S. presidential election, and Donald Trump served out his full term until **January 20, 2021**, when Biden was inaugurated and Trump\u2019s presidency ended normally; Trump never resigned from office during the transition period.\n- Mike Pence never assumed the presidency and therefore never had the opportunity to issue a presidential pardon to Trump.\n- No record exists of Trump receiving any presidential pardon (from himself, Pence, or anyone else) for federal crimes in connection with his term.\n\nBecause the prediction required **both** (1) resignation during the lame-duck period and (2) a subsequent Pence pardon for Trump, and neither occurred, the prediction is **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump lost the 2020 election but did not resign during the lame-duck period (November 2020\u2013January 20, 2021); he served out his term until inauguration day. Mike Pence did not pardon him. Web searches for 'Did Donald Trump resign during lame-duck period after 2020 election?' and 'Did Mike Pence pardon Trump in 2020 or 2021?' yield only pre-event speculation (e.g., [Atlanta Voice, Nov 2020](https://theatlantavoice.com/election2020-speculation-swirls-that-trump-will-resign-clearing-way-for-pardon-by-vp-pence/); [NYT, Nov 2020](https://www.nytimes.com/2020/11/07/us/politics/trump-white-house-biden.html)) and post-event coverage confirming no resignation (e.g., [FiveThirtyEight, Jan 2021](https://fivethirtyeight.com/features/the-final-two-months-of-trumps-presidency-were-the-most-important-ones/); [CNN, Dec 2020](https://www.cnn.com/2020/12/16/politics/donald-trump-pardons-lame-duck)). Recent results reference Trump's 2025 pardons of allies, irrelevant here."
+    },
+    {
+      "id": "A-01:03:55.610",
+      "result": "wrong",
+      "explanation": "Donald Trump did lose the 2020 election to Joe Biden, so the condition for the prediction was met. However, after that loss:\n\n1. **He did not resign before the end of his term.** Trump served out his first term through January 20, 2021, delivering a standard farewell address on January 19 and leaving office when Biden was inaugurated, with no resignation or handoff of power to Mike Pence for purposes of a pardon deal.\n   *Sources: coverage of Trump\u2019s January 19, 2021 farewell address and timelines of the end of his first administration.* ([en.wikipedia.org](https://en.wikipedia.org/wiki/Donald_Trump%27s_first_farewell_address?utm_source=openai))\n\n2. **He did not secure broad preemptive pardons for himself or his family.** Despite extensive speculation that he might issue self\u2011pardons or blanket pardons for his adult children and son\u2011in\u2011law, his final clemency list on January 20, 2021\u2014143 pardons and commutations\u2014did **not** include Trump himself, any of his children, Jared Kushner, or Rudy Giuliani. Multiple contemporaneous reports explicitly note that he \u201cdidn\u2019t pardon his family\u201d and \u201cdid not issue a preemptive pardon for himself,\u201d and published lists of recipients likewise show no Trump family members.\n   *Sources: reporting on Trump\u2019s final-day clemency (Forbes, Guardian, Snopes, Newsweek) and official recipient lists.* ([forbes.com](https://www.forbes.com/sites/joewalsh/2021/01/20/trump-pardons-and-commutes-on-his-last-day---but-doesnt-pardon-his-family/?utm_source=openai))\n\nBecause Trump neither resigned nor arranged sweeping self/family pardons before leaving office, the specific scenario Jason rated as ~50% likely did **not** occur. The prediction therefore counts as **wrong** in outcome terms, even though it was framed probabilistically.",
+      "sources": [
+        {
+          "end_index": 689,
+          "start_index": 580,
+          "title": "Donald Trump's first farewell address",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Donald_Trump%27s_first_farewell_address?utm_source=openai"
+        },
+        {
+          "end_index": 1542,
+          "start_index": 1385,
+          "title": "Trump Pardons And Commutes 143 People On His Last Day \u2014 But Doesn\u2019t Pardon His Family",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/joewalsh/2021/01/20/trump-pardons-and-commutes-on-his-last-day---but-doesnt-pardon-his-family/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump lost the 2020 election but did not resign before leaving office on January 20, 2021; he departed normally ([CNN](https://www.cnn.com/2021/01/20/politics/trump-presidency-ends), [ABC News](https://abcnews.go.com/Politics/donald-trump-leaves-white-house-hours-bidens-inauguration/story?id=75351992)). He discussed but did not issue a self-pardon ([CNN](https://www.cnn.com/2023/09/14/politics/donald-trump-pardon), [NYT](https://www.nytimes.com/2021/01/07/us/politics/trump-self-pardon.html)). His January 19, 2021 pardons (73 total) covered allies like Steve Bannon and Roger Stone but not himself or immediate family (e.g., Ivanka, Jared Kushner, Donald Jr., Eric); he explicitly did not pardon his children ([CNN](https://www.cnn.com/2021/01/19/politics/trump-self-pardon-warning), [Fox News](https://www.foxnews.com/media/flashback-media-attacked-trump-floating-preemptive-pardons-2020-before-biden-did-so-four-years-later), DOJ list [justice.gov](https://www.justice.gov/pardon/pardons-granted-president-donald-j-trump-2017-2021), [NBC News](https://www.nbcnews.com/politics/donald-trump/full-list-trump-s-last-minute-pardons-commuted-sentences-n1254806)). He did pardon Jared Kushner's father (Charles Kushner) in 2020, but this was not 'broad pardons covering himself and his family' as predicted."
+    }
+  ]
+}

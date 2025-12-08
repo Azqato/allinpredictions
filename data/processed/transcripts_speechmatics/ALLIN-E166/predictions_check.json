@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "count": 11,
+    "count_by_result": {
+      "right": 3,
+      "inconclusive": 2,
+      "ambiguous": 2,
+      "wrong": 4
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:14:20.000",
+      "result": "right",
+      "explanation": "Chamath\u2019s comment came during a discussion of AI startups raising $100M rounds, much of which was being spent on GPU compute. He said that by \"next week\" (i.e., roughly late February 2024) \"when all these announcements are done ... you're about to see a one\u2011tenth of the compute cost,\" framing it as going from spending $70\u201380M of a $100M round on compute to spending $7\u20138M for the same throughput. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e166-mind-blowing-ai-video-openai-launches-sora-is-biden-too-old-tuckerputin-interview-more?utm_source=openai))\n\nIn the very next episode (E167 on Feb 23, 2024), one of the main segments is explicitly titled \"Groq's big week, training vs. inference, LPUs vs. GPUs,\" indicating that the \"announcements\" he was previewing were about new inference hardware like Groq\u2019s Language Processing Unit (LPU). ([metacast.app](https://metacast.app/podcast/all-in-with-chamath-jason-sacks-and-friedberg/3AEqEKwn/filter/date/after/2023-12-29T17%253A00%253A00.000Z?utm_source=openai)) Just before and during that week, Groq\u2019s LPU was publicly benchmarked and heavily covered: a Feb 13, 2024 press release and independent benchmarks showed its LPU inference engine delivering dramatically higher throughput (hundreds of tokens/sec) than existing GPU-based providers on Llama 2\u201170B, marketed as a 10x step-change in speed and efficiency. ([groq.com](https://groq.com/newsroom/groq-lpu-inference-engine-leads-in-first-independent-llm-benchmark?utm_source=openai))\n\nOn February 22, 2024\u2014within the \"next week\" window\u2014Beebom and other outlets summarized Groq\u2019s own claims that its LPU clusters could perform LLM inference **10\u00d7 faster and at roughly 1/10th the cost per token** compared to Nvidia H100 GPU clusters, explicitly using the \u201c10x speed\u201d and \u201c1/10th the cost\u201d language Chamath had alluded to. ([beebom.com](https://beebom.com/groq-lpu-chip-ai-platform-beats-chatgpt-gemini/?utm_source=openai)) Follow\u2011up technical coverage (e.g., The Next Platform) clarified that the \u201c1/10th cost\u201d is best understood in terms of per\u2011token/time/energy cost for inference rather than literal sticker price of full systems, but it still represents an order\u2011of\u2011magnitude reduction in effective compute cost for those workloads relative to the prevailing GPU setups. ([nextplatform.com](https://www.nextplatform.com/2023/11/27/groq-says-it-can-deploy-1-million-ai-inference-chips-in-two-years/?utm_source=openai))\n\nBy contrast, there was **no** immediate, industry\u2011wide 10\u00d7 drop in GPU prices or in the overall cost of AI compute in that same week\u2014H100s remained extremely expensive, and Nvidia\u2019s next major efficiency jump (Blackwell, announced March 18, 2024) was future\u2011dated and did not instantly cut users\u2019 bills by 10\u00d7. ([investors.com](https://www.investors.com/news/technology/nvidia-stock-nvda-ai-leadership-gtc-2024/?utm_source=openai)) So if you interpret his remark as \u201cthe whole market\u2019s compute costs will suddenly be 10\u00d7 lower next week,\u201d it would be wrong. But taken in context\u2014previewing upcoming announcements about new inference hardware that offers ~10\u00d7 better cost\u2011per\u2011throughput versus the then\u2011standard Nvidia GPU stacks\u2014the prediction that such announcements were imminent was essentially borne out by Groq\u2019s LPU launch coverage and benchmarks in that exact time window.\n\nGiven the format of your normalized prediction (\u201cannouncements will be made that reduce the cost of AI compute (for comparable throughput) by roughly 10x versus the then\u2011prevailing cost structure\u201d), and the fact that those Groq announcements with 10x cost\u2011and\u2011speed claims did occur in the following week, the most reasonable classification is that the prediction was **right**, albeit narrowly (it applied to specific inference offerings, not to all AI compute).",
+      "sources": [
+        {
+          "end_index": 637,
+          "start_index": 436,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E166: Mind-blowing AI Video: OpenAI launches Sora + Is Biden too old? Tucker/Putin interview & more Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e166-mind-blowing-ai-video-openai-launches-sora-is-biden-too-old-tuckerputin-interview-more?utm_source=openai"
+        },
+        {
+          "end_index": 1100,
+          "start_index": 930,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg podcast - Listen or read transcript on Metacast",
+          "type": "url_citation",
+          "url": "https://metacast.app/podcast/all-in-with-chamath-jason-sacks-and-friedberg/3AEqEKwn/filter/date/after/2023-12-29T17%253A00%253A00.000Z?utm_source=openai"
+        },
+        {
+          "end_index": 1576,
+          "start_index": 1452,
+          "title": "Groq\u00ae LPU\u2122 Inference Engine Leads in First Independent LLM Benchmark | Groq is fast, low cost inference.",
+          "type": "url_citation",
+          "url": "https://groq.com/newsroom/groq-lpu-inference-engine-leads-in-first-independent-llm-benchmark?utm_source=openai"
+        },
+        {
+          "end_index": 2019,
+          "start_index": 1919,
+          "title": "Meet Groq, a Lightning Fast AI Accelerator that Beats ChatGPT and Gemini | Beebom",
+          "type": "url_citation",
+          "url": "https://beebom.com/groq-lpu-chip-ai-platform-beats-chatgpt-gemini/?utm_source=openai"
+        },
+        {
+          "end_index": 2518,
+          "start_index": 2372,
+          "title": "Groq Says It Can Deploy 1 Million AI Inference Chips In Two Years",
+          "type": "url_citation",
+          "url": "https://www.nextplatform.com/2023/11/27/groq-says-it-can-deploy-1-million-ai-inference-chips-in-two-years/?utm_source=openai"
+        },
+        {
+          "end_index": 2953,
+          "start_index": 2833,
+          "title": "Nvidia Flexes AI Leadership With New Chips, Supercomputer, 'Microservices'",
+          "type": "url_citation",
+          "url": "https://www.investors.com/news/technology/nvidia-stock-nvda-ai-leadership-gtc-2024/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No announcements around late February 2024 (e.g., week of Feb 23) were found that reduced AI compute costs by roughly 10x for comparable throughput. Closest temporally was Alibaba Cloud's Feb 29 price cuts of up to 55% on cloud products ([Reuters](https://www.reuters.com/technology/chinas-alibaba-cloud-rolls-out-price-cuts-up-55-cloud-products-2024-02-29/)), but this was not 90% off (10x cheaper) nor specifically for AI compute. Google Gemini 1.5 Pro (announced Feb 15, pre-podcast) had pricing ~3x cheaper than GPT-4 Turbo on output tokens (e.g., $10.50 vs. $30 per 1M output tokens; [Google pricing](https://cloud.google.com/vertex-ai/generative-ai/pricing)), not 10x, and was before 'next week'. Lambda Labs funding (Feb 16) mentioned low GPU rental at $2.23/hr ([NextPlatform](https://www.nextplatform.com/2024/02/16/lambda-snags-320-million-to-grow-its-rent-a-gpu-cloud/)), but no 10x cut. Groq inference analysis (SemiAnalysis Feb 21) discussed costs but no new 10x reduction launch. Podcast transcript context ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e166-mind-blowing-ai-video-openai-launches-sora-biden-too-old-tuckerputin-interview-more)) shows Chamath vaguely predicting efficiency gains (chips/architectures) without specifics, tied to startup overfunding risks. General AI costs have declined (e.g., Sam Altman noted 10x/year trend in Feb 2025), but no matching event then. Enough time passed (to Dec 2025)."
+    },
+    {
+      "id": "G-00:36:55.560",
+      "result": "right",
+      "explanation": "Friedberg's claim was that the next major iPhone and flagship-Android cycle after February 2024 would ship with chips explicitly designed to run AI models locally and enable substantial on\u2011device AI features. That is what happened.\n\nApple's iPhone 16 lineup with A18 and A18 Pro chips (launched September 2024) is marketed as being built for Apple Intelligence; Apple states that many of the generative models behind Apple Intelligence run entirely on\u2011device, and that third\u2011party apps can call those on\u2011device models via the Foundation Models framework, with features that can work offline. ([apple.com](https://www.apple.com/sn/newsroom/2024/09/apple-intelligence-comes-to-iphone-ipad-and-mac-starting-next-month/?utm_source=openai)) Apple and press materials also describe the A18 Neural Engine as optimized for large generative models and significantly faster at running ML workloads, specifically to accelerate Apple Intelligence, and note that Apple Intelligence requires newer A\u2011series chips with sufficient GPU/NPU capacity for on\u2011device processing. ([businesswire.com](https://www.businesswire.com/news/home/20240909751170/en/Apple-introduces-iPhone-16-and-iPhone-16-Plus?utm_source=openai))\n\nOn Android, Samsung's Galaxy S25 series uses Qualcomm's Snapdragon 8 Elite for Galaxy, whose substantially faster NPU is highlighted as enabling many more Galaxy AI experiences to run on\u2011device, including features like Generative Edit that previously relied on the cloud; Samsung also exposes a setting to disable cloud AI and rely only on local processing. ([techpowerup.com](https://www.techpowerup.com/331470/samsung-galaxy-s25-series-sets-the-standard-of-ai-phone-as-a-true-ai-companion?utm_source=openai)) Google's Pixel 9 family, powered by the Tensor G4 chip, runs Google's Gemini Nano large language model locally; this on\u2011device LLM powers features such as Recorder summaries, Call Notes, Pixel Screenshots, and other real\u2011time summarization, translation, and captioning capabilities that operate without sending data to the cloud. ([androidauthority.com](https://www.androidauthority.com/pixel-recorder-google-pixel-9-3473920/?utm_source=openai)) Other flagship SoCs like MediaTek's Dimensity 9400 and Samsung's Exynos platforms are likewise advertised as supporting on\u2011device generative AI, including multimodal Gemini Nano, underscoring that high\u2011end phones are now expected to run such models locally. ([semiconductor.samsung.com](https://semiconductor.samsung.com/us/solutions/technology/on-device-ai/?utm_source=openai))\n\nGiven that the post\u2011February\u20112024 flagship cycles from Apple, Samsung, Google, and other major vendors did in fact ship with dedicated NPUs/AI engines specifically marketed for running sizable generative models on the device and enabling prominent on\u2011device AI features, Friedberg's prediction that the 'next set of mobile devices' would have chips that run models locally has been borne out.",
+      "sources": [
+        {
+          "end_index": 770,
+          "start_index": 627,
+          "title": "Apple Intelligence comes to iPhone, iPad, and Mac starting next month - Apple (SN)",
+          "type": "url_citation",
+          "url": "https://www.apple.com/sn/newsroom/2024/09/apple-intelligence-comes-to-iphone-ipad-and-mac-starting-next-month/?utm_source=openai"
+        },
+        {
+          "end_index": 1235,
+          "start_index": 1093,
+          "title": "Apple introduces iPhone 16 and iPhone 16 Plus",
+          "type": "url_citation",
+          "url": "https://www.businesswire.com/news/home/20240909751170/en/Apple-introduces-iPhone-16-and-iPhone-16-Plus?utm_source=openai"
+        },
+        {
+          "end_index": 1749,
+          "start_index": 1597,
+          "title": "Samsung Galaxy S25 Series Sets the Standard of AI Phone as a True AI companion | TechPowerUp",
+          "type": "url_citation",
+          "url": "https://www.techpowerup.com/331470/samsung-galaxy-s25-series-sets-the-standard-of-ai-phone-as-a-true-ai-companion?utm_source=openai"
+        },
+        {
+          "end_index": 2195,
+          "start_index": 2080,
+          "title": "Pixel Recorder's summaries are actually useful on the Google Pixel 9 - Android Authority",
+          "type": "url_citation",
+          "url": "https://www.androidauthority.com/pixel-recorder-google-pixel-9-3473920/?utm_source=openai"
+        },
+        {
+          "end_index": 2574,
+          "start_index": 2454,
+          "title": "On-device AI | Technologies | Samsung Semiconductor Global",
+          "type": "url_citation",
+          "url": "https://semiconductor.samsung.com/us/solutions/technology/on-device-ai/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction has come true. The next major mobile device cycles after February 2024 shipped with on-device AI-capable chips enabling significant local AI features.\n\n- **iPhone 16 series** (announced Sep 9, 2024; released Sep 20, 2024): A18/A18 Pro chips with enhanced Neural Engine run Apple Intelligence features locally, e.g., writing tools, notification summaries, image generation via on-device models. [Apple Newsroom](https://www.apple.com/newsroom/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/), [Apple Intelligence](https://www.apple.com/apple-intelligence/).\n\n- **Google Pixel 9 series** (announced Aug 13, 2024): Tensor G4 chip powers Gemini Nano, an on-device multimodal AI model for features like summarization and pixelation. [Google Blog](https://blog.google/products/pixel/google-pixel-9-pro-xl/), [Android Authority](https://www.androidauthority.com/gemini-nano-features-devices-3490062/).\n\n- **Samsung Galaxy S25 series** (announced Jan 22, 2025; released Feb 7, 2025): Snapdragon 8 Elite for Galaxy with 40% stronger NPU enables on-device AI like Gallery Search and multimodal agents, minimizing cloud reliance. [Samsung News](https://news.samsung.com/us/samsung-galaxy-s25-series-sets-standard-of-ai-phone-true-ai-companion-unpacked2025/), [Qualcomm](https://www.qualcomm.com/snapdragon/news/5-ai-superpowers-that-you-can-use-anywhere-with-the-samsung-gala).\n\nThese chips specifically handle local inference for privacy-focused, low-latency AI, matching the quote's prediction."
+    },
+    {
+      "id": "A-00:39:47.940",
+      "result": "inconclusive",
+      "explanation": "Chamath\u2019s claim bundles several linked predictions: (1) **the first major real\u2011world impact of Sora\u2011like AI video tools will be in pornography**, (2) **synthetic, non\u2011human porn will become *dominant***, and (3) this will **\u201cdestroy pornography in OnlyFans\u201d / significantly erode human\u2011creator platforms**.\n\nOn point (1), there is some support but not a clean confirmation:\n- OpenAI\u2019s own Sora products explicitly *ban* graphic sexual content: prompts requesting sexual/nude material are blocked and outputs are filtered, making official Sora a poor vehicle for mainstream porn. ([pureai.com](https://pureai.com/Articles/2024/02/15/OpenAI-Sora.aspx?utm_source=openai))\n- However, *other* AI video tools targeted at adult content have grown quickly. Industry pieces and market reports suggest AI\u2011generated porn is already a substantial minority of new content: around **30% of new adult content in 2025** on major platforms, with similar estimates for AI\u2019s share of new uploads and LGBTQ+ segments. ([reelmind.ai](https://reelmind.ai/blog/ai-porn-movie-trends-whats-next-in-adult-content-creation?utm_source=openai)) Broader analyses estimate **15\u201320% of new adult content consumed in 2025 involves AI** (deepfakes, generators, AI chat/companions). ([whatstrending.com](https://whatstrending.com/porn-trends-in-2025-what-viewers-are-watching-and-why-it-matters/?utm_source=openai)) Other market data show rapid AI adoption in the adult sector and a projected **AI\u2011porn market of about $2.4B by 2026**, with high adoption of synthetic performers and virtual companions. ([gitnux.org](https://gitnux.org/ai-in-the-av-industry-statistics/?utm_source=openai))  \nThis suggests the adult industry is indeed *one of the earliest and heaviest adopters* of generative video, which partially tracks the \u201cyou\u2019ll see it here first\u201d intuition, but it\u2019s not exclusive to porn and is hard to prove as the *single* first/primary impact domain.\n\nOn points (2) and (3), the core outcomes **have clearly not materialized yet**:\n- Even optimistic, industry\u2011friendly sources put AI\u2011generated porn at roughly **a large minority (\u224815\u201330%) of new content**, not the majority; human\u2011performed porn still dominates total supply and consumption. ([reelmind.ai](https://reelmind.ai/blog/ai-porn-movie-trends-whats-next-in-adult-content-creation?utm_source=openai))\n- Data from OnlyFans show **continued strong growth rather than erosion**. Official filings and analyses report:  \n  - 2023 revenue around **$1.3B** with nearly **20% year\u2011over\u2011year growth** and billions paid out to creators. ([upmarket.co](https://www.upmarket.co/blog/onlyfans-official-revenue-net-profit-creator-and-subscriber-data-updated-september-2024/?utm_source=openai))  \n  - For 2024, user accounts up **24% to ~377.5M**, creators up to **~4.6M**, total payments up to **$7.2B**, with pre\u2011tax profits and owner dividends hitting record highs ahead of a possible ~$8B sale. ([businessinsider.com](https://www.businessinsider.com/onlyfans-app-surges-creators-users-revenue-owner-leonid-radvinsky-earnings-2025-8?utm_source=openai))  \nThere is no evidence that AI porn has \u201cdestroyed\u201d or even measurably weakened OnlyFans\u2019 core human\u2011creator business so far.\n- Some subscription competitors (e.g., Fanvue) *do* lean into AI\u2011generated models, and at one point AI creators made **about 15% of Fanvue\u2019s revenue**, showing a real but still partial shift toward synthetic performers on certain platforms. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Fanvue?utm_source=openai)) This indicates competitive pressure and experimentation, not wholesale replacement.\n\nBecause Chamath explicitly framed the outcome as happening **\u201cover time\u201d**, and we are only about 21 months past the February 2024 prediction, it is too early to say whether synthetic porn will ultimately become *dominant* or whether it will meaningfully undercut human\u2011based platforms in the longer term. Current evidence shows:\n- AI porn is growing fast and is an important early use\u2011case for generative video.\n- It has *not* yet become the dominant form of porn.\n- Human\u2011creator businesses like OnlyFans are, so far, growing rather than collapsing.\n\nGiven the vague time horizon and mixed signal\u2014some early support for the \u201cporn will adopt this first\u201d intuition, but clear non\u2011realization of the stronger claims about dominance and destruction\u2014the fairest assessment as of November 30, 2025 is **\u201cinconclusive (too early)\u201d rather than definitively right or wrong.",
+      "sources": [
+        {
+          "end_index": 711,
+          "start_index": 622,
+          "title": "OpenAI Takes Wraps Off 'Sora' Text-to-Video Model -- Pure AI",
+          "type": "url_citation",
+          "url": "https://pureai.com/Articles/2024/02/15/OpenAI-Sora.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 1159,
+          "start_index": 1042,
+          "title": "AI Porn Movie Trends: What\u2019s Next in Adult Content Creation | ReelMind",
+          "type": "url_citation",
+          "url": "https://reelmind.ai/blog/ai-porn-movie-trends-whats-next-in-adult-content-creation?utm_source=openai"
+        },
+        {
+          "end_index": 1424,
+          "start_index": 1292,
+          "title": "Porn Trends in 2025: What Viewers Are Watching and Why It Matters | What's Trending",
+          "type": "url_citation",
+          "url": "https://whatstrending.com/porn-trends-in-2025-what-viewers-are-watching-and-why-it-matters/?utm_source=openai"
+        },
+        {
+          "end_index": 1698,
+          "start_index": 1612,
+          "title": "AI In The Av Industry Statistics Statistics: Market Data Report 2025",
+          "type": "url_citation",
+          "url": "https://gitnux.org/ai-in-the-av-industry-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 2383,
+          "start_index": 2266,
+          "title": "AI Porn Movie Trends: What\u2019s Next in Adult Content Creation | ReelMind",
+          "type": "url_citation",
+          "url": "https://reelmind.ai/blog/ai-porn-movie-trends-whats-next-in-adult-content-creation?utm_source=openai"
+        },
+        {
+          "end_index": 2764,
+          "start_index": 2612,
+          "title": "OnlyFans Official Revenue, Net Profit, Creator and Subscriber data - Updated September 2024",
+          "type": "url_citation",
+          "url": "https://www.upmarket.co/blog/onlyfans-official-revenue-net-profit-creator-and-subscriber-data-updated-september-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 3126,
+          "start_index": 2970,
+          "title": "6 OnlyFans stats that show how massive the platform has become",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/onlyfans-app-surges-creators-users-revenue-owner-leonid-radvinsky-earnings-2025-8?utm_source=openai"
+        },
+        {
+          "end_index": 3572,
+          "start_index": 3496,
+          "title": "Fanvue",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Fanvue?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath predicted AI video tools like Sora would first impact porn, with synthetic content becoming dominant and eroding platforms like OnlyFans. However, by Dec 2025, OnlyFans' gross subscriber payments grew from $6.6B in 2023 to $7.2B in 2024 (+9%), with platform revenue at $1.4B and talks of $8-30B sale valuations ([Guardian](https://www.theguardian.com/business/2025/aug/22/onlyfans-owner-dividends-revenue-potential-sale), [Hypebeast](https://hypebeast.com/2025/8/onlyfans-2024-revenue-7-2-billion-usd-nine-percent-increase-report)). No decline or significant erosion from AI.\n\nAI porn is growing ('booming', per [Economist Nov 2025](https://www.economist.com/international/2025/11/27/ai-is-upending-the-porn-industry)), but market tiny (~$120M in 2023, per Medium) vs. total porn ~$100B or OnlyFans alone. No stats show synthetic dominant over human content; humans preferred for OnlyFans' personal interaction ([WIRED](https://www.wired.com/story/when-it-comes-to-onlyfans-humans-can-outcompete-ai/)).\n\nSora's major uses: viral app for memes/social media/marketing ([TechCrunch](https://techcrunch.com/2025/10/03/openais-sora-soars-to-no-1-on-the-u-s-app-store/), [Business of Apps](https://www.businessofapps.com/data/sora-statistics/)); OpenAI bans explicit content. Not first/primary impact in porn.\n\n22 months post-prediction: no fulfillment."
+    },
+    {
+      "id": "G-00:29:01.460",
+      "result": "inconclusive",
+      "explanation": "Nvidia\u2019s valuation has grown dramatically since the prediction, but it has not reached $10T, nor has anything happened that clearly makes a $10T outcome impossible.\n\n- At the time of the podcast (February 2024), Nvidia was crossing the ~$2T mark; news coverage notes it hit $2T in February 2024 and then rose to about $2.25T by March 2024, up from roughly $1.2T at the end of 2023. ([ndtv.com](https://www.ndtv.com/feature/nvidia-becomes-first-public-company-to-cross-4-trillion-market-cap-amid-ai-boom-8865611?utm_source=openai))  \n- As of late November 2025, Nvidia\u2019s market cap is around $4.4T, making it the world\u2019s most valuable company, and it has traded as high as roughly $4.5T in October 2025. ([companiesmarketcap.com](https://companiesmarketcap.com/nvidia/marketcap/?utm_source=openai))  \n- The condition attached to the prediction\u2014continued strength in AI hardware/efficiency trends\u2014largely holds so far: Nvidia remains the dominant AI chip supplier, Blackwell-based GPUs are ramping strongly, and the roadmap to Rubin and beyond underpins very high expected AI demand and revenue (management and analysts discussing targets of hundreds of billions in AI-chip revenue through 2026). ([cnbc.com](https://www.cnbc.com/2025/08/25/nvidia-q2-earnings-preview-expectations-blackwell-china-h20.html/?utm_source=openai))\n\nHowever, the prediction was *long term* and framed as potential (\u201ccould be worth $10 trillion, potentially\u201d), with no specific deadline. Nvidia has not yet reached $10T, but given that it is already in the mid\u2011trillions and AI hardware demand remains elevated, it is not possible to say that a $10T valuation has been disproven. It remains an open, speculative outcome rather than a resolved one.\n\nBecause the core claim is about a possible long\u2011term ceiling and no explicit timeframe has elapsed in which that ceiling would need to be hit or clearly ruled out, the status of \u201cNvidia could be worth $10T in the long term\u201d is **too early to judge**.",
+      "sources": [
+        {
+          "end_index": 572,
+          "start_index": 424,
+          "title": "NVIDIA Becomes First Public Company To Cross $4 Trillion Market Cap Amid AI Boom",
+          "type": "url_citation",
+          "url": "https://www.ndtv.com/feature/nvidia-becomes-first-public-company-to-cross-4-trillion-market-cap-amid-ai-boom-8865611?utm_source=openai"
+        },
+        {
+          "end_index": 840,
+          "start_index": 746,
+          "title": "NVIDIA (NVDA) - Market capitalization",
+          "type": "url_citation",
+          "url": "https://companiesmarketcap.com/nvidia/marketcap/?utm_source=openai"
+        },
+        {
+          "end_index": 1368,
+          "start_index": 1239,
+          "title": "Nvidia faces Wall Street's high expectations two years into AI boom",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2025/08/25/nvidia-q2-earnings-preview-expectations-blackwell-china-h20.html/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for Nvidia's market cap to potentially reach ~$10 trillion 'in the long term' (conditional on AI trends continuing), from ~$1.8T in Feb 2024. As of Dec 1, 2025 (~22 months later), Nvidia's market cap is approximately $4.3T (e.g., [companiesmarketcap.com](https://companiesmarketcap.com/nvidia/marketcap/), [Macrotrends](https://www.macrotrends.net/stocks/charts/NVDA/nvidia/market-cap), [Yahoo Finance](https://finance.yahoo.com/quote/NVDA/)). It has grown significantly (doubled+), briefly hit $5T (Oct 2025 per Yahoo), but $10T remains distant. 'Long term' implies years/decades, so too early to verify."
+    },
+    {
+      "id": "A-01:01:23.840",
+      "result": "ambiguous",
+      "explanation": "There is strong evidence that the *tooling* part of Chamath\u2019s claim has materialized, but little hard evidence that it has *already* transformed non\u2011English\u2011speaking workers into core, top\u2011productivity startup contributors at scale.\n\n**Why it looks directionally plausible / partially true**\n- Major collaboration platforms now provide near real\u2011time spoken translation, removing a large part of the language barrier in meetings. Google Meet and DeepMind launched real\u2011time speech translation features in 2025, translating spoken language during calls into participants\u2019 preferred languages, with support for multiple European languages. ([blog.google](https://blog.google/products/workspace/google-meet-langauge-translation-ai/?utm_source=openai))  Cisco is acquiring EzDubs to add voice\u2011preserving real\u2011time translation into Webex, explicitly to let people converse across languages. ([indianweb2.com](https://www.indianweb2.com/2025/11/cisco-acquires-y-combinatorbacked.html?utm_source=openai))  Similar capabilities exist across specialized meeting tools like Interactio, Wordly, and others marketed for business meetings, trainings, and events. ([wordly.ai](https://www.wordly.ai/real-time-translation?utm_source=openai))\n- General\u2011purpose AI systems such as OpenAI\u2019s GPT\u20114o support real\u2011time multilingual voice conversations and translation in over 50 languages, explicitly pitched as removing language friction in everyday and professional use. ([lifewire.com](https://www.lifewire.com/openai-reveals-gpt-4o-8647637?utm_source=openai))  Dedicated products (e.g., Transync AI, emotii.ai, Relay\u2019s TeamTranslate) target workplaces and multinational teams, advertising that they \"eliminate language barriers\" and let every worker be \"heard, understood, and empowered.\" ([apps.apple.com](https://apps.apple.com/ca/app/transync-ai-translator/id6745154830?utm_source=openai))\n- In adjacent high\u2011skill domains there is empirical evidence that generative AI is disproportionately helping non\u2011English speakers. A 2025 study of 2M+ biomedical papers finds AI\u2011assisted writing adoption has grown about 400% in non\u2011English\u2011speaking countries (vs. 183% in English\u2011speaking ones), modestly increasing productivity and narrowing publication gaps\u2014clear evidence that AI is mitigating English language disadvantages in knowledge work. ([arxiv.org](https://arxiv.org/abs/2511.15872?utm_source=openai))  Research prototypes like WordDecipher specifically target digital workplace communication for non\u2011native English speakers, helping them craft socially appropriate English messages in email and chat. ([arxiv.org](https://arxiv.org/abs/2404.07005?utm_source=openai))\n\n**Why we still can\u2019t classify the prediction as clearly right or wrong**\n- Chamath\u2019s prediction is not just that tools exist, but that they *\u201cbasically become some of your best folks\u201d*\u2014i.e., that non\u2011English speakers, relying on AI to bridge language, are now functioning as core, highly productive startup/tech team members at a level comparable to English\u2011fluent peers.\n- The available evidence shows rapid deployment of translation and language\u2011assist tools *and* early proof that they reduce language friction and help non\u2011English professionals (scientists, remote workers, call\u2011center agents, etc.). ([nypost.com](https://nypost.com/2025/02/27/business/teleperformance-rolls-out-ai-software-that-neutralizes-indian-accents/?utm_source=openai))  However, there are no large\u2011scale labor\u2011market studies or broad startup case\u2011study datasets demonstrating that non\u2011English\u2011speaking workers who rely primarily on AI (rather than learning English) are now systematically regarded as top, core contributors in startups or tech firms.\n- Many startups still explicitly require English proficiency in job postings, and qualitative reporting focuses more on *potential* and early pilots than on a documented, widespread shift in team composition and top\u2011performer profiles.\n\nBecause the *mechanism* (AI offloading language) is clearly emerging but the *outcome* (non\u2011English speakers broadly becoming some of the best core team members thanks to these tools) isn\u2019t yet measurable or well\u2011documented, the prediction can\u2019t be cleanly scored as right or wrong with current evidence\u2014hence **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 788,
+          "start_index": 678,
+          "title": "How Google build real-time language translation for Meet",
+          "type": "url_citation",
+          "url": "https://blog.google/products/workspace/google-meet-langauge-translation-ai/?utm_source=openai"
+        },
+        {
+          "end_index": 1037,
+          "start_index": 926,
+          "title": "Cisco Acquires Y Combinator\u2013Backed EzDubs to Power Real-Time AI Translation in Webex | IndianWeb2.com",
+          "type": "url_citation",
+          "url": "https://www.indianweb2.com/2025/11/cisco-acquires-y-combinatorbacked.html?utm_source=openai"
+        },
+        {
+          "end_index": 1266,
+          "start_index": 1190,
+          "title": "Wordly AI Real Time Translator | Real-Time Translation Solutions",
+          "type": "url_citation",
+          "url": "https://www.wordly.ai/real-time-translation?utm_source=openai"
+        },
+        {
+          "end_index": 1583,
+          "start_index": 1493,
+          "title": "OpenAI Reveals New GPT 4o: AI For Everyone",
+          "type": "url_citation",
+          "url": "https://www.lifewire.com/openai-reveals-gpt-4o-8647637?utm_source=openai"
+        },
+        {
+          "end_index": 1920,
+          "start_index": 1817,
+          "title": "\u200eTransync AI - Translator App - App Store",
+          "type": "url_citation",
+          "url": "https://apps.apple.com/ca/app/transync-ai-translator/id6745154830?utm_source=openai"
+        },
+        {
+          "end_index": 2435,
+          "start_index": 2370,
+          "title": "AI-Assisted Writing Is Growing Fastest Among Non-English-Speaking and Less Established Scientists",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2511.15872?utm_source=openai"
+        },
+        {
+          "end_index": 2701,
+          "start_index": 2636,
+          "title": "WordDecipher: Enhancing Digital Workspace Communication with Explainable AI for Non-native English Speakers",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2404.07005?utm_source=openai"
+        },
+        {
+          "end_index": 3455,
+          "start_index": 3312,
+          "title": "Teleperformance rolls out AI software that 'neutralizes' Indian call agents' accents",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/02/27/business/teleperformance-rolls-out-ai-software-that-neutralizes-indian-accents/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "While AI translation tools like Wordly, JotMe, DeepL, and integrations in Zoom/Teams have advanced real-time multilingual communication by 2025 (e.g., [emotii.ai](https://emotii.ai/multilingual-teams/), [HR Future article](https://www.hrfuture.net/workplace-culture/employee-engagement-communication/bridging-the-language-gap-in-global-teams-how-ai-translation-is-reshaping-the-future-of-hr-communication/)), enabling better global teams, there are no widespread examples of startups hiring non-English-speaking workers as 'key, highly productive members comparable to core team' solely due to AI overcoming language barriers. Hiring from global pools (e.g., Latam via Teilur Talent) still prioritizes English proficiency ([hirewithnear.com](https://www.hirewithnear.com/blog/best-ai-engineering-staffing-companies)). No verification of Chamath's specific prediction; 22 months post-Feb 2024 may be too early for transformative adoption in nuanced tech roles."
+    },
+    {
+      "id": "A-01:25:38.960",
+      "result": "wrong",
+      "explanation": "The prediction was that **Joe Biden would not voluntarily drop out of the 2024 presidential race and would run through the November 2024 election.**\n\nIn reality, Biden **ended his reelection bid on July 21, 2024**, announcing in a public letter that he would *\"stand down\"* from the campaign and **not seek reelection**, and that he would instead focus on serving out the remainder of his term while endorsing Kamala Harris as the Democratic nominee. ([dallasnews.com](https://www.dallasnews.com/news/national/2024/07/21/joe-biden-withdraws-2024-election/?utm_source=openai)) Harris went on to become the nominee, and Biden was not on the ballot in November 2024. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))\n\nAlthough there was substantial pressure from Democratic leaders and donors for him to step aside, the *literal outcome* that matters for evaluating the prediction is that **he did, in fact, withdraw and did not run in the November election**, directly contradicting the forecast that he would \"go for it\" and stay in the race through Election Day.\n\nTherefore, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 612,
+          "start_index": 488,
+          "title": "President Joe Biden announces he won\u2019t seek reelection, endorses VP Kamala Harris",
+          "type": "url_citation",
+          "url": "https://www.dallasnews.com/news/national/2024/07/21/joe-biden-withdraws-2024-election/?utm_source=openai"
+        },
+        {
+          "end_index": 844,
+          "start_index": 701,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Joe Biden voluntarily withdrew from the 2024 presidential race on July 21, 2024, via a public letter on X (formerly Twitter), and endorsed Kamala Harris as the Democratic nominee. He did not run in the November 5, 2024, election, which featured Harris vs. Donald Trump. This directly contradicts the prediction that he would not drop out voluntarily and would run through the election. Sources: [Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [AP News](https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/), [NBC News](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867), [Biden's X post](https://x.com/JoeBiden/status/1815080881981190320)."
+    },
+    {
+      "id": "B-01:26:50.490",
+      "result": "ambiguous",
+      "explanation": "Factual outcome:\n\n- Joe Biden **did secure enough delegates in the 2024 Democratic primaries** and became the *presumptive* nominee, winning an overwhelming majority of pledged delegates. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  \n- After a widely criticized June 2024 debate and intense intra-party pressure, Biden **withdrew from the 2024 race on July 21, 2024**, becoming the first eligible incumbent since Lyndon B. Johnson in 1968 to end a reelection bid after locking up the delegates. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  \n- Following his withdrawal, Biden endorsed Kamala Harris, who was then chosen by the delegates and **became the official Democratic nominee on August 5, 2024**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))  \n- Harris, not Biden, was on the ballot as the Democratic nominee in November 2024. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n\nInterpretation vs. prediction:\n\n- The normalized prediction: *\u201cBarring an extreme unforeseen event (e.g., major health crisis), Joe Biden will secure enough primary delegates and will be the official Democratic nominee for U.S. president in the 2024 election.\u201d*\n- Reality: Biden **did** secure enough primary delegates, but he **did not** become the official nominee, because he later withdrew and declined the nomination.\n- However, Sacks explicitly framed his forecast as conditional: *\u201cunless he changes his mind or there\u2019s some act of God, he\u2019s going to be the nominee.\u201d* Biden *did* change his mind and stepped aside in what contemporaneous coverage and later analysis treat as an unprecedented, extraordinary political event\u2014an incumbent withdrawing after clinching the delegates under intense pressure from his own party. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))\n\nBecause the prediction was explicitly limited to the world **\u201cbarring an extreme unforeseen event / unless he changes his mind,\u201d** and the actual world is precisely one in which he changed his mind amid an extraordinary, historically rare chain of events, we can\u2019t cleanly score the statement as right or wrong. The outcome falls outside the scenario he was conditioning on.\n\nHence, the fairest evaluation is **ambiguous** rather than definitively right or wrong.",
+      "sources": [
+        {
+          "end_index": 370,
+          "start_index": 227,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 778,
+          "start_index": 635,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1053,
+          "start_index": 943,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1250,
+          "start_index": 1140,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 2230,
+          "start_index": 2087,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Joe Biden withdrew from the 2024 presidential race on July 21, 2024, amid concerns over his age and a poor debate performance ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [AP](https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/)). Kamala Harris became the official Democratic nominee at the 2024 Democratic National Convention via roll call ([NPR](https://www.npr.org/2024/08/01/nx-s1-5060456/harris-democratic-nominee-roll-call-delegates), [Wikipedia DNC](https://en.wikipedia.org/wiki/2024_Democratic_National_Convention), [CFR](https://www.cfr.org/blog/election-2024-kamala-harris-democratic-presidential-nominee)). Although Biden secured primary delegates and was presumptive nominee by March ([Ballotpedia](https://ballotpedia.org/Democratic_presidential_nomination%2C_2024)), he was not the official nominee, making the prediction wrong despite the caveat for unforeseen events."
+    },
+    {
+      "id": "B-01:30:11.270",
+      "result": "wrong",
+      "explanation": "As of mid\u2011February 2024, the major declared *presidential* candidates included Joe Biden, Donald Trump, Robert F. Kennedy Jr., Cornel West, Jill Stein, Dean Phillips and others\u2014but **not** Kamala Harris as a presidential candidate. Biden was running for reelection with Harris as his *vice\u2011presidential* running mate, not as a separate presidential contender. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))\n\nOn **July 21, 2024**, Biden announced he would not seek reelection and endorsed Harris to replace him at the top of the Democratic ticket. This announcement triggered the launch of the Kamala Harris 2024 presidential campaign and a rapid consolidation of party support around her. ([reuters.com](https://www.reuters.com/world/us/biden-81-pulls-out-presidential-race-2024-07-21/?utm_source=openai)) Harris\u2019s campaign is widely dated from this July 21 entry into the race and is noted for being only **107 days** long, the shortest general\u2011election presidential campaign in modern history. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kamala_Harris?utm_source=openai))\n\nHarris quickly became the **Democratic presidential nominee**, securing the nomination via a delegate roll call in early August 2024 and heading the party\u2019s national ticket against Donald Trump. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kamala_Harris?utm_source=openai)) In the November 5, 2024 general election, she won **48.3% of the popular vote and 226 electoral votes**, losing narrowly to Trump (49.8% and 312 electoral votes). That level of vote share, Electoral College support, and national prominence clearly qualifies her as a *serious contender* in the 2024 election. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n\nBecause Harris **was not a presidential candidate as of mid\u2011February 2024**, but later entered the race and became the Democratic nominee and a major general\u2011election contender, her candidacy is a direct counterexample to Sacks\u2019s prediction that no such new major presidential candidate would successfully enter and become a serious contender in 2024.",
+      "sources": [
+        {
+          "end_index": 536,
+          "start_index": 393,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 937,
+          "start_index": 821,
+          "title": "Biden ends failing reelection campaign, backs Harris as nominee",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/biden-81-pulls-out-presidential-race-2024-07-21/?utm_source=openai"
+        },
+        {
+          "end_index": 1211,
+          "start_index": 1128,
+          "title": "Kamala Harris",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Kamala_Harris?utm_source=openai"
+        },
+        {
+          "end_index": 1493,
+          "start_index": 1410,
+          "title": "Kamala Harris",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Kamala_Harris?utm_source=openai"
+        },
+        {
+          "end_index": 1913,
+          "start_index": 1803,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Kamala Harris announced her candidacy on July 21, 2024\u2014well after mid-February 2024\u2014following Joe Biden's withdrawal from the race on the same day. She was not a candidate as of mid-February 2024, when Biden was the Democratic frontrunner. Harris quickly became the Democratic nominee (presumptive by July 22, official August 5), selected Tim Walz as VP, and was a serious contender, receiving 226 electoral votes and 48.3% of the popular vote in the November 5, 2024, election (lost to Trump). No other new entrants post-February became serious contenders (e.g., Marianne Williamson re-entered but was minor). Sources: [Wikipedia: Kamala Harris 2024 campaign](https://en.wikipedia.org/wiki/Kamala_Harris_2024_presidential_campaign), [Ballotpedia presidential candidates 2024](https://ballotpedia.org/Presidential_candidates,_2024), [2024 election Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election)."
+    },
+    {
+      "id": "A-01:31:45.920",
+      "result": "wrong",
+      "explanation": "Joe Biden (whose ticket became the Democratic Harris\u2013Walz ticket) and Donald Trump (with JD Vance) appeared on the presidential ballot nationwide as the major-party nominees, covering all 50 states and the District of Columbia. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ballot_access_in_the_2024_United_States_presidential_election?utm_source=openai)) Robert F. Kennedy Jr., however, did not achieve nationwide ballot access. A CBS News ballot map and later compiled results show that he was on the ballot only in a subset of states totaling about 309 electoral votes, far short of all 538 electoral votes available from 50 states plus DC. ([cbsnews.com](https://www.cbsnews.com/news/rfk-jr-map-on-the-ballot-states/?utm_source=openai)) Kennedy was explicitly removed or failed to qualify in states such as New York and Georgia, among others, and litigation confirmed his disqualification from the New York ballot. ([reuters.com](https://www.reuters.com/legal/us-supreme-court-rejects-rfk-jrs-challenge-new-york-ballot-rules-2025-02-24/?utm_source=openai)) His campaign also voluntarily withdrew from several state ballots after he ended his independent run and endorsed Trump, further limiting his ballot presence. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr._2024_presidential_campaign?utm_source=openai)) Because RFK Jr. was not on the ballot in all 50 states, the prediction that Biden, Trump, and Kennedy would all appear on every state\u2019s November 2024 general-election ballot is incorrect.",
+      "sources": [
+        {
+          "end_index": 392,
+          "start_index": 261,
+          "title": "Ballot access in the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Ballot_access_in_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 777,
+          "start_index": 681,
+          "title": "Map shows where RFK Jr. is on the ballot in the 2024 election - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/rfk-jr-map-on-the-ballot-states/?utm_source=openai"
+        },
+        {
+          "end_index": 1097,
+          "start_index": 956,
+          "title": "US Supreme Court rejects RFK Jr's challenge to New York ballot rules",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/legal/us-supreme-court-rejects-rfk-jrs-challenge-new-york-ballot-rules-2025-02-24/?utm_source=openai"
+        },
+        {
+          "end_index": 1375,
+          "start_index": 1257,
+          "title": "Robert F. Kennedy Jr. 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr._2024_presidential_campaign?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction was wrong. Joe Biden withdrew from the race on July 21, 2024, and was not on the general election ballot in any state; Kamala Harris replaced him as the Democratic nominee and appeared on ballots in all 50 states + DC ([FEC PDF](https://www.fec.gov/resources/cms-content/documents/2024presgecands.pdf), [Ballotpedia](https://ballotpedia.org/Presidential_candidates,_2024), [Wikipedia ballot access](https://en.wikipedia.org/wiki/Ballot_access_in_the_2024_United_States_presidential_election)). Donald Trump appeared on ballots in all 50 states + DC. Robert F. Kennedy Jr. appeared on ballots in only 31 states + DC, not all 50 ([FEC PDF](https://www.fec.gov/resources/cms-content/documents/2024presgecands.pdf), [Wikipedia RFK campaign](https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr._2024_presidential_campaign)). Thus, neither Biden nor RFK Jr. met the criteria of appearing alongside Trump in *all* 50 states."
+    },
+    {
+      "id": "A-01:28:18.620",
+      "result": "right",
+      "explanation": "Evidence indicates that a new, explicitly RFK\u2011linked third party has in fact been formally (re)created after the November 2024 election, using the ballot\u2011access infrastructure built for his independent run.\n\n* During the 2024 cycle, Robert F. Kennedy Jr. created **We The People Party** (plus the Texas Independent Party) in multiple states specifically as a ballot\u2011access vehicle for his independent presidential campaign, not as a long\u2011term programmatic party.([en.wikipedia.org](https://en.wikipedia.org/wiki/We_the_People_Party_%28United_States%29?utm_source=openai))  This is the campaign infrastructure Chamath was referring to.\n* In 2025, Kennedy supporters **formally relaunched We The People Party as a standalone national third party**, with a national chair (Levi Leatherberry), explicit plans to expand ballot access over the next three years, target races like the New York governorship, endorse candidates (e.g., Larry Sharpe for NY governor), and position the party as an \u201canti\u2011establishment\u201d alternative for disaffected voters.([yahoo.com](https://www.yahoo.com/news/articles/rfk-jr-supporters-lay-groundwork-130000249.html?utm_source=openai))  This relaunch happened *after* the 2024 presidential election and is explicitly described as a way to reuse the party infrastructure built for Kennedy\u2019s 2024 ballot\u2011access efforts.\n* While the party is still small and its long\u2011term success is uncertain, it meets the core criteria of Chamath\u2019s prediction: a **formally organized, continuing third party, built out of RFK Jr.\u2019s 2024 ballot\u2011access machinery, created after the presidential election** with the stated intent to contest future midterms and the 2028 presidential race.([yahoo.com](https://www.yahoo.com/news/articles/rfk-jr-supporters-lay-groundwork-130000249.html?utm_source=openai))\n* By contrast, No Labels ended its 2024 presidential effort before the election and has *not* itself become a new, durable national party (its main structure remains a 501(c)(4) advocacy group, with only scattered state\u2011level party lines and even some loss of party recognition in places like North Carolina).([en.wikipedia.org](https://en.wikipedia.org/wiki/No_Labels?utm_source=openai))\n\nGiven that the central event Chamath described\u2014post\u2011election creation of a continuing third party leveraging RFK\u2019s 2024 ballot\u2011access infrastructure\u2014has occurred, the prediction is best classified as **right**, even though the eventual durability and scale of We The People Party remain to be seen.",
+      "sources": [
+        {
+          "end_index": 606,
+          "start_index": 497,
+          "title": "We the People Party (United States)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/We_the_People_Party_%28United_States%29?utm_source=openai"
+        },
+        {
+          "end_index": 1195,
+          "start_index": 1079,
+          "title": "RFK Jr.\u2019s breakaway political party has plans for the midterms",
+          "type": "url_citation",
+          "url": "https://www.yahoo.com/news/articles/rfk-jr-supporters-lay-groundwork-130000249.html?utm_source=openai"
+        },
+        {
+          "end_index": 1844,
+          "start_index": 1728,
+          "title": "RFK Jr.\u2019s breakaway political party has plans for the midterms",
+          "type": "url_citation",
+          "url": "https://www.yahoo.com/news/articles/rfk-jr-supporters-lay-groundwork-130000249.html?utm_source=openai"
+        },
+        {
+          "end_index": 2234,
+          "start_index": 2155,
+          "title": "No Labels",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/No_Labels?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No durable third political party was formally created after the November 2024 election using RFK Jr.'s or No Labels' ballot-access infrastructure. RFK Jr.'s 'We the People Party' was formed by his campaign in early 2024 (e.g., NC petition May 2024) to aid his independent ballot access in states like NC, IA, and others during the 2024 race, appearing on ballots in nine states. Post-election revival by former staffers began late 2024/early 2025, targeting midterm ballot expansion (e.g., NY governor via Larry Sharpe) and 2028, but this is a relaunch of the pre-existing minor party, not a new formal creation, and remains nascent/anti-establishment without national durability ([Politico, Nov 21, 2025](https://www.politico.com/news/2025/11/21/the-maha-political-party-prepping-for-rfk-jr-in-2028-00663532); [SAN.com, Nov 21, 2025](https://san.com/cc/we-the-people-partys-revival-sparks-talk-of-another-rfk-jr-presidential-run/)). No Labels abandoned 2024 efforts in April 2024 without forming a party. No evidence of a matching post-election party in party lists or news ([Wikipedia parties](https://en.wikipedia.org/wiki/List_of_political_parties_in_the_United_States); [Ballotpedia](https://ballotpedia.org/List_of_political_parties_in_the_United_States)). Over a year post-election (current: Dec 1, 2025)."
+    },
+    {
+      "id": "A-01:29:27.140",
+      "result": "wrong",
+      "explanation": "According to certified 2024 general-election results, Robert F. Kennedy Jr. ran as an independent and received roughly **0.48\u20130.49% of the national popular vote**. His **best statewide performance was about 1.96% of the vote in Montana**, and in all other states his share was lower; no state shows him at or above even 2%, let alone 30%. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Third-party_and_independent_candidates_for_the_2024_United_States_presidential_election?utm_source=openai))\n\nSummary tables of third\u2011party and independent candidates for the 2024 presidential election explicitly list Kennedy\u2019s **\u201cbest state percentage\u201d as 1.96%**, confirming that he did not reach 30% in any state. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Third-party_and_independent_candidates_for_the_2024_United_States_presidential_election?utm_source=openai))\n\nKennedy also **suspended his independent campaign and endorsed Donald Trump in August 2024**, further limiting his eventual vote share. ([reuters.com](https://www.reuters.com/legal/us-supreme-court-rejects-rfk-jrs-challenge-new-york-ballot-rules-2025-02-24/?utm_source=openai))\n\nBecause he never came close to 30% of the popular vote in any state in the November 2024 election, Chamath\u2019s prediction that RFK Jr. would get \u201c30 plus percent\u201d support in some states was **not borne out by the actual results**.",
+      "sources": [
+        {
+          "end_index": 529,
+          "start_index": 372,
+          "title": "Third-party and independent candidates for the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Third-party_and_independent_candidates_for_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 897,
+          "start_index": 740,
+          "title": "Third-party and independent candidates for the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Third-party_and_independent_candidates_for_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1178,
+          "start_index": 1037,
+          "title": "US Supreme Court rejects RFK Jr's challenge to New York ballot rules",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/legal/us-supreme-court-rejects-rfk-jrs-challenge-new-york-ballot-rules-2025-02-24/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Robert F. Kennedy Jr. received a maximum of 1.96% of the popular vote in any state (Montana), according to the official FEC 2024 Presidential General Election Results ([FEC PDF](https://www.fec.gov/documents/5644/2024presgeresults.pdf)). His highest percentages in other states were also well below 30%, e.g., 1.68% in Alaska and South Dakota, 1.50% in Oregon. Nationally, he garnered 0.49% (756,393 votes). This is confirmed by Wikipedia pages on the [2024 election](https://en.wikipedia.org/wiki/2024_United_States_presidential_election) and [RFK Jr.'s campaign](https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr._2024_presidential_campaign), which note Montana as his best state performance at under 2%."
+    }
+  ]
+}

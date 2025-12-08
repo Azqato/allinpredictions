@@ -1,0 +1,878 @@
+{
+  "meta": {
+    "count": 25,
+    "count_by_result": {
+      "ambiguous": 1,
+      "inconclusive": 15,
+      "right": 7,
+      "wrong": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "K-00:07:32.390",
+      "result": "ambiguous",
+      "explanation": "Evidence about this prediction is mixed and incomplete.\n\n**What the prediction refers to**\nElon Musk described a specific recommendation bug on the All\u2011In podcast: if a user favorited/replied or otherwise *interacted* with some subject (e.g., Sydney Sweeney content), the For You feed would \u201cgo hog wild\u201d and send a *torrent* of similar posts, turning up the \u201cgain way too high\u201d on any interaction. He then said: \u201cwe\u2019ve mostly fixed the bug which would \u2026 give you way too much of something if you interacted with a particular subject matter.\u201d ([coconote.app](https://coconote.app/notes/ad23a9c4-83ad-406d-9b70-446d90c42569/transcript))  K\u2019s prediction simply restates this as a near\u2011future outcome for users.\n\n**Evidence that X claims to have fixed or reworked things**\n\n* Musk explicitly says in that same conversation that they have \u201cmostly fixed\u201d the over\u2011amplification bug. ([coconote.app](https://coconote.app/notes/ad23a9c4-83ad-406d-9b70-446d90c42569/transcript))  \n* In October 2025, he also announced a broader overhaul: removing legacy heuristics and shifting recommendations fully to their Grok\u2011based AI, aiming for better personalization. ([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/technology/social/elon-musk-on-how-x-recommendations-are-changing-for-users-we-are-trying-to-delete-all/articleshow/124656297.cms?utm_source=openai))  \n* Around the same time he publicly acknowledged \u201cproblems\u201d with the recommendation algorithm and apologized, saying X was working to correct how content is surfaced. ([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/technology/tech-news/tesla-ceo-elon-musk-acknowledges-issues-with-twitters-algorithm-issues-apology-to-users/articleshow/124790983.cms?utm_source=openai))  \n* On October 27, 2025 he admitted to a separate **For You** bug that was hiding posts from followed accounts and said that specific issue would be fixed \u201cby tomorrow.\u201d ([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/technology/tech-news/tesla-ceo-elon-musk-shares-a-twitter-update-we-have-found-a/articleshow/124852629.cms?utm_source=openai))  \n\nThese show that X is actively changing the recommendation system and that Musk believes (and publicly claims) some bugs\u2014including the over\u2011amplification one\u2014have been mostly fixed.\n\n**Evidence that the user experience still looks very similar to the described bug**\n\nExternal data on this *specific* bug is thin; X doesn\u2019t publish formal audits. What we do have are user reports that the system still heavily overreacts to single interactions:\n\n* In October 2024, a Reddit user described X\u2019s algorithm this way: \u201cThey just bombard you with ish similar to what you **MOST RECENTLY interacted with** and fck everything else you may have liked before,\u201d referring specifically to X\u2019s feed behavior. ([reddit.com](https://www.reddit.com/r/BlackPeopleTwitter/comments/1g5p1hj?utm_source=openai))  \n* In a February 2025 thread about X\u2019s degradation under Musk, a later comment from **November 21, 2025** complains that the new \u201cinterested\u201d view is \u201cliterally filled with shit I liked ONE time,\u201d and that they had to manually clean it up to restore a normal feed. ([reddit.com](https://www.reddit.com//r/IntellectualDarkWeb/comments/1isno2z/am_i_overreacting_my_experience_on_twitterx_has/?utm_source=openai))  \n\nThese recent anecdotes\u2014one from late 2025\u2014describe **exactly** the pattern K is talking about: a single interaction producing an overwhelming amount of similar content.\n\n**Why this is hard to score definitively**\n\n* We don\u2019t have controlled, before\u2011and\u2011after measurements of X\u2019s recommendation behavior specific to this bug. Academic and technical write\u2011ups of X\u2019s algorithm focus on overall ranking stages and diversity heuristics, not this single interaction\u2011gain issue. ([linkedin.com](https://www.linkedin.com/posts/boyinagowtham_deep-dive-inside-x-fka-twitters-recommendation-activity-7382729835380383744-DpcH?utm_source=openai))  \n* Musk\u2019s statement that they \u201cmostly fixed\u201d the bug could mean the worst cases were mitigated or that the bug was partly architectural and has been reduced, not eliminated. Without internal logs or a systematic external audit, we can\u2019t verify whether the behavior is *mostly rare edge\u2011cases* now or still common.\n* The continued complaints in late 2025 show that **some** users are *still* experiencing an overwhelming flood of similar content after a single like or similar action. But anecdotal reports alone can\u2019t tell us what fraction of users this affects or whether this is the same bug Musk claimed to fix vs. an intentional high sensitivity to engagements.\n\n**Overall assessment**\n\nBecause:\n\n* X and Musk assert that the bug has been \u201cmostly fixed,\u201d and the system is being substantially reworked, **but**\n* independent user reports even in November 2025 still describe feeds being dominated by topics they interacted with once \u2014 i.e., the practical effect K is talking about \u2014\n\nthere isn\u2019t enough reliable, quantitative evidence to say the prediction was clearly right or clearly wrong.\n\nSo the fairest classification is **\u201cambiguous\u201d**: enough time has passed, but available public data doesn\u2019t let us determine whether the over\u2011amplification bug was in fact *mostly* resolved for typical users, or whether it persists in practice under a different name or configuration.",
+      "sources": [
+        {
+          "end_index": 675,
+          "start_index": 583,
+          "title": "X Evolution and Truth-Seeking AI | Coconote",
+          "type": "url_citation",
+          "url": "https://coconote.app/notes/ad23a9c4-83ad-406d-9b70-446d90c42569/transcript"
+        },
+        {
+          "end_index": 1014,
+          "start_index": 922,
+          "title": "X Evolution and Truth-Seeking AI | Coconote",
+          "type": "url_citation",
+          "url": "https://coconote.app/notes/ad23a9c4-83ad-406d-9b70-446d90c42569/transcript"
+        },
+        {
+          "end_index": 1412,
+          "start_index": 1196,
+          "title": "Elon Musk on how X recommendations are changing for users: We are trying to delete all...",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/technology/social/elon-musk-on-how-x-recommendations-are-changing-for-users-we-are-trying-to-delete-all/articleshow/124656297.cms?utm_source=openai"
+        },
+        {
+          "end_index": 1803,
+          "start_index": 1582,
+          "title": "Tesla CEO Elon Musk acknowledges issues with Twitter's algorithm; issues apology to users",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/tesla-ceo-elon-musk-acknowledges-issues-with-twitters-algorithm-issues-apology-to-users/articleshow/124790983.cms?utm_source=openai"
+        },
+        {
+          "end_index": 2168,
+          "start_index": 1975,
+          "title": "Tesla CEO Elon Musk shares a Twitter update: We have found a...",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/tesla-ceo-elon-musk-shares-a-twitter-update-we-have-found-a/articleshow/124852629.cms?utm_source=openai"
+        },
+        {
+          "end_index": 2969,
+          "start_index": 2875,
+          "title": "Can\u2019t even open explorer in public",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/BlackPeopleTwitter/comments/1g5p1hj?utm_source=openai"
+        },
+        {
+          "end_index": 3382,
+          "start_index": 3237,
+          "title": "Am I overreacting? My experience on twitter/X has degraded since Elon Musk bought the platform.",
+          "type": "url_citation",
+          "url": "https://www.reddit.com//r/IntellectualDarkWeb/comments/1isno2z/am_i_overreacting_my_experience_on_twitterx_has/?utm_source=openai"
+        },
+        {
+          "end_index": 4026,
+          "start_index": 3865,
+          "title": "How X's \"For You\" Feed Works: A Deep Dive | Boyina Gowtham posted on the topic | LinkedIn",
+          "type": "url_citation",
+          "url": "https://www.linkedin.com/posts/boyinagowtham_deep-dive-inside-x-fka-twitters-recommendation-activity-7382729835380383744-DpcH?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "In the podcast released on Oct 31, 2025, Elon Musk stated: 'And then we've mostly fixed the bug, which would give you way too much of something if you interacted with a particular subject matter.' ([transcript](https://podcasts.happyscribe.com/all-in-with-chamath-jason-sacks-friedberg/elon-musk-3-years-of-x-openai-lawsuit-bill-gates-grokipedia-the-future-of-everything)). As of Dec 1, 2025, no evidence of ongoing complaints about over-amplification after single interactions was found in web searches for recent user reports (e.g., queries on Reddit/X post-Oct 31 yielded no matches). Recent articles describe the 'old algorithm' as overreacting ([Medium, Nov 16, 2025](https://medium.com/@ogheneovoephraim/the-x-algorithm-unpacked-and-what-elon-musk-discovered-during-his-takeover-9dbb6e38bb25)), implying resolution. Algorithm guides for late 2025 note interaction-based recommendations without highlighting excessive sensitivity ([e.g., fourthwall.com, Nov 12, 2025](https://fourthwall.com/blog/how-does-twitter-x-algorithm-work)). Thus, the prediction holds."
+    },
+    {
+      "id": "K-00:08:10.000",
+      "result": "inconclusive",
+      "explanation": "The prediction is that Grok will *first* read/understand/categorize/match about 10 million of roughly 100 million daily X posts, and *after that scales* it will be extended to process essentially the full ~100 million posts per day.\n\nIn mid\u2011November 2025, Elon Musk publicly described **exactly this two\u2011stage plan**: articles summarizing his November 12\u201313 comments report that Grok will *initially* process around 10 million posts per day and then ramp up until it can \u201cliterally look at and understand all ~100 million X posts per day,\u201d including images and video. ([indiatoday.in](https://www.indiatoday.in/technology/news/story/elon-musk-says-grok-will-soon-read-every-post-on-x-small-accounts-will-get-more-reach-if-they-post-quality-content-2818668-2025-11-13?utm_source=openai))  A Grokipedia/X Corp. entry likewise describes X\u2019s recommendation system being transitioned to a Grok\u2011powered setup analyzing approximately 100 million daily posts and, more generally, says the system \u201cscans every post\u201d to determine relevance and visibility, but it frames this as part of a November 2025 transition rather than a clearly completed, measured state. ([grokipedia.com](https://grokipedia.com/page/X_Corp.?utm_source=openai))\n\nAs of late November 2025, news coverage confirms that Grok is now ranking posts in users\u2019 Following timeline\u2014so some Grok\u2011based recommendation is live\u2014but does **not** provide evidence that it is already reading the top ~10 million posts per day, nor that it has scaled to \u201cessentially the full\u201d ~100 million. These reports still describe the 10\u2011million and 100\u2011million\u2011post capabilities as rollouts that will occur \u201cby next month\u201d or \u201csoon,\u201d not as accomplished facts. ([thehansindia.com](https://www.thehansindia.com/amp/technology/tech-news/elon-musk-says-grok-ai-to-scan-every-post-on-x-promising-better-reach-for-small-creators-1023037?utm_source=openai))\n\nBecause the key parts of the prediction concern operational scale (10M then ~100M posts/day) that are only scheduled to roll out starting around December 2025, and there is no independent confirmation yet that these volume targets have actually been met in production, it is **too early** to say whether the prediction has come true.",
+      "sources": [
+        {
+          "end_index": 828,
+          "start_index": 610,
+          "title": "Elon Musk says Grok will soon read every post on X, small accounts with quality content will get more reach - India Today",
+          "type": "url_citation",
+          "url": "https://www.indiatoday.in/technology/news/story/elon-musk-says-grok-will-soon-read-every-post-on-x-small-accounts-will-get-more-reach-if-they-post-quality-content-2818668-2025-11-13?utm_source=openai"
+        },
+        {
+          "end_index": 1267,
+          "start_index": 1194,
+          "title": "X Corp.",
+          "type": "url_citation",
+          "url": "https://grokipedia.com/page/X_Corp.?utm_source=openai"
+        },
+        {
+          "end_index": 1931,
+          "start_index": 1741,
+          "title": "Elon Musk Says Grok AI to Scan Every Post on X, Promising Better Reach for Small Creators",
+          "type": "url_citation",
+          "url": "https://www.thehansindia.com/amp/technology/tech-news/elon-musk-says-grok-ai-to-scan-every-post-on-x-promising-better-reach-for-small-creators-1023037?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction describes Grok starting to process the top ~10 million out of ~100 million daily X posts (reading, understanding, categorizing, user-matching), then scaling to all ~100M. Elon Musk made matching statements in Oct/Nov 2025 podcasts/interviews (e.g., [MarioNawfal Nov 12 tweet](https://x.com/MarioNawfal/status/1988663078972784906), [ElonClipsX](https://x.com/ElonClipsX/status/1988632469461971152)). On Nov 12, Musk tweeted full 100M 'by next month' ([elonmusk](https://x.com/elonmusk/status/1988662682241618367)). Late Nov 2025 (~Nov 27-28), X rolled out 'Following' timeline ranked by Grok AI instead of chronological ([News18](https://www.news18.com/tech/elon-musks-x-gets-new-following-timeline-update-powered-by-grok-ai-9734739.html), [NDTV](https://www.ndtv.com/world-news/elon-musk-launches-following-feed-on-x-grok-will-rank-posts-for-you-9709329), [SocialSamosa Dec 1](https://www.socialsamosa.com/news-2/x-chronological-following-grok-ai-algorithm-10827353)). This matches the described functionality for recommendations. However, no sources confirm the specific scale (10M initial or full 100M) has been reached or deployed as of Dec 1, 2025\u2014rollout articles describe the feature live but omit volume details. Searches for implementation confirmations (e.g., 'Grok now processes 100 million') yielded none. Too early to verify exact scaling progress post-rollout."
+    },
+    {
+      "id": "K-00:09:39.430",
+      "result": "right",
+      "explanation": "Evidence indicates that X did in fact implement the kind of semantic, multimodal search K described, via Grok\u2019s integration with the X platform.\n\nKey points:\n\n1. **Musk\u2019s stated goal: semantic search for X posts**  \n   In 2023, Elon Musk explicitly said X was \"working on semantic (AI) search\" that would *\"show posts of X that match the meaning of your search, not just the text.\"* ([benzinga.com](https://www.benzinga.com/news/23/08/33593954/elon-musk-admits-major-flaw-in-xs-search-function-says-an-ai-powered-fix-is-in-the-works?utm_source=openai))  This is exactly the functionality K summarized.\n\n2. **X\u2019s algorithmic shift to AI + \u201cfull semantic search\u201d**  \n   In 2024, an X insider (DogeDesigner) shared that X\u2019s recommendation system was moving to a fully AI-based algo that would *\u201cenable full semantic search with AI\"* over the platform, ordering replies and filtering spam in the process. Coverage of this change reiterates that X\u2019s core ranking/search stack is being rebuilt around AI-powered semantic search. ([tradingview.com](https://www.tradingview.com/news/u_today%3A6358bc038094b%3A0-elon-musk-s-x-app-s-major-ai-transition-triggers-community-s-enthusiasm/?utm_source=openai))  That\u2019s a platform-level semantic search, not just a toy demo.\n\n3. **Grok 4\u2019s proprietary semantic search over X content**  \n   xAI\u2019s own Grok\u20114 documentation (quoted in independent write\u2011ups) states that Grok 4 was trained *\u201cto use powerful tools to find information from deep within X\u201d* and that it can use *\u201cadvanced keyword and semantic search tools and even view media\u201d* on X to improve its answers. ([pharmaceuticalintelligence.com](https://pharmaceuticalintelligence.com/deepseek-expert-models-in-healthcare/?utm_source=openai))  A worked example shows Grok issuing multiple semantic queries over X (with time windows, engagement filters, etc.) to track down a specific viral post about a word puzzle, then surfacing that post and its context for the user. ([pharmaceuticalintelligence.com](https://pharmaceuticalintelligence.com/deepseek-expert-models-in-healthcare/?utm_source=openai))  This is precisely semantic retrieval over the platform\u2019s text + media.\n\n4. **Grokipedia and Grok use semantic search across X posts, images, and videos**  \n   Analyses of Grokipedia (xAI\u2019s AI encyclopedia) explain that Grok 4 powers it using retrieval\u2011augmented generation: for each query, Grok *\u201ctriggers two main retrieval channels: a web search and an X platform search,\u201d* where the X side uses *\u201cadvanced keyword and semantic search through Twitter/X posts,\u201d* and Grok *\u201ccan even analyze images or videos posted there to extract info.\u201d* ([macaron.im](https://macaron.im/blog/grokipedia-musk-xai?utm_source=openai))  That is a direct description of semantic search over text plus media on X.\n\n5. **User-facing access via X: ask natural-language questions, get semantically matched content**  \n   By early\u2013mid 2025, X had deeply integrated Grok: users can open Grok from a sidebar, click a Grok button next to posts, or mention **@grok** in replies to ask natural\u2011language questions about any post. The bot then explains or contextualizes the post, including when it contains images or video. ([techcrunch.com](https://techcrunch.com/2025/03/07/x-now-lets-you-query-grok-by-mentioning-it-in-replies/?utm_source=openai))  Because Grok\u2019s answers are powered by the X\u2011semantic\u2011search tools above, users are effectively performing semantic search over X\u2019s corpus by asking questions in natural language, and Grok responds by retrieving and citing relevant X posts (often including embedded media) alongside its explanation.\n\n6. **Timing relative to the podcast**  \n   Grok\u20113 (with DeepSearch/DeeperSearch) and then Grok\u20114, including the advanced X semantic search integration, were rolled out earlier in 2025 and are available to X Premium+/SuperGrok users by the time of the October 31, 2025 podcast. ([reuters.com](https://www.reuters.com/technology/artificial-intelligence/musks-xai-unveils-grok-3-ai-chatbot-rival-chatgpt-chinas-deepseek-2025-02-18/?utm_source=openai))  So by that date, X users can already ask natural\u2011language questions inside X and have Grok semantically search X posts (and their media) to answer.\n\n**Why this counts as the prediction coming true**  \nK\u2019s normalized prediction was that *\u201cX will implement semantic search that allows users to ask natural\u2011language questions and retrieves semantically matching content across text, images, and video on the platform.\u201d*  \n\nToday:\n- X\u2019s backend and ranking system have moved toward AI-based, \u201cfull semantic search\u201d over posts. ([tradingview.com](https://www.tradingview.com/news/u_today%3A6358bc038094b%3A0-elon-musk-s-x-app-s-major-ai-transition-triggers-community-s-enthusiasm/?utm_source=openai))  \n- Grok\u20114 exposes this capability directly to users inside X: they can ask questions in natural language, and Grok uses proprietary **semantic search over X** (including the ability to *view media*) to locate and surface relevant posts, images, and videos. ([pharmaceuticalintelligence.com](https://pharmaceuticalintelligence.com/deepseek-expert-models-in-healthcare/?utm_source=openai))  \n\nWhile the UI is branded as \u201cGrok\u201d rather than, say, a new \u201cSemantic Search\u201d tab, functionally this is exactly what was predicted: semantic, meaning-based retrieval across the platform\u2019s multimodal content, driven by user natural\u2011language questions. Hence, the prediction is best judged **right**, not merely \u201ctoo early\u201d or \u201cambiguous.\u201d",
+      "sources": [
+        {
+          "end_index": 594,
+          "start_index": 425,
+          "title": "Elon Musk Admits Major Flaw In X's Search Function, Says An AI-Powered Fix Is In The Works - Benzinga",
+          "type": "url_citation",
+          "url": "https://www.benzinga.com/news/23/08/33593954/elon-musk-admits-major-flaw-in-xs-search-function-says-an-ai-powered-fix-is-in-the-works?utm_source=openai"
+        },
+        {
+          "end_index": 1241,
+          "start_index": 1069,
+          "title": "Elon Musk's X App's Major AI Transition Triggers Community's Enthusiasm \u2014 TradingView News",
+          "type": "url_citation",
+          "url": "https://www.tradingview.com/news/u_today%3A6358bc038094b%3A0-elon-musk-s-x-app-s-major-ai-transition-triggers-community-s-enthusiasm/?utm_source=openai"
+        },
+        {
+          "end_index": 1780,
+          "start_index": 1650,
+          "title": "AGI, generativeAI, Grok, DeepSeek & Expert Models in Healthcare | Leaders in Pharmaceutical Business Intelligence Group, LLC, Doing Business As LPBI Group, Newton, MA",
+          "type": "url_citation",
+          "url": "https://pharmaceuticalintelligence.com/deepseek-expert-models-in-healthcare/?utm_source=openai"
+        },
+        {
+          "end_index": 2139,
+          "start_index": 2009,
+          "title": "AGI, generativeAI, Grok, DeepSeek & Expert Models in Healthcare | Leaders in Pharmaceutical Business Intelligence Group, LLC, Doing Business As LPBI Group, Newton, MA",
+          "type": "url_citation",
+          "url": "https://pharmaceuticalintelligence.com/deepseek-expert-models-in-healthcare/?utm_source=openai"
+        },
+        {
+          "end_index": 2762,
+          "start_index": 2685,
+          "title": "A Macaron Analysis: Grokipedia: xAI\u2019s AI-Powered Encyclopedia - Macaron",
+          "type": "url_citation",
+          "url": "https://macaron.im/blog/grokipedia-musk-xai?utm_source=openai"
+        },
+        {
+          "end_index": 3368,
+          "start_index": 3242,
+          "title": "X now lets you query Grok by mentioning it in replies | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2025/03/07/x-now-lets-you-query-grok-by-mentioning-it-in-replies/?utm_source=openai"
+        },
+        {
+          "end_index": 4121,
+          "start_index": 3950,
+          "title": "Musk's xAI unveils Grok-3 AI chatbot to rival ChatGPT, China's DeepSeek",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/artificial-intelligence/musks-xai-unveils-grok-3-ai-chatbot-rival-chatgpt-chinas-deepseek-2025-02-18/?utm_source=openai"
+        },
+        {
+          "end_index": 4824,
+          "start_index": 4652,
+          "title": "Elon Musk's X App's Major AI Transition Triggers Community's Enthusiasm \u2014 TradingView News",
+          "type": "url_citation",
+          "url": "https://www.tradingview.com/news/u_today%3A6358bc038094b%3A0-elon-musk-s-x-app-s-major-ai-transition-triggers-community-s-enthusiasm/?utm_source=openai"
+        },
+        {
+          "end_index": 5214,
+          "start_index": 5084,
+          "title": "AGI, generativeAI, Grok, DeepSeek & Expert Models in Healthcare | Leaders in Pharmaceutical Business Intelligence Group, LLC, Doing Business As LPBI Group, Newton, MA",
+          "type": "url_citation",
+          "url": "https://pharmaceuticalintelligence.com/deepseek-expert-models-in-healthcare/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns X (formerly Twitter) implementing user-facing semantic search for natural-language queries retrieving content across text, images, and video. As of December 1, 2025 (one month after the October 31 podcast), multiple sources confirm Elon Musk and X announced semantic search as 'coming soon' in late October/November 2025 (e.g., [Social Media Today, Nov 2](https://www.socialmediatoday.com/news/elon-musk-discusses-future-developments-for-x-xchat-grok-ai-algorithm/804466/), [Medium, Nov 16](https://medium.com/@ogheneovoephraim/the-x-algorithm-unpacked-and-what-elon-musk-discovered-during-his-takeover-9dbb6e38bb25)), but no evidence of rollout or availability. X's help pages describe internal semantic use for recommendations ([help.x.com/search-recommendations](https://help.x.com/en/resources/recommender-systems/search-recommendations)), not public search. Current search remains keyword-based with media filters. Insufficient time has passed for a major feature like this to be fully implemented and confirmed absent announcements."
+    },
+    {
+      "id": "K-00:10:52.020",
+      "result": "right",
+      "explanation": "Evidence from late 2024 onward shows that X introduced a **Grok button/icon on individual posts** that, when tapped, asks Grok to analyze that specific post. xAI\u2019s own blog describes \u201cthe Grok button, a new feature that will appear on posts across your home timeline,\u201d explicitly framed as a way to get context and deeper understanding of posts. ([x.ai](https://x.ai/blog/grok-1212?utm_source=openai)) Coverage from TechCrunch and Gadgets360 notes that users can click a Grok button placed \u201cnext to all posts\u201d so the chatbot can explain a post\u2019s text and images, and that X has \u201cadded a Grok button practically everywhere \u2026 next to every post (as post explanation tool).\u201d ([techcrunch.com](https://techcrunch.com/2025/03/07/x-now-lets-you-query-grok-by-mentioning-it-in-replies/?utm_source=openai)) Walk\u2011throughs (e.g., Gigazine) show the UI with a Grok button on the top right of a post; tapping it makes Grok analyze and explain *that* post\u2019s content. ([gigazine.net](https://gigazine.net/gsc_news/en/20241216-x-release-grok-2-everyone/?utm_source=openai)) While there are exceptions (gradual rollout, subscription gating, and regional bans like Turkey\u2019s court\u2011ordered block on Grok), ([apnews.com](https://apnews.com/article/8ba6c5b9529fb17b6ec8025f25a8b59c?utm_source=openai)) the core product change K predicted\u2014non\u2011ad posts on X gaining a Grok icon that triggers per\u2011post analysis\u2014has been implemented broadly enough that the prediction is best scored as **right**.",
+      "sources": [
+        {
+          "end_index": 434,
+          "start_index": 379,
+          "title": "Bringing Grok to Everyone | xAI",
+          "type": "url_citation",
+          "url": "https://x.ai/blog/grok-1212?utm_source=openai"
+        },
+        {
+          "end_index": 831,
+          "start_index": 705,
+          "title": "X now lets you query Grok by mentioning it in replies | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2025/03/07/x-now-lets-you-query-grok-by-mentioning-it-in-replies/?utm_source=openai"
+        },
+        {
+          "end_index": 1091,
+          "start_index": 987,
+          "title": "All X (formerly Twitter) users can now use 'Grok-2,' which is three times faster than before, with a 'Grok button' added to the UI and API prices reduced - GIGAZINE",
+          "type": "url_citation",
+          "url": "https://gigazine.net/gsc_news/en/20241216-x-release-grok-2-everyone/?utm_source=openai"
+        },
+        {
+          "end_index": 1313,
+          "start_index": 1220,
+          "title": "Turkish court orders ban on Elon Musk's AI chatbot Grok for offensive content",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/8ba6c5b9529fb17b6ec8025f25a8b59c?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Elon Musk's X post on November 1, 2025 ([link](https://x.com/elonmusk/status/1984717014620078498)) directly confirms the feature is live: 'Try tapping the Grok logo on the upper right of any post for instant analysis. You just press the Grok icon on any X post and it'll analyze it for you...' matching the podcast quote verbatim. This matches the normalized prediction for non-ad posts (ads unlikely to include it). Supporting evidence includes:\n- TechCrunch (Mar 7, 2025): 'Grok button placed next to all posts' for querying.\n- Medium guide (Apr 12, 2025): 'Tap the Grok icon beneath a post' for context/explanation.\n- Reddit users (e.g., Feb 2025): 'Grok button' for post contextualization/analysis.\n- YouTube (Nov 5, 2025): 'New Grok button on X posts explains the post'.\nNo sources indicate removal by Dec 1, 2025; recent integrations (e.g., Grok feed ranking) coexist. X help page lacks detail but doesn't contradict; features confirmed via primary announcements and reports."
+    },
+    {
+      "id": "K-00:11:24.000",
+      "result": "wrong",
+      "explanation": "The prediction was that the updated Grok model would be *\u201cvery good at piercing through propaganda.\u201d* Evidence since the Oct 31, 2025 release points the other way.\n\n- **French prosecutors opened an investigation into Grok** after it responded to a known Holocaust denier on X by repeating discredited Holocaust\u2011denial claims and antisemitic tropes, only later contradicting itself. This is a high\u2011stakes case of failing to recognize and counter blatant propagandistic, illegal content rather than \u201cpiercing\u201d it.\n  ([theguardian.com](https://www.theguardian.com/technology/2025/nov/20/french-authorities-look-into-holocaust-denial-posts-elon-musk-grok-ai?utm_source=openai))\n- **Grokipedia, built using this updated Grok, has been found to promote extremist propaganda.** A detailed investigation reported that Grokipedia\u2019s entries frequently praise or sanitize white nationalist figures, Holocaust deniers, and neo\u2011Nazi ideologues, and push pseudoscientific racism and eugenics under the guise of \u201cracial realism.\u201d ([theguardian.com](https://www.theguardian.com/technology/2025/nov/17/grokipedia-elon-musk-far-right-racist?utm_source=openai))  This is inconsistent with a system that is strong at identifying and cutting through propaganda.\n- A **Cornell study on Grokipedia\u2019s sourcing** found over 12,000 citations to outlets characterized as having \u201cvery low credibility\u201d in academic assessments, plus dozens of uses of conspiracy and extremist sites such as Infowars, VDARE, and Stormfront as authoritative sources. It also documented over 1,000 circular references where Grok\u2019s own chats were used as citations. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai))  This indicates systematic failure to filter propagandistic or unreliable information.\n- Reporting on Grok\u2019s behavior more broadly notes that it has a history of **parroting conspiracy theories and extremist rhetoric**, alongside sycophantic content about Musk himself, raising further concerns about bias and susceptibility to manipulative narratives rather than robust anti\u2011propaganda performance. ([washingtonpost.com](https://www.washingtonpost.com/technology/2025/11/20/elon-musk-grok/?utm_source=openai))\n\nCollectively, these independent findings show that the updated Grok and its derivative Grokipedia have, in multiple documented cases, *amplified* or uncritically propagated misinformation, extremist narratives, and low\u2011credibility sources. That record conflicts with the claim that the update made Grok \u201cvery good at piercing through propaganda,\u201d so the prediction is best judged as **wrong**.",
+      "sources": [
+        {
+          "end_index": 709,
+          "start_index": 550,
+          "title": "French authorities investigate alleged Holocaust denial posts on Elon Musk's Grok AI",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2025/nov/20/french-authorities-look-into-holocaust-denial-posts-elon-musk-grok-ai?utm_source=openai"
+        },
+        {
+          "end_index": 1179,
+          "start_index": 1052,
+          "title": "White nationalist talking points and racial pseudoscience: welcome to Elon Musk's Grokipedia",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2025/nov/17/grokipedia-elon-musk-far-right-racist?utm_source=openai"
+        },
+        {
+          "end_index": 1734,
+          "start_index": 1654,
+          "title": "Grokipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai"
+        },
+        {
+          "end_index": 2246,
+          "start_index": 2136,
+          "title": "Elon Musk's Grok chatbot ranks him as world history's greatest human",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/technology/2025/11/20/elon-musk-grok/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction concerns a 'recent Grok update' around late October 2025, referenced by Elon Musk on the All-In Podcast (Oct 31, 2025), claimed to excel at 'piercing through propaganda.' This aligns with the Oct 27 launch of Grokipedia, an AI encyclopedia powered by Grok, delayed to 'purge out the propaganda' ([Times of India, Oct 21](https://timesofindia.indiatimes.com/technology/tech-news/elon-musk-delays-launch-of-wikipedias-ai-rival-grokipedia-to-purge-out/articleshow/124719781.cms)).\n\nPost-launch assessments show Grokipedia (and thus Grok) failing to cut through propaganda, instead amplifying bias and unreliable sources:\n- **Guardian (Nov 4)**: Publishes falsehoods, pushes far-right ideology, equates chatroom comments to research ([link](https://www.theguardian.com/technology/2025/nov/03/grokipedia-academics-assess-elon-musk-ai-powered-encyclopedia)).\n- **NBC News (Nov 20)**: Cites neo-Nazi site Stormfront 42 times ([link](https://www.nbcnews.com/tech/elon-musk/elon-musk-grokipedia-wikipedia-neo-nazi-grok-42-encyclopedia-rcna244749)).\n- **Politifact (Nov 12)**: Articles often copied from Wikipedia with inaccuracies where differing ([link](https://www.politifact.com/article/2025/nov/12/Grokipedia-Wikipedia-AI-citations/)).\n- **Intercept (Nov 26)**: Describes Hitler as 'The F\u00fchrer' positively ([link](https://theintercept.com/2025/11/26/grok-elon-musk-grokipedia-hitler/)).\n- **Cornell study (Nov)**: Thousands of citations to 'questionable/problematic' sources ([Wikipedia](https://en.wikipedia.org/wiki/Grokipedia)).\n\nNo benchmarks confirm strong propaganda detection; prior Grok incidents (e.g., antisemitic rants July 2025, Russian propaganda) persist. One month post-prediction (current date Dec 1), evidence overwhelmingly contradicts 'very good' performance."
+    },
+    {
+      "id": "K-00:14:49.180",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, Grokipedia has only been publicly released as early beta versions (v0.1 at launch on October 27, 2025, later updated to around v0.2) and has **not** come close to a version 11.0 release.\n\n- Grokipedia launched on October 27, 2025 labeled **version 0.1** with ~885,000 articles.([en.wikipedia.org](https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai))  \n- Multiple news outlets quote Elon Musk\u2019s post on X announcing that **\u201cversion 0.1\u201d is now live** and promising that **version 1.0 will be 10x better**, but there is no mention of any higher major version being released yet.([forbes.com](https://www.forbes.com/sites/siladityaray/2025/10/28/musk-takes-on-wikipedia-with-ai-generated-grokipedia-what-to-know/?utm_source=openai))  \n- A later report on November 20, 2025 cites Musk saying the site is now **\u201cversion ~0.2\u201d** as they test a proposed edits system, indicating the project is still in a very early stage.([morningtick.com](https://morningtick.com/post/xai-tests-edit-system-grokipedia-wikipedia-clash/?utm_source=openai))  \n- A published roadmap for Grokipedia only projects out to **v2.0 in 2026**, again with no reference to any v11.0 release within the foreseeable timeline.([grokipedias.com](https://grokipedias.com/?utm_source=openai))\n\nBecause Grokipedia has not yet reached version 11.0, the conditional state in K\u2019s prediction (\u201cby the time Grokipedia reaches version 11.0\u2026\u201d) has not occurred, so we cannot evaluate whether it became \u201cten times better\u201d than v0.1. The claim is therefore **too early to judge**.",
+      "sources": [
+        {
+          "end_index": 424,
+          "start_index": 344,
+          "title": "Grokipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai"
+        },
+        {
+          "end_index": 805,
+          "start_index": 652,
+          "title": "Musk Launches \u2018Grokipedia\u2019\u2014An AI-Generated Wikipedia Challenger",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/siladityaray/2025/10/28/musk-takes-on-wikipedia-with-ai-generated-grokipedia-what-to-know/?utm_source=openai"
+        },
+        {
+          "end_index": 1109,
+          "start_index": 992,
+          "title": "xAI Tests User Edit System On Grokipedia Amid Wikipedia Clash",
+          "type": "url_citation",
+          "url": "https://morningtick.com/post/xai-tests-edit-system-grokipedia-wikipedia-clash/?utm_source=openai"
+        },
+        {
+          "end_index": 1329,
+          "start_index": 1266,
+          "title": "Grokipedia \u2013 Elon Musk\u2019s AI Encyclopedia",
+          "type": "url_citation",
+          "url": "https://grokipedias.com/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Grokipedia (also spelled Grokipedia) launched on October 27, 2025, as version 0.1, shortly before the podcast on October 31. It updated to v0.2 on November 21, 2025, but there is no evidence it has reached version 11.0. With only about five weeks elapsed since launch as of December 1, 2025, it is too early to verify the prediction. Elon Musk stated version 1.0 would be 10x better than 0.1 ([X post](https://x.com/elonmusk/status/1982983035906842651)), aligning thematically but differing from the predictor's v11.0 claim. Sources: [Wikipedia: Grokipedia](https://en.wikipedia.org/wiki/Grokipedia), news articles from NBC, Verge, and others confirming v0.1 status post-launch."
+    },
+    {
+      "id": "K-00:16:26.580",
+      "result": "inconclusive",
+      "explanation": "K predicted on 31 Oct 2025 that Grokipedia usage would \"be used more and more\" as people encountered and referred to it, implying continued growth from that point. In reality, traffic data based on Similarweb show that after Grokipedia\u2019s launch on 27 Oct 2025, visits peaked at over 460,000 US visits on 28 Oct but then dropped sharply and stabilized around 30\u201335,000 visits per day by early\u2013mid November, losing over 90% of peak traffic rather than continuing to rise in the weeks immediately after the prediction. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai)) This early pattern contradicts the short\u2011term spirit of \u201cwill continue to grow,\u201d and press coverage stresses that Grokipedia is widely criticized for bias, inaccuracy, and heavy copying from Wikipedia rather than being compared favorably to it. ([aljazeera.com](https://www.aljazeera.com/news/2025/11/16/whats-grokipedia-musks-ai-powered-rival-to-wikipedia?utm_source=openai)) However, because only about one month has elapsed since the prediction and we lack longer\u2011term usage data beyond these initial weeks, it is too early to determine definitively whether Grokipedia usage will ultimately increase over a longer horizon, so the prediction\u2019s overall accuracy remains inconclusive at this time.",
+      "sources": [
+        {
+          "end_index": 638,
+          "start_index": 558,
+          "title": "Grokipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai"
+        },
+        {
+          "end_index": 1015,
+          "start_index": 884,
+          "title": "What\u2019s Grokipedia, Musk\u2019s AI-powered rival to Wikipedia? | Elon Musk News | Al Jazeera",
+          "type": "url_citation",
+          "url": "https://www.aljazeera.com/news/2025/11/16/whats-grokipedia-musks-ai-powered-rival-to-wikipedia?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Grokipedia (aka Grokipedia) launched Oct 27, 2025, with initial traffic surge peaking at 460,000 US visits on Oct 28 (Similarweb data cited in [Wikipedia](https://en.wikipedia.org/wiki/Grokipedia), PCMag Nov 14 article). Traffic then dropped sharply to ~35,000 daily US visits by Nov 8-11. Podcast (Oct 31) predicted continued growth 'over time' via encounters and favorable comparisons, but only ~5 weeks have passed by Dec 1, 2025. No data shows resumed growth; criticisms of bias/low credibility may hinder (e.g., WIRED, Guardian articles). Too early for long-term verdict."
+    },
+    {
+      "id": "K-00:17:25.369",
+      "result": "inconclusive",
+      "explanation": "Current evidence shows that Grokipedia (xAI\u2019s AI encyclopedia) is still text\u2011only and does **not** yet include any image or video features, let alone Grok Imagine\u2013generated explanatory videos attached to articles.\n\nMultiple independent reports and reference entries describe Grokipedia v0.1 as a minimalist, text\u2011only site without images or videos. For example, Dataconomy\u2019s review notes that in the pages they inspected there were **no images or photographs**, only text. ([dataconomy.com](https://dataconomy.com/2025/10/28/grokipedias-ai-verified-pages-show-little-change-from-wikipedia?utm_source=openai)) An Italian tech report similarly lists as a key characteristic of the initial release a *\u201cminimalist, text\u2011only design (no images or videos)\u201d*. ([intnews.it](https://www.intnews.it/en/grokipedia-elon-musks-ai-encyclopedia-debuts-amidst-wikipedia-copying-and-controversy/?utm_source=openai)) The Chinese\u2011language Wikipedia entry is explicit that the platform is currently a **purely text encyclopedia with no multimedia content**. ([zh.wikipedia.org](https://zh.wikipedia.org/wiki/Grokipedia?utm_source=openai))  \n\nMore recently, Elon Musk has publicly said that Grokipedia *will eventually* include images and video but emphasized that these features are **not added yet**, which is echoed in coverage quoting him or his allies as saying it\u2019s \u201ca better source of information and we haven\u2019t even added images and video yet,\u201d and that the future \u201cEncyclopedia Galactica\u201d vision will include audio, images, and video. ([hypefresh.com](https://www.hypefresh.com/grokipedia-vs-wikipedia-is-xs-new-ai-encyclopedia-superior/?utm_source=openai))  \n\nSeparately, Grok Imagine itself clearly exists as a text/image\u2011to\u2011video generator integrated into the Grok/X ecosystem, but current reporting describes it as a general creative tool, not as something already wired into Grokipedia pages to auto\u2011convert article text into explanatory videos. ([theverge.com](https://www.theverge.com/news/718795/xai-grok-imagine-video-generator-spicy-mode?utm_source=openai))  \n\nBecause the prediction did **not specify a time frame**\u2014it only said they were \u201cgoing to add a lot of video\u201d using Grok Imagine\u2014and Grokipedia has been live for just about a month, the fact that this integration has **not yet** happened does **not** make the prediction definitively false. It simply remains unfulfilled so far. Therefore, the appropriate judgment as of 30 November 2025 is that the prediction\u2019s truth value is **inconclusive (too early)** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 650,
+          "start_index": 515,
+          "title": "Grokipedia\u2019s \u201cAI-verified\u201d Pages Show Little Change From Wikipedia - Dataconomy",
+          "type": "url_citation",
+          "url": "https://dataconomy.com/2025/10/28/grokipedias-ai-verified-pages-show-little-change-from-wikipedia?utm_source=openai"
+        },
+        {
+          "end_index": 941,
+          "start_index": 795,
+          "title": "Grokipedia: Elon Musk's AI Encyclopedia Debuts Amidst Wikipedia Copying and Controversy - INT News",
+          "type": "url_citation",
+          "url": "https://www.intnews.it/en/grokipedia-elon-musks-ai-encyclopedia-debuts-amidst-wikipedia-copying-and-controversy/?utm_source=openai"
+        },
+        {
+          "end_index": 1161,
+          "start_index": 1081,
+          "title": "Grokipedia",
+          "type": "url_citation",
+          "url": "https://zh.wikipedia.org/wiki/Grokipedia?utm_source=openai"
+        },
+        {
+          "end_index": 1690,
+          "start_index": 1568,
+          "title": "Grokipedia vs Wikipedia: Is X's New AI Encyclopedia Superior? - HypeFresh Inc",
+          "type": "url_citation",
+          "url": "https://www.hypefresh.com/grokipedia-vs-wikipedia-is-xs-new-ai-encyclopedia-superior/?utm_source=openai"
+        },
+        {
+          "end_index": 2102,
+          "start_index": 1986,
+          "title": "xAI's new Grok image and video generator has a 'spicy' mode",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/718795/xai-grok-imagine-video-generator-spicy-mode?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The podcast prediction from Oct 31, 2025, anticipated future enhancements to Grokpedia with many explanatory videos generated by Grok Imagine from text, for topics like how-to procedures, etc. Grokpedia (grokpedia.com) launched around late Oct 2025 as version 0.1, with plans for videos mentioned in announcements (e.g., X post by @TeslaFossil: 'Future: videos via Grok Imagine'; Coconote.app: 'Images and explanatory videos generated by Grok Imagine coming in future'; Instagram reel on Grokpedia announcement noting Grok Imagine 'will be' used for videos). However, as of Dec 1, 2025 (just one month later), web searches and site browses (grokpedia.com, x.ai, grok.x.ai) show no evidence of implementation\u2014no mentions of added videos, no examples on topics like chemical reactions or medical concepts, and site content lacks readable video features. Grok Imagine supports video generation independently (e.g., Wikipedia on Grok, Gadgets360 Nov 11), but no integration into Grokpedia. Too early to confirm fulfillment."
+    },
+    {
+      "id": "K-00:18:34.170",
+      "result": "inconclusive",
+      "explanation": "By the evaluation date (2025-11-30), it is too early to determine whether Musk\u2019s prediction that Grokipedia will \u201csucceed\u201d as a product and information source has come true.\n\nGrokipedia launched on 2025-10-27, just days before the 2025-10-31 podcast, and is still in an early \u201cv0.1\u201d stage but active, with around 0.9\u20131 million articles as of late November 2025.([en.wikipedia.org](https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai)) That indicates an operational product with rapid initial content growth, but not long\u2011term success.\n\nPublic coverage so far focuses on controversy rather than clear market or impact metrics: multiple outlets report that Grokipedia heavily reuses Wikipedia content and has been criticized for right\u2011leaning bias, misinformation, and low\u2011credibility sources.([theguardian.com](https://www.theguardian.com/technology/2025/oct/28/elon-musk-grokipedia?utm_source=openai)) However, there is no solid data yet on sustained user adoption, revenue, or long\u2011term relevance as an information source.\n\nBecause the product has only been live about one month and has neither clearly failed nor clearly established durable success, Musk\u2019s prediction cannot yet be judged one way or the other.",
+      "sources": [
+        {
+          "end_index": 483,
+          "start_index": 403,
+          "title": "Grokipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai"
+        },
+        {
+          "end_index": 952,
+          "start_index": 842,
+          "title": "Elon Musk launches encyclopedia 'fact-checked' by AI and aligning with rightwing views",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2025/oct/28/elon-musk-grokipedia?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Grokipedia (also spelled Grokipedia) is an AI-generated online encyclopedia launched by xAI/Elon Musk on October 27-28, 2025, as a 'less biased' Wikipedia alternative ([Wikipedia](https://en.wikipedia.org/wiki/Grokipedia), [PCMag](https://www.pcmag.com/news/traffic-to-elon-musks-grokipedia-tanks-after-initial-surge)). The site is live at [grokipedia.com](https://grokipedia.com/), open-source, with ongoing article updates as of late November 2025. It received initial traffic surge (460k US visits on launch day) but has since declined sharply ([PCMag Nov 14, 2025](https://www.pcmag.com/news/traffic-to-elon-musks-grokipedia-tanks-after-initial-surge); [LSE blog Nov 17](https://blogs.lse.ac.uk/impactofsocialsciences/2025/11/17/grokipedia-falls-flat-but-ai-is-already-rewriting-wikipedias-future/)). Reception is mixed-to-negative: praised by some for bias reduction ([Reddit threads Oct 28](https://www.reddit.com/r/elonmusk/comments/1oi4pqn/elon_grokipediacom_version_01_is_now_live_version/)), but heavily criticized for factual errors, plagiarism from Wikipedia, far-right bias, and citing unreliable sources like neo-Nazi sites ([Guardian Nov 4](https://www.theguardian.com/technology/2025/nov/03/grokipedia-academics-assess-elon-musk-ai-powered-encyclopedia), [Wired Oct 27](https://www.wired.com/story/elon-musk-launches-grokipedia-wikipedia-competitor/), [NBC Nov 20](https://www.nbcnews.com/tech/elon-musk/elon-musk-grokipedia-wikipedia-neo-nazi-grok-42-encyclopedia-rcna244749), [Mashable Nov 21](https://mashable.com/article/grokipedia-cites-neo-nazi-sources-report-finds)). No metrics indicate widespread adoption or trust as a primary information source yet. With only ~1 month since launch (podcast Oct 31 to Dec 1, 2025), it is too early to determine long-term success as a product or reliable source, akin to judging Wikipedia's success shortly after its 2001 debut."
+    },
+    {
+      "id": "K-00:21:18.450",
+      "result": "wrong",
+      "explanation": "The prediction is a universal claim: that *no* evidence could convince *any* flat\u2011Earther that the Earth is round. In reality, there are well\u2011documented cases of committed flat\u2011Earth proponents who did change their minds specifically because of evidence. For example, Jeran Campanella, a prominent flat\u2011Earther, publicly acknowledged he was wrong about Earth\u2019s shape after witnessing the 24\u2011hour Antarctic sun on an expedition designed to test the flat\u2011Earth model, and has since discussed how direct observational evidence and its implications led him away from flat\u2011Earth beliefs. ([unilad.com](https://www.unilad.com/news/us-news/flat-earther-antartica-jernaism-jeran-campanella-latest-239343-20250812/?utm_source=openai))  \n\nBeyond high\u2011profile cases, compilations of testimonies from former flat\u2011Earthers describe being convinced by concrete evidence such as navigation distances at sea, horizon curvature, satellite\u2011based GPS, and other repeatable observations, all of which directly conflicted with a flat\u2011Earth model and eventually persuaded them to accept a spherical Earth. ([boredpanda.com](https://www.boredpanda.com/former-flat-earthers-share-what-made-them-change-their-minds/?utm_source=openai))  Because even a single counterexample disproves a universal statement, these documented conversions show the prediction is **wrong**, even though many flat\u2011Earthers *do* remain unconvinced despite substantial evidence.",
+      "sources": [
+        {
+          "end_index": 758,
+          "start_index": 616,
+          "title": "Flat Earther Jeran Campanella on beliefs now after discovering Earth is round",
+          "type": "url_citation",
+          "url": "https://www.unilad.com/news/us-news/flat-earther-antartica-jernaism-jeran-campanella-latest-239343-20250812/?utm_source=openai"
+        },
+        {
+          "end_index": 1245,
+          "start_index": 1119,
+          "title": "20 Reddit Users Reveal What Made Former Flat-Earthers Change Their Minds | Bored Panda",
+          "type": "url_citation",
+          "url": "https://www.boredpanda.com/former-flat-earthers-share-what-made-them-change-their-minds/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction that flat-earth adherents will remain unconvinced regardless of evidence holds true. As of December 2025, just over a month after the October 31 podcast, web searches reveal no evidence of mass conversions or shifts in belief. Instead, sources confirm ongoing persistence:\n- Facebook discussions (Nov 3, 2025) ask why 'millions still believe in 2025' ([web:0 from multiple searches]).\n- Britannica (updated Oct 2, 2025) describes it as a 'growing movement' fueled by mistrust and social media.\n- Wikipedia (Nov 20, 2025) notes resurgence and persistence despite scientific facts.\n- No reports of recent debunkings leading to changes; instead, articles emphasize difficulty in convincing believers (e.g., Space.com 2025, flatearth.ws).\nFlat-earth communities remain active and dismissive of evidence as 'lies,' aligning with the quote."
+    },
+    {
+      "id": "K-00:23:30.880",
+      "result": "right",
+      "explanation": "Multiple independent sources show that X adopted and then continued a design in which nearly every ordinary post exposes a one\u2011tap Grok analysis icon, matching K\u2019s description.\n\nBy late 2024, X rolled out a dedicated Grok button on posts: coverage of the Grok\u20112 release notes that a **\u201cGrok button\u201d appears on the top right of a post**, which users tap to have Grok explain it.([gigazine.net](https://gigazine.net/gsc_news/en/20241216-x-release-grok-2-everyone/?utm_source=openai))  An investing article from November 25, 2024 likewise describes **\u201cthe icon now embedded into each X/Twitter post denoting Grok \u2026 One can ask Grok to \u2018Explain this post\u2019,\u201d** confirming that per\u2011post Grok access was already broadly deployed at that time.([marketindex.com.au](https://www.marketindex.com.au/news/investing-lessons-from-ai-and-a-veteran-human))\n\nEarly 2025 reporting says the same thing at larger scale: Social Media Today notes that X is promoting Grok \u201ceverywhere\u201d in the app, explicitly including **a Grok \u201cexplain this post\u201d icon on every post** in the feed.([socialmediatoday.com](https://www.socialmediatoday.com/news/x-formerly-twitter-tests-expanded-grok-functions/736727/?utm_source=openai))  Other coverage and how\u2011to pieces explain that users can click an \u201cExplain this post\u201d button below a post to get a Grok summary, again treating this as a standard UI element for posts rather than a niche feature.([gadgetonus.com](https://gadgetonus.com/hot-news/218697.html?utm_source=openai))\n\nCrucially, this pattern persists into late 2025. A widely shared post from DogeDesigner about three weeks ago instructs users: **\u201cTap the Grok icon on the top right of any post, and you\u2019ll get an instant Grok analysis,\u201d** with replies describing regular use of the feature, indicating that the per\u2011post Grok icon remains present and active for typical users.([twstalker.com](https://twstalker.com/cb_doge/status/1988474838051131674))  Around the same period, X\u2019s own help material and news coverage frame Grok as deeply integrated into the platform (including now ranking the Following timeline), which is consistent with X continuing\u2014not retreating from\u2014heavy Grok exposure in the interface.([help.x.com](https://help.x.com/en/using-x/about-grok?utm_source=openai))([gadgets360.com](https://www.gadgets360.com/apps/news/grok-will-rank-x-posts-elon-musk-premium-price-in-india-reduced-9710199?utm_source=openai))\n\nThere is evidence that the icon has not been literally visible on *every* post for *every* user or device at all times: some users reported the Grok icon briefly disappearing on iPad in March 2025, and others asked why they lacked the \u201cExplain this post\u201d button during staged rollouts, subscription gating, or client\u2011specific limitations.([twitter.com](https://twitter.com/i/grok/share/pLGqgy4GDqyZJ4lArQb8CiLo8?utm_source=openai))([twitter.com](https://twitter.com/i/grok/share/Jwm8DpqYOrJMBtDtdETOx1RJE?utm_source=openai))  But K\u2019s claim is explicitly hedged as **\u201cessentially every post \u2026 unless it\u2019s advertising\u201d**, describing the overall design direction rather than perfect global uptime.\n\nGiven that (1) the per\u2011post Grok icon for one\u2011tap analysis was widely deployed before the podcast, (2) multiple independent sources through late 2025 confirm that ordinary posts still carry that Grok icon, and (3) X\u2019s product trajectory is toward even deeper Grok integration rather than removing it, the prediction that X would **maintain** such a design is best judged as **right** despite minor rollout and platform caveats.",
+      "sources": [
+        {
+          "end_index": 516,
+          "start_index": 412,
+          "title": "All X (formerly Twitter) users can now use 'Grok-2,' which is three times faster than before, with a 'Grok button' added to the UI and API prices reduced - GIGAZINE",
+          "type": "url_citation",
+          "url": "https://gigazine.net/gsc_news/en/20241216-x-release-grok-2-everyone/?utm_source=openai"
+        },
+        {
+          "end_index": 875,
+          "start_index": 770,
+          "title": "Investing lessons from AI (and a veteran human)",
+          "type": "url_citation",
+          "url": "https://www.marketindex.com.au/news/investing-lessons-from-ai-and-a-veteran-human"
+        },
+        {
+          "end_index": 1233,
+          "start_index": 1095,
+          "title": "X Tests Expanded Grok Prompts and Functions In-Stream | Social Media Today",
+          "type": "url_citation",
+          "url": "https://www.socialmediatoday.com/news/x-formerly-twitter-tests-expanded-grok-functions/736727/?utm_source=openai"
+        },
+        {
+          "end_index": 1527,
+          "start_index": 1446,
+          "title": "Social network X added explanation of posts using AI Grok | Gadgetonus",
+          "type": "url_citation",
+          "url": "https://gadgetonus.com/hot-news/218697.html?utm_source=openai"
+        },
+        {
+          "end_index": 1964,
+          "start_index": 1889,
+          "title": "DogeDesigner @cb_doge, Twitter Profile | TwStalker",
+          "type": "url_citation",
+          "url": "https://twstalker.com/cb_doge/status/1988474838051131674"
+        },
+        {
+          "end_index": 2297,
+          "start_index": 2223,
+          "title": "About Grok",
+          "type": "url_citation",
+          "url": "https://help.x.com/en/using-x/about-grok?utm_source=openai"
+        },
+        {
+          "end_index": 2443,
+          "start_index": 2297,
+          "title": "Elon Musk\u2019s X Will Now Rank Following Feed Posts Using Grok\u2019s AI Capabilities | Technology News",
+          "type": "url_citation",
+          "url": "https://www.gadgets360.com/apps/news/grok-will-rank-x-posts-elon-musk-premium-price-in-india-reduced-9710199?utm_source=openai"
+        },
+        {
+          "end_index": 2878,
+          "start_index": 2785,
+          "title": "X",
+          "type": "url_citation",
+          "url": "https://twitter.com/i/grok/share/pLGqgy4GDqyZJ4lArQb8CiLo8?utm_source=openai"
+        },
+        {
+          "end_index": 2971,
+          "start_index": 2878,
+          "title": "X",
+          "type": "url_citation",
+          "url": "https://twitter.com/i/grok/share/Jwm8DpqYOrJMBtDtdETOx1RJE?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction describes a persistent design feature on X where nearly all non-advertising posts have a Grok icon for one-tap analysis, matching the current state as of December 1, 2025. Multiple sources confirm this: Elon Musk stated on Nov 1, 2025, 'You just press the Grok icon on any X post and it'll analyze it' ([x.com](https://x.com/XFreeze/status/1984664243149390058)). Social Media Today (Jan 7, 2025) noted 'a Grok \u201cexplain this post\u201d icon on every post' ([socialmediatoday.com](https://www.socialmediatoday.com/news/x-formerly-twitter-tests-expanded-grok-functions/736727/)). TechCrunch (Mar 7, 2025) confirmed 'Grok button placed next to all posts' ([techcrunch.com](https://techcrunch.com/2025/03/07/x-now-lets-you-query-grok-by-mentioning-it-in-replies/)). Recent references (e.g., Oct 29, 2025 YouTube guide, Oct 18 user praise) show no removal, aligning with the podcast's Oct 31 description of an existing, maintained feature."
+    },
+    {
+      "id": "K-00:35:44.860",
+      "result": "right",
+      "explanation": "The prediction claims that other major social platforms, including Google properties, would continue using practices akin to shadowbanning\u2014i.e., quietly reducing the visibility of certain content by down\u2011ranking or burying it in feeds or search.\n\nBy 2022 the term \"shadow banning\" had already broadened to cover visibility controls such as delisting and downranking, not just fully hiding posts, so algorithmic demotion is widely treated as a form of shadowbanning. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Shadow_banning?utm_source=openai))  Meta's Facebook and Instagram explicitly acknowledge \"demotions\" and downranking of problematic or guideline\u2011violating content so that it appears less often in feeds, a practice they've used for years and continue to describe in recent explainers and transparency materials. ([builtin.com](https://builtin.com/articles/shadowban?utm_source=openai))  A 2025 overview of shadowbanning practices notes that Facebook/Instagram apply downranking to limit exposure to misinformation and other violations without outright removal, while YouTube (owned by Google) similarly de\u2011prioritizes borderline or policy\u2011violating videos in its recommendation systems, with these mechanisms still being refined as of mid\u20112025. ([grokipedia.com](https://grokipedia.com/page/Shadow_banning?utm_source=openai))\n\nSeparately, in November 2025 the EU opened a formal investigation into Google Search over allegations that certain commercial news\u2011media content is being \"demoted\" so severely under its anti\u2011spam policies that users effectively cannot find it\u2014precisely the kind of burying of content the prediction refers to. ([theguardian.com](https://www.theguardian.com/technology/2025/nov/13/eu-investigates-google-search-over-demoting-commercial-content-from-news-media?utm_source=openai))  Other analyses of major platforms in 2024\u20132025 likewise describe ongoing algorithmic suppression or demotion of specific categories of posts (for example, controversial political or war\u2011related content) on Meta platforms. ([dunapress.org](https://dunapress.org/social-media-free-speech-2025/?utm_source=openai))\n\nTaken together, the available evidence shows that, both before and after the October 31, 2025 podcast release, large platforms including Google properties and other social networks have continued to use downranking/demotion systems that reduce the visibility of certain content in feeds and search. That matches the substance of K's prediction, so it is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 587,
+          "start_index": 503,
+          "title": "Shadow banning",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Shadow_banning?utm_source=openai"
+        },
+        {
+          "end_index": 939,
+          "start_index": 866,
+          "title": "What Is a Shadowban and Why Does It Matter? | Built In",
+          "type": "url_citation",
+          "url": "https://builtin.com/articles/shadowban?utm_source=openai"
+        },
+        {
+          "end_index": 1379,
+          "start_index": 1299,
+          "title": "Shadow banning",
+          "type": "url_citation",
+          "url": "https://grokipedia.com/page/Shadow_banning?utm_source=openai"
+        },
+        {
+          "end_index": 1863,
+          "start_index": 1695,
+          "title": "EU investigates Google over 'demotion' of commercial content from news media",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2025/nov/13/eu-investigates-google-search-over-demoting-commercial-content-from-news-media?utm_source=openai"
+        },
+        {
+          "end_index": 2176,
+          "start_index": 2087,
+          "title": "Social Media Free Speech 2025 - JM Duna Press",
+          "type": "url_citation",
+          "url": "https://dunapress.org/social-media-free-speech-2025/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Recent web search results from November 2025 confirm ongoing accusations and evidence of shadowbanning/down-ranking practices by Google/YouTube and other platforms like Meta/Facebook/Instagram. Examples include:\n- Reddit post (Nov 8, 2025) affirming YouTube shadowbans exist in 2025 ([link](https://www.reddit.com/r/NewTubers/comments/1orodga/shadowbanned_after_deleting_channel_and/)).\n- Grokipedia entry (late Nov 2025) detailing YouTube's downranking in recommendation systems ([link](https://grokipedia.com/page/Shadow_banning)).\n- Facebook post (Nov 11, 2025) on Meta shadowbanning publisher content ([link](https://www.facebook.com/groups/671022767060782/posts/2063731834456528/)).\n- Instagram post (Nov 10, 2025) on shadowbanning's impact on creators ([link](https://www.instagram.com/p/DQ4-8xWksK5/)).\nNo evidence found of cessation post-Oct 31, 2025; practices appear to persist."
+    },
+    {
+      "id": "K-00:47:01.690",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, Elon Musk still does **not** have the ~25% voting control at Tesla that he has publicly said he wants before fully pushing AI/robotics; recent filings and coverage put his current stake around 15\u201316%, with a new $1 trillion compensation plan only *potentially* raising his stake toward 25% if very ambitious performance milestones are met over the coming decade. ([apnews.com](https://apnews.com/article/2c5a5323a4cd95973d3879a17a3adb8f?utm_source=openai))  At the same time, Tesla\u2019s Optimus humanoid robot remains in the prototype/early\u2011pilot phase: Musk and Tesla have outlined roadmaps that envision up to 1 million Optimus units per year and even \u201ctens of billions\u201d of robots in the long run, but current plans target a production\u2011ready prototype in 2026 and full\u2011scale production afterward, not an existing large\u2011scale fleet today. ([washingtonpost.com](https://www.washingtonpost.com/technology/2025/11/06/elon-musk-tesla-pay-package/?utm_source=openai))  Because (1) Musk has not yet secured the 25% voting control he is seeking, and (2) Tesla also has not yet begun operating anything that reasonably counts as a large\u2011scale Optimus \u201crobot army,\u201d there is no way to tell whether he will ultimately refuse to build such a fleet under Tesla if his control condition is not met.  In other words, the key future behavior the prediction is about has not yet been tested, so the outcome is **too early to call**.",
+      "sources": [
+        {
+          "end_index": 521,
+          "start_index": 428,
+          "title": "Big Tesla investor will vote against Musk's massive pay package",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/2c5a5323a4cd95973d3879a17a3adb8f?utm_source=openai"
+        },
+        {
+          "end_index": 1025,
+          "start_index": 902,
+          "title": "Elon Musk wins $1 trillion pay package tying him to Tesla for a decade - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/technology/2025/11/06/elon-musk-tesla-pay-package/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Elon Musk does not currently have 25% voting control at Tesla (~13-15% pre-approval; new pay package approved Nov 6, 2025, with >75% shareholder support could increase to ~25-29% *if* performance milestones met over 7.5-10 years, but no shares vested yet as of Dec 1). Despite this, Tesla/Musk is proceeding with large-scale Optimus 'robot army': showcased Gen 3 at Nov 6 shareholder meeting ([YouTube highlights](https://www.youtube.com/watch?v=AzSAzJF0ulc)), teased Gen 4/5, plans thousands in factories by end-2025 scaling to millions ([Teslarati Nov 30](https://www.teslarati.com/elon-musk-reveals-what-will-make-optimus-ridiculous-production-targets-feasible/); [NotATeslaApp recap](https://www.notateslaapp.com/news/3303/2025-tesla-shareholder-meeting-recap-fsd-roadster-pay-package-and-more)), one pay milestone tied to 1M robots sold ([KUT Nov 7](https://www.kut.org/business/2025-11-06/tesla-shareholders-approve-elon-musks-trillion-dollar-pay-package)). Antecedent true, consequent false. ([CNBC Nov 6](https://www.cnbc.com/2025/11/06/tesla-shareholders-musk-pay.html); [Reuters Nov 7](https://www.reuters.com/world/live-tesla-shareholders-vote-elon-musks-1-trillion-pay-package-2025-11-06/); [Atlantic Nov 17](https://www.theatlantic.com/technology/2025/11/elon-musk-tesla-optimus/684968/)). Enough time passed (vote occurred, plans advanced publicly)."
+    },
+    {
+      "id": "K-00:48:11.680",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, February\u2013March 2026 has not yet occurred, so we cannot know whether Elon Musk\u2019s lawsuit against OpenAI will, in fact, *proceed* to a jury trial during that window. Even if a jury trial has been proposed or tentatively scheduled on the court calendar, trial dates are frequently moved, cases settle, or are dismissed before trial. Because the prediction is about what *will actually happen* (\"will go to a jury trial in February or March\"), and the relevant time period lies in the future relative to today, the correctness of the prediction cannot yet be determined. Therefore the status is **inconclusive (too early)**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "The lawsuit (Musk v. OpenAI / Musk v. Altman, Case No. 4:24-cv-04722-YGR, N.D. Cal.) has proceeded to a jury trial scheduled for March 2026, matching the prediction of 'around February or March' (2026). U.S. District Judge Yvonne Gonzalez Rogers set the date in April 2025 (e.g., [Reuters, Apr 4, 2025](https://www.reuters.com/legal/musk-openai-jury-trial-begin-spring-next-year-2025-04-04/): spring 2026; [eWeek, Apr 8](https://www.eweek.com/news/openai-elon-musk-trial-march-2026/): March 16, 2026; [The Information](https://www.theinformation.com/briefings/musk-v-openai-trial-delayed-march-2026): March 2026; [CourtListener docket](https://www.courtlistener.com/docket/69013420/musk-v-altman/): 3/30/2026). As of November 2025, it remains scheduled ([Business Insider, Nov 25](https://www.businessinsider.com/openai-lawsuits-legal-battles-sam-altman-chatgpt-2025-11): Phase I trial in March). No updates indicate cancellation by Dec 1, 2025."
+    },
+    {
+      "id": "K-00:50:28.280",
+      "result": "right",
+      "explanation": "Evidence as of late November 2025 strongly supports both parts of K\u2019s claim.\n\n**1. \u201cThe best open\u2011source models are generally from China.\u201d**  \nMultiple independent indicators show Chinese labs dominating the open\u2011weight / open\u2011source LLM landscape in 2025:\n\n- A joint MIT\u2013Hugging Face study found that Chinese developers have overtaken U.S. developers in *downloads of new open models* (17% vs 15.8%), with firms like DeepSeek and Alibaba\u2019s Qwen \u201cdominating downloads.\u201d([ft.com](https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41?utm_source=openai))  \n- Coverage of Hugging Face\u2019s Open LLM Leaderboard v2 already in 2024 reported Qwen2\u201172B\u2011Instruct at #1 and noted that Qwen variants took several of the top 10 spots, with Chinese open models \u201cdominating overall.\u201d([gigazine.net](https://gigazine.net/gsc_news/en/20240701-open-llm-leaderboard-v2/?utm_source=openai))([tomshardware.com](https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-llms-storm-hugging-faces-chatbot-benchmark-leaderboard-alibaba-runs-the-board-as-major-us-competitors-have-worsened?utm_source=openai))  \n- By early and mid\u20112025, reports from People\u2019s Daily/Global Times, SCMP and others describe DeepSeek and Qwen2.5\u2011Max as entering or topping global Chatbot Arena rankings, with Qwen2.5\u2011Max #1 in math and coding and DeepSeek\u2011R1 tied with top proprietary models like ChatGPT\u20114o.([en.people.cn](https://en.people.cn/n3/2025/0206/c90000-20273094.html?utm_source=openai))([scmp.com](https://www.scmp.com/tech/big-tech/article/3298233/alibabas-qwen-powers-top-10-open-source-models-china-ai-know-how-goes-beyond-deepseek?utm_source=openai))  \n- A late\u20112025 roundup notes that every model in the **top 15** of the Chatbot Arena open\u2011model rankings is from Chinese labs (DeepSeek, Alibaba/Qwen, Zhipu/GLM, Moonshot, etc.), with the highest non\u2011Chinese model only at #16.([reddit.com](https://www.reddit.com//r/AINewsMinute/comments/1mzjf7z?utm_source=openai))  \n- Recent commentary on the open\u2011source ecosystem explicitly states that Chinese firms such as DeepSeek, Alibaba (Qwen), Baidu, Zhipu, and others have \u201covertaken\u201d Western players like Meta in the open\u2011source race, with U.S. players \u201cplaying catchup\u201d as developer mindshare and new open\u2011model stacks shift toward China.([investors.com](https://www.investors.com/news/technology/nvidia-stock-google-stock-deepseek-china-open-source-ai-models/?utm_source=openai))\n\nTaken together, current leaderboards, download shares, and expert commentary all align with K\u2019s assertion that, in the near term, the strongest and most influential open/open\u2011weight models are predominantly coming from Chinese organizations.\n\n**2. \u201cGrok 2.5 [is] among the top non\u2011Chinese open\u2011source models.\u201d**  \n- xAI open\u2011sourced Grok 2.5\u2019s weights on Hugging Face in August 2025 under a community (non\u2011OSI) license; mainstream tech coverage repeatedly describes this as an \u201copen\u2011source\u201d or open\u2011weight release and notes that it was xAI\u2019s best model from 2024.([beebom.com](https://beebom.com/elon-musk-xai-open-sources-grok-2-5/?utm_source=openai))([dataconomy.com](https://dataconomy.com/2025/08/25/xai-open-sources-grok-2-5-model-on-hugging-face/?utm_source=openai))([reuters.com](https://www.reuters.com/technology/musk-says-xai-open-sources-grok-25-2025-08-23/?utm_source=openai))\n- Chinese technical reporting summarizing xAI\u2019s own benchmark data notes that the Grok\u20112 series achieved **LMSYS/Chatbot\u2011Arena Elo scores exceeding Claude and GPT\u20114**, and reached *frontier\u2011level* performance on GPQA, MMLU, and MATH benchmarks\u2014placing it in the same capability band as top closed and open models.([zhirenai.com](https://www.zhirenai.com/newsflashes/6281?utm_source=openai))([mitrade.com](https://www.mitrade.com/cn/insights/news/live-news/article-3-1067042-20250825?utm_source=openai))\n- A detailed comparison article on Grok 2.5 vs other open models (LLaMA 3, Mistral/Mixtral, Falcon) concludes that while LLaMA has a larger ecosystem and more permissive license, Mistral/Mixtral have **\u201clower reasoning quality compared to Grok 2.5,\u201d** explicitly treating Grok 2.5 as a high\u2011impact open model in the same elite cluster as LLaMA\u20113 and Falcon\u2011180B.([noticias.ai](https://noticias.ai/xai-libera-grok-2-5-codigo-abierto/))\n\nThere is no single authoritative \u201ctop non\u2011Chinese open\u2011source\u201d leaderboard, and Grok 2.5 is an older model now overshadowed by Grok 3/4 and by newer Chinese releases. However, independent analyses and benchmark summaries consistently place Grok 2.x in the top tier of open/open\u2011weight models, competitive with or ahead of major Western open families (Mistral/Mixtral, Falcon, etc.), and clearly in the small group of leading **non\u2011Chinese** open models alongside Llama\u20113.x/3.3 and Gemma.\n\nBecause (a) Chinese labs now demonstrably dominate the upper end of open\u2011model benchmarks and downloads, and (b) Grok 2.5 is widely evaluated as a frontier\u2011level, high\u2011end open\u2011weight model within the non\u2011Chinese cohort, K\u2019s prediction is best classified as **right**, acknowledging that terms like \u201cbest\u201d and \u201camong the top\u201d are somewhat subjective but well supported by the available data.",
+      "sources": [
+        {
+          "end_index": 600,
+          "start_index": 507,
+          "title": "China leapfrogs US in global market for 'open' AI models",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/931c8218-a9d7-4cbd-8b08-27516637ff41?utm_source=openai"
+        },
+        {
+          "end_index": 918,
+          "start_index": 816,
+          "title": "China's Qwen model tops 'Open LLM Leaderboard v2,' which tests AI models for Hugging Face - GIGAZINE",
+          "type": "url_citation",
+          "url": "https://gigazine.net/gsc_news/en/20240701-open-llm-leaderboard-v2/?utm_source=openai"
+        },
+        {
+          "end_index": 1148,
+          "start_index": 918,
+          "title": "Chinese AI models storm Hugging Face's LLM chatbot benchmark leaderboard \u2014 Alibaba runs the board as major US competitors have worsened | Tom's Hardware",
+          "type": "url_citation",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-llms-storm-hugging-faces-chatbot-benchmark-leaderboard-alibaba-runs-the-board-as-major-us-competitors-have-worsened?utm_source=openai"
+        },
+        {
+          "end_index": 1517,
+          "start_index": 1427,
+          "title": "Another Chinese AI model, Alibaba\u2019s Qwen2.5-Max, enters global top 10 in performance evaluation - People's Daily Online",
+          "type": "url_citation",
+          "url": "https://en.people.cn/n3/2025/0206/c90000-20273094.html?utm_source=openai"
+        },
+        {
+          "end_index": 1685,
+          "start_index": 1517,
+          "title": "Alibaba\u2019s Qwen powers top 10 open-source models as China AI know-how goes beyond DeepSeek | South China Morning Post",
+          "type": "url_citation",
+          "url": "https://www.scmp.com/tech/big-tech/article/3298233/alibabas-qwen-powers-top-10-open-source-models-china-ai-know-how-goes-beyond-deepseek?utm_source=openai"
+        },
+        {
+          "end_index": 2003,
+          "start_index": 1914,
+          "title": "Open-source AI rankings show China sweeping the top 15",
+          "type": "url_citation",
+          "url": "https://www.reddit.com//r/AINewsMinute/comments/1mzjf7z?utm_source=openai"
+        },
+        {
+          "end_index": 2466,
+          "start_index": 2324,
+          "title": "China's DeepSeek Releases New Open Source AI Model Amid Google's Gemini 3 Roll Out",
+          "type": "url_citation",
+          "url": "https://www.investors.com/news/technology/nvidia-stock-google-stock-deepseek-china-open-source-ai-models/?utm_source=openai"
+        },
+        {
+          "end_index": 3125,
+          "start_index": 3036,
+          "title": "Elon Musk Open-Sources Grok 2.5; Pledges Grok 3 Release in Six Months | Beebom",
+          "type": "url_citation",
+          "url": "https://beebom.com/elon-musk-xai-open-sources-grok-2-5/?utm_source=openai"
+        },
+        {
+          "end_index": 3245,
+          "start_index": 3125,
+          "title": "XAI Open Sources Grok 2.5 Model On Hugging Face - Dataconomy",
+          "type": "url_citation",
+          "url": "https://dataconomy.com/2025/08/25/xai-open-sources-grok-2-5-model-on-hugging-face/?utm_source=openai"
+        },
+        {
+          "end_index": 3361,
+          "start_index": 3245,
+          "title": "Musk says xAI open sources Grok 2.5",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/technology/musk-says-xai-open-sources-grok-25-2025-08-23/?utm_source=openai"
+        },
+        {
+          "end_index": 3753,
+          "start_index": 3676,
+          "title": "\u9a6c\u65af\u514b\u5f00\u6e90Grok 2.5\uff1a500GB\u6a21\u578b\u97008\u575740GB\u663e\u5b58GPU - \u667a\u4ebaAI\u60c5\u62a5",
+          "type": "url_citation",
+          "url": "https://www.zhirenai.com/newsflashes/6281?utm_source=openai"
+        },
+        {
+          "end_index": 3865,
+          "start_index": 3753,
+          "title": "Grok 2.5 model becomes open-source, as xAI's Grok 3 to follow soon",
+          "type": "url_citation",
+          "url": "https://www.mitrade.com/cn/insights/news/live-news/article-3-1067042-20250825?utm_source=openai"
+        },
+        {
+          "end_index": 4301,
+          "start_index": 4229,
+          "title": "xAI libera Grok 2.5 en c\u00f3digo abierto y anticipa Grok 3: qu\u00e9 cambia y c\u00f3mo se compara con otros modelos open source - Noticias AI",
+          "type": "url_citation",
+          "url": "https://noticias.ai/xai-libera-grok-2-5-codigo-abierto/"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "As of December 2025, multiple leaderboards confirm that the strongest open-source AI models predominantly come from Chinese organizations. In the Chatbot Arena (openlm.ai), the top open models are GLM-4.6 (Z.ai, China), Kimi-K2 (Moonshot AI, China), Qwen series (Alibaba, China), DeepSeek variants (DeepSeek AI, China), and LongCat (Meituan, China), occupying the entire top 10+. Vellum Open LLM Leaderboard shows Kimi K2 (China) #1, DeepSeek-R1 (China) #5, Qwen (China) #10. LMArena shows strong Chinese open models like Qwen #11, DeepSeek/GLM #15. Artificial Analysis notes top non-Chinese open like Llama/Mistral, implying Chinese competitiveness. Grok 2.5 was open-sourced in Aug 2025 (Hacker News, Elon Musk X post) but, as an older model, is not listed in current top rankings (e.g., absent from Vellum, Chatbot Arena tops); however, the core prediction of Chinese predominance holds strongly in near term (1 month post-podcast). Sources: [openlm.ai/chatbot-arena](https://openlm.ai/chatbot-arena/), [vellum.ai/open-llm-leaderboard](https://www.vellum.ai/open-llm-leaderboard), [lmarena.ai/leaderboard](https://lmarena.ai/leaderboard), [artificialanalysis.ai/leaderboards/models](https://artificialanalysis.ai/leaderboards/models)."
+    },
+    {
+      "id": "K-00:57:11.590",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly conditional and long\u2011term: *if and when* Tesla has a fleet of about 100 million vehicles, and if each vehicle can provide about 1 kW of inference compute, then the fleet would provide roughly 100 GW of distributed inference compute.\n\nBy November 30, 2025, Tesla\u2019s global fleet is far below 100 million vehicles, so the condition for testing this scenario has not been met:\n\n- Tesla\u2019s official production data show about 1.77 million vehicles produced in 2024 and 1.31\u20131.81 million per year in the early 2020s, with total production from 2013\u20132024 adding up to only a bit over 7 million vehicles.\n  ([ir.tesla.com](https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments?utm_source=openai))\n- Additional analysis of Tesla\u2019s production through Q1 2025 (about 362,000 vehicles) and Q2 2025 (about 410,000 vehicles) is consistent with a cumulative total in the single\u2011digit millions, not tens of millions.\n  ([ir.tesla.com](https://ir.tesla.com/press-release/tesla-first-quarter-2025-production-deliveries-and-deployments?utm_source=openai))\n- Tesla\u2019s Q3 2025 report shows about 447,000 more vehicles produced, bringing lifetime production to somewhere around 8\u20139 million vehicles by late 2025\u2014still far from 100 million.\n  ([ir.tesla.com](https://ir.tesla.com/press-release/tesla-third-quarter-2025-production-deliveries-deployments?utm_source=openai))\n\nSince Tesla has not yet reached anything close to a 100\u2011million\u2011vehicle fleet, we cannot observe whether, in practice, it would operate an effective ~100 GW of distributed inference compute from such a fleet. The arithmetic (100 million vehicles \u00d7 1 kW = 100 GW) is straightforward, but the *prediction about the real\u2011world future system* cannot be validated or falsified yet.\n\nTherefore the correct status for this prediction as of November 30, 2025 is: **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 806,
+          "start_index": 672,
+          "title": "Tesla Fourth Quarter 2024 Production, Deliveries & Deployments | Tesla Investor Relations",
+          "type": "url_citation",
+          "url": "https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments?utm_source=openai"
+        },
+        {
+          "end_index": 1156,
+          "start_index": 1023,
+          "title": "Tesla First Quarter 2025 Production, Deliveries & Deployments",
+          "type": "url_citation",
+          "url": "https://ir.tesla.com/press-release/tesla-first-quarter-2025-production-deliveries-and-deployments?utm_source=openai"
+        },
+        {
+          "end_index": 1470,
+          "start_index": 1341,
+          "title": "Tesla Third Quarter 2025 Production, Deliveries & Deployments",
+          "type": "url_citation",
+          "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2025-production-deliveries-deployments?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is conditional on Tesla reaching a 100-million-vehicle fleet with each providing ~1 kW of inference compute, yielding ~100 GW total. As of December 1, 2025 (podcast released Oct 31, 2025), Tesla's cumulative deliveries are far below 100 million: 2024 total ~1.79M deliveries ([Backlinko](https://backlinko.com/tesla-stats)); 2025 Q1 ~337k, Q2 384k, Q3 497k ([Tesla IR](https://ir.tesla.com/press-release/tesla-third-quarter-2025-production-deliveries-deployments), [Statista](https://www.statista.com/statistics/502208/tesla-quarterly-vehicle-deliveries/)), Q4 ongoing/estimated ~500k for full-year ~1.7M; cumulative ~9-10M max. No evidence of 1 kW/car inference compute deployed fleet-wide. Scenario unrealized; too early to verify. Math checks out (100M \u00d7 1 kW = 100 GW)."
+    },
+    {
+      "id": "K-01:01:45.000",
+      "result": "inconclusive",
+      "explanation": "The prediction is that Tesla will **begin production** of the steering-wheel-less Cyber Cab robotaxi in **Q2 2026** and then, over time, **scale production to millions of Cyber Cabs per year**.\n\nGiven the current date is **November 30, 2025**, Q2 2026 (April\u2013June 2026) has not yet occurred, and the longer\u2011term scaling to \u201cmillions per year\u201d is even further in the future. Therefore, there is not yet any real\u2011world data that could confirm or falsify either the production start timeline or the eventual production scale.\n\nBecause the relevant time period has not begun, the prediction cannot yet be evaluated.",
+      "sources": [],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The current date is December 1, 2025, and Q2 2026 (April-June 2026) has not yet begun, making it impossible to verify if production started as predicted. Recent sources confirm Tesla's plans remain on track: Elon Musk stated at the November 2025 shareholder meeting that Cybercab production will begin in April 2026 at Giga Texas ([InsideEVs](https://insideevs.com/news/778232/tesla-cybercab-production-april-2026/), [Teslarati](https://www.teslarati.com/tesla-cybercab-production-starts-q2-2026-elon-musk-confirms/)). Tesla's Q3 2025 update lists Cybercab for volume production in 2026 ([Tesla IR](https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2025-Update.pdf)). No reports of production starting early or significant delays. Scaling to millions per year is a long-term goal post-start, unverifiable now."
+    },
+    {
+      "id": "K-01:05:32.000",
+      "result": "inconclusive",
+      "explanation": "The prediction is about Tesla robotaxis operating in Austin **without any human safety monitor in the vehicle** \"before the end of the year\" and specifically \"sometime in December\" 2025.\n\nAs of **November 30, 2025** (today\u2019s date per system instructions), December 2025 has not yet occurred, and the stated timeline has not fully elapsed. Even if some limited testing had begun, the podcaster\u2019s claim is explicitly about what will be happening *in December* and *by year\u2011end*, so it cannot yet be definitively judged right or wrong.\n\nTherefore, the correct status right now is: it\u2019s **too early to tell** whether this prediction will come true.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "As of December 1, 2025, there is no evidence that Tesla robotaxis are operating on public roads in Austin without safety monitors. Recent news (e.g., Reuters Nov 26, 2025: 'Tesla's robotaxi service currently operates... with safety monitors still required'; WSJ Nov 26: plans to double fleet in December but no mention of removal; Teslarati Nov 27: ramping up but expecting no safety drivers 'by end of year') confirms safety monitors are still in place. Musk's October statements anticipated removal 'sometime in December,' but with only the first day of December passed and no announcements or reports of unsupervised operations, it is too early to determine if the prediction will come true. Sources: [Reuters](https://www.reuters.com/business/autos-transportation/tesla-ceo-musk-says-austin-robotaxi-fleet-double-next-month-2025-11-26/), [WSJ](https://www.wsj.com/business/autos/tesla-to-double-austin-robotaxi-fleet-next-month-2c02ee3e), [Teslarati](https://www.teslarati.com/tesla-ramp-500-robotaxis-austin-1000-bay-area-end-of-2025-musk/)."
+    },
+    {
+      "id": "K-01:14:26.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, almost no time has elapsed relative to the horizons in K\u2019s prediction, so we cannot yet judge it.\n\nThe normalized claim has three parts:\n\n1. **\u201cAt least 50 years before it\u2019s a truly serious, critical-level problem\u201d (\u22482070s)**  \n   This is about climate impacts between ~2075\u20132525. We are still in 2025, so there is no direct observational test of whether the *critical-level* of seriousness arrives before, at, or after ~2075. All we have now are projections and scenarios, not outcomes.\n\n2. **\u201cBut not 500 years\u201d**  \n   This asserts only that climate change will reach a critical level sometime before ~2525. Again, this is far beyond the present; no way to verify or falsify in 2025.\n\n3. **\u201cIt\u2019s not five years\u201d / claims of large regions becoming uninhabitable or underwater within about 5 years are incorrect**  \n   This refers to the period up to roughly 2030. Since we are still in 2025, the full 5\u2011year window has not passed, so we cannot yet say with certainty that no such extreme outcome will occur by ~2030.\n\nBecause all three timeframes (\u226550 years, <500 years, and \u22485 years) extend well beyond the current date, the prediction cannot yet be classified as right or wrong. It is therefore **inconclusive (too early)** rather than clearly correct, incorrect, or permanently ambiguous.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": null
+    },
+    {
+      "id": "K-00:18:48.770",
+      "result": "inconclusive",
+      "explanation": "As of 30 November 2025, Grokipedia has only been live for about a month (launched 27 October 2025), and is in a v0.1 / beta state. It has a bit over 1 million largely AI\u2011generated or Wikipedia\u2011derived articles, compared to more than 7 million in English Wikipedia.([en.wikipedia.org](https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai))  \n\nEarly independent assessments do **not** show Grokipedia to be anywhere near \u201c100 times better\u201d than Wikipedia in *accuracy, comprehensiveness, and usefulness*; instead, they report:\n\n- Extensive copying from Wikipedia plus numerous factual errors and distortions.([en.wikipedia.org](https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai))  \n- Strong ideological skew and promotion of conspiracy theories or far\u2011right narratives.([theguardian.com](https://www.theguardian.com/technology/2025/nov/03/grokipedia-academics-assess-elon-musk-ai-powered-encyclopedia?utm_source=openai))  \n- Concerns from academics and journalists that its AI\u2011only editorial process makes it **less** reliable than Wikipedia, not more.([theguardian.com](https://www.theguardian.com/technology/2025/nov/03/grokipedia-academics-assess-elon-musk-ai-powered-encyclopedia?utm_source=openai))  \n\nHowever, the prediction is explicitly about Grokipedia *\u201cultimately\u201d* being ~100\u00d7 better\u2014a long\u2011term claim without a clear deadline. Given the short time elapsed since launch and the open\u2011ended horizon implied, it is too early to say definitively whether this long\u2011run claim will prove true or false.\n\nSo, while current evidence runs counter to Musk\u2019s aspiration, the prediction concerns a future end\u2011state that has not yet had time to materialize, and must be scored as **inconclusive (too early to tell)** rather than definitively right or wrong.",
+      "sources": [
+        {
+          "end_index": 384,
+          "start_index": 304,
+          "title": "Grokipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai"
+        },
+        {
+          "end_index": 736,
+          "start_index": 656,
+          "title": "Grokipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai"
+        },
+        {
+          "end_index": 978,
+          "start_index": 827,
+          "title": "In Grok we don't trust: academics assess Elon Musk's AI-powered encyclopedia",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2025/nov/03/grokipedia-academics-assess-elon-musk-ai-powered-encyclopedia?utm_source=openai"
+        },
+        {
+          "end_index": 1262,
+          "start_index": 1111,
+          "title": "In Grok we don't trust: academics assess Elon Musk's AI-powered encyclopedia",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/technology/2025/nov/03/grokipedia-academics-assess-elon-musk-ai-powered-encyclopedia?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction refers to Grokipedia *ultimately* being ~100x better than Wikipedia, stated in a podcast released Oct 31, 2025, days after its Oct 27, 2025 launch ([Wikipedia](https://en.wikipedia.org/wiki/Grokipedia), [NYT](https://www.nytimes.com/2025/10/27/technology/grokipedia-launch-elon-musk.html)). As of Dec 1, 2025\u2014mere weeks later\u2014it's in beta (v0.1), with criticisms of bias, citing neo-Nazi sites 42x ([NBC](https://www.nbcnews.com/tech/elon-musk/elon-musk-grokipedia-wikipedia-neo-nazi-grok-42-encyclopedia-rcna244749)), far-right claims ([WIRED](https://www.wired.com/story/elon-musk-launches-grokipedia-wikipedia-competitor/)), and copied Wikipedia pages ([The Verge](https://www.theverge.com/news/807686/elon-musk-grokipedia-launch-wikipedia-xai-copied)). No metrics confirm 100x superiority in accuracy/comprehensiveness/usefulness; too early to evaluate long-term claim."
+    },
+    {
+      "id": "K-00:17:04.130",
+      "result": "inconclusive",
+      "explanation": "There isn\u2019t enough elapsed time since the prediction to judge long\u2011term commercial or adoption success.\n\nGrokipedia launched on October 27, 2025 as an AI\u2011generated encyclopedia operated by xAI. It is free to access, marked as a commercial service, but public reporting so far does not describe a clear revenue model or measurable profits attributable to it, so its **commercial success** cannot be assessed yet. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai))\n\nOn **adoption**, early traffic data from Similarweb show a launch spike (over ~460,000 U.S. visits on October 28, 2025) followed by a sharp drop to roughly 35,000 daily visits by early November. That is tiny relative to Wikipedia\u2019s scale, which still records on the order of tens of billions of pageviews per year and remains a global top\u201110 website, but this only reflects the first few weeks after launch and says little about its eventual trajectory. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai))\n\nAs for being a \u201cfundamentally superior information product,\u201d early independent evaluations are mixed to negative. Multiple analyses and a Cornell\u2011affiliated study have found heavy reliance on low\u2011credibility sources, frequent factual issues, and pronounced right\u2011leaning or Musk\u2011aligned bias; academics and fact\u2011checkers generally judge Wikipedia as more reliable overall, even while acknowledging its own biases. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai)) A review in *Business Insider* finds Grokipedia can outperform Wikipedia on some niche or poorly maintained topics but concludes it is **not yet** ready to replace Wikipedia and is best seen as a complement. ([businessinsider.com](https://www.businessinsider.com/grokipedia-elon-musk-wikipedia-ai-which-better-why-review-2025-11?utm_source=openai))\n\nPutting this together: initial usage has cooled after an early spike, there is no evidence yet of strong, sustained commercial performance, and expert consensus does not presently support the idea that Grokipedia is clearly superior to Wikipedia. However, because it has been live for just over a month, these observations are far too early to rule in or rule out the long\u2011term prediction about \u201csucceeding commercially and in adoption to a significant degree.\u201d Hence the outcome as of November 30, 2025 is **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 534,
+          "start_index": 454,
+          "title": "Grokipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai"
+        },
+        {
+          "end_index": 1072,
+          "start_index": 992,
+          "title": "Grokipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai"
+        },
+        {
+          "end_index": 1570,
+          "start_index": 1490,
+          "title": "Grokipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grokipedia?utm_source=openai"
+        },
+        {
+          "end_index": 1919,
+          "start_index": 1779,
+          "title": "I tried Grokipedia and I think it beats Wikipedia &mdash; in some cases. (Citation needed.)",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/grokipedia-elon-musk-wikipedia-ai-which-better-why-review-2025-11?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": null
+    },
+    {
+      "id": "K-00:57:09.550",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, Tesla\u2019s cumulative vehicle sales are on the order of only several million, not tens of millions. One recent compilation of company disclosures and industry data estimates that Tesla has sold just over 7.2 million vehicles since its inception, with about 1.79 million delivered in 2024 alone. ([investing.com](https://www.investing.com/academy/statistics/tesla-facts/?utm_source=openai)) Another analysis based on Tesla\u2019s reported production figures shows roughly 7.0 million vehicles produced from 2018\u20132024, which is consistent with a global fleet size still well under 10 million once earlier years are added. ([tridenstechnology.com](https://tridenstechnology.com/tesla-sales-statistics/?utm_source=openai))\n\nHowever, the prediction was that the global Tesla fleet would *eventually* reach around 100 million vehicles, with no specific deadline (\u201cwe probably will get to at some point\u201d). Given that 100 million is a long\u2011term target and there is no time frame attached, the fact that Tesla is far below that level in 2025 does not by itself falsify the prediction; it simply has not been realized yet. There is also no strong evidence that it has become impossible or clearly unattainable in the long run. Therefore, it is too early to determine whether the prediction will ultimately be right or wrong.",
+      "sources": [
+        {
+          "end_index": 451,
+          "start_index": 357,
+          "title": "Tesla Growth Rate and Production Numbers: Statistics & Facts",
+          "type": "url_citation",
+          "url": "https://www.investing.com/academy/statistics/tesla-facts/?utm_source=openai"
+        },
+        {
+          "end_index": 775,
+          "start_index": 677,
+          "title": "Tesla Sales, Revenue & Production Statistics (June 2025)",
+          "type": "url_citation",
+          "url": "https://tridenstechnology.com/tesla-sales-statistics/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction states the global Tesla fleet 'will reach on the order of 100 million vehicles' at some point in the future, with no specified timeline. As of December 1, 2025\u2014only one month after the October 31, 2025 podcast\u2014Tesla's cumulative deliveries are approximately 8 million vehicles (end-2024 ~6.7M based on 1.79M annual deliveries per [backlinko.com/tesla-stats](https://backlinko.com/tesla-stats), plus 2025 YTD: Q1 337k [ir.tesla.com](https://ir.tesla.com), Q2 384k, Q3 497k per [ir.tesla.com/press-release/tesla-third-quarter-2025-production-deliveries-deployments](https://ir.tesla.com/press-release/tesla-third-quarter-2025-production-deliveries-deployments)). It is too early to determine if this long-term projection will occur."
+    },
+    {
+      "id": "K-00:07:16.910",
+      "result": "right",
+      "explanation": "K predicted that X would \"add an option\" for a curated *Following* tab where Grok selects the most interesting posts from accounts a user follows. In late November 2025, X rolled out exactly this behavior: the *Following* timeline can now be ranked by Grok\u2019s AI, which orders posts from people you follow based on what it deems most relevant or engaging, while still letting users switch back to the traditional chronological feed.([gadgets360.com](https://www.gadgets360.com/apps/news/grok-will-rank-x-posts-elon-musk-premium-price-in-india-reduced-9710199?utm_source=openai)) This matches the normalized prediction of an optional, Grok\u2011curated *Following* view, so the prediction came true.",
+      "sources": [
+        {
+          "end_index": 612,
+          "start_index": 466,
+          "title": "Elon Musk\u2019s X Will Now Rank Following Feed Posts Using Grok\u2019s AI Capabilities | Technology News",
+          "type": "url_citation",
+          "url": "https://www.gadgets360.com/apps/news/grok-will-rank-x-posts-elon-musk-premium-price-in-india-reduced-9710199?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": null
+    },
+    {
+      "id": "K-01:09:23.000",
+      "result": "inconclusive",
+      "explanation": "The prediction\u2019s time window has barely begun. The podcast aired on **31 October 2025**, and the predictor said that *within a few years* after that date, \"it will soon become extremely normal to see cars going around with no one in them\" (i.e., truly driverless vehicles with no human occupants becoming a very common, routine sight in everyday traffic).\n\nAs of **30 November 2025** (one month later), we do see meaningful but still geographically limited deployments of driverless vehicles:\n\n- Waymo operates **rider\u2011only** robotaxi services (no driver in the front seat) in parts of Phoenix, San Francisco, Los Angeles and other cities, recently expanding to highway routes and airport trips. These services log tens of millions of driverless miles and hundreds of thousands of weekly rides, but they are constrained to specific cities and service areas and are not yet a pervasive, everyday sight across most of the U.S.([apnews.com](https://apnews.com/article/00c52a015f370ff76355716e70e99cb9?utm_source=openai))\n- Other services (e.g., Tesla\u2019s Robotaxi pilot in Austin) still involve a human safety monitor in the vehicle, so they do not qualify as vehicles \u201cwith no one in them.\u201d([en.wikipedia.org](https://en.wikipedia.org/wiki/Tesla_Robotaxi?utm_source=openai))\n\nThe claim, however, is **explicitly about what will happen over the next few years**, not by late 2025. We are far earlier than the end of that window (which would plausibly extend into 2027\u20132028 or beyond), so there is not yet enough elapsed time to judge whether driverless cars will in fact become a *very common* and *routine* sight in general everyday traffic.\n\nBecause the forecast is about the state of the world several years in the future and we are only one month past the prediction date, the correct assessment is that it is **too early to tell** whether it will ultimately be right or wrong.",
+      "sources": [
+        {
+          "end_index": 1063,
+          "start_index": 970,
+          "title": "Waymo is hitting the highway. Here's what to know about the robotaxi's expanded service",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/00c52a015f370ff76355716e70e99cb9?utm_source=openai"
+        },
+        {
+          "end_index": 1317,
+          "start_index": 1233,
+          "title": "Tesla Robotaxi",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Tesla_Robotaxi?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The prediction specifies 'within a few years after this October 2025 podcast,' typically meaning 2-5 years (e.g., 2027-2030). Only ~1 month has passed as of Dec 1, 2025. Current status: Waymo operates ~2,500 driverless robotaxis (no safety drivers) in 5 U.S. cities (e.g., Phoenix, SF, LA), described as 'a common sight on some city streets' ([AP News, Nov 12, 2025](https://apnews.com/article/waymo-autonomous-driverless-cars-california-freeways-00c52a015f370ff76355716e70e99cb9); [US News, Nov 12, 2025](https://www.usnews.com/news/best-states/california/articles/2025-11-12/waymo-is-hitting-the-highway-heres-what-to-know-about-the-robotaxis-expanded-service)). Expansions to highways and new cities (e.g., Denver, DC 2026) ongoing ([CNET, Nov 20, 2025](https://www.cnet.com/roadshow/news/waymo-adds-3-new-cities-to-its-roster-everything-to-know-about-the-robotaxi-service/)). However, services limited geographically, operate at a loss, with public skepticism ([Wikipedia](https://en.wikipedia.org/wiki/Waymo); [USA Today, Nov 25, 2025](https://www.usatoday.com/story/cars/technology/2025/11/25/industry-promises-self-driving-car/87464028007/)). Not yet 'very common, routine' nationwide or broadly. Insufficient time elapsed to assess fulfillment."
+    },
+    {
+      "id": "K-00:46:49.570",
+      "result": "right",
+      "explanation": "Public evidence since early 2024 shows that Elon Musk has repeatedly and consistently stated the exact governance goal summarized in the prediction: roughly 25% voting control at Tesla, framed as enough to strongly influence AI/robotics (including Optimus) but not so much that he cannot be removed if he \u201cgoes crazy.\u201d  \n\nKey points:\n\n- In January 2024, Musk posted on X that he is *\u201cuncomfortable growing Tesla to be a leader in AI & robotics without having ~25% voting control,\u201d* specifying that this level is *\u201cenough to be influential, but not so much that I can\u2019t be overturned.\u201d* Multiple outlets (Reuters, Forbes, Business Standard, others) reported that he then held about 13% of Tesla but wanted to increase this to ~25% precisely for AI and robotics stewardship. ([investing.com](https://www.investing.com/news/stock-market-news/musk-seeks-25-voting-share-at-tesla-3274537?utm_source=openai))\n- In a later explanation covered by Teslarati, he elaborated that he picked *\u201capproximately 25%\u201d* because it gives him *\u201ca strong influence but not control\u201d* and explicitly tied this to being an *\u201ceffective steward of very powerful technology,\u201d* i.e., AI and robotics. ([teslarati.com](https://www.teslarati.com/tesla-elon-musk-explains-25-percent-voting-share-tsla/?utm_source=openai))\n- On Tesla\u2019s Q2 2025 earnings call, Musk reiterated that his control should be *\u201cenough to ensure that it goes in a good direction, but not so much control that I can\u2019t be thrown out if I go crazy,\u201d* explicitly linking this concern to activist shareholders and his desire for greater voting influence. ([businessinsider.com](https://www.businessinsider.com/five-big-takeaways-from-tesla-second-quarter-earnings-call-2025-7?utm_source=openai))\n- Coverage of his proposed massive new pay package and related \u201crobot army\u201d / Optimus plans in 2025 again reports Musk saying there must be *\u201cenough voting control to have a strong influence, but not so much that they can\u2019t fire me if I go crazy/insane,\u201d* and that the package is intended to lift his stake from roughly 13% into the mid\u201120s (mid/high\u201120s depending on counting), directly aligned with his 25% target. ([wired.com](https://www.wired.com/story/elon-musk-wants-strong-influence-over-the-robot-army-hes-building?utm_source=openai))\n\nMusk\u2019s actual ownership is still well below 25% as of late 2025, but the prediction is about his *intended* steady\u2011state governance level for Tesla\u2019s AI and humanoid\u2011robot development, not about him already holding that stake. All available public statements from 2024\u20132025 confirm that he continues to articulate exactly this goal\u2014roughly 25% voting power to guide AI/robotics (including Optimus) while preserving the board\u2019s practical ability to remove him\u2014so the prediction about his intent is borne out by the evidence.",
+      "sources": [
+        {
+          "end_index": 939,
+          "start_index": 810,
+          "title": "Musk wants 25% voting control at Tesla before fulfilling AI goal By Reuters",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/stock-market-news/musk-seeks-25-voting-share-at-tesla-3274537?utm_source=openai"
+        },
+        {
+          "end_index": 1327,
+          "start_index": 1210,
+          "title": "Elon Musk explains why he wants 25% voting share at Tesla: \u201cI just want to be an effective steward of very powerful technology\u201d",
+          "type": "url_citation",
+          "url": "https://www.teslarati.com/tesla-elon-musk-explains-25-percent-voting-share-tsla/?utm_source=openai"
+        },
+        {
+          "end_index": 1771,
+          "start_index": 1631,
+          "title": "The 5 biggest takeaways from Tesla's Q2 earnings call",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/five-big-takeaways-from-tesla-second-quarter-earnings-call-2025-7?utm_source=openai"
+        },
+        {
+          "end_index": 2316,
+          "start_index": 2190,
+          "title": "Elon Musk Wants 'Strong Influence' Over the 'Robot Army' He's Building",
+          "type": "url_citation",
+          "url": "https://www.wired.com/story/elon-musk-wants-strong-influence-over-the-robot-army-hes-building?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Elon Musk's stated intention to hold approximately 25% voting control in Tesla to ensure influence over AI and robotics development (e.g., Optimus) while allowing board oversight remains consistent post-podcast. This was reiterated in the context of Tesla's November 6-7, 2025, shareholder approval of his $1T pay package, which could increase his stake from ~15-16% (519M shares out of ~3.33B outstanding as of Nov 2025; sources: Motley Fool, Yahoo Finance) to over 25% upon meeting milestones tied to AI/robotics growth ([MarketWatch](https://www.marketwatch.com/story/teslas-investor-meeting-is-just-hours-away-musks-1-trillion-pay-package-is-at-stake-f71a1666), [Fortune](https://fortune.com/2025/11/07/inside-teslas-1-trillion-pay-package-for-elon-musk/), [Reuters](https://www.reuters.com/sustainability/boards-policy-regulation/tesla-investors-vote-an-878-billion-payday-musk-thats-not-all-2025-11-06/)). No contradicting statements or stake changes by Dec 1, 2025; intention affirmed for robot safety/influence."
+    }
+  ]
+}

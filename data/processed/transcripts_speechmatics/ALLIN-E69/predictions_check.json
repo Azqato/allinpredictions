@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "count": 5,
+    "count_by_result": {
+      "wrong": 2,
+      "inconclusive": 3
+    }
+  },
+  "predictions": [
+    {
+      "id": "E-00:17:56.000",
+      "result": "wrong",
+      "explanation": "Multiple contemporaneous sources show that Tesla\u2019s Full Self-Driving (FSD) Beta user base was **far below 1,000,000 by the end of 2022**.\n\n- In spring 2022, Elon Musk said Tesla had **over 100,000 FSD Beta testers**, and that the company aimed to expand this to \u201cprobably 1 million people \u2026 by the end of the year.\u201d ([electrek.co](https://electrek.co/2022/04/20/tesla-number-people-full-self-driving-beta-program-an-accelerated-rate-improvement-coming/?utm_source=openai))  \n- On **December 29, 2022**, Tesla\u2019s official account stated that it had **\u201creaching 285k cars total\u201d** in FSD Beta after enabling anyone in North America who had purchased FSD to request the beta. This 285,000 figure is reported across several outlets summarizing Tesla\u2019s tweet. ([electrek.co](https://electrek.co/2022/12/29/tesla-people-bought-full-self-driving-north-america/?utm_source=openai))  \n- Independent trackers and news sites likewise describe the FSD Beta fleet as about **285,000 cars in Q4 2022**, not close to one million. ([notateslaapp.com](https://www.notateslaapp.com/news/1181/how-tesla-s-fsd-beta-has-expanded-over-time/1000?utm_source=openai))\n\nEven allowing for the vagueness of \u201con that order,\u201d ~285,000 users is less than one-third of 1,000,000 and still in the same rough range as the starting point (10^5, not 10^6). Therefore, the prediction that Tesla would expand FSD Beta from about 100,000 to around 1,000,000 users **by the end of 2022** did **not** come true.",
+      "sources": [
+        {
+          "end_index": 507,
+          "start_index": 351,
+          "title": "Tesla has now more than 100,000 people in its Full Self-Driving Beta program \u2013 is an accelerated rate of improvement coming? | Electrek",
+          "type": "url_citation",
+          "url": "https://electrek.co/2022/04/20/tesla-number-people-full-self-driving-beta-program-an-accelerated-rate-improvement-coming/?utm_source=openai"
+        },
+        {
+          "end_index": 908,
+          "start_index": 790,
+          "title": "Tesla confirms 285,000 people bought Full Self-Driving | Electrek",
+          "type": "url_citation",
+          "url": "https://electrek.co/2022/12/29/tesla-people-bought-full-self-driving-north-america/?utm_source=openai"
+        },
+        {
+          "end_index": 1178,
+          "start_index": 1051,
+          "title": "How Tesla's FSD Beta Has Expanded Over Time",
+          "type": "url_citation",
+          "url": "https://www.notateslaapp.com/news/1181/how-tesla-s-fsd-beta-has-expanded-over-time/1000?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Tesla's official recap on December 29, 2022, stated that FSD Beta had reached 285,000 cars in North America after enabling requests for all who purchased FSD ([Tesla tweet via Electrek](https://electrek.co/2022/12/29/tesla-people-bought-full-self-driving-north-america/), [Tesla Motors Club](https://teslamotorsclub.com/tmc/threads/285-000-teslas-have-fsd.289493/)). This fell short of the predicted ~1,000,000 users by end of 2022, as confirmed by multiple reports ([Torque News](https://www.torquenews.com/11826/tesla-reveals-fsd-beta-running-285k-vehicles-falling-short-elon-musk-s-1m-year-end-goal), [Teslarati](https://www.teslarati.com/tesla-fsd-beta-fleet-475-percent-yoy-78-percent-qoq-growth/)). Earlier in Q3 2022, it was ~160,000 users, showing growth but not to the forecasted scale."
+    },
+    {
+      "id": "E-00:49:36.660",
+      "result": "inconclusive",
+      "explanation": "As of 30 November 2025, there is still **no grid\u2011connected, commercial fusion power plant** operating on Earth. Existing fusion efforts remain experimental or pre\u2011commercial:\n\n- The U.S. National Ignition Facility (NIF) has achieved scientific breakeven in inertial confinement fusion experiments, but it is a research facility and **not a commercial power plant**, and its approach is not yet close to economic electricity generation.\n- Magnetic\u2011confinement projects like **ITER** are still under construction and have not begun power\u2011producing operations.\n- Private fusion companies (e.g., Commonwealth Fusion Systems, Helion, TAE, General Fusion) are targeting **pilot plants in the 2030s**, and only publish **model\u2011based or aspirational LCOE estimates**, not realized commercial costs.\n\nBecause:\n\n1. **No commercial fusion plant is selling power into the grid**, and thus there is **no realized levelized cost of energy (LCOE)** for fusion to compare empirically with solar, wind, or other sources.\n2. Competing renewables (solar and wind) continue to fall in cost, but the prediction is specifically about fusion being *\u201cnot competitive economically \u2026 by an order of magnitude\u201d* in LCOE. That can only be tested once fusion has actual commercial deployments with verifiable cost data.\n3. The prediction is framed over the *\u201cforeseeable future,\u201d* an imprecise horizon; we are only about 3.5 years past the May 2022 podcast date, and fusion commercialization timelines (aiming for the 2030s) have not yet played out.\n\nBecause of these factors, whether commercial fusion will ultimately be roughly an order of magnitude more expensive than solar and wind **cannot yet be determined**. There is insufficient empirical data on commercial fusion LCOE to say if Elon Musk\u2019s prediction is right or wrong, so the correct classification is **\u201cinconclusive (too early).\u201d**",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "No commercial fusion power plants are operational or supplying grid electricity as of December 2025; all projections point to first deployments in the early-mid 2030s (e.g., DOE roadmap Oct 2025, CFS ARC early 2030s, Helion construction approvals Oct 2025). [IAEA Oct 2025](http://www.iaea.org/newscenter/news/fusion-energy-in-2025-six-global-trends-to-watch), [DOE Fusion Roadmap Oct 2025](https://www.energy.gov/articles/energy-department-announces-fusion-science-and-technology-roadmap-accelerate-commercial). Current solar/wind LCOE: $27-78/MWh (WoodMac Oct 2025, Lazard Jun 2025). Fusion FOAK LCOE projections: $80-550/MWh, higher than renewables (EUVC Nov 2024, techno-economic studies 2025). Too early to compare actual commercial LCOE, as fusion remains pre-commercial."
+    },
+    {
+      "id": "E-01:08:45.000",
+      "result": "wrong",
+      "explanation": "Evidence indicates Elon Musk\u2019s prediction did not come true.\n\n*On being \u201calready in a recession\u201d in mid\u2011May 2022*\n- The National Bureau of Economic Research (NBER), the standard arbiter of U.S. recessions, dates the last U.S. recession as ending in April 2020, with no new peak or trough after that as of its latest chronology. That implies the U.S. was officially in expansion, not recession, throughout 2022\u201323. \n- Real U.S. GDP did fall in Q1 and Q2 2022 (\u22121.6% and \u22120.6% annualized), satisfying a narrow \u201ctechnical recession\u201d rule of thumb, but this downturn was short\u2011lived.   From Q3 2022 onward, GDP rebounded strongly: +3.2% in Q3 and +2.9% in Q4 2022.   That pattern is inconsistent with the economy having *entered* a broad, sustained recession by mid\u20112022 under NBER\u2019s definition.\n\n*On \u201cthat recession will get worse\u201d and \u201ctough going for 12\u201318 months\u201d*\n- Instead of a deepening recession from mid\u20112022 through late 2023, the data show continued growth. U.S. real GDP grew in 2022 as a whole and then accelerated in 2023, with 2023 annual growth around 2.5% and quarterly growth of 4.9% in Q3 and 3.3% in Q4 2023.   This is not a worsening recession but a period of solid expansion.\n- The labor market stayed historically strong. The U.S. unemployment rate averaged about 3.6% in late 2022 and only edged up to roughly 3.8% in late 2023\u2014both low by historical standards and far from typical recessionary labor conditions. \n- Globally, conditions were difficult (energy shock, high inflation, tighter monetary policy), but the IMF\u2019s World Economic Outlook shows the world economy still *growing*: about 3.2% in 2022, 2.7\u20132.9% in 2023, and a projected 3.2% in 2024\u20132025, with the IMF explicitly stating the world was \u201cwell away from any sort of global recession marker.\u201d   That contradicts the idea of an outright global recession getting worse over that 12\u201318\u2011month window.\n\n*Bottom line*\n- Musk correctly anticipated a **slowdown and a rough period** (high inflation and aggressive rate hikes did create stress), but his stronger claims\u2014that the U.S. (or world) was *already in a recession* by mid\u2011May 2022 and that this recession would **worsen and persist for ~12\u201318 months**\u2014did not match how the economy actually evolved, given continued GDP growth, low unemployment, and the absence of an officially dated U.S. or global recession in that period.\n\nGiven the available macroeconomic data and the standard definitions in use, the prediction is best classified as **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The US economy was not in an official recession in mid-May 2022, as confirmed by the NBER Business Cycle Dating Committee, which lists the last recession ending in April 2020 with no subsequent declaration ([NBER](https://www.nber.org/research/business-cycle-dating)). While there were two consecutive quarters of mild negative GDP growth (Q1 2022: -1.6%; Q2: -0.6%), this 'technical recession' was not recognized by NBER due to strong employment and other indicators. GDP rebounded sharply afterward (Q3 2022: +3.2%; Q4: +2.7%; 2023 average ~2.9% with peaks like Q3 +4.9%). No worsening occurred, and the economy experienced robust growth through 2023-2024, with 2025 showing a minor Q1 dip (-0.6%) followed by Q2 +3.8% ([BEA GDP data](https://www.bea.gov/data/gdp/gross-domestic-product); FRED/St. Louis Fed). The predicted 12-18 month tough period (to Nov 2023) did not materialize, as unemployment stayed low (~3.5-4%) and growth was strong. Sources: NBER, BEA, Trading Economics, Statista."
+    },
+    {
+      "id": "E-01:21:20.000",
+      "result": "inconclusive",
+      "explanation": "As of 2025, China\u2019s economy has **not** reached 2\u20133x the size of the U.S. economy by any standard, but the prediction explicitly concerns a point *sometime in the future within the lifetime of people alive in 2022*, so it cannot yet be judged true or false.\n\nCurrent data:\n- By **nominal GDP**, the U.S. is about $30.5T vs China\u2019s ~$19.2T in 2025, so China is roughly **63% the size of the U.S.**, not larger, let alone 2\u20133x larger. ([genspark.ai](https://www.genspark.ai/spark/is-the-united-states-still-the-worlds-largest-economy-a-comprehensive-2025-analysis/dedb3252-c587-4d42-b866-3fc67c0cfa05?utm_source=openai))  \n- By **PPP GDP**, China is projected at about **1.3\u20131.35x** the U.S. in 2025 (roughly $40\u201341T vs $30.5T), i.e., already larger, but still **far short of 2x**, much less 3x. ([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/business/india-business/top-10-countries-by-gdp-ppp-2025-china-beats-us-in-this-ranking-where-does-india-rank-amp-when-will-it-become-2nd-largest-economy-check-list/amp_etphotostory/116181825.cms?utm_source=openai))  \n\nHowever, Musk\u2019s statement is about what will happen at *some point* during the remaining lifetimes of people alive in 2022\u2014a horizon of many decades. Even though recent analyses argue China may be nearing \u201cpeak China\u201d and might never massively outgrow the U.S., this remains a projection, not a certainty. ([theguardian.com](https://www.theguardian.com/business/2025/aug/11/peak-china-economy-dominance?utm_source=openai))  Since the relevant time window (several more decades) has not elapsed and no physical or economic law currently rules out China\u2019s GDP reaching 2\u20133x the U.S. in the distant future, the prediction is **too early to evaluate**, not yet clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 661,
+          "start_index": 476,
+          "title": "Is the United States Still the World's Largest Economy? A Comprehensive 2025 Analysis - Genspark",
+          "type": "url_citation",
+          "url": "https://www.genspark.ai/spark/is-the-united-states-still-the-worlds-largest-economy-a-comprehensive-2025-analysis/dedb3252-c587-4d42-b866-3fc67c0cfa05?utm_source=openai"
+        },
+        {
+          "end_index": 1120,
+          "start_index": 838,
+          "title": "Top 10 Countries By GDP (PPP) 2025: China Beats US In This Ranking! Where Does India Rank & When Will It Become 2nd Largest Economy? Check List | The Times of India",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/top-10-countries-by-gdp-ppp-2025-china-beats-us-in-this-ranking-where-does-india-rank-amp-when-will-it-become-2nd-largest-economy-check-list/amp_etphotostory/116181825.cms?utm_source=openai"
+        },
+        {
+          "end_index": 1548,
+          "start_index": 1432,
+          "title": "Why Peak China may finally have arrived",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/2025/aug/11/peak-china-economy-dominance?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction refers to China's economy reaching at least twice (possibly three times) the size of the US economy within the lifetime of people alive in 2022 (roughly 50-80+ years from May 2022). As of December 2025, only ~3.5 years have passed, which is far too early to evaluate a multi-decade forecast.\n\nCurrent status (nominal GDP, IMF Oct 2025 projections): US $30.62T, China $19.4T (China ~0.63x US). In PPP terms, China is ~1.5x US but not yet 2x ([IMF DataMapper](https://www.imf.org/external/datamapper/NGDPD@WEO/CHN/USA), [StatisticsTimes](https://statisticstimes.com/economy/united-states-vs-china-economy.php), [NextBigFuture](https://www.nextbigfuture.com/2025/08/usa-versus-china-in-2025-and-2026.html)). Projections show US maintaining nominal lead through 2030 (US ~$37T vs China ~$26T, [CSIS ChinaPower](https://chinapower.csis.org/tracker/china-gdp/)). No evidence it has occurred."
+    },
+    {
+      "id": "E-01:19:35.000",
+      "result": "inconclusive",
+      "explanation": "Evidence from 2022\u20132025 shows that COBOL-based batch-processing mainframe systems are still heavily used in banking and have **not** ceased to exist, but the prediction is explicitly open\u2011ended (\u201ceventually\u201d), with no time bound, so it cannot yet be judged true or false.\n\nRecent industry reports indicate:\n- Mainframes still process the vast majority of global banking transactions; one 2025 analysis notes that mainframe banking systems handle about **83% of all banking transactions worldwide**, and that 97% of banks rely on IBM mainframe products. ([aol.com](https://www.aol.com/news/mainframe-modernization-banking-strategies-benefits-190121065.html?utm_source=openai))\n- COBOL and mainframes remain core to large financial institutions: IBM figures cited in 2025 articles say that **71% of Fortune 500 companies** and **45 of the top 50 banks** still depend on mainframe systems for core workloads. ([techradar.com](https://www.techradar.com/pro/generative-ai-a-game-changer-for-mainframe-modernization-in-europe?utm_source=openai))\n- COBOL is still widely used for core banking and governmental systems; organizations are modernizing *around* or *on top of* these systems rather than eliminating them outright. ([en.wikipedia.org](https://en.wikipedia.org/wiki/COBOL?utm_source=openai))\n- Banks are pursuing gradual modernization and hybrid architectures, offloading some batch workloads to streaming or cloud platforms, but keeping COBOL mainframes as the authoritative system of record. ([elnion.com](https://elnion.com/2025/03/12/cobol-mainframes-and-the-data-renaissance/?utm_source=openai))\n- Career and workforce forecasts in 2025 explicitly state that major financial institutions have **no plans for full mainframe retirement by 2035**, implying these systems are expected to remain in production for at least another decade. ([softwareseni.com](https://www.softwareseni.com/learning-cobol-and-mainframe-systems-in-2025-legacy-technology-career-paths-and-opportunities/?utm_source=openai))\n\nSo as of **November 30, 2025**:\n- The *current status* of the world clearly contradicts the *outcome* (\u201cCOBOL mainframes would cease to exist\u201d): they are still widely deployed and critical in banking.\n- However, the prediction is framed as something that will happen **\u201ceventually\u201d** with no specified horizon. Because it\u2019s about an indefinite future state, it is not logically falsified yet\u2014COBOL mainframes could still be retired at some later date.\n\nGiven that the event is explicitly unbounded in time and has not occurred yet, the correct classification today is **\u201cinconclusive (too early)\u201d**, not \u201cright\u201d or \u201cwrong.\u201d",
+      "sources": [
+        {
+          "end_index": 718,
+          "start_index": 596,
+          "title": "Mainframe Modernization In Banking: Strategies, Benefits, And Best Practices",
+          "type": "url_citation",
+          "url": "https://www.aol.com/news/mainframe-modernization-banking-strategies-benefits-190121065.html?utm_source=openai"
+        },
+        {
+          "end_index": 1083,
+          "start_index": 950,
+          "title": "Generative AI: a game-changer for mainframe modernization in Europe",
+          "type": "url_citation",
+          "url": "https://www.techradar.com/pro/generative-ai-a-game-changer-for-mainframe-modernization-in-europe?utm_source=openai"
+        },
+        {
+          "end_index": 1339,
+          "start_index": 1264,
+          "title": "COBOL",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COBOL?utm_source=openai"
+        },
+        {
+          "end_index": 1649,
+          "start_index": 1543,
+          "title": "COBOL, Mainframes, and the Data Renaissance - Elnion",
+          "type": "url_citation",
+          "url": "https://elnion.com/2025/03/12/cobol-mainframes-and-the-data-renaissance/?utm_source=openai"
+        },
+        {
+          "end_index": 2052,
+          "start_index": 1889,
+          "title": "Learning COBOL and Mainframe Systems in 2025 - Legacy Technology Career Paths and Opportunities - SoftwareSeni",
+          "type": "url_citation",
+          "url": "https://www.softwareseni.com/learning-cobol-and-mainframe-systems-in-2025-legacy-technology-career-paths-and-opportunities/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction that banks' legacy batch-processing COBOL mainframes would eventually cease to exist in production use has not materialized as of December 2025, roughly 3.5 years after the May 2022 podcast. Multiple sources confirm ongoing heavy reliance: IBM reports 45 of the top 50 banks depend on mainframes for core workloads; 70-80% of global financial transactions still run on COBOL; Bank of America processes 95% of ATM transactions via COBOL. Batch jobs persist, e.g., a global bank offloaded some for cost savings but retains core IBM mainframe COBOL systems ([Ververica blog, Jul 2025](https://www.ververica.com/blog/global-bank-achieves-90-cost-savings-with-mainframe-offloading)). Modernization is incremental (offloading, cloud hybrids), not full replacement by a 'single or unified real-time financial system.' Articles project timelines like 'maybe 10 years' ([eFinancialCareers, Feb 2025](https://www.efinancialcareers.com/news/cobol-jobs-banking)) or note 2025 as a starting point ([Medium, Aug 2025](https://medium.com/@tobias_pfuetze/the-great-core-banking-awakening-why-2025-is-finally-the-year-banks-stop-talking-and-start-dfbb27385d63)). Given the 'eventually' timeframe and scale of entrenched systems, 3.5 years is too early to deem it wrong."
+    }
+  ]
+}

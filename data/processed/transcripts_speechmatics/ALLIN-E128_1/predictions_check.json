@@ -1,0 +1,414 @@
+{
+  "meta": {
+    "count": 15,
+    "count_by_result": {
+      "inconclusive": 4,
+      "right": 3,
+      "wrong": 3,
+      "ambiguous": 5
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:23:41.000",
+      "result": "inconclusive",
+      "explanation": "The prediction has three explicit time horizons:\n\n1. **Major U.S. financial crisis in the 2025\u20132035 period**  \n   As of the current date (November 30, 2025), we are only ~1 year into the 2025\u20132035 window. While there have been ongoing concerns about U.S. debt levels and fiscal sustainability, there has not been a clearly recognized, discrete \"major U.S. financial crisis\" in this period comparable to 2008\u20132009. However, because the prediction is that such a crisis will occur *at some point* between 2025 and 2035, the window has barely begun, so this cannot yet be judged right or wrong.\n\n2. **Spending on seniors reaching ~60% of all U.S. tax revenues by ~2048**  \n   This is a long-run forecast with a target around 2048. We are still more than 20 years away from that date, so it is too early to evaluate whether this will come true.\n\n3. **Social Security + Medicare + Medicaid rising from ~12% of GDP (around 2023) to ~24% of GDP by ~2048**  \n   Current CBO and similar projections still only extend partway and are subject to revision, and 2048 has not arrived. This part of the prediction is also inherently long-term and not yet testable.\n\nBecause all three components refer to dates that are either in a wide future window (2025\u20132035) or specifically around 2048, and those dates have not yet passed, the overall prediction cannot be definitively assessed at this time.\n\nTherefore, the correct classification is **\"inconclusive\" (too early)**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The predictions span 2025\u20132035 for a crisis and ~2048 for spending levels. As of Dec 2025, no major U.S. financial crisis driven by entitlement costs has occurred; a stock market crash began April 2025 due to tariff policies, not boomers/entitlements (*[Wikipedia](https://en.wikipedia.org/wiki/2025_stock_market_crash)*). Economy shows strength with record highs and low recession odds (*[UCLA Anderson](https://www.anderson.ucla.edu/about/centers/ucla-anderson-forecast/recession-watch-2025)*, *[JPMorgan](https://www.jpmorgan.com/insights/global-research/economy/recession-probability)*). 2048 projections unverifiable (*[CBO Long-Term Outlook](https://www.cbo.gov/publication/61270)*, *[SS/Medicare Trustees](https://www.ssa.gov/oact/TRSUM/2024/index.html)*: combined ~12% GDP now, projected rises but below 24%). Baseline matches ~12% GDP 2023 (*[CMS NHE](https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet)*). Druckenmiller speech confirms warnings (*[PDF transcript](https://uscmarshallweb.s3-us-west-2.amazonaws.com/assets/uploads/s1/files/keynote_speech_of_stan_druckenmiller_at_the_37th_usc_marshall_center_for_investment_studies_annual_meeting_may_1_2023_hdmqn6eb4m.pdf)*)."
+    },
+    {
+      "id": "C-00:28:18.660",
+      "result": "right",
+      "explanation": "Available data through late 2025 support both parts of Chamath\u2019s prediction, at least so far.\n\n* **Debt-to-GDP has continued to rise rather than fall.** CBO figures cited by the Senate Budget Committee put federal debt held by the public at about **97.3% of GDP in 2023** and project it rising to roughly **99\u2013100% of GDP by 2024\u20132025**, not declining. ([budget.senate.gov](https://www.budget.senate.gov/ranking-member/newsroom/press/cbo-national-debt-to-reach-record-share-of-gdp-in-just-three-years?utm_source=openai)) Other summaries of 2025 data similarly report public debt near **100% of GDP** and total (gross) federal debt around **123% of GDP**, confirming an upward trajectory from 2023 levels. ([crfb.org](https://www.crfb.org/papers/qa-gross-debt-versus-debt-held-public?utm_source=openai))\n* **No systemic break or cessation of the U.S. economy has occurred.** CBO\u2019s January 2025 outlook, while warning that debt is on an \u201cunsustainable upward trajectory,\u201d still projects continued real GDP growth around 1.8% annually over the next decade, with unemployment and inflation normalizing\u2014i.e., a functioning, growing economy despite higher debt. ([crfb.org](https://www.crfb.org/blogs/cbo-releases-january-2025-budget-and-economic-outlook?utm_source=openai)) Late\u20112025 reporting likewise describes policy debates, a recent government shutdown, and recession worries, but explicitly notes that overall U.S. economic growth remains intact and a broad recession is not expected. ([reuters.com](https://www.reuters.com/world/us/no-recession-risk-us-economy-whole-bessent-tells-nbc-2025-11-23/?utm_source=openai))\n* **Forward-looking projections align with his view.** Multiple recent CBO-based analyses show debt held by the public climbing from about **100% of GDP in 2025** to well above **110%\u2013150% of GDP** in the coming decades, reinforcing the idea that debt-to-GDP is on a rising, not falling, path while the economy is still assumed to operate. ([crfb.org](https://www.crfb.org/papers/analysis-cbos-march-2025-long-term-budget-outlook?utm_source=openai))\n\nBecause (1) debt-to-GDP has indeed risen since 2023 rather than being reduced, and (2) this increase has not caused the U.S. economy to \"stop\" or suffer a systemic breakdown as of November 2025, the prediction is best classified as **right (so far)**, with the obvious caveat that longer-term outcomes beyond 2025 remain unresolved.",
+      "sources": [
+        {
+          "end_index": 555,
+          "start_index": 388,
+          "title": "Press Item | Press | Ranking Member's Newsroom | Ranking Member | U.S. Senate Committee On The Budget",
+          "type": "url_citation",
+          "url": "https://www.budget.senate.gov/ranking-member/newsroom/press/cbo-national-debt-to-reach-record-share-of-gdp-in-just-three-years?utm_source=openai"
+        },
+        {
+          "end_index": 837,
+          "start_index": 740,
+          "title": "Q&A: Gross Debt Versus Debt Held by the Public-Tue, 08/12/2025 - 12:00 | Committee for a Responsible Federal Budget",
+          "type": "url_citation",
+          "url": "https://www.crfb.org/papers/qa-gross-debt-versus-debt-held-public?utm_source=openai"
+        },
+        {
+          "end_index": 1304,
+          "start_index": 1192,
+          "title": "CBO Releases January 2025 Budget and Economic Outlook -2025-01-17",
+          "type": "url_citation",
+          "url": "https://www.crfb.org/blogs/cbo-releases-january-2025-budget-and-economic-outlook?utm_source=openai"
+        },
+        {
+          "end_index": 1654,
+          "start_index": 1522,
+          "title": "No recession risk for US economy as a whole after $11 billion shutdown hit, Bessent says",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/no-recession-risk-us-economy-whole-bessent-tells-nbc-2025-11-23/?utm_source=openai"
+        },
+        {
+          "end_index": 2105,
+          "start_index": 1996,
+          "title": "Analysis of CBO\u2019s March 2025 Long-Term Budget Outlook-Thu, 03/27/2025 - 12:00 | Committee for a Responsible Federal Budget",
+          "type": "url_citation",
+          "url": "https://www.crfb.org/papers/analysis-cbos-march-2025-long-term-budget-outlook?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The U.S. federal debt held by the public (standard metric) was approximately 97% of GDP at the end of FY 2023 ([U.S. Treasury Financial Report](https://fiscal.treasury.gov/reports-statements/financial-report/2023/government-financial-position-and-condition.html)). By FY 2025, it reached 99.8% ([CBO Monthly Budget Review](https://www.taxnotes.com/research/federal/legislative-documents/congressional-budget-office-reports/fiscal-2025-deficit-was-1.8-trillion-cbo-says/7t8mc)) or 98% ([AAF](https://www.americanactionforum.org/insight/u-s-treasury-fy-2025-deficit-totaled-1-8-trillion/)), and ~99% in Sep 2025 ([Congress.gov](https://www.congress.gov/crs-product/IN12045)). Total public debt % GDP also rose from ~119.6% (Dec 2023, [Macrotrends](https://www.macrotrends.net/1381/debt-to-gdp-ratio-historical-chart)) to ~124% (Dec 2024, [CEIC](https://www.ceicdata.com/en/indicator/united-states/government-debt--of-nominal-gdp)) and 125% FY2025 avg ([Treasury Fiscal Data](https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/)). No reduction occurred. No systemic economic break: U.S. economy resilient with GDP growth, low unemployment, no recession or collapse since 2023 ([Deloitte](https://www.deloitte.com/us/en/insights/topics/economy/us-economic-forecast/united-states-outlook-analysis.html), [NerdWallet](https://www.nerdwallet.com/finance/learn/state-of-the-economy))."
+    },
+    {
+      "id": "C-00:34:09.030",
+      "result": "inconclusive",
+      "explanation": "As of 30 November 2025, neither condition in Chamath\u2019s bet has occurred:\n\n- **U.S. federal debt-to-GDP in 2023\u20132025**: Publicly available data from sources such as the U.S. Treasury and IMF show that U.S. gross federal debt-to-GDP has been roughly in the ~120\u2013130% range (well above 50% but far below 200%) through 2023\u20132025. Various statistical series (e.g., IMF World Economic Outlook, Federal Reserve / FRED data) all place recent U.S. debt-to-GDP around this band, not near either 50% or 200%. \n- **Long-term projections**: CBO long-term budget outlooks project federal debt held by the public (a narrower measure than gross debt) to rise in coming decades, potentially exceeding its WWII highs and continuing upward, but these are *projections*, not realized outcomes, and they do not show any near-term path to 50% of GDP. They also do not show debt reaching 200% of GDP as of 2025; those levels, if they occur, are many years in the future. (Multiple CBO reports up to 2025 reinforce this directional trend.) \n\nBecause the bet is explicitly about **which event happens first in the future** starting from the 2023 level \u2014 debt falling to 50% of GDP vs. rising to 200% of GDP \u2014 and **neither threshold has been reached yet**, there is no way to declare a winner.\n\nTherefore, the prediction\u2019s status as of 30 November 2025 is **\u201cinconclusive (too early)\u201d**: we do not yet know whether U.S. federal debt-to-GDP will hit 200% before it ever falls to 50%.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "As of December 2025, the U.S. federal debt-to-GDP ratio remains around 120-125% (e.g., FRED total public debt/GDP Q2 2025: 118.8%; Treasury Fiscal Data FY2025 average: 125%; CEIC Dec 2024: 124%), slightly above the ~120% level in late 2023 (Macrotrends Dec 2023: 119.6%; Trading Economics 2024: 124.3%). It has not reached 200% nor fallen to 50%, so insufficient time has passed to determine if it will hit 200% first. Sources: [FRED GFDEGDQ188S](https://fred.stlouisfed.org/series/GFDEGDQ188S), [Treasury Fiscal Data](https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/), [Macrotrends](https://www.macrotrends.net/1381/debt-to-gdp-ratio-historical-chart), [CEIC](https://www.ceicdata.com/en/indicator/united-states/government-debt--of-nominal-gdp)."
+    },
+    {
+      "id": "B-00:35:17.610",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, the conditions in Friedberg\u2019s conditional prediction have not occurred, and the prediction is explicitly about what will *eventually* happen if those conditions are met.\n\nKey facts:\n- **Debt-to-GDP has not reached ~200%.** Gross federal debt is around 119\u2013125% of GDP in 2024\u20132025, well below 200%.([pewresearch.org](https://www.pewresearch.org/short-reads/2025/08/12/key-facts-about-the-us-national-debt/?utm_source=openai))([tradingeconomics.com](https://tradingeconomics.com/united-states/government-debt-to-gdp?utm_source=openai))([fiscal.treasury.gov](https://www.fiscal.treasury.gov/reports-statements/financial-report/unsustainable-fiscal-path.html?utm_source=openai)) Treasury\u2019s long\u2011term projections suggest debt *might* exceed 200% of GDP around mid\u2011century (e.g., by 2049) under unchanged policy, but that is a projection, not a current reality.([fiscal.treasury.gov](https://fiscal.treasury.gov/reports-statements/financial-report/mda-unsustainable-fiscal-path.html?utm_source=openai))([fiscal.treasury.gov](https://www.fiscal.treasury.gov/reports-statements/financial-report/unsustainable-fiscal-path.html?utm_source=openai))\n- **Interest costs are far below the implied ~$2T and <50% of revenue.** Net interest outlays are just under **$1 trillion per year** as of FY 2025, not $2T, and amount to roughly **14\u201319% of federal revenues**, not \u201cmore than half.\u201d([gurufocus.com](https://www.gurufocus.com/economic_indicators/499/federal-outlays-interest?utm_source=openai))([debt-clock-usa.com](https://debt-clock-usa.com/national-debt/?utm_source=openai))([siai.org](https://siai.org/review/2025/11/202511284279?utm_source=openai))\n- **Tax burdens are nowhere near the \u201c70%+\u201d level he describes.** Federal receipts are about **17% of GDP** in 2024, in line with historical norms.([bidenwhitehouse.archives.gov](https://bidenwhitehouse.archives.gov/omb/briefing-room/2024/10/18/joint-statement-of-janet-l-yellen-secretary-of-the-treasury-and-shalanda-d-young-director-of-the-office-of-management-and-budget-on-budget-results-for-fiscal-year-2024/?utm_source=openai))([ycharts.com](https://ycharts.com/indicators/federal_receipts_as_percent_of_gdp?utm_source=openai))([gurufocus.com](https://www.gurufocus.com/economic_indicators/493/federal-receipts-as-percent-of-gross-domestic-product?utm_source=openai)) The top marginal federal income tax rate is **37%**, and overall federal, state, and local tax collections are on the order of a few tens of percent of GDP, not 70%.([eitc.irs.gov](https://www.eitc.irs.gov/filing/federal-income-tax-rates-and-brackets?utm_source=openai))([pgpf.org](https://www.pgpf.org/finding-solutions/understanding-the-budget/revenues?utm_source=openai))\n\nBecause:\n1. The triggering scenario (debt \u2248 200% of GDP at ~4% rates, with interest consuming over half of government income) has **not yet occurred**; and\n2. The prediction is about what will happen *eventually* under that future scenario (no specific deadline),\n\nthere is **not yet a factual basis to say whether his claim about future 70%+ tax burdens is right or wrong**. It remains a theoretical, forward\u2011looking argument about fiscal arithmetic and political choices. Therefore, the status of the prediction is **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 493,
+          "start_index": 366,
+          "title": "Key facts about the U.S. national debt | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/short-reads/2025/08/12/key-facts-about-the-us-national-debt/?utm_source=openai"
+        },
+        {
+          "end_index": 602,
+          "start_index": 493,
+          "title": "United States Gross Federal Debt to GDP",
+          "type": "url_citation",
+          "url": "https://tradingeconomics.com/united-states/government-debt-to-gdp?utm_source=openai"
+        },
+        {
+          "end_index": 743,
+          "start_index": 602,
+          "title": "Financial Report of the United States Government - Executive Summary - An Unsustainable Fiscal Path",
+          "type": "url_citation",
+          "url": "https://www.fiscal.treasury.gov/reports-statements/financial-report/unsustainable-fiscal-path.html?utm_source=openai"
+        },
+        {
+          "end_index": 1065,
+          "start_index": 924,
+          "title": "Financial Report of the United States Government - Management",
+          "type": "url_citation",
+          "url": "https://fiscal.treasury.gov/reports-statements/financial-report/mda-unsustainable-fiscal-path.html?utm_source=openai"
+        },
+        {
+          "end_index": 1206,
+          "start_index": 1065,
+          "title": "Financial Report of the United States Government - Executive Summary - An Unsustainable Fiscal Path",
+          "type": "url_citation",
+          "url": "https://www.fiscal.treasury.gov/reports-statements/financial-report/unsustainable-fiscal-path.html?utm_source=openai"
+        },
+        {
+          "end_index": 1552,
+          "start_index": 1441,
+          "title": "Federal Outlays, Interest Charts, Data",
+          "type": "url_citation",
+          "url": "https://www.gurufocus.com/economic_indicators/499/federal-outlays-interest?utm_source=openai"
+        },
+        {
+          "end_index": 1635,
+          "start_index": 1552,
+          "title": "Debt Clock USA | National Debt",
+          "type": "url_citation",
+          "url": "https://debt-clock-usa.com/national-debt/?utm_source=openai"
+        },
+        {
+          "end_index": 1711,
+          "start_index": 1635,
+          "title": "Borrowed Time: Education, Power and the Coming US Federal Debt Crisis | Swiss Institute of Artificial Intelligence",
+          "type": "url_citation",
+          "url": "https://siai.org/review/2025/11/202511284279?utm_source=openai"
+        },
+        {
+          "end_index": 2146,
+          "start_index": 1860,
+          "title": "JOINT STATEMENT OF JANET L. YELLEN, SECRETARY OF THE TREASURY, AND SHALANDA D. YOUNG, DIRECTOR OF THE OFFICE OF MANAGEMENT AND BUDGET, ON BUDGET RESULTS FOR FISCAL YEAR 2024 | OMB | The White House",
+          "type": "url_citation",
+          "url": "https://bidenwhitehouse.archives.gov/omb/briefing-room/2024/10/18/joint-statement-of-janet-l-yellen-secretary-of-the-treasury-and-shalanda-d-young-director-of-the-office-of-management-and-budget-on-budget-results-for-fiscal-year-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 2246,
+          "start_index": 2146,
+          "title": "Federal Receipts as Percent of GDP (Yearly) - United States\u2026",
+          "type": "url_citation",
+          "url": "https://ycharts.com/indicators/federal_receipts_as_percent_of_gdp?utm_source=openai"
+        },
+        {
+          "end_index": 2386,
+          "start_index": 2246,
+          "title": "Federal Receipts as Percent of Gross Domestic Product Charts, Data",
+          "type": "url_citation",
+          "url": "https://www.gurufocus.com/economic_indicators/493/federal-receipts-as-percent-of-gross-domestic-product?utm_source=openai"
+        },
+        {
+          "end_index": 2657,
+          "start_index": 2552,
+          "title": "Federal income tax rates and brackets | Internal Revenue Service",
+          "type": "url_citation",
+          "url": "https://www.eitc.irs.gov/filing/federal-income-tax-rates-and-brackets?utm_source=openai"
+        },
+        {
+          "end_index": 2761,
+          "start_index": 2657,
+          "title": "Understanding the Federal Budget | Peterson Foundation",
+          "type": "url_citation",
+          "url": "https://www.pgpf.org/finding-solutions/understanding-the-budget/revenues?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is conditional on U.S. federal debt reaching ~200% of GDP with interest rates ~4%, implying ~$2T annual interest expense. As of Dec 2025 (~2.5 years post-podcast), this condition has not occurred: debt-to-GDP is ~118-125% (FRED Q2 2025: 118.8%; Trading Economics 2024: 124.3%, proj. end-2025: 125.4%; CEIC Dec 2024: 124%), public debt ~99-100% GDP (CRFB Nov 2025). Average interest rate ~3.3-3.4% (Treasury Fiscal Data FY2025: 3.36%; JEC Sep 2025: 3.406%). Net interest ~$970B-$1T FY2025 (Peterson, BPC, AAF), not $2T. No tax hikes to '70%+ effective rates'; top marginal remains 37% (IRS, Tax Foundation 2025 brackets), federal revenue ~17-18% GDP (CBO, USGovRevenue). Too early to assess if/when condition triggers predicted response. Sources: FRED, Trading Economics, Treasury Fiscal Data, CBO, CRFB, Peterson Foundation."
+    },
+    {
+      "id": "C-00:38:45.850",
+      "result": "wrong",
+      "explanation": "As of **November 30, 2025**, the U.S. Department of the Treasury has **not** issued 50\u2011year or 100\u2011year nominal Treasury bonds. The longest standard maturity remains the **30\u2011year Treasury bond**.\n\nEvidence:\n\n- The Treasury\u2019s current marketable securities lineup (bills, notes, bonds, and TIPS) continues to list **bonds only out to 30 years** as the longest maturity; there is no 50\u2011year or 100\u2011year instrument offered as a regular product.\n- Discussions about ultra\u2011long U.S. Treasuries (50\u2011 or 100\u2011year) have occurred repeatedly in policy and market commentary (e.g., around 2016, again in 2019\u20132020, and after large deficits in the 2020s), but each time the Treasury Borrowing Advisory Committee and Treasury officials have ultimately **decided against** introducing such maturities, citing concerns about demand depth, market functioning, and overall financing strategy.\n\nBecause the prediction was that *\u201cwe\u2019ll have 50 year US bonds. We\u2019ll have 100 year US bonds\u201d* and enough time has passed to check whether such instruments exist (they do not), the forecast is **incorrect as of now**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "As of December 1, 2025, the U.S. Treasury has not issued any 50-year or 100-year bonds since the May 2023 prediction. Official TreasuryDirect auction results ([TreasuryDirect Auctions](https://www.treasurydirect.gov/auctions/announcements-data-results/)) show the longest maturity remains 30-year bonds (e.g., maturing 2055, issued Nov 2025). Historical timeline ([TreasuryDirect Timeline](https://www.treasurydirect.gov/research-center/timeline/bonds/)) confirms no issuances beyond 30 years since the 1960s. TBAC discussions have considered ultra-long bonds, but none announced or issued (e.g., [TBAC materials](https://home.treasury.gov/system/files/221/TBACCharge2Q22024.pdf)). 2.5 years is too early for such a major policy shift amid ongoing deficits."
+    },
+    {
+      "id": "C-00:38:45.850b",
+      "result": "inconclusive",
+      "explanation": "As of now (through November 30, 2025), the U.S. Treasury has **not issued any 100-year Treasury bonds**.\n\nPublic reporting and Treasury documentation show that while ultralong maturities (including 50- and 100-year bonds) have been repeatedly studied or discussed, they\u2019ve never been brought to market in the modern era. The Treasury Borrowing Advisory Committee and Treasury officials have confirmed on multiple occasions that ultralong bonds were evaluated but not issued, with supply focused instead on the existing curve out to 30 years.\n\nBecause the prediction is explicitly about the **yield level \u201cif and when\u201d 100\u2011year bonds are issued**, and that condition has not occurred yet, there is no market yield to observe and thus no way to test whether the yield would, in fact, come in below 1%.\n\nSo the prediction is **neither confirmed nor falsified** at this time; it depends on a future policy decision and subsequent market pricing that have not happened yet.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The U.S. Treasury has not issued 100-year bonds as of December 2025. Official sources confirm the longest maturities are 20- or 30-year bonds ([TreasuryDirect](https://treasurydirect.gov/marketable-securities/treasury-bonds/)). No auctions or issuances found on treasury.gov or recent news. Current 30-year yield is ~4.6% ([FRED DGS30](https://fred.stlouisfed.org/series/DGS30), [Bloomberg](https://www.bloomberg.com/markets/rates-bonds/government-bonds/us)). The prediction is conditional on issuance, which has not happened, so too early to evaluate."
+    },
+    {
+      "id": "A-00:51:08.000",
+      "result": "right",
+      "explanation": "Evidence from official results shows that Donald Trump, the Republican nominee, won the 2024 U.S. presidential election held on November 5, 2024, defeating Democratic nominee Kamala Harris with 312 electoral votes to 226 and a popular\u2011vote plurality of 49.8% to 48.3%. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai)) He was then inaugurated as the 47th president of the United States on January 20, 2025, marking the start of his second, nonconsecutive term. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Second_inauguration_of_Donald_Trump?utm_source=openai)) Since the prediction was that Trump would be elected president in the next (2024) U.S. presidential election following the May 2023 town hall, and he in fact won that election and assumed office, the prediction is therefore **right**.",
+      "sources": [
+        {
+          "end_index": 412,
+          "start_index": 302,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 660,
+          "start_index": 555,
+          "title": "Second inauguration of Donald Trump",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Second_inauguration_of_Donald_Trump?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Donald Trump won the 2024 U.S. presidential election on November 5, 2024, defeating Kamala Harris with 312 electoral votes to her 226. This is confirmed by official results from the [FEC](https://www.fec.gov/documents/5644/2024presgeresults.pdf), [Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [New York Times](https://www.nytimes.com/interactive/2024/11/05/us/elections/results-president.html), [CNN](https://www.cnn.com/election/2024/results/president), [NBC News](https://www.nbcnews.com/politics/2024-elections/president-results), and [BBC](https://www.bbc.com/news/election/2024/us/results). The prediction from May 2023 accurately foresaw his victory in the subsequent election."
+    },
+    {
+      "id": "B-00:52:40.000",
+      "result": "right",
+      "explanation": "Friedberg\u2019s May 2023 claim was that Donald Trump had a *real chance* of being reelected in the 2024 U.S. presidential election. The election was held on November 5, 2024, and official results show that Republican nominee Donald Trump defeated Democratic nominee Kamala Harris, winning 312 electoral votes to 226 and securing the popular vote as well, thereby becoming president again in a non-consecutive term.\u200b ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai)) Since Trump did, in fact, win the 2024 election, the subsequent outcome is fully consistent with the assertion that he had a serious shot at reelection. Therefore, this prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 560,
+          "start_index": 450,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Donald Trump won the 2024 U.S. presidential election on November 5, 2024, securing over 270 electoral votes and defeating Kamala Harris. He was inaugurated as the 47th president on January 20, 2025, and remains in office as of December 2025. Thus, he had a 'real shot' at reelection, as predicted. Sources: [Wikipedia 2024 election](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [NYT results](https://www.nytimes.com/interactive/2024/11/05/us/elections/results-president.html), [Wikipedia second presidency](https://en.wikipedia.org/wiki/Second_presidency_of_Donald_Trump)."
+    },
+    {
+      "id": "D-00:55:40.000",
+      "result": "ambiguous",
+      "explanation": "Sacks\u2019 statement was: **\u201cI do think it makes him more likely to be the nominee.\u201d** This is a claim about the *change in probability* of Donald Trump winning the 2024 Republican presidential nomination as a result of the CNN town hall, not a direct prediction that Trump *will* or *won\u2019t* become the nominee.\n\nFactually, Donald Trump did go on to win the 2024 Republican presidential nomination; he was formally nominated at the Republican National Convention in July 2024, after dominating the primary process and securing the required delegates earlier in the year. \n\nHowever, whether the CNN town hall **increased the likelihood** of that outcome is a counterfactual causal claim: we cannot observe the alternative timeline in which the town hall did not occur and compare probabilities. Because of that, the truth of the specific normalized prediction \u2014 *that the town hall made Trump more likely to win the nomination* \u2014 cannot be definitively verified or falsified from observable data, even though we know the eventual outcome.\n\nTherefore, the appropriate classification is **\"ambiguous\"**: enough time has passed and the nomination outcome is known, but the causal effect of the town hall on Trump\u2019s likelihood of winning cannot be determined from available evidence.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Donald Trump clinched the 2024 Republican presidential nomination on March 12, 2024, after securing a majority of delegates ([PBS News](https://www.pbs.org/newshour/politics/trump-clinches-2024-republican-nomination), [Politico](https://www.politico.com/news/2024/03/12/donald-trump-clinches-republican-presidential-nomination-00146675)). He was officially nominated at the RNC in July 2024. The May 10, 2023, CNN town hall was described as reinforcing his front-runner status and primary polling advantage ([CNN](https://www.cnn.com/2023/05/10/politics/donald-trump-polls)), aligning with Sacks' view that it increased his likelihood of winning the nomination, which he did."
+    },
+    {
+      "id": "D-00:56:45.000",
+      "result": "wrong",
+      "explanation": "The key conditions of Sacks\u2019s prediction did not materialize as described:\n\n- **Trump did become the 2024 Republican nominee and general-election candidate.** He clinched the GOP nomination on March 12, 2024, was officially nominated in July, and went on to win the November 5, 2024 election. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai))\n\n- **Biden did not actually run the general-election campaign against Trump.** Although he announced a reelection bid on April 25, 2023 and then dominated the Democratic primaries, Biden withdrew from the 2024 race on July 21, 2024 after a widely panned June 27 debate with Trump. Kamala Harris then launched her own campaign the same day; she became the Democratic nominee on August 5, 2024 and ultimately lost to Trump. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  So the specific scenario Sacks described\u2014Biden vs. Trump in the fall campaign\u2014never fully occurred.\n\n- **While Biden was still a candidate in early 2024, his campaign activity was substantially more than \u201conce a week\u201d and not purely a low-key Rose Garden posture.** An Axios analysis of his schedule found that through June 30, 2024, Biden held about **90 domestic events outside the D.C. area**, roughly 3\u20134 per week, and had visited more swing states than Trump by that point. His travel was lighter than Obama\u2019s 2012 reelection schedule but heavier than Trump\u2019s pandemic-affected 2020 schedule, indicating a moderately active campaign, not a once\u2011a\u2011week response operation. ([axios.com](https://www.axios.com/2024/07/07/biden-light-election-year-travel-schedule-2024?utm_source=openai))  Major campaign events included high-profile speeches near Valley Forge (Jan. 5), at Mother Emanuel AME in Charleston (Jan. 8), and a large March 28 fundraiser at Radio City Music Hall with Obama and Clinton. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Joe_Biden_2024_presidential_campaign?utm_source=openai))\n\n- **Biden did adopt some elements *criticized* as a Rose Garden\u2013style or low-visibility approach\u2014mainly in press access, not campaign travel.** He held relatively few formal press conferences and sit-down interviews compared to recent presidents, and commentators and allies at various points described or contemplated a \u201cRose Garden strategy\u201d or \u201csplit-screen\u201d approach that leveraged incumbency while Republicans fought among themselves. ([washingtonpost.com](https://www.washingtonpost.com/politics/2023/09/22/biden-gop-split-screen-message/?utm_source=openai))  But this referred primarily to media and messaging strategy, not to the kind of once\u2011weekly campaign schedule Sacks predicted.\n\nBecause (1) Biden did *not* end up running the full 2024 campaign as the Democratic nominee against Trump, and (2) during the time he *was* a candidate his schedule involved many more than one brief appearance per week and a real\u2014if somewhat lighter\u2014campaign travel cadence, the prediction that he would essentially retreat to a low\u2011energy, once\u2011weekly Rose Garden campaign turned out to be **wrong**.",
+      "sources": [
+        {
+          "end_index": 437,
+          "start_index": 328,
+          "title": "Donald Trump 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai"
+        },
+        {
+          "end_index": 1005,
+          "start_index": 862,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1798,
+          "start_index": 1686,
+          "title": "Biden goes light on election-year campaign travel",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2024/07/07/biden-light-election-year-travel-schedule-2024?utm_source=openai"
+        },
+        {
+          "end_index": 2114,
+          "start_index": 2008,
+          "title": "Joe Biden 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Joe_Biden_2024_presidential_campaign?utm_source=openai"
+        },
+        {
+          "end_index": 2682,
+          "start_index": 2558,
+          "title": "Biden seizes on GOP drama with \u201csplit-screen\u201d strategy - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2023/09/22/biden-gop-split-screen-message/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Biden's 2024 campaign against Trump (Republican nominee from March 2024) was indeed low-key and low-energy, aligning with the prediction. While not strictly confined to the Rose Garden, Biden held few large rallies (e.g., Valley Forge PA Jan 5, Charleston SC Jan 8, NYC fundraiser Mar 28 with Obama/Clinton, Madison WI Jul 5), opting for shorter speeches (<30 min per Fox News), smaller events, fundraisers, and official duties rather than high-energy trail campaigning like Trump's frequent massive rallies. NYT tracker (May-Jul 2024): Biden 115 events (many DC-based presidential duties) vs Trump 105. Post-Jun 27 debate debacle, activity limited to private meetings, one interview, NATO events with gaffes, and COVID isolation before Jul 21 withdrawal amid vigor concerns\u2014directly matching 'lack of vigor.' Reuters noted 'fewer rallies'; critics called it subdued. Sources: [Wikipedia Biden 2024 campaign](https://en.wikipedia.org/wiki/Joe_Biden_2024_presidential_campaign), [NYT Campaign Tracker](https://www.nytimes.com/interactive/2024/us/politics/biden-trump-2024-campaign.html), [Withdrawal Wiki](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election)."
+    },
+    {
+      "id": "D-00:57:15.000",
+      "result": "ambiguous",
+      "explanation": "Sacks\u2019 forecast was explicitly conditional on a **Biden vs. Trump rematch**, where sustained media saturation around Trump would create renewed \u201cTrump fatigue\u201d and lead enough voters to re\u2011elect Biden despite concerns about his cognitive decline.\n\nIn reality:\n\n- **Joe Biden withdrew from the 2024 race on July 21, 2024**, citing the best interests of his party and the country, and endorsed Kamala Harris to be the Democratic nominee.([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  \n- **Kamala Harris became the Democratic nominee** and faced Donald Trump in the general election.([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  \n- On November 5, 2024, **Donald Trump defeated Kamala Harris**, winning 312 electoral votes to 226 and carrying the popular vote as well; Biden left office on January 20, 2025.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n\nBecause the key condition of the prediction\u2014*a Biden vs. Trump general election*\u2014never occurred, we cannot directly observe whether voters would have re\u2011elected Biden out of Trump fatigue despite worries about his cognition. The actual outcome (Trump defeating Harris) doesn\u2019t cleanly confirm or falsify the conditional claim itself.\n\nGiven that the contingency failed, the prediction\u2019s truth value **cannot be determined**, so it is best classified as **ambiguous** rather than right or wrong.",
+      "sources": [
+        {
+          "end_index": 619,
+          "start_index": 476,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 863,
+          "start_index": 720,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1153,
+          "start_index": 1043,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction that Biden would be reelected in late 2024 due to Trump fatigue did not occur. Joe Biden withdrew from the 2024 presidential race on July 21, 2024, after a poor debate performance ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [NBC News](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867), [AP](https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/)). The general election pitted Donald Trump against Kamala Harris, with Trump winning decisively (312 electoral votes) on November 5, 2024 ([CNN](https://www.cnn.com/election/2024/results/president), [Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [270toWin](https://www.270towin.com/2024-election), [BBC](https://www.bbc.com/news/election/2024/us/results)). There was no Biden-Trump matchup, and Biden was not reelected; Trump fatigue did not materialize as Trump secured victory."
+    },
+    {
+      "id": "B-01:00:15.000",
+      "result": "ambiguous",
+      "explanation": "Biden did in fact run for reelection in 2024 and did not exit the race before the election, so the *event* Friedberg was implicitly concerned about (Biden not running) did **not** occur. However, his explicit prediction was only that there was a *non-zero chance* this could happen. Since almost any contingent future political event has some non-zero probability, this is trivially true and not practically falsifiable. Because the statement doesn\u2019t specify a concrete probability threshold or a calibration standard we can test against, we can\u2019t rigorously classify it as right or wrong\u2014only that the hypothesized outcome did not materialize. Therefore, the most appropriate label is **\"ambiguous\"**.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction states there is a 'non-zero chance' (normalized as 'meaningful (non-zero) probability') that Biden would not run for reelection and exit before the election. This claim is inherently unfalsifiable: any future event has a non-zero probability beforehand, regardless of outcome. Biden did withdraw on July 21, 2024, before the November 2024 election ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [AP](https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/), [NBC](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867)), confirming the event occurred after his April 2023 candidacy announcement. However, the vague threshold ('non-zero') prevents definitive verification of the prediction's accuracy or insightfulness."
+    },
+    {
+      "id": "D-01:03:20.000",
+      "result": "ambiguous",
+      "explanation": "Evaluating this prediction depends heavily on subjective judgments about what qualifies as an *\u201ceven worse debacle\u201d* for Ukraine than in May 2023.\n\n**Key facts about the war in May 2023 (baseline):**\n- Russia\u2019s full\u2011scale invasion had stalled after major Russian failures around Kyiv (2022) and significant Ukrainian counteroffensives in Kharkiv and Kherson (late 2022).  \n- By spring 2023, the front lines were relatively static, with Russia mounting costly offensives (e.g., around Bakhmut) for limited gains, while Ukraine was preparing a counteroffensive with growing Western aid and advanced weapons (HIMARS, tanks, etc.).  \n\nAt that time, many analysts saw Ukraine as having serious challenges but still with realistic prospects for further gains, given Western support and Russia\u2019s earlier battlefield failures.\n\n**Situation by the end of 2023:**\n- Ukraine\u2019s 2023 counteroffensive (launched in June) achieved *limited territorial gains* and fell far short of optimistic public expectations, with very high Ukrainian casualties and significant equipment losses. Western and Ukrainian officials and independent analysts widely described the offensive as disappointing or a stalemate.  \n- Russia largely held its defensive lines in the south and east, and by late 2023 was transitioning back to offensive operations in some sectors, leveraging mobilization and a war\u2011time economy.  \n- Ukraine continued to suffer heavy damage to its energy and civilian infrastructure from Russian missile and drone attacks, while Western political debates about sustaining aid (especially in the U.S. and E.U.) intensified in late 2023.  \n- However, Ukraine did *not* experience a strategic collapse: no major new loss of a capital\u2011scale city beyond places already contested (like Bakhmut); Kyiv and much of the territory liberated in 2022 remained under Ukrainian control; and Ukraine scored some notable successes, especially in the Black Sea (e.g., pushing back the Russian Black Sea Fleet presence and enabling alternative grain export routes).\n\n**Why the prediction is ambiguous rather than clearly right or wrong:**\n- **In favor of \u201cright\u201d:** Relative to expectations in May 2023, by December 2023 Ukraine\u2019s position looked *worse than hoped*: the counteroffensive underperformed, casualties were very high, Russia was adapting militarily and industrially, and Western support looked less assured. Many commentators described the situation as a stalemate trending unfavorably for Ukraine.\n- **In favor of \u201cwrong\u201d:** A *\u201cdebacle\u201d* usually implies an outright disaster or collapse. Ukraine did not lose the war, Kyiv did not fall, and Ukraine maintained political cohesion, continued to receive major Western support, and achieved some strategic successes. The line of contact in late 2023 was not dramatically worse for Ukraine than in May 2023; in some domains (naval/Black Sea, international support frameworks), Ukraine\u2019s situation was arguably stronger.\n\nBecause \u201ceven worse debacle\u201d is a highly normative and qualitative claim, and the end\u20112023 situation can reasonably be interpreted either as:  \n- a significantly deteriorated strategic position, **or**  \n- a costly stalemate but not an outright disaster relative to May 2023,  \n\nthere is no objective, widely accepted benchmark that clearly confirms or falsifies the prediction. Reasonable analysts can and do disagree about whether the change from May to December 2023 meets the threshold of an \u201ceven worse debacle.\u201d\n\n**Therefore, the fairest classification is:** **ambiguous** \u2014 the outcome cannot be determined as clearly right or clearly wrong based on available, mainstream factual assessments.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "In May 2023, the Russia-Ukraine war was a grinding stalemate with Russia capturing Bakhmut after heavy losses, but Ukraine poised for a major counteroffensive with Western aid (*ISW May 2023 assessments*; *Wikipedia Territorial Control*). Sacks viewed it as a 'debacle' for Ukraine due to attrition. By end-2023, Ukraine's counteroffensive (June-Dec) was an operational failure, recapturing only ~370 km\u00b2 and 14 small villages while Russia gained ~860 km\u00b2 overall in 2023 (*Wikipedia 2023 Ukrainian Counteroffensive*; *Washington Post, May 2024*). Net territorial control stable at ~17.5% Russian-held (*Russia-Ukraine War Report Card, Dec 12, 2023*), but Ukraine suffered high casualties, no breakthroughs, and dashed expectations (*Reuters Dec 2023*; *NYT, Telegraph*). Ukrainian leaders admitted stalemate (*Zaluzhnyi Nov 2023*), making conditions significantly worse vs. May 2023 hopes."
+    },
+    {
+      "id": "D-01:03:35.000",
+      "result": "wrong",
+      "explanation": "By the time of the May 12, 2023 episode, the U.S. was indeed in acute banking turmoil following the collapses of Silicon Valley Bank, Signature Bank, and First Republic\u2014three of the largest bank failures in U.S. history.([en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_largest_bank_failures_in_the_United_States?utm_source=openai))  But the normalized prediction you gave treats Sacks as forecasting that this turmoil would *continue and develop into a serious, extended banking crisis* over the ensuing months.\n\nWhat actually happened is that the crisis was sharp but short-lived and was largely contained:\n\n* In all of 2023 there were 5 U.S. bank failures; only three were large, with two small additional failures later in the year.([forbes.com](https://www.forbes.com/advisor/banking/list-of-failed-banks/?utm_source=openai))  In 2024\u20132025 there were just a handful of small additional failures, far fewer than during 2009\u20132011.([archive.fdic.gov](https://archive.fdic.gov/view/fdic/14096/fdic_14096_DS7.bin?utm_source=openai))  This pattern does **not** resemble a prolonged, system\u2011wide fiasco.\n* The Federal Reserve\u2019s Bank Term Funding Program and other interventions are widely credited with *averting* a broader systemic banking crisis; the program expired in March 2024 after doing its job.([federalreserve.gov](https://www.federalreserve.gov/econres/feds/the-federal-reserves-response-to-the-2023-banking-turmoil-the-bank-term-funding-program.htm?utm_source=openai))  The BIS similarly noted that large 2023 failures \u201cdid not lead to a systemic crisis.\u201d([bis.org](https://www.bis.org/speeches/sp241029.htm?utm_source=openai))  \n* By 2024\u20132025, the FDIC reported its insurance fund recovering faster than expected, and U.S. banks returned to solid profitability with rising deposits and strong capital and liquidity.([reuters.com](https://www.reuters.com/business/finance/recovery-us-bank-failure-fund-ahead-schedule-fdic-says-2024-10-17/?utm_source=openai))\n\nSo while there *was* a real but brief banking shock in spring 2023, it did **not** evolve into the extended, escalating fiasco implied by the prediction. Hence the prediction is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 373,
+          "start_index": 253,
+          "title": "List of largest bank failures in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/List_of_largest_bank_failures_in_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 875,
+          "start_index": 781,
+          "title": "Failed Banks In The US: An Analysis By Year, Size And More \u2013 Forbes Advisor",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/advisor/banking/list-of-failed-banks/?utm_source=openai"
+        },
+        {
+          "end_index": 1077,
+          "start_index": 978,
+          "title": "Failed Bank List | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://archive.fdic.gov/view/fdic/14096/fdic_14096_DS7.bin?utm_source=openai"
+        },
+        {
+          "end_index": 1524,
+          "start_index": 1347,
+          "title": "The Fed - The Federal Reserve's Response to the 2023 Banking Turmoil: The Bank Term Funding Program",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/econres/feds/the-federal-reserves-response-to-the-2023-banking-turmoil-the-bank-term-funding-program.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1683,
+          "start_index": 1611,
+          "title": "A test of resolve: credible resolution following the 2023 banking turmoil",
+          "type": "url_citation",
+          "url": "https://www.bis.org/speeches/sp241029.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2016,
+          "start_index": 1874,
+          "title": "Recovery of US bank failure fund ahead of schedule, FDIC says",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/finance/recovery-us-bank-failure-fund-ahead-schedule-fdic-says-2024-10-17/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The 2023 US banking turmoil peaked with SVB (Mar 10), Signature Bank (Mar 12), and First Republic (May 1) failures, but did not continue or escalate into a 'major fiasco' or extended crisis. Regulators contained it via interventions like the Fed's BTFP. FDIC records show only minor failures afterward (e.g., 2 small banks in 2025); no systemic issues in subsequent months/years. Sources: [Wikipedia 2023 banking crisis](https://en.wikipedia.org/wiki/2023_United_States_banking_crisis) (ends early 2023), [FDIC Bank Failures](https://www.fdic.gov/resources/resolutions/bank-failures/in-brief/index) (few post-May 2023), [Axios May 2023](https://www.axios.com/2023/05/04/2023-banking-crisis-contained) ('remains contained'), [IMF Mar 2024](https://www.imf.org/en/publications/global-financial-stability-notes/issues/2024/03/04/the-us-banking-sector-since-the-march-2023-turmoil-navigating-the-aftermath-544809) (sector stabilized)."
+    },
+    {
+      "id": "D-01:04:40.000",
+      "result": "ambiguous",
+      "explanation": "The prediction was explicitly conditional: Sacks said that **if the 2024 election were Biden vs. Trump**, it would be a nail-biter/toss\u2011up with no clear favorite.\n\nThat condition never occurred. President Joe Biden withdrew from the 2024 race on July 21, 2024 and endorsed Vice President Kamala Harris, who became the Democratic nominee. The actual general\u2011election matchup was **Donald Trump vs. Kamala Harris**, not Biden vs. Trump. ([nypost.com](https://nypost.com/2025/05/07/us-news/biden-defends-decision-to-end-2024-presidential-re-election-bid-in-bbc-interview/?utm_source=openai))  Because the hypothesized Biden\u2013Trump contest never happened, we can\u2019t directly test how close it *would* have been \u201cheading into the election.\u201d\n\nWe do have polling data from when Biden was still running. In late June\u2013July 2024, national polling averages and aggregators generally showed Trump leading Biden by about **2\u20134 percentage points** nationally, e.g. RealClearPolitics, The Hill, and other averages had Trump up roughly 3 points at the time Biden exited. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Nationwide_opinion_polling_for_the_2024_United_States_presidential_election?utm_source=openai))  Some modelers, such as Nate Silver, explicitly described Trump as a **clear favorite rather than a toss\u2011up**, putting Trump\u2019s win probability around 65\u201366% vs. Biden. ([nypost.com](https://nypost.com/2024/06/26/us-news/famed-polling-expert-nate-silver-makes-trump-heavy-favorite-to-beat-biden-in-november-not-a-toss-up/?utm_source=openai))  That evidence suggests the race *at that time* was somewhat close in the numbers but not universally regarded as an even \u201ctoss\u2011up.\u201d\n\nAfter Biden withdrew, the race became Trump vs. Harris, and many analysts did characterize that contest as extremely close\u2014Harry Enten, for example, called the 2024 election the **closest presidential race in at least 60 years** based on Harris\u2013Trump polling. ([vanityfair.com](https://www.vanityfair.com/news/story/2024-presidential-election-close-race-60-years?utm_source=openai))  But that pertains to a *different* matchup than the one Sacks specified.\n\nBecause the specific Biden\u2013Trump general election Sacks was talking about never actually occurred, and we can\u2019t observe how that hypothetical race would have looked right before Election Day, the truth of his conditional prediction **cannot be definitively determined** even though the 2024 cycle is over.\n\nHence the assessment: **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 627,
+          "start_index": 474,
+          "title": "Biden defends last-minute decision to end 2024 re-election bid in first interview since leaving WH: 'I don't think it would have mattered'",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/05/07/us-news/biden-defends-decision-to-end-2024-presidential-re-election-bid-in-bbc-interview/?utm_source=openai"
+        },
+        {
+          "end_index": 1239,
+          "start_index": 1094,
+          "title": "Nationwide opinion polling for the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Nationwide_opinion_polling_for_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1580,
+          "start_index": 1408,
+          "title": "Famed polling expert Nate Silver makes Trump heavy favorite to beat Biden in November: 'Not a toss-up'",
+          "type": "url_citation",
+          "url": "https://nypost.com/2024/06/26/us-news/famed-polling-expert-nate-silver-makes-trump-heavy-favorite-to-beat-biden-in-november-not-a-toss-up/?utm_source=openai"
+        },
+        {
+          "end_index": 2099,
+          "start_index": 1977,
+          "title": "2024 Election Is The Closest Presidential Race In At Least 60 Years: Polls",
+          "type": "url_citation",
+          "url": "https://www.vanityfair.com/news/story/2024-presidential-election-close-race-60-years?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is conditional on a Biden vs. Trump matchup in the 2024 election. However, Biden dropped out on July 21, 2024, and was replaced by Kamala Harris as the Democratic nominee. The actual election was Trump vs. Harris, with Trump winning decisively (312-226 electoral votes). Since the specified matchup did not occur, the prediction cannot be verified as right or wrong. Sources: [Wikipedia 2024 election](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [CNN results](https://www.cnn.com/election/2024/results/president), [NBC Biden dropout](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867)."
+    }
+  ]
+}

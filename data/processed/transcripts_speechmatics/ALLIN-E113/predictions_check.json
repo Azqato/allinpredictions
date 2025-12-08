@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "count": 9,
+    "count_by_result": {
+      "inconclusive": 3,
+      "wrong": 2,
+      "right": 3,
+      "ambiguous": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:05:36.000",
+      "result": "inconclusive",
+      "explanation": "The prediction window is \u201cwithin a few years\u201d from early 2023, which the user normalized to roughly **2026\u20132028**. Today is **November 30, 2025**, so we have *not yet reached* the start of that evaluation window.\n\nEven if we check current estimates of Amazon\u2019s share of the global digital ad market (which various industry reports put in the low-to-mid teens as of 2024\u20132025), we still cannot say whether it will end up in the **15\u201320%** range by 2026\u20132028. That outcome depends on future growth rates, competitive dynamics, and macro conditions that have not yet played out.\n\nBecause the prediction is explicitly about Amazon\u2019s **future** share \u201cin a few years\u201d and that period has not yet arrived, the correct status is that it\u2019s **too early to judge** whether the prediction is right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction targets growth to 15-20% by around 2026-2028, nearly 3 years from Jan 2023. As of Dec 2025, full-year 2025 data is incomplete (Q4 ongoing), and 2026 has not arrived. Confirmed: Early 2023 ~12% aligns (Statista: 12.5% US digital ad share 2023). 2024 US total digital ad ~$259B (IAB), Amazon global ad $56.2B (Statista), with US share estimates ~12-13% (consistent with prior eMarketer/Statista). Forecasts project ~15% US share in 2025 (Statista: 15.2%), on track but not yet verified as achieved. Amazon ad revenue growing fast (Q3 2025: $17.7B, +24% YoY), but insufficient time passed to confirm endpoint. Sources: [Statista US shares](https://www.statista.com/statistics/242549/), [IAB 2024 report](https://www.iab.com/wp-content/uploads/2025/04/IAB_PwC-Internet-Ad-Revenue-Report-Full-Year-2024.pdf), Amazon earnings."
+    },
+    {
+      "id": "A-00:06:24.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, the DOJ\u2019s 2023 ad\u2011tech antitrust lawsuit against Google has **not failed in court** and is still active.\n\n- In *United States v. Google LLC (2023)*, filed January 24, 2023, the DOJ and several states alleged that Google illegally monopolized parts of the digital advertising technology stack and explicitly sought structural remedies, including forcing Google to sell significant ad\u2011tech assets.([en.wikipedia.org](https://en.wikipedia.org/wiki/United_States_v._Google_LLC_%282023%29?utm_source=openai))\n- On April 17, 2025, Judge Leonie Brinkema ruled that Google **violated Section 2 of the Sherman Act**, finding that Google illegally maintained monopoly power in the open\u2011web display publisher ad server and ad exchange markets, and unlawfully tied its publisher ad server (DFP) to its ad exchange (AdX). This is a clear liability win for the DOJ, not a failure.([en.wikipedia.org](https://en.wikipedia.org/wiki/United_States_v._Google_LLC_%282023%29?utm_source=openai))\n- The case is now in the **remedies phase**. The DOJ is asking the court to order structural divestitures (e.g., forcing Google to sell AdX and potentially Google Ad Manager/DFP), while Google argues for narrower behavioral remedies and says it will appeal.([reuters.com](https://www.reuters.com/sustainability/boards-policy-regulation/us-seeks-breakup-googles-ad-tech-products-after-judge-finds-illegal-monopoly-2025-05-06/?utm_source=openai))\n- Hearings on remedies were held in late 2025; Judge Brinkema has signaled caution about an immediate breakup and has not yet issued a final remedies order. A written decision on remedies is pending, and any order will likely be subject to appeals.([grokipedia.com](https://grokipedia.com/page/United_States_v._Google_LLC_%282023%29?utm_source=openai))\n\nBecause (1) the DOJ has already won on key liability issues (contrary to the idea that the case would \u201cfail\u201d), but (2) the court has **not yet decided** what remedies to impose and no final judgment (including appeals) has been completed, we **cannot yet determine** whether the lawsuit will \"ultimately fail\" or whether it will \"result in Google being broken up in ad\u2011tech.\" Therefore, the prediction\u2019s accuracy is currently **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 570,
+          "start_index": 462,
+          "title": "United States v. Google LLC (2023)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/United_States_v._Google_LLC_%282023%29?utm_source=openai"
+        },
+        {
+          "end_index": 1042,
+          "start_index": 934,
+          "title": "United States v. Google LLC (2023)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/United_States_v._Google_LLC_%282023%29?utm_source=openai"
+        },
+        {
+          "end_index": 1488,
+          "start_index": 1301,
+          "title": "U.S. seeks breakup of Google's ad-tech products after judge finds illegal monopoly",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-seeks-breakup-googles-ad-tech-products-after-judge-finds-illegal-monopoly-2025-05-06/?utm_source=openai"
+        },
+        {
+          "end_index": 1842,
+          "start_index": 1738,
+          "title": "United States v. Google LLC (2023)",
+          "type": "url_citation",
+          "url": "https://grokipedia.com/page/United_States_v._Google_LLC_%282023%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The U.S. DOJ's 2023 antitrust lawsuit against Google's ad tech business (*United States v. Google LLC*, 1:23-cv-00108, E.D. Va.) did not fail on liability: In April 2025, Judge Leonie Brinkema ruled Google illegally monopolized publisher ad servers (DoubleClick for Publishers) and ad exchanges (AdX) ([NYT Apr 17](https://www.nytimes.com/...), [Reuters Apr 17](https://www.reuters.com/...)). The remedies phase bench trial concluded with closing arguments on Nov 21, 2025, where DOJ sought divestiture of AdX but the judge expressed skepticism ([AdExchanger Nov 21](https://www.adexchanger.com/antitrust/closing-arguments-are-done-in-the-us-v-google-ad-tech-case/), [NYT Nov 21](https://www.nytimes.com/2025/11/21/technology/google-ad-tech-closing.html), [Reuters Nov 22](https://www.reuters.com/legal/litigation/google-aims-dodge-breakup-ad-business-antitrust-trial-wraps-2025-11-21/)). No remedies ruling issued as of Dec 1, 2025 (latest docket Nov 14 per [CourtListener](https://www.courtlistener.com/docket/66753787/united-states-v-google-llc/)). Appeals likely regardless, so too early to determine ultimate outcome or breakup."
+    },
+    {
+      "id": "H-00:16:52.000",
+      "result": "wrong",
+      "explanation": "The prediction hinged on Google *actually removing* third\u2011party cookies in 2024, which was supposed to make it \u201cvery hard to track a user from one website to the next\u201d and to \u201chit very, very hard beginning in 2024\u201d for ad networks and publishers.\n\nWhat happened instead:\n\n1. **Limited test, not full removal.** On January 4, 2024, Chrome began restricting third\u2011party cookies by default for only about 1% of Chrome users as a testing step tied to Privacy Sandbox, with a tentative plan to ramp to 100% later, subject to UK regulatory approval. The rest of Chrome traffic continued to use third\u2011party cookies normally, so cross\u2011site tracking remained broadly feasible in 2024. ([privacysandbox.google.com](https://privacysandbox.google.com/blog/cookie-countdown-2024jan?utm_source=openai))\n2. **Full deprecation was delayed beyond 2024.** During 2024, Google officially postponed completing third\u2011party cookie deprecation from late 2024 to early 2025. ([techtarget.com](https://www.techtarget.com/searchcustomerexperience/news/366582536/Google-delays-third-party-Cookiepocalyse-until-at-least-2025?utm_source=openai))\n3. **Then Google reversed course and *canceled* full deprecation.** In July 2024 Google announced it would *not* kill third\u2011party cookies in Chrome after all, opting instead for a user\u2011choice model. Subsequent reporting and regulatory summaries confirm that Google abandoned the plan to block third\u2011party cookies by default. ([cnbc.com](https://www.cnbc.com/2024/07/22/google-cancels-plans-to-kill-off-cookies-for-advertisers.html?utm_source=openai))\n4. **By 2025 the phase\u2011out plan and Privacy Sandbox were effectively ended, with cookies still fully usable.** Later updates show Google formally ending its Privacy Sandbox deprecation path and deciding to keep third\u2011party cookies available in Chrome, with users managing them via settings rather than a forced shutdown. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Privacy_Sandbox?utm_source=openai))\n5. **Impact on tracking and revenue in 2024 was incremental and experimental, not a broad \u2018very hard\u2019 shock.** Industry tests (e.g., Criteo and others) showed that *if* cookies were fully removed and only Privacy Sandbox were used, publisher revenue could drop sharply, but those were scenario tests. Because deprecation never went beyond the small\u2011scale 1% test population in 2024, the ecosystem did not experience the large, system\u2011wide revenue shock he predicted beginning in that year; instead, most discussion focused on preparation, testing, and uncertainty rather than realized collapse. ([criteo.com](https://www.criteo.com/blog/privacy-sandbox-testing-results-show-shortfalls-to-meet-cma-requirements/?utm_source=openai))\n\nSince (a) Google did **not** broadly remove third\u2011party cookies in 2024, (b) cross\u2011site tracking remained widely possible, and (c) the predicted **significant, immediate negative hit** to digital ad networks and publishers starting in 2024 did not materialize at scale, the prediction is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 825,
+          "start_index": 713,
+          "title": "Third-party cookies restricted by default for 1% of Chrome users \u00a0|\u00a0 Privacy Sandbox",
+          "type": "url_citation",
+          "url": "https://privacysandbox.google.com/blog/cookie-countdown-2024jan?utm_source=openai"
+        },
+        {
+          "end_index": 1154,
+          "start_index": 989,
+          "title": "Google delays third-party 'Cookiepocalypse' until 2025 | TechTarget",
+          "type": "url_citation",
+          "url": "https://www.techtarget.com/searchcustomerexperience/news/366582536/Google-delays-third-party-Cookiepocalyse-until-at-least-2025?utm_source=openai"
+        },
+        {
+          "end_index": 1606,
+          "start_index": 1481,
+          "title": "Google cancels plans to kill off cookies for advertisers",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/07/22/google-cancels-plans-to-kill-off-cookies-for-advertisers.html?utm_source=openai"
+        },
+        {
+          "end_index": 2014,
+          "start_index": 1929,
+          "title": "Privacy Sandbox",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Privacy_Sandbox?utm_source=openai"
+        },
+        {
+          "end_index": 2746,
+          "start_index": 2611,
+          "title": "Privacy Sandbox Testing Results Show Shortfalls to Meet CMA Requirements | Criteo",
+          "type": "url_citation",
+          "url": "https://www.criteo.com/blog/privacy-sandbox-testing-results-show-shortfalls-to-meet-cma-requirements/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Google did not remove third-party cookies in Chrome in 2024 (or by end of 2025); plans were abandoned starting July 2024 due to industry/regulatory pushback, with confirmations in April 2025 that cookies remain supported and enabled by default ([Digiday](https://digiday.com/media/google-chrome-will-now-continue-to-use-third-party-cookies/), [Smashing Magazine](https://www.smashingmagazine.com/2025/05/reliably-detecting-third-party-cookie-blocking-2025/), [OneTrust](https://www.onetrust.com/blog/google-drops-plans-for-third-party-cookie-choice-prompt-in-chrome/), [IAPP](https://iapp.org/news/a/google-ends-third-party-cookie-phaseout-plans)). Only a 1% test phase occurred early 2024, but no full rollout. Thus, no widespread difficulty in cross-site tracking or significant negative revenue impact on ad networks/publishers from this specific change starting 2024. Digital ad revenue grew (US programmatic +15% to $309B in 2024, global +4.9% to $979B in 2025; [Adtelligent](https://adtelligent.com/blog/ad-tech-insights/how-third-party-cookies-elimination-will-affect-programmatic-ecosystem/)). Apple's prior IDFA changes had impacts, but Google's predicted 'hit' did not materialize."
+    },
+    {
+      "id": "F-00:20:22.710",
+      "result": "wrong",
+      "explanation": "Available disclosures and commentary indicate that Uber\u2019s advertising business did **not** reach ~$1 billion of revenue in calendar year 2023.\n\n* In Uber\u2019s Q4 2022 earnings call, management said the ads business had **just passed a $500 million annual revenue run rate** and explicitly **committed to a $1 billion revenue target for 2024**, not 2023. ([alphaspread.com](https://www.alphaspread.com/security/nyse/uber/investor-relations/earnings-call/q4-2022?utm_source=openai))\n* In the Q2 2023 earnings call, CEO Dara Khosrowshahi said the ads business run rate was **\u201cexceeding about $650 million\u201d** and reiterated that they were progressing toward the **$1 billion target in 2024**. This implies that mid\u20112023 annualized revenue was still well below $1 billion. ([fool.com](https://www.fool.com/earnings/call-transcripts/2023/08/01/uber-technologies-uber-q2-2023-earnings-call-trans/?utm_source=openai))\n* A May 2023 analysis summarizing management\u2019s commentary stated that Uber **\u201cexpects to generate over $1 billion in ad revenue in 2024\u201d**, again placing the $1B milestone in 2024, not 2023. ([fool.com](https://www.fool.com/investing/2023/05/26/this-small-part-of-ubers-business-just-helped-mult/?utm_source=openai))\n* Uber later announced that its advertising business **reached a ~$1 billion annual net revenue run rate in 2024** (e.g., Q2 2024 prepared remarks and multiple 2024 press/industry reports), describing this as hitting the target set two years earlier. ([alphaspread.com](https://www.alphaspread.com/security/nyse/uber/investor-relations/earnings-call/q2-2024?utm_source=openai))\n\nUber does not publish a standalone 2023 ads-revenue line, but management\u2019s own run-rate disclosures and guidance consistently position **2024** as the first year at the ~$1 billion level, with 2023 still below that. Therefore, the prediction that the ad business would rise from roughly $350M to about **$1B in 2023** is **wrong**.",
+      "sources": [
+        {
+          "end_index": 512,
+          "start_index": 386,
+          "title": "UBER Q4-2022 Earnings Call - Alpha Spread",
+          "type": "url_citation",
+          "url": "https://www.alphaspread.com/security/nyse/uber/investor-relations/earnings-call/q4-2022?utm_source=openai"
+        },
+        {
+          "end_index": 942,
+          "start_index": 801,
+          "title": "Uber Technologies (UBER) Q2 2023 Earnings Call Transcript | The Motley Fool",
+          "type": "url_citation",
+          "url": "https://www.fool.com/earnings/call-transcripts/2023/08/01/uber-technologies-uber-q2-2023-earnings-call-trans/?utm_source=openai"
+        },
+        {
+          "end_index": 1260,
+          "start_index": 1135,
+          "title": "This Small Part of Uber's Business Just Helped Multiply Delivery Profits. And It's Just Getting Started. | The Motley Fool",
+          "type": "url_citation",
+          "url": "https://www.fool.com/investing/2023/05/26/this-small-part-of-ubers-business-just-helped-mult/?utm_source=openai"
+        },
+        {
+          "end_index": 1639,
+          "start_index": 1513,
+          "title": "UBER Q2-2024 Earnings Call - Alpha Spread",
+          "type": "url_citation",
+          "url": "https://www.alphaspread.com/security/nyse/uber/investor-relations/earnings-call/q2-2024?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Uber's advertising business had a run-rate of $350M in Q3 2022 and exceeded $500M by Q4 2022, aligning roughly with the ~$350M for the 'first full year' (2022) ([Uber Q3 2022 Prepared Remarks](https://s23.q4cdn.com/407969754/files/doc_financials/2022/q3/Uber-Q3-22-Prepared-Remarks.pdf), [Q4 2022 Earnings](https://investor.uber.com/news-events/news/press-release-details/2023/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2022/default.aspx)). For 2023, run-rates grew to >$650M in Q2 ([Q2 2023 Earnings](https://investor.uber.com/news-events/news/press-release-details/2023/Uber-Announces-Results-for-Second-Quarter-2023/default.aspx)) and >$900M in Q4 ([Q4 2023 Supplemental](https://investor.uber.com/files/doc_earnings/2023/q4/supplemental-info/Uber-Q4-23-Earnings-Supplemental-Data.pdf)), but no source reports full-year 2023 ad revenue reaching ~$1B. Uber hit a $1B run-rate in Q2 2024, ahead of their end-2024 goal ([AMI article](https://ami.org.au/knowledge-hub/ubers-advertising-business-surges-ahead-hitting-us1-billion-run-rate-milestone/)). Estimates based on run-rates suggest 2023 actual revenue was ~$700M, far below $1B. Uber's 2023 Annual Report mentions ads as a contributor to $12.2B Delivery revenue but provides no $1B figure ([2023 Annual Report](https://s23.q4cdn.com/407969754/files/doc_financials/2024/Stockholders2024/2023-annual-report.pdf))."
+    },
+    {
+      "id": "B-01:00:39.680",
+      "result": "right",
+      "explanation": "Multiple nationally representative surveys since 2023 show a **broad, cross\u2011vaccine erosion of trust** in the U.S., beyond just COVID\u201119 shots.\n\n* The Annenberg Public Policy Center found in 2023 that only 71% of adults say vaccines approved for use in the U.S. are safe\u2014the *lowest* level since they began asking\u2014while belief that vaccines are unsafe hit a series high. The same survey reported statistically significant declines in perceived safety or effectiveness for HPV, MMR, flu, COVID\u201119, shingles, and pneumococcal vaccines, indicating a general, not single\u2011vaccine, drop in confidence. ([aafp.org](https://www.aafp.org/news/health-of-the-public/2023-population-vaccine-surveys.html?utm_source=openai))\n* A Washington Post\u2013KFF poll reports that by 2024 just 69% of Americans thought childhood vaccines were important, down from 84% in 2019, and by 2025 **1 in 6 parents** had delayed or skipped routine childhood vaccinations (excluding flu and COVID\u201119), with most citing safety concerns rather than access. ([washingtonpost.com](https://www.washingtonpost.com/health/2025/09/15/childhood-vaccines-parents-post-kff-poll//?utm_source=openai))\n* Pew and KFF both find that while large majorities still say the benefits of MMR and other childhood vaccines outweigh the risks, support for **requiring** these shots for school attendance fell sharply (e.g., from ~82% in 2016/2019 to around 70% in the early\u2011 to mid\u20112020s), driven mainly by Republicans; both organizations explicitly note that COVID\u201119 vaccine debates and mandates have spilled over into attitudes about other vaccines. ([pewresearch.org](https://www.pewresearch.org/science/2023/05/16/americans-largely-positive-views-of-childhood-vaccines-hold-steady/?utm_source=openai))\n* CDC data show kindergarten coverage for MMR declined from 95.2% in 2019\u201320 to 92.5% in 2024\u201325, with exemptions rising and large measles outbreaks; coverage and experts attribute this in part to **post\u2011COVID vaccine hesitancy and skepticism**, not just logistical disruption. ([reuters.com](https://www.reuters.com/business/healthcare-pharmaceuticals/us-vaccination-rates-measles-other-diseases-drop-further-government-data-says-2025-07-31/?utm_source=openai))\n* A 2025 KFF tracking poll still finds strong majority confidence in the safety of routine vaccines like measles and flu, but also documents low trust in federal health agencies as vaccine information sources and widespread perceptions that these agencies are not paying enough attention to science, underscoring an ongoing trust erosion environment around vaccination generally. ([kff.org](https://www.kff.org/report-section/kff-tracking-poll-on-health-information-and-trust-vaccine-safety-and-trust-methodology/?utm_source=openai))\n\nTaken together, these trends show a measurable, broad decline in public trust and compliance with **vaccination in general** in the U.S. in the years following COVID\u201119 vaccine policies, even though most Americans still accept core childhood vaccines. That matches Sacks\u2019s prediction, so it is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 746,
+          "start_index": 631,
+          "title": "Surveys Take Population-Level Look at Vaccines | Patient Care",
+          "type": "url_citation",
+          "url": "https://www.aafp.org/news/health-of-the-public/2023-population-vaccine-surveys.html?utm_source=openai"
+        },
+        {
+          "end_index": 1187,
+          "start_index": 1054,
+          "title": "1 in 6 parents skip or delay vaccines, Washington Post-KFF poll shows - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/health/2025/09/15/childhood-vaccines-parents-post-kff-poll//?utm_source=openai"
+        },
+        {
+          "end_index": 1782,
+          "start_index": 1629,
+          "title": "Americans' Views of Childhood Vaccines Remain Largely Positive | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/science/2023/05/16/americans-largely-positive-views-of-childhood-vaccines-hold-steady/?utm_source=openai"
+        },
+        {
+          "end_index": 2246,
+          "start_index": 2062,
+          "title": "US vaccination rates for measles, other diseases drop further, government data says",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-vaccination-rates-measles-other-diseases-drop-further-government-data-says-2025-07-31/?utm_source=openai"
+        },
+        {
+          "end_index": 2781,
+          "start_index": 2628,
+          "title": "KFF Tracking Poll on Health Information and Trust: Vaccine Safety and Trust | KFF",
+          "type": "url_citation",
+          "url": "https://www.kff.org/report-section/kff-tracking-poll-on-health-information-and-trust-vaccine-safety-and-trust-methodology/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Public trust in non-COVID vaccines has declined since 2023, as shown by falling kindergarten vaccination rates and rising exemptions. CDC data: MMR coverage for kindergartners fell to 92.5% in 2024-25 (down from prior years, e.g., ~93% pre-pandemic), exemptions rose to 3.6% from 3.3% in 2023-24 ([CDC SchoolVaxView](https://www.cdc.gov/schoolvaxview/data/index.html)). This continues a post-pandemic trend linked to hesitancy, with 2025 measles outbreaks attributed to low uptake ([PMC article](https://pmc.ncbi.nlm.nih.gov/articles/PMC12357784/)). Pew surveys show stable high views in 2023 (88% MMR benefits > risks, same as 2019), but by Nov 2025, only 63% highly confident in childhood vaccine effectiveness, 53% in safety testing, 51% in schedule; support for school mandates dropped to 69% from 82% in 2019, with partisan gaps widening (48% Rep high effectiveness vs 80% Dems) ([Pew 2025](https://www.pewresearch.org/science/2025/11/18/how-do-americans-view-childhood-vaccines-vaccine-research-and-policy/), [Pew 2023](https://www.pewresearch.org/science/2023/05/16/americans-largely-positive-views-of-childhood-vaccines-hold-steady/)). COVID skepticism correlates with general hesitancy per Pew 2023."
+    },
+    {
+      "id": "H-01:00:57.000",
+      "result": "right",
+      "explanation": "Evidence since 2023 shows growing public and political questioning of non\u2011COVID school vaccine requirements in the U.S.\n\nPublic opinion data: Pew finds that overall support for requiring the MMR vaccine for public\u2011school attendance fell from 82% in 2019 to 69% in 2025, with Republican support dropping from 79% to 52%; Pew explicitly links this to post\u2011COVID debates and notes that school vaccine policies have become a flashpoint as states like Florida move to roll back requirements. ([pewresearch.org](https://www.pewresearch.org/science/2025/11/18/how-do-americans-view-childhood-vaccines-vaccine-research-and-policy/)) Gallup likewise reports that the share of Americans who say it is \"extremely important\" for parents to vaccinate their children fell from 58% in 2019 to 40% in 2024, and that only a bare majority now say government should require childhood vaccines, down from 62% in 2019. ([news.gallup.com](https://news.gallup.com/poll/648308/far-fewer-regard-childhood-vaccinations-important.aspx?utm_source=openai)) A 2025 KFF poll finds support for school requirements still high overall but \"eroding\" among Republicans and parents, with more parents delaying or skipping routine childhood shots and about one in six adults\u2014rising to one in four Republicans\u2014saying public schools should not require any vaccines. ([kff.org](https://www.kff.org/health-information-trust/poll-finding/kff-tracking-poll-on-health-information-and-trust-january-2025/?utm_source=openai))\n\nBehavior and policy: CDC surveillance shows that kindergarten vaccine exemptions (overwhelmingly non\u2011medical) reached record highs in 2022\u201323 and increased again in 2023\u201324, while coverage for required vaccines like MMR, DTaP, and polio has declined below pre\u2011pandemic levels in most states, indicating more families are opting out of school requirements. ([cdc.gov](https://www.cdc.gov/mmwr/volumes/72/wr/mm7245a2.htm?utm_source=openai)) Several high\u2011profile state actions explicitly challenge school mandates for non\u2011COVID vaccines\u2014for example, Florida\u2019s move to drop or eliminate long\u2011standing school vaccine requirements (for chickenpox, hepatitis B, etc.) in the name of \"parental choice,\" and a West Virginia ruling allowing religious opt\u2011outs in a state that previously permitted only medical exemptions. ([apnews.com](https://apnews.com/article/4e697db6085dc5dd4bd9b206ed9a51b6?utm_source=openai))\n\nTogether, these trends\u2014declining support for school vaccine mandates, rising non\u2011medical exemptions, and active political efforts to loosen requirements for traditional childhood vaccines\u2014match Friedberg\u2019s prediction that in the years after COVID, there would be growing public questioning of whether existing school vaccine requirements for other illnesses are appropriate.",
+      "sources": [
+        {
+          "end_index": 659,
+          "start_index": 522,
+          "title": "How Do Americans View Childhood Vaccines, Vaccine Research and Policy? | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/science/2025/11/18/how-do-americans-view-childhood-vaccines-vaccine-research-and-policy/"
+        },
+        {
+          "end_index": 1064,
+          "start_index": 935,
+          "title": "Far Fewer in U.S. Regard Childhood Vaccinations as Important",
+          "type": "url_citation",
+          "url": "https://news.gallup.com/poll/648308/far-fewer-regard-childhood-vaccinations-important.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 1517,
+          "start_index": 1365,
+          "title": "KFF Tracking Poll on Health Information and Trust: January 2025 | KFF",
+          "type": "url_citation",
+          "url": "https://www.kff.org/health-information-trust/poll-finding/kff-tracking-poll-on-health-information-and-trust-january-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 1959,
+          "start_index": 1877,
+          "title": "Coverage with Selected Vaccines and Exemption from School Vaccine Requirements Among Children in Kindergarten \u2014 United States, 2022\u201323 School Year | MMWR",
+          "type": "url_citation",
+          "url": "https://www.cdc.gov/mmwr/volumes/72/wr/mm7245a2.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2428,
+          "start_index": 2335,
+          "title": "Florida's plan to drop school vaccine rule won't start for 90 days, won't cover all diseases",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/4e697db6085dc5dd4bd9b206ed9a51b6?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Post-2023 data shows growing public questioning of US school vaccine requirements for non-COVID illnesses, evidenced by rising exemption rates and declining vaccination coverage. CDC reports kindergarten exemptions increased from 3.3% (2023-24) to 3.6% (2024-25), with non-medical exemptions at a record 3.4%; MMR coverage fell to 92.5%, below 95% target for fifth year ([CDC SchoolVaxView](https://www.cdc.gov/schoolvaxview/data/index.html), [CNN Jul 2025](https://www.cnn.com/2025/07/31/health/vaccination-school-requirements-cdc)). Seventeen states had >5% exemptions in 2024-25 vs. 9 pre-pandemic ([KFF Aug 2025](https://www.kff.org/medicaid/kindergarten-routine-vaccination-rates-continue-to-decline/)). Legal challenges include West Virginia rulings allowing religious exemptions ([NBC Sep 2025](https://www.nbcnews.com/health/health-news/west-virginia-school-vaccine-lawsuit-rfk-jr-morrisey-rcna229331), [Fox Nov 2025](https://www.foxnews.com/health/judge-rules-west-virginia-parents-can-use-religious-beliefs-opt-out-school-vaccine-requirements)); Florida planned to end mandates ([CIDRAP Sep 2025](https://www.cidrap.umn.edu/anti-science/florida-plans-scrap-kid-vaccine-mandates-hhs-employees-demand-rfk-jr-resignation)). RFK Jr. as HHS head amplified doubts, reconstituting ACIP ([Politico Oct 2025](https://www.politico.com/news/2025/10/29/an-interview-with-the-chair-of-kennedys-controversial-vaccine-panel-00626463)). Surveys note rising opt-out support despite majority favor ([Annenberg Jan 2025](https://www.annenbergpublicpolicycenter.org/most-americans-favor-school-vaccine-requirements-but-support-is-rising-for-opt-out-options/)). This aligns with post-COVID trends in hesitancy spilling over to routine vaccines."
+    },
+    {
+      "id": "H-01:11:19.240",
+      "result": "ambiguous",
+      "explanation": "Available evidence shows **some** negative audience reaction to the hosts\u2019 shift away from COVID boosters and vaccines, but not clearly on the scale of \u201ca large number of people,\u201d and we lack visibility into the main discussion venues (YouTube and X/Twitter comments), so the prediction can\u2019t be firmly judged.\n\n**What we can see:**\n- The episode\u2019s transcript confirms the on\u2011air moment: all four say they are not getting further boosters (\u201cI\u2019m never getting boosted again\u2026 I\u2019m not getting boosted again now\u201d), followed immediately by Friedberg\u2019s remark that this will \u201cinflame a large number of people just hearing us say this,\u201d framing the prediction. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e113-doj-tries-to-break-up-google-vaccine-questions-ukraine-escalation-more))\n- PodScripts, which hosts the full transcript and allows user comments, explicitly shows **\u201cThere aren\u2019t comments yet for this episode\u201d** for E113, indicating no visible discussion there despite the tool being designed for it. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e113-doj-tries-to-break-up-google-vaccine-questions-ukraine-escalation-more))\n- On the fan subreddit r/TheAllinPodcasts, a June 27, 2023 thread titled **\u201cVaccines\u201d** notes that \u201cthis sub really got agitated once their deeply held beliefs on COVID vaccines started getting challenged,\u201d and another commenter references the hosts\u2019 argument that COVID shots \u201care not a vaccine because it doesn\u2019t prevent you from getting Covid,\u201d closely matching language from E113. ([reddit.com](https://www.reddit.com/r/TheAllinPodcasts/comments/14jwc6u?utm_source=openai))  This shows *some* audience agitation and pushback over their vaccine stance.\n- A related June 18, 2023 thread, **\u201cVaccine/Mask mandate blame,\u201d** criticizes the hosts for \u201crewrit[ing] history,\u201d calls them \u201cmorons,\u201d and disputes their claims about vaccine efficacy and mandates\u2014again indicating negative reactions from part of the listener community. ([reddit.com](https://www.reddit.com/r/TheAllinPodcasts/comments/14coys3?utm_source=openai))\n- External media pieces in mid\u20112023 (e.g., KFF Health News / Genetic Literacy Project and Salon) discuss the All\u2011In hosts\u2019 evolving positions on COVID vaccines and their platforming of RFK Jr., portraying them as contributing to anti\u2011vaccine narratives, but these articles focus on later episodes and broader behavior, not specifically on the E113 booster comments or a discrete backlash to that segment. ([salon.com](https://www.salon.com/2023/06/16/tech-luminaries-give-rfk-jrs-anti-vaccine-message-a-boost_partner/?utm_source=openai))\n\n**Why this is ambiguous:**\n- We do see **clear negative reactions**\u2014Reddit threads with criticism, claims that the subreddit \u201cgot agitated,\u201d and accusations of grifting and dishonesty. That supports *some* part of Friedberg\u2019s claim (that their vaccine/booster stance angered people).\n- However, these conversations involve tens of comments in a niche subreddit, not obviously a **\u201clarge number\u201d** relative to an audience of hundreds of thousands per episode (E113 is listed at ~361k views on YouTube). ([metapodcast.net](https://www.metapodcast.net/podcasts/all-in-podcast/e113-doj-tries-to-break-up-google-vaccine-questions-ukraine-escalation-more-CwQMMzoe))\n- We cannot reliably access or aggregate YouTube comments and X/Twitter replies, where most of the audience reaction would occur; absence of mainstream coverage calling out this particular booster remark also suggests there was no widespread, viral backlash centered on that specific statement.\n\nGiven (1) some documented but limited backlash, (2) missing data from major platforms, and (3) the inherently vague threshold for \u201clarge number\u201d and \u201cstrong negative reactions,\u201d the available record does not let us confidently label the prediction as clearly right or clearly wrong. Hence, **\u201cambiguous.\u201d**",
+      "sources": [
+        {
+          "end_index": 861,
+          "start_index": 694,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E113: DOJ tries to break up Google, vaccine questions, Ukraine escalation & more Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e113-doj-tries-to-break-up-google-vaccine-questions-ukraine-escalation-more"
+        },
+        {
+          "end_index": 1257,
+          "start_index": 1090,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E113: DOJ tries to break up Google, vaccine questions, Ukraine escalation & more Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e113-doj-tries-to-break-up-google-vaccine-questions-ukraine-escalation-more"
+        },
+        {
+          "end_index": 1736,
+          "start_index": 1644,
+          "title": "Vaccines",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/TheAllinPodcasts/comments/14jwc6u?utm_source=openai"
+        },
+        {
+          "end_index": 2180,
+          "start_index": 2088,
+          "title": "Vaccine/Mask mandate blame",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/TheAllinPodcasts/comments/14coys3?utm_source=openai"
+        },
+        {
+          "end_index": 2719,
+          "start_index": 2587,
+          "title": "Tech luminaries give RFK Jr.\u2019s anti-vaccine message a boost - Salon.com",
+          "type": "url_citation",
+          "url": "https://www.salon.com/2023/06/16/tech-luminaries-give-rfk-jrs-anti-vaccine-message-a-boost_partner/?utm_source=openai"
+        },
+        {
+          "end_index": 3384,
+          "start_index": 3227,
+          "title": "E113: DOJ tries to break up Google, vaccine questions, Ukraine escalation & more - Deep Analysis & Key Insights | Metapodcast",
+          "type": "url_citation",
+          "url": "https://www.metapodcast.net/podcasts/all-in-podcast/e113-doj-tries-to-break-up-google-vaccine-questions-ukraine-escalation-more-CwQMMzoe"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence of strong negative reactions from a large number of people in the audience or online in the weeks/months after release. The podcast's subreddit thread for E113 (https://www.reddit.com/r/TheAllinPodcasts/comments/10mni54/e113_doj_tries_to_break_up_google_vaccine/, 43 comments, post score 12) had several criticisms of the hosts' vaccine discussion (e.g., Sacks downplaying benefits like reduced deaths/hospitalizations, exaggerating myocarditis risks; comments by halseyj score 14, Sammael_Majere score 5), with negative tone calling it misinformed/politically motivated. However, this is limited to ~10 relevant comments in a fan subreddit, not 'large'. YouTube video (https://www.youtube.com/watch?v=CwQMMzoeH9s, 361K views, 1400 comments) discusses vaccines ~40-72min (skepticism on boosters, transmission claims, risks), but comments inaccessible and no backlash in searches. No media coverage, Twitter outrage, or viral discussions found across extensive web/Reddit/Twitter searches (e.g., queries for 'backlash', 'controversy'). Later subreddit vaccine thread (Jun 2023, https://www.reddit.com/r/TheAllinPodcasts/comments/14jwc6u/vaccines/, 152 comments) criticizes hosts generally but not specific to E113/near-term. Prediction overstated the scale/timing."
+    },
+    {
+      "id": "B-01:20:09.430",
+      "result": "right",
+      "explanation": "Evidence as of November 30, 2025 shows the Russia\u2013Ukraine war is still an active, large\u2011scale conflict with no imposed settlement, more than 2 years and 10 months after January 2023.\n\n- Major Russian missile and drone attacks on Kyiv and other regions were reported on November 29, 2025, damaging infrastructure and killing and injuring civilians, demonstrating ongoing high\u2011intensity hostilities rather than a frozen or resolved conflict.\n  ([reuters.com](https://www.reuters.com/business/aerospace-defense/vast-russian-overnight-attack-ukraine-kills-two-wounds-dozens-2025-11-29/?utm_source=openai))\n- Frontline offensives such as the Kupiansk and Huliaipole operations are described as *ongoing* campaigns within the Russo\u2011Ukrainian war, indicating continued maneuver warfare into late 2024 and 2025 rather than a ceasefire or peace deal.\n  ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kupiansk_offensive?utm_source=openai))\n- Diplomatic initiatives (e.g., a 2025 UN Security Council resolution on Ukraine and multiple high\u2011level peace\u2011plan negotiations) explicitly refer to the war as *ongoing* and seek to end it, implying that no comprehensive settlement has yet been reached or enforced.\n  ([en.wikipedia.org](https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_2774?utm_source=openai))\n\nFrom January 27, 2023 (podcast date) to November 30, 2025, the war has persisted without a forced resolution for nearly three years, matching Sacks\u2019s prediction that the conflict was capable of continuing as an ongoing war for another 2\u20133 years. The realized trajectory of the conflict therefore supports the prediction, so it is best scored as **right**.",
+      "sources": [
+        {
+          "end_index": 637,
+          "start_index": 478,
+          "title": "Vast Russian overnight attack on Ukraine kills six, wounds dozens",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/aerospace-defense/vast-russian-overnight-attack-ukraine-kills-two-wounds-dozens-2025-11-29/?utm_source=openai"
+        },
+        {
+          "end_index": 970,
+          "start_index": 882,
+          "title": "Kupiansk offensive",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Kupiansk_offensive?utm_source=openai"
+        },
+        {
+          "end_index": 1359,
+          "start_index": 1242,
+          "title": "United Nations Security Council Resolution 2774",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_2774?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Russia-Ukraine war remains ongoing as of December 1, 2025, nearly three years after the January 2023 podcast. Recent ISW reports (e.g., Nov 29, 2025) describe active positional warfare, Russian offensives in Donetsk, Ukrainian counterattacks in Kharkiv, and no frontline collapse. Wikipedia timelines extend through late 2025 with daily battles, drone strikes, and territorial changes. News sources like Al Jazeera (Nov 29) and CSIS (Oct 2025) confirm continued fighting despite peace talks, with no resolution or ceasefire. Putin demands Ukrainian retreat for end (Le Monde, Nov 27). Thus, the war has continued 2-3 years without forced resolution, validating the prediction that it 'certainly can go on.'"
+    },
+    {
+      "id": "H-01:31:49.410",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, only about 2 years have elapsed since the January 2023 prediction of a ~30\u2011year timeframe (i.e., around the early 2050s) for *broad, whole\u2011body reversal of human aging* using approaches like Yamanaka factors.\n\nCurrent status from the scientific and biotech literature:\n\n- Yamanaka factor\u2013based *partial reprogramming* has shown age-reversal effects in cells and some animal models (e.g., mice), including rejuvenation of certain tissues and extension of lifespan in progeroid models, but not whole\u2011body, clinically deployed human rejuvenation. \n- Major companies and institutes (e.g., Altos Labs, Calico, academic labs) are investigating cellular reprogramming and other longevity approaches, but these are in preclinical or very early clinical stages and far from demonstrated, safe, whole\u2011body age reversal in humans.\n\nThe prediction was essentially \"we will *not* have broad, whole\u2011body reversal of human aging before roughly the early 2050s.\" That claim concerns future decades (2023\u20132050+). We are still at the very beginning of that interval, and nothing observed so far contradicts or confirms the long\u2011term timing. Therefore it is too early to judge the accuracy of the 30\u2011year timeframe.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns a realistic timeframe of ~30 years (early 2050s) for broad, whole-body reversal of human aging via Yamanaka factors. As of December 2025, only ~2.8 years have elapsed since the 2023 podcast. Current progress remains preclinical or early-stage: partial reprogramming shows promise in mice for tissues like eyes, brain, liver ([Washington Post, Mar 2025](https://www.washingtonpost.com/wellness/2025/03/06/cellular-reprogramming-longevity-reverse-aging/); [Life Biosciences ARDD 2025](https://www.lifebiosciences.com/life-biosciences-presents-new-data-at-ardd-2025-on-the-companys-partial-epigenetic-reprogramming-platform-in-liver-and-ocular-diseases/)), with human trials starting for specific applications like ocular diseases or brain (FDA greenlight, [NMN.com Oct 2025](https://www.nmn.com/news/partial-brain-reprogramming-fda-greenlights-first-human-trial)). No evidence of broad whole-body reversal in humans exists ([searches on Nature/Science/NIH](web_search results); [Fight Aging review Oct 2025](https://www.fightaging.org/archives/2025/10/a-review-of-the-present-state-of-epigenetic-reprogramming-to-treat-aging/)). Too early to confirm or refute the 30-year estimate."
+    }
+  ]
+}

@@ -1,0 +1,719 @@
+{
+  "meta": {
+    "count": 15,
+    "count_by_result": {
+      "right": 4,
+      "wrong": 7,
+      "inconclusive": 4
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:11:05.000",
+      "result": "right",
+      "explanation": "Evidence shows that by the end of 2020 there were **mRNA-based COVID-19 vaccines with ~94\u201395% efficacy that were authorized and being deployed**:\n\n- **Pfizer\u2013BioNTech (BNT162b2)**: Final Phase 3 analysis reported about **95% vaccine efficacy** against symptomatic COVID-19. ([investors.biontech.de](https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine?utm_source=openai))  The U.S. FDA then issued an **Emergency Use Authorization (EUA) on December 11, 2020**, making this mRNA vaccine available for use in people 16 and older in the U.S. ([nasdaq.com](https://www.nasdaq.com/articles/fda-authorizes-emergency-use-of-pfizer-biontechs-covid-19-vaccine-2020-12-11?utm_source=openai))  \n- **Moderna (mRNA\u20111273)**: Phase 3 trial results published at the end of December 2020 showed **94.1% efficacy** against symptomatic COVID\u201119. ([nih.gov](https://www.nih.gov/news-events/news-releases/peer-reviewed-report-moderna-covid-19-vaccine-publishes?utm_source=openai))  The FDA granted **EUA on December 18, 2020**, so this second mRNA vaccine was also available in the U.S. before year-end. ([nih.gov](https://www.nih.gov/news-events/news-releases/statement-nih-barda-fda-emergency-use-authorization-moderna-covid-19-vaccine?utm_source=openai))  \n\nBecause **at least one\u2014and in fact two\u2014mRNA vaccines with efficacy in the 90\u201395% range were authorized and available for use by December 31, 2020**, Jason\u2019s prediction that \u201cby the end of the year we\u2019d have vaccines \u2026 with 90\u201395% efficacy\u201d was borne out by events.",
+      "sources": [
+        {
+          "end_index": 478,
+          "start_index": 309,
+          "title": "Pfizer and BioNTech Conclude Phase 3 Study of COVID-19 Vaccine Candidate, Meeting All Primary Efficacy Endpoints | BioNTech",
+          "type": "url_citation",
+          "url": "https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine?utm_source=openai"
+        },
+        {
+          "end_index": 788,
+          "start_index": 646,
+          "title": "FDA Authorizes Emergency Use Of Pfizer, BioNTech's COVID-19 Vaccine | Nasdaq",
+          "type": "url_citation",
+          "url": "https://www.nasdaq.com/articles/fda-authorizes-emergency-use-of-pfizer-biontechs-covid-19-vaccine-2020-12-11?utm_source=openai"
+        },
+        {
+          "end_index": 1067,
+          "start_index": 935,
+          "title": "Peer-reviewed report on Moderna COVID-19 vaccine publishes | National Institutes of Health (NIH)",
+          "type": "url_citation",
+          "url": "https://www.nih.gov/news-events/news-releases/peer-reviewed-report-moderna-covid-19-vaccine-publishes?utm_source=openai"
+        },
+        {
+          "end_index": 1344,
+          "start_index": 1191,
+          "title": "Statement from NIH and BARDA on the FDA Emergency Use Authorization of the Moderna COVID-19 Vaccine | National Institutes of Health (NIH)",
+          "type": "url_citation",
+          "url": "https://www.nih.gov/news-events/news-releases/statement-nih-barda-fda-emergency-use-authorization-moderna-covid-19-vaccine?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Pfizer-BioNTech mRNA vaccine received FDA EUA on December 11, 2020, with 95% efficacy reported in Phase 3 results on November 18, 2020 ([Pfizer press release](https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine), [NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2034577)). Moderna mRNA vaccine received EUA on December 18, 2020, with 94.1% efficacy ([FDA EUA](https://www.fda.gov/media/144636/download), [NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2113017)). Both were available by end of 2020 within 90-95% efficacy range."
+    },
+    {
+      "id": "A-00:11:55.000",
+      "result": "wrong",
+      "explanation": "Jason predicted that, in the U.S., the first two authorized COVID\u201119 vaccines (Pfizer/BioNTech and Moderna) would supply about 40 million doses in December 2020, 50 million in January 2021, and 60 million in February 2021, i.e., roughly 150 million doses by the end of February.\n\nHowever, federal data and independent reporting show much lower actual deliveries:\n\n* A Government Accountability Office report, citing CDC data, says that by December 30, 2020, Operation Warp Speed had distributed about 12.4 million doses of COVID\u201119 vaccines (all Pfizer and Moderna at that time), far short of the administration\u2019s own goal of 40 million doses available by the end of 2020.([files.gao.gov](https://files.gao.gov/reports/GAO-21-265/index.html?utm_source=openai))  This makes a December total of 40 million doses in the U.S. clearly unattained.\n* The Operation Warp Speed summary notes that by January 31, 2021, a cumulative 63.7 million Pfizer+Moderna doses had been delivered in the U.S.([en.wikipedia.org](https://en.wikipedia.org/wiki/Operation_Warp_Speed?utm_source=openai))  Jason\u2019s numbers would imply 40 + 50 = 90 million cumulative doses by that date, which is significantly higher than the 63.7 million actually delivered.\n* A Washington Post analysis, using CDC data, reports that by February 23, 2021, about 82 million doses had been delivered in total, split roughly evenly between Pfizer and Moderna, and explicitly notes that earlier projections of 40 million December doses, 60 million in January, and 100 million in February were \u2018much higher than reality\u2019.([washingtonpost.com](https://www.washingtonpost.com/health/2021/02/23/vaccine-distribution-pfizer-moderna/?utm_source=openai))  Even allowing for additional deliveries in the final days of February, cumulative supply remained far below the 150 million implied by Jason\u2019s 40/50/60\u2011million\u2011per\u2011month prediction.\n\nBecause actual delivered doses in the U.S. in December 2020, January 2021, and February 2021 were well below 40, 50, and 60 million respectively, Jason\u2019s prediction about vaccine supply from the first two vaccines in America did not come true.",
+      "sources": [
+        {
+          "end_index": 800,
+          "start_index": 712,
+          "title": "COVID-19: Critical Vaccine Distribution, Supply Chain, Program Integrity, and Other Challenges Require Focused Federal Attention",
+          "type": "url_citation",
+          "url": "https://files.gao.gov/reports/GAO-21-265/index.html?utm_source=openai"
+        },
+        {
+          "end_index": 1117,
+          "start_index": 1027,
+          "title": "Operation Warp Speed",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Operation_Warp_Speed?utm_source=openai"
+        },
+        {
+          "end_index": 1740,
+          "start_index": 1613,
+          "title": "Pfizer and Moderna pledge a massive vaccine surge - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/health/2021/02/23/vaccine-distribution-pfizer-moderna/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction was far short on actual doses supplied by Pfizer/BioNTech and Moderna in the US. Actual distributed doses (per CDC data via federal reports):\n- December 2020: ~14 million total (Reuters, Dec 31, 2020, citing federal officials: 'About 14 million doses of Pfizer's and Moderna's vaccines have been distributed to states so far'). Predicted: 40 million.\n- By Jan 20, 2021: cumulative ~35 million (Commonwealth Fund, Feb 22, 2021). Thus January doses to date ~21 million; full January likely ~35-40 million doses in month vs. predicted 50 million.\n- By Feb 27, 2021: cumulative ~94 million distributed (Reuters, citing CDC). February doses ~50-60 million vs. predicted 60 million (close but low; J&J minimal impact).\nOverall, supplies fell significantly short, especially in December, confirming the prediction was wrong. Sources: [Reuters Dec 31](https://www.reuters.com/article/world/us-vaccinations-in-2020-fall-far-short-of-target-of-20-million-people-idUSKBN29512U/), [Commonwealth Fund](https://www.commonwealthfund.org/blog/2021/tracking-vaccine-rollout-federal-state-efforts-achieve-speed-equity), [Reuters Feb 27](https://www.reuters.com/world/us/us-administers-728-mln-doses-covid-19-vaccines-cdc-2021-02-27/)."
+    },
+    {
+      "id": "C-00:12:22.000",
+      "result": "wrong",
+      "explanation": "**Why this prediction is wrong**\n\nThe prediction: **\u201cBy May 2021, approximately 70% of the U.S. population will have been immunized with a COVID-19 vaccine.\u201d** (interpreted as ~70% of the *entire* U.S. population having received COVID-19 vaccination by the end of May 2021).\n\nWhat actually happened (using CDC data):\n\n- As of **May 31, 2021**, CDC data show roughly:\n  - About **50\u201351%** of the *total U.S. population* had received **at least one dose** of a COVID-19 vaccine.\n  - About **40\u201341%** of the *total U.S. population* was **fully vaccinated** (two doses of mRNA or one dose of J&J).\n\nMultiple summaries of CDC data and contemporaneous reporting show that by late May / early June 2021 the U.S. had reached roughly **50% of the total population with at least one dose**, not 70%, and that the Biden administration\u2019s **70% goal** by early July 2021 was explicitly for **adults**, not the whole population; even *that* adult-target milestone was reached only later in **early August 2021**, not by May.\n\nGiven that:\n\n- The prediction explicitly refers to **\u201c70% of Americans\u201d** by **May 2021**.\n- Actual vaccination uptake by May 31, 2021 was only about **50% with at least one dose** and **~40% fully vaccinated** for the total U.S. population.\n\nThe prediction **substantially overshot** the real outcome.\n\n**Conclusion:** The prediction that about 70% of the U.S. population would be immunized with a COVID-19 vaccine by May 2021 is **wrong** based on CDC-reported coverage levels by that date.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "By late May 2021, approximately 57-62% of U.S. <i>adults</i> (aged 18+) had received at least one COVID-19 vaccine dose, per CDC MMWR (May 22: 57.0%) [https://www.cdc.gov/mmwr/volumes/70/wr/mm7025e1.htm] and KFF survey (May 28: 62%) [https://www.kff.org/covid-19/kff-covid-19-vaccine-monitor-may-2021/]. About 50% of adults were fully vaccinated by May 25 [Wikipedia citing Biden admin]. U.S. total population (~331 million) included ~73 million children under 18, with negligible vaccination rates (<1%, as 12-15 authorization was May 10 and rollout slow). Thus, total population at least one dose was ~44-48% (e.g., 57% adults \u00d7 ~78% adult share \u224844%; NAAG May 25 implied ~48-50% at least one dose with 39.2% fully [https://www.naag.org/attorney-general-journal/current-status-of-covid-19-vaccines-rollout-nationwide-may-2021-update-for-the-attorney-general-community/]). Far short of 70% (~232 million people). Biden's goal was 70% <i>adults</i> at least one dose by July 4 (achieved ~67%) [Wikipedia]. Sources: CDC, KFF, NAAG, Wikipedia."
+    },
+    {
+      "id": "C-00:13:45.000",
+      "result": "wrong",
+      "explanation": "**Assessment of the prediction**  \nFriedberg predicted that within \u201ca couple of months\u201d from late November 2020 (roughly January\u2013February 2021), the U.S. would be in a \u201cpretty kind of comfortable position\u201d with respect to COVID-19 due to a combination of natural immunity and vaccine rollout. In reality, the U.S. entered the worst phase of the pandemic to that point during this window, with record deaths and hospitalizations and only modest vaccine coverage. This clearly contradicts the prediction.\n\n**1. Severity of the U.S. COVID situation in Jan\u2013Feb 2021**  \n- January 2021 was the *deadliest month* of the U.S. pandemic, with on the order of ~95,000\u2013106,000 COVID deaths that month alone, more than any other month (including December 2020).([forbes.com](https://www.forbes.com/sites/roberthart/2022/05/18/here-is-what-one-million-covid-deaths-in-the-us-looks-like/?utm_source=openai))  \n- CDC data show the 7\u2011day average of new deaths peaked around **3,378 per day on January 11, 2021**, the highest point of the pandemic up to then.([archive.cdc.gov](https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/covid-data/covidview/past-reports/03192021.html?utm_source=openai))  \n- Hospitalizations hit record levels: Reuters and HHS data reported **130,834 people hospitalized with COVID-19 on January 6\u20137, 2021**, the highest number since the pandemic began, with hospitals in states like California rationing care.([equities.com](https://www.equities.com/news/us-covid-19-hospitalizations-reach-record-130-834-on-tuesday/?utm_source=openai))  \n- CDC\u2019s COVID-NET reports that cumulative hospitalization rates continued to climb through late January 2021 and that weekly rates had been on an elevated plateau above all earlier peaks for about three months.([archive.cdc.gov](https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/covid-data/covidview/past-reports/02052021.html?utm_source=openai))  \n\nThese indicators describe an acute crisis, not a \u201ccomfortable position.\u201d\n\n**2. Status of natural immunity and vaccination by early 2021**  \n- A Bayesian evidence-synthesis model estimated that **about 27% of the U.S. population had ever been infected by January 1, 2021**, with states ranging from ~7% to ~45% infected.([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC8043480/?utm_source=openai))  This is far short of any plausible herd-immunity threshold for the original virus, particularly given uneven geographic spread and uncertain durability of infection-acquired immunity.\n- Vaccine rollout was still in its early phases through February 2021:\n  - As of **February 1, 2021**, CDC data (summarized by Respiratory Therapy) showed **32.2 million doses administered**, with **~26 million people having received at least one dose and only ~5.9 million fully vaccinated**\u2014single\u2011digit percentages of the total U.S. population.([respiratory-therapy.com](https://respiratory-therapy.com/disorders-diseases/infectious-diseases/coronavirus/covid-19-vaccination-rate-by-state-february-1/?utm_source=openai))  \n  - By **March 11, 2021**\u2014already outside the \u201ccouple of months\u201d window\u2014The Washington Post reported **62.5 million people had received one or more doses and 32.4 million were fully vaccinated**, still a minority of the population.([washingtonpost.com](https://www.washingtonpost.com/politics/2021/03/11/power-up-then-now-washington-anniversary-coronavirus-pandemic/))  \n\nThus, by January\u2013February 2021, neither infection\u2011induced immunity nor vaccination levels were high enough to significantly tame spread or prevent severe outcomes at a national scale.\n\n**3. Overall judgment**  \nGiven that:\n- January 2021 was the deadliest month of the U.S. pandemic and featured record hospitalizations and ongoing health\u2011system strain,([forbes.com](https://www.forbes.com/sites/roberthart/2022/05/18/here-is-what-one-million-covid-deaths-in-the-us-looks-like/?utm_source=openai))  \n- Vaccine coverage was still limited to a relatively small share of the population by late February 2021,([respiratory-therapy.com](https://respiratory-therapy.com/disorders-diseases/infectious-diseases/coronavirus/covid-19-vaccination-rate-by-state-february-1/?utm_source=openai))  \n- Best estimates indicate that cumulative infections (natural immunity) covered only about a quarter of the population by early January 2021,([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC8043480/?utm_source=openai))  \n\nthe U.S. was *not* in a \u201cpretty kind of comfortable position\u201d with respect to COVID-19 within a couple of months of late November 2020. Any period that might reasonably be called \u201crelatively comfortable\u201d (e.g., summer 2021) arrived several months later than his forecast window and depended much more on expanded vaccination than on the near\u2011term natural immunity he emphasized.\n\n**Conclusion:** The prediction did not come true; it is **wrong**.",
+      "sources": [
+        {
+          "end_index": 930,
+          "start_index": 786,
+          "title": "Here Is What One Million Covid Deaths In The U.S. Looks Like",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/roberthart/2022/05/18/here-is-what-one-million-covid-deaths-in-the-us-looks-like/?utm_source=openai"
+        },
+        {
+          "end_index": 1224,
+          "start_index": 1080,
+          "title": "Hindsight is 2020: A Year of Heartbreak and Hope | CDC",
+          "type": "url_citation",
+          "url": "https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/covid-data/covidview/past-reports/03192021.html?utm_source=openai"
+        },
+        {
+          "end_index": 1592,
+          "start_index": 1465,
+          "title": "US COVID-19 Hospitalizations Reach Record 130,834 on Tuesday - Equities.com",
+          "type": "url_citation",
+          "url": "https://www.equities.com/news/us-covid-19-hospitalizations-reach-record-130-834-on-tuesday/?utm_source=openai"
+        },
+        {
+          "end_index": 1950,
+          "start_index": 1806,
+          "title": "COVIDView Summary ending on January 30, 2021 | CDC",
+          "type": "url_citation",
+          "url": "https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/covid-data/covidview/past-reports/02052021.html?utm_source=openai"
+        },
+        {
+          "end_index": 2371,
+          "start_index": 2278,
+          "title": "Reconstructing the course of the COVID-19 epidemic over 2020 for US states and counties: results of a Bayesian evidence synthesis model - PMC",
+          "type": "url_citation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8043480/?utm_source=openai"
+        },
+        {
+          "end_index": 3082,
+          "start_index": 2906,
+          "title": "COVID-19 Vaccination Rate by State: February 1 | Respiratory Therapy",
+          "type": "url_citation",
+          "url": "https://respiratory-therapy.com/disorders-diseases/infectious-diseases/coronavirus/covid-19-vaccination-rate-by-state-february-1/?utm_source=openai"
+        },
+        {
+          "end_index": 3454,
+          "start_index": 3317,
+          "title": "Power Up: Then and now in Washington, on the anniversary of the coronavirus pandemic - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2021/03/11/power-up-then-now-washington-anniversary-coronavirus-pandemic/"
+        },
+        {
+          "end_index": 3961,
+          "start_index": 3817,
+          "title": "Here Is What One Million Covid Deaths In The U.S. Looks Like",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/roberthart/2022/05/18/here-is-what-one-million-covid-deaths-in-the-us-looks-like/?utm_source=openai"
+        },
+        {
+          "end_index": 4246,
+          "start_index": 4070,
+          "title": "COVID-19 Vaccination Rate by State: February 1 | Respiratory Therapy",
+          "type": "url_citation",
+          "url": "https://respiratory-therapy.com/disorders-diseases/infectious-diseases/coronavirus/covid-19-vaccination-rate-by-state-february-1/?utm_source=openai"
+        },
+        {
+          "end_index": 4484,
+          "start_index": 4391,
+          "title": "Reconstructing the course of the COVID-19 epidemic over 2020 for US states and counties: results of a Bayesian evidence synthesis model - PMC",
+          "type": "url_citation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8043480/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The US was not in a 'relatively comfortable position' with COVID-19 by January-February 2021. Instead, it experienced its deadliest surge: daily cases peaked at ~250,000 (7-day avg. Jan 11, [NPR](https://www.npr.org/sections/health-shots/2021/01/21/958870301/the-current-deadly-u-s-coronavirus-surge-has-peaked-researchers-say)); weekly cases 1.7M (week of Jan 13, [ABC](https://abcnews.go.com/Health/winter-covid-wave-wasnt-us-surge/story?id=97577262)); deaths averaged >2,400/day in Feb ([Health System Tracker](https://www.healthsystemtracker.org/brief/covid-19-is-the-number-one-cause-of-death-in-the-u-s-in-early-2021/)), surpassing 500,000 total by Feb 22 ([Wikipedia](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States)). Vaccine rollout was nascent (~15-20% with \u22651 dose by late Feb, [USAFacts](https://usafacts.org/visualizations/covid-vaccine-tracker-states/), [CDC](https://stacks.cdc.gov/view/cdc/104166)); natural immunity estimates ~50-60% in some areas but insufficient amid surge ([ACP Journals](https://www.acpjournals.org/doi/abs/10.7326/M21-2721))."
+    },
+    {
+      "id": "C-00:03:38.000",
+      "result": "wrong",
+      "explanation": "**Summary**  \nFriedberg\u2019s prediction was that as per\u2011mile/dynamic auto insurance gained adoption, low\u2011mileage/good drivers would move to these products, *forcing incumbent insurers to raise rates on the worse\u2011risk customers left behind*, which in turn would create a **\u201chuge market moat\u201d** for per\u2011mile insurers over the following years. By late 2025, the evidence points the other way: while telematics/usage\u2011based insurance (UBI) has grown, large incumbents dominate it, specialized per\u2011mile startups have not built a moat, and industry rate hikes are driven by other factors (inflation, claims costs, weather) rather than documented adverse selection from per\u2011mile migration.\n\n**Key points against the prediction**\n\n1. **Per\u2011mile specialists did *not* build a competitive moat; they struggled instead.**  \n   * Metromile, one of the original pay\u2011per\u2011mile pioneers and the likely reference for \u201cour service,\u201d went public via SPAC in 2021 and then collapsed in value; Lemonade acquired it in July 2022 for under $145M in stock, versus a prior valuation over $1B, and promptly laid off ~20% of staff. ([techcrunch.com](https://techcrunch.com/2022/07/29/lemonade-closes-on-acquisition-of-insurtech-metromile-promptly-lays-off-about-20-of-its-staff/?utm_source=openai))  \n   * After the acquisition, Metromile\u2019s written premiums **declined**: by mid\u20112023 it had about $49M in written premiums, ~15% less than a year earlier, with decreases in every state, showing contraction rather than moat\u2011like growth. ([coverager.com](https://coverager.com/lemonades-pet-book-is-getting-bigger/?utm_source=openai))  \n   * More broadly, analyses of the U.S. usage\u2011based/telematics market list major *incumbents* \u2014 Progressive, Allstate, State Farm, Liberty Mutual \u2014 as the primary players by share; specialized insurtechs like Metromile and Root are small by comparison. ([futuremarketinsights.com](https://www.futuremarketinsights.com/reports/telematics-based-auto-insurance-market?utm_source=openai))  \n\n2. **Dynamic/telematics pricing is now led by incumbents, not by a separate per\u2011mile niche.**  \n   * Market reports on telematics\u2011based and usage\u2011based auto insurance show rapid growth but emphasize that the segment is dominated by large traditional insurers (Progressive, Allstate, State Farm, Liberty Mutual, etc.), who have rolled out their own dynamic\u2011pricing and pay\u2011per\u2011use products at scale. ([futuremarketinsights.com](https://www.futuremarketinsights.com/reports/telematics-based-auto-insurance-market?utm_source=openai))  \n   * Examples: State Farm\u2019s Drive Safe & Save, Progressive\u2019s Snapshot, Allstate\u2019s Drivewise, Nationwide\u2019s SmartRide and SmartMiles (explicitly pay\u2011per\u2011mile for low\u2011mileage drivers) are all usage\u2011based products offered *by incumbents*. ([statefarm.com](https://www.statefarm.com/insurance/auto/discounts/drive-safe-save?utm_source=openai))  \n   * So instead of per\u2011mile specialists pulling good risks away from incumbents, incumbents themselves are offering the same or similar telematics/low\u2011mileage products, blunting any moat for standalone per\u2011mile insurers.\n\n3. **Adoption of telematics/UBI is meaningful but still a minority of the market.**  \n   * A 2025 survey of U.S. drivers finds only about **12%** currently enrolled in an insurer telematics program; 88% are not. ([autoinsurance.com](https://www.autoinsurance.com/research/telematics-usage-study/?utm_source=openai))  \n   * A Maryland regulator report shows similar figures: roughly **13.2%** of auto policies in that state were in a telematics program in 2023 (up from 9.5% in 2021), indicating steady but not overwhelming penetration. ([insurancejournal.com](https://www.insurancejournal.com/news/east/2025/07/07/830458.htm?utm_source=openai))  \n   * Global and U.S. UBI/pay\u2011per\u2011mile markets are growing quickly in dollars but remain a relatively small slice of the overall auto insurance market, which is on the order of hundreds of billions annually in the U.S. alone. Estimates put pay\u2011per\u2011mile globally around $8.2B in 2024, projected to ~$32.7B by 2033 \u2014 material, but far from dominating auto insurance. ([marketintelo.com](https://marketintelo.com/report/pay-per-mile-insurance-market?utm_source=openai))  \n   * With such partial adoption, the kind of severe adverse\u2011selection spiral Friedberg described (good drivers en masse leaving incumbents) has not materialized at industry scale.\n\n4. **Auto insurance rate hikes since 2020 are explained by inflation and loss costs, not by losing good risks to per\u2011mile.**  \n   * From 2020 to 2024, U.S. motor vehicle insurance costs rose about **54%**, but analysis attributes this primarily to inflation, sharply higher vehicle repair and replacement costs, medical inflation, higher claim severity, and climate\u2011driven catastrophe losses, plus investment\u2011income pressures \u2014 not to an exodus of low\u2011risk drivers to pay\u2011per\u2011mile insurers. ([usafacts.org](https://usafacts.org/articles/why-are-car-insurance-rates-increasing/?utm_source=openai))  \n   * Major insurers\u2019 own explanations for recent rate hikes align with those factors (repair labor and parts, more severe accidents, weather, litigation) rather than adverse selection from telematics/pay\u2011per\u2011mile programs. ([thezebra.com](https://www.thezebra.com/resources/research/insurance-rate-trends-2022/?utm_source=openai))  \n   * In fact, incumbents often enroll their *better* risks into their own telematics programs and give them discounts, keeping many good drivers *within* their portfolios rather than ceding them to niche per\u2011mile startups. ([autoinsurance.com](https://www.autoinsurance.com/companies/state-farm/drive-safe-and-save/?utm_source=openai))  \n\n5. **Some telematics\u2011first startups are improving, but still without a clear moat over incumbents.**  \n   * Root, a telematics\u2011heavy personal\u2011auto insurtech, has recently posted its first profitable year and strong stock performance, but it remains tiny relative to Progressive or Allstate in policies\u2011in\u2011force and premiums. ([investors.com](https://www.investors.com/news/root-stock-q4-2024-earnings-profit-586-rally/?utm_source=openai))  \n   * At the same time, incumbents like Geico, which initially lagged in telematics, have been making \u201crapid strides\u201d and are now described by Berkshire Hathaway leadership as competitive with peers on telematics capabilities \u2014 again undercutting the notion that startups enjoy a durable moat. ([reuters.com](https://www.reuters.com/business/berkshires-jain-says-geico-has-made-rapid-strides-2025-05-03/?utm_source=openai))  \n\n**Conclusion**  \nOver almost five years since the November 2020 prediction, we *do* see:\n\n- More usage\u2011based and pay\u2011per\u2011mile options in the market;  \n- Low\u2011mileage/safe drivers sometimes benefiting from such programs; and  \n- Significant overall auto premium inflation.\n\nHowever, the *specific mechanism* Friedberg forecast \u2014 low\u2011risk drivers flocking to per\u2011mile specialists, forcing incumbents to raise rates on a deteriorating pool and thereby creating a \u201chuge market moat\u201d for per\u2011mile insurers \u2014 has not occurred in observable data. Instead, telematics has been widely adopted *by incumbents themselves*, per\u2011mile specialists like Metromile have shrunk or been absorbed, and rate hikes are driven by cost and loss trends rather than documented adverse selection from per\u2011mile migration.\n\nOn balance, the prediction is **wrong** as of late 2025.",
+      "sources": [
+        {
+          "end_index": 1306,
+          "start_index": 1140,
+          "title": "Lemonade closes on acquisition of insurtech Metromile, promptly lays off about 20% of its staff | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2022/07/29/lemonade-closes-on-acquisition-of-insurtech-metromile-promptly-lays-off-about-20-of-its-staff/?utm_source=openai"
+        },
+        {
+          "end_index": 1640,
+          "start_index": 1544,
+          "title": "Lemonade's pet book is getting bigger",
+          "type": "url_citation",
+          "url": "https://coverager.com/lemonades-pet-book-is-getting-bigger/?utm_source=openai"
+        },
+        {
+          "end_index": 2028,
+          "start_index": 1897,
+          "title": "Telematics-based Auto Insurance Market Size & Trends by 2025 to 2035",
+          "type": "url_citation",
+          "url": "https://www.futuremarketinsights.com/reports/telematics-based-auto-insurance-market?utm_source=openai"
+        },
+        {
+          "end_index": 2565,
+          "start_index": 2434,
+          "title": "Telematics-based Auto Insurance Market Size & Trends by 2025 to 2035",
+          "type": "url_citation",
+          "url": "https://www.futuremarketinsights.com/reports/telematics-based-auto-insurance-market?utm_source=openai"
+        },
+        {
+          "end_index": 2907,
+          "start_index": 2804,
+          "title": "Drive Safe & Save\u00ae \u2013 Safe Driver Discounts - State Farm\u00ae",
+          "type": "url_citation",
+          "url": "https://www.statefarm.com/insurance/auto/discounts/drive-safe-save?utm_source=openai"
+        },
+        {
+          "end_index": 3451,
+          "start_index": 3348,
+          "title": "Many Drivers Skip Auto Insurance Tracking Apps Over Privacy",
+          "type": "url_citation",
+          "url": "https://www.autoinsurance.com/research/telematics-usage-study/?utm_source=openai"
+        },
+        {
+          "end_index": 3781,
+          "start_index": 3673,
+          "title": "Maryland Unveils Details of Telematics Programs, Practices and Popularity",
+          "type": "url_citation",
+          "url": "https://www.insurancejournal.com/news/east/2025/07/07/830458.htm?utm_source=openai"
+        },
+        {
+          "end_index": 4250,
+          "start_index": 4149,
+          "title": "Pay-Per-Mile Insurance Market Research Report 2033",
+          "type": "url_citation",
+          "url": "https://marketintelo.com/report/pay-per-mile-insurance-market?utm_source=openai"
+        },
+        {
+          "end_index": 5034,
+          "start_index": 4929,
+          "title": "Why are car insurance rates increasing? | USAFacts",
+          "type": "url_citation",
+          "url": "https://usafacts.org/articles/why-are-car-insurance-rates-increasing/?utm_source=openai"
+        },
+        {
+          "end_index": 5368,
+          "start_index": 5261,
+          "title": "Car Insurance Rate Increases | 2025 Price Projections | The Zebra",
+          "type": "url_citation",
+          "url": "https://www.thezebra.com/resources/research/insurance-rate-trends-2022/?utm_source=openai"
+        },
+        {
+          "end_index": 5707,
+          "start_index": 5595,
+          "title": "State Farm Drive Safe & Save Review 2025",
+          "type": "url_citation",
+          "url": "https://www.autoinsurance.com/companies/state-farm/drive-safe-and-save/?utm_source=openai"
+        },
+        {
+          "end_index": 6152,
+          "start_index": 6039,
+          "title": "ROOT Stock Rallied 586% in 2024. Earnings Prompt A Price Spike.",
+          "type": "url_citation",
+          "url": "https://www.investors.com/news/root-stock-q4-2024-earnings-profit-586-rally/?utm_source=openai"
+        },
+        {
+          "end_index": 6578,
+          "start_index": 6449,
+          "title": "Berkshire's Jain says Geico has made \"rapid strides\"",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/berkshires-jain-says-geico-has-made-rapid-strides-2025-05-03/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "While pay-per-mile and usage-based insurance (UBI) has gained adoption\u2014e.g., UBI market projected from ~$60B in 2023 to $250B by 2030 ([Grand View Research](https://www.grandviewresearch.com/industry-analysis/usage-based-insurance-automotive-market)); ~1 in 5 policies offer telematics by mid-2025 ([Hometown Insurance](https://hometowninsurancepros.com/mid-year-insurance-update-what-consumers-can-look-forward-to-in-late-2025-and-beyond/))\u2014low-mileage drivers are attracted to it for savings ([NerdWallet](https://www.nerdwallet.com/insurance/auto/learn/pay-per-mile-car-insurance), [USA Today](https://www.usatoday.com/story/money/personalfinance/2025/01/17/usage-based-insurance-gain-as-auto-premiums-soar/77671379007/)). However, incumbents like Progressive (Snapshot, 15-16% market share), State Farm (Drive Safe & Save, 18% share), and Nationwide (SmartMiles) dominate UBI offerings ([MoneyGeek](https://www.moneygeek.com/insurance/auto/pay-per-mile-car-insurance/), [Zebra](https://www.thezebra.com/insurance-companies/)). No evidence that this migration forced incumbents to raise rates on remaining customers due to adverse selection; rate hikes (7.5-16% yearly 2023-2025) stem from inflation, repair costs, and claims ([LexisNexis](https://risk.lexisnexis.com/about-us/press-room/press-release/20250612-us-auto-insurance-trends-report), [Insurify](https://insurify.com/car-insurance/report/)). Per-mile specialists (e.g., Mile Auto, Lemonade/Metromile) hold negligible share, no moat strengthening; incumbents grew share despite insurtech ([eMarketer 2021](https://www.emarketer.com/content/incumbent-auto-insurers-growing-us-market-share-despite-insurtech-disruption))."
+    },
+    {
+      "id": "A-00:22:40.000",
+      "result": "inconclusive",
+      "explanation": "No post\u2011COVID event has yet met the bar of a new, global, COVID\u2011like respiratory pandemic, so there has been no real\u2011world test of a \u201cWarp Speed 2.0\u201d program.\n\n* **No new pandemic of similar character:** Current lists of major epidemics and pandemics show COVID\u201119 as the only ongoing respiratory pandemic; other recent emergencies (e.g., mpox outbreaks) are classified as epidemics/PHEICs, not a new global pandemic on the scale of COVID\u201119.([en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_epidemics_and_pandemics?utm_source=openai)) Analyses of COVID\u2019s status now frame it as transitioning toward endemicity rather than being replaced by a new pandemic.([time.com](https://time.com/6898943/is-covid-19-still-pandemic-2024/?utm_source=openai))  Thus the condition in Jason\u2019s prediction\u2014\u201cwhen the next Covid comes\u201d\u2014simply hasn\u2019t occurred yet.\n* **Preparedness and mRNA capability have *theoretical* improvements:** Global initiatives such as CEPI\u2019s \u201c100 Days Mission\u201d explicitly aim to design and advance vaccine candidates (often using mRNA platforms) to trials within about 100 days of identifying a new threat, and emphasize that mRNA allows designs to be created and manufactured very rapidly\u2014potentially within days.([investors.modernatx.com](https://investors.modernatx.com/news/news-details/2023/CEPI-and-Moderna-Harness-mRNA-Technology-to-Advance-100-Days-Mission/default.aspx?utm_source=openai)) WHO commentary in 2025 similarly says the world is in some ways more ready for the next pandemic than it was in 2019, though with important caveats.([who.int](https://www.who.int/news-room/commentaries/detail/after-covid-19--is-the-world-ready-for-the-next-pandemic?utm_source=openai)) These support Jason\u2019s *logic* that future responses could be faster, but they are plans and capabilities, not yet stress\u2011tested in a new COVID\u2011scale event.\n* **Policy backtracking complicates the picture:** In 2025, the U.S. HHS under Secretary Robert F. Kennedy Jr. moved to wind down or cancel many BARDA\u2011funded mRNA pandemic\u2011preparedness projects (including bird\u2011flu and next\u2011gen COVID vaccines), a step that former officials and experts criticized as undermining readiness for future pandemics.([reuters.com](https://www.reuters.com/business/healthcare-pharmaceuticals/us-health-agency-wind-down-mrna-vaccine-development-2025-08-05/?utm_source=openai)) This suggests that, at least in the U.S., the institutional conditions for a rapid \u201cWarp Speed 2.0\u201d response may be weaker than they appeared when the prediction was made.\n\nBecause the triggering event\u2014a new COVID\u2011like pandemic\u2014has not happened, and existing evidence is mostly about hypothetical capabilities and shifting policies rather than actual deployment in such an event, the prediction cannot be judged as correct or incorrect yet. It remains **too early** to tell.",
+      "sources": [
+        {
+          "end_index": 585,
+          "start_index": 484,
+          "title": "List of epidemics and pandemics",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/List_of_epidemics_and_pandemics?utm_source=openai"
+        },
+        {
+          "end_index": 795,
+          "start_index": 706,
+          "title": "Is COVID-19 Still a Pandemic? | TIME",
+          "type": "url_citation",
+          "url": "https://time.com/6898943/is-covid-19-still-pandemic-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 1456,
+          "start_index": 1273,
+          "title": "CEPI and Moderna Harness mRNA Technology to Advance 100 Days Mission",
+          "type": "url_citation",
+          "url": "https://investors.modernatx.com/news/news-details/2023/CEPI-and-Moderna-Harness-mRNA-Technology-to-Advance-100-Days-Mission/default.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 1742,
+          "start_index": 1605,
+          "title": "After COVID-19, is the world ready for the next pandemic?",
+          "type": "url_citation",
+          "url": "https://www.who.int/news-room/commentaries/detail/after-covid-19--is-the-world-ready-for-the-next-pandemic?utm_source=openai"
+        },
+        {
+          "end_index": 2400,
+          "start_index": 2242,
+          "title": "US health agency to wind down mRNA vaccine development",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-health-agency-wind-down-mrna-vaccine-development-2025-08-05/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "No new COVID-like pandemic (i.e., a novel respiratory virus causing global spread comparable to SARS-CoV-2) has occurred since the podcast in late 2020. COVID-19 variants (e.g., Omicron) prompted faster mRNA booster updates, but these were within the ongoing pandemic, not a distinct 'next Covid.' Outbreaks like mpox (2022) and H5N1 bird flu (2024-2025, ~70 US human cases, no sustained human transmission) did not trigger a pandemic-scale response or 'Warp Speed 2.0.' Advocacy exists for OWS 2.0 preparedness (e.g., 1Day Sooner white paper, conferences), but no actual program launched for a new event. Thus, the prediction cannot be tested yet. Sources: Web searches on 'new pandemics since 2020,' 'H5N1 2024-2025' (CDC, WHO reports no pandemic), '\"Warp Speed 2.0\"' (advocacy only, no deployment)."
+    },
+    {
+      "id": "E-00:24:52.000",
+      "result": "inconclusive",
+      "explanation": "Evidence since 2020 strongly suggests that mRNA platforms can generate a vaccine *design* within days of obtaining a pathogen\u2019s genome, and that most remaining delay is indeed due to manufacturing scale\u2011up, clinical trials, and regulation. For SARS\u2011CoV\u20112, Moderna has stated that its successful vaccine candidate mRNA\u20111273 was designed in about two days once the viral genetic sequence was available, and the company went from sequence to a clinical\u2011grade batch ready to ship for human trials in 42 days, with first\u2011in\u2011human dosing starting in March 2020 and later phase II/III trials following over subsequent months. ([symposeum.us](https://symposeum.us/conception-to-delivery-of-the-covid-19-vaccine/?utm_source=openai)) This experience broadly validates Sacks\u2019 claim about what the technology can do and about where the bottlenecks lie. However, his prediction is explicitly about a *future* highly lethal, fast\u2011spreading pathogen. Since late 2020 there has not been a new, clearly distinct pandemic\u2011scale virus of that kind; the most notable concern has been H5N1 bird flu spreading in U.S. dairy cattle and sporadically infecting humans, for which Moderna and others have developed mRNA vaccine candidates that entered clinical trials in 2024\u20132025, again with the main time cost in trials and regulatory work. ([reuters.com](https://www.reuters.com/business/healthcare-pharmaceuticals/us-awards-moderna-590-million-bird-flu-vaccine-development-2025-01-17/?utm_source=openai)) Public sources, though, do not give day\u2011by\u2011day design timestamps for these newer candidates, and the specific scenario he described (a brand\u2011new, highly lethal, rapidly spreading virus emerging after his prediction) has not yet occurred. Because the crucial condition for testing his forecast has not really been met, and we lack direct evidence that a future vaccine was locked in literally within one day of sequence, the safest assessment is that it is too early to say whether his prediction was fully correct or not.",
+      "sources": [
+        {
+          "end_index": 763,
+          "start_index": 659,
+          "title": "Conception to Delivery of the COVID-19 Vaccine",
+          "type": "url_citation",
+          "url": "https://symposeum.us/conception-to-delivery-of-the-covid-19-vaccine/?utm_source=openai"
+        },
+        {
+          "end_index": 1521,
+          "start_index": 1356,
+          "title": "US awards Moderna $590 million for bird flu vaccine development",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-awards-moderna-590-million-bird-flu-vaccine-development-2025-01-17/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The mRNA platform has demonstrated the capability to design vaccine candidates in hours to 2 days from genome sequence, aligning with the prediction's intent. For COVID-19 (genome Jan 10-13, 2020), BioNTech designed its candidate in hours over a weekend ([Business Insider](https://www.businessinsider.com/pfizer-biontech-vaccine-designed-in-hours-one-weekend-2020-12)); Moderna in 2 days ([Business Insider](https://www.businessinsider.com/moderna-designed-coronavirus-vaccine-in-2-days-2020-11)). Drew Weissman noted starting RNA production the next day ([Penn Medicine](https://www.pennmedicine.org/conditions/coronavirus-covid-19/vaccine/qa-with-drew-weissman)). Post-2020, platforms enable design in days/weeks for new targets, with lab-scale production feasible rapidly; delays remain trials/regs ([Nature 2021](https://www.nature.com/articles/s41573-021-00283-5); [Lancet 2025](https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(25)00154-5/fulltext)). No contradicting evidence despite 5 years; capability proven for fast-spreading viruses like SARS-CoV-2."
+    },
+    {
+      "id": "A-00:25:55.000",
+      "result": "wrong",
+      "explanation": "Evidence shows the UK\u2019s first COVID-19 human challenge trials did **not** begin in January 2021.\n\n* Planning articles in late 2020 said the UK government\u2013funded challenge trials were **expected** to begin in January 2021, which matches what Jason was predicting. For example, an Irish Times report in September 2020 cited people involved in the project saying the UK studies were **expected to begin in January** at an hVIVO quarantine clinic in London.([irishtimes.com](https://www.irishtimes.com/business/health-pharma/irish-company-to-test-vaccines-on-volunteers-deliberately-infected-with-covid-19-1.4362506?utm_source=openai))\n* However, formal ethics approval for the UK COVID-19 human challenge \u201ccharacterisation study\u201d was only granted on **17 February 2021**, with the UK government press release saying the **first COVID-19 human challenge study would begin within a month** following that approval.([gov.uk](https://www.gov.uk/government/news/worlds-first-coronavirus-human-challenge-study-receives-ethics-approval-in-the-uk?utm_source=openai))\n* Imperial College London and the Royal Free London NHS Foundation Trust report that the first volunteers were actually **inoculated with SARS\u2011CoV\u20112 in a controlled setting in early March 2021**, and that the **first volunteers left quarantine by 25 March 2021**. An Open Orphan / hVIVO update the same day likewise states that, following the 17 February ethics approval, the study **began earlier in March 2021**.([imperial.ac.uk](https://www.imperial.ac.uk/news/218294/first-volunteers-covid-19-human-challenge-study/?utm_source=openai))\n* Imperial\u2019s own overview of its human challenge programme summarizes that it **ran the world\u2019s first human challenge study for COVID\u201119 in February 2021**, again confirming a start **no earlier than February 2021**, not January.([imperial.ac.uk](https://www.imperial.ac.uk/infectious-disease/research/human-challenge/?utm_source=openai))\n\nSince the first UK human COVID-19 challenge trials actually started around **February\u2013March 2021**, not January 2021 as Jason predicted, the prediction is **incorrect**.",
+      "sources": [
+        {
+          "end_index": 666,
+          "start_index": 488,
+          "title": "Irish company to test vaccines on volunteers deliberately infected with Covid-19 \u2013 The Irish Times",
+          "type": "url_citation",
+          "url": "https://www.irishtimes.com/business/health-pharma/irish-company-to-test-vaccines-on-volunteers-deliberately-infected-with-covid-19-1.4362506?utm_source=openai"
+        },
+        {
+          "end_index": 1091,
+          "start_index": 945,
+          "title": "World's first coronavirus Human Challenge study receives ethics approval in the UK - GOV.UK",
+          "type": "url_citation",
+          "url": "https://www.gov.uk/government/news/worlds-first-coronavirus-human-challenge-study-receives-ethics-approval-in-the-uk?utm_source=openai"
+        },
+        {
+          "end_index": 1632,
+          "start_index": 1507,
+          "title": "First volunteers on COVID-19 human challenge study leave quarantine | Imperial News | Imperial College London",
+          "type": "url_citation",
+          "url": "https://www.imperial.ac.uk/news/218294/first-volunteers-covid-19-human-challenge-study/?utm_source=openai"
+        },
+        {
+          "end_index": 1972,
+          "start_index": 1863,
+          "title": "Human challenge studies | Faculty of Medicine | Imperial College London",
+          "type": "url_citation",
+          "url": "https://www.imperial.ac.uk/infectious-disease/research/human-challenge/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction stated that the UK would begin the first human COVID-19 challenge trials in January 2021. While plans were announced in late 2020 for a possible January start (e.g., [BBC Oct 2020](https://www.bbc.com/news/health-54612293), [Lancet Oct 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7831781/)), ethics approval was granted on February 17, 2021 ([UK Gov announcement](https://www.gov.uk/government/news/worlds-first-coronavirus-human-challenge-study-receives-ethics-approval-in-the-uk), [Science News](https://www.sciencenews.org/article/coronavirus-uk-first-human-challenge-trial-covid-19)). The first volunteers were dosed in March 2021, as per Imperial College London updates: virus administered to initial volunteers that month ([Imperial human challenge page](https://www.imperial.ac.uk/infectious-disease/research/human-challenge/)), first participants completed quarantine by March 25 ([Imperial news](https://www.imperial.ac.uk/news/218294/first-volunteers-covid-19-human-challenge-study/)). Results published in 2022 confirm the trial occurred in early 2021 post-approval ([Nature Medicine](https://www.nature.com/articles/s41591-022-01780-9)). No sources indicate infections began in January."
+    },
+    {
+      "id": "A-00:21:45.000",
+      "result": "right",
+      "explanation": "Evidence from mid\u20112021 shows both **in\u2011person conferences** and **U.S.\u2013Europe leisure travel** had resumed at clearly non\u2011trivial scale by summer 2021.\n\n* **In\u2011person conferences:** Mobile World Congress 2021, one of the world\u2019s largest tech trade shows, was held in Barcelona from June 28\u2013July 1, 2021 as a hybrid event and drew about **20,000 in\u2011person attendees from over 100 countries**, plus ~100,000 online participants.([icfo.eu](https://www.icfo.eu/news/1908/mobile-world-congress-2021-?utm_source=openai))  Coverage at the time described it as the first major tech convention to return physically, with organizers capping capacity around 35,000 but still calling the in\u2011person comeback a success and a springboard for more physical gatherings.([standard.co.uk](https://www.standard.co.uk/news/uk/mobile-world-congress-spanish-b943675.html?utm_source=openai))  That level of attendance indicates conferences had resumed in a **meaningful**, not merely symbolic, way.\n\n* **International leisure travel (U.S. to Europe):** By early June 2021, a long list of European countries\u2014including Spain, France, Germany, Italy (via special flights), Greece, Denmark, Portugal, and others\u2014had formally reopened for **non\u2011essential / tourist travel** from the U.S., usually for vaccinated Americans or those with negative tests.([traveloffpath.com](https://www.traveloffpath.com/list-of-eu-countries-allowing-american-tourists-in-2021/?utm_source=openai))  The EU as a bloc had also announced plans to reopen to fully vaccinated foreign tourists, specifically including Americans, by the start of summer 2021.([theguardian.com](https://www.theguardian.com/world/2021/may/03/eu-plans-to-reopen-to-fully-covid-vaccinated-foreign-tourists-from-june?utm_source=openai))  \n\n* **Demand and volume indicators:** A May 21, 2021 analysis by Hopper reported that, after the EU signaled it would allow vaccinated Americans in, **searches from the U.S. to Europe jumped 47% in a day and 32% on a weekly basis**, with strong clustering around July 4th weekend departures. It forecast higher transatlantic airfares driven by *pent\u2011up demand* and airlines adding capacity for summer 2021.([media.hopper.com](https://media.hopper.com/research/summer-travel-to-europe-report-update-may-21-2021?utm_source=openai))  That behavior is consistent with a broad resumption of leisure trips, not just rare exceptions.\n\nConditions were still constrained compared to 2019 (capacity caps, testing/vaccine requirements, some big firms skipping conferences), but by any ordinary reading, **large international conferences were happening again and Americans were vacationing in Europe in significant numbers by summer 2021**. That matches Jason\u2019s normalized prediction that \u201cby summer 2021, in\u2011person conferences and international leisure travel (e.g., trips to Europe from the U.S.) will have resumed to a meaningful extent.\u201d",
+      "sources": [
+        {
+          "end_index": 549,
+          "start_index": 461,
+          "title": "Mobile World Congress 2021 | ICFO",
+          "type": "url_citation",
+          "url": "https://www.icfo.eu/news/1908/mobile-world-congress-2021-?utm_source=openai"
+        },
+        {
+          "end_index": 902,
+          "start_index": 787,
+          "title": "Tech show organisers welcome return of in-person convention | The Standard",
+          "type": "url_citation",
+          "url": "https://www.standard.co.uk/news/uk/mobile-world-congress-spanish-b943675.html?utm_source=openai"
+        },
+        {
+          "end_index": 1486,
+          "start_index": 1359,
+          "title": "List of EU Countries Allowing American Tourists in 2021 - Travel Off Path",
+          "type": "url_citation",
+          "url": "https://www.traveloffpath.com/list-of-eu-countries-allowing-american-tourists-in-2021/?utm_source=openai"
+        },
+        {
+          "end_index": 1796,
+          "start_index": 1640,
+          "title": "EU plans to reopen to fully Covid-vaccinated foreign tourists from June | European Union | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/world/2021/may/03/eu-plans-to-reopen-to-fully-covid-vaccinated-foreign-tourists-from-june?utm_source=openai"
+        },
+        {
+          "end_index": 2329,
+          "start_index": 2206,
+          "title": "Summer Travel to Europe Report (Update: May 21, 2021) | Hopper",
+          "type": "url_citation",
+          "url": "https://media.hopper.com/research/summer-travel-to-europe-report-update-may-21-2021?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction did not come true. In summer 2021 (June-August), in-person conferences remained largely virtual or hybrid due to ongoing COVID-19 concerns, including the Delta variant surge; major academic and scientific conferences did not resume at scale until 2022 ([NIH article on ESCMID conference](https://pmc.ncbi.nlm.nih.gov/articles/PMC9442291/), various 2021 conference lists showing virtual dominance). International leisure travel from the US to Europe was severely restricted: EU had partial openings (e.g., Greece allowed vaccinated US travelers), but many countries banned or required quarantines, US removed from EU safe list by late August; transatlantic capacity down 86%, passengers down 92% vs. 2019 ([OAG report](https://www.oag.com/blog/passenger-bookings-load-factors-every-summer-has-a-story)); overall international demand -68-73% below 2019 ([IATA July/Aug 2021](https://www.iata.org/en/iata-repository/publications/economic-reports/air-passenger-monthly-analysis---july-2021)). Delta variant exacerbated restrictions ([Reuters, EU ban](https://www.forbes.com/sites/suzannerowankelleher/2021/08/30/its-official-eu-recommends-travel-ban-for-american-tourists/)). Not 'meaningful' resumption."
+    },
+    {
+      "id": "E-00:53:40.000",
+      "result": "wrong",
+      "explanation": "**Summary:** As of late 2025, income share agreements (ISAs) have *not* become broadly successful or dominant in workforce training, nor have economically valuable trades generally moved to ISA-based schools. Traditional colleges remain central for high-earning fields. The trajectory of ISAs since 2020 has been contraction and regulatory pushback, not the expansion underlying Sacks\u2019s scenario.\n\n**1. ISAs have struggled rather than \u201cproved successful\u201d at scale**\n- The Consumer Financial Protection Bureau (CFPB) ruled in 2021 that ISAs are essentially private education loans and must comply with Truth in Lending Act requirements, signaling heightened regulatory scrutiny of the entire ISA model. ([consumerfinancemonitor.com](https://www.consumerfinancemonitor.com/2021/09/08/cfpb-alleges-income-share-agreements-are-extensions-of-credit-in-results-oriented-enforcement-action-against-isa-originator/?utm_source=openai))  \n- A prominent early ISA program, Purdue University\u2019s **Back a Boiler** (often cited as a flagship), stopped accepting new applicants and was effectively suspended by 2022; Purdue\u2019s own site now states the program \u201cis not accepting new applicants.\u201d ([purdue.edu](https://www.purdue.edu/backaboiler/?utm_source=openai))  \n- A 2023 bootcamp-market report notes \u201cthe fall of ISAs\u201d: fewer than a quarter of coding bootcamps still offered ISAs, and **only four of roughly 15 accredited colleges and universities that experimented with ISAs in the late 2010s had not paused or ended their programs as of 2022.** ([careerkarma.com](https://careerkarma.com/blog/state-of-the-bootcamp-market-2023/?utm_source=openai))  \n- Major ISA-heavy providers have faced enforcement actions. Bloom Institute of Technology (Lambda School), a high-profile ISA bootcamp, was fined by the CFPB in 2024 for deceptive practices, with students released from ISAs and the company and CEO banned from consumer lending. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Bloom_Institute_of_Technology?utm_source=openai))  \n\nCollectively, these developments show ISAs have encountered serious headwinds rather than the broad, sustained success Sacks implicitly assumed.\n\n**2. Training for valuable trades has *not* broadly migrated to ISA-based schools**\n- Some niche trade and tech programs (e.g., welding or specific tech bootcamps) use ISAs, but they represent a small, scattered set of providers, not \u201cevery trade that\u2019s valuable.\u201d ([citybiz.co](https://www.citybiz.co/article/71330/advanced-welding-school-secures-25-million/?utm_source=openai))  \n- The same bootcamp report emphasizes that ISA use is now a minority financing option even in the bootcamp segment, and that most traditional institutions that tried ISAs have exited. ([careerkarma.com](https://careerkarma.com/blog/state-of-the-bootcamp-market-2023/?utm_source=openai))  \n\n**3. Traditional colleges still dominate economically valuable fields**\n- Bachelor\u2019s degrees in computer and information sciences more than doubled over the last decade, reaching about **112,720** U.S. bachelor\u2019s earners in 2022\u20132023, almost all from conventional colleges and universities. ([studentclearinghouse.org](https://www.studentclearinghouse.org/nscblog/computer-science-has-highest-increase-in-bachelors-earners/?utm_source=openai))  \n- Overall U.S. bachelor\u2019s degree production remains above 2 million per year, with strong representation in high-earning majors like business, engineering, health professions, and computer science, indicating that universities remain the primary pipeline into lucrative careers. ([nu.edu](https://www.nu.edu/blog/bachelors-degree-statistics/?utm_source=openai))  \n- There is no evidence that \u201cwhat\u2019s left for colleges to do\u201d is merely \u201cthe stuff that doesn\u2019t add value\u201d; on the contrary, high-earning fields are still core to university offerings and are growing in some cases. ([studentclearinghouse.org](https://www.studentclearinghouse.org/nscblog/computer-science-has-highest-increase-in-bachelors-earners/?utm_source=openai))  \n\n**Conclusion:**\nSacks\u2019s forecast was that **if ISAs became successful**, then over time each economically valuable trade would develop its own ISA-based school, those functions would be \u201cpeeled out\u201d of universities, and colleges would be left mainly with low\u2013economic-value activities. By late 2025:\n- ISAs have not become broadly successful; many early programs have been paused or dismantled, and regulators have tightened oversight. ([consumerfinancemonitor.com](https://www.consumerfinancemonitor.com/2021/09/08/cfpb-alleges-income-share-agreements-are-extensions-of-credit-in-results-oriented-enforcement-action-against-isa-originator/?utm_source=openai))  \n- Economically valuable training remains largely inside traditional colleges and universities, which continue to confer the overwhelming majority of credentials in high-earning fields. ([studentclearinghouse.org](https://www.studentclearinghouse.org/nscblog/computer-science-has-highest-increase-in-bachelors-earners/?utm_source=openai))  \n\nGiven both the lack of ISA success and the absence of the predicted structural shift in higher education, this prediction has not come true and is best classified as **wrong** rather than merely \u201ctoo early to tell.\u201d",
+      "sources": [
+        {
+          "end_index": 962,
+          "start_index": 738,
+          "title": "CFPB Alleges Income Share Agreements are Extensions of Credit in Results-Oriented Enforcement Action against ISA Originator | Consumer Finance Monitor",
+          "type": "url_citation",
+          "url": "https://www.consumerfinancemonitor.com/2021/09/08/cfpb-alleges-income-share-agreements-are-extensions-of-credit-in-results-oriented-enforcement-action-against-isa-originator/?utm_source=openai"
+        },
+        {
+          "end_index": 1283,
+          "start_index": 1214,
+          "title": "Introduction - Back a Boiler - Purdue University",
+          "type": "url_citation",
+          "url": "https://www.purdue.edu/backaboiler/?utm_source=openai"
+        },
+        {
+          "end_index": 1674,
+          "start_index": 1572,
+          "title": "Bootcamp Market Statistics and Share Report 2023",
+          "type": "url_citation",
+          "url": "https://careerkarma.com/blog/state-of-the-bootcamp-market-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 2055,
+          "start_index": 1956,
+          "title": "Bloom Institute of Technology",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Bloom_Institute_of_Technology?utm_source=openai"
+        },
+        {
+          "end_index": 2589,
+          "start_index": 2475,
+          "title": "Advanced Welding School Secures $25 million | citybiz",
+          "type": "url_citation",
+          "url": "https://www.citybiz.co/article/71330/advanced-welding-school-secures-25-million/?utm_source=openai"
+        },
+        {
+          "end_index": 2879,
+          "start_index": 2777,
+          "title": "Bootcamp Market Statistics and Share Report 2023",
+          "type": "url_citation",
+          "url": "https://careerkarma.com/blog/state-of-the-bootcamp-market-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 3329,
+          "start_index": 3177,
+          "title": "Computer Science Has Highest Increase in Bachelor\u2019s Earners | National Student Clearinghouse",
+          "type": "url_citation",
+          "url": "https://www.studentclearinghouse.org/nscblog/computer-science-has-highest-increase-in-bachelors-earners/?utm_source=openai"
+        },
+        {
+          "end_index": 3694,
+          "start_index": 3612,
+          "title": "75 Bachelor's Degree Statistics and Facts | NU",
+          "type": "url_citation",
+          "url": "https://www.nu.edu/blog/bachelors-degree-statistics/?utm_source=openai"
+        },
+        {
+          "end_index": 4064,
+          "start_index": 3912,
+          "title": "Computer Science Has Highest Increase in Bachelor\u2019s Earners | National Student Clearinghouse",
+          "type": "url_citation",
+          "url": "https://www.studentclearinghouse.org/nscblog/computer-science-has-highest-increase-in-bachelors-earners/?utm_source=openai"
+        },
+        {
+          "end_index": 4732,
+          "start_index": 4508,
+          "title": "CFPB Alleges Income Share Agreements are Extensions of Credit in Results-Oriented Enforcement Action against ISA Originator | Consumer Finance Monitor",
+          "type": "url_citation",
+          "url": "https://www.consumerfinancemonitor.com/2021/09/08/cfpb-alleges-income-share-agreements-are-extensions-of-credit-in-results-oriented-enforcement-action-against-isa-originator/?utm_source=openai"
+        },
+        {
+          "end_index": 5073,
+          "start_index": 4921,
+          "title": "Computer Science Has Highest Increase in Bachelor\u2019s Earners | National Student Clearinghouse",
+          "type": "url_citation",
+          "url": "https://www.studentclearinghouse.org/nscblog/computer-science-has-highest-increase-in-bachelors-earners/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "ISAs have seen limited, niche adoption primarily in coding bootcamps (e.g., Lambda School/BloomTech faced lawsuits and poor outcomes reports [web:1 from Lambda search]; Purdue paused new ISA enrollments in 2022 despite some positive 2025 research [Purdue results]) and are not broadly successful enough to trigger the predicted shift. No evidence of ISA-based schools for 'every economically valuable trade' like plumbing, electrician, or nursing; searches yielded zero specific examples beyond conceptual ideas [ISA trade searches]. Vocational training has not migrated from universities\u2014instead, enrollment in vocational-focused public 2-year colleges grew ~20% since 2020, and trade school enrollment surged post-pandemic [vocational trends web:0,3,6,9]. Traditional universities continue offering high-earning programs (e.g., engineering, nursing). Five years post-2020 is sufficient time for observable trends, but none match the prediction."
+    },
+    {
+      "id": "E-01:03:58.000",
+      "result": "right",
+      "explanation": "The prediction tied a strong 2021 economic rebound to successful vaccine rollout that would \"end COVID\" within about 3\u20135 months from late Nov 2020.\n\n**What actually happened with COVID and vaccines (Mar\u2013May 2021)**\n- By May 22, 2021, 57% of U.S. adults had received at least one COVID-19 vaccine dose, and eligibility had been opened to all adults a month earlier; by May 26, roughly half of U.S. adults were fully vaccinated. ([cdc.gov](https://www.cdc.gov/mmwr/volumes/70/wr/mm7025e1.htm?utm_source=openai))\n- Cases and hospitalizations fell sharply from the January 2021 winter peak into late winter and spring, reflecting a substantial curbing of the initial winter wave, though not elimination of the virus. ([abc7news.com](https://abc7news.com/covid-cases-in-us-johnson-and-vaccine-coronavirus-usa-america-today/10354482/?utm_source=openai))\n- However, COVID was not \"ended\" within 3\u20135 months: the Delta variant became dominant by early July 2021 and drove a major resurgence in cases, hospitalizations, and deaths later that year. ([cdc.gov](https://www.cdc.gov/mmwr/volumes/71/wr/mm7106a4.htm?utm_source=openai))\n\n**Economic outcomes in 2021**\n- Real U.S. GDP grew 5.7% in 2021 after a 3.4% contraction in 2020, the fastest annual growth since 1984 and widely described as a sharp, historic rebound. ([bea.gov](https://www.bea.gov/news/2022/gross-domestic-product-fourth-quarter-and-year-2021-advance-estimate?utm_source=openai))\n- The economy added about 6.4 million jobs in 2021, and the unemployment rate fell from 6.7% in December 2020 to 3.9% in December 2021, returning close to pre-pandemic levels. ([washingtonpost.com](https://www.washingtonpost.com/business/2022/01/27/gdp-2021-q4-economy/?utm_source=openai))\n- This strong real growth was accompanied by supply-chain problems and the beginnings of the high inflation that would peak in 2022, so the year was not problem-free, but by standard macro indicators 2021 was a very strong recovery year.\n\n**Assessment**\n- The conditional epidemiological assumption (that vaccines would effectively \"end\" COVID within 3\u20135 months) was too optimistic, but vaccines did substantially curb the initial winter wave by spring 2021.\n- The core economic forecast\u2014that 2021 would be a \"great\" year economically with a very strong rebound\u2014was borne out by GDP growth, job gains, and falling unemployment.\n\nOn balance, given that the main claim being evaluated is the strength of the 2021 economic rebound contingent on reasonably successful vaccine rollout, this prediction is best judged as **right**, though its timeline and optimism about fully ending COVID were overstated.",
+      "sources": [
+        {
+          "end_index": 547,
+          "start_index": 465,
+          "title": "COVID-19 Vaccination Coverage Among Adults \u2014 United States, December 14, 2020\u2013May 22, 2021 | MMWR",
+          "type": "url_citation",
+          "url": "https://www.cdc.gov/mmwr/volumes/70/wr/mm7025e1.htm?utm_source=openai"
+        },
+        {
+          "end_index": 886,
+          "start_index": 752,
+          "title": "COVID-19 cases in US down; Here's why coronavirus case numbers could be deceptive - ABC7 San Francisco",
+          "type": "url_citation",
+          "url": "https://abc7news.com/covid-cases-in-us-johnson-and-vaccine-coronavirus-usa-america-today/10354482/?utm_source=openai"
+        },
+        {
+          "end_index": 1162,
+          "start_index": 1080,
+          "title": "Genomic Surveillance for SARS-CoV-2 Variants: Predominance of the Delta (B.1.617.2) and Omicron (B.1.1.529) Variants \u2014 United States, June 2021\u2013January 2022 | MMWR",
+          "type": "url_citation",
+          "url": "https://www.cdc.gov/mmwr/volumes/71/wr/mm7106a4.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1482,
+          "start_index": 1353,
+          "title": "Gross Domestic Product, Fourth Quarter and Year 2021 (Advance Estimate) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2022/gross-domestic-product-fourth-quarter-and-year-2021-advance-estimate?utm_source=openai"
+        },
+        {
+          "end_index": 1773,
+          "start_index": 1660,
+          "title": "U.S. economy grew 5.7 percent in 2021, fastest since 1984, despite ongoing pandemic - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/business/2022/01/27/gdp-2021-q4-economy/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The condition held: COVID-19 vaccines rolled out starting Dec 2020 (first doses Dec 14 per CDC), with 57% of adults receiving \u22651 dose by May 22, 2021 (CDC MMWR). Cases substantially curbed\u2014peaked >200k daily new cases Jan 2021 (Wikipedia, Johns Hopkins), 7-day avg fell to ~62k by late Apr (CDC COVIDView), ~30k by May end (Our World in Data trends). US economy rebounded strongly in 2021: real GDP +5.7% (fastest since 1984, BEA Jan 2022); unemployment 6.3% Jan to 3.9% Dec (BLS/FRED); S&P 500 +26.9% (Macrotrends). Multiple sources describe 2021 as 'great'/strongest post-pandemic year (Reuters, NYT, CRFB, American Progress)."
+    },
+    {
+      "id": "E-01:09:12.000",
+      "result": "right",
+      "explanation": "**Assessment**\n\nThe prediction was that once COVID-19 vaccines became available (late 2020 / early 2021), conditions in the United States would improve and 2021 would be \u201ca much, much better year\u201d than 2020.\n\nKey facts:\n\n- **Vaccine availability and rollout**\n  - The first COVID-19 vaccine (Pfizer\u2013BioNTech) received FDA Emergency Use Authorization on December 11, 2020; Moderna followed on December 18, 2020, and Johnson & Johnson in February 2021. \n  - By mid-April 2021, all U.S. adults were eligible for vaccination, and by the end of 2021, a majority of U.S. adults had been fully vaccinated.\n\n- **Public health and social conditions vs. 2020**\n  - 2020 saw the initial pandemic shock: widespread lockdowns, school and business closures, extremely limited testing early on, and no vaccines.\n  - In 2021, after vaccine rollout, many U.S. states substantially relaxed restrictions, schools and universities widely reopened for in\u2011person learning, travel and entertainment resumed to a large extent, and economic activity rebounded strongly compared with 2020.\n  - While variants such as Delta did cause serious waves and 2021 still involved significant illness and death, the *overall* level of social and economic normalcy and available medical protection was clearly higher than in 2020.\n\n**Conclusion**\n\nThe prediction was not that the pandemic would be over, but that **conditions would improve once vaccines came to market and that 2021 would be significantly better than 2020 overall in the U.S.** That is broadly what occurred (greater medical protection, fewer restrictions, and substantial economic and social recovery compared with 2020), even though COVID remained a major problem.\n\n**Result: `right`** \u2013 The general direction and qualitative comparison (2021 much better than 2020 in the U.S. once vaccines arrived) was borne out by subsequent events.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is ambiguous. COVID health metrics worsened: CDC reports 377,883 deaths in 2020 vs. 460,513 in 2021 ([MMWR 2021](https://www.cdc.gov/mmwr/volumes/71/wr/mm7117e1.htm), [MMWR 2020](https://www.cdc.gov/mmwr/volumes/70/wr/mm7014e1.htm)); life expectancy fell further from 77.0 (2020) to 76.4 (2021) ([CDC](https://www.cdc.gov/nchs/pressroom/releases/20220831.html)). However, economy rebounded strongly: GDP -2.16% (2020) to +6.06% (2021) ([Macrotrends](https://www.macrotrends.net/global-metrics/countries/usa/united-states/gdp-growth-rate)); unemployment 8.1% avg. (2020) to 5.4% (2021) ([Macrotrends](https://www.macrotrends.net/global-metrics/countries/usa/united-states/unemployment-rate)). Restrictions loosened significantly by mid-2021. Vaccines rolled out as predicted and prevented ~1.1M deaths ([Commonwealth Fund](https://www.commonwealthfund.org/publications/issue-briefs/2021/dec/us-covid-19-vaccination-program-one-year-how-many-deaths-and)). Overall 'better' depends on weighting health vs. economy/normalization."
+    },
+    {
+      "id": "D-01:16:24.350",
+      "result": "wrong",
+      "explanation": "**Time window**  \nChamath said in late Nov 2020 that *\u201cwithin 3 or 4 years\u201d* (i.e., by roughly late 2023\u2013late 2024) the falling cost of wind and solar would make **\u201cpulling the oil out of the ground economically infeasible.\u201d*  We\u2019re now past that window (late 2025), so the claim is testable.\n\n**1. Oil extraction and consumption remained economically attractive and grew**  \n- Global oil consumption in 2024 reached about **101.8 million barrels per day**, an all\u2011time high, slightly above 2023 levels. ([forbes.com](https://www.forbes.com/sites/rrapier/2025/07/08/global-oil-output-steady-but-subtle-shifts-hint-at-changes-ahead/?utm_source=openai))  \n- The IEA\u2019s 2025 oil outlook still expects **global oil demand to rise further to ~105.5 mb/d by 2030**, with only a plateau/peak near the end of the decade, not a collapse. ([iea.org](https://www.iea.org/reports/oil-2025/executive-summary?utm_source=openai))  \n- The U.S. hit record oil production, and global production capacity is projected to exceed demand, implying **oversupply risk** rather than uneconomic extraction; producers are still incentivized to pump. ([reuters.com](https://www.reuters.com/business/energy/us-oil-production-rose-record-high-september-eia-data-shows-2025-11-28/?utm_source=openai))  \n\nIf extracting oil had broadly become \u201ceconomically infeasible\u201d by 2023\u201324, we would not observe record demand, record U.S. output, and fears of future surplus capacity.\n\n**2. Large new oil projects continued to be sanctioned**  \n- Rystad Energy projected and observed a **surge in offshore greenfield oil and gas investment**, with more than **$214 billion** in new projects lined up and annual offshore greenfield capex breaking the $100 billion mark again in 2022\u201324\u2014the strongest growth in a decade. ([ogj.com](https://www.ogj.com/general-interest/economics-markets/article/14290674/rystad-offshore-greenfield-investment-expected-to-exceed-200-billion-by-2025?utm_source=openai))  \n- ExxonMobil approved the **$12.7 billion Uaru offshore project** in Guyana in 2023, targeting about **800 million barrels** and 250,000 bpd of new capacity starting 2026. ([energy-analytics-institute.org](https://energy-analytics-institute.org/2023/04/28/exxonmobil-advances-fifth-offshore-guyana-development/?utm_source=openai))  \n- Additional deepwater/offshore FIDs (e.g., Shell\u2019s Gato do Mato project in Brazil) have been taken with production expected late this decade, reflecting confidence that these barrels will be profitable. ([reuters.com](https://www.reuters.com/business/energy/shell-invests-brazilian-offshore-project-2025-03-21/?utm_source=openai))  \n\nContinuing to approve multi\u2011billion\u2011dollar, high\u2011cost offshore projects is inconsistent with oil extraction having become uneconomic in general.\n\n**3. Wind and solar did become the cheapest new electricity, but that didn\u2019t by itself kill oil**  \n- Lazard\u2019s LCOE analyses show that by the early\u2013mid 2020s, **utility\u2011scale solar and onshore wind were the lowest\u2011cost sources of new-build electricity**, often well below coal and gas on an unsubsidized basis. ([pv-magazine.com](https://www.pv-magazine.com/2024/06/12/lazard-says-fossil-fuel-costs-double-that-of-utility-scale-solar/?utm_source=openai))  \n- BloombergNEF and other analyses confirm that costs for solar, wind, and storage continued to fall globally through 2024\u201325, with new wind and solar typically cheaper than new coal or gas plants in most markets. ([reuters.com](https://www.reuters.com/sustainability/clean-energy-costs-continue-fall-this-year-report-says-2025-02-06/?utm_source=openai))  \n\nHowever, oil\u2019s primary uses are **transport fuels and petrochemical feedstocks**, not power generation. Even though renewables have undercut fossil fuels in electricity, this has not yet translated into oil extraction becoming broadly uneconomic within a 3\u20134 year horizon. The IEA still projects oil demand growth into the late 2020s, and fossil fuels retained ~80% of global energy demand as of 2023. ([iea.org](https://www.iea.org/news/slowing-demand-growth-and-surging-supply-put-global-oil-markets-on-course-for-major-surplus-this-decade?utm_source=openai))  \n\n**Conclusion**  \nBy late 2023\u201324:\n- Oil demand and production were at or near record highs, not collapsing.\n- Companies were sanctioning and expanding large, often high\u2011cost offshore oil projects.\n- While wind and solar became the cheapest *new* electricity sources, they did **not** render oil extraction generally \u201ceconomically infeasible.\u201d\n\nGiven both the timeframe and the breadth of his claim, Chamath\u2019s prediction did **not** come true.\n",
+      "sources": [
+        {
+          "end_index": 688,
+          "start_index": 541,
+          "title": "Global Oil Output Steady, But Subtle Shifts Hint At Changes Ahead",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/rrapier/2025/07/08/global-oil-output-steady-but-subtle-shifts-hint-at-changes-ahead/?utm_source=openai"
+        },
+        {
+          "end_index": 951,
+          "start_index": 866,
+          "title": "Executive summary \u2013 Oil 2025 \u2013 Analysis - IEA",
+          "type": "url_citation",
+          "url": "https://www.iea.org/reports/oil-2025/executive-summary?utm_source=openai"
+        },
+        {
+          "end_index": 1307,
+          "start_index": 1161,
+          "title": "US oil production rose to record high in September, EIA data shows",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/energy/us-oil-production-rose-record-high-september-eia-data-shows-2025-11-28/?utm_source=openai"
+        },
+        {
+          "end_index": 1998,
+          "start_index": 1819,
+          "title": "Rystad: Offshore greenfield investment expected to exceed $200 billion by 2025 | Oil & Gas Journal",
+          "type": "url_citation",
+          "url": "https://www.ogj.com/general-interest/economics-markets/article/14290674/rystad-offshore-greenfield-investment-expected-to-exceed-200-billion-by-2025?utm_source=openai"
+        },
+        {
+          "end_index": 2332,
+          "start_index": 2174,
+          "title": "ExxonMobil Advances Fifth Offshore Guyana Development - Energy Analytics Institute (EAI)",
+          "type": "url_citation",
+          "url": "https://energy-analytics-institute.org/2023/04/28/exxonmobil-advances-fifth-offshore-guyana-development/?utm_source=openai"
+        },
+        {
+          "end_index": 2667,
+          "start_index": 2540,
+          "title": "Shell invests in Brazilian offshore project",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/energy/shell-invests-brazilian-offshore-project-2025-03-21/?utm_source=openai"
+        },
+        {
+          "end_index": 3276,
+          "start_index": 3133,
+          "title": "Lazard says fossil fuel costs double that of utility-scale solar \u2013 pv magazine International",
+          "type": "url_citation",
+          "url": "https://www.pv-magazine.com/2024/06/12/lazard-says-fossil-fuel-costs-double-that-of-utility-scale-solar/?utm_source=openai"
+        },
+        {
+          "end_index": 3633,
+          "start_index": 3493,
+          "title": "Clean energy costs to continue to fall this year, report says",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/sustainability/clean-energy-costs-continue-fall-this-year-report-says-2025-02-06/?utm_source=openai"
+        },
+        {
+          "end_index": 4200,
+          "start_index": 4041,
+          "title": "Slowing demand growth and surging supply put global oil markets on course for major surplus this decade - News - IEA",
+          "type": "url_citation",
+          "url": "https://www.iea.org/news/slowing-demand-growth-and-surging-supply-put-global-oil-markets-on-course-for-major-surplus-this-decade?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath's prediction did not come true. While solar and wind LCOE declined sharply (global avg. solar PV $39/MWh, onshore wind $48/MWh in 2024 per IRENA; down ~50-70% from 2020 [Lazard, IRENA]), making renewables cheaper than fossil fuels for electricity in 90%+ cases ([Reuters, IRENA Jul 2025]), this did not render oil extraction 'economically infeasible' in many cases. Oil breakeven prices for new projects averaged ~$47/bbl (non-OPEC, Rystad Oct 2024), US shale $60-65/bbl (EIA Apr 2025, Dallas Fed), with 2024 oil prices ~$80/bbl supporting viability. Upstream investments rose ($570B globally per IEA Jun 2024; $125B in majors' FIDs [OilPrice Mar 2024]); US production hit records (EIA). IEA Oil 2024 notes slowing demand growth/plateau by 2030 due to EVs/efficiency, but no undermining of new projects\u2014supply from planned upstream continues amid growing demand to Asia. No sources indicate renewables caused cancellations or infeasibility for high-cost oil by 2023-2024; oil demand forecasts show growth ([IEA WEO 2024])."
+    },
+    {
+      "id": "D-01:19:00.770",
+      "result": "inconclusive",
+      "explanation": "As of November 29, 2025, Dwayne \u201cThe Rock\u201d Johnson has **not** run for President of the United States, let alone won a presidential election.\n\nKey facts:\n- Johnson has repeatedly been discussed in the media as a potential presidential candidate and has said he would *consider* a run if that\u2019s what people wanted. ([the-independent.com](https://www.the-independent.com/arts-entertainment/tv/news/the-rock-president-election-interview-b1803056.html?utm_source=openai))\n- In an October 2022 CBS interview, he explicitly said a presidential run was **\u201coff the table\u201d** at that time, citing family priorities. ([thewrap.com](https://www.thewrap.com/dwayne-johnson-not-running-for-president/?utm_source=openai))\n- Later reporting in 2023\u20132025 notes that political parties sounded him out and that betting/prediction markets speculate about him as a future candidate (e.g., 2028), but confirm that he has **not officially declared any campaign**. ([euronews.com](https://www.euronews.com/culture/2023/11/14/dwayne-the-rock-johnson-says-political-parties-asked-him-to-run-for-president?utm_source=openai))\n\nThe prediction from late 2020 was that **within roughly 15 years (by about 2035)** Johnson would both **run for president and win**. As of late 2025, we are only about five years into that 15\u2011year window. Because:\n\n- He could still decide to run in a future cycle (e.g., 2028, 2032, or 2036, depending on how strictly you interpret \u201c15 years\u201d).\n- The outcome of any such hypothetical future race is unknown.\n\n\u2026it is **too early** to determine whether the prediction will ultimately be correct or incorrect.\n\nTherefore, the appropriate classification today is:\n\n- **Result: _inconclusive_ (too early to tell).**",
+      "sources": [
+        {
+          "end_index": 510,
+          "start_index": 357,
+          "title": "Dwayne \u2018The Rock\u2019 Johnson says he would run for president if \u2018that\u2019s what the people wanted\u2019 | The Independent",
+          "type": "url_citation",
+          "url": "https://www.the-independent.com/arts-entertainment/tv/news/the-rock-president-election-interview-b1803056.html?utm_source=openai"
+        },
+        {
+          "end_index": 750,
+          "start_index": 650,
+          "title": "Dwayne Johnson Rules Out Run for President: \"It's Off the Table\"",
+          "type": "url_citation",
+          "url": "https://www.thewrap.com/dwayne-johnson-not-running-for-president/?utm_source=openai"
+        },
+        {
+          "end_index": 1143,
+          "start_index": 986,
+          "title": "Dwayne \u2018The Rock\u2019 Johnson says political parties asked him to run for President | Euronews",
+          "type": "url_citation",
+          "url": "https://www.euronews.com/culture/2023/11/14/dwayne-the-rock-johnson-says-political-parties-asked-him-to-run-for-president?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for Dwayne Johnson to run for and win the U.S. presidency by ~2035 (15 years from late 2020). As of Dec 1, 2025, only ~5 years have passed. He did not run in the 2024 election ([USA Today, Apr 2024](https://www.usatoday.com/story/entertainment/celebrities/2024/04/08/dwayne-the-rock-johnson-2024-presidential-candidate-endorsement/73241410007/); [Rolling Stone, Apr 2024](https://www.rollingstone.com/tv-movies/tv-movie-news/dwayne-johnson-wont-endorse-presidential-candidate-2024-election-1235000224/)). Recent 2025 interviews show speculation and him leaving the door open for a future run (e.g., [Yahoo, Sep 2025](https://www.yahoo.com/entertainment/celebrity/articles/dwayne-johnson-talks-running-president-192028840.html); [Times of India, Sep 2025](https://timesofindia.indiatimes.com/sports/wwe/top-stories/is-dwayne-the-rock-johnson-running-in-the-u-s-presidential-election-heres-the-truth/articleshow/124197343.cms)), including betting odds for 2028 ([Newsweek, Aug 2025](https://www.newsweek.com/2028-presidential-betting-odds-dwayne-johnson-harris-buttigieg-2120008)), but no announcement or candidacy filed. Next elections are 2028 and 2032, so too early to evaluate."
+    },
+    {
+      "id": "A-01:19:35.000",
+      "result": "inconclusive",
+      "explanation": "Jason predicted that Iran *\u201cis going to be a crazy civil war\u201d* and implied this internal conflict would occur before or without Iran having nuclear bombs. He did **not** give any timeframe.\n\nAs of November 29, 2025, Iran has experienced severe unrest and uprisings\u2014most notably the 2022\u20132023 Mahsa Amini (\"Woman, Life, Freedom\") protests, which were nationwide and unprecedented but ultimately suppressed with the Islamic Republic\u2019s leadership still firmly in power, and later waves of protests and strikes in 2025 over water, electricity, and economic conditions.([en.wikipedia.org](https://en.wikipedia.org/wiki/Mahsa_Amini_protests?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/2025_Iranian_protests?utm_source=openai))([en.wikipedia.org](https://en.wikipedia.org/wiki/2025_Iran_water_crisis_protests?utm_source=openai))  Analysts and human-rights reports consistently describe these events as protests/uprisings and heavy crackdowns, not as an organized, sustained *civil war* between major internal armed factions.([cnbc.com](https://www.cnbc.com/2022/12/30/iran-in-2023-protests-weapons-for-russia-and-the-nuclear-deal.html?utm_source=openai))([hrw.org](https://www.hrw.org/world-report/2024/country-chapters/iran?utm_source=openai))  There is no credible source describing the situation in Iran up to late 2025 as a civil war.\n\nOn the nuclear side, Iran has become a \"nuclear threshold\" state with large stocks of highly enriched uranium (up to 60%) and very short breakout time, but open-source assessments from arms-control and parliamentary research bodies indicate Iran has **not** produced weapons-grade (90%) uranium nor demonstrably built or deployed nuclear weapons as of 2025.([iranprimer.usip.org](https://iranprimer.usip.org/blog/2025/jan/13/coming-iranian-nuclear-challenge-2025?utm_source=openai))([iranwatch.org](https://www.iranwatch.org/our-publications/articles-reports/irans-nuclear-timetable-weapon-potential?utm_source=openai))([commonslibrary.parliament.uk](https://commonslibrary.parliament.uk/research-briefings/cbp-10284/?utm_source=openai))  These sources explicitly treat Iran as capable of moving quickly to a bomb *if* it chooses, rather than as a state that already possesses nuclear weapons.\n\nBecause (1) the forecast civil war has **not** occurred yet, and (2) Iran has **not** openly acquired nuclear weapons, while (3) no explicit deadline was given for when this civil war was supposed to happen, there is no way to judge Jason\u2019s prediction as fulfilled or disproven by late 2025. It remains a statement about an open-ended future scenario.\n\nTherefore, the appropriate classification is **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 698,
+          "start_index": 608,
+          "title": "Mahsa Amini protests",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Mahsa_Amini_protests?utm_source=openai"
+        },
+        {
+          "end_index": 789,
+          "start_index": 698,
+          "title": "2025 Iranian protests",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2025_Iranian_protests?utm_source=openai"
+        },
+        {
+          "end_index": 890,
+          "start_index": 789,
+          "title": "2025 Iran water crisis protests",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2025_Iran_water_crisis_protests?utm_source=openai"
+        },
+        {
+          "end_index": 1216,
+          "start_index": 1086,
+          "title": "Iran in 2023: Protests, weapons for Russia and the nuclear deal",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/12/30/iran-in-2023-protests-weapons-for-russia-and-the-nuclear-deal.html?utm_source=openai"
+        },
+        {
+          "end_index": 1306,
+          "start_index": 1216,
+          "title": "World Report 2024: Iran | Human Rights Watch",
+          "type": "url_citation",
+          "url": "https://www.hrw.org/world-report/2024/country-chapters/iran?utm_source=openai"
+        },
+        {
+          "end_index": 1888,
+          "start_index": 1763,
+          "title": "The Coming Iranian Nuclear Challenge in 2025 | The Iran Primer",
+          "type": "url_citation",
+          "url": "https://iranprimer.usip.org/blog/2025/jan/13/coming-iranian-nuclear-challenge-2025?utm_source=openai"
+        },
+        {
+          "end_index": 2025,
+          "start_index": 1888,
+          "title": "Iran's Nuclear Timetable: The Weapon Potential | Iran Watch",
+          "type": "url_citation",
+          "url": "https://www.iranwatch.org/our-publications/articles-reports/irans-nuclear-timetable-weapon-potential?utm_source=openai"
+        },
+        {
+          "end_index": 2143,
+          "start_index": 2025,
+          "title": "Israel-Iran 2025: Developments in Iran's nuclear programme and military action - House of Commons Library",
+          "type": "url_citation",
+          "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10284/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "No evidence of a 'crazy civil war' or severe internal conflict overthrowing Iran's regime since Nov 2020. Major protests occurred (e.g., 2022-23 Mahsa Amini uprising, ongoing 2025 unrest over fuel prices/economy), driven partly by youth, but were suppressed; regime stable per ACLED ('no immediate threat of collapse'), ISW updates, Reuters. Speculation of collapse/civil war risks exists (e.g., *NY Post Aug 2025*, *Jerusalem Post Sep 2025*), but no actual war. Iran lacks nuclear weapons (threshold capability, damaged by strikes, no bomb per *Bulletin Jul 2025*, CSIS, BBC). Unspecified timeframe makes it too early to falsify after ~5 years. Sources: [ACLED report](https://acleddata.com/report/anti-government-demonstrations-iran-long-term-challenge-islamic-republic), [ISW Nov 2025](https://understandingwar.org/research/middle-east/iran-update-november-25-2025/), [Reuters Nov 2025](https://www.reuters.com/world/middle-east/irans-dual-reality-veil-restrictions-ease-political-crackdown-deepens-2025-11-13/)."
+    }
+  ]
+}

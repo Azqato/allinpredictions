@@ -1,0 +1,398 @@
+{
+  "meta": {
+    "count": 8,
+    "count_by_result": {
+      "ambiguous": 1,
+      "inconclusive": 3,
+      "right": 4
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:03:40.190",
+      "result": "ambiguous",
+      "explanation": "Public information confirms that (a) the episode\u2019s charity plug for the poker game directed listeners to donate to Beast Philanthropy, alongside the Humane Society\u2019s \u201cGoing Big for Beagles\u201d campaign, but does not state the exact total raised or how that specific pot of money was used, and (b) Beast Philanthropy is a food\u2011focused nonprofit that channels donations into fighting food insecurity and related assistance.\n\nEvidence:\n- The episode description for E116 lists Beast Philanthropy\u2019s donation link as one of the two target charities of the poker event but gives no breakdown of the poker proceeds or their later impact. ([podcasts.apple.com](https://podcasts.apple.com/us/podcast/e116-toxic-out-of-control-trains-regulators-and-ai/id1502871393?i=1000600154307&utm_source=openai))\n- Beast Philanthropy (MrCharity, Inc.) reports multi\u2011million\u2011dollar annual revenue and expenses as a 501(c)(3) food\u2011bank charity, confirming it is a functioning, sizeable organization rather than a shell; however, its public financials and Form 990 filings do not trace specific incoming donations (like a single $350k gift) to specific outcome numbers. ([projects.propublica.org](https://projects.propublica.org/nonprofits/organizations/852067214?utm_source=openai))\n- The Beast Philanthropy homepage and donate page emphasize that donations are used to \u201cfight food insecurity and provide food and assistance to people and communities in need,\u201d and they publish aggregate outputs: over 55.8 million pounds of food, 46.5 million meals delivered, and 8.1 million individuals fed, demonstrating large\u2011scale food assistance. ([beastphilanthropy.org](https://www.beastphilanthropy.org/?utm_source=openai))\n- At the same time, Beast Philanthropy also funds other non\u2011food projects (clean\u2011water wells, school tech, medical procedures, etc.) through the same nonprofit, so unrestricted donations are not guaranteed to be allocated exclusively to food. ([en.wikipedia.org](https://en.wikipedia.org/wiki/MrBeast?utm_source=openai))\n- Typical U.S. food\u2011bank partners like Feeding America state that each donated dollar can provide on the order of 10 meals, implying that a $350,000 contribution to an efficient food\u2011distribution charity *could* plausibly translate into millions of meals and thus tens of thousands of people served, but this is an external benchmark, not Beast\u2011specific reporting. ([nasdaq.com](https://www.nasdaq.com/press-release/sinclair-and-feeding-americar-launch-sinclair-cares-fill-food-banks-2025-11-19?utm_source=openai))\n\nPutting this together: it is *highly plausible* on efficiency and scale grounds that $350,000 routed through Beast Philanthropy ultimately supported food assistance for at least tens of thousands of people. However, the charity\u2019s public reports do not attribute outputs to that specific poker donation, nor do they publish a clear, organization\u2011specific \u201cmeals (or people) per donated dollar\u201d figure that would let us rigorously verify the claim. Because enough time has passed but the impact of that particular donation cannot be isolated from available data, the prediction cannot be decisively marked correct or incorrect and is best classified as **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 827,
+          "start_index": 668,
+          "title": "E116: Toxic out-of-control tra\u2026 - All-In with Chamath, Jason, Sacks & Friedberg - Apple Podcasts",
+          "type": "url_citation",
+          "url": "https://podcasts.apple.com/us/podcast/e116-toxic-out-of-control-trains-regulators-and-ai/id1502871393?i=1000600154307&utm_source=openai"
+        },
+        {
+          "end_index": 1296,
+          "start_index": 1183,
+          "title": "Mrcharity Inc - Nonprofit Explorer - ProPublica",
+          "type": "url_citation",
+          "url": "https://projects.propublica.org/nonprofits/organizations/852067214?utm_source=openai"
+        },
+        {
+          "end_index": 1731,
+          "start_index": 1652,
+          "title": "Beast Philanthropy",
+          "type": "url_citation",
+          "url": "https://www.beastphilanthropy.org/?utm_source=openai"
+        },
+        {
+          "end_index": 2053,
+          "start_index": 1976,
+          "title": "MrBeast",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/MrBeast?utm_source=openai"
+        },
+        {
+          "end_index": 2569,
+          "start_index": 2420,
+          "title": "Sinclair and Feeding America\u00ae Launch Sinclair Cares: Fill the Food Banks | Nasdaq",
+          "type": "url_citation",
+          "url": "https://www.nasdaq.com/press-release/sinclair-and-feeding-americar-launch-sinclair-cares-fill-food-banks-2025-11-19?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The All-In Podcast E116 (Feb 17, 2023) discusses Chamath and Friedberg's poker wins raising ~$450k for charities, with Chamath's ~$350k portion donated to Beast Philanthropy for food insecurity ([podwise.ai](https://podwise.ai/dashboard/episodes/1851072), [nota.fm](https://nota.fm/allin/e116-toxic-out-of-control-trains-regulators-and-ai)). Beast Philanthropy's 2022 Annual Report (covering pre- and post-donation period, but impact continued): distributed 1,255,300 lbs food, fed 62,598 households (~tens of thousands individuals), provided 1M meals ([PDF](https://backend.beastphilanthropy.org/wp-content/uploads/2024/02/Beast_Philanthropy_annual_report_2022_V3_d7bb9b52f3.pdf)). In 2025 alone (YTD Sep): 47M meals to 141,000 people ([MrBeast X](https://x.com/MrBeast/status/1971689199092093190), [LinkedIn](https://www.linkedin.com/posts/mr-beast_so-far-this-year-beast-philanthropy-has-given-activity-7378454764998549504-X9l3)). Funds fungible; 96% expenses to programs focused on food aid. Far exceeds 10k people assisted post-donation."
+    },
+    {
+      "id": "F-00:52:33.820",
+      "result": "inconclusive",
+      "explanation": "The prediction is about **long\u2011term cancer incidence (~20 years after the February 2023 East Palestine, Ohio derailment)**. As of the current date (November 30, 2025), only about **2 years** have passed since the incident, far short of the 20\u2011year timeframe implied by the quote (\"we'll know in 20 years when a lot of people come down with cancer\").\n\nEpidemiological studies of cancer risk from environmental exposures (like vinyl chloride) typically require **long latency periods (often decades)** before a statistically clear increase in cancer incidence can be attributed to a specific event in a population. Current public reporting and early health assessments after the **February 3, 2023 Norfolk Southern derailment and controlled burn of vinyl chloride in East Palestine** focus on short\u2011term symptoms (respiratory irritation, headaches, rashes) and environmental contamination monitoring, not on long\u2011term cancer outcomes, which cannot yet be observed.\n\nBecause the prediction explicitly concerns what will be evident around **2043**, and we are still in **2025**, it is **too early** to determine whether there will be a \"noticeably elevated\" cancer rate attributable to this event. Therefore, the correctness of the prediction **cannot yet be evaluated**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The East Palestine train derailment occurred on February 3, 2023. As of December 1, 2025, only ~2.8 years have passed, far short of the predicted ~20-year latency (around 2043) for noticeable cancer elevation from vinyl chloride exposure. No studies report elevated cancer incidence; instead, NIH funded $10M in June 2025 for long-term health tracking ([NIH press release](https://www.nih.gov/news-events/news-releases/nih-fund-long-term-health-studies-east-palestine-after-train-disaster)), NIEHS supports research on delayed effects ([NIEHS page](https://www.niehs.nih.gov/research/programs/east_palestine)), and papers note carcinogens require years/decades for detectable cancers ([PMC article](https://pmc.ncbi.nlm.nih.gov/articles/PMC10323840/)). Immediate symptoms (e.g., respiratory) reported, but cancer signals impossible this early."
+    },
+    {
+      "id": "A-00:57:27.250",
+      "result": "right",
+      "explanation": "Jason predicted that within roughly 3\u20135 years from February 17, 2023, AI ethics and bias would become an active agenda item for politicians and the subject of government attention or action.\n\nBy late 2025, this has clearly already happened at multiple levels of government:\n\n- In October 2022 (even before the prediction), the White House released the Blueprint for an AI Bill of Rights, centered on protections against algorithmic discrimination, data privacy, and other civil-rights-focused AI principles, explicitly intended to guide policy and regulation. ([bidenwhitehouse.archives.gov](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/?utm_source=openai))\n- On October 30, 2023, President Biden signed Executive Order 14110 on Safe, Secure, and Trustworthy Development and Use of AI, directing federal agencies to address AI risks including civil rights harms, discrimination, and consumer protection, making AI ethics and bias a core federal policy agenda. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Executive_Order_14110?utm_source=openai))\n- The U.S. AI Safety Institute was created within NIST in November 2023, with an AI Safety Institute Consortium established in 2024, to operationalize safe and responsible AI practices for government and industry. ([en.wikipedia.org](https://en.wikipedia.org/wiki/AI_Safety_Institute?utm_source=openai))\n- The EU\u2019s 2024 Artificial Intelligence Act establishes a comprehensive regulatory framework for AI, explicitly tied to protecting fundamental rights and addressing high\u2011risk and biased AI systems, showing another major political jurisdiction legislating around AI ethics and algorithmic bias. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Artificial_Intelligence_Act?utm_source=openai))\n- In the U.S., California\u2019s AI bills (the 2024 Safe and Secure Innovation for Frontier AI Models Act, SB 1047, and the 2025 Transparency in Frontier Artificial Intelligence Act, SB\u201153) focus on AI safety, catastrophic risk, and accountability, reflecting sustained legislative attention to responsible AI. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Safe_and_Secure_Innovation_for_Frontier_Artificial_Intelligence_Models_Act?utm_source=openai))\n- Under President Trump in 2025, Executive Order 14179 and the Preventing Woke AI in the Federal Government order explicitly target perceived ideological and DEI\u2011related bias in AI systems, making AI bias a prominent partisan and policy issue. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Executive_Order_14179?utm_source=openai))\n\nThese actions involve presidents, national legislatures, and state lawmakers, and they squarely concern AI ethics, discrimination, and bias. Because such government attention and concrete policy measures arrived well within (and in fact earlier than) the 3\u20135\u2011year window Jason named, the prediction that AI ethics and bias would become an active political agenda item is best scored as **right**.",
+      "sources": [
+        {
+          "end_index": 709,
+          "start_index": 597,
+          "title": "Blueprint for an AI Bill of Rights | OSTP | The White House",
+          "type": "url_citation",
+          "url": "https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/?utm_source=openai"
+        },
+        {
+          "end_index": 1104,
+          "start_index": 1013,
+          "title": "Executive Order 14110",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Executive_Order_14110?utm_source=openai"
+        },
+        {
+          "end_index": 1409,
+          "start_index": 1320,
+          "title": "AI Safety Institute",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/AI_Safety_Institute?utm_source=openai"
+        },
+        {
+          "end_index": 1802,
+          "start_index": 1705,
+          "title": "Artificial Intelligence Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2254,
+          "start_index": 2110,
+          "title": "Safe and Secure Innovation for Frontier Artificial Intelligence Models Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Safe_and_Secure_Innovation_for_Frontier_Artificial_Intelligence_Models_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2591,
+          "start_index": 2500,
+          "title": "Executive Order 14179",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Executive_Order_14179?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction was that AI ethics and bias would become an active agenda item for politicians and subject to government attention or action approximately 3\u20135 years from Feb 17, 2023 (early 2026\u2013early 2028). However, this occurred much earlier. Key examples: US Senate Judiciary Subcommittee held its first major hearing on AI oversight (including ethics and risks like bias) on May 16, 2023 ([source](https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence), [Brookings](https://www.brookings.edu/articles/senate-hearing-highlights-ai-harms-and-need-for-tougher-regulation/)). President Biden issued an Executive Order on Oct 30, 2023, explicitly addressing AI bias, discrimination, and ethics ([White House](https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/), [CRS](https://www.congress.gov/crs-product/R47843)). EU AI Act political agreement reached Dec 9, 2023, regulating bias in AI systems ([EU timeline](https://artificialintelligenceact.eu/developments/)). By Dec 2025, it has been a sustained focus, contradicting the 3\u20135 year timeline."
+    },
+    {
+      "id": "A-01:02:08.000",
+      "result": "right",
+      "explanation": "Evidence shows that Google\u2019s Bard (now Gemini) does include a built\u2011in mechanism for citing sources in its answers, even if it does so inconsistently.\n\n- Shortly after Bard\u2019s rollout in March 2023, Google\u2019s own FAQ (quoted by Search Engine Land) stated that *\u201cIf Bard does directly quote at length from a webpage, it cites that page.\u201d* This makes clear that Bard has an explicit feature to attach citations when it quotes web content. ([searchengineland.com](https://searchengineland.com/google-explains-why-bard-rarely-lists-citations-and-links-to-content-creators-394635?utm_source=openai))\n- Coverage of Bard\u2019s 2023 updates notes that a citation feature debuted around May 2023, where Bard would show sources when its generated text closely matched online content, reinforcing that citations are an intentional product capability rather than an accidental side effect. ([thelatch.com.au](https://thelatch.com.au/google-bard-update/?utm_source=openai))\n- Later reviews of Bard describe \u201cCitation of Sources\u201d as one of its pros (while criticizing that it is *inconsistent*), confirming that the product, as used in practice, can and does provide source links in its answers. ([ai-productreviews.com](https://ai-productreviews.com/google-bard-review/?utm_source=openai))\n\nJason\u2019s prediction was that Google\u2019s Bard LLM product *\u201cis going to do citations as well\u201d*\u2014i.e., that it would include a citation feature. Since Bard indeed has a built\u2011in mechanism for citing sources in some responses, the prediction is judged **right**, even though Bard does not always or prominently show citations for every answer.",
+      "sources": [
+        {
+          "end_index": 627,
+          "start_index": 470,
+          "title": "Google explains why Bard rarely lists citations and links to content creators",
+          "type": "url_citation",
+          "url": "https://searchengineland.com/google-explains-why-bard-rarely-lists-citations-and-links-to-content-creators-394635?utm_source=openai"
+        },
+        {
+          "end_index": 990,
+          "start_index": 908,
+          "title": "Google Bard Update: The 2023 Features That Have Dropped",
+          "type": "url_citation",
+          "url": "https://thelatch.com.au/google-bard-update/?utm_source=openai"
+        },
+        {
+          "end_index": 1307,
+          "start_index": 1213,
+          "title": "Google Bard Review: AI Experimental Chat Service",
+          "type": "url_citation",
+          "url": "https://ai-productreviews.com/google-bard-review/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Google Bard added a source citations feature in May 2023, about three months after the February 17, 2023 podcast. Official Google blog (May 10, 2023, [blog.google/technology/ai/google-bard-updates-io-2023](https://blog.google/technology/ai/google-bard-updates-io-2023/)) announced: 'Source citations: Starting next week, we'll make citations even more precise... Bard will show you the source.' Independent reports confirm rollout: Search Engine Land ([searchengineland.com/google-bard-adds-genuine-citations](https://searchengineland.com/google-bard-adds-genuine-citations-in-responses-and-more-concise-summaries-423143), May 15, 2023) and SERoundtable ([seroundtable.com/google-bard-citations-update-35394.html](https://www.seroundtable.com/google-bard-citations-update-35394.html), May 16, 2023) describe numbered citations linking to sources, similar to competitors."
+    },
+    {
+      "id": "C-01:02:17.960",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, the prediction is partially realized but not clearly confirmed or falsified.\n\n**1. Multiple competing major LLM tools (3\u201310+) \u2013 already true**  \nSince early 2023, the ecosystem has evolved to include several widely used, broadly capable language tools beyond OpenAI\u2019s ChatGPT, such as Anthropic\u2019s Claude, Google\u2019s Gemini, xAI\u2019s Grok, China\u2019s DeepSeek chatbot, Proton\u2019s Lumo, and others. These are distinct, general-purpose assistants offered by different companies and are direct competitors in the same market space. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=openai))  \nThis clearly satisfies the \u201c3\u201310 competing versions\u201d part of Chamath\u2019s statement.\n\n**2. User-facing filters that *explicitly* expose and let you *choose* political leanings \u2013 not (yet) realized**  \nWhat we *do* see:\n- Mainstream vendors emphasize *reducing* political bias and pushing toward neutrality, not letting users dial the system toward left or right. OpenAI and Anthropic publicly describe efforts and tools to measure and reduce political bias in ChatGPT and Claude, aiming for evenhandedness rather than user-selectable ideology. ([theverge.com](https://www.theverge.com/news/798388/openai-chatgpt-political-bias-eval?utm_source=openai))  \n- Governments (e.g., via Trump\u2019s 2025 \u201cwoke AI\u201d executive order) are pressuring suppliers of AI used by the US government to be ideologically neutral, again pushing away from openly configurable partisan modes. ([washingtonpost.com](https://www.washingtonpost.com/technology/2025/07/24/trump-ai-woke-executive-order/?utm_source=openai))  \n- There are ideologically branded *separate* chatbots such as TUSK\u2019s Gippr AI, marketed explicitly as a conservative/right\u2011leaning alternative to ChatGPT, but they present a fixed perspective rather than a user-adjustable slider or filter in a mainstream tool. ([htv10.tv](https://www.htv10.tv/story/51577466/uncensored-chatbot-for-conservative-users-chatgpt-alternative-tool-launched?utm_source=openai))  \n- External researchers routinely *measure* and publish the political orientation of LLMs (e.g., David Rozado\u2019s work on \u201cThe political preferences of LLMs\u201d), but that information lives in papers and articles, not as an in-product control for end users. ([cybernews.com](https://cybernews.com/ai-news/grok-chatgpt-ai-research-politcal-orientation-llm-left-leaning/?utm_source=openai))  \n\nWhat we *do not* see, in any major general-purpose assistant as of late 2025, is a built-in settings UI that clearly labels the model\u2019s political stance and lets ordinary users choose \u201cconservative / centrist / liberal\u201d (or similar) output modes for the same base system. Instead, vendors explicitly avoid features that look like configurable political persuasion, due both to internal policy and regulatory scrutiny.\n\n**3. Timing: why this is \u201cinconclusive (too early)\u201d rather than \u201cwrong\u201d**  \nChamath\u2019s wording was that *\u201cover time\u201d* and within the next *\u201cseveral years\u201d* after early 2023, there would be many competing tools *and* that \u201csome of these filters will actually show what the political leanings are,\u201d giving users that choice. We are only about 2.75 years past February 2023, which is within a reasonable reading of \u201cseveral years\u201d (often 3\u20135+).  \n\n- The first part (many competing LLMs) is clearly correct already.  \n- The second part (explicit, user-configurable political-lean filters in major tools) has *not* materialized yet, but given the loose timeframe (\u201cover time\u201d, \u201cseveral years\u201d) it is premature to say it definitively will *not* happen.\n\nBecause a core component of the prediction (exposed political-leaning filters) has not yet occurred, but the stated horizon has not clearly elapsed, the fairest scoring as of November 2025 is **\u201cinconclusive (too early)\u201d** rather than fully \u201cright\u201d or \u201cwrong.\u201d",
+      "sources": [
+        {
+          "end_index": 674,
+          "start_index": 586,
+          "title": "Grok (chatbot)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=openai"
+        },
+        {
+          "end_index": 1330,
+          "start_index": 1223,
+          "title": "OpenAI is trying to clamp down on 'bias' in ChatGPT",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/798388/openai-chatgpt-political-bias-eval?utm_source=openai"
+        },
+        {
+          "end_index": 1670,
+          "start_index": 1545,
+          "title": "Trump is targeting 'woke AI.' Here's what that means.",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/technology/2025/07/24/trump-ai-woke-executive-order/?utm_source=openai"
+        },
+        {
+          "end_index": 2078,
+          "start_index": 1935,
+          "title": "Uncensored Chatbot For Conservative Users: ChatGPT Alternative Tool Launched - KFOL",
+          "type": "url_citation",
+          "url": "https://www.htv10.tv/story/51577466/uncensored-chatbot-for-conservative-users-chatgpt-alternative-tool-launched?utm_source=openai"
+        },
+        {
+          "end_index": 2464,
+          "start_index": 2334,
+          "title": "Hey Grok, are you liberal or conservative? AI researcher tests chatbots political leanings | Cybernews",
+          "type": "url_citation",
+          "url": "https://cybernews.com/ai-news/grok-chatgpt-ai-research-politcal-orientation-llm-left-leaning/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Multiple major competing AI language models have emerged since Feb 2023 (e.g., GPT-4o/5 series by OpenAI, Claude by Anthropic, Gemini by Google, Grok by xAI, Llama by Meta, Mistral \u2013 exceeding 3\u201310). However, none explicitly expose user-facing filter settings revealing or allowing selection among different political leanings. Extensive searches reveal studies on inherent biases (mostly left-leaning) in these models ([Stanford 2025](https://news.stanford.edu/stories/2025/05/ai-models-llms-chatgpt-claude-gemini-partisan-bias-research-study), [Manhattan Institute 2025](https://manhattan.institute/article/measuring-political-preferences-in-ai-systems-an-integrative-approach)), but no evidence of adjustable political sliders/toggles/dials in major tools. Uncensored models exist (e.g., Cleus.ai), but lack political leaning selectors. Nearly 3 years have passed, sufficient time given rapid AI evolution; prediction unfulfilled. Sources: web searches on bias settings, sliders, Grok/Claude/Gemini/ChatGPT features (2023\u20132025)."
+    },
+    {
+      "id": "F-01:10:32.500",
+      "result": "right",
+      "explanation": "**Timing:** GPT\u20114 was publicly released by OpenAI on **March 14, 2023**, less than a month after the podcast date of February 17, 2023, which clearly falls within \u201cthe next several months.\u201d ([en.wikipedia.org](https://en.wikipedia.org/wiki/GPT-4?utm_source=openai))\n\n**Capability jump vs GPT\u20113/3.5:**\n\n* OpenAI and subsequent analyses describe GPT\u20114 as **more capable, more reliable, more creative, and better at handling nuanced instructions** than GPT\u20113.5/GPT\u20113. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GPT-4?utm_source=openai))  \n* Technical reports and reviews highlight substantial improvements in benchmark performance (e.g., much higher percentile scores on standardized tests, better reasoning and creativity) and features such as **much larger context windows** and **multimodal input (text + images)**\u2014capabilities GPT\u20113 lacked. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GPT-4?utm_source=openai))\n\nGiven that GPT\u20114 was indeed released within a few months of February 17, 2023, and is widely regarded as a major advancement over GPT\u20113/3.5 in capabilities, David Sacks\u2019 prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 298,
+          "start_index": 223,
+          "title": "GPT-4",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GPT-4?utm_source=openai"
+        },
+        {
+          "end_index": 577,
+          "start_index": 502,
+          "title": "GPT-4",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GPT-4?utm_source=openai"
+        },
+        {
+          "end_index": 962,
+          "start_index": 887,
+          "title": "GPT-4",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/GPT-4?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "GPT-4 was released on March 14, 2023, approximately one month after the podcast on February 17, 2023, fitting 'within a few months' or 'next several months' ([Wikipedia](https://en.wikipedia.org/wiki/GPT-4), [Semrush](https://www.semrush.com/blog/gpt-4/), [Search Engine Journal](https://www.searchenginejournal.com/history-of-chatgpt-timeline/488370/)). It represented a major capability improvement over GPT-3, with advancements in accuracy, math/science performance, multimodal capabilities, context handling, and more ([Grammarly](https://www.grammarly.com/blog/ai/gpt-3-vs-gpt-4/), [GeeksforGeeks](https://www.geeksforgeeks.org/blogs/gpt-4-vs-gpt-3/), [Reddit](https://www.reddit.com/r/GPT3/comments/12rluuh/is_there_anything_that_gpt4_is_much_better_at/))."
+    },
+    {
+      "id": "B-01:15:31.980",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, only the *first* part of Friedberg\u2019s prediction can be meaningfully evaluated.\n\n1. **Censorship battles, stakeholder fights, and bias/untruth claims are clearly happening.**\n   - Governments have moved to regulate and, in some cases, directly constrain AI outputs. China\u2019s Cyberspace Administration requires generative AI content to uphold Communist Party ideology and refuse politically sensitive topics, effectively enforcing systemic censorship over AI systems. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Artificial_intelligence_industry_in_China?utm_source=openai))\n   - The EU\u2019s AI Act, in force since August 2024, includes bans and strict rules around manipulative uses of AI, deepfakes, and AI systems influencing democratic processes, triggering intense political debate over free expression and democratic risks. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Artificial_Intelligence_Act?utm_source=openai))\n   - In the U.S., Biden\u2019s 2023 Executive Order on \u201cSafe, Secure, and Trustworthy\u201d AI set a detailed federal governance agenda and was then rescinded by President Trump in January 2025, illustrating ongoing political conflict over how tightly AI should be constrained. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Executive_Order_14110?utm_source=openai))\n   - Major AI companies (OpenAI, Anthropic, Meta, Midjourney, etc.) are embroiled in high\u2011profile lawsuits over training data, copyright, and alleged harms, reflecting intense stake\u00adholder battles between tech firms, media, rights holders, and users. ([businessinsider.com](https://www.businessinsider.com/openai-lawsuits-legal-battles-sam-altman-chatgpt-2025-11?utm_source=openai))\n   - Studies and commentary have documented political and ideological bias in leading chatbots (e.g., ChatGPT vs. Gemini in the 2024 EU elections), and these findings feed public narratives that AI systems are \u201cwoke,\u201d \u201cpropagandistic,\u201d or otherwise untrustworthy. ([arxiv.org](https://arxiv.org/abs/2409.00721?utm_source=openai))  \n   Collectively, this strongly supports his near\u2011term claim that AI would become a battleground over censorship, bias, and truth claims.\n\n2. **Differentiated AI systems for different audiences are clearly emerging.**\n   - xAI\u2019s Grok is explicitly marketed as not \u201cwoke\u201d and has been tuned over 2023\u20132025 to give more right\u2011leaning, politically incorrect, and Musk\u2011aligned responses, making it a clear example of an AI system positioned for a particular ideological audience. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=openai))\n   - Research documents that models like ChatGPT and Gemini respond differently to political questions, and separate projects market themselves as conservative or alternative chatbots, indicating a move toward audience\u2011specific AI products. ([arxiv.org](https://arxiv.org/abs/2409.00721?utm_source=openai))\n   - In China, domestic chatbots are constrained by state censorship rules and produce government\u2011aligned narratives, which is another form of audience\u2011specific (national/ideological) AI. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Artificial_intelligence_industry_in_China?utm_source=openai))  \n   This supports his idea that there will be \u201cdifferent opinions and different manifestations\u201d across AI systems serving different user groups.\n\n3. **But the *end\u2011state* of a stable, relatively controversy\u2011free ecosystem has not yet arrived, and the time horizon is \"over the coming years.\"**\n   - The EU AI Act is still being fought over and even partially rolled back or delayed under heavy industry and political pressure, showing that regulatory consensus is not settled. ([theverge.com](https://www.theverge.com/news/823750/european-union-ai-act-gdpr-changes?utm_source=openai))\n   - Major lawsuits against AI companies continue to be filed and only some have reached partial resolution, while new settlements and trials (e.g., Anthropic\u2019s large settlement with authors) are still reshaping norms. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Anthropic?utm_source=openai))\n   - Political conflict over AI governance in the U.S. has intensified rather than cooled (e.g., the rescinding of EO 14110, ongoing legislative proposals such as the Generative AI Copyright Disclosure Act). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Executive_Order_14110?utm_source=openai))\n   - Ongoing scandals over deepfakes and election interference in 2024\u20132025 keep AI at the center of public controversy rather than in a stable, background role. ([isdglobal.org](https://www.isdglobal.org/digital_dispatches/the-eu-ai-act-insights-from-the-worlds-first-comprehensive-ai-law/?utm_source=openai))\n\nBecause Friedberg\u2019s prediction explicitly describes a *cycle* in which the current phase of battles and bias accusations will \"very likely\" pass and give way to a more stable, mature media\u2011like equilibrium, and because we are only about 2.8 years out from the February 2023 prediction with controversies still escalating, it is too early to say whether the full cycle will complete as he described.\n\n**Conclusion:**\n- Part (1) of the prediction \u2014 that AI would spark censorship battles, stakeholder fights, and claims of bias/untruth \u2014 is strongly supported by events since 2023.\n- Part (2) \u2014 that these controversies will *subside* into a stable ecosystem of differentiated AI systems \u2014 cannot yet be confirmed or falsified. The regulatory, legal, and cultural environment around AI is still in flux.\n\nGiven that the core forecast concerns a multi\u2011year cycle and its eventual resolution, the fairest assessment as of November 2025 is **\u201cinconclusive (too early)\u201d rather than right or wrong.**",
+      "sources": [
+        {
+          "end_index": 644,
+          "start_index": 533,
+          "title": "Artificial intelligence industry in China",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_industry_in_China?utm_source=openai"
+        },
+        {
+          "end_index": 995,
+          "start_index": 898,
+          "title": "Artificial Intelligence Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1356,
+          "start_index": 1265,
+          "title": "Executive Order 14110",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Executive_Order_14110?utm_source=openai"
+        },
+        {
+          "end_index": 1740,
+          "start_index": 1609,
+          "title": "OpenAI's legal woes are piling up. Here are the toughest battles facing Sam Altman and ChatGPT.",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/openai-lawsuits-legal-battles-sam-altman-chatgpt-2025-11?utm_source=openai"
+        },
+        {
+          "end_index": 2071,
+          "start_index": 2006,
+          "title": "Who Would Chatbots Vote For? Political Preferences of ChatGPT and Gemini in the 2024 European Union Elections",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2409.00721?utm_source=openai"
+        },
+        {
+          "end_index": 2641,
+          "start_index": 2553,
+          "title": "Grok (chatbot)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Grok_%28chatbot%29?utm_source=openai"
+        },
+        {
+          "end_index": 2949,
+          "start_index": 2884,
+          "title": "Who Would Chatbots Vote For? Political Preferences of ChatGPT and Gemini in the 2024 European Union Elections",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2409.00721?utm_source=openai"
+        },
+        {
+          "end_index": 3250,
+          "start_index": 3139,
+          "title": "Artificial intelligence industry in China",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_industry_in_China?utm_source=openai"
+        },
+        {
+          "end_index": 3842,
+          "start_index": 3735,
+          "title": "Europe is scaling back its landmark privacy and AI laws",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/news/823750/european-union-ai-act-gdpr-changes?utm_source=openai"
+        },
+        {
+          "end_index": 4142,
+          "start_index": 4063,
+          "title": "Anthropic",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Anthropic?utm_source=openai"
+        },
+        {
+          "end_index": 4443,
+          "start_index": 4352,
+          "title": "Executive Order 14110",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Executive_Order_14110?utm_source=openai"
+        },
+        {
+          "end_index": 4755,
+          "start_index": 4607,
+          "title": "The EU AI Act: Insights from the world\u2019s first comprehensive AI law - ISD",
+          "type": "url_citation",
+          "url": "https://www.isdglobal.org/digital_dispatches/the-eu-ai-act-insights-from-the-worlds-first-comprehensive-ai-law/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Part (1) of the prediction has clearly come true: Since 2023, there have been extensive government regulatory battles (e.g., US Executive Orders 14110 in 2023 and 14179 in 2025 revoking it, EU AI Act, state-federal preemption fights including 2025 moratorium proposals [*Politico Nov 2025*][*NCSC AI legislation 2025*]), stakeholder conflicts (e.g., 'Preventing Woke AI' order [*White House Jul 2025*]), and widespread claims of bias/untruth (e.g., AI models holding opposing views [*TechCrunch Jun 2024*], 17 biggest AI controversies of 2025 including deepfakes/healthcare bias [*Crescendo.ai Aug 2025*], ongoing hallucinations/errors [*Tech.co 2025*]).\n\nPart (2) shows early signs but is incomplete: A differentiated ecosystem is emerging with varied AI systems (agentic/multimodal models, personalization for preferences [*McKinsey State of AI 2025*][*Uptech AI Trends 2025*]), akin to media diversity. However, the controversy phase has *not* subsided\u20142025 saw top 50 AI scandals [*DigitalDefynd*], political biases (Grok/Obama [*Economic Times Aug 2025*]), defamation cases [*NYT Nov 2025*], and intensifying reg battles [*Forbes Oct 2025*]. With only ~2.8 years passed and past media cycles taking longer to stabilize, it's too early to confirm subsidence."
+    },
+    {
+      "id": "B-01:25:01.840",
+      "result": "right",
+      "explanation": "Friedberg predicted that the ability to run LLMs and build web\u2011data\u2013based alternatives would commoditize faster than most early\u20112023 observers expected, enabling many new competitors beyond OpenAI/Google/Microsoft. Evidence through late 2025 strongly supports this.\n\n1. **Rapid commoditization of LLM capabilities**  \n   \u2022 Hugging Face\u2019s own 2023 retrospective calls 2023 the \u201cyear of open LLMs,\u201d documenting a wave of open\u2011weight releases (LLaMA, Llama 2, StableLM, MPT, Falcon, Qwen, Mistral, Yi, etc.) and emphasizing that smaller models plus quantization made LLMs \u201creally accessible to many more people.\u201d ([huggingface.co](https://huggingface.co/blog/2023-in-llms?utm_source=openai))  \n   \u2022 A July 2023 study already identified ~15,821 LLMs on Hugging Face, just months after ChatGPT\u2019s breakout, showing extremely fast proliferation. ([arxiv.org](https://arxiv.org/abs/2307.09793?utm_source=openai))  \n   \u2022 By July 2024, there were ~784,000 open\u2011weight models on Hugging Face, and by June 2025 more than 1.8 million models total on the platform\u2014an ecosystem far beyond a handful of proprietary systems. ([gretel.ai](https://gretel.ai/blog/the-explosion-of-slms-and-license-confusion?utm_source=openai))  \n\n2. **Ability to run LLMs spread to commodity and edge devices**  \n   \u2022 Google\u2019s Pixel 9/9a phones include the on\u2011device Gemini Nano model for real\u2011time summarization, translation, and captioning, demonstrating LLM\u2011style inference running locally on consumer smartphones. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Pixel_9?utm_source=openai))  \n   \u2022 Apple Intelligence, enabled by default starting with iOS 18.3 on Apple Silicon devices, provides systemwide generative features using small on\u2011device models; Apple also brings these AI capabilities to a $599 iPhone 16e, broadening access. ([theverge.com](https://www.theverge.com/2025/1/21/24348850/apple-intelligence-ai-default-setting-ios-18-3?utm_source=openai))  \n   These shifts show that \u201cthe ability to run LLMs\u201d is no longer confined to specialized data centers; it\u2019s increasingly a standard capability of mass\u2011market hardware.\n\n3. **New competitors vs the early incumbents**  \n   \u2022 The 2023 Hugging Face review lists strong open models from Meta, Stability AI, Mosaic, Salesforce, Falcon (TII), Alibaba\u2019s Qwen, Mistral, Yi, Deci, and others, many with open or open\u2011weight licenses and strong benchmark performance\u2014direct alternatives to closed systems. ([huggingface.co](https://huggingface.co/blog/2023-in-llms?utm_source=openai))  \n   \u2022 Databricks released DBRX in March 2024 as an open model that outperformed earlier open models from Meta and Mistral on a range of benchmarks, showing sophisticated models from data\u2011platform players, not just hyperscalers. ([en.wikipedia.org](https://en.wikipedia.org/wiki/DBRX?utm_source=openai))  \n   \u2022 Meta\u2019s Llama 3 / 3.1 family (up to 405B parameters) is positioned as competitive with leading proprietary models like GPT\u20114o and Claude 3.5 Sonnet, and is made widely downloadable and deployable across major clouds\u2014further reducing dependence on a few closed providers. ([theverge.com](https://www.theverge.com/2024/7/23/24204055/meta-ai-llama-3-1-open-source-assistant-openai-chatgpt?utm_source=openai))  \n   \u2022 A 2025 survey of major AI companies lists Anthropic, Meta, DeepSeek, Databricks, Hugging Face, Amazon, Nvidia and others alongside OpenAI, Google and Microsoft as core generative\u2011AI players, reflecting a multi\u2011vendor landscape. ([kiplinger.com](https://www.kiplinger.com/business/biggest-ai-companies-to-know?utm_source=openai))  \n   \u2022 Microsoft\u2019s own Copilot ecosystem now integrates models from Anthropic and also supports Meta, xAI and DeepSeek models, explicitly moving beyond exclusive reliance on OpenAI. ([reuters.com](https://www.reuters.com/business/microsoft-brings-anthropic-ai-models-365-copilot-diversifies-beyond-openai-2025-09-24/?utm_source=openai))  \n\n4. **Speed relative to early\u20112023 expectations**  \n   \u2022 By mid\u20112023, there were already tens of thousands of LLMs on Hugging Face, and the 2023 retrospective notes that new open models were arriving monthly, then weekly, and eventually even daily, including strong entries from new players and from China. ([arxiv.org](https://arxiv.org/abs/2307.09793?utm_source=openai))  \n   \u2022 Within roughly two years of the February 2023 prediction, high\u2011quality open models (e.g., Llama 3.1, DBRX, Mistral\u2019s Mixtral) and on\u2011device models from Apple and Google made it routine for organizations and even individuals to run capable LLMs without depending solely on a small trio of incumbents.\n\nTaken together, the explosive growth of open and downloadable models, their deployment on commodity and edge hardware, and the emergence of multiple strong LLM providers show that LLM capability has indeed commoditized, and it happened on a faster timeline than the early\u20112023 narrative of a tightly concentrated, hyperscaler\u2011only future suggested. This matches Friedberg\u2019s prediction well.",
+      "sources": [
+        {
+          "end_index": 724,
+          "start_index": 646,
+          "title": "2023, year of open LLMs",
+          "type": "url_citation",
+          "url": "https://huggingface.co/blog/2023-in-llms?utm_source=openai"
+        },
+        {
+          "end_index": 941,
+          "start_index": 876,
+          "title": "On the Origin of LLMs: An Evolutionary Tree and Graph for 15,821 Large Language Models",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2307.09793?utm_source=openai"
+        },
+        {
+          "end_index": 1245,
+          "start_index": 1146,
+          "title": "The explosion of small language models (SLMs) and license confusion",
+          "type": "url_citation",
+          "url": "https://gretel.ai/blog/the-explosion-of-slms-and-license-confusion?utm_source=openai"
+        },
+        {
+          "end_index": 1600,
+          "start_index": 1523,
+          "title": "Pixel 9",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Pixel_9?utm_source=openai"
+        },
+        {
+          "end_index": 1974,
+          "start_index": 1848,
+          "title": "Apple Intelligence is enabled by default in iOS 18.3",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/2025/1/21/24348850/apple-intelligence-ai-default-setting-ios-18-3?utm_source=openai"
+        },
+        {
+          "end_index": 2553,
+          "start_index": 2475,
+          "title": "2023, year of open LLMs",
+          "type": "url_citation",
+          "url": "https://huggingface.co/blog/2023-in-llms?utm_source=openai"
+        },
+        {
+          "end_index": 2858,
+          "start_index": 2784,
+          "title": "DBRX",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/DBRX?utm_source=openai"
+        },
+        {
+          "end_index": 3271,
+          "start_index": 3137,
+          "title": "Meta releases the biggest and best open-source AI model yet",
+          "type": "url_citation",
+          "url": "https://www.theverge.com/2024/7/23/24204055/meta-ai-llama-3-1-open-source-assistant-openai-chatgpt?utm_source=openai"
+        },
+        {
+          "end_index": 3608,
+          "start_index": 3508,
+          "title": "10 Major AI Companies You Should Know",
+          "type": "url_citation",
+          "url": "https://www.kiplinger.com/business/biggest-ai-companies-to-know?utm_source=openai"
+        },
+        {
+          "end_index": 3946,
+          "start_index": 3792,
+          "title": "Microsoft brings Anthropic AI models to 365 Copilot, diversifies beyond OpenAI",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/microsoft-brings-anthropic-ai-models-365-copilot-diversifies-beyond-openai-2025-09-24/?utm_source=openai"
+        },
+        {
+          "end_index": 4324,
+          "start_index": 4259,
+          "title": "On the Origin of LLMs: An Evolutionary Tree and Graph for 15,821 Large Language Models",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2307.09793?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction has come true. Capabilities to run LLMs and build data-scraped alternatives have commoditized rapidly since early 2023, enabling numerous new competitors. OpenAI's enterprise LLM market share dropped from 50% (end-2023) to 25% by mid-2025 ([Menlo VC 2025 Mid-Year LLM Update](https://menlovc.com/perspective/2025-mid-year-llm-market-update/)). Open-source LLMs surged, with nearly twice as many releases as closed-source since 2023 ([Medium: Rise of Open-Source LLMs](https://medium.com/@IbrahimMalick/the-rise-of-open-source-llms-a-game-changer-for-ai-innovation-bdb0e9885e61); [ACLU](https://www.aclu.org/news/privacy-technology/open-source-llms)). New entrants like Anthropic (Claude), Mistral, DeepSeek, xAI (Grok), and startups (e.g., Cursor valued at $10B in 2025) challenge incumbents ([Forbes AI 50](https://www.forbes.com/lists/ai50/); [TechCrunch: 49 US AI startups $100M+ in 2025](https://techcrunch.com/2025/11/26/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/)). Microsoft noted LLMs commoditizing ([Microsoft WorkLab 2024](https://www.microsoft.com/en-us/worklab/llms-are-becoming-a-commodity-now-what)). Progress faster than expected per multiple sources ([State of AI Report 2025](https://www.stateof.ai/); Reddit/Singularity). Intense competition confirmed in Dec 2025 reports ([Nathan Benaich newsletter](https://nathanbenaich.substack.com/p/state-of-ai-december-2025-newsletter))."
+    }
+  ]
+}

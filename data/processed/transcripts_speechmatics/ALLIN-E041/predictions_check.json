@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "count": 7,
+    "count_by_result": {
+      "right": 4,
+      "wrong": 1,
+      "ambiguous": 1,
+      "inconclusive": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "F-00:08:47.560",
+      "result": "right",
+      "explanation": "Evidence from U.S. surveillance data shows that both components of Friedberg\u2019s prediction came true.\n\n1. **Deaths rose substantially after late July 2021.**  In CDC\u2019s Weekly Review for the week of July 21, 2021 (published July 23), the U.S. 7\u2011day moving average of new COVID\u201119 deaths was **223 per day**.\u00a0\u00a0\u0000cite\u0006turn6search0\u000f By late September 2021, during the Delta surge, CDC reported a **7\u2011day average of 1,476 deaths per day** (week of September 29), more than a six\u2011fold increase from July levels.\u00a0\u00a0\u0000cite\u0006turn6search5\u000f This matches his claim that deaths would rise from the then\u2011current baseline.\n\n2. **The increase was driven primarily by unvaccinated people.**  A CDC analysis of 13 jurisdictions for April 4\u2013July 17, 2021 (i.e., leading right up to this podcast) found that **91% of COVID\u201119 deaths** in that period occurred among people who were *not fully vaccinated*, with only 9% among fully vaccinated individuals.\u00a0\u00a0\u0000cite\u0006turn7search0\u000f  A Peterson\u2011KFF analysis using CDC data from 25 jurisdictions estimated that from **June 2021 through March 2022**, about **270,000 of 389,000 adult COVID deaths (\u224869%)** occurred in unvaccinated adults, and that 86% of adult deaths in June 2021 and still 60% in early 2022 were among the unvaccinated.\u00a0\u00a0\u0000cite\u0006turn9view0\u000f  Separate KFF/Epic work similarly found that from June\u2013September 2021, **around 85% of COVID hospitalizations** were in people not fully vaccinated, with CDC data implying roughly 95\u201399% of early\u2011summer 2021 hospital admissions were among the unvaccinated.\u00a0\u00a0\u0000cite\u0006turn0search0\u0006turn0search1\u000f  These data show that as deaths climbed during the Delta wave after July 2021, the **\u201cbulk\u201d of those severe outcomes were indeed in the unvaccinated**, as Friedberg predicted.\n\nGiven that both (a) deaths clearly rose from late\u2011July levels and (b) the surge was overwhelmingly concentrated in unvaccinated people, this prediction is best classified as **right**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "US COVID-19 deaths increased after July 2021 due to the Delta wave. Weekly deaths rose from ~2,000-3,000 in late July to peaks of ~13,000-15,000 in September 2021 (CDC Provisional Death Counts: https://www.cdc.gov/nchs/nvss/vsrr/covid_weekly/index.htm; Our World in Data COVID deaths tracker). This increase was primarily among unvaccinated people, who accounted for the bulk of deaths: e.g., ~74% of deaths Oct-Dec 2021 (Delta period) were unvaccinated vs. 26% vaccinated (CDC MMWR: https://www.cdc.gov/mmwr/volumes/72/wr/mm7206a3.htm); unvaccinated death rates 16x higher than vaccinated (RR=16.2). Earlier Delta data shows similar disparities, with nearly all August 2021 deaths among unvaccinated (KFF/Health System Tracker: https://www.healthsystemtracker.org/brief/covid-19-continues-to-be-a-leading-cause-of-death-in-the-u-s-in-august-2021/). CDC confirmed unvaccinated had 53x higher death risk in periods following (CDC MMWR vol.71: https://www.cdc.gov/mmwr/volumes/71/wr/mm7104e2.htm)."
+    },
+    {
+      "id": "A-00:12:52.680",
+      "result": "wrong",
+      "explanation": "Based on evidence up to **November 29, 2025**, no SARS\u2011CoV\u20112 variant has matched the combination of outcomes Chamath described:\n\n1. **\"Overcome all the vaccines we have\"**  \n   - Variants like **Delta** and especially **Omicron** and its sublineages have shown **immune escape**, reducing protection against infection and mild disease. However, updated vaccines (bivalent and later XBB\u2011targeting, then JN.1\u2011/KP.2\u2011adapted) have continued to provide substantial protection against **severe disease, hospitalization, and death**, especially in boosted and high\u2011risk groups, rather than being completely \u201covercome.\u201d \n\n2. **\"Kill enormous numbers of people, including the vaccinated\"**  \n   - COVID\u201119 has caused very large global mortality overall, but after mass vaccination, excess mortality and death rates have been **disproportionately concentrated among the unvaccinated, under\u2011vaccinated, and the very old / clinically vulnerable**, not \u201cenormous numbers\u201d of otherwise\u2011typical vaccinated people. No post\u2011vaccine variant has had mortality anywhere near what this quote implies among vaccinated populations.\n\n3. **\"Will literally shut the economy down\"**  \n   - Since mid\u20112021, there **have not** been renewed shutdowns of the global or U.S. economy comparable to the broad stay\u2011at\u2011home orders and mandated closures of early 2020. There have been **localized or sector\u2011specific disruptions** and short\u2011term restrictions in some countries during waves (e.g., late Delta, early Omicron, and some later surges), but economic activity overall has **remained open**, with most countries moving to mitigation and living\u2011with\u2011COVID strategies.\n\nBecause by late 2025:\n- No variant has fully **defeated all available vaccines** in preventing severe disease,\n- No variant has caused **catastrophic mortality among vaccinated people**, and\n- There has been **no return to 2020\u2011style comprehensive economic shutdowns**,\n\nthe specific compound prediction as stated is **wrong** rather than merely \"too early\" or \"ambiguous.\"",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "No COVID-19 variant post-July 2021 substantially evaded vaccines to cause **very high mortality including among vaccinated** people or force renewed economy-wide shutdowns. Omicron and subvariants (e.g., XBB, NB.1.8.1, XFG in 2025) showed immune evasion for *infections* but vaccines/boosters retained strong protection against severe outcomes/deaths (e.g., [NEJM Oct 2025](https://www.nejm.org/doi/full/10.1056/NEJMoa2510226): 2024-2025 vaccine reduced deaths by ~2.2 per 100k; [Our World in Data](https://ourworldindata.org/grapher/united-states-rates-of-covid-19-deaths-by-vaccination-status): consistently lower death rates in vaccinated). Global/US lockdowns ended by 2022-2023 ([Wikipedia COVID lockdowns](https://en.wikipedia.org/wiki/COVID-19_lockdowns), [CDC timeline](https://www.cdc.gov/museum/timeline/covid19.html)); no renewed shutdowns despite surges ([Reuters Mar 2025](https://www.reuters.com/business/healthcare-pharmaceuticals/five-years-economic-impact-covid-19-lingers-2025-03-08/)). Mortality declined sharply post-vaccination/immunity; no 'enormous numbers of deaths' forcing economic halt."
+    },
+    {
+      "id": "F-00:41:15.620",
+      "result": "right",
+      "explanation": "Evidence since 2021 supports Friedberg\u2019s forecast that COVID-19 would become and remain an endemic virus with ongoing outbreaks, despite extensive infection and vaccination.\n\n* By August 2024, U.S. health officials (CDC) publicly described COVID-19 as **endemic throughout the world**, emphasizing it is \u201chere to stay\u201d and will continue to circulate and cause illness indefinitely, managed alongside other endemic diseases rather than as a unique pandemic threat.\n  ([kuaf.com](https://www.kuaf.com/npr-news/2024-08-09/is-covid-endemic-yet-yep-says-the-cdc-heres-what-that-means?utm_source=openai))\n* CDC guidance in 2024 notes that COVID-19 **surges throughout the year**, with peaks in winter and additional surges in other seasons driven by new variants and waning immunity\u2014i.e., ongoing intermittent modest-to-severe outbreaks rather than elimination. ([restoredcdc.org](https://restoredcdc.org/www.cdc.gov/ncird/whats-new/covid-19-can-surge-throughout-the-year.html?utm_source=openai))\n* A March 2025 analysis reports that five years after the pandemic began, experts consider COVID-19 to have **transitioned into an endemic phase**, still highly transmissible and capable of severe outbreaks, even though annual deaths and hospitalizations have declined. ([washingtonpost.com](https://www.washingtonpost.com/wellness/2025/03/13/covid-endemic-pandemic-five-years/?utm_source=openai))\n* That same reporting notes that over **80% of U.S. adults have received at least one COVID vaccine dose**, yet the virus continues to circulate and cause significant morbidity and mortality, confirming the prediction that circulation would persist \u201cno matter how many people get it [or] get vaccinated.\u201d ([washingtonpost.com](https://www.washingtonpost.com/wellness/2025/03/13/covid-endemic-pandemic-five-years/?utm_source=openai))\n* Reviews of SARS\u2011CoV\u20112 epidemiology since 2022 explicitly describe or project a **transition to endemicity**, with the virus expected to become a long-term, seasonal/endemic human coronavirus rather than being eradicated. ([en.wikipedia.org](https://en.wikipedia.org/wiki/COVID-19_pandemic?utm_source=openai))\n* Expert commentary in 2024 characterizes the situation as **\u201cendemic but with periodic epidemics,\u201d** directly matching the idea of ongoing intermittent outbreaks over many years. ([opb.org](https://www.opb.org/article/2024/08/09/is-covid-endemic-yet-yep-says-the-cdc-here-s-what-that-means/?utm_source=openai))\n\nBy late 2025, COVID-19 is widely regarded as an endemic virus that continues to circulate globally with periodic surges, despite widespread prior infection and vaccination. This aligns closely with Friedberg\u2019s 2021 prediction, so it is best judged **right**.",
+      "sources": [
+        {
+          "end_index": 634,
+          "start_index": 502,
+          "title": "Is COVID endemic yet? Yep, says the CDC. Here's what that means",
+          "type": "url_citation",
+          "url": "https://www.kuaf.com/npr-news/2024-08-09/is-covid-endemic-yet-yep-says-the-cdc-heres-what-that-means?utm_source=openai"
+        },
+        {
+          "end_index": 1027,
+          "start_index": 893,
+          "title": "Restored CDC | COVID-19 can surge throughout the year | NCIRD | CDC",
+          "type": "url_citation",
+          "url": "https://restoredcdc.org/www.cdc.gov/ncird/whats-new/covid-19-can-surge-throughout-the-year.html?utm_source=openai"
+        },
+        {
+          "end_index": 1426,
+          "start_index": 1299,
+          "title": "Five years since the pandemic began, covid may now be endemic, experts say",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/wellness/2025/03/13/covid-endemic-pandemic-five-years/?utm_source=openai"
+        },
+        {
+          "end_index": 1860,
+          "start_index": 1733,
+          "title": "Five years since the pandemic began, covid may now be endemic, experts say",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/wellness/2025/03/13/covid-endemic-pandemic-five-years/?utm_source=openai"
+        },
+        {
+          "end_index": 2172,
+          "start_index": 2085,
+          "title": "COVID-19 pandemic",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic?utm_source=openai"
+        },
+        {
+          "end_index": 2485,
+          "start_index": 2354,
+          "title": "Is COVID endemic yet? Yep, says the CDC. Here\u2019s what that means - OPB",
+          "type": "url_citation",
+          "url": "https://www.opb.org/article/2024/08/09/is-covid-endemic-yet-yep-says-the-cdc-here-s-what-that-means/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "COVID-19 has become and remains endemic, circulating continuously with intermittent waves/outbreaks through 2025, despite high vaccination and infection rates. CDC data (Nov 2025) shows infections growing in 19 states; WHO reports 11% test positivity peaks (May 2025); Harvard (2024) and BU SPH (Mar 2025) confirm endemic phase with seasonal surges (e.g., summer 2024, winter 2024-25 per CIDRAP, Nebraska Med). Wikipedia and Nature articles affirm ongoing endemicity with modest-to-severe outbreaks due to variants."
+    },
+    {
+      "id": "F-00:47:50.570",
+      "result": "right",
+      "explanation": "Evidence shows that DeepMind did exactly what Friedberg described.\n\n* **Scale (>100M proteins from many species):**\n  * The AlphaFold Protein Structure Database (AFDB) launched in July 2021 with ~350k structures for humans and 20 model organisms. ([deepmind.google](https://deepmind.google/science/alphafold/?utm_source=openai))\n  * On **28 July 2022**, DeepMind and EMBL\u2011EBI expanded AFDB to **over 200 million predicted protein structures** covering almost the whole UniProt/\u201cnearly all catalogued proteins known to science,\u201d including plants, bacteria, animals, and other organisms \u2014 far above the 100M threshold and clearly spanning many species. ([embl.org](https://www.embl.org/news/science/alphafold-200-million/?utm_source=openai))\n  * Later summaries and analyses confirm that AFDB now contains **over 214 million** predicted structures. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/37704730/?utm_source=openai))\n\n* **Freely available and searchable:**\n  * DeepMind and EMBL\u2011EBI explicitly describe the expanded AlphaFold database as **freely and openly available** to the scientific community. ([embl.org](https://www.embl.org/news/science/alphafold-200-million/?utm_source=openai))\n  * EMBL\u2011EBI\u2019s Job Dispatcher blog notes that the AFDB dataset is available for **sequence searching** in their similarity-search tools and via Dbfetch, and a 2024 NAR paper details expanded search and filtering capabilities, confirming that the database is actively **searchable**. ([ebi.ac.uk](https://www.ebi.ac.uk/jdispatcher/blog/2022-07-28-new-afdb-release?utm_source=openai))\n\n* **Timing (\u201cover the coming months\u201d after July 2021):**\n  * Friedberg spoke in July 2021, citing DeepMind\u2019s plan to scale to >100M proteins \"over the coming months.\" The AFDB\u2019s massive expansion to >200M structures occurred on **28 July 2022**, about one year later. ([deepmind.google](https://deepmind.google/science/alphafold/?utm_source=openai))\n  * The foundational Nucleic Acids Research paper itself used the same language, stating that **\u201cin the coming months\u201d** the database would be expanded to cover over 130M UniRef90 cluster representatives, i.e., >100M proteins, which is what was then realized by the 2022 expansion. ([academic.oup.com](https://academic.oup.com/nar/article-abstract/50/D1/D439/6430488?utm_source=openai))\n\nGiven that (1) the database did expand beyond 100M proteins, (2) they are from many species, (3) the data are freely available and searchable, and (4) this major expansion occurred roughly a year after the July 2021 prediction\u2014consistent with the loose \u201ccoming months\u201d phrasing\u2014Friedberg\u2019s prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 364,
+          "start_index": 283,
+          "title": "AlphaFold - Google DeepMind",
+          "type": "url_citation",
+          "url": "https://deepmind.google/science/alphafold/?utm_source=openai"
+        },
+        {
+          "end_index": 776,
+          "start_index": 688,
+          "title": "AlphaFold predicts structure of almost every catalogued protein known to science | EMBL",
+          "type": "url_citation",
+          "url": "https://www.embl.org/news/science/alphafold-200-million/?utm_source=openai"
+        },
+        {
+          "end_index": 973,
+          "start_index": 885,
+          "title": "Clustering predicted structures at the scale of the known protein universe - PubMed",
+          "type": "url_citation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37704730/?utm_source=openai"
+        },
+        {
+          "end_index": 1247,
+          "start_index": 1159,
+          "title": "AlphaFold predicts structure of almost every catalogued protein known to science | EMBL",
+          "type": "url_citation",
+          "url": "https://www.embl.org/news/science/alphafold-200-million/?utm_source=openai"
+        },
+        {
+          "end_index": 1631,
+          "start_index": 1532,
+          "title": "New AlphaFold DB release with 200+ million predicted structures",
+          "type": "url_citation",
+          "url": "https://www.ebi.ac.uk/jdispatcher/blog/2022-07-28-new-afdb-release?utm_source=openai"
+        },
+        {
+          "end_index": 1987,
+          "start_index": 1906,
+          "title": "AlphaFold - Google DeepMind",
+          "type": "url_citation",
+          "url": "https://deepmind.google/science/alphafold/?utm_source=openai"
+        },
+        {
+          "end_index": 2375,
+          "start_index": 2271,
+          "title": "AlphaFold Protein Structure Database: massively expanding the structural coverage of protein-sequence space with high-accuracy models | Nucleic Acids Research | Oxford Academic",
+          "type": "url_citation",
+          "url": "https://academic.oup.com/nar/article-abstract/50/D1/D439/6430488?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The AlphaFold Protein Structure Database launched on July 22, 2021, with ~365,000 predicted structures from 21 model organisms, including humans ([EMBL press release](https://www.embl.org/news/science/alphafold-database-launch/), [DeepMind](https://deepmind.google/science/alphafold/)). DeepMind announced plans to expand to over 100 million structures 'in the coming months' ([MIT Technology Review, July 22, 2021](https://www.technologyreview.com/2021/07/22/1029973/deepmind-alphafold-protein-folding-biology-disease-drugs-proteome/)). However, the database grew gradually to nearly 1 million structures before the major expansion to over 200 million on July 28, 2022, covering nearly all catalogued proteins in UniProt from many species ([EMBL announcement](https://www.ebi.ac.uk/about/news/technology-and-innovation/alphafold-200-million), [DeepMind blog, July 22, 2022](https://deepmind.google/blog/putting-the-power-of-alphafold-into-the-worlds-hands/)). No evidence of reaching over 100 million unique structures within months (e.g., by late 2021). The database is freely available and searchable ([AlphaFold DB](https://alphafold.ebi.ac.uk/)), but the timeline failed. ([Wikipedia](https://en.wikipedia.org/wiki/AlphaFold), [NAR paper, 2022](https://academic.oup.com/nar/article/50/D1/D439/6430488))."
+    },
+    {
+      "id": "F-00:51:16.570",
+      "result": "ambiguous",
+      "explanation": "Available evidence shows AlphaFold and its protein-structure database (launched July 22, 2021) have been widely adopted and clearly inspired some new therapeutics-focused companies, but there is no reliable count tying **hundreds** of new drug companies specifically to that database.\n\nKey points:\n\n* The AlphaFold Protein Structure Database was released in July 2021 and rapidly expanded to >200 million predicted protein structures, covering almost all known proteins.([en.wikipedia.org](https://en.wikipedia.org/wiki/AlphaFold?utm_source=openai))  It has since been used by millions of researchers in over 190 countries and has become a routine tool in disease-focused research and early drug discovery.([sciencebusiness.net](https://sciencebusiness.net/network-updates/embl-ebi-and-google-deepmind-renew-partnership-and-release-update-alphafold?utm_source=openai))  This supports the idea that it is an important enabling technology for therapeutics.\n\n* Multiple new drug discovery startups explicitly build on AlphaFold or its ideas. Isomorphic Labs (founded 2021 as a DeepMind/Alphabet spin\u2011out) describes its founding as **built on AlphaFold** and uses AlphaFold models centrally in its AI drug-design engine.([startupsweek.com](https://startupsweek.com/2025/04/02/google-deepmind-ceos-startup-raises-600-million/?utm_source=openai))  Latent Labs, founded in 2025 by a former AlphaFold2 scientist, likewise aims to use AI and protein-structure knowledge to design synthetic therapeutic proteins.([ft.com](https://www.ft.com/content/92143d49-c777-4bba-8857-b4ef7e82ebd4?utm_source=openai))  A Guardian analysis notes \"companies built on AlphaFold\" and highlights AlphaProteo using AlphaFold\u2019s structures to design drug-like molecules.([theguardian.com](https://www.theguardian.com/commentisfree/ng-interactive/2025/mar/28/ai-alphafold-biology-protein-structure?utm_source=openai))  These examples confirm that **some** therapeutics-focused companies have indeed started around this resource.\n\n* However, industry mapping of \"AI in drug discovery\" shows a broad ecosystem. A 2025 BiopharmaTrend report tracks **500+ AI-related startups in pharma/biotech**, but many of these are not de novo drug-discovery companies (they may focus on clinical trials, repurposing, disease modeling, or software tools).([biopharmatrend.com](https://www.biopharmatrend.com/ai-drug-discovery-pipeline/?utm_source=openai))  Public surveys and market reports categorize companies by use of AI, not by whether they **rely materially on the AlphaFold database** or were *founded because* the database became available.\n\n* None of the major surveys, consulting reports, or news overviews found provide a breakdown such as \"number of post\u20112021 drug-discovery startups whose core platform depends on AlphaFold/its database\", nor even a rough \"hundreds of AlphaFold\u2011based startups\" figure. They typically discuss AlphaFold as a widely used tool, mention a handful of emblematic startups, and then describe a much larger AI\u2011drug\u2011discovery sector without linking company formation counts causally to AlphaFold.\n\nGiven this, we can confidently say that **some** new therapeutics-focused companies were founded around AlphaFold and its database, and that its impact on the ecosystem is substantial. But we **cannot** empirically verify that \"hundreds\" of such companies have been founded *because of* that database, nor can we rule it out using available data. The causal, quantitative claim in the prediction therefore cannot be determined from current evidence, even though enough time has passed since 2021 to observe many company launches. Hence the outcome is best classified as **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 593,
+          "start_index": 514,
+          "title": "AlphaFold",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/AlphaFold?utm_source=openai"
+        },
+        {
+          "end_index": 912,
+          "start_index": 750,
+          "title": "EMBL-EBI and Google DeepMind renew partnership and release update to AlphaFold Database | Science|Business",
+          "type": "url_citation",
+          "url": "https://sciencebusiness.net/network-updates/embl-ebi-and-google-deepmind-renew-partnership-and-release-update-alphafold?utm_source=openai"
+        },
+        {
+          "end_index": 1386,
+          "start_index": 1262,
+          "title": "Google DeepMind CEO\u2019s Startup Raises $600 Million - Startups Week",
+          "type": "url_citation",
+          "url": "https://startupsweek.com/2025/04/02/google-deepmind-ceos-startup-raises-600-million/?utm_source=openai"
+        },
+        {
+          "end_index": 1641,
+          "start_index": 1548,
+          "title": "Ex-DeepMind scientist launches AI drug discovery venture",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/92143d49-c777-4bba-8857-b4ef7e82ebd4?utm_source=openai"
+        },
+        {
+          "end_index": 1934,
+          "start_index": 1788,
+          "title": "AI may help us cure countless diseases \u2013 and usher in a new golden age of medicine | Samuel Hume | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/commentisfree/ng-interactive/2025/mar/28/ai-alphafold-biology-protein-structure?utm_source=openai"
+        },
+        {
+          "end_index": 2459,
+          "start_index": 2359,
+          "title": "It\u2019s Been a Decade of AI in the Drug Discovery Race. What\u2019s Next?",
+          "type": "url_citation",
+          "url": "https://www.biopharmatrend.com/ai-drug-discovery-pipeline/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence supports hundreds of new drug discovery or therapeutics companies founded post-July 2021 that rely *materially* on DeepMind's AlphaFold Protein Structure Database. While AlphaFold has been widely used by millions of researchers and impacted drug discovery (e.g., [DeepMind's 5-year impact blog](https://deepmind.google/blog/alphafold-five-years-of-impact/)), specific examples include Isomorphic Labs (founded 2021, Alphabet subsidiary) and a few DeepMind alumni startups like Latent Labs (2025). Lists of AI drug discovery startups show dozens at most: e.g., [Tracxn](https://tracxn.com) reports ~29 new AI drug discovery startups/year average (potentially ~120 since 2021, but not all AlphaFold-reliant); [LabioTech 12 companies](https://www.labiotech.eu/best-biotech/ai-drug-discovery-companies/), [STAT 7 in AI protein design](https://www.statnews.com/2024/11/05/who-to-know-series-7-biotech-companies-ai-protein-design/), [TechLifeSci 14 startups](https://www.techlifesci.com/p/14-startups-in-ai-protein-design). Broader 'hundreds' claims refer to total AI/biotech firms, not new ones causally tied to the database (e.g., [Alvarez & Marsal](https://www.alvarezandmarsal.com/insights/2024-life-sciences-snapshot-year-review)). Enough time (4.5 years) has passed to evaluate."
+    },
+    {
+      "id": "A-01:03:30.000",
+      "result": "inconclusive",
+      "explanation": "By late 2025, the large tech platforms remain highly centralized and dominant. Google still handles roughly 89\u201391% of global search queries across devices, while Bing and other competitors remain in low single digits, indicating only small erosions of its dominance rather than a structural decentralization of the market.\u0001cite\u0002turn0search2\u0002turn0search5\u0001 Amazon continues to control around 37\u201338% of U.S. e\u2011commerce\u2014an order of magnitude larger than its nearest rivals\u2014showing persistent concentration in online retail.\u0001cite\u0002turn0search6\u0002turn0search7\u0001\n\nThere *has* been movement on the legislative and regulatory front that points in the direction Chamath described. The EU\u2019s Digital Markets Act formally designates Alphabet, Amazon, Apple, Meta, Microsoft, and others as \u201cgatekeepers\u201d and imposes interoperability and self\u2011preferencing limits meant to open up competition.\u0001cite\u0002turn0search0\u0001 In the U.S., the Department of Justice has won major antitrust decisions against Google in both search and ad tech, with courts finding it violated Section 2 of the Sherman Act, though remedies and appeals are still ongoing and no breakup or equivalent structural remedy has yet occurred.\u0001cite\u0002turn0search18\u0002turn0search20\u0001\n\nMeanwhile, the business reality is that the biggest platforms have become *more* valuable; Alphabet is close to a $4 trillion valuation and is described in financial press as a \u201cmonument to monopoly power,\u201d underscoring that market structure remains highly centralized even amidst AI\u2011driven competition.\u0001cite\u0002turn0news16\u0001\n\nSince Chamath framed this as a **\u201clong run\u201d** prediction without a concrete time horizon, and the legal/technological shifts that might decentralize these markets are still in early or unresolved stages, it\u2019s too early to say whether we *ultimately* end up in a \u201cmaterially healthier\u201d and more decentralized structure than in 2021. On current evidence, the trend he describes has begun in policy and innovation terms but has not yet produced the structural outcome he forecast. Therefore the status as of November 2025 is **inconclusive (too early to tell)** rather than clearly right or wrong.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "As of December 2025, approximately 4.5 years after the July 2021 prediction, there has been no material shift from the centralized, monopolistic structure of major tech platforms like Google, Meta (Facebook), and Amazon to a more decentralized market. Google maintains ~90% global search market share ([Statcounter](https://gs.statcounter.com/search-engine-market-share)), Meta and Google dominate digital advertising (~50% combined, [Axios Oct 2025](https://www.axios.com/2025/10/18/google-meta-advertising)), and Facebook/YouTube lead U.S. social media usage ([Pew Nov 2025](https://www.yahoo.com/news/articles/survey-youtube-facebook-still-dominate-180007422.html)). Antitrust actions include U.S. rulings affirming Google's search monopoly with restraints but no breakup ([NYT Sep 2025](https://www.nytimes.com/2025/09/03/technology/google-ruling-antitrust.html)), ongoing ad tech cases, and EU DMA fines/enforcement against Apple/Meta/Google for compliance issues without fostering decentralization ([EC Apr 2025](https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1085); [Bruegel May 2025](https://www.bruegel.org/newsletter/how-does-current-dma-enforcement-affect-digital-market-competition)). No evidence of innovation-driven decentralization (e.g., Web3/DeFi remains niche); AI power stays concentrated in Big Tech ([Pymnts Oct 2025](https://www.pymnts.com/artificial-intelligence-2/2025/decentralization-emerges-as-a-test-of-big-techs-ai-power/)). Competitive/societal outcomes not materially healthier, with dominance intact."
+    },
+    {
+      "id": "C-01:07:34.000",
+      "result": "right",
+      "explanation": "Evidence from 2021\u20132025 shows that the privately led \u201cspace race\u201d among SpaceX, Blue Origin, and Virgin Galactic has in fact produced major engineering advances and enabled new scientific work beyond the mid\u20112021 state of the art.\n\n**1. Clear engineering breakthroughs**\n- **SpaceX Starship**: Since 2023, Starship\u2014now the most powerful rocket ever built, powered by clusters of methane full\u2011flow staged\u2011combustion Raptor engines\u2014has progressed from initial failures to a fully intact fourth test flight on June 6, 2024. That flight reached space, completed stage separation, survived re\u2011entry, and executed controlled splashdowns of both stages, a substantial leap beyond any capability that existed in mid\u20112021. ([theguardian.com](https://www.theguardian.com/science/article/2024/jun/06/spacex-starship-successful-test-flight?utm_source=openai))  This is precisely the kind of large, reusable super\u2011heavy system Sacks was referring to.\n- **Blue Origin New Glenn**: Blue Origin advanced from only suborbital New Shepard flights in 2021 to flying **New Glenn**, a heavy\u2011lift, partially reusable orbital rocket first launched in January 2025 and now with two successful missions. New Glenn can loft ~45 metric tons to LEO and has a reusable first stage designed for many re\u2011flights; the second mission in November 2025 both deployed NASA\u2019s ESCAPADE Mars probes and achieved the first successful booster landing, a major new engineering capability for the company and for commercial launch options beyond what existed in 2021. ([en.wikipedia.org](https://en.wikipedia.org/wiki/New_Glenn?utm_source=openai))\n- **Deepening reusability across the sector**: These developments\u2014Starship\u2019s large fully reusable architecture and New Glenn\u2019s heavy\u2011lift, barge\u2011landed first stage\u2014go significantly beyond the mid\u20112021 baseline of Falcon 9 / New Shepard / unproven Starship prototypes, and they are explicitly motivated by competitive commercial goals.\n\n**2. Scientific and technological advances enabled by these systems**\n- **Suborbital research (Virgin Galactic & Blue Origin)**: Virgin Galactic\u2019s *Galactic 01* (June 2023), its first commercial flight, was a dedicated Italian Air Force research mission conducting 13 human\u2011tended and autonomous microgravity experiments in biomedical science, thermo\u2011fluid dynamics, and novel materials, all using the suborbital platform that didn\u2019t exist in operational form in 2021. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Galactic_01?utm_source=openai))  Subsequent flights like *Galactic 07* carried a mix of private astronauts and a national agency researcher, again using the vehicle as a microgravity lab. ([virgin.com](https://www.virgin.com/about-virgin/latest/virgin-galactic-completes-12th-successful-spaceflight?utm_source=openai))\n- **Blue Origin New Shepard science missions**: New Shepard has evolved into a routine research platform: by 2025 it has flown over 175 scientific payloads above the K\u00e1rm\u00e1n line, including NASA\u2011sponsored technology tests such as precision lunar\u2011landing sensors and, notably in 2025, a flight that spun the capsule to simulate lunar gravity for about two minutes to test lunar\u2011surface technologies\u2014something that previously required far more expensive facilities. ([blueorigin.com](https://www.blueorigin.com/news/new-shepard-ns-33-mission?utm_source=openai))\n- **Mars science via commercial heavy lift (ESCAPADE)**: Blue Origin\u2019s New Glenn has now launched NASA\u2019s twin ESCAPADE orbiters, which will study Mars\u2019 magnetic environment and atmospheric loss\u2014science missions that, by design, ride on this new commercial, reusable heavy\u2011lift system rather than bespoke government rockets. ([apnews.com](https://apnews.com/article/4e3e6c380b8294b557618a6fea92282b?utm_source=openai))  While most of the scientific results will emerge after 2025, the missions themselves are a direct outcome of the private heavy\u2011lift race.\n\nGiven these concrete advances\u2014large fully or partially reusable heavy\u2011lift systems that did not yet exist operationally in mid\u20112021, and a growing stream of suborbital and interplanetary science enabled by them\u2014the prediction that this new privately driven space race would produce \u201cgreat engineering and scientific breakthroughs\u201d in the following years has clearly been borne out.",
+      "sources": [
+        {
+          "end_index": 883,
+          "start_index": 750,
+          "title": "SpaceX's massive Starship rocket records first successful test flight",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/science/article/2024/jun/06/spacex-starship-successful-test-flight?utm_source=openai"
+        },
+        {
+          "end_index": 1641,
+          "start_index": 1562,
+          "title": "New Glenn",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/New_Glenn?utm_source=openai"
+        },
+        {
+          "end_index": 2532,
+          "start_index": 2451,
+          "title": "Galactic 01",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Galactic_01?utm_source=openai"
+        },
+        {
+          "end_index": 2819,
+          "start_index": 2689,
+          "title": "Virgin Galactic completes 12th successful spaceflight | Virgin",
+          "type": "url_citation",
+          "url": "https://www.virgin.com/about-virgin/latest/virgin-galactic-completes-12th-successful-spaceflight?utm_source=openai"
+        },
+        {
+          "end_index": 3379,
+          "start_index": 3284,
+          "title": "Blue Origin\u2019s New Shepard Completes 33rd Mission to Space | Blue Origin",
+          "type": "url_citation",
+          "url": "https://www.blueorigin.com/news/new-shepard-ns-33-mission?utm_source=openai"
+        },
+        {
+          "end_index": 3798,
+          "start_index": 3705,
+          "title": "Blue Origin launches huge rocket carrying twin NASA spacecraft to Mars",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/4e3e6c380b8294b557618a6fea92282b?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Since mid-2021, private companies have achieved major engineering advances beyond prior state-of-the-art. SpaceX's Starship conducted 11 test flights by Oct 2025, including 6 successes, orbital insertions, Super Heavy booster reuses (e.g., Flight 9 May 2025), and tower catches starting Flight 7 (Jan 2025) ([SpaceX Starship Wikipedia](https://en.wikipedia.org/wiki/SpaceX_Starship), [SpaceX Updates](https://www.spacex.com/updates)). Blue Origin's New Glenn reached orbit on first launch (Jan 16, 2025), followed by second launch (Nov 13, 2025) with booster barge landing and NASA EscaPADE Mars science payload ([New Glenn Wikipedia](https://en.wikipedia.org/wiki/New_Glenn), [Reuters](https://www.reuters.com/science/blue-origin-launches-new-glenn-rocket-companys-first-nasa-scale-science-mission-2025-11-13/)). Virgin Galactic completed 12+ suborbital flights and advanced Delta-class ships ([Virgin Galactic press](https://press.virgingalactic.com/virgin-galactic-completes-11th-successful-spaceflight)). These demonstrate reusable heavy-lift rocketry and science missions impossible pre-2021."
+    }
+  ]
+}

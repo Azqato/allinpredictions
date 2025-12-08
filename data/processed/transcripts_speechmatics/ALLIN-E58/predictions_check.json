@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "count": 4,
+    "count_by_result": {
+      "right": 2,
+      "wrong": 1,
+      "inconclusive": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:09:04.950",
+      "result": "right",
+      "explanation": "At the time of the episode (11 Dec 2021), the latest published CPI data showed U.S. all\u2011items CPI\u2011U up **6.8% year\u2011over\u2011year in November 2021**.([bls.gov](https://www.bls.gov/opub/ted/2021/consumer-prices-up-6-8-percent-for-year-ended-november-2021.htm?utm_source=openai)) Sacks said this \"looks like it's headed to 7%\" on a year\u2011over\u2011year basis.\n\nThe next CPI release showed that for **December 2021**, the 12\u2011month percent change in the all\u2011items CPI\u2011U was **7.0%**, i.e., exactly 7% year\u2011over\u2011year inflation.([bls.gov](https://www.bls.gov/news.release/archives/cpi_01122022.htm?ftag=YHF4eb9d17&utm_source=openai)) This data was released on 12 Jan 2022, just one month after the podcast.\n\nSince headline U.S. CPI YoY did in fact reach approximately 7% very soon after the prediction, the forecast was borne out by subsequent data.",
+      "sources": [
+        {
+          "end_index": 305,
+          "start_index": 177,
+          "title": "Consumer prices up 6.8 percent for year ended November 2021 : The Economics Daily: U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/ted/2021/consumer-prices-up-6-8-percent-for-year-ended-november-2021.htm?utm_source=openai"
+        },
+        {
+          "end_index": 653,
+          "start_index": 548,
+          "title": "Consumer Price Index News Release - 2021 M12 Results",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/news.release/archives/cpi_01122022.htm?ftag=YHF4eb9d17&utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "U.S. CPI YoY for November 2021 was 6.8% ([BLS](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm), [CNBC Dec 10, 2021](https://www.cnbc.com/2021/12/10/consumer-price-index-november-2021.html)). It reached 7.0% in December 2021 ([usinflationcalculator.com](https://www.usinflationcalculator.com/inflation/current-inflation-rates/), [YCharts](https://ycharts.com/indicators/us_inflation_rate)), exactly \"approximately 7%\" and \"soon\" (next month). It continued rising, peaking at 9.1% in June 2022. Prediction correct. ([BLS CPI historical](https://www.bls.gov/regions/mid-atlantic/data/consumerpriceindexhistorical_us_table.htm))."
+    },
+    {
+      "id": "A-00:45:27.200",
+      "result": "wrong",
+      "explanation": "Key parts of Sacks\u2019s conditional prediction did *not* match what actually happened in 2022, even though the main political precondition mostly did.\n\n1. **Precondition: Manchin kills Build Back Better / no further large-scale stimulus.**  \n   * On December 19, 2021, Sen. Joe Manchin publicly announced he could not support President Biden\u2019s Build Back Better Act, effectively killing the bill in its then\u2011current $1.7\u20131.75 trillion form.([cnbc.com](https://www.cnbc.com/2021/12/19/sen-joe-manchin-says-he-wont-vote-for-bidens-build-back-better-act.html?utm_source=openai))  \n   * In 2022, Democrats and Manchin negotiated a *much smaller, reworked* package\u2014what became the **Inflation Reduction Act (IRA)**\u2014passed via reconciliation and signed on August 16, 2022. The IRA combined climate and health spending with tax increases and drug\u2011pricing reforms, and was scored as modestly **reducing** deficits (~$238\u2013264 billion over 10 years), not as a huge net new stimulus.([en.wikipedia.org](https://en.wikipedia.org/wiki/Inflation_Reduction_Act?utm_source=openai))  \n   * Separate analyses note that, even including other Biden\u2011era laws, the net effect by mid\u20112022 was significant **fiscal drag** versus the earlier COVID\u2011era stimulus (e.g., Strategas and others cited 2022 as seeing the largest fiscal drag since 1947).([cnbc.com](https://www.cnbc.com/2021/12/20/senate-to-vote-on-build-back-better-act-despite-joe-manchin-opposition.html?utm_source=openai))  \n   **Verdict on precondition:** Largely satisfied in spirit: the original Build Back Better was killed, and there was no new multi\u2011trillion net stimulus, though some smaller, partially offset spending (IRA, etc.) still occurred.\n\n2. **Claim: A \u201cmassive relief rally\u201d and risk assets take off in 2022.**  \n   Sacks expected killing BBB and halting stimulus to trigger a big positive move in markets and risk assets in calendar 2022. Instead, 2022 was a broad bear market:\n   * The **S&P 500 total return** for 2022 was **\u221218.1%**, its worst year since 2008.([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2023/1/s-p-500-logs-its-worst-annual-performance-since-2008-73687583?utm_source=openai))  \n   * The **Nasdaq Composite** fell about **\u221233%** in 2022.([statmuse.com](https://www.statmuse.com/money/ask/nasdaq-annual-returns-2022?utm_source=openai))  \n   * The **NYSE Composite** was down about **\u221211.5%**.([en.wikipedia.org](https://en.wikipedia.org/wiki/NYSE_Composite?utm_source=openai))  \n   * Bonds also suffered a historic drawdown as rates spiked; 2022 is widely cited as a sharp downturn year for the Bloomberg U.S. Aggregate Bond Index.([wsj.com](https://www.wsj.com/finance/bonds-are-heading-for-the-best-year-since-2020-02c5738b?utm_source=openai))  \n   Across major equity and fixed\u2011income benchmarks, 2022 produced *large negative* returns, not the \u201cmassive relief rally\u201d he predicted.\n\n3. **Claim: The economy would \u201ctake off like a rocket\u201d with a soft landing in 2022.**  \n   * BEA data show **real U.S. GDP grew 2.1% in 2022** (annual average), down sharply from 5.9% in 2021.([bea.gov](https://www.bea.gov/news/2023/gross-domestic-product-fourth-quarter-and-year-2022-second-estimate?utm_source=openai))  Regional BEA data describe 2022 as a year of **\u201cmuch more moderate\u201d** growth of about **1.9% real GDP** nationally.([apps-fd.bea.gov](https://apps-fd.bea.gov/scb/issues/2023/12-december/1223-regional-comprehensive-update.htm?utm_source=openai))  \n   * On a quarterly basis, real GDP **fell** at annualized rates in both Q1 (\u22121.6%) and Q2 (\u22120.9%) of 2022 before rebounding later in the year.([dallasfed.org](https://www.dallasfed.org/research/economics/2022/0802/?utm_source=openai))  This produced a recession\u2011like pattern in early 2022, although the NBER did not declare an official recession.([en.wikipedia.org](https://en.wikipedia.org/wiki/Recession?utm_source=openai))  \n   * That pattern\u2014two negative quarters followed by moderate growth\u2014is inconsistent with \u201ctake off like a rocket,\u201d though the economy *did* avoid a deep official recession in 2022.\n\n4. **Claim: The Fed wouldn\u2019t need to raise rates aggressively in 2022 if stimulus stopped, enabling a soft landing instead of a whipsaw.**  \n   * Inflation surged, with CPI inflation peaking around **9.1%** year\u2011over\u2011year in June 2022.([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2023/1/s-p-500-logs-its-worst-annual-performance-since-2008-73687583?utm_source=openai))  \n   * In response, the **Federal Reserve launched an exceptionally aggressive tightening cycle** beginning March 2022. By December 2022 the Fed funds target range was raised to **4.25\u20134.50%**, via **seven hikes totaling 425 basis points** in one year\u2014its most aggressive pace since the early 1980s.([cnbc.com](https://www.cnbc.com/2022/12/14/fed-rate-decision-december-2022.html?utm_source=openai))  \n   * Those hikes contributed to the sharp repricing in both stocks and bonds noted above. This outcome is the opposite of his expectation that the Fed would *not* have to raise rates \u201cas aggressively\u201d if fiscal pumping stopped.\n\n**Overall assessment:**  \nThe main political antecedent (Manchin blocking the original Build Back Better and no further *huge* net fiscal stimulus) substantially occurred. But Sacks\u2019s core outcomes\u2014**a massive relief rally, rocket\u2011like economic takeoff in 2022, and a non\u2011aggressive Fed tightening path leading to a gentle soft landing that year**\u2014did *not* materialize. 2022 instead featured a bear market in risk assets, only modest and uneven real growth, and one of the most aggressive Fed hiking campaigns in decades.\n\nTherefore, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 611,
+          "start_index": 476,
+          "title": "Joe Manchin won't vote for Biden's Build Back Better Act",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/12/19/sen-joe-manchin-says-he-wont-vote-for-bidens-build-back-better-act.html?utm_source=openai"
+        },
+        {
+          "end_index": 1102,
+          "start_index": 1009,
+          "title": "Inflation Reduction Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Inflation_Reduction_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1498,
+          "start_index": 1359,
+          "title": "Senate to vote on Build Back Better Act despite Joe Manchin opposition",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/12/20/senate-to-vote-on-build-back-better-act-despite-joe-manchin-opposition.html?utm_source=openai"
+        },
+        {
+          "end_index": 2237,
+          "start_index": 2062,
+          "title": "S&P 500 logs its worst annual performance since 2008 | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2023/1/s-p-500-logs-its-worst-annual-performance-since-2008-73687583?utm_source=openai"
+        },
+        {
+          "end_index": 2396,
+          "start_index": 2299,
+          "title": "Nasdaq Annual Returns 2022 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/nasdaq-annual-returns-2022?utm_source=openai"
+        },
+        {
+          "end_index": 2538,
+          "start_index": 2454,
+          "title": "NYSE Composite",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/NYSE_Composite?utm_source=openai"
+        },
+        {
+          "end_index": 2808,
+          "start_index": 2694,
+          "title": "Bonds Are Heading for the Best Year Since 2020",
+          "type": "url_citation",
+          "url": "https://www.wsj.com/finance/bonds-are-heading-for-the-best-year-since-2020-02c5738b?utm_source=openai"
+        },
+        {
+          "end_index": 3273,
+          "start_index": 3145,
+          "title": "Gross Domestic Product, Fourth Quarter and Year 2022 (Second Estimate) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2023/gross-domestic-product-fourth-quarter-and-year-2022-second-estimate?utm_source=openai"
+        },
+        {
+          "end_index": 3519,
+          "start_index": 3390,
+          "title": "SCB, New and Updated Estimates of the Regional Economic Accounts, December 2023",
+          "type": "url_citation",
+          "url": "https://apps-fd.bea.gov/scb/issues/2023/12-december/1223-regional-comprehensive-update.htm?utm_source=openai"
+        },
+        {
+          "end_index": 3758,
+          "start_index": 3666,
+          "title": "U.S. likely didn\u2019t slip into recession in early 2022 despite negative GDP growth - Dallasfed.org",
+          "type": "url_citation",
+          "url": "https://www.dallasfed.org/research/economics/2022/0802/?utm_source=openai"
+        },
+        {
+          "end_index": 3949,
+          "start_index": 3870,
+          "title": "Recession",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Recession?utm_source=openai"
+        },
+        {
+          "end_index": 4548,
+          "start_index": 4373,
+          "title": "S&P 500 logs its worst annual performance since 2008 | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2023/1/s-p-500-logs-its-worst-annual-performance-since-2008-73687583?utm_source=openai"
+        },
+        {
+          "end_index": 4949,
+          "start_index": 4849,
+          "title": "Fed rate decision December 2022: Fed raises interest rates half a point",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/12/14/fed-rate-decision-december-2022.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The condition was met: Sen. Joe Manchin announced on Dec. 19, 2021, he would not support the Build Back Better Act, killing it ([NYT](https://www.nytimes.com/2021/12/19/us/politics/manchin-build-back-better.html), [CNN](https://www.cnn.com/2021/12/19/politics/joe-manchin-build-back-better)). No further large-scale fiscal stimulus occurred in late 2021/early 2022.\n\nHowever, predicted outcomes failed:\n- No 'massive relief rally': S&P 500 fell 18.11% in 2022 ([Slickcharts](https://www.slickcharts.com/sp500/returns)); initial reaction was negative ([Business Insider](https://markets.businessinsider.com/news/stocks/stock-market-today-dow-jones-futures-omicron-lockdown-manchin-bbb-2021-12)).\n- No 'strong economic performance'/'economy take off like a rocket': US real GDP grew ~2.1% in 2022, with Q2 contraction ([BEA](https://www.bea.gov/news/2023/gross-domestic-product-fourth-quarter-and-year-2022-third-estimate-gdp-industry-and), [CEPAL](https://www.cepal.org/en/notes/united-states-economic-outlook-2022-year-review-and-early-2023-developments)).\n- Fed raised rates aggressively: from 0-0.25% to 4.25-4.5% via multiple 75bp hikes ([Forbes](https://www.forbes.com/advisor/investing/fed-funds-rate-history/), [Federal Reserve](https://www.federalreserve.gov/monetarypolicy/openmarket.htm)).\nNo soft landing via less aggressive policy; opposite occurred."
+    },
+    {
+      "id": "A-01:00:56.500",
+      "result": "right",
+      "explanation": "Evidence from multiple data sources shows that after the late\u20112021 selloff in public growth and SaaS stocks, private venture valuations *did* fall materially, especially from early 2022 onward, matching Sacks\u2019 prediction.\n\n* Carta\u2019s Q1 2022 \u201cState of Private Markets\u201d report already showed late\u2011stage private valuations starting to roll over: median Series C valuations were down 18% quarter\u2011over\u2011quarter and Series E+ down 25%, with median round sizes falling across all late stages. This is exactly the kind of early trickle\u2011down from public comps into private pricing Sacks described as already beginning. ([carta.com](https://carta.com/data/state-of-private-markets-q1-2022/?utm_source=openai))\n* By Q4 2022, Carta reports that **median venture valuations were down at every stage**, with very large drops at later stages that are most tightly linked to public-market comps: median Series B valuations fell 46% over 2022, Series C fell 55%, Series D fell 58%, and Series E+ fell 72% year\u2011over\u2011year. Round sizes also shrank dramatically, reflecting investors\u2019 lower pricing for growth. ([carta.com](https://carta.com/data/state-of-private-markets-q4-2022/?utm_source=openai))\n* Crunchbase\u2019s analysis of the downturn notes that when public markets began their downward slide in December 2021, **it took about one quarter for private markets to start scaling back valuations**, and by Q2 2022 late\u2011stage funding and valuations had come down significantly\u2014explicitly describing the lagged \u201ctrickle down\u201d from public to private markets. ([news.crunchbase.com](https://news.crunchbase.com/venture/monthly-vc-funding-recap-seed-downturn-july-2023/?utm_source=openai))\n* Subsequent Carta data through 2023\u20132024 characterizes this as a sustained **\u201cvaluation reset\u201d** in venture, with elevated down\u2011round rates (~19\u201320% of all rounds) and large cumulative valuation declines at later stages since early 2022, confirming that the correction in public growth/SaaS names ultimately translated into structurally lower venture valuations. ([carta.com](https://carta.com/data/state-of-private-markets-q2-2023/?utm_source=openai))\n\nBecause private venture valuations did in fact decline materially in the period after the podcast (beginning in early 2022), in a way that\u2019s widely attributed to the public\u2011market growth-stock correction, Sacks\u2019 forecast that those public\u2011market moves would \"absolutely\" trickle down to venture valuations is **right** in both direction and timing (with the expected short lag).",
+      "sources": [
+        {
+          "end_index": 733,
+          "start_index": 644,
+          "title": "State of Private Markets: Q1 2022",
+          "type": "url_citation",
+          "url": "https://carta.com/data/state-of-private-markets-q1-2022/?utm_source=openai"
+        },
+        {
+          "end_index": 1214,
+          "start_index": 1125,
+          "title": "State of Private Markets: Q4 and 2022 in review",
+          "type": "url_citation",
+          "url": "https://carta.com/data/state-of-private-markets-q4-2022/?utm_source=openai"
+        },
+        {
+          "end_index": 1701,
+          "start_index": 1573,
+          "title": "Global Venture Funding In July Was Second-Lowest This Year As Seed Startups Are Hit Hard",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/monthly-vc-funding-recap-seed-downturn-july-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 2156,
+          "start_index": 2067,
+          "title": "State of Private Markets: Q2 2023 | Carta",
+          "type": "url_citation",
+          "url": "https://carta.com/data/state-of-private-markets-q2-2023/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Public growth/SaaS stocks corrected 30-40%+ in late 2021 (Nasdaq peak Nov 2021). Private VC valuations peaked in 2021 and declined thereafter, especially late-stage deals mirroring public comps. PitchBook (Nov 2022): Late-stage median/average valuations fell significantly in Q3 2022 from 2021 highs; early-stage median pre-money from $60M (Q1 2022) to $45M (Q3 2022). Cooley Q4 2022 report: Median pre-money for Series D+ dropped from $3.5B (May 2022) to $527M (Sep 2022); mid/late-stage down to 2020 levels. Kruze Consulting: Series B median from $157M (Q4 2021) to $80M (Q4 2022). Secondary markets saw 30-85% drops by late 2022 (Investopedia). Early-stage held longer, but overall decline began 2022 ('late 2021 onward'), confirming trickle-down effect. Sources: [PitchBook](https://siliconangle.com/2022/11/08/pitchbook-late-stage-venture-capital-valuations-fall-2021-highs/), [Cooley](https://www.cooley.com/news/insight/2023/01/27-venture-financing-report-q4-2022), [Kruze](https://kruzeconsulting.com/blog/startup-valuations/)."
+    },
+    {
+      "id": "E-00:21:24.380",
+      "result": "inconclusive",
+      "explanation": "The prediction timeframe is *5\u20136 years after late 2021*, i.e., roughly **2026\u20132027**. As of the evaluation date **November 30, 2025**, that window has **not yet begun / is only just starting**, so we cannot definitively judge whether a 1929-style severe economic or financial crisis caused by housing leverage and equity extraction will occur in that period.\n\nWhile there have been notable economic events since 2021 (e.g., high inflation in 2022\u20132023, rapid interest-rate hikes, stress in parts of the banking system), none of these has been widely characterized by mainstream economic or financial historians as a *1929-level* systemic collapse of the U.S. economy. However, since the prediction specifically targets outcomes **around 2026\u20132027**, and we are still before or at the very start of that horizon, the correct evaluation is that it is **too early to tell**.\n\nTherefore, the status of the prediction is **inconclusive** at this time because the forecast period has not fully arrived.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies a severe crisis 'by approximately 2026\u20132027' (5-6 years from late 2021). As of December 1, 2025, this timeframe has not yet elapsed. No 1929-like crisis (e.g., massive stock crash, bank runs, 25% unemployment) has occurred; the US economy shows growth, stock market highs (e.g., S&P 500 records in 2025 per Yahoo Finance), and recession odds around 40% (J.P. Morgan). Housing faces affordability issues from high rates but no leverage-induced collapse (Fed Financial Stability Report Nov 2025 notes monitoring, not crisis; Forbes, Brookings). Sources: J.P. Morgan Research, Deloitte Q3 2025 forecast, WSJ, NerdWallet, Federal Reserve reports."
+    }
+  ]
+}

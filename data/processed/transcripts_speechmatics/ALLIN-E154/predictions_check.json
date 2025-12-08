@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "count": 12,
+    "count_by_result": {
+      "ambiguous": 4,
+      "wrong": 4,
+      "inconclusive": 2,
+      "right": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:17:05.300",
+      "result": "ambiguous",
+      "explanation": "The prediction was explicitly conditional: *if* Joe Biden were the 2024 Democratic nominee running against Donald Trump, then Biden would lose to Trump.\n\nIn reality, that condition never occurred:\n- Joe Biden initially ran for re\u2011election and secured the primary delegates but **withdrew from the race on July 21, 2024**. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_elections?utm_source=openai))\n- After Biden\u2019s withdrawal, **Kamala Harris became the Democratic nominee**, and she, not Biden, ran against Donald Trump in the November 5, 2024 election. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_elections?utm_source=openai))\n- Donald Trump defeated Kamala Harris, winning 312 electoral votes to 226 and a narrow popular\u2011vote plurality. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n\nBecause Biden was *not* the Democratic nominee facing Trump, the antecedent of the forecast (\u201cBiden is the nominee vs. Trump in 2024\u201d) was false. The actual world does not test the specific scenario the speaker predicted. While one could debate the counterfactual (what *would* have happened if Biden had stayed in and run), that outcome is unknowable from observed data.\n\nTherefore, the prediction cannot be cleanly labeled as correct or incorrect based on real\u2011world results; it remains a statement about a hypothetical scenario that never materialized, so the appropriate resolution is **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 460,
+          "start_index": 362,
+          "title": "2024 United States elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_elections?utm_source=openai"
+        },
+        {
+          "end_index": 716,
+          "start_index": 618,
+          "title": "2024 United States elections",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_elections?utm_source=openai"
+        },
+        {
+          "end_index": 939,
+          "start_index": 829,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is conditional on Joe Biden being the Democratic nominee against Donald Trump in 2024. Biden withdrew from the race on July 21, 2024 ([Wikipedia](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [NBC News](https://www.nbcnews.com/politics/2024-election/president-joe-biden-drops-2024-presidential-race-rcna159867)). Kamala Harris became the Democratic nominee and lost to Trump, who won with 312 electoral votes ([CNN](https://www.cnn.com/election/2024/results/president), [Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [270toWin](https://www.270towin.com/2024-election)). Since the specified matchup (Biden vs. Trump) did not occur, it cannot be determined if Biden would have lost."
+    },
+    {
+      "id": "B-00:32:04.850",
+      "result": "wrong",
+      "explanation": "Across the first two years after the November 2023 prediction, U.S. relations with **Iran**, **North Korea**, and **China (especially over Taiwan)** have not evolved in a clearly *more positive and stable* direction than the already\u2011pessimistic commentary at the time; in key cases they have instead moved toward the darker scenarios that many analysts warned about.\n\n**1. Iran: from maximum pressure to open war and U.S. strikes**  \n* In early 2025, Washington formally reinstated a \u201cmaximum pressure\u201d sanctions campaign and explicitly threatened military action if nuclear talks failed, as Iran rapidly advanced enrichment toward weapons\u2011grade levels.([reuters.com](https://www.reuters.com/world/us/trump-set-reimpose-maximum-pressure-iran-official-says-2025-02-04/?utm_source=openai))  \n* Negotiations in spring 2025 collapsed, and by June 2025 an **Iran\u2013Israel war** broke out, featuring massive Iranian missile and drone strikes on Israel and Israeli attacks on Iranian territory.([en.wikipedia.org](https://en.wikipedia.org/wiki/October_2024_Iranian_strikes_on_Israel?utm_source=openai))  \n* The U.S. directly entered the conflict with **Operation Midnight Hammer**, a large air and missile strike on three key Iranian nuclear facilities (Fordow, Natanz, Isfahan) \u2014 the first U.S. attacks on Iranian territory since the 1980s. Iran retaliated against a U.S. base in Qatar, and its cooperation with the IAEA deteriorated further.([en.wikipedia.org](https://en.wikipedia.org/wiki/United_States_strikes_on_Iranian_nuclear_sites?utm_source=openai))  \n* European officials and media had been warning in advance that a U.S. or Israeli strike on Iran\u2019s nuclear program could make regional war \u201calmost inevitable,\u201d which is very close to what actually unfolded.([reuters.com](https://www.reuters.com/world/iran-foreign-minister-attacking-our-nuclear-sites-would-be-one-biggest-mistakes-2025-01-31/?utm_source=openai))  \n\nTaken together, U.S.\u2013Iran relations have clearly **deteriorated into open armed confrontation**, not moved into a brighter, more stable future than gloomy analysts expected.\n\n**2. North Korea: accelerating nuclear buildup, no diplomatic thaw**  \n* Since 2023, North Korea has continued intensive missile testing, including new solid\u2011fuel intermediate\u2011range and intercontinental systems such as **Hwasong\u201116B** (tested 2024 and 2025) and the new **Hwasong\u201120** solid\u2011fuel ICBM revealed and paraded in 2025.([en.wikipedia.org](https://en.wikipedia.org/wiki/Hwasong-16B?utm_source=openai))  \n* North Korea carried out record\u2011length ICBM tests in late 2024 designed to threaten the U.S. mainland, prompting strong condemnation from Washington, Tokyo, and Seoul and expanded U.S.\u2013ROK\u2013Japan military drills.([cnbc.com](https://www.cnbc.com/2024/10/31/north-korea-launches-a-new-intercontinental-ballistic-missile-designed-to-threaten-us.html?utm_source=openai))  \n* Pyongyang has explicitly rejected denuclearization talks, insisting the U.S. accept it as a permanent nuclear\u2011weapons state, and has denounced U.S.\u2013South Korea\u2013Japan security cooperation as hostile.([reuters.com](https://www.reuters.com/world/north-korea-denounces-absurd-denuclearisation-pledge-by-us-allies-2025-02-18/?utm_source=openai))  \n\nThere has been **no meaningful improvement in political relations or stability** between Washington and Pyongyang; the trend is toward a more capable North Korean nuclear force and ongoing military confrontation, again matching or exceeding the negative expectations of many analysts.\n\n**3. China and Taiwan: continued rivalry, higher military tension despite some tactical stabilizations**  \n* Strategic assessments in 2024\u201325 consistently describe U.S.\u2013China relations as **strained, competitive, and largely devoid of positive ambition**, with policymakers on both sides mainly focused on managing escalation risks rather than improving ties.([brookings.edu](https://www.brookings.edu/articles/how-does-national-confidence-inform-us-china-relations/?utm_source=openai))  \n* Around Taiwan, PLA air and naval activities near the island and across its air defense zones have become more frequent and intense; Taiwan has condemned nearby live\u2011fire drills and incursions as major threats to regional peace.([apnews.com](https://apnews.com/article/e74bd7d6fc18ba8cf6780b4ca0831209?utm_source=openai))  \n* In response, Taipei has announced a vast **$40\u202fbillion multi\u2011year defense buildup** explicitly aimed at countering China\u2019s \u201cintensifying\u201d threats, while U.S. commanders and analysts continue to warn that China may be able to invade by around 2027.([theguardian.com](https://www.theguardian.com/world/2025/nov/26/taiwan-extra-40bn-defence-spending-china-threat?utm_source=openai))  \n* Economically and technologically, the U.S. has tightened export controls and removed fast\u2011track status for chipmaking exports to Chinese fabs, while China has retaliated with restrictions on critical materials \u2014 deepening structural rivalry rather than easing it.([reuters.com](https://www.reuters.com/world/china/us-revokes-tsmcs-fast-track-china-export-status-controls-tighten-2025-09-02/?utm_source=openai))  \n* There *are* modest \u201ctechnical\u201d improvements \u2014 more direct flights, some resumed dialogues, and even announced plans for reciprocal Trump\u2013Xi state visits \u2014 but these operate within a broader framework of ongoing strategic confrontation, not a clearly brighter overall relationship.([en.wikipedia.org](https://en.wikipedia.org/wiki/Air_route_authority_between_the_United_States_and_China?utm_source=openai))  \n\nMeanwhile, prominent commentary during and after 2023 continued to warn that U.S.\u2013China rivalry over Taiwan is one of the most likely triggers for World War\u202fIII or a major great\u2011power war, underscoring how pessimistic the baseline discourse already was.([freenetafrica.com](https://freenetafrica.com/2025/09/30/global-flashpoints-the-imminent-threat-of-world-war-iii/?utm_source=openai))  Yet the actual trajectory since late 2023 has been **continued militarization and heightened perceived war risk**, not a clearly more stable or reassuring path than those warnings implied.\n\n**Overall assessment**  \nBecause:\n\n* U.S.\u2013Iran relations have deteriorated into a hot regional war and direct U.S. strikes on Iranian territory;  \n* U.S.\u2013North Korea relations feature an expanded DPRK nuclear and missile arsenal, more tests, and an explicit rejection of denuclearization talks; and  \n* U.S.\u2013China relations remain structurally adversarial, with rising military tension over Taiwan and deepening techno\u2011economic conflict, only partly offset by limited tactical engagement;\n\n\u2026the evidence through November 30, 2025 indicates that these relationships have **not** evolved in a way that is *more positive and stable than widely anticipated by pessimistic commentators*. If anything, Iran and North Korea have moved squarely into the kind of severe\u2011deterioration scenarios those commentators feared, while China\u2013U.S. ties remain tense and fragile. On the available record, that makes the prediction **wrong** rather than merely unproven or ambiguous at this point.",
+      "sources": [
+        {
+          "end_index": 823,
+          "start_index": 689,
+          "title": "Trump reimposes 'maximum pressure' on Iran, aims to drive oil exports to zero",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/trump-set-reimpose-maximum-pressure-iran-official-says-2025-02-04/?utm_source=openai"
+        },
+        {
+          "end_index": 1130,
+          "start_index": 1022,
+          "title": "October 2024 Iranian strikes on Israel",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/October_2024_Iranian_strikes_on_Israel?utm_source=openai"
+        },
+        {
+          "end_index": 1588,
+          "start_index": 1472,
+          "title": "United States strikes on Iranian nuclear sites",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/United_States_strikes_on_Iranian_nuclear_sites?utm_source=openai"
+        },
+        {
+          "end_index": 1954,
+          "start_index": 1798,
+          "title": "Iran foreign minister: attacking our nuclear sites would be 'one of biggest mistakes US could make'",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/iran-foreign-minister-attacking-our-nuclear-sites-would-be-one-biggest-mistakes-2025-01-31/?utm_source=openai"
+        },
+        {
+          "end_index": 2549,
+          "start_index": 2468,
+          "title": "Hwasong-16B",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Hwasong-16B?utm_source=openai"
+        },
+        {
+          "end_index": 2919,
+          "start_index": 2765,
+          "title": "North Korea launches a new intercontinental ballistic missile designed to threaten U.S.",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/10/31/north-korea-launches-a-new-intercontinental-ballistic-missile-designed-to-threaten-us.html?utm_source=openai"
+        },
+        {
+          "end_index": 3265,
+          "start_index": 3123,
+          "title": "North Korea denounces 'absurd' denuclearisation pledge by US and allies",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/north-korea-denounces-absurd-denuclearisation-pledge-by-us-allies-2025-02-18/?utm_source=openai"
+        },
+        {
+          "end_index": 4046,
+          "start_index": 3919,
+          "title": "How does national confidence inform US-China relations? | Brookings",
+          "type": "url_citation",
+          "url": "https://www.brookings.edu/articles/how-does-national-confidence-inform-us-china-relations/?utm_source=openai"
+        },
+        {
+          "end_index": 4372,
+          "start_index": 4279,
+          "title": "Taiwan condemns China for conducting shooting drills off its coast",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/e74bd7d6fc18ba8cf6780b4ca0831209?utm_source=openai"
+        },
+        {
+          "end_index": 4757,
+          "start_index": 4625,
+          "title": "Taiwan plans extra $40bn in defence spending to counter China's 'intensifying' threats",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/world/2025/nov/26/taiwan-extra-40bn-defence-spending-china-threat?utm_source=openai"
+        },
+        {
+          "end_index": 5173,
+          "start_index": 5026,
+          "title": "US revokes TSMC's fast-track China export status as controls tighten",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/china/us-revokes-tsmcs-fast-track-china-export-status-controls-tighten-2025-09-02/?utm_source=openai"
+        },
+        {
+          "end_index": 5584,
+          "start_index": 5459,
+          "title": "Air route authority between the United States and China",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Air_route_authority_between_the_United_States_and_China?utm_source=openai"
+        },
+        {
+          "end_index": 5977,
+          "start_index": 5843,
+          "title": "Global Flashpoints & the Imminent Threat of World War III | FREENET AFRICA",
+          "type": "url_citation",
+          "url": "https://freenetafrica.com/2025/09/30/global-flashpoints-the-imminent-threat-of-world-war-iii/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "US relations with Iran, North Korea, and China have not evolved in a more positive or stable direction since Nov 2023. Instead, tensions persist or have worsened via strengthened CRINK (China-Russia-Iran-North Korea) cooperation challenging US interests.\n\n**China (esp. Taiwan):** Ongoing military pressure, including PLA surrounds (NBC News, Nov 2025), sharp rhetoric (Guardian, Nov 2025), cyberattacks up 17% (Crisis Group), and 'Fourth Taiwan Strait Crisis' (USNI, Sep 2025). No invasion despite 2023 fears (e.g., Air Force memo predicting 2025 war [NBC 2023]), but no brighter future\u2014tensions high with Japan friction (ISW Nov 2025).\n\n**Iran:** Trump resumed 'maximum pressure' (Congress.gov, State Dept), indirect nuclear talks stalled (Carnegie Nov 2025), proxy conflicts (ISW Nov 2025). No reset (Economist Nov 2025).\n\n**North Korea:** No diplomatic progress; deeper Russia ties (troops/artillery to Ukraine), China alignment (CSIS CRINK charts, Nov 2025). NK 'more dangerous' (Diplomat Nov 2025).\n\nCRINK economic/military/diplomatic ties accelerated post-2022 (CSIS: China-Russia trade $245B, NK/Russia defense pact, Iran drones to Russia). USCC 2025 report highlights China's revisionist ambitions with these states. While no major war occurred (better than some 2023 predictions [CSIS, USNI]), relations show no positive trajectory\u2014rivalry entrenched."
+    },
+    {
+      "id": "B-00:34:56.989",
+      "result": "ambiguous",
+      "explanation": "The prediction is a broad *risk ranking* about what kinds of threats are \u201cmost likely\u201d and \u201cmost threatening\u201d to the United States in the \u201cforeseeable future.\u201d That kind of claim is inherently hard to falsify or verify, because:\n\n1. **It\u2019s about probability, not a concrete event.**  \n   The statement compares *likelihood and severity* of categories of harm (cyber, information, biological vs. kinetic military attack). We don\u2019t have an objective, agreed\u2011upon metric that tells us: \u201cas of now, X category was definitively the most likely and threatening since November 2023.\u201d Intelligence community threat assessments treat these as analytical judgments, not binary facts.\n\n2. **Official U.S. assessments do emphasize cyber/information/biological as top threats, but without clean rankings vs. kinetic war.**  \n   Recent unclassified U.S. intelligence and defense documents consistently describe cyber operations, disinformation, and potential pandemics/biothreats as *major* or even *top* national\u2011security threats, especially from China, Russia, Iran, and North Korea, and note how these can directly harm critical infrastructure, democratic processes, and public health. At the same time, they also stress the growing risk of great\u2011power military conflict and kinetic attacks (e.g., in the Indo\u2011Pacific or Europe) as existential or catastrophic risks. Because these reports do not give a definitive, numeric ranking that clearly puts cyber/social/biological *above* kinetic threats, they don\u2019t let us decisively say the prediction is correct or incorrect.\n\n3. **No decisive real\u2011world event has clearly disproved the claim.**  \n   Since November 2023 there has been no large\u2011scale kinetic military attack on the U.S. homeland on the order of 9/11 or a major interstate war directly on U.S. territory. But the absence of such an attack does not prove that kinetic risks weren\u2019t actually more likely or more threatening; it only shows they didn\u2019t materialize in that time window. Likewise, while there have been ongoing cyber intrusions, ransomware incidents, influence operations, and persistent concern about future pandemics, we cannot cleanly measure that these were *objectively* more likely or more threatening than kinetic conflict in a way that settles the prediction.\n\n4. **The time horizon (\u201cforeseeable future\u201d) is vague.**  \n   \u201cForeseeable future\u201d is not defined; it could reasonably extend well beyond late 2025. Without a clear time horizon, we cannot say \u201cenough time has passed\u201d to judge the prediction definitively.\n\nBecause the claim is (a) probabilistic, (b) comparative across very different threat domains, and (c) tied to an undefined time horizon, there is no rigorous, objective way at this point to say it has been clearly validated or falsified. Therefore, the fairest classification is **\u201cambiguous\u201d** rather than right, wrong, or merely \u201ctoo early.\u201d",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "No direct foreign kinetic military attacks on the US homeland occurred between Nov 2023 and Dec 2025, per searches on kinetic attacks (results focused on US strikes abroad, e.g., on drug boats or Somalia). In contrast, significant cyber harms materialized: Chinese hackers breached US gov/infra (CSIS Significant Cyber Incidents, Jul 2025); massive breaches like Microsoft Exchange affecting 30k businesses (UpGuard); ransomware dominant (SentinelOne). Information warfare peaked during 2024 election with Russian/Chinese/Iranian disinformation (Brookings, NPR, DOJ disruptions). Biological threats loomed in assessments (DNI ATA 2025, DHS HTA 2025) but no major incidents. Threat reports (DNI, DIA 2025) prioritize cyber/influence/bio over kinetic risks to US, aligning with the prediction."
+    },
+    {
+      "id": "B-00:41:38.390",
+      "result": "inconclusive",
+      "explanation": "As of 30 November 2025, China is experiencing a serious and ongoing property- and debt-driven downturn\u2014Evergrande\u2019s collapse and court\u2011ordered liquidation, the distress of major developers like Country Garden, falling home prices, and a shrinking real\u2011estate share of GDP all point to a substantial bubble that has been deflating over several years.\u00a0\u30100search14\u3011\u30100news15\u3011\n\nHowever, this has **not yet produced a discrete financial crisis that is clearly larger in scale and severity than the 2008 U.S./global financial crisis**:\n\n- China\u2019s overall GDP has continued to grow at around 5% in 2023\u20132024, and the IMF still projects positive, if slowing, growth rather than a deep recession.\u00a0\u30101search1\u3011\n- By contrast, the 2008 crisis led to a 4.3% peak\u2011to\u2011trough contraction in U.S. real GDP and a doubling of unemployment to about 10%, with massive wealth losses and a sharp global recession.\u00a0\u30101search2\u3011\u30101search19\u3011\n\nSo the *specific* claim that China will have a bubble burst that **\u201cwill make [the 2008 crisis] look like a gumball\u201d** has **not come true yet**, but the prediction is also **not definitively falsified**, because the speaker did not specify a time horizon and China\u2019s structural property and local\u2011government\u2011debt problems are still unfolding.\u00a0\u30101search1\u3011\n\nGiven that a clearly worse\u2011than\u20112008 crash has not occurred, but may still occur in the future and no explicit deadline was attached to the prediction, the fairest classification as of late 2025 is **\u201cinconclusive (too early to tell).\u201d**",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "China has faced an ongoing real estate slump since 2021 (e.g., Evergrande default), with property prices falling (fastest pace in 11 months in Sep 2025 per Reuters), new home sales down ~24% YoY in Jul 2025, and fixed-asset investment shrinking 1.7% in first 10 months of 2025 (Bloomberg). Stock markets saw sharp drops (worst single-day since 2008 in Apr 2025, worst week in years in 2024 per Guardian/CNN). However, no major economic/financial bubble bursting larger than 2008 has occurred: GDP grew ~5% in 2024 and ~4.8% in 2025 Q3 (Trading Economics, IMF, National Bureau of Statistics); unemployment stable ~5% (Statista, Macrotrends); no systemic bank failures or global contagion like 2008 (US GDP contracted -2.5%, unemployment 10%). Instead, slowdown/deflation risks akin to Japan (Bruegel, CSIS: 'stumbles but unlikely to fall'). Sources: IMF F&D, CSIS Sep 2025, Trading Economics GDP/unemployment, Reuters property data."
+    },
+    {
+      "id": "B-00:49:21.790",
+      "result": "ambiguous",
+      "explanation": "Available evidence since November 2023 shows that U.S. land borders remain heavily used by foreign nationals from adversarial or high\u2011risk countries and that senior officials explicitly describe this as a vulnerability that *could* be exploited by adversaries\u2014but public sources do **not** clearly document state\u2011directed infiltration campaigns that would definitively confirm the prediction.\n\n**What has clearly happened:**\n- The U.S. Border Patrol chief has called the southern border a *\u201cnational security threat,\u201d* emphasizing more than a million annual apprehensions and about 140,000 \u201cknown got\u2011aways\u201d in just a few months, and saying that unknown actors are *\u201cexploiting a vulnerability that\u2019s on our border right now.\u201d* ([cbsnews.com](https://www.cbsnews.com/news/jason-owens-border-patrol-southern-border-national-security-threat/?utm_source=openai))\n- Congressional and committee reports show a sharp rise in encounters with people on the terrorist watchlist at U.S. borders during FY 2022\u20132024 (hundreds versus low double digits in earlier years), highlighting concern that individuals tied to terrorist networks are using these routes. ([dailysignal.com](https://www.dailysignal.com/2024/08/06/99-illegal-aliens-on-terrorist-watchlist-released-into-us-report-finds/?utm_source=openai))\n- Reporting has revealed specific cases, such as an Afghan national on the U.S. terrorist watchlist who crossed the southern border, was apprehended and released into the interior, and later re\u2011arrested\u2014illustrating that at least some suspected extremists have entered via porous border processes. ([hstoday.us](https://www.hstoday.us/subject-matter-areas/border-security/man-on-terror-watchlist-was-released-by-border-patrol/?utm_source=openai))\n- At the same time, congressional hearings and media coverage have focused on a historic surge in Chinese nationals crossing illegally between ports of entry, with lawmakers and security officials explicitly warning that the People\u2019s Republic of China\u2014described as a top U.S. adversary\u2014could use these flows to embed intelligence operatives or other hostile actors. ([homeland.house.gov](https://homeland.house.gov/2024/05/16/a-serious-national-security-concern-subcommittee-chairman-bishop-opens-hearing-on-surge-of-chinese-nationals-illegally-crossing-the-border/?utm_source=openai))\n- Separate incidents, such as Chinese nationals attempting to enter Guam illegally near a U.S. missile test site, have raised concrete espionage concerns tied to border or perimeter breaches, reinforcing that foreign intelligence services test and probe U.S. access controls. ([reuters.com](https://www.reuters.com/world/asia-pacific/seven-chinese-nationals-tried-illegally-enter-guam-us-tested-missile-authorities-2024-12-21/?utm_source=openai))\n\n**Why this does not cleanly settle the prediction:**\n- Publicly available information typically stops at **suspicion** or **risk assessment**: officials and analysts warn that terrorists or hostile states *may* be exploiting border weaknesses, and they highlight watchlist encounters and suspicious incidents, but they rarely disclose definitive proof that specific illegal entrants were directed by foreign governments or organizations as part of an organized infiltration strategy.\n- Many crossings from adversarial countries appear driven by economic or personal motives, and the government has not (in public) tied the post\u20112023 surge to a coordinated foreign campaign that exploits U.S. political dysfunction per se.\n\nBecause we can clearly see that the borders are heavily stressed and treated as a national\u2011security vulnerability, and that some individuals of security concern have entered this way, the prediction is **plausible** and partially aligned with observable trends. However, given the lack of unambiguous, declassified proof that foreign adversaries have systematically used the porous borders for directed infiltration in the way implied, the outcome cannot be firmly labeled as either fully \u2018right\u2019 or \u2018wrong\u2019. It remains **ambiguous** based on open sources.",
+      "sources": [
+        {
+          "end_index": 899,
+          "start_index": 768,
+          "title": "U.S. Border Patrol chief calls southern border a \"national security threat,\" citing 140,000 migrants who evaded capture - CBS News",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/news/jason-owens-border-patrol-southern-border-national-security-threat/?utm_source=openai"
+        },
+        {
+          "end_index": 1338,
+          "start_index": 1189,
+          "title": "99 Illegal Aliens on Terrorist Watchlist Released Into US, Report Finds",
+          "type": "url_citation",
+          "url": "https://www.dailysignal.com/2024/08/06/99-illegal-aliens-on-terrorist-watchlist-released-into-us-report-finds/?utm_source=openai"
+        },
+        {
+          "end_index": 1786,
+          "start_index": 1638,
+          "title": "Man on Terror Watchlist Was Released by Border Patrol - HSToday",
+          "type": "url_citation",
+          "url": "https://www.hstoday.us/subject-matter-areas/border-security/man-on-terror-watchlist-was-released-by-border-patrol/?utm_source=openai"
+        },
+        {
+          "end_index": 2373,
+          "start_index": 2154,
+          "title": "\u201cA\u00a0Serious National Security Concern\u201d: Subcommittee Chairman Bishop Opens Hearing on Surge of Chinese Nationals Illegally Crossing the Border \u2013 Committee on Homeland Security",
+          "type": "url_citation",
+          "url": "https://homeland.house.gov/2024/05/16/a-serious-national-security-concern-subcommittee-chairman-bishop-opens-hearing-on-surge-of-chinese-nationals-illegally-crossing-the-border/?utm_source=openai"
+        },
+        {
+          "end_index": 2821,
+          "start_index": 2651,
+          "title": "Seven Chinese nationals tried to illegally enter Guam as U.S. tested missile, authorities say",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/asia-pacific/seven-chinese-nationals-tried-illegally-enter-guam-us-tested-missile-authorities-2024-12-21/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Since November 2023, there has been a massive surge in encounters with nationals from adversary nations at the U.S. southern border, amid ongoing political debates over border security. CBP data shows ~24,000-37,000 Chinese nationals encountered in FY2023 (up from hundreds prior), exceeding that in early FY2024 with over 27,000 by May 2024, many military-age males ([House Homeland Security](https://homeland.house.gov/2024/05/16/a-serious-national-security-concern-subcommittee-chairman-bishop-opens-hearing-on-surge-of-chinese-nationals-illegally-crossing-the-border/), [CBP stats](https://www.cbp.gov/newsroom/stats/nationwide-encounters)). Officials warn of espionage risks ([America First Policy](https://americafirstpolicy.com/issues/the-trojan-horse-at-the-southern-border-malign-ccp-infiltration), Border Patrol union). Terror watchlist hits hit record 151 at SW border in FY2023 ([CBS News](https://www.cbsnews.com/news/us-mexico-border-terrorists/)). Specific: 8 Tajiks with ISIS ties crossed southern border and arrested in US June 2024; DHS identified 400+ migrants via ISIS smuggling network ([NBC](https://www.nbcnews.com/investigations/dhs-identifies-400-migrants-brought-us-isis-linked-human-smuggling-rcna158777), [ABC](https://abcnews.go.com/Politics/8-tajikistanis-suspected-ties-isis-arrested-us-source/story?id=111035401)). DHS 2025 Threat Assessment notes terrorists exploiting migration flows. This matches predicted attempts by adversaries (China, ISIS) to infiltrate via porous borders during dysfunction."
+    },
+    {
+      "id": "B-00:51:41.530",
+      "result": "wrong",
+      "explanation": "As of November 30, 2025, Benjamin Netanyahu is still the Prime Minister of Israel, and no new Knesset election has yet taken place that removed him from office.\n\nKey points:\n\n- Netanyahu returned to office as Prime Minister on December 29, 2022, heading Israel\u2019s 37th government.\n- After the October 7, 2023 Hamas attack, there were extensive protests and calls for his resignation, but his government remained in power.\n- The next regular Knesset election is not scheduled until late 2026, and as of late 2025 no early election has been held and no successor has replaced Netanyahu as Prime Minister.\n\nBecause the prediction stated that *in the near term after October 7, 2023* Israel would hold new elections in which Netanyahu would be replaced as Prime Minister, and this has not occurred by November 30, 2025, the prediction is **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "No new Israeli elections have been held since the November 2022 vote, despite post-October 7, 2023, protests and calls for snap elections. The next legislative elections are scheduled for October 2026 (possibly earlier in June 2026 per some reports). Benjamin Netanyahu remains Prime Minister as of December 2025, serving continuously since December 2022. Sources: [Wikipedia: Benjamin Netanyahu](https://en.wikipedia.org/wiki/Benjamin_Netanyahu), [Wikipedia: Prime Minister of Israel](https://en.wikipedia.org/wiki/Prime_Minister_of_Israel), [Wikipedia: 2026 Israeli legislative election](https://en.wikipedia.org/wiki/2026_Israeli_legislative_election), recent news on Netanyahu's pardon request as PM (CNN, BBC, Times of Israel, Nov 2025)."
+    },
+    {
+      "id": "B-00:52:00.290",
+      "result": "ambiguous",
+      "explanation": "The prediction is conditional and counterfactual: B is asserting that **if** the U.S. *were to adopt* a reciprocity-based and uniform regulatory standard for social media and digital platforms, then some major platforms that fail to meet those standards would be banned from operating in the U.S.\n\nTo evaluate this, we would need both:\n\n1. The U.S. to have actually adopted something that clearly qualifies as a **reciprocity-based and uniform regulatory standard** for all social/digital platforms, and\n2. As a result of that standard, some **major platforms** to have been **banned from operating in the U.S.**\n\nAs of November 30, 2025, the U.S. has not enacted a comprehensive, EU-style, uniform, reciprocity-driven platform regime of the sort described (there is a patchwork of laws and proposals like Section 230 reforms, state privacy laws, kids\u2019 online safety bills, and various content-moderation debates, but not a single reciprocity standard that applies identically to all platforms). There have also not been outright nationwide bans of multiple major platforms under such a regime. TikTok has faced high-profile federal and state-level restrictions and attempted bans, typically grounded in national security and data concerns, not in a **reciprocity-based uniform standard** across *all* platforms.\n\nBecause the **trigger condition** of the prediction (the U.S. adopting the specific kind of regulatory framework B is imagining) has not occurred, we cannot observe whether B\u2019s claimed consequence (major non\u2011compliant platforms being banned) would actually follow. That makes the truth of the underlying causal claim impossible to verify empirically.\n\nSo, the prediction cannot be classified as right or wrong based on real\u2011world outcomes; it remains a hypothetical about a scenario that never materialized, which makes it **ambiguous** rather than simply premature or falsified.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The U.S. has not adopted a reciprocity-based and uniform regulatory standard for social media and digital platforms that would ban non-compliant major platforms. No major platforms (e.g., Facebook, X/Twitter, Instagram) have been banned nationwide. The 'China Social Media Reciprocity Act' (H.R.8041, 117th Congress) was introduced in 2022 but not passed ([congress.gov](https://www.congress.gov/bill/117th-congress/house-bill/8041)). TikTok faced a 2024 divestiture law (PAFACA), upheld by SCOTUS Jan 2025, but enforcement delayed multiple times by Trump executive orders to Dec 16, 2025, with a deal framework for U.S. operations; it remains operational ([White House](https://www.whitehouse.gov/presidential-actions/2025/09/further-extending-the-tiktok-enforcement-delay-9dde/), [Reuters](https://www.reuters.com/sustainability/boards-policy-regulation/tiktok-lives-us-china-deal-app-keep-operating-us-2025-09-16/), [Wikipedia](https://en.wikipedia.org/wiki/Restrictions_on_TikTok_in_the_United_States)). TikTok action is national security-specific, not uniform/reciprocity-based across all platforms. State laws target minors' access or devices, not bans ([Exploding Topics](https://explodingtopics.com/blog/banned-social-media-apps)). Over 2 years post-podcast (Nov 2023), scenario unrealized."
+    },
+    {
+      "id": "B-00:32:04.850-postPutin",
+      "result": "inconclusive",
+      "explanation": "As of 30 November 2025, Vladimir Putin is still the president of Russia, and there has been no clearly defined \"post-Putin era\" to evaluate. Current news and reference sources continue to describe him as Russia\u2019s president and de facto leader.\n\nBecause the prediction is explicitly about *\"a post-putin Russia\"* becoming a failed nation with severe brain drain, it concerns conditions **after** Putin has left power. Since that transition has not occurred yet, there is no way to judge whether Russia *will* be a failed state in that future scenario.\n\nEven though Russia has experienced substantial emigration of educated and skilled workers since the full-scale invasion of Ukraine in 2022 (often described as a major brain drain in media and analyses), that is not sufficient to assess a forecast specifically tied to the *post-Putin* period. The relevant time frame simply hasn\u2019t happened yet.\n\nTherefore the correct status for this prediction is: it\u2019s **too early to tell**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns the 'post-Putin era,' but Vladimir Putin remains President of Russia as of December 2025. Sources: Planned state visit to India Dec 4-5, 2025 ([MEA India](https://www.mea.gov.in/press-releases.htm?dtl/40346)); meeting with US envoy Dec 2 ([Report.az](https://report.az/en/other-countries/afp-putin-witkoff-meeting-set-for-december-2)); active in May 2025 ([Wikipedia](https://en.wikipedia.org/wiki/Vladimir_Putin)). No evidence of him leaving power. Thus, too early to assess if post-Putin Russia becomes a failed state. Current brain drain exists due to Ukraine war (~650k outflow, [Carnegie](https://carnegieendowment.org/russia-eurasia/politika/2025/09/russia-new-demographic-crisis?lang=en)), but Russia persists as a functional wartime state ([CSIS](https://www.csis.org/analysis/russias-war-ukraine-next-chapter), [WaPo](https://www.washingtonpost.com/world/2025/11/25/russia-ukraine-war-offensive-2025/))."
+    },
+    {
+      "id": "D-01:27:06.160",
+      "result": "right",
+      "explanation": "At the time of the podcast (November 17, 2023), a CNN/UNH poll of likely New Hampshire Democratic primary voters had Joe Biden at about 65% and Dean Phillips at 10%, and reported that 41% had not heard he was running and roughly three-quarters did not know enough about him to hold an opinion, indicating low initial support and visibility. ([keyt.com](https://keyt.com/politics/cnn-us-politics/2023/11/17/cnn-poll-new-hampshire-democrats-see-biden-as-partys-best-shot-to-hold-white-house/)) Over the following month, American Research Group\u2019s tracking of likely New Hampshire Democratic primary voters showed Phillips rising from 17% on December 20 to 21%, 26%, 28%, and then 32% by January 20, while Biden remained in the mid\u201150s, a clear upward trend. ([americanresearchgroup.com](https://americanresearchgroup.com/pres2024/dem/nhdem.html?utm_source=openai)) Other pollsters in January also found him in the mid\u2011single to mid\u2011teens (for example, 7\u201310% in CNN/UNH, 16% in Emerson), confirming that his support was meaningfully higher than at launch even if estimates differed. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_New_Hampshire_Democratic_presidential_primary?utm_source=openai)) Reporting just before the primary noted that some surveys had Phillips around 28% to Biden\u2019s 58% and described him as having found \u201csome momentum\u201d in the state. ([startribune.com](https://www.startribune.com/dean-phillips-seeks-upset-win-against-biden-in-new-hampshire-primary/600337534?utm_source=openai)) In the January 23, 2024 New Hampshire Democratic primary itself, Phillips ultimately received about 19\u201320% of the vote, a distant second to Biden\u2019s write\u2011in total of about 64% but roughly double his mid\u2011November polling and far above his initial, near\u2011unknown status. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_New_Hampshire_Democratic_presidential_primary?utm_source=openai)) Nationally, he never rose beyond low single digits and soon ended his campaign after weak results elsewhere, so he did not broadly transform the race. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dean_Phillips_2024_presidential_campaign?utm_source=openai)) However, Chamath\u2019s specific claim was that Phillips\u2019 numbers, particularly in New Hampshire, would improve significantly as more voters saw him. Given the substantial polling gains there and a final vote share around 20% from a very low starting point, that prediction about his New Hampshire polling trajectory is supported by the outcomes.",
+      "sources": [
+        {
+          "end_index": 524,
+          "start_index": 374,
+          "title": "CNN Poll: New Hampshire Democrats see Biden as party\u2019s best shot to hold White House | News Channel 3-12",
+          "type": "url_citation",
+          "url": "https://keyt.com/politics/cnn-us-politics/2023/11/17/cnn-poll-new-hampshire-democrats-see-biden-as-partys-best-shot-to-hold-white-house/"
+        },
+        {
+          "end_index": 894,
+          "start_index": 788,
+          "title": "New Hampshire Democratic Presidential Preference Primary",
+          "type": "url_citation",
+          "url": "https://americanresearchgroup.com/pres2024/dem/nhdem.html?utm_source=openai"
+        },
+        {
+          "end_index": 1232,
+          "start_index": 1112,
+          "title": "2024 New Hampshire Democratic presidential primary",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_New_Hampshire_Democratic_presidential_primary?utm_source=openai"
+        },
+        {
+          "end_index": 1539,
+          "start_index": 1394,
+          "title": "Presidential candidate Dean Phillips finds some momentum in New Hampshire, but is it too late?",
+          "type": "url_citation",
+          "url": "https://www.startribune.com/dean-phillips-seeks-upset-win-against-biden-in-new-hampshire-primary/600337534?utm_source=openai"
+        },
+        {
+          "end_index": 1928,
+          "start_index": 1808,
+          "title": "2024 New Hampshire Democratic presidential primary",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_New_Hampshire_Democratic_presidential_primary?utm_source=openai"
+        },
+        {
+          "end_index": 2190,
+          "start_index": 2080,
+          "title": "Dean Phillips 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Dean_Phillips_2024_presidential_campaign?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath predicted Dean Phillips' polling in New Hampshire would improve significantly with increased visibility and grassroots efforts during the 2024 Democratic primary cycle. Around the podcast date (Nov 17, 2023), a UNH/CNN poll (Nov 10-14) showed Phillips at 10% vs. Biden's 65%. Subsequent polls were volatile but showed gains in several: e.g., ARG (Dec 14-20) 17%, ARG (Dec 27-Jan 4) 21%, ARG (Jan 12-15) 28%, ARG (Jan 18-20) 32%. In the Jan 23, 2024, primary, Phillips received 19.7% (24,377 votes) vs. Biden's write-in 63.8% (79,100 votes), a strong second-place finish for a late entrant, doubling his mid-November polling and validating the prediction of pulling well in NH grassroots context. Phillips viewed 20% as success ([KARE11](https://www.kare11.com/article/news/politics/phillips-bets-it-all-on-new-hampshire-primary/89-21553088-2eeb-4497-93f4-48d359eebe03)). Sources: [Wikipedia polling](https://en.wikipedia.org/wiki/2024_New_Hampshire_Democratic_presidential_primary), [NYT results](https://www.nytimes.com/interactive/2024/01/23/us/elections/results-new-hampshire-democratic-primary.html), UNH poll Nov 2023."
+    },
+    {
+      "id": "A-01:23:51.500",
+      "result": "right",
+      "explanation": "* Joe Biden formally announced he would seek reelection in 2024 and proceeded to run in the Democratic primaries, where he **won an overwhelming majority of delegates and became the presumptive Democratic nominee**, easily defeating challengers including Rep. Dean Phillips. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))\n* Dean Phillips mounted a long-shot primary challenge focused largely on Biden\u2019s age, but he performed poorly (e.g., about 20% in New Hampshire while Biden won via write\u2011in) and failed to gain traction in subsequent contests like South Carolina. ([apnews.com](https://apnews.com/article/a899f4ee06b06406c93c3896362aaf05?utm_source=openai))\n* On March 6, 2024, Phillips **ended his campaign and endorsed Biden**, explicitly acknowledging that he was not the alternative Democratic voters wanted. ([reuters.com](https://www.reuters.com/world/us/dean-phillips-ends-2024-challenge-biden-with-endorsement-2024-03-06/?utm_source=openai))\n* Only after Biden had already secured effective control of the delegate race and become the presumptive nominee did he later withdraw from the 2024 general election on July 21, 2024; Vice President Kamala Harris was then made the Democratic nominee. This later withdrawal does not change the fact that Phillips never defeated Biden for the Democratic nomination and, in practice, never came close to doing so. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))\n\nBecause Biden did run in the 2024 Democratic primaries and Phillips was unable to seriously challenge, let alone defeat, him for the nomination, Friedberg\u2019s prediction that Phillips \u201cdoesn\u2019t stand a chance\u201d against Biden under those structural conditions was borne out by events.",
+      "sources": [
+        {
+          "end_index": 451,
+          "start_index": 308,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 792,
+          "start_index": 699,
+          "title": "Wisconsin Supreme Court orders election officials to put Phillips on presidential primary ballot",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/a899f4ee06b06406c93c3896362aaf05?utm_source=openai"
+        },
+        {
+          "end_index": 1085,
+          "start_index": 949,
+          "title": "Dean Phillips ends 2024 challenge to Biden with endorsement",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/dean-phillips-ends-2024-challenge-biden-with-endorsement-2024-03-06/?utm_source=openai"
+        },
+        {
+          "end_index": 1641,
+          "start_index": 1498,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Joe Biden remained the Democratic candidate through the 2024 primaries, winning them overwhelmingly. Dean Phillips suspended his campaign on March 6, 2024, after failing to win any primaries (e.g., <i>AP News</i>: 'ended his long-shot 2024 Democratic presidential bid... after failing to win a primary contest'; <i>PBS</i>, <i>CBS News</i>, <i>NBC News</i>, <i>Politico</i>). Biden dropped out on July 21, 2024, post-primaries (<i>Wikipedia</i>). Phillips could not defeat Biden for the nomination due to structural factors, as predicted. Sources: web search results on Phillips' campaign suspension and Biden's withdrawal."
+    },
+    {
+      "id": "sacks-01:43:31.890",
+      "result": "wrong",
+      "explanation": "Joe Biden ultimately **did not remain in the 2024 presidential race**: he ended his reelection campaign in July 2024 and withdrew from the race, with major outlets reporting his decision not to seek reelection and to step aside as the Democratic nominee. \n\nSince Sacks\u2019s prediction was effectively that *Biden would run and not drop out before the general election* with a probability of about 70% (i.e., the more-likely outcome in his view), and the opposite outcome occurred (Biden did drop out before the general election), this specific prediction is counted as **wrong** in outcome terms.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Joe Biden announced his withdrawal from the 2024 presidential race on July 21, 2024, well before the general election on November 5, 2024, and endorsed Kamala Harris as the Democratic nominee. This directly contradicts the prediction that there was a 70% chance he would remain in the race and not drop out before the general election. Sources: [Wikipedia: Withdrawal of Joe Biden](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election), [AP News](https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/), [CNN: 2024 Presidential Candidates](https://www.cnn.com/interactive/2024/politics/presidential-candidates-dg/)."
+    },
+    {
+      "id": "chamath-01:44:22.310",
+      "result": "wrong",
+      "explanation": "Chamath predicted that by February or March 2024, the year-over-year U.S. CPI inflation rate would be in the low\u20112% range, around 2.2%. In reality, official Bureau of Labor Statistics data show headline CPI was **3.2%** year-over-year in February 2024 and **3.5%** in March 2024\u2014about a full percentage point above his forecast and still well above the Fed\u2019s 2% target. ([bls.gov](https://www.bls.gov/opub/ted/2024/consumer-prices-up-3-2-percent-from-february-2023-to-february-2024.htm?utm_source=openai)) Therefore, the prediction was wrong.",
+      "sources": [
+        {
+          "end_index": 538,
+          "start_index": 403,
+          "title": "Consumer prices up 3.2 percent from February 2023 to February 2024 : The Economics Daily: U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/ted/2024/consumer-prices-up-3-2-percent-from-february-2023-to-february-2024.htm?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction was for U.S. CPI YoY inflation to be in the low-2% range (~2.2%) by Feb or Mar 2024. Actual figures: **Feb 2024: 3.2%**, **Mar 2024: 3.5%** (both CPI-U all items, not seasonally adjusted, standard headline YoY). These are in the mid-3% range, not low-2%. Sources: [BLS Feb 2024 CPI release](https://www.bls.gov/news.release/archives/cpi_03122024.htm), [BLS Mar 2024 CPI release](https://www.bls.gov/news.release/archives/cpi_04102024.htm), confirmed by [US Inflation Calculator](https://www.usinflationcalculator.com/inflation/current-inflation-rates/)."
+    }
+  ]
+}

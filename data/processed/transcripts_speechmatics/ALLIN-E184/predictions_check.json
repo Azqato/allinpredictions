@@ -1,0 +1,454 @@
+{
+  "meta": {
+    "count": 12,
+    "count_by_result": {
+      "inconclusive": 4,
+      "wrong": 6,
+      "right": 1,
+      "ambiguous": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:17:59.000",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, it\u2019s too early to definitively judge this prediction.\n\n1. **Timeframe and claim are vague.** Trump said the U.S. will *\u201cneed\u201d* roughly **2\u20133x current electricity levels \u201cto be a leader in AI\u201d in the coming years**. That\u2019s a normative, conditional statement (what is *needed* to stay in front, not what *will actually happen*), with an undefined horizon (\u201ccoming years\u201d). Such a claim can\u2019t yet be cleanly falsified or confirmed.\n\n2. **U.S. power demand has not doubled or tripled yet.** Official forecasts from the U.S. Energy Information Administration show total U.S. electricity demand rising only modestly from about **4,097 TWh in 2024 to roughly 4,19x\u20134,30x TWh by 2025\u20132026**, i.e., single\u2011digit percent growth, not a 2\u20133x jump. ([reuters.com](https://www.reuters.com/sustainability/climate-energy/us-power-use-reach-record-highs-2025-2026-eia-says-2025-10-07/?utm_source=openai)) Longer\u2011term outlooks likewise project on the order of ~50% higher electricity demand by 2050, not a tripling. ([certrec.com](https://www.certrec.com/blog/us-energy-demand-forecast-2025/?utm_source=openai))\n\n3. **AI and data centers *are* driving significant new demand, but systemwide multiples are still projections.** Data centers (heavily influenced by AI) already consume several percent of U.S. electricity and are expected to more than double their usage by 2030\u20132035, with AI workloads driving much of the growth. ([pewresearch.org](https://www.pewresearch.org/short-reads/2025/10/24/what-we-know-about-energy-use-at-us-data-centers-amid-the-ai-boom/?utm_source=openai)) Analysts like Gartner and Deloitte warn that AI\u2011driven data center load could grow several\u2011fold and strain grid capacity, but these are forecasts out to 2030\u20132035, not observed outcomes yet. ([gartner.com](https://www.gartner.com/en/newsroom/press-releases/2024-11-12-gartner-predicts-power-shortages-will-restrict-40-percent-of-ai-data-centers-by-20270?utm_source=openai))\n\n4. **The U.S. remains an AI leader without a doubled grid (so far).** As of late 2025, the U.S. is still widely regarded as the global leader in cutting\u2011edge AI while total grid capacity has increased only incrementally, not by 2\u20133x. Whether *future* competitiveness will truly require doubling or tripling total national generation remains an open question.\n\nBecause the statement is about what *will be required* over an unspecified multi\u2011year future, and we are only ~1.5 years past the prediction with no way yet to see the full long\u2011term outcome, the status of the prediction is **inconclusive (too early to tell)**.",
+      "sources": [
+        {
+          "end_index": 956,
+          "start_index": 805,
+          "title": "US power use to reach record highs in 2025 and 2026, EIA says",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/sustainability/climate-energy/us-power-use-reach-record-highs-2025-2026-eia-says-2025-10-07/?utm_source=openai"
+        },
+        {
+          "end_index": 1162,
+          "start_index": 1067,
+          "title": "U.S. Energy Demand Forecast 2025 | Certrec",
+          "type": "url_citation",
+          "url": "https://www.certrec.com/blog/us-energy-demand-forecast-2025/?utm_source=openai"
+        },
+        {
+          "end_index": 1636,
+          "start_index": 1480,
+          "title": "US data centers\u2019 energy use amid the artificial intelligence boom | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/short-reads/2025/10/24/what-we-know-about-energy-use-at-us-data-centers-amid-the-ai-boom/?utm_source=openai"
+        },
+        {
+          "end_index": 2010,
+          "start_index": 1828,
+          "title": "Gartner Predicts Power Shortages Will Restrict 40% of AI Data Centers By 2027",
+          "type": "url_citation",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2024-11-12-gartner-predicts-power-shortages-will-restrict-40-percent-of-ai-data-centers-by-20270?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump predicted that AI leadership requires US electric power generation capacity roughly 2\u20133 times current levels (~1,300 GW in 2024 per [America's Electricity Generating Capacity](https://www.publicpower.org/resource/americas-electricity-generating-capacity)), implying AI alone needs 2,600\u20133,900 GW. Post-2024 projections show data center/AI demand growing significantly but far short: e.g., BNEF forecasts US data-center demand from 35 GW (2024) to 78 GW (2035); EPRI AI capacity 5 GW now to >50 GW (2030); S&P data-center power to 134 GW (2030); IEA data centers double globally to ~3% electricity; Pew US data centers 4% (2024) to >8% (2030). Total US demand grows ~15\u201325% by 2030 (EIA AEO2025 implies modest near-term rise), not 200\u2013300%. DOE notes data-center *usage* may double/triple by 2028 from low base, but not total capacity. Consensus: AI strains grid but requires ~5\u201310% total capacity, confirming exaggeration. 1.5 years sufficient for projections to refute. Sources: [EIA](https://www.eia.gov/outlooks/aeo/), [IEA](https://www.iea.org/news/ai-is-set-to-drive-surging-electricity-demand-from-data-centres-while-offering-the-potential-to-transform-how-the-energy-sector-works), [Pew](https://www.pewresearch.org/short-reads/2025/10/24/what-we-know-about-energy-use-at-us-data-centers-amid-the-ai-boom/), [BNEF](https://about.bnef.com/insights/commodities/power-for-ai-easier-said-than-built/)."
+    },
+    {
+      "id": "C-00:25:15.570",
+      "result": "wrong",
+      "explanation": "Open-source and official assessments indicate that Iran did *not* possess a nuclear weapon by late September 2024, nor does it as of late 2025.\n\nKey points:\n- The International Atomic Energy Agency (IAEA) has reported that Iran holds a large stockpile of uranium enriched to 60% (near weapons grade) and that this material *could* be used to make multiple nuclear weapons if further enriched, but it explicitly notes there is **no indication Iran has actually weaponized** this material into a bomb. ([apnews.com](https://apnews.com/article/364d3ce5f8ec54e1c188a17ff04559ce?utm_source=openai))\n- Reputable summaries of Iran\u2019s WMD status state that *Iran is not known to currently possess nuclear weapons*, and European governments in 2025 still describe Iran\u2019s behavior as unprecedented \"for a state without a nuclear weapons program\"\u2014i.e., they still treat it as non\u2013nuclear-armed, though very close. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Iran_and_weapons_of_mass_destruction?utm_source=openai))\n- A January 2025 Associated Press overview of nuclear-armed states lists nine countries with nuclear weapons and does **not** include Iran, instead describing Iran as enriching uranium close to weapons-grade but \"not currently assessed to be actively pursuing nuclear weapons.\" ([apnews.com](https://apnews.com/article/dd34ff7bfc4cd4d9f13940102b1d5f1c?utm_source=openai))\n- Speculation that an October 5, 2024 earthquake in Iran might have been a covert nuclear test was rejected by international monitoring organizations; the CTBTO and independent seismologists concluded the signals were consistent with natural earthquakes, not a nuclear explosion. ([armscontrol.org](https://www.armscontrol.org/act/2024-11/news-briefs/experts-dismiss-speculation-over-iran-nuclear-testing?utm_source=openai))\n- Analyses in early 2025 characterize Iran as a **nuclear threshold state**\u2014having the capability and materials to build weapons relatively quickly if it chooses\u2014but still emphasize that there is no public evidence it has actually built or tested a weapon. ([iranprimer.usip.org](https://iranprimer.usip.org/blog/2025/jan/13/coming-iranian-nuclear-challenge-2025?utm_source=openai))\n\nGiven that Trump\u2019s prediction was time-bounded (roughly 90 days from June 20, 2024, i.e., by late September 2024) and that, even well after that date, Iran is still publicly assessed as *not* having a nuclear weapon, the prediction is best scored as **wrong** under the available evidence. While it is theoretically possible Iran could have secretly assembled a device without detection, there is no substantiated evidence of that, and the international consensus continues to treat Iran as non\u2013nuclear-armed rather than an actual nuclear weapons state.",
+      "sources": [
+        {
+          "end_index": 629,
+          "start_index": 536,
+          "title": "UN watchdog hasn't been able to verify Iran's stockpile of near-weapons grade uranium in months",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/364d3ce5f8ec54e1c188a17ff04559ce?utm_source=openai"
+        },
+        {
+          "end_index": 1047,
+          "start_index": 941,
+          "title": "Iran and weapons of mass destruction",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Iran_and_weapons_of_mass_destruction?utm_source=openai"
+        },
+        {
+          "end_index": 1422,
+          "start_index": 1329,
+          "title": "These countries have nuclear weapons or are believed to have them",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/dd34ff7bfc4cd4d9f13940102b1d5f1c?utm_source=openai"
+        },
+        {
+          "end_index": 1848,
+          "start_index": 1704,
+          "title": "Experts Dismiss Speculation Over Iran Nuclear Testing | Arms Control Association",
+          "type": "url_citation",
+          "url": "https://www.armscontrol.org/act/2024-11/news-briefs/experts-dismiss-speculation-over-iran-nuclear-testing?utm_source=openai"
+        },
+        {
+          "end_index": 2232,
+          "start_index": 2107,
+          "title": "The Coming Iranian Nuclear Challenge in 2025 | The Iran Primer",
+          "type": "url_citation",
+          "url": "https://iranprimer.usip.org/blog/2025/jan/13/coming-iranian-nuclear-challenge-2025?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "As of late September 2024 and continuing through December 2025, Iran has not obtained a nuclear weapon. U.S. intelligence assessments (e.g., 2024-2025 ODNI Annual Threat Assessment, CRS report IF12106) state Iran halted its weapons program in 2003, has not resumed it, and is not currently undertaking key weaponization activities. IAEA reports (e.g., May/June 2025) confirm no tangible proof of a nuclear weapons program, despite high uranium enrichment stockpiles (60% U-235) sufficient for potential bombs if further processed. Breakout time for fissile material is weeks, but no weapon has been built. Israeli/U.S. strikes in June 2025 targeted facilities to prevent this, confirming Iran remained a threshold state, not a nuclear power ([Congress.gov](https://www.congress.gov/crs-product/IF12106), [IAEA](https://www.iaea.org), [Wikipedia](https://en.wikipedia.org/wiki/Nuclear_program_of_Iran), [CFR](https://www.cfr.org))."
+    },
+    {
+      "id": "C-00:31:06.600",
+      "result": "inconclusive",
+      "explanation": "Trump did return to the presidency after winning the 2024 election; he was inaugurated again on January 20, 2025.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai)) As a candidate in 2024 he publicly said abortion should be decided by the states and that he would not sign a federal abortion ban and would veto such a bill, reaffirming that stance on Truth Social in October 2024.([time.com](https://time.com/6964678/donald-trump-abortion-ban-states/?utm_source=openai))([snopes.com](https://www.snopes.com/news/2024/10/01/trump-harris-national-abortion-ban/?utm_source=openai))\n\nSo far in his second term, no federal law creating a nationwide abortion ban has passed Congress or been signed. The main nationwide \u201cpersonhood\u201d bill, the **Life at Conception Act (H.R. 722)**, has only been introduced and remains in the House Judiciary Committee, with no floor votes or enactment as of November 30, 2025.([congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/722?utm_source=openai))([congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/722/all-actions-without-amendments?utm_source=openai)) There is also no statute or formal DOJ policy yet invoking the Comstock Act to ban abortion nationwide, though Democrats have introduced the *Stop Comstock Act* specifically to pre\u2011empt such a move, and critics describe Comstock and Project 2025 as potential pathways to a de facto national ban in the future.([heinrich.senate.gov](https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-announces-legislation-to-protect-access-to-mifepristone?utm_source=openai))([patryan.house.gov](https://patryan.house.gov/media/press-releases/congressman-pat-ryan-introduces-landmark-legislation-blocks-trumps-plan-impose?utm_source=openai))\n\nHowever, Trump has **not** simply left abortion policy to the states. He has used federal powers to tighten abortion access nationwide by (a) issuing Executive Order 14182 to \u201cenforce the Hyde Amendment,\u201d ending federal funding for elective abortions and rescinding Biden-era orders that expanded abortion access,([en.wikipedia.org](https://en.wikipedia.org/wiki/Executive_Order_14182?utm_source=openai)) (b) reinstating the Mexico City Policy and rejoining the Geneva Consensus Declaration to restrict abortion-related foreign aid,([reuters.com](https://www.reuters.com/world/us/us-rejoining-international-anti-abortion-pact-2025-01-25/?utm_source=openai)) (c) backing and signing the **One Big Beautiful Bill Act**, which cuts off Medicaid funding to major abortion providers like Planned Parenthood nationwide (parts of which have been litigated and, more recently, allowed to take effect),([en.wikipedia.org](https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=openai))([nixonpeabody.com](https://www.nixonpeabody.com/insights/alerts/2025/07/28/one-big-beautiful-bill-acts-restriction-on-family-planning-services?utm_source=openai)) and (d) directing HHS and FDA to review mifepristone and consider stricter nationwide limits on medication abortion.([nypost.com](https://nypost.com/2025/05/15/us-news/hhs-chief-rfk-jr-says-hes-ordered-a-complete-review-of-chemical-abortion-pill/?utm_source=openai))([aclu.org](https://www.aclu.org/press-releases/trump-administration-announces-that-fda-will-consider-imposing-greater-restrictions-on-medication-abortion-nationwide?utm_source=openai)) In a 2025 interview he also declined to say he would veto a national abortion or personhood bill, instead deflecting that abortion is \u201cback in the states.\u201d([mediaite.com](https://www.mediaite.com/media/news/trump-refuses-to-say-hed-veto-national-abortion-ban-or-giving-full-legal-rights-at-conception-in-stunning-exchange/?utm_source=openai)) These steps show substantial federal involvement in abortion access, short of a direct statutory ban.\n\nBecause Trump\u2019s current term runs through January 20, 2029 and we are only in late 2025, it is **too early** to say definitively whether he will *ever* support or sign a federal abortion ban. To date, he has not signed such a ban, but his administration has pursued aggressive federal restrictions on abortion funding and medication that go beyond a purely state-by-state approach. Given the remaining time in his term and the possibility of future legislation or executive actions, the prediction cannot yet be judged as clearly right or wrong, so it is best categorized as **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 263,
+          "start_index": 153,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 569,
+          "start_index": 479,
+          "title": "Donald Trump Declines to Endorse a Nationwide Abortion Ban | TIME",
+          "type": "url_citation",
+          "url": "https://time.com/6964678/donald-trump-abortion-ban-states/?utm_source=openai"
+        },
+        {
+          "end_index": 677,
+          "start_index": 569,
+          "title": "Harris Claims Trump Would Sign National Abortion Ban. Here's What We Know | Snopes.com",
+          "type": "url_citation",
+          "url": "https://www.snopes.com/news/2024/10/01/trump-harris-national-abortion-ban/?utm_source=openai"
+        },
+        {
+          "end_index": 1099,
+          "start_index": 1004,
+          "title": "H.R.722 - 119th Congress (2025-2026): Life at Conception Act | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/722?utm_source=openai"
+        },
+        {
+          "end_index": 1225,
+          "start_index": 1099,
+          "title": "Actions - H.R.722 - 119th Congress (2025-2026): Life at Conception Act | Congress.gov | Library of Congress",
+          "type": "url_citation",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/722/all-actions-without-amendments?utm_source=openai"
+        },
+        {
+          "end_index": 1698,
+          "start_index": 1535,
+          "title": "Heinrich Announces Legislation to Protec... | Senator Martin Heinrich",
+          "type": "url_citation",
+          "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-announces-legislation-to-protect-access-to-mifepristone?utm_source=openai"
+        },
+        {
+          "end_index": 1864,
+          "start_index": 1698,
+          "title": "CONGRESSMAN PAT RYAN INTRODUCES LANDMARK LEGISLATION THAT BLOCKS TRUMP'S PLAN TO IMPOSE A NATIONWIDE ABORTION BAN | Congressman Pat Ryan",
+          "type": "url_citation",
+          "url": "https://patryan.house.gov/media/press-releases/congressman-pat-ryan-introduces-landmark-legislation-blocks-trumps-plan-impose?utm_source=openai"
+        },
+        {
+          "end_index": 2272,
+          "start_index": 2181,
+          "title": "Executive Order 14182",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Executive_Order_14182?utm_source=openai"
+        },
+        {
+          "end_index": 2525,
+          "start_index": 2400,
+          "title": "Trump uses executive power to reinstate anti-abortion pacts",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/us-rejoining-international-anti-abortion-pact-2025-01-25/?utm_source=openai"
+        },
+        {
+          "end_index": 2857,
+          "start_index": 2761,
+          "title": "One Big Beautiful Bill Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=openai"
+        },
+        {
+          "end_index": 3020,
+          "start_index": 2857,
+          "title": "One Big Beautiful Bill Act\u2019s restriction on family planning services | Nixon Peabody LLP",
+          "type": "url_citation",
+          "url": "https://www.nixonpeabody.com/insights/alerts/2025/07/28/one-big-beautiful-bill-acts-restriction-on-family-planning-services?utm_source=openai"
+        },
+        {
+          "end_index": 3287,
+          "start_index": 3137,
+          "title": "HHS chief RFK Jr. says he's ordered a 'complete review' of chemical abortion pill",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/05/15/us-news/hhs-chief-rfk-jr-says-hes-ordered-a-complete-review-of-chemical-abortion-pill/?utm_source=openai"
+        },
+        {
+          "end_index": 3472,
+          "start_index": 3287,
+          "title": "Trump Administration Announces that FDA Will Consider Imposing Greater Restrictions on Medication Abortion Nationwide | American Civil Liberties Union",
+          "type": "url_citation",
+          "url": "https://www.aclu.org/press-releases/trump-administration-announces-that-fda-will-consider-imposing-greater-restrictions-on-medication-abortion-nationwide?utm_source=openai"
+        },
+        {
+          "end_index": 3815,
+          "start_index": 3628,
+          "title": "Trump Won't Say He'd Veto Abortion Ban, Rights At Conception",
+          "type": "url_citation",
+          "url": "https://www.mediaite.com/media/news/trump-refuses-to-say-hed-veto-national-abortion-ban-or-giving-full-legal-rights-at-conception-in-stunning-exchange/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Donald Trump assumed the presidency on January 20, 2025, and by December 1, 2025, nearly 11 months into his term, he has neither supported nor signed a federal abortion ban. No such legislation has passed Congress; bills like the Life at Conception Act (H.R.722) and Born-Alive Abortion Survivors Protection Act (H.R.21/S.6) were introduced but not enacted ([congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/722)). Trump signed executive orders enforcing the Hyde Amendment (barring federal funding for abortions) and reinstating the Global Gag Rule (foreign aid restrictions), but these are not bans on abortion itself ([whitehouse.gov](https://www.whitehouse.gov/fact-sheets/2025/01/fact-sheet-president-donald-j-trump-enforces-overwhelmingly-popular-demand-to-stop-taxpayer-funding-of-abortion/), [politico.com](https://www.politico.com/news/2025/01/24/trump-issues-executive-orders-reviving-anti-abortion-policies-00200212)). A proposed VA abortion restriction for veterans was announced but is not a national ban ([reproductiverights.org](https://reproductiverights.org/news/5-things-trump-va-abortion-ban/)). Abortion policy continues to vary by state, with no federal standard ([kff.org](https://www.kff.org/womens-health-policy/abortion-in-the-u-s-dashboard/), [reproductiverights.org](https://reproductiverights.org/maps/abortion-laws-by-state/)). News confirms Trump pledged against a national ban and has not pursued one ([19thnews.org](https://19thnews.org/2025/01/why-hasnt-trump-done-anything-about-abortion-second-term/), [spectrumlocalnews.com](https://spectrumlocalnews.com/us/snplus/news/2025/03/28/president-trump-abortion-action-planned-parenthood-students-for-life-defund))."
+    },
+    {
+      "id": "H-00:12:02.540",
+      "result": "right",
+      "explanation": "Multiple authoritative sources show that Donald Trump won the 2024 U.S. presidential election and was elected to a second (non-consecutive) term. The certified results list Trump as receiving 312 electoral votes to Democrat Kamala Harris\u2019s 226, as well as winning the national popular vote plurality.([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))  Overviews of the election and of Harris\u2019s campaign likewise state that Harris lost to Trump on November 5, 2024.([en.wikipedia.org](https://en.wikipedia.org/wiki/Kamala_Harris?utm_source=openai))  Since Trump was subsequently inaugurated again on January 20, 2025,([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai)) Friedberg\u2019s June 2024 prediction that Trump was likely \"going to win a second term\" was borne out by events.",
+      "sources": [
+        {
+          "end_index": 443,
+          "start_index": 333,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 640,
+          "start_index": 557,
+          "title": "Kamala Harris",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Kamala_Harris?utm_source=openai"
+        },
+        {
+          "end_index": 852,
+          "start_index": 709,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "David Friedberg's June 2024 statement that Donald Trump was likely to win a second term was correct. Trump defeated Kamala Harris in the 2024 presidential election on November 5, 2024, securing 312 electoral votes to Harris's 226 ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [CNN](https://www.cnn.com/election/2024/results/president), [BBC](https://www.bbc.com/news/election/2024/us/results), [NYT](https://www.nytimes.com/interactive/2024/11/05/us/elections/results-president.html)). As of December 2025, Trump is serving his second term as the 47th President."
+    },
+    {
+      "id": "C-00:15:24.980",
+      "result": "wrong",
+      "explanation": "* **Condition met:** Donald Trump did win another term in the 2024 election and took office again on January 20, 2025, so the \u201cif he wins another term\u201d condition was satisfied. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n\n* **Early moves to shrink/dismantle the Department of Education:** In March 2025, the Trump administration announced a major reduction in force at the U.S. Department of Education, cutting staff from about 4,100 to roughly 2,100, and Trump signed an executive order on March 20, 2025 directing the secretary to **\u201cshrink the Department of Education\u201d and facilitate its closure, returning authority over education to states and local communities.** ([en.wikipedia.org](https://en.wikipedia.org/wiki/United_States_Department_of_Education?utm_source=openai))  These are substantial early efforts toward shrinking and dismantling the department, consistent with part of his rhetoric in the quote.\n\n* **Courts and Congress blocked outright closure:** On May 22, 2025, a federal judge issued an injunction blocking Trump\u2019s plan to dismantle the Department of Education, ordering the reinstatement of more than 1,300 laid\u2011off employees and explicitly barring the administration from using layoffs and program transfers to effectively close the agency without congressional authorization. ([npr.org](https://www.npr.org/2025/05/22/nx-s1-5407521/trump-education-department-layoffs-injunction?utm_source=openai))  Analyses and reference sources likewise emphasize that *closing* the department outright still requires an act of Congress, which has not occurred. ([en.wikipedia.org](https://en.wikipedia.org/wiki/United_States_Department_of_Education?utm_source=openai))  The department continues to operate as a cabinet\u2011level agency and is still issuing press releases and administering federal programs under the Trump\u2013Vance administration. ([ed.gov](https://www.ed.gov/about/news/press-release/us-department-of-education-celebrates-sub-cabinet-presidential-nominations?utm_source=openai))\n\n* **No real shift of primary control or most federal funding to the states:** Education policy and funding in the U.S. were already primarily determined and financed by states and localities before Trump\u2019s second term; the federal government supplies roughly 10% of K\u201312 funding with attached conditions. ([washingtonpost.com](https://www.washingtonpost.com/education/2025/02/04/department-of-education-explained-trump/?utm_source=openai))  Post\u2011inauguration moves\u2014such as reassigning some Education Department offices to other federal agencies and proposing to consolidate numerous grants into state\u2011administered block grants\u2014have been framed politically as \u201creturning education to the states,\u201d but reporting notes these changes **do not actually increase state authority over education**, nor do they fundamentally reallocate \u201cmost\u201d federal education funding in a durable way. Many key block\u2011grant and restructuring proposals require congressional approval and have not yet remade the funding landscape. ([washingtonpost.com](https://www.washingtonpost.com/education/2025/11/24/trump-return-education-states/?utm_source=openai))\n\n* **Net assessment vs. the prediction text:**\n  * The prediction\u2019s strong claim that \u201cDepartment of Education goes\u201d and that Trump would **\u201csend education back to the states\u201d** in the sense of eliminating the federal department and shifting primary control and most associated federal funding to states has *not* been realized. The department still legally exists, still administers major federal programs (including student aid and civil\u2011rights enforcement), and federal conditions on funds remain in place. ([en.wikipedia.org](https://en.wikipedia.org/wiki/United_States_Department_of_Education?utm_source=openai))\n  * While there *has* been an early, aggressive attempt to shrink and structurally weaken the department, that falls short of the prediction\u2019s combined claim of both effective dismantling *and* a meaningful transfer of primary control and most federal education funding back to the states.\n\nBecause the condition (Trump winning another term) is satisfied but the main outcome (\u201cDepartment of Education goes\u201d / education effectively sent back to the states with most federal funding) has *not* actually occurred by late 2025, the prediction, as stated, is best scored as **wrong**.",
+      "sources": [
+        {
+          "end_index": 320,
+          "start_index": 210,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 879,
+          "start_index": 772,
+          "title": "United States Department of Education",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/United_States_Department_of_Education?utm_source=openai"
+        },
+        {
+          "end_index": 1528,
+          "start_index": 1407,
+          "title": "Judge blocks Trump from closing the Education Department : NPR",
+          "type": "url_citation",
+          "url": "https://www.npr.org/2025/05/22/nx-s1-5407521/trump-education-department-layoffs-injunction?utm_source=openai"
+        },
+        {
+          "end_index": 1785,
+          "start_index": 1678,
+          "title": "United States Department of Education",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/United_States_Department_of_Education?utm_source=openai"
+        },
+        {
+          "end_index": 2106,
+          "start_index": 1958,
+          "title": "U.S. Department of Education Celebrates Sub-Cabinet Presidential Nominations | U.S. Department of Education",
+          "type": "url_citation",
+          "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-celebrates-sub-cabinet-presidential-nominations?utm_source=openai"
+        },
+        {
+          "end_index": 2549,
+          "start_index": 2415,
+          "title": "Key functions of the Education Department, which Trump is moving to dismantle - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/education/2025/02/04/department-of-education-explained-trump/?utm_source=openai"
+        },
+        {
+          "end_index": 3240,
+          "start_index": 3116,
+          "title": "Trump wants to 'return education to the states.' Is that what he's doing?",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/education/2025/11/24/trump-return-education-states/?utm_source=openai"
+        },
+        {
+          "end_index": 3861,
+          "start_index": 3754,
+          "title": "United States Department of Education",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/United_States_Department_of_Education?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Trump signed an EO on March 20, 2025 ([White House](https://www.whitehouse.gov/presidential-actions/2025/03/improving-education-outcomes-by-empowering-parents-states-and-communities/)), directing the Secretary to facilitate closure of the Dept. of Education and return authority to states/local communities. By Nov. 18, 2025, the administration announced six interagency agreements shifting major functions\u2014K-12/Title I ($18B), postsecondary grants, etc.\u2014to Labor, HHS, State, Interior ([ed.gov](http://www.ed.gov/about/news/press-release/us-department-of-education-announces-six-new-agency-partnerships-break-federal-bureaucracy), [NYT](https://www.nytimes.com/2025/11/18/us/politics/trump-education-department.html), [PBS](https://www.pbs.org/newshour/education/schools-fear-disruptions-as-white-house-begins-dismantling-department-of-education)). This drastically shrinks ED (layoffs of 1,400+, programs offloaded) while shifting oversight/funding control toward states via reduced federal bureaucracy, matching the prediction 'early' (~10 months in). ED persists in limited role but is effectively dismantled; full abolition needs Congress. Ongoing lawsuits noted, but process aligns ([Chalkbeat](https://www.chalkbeat.org/2025/11/18/is-trump-dismantling-department-of-education/))."
+    },
+    {
+      "id": "C-00:44:19.130",
+      "result": "wrong",
+      "explanation": "On the June 2024 All\u2011In podcast, then-candidate Donald Trump said that if he returned to office he would ensure that foreign students who graduate from U.S. colleges would \u201cautomatically\u201d receive green cards as part of their diploma and that this situation would end \u201con day one\u201d of a new term. ([forbes.com](https://www.forbes.com/sites/stuartanderson/2024/06/23/trump-unlikely-to-pass-immigration-law-to-admit-all-college-grads/?utm_source=openai)) Trump did return to office on January 20, 2025, but his day\u2011one executive actions on immigration\u2014such as Executive Order 14159 ('Protecting The American People Against Invasion'), Executive Order 14160 (seeking to end birthright citizenship for many children of non\u2011citizens), and Executive Order 14148 (rescinding various Biden\u2011era orders)\u2014tightened enforcement and citizenship rules rather than creating any automatic green card pathway for foreign graduates. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Executive_Order_14159?utm_source=openai)) Since then, no law, regulation, or executive order has been enacted that automatically grants green cards to all foreign nationals who graduate from accredited U.S. colleges. The administration\u2019s signature pro\u2011immigration measure has instead been the 'Gold Card' investor visa program, created by a September 19, 2025 executive order and related actions, which offers expedited immigrant visas to wealthy individuals or corporate sponsors making large financial gifts\u2014not to all college graduates as part of their diploma. ([reuters.com](https://www.reuters.com/world/us/trump-end-eb-5-immigrant-investor-visa-program-2025-02-25/?utm_source=openai)) Therefore, the prediction that Trump would, on day one of a new term, move to change U.S. immigration policy so that any foreign college graduate automatically receives a green card has not come true.",
+      "sources": [
+        {
+          "end_index": 483,
+          "start_index": 328,
+          "title": "Trump Unlikely To Pass Immigration Law To Admit All College Grads",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/stuartanderson/2024/06/23/trump-unlikely-to-pass-immigration-law-to-admit-all-college-grads/?utm_source=openai"
+        },
+        {
+          "end_index": 1037,
+          "start_index": 946,
+          "title": "Executive Order 14159",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Executive_Order_14159?utm_source=openai"
+        },
+        {
+          "end_index": 1687,
+          "start_index": 1561,
+          "title": "Trump floats $5 million 'gold card' as a route to US citizenship",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/trump-end-eb-5-immigrant-investor-visa-program-2025-02-25/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump was inaugurated on January 20, 2025, but his first-day executive orders (e.g., EO 14147 'Ending the Weaponization of the Federal Government', EO 14148 'Initial Rescissions of Harmful Executive Orders', EO 14154/14158/14159/14160 on immigration invasion declarations, birthright citizenship, etc.) focused on border security and restrictions, not expanding green cards for graduates ([Federal Register](https://www.federalregister.gov/presidential-documents/executive-orders/donald-trump/2025), [White House](https://www.whitehouse.gov/presidential-actions/), [Wikipedia list](https://en.wikipedia.org/wiki/List_of_executive_orders_in_the_second_Trump_presidency)). No evidence of any action on day one or subsequently implementing automatic green cards 'as part of your diploma'; instead, policies restricted student visas/OPT/H-1B ([Forbes Nov 2025](https://www.forbes.com/sites/stuartanderson/2025/11/11/new-immigration-rule-will-end-or-restrict-student-practical-training/), [Brookings Jul 2025](https://www.brookings.edu/articles/trumps-immigration-policies-may-threaten-american-ai-leadership/)). Campaign walked back promise pre-election ([Fox News Jun 2024](https://www.foxnews.com/politics/campaign-walks-back-trumps-green-card-promise)). Nearly 11 months later, policy unfulfilled."
+    },
+    {
+      "id": "C-00:47:38.550",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, Donald Trump has **not** begun a new presidential term, so the conditional part of the prediction (\u201c*If Donald Trump is elected again\u2026 early on in his new term*\u201d) has not been triggered. Because the prerequisite (him being elected and taking office again) has not occurred, we cannot yet evaluate whether he will or will not release the remaining classified JFK files \"immediately\" upon taking office.\n\nTherefore, the prediction\u2019s truth value is **inconclusive (too early to tell)**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Trump signed Executive Order 14176 on January 23, 2025 (three days after inauguration on Jan 20), directing the release of all remaining records related to the JFK assassination without delay. On March 18, 2025, the National Archives released all previously classified JFK Assassination Records Collection documents (~80,000 pages, including newly discovered FBI files), as stated on [archives.gov/research/jfk/release-2025](https://www.archives.gov/research/jfk/release-2025): 'all records previously withheld for classification... are released.' This fulfills the 'early'/'immediately' promise (within first ~60 days). Minor non-classification redactions (e.g., grand jury per JFK Act \u00a710) remain, but all classified files were fully released, per White House, DNI, and news sources like NYT, Reuters, PBS ([whitehouse.gov](https://www.whitehouse.gov/presidential-actions/2025/01/declassification-of-records-concerning-the-assassinations-of-president-john-f-kennedy/), [archives.gov](https://www.archives.gov/research/jfk)). No evidence of ongoing classification as of Dec 2025."
+    },
+    {
+      "id": "C-00:48:09.710",
+      "result": "wrong",
+      "explanation": "Trump\u2019s prediction was that *if Joe Biden is able to implement his stated tax agenda, taxes would increase by roughly four times their current level*.\n\nTo evaluate this, we look at what has actually happened with federal taxes under Biden through **November 30, 2025**:\n\n1. **Major Biden tax proposals have not been enacted at the scale originally proposed.**\n   - The administration proposed higher corporate tax rates (e.g., from 21% to 28%) and higher top marginal income tax rates on high earners, along with increased taxes on capital gains for very high\u2011income households. These were outlined in the American Jobs Plan, American Families Plan, and later budget proposals, but key rate hikes have repeatedly stalled or been pared back in Congress.\n   - The 21% federal corporate tax rate from the 2017 Tax Cuts and Jobs Act remains in place as of 2025; it has not been doubled or quadrupled.\n\n2. **Enacted laws under Biden have produced *incremental* tax changes, not 4x increases.** Examples:\n   - The **Inflation Reduction Act of 2022** introduced a 15% minimum tax on book income for certain large corporations and a 1% excise tax on stock buybacks, plus enhanced IRS enforcement, but it did **not** raise headline income or corporate tax rates to anything like four times prior levels.\n   - Individual income tax rate schedules for most taxpayers remain broadly similar to the post\u20112017 structure; there has been no across\u2011the\u2011board or targeted fourfold rate increase on any commonly discussed group such as middle\u2011class households or high\u2011income filers.\n\n3. **No targeted group\u2019s overall tax burden has quadrupled due to Biden\u2019s implemented agenda.**\n   - For high\u2011income individuals, analysis by major tax policy organizations and think tanks consistently characterizes changes under Biden\u2019s *enacted* laws as modest\u2011to\u2011moderate increases relative to prior law, largely via surcharges, limitation of deductions, and enforcement\u2014not a 300%+ jump in total tax liability.\n   - For corporations, the combination of the 15% minimum tax and other changes increases effective tax burdens for some large firms, but still nowhere near quadrupling relative to 2019\u20132020 baselines.\n\nBecause:\n- Biden\u2019s full original tax agenda has *not* been enacted in the maximal form he campaigned on, and\n- The actual enacted changes have resulted in tax increases that are **far less than four times** prior levels for any broad, relevant group,\n\nTrump\u2019s numerical claim that taxes \"are going to raise by four times\" under Biden\u2019s plan is **not borne out** by the real\u2011world tax changes observed through late 2025.\n\nTherefore, the prediction is **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Biden did not implement his full stated tax agenda, which included raising the corporate tax rate to 28% and the top individual rate to 39.6%; these changes never passed Congress, and rates remain at 21% corporate and 37% top individual as of 2025 ([IRS.gov](https://www.irs.gov/filing/federal-income-tax-rates-and-brackets), [TaxFoundation](https://taxfoundation.org/data/all/federal/latest-federal-income-tax-data-2025/)). Partial measures like the 15% corporate minimum tax in the 2022 IRA were enacted, but no quadrupling occurred. Federal revenues rose modestly from ~$5T in FY2024 to $5.23T in FY2025 ([fiscaldata.treasury.gov](https://fiscaldata.treasury.gov/americas-finance-guide/)), nowhere near 4x (~$20T). Fact-checks label Trump's claim a false exaggeration ([Politifact](https://www.politifact.com/factchecks/2024/jun/04/donald-trump/donald-trumps-false-claim-that-joe-biden-wants-qua/), [AFP](https://factcheck.afp.com/doc.afp.com.34ZM3RW)). With Biden's term ended, the predicted outcome did not materialize."
+    },
+    {
+      "id": "jason-00:56:00.150",
+      "result": "wrong",
+      "explanation": "Trump did win the 2024 election and returned to office on January 20, 2025, satisfying the prediction\u2019s \u201cif reelected\u201d condition. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))  During the 2024 campaign he repeatedly floated a **10\u201320% universal tariff on all imports** and **60% or higher tariffs on Chinese goods**, a clearly broad and aggressive tariff agenda. ([cnbc.com](https://www.cnbc.com/2024/02/04/trump-floats-more-than-60percent-tariffs-on-chinese-imports.html?utm_source=openai))  Once in office, he implemented that agenda in substance: beginning April 5, 2025, the U.S. started collecting a **sweeping 10% tariff on virtually all imports**, with significantly higher, country\u2011specific rates (up to about 50% on some goods and roughly **54% total on Chinese imports**), explicitly framed as a new global trade system. ([reuters.com](https://www.reuters.com/markets/us-starts-collecting-trumps-new-10-tariff-smashing-global-trade-norms-2025-04-05/?utm_source=openai))  The administration has since insisted that the **10% baseline tariff will remain in place** as a core feature of U.S. trade policy, reinforcing that these are not symbolic or short\u2011lived measures. ([nypost.com](https://nypost.com/2025/05/11/us-news/trump-will-not-go-below-10-tariff-baseline-commerce-secretary/?utm_source=openai))  Because Trump *did* in fact implement a far\u2011reaching, aggressive tariff regime similar in scale and spirit to what he campaigned on, Jason\u2019s prediction that he was merely pandering and would \u201cnot implement the tariff thing anyway\u201d is **wrong**.",
+      "sources": [
+        {
+          "end_index": 273,
+          "start_index": 163,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 589,
+          "start_index": 461,
+          "title": "Trump floats \u2018more than\u2019 60% tariffs on Chinese imports",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/02/04/trump-floats-more-than-60percent-tariffs-on-chinese-imports.html?utm_source=openai"
+        },
+        {
+          "end_index": 1077,
+          "start_index": 929,
+          "title": "US starts collecting Trump's 10% tariff, smashing global trade norms",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/markets/us-starts-collecting-trumps-new-10-tariff-smashing-global-trade-norms-2025-04-05/?utm_source=openai"
+        },
+        {
+          "end_index": 1410,
+          "start_index": 1276,
+          "title": "Trump 'will not go below 10%' tariff baseline: Commerce secretary",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/05/11/us-news/trump-will-not-go-below-10-tariff-baseline-commerce-secretary/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump was reelected and implemented the broad tariff plan shortly after taking office. A universal 10% tariff on all imports took effect April 5, 2025, with higher 'reciprocal' tariffs (up to 50%) on countries with large U.S. trade deficits, plus sector-specific increases like 50% on steel/aluminum/copper and 25% on cars ([Congress.gov CRS report](https://www.congress.gov/crs-product/R48549); [Wikipedia](https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration); [White House Fact Sheet April 2, 2025](https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-declares-national-emergency-to-increase-our-competitive-edge-protect-our-sovereignty-and-strengthen-our-national-and-economic-security/); [Politico](https://www.politico.com/news/2025/04/02/trump-tariff-trade-partners-liberation-day-00267350)). Average U.S. tariff rate rose to ~27%, with monthly revenue tripling to $30B+ by September 2025. Some exemptions/modifications occurred (e.g., food/ag products Nov 2025), but the aggressive broad plan is actively in place nearly 10 months into his term, contradicting the prediction."
+    },
+    {
+      "id": "friedberg-00:56:09.230",
+      "result": "wrong",
+      "explanation": "Donald Trump\u2019s 2024 campaign trade platform centered on **broad, across\u2011the\u2011board tariffs** \u2014 notably a 10% (or higher) universal tariff on all imports and around 60% on Chinese goods. FactCheck.org and other analyses describe these as economy\u2011wide proposals, not narrow sectoral measures.([factcheck.org](https://www.factcheck.org/2024/12/trumps-agenda-taxes/?utm_source=openai))\n\nIn office during his second term, Trump has **substantially implemented that broad vision**:\n\n- In April 2025 he invoked emergency powers (IEEPA) to impose a **10% baseline tariff on almost all U.S. imports**, plus higher \u201creciprocal\u201d tariffs for dozens of countries. Reuters describes this as a \u201csweeping overhaul\u201d of the global trading system, not a narrow, sector\u2011limited policy.([reuters.com](https://www.reuters.com/world/us/whats-trumps-sweeping-new-reciprocal-tariff-regime-2025-04-03/?utm_source=openai))  \n- Reporting and tax advisories summarize the new regime as a **10% across\u2011the\u2011board baseline** with elevated country\u2011specific rates (e.g., 20\u201346% on major partners, and much higher on China).([grantthornton.com](https://www.grantthornton.com/insights/alerts/tax/2025/legislative-updates/trump-rolls-out-expansive-global-tariff-agenda?utm_source=openai))  \n- For China specifically, tariffs were pushed far beyond the original 60% idea: combined measures briefly raised effective rates to about **145%** on Chinese imports before being partially reduced in the context of negotiations, still leaving very elevated duties in place.([en.wikipedia.org](https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration))\n\nThere was a **temporary 90\u2011day pause** on many of the new above\u201110% \u201creciprocal\u201d tariffs after a market crash, but the **10% universal tariff remained in effect**, sector\u2011specific duties on items like autos, steel and aluminum continued, and many country\u2011specific hikes were later implemented anyway. Estimates put the **average applied U.S. tariff rate around 27%**, the highest in more than a century \u2014 again indicating a broad, not narrowly targeted, regime.([en.wikipedia.org](https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration))\n\nFriedberg\u2019s prediction was that if Trump pursued this agenda, **economic advisers would force a major rethink so that any actual tariff program would be *toned down* and confined to \u201cparticular slices of the economy\u201d rather than implemented broadly.** In reality, Trump has enacted and largely maintained a **sweeping, economy\u2011wide tariff structure with only limited carve\u2011outs and tactical pauses**, and in some respects (e.g., China rates) has gone well beyond the original headline numbers.\n\nBecause the broad, across\u2011the\u2011economy tariff policy has in fact been implemented and sustained, rather than significantly scaled back to narrow sectors, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 413,
+          "start_index": 322,
+          "title": "Trump's Agenda: Taxes - FactCheck.org",
+          "type": "url_citation",
+          "url": "https://www.factcheck.org/2024/12/trumps-agenda-taxes/?utm_source=openai"
+        },
+        {
+          "end_index": 931,
+          "start_index": 801,
+          "title": "What's in Trump's sweeping new reciprocal tariff regime",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/whats-trumps-sweeping-new-reciprocal-tariff-regime-2025-04-03/?utm_source=openai"
+        },
+        {
+          "end_index": 1288,
+          "start_index": 1126,
+          "title": "Trump rolls out expansive global tariff agenda | Grant Thornton",
+          "type": "url_citation",
+          "url": "https://www.grantthornton.com/insights/alerts/tax/2025/legislative-updates/trump-rolls-out-expansive-global-tariff-agenda?utm_source=openai"
+        },
+        {
+          "end_index": 1659,
+          "start_index": 1565,
+          "title": "Tariffs in the second Trump administration - Wikipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration"
+        },
+        {
+          "end_index": 2218,
+          "start_index": 2124,
+          "title": "Tariffs in the second Trump administration - Wikipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump implemented broad tariffs in his second term, including a 10% universal tariff on all imports starting April 5, 2025, via IEEPA after declaring a national emergency on April 2 ([White House Fact Sheet](https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-declares-national-emergency-to-increase-our-competitive-edge-protect-our-sovereignty-and-strengthen-our-national-and-economic-security/); [Wikipedia](https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration)). Additional hikes: steel/aluminum/copper to 50%, 25% on cars, tariffs on pharma/semiconductors ([Wikipedia](https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration); [Tax Foundation](https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/)). Average tariff rate rose to 27%, revenue to $30B/month by Sep 2025 ([Wikipedia](https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration)). While there were modifications/exclusions (~700 products, $1T imports escaped; scaled back on copper post-lobbying; ag exemptions Nov 2025 ([Bloomberg](https://www.bloomberg.com/news/features/2025-07-31/trump-tariff-exclusions-how-1-trillion-of-imports-got-off-the-hook); [White House Nov 14](https://www.whitehouse.gov/fact-sheets/2025/11/fact-sheet-following-trade-deal-announcements-president-donald-j-trump-modifies-the-scope-of-the-reciprocal-tariffs-with-respect-to-certain-agricultural-products/))), delays (e.g., China reciprocal to 2026), and legal challenges (courts invalidated some, SCOTUS ongoing), the core policy remains broad, not 'significantly scaled back' or 'limited to narrower parts' by advisers due to inflation/costs. Advisers like CEA chair Stephen Miran supported tariffs ([Wikipedia](https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration)). Changes were more from lobbying/legal/negotiations than adviser pushback ([WaPo Jan 6](https://www.washingtonpost.com/business/2025/01/06/trump-tariff-economy-trade/); [LSE May 16](https://blogs.lse.ac.uk/businessreview/2025/05/16/dollar-under-threat-led-to-trumps-about-face-on-tariffs/))."
+    },
+    {
+      "id": "C-00:20:58.210",
+      "result": "inconclusive",
+      "explanation": "Donald Trump did become president again on January 20, 2025, beginning his second, non\u2011consecutive term as the 47th U.S. president, so the condition in the prediction (\u201cif Donald Trump is president again\u201d) has been met.\u00a0\u30101search15\u30111search23\u3011\n\nSince taking office, Trump and his administration have **repeatedly and explicitly ruled out sending U.S. ground troops to Ukraine**:\n\n- In February 2025, Defense Secretary Pete Hegseth stated that the U.S. had *no plans to deploy U.S. troops to Ukraine* and stressed that Europeans must take primary responsibility.\u00a0\u30105news13\u3011\n- On August 19, 2025, Trump said there would be **\u201cno U.S. troops deployed to Ukraine\u201d** as part of any peace or security agreement, emphasizing that American involvement would be limited to things like air support.\u00a0\u30103news13\u30115search1\u3011\n- White House Press Secretary Karoline Leavitt has repeatedly said there will be **\u201cno American boots on the ground in Ukraine\u201d** in any potential post\u2011war security or peacekeeping mission.\u00a0\u30103search2\u30103search7\u3011\n- Vice President JD Vance likewise stated that Ukraine security guarantees **\u201cwill not include American boots on the ground in Ukraine.\u201d**\u00a0\u30105search8\u3011\n\nAt the same time, **France, the UK and other European partners have publicly discussed and planned a future multinational reassurance or peacekeeping force in Ukraine**, sometimes described as a \u201cCoalition of the Willing\u201d and the prospective *Multinational Force \u2013 Ukraine (MNF\u2011U)*. France and the UK have indicated readiness to contribute troops if and when a ceasefire or peace deal is signed, and a 26\u2011country coalition has pledged to provide troops or other on\u2011the\u2011ground support in a post\u2011war scenario.\u00a0However, as of late November 2025, these plans remain **contingent and in the planning phase**, with deployment to follow only after a comprehensive ceasefire or peace agreement; there is no credible reporting that any such multinational ground force, European or otherwise, has actually deployed into Ukraine yet.\u00a0\u30104search3\u30104search17\u30104search4\u30104search25\u3011\n\nOpen-source reporting likewise shows **no evidence that Trump has deployed U.S. ground combat forces to fight in Ukraine**. U.S. military posture under Operation Atlantic Resolve remains focused on deployments in NATO territory in Europe, not in Ukraine itself, and prior public briefings have distinguished small, non\u2011combat embassy security or liaison presences from any combat deployment or \u201cboots on the ground.\u201d\u00a0\u30105search17\u30115search5\u3011\n\nHowever, the prediction is not just about the situation **so far**; it is framed as an absolute guarantee that **for the duration of Trump\u2019s renewed presidency he will not deploy American ground troops to fight in Ukraine, *even if* France or other NATO countries send their own troops.** Trump\u2019s second term only began in January 2025 and is scheduled to run through January 2029, and the coalition peacekeeping plans that might test the \u201ceven if France or other NATO countries send troops\u201d clause have not yet been executed.\n\nBecause Trump\u2019s term is ongoing and the relevant conditions (e.g., an actual European troop deployment into Ukraine under a peace deal) have not yet fully materialized, we **cannot definitively say** that he *will never* deploy U.S. ground troops in the future. Up to November 30, 2025, the prediction is holding, but it is too early to score it as permanently correct.\n\n**Conclusion:** The condition of Trump returning to the presidency has been met, and as of now he has *not* deployed American ground troops to fight in Ukraine and has repeatedly pledged not to do so. But since his term is still in progress and the prediction is effectively about his behavior for the remainder of that term under a range of possible future circumstances, the forecast must be judged **inconclusive (too early to tell)** rather than definitively right or wrong.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Donald Trump became president again on January 20, 2025. As of December 1, 2025, there is no evidence of the US deploying American ground troops to fight in Ukraine. Trump has repeatedly assured no 'US boots on the ground' in Ukraine, even for post-war security guarantees, emphasizing European nations would provide ground forces while the US offers other support like air or drones ([Politico](https://www.politico.com/news/2025/08/19/trump-boots-security-ukraine-00513967), [TIME](https://time.com/7310588/trump-troops-ukraine-security-deal/), [Axios](https://www.axios.com/2025/08/19/trump-putin-call-ukraine-war-zelensky), [Reuters](https://www.reuters.com/world/europe/trump-says-us-may-provide-air-support-back-ukraine-peace-deal-2025-08-19/), [AP News](https://apnews.com/article/trump-russia-ukraine-war-defend-american-troops-85704282576324a36567798e9cb741ec)). Searches for deployments yield only confirmations of no troops sent ([Al Jazeera](https://www.aljazeera.com/news/2025/8/20/no-us-troops-in-ukraine-trump-says), [BBC](https://www.bbc.com/news/live/cz93ve1p952t)). Pre-existing training missions (e.g., National Guard) ended, with no new combat deployments."
+    },
+    {
+      "id": "C-00:12:30.180",
+      "result": "ambiguous",
+      "explanation": "Democrats did not win the 2024 U.S. presidential election; Donald Trump, the Republican nominee, won the presidency with 312 electoral votes. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai)) Trump\u2019s statement was explicitly conditional (\"if this election were won by them\"), so the condition for his prediction (a Democratic victory) never occurred. Because we cannot observe what would have happened to domestic oil policy and global oil prices in the counterfactual scenario where Democrats won, the prediction cannot be tested against reality. For context, in the actual post\u2011election period under President Trump, U.S. crude oil production reached record highs rather than being significantly restricted, and Brent crude prices in 2025 have generally been in the roughly $60\u2013$80 per barrel range with forecasts pointing lower, not at levels commonly described as going \"through the roof.\" ([eia.gov](https://www.eia.gov/pressroom/releases/press577.php?utm_source=openai))",
+      "sources": [
+        {
+          "end_index": 289,
+          "start_index": 179,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1078,
+          "start_index": 996,
+          "title": "EIA Press Release (10/07/2025): EIA adjusts forecast for U.S. oil production as producers set a record in July 2025",
+          "type": "url_citation",
+          "url": "https://www.eia.gov/pressroom/releases/press577.php?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is conditional on Democrats winning the 2024 U.S. presidential election, which did not occur. Donald Trump (Republican) won the election, as confirmed by multiple sources including [Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [CNN](https://www.cnn.com/election/2024/results/president), and [270toWin](https://www.270towin.com/2024-election). Since the antecedent ('Democrats win') is false, the consequent (restriction of oil production causing prices to spike) cannot be tested or verified in reality. It remains a counterfactual scenario. U.S. oil production reached record highs post-election (e.g., [EIA: 13.4M b/d in Aug 2024](https://www.eia.gov/todayinenergy/detail.php?id=63824), new high in Apr 2025), and global oil prices declined (e.g., ~$59.50/bbl on Dec 1, 2025, down 12.63% YTD per [Trading Economics](https://tradingeconomics.com/commodity/crude-oil)), but these outcomes occurred under Republican administration and do not address the hypothetical."
+    }
+  ]
+}

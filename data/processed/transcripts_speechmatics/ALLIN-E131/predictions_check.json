@@ -1,0 +1,308 @@
+{
+  "meta": {
+    "count": 10,
+    "count_by_result": {
+      "right": 2,
+      "inconclusive": 5,
+      "wrong": 2,
+      "ambiguous": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "D-00:23:35.610",
+      "result": "right",
+      "explanation": "In the 2024 U.S. presidential election, the Republican Party officially nominated former President Donald Trump, a real-estate developer and media figure, not a bank CEO. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai)) The Democratic Party ultimately nominated Vice President Kamala Harris, a career prosecutor and elected official, also not a bank CEO. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kamala_Harris_2024_presidential_campaign?utm_source=openai)) Meanwhile, Jamie Dimon remained CEO of JPMorgan Chase and repeatedly stated he had no plans to run for office, later explaining he chose not to run for president. ([cnbc.com](https://www.cnbc.com/2023/06/05/jpmorgan-chase-ceo-jamie-dimon-no-plans-to-run-for-office.html?utm_source=openai)) Since neither major party nominated the sitting CEO of a major U.S. bank, Sacks\u2019s prediction that you would \u201cnever get the head of the number one bank in the US to be their candidate\u201d was borne out by events.",
+      "sources": [
+        {
+          "end_index": 313,
+          "start_index": 204,
+          "title": "Donald Trump 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai"
+        },
+        {
+          "end_index": 559,
+          "start_index": 449,
+          "title": "Kamala Harris 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Kamala_Harris_2024_presidential_campaign?utm_source=openai"
+        },
+        {
+          "end_index": 849,
+          "start_index": 723,
+          "title": "JPMorgan Chase CEO Jamie Dimon has 'no plans\u2019 to run for office",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/06/05/jpmorgan-chase-ceo-jamie-dimon-no-plans-to-run-for-office.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The 2024 Democratic nominee was Kamala Harris ([AP News](https://apnews.com/article/harris-democratic-presidential-nomination-eb43b6b346cc644b2d195315cb2bfb20), [CNN](https://www.cnn.com/interactive/2024/politics/presidential-candidates-dg/)). The Republican nominee was Donald Trump ([Ballotpedia](https://ballotpedia.org/Republican_presidential_nomination%2C_2024), [PBS](https://www.pbs.org/newshour/politics/trump-clinches-2024-republican-nomination)). Neither is a sitting CEO of a major U.S. bank. Jamie Dimon, JPMorgan Chase CEO, did not run or receive a nomination from either party ([Wikipedia](https://en.wikipedia.org/wiki/Jamie_Dimon), [Reuters](https://www.reuters.com/business/finance/jpmorgan-ceo-dimon-remain-bank-has-no-plans-take-govt-role-source-says-2024-11-06/)). No other major bank CEOs were nominated ([web search: 'bank CEO nominated for 2024 US president']). The prediction holds true."
+    },
+    {
+      "id": "A-00:49:36.690",
+      "result": "inconclusive",
+      "explanation": "The prediction concerns China\u2019s population size *in the year 2300*. As of today (2025), that date is still 275 years in the future, so the specific claim that China\u2019s population will be \u201croughly half\u201d of its current size **by 2300** cannot yet be verified or falsified.\n\nWe can say that the *direction* of Chamath\u2019s underlying premise (population decline) aligns with current data:\n\n- China\u2019s total population **peaked around 2021** and has since begun to fall; official figures show population declines in both 2022 and 2023, driven by low birth rates and an aging population.\n- China\u2019s **total fertility rate (TFR)** is now well below the replacement level of 2.1 children per woman (recent estimates place it around ~1.0 or even lower in some analyses), suggesting continued demographic pressure and likely long\u2011term shrinkage if trends persist.\n\nHowever, long-range demographic projections out to 2300 are highly uncertain and depend on policy changes, migration, economic development, technological progress, and cultural shifts over centuries. Current UN and academic projections often extend only to 2100 and already diverge significantly from one another; extrapolating another 200 years beyond that is speculative.\n\nBecause the prediction\u2019s target year has not arrived and no model can definitively confirm a specific 2300 population level today, the correct classification is:\n\n- **Result: inconclusive (too early to tell).**",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns China's population in 2300 (~277 years from podcast in 2023), over 275 years from now (current date: Dec 2025). Far too early to verify. China's current population is ~1.41B ([Worldometer](https://www.worldometers.info/world-population/china-population/)). UN WPP 2024 medium variant projects ~633M by 2100 (already >half decline; [UN Summary](https://population.un.org/wpp/assets/Files/WPP2024_Summary-of-Results.pdf)). No reliable projections to 2300 exist; older UN 2004 long-range ([UN PDF](https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/files/documents/2020/Jan/un_2002_world_population_to_2300.pdf)) and extrapolations (e.g., [Medium](https://medium.com/@gaetanlion/will-china-survive-till-the-year-2300-possibly-not-1865278f4ad4)) suggest possible further decline, but high uncertainty over centuries."
+    },
+    {
+      "id": "C-01:00:29.030",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly framed as a *multi\u2011decade* process (\u201cbeginning of the end\u2026 not an immediate collapse\u201d), so evaluating it about 2.5 years after June 2023 is inherently premature.\n\nAs of late 2025:\n\n- The U.S. dollar remains **by far the leading reserve currency**, accounting for roughly 58\u201359% of disclosed global FX reserves, according to IMF COFER data, with the euro a distant second and others (CNY, JPY, GBP, etc.) far behind.\n- The dollar also continues to dominate **FX trading** and **trade invoicing**. BIS and academic studies show most trade\u2014even between non\u2011U.S. partners\u2014is still priced in USD, including a majority of global commodity trade (especially oil), despite some high\u2011profile bilateral deals in local currencies.\n- While **China, Russia, some Gulf states, and others** have expanded local\u2011currency or non\u2011dollar settlement arrangements since 2022\u20132023, those flows are still a small fraction of global trade and have not yet produced a decisive structural shift away from the dollar.\n\nIn other words, some *supporting trends* exist (more local\u2011currency trade, de\u2011risking from USD exposure, etc.), but the core of the claim is about the dollar *losing its singular reserve\u2011currency role over decades*. Given how dominant the dollar still is and how little time has passed relative to the forecast horizon, the truth or falsity of that long\u2011run prediction cannot yet be determined. Therefore, the proper classification is **\u201cinconclusive (too early)\u201d**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction specifies a *multi-decade horizon* for the end of USD's singular reserve status, not immediate. As of Dec 2025 (~2.5 years later), USD remains dominant: ~58% of global reserves in 2024-2025Q2 ([Fed 2025](https://www.federalreserve.gov/econres/notes/feds-notes/the-international-role-of-the-u-s-dollar-2025-edition-20250718.html), [IMF/Statista](https://www.statista.com/statistics/233674/distribution-of-global-currency-reserves/)), down slightly from ~59-60% pre-2023 but stable vs. euro (~20%). Oil trade ~80% in USD ([CurrencyTransfer](https://www.currencytransfer.com/blog/expert-analysis/how-is-saudi-arabia-sustaining-dollar-dominance)); China-Saudi RMB deals exist but limited ([PGurus](https://www.pgurus.com/how-well-is-the-ksa-china-yuan-for-crude-agreement-working-and-what-does-it-mean-for-the-petrodollar/)); BRICS pushes local currencies but no major shift ([Reuters Brazil](https://www.reuters.com/markets/currencies/brazil-nixes-brics-currency-eyes-less-reliance-mighty-dollar-2025-02-13/)). De-dollarization gradual, not accelerating ([JPMorgan](https://www.jpmorgan.com/insights/global-research/currencies/de-dollarization), [CareEdge](https://www.careedgeglobal.com/upload/RatingReportPDF/Dollar%20Is%20Facing%20Challenges%2C%20but%20De-dollarisation%20Remains%20Gradual%20-%20CareEdge%20Global%20Report.pdf)). Too early to assess long-term trajectory."
+    },
+    {
+      "id": "B-01:11:26.330",
+      "result": "inconclusive",
+      "explanation": "As of November 30, 2025, the US dollar is still the dominant global reserve currency by a large margin. IMF and central bank data show that roughly 55\u201360% of disclosed foreign exchange reserves are held in USD, far ahead of the euro, yen, pound, or yuan. No other currency has clearly begun to displace the dollar as the *primary* global reserve, and there has been no formal or de facto transition to a different main reserve currency.\n\nHowever, Jason\u2019s prediction is explicitly about the *remainder of his and Friedberg\u2019s lifetimes*\u2014i.e., \u201cseveral decades\u201d into the future. That time period has obviously not elapsed by 2025, and the claim concerns the *persistence* of a trend, not a specific event by a fixed date. Since we are still well within the window of the prediction, and the condition to judge it definitively (end of their lifetimes / several decades passing) has not been met, the correct label today is that it is **too early to tell** whether the prediction will ultimately be right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is that the USD will remain the primary global reserve currency for several decades (lifetimes of Jason and Friedberg, likely 40+ years). Only ~2.5 years have passed since the June 2023 podcast (current date: Dec 1, 2025). IMF COFER data confirms USD dominance persists: ~57.7% in Q1 2025 (MUFG Research), 58% in 2024 (Fed report), ~56% mid-2025 (BestBrokers/IMF), down slightly but far ahead of euro (~20%), yen (~6%), others. No replacement; articles note gradual decline/de-dollarization talks but affirm USD status (e.g., IMF Oct 2025 brief: share steady adjusted for FX; Al Jazeera Jul 2025: unlikely replaced for decades). Too early for long-term verdict. [Sources: IMF COFER Q1/Q2 2025 briefs, Fed 'International Role of USD 2025 Edition', MUFG FX Focus Jul 2025, BestBrokers Nov 2025]."
+    },
+    {
+      "id": "A-01:09:31.359",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly about long\u2011term demographic effects on China\u2019s economic strength over *\u201cthe next 10 or 15 years\u201d* from 2023, i.e. roughly 2033\u20132038, not 2024\u20132025. As of today (Nov 30, 2025), we are only ~2.5 years into that 10\u201315 year window.\n\nWhat we can already see:\n\n- China\u2019s population *has* begun to shrink, with official data showing its first population decline in decades in 2022 and further decline in 2023, and a rapidly aging population.   \n- Numerous demographic and economic analyses (UN, World Bank, IMF, various demographers) project continued aging, low fertility, and a shrinking workforce, all of which *could* weigh on growth over the next few decades.\n\nHowever, Chamath\u2019s claim is not just that demographics are a headwind (which is already well established), but that they will *\u201cdiminish them economically\u201d* in a strongly exacerbated way *over the next 10\u201315 years*. Whether that level of economic diminishment occurs, relative to other countries and relative to plausible counterfactuals, cannot yet be judged in 2025.\n\nBecause the forecast period runs out to at least 2033 and up to 2038, and no part of the prediction has been clearly falsified (nor fully confirmed) this early, the correct status is **inconclusive (too early)**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction spans 2023\u20132038 (10\u201315 years), but only ~2.5 years have passed as of Dec 1, 2025. China's population has declined for the third year ([Reuters, Jan 2025](https://www.reuters.com/world/china/chinas-population-falls-third-consecutive-year-2025-01-17/)), with projections of major shrinkage ahead ([UN via ThinkGlobalHealth, Jul 2025](https://www.thinkglobalhealth.org/article/chinas-failing-bid-reverse-population-decline)). Economic growth has slowed (5.2% in 2023, ~5% in 2024, 4.8% Q3 2025 per Trading Economics; World Bank projects 4.8% 2024), with demographics cited as a drag (e.g., 0.5% GDP shave over next decade [Washington Post, Oct 2025](https://www.washingtonpost.com/world/interactive/2025/china-population-decline-worker-crisis/); property impacts [CNBC, Jun 2025](https://www.cnbc.com/2025/06/21/china-population-decline-hurting-property-market.html)). Early signs align ('already starting to see it'), but no 'significant diminution' or 'strong exacerbation' yet\u2014growth remains positive ~5%, economy structurally challenged but not collapsed. Too early to verify long-term outcome."
+    },
+    {
+      "id": "A-01:09:31.359b",
+      "result": "inconclusive",
+      "explanation": "The prediction is explicitly about a **50\u2013100 year** time horizon starting from around 2023 for India to potentially reach US-like scale and predictability as an economic/investment destination. As of today (November 30, 2025), only about **2 years** have elapsed since the prediction was made, which is far too short to assess whether India will or will not achieve that outcome over several decades. \n\nBecause the claim concerns structural economic development over half a century or more, there is no way to definitively judge it yet. Therefore, the correct evaluation is that it is **too early to tell** whether the prediction will prove accurate.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Only ~2.5 years have passed since the June 2023 prediction (current date: Dec 1, 2025), which is far short of the forecasted 50\u2013100 years for India to achieve US-like economic scale and investment predictability via sustained infrastructure investment. India's GDP is ~$4.1T (IMF 2025 est., [web:1 India GDP]), vs. US ~$28T+ (inferred from growth data, e.g., Q2 2025 +3.8% [web:0 US GDP]). India shows strong growth (7-8% recent quarters, [web:2 India GDP]; infrastructure capex \u20b911.21 lakh crore in 2025-26 [web:5 infra]), but projections place it as 3rd largest nominal by ~2027-28, still distant from US scale ([web:2 India vs US]; optimistic nominal catch-up ~40+ years). Too early to verify the timeline."
+    },
+    {
+      "id": "A-01:23:23.550",
+      "result": "wrong",
+      "explanation": "By the end of the two\u2011quarter window (roughly through Q4 2023), the **first part** of Chamath\u2019s scenario did happen, but the **core outcome he was betting on did not**.\n\n**1. Did AMD, Meta, Google, Microsoft, and Amazon announce substantive AI hardware/infra in that window?**  \nYes:\n- **AMD** detailed its Instinct MI300 series (MI300X/MI300A) as data\u2011center AI accelerators for generative\u2011AI training and inference at its June 13, 2023 \"Data Center and AI Technology Premiere,\" and formally launched them at the Dec. 6, 2023 \"Advancing AI\" event with major partners like Microsoft, Meta, Oracle, Dell, HPE, and others adopting them. ([amd.com](https://www.amd.com/en/newsroom/press-releases/2023-6-13-amd-expands-leadership-data-center-portfolio-with-.html?utm_source=openai))  \n- **Meta** publicly described its in\u2011house Meta Training and Inference Accelerator (MTIA) chip family and a next\u2011gen, AI\u2011optimized data\u2011center design in May 2023, explicitly as custom AI accelerators and infrastructure for its workloads. ([about.fb.com](https://about.fb.com/news/2023/05/metas-infrastructure-for-ai/amp/?utm_source=openai))  \n- **Google** announced Cloud TPU v5e, a purpose\u2011built AI accelerator for both training and inference, at Google Cloud Next \u201923 on Aug. 29, 2023, describing it as its most cost\u2011efficient, scalable TPU to date, and followed up with the higher\u2011end TPU v5p in Dec. 2023. ([cloud.google.com](https://cloud.google.com/blog/topics/google-cloud-next/welcome-to-google-cloud-next-23?utm_source=openai))  \n- **Microsoft** unveiled its own Azure Maia 100 AI accelerator (and Cobalt 100 CPU) at Microsoft Ignite in mid\u2011November 2023, explicitly aiming to reduce dependence on third\u2011party GPUs for Azure AI workloads. ([arstechnica.com](https://arstechnica.com/information-technology/2023/11/microsoft-launches-custom-chips-to-accelerate-its-plans-for-ai-domination/?utm_source=openai))  \n- **Amazon/AWS** used re:Invent 2023 (late Nov. 2023) to announce Trainium2 (second\u2011gen AI training chip) and Graviton4, positioning Trainium2 as a high\u2011performance, lower\u2011cost alternative for training large foundation models and LLMs, and specifically framing these chips as part of a strategy to reduce reliance on Nvidia GPUs. ([infoworld.com](https://www.infoworld.com/article/2335527/heres-what-aws-revealed-about-its-generative-ai-strategy-at-re-invent-2023.html?utm_source=openai))  \n\nOn the **narrow question of announcements**, his expectation was accurate: all five players did roll out or materially advance substantive AI hardware/infrastructure efforts within ~two quarters of Q2 2023.\n\n**2. Did this create \u201cmeaningful vendor diversity\u201d so forecasts were no longer effectively 100% Nvidia?**  \nThis is where his bet fails. Despite those announcements, **Nvidia\u2019s grip on AI data\u2011center compute remained overwhelming, and market forecasts continued to treat Nvidia as the overwhelmingly dominant provider**:\n- TechInsights data (summarized in DCD) shows Nvidia had **98% of data\u2011center GPU shipments in 2023**, underscoring that essentially all deployed accelerator GPUs that year were still Nvidia\u2019s. ([datacenterdynamics.com](https://www.datacenterdynamics.com/en/news/nvidia-gpu-shipments-totaled-376m-in-2023-equating-to-a-98-market-share-report/?utm_source=openai))  \n- SiliconAnalysts likewise estimates Nvidia had about **98% of data\u2011center GPU revenue in 2023**, and even forward\u2011looking projections still give Nvidia ~87% of AI accelerator revenues in 2027, i.e., forecasts remain overwhelmingly Nvidia\u2011centric despite AMD, custom TPUs, and cloud chips. ([siliconanalysts.com](https://siliconanalysts.com/nvidia-ai-accelerator-market-outlook-2023-2027/?utm_source=openai))  \n- A mid\u20112024 CNBC overview notes Nvidia\u2019s AI accelerators still controlled **70\u201395% of the AI chip market**, even as AMD and custom cloud chips were ramping, indicating only modest erosion of Nvidia\u2019s dominance. ([cnbc.com](https://www.cnbc.com/2024/06/02/nvidia-dominates-the-ai-chip-market-but-theres-rising-competition-.html?utm_source=openai))  \n- Benzinga/TechInsights reporting in 2024 puts Nvidia at **92% of the data\u2011center GPU market**, with Meta simultaneously planning massive deployments of Nvidia H100\u2011class GPUs, illustrating that even large hyperscalers that are designing custom chips still rely primarily on Nvidia for training capacity. ([benzinga.com](https://www.benzinga.com/news/24/03/37981249/nvidia-captures-92-of-data-center-gpu-market-underlining-us-leadership-in-generative-ai/?utm_source=openai))  \n- Analysts and market research in 2024\u20132025 consistently describe Nvidia as holding roughly **80\u201390%+ of the AI accelerator/GPU market** for data centers, with AMD and custom cloud ASICs making up only a small single\u2011digit or low\u2011teens share. ([barrons.com](https://www.barrons.com/articles/nvidia-stock-ai-chip-revenue-98dfccf1?utm_source=openai))  \n\nIn other words, **the announcements did not, within the predicted timeframe, translate into AI compute forecasts where Nvidia was just one of several roughly comparable vendors.** Instead, those forecasts continued to treat Nvidia as the near\u2011monopoly, with others as emerging but still marginal alternatives.\n\nSince Chamath\u2019s *bet* was not just that announcements would occur, but that these would prevent Nvidia from \u201crunning away with this\u201d and would force forecasts away from being effectively 100% Nvidia\u2011centric, and the latter clearly did **not** happen, the overall prediction must be scored as **wrong**.",
+      "sources": [
+        {
+          "end_index": 819,
+          "start_index": 676,
+          "title": "AMD Expands Leadership Data Center Portfolio with New EPYC CPUs and Shares Details on Next-Generation AMD Instinct Accelerator and Software Enablement for Generative AI",
+          "type": "url_citation",
+          "url": "https://www.amd.com/en/newsroom/press-releases/2023-6-13-amd-expands-leadership-data-center-portfolio-with-.html?utm_source=openai"
+        },
+        {
+          "end_index": 1163,
+          "start_index": 1061,
+          "title": "Reimagining Our Infrastructure for the AI Age",
+          "type": "url_citation",
+          "url": "https://about.fb.com/news/2023/05/metas-infrastructure-for-ai/amp/?utm_source=openai"
+        },
+        {
+          "end_index": 1560,
+          "start_index": 1434,
+          "title": "Welcome to Google Cloud Next \u201823 | Google Cloud Blog",
+          "type": "url_citation",
+          "url": "https://cloud.google.com/blog/topics/google-cloud-next/welcome-to-google-cloud-next-23?utm_source=openai"
+        },
+        {
+          "end_index": 1941,
+          "start_index": 1773,
+          "title": "Holy chips! Microsoft\u2019s new AI silicon will power its chatty assistants - Ars Technica",
+          "type": "url_citation",
+          "url": "https://arstechnica.com/information-technology/2023/11/microsoft-launches-custom-chips-to-accelerate-its-plans-for-ai-domination/?utm_source=openai"
+        },
+        {
+          "end_index": 2433,
+          "start_index": 2275,
+          "title": "Here\u2019s what AWS revealed about its generative AI strategy at re:Invent 2023 | InfoWorld",
+          "type": "url_citation",
+          "url": "https://www.infoworld.com/article/2335527/heres-what-aws-revealed-about-its-generative-ai-strategy-at-re-invent-2023.html?utm_source=openai"
+        },
+        {
+          "end_index": 3334,
+          "start_index": 3166,
+          "title": "Nvidia data center GPU shipments totaled 3.76m in 2023, equating to a 98% market share - report - DCD",
+          "type": "url_citation",
+          "url": "https://www.datacenterdynamics.com/en/news/nvidia-gpu-shipments-totaled-376m-in-2023-equating-to-a-98-market-share-report/?utm_source=openai"
+        },
+        {
+          "end_index": 3746,
+          "start_index": 3628,
+          "title": "[\ud83d\udfe2 Free Access] Nvidia AI Accelerator Market Outlook (2023\u20132027) - Silicon Analysts",
+          "type": "url_citation",
+          "url": "https://siliconanalysts.com/nvidia-ai-accelerator-market-outlook-2023-2027/?utm_source=openai"
+        },
+        {
+          "end_index": 4097,
+          "start_index": 3962,
+          "title": "Nvidia dominates the AI chip market, but there's rising competition",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/06/02/nvidia-dominates-the-ai-chip-market-but-theres-rising-competition-.html?utm_source=openai"
+        },
+        {
+          "end_index": 4575,
+          "start_index": 4406,
+          "title": "Nvidia Captures 92% Of Data Center GPU Market, Underlining US Leadership In Generative AI - NVIDIA (NASDAQ:NVDA) - Benzinga",
+          "type": "url_citation",
+          "url": "https://www.benzinga.com/news/24/03/37981249/nvidia-captures-92-of-data-center-gpu-market-underlining-us-leadership-in-generative-ai/?utm_source=openai"
+        },
+        {
+          "end_index": 4927,
+          "start_index": 4822,
+          "title": "Nvidia's AI Chip Revenue to More Than Double to $262 Billion by 2030, Analyst Says",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/nvidia-stock-ai-chip-revenue-98dfccf1?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath predicted announcements of substantive AI hardware efforts by AMD, Meta, Google, Microsoft, and Amazon within Q3/Q4 2023, leading to meaningful vendor diversity where AI compute forecasts would no longer be effectively 100% Nvidia-dependent. While several announcements occurred\u2014Google TPU v5e (Aug 29, 2023, [Google Cloud Blog](https://cloud.google.com/blog/products/compute/announcing-cloud-tpu-v5e-and-a3-gpus-in-ga)), TPU v5p (Dec 6, 2023); Microsoft Maia 100 (Nov 15, 2023, [Microsoft Blog](https://azure.microsoft.com/en-us/blog/azure-maia-for-the-era-of-ai-from-silicon-to-software-to-systems/)); Amazon Trainium2 (Nov 28, 2023, [CNBC](https://www.cnbc.com/2023/11/28/amazon-reveals-trainium2-ai-chip-while-deepening-nvidia-relationship.html)); AMD MI300 launch (Dec 6, 2023, [AMD Press](https://www.amd.com/en/newsroom/press-releases/2023-12-6-amd-delivers-leadership-portfolio-of-data-center-a.html))\u2014Meta's MTIA v1 was earlier (May 2023). However, these did not lead to meaningful diversity by end-2023: Nvidia held ~90-95% AI GPU/data center GPU market share ([IoT Analytics](https://iot-analytics.com/leading-generative-ai-companies/), [CNBC 2024](https://www.cnbc.com/2024/06/02/nvidia-dominates-the-ai-chip-market-but-theres-rising-competition-.html)), with forecasts remaining heavily Nvidia-focused (e.g., Nvidia's explosive growth to $47B FY24 data center revenue, no significant non-Nvidia allocation in late 2023 analyst outlooks). Competitors ramped in 2024, not diversifying forecasts within the timeframe."
+    },
+    {
+      "id": "C-01:25:34.640",
+      "result": "right",
+      "explanation": "Evidence since mid\u20112023 strongly supports Friedberg\u2019s prediction that AI compute and application demand would go nonlinear as models improved and effective costs fell:\n\n- **Explosive growth in AI/GenAI spending:** Gartner forecasts worldwide GenAI spending to jump from about $365B in 2024 to $644B in 2025, a 76% YoY increase after an estimated 337% surge in 2024, explicitly attributing this to better foundational models and rising demand for AI products. ([gartner.com](https://www.gartner.com/en/newsroom/press-releases/2025-03-31-gartner-forecasts-worldwide-genai-spending-to-reach-644-billion-in-2025?utm_source=openai)) Gartner also projects overall AI-related spending reaching ~$1.5T in 2025 and surpassing $2T in 2026, indicating a rapidly accelerating curve rather than saturation. ([gartner.com](https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025?utm_source=openai))\n- **Server and data\u2011center build\u2011out is described as exponential/nonlinear:** Gartner notes that GenAI will \"nearly triple server sales from 2023 to 2028\" and that data\u2011center systems are the highest\u2011growth IT segment due to GenAI, a classic nonlinear infrastructure ramp. ([gartner.com](https://www.gartner.com/en/newsroom/press-releases/2024-10-23-gartner-forecasts-worldwide-it-spending-to-grow-nine-point-three-percent-in-2025?utm_source=openai)) TrendForce reports that capex by the eight major cloud providers in 2025 alone will roughly equal their combined 2023\u20132024 spending and grow another 24% in 2026, driven specifically by AI GPUs and custom AI ASICs. ([trendforce.com](https://www.trendforce.com/presscenter/news/20251013-12741.html?utm_source=openai))\n- **Chip and infrastructure vendors see surging, not plateauing, demand:** NVIDIA\u2019s revenue more than doubled year\u2011over\u2011year in fiscal 2025 (up 114%), with data\u2011center revenue up 93%, on top of >100% growth the prior year, all driven by AI training and inference workloads. ([nvidianews.nvidia.com](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025?utm_source=openai)) Dell and others report multi\u2011billion\u2011dollar AI\u2011server backlogs and rapidly rising AI\u2011server forecasts. ([reuters.com](https://www.reuters.com/business/dell-forecasts-upbeat-growth-targets-strength-ai-server-sales-2025-11-25/?utm_source=openai))\n- **Improved performance and effective cost reductions are explicitly cited as drivers:** Market analyses tie rapid AI\u2011infrastructure growth to new, higher\u2011performance GPU generations (e.g., NVIDIA\u2019s Blackwell) that deliver much more compute per dollar and thereby catalyze enterprise AI adoption. ([prnewswire.com](https://www.prnewswire.com/news-releases/ai-infrastructure-market-worth-394-46-billion-by-2030---exclusive-report-by-marketsandmarkets-302319416.html?utm_source=openai)) Even where total frontier\u2011model training bills rise, research finds this is because organizations are scaling up compute 2.4\u00d7 per year, not because demand is flattening\u2014another sign of escalating appetite for AI compute. ([arxiv.org](https://arxiv.org/abs/2405.21015?utm_source=openai))\n\nAcross multiple independent data points, demand for AI compute and AI applications from 2023\u20132025 has clearly grown in a rapid, super\u2011normal (effectively nonlinear) fashion rather than saturating or shrinking, aligning well with Friedberg\u2019s prediction for the \"coming years.\"",
+      "sources": [
+        {
+          "end_index": 662,
+          "start_index": 494,
+          "title": "Gartner Forecasts Worldwide GenAI Spending to Reach $644 Billion in 2025",
+          "type": "url_citation",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2025-03-31-gartner-forecasts-worldwide-genai-spending-to-reach-644-billion-in-2025?utm_source=openai"
+        },
+        {
+          "end_index": 998,
+          "start_index": 829,
+          "title": "Gartner Says Worldwide AI Spending Will Total $1.5 Trillion in 2025",
+          "type": "url_citation",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025?utm_source=openai"
+        },
+        {
+          "end_index": 1452,
+          "start_index": 1275,
+          "title": "Gartner Forecasts Worldwide IT Spending to Grow 9.3% in 2025",
+          "type": "url_citation",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2024-10-23-gartner-forecasts-worldwide-it-spending-to-grow-nine-point-three-percent-in-2025?utm_source=openai"
+        },
+        {
+          "end_index": 1768,
+          "start_index": 1667,
+          "title": "CSP CapEx to Soar Past US$520 Billion in 2026, Driven by GPU Procurement and ASIC Development, Says TrendForce",
+          "type": "url_citation",
+          "url": "https://www.trendforce.com/presscenter/news/20251013-12741.html?utm_source=openai"
+        },
+        {
+          "end_index": 2193,
+          "start_index": 2044,
+          "title": "NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2025 | NVIDIA Newsroom",
+          "type": "url_citation",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025?utm_source=openai"
+        },
+        {
+          "end_index": 2438,
+          "start_index": 2297,
+          "title": "Dell bets on rising AI server demand to forecast higher growth",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/dell-forecasts-upbeat-growth-targets-strength-ai-server-sales-2025-11-25/?utm_source=openai"
+        },
+        {
+          "end_index": 2925,
+          "start_index": 2738,
+          "title": "AI Infrastructure Market worth $394.46 billion by 2030 - Exclusive Report by MarketsandMarkets\u2122",
+          "type": "url_citation",
+          "url": "https://www.prnewswire.com/news-releases/ai-infrastructure-market-worth-394-46-billion-by-2030---exclusive-report-by-marketsandmarkets-302319416.html?utm_source=openai"
+        },
+        {
+          "end_index": 3212,
+          "start_index": 3147,
+          "title": "The rising costs of training frontier AI models",
+          "type": "url_citation",
+          "url": "https://arxiv.org/abs/2405.21015?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "AI model performance has improved significantly (e.g., Stanford AI Index 2025: top models solved 72% of coding problems vs. 4.4% in 2023), and costs have declined (hardware costs down 30% annually, 280-fold inference cost reduction for GPT-3.5-level performance per Stanford report and Epoch AI trends). Demand for AI compute has grown nonlinearly: Nvidia data center revenue exploded from ~$15B in FY2023 to $60.9B FY2024, with Q3 FY2026 at $51.2B alone ([Nvidia earnings](http://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025)); hyperscaler capex hit $300B+ in 2025 ([McKinsey](https://www.mckinsey.com/industries/private-capital/our-insights/scaling-bigger-faster-cheaper-data-centers-with-smarter-designs), [CNBC](https://www.cnbc.com/2025/02/08/tech-megacaps-to-spend-more-than-300-billion-in-2025-to-win-in-ai.html)). Multiple sources describe 'exponential demand' ([RAND](https://www.rand.org/pubs/research_reports/RRA3572-1.html), Nvidia CEO quotes, [AI Supremacy](https://www.ai-supremacy.com/p/burn-baby-burn-exponential-demand-for-compute-ai-2025)). No saturation observed in 2.5 years."
+    },
+    {
+      "id": "D-01:28:15.110",
+      "result": "ambiguous",
+      "explanation": "Key facts about RFK Jr. and the 2024 Democratic primaries:\n\n- Robert F. Kennedy Jr. launched a 2024 presidential bid as a **Democrat** in April 2023, then **left the Democratic Party and announced an independent run on October 9, 2023**, declaring his \u201cindependence from the Democratic party.\u201d ([en.wikipedia.org](https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr._2024_presidential_campaign?utm_source=openai))\n- While a Democratic candidate, RFK Jr. did attract notable grassroots interest, polling around **19\u201325% among Democratic primary voters**, with Biden still clearly ahead (roughly 57\u201360%). ([pjmedia.com](https://pjmedia.com/benbartee/2023/08/31/rfk-jr-still-pushing-20-in-dem-primary-polling-despite-constant-attacks-censorship-smears-n1723508?utm_source=openai)) That\u2019s meaningful support but not a frontrunner \u201cwave\u201d on track to win the nomination.\n- RFK Jr. repeatedly accused the DNC of **\u201crigging\u201d the primary** via rules changes: no sanctioned primary debates and a reordered calendar that favored Biden (e.g., elevating South Carolina), and he argued that the superdelegate math meant he would need to win an overwhelming share of states to beat Biden. ([breitbart.com](https://www.breitbart.com/radio/2023/04/24/exclusive-rfk-jr-slams-dnc-for-rigged-primary-no-debates-moving-south-carolina-to-first-state/?utm_source=openai)) He cited these barriers while signaling he might seek \u201cother alternatives,\u201d which he then did by running as an independent.\n- Because RFK Jr. exited the Democratic primaries **before any voting**, there was never a situation where an anti\u2011establishment Democrat was actually winning primaries and delegates and then **blocked at the convention** via superdelegates or similar formal mechanisms. The 2024 Democratic primaries themselves were effectively a low\u2011contest incumbent race that Biden dominated. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Results_of_the_2024_Democratic_Party_presidential_primaries?utm_source=openai))\n- After Biden later dropped out in 2024, party leaders changed convention rules so **superdelegates could vote on the first ballot in a virtual roll call** that nominated Kamala Harris, underscoring the establishment\u2019s willingness to use rule changes and superdelegates to shape outcomes. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Superdelegate?utm_source=openai)) But this move was about replacing a faltering incumbent with his vice president, not about stopping a surging anti\u2011establishment insurgent.\n- Outside the primary context, the Democratic Party and Democratic\u2011aligned actors did pursue legal and procedural efforts that hindered RFK Jr.\u2019s **independent** candidacy (e.g., an FEC complaint over alleged illegal coordination with a super PAC, and ballot\u2011access fights like those in Nevada), but those are not the exact superdelegate/primary\u2011process scenario the prediction described. ([theguardian.com](https://www.theguardian.com/us-news/2024/feb/10/robert-kennedy-jr-campaign-super-pac-collusion-allegations?utm_source=openai))\n\nTaken together, the **condition** in Sacks\u2019s prediction\u2014an anti\u2011establishment Democrat building a sufficiently strong grassroots wave *inside the Democratic primaries* to plausibly win\u2014never fully materialized. RFK Jr. had meaningful but minority support and left the party before any test of convention\u2011level intervention, and no similar candidate replaced him.\n\nBecause that core scenario never occurred, we cannot definitively say whether the Democratic establishment *would have* used superdelegates and other primary\u2011process controls to stop such a candidate. There is suggestive behavior (rule\u2011rigging accusations, no debates, later use of superdelegates to manage the Harris nomination, aggressive tactics against RFK Jr. as an independent), but **no direct, decisive case of an insurgent Democrat being blocked at the convention**.\n\nTherefore, the prediction\u2019s truth value is **ambiguous**: there is circumstantial evidence consistent with Sacks\u2019s expectations about establishment behavior, but the specific \u201cif X, then Y\u201d scenario was never actually tested.",
+      "sources": [
+        {
+          "end_index": 451,
+          "start_index": 333,
+          "title": "Robert F. Kennedy Jr. 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr._2024_presidential_campaign?utm_source=openai"
+        },
+        {
+          "end_index": 816,
+          "start_index": 642,
+          "title": "RFK Jr. STILL Pushing 20% in Dem Primary Polling Despite Constant Attacks, Censorship, Smears \u2013 PJ Media",
+          "type": "url_citation",
+          "url": "https://pjmedia.com/benbartee/2023/08/31/rfk-jr-still-pushing-20-in-dem-primary-polling-despite-constant-attacks-censorship-smears-n1723508?utm_source=openai"
+        },
+        {
+          "end_index": 1388,
+          "start_index": 1214,
+          "title": "Exclusive: RFK Jr. Slams DNC for 'Rigged' Primary System",
+          "type": "url_citation",
+          "url": "https://www.breitbart.com/radio/2023/04/24/exclusive-rfk-jr-slams-dnc-for-rigged-primary-no-debates-moving-south-carolina-to-first-state/?utm_source=openai"
+        },
+        {
+          "end_index": 2023,
+          "start_index": 1894,
+          "title": "Results of the 2024 Democratic Party presidential primaries",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Results_of_the_2024_Democratic_Party_presidential_primaries?utm_source=openai"
+        },
+        {
+          "end_index": 2397,
+          "start_index": 2314,
+          "title": "Superdelegate",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Superdelegate?utm_source=openai"
+        },
+        {
+          "end_index": 3073,
+          "start_index": 2928,
+          "title": "Democratic party accuses RFK Jr campaign of colluding with Super Pac",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2024/feb/10/robert-kennedy-jr-campaign-super-pac-collusion-allegations?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "RFK Jr. built a significant grassroots wave in 2023 Democratic primary polls, reaching 15-20% nationally (e.g., CNN June 2023 report; Wikipedia RFK Jr. campaign page citing Quinnipiac/Siena polls up to 22-24%). However, he suspended his Democratic bid on Oct. 9, 2023, before most primaries, transitioning to independent due to dissatisfaction with the primary process ([Wikipedia: RFK Jr. 2024 campaign](https://en.wikipedia.org/wiki/Robert_F._Kennedy_Jr._2024_presidential_campaign); campaign cited DNC rigging claims, refuted by WaPo Sep. 2023). \n\nThe DNC exerted control over the primary: calendar changes demoted NH/IA (NH primary non-binding, no delegates); no debates for challengers; many states had only Biden on ballots (e.g., FL/DE canceled; NC/TN etc. Biden-only) ([Wikipedia: 2024 Democratic primaries](https://en.wikipedia.org/wiki/2024_Democratic_Party_presidential_primaries)). Biden secured 99% pledged delegates, presumptive nominee by March 2024. \n\nRFK Jr. received negligible votes post-dropout (0.4% write-in NH, 0.47% VT; no delegates) ([Wikipedia: 2024 primary results](https://en.wikipedia.org/wiki/Results_of_the_2024_Democratic_Party_presidential_primaries); [NH primary page](https://en.wikipedia.org/wiki/2024_New_Hampshire_Democratic_presidential_primary)). Superdelgates irrelevant as no convention contest needed. \n\nThis mirrors Bernie 2016 (superdelegates/super control), preventing RFK Jr.'s nomination as predicted. DNC later targeted his independent run via lawsuits ([Politico/NYT Feb. 2024 FEC complaints](https://www.politico.com/news/2024/02/09/dnc-rfk-fec-00140719))."
+    },
+    {
+      "id": "D-01:29:05.950",
+      "result": "wrong",
+      "explanation": "The prediction was that there was a roughly 10\u201320% chance that the 2024 U.S. presidential *general election* matchup would be Gavin Newsom vs. Ron DeSantis.\n\nIn reality, the 2024 general election was between **Donald Trump (Republican)** and **Kamala Harris (Democrat)**, with running mates JD Vance and Tim Walz, respectively; neither Newsom nor DeSantis was on either major-party ticket. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai))\n\nOn the Democratic side, Joe Biden initially ran for re\u2011election, then withdrew in July 2024; Kamala Harris subsequently became the Democratic nominee. Gavin Newsom never entered the 2024 presidential race and had previously indicated he would not challenge Biden, instead endorsing Biden\u2019s re\u2011election bid. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))\n\nOn the Republican side, Ron DeSantis did run in the primaries but **suspended his campaign on January 21, 2024 and endorsed Donald Trump**, who then secured the Republican nomination at the July 2024 Republican National Convention. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ron_DeSantis_2024_presidential_campaign?utm_source=openai))\n\nSince the specific scenario \u201cNewsom vs. DeSantis\u201d did *not* occur as the 2024 general election matchup, the event to which Sacks assigned 10\u201320% probability failed to happen. Interpreting the question as \u201cDid that predicted matchup materialize?\u201d, the prediction is therefore **wrong** in outcome terms, even though assigning a low probability to an event that doesn\u2019t occur is not necessarily poor probabilistic calibration.",
+      "sources": [
+        {
+          "end_index": 535,
+          "start_index": 425,
+          "title": "2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 989,
+          "start_index": 846,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1334,
+          "start_index": 1225,
+          "title": "Ron DeSantis 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Ron_DeSantis_2024_presidential_campaign?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The 2024 US presidential general election nominees were Donald Trump (Republican) and Kamala Harris (Democrat), facing off on November 5, 2024. Ron DeSantis suspended his Republican presidential campaign on January 21, 2024, after poor primary performance and endorsed Trump ([CBS News](https://www.cbsnews.com/news/ron-desantis-drops-out-2024-republican-presidential-race/), [Wikipedia](https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_primaries)). Gavin Newsom did not enter the Democratic primaries, even after Biden's withdrawal; Harris secured the nomination in August 2024 ([BBC](https://www.bbc.com/news/articles/c4ng1my55vno), [Wikipedia](https://en.wikipedia.org/wiki/2024_Democratic_Party_presidential_primaries), [CNN](https://www.cnn.com/interactive/2024/politics/presidential-candidates-dg/)). Thus, the predicted Newsom-DeSantis matchup did not occur."
+    }
+  ]
+}

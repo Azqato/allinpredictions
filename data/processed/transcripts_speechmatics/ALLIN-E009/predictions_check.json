@@ -1,0 +1,836 @@
+{
+  "meta": {
+    "count": 19,
+    "count_by_result": {
+      "right": 9,
+      "wrong": 4,
+      "inconclusive": 1,
+      "ambiguous": 5
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:01:31.740",
+      "result": "right",
+      "explanation": "Evidence shows that Donald Trump received an 8\u2011gram intravenous dose of Regeneron\u2019s antibody cocktail (REGEN\u2011COV2) on October 2, 2020, in line with the setup of the prediction. ([fortune.com](https://fortune.com/2020/10/05/trump-covid-regeneron-antibody-treatment/?utm_source=openai))  He was hospitalized at Walter Reed from October 2\u20135 and discharged back to the White House after three days. ([en.wikipedia.org](https://en.wikipedia.org/wiki/White_House_COVID-19_outbreak?utm_source=openai))  By October 8 his physician stated he was \u201cdevoid of symptoms\u201d and anticipated a \u201csafe return to public engagements\u201d by October 10; Trump resumed campaign events starting October 12, indicating a functional recovery within about a week to ten days of diagnosis. ([en.wikipedia.org](https://en.wikipedia.org/wiki/White_House_COVID-19_outbreak?utm_source=openai))\n\nLonger\u2011term, multiple White House medical reports in 2025 describe Trump (now in his late 70s) as in \u201cexcellent\u201d or \u201cexceptional\u201d health and \u201cfully fit,\u201d noting only chronic issues like well\u2011controlled high cholesterol and mild chronic venous insufficiency; they list his 2020 COVID\u201119 hospitalization only as past history, with no mention of ongoing respiratory, cardiac, or neurological impairment suggestive of severe long\u2011term post\u2011COVID complications. ([reuters.com](https://www.reuters.com/world/us/trump-excellent-health-white-house-doctor-says-following-physical-2025-04-13/?utm_source=openai))  There is no credible reporting that he developed long\u2011COVID, chronic oxygen dependence, or other major sequelae.\n\nTaken together, Trump (1) recovered and returned to normal public activity within roughly a week to ten days, and (2) did not die or show documented long\u2011term severe complications attributable to his 2020 COVID\u201119 infection. That aligns closely with Friedberg\u2019s prediction, so the forecast is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 317,
+          "start_index": 210,
+          "title": "Trump COVID-19: Why is he getting Regeneron's antibody treatment? | Fortune",
+          "type": "url_citation",
+          "url": "https://fortune.com/2020/10/05/trump-covid-regeneron-antibody-treatment/?utm_source=openai"
+        },
+        {
+          "end_index": 527,
+          "start_index": 428,
+          "title": "White House COVID-19 outbreak",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/White_House_COVID-19_outbreak?utm_source=openai"
+        },
+        {
+          "end_index": 889,
+          "start_index": 790,
+          "title": "White House COVID-19 outbreak",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/White_House_COVID-19_outbreak?utm_source=openai"
+        },
+        {
+          "end_index": 1495,
+          "start_index": 1350,
+          "title": "Trump is in excellent health, high cholesterol controlled White House doctor says",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/trump-excellent-health-white-house-doctor-says-following-physical-2025-04-13/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Trump tested positive for COVID-19 on October 1-2, 2020, received 8g Regeneron antibody therapy on October 2, was hospitalized at Walter Reed October 2-5 (3 days), discharged feeling well, tested negative by October 10, and resumed rallies shortly after\u2014recovery in ~1 week. No death or long-term severe complications reported; he remained active post-recovery, including 2024 campaign. Sources: CNN timeline ([web:0] first search), NYT/Science.org on treatment/dose ([web:0-2] Regeneron search), no long-term issues in searches ([web:0-9] complications query)."
+    },
+    {
+      "id": "C-00:02:44.210",
+      "result": "wrong",
+      "explanation": "Chamath\u2019s prediction tied several concrete downstream effects to Trump\u2019s COVID\u201119 case; those effects largely did **not** occur.\n\n1. **Trump\u2019s case did *not* yield uniquely \u201ctransparent data\u201d on effective treatments**  \n   * Coverage of Trump\u2019s hospitalization repeatedly emphasized **confusion and lack of transparency**, not clarity. White House physician Sean Conley and other officials gave incomplete and even misleading information about Trump\u2019s oxygen levels, imaging, and timeline, which major outlets described as \u201cfalsehoods, obfuscation, [and] evasion.\u201d ([washingtonpost.com](https://www.washingtonpost.com/outlook/2020/10/06/trump-doctors-coronavirus-walter-reed/?utm_source=openai))  \n   * The main therapies he received (Regeneron\u2019s monoclonal antibody cocktail, remdesivir, dexamethasone) were evaluated primarily through randomized clinical trials and then FDA Emergency Use Authorizations, not through any special dataset from Trump\u2019s case. The EUA for casirivimab/imdevimab on Nov. 21, 2020, explicitly rested on trial data, not on his treatment. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Casirivimab/imdevimab?utm_source=openai))  \n   * In other words, his illness was **not** the source of \u201call of the most transparent data\u201d about coronavirus care.\n\n2. **Public demand and *actual access* to the same treatment did *not* explode**  \n   * Trump heavily promoted Regeneron\u2019s antibody cocktail after his discharge, saying he wanted \u201ceverybody to be given the same treatment as your president,\u201d and portraying it as a near\u2011miracle. ([militarytimes.com](https://www.militarytimes.com/news/pentagon-congress/2020/10/07/trump-says-the-military-could-distribute-experimental-virus-treatment-he-hails-for-his-recovery/?utm_source=openai))  \n   * However, once monoclonal antibodies from Regeneron and Eli Lilly received EUAs in November 2020, utilization was **low, not sky\u2011high**. By late 2020 and January 2021, federal officials reported that only about 20\u201325% of distributed antibody courses were being used, with some areas as low as 5%; HHS and the Surgeon General publicly urged hospitals to use them more. ([cnbc.com](https://www.cnbc.com/2021/01/15/us-health-officials-push-hospitals-to-administer-underutilized-covid-antibody-treatments-despite-challe.html?utm_source=openai))  \n   * A Washington Post report noted that the much\u2011anticipated demand surge\u2014fueled by Trump\u2019s glowing video about the Regeneron drug\u2014**never materialized**; many patients and clinicians either didn\u2019t know about the therapies or weren\u2019t asking for them. ([washingtonpost.com](https://www.washingtonpost.com/health/2020/12/31/covid-monoclonal-antibodies-unused/?utm_source=openai))  \n   * Access also remained constrained by practical barriers: the drugs required rapid administration early in illness, IV infusion capacity, and specialized centers; states repeatedly had to set up or reopen dedicated infusion facilities, and access varied by geography and eligibility. ([cnbc.com](https://www.cnbc.com/2021/01/15/us-health-officials-push-hospitals-to-administer-underutilized-covid-antibody-treatments-despite-challe.html?utm_source=openai))  \n   * So it did *not* become \u201chard for everybody to then not get some version\u201d of Trump\u2019s therapy; instead, **supply often exceeded utilization**, and many eligible people never received it.\n\n3. **Mask and testing \u201cde\u2011escalation\u201d in the ensuing months did *not* follow from his treatment**  \n   * Through fall 2020 and winter 2020\u201321, U.S. public\u2011health policy continued to lean heavily on masks and other non\u2011pharmaceutical interventions, especially during a large winter surge. CDC mask recommendations remained in force, and on Jan. 20, 2021, President Biden signed Executive Order 13991, *strengthening* mask requirements on federal property and calling for maximizing public compliance with masks and distancing\u2014this is the opposite of a treatment\u2011driven de\u2011emphasis on masking. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States?utm_source=openai))  \n   * CDC did not significantly relax mask guidance for the general (vaccinated) public until May 13, 2021, and that change was **explicitly tied to vaccination progress**, not to monoclonal antibody availability or Trump\u2019s recovery. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States?utm_source=openai))  \n   * Testing volumes *increased* into late 2020, peaking around Jan. 15, 2021 at more than 2 million tests per day nationwide. Later declines in testing were attributed to falling case counts, harsh winter weather, vaccination rollout, and \u201ctesting fatigue,\u201d not to any new clarity about curative therapies. ([medicalxpress.com](https://medicalxpress.com/news/2021-02-plunging-demand-covid-exposed.html?utm_source=openai))  \n   * There remained substantial uncertainty and debate among experts about the role and indications of monoclonal antibodies; Trump\u2019s unusual triple\u2011drug regimen was widely noted as *unrepresentative* of standard care and even as an example of \u201cVIP syndrome,\u201d not a template that resolved \u201cwhat the right course of care is.\u201d ([abc7chicago.com](https://abc7chicago.com/trump-update-covid-coronavirus-remdesivir/6762432?utm_source=openai))\n\n**Bottom line:**  \nWhile Trump received an aggressive combination of leading\u2011edge treatments and then publicly hyped monoclonal antibodies, his case **did not** (a) generate uniquely transparent treatment data, (b) trigger broad, unavoidable access to \u201cwhat the president got,\u201d or (c) clearly lead to a rapid de\u2011emphasis of masks, testing, or uncertainty about care. The empirical record from late 2020 through mid\u20112021 points in the opposite direction on all three counts, so Chamath\u2019s prediction is **wrong** overall.",
+      "sources": [
+        {
+          "end_index": 731,
+          "start_index": 601,
+          "title": "Trump's covid-19 medical treatment makes no sense - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/outlook/2020/10/06/trump-doctors-coronavirus-walter-reed/?utm_source=openai"
+        },
+        {
+          "end_index": 1193,
+          "start_index": 1102,
+          "title": "Casirivimab/imdevimab",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Casirivimab/imdevimab?utm_source=openai"
+        },
+        {
+          "end_index": 1798,
+          "start_index": 1597,
+          "title": "Trump says the military could distribute experimental virus treatment he hails for his recovery",
+          "type": "url_citation",
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2020/10/07/trump-says-the-military-could-distribute-experimental-virus-treatment-he-hails-for-his-recovery/?utm_source=openai"
+        },
+        {
+          "end_index": 2346,
+          "start_index": 2174,
+          "title": "U.S. health officials push hospitals to administer unused Covid antibody drugs",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/01/15/us-health-officials-push-hospitals-to-administer-underutilized-covid-antibody-treatments-despite-challe.html?utm_source=openai"
+        },
+        {
+          "end_index": 2728,
+          "start_index": 2602,
+          "title": "Monoclonal antibodies: Overburdened hospitals are not offering this treatment against covid-19 - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/health/2020/12/31/covid-monoclonal-antibodies-unused/?utm_source=openai"
+        },
+        {
+          "end_index": 3191,
+          "start_index": 3019,
+          "title": "U.S. health officials push hospitals to administer unused Covid antibody drugs",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/01/15/us-health-officials-push-hospitals-to-administer-underutilized-covid-antibody-treatments-despite-challe.html?utm_source=openai"
+        },
+        {
+          "end_index": 4111,
+          "start_index": 3981,
+          "title": "Face masks during the COVID-19 pandemic in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 4478,
+          "start_index": 4348,
+          "title": "Face masks during the COVID-19 pandemic in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 4904,
+          "start_index": 4790,
+          "title": "Plunging demand for COVID-19 tests may leave US exposed",
+          "type": "url_citation",
+          "url": "https://medicalxpress.com/news/2021-02-plunging-demand-covid-exposed.html?utm_source=openai"
+        },
+        {
+          "end_index": 5345,
+          "start_index": 5233,
+          "title": "President Donald Trump's COVID-19 treatment is far different from what most American patients get - ABC7 Chicago",
+          "type": "url_citation",
+          "url": "https://abc7chicago.com/trump-update-covid-coronavirus-remdesivir/6762432?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump received experimental treatments like Regeneron's monoclonal antibodies, remdesivir, and dexamethasone, recovered quickly (discharged Oct 5, 2020), and promoted them, leading to surged public demand (e.g., patients seeking trials [Reuters, Oct 8, 2020](https://www.reuters.com/world/regeneron-antibodies-demand-after-trump-treatment-doctors-seek-more-data-2020-10-08/); EUA granted Nov 21, 2020 [BioPharma Dive](https://www.biopharmadive.com/news/regeneron-covid-antibody-fda-emergency-approval/589035/)). However, data transparency was limited and criticized (contradictory statements [FactCheck.org](https://www.factcheck.org/2020/10/timeline-of-contradictory-statements-on-trumps-health/)). Crucially, in the following months (late 2020-early 2021), there was **no de-escalation** in mask/testing emphasis\u2014instead, mandates expanded (e.g., CA outdoor expansion Nov 17, 2020 [Wikipedia](https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States); CDC transport mandate Jan 2021 [LA Times](https://www.latimes.com/science/story/2021-07-27/timeline-cdc-mask-guidance-during-covid-19-pandemic)), testing ramped up amid winter surge, and treatment uncertainty persisted with vaccine rollout. Policies intensified, contradicting the prediction."
+    },
+    {
+      "id": "B-00:10:20.440",
+      "result": "wrong",
+      "explanation": "**Why this prediction is wrong (as of Nov 29, 2025)**\n\nFriedberg predicted that within the coming years, *routine* prevention of infectious disease would move away from traditional vaccines to **annual polyclonal antibody \u2018cocktails\u2019** that would effectively replace the current model of yearly flu shots.\n\nKey checks:\n\n1. **Standard of care for flu prevention**  \n   - In the U.S. and globally, the primary routine prevention for seasonal influenza in healthy populations remains **annual vaccination**, not antibody infusions or injections.\n   - CDC guidance for the 2024\u20132025 season continues to recommend yearly **influenza vaccination** for almost everyone 6 months and older; there is no recommendation for routine antibody prophylaxis for the general population.\n\n2. **Antibody-based prophylaxis today**  \n   - Monoclonal antibodies are used preventively in **niche or high\u2011risk contexts**:\n     - RSV: Nirsevimab (Beyfortus) is recommended as a **single-dose monoclonal antibody** to prevent severe RSV in infants and some high\u2011risk young children, but this is a targeted product for a specific group, not a general annual cocktail for the whole population.  \n     - COVID\u201119: Products like Evusheld (tixagevimab/cilgavimab) were used for pre\u2011exposure prophylaxis in certain immunocompromised patients, but authorizations were withdrawn or revised as variants reduced effectiveness, and they were never deployed as a universal annual replacement for vaccination.\n   - These are **monoclonal** or sometimes combination antibody products targeting specific pathogens, not broad \"polyclonal cocktails\" that replace flu shots for mass routine prevention.\n\n3. **No broad shift in prevention model**  \n   - Routine public\u2011health practice and guidelines in 2025 still center on **vaccination** for influenza, COVID\u201119, and most other vaccine\u2011preventable diseases.\n   - Antibody cocktails remain **adjuncts or special\u2011population tools**, not the new standard annual prophylaxis for the general population.\n\n**Conclusion**  \nBy late 2025, routine prevention of infectious disease has **not** shifted from vaccines to annual polyclonal antibody cocktails, nor have such cocktails functionally replaced yearly flu shots. The prediction is therefore **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Routine prevention of infectious diseases like influenza has not shifted to annual polyclonal antibody cocktails replacing traditional vaccines. CDC recommendations for the 2025-2026 flu season still emphasize annual influenza vaccination for everyone aged \u22656 months ([CDC Flu Vaccine Recommendations](https://www.cdc.gov/flu/season/2025-2026.html), [ACIP Summary](https://www.cdc.gov/flu/hcp/acip/index.html)). Recent research on antibody cocktails for flu shows promise in mouse models (e.g., [Science Advances study, Sep 2025](https://www.jax.org/news-and-insights/2025/september/a-universal-therapy-against-the-seasonal-flu-antibody-cocktail-targets-virus-weak-spot)), but none are approved for routine human use or annual administration ([PubMed review, Oct 2025](https://pubmed.ncbi.nlm.nih.gov/41102609/)). No evidence of polyclonal cocktails in standard prophylaxis for flu, RSV, or COVID; vaccines remain the norm after 5+ years."
+    },
+    {
+      "id": "B-00:11:35.590",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly gives a 10\u201315 year horizon from 2020 (i.e., roughly 2030\u20132035) for yearly synthetic-antibody booster shots against new infectious diseases to become a general reality. As of the current date (November 29, 2025), we are only about five years into that window, so it is too early to determine whether this will be widely adopted by 2030\u20132035. Therefore the accuracy of the prediction cannot yet be judged.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for yearly synthetic antibody boosters to become a 'general reality for everyone' against newly circulating infectious diseases by 2030\u20132035 (10\u201315 years from 2020). As of Dec 1, 2025 (only ~5 years elapsed), this has not occurred and is too early to fully judge. Web searches reveal monoclonal antibodies used for targeted prophylaxis (e.g., RSV in infants via clesrovimab [CDC MMWR Aug 2025](https://www.cdc.gov/mmwr/volumes/74/wr/mm7432a3.htm); COVID in high-risk via pemivibart [Clin Infect Dis 2025](https://academic.oup.com/cid/article/81/3/439/8145246); malaria trials [Lancet Sep 2025](https://www.vax-before-travel.com/malaria-monoclonal-antibody-provides-some-protection-2025-09-25)), but none are broad-spectrum, annual, or for general population beyond specific risks. No evidence of development or plans for universal yearly use against 'any new infectious disease'; standard prevention remains vaccines (e.g., annual flu/COVID shots, IA2030 focuses on vaccines [WHO 2024](https://www.who.int/docs/default-source/immunization/strategy/ia2030/ia2030-document-en.pdf))."
+    },
+    {
+      "id": "D-00:12:04.730",
+      "result": "right",
+      "explanation": "**Assessment**\n\nOverall, the conditional prediction substantially came true:\n\n1. **Condition (\u201cif he recovers in about a week and looks strong\u201d) was met.**  \n   - Trump was hospitalized Oct 2\u20135, 2020, then returned to the White House after three days. By Oct 7 he released a video saying he felt \u201cperfect\u201d and describing a rapid turnaround after receiving Regeneron\u2019s antibody cocktail.([factcheck.org](https://www.factcheck.org/2020/10/trump-overstates-status-of-covid-19-antibody-drugs/?utm_source=openai))  This is roughly one week from onset/diagnosis and matches the \u201crecovers in about a week\u201d scenario.\n\n2. **He publicly claimed that an effective *cure* already existed.**  \n   - In multiple videos and interviews on Oct 7\u20138, Trump explicitly called the Regeneron monoclonal-antibody treatment a \u201ccure,\u201d saying it wasn\u2019t just a therapeutic because it \u201cjust made me better,\u201d and promised to make it available \u201cfree\u201d to Americans.([forbes.com](https://www.forbes.com/sites/jackbrewster/2020/10/07/i-call-that-a-cure-trump-touts-regenerons-experimental-covid-treatment-promises-it-will-be-free/?utm_source=openai))  Fact-checkers and news outlets repeatedly noted that no proven cure for COVID-19 existed at that time.([abcnews.go.com](https://abcnews.go.com/Politics/live-updates/debate-campaign-election-2020/fact-check-trump-calls-covid19-antibody-treatment-a-cure-its-not%C2%A0-73779494?id=73746917&utm_source=openai))\n\n3. **He used this narrative for political advantage in the weeks before the 2020 election.**  \n   - Commentary at the time described this as a deliberate \u201ccure\u201d gambit to compensate for the lack of a pre\u2011election vaccine, emphasizing his personal recovery and the supposed miracle treatment as an October surprise.([washingtonpost.com](https://www.washingtonpost.com/politics/2020/10/09/laughable-obviousness-trumps-cure-gambit/?utm_source=openai))  \n   - At the final presidential debate on Oct 22, Trump again highlighted the antibody treatment as essentially a cure that got him \u201cbetter very fast,\u201d using it to underscore his handling of COVID-19 shortly before Election Day.([abcnews.go.com](https://abcnews.go.com/Politics/live-updates/debate-campaign-election-2020/fact-check-trump-calls-covid19-antibody-treatment-a-cure-its-not%C2%A0-73779494?id=73746917&utm_source=openai))\n\n4. **\u201cDownplaying the need for a vaccine\u201d \u2013 partially, but recognizably, yes.**  \n   - In the same period, Trump said getting the antibody treatments to hospitals was \u201cmore important to me than the vaccine,\u201d explicitly elevating the supposed cure over vaccination.([israelnationalnews.com](https://www.israelnationalnews.com/news/288629?utm_source=openai))  That clearly downplays the centrality of vaccines, in line with the prediction\u2019s logic (even though he continued to tout that vaccines were coming soon and did not literally say \u201cyou don\u2019t even need a vaccine\u201d).([debates.org](https://www.debates.org/voter-education/debate-transcripts/october-22-2020-debate-transcript/?utm_source=openai))\n\n**Conclusion**\n\nThe specific wording \u201cyou don\u2019t even need a vaccine\u201d was not documented verbatim, and Trump continued to promote forthcoming vaccines. However, the core predicted behavior *did* occur: after a rapid recovery, he publicly portrayed his treatment as a present\u2011day cure, framed it as more important than a vaccine, and tried to leverage that story to flip criticism and gain political advantage in the closing weeks of the 2020 campaign. That is close enough in substance to rate the prediction as **right** rather than ambiguous.",
+      "sources": [
+        {
+          "end_index": 546,
+          "start_index": 424,
+          "title": "Trump Overstates Status of COVID-19 Antibody Drugs - FactCheck.org",
+          "type": "url_citation",
+          "url": "https://www.factcheck.org/2020/10/trump-overstates-status-of-covid-19-antibody-drugs/?utm_source=openai"
+        },
+        {
+          "end_index": 1158,
+          "start_index": 975,
+          "title": "\u2018I Call That A Cure\u2019: Trump Touts Regeneron\u2019s Experimental Covid Treatment, Promises It Will Be \u2018Free\u2019",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/jackbrewster/2020/10/07/i-call-that-a-cure-trump-touts-regenerons-experimental-covid-treatment-promises-it-will-be-free/?utm_source=openai"
+        },
+        {
+          "end_index": 1466,
+          "start_index": 1262,
+          "title": "Trump, Biden clash in final debate on COVID-19 response, health care, race - ABC News",
+          "type": "url_citation",
+          "url": "https://abcnews.go.com/Politics/live-updates/debate-campaign-election-2020/fact-check-trump-calls-covid19-antibody-treatment-a-cure-its-not%C2%A0-73779494?id=73746917&utm_source=openai"
+        },
+        {
+          "end_index": 1919,
+          "start_index": 1785,
+          "title": "The laughable obviousness of Trump\u2019s \u2018cure\u2019 gambit - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/2020/10/09/laughable-obviousness-trumps-cure-gambit/?utm_source=openai"
+        },
+        {
+          "end_index": 2354,
+          "start_index": 2150,
+          "title": "Trump, Biden clash in final debate on COVID-19 response, health care, race - ABC News",
+          "type": "url_citation",
+          "url": "https://abcnews.go.com/Politics/live-updates/debate-campaign-election-2020/fact-check-trump-calls-covid19-antibody-treatment-a-cure-its-not%C2%A0-73779494?id=73746917&utm_source=openai"
+        },
+        {
+          "end_index": 2715,
+          "start_index": 2623,
+          "title": "Trump: Catching COVID was a 'blessing in disguise' | Israel National News",
+          "type": "url_citation",
+          "url": "https://www.israelnationalnews.com/news/288629?utm_source=openai"
+        },
+        {
+          "end_index": 3056,
+          "start_index": 2928,
+          "title": "CPD: October 22, 2020 Debate Transcript",
+          "type": "url_citation",
+          "url": "https://www.debates.org/voter-education/debate-transcripts/october-22-2020-debate-transcript/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Trump tested positive for COVID-19 on October 1, 2020, was hospitalized October 2-4, returned to the White House on October 4 appearing physically strong, and hosted a balcony event on October 5, recovering within ~4 days (well under a week). He publicly claimed the Regeneron monoclonal antibody treatment was an 'effective cure': in an October 7 video, he stated, 'They call it a therapeutic... I view it different. It's a cure,' and repeated this in speeches/rallies (e.g., NPR, NYT, Politico reports). This downplayed vaccine need by positioning the treatment as an immediate solution available now (pushed for free EUA distribution pre-election), while vaccines were months away; e.g., he said 'Don't be afraid of COVID' (Oct 10 town hall) and focused narrative on his quick recovery via treatment to flip criticism politically before November 3 election (CNN, FactCheck.org timelines). Sources: [NYT Oct 7](https://www.nytimes.com/2020/10/07/health/trump-covid-regeneron.html), [NPR Oct 8](https://www.npr.org/sections/health-shots/2020/10/08/921869860/trump-touts-antibody-treatments-for-covid-19-but-evidence-is-incomplete), [Trump video transcript](https://www.facebook.com/DonaldTrump/videos/a-message-from-the-president/1074174436376520/), CNN/Walter Reed timelines."
+    },
+    {
+      "id": "D-00:17:02.690",
+      "result": "wrong",
+      "explanation": "Trump\u2019s actual COVID-19 course and its electoral effects don\u2019t match any of the three scenarios Sacks laid out.\n\n**Medical course:**\n- Trump announced his positive test on October 2, 2020, was hospitalized October 2\u20135 at Walter Reed, and returned to the White House October 5.([en.wikipedia.org](https://en.wikipedia.org/wiki/White_House_COVID-19_outbreak?utm_source=openai))  \n- By October 7\u20138, his physician reported he was fever\u2011free for several days, symptom\u2011free for over 24 hours, and expected to be safe to resume public engagements around October 10.([aljazeera.com](https://www.aljazeera.com/amp/news/2020/10/7/timeline-what-we-know-about-trumps-covid-19-case?utm_source=openai))  \n- He held his first full campaign rally in Sanford, Florida, on October 12, just 10 days after the diagnosis announcement and a week after hospital discharge.([washingtonpost.com](https://www.washingtonpost.com/politics/trump-rally-covid-florida-biden/2020/10/12/00c10916-0c99-11eb-8a35-237ef1eb2ef7_story.html?utm_source=openai))  \nThis is closer to a **~1\u20131.5 week disruption**, not the 3\u20134 week limitation envisioned in his 40% scenario, and far from the \u201cmore serious\u201d (ICU/ventilator/death) 5\u201310% scenario.\n\n**Political impact:**\n- After the first debate and Trump\u2019s COVID diagnosis, national and swing\u2011state polling showed **Biden\u2019s lead stable or expanding**, not a Trump boost. For example, CNBC/Change Research and other averages saw Biden\u2019s margin in key swing states and nationally tick up in the week after the diagnosis.([cnbc.com](https://www.cnbc.com/2020/10/06/2020-election-polls-biden-leads-trump-after-debate-coronavirus-diagnosis.html?utm_source=openai))  \n- One Franklin Pierce/Boston Herald poll found Biden\u2019s national lead widening from 5 points pre\u2011diagnosis to 21 points immediately afterward.([newsweek.com](https://www.newsweek.com/biden-widens-lead-21-points-after-trumps-coronavirus-diagnosis-poll-1536917?utm_source=openai))  \n- Trump ultimately **lost the 2020 election**, and research on COVID and the 2020 vote finds that higher local COVID case counts *reduced* Trump\u2019s vote share, indicating the pandemic\u2014including perceptions of his handling of it\u2014hurt him electorally.([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/33469244/?utm_source=openai))  \n\nPutting this together:\n- Reality combined a **short illness (near his 50% medical timeline)** with **no clear political benefit and likely net harm**, contrary to the \u201credounds to his political advantage\u201d part of that scenario.\n- His 40% scenario (3\u20134 week case that prevents campaigning) did not occur, as he was back to large rallies within about 10 days.([washingtonpost.com](https://www.washingtonpost.com/politics/trump-rally-covid-florida-biden/2020/10/12/00c10916-0c99-11eb-8a35-237ef1eb2ef7_story.html?utm_source=openai))  \n- The 5\u201310% serious\u2011outcome scenario also did not materialize.\n\nBecause the real world outcome (short course + neutral/negative political impact) is not one of the structured scenarios he assigned substantial probability to\u2014especially his main 50% case tying a quick recovery to political advantage\u2014the prediction is best judged **wrong** rather than ambiguous or inconclusive.",
+      "sources": [
+        {
+          "end_index": 411,
+          "start_index": 312,
+          "title": "White House COVID-19 outbreak",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/White_House_COVID-19_outbreak?utm_source=openai"
+        },
+        {
+          "end_index": 725,
+          "start_index": 595,
+          "title": "How Donald Trump\u2019s COVID-19 illness unfolded: A timeline | Donald Trump News | Al Jazeera",
+          "type": "url_citation",
+          "url": "https://www.aljazeera.com/amp/news/2020/10/7/timeline-what-we-know-about-trumps-covid-19-case?utm_source=openai"
+        },
+        {
+          "end_index": 1059,
+          "start_index": 887,
+          "title": "Trump returns to campaign trail after bout with covid-19 as Biden seeks to make handling of pandemic an issue - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/trump-rally-covid-florida-biden/2020/10/12/00c10916-0c99-11eb-8a35-237ef1eb2ef7_story.html?utm_source=openai"
+        },
+        {
+          "end_index": 1707,
+          "start_index": 1566,
+          "title": "2020 election polls: Biden leads Trump after debate, coronavirus diagnosis",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2020/10/06/2020-election-polls-biden-leads-trump-after-debate-coronavirus-diagnosis.html?utm_source=openai"
+        },
+        {
+          "end_index": 1988,
+          "start_index": 1852,
+          "title": "Biden Widens Lead to 21 Points After Trump\u2019s Coronavirus Diagnosis: Poll - Newsweek",
+          "type": "url_citation",
+          "url": "https://www.newsweek.com/biden-widens-lead-21-points-after-trumps-coronavirus-diagnosis-poll-1536917?utm_source=openai"
+        },
+        {
+          "end_index": 2328,
+          "start_index": 2240,
+          "title": "The COVID-19 pandemic and the 2020 US presidential election - PubMed",
+          "type": "url_citation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33469244/?utm_source=openai"
+        },
+        {
+          "end_index": 2865,
+          "start_index": 2693,
+          "title": "Trump returns to campaign trail after bout with covid-19 as Biden seeks to make handling of pandemic an issue - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/trump-rally-covid-florida-biden/2020/10/12/00c10916-0c99-11eb-8a35-237ef1eb2ef7_story.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Trump's COVID-19 illness resolved in about one week as predicted in the ~50% scenario: positive test announced Oct 2, 2020; hospitalized Walter Reed Oct 2 evening; discharged Oct 5 ([CNN timeline](https://edition.cnn.com/interactive/2020/10/politics/trump-covid-battle/), [Wikipedia White House outbreak](https://en.wikipedia.org/wiki/White_House_COVID-19_outbreak)); first post-recovery rally Oct 12 in Florida ([BBC](https://www.bbc.com/news/election-us-2020-54516324), [Al Jazeera](https://www.aljazeera.com/news/2020/10/13/i-feel-so-powerful-trump-back-on-campaign-tour)). From podcast date (Oct 3), effectively over by ~Oct 10 when he resumed events. No 3-4 week course or serious outcome (5-10% scenarios avoided). Politically, quick recovery prevented campaigning limits (40% hurt scenario); Trump spun it as strength ('I feel powerful', immunity boasts), aligning with predicted benefit, though broader pandemic hurt his election chances per studies ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8242570/), [FiveThirtyEight](https://fivethirtyeight.com/features/how-much-did-covid-19-affect-the-2020-election/)). Outcome matched highest-probability forecast."
+    },
+    {
+      "id": "D-00:18:17.280",
+      "result": "ambiguous",
+      "explanation": "**Why this prediction is hard to score**\n\nSacks\u2019 claim was **conditional**:\n\n> *If* Trump is unable to hold his usual in\u2011person campaign rallies during the remainder of the 2020 election cycle, this will likely shift the national vote margin by a few percentage points against him and could be sufficient to cause him to lose the election.\n\nTo evaluate it, we need to know:\n\n1. **Was Trump actually unable to hold his usual in\u2011person rallies for the remainder of the campaign?**  \n   - After testing positive for COVID-19 on October 2, 2020, Trump canceled in\u2011person campaign events for a short period while quarantining and being treated. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Donald_Trump_2020_presidential_campaign?utm_source=openai))  \n   - However, he **resumed in\u2011person rallies on October 12, 2020**, one week after being discharged from the hospital, and then held frequent large rallies in battleground states\u2014often multiple rallies per day\u2014through Election Day. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai))  \n   - So the strong condition \"unable to hold his usual in\u2011person campaign rallies during the remainder of the election cycle\" did **not** really occur; his rally schedule was briefly paused, then returned in force.\n\n2. **Did Trump lose by \u201ca few percentage points\u201d?**  \n   - Joe Biden won 51.3% of the national popular vote to Trump\u2019s 46.8%, a margin of about **4.5 percentage points**, and won the Electoral College 306\u2013232. ([pollbludger.net](https://www.pollbludger.net/2020/12/11/us-2020-election-final-results-bidens-electoral-college-win/?utm_source=openai))  \n   - That outcome matches the \u201cfew percentage points\u201d loss Sacks described, but it happened **even though** Trump did resume large rallies.\n\n3. **Can we attribute that margin to an inability to hold rallies?**  \n   - Because Trump was not actually prevented from holding his typical late\u2011campaign rallies (he held many after October 12), we are left with a **counterfactual causal claim**: *if* he had truly been unable to hold such rallies, would his margin have been even worse (or is that what caused the existing margin)?  \n   - Available analyses discuss COVID, Trump\u2019s diagnosis, and broader issues as electoral liabilities, but they do not isolate the effect of a hypothetical total loss of rallies relative to the *actual* world where he still held many. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai))\n\nBecause the key **condition** of the prediction (no usual in\u2011person rallies for the rest of the campaign) did not actually hold, we **cannot** cleanly test whether that scenario would have shifted the vote margin by a few points and caused or cemented his loss. Enough time has passed, but the world we observed is not the world the prediction was about.\n\n**Conclusion:** The prediction is about a counterfactual scenario that never fully happened, so its correctness **cannot be determined** from the real\u2011world outcome.\n\nTherefore, the appropriate label is:\n\n- **result:** `ambiguous`",
+      "sources": [
+        {
+          "end_index": 795,
+          "start_index": 686,
+          "title": "Donald Trump 2020 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Donald_Trump_2020_presidential_campaign?utm_source=openai"
+        },
+        {
+          "end_index": 1141,
+          "start_index": 1031,
+          "title": "2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1714,
+          "start_index": 1576,
+          "title": "US 2020 election final results: Biden\u2019s modest Electoral College win - The Poll Bludger",
+          "type": "url_citation",
+          "url": "https://www.pollbludger.net/2020/12/11/us-2020-election-final-results-bidens-electoral-college-win/?utm_source=openai"
+        },
+        {
+          "end_index": 2595,
+          "start_index": 2485,
+          "title": "2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "Trump tested positive for COVID-19 on October 1-2, 2020, but resumed in-person rallies on October 10 (White House event) and held his first full rally on October 12 in Florida. From October 12 to November 2, 2020, he held 46 large in-person rallies at airports, stadiums, etc.\u2014more than the 18 held September 1-30\u2014averaging 1.4 per day vs. 0.6 before, per [Wikipedia list of Trump rallies](https://en.wikipedia.org/wiki/List_of_Donald_Trump_rallies_(December_2016%E2%80%932022)). Thus, the condition ('unable to hold usual in-person rallies remainder') did not occur. Biden won the popular vote 51.3% to Trump's 46.8% (4.46-point margin), per [Wikipedia 2020 election](https://en.wikipedia.org/wiki/2020_United_States_presidential_election) and [Pew Research](https://www.pewresearch.org/politics/2021/06/30/behind-bidens-2020-victory/). The counterfactual effect of absent rallies cannot be determined."
+    },
+    {
+      "id": "D-00:27:16.810",
+      "result": "ambiguous",
+      "explanation": "There is no definitive way to verify the counterfactual claim that Biden was *more* electable than Elizabeth Warren (or other progressives) against Trump in 2020, so the prediction cannot be cleanly marked right or wrong.\n\n**What we can say with evidence**\n\n1. **Biden\u2019s actual performance in 2020**  \n   * Joe Biden won the 2020 presidential election, defeating Donald Trump with 306\u2013232 electoral votes and about a 4.5\u2011point popular vote margin (51.3% to 46.8%).   \n   * That clearly shows he was *electable*, but doesn\u2019t by itself prove he was *more* electable than any other Democrat.\n\n2. **Warren and other progressives never faced Trump**  \n   * Elizabeth Warren lost the Democratic primary to Biden and never became the nominee, so we have no direct election result to compare against Biden\u2019s 2020 performance. Any comparison of their hypothetical general\u2011election performance is an ex\u2011ante modeling or pundit judgment problem, not an empirical one.\n\n3. **Polling/electability debates are not conclusive**  \n   * While there were 2019\u20132020 polls testing Warren and others against Trump, such early head\u2011to\u2011head polling is not a reliable ground truth of what *would* have happened in November 2020, given campaign dynamics, COVID, economic shock, and events like the BLM protests \u2014 all of which unfolded in ways that would likely have interacted differently with a different nominee.  \n   * Political science literature generally treats such counterfactual matchups as inherently uncertain; small differences in early polls or models do not allow us to say with confidence that candidate A *would definitely* have done better/worse than candidate B.\n\n**Why the prediction is \u201cambiguous\u201d**\n\nThe core of the prediction is a *counterfactual electability claim*: that Biden\u2019s demonstrated basic competence and centrism made him the **most electable** Democrat and that he would do *better* than a more progressive nominee like Warren. Biden did win, but we cannot observe the alternative world where Warren (or another progressive) was the nominee. Existing data (primary outcomes, head\u2011to\u2011head polls, models, pundit analyses) do not provide a decisive, widely accepted answer about whether Warren would have done better, worse, or about the same. \n\nBecause the key comparative claim (\u201cmore electorally successful than Warren in the *same race*\u201d) is inherently untestable with real\u2011world results, the prediction is **not verifiable or falsifiable** in a strict sense. Therefore, the fairest classification is:\n\n- **Result: _ambiguous_** \u2013 the necessary counterfactual evidence to judge it right or wrong does not and cannot exist.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Joe Biden won the 2020 presidential election, securing 306 electoral votes to Donald Trump's 232 and 51.3% of the popular vote to 46.9%. Contemporary head-to-head polls consistently showed Biden outperforming Elizabeth Warren against Trump, particularly in battleground states. A November 2019 NYT/Siena poll of six key battlegrounds (MI, PA, WI, FL, AZ, NC) had Biden leading Trump by an average of 2 points among registered voters (1 point among likely voters), while Trump led Warren by 2 points in both groups\u2014Warren trailed in five of six states. National polls were mixed for Warren (some narrow leads), but her weaker battleground performance and electability concerns (e.g., perceived leftism) contributed to her early dropout. Post-election analyses credit Biden's centrism for narrow wins in Rust Belt states; no evidence suggests Warren would have matched or exceeded Biden's success. Sources: [NYT/Siena battleground poll](https://www.nytimes.com/2019/11/04/upshot/trump-biden-warren-polls.html), election results (widely documented)."
+    },
+    {
+      "id": "D-00:31:31.130",
+      "result": "right",
+      "explanation": "**What actually happened**\n\n- In the 2020 elections, Democrats won the presidency and\u2014after the January 5, 2021 Georgia runoffs\u2014effective control of the U.S. Senate with a 50\u201350 split and Vice President Harris as tie\u2011breaker, alongside control of the House.  \n- During approximately the first two years of Biden\u2019s term (January 2021\u2013January 2023), a *large* set of significant laws were passed and signed, including among others:\n  - **American Rescue Plan Act of 2021** (major $1.9T COVID relief and social spending package).  \n  - **Infrastructure Investment and Jobs Act (2021)**, a roughly $1.2T infrastructure bill.  \n  - **Inflation Reduction Act of 2022**, with major climate, health\u2011care, and tax provisions.  \n  - **CHIPS and Science Act of 2022**, subsidizing domestic semiconductor manufacturing.  \n  - **PACT Act** expanding health benefits for veterans exposed to toxic burn pits.  \n  - **Bipartisan Safer Communities Act**, the most significant federal gun\u2011safety legislation in decades.  \n\nContemporary political reporting and academic commentary widely described Biden\u2019s first\u2011two\u2011year legislative record as one of the most substantial for a modern president, especially given the narrow margins in Congress.\n\n**Comparing to the prediction**\n\nSacks\u2019 prediction was conditional and qualitative:\n\n1. *If Democrats win presidency + Senate, there will be one\u2011party control and they can pass much legislation; Biden\u2019s first ~two years would be very consequential.*  \n2. *If Republicans hold the Senate while Biden wins, we\u2019d see gridlock and a less consequential presidency.*\n\nThe world that actually occurred is case (1). In that world, there **was** unified (though narrow) Democratic control and **a substantial volume of major legislation was in fact passed and signed** in the first two years, and Biden\u2019s presidency is widely regarded as consequential in policy terms compared with the gridlock scenario.\n\nBecause the realized conditional outcome matches his described consequences, the prediction is **right**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Democrats won the presidency (Biden) and Senate control (50-50 tie broken by VP Harris) starting Jan 2021, fulfilling the first condition ([Wikipedia: 117th Congress](https://en.wikipedia.org/wiki/117th_United_States_Congress), [VOA](https://www.voanews.com/a/usa_us-politics_control-white-house-and-congress-democrats-have-2-years-make-big-changes/6201047.html), [Guardian](https://www.theguardian.com/us-news/2023/jan/01/democrats-congress-control-achievements-joe-biden)).\n\nIn the first ~2 years (2021-2022), Biden signed substantial legislation:\n- American Rescue Plan Act ($1.9T, Mar 2021) ([Wikipedia: Presidency of Joe Biden](https://en.wikipedia.org/wiki/Presidency_of_Joe_Biden), [CNN](https://www.cnn.com/2022/01/20/politics/biden-laws-passed-priorities-to-get-done-executive-orders));\n- Infrastructure Investment and Jobs Act ($1.2T, Nov 2021) ([Miller Center](https://millercenter.org/president/biden/key-events));\n- CHIPS and Science Act (Aug 2022) ([Miller Center](https://millercenter.org/president/biden/key-events));\n- Inflation Reduction Act (Aug 2022), PACT Act, Respect for Marriage Act ([White House](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2025/01/15/the-biden-harris-administration-record/), [NBC News](https://www.nbcnews.com/politics/congress/five-major-bills-congress-passed-2022-rcna61472)).\n\nThis matches the prediction of 'substantial volume of legislation'."
+    },
+    {
+      "id": "D-00:35:04.970",
+      "result": "right",
+      "explanation": "During Joe Biden\u2019s presidency, Democrats held effective control of both the House and the Senate in the 117th Congress from January 20, 2021, until January 3, 2023, giving them a governing trifecta. ([en.wikipedia.org](https://en.wikipedia.org/wiki/117th_United_States_Congress?utm_source=openai))  \n\nIn that period, Congress passed and Biden signed into law all of the major Democratic-led legislative packages that managed to clear both chambers, including:\n- The **American Rescue Plan Act of 2021** (COVID relief), passed on party-line votes and signed March 11, 2021. ([en.wikipedia.org](https://en.wikipedia.org/wiki/American_Rescue_Plan_Act_of_2021?utm_source=openai))\n- The **Infrastructure Investment and Jobs Act** (\u201cbipartisan infrastructure law\u201d), enacted in 2021. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Infrastructure_Investment_and_Jobs_Act?utm_source=openai))\n- The **CHIPS and Science Act**, signed August 9, 2022. ([bidenwhitehouse.archives.gov](https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2022/08/09/remarks-by-president-biden-at-signing-of-h-r-4346-the-chips-and-science-act-of-2022/?utm_source=openai))\n- The **Inflation Reduction Act of 2022**, the core climate/health and tax package. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Energy_policy_of_the_United_States?utm_source=openai))\n\nOfficial veto records from the U.S. Senate and compiled veto lists show that Biden issued **no vetoes at all during the 117th Congress**; his vetoes begin only in 2023, after Republicans captured the House in the 118th Congress. ([senate.gov](https://www.senate.gov/legislative/vetoes/vetoCounts.htm?utm_source=openai)) Those later vetoes were almost entirely aimed at Republican-led congressional disapproval resolutions targeting his administration\u2019s regulations, not at blocking a Democratic Congress\u2019s legislative agenda. ([en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_United_States_presidential_vetoes?utm_source=openai))\n\nSome ambitious progressive priorities (for example, the larger original **Build Back Better** framework and certain voting-rights or filibuster-reform efforts) failed because they could not secure unanimous Democratic support in the Senate, particularly from moderate Democrats; such proposals never passed both chambers, so Biden was never in a position to veto them. ([en.wikipedia.org](https://en.wikipedia.org/wiki/117th_United_States_Congress?utm_source=openai)) These are therefore not counterexamples to the claim that he would sign what a Democratic Congress actually *passes*.\n\nGiven that (1) Democrats did control both chambers for the first two years of Biden\u2019s term, (2) Biden signed the major legislation that Democratic leaders were able to move through Congress, and (3) he did not make a practice of vetoing or otherwise blocking bills passed by that Democratic Congress, Sacks\u2019s prediction\u2014that Biden would essentially \"sign whatever [Democrats] pass\" if they won Congress\u2014has been borne out by subsequent events.",
+      "sources": [
+        {
+          "end_index": 330,
+          "start_index": 232,
+          "title": "117th United States Congress",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/117th_United_States_Congress?utm_source=openai"
+        },
+        {
+          "end_index": 711,
+          "start_index": 609,
+          "title": "American Rescue Plan Act of 2021",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/American_Rescue_Plan_Act_of_2021?utm_source=openai"
+        },
+        {
+          "end_index": 922,
+          "start_index": 814,
+          "title": "Infrastructure Investment and Jobs Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Infrastructure_Investment_and_Jobs_Act?utm_source=openai"
+        },
+        {
+          "end_index": 1195,
+          "start_index": 980,
+          "title": "Remarks by President Biden at Signing of H.R. 4346, \u201cThe CHIPS and Science Act of 2022\u201d | The White House",
+          "type": "url_citation",
+          "url": "https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2022/08/09/remarks-by-president-biden-at-signing-of-h-r-4346-the-chips-and-science-act-of-2022/?utm_source=openai"
+        },
+        {
+          "end_index": 1385,
+          "start_index": 1281,
+          "title": "Energy policy of the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Energy_policy_of_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 1708,
+          "start_index": 1618,
+          "title": "U.S. Senate: Vetoes, 1789 to Present",
+          "type": "url_citation",
+          "url": "https://www.senate.gov/legislative/vetoes/vetoCounts.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2026,
+          "start_index": 1915,
+          "title": "List of United States presidential vetoes",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/List_of_United_States_presidential_vetoes?utm_source=openai"
+        },
+        {
+          "end_index": 2497,
+          "start_index": 2399,
+          "title": "117th United States Congress",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/117th_United_States_Congress?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Democrats controlled both chambers of Congress (117th Congress) from January 2021 to January 2023 under Biden. During this period, Biden signed major Democratic legislation including the American Rescue Plan (March 2021), Infrastructure Investment and Jobs Act (November 2021), and Inflation Reduction Act (August 2022), with **zero vetoes** issued ([Senate.gov veto list](https://www.senate.gov/legislative/vetoes/BidenJR.htm); all 13 vetoes occurred in 118th Congress, 2023-2024, post-Republican House majority). This matches the prediction that Biden would sign whatever Democratic Congress passed, rather than vetoing or blocking their agenda ([Wikipedia 117th Congress](https://en.wikipedia.org/wiki/117th_United_States_Congress); [White House record](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2025/01/15/the-biden-harris-administration-record/))."
+    },
+    {
+      "id": "B-00:59:26.810",
+      "result": "right",
+      "explanation": "**Summary**  \nAvailable macro data show that the extremely loose-money, high\u2011velocity capital environment of late 2020 not only persisted but *accelerated* through 2021, with record levels of dealmaking, venture funding, SPAC issuance and cross\u2011border flows, all underpinned by near\u2011zero interest rates. Market behavior around and after the November 2020 U.S. election is consistent with a \u201cfloodgate\u201d of risk\u2011on capital rather than a pause.\n\n**Key evidence**\n\n1. **Near\u2011zero rates and easy money persisted through 2021**  \n   * The effective federal funds rate averaged about 0.08% in 2021, after being slashed to a 0\u20130.25% target range in March 2020 and held there until rate hikes began in early 2022. ([m.macrotrends.net](https://m.macrotrends.net/2015/fed-funds-rate-historical-chart?utm_source=openai))  \n   * The Fed also maintained large\u2011scale asset purchases in 2021, keeping financing conditions historically loose.\n\n2. **Record global M&A and corporate dealmaking in 2021**  \n   * Global M&A volumes in 2021 hit roughly $5.8\u20135.9 trillion, the highest on record and about 60+% above 2020, explicitly attributed by analysts to cheap, widely available financing and booming equity markets. ([euronews.com](https://www.euronews.com/next/2021/12/31/global-m-a-review?utm_source=openai))  \n   * The U.S. accounted for nearly half of this, with U.S. M&A value nearly doubling versus 2020. ([techstartups.com](https://techstartups.com/2022/01/26/global-ma-volumes-hit-record-high-2021-62193-deals-worth-5-8-trillion-says-refinitiv/?utm_source=openai))\n\n3. **Venture capital and private markets saw an unprecedented surge in 2021**  \n   * Global VC investment jumped from about $347B in 2020 to roughly $671B in 2021, a record year, with deal sizes and valuations rising sharply across all regions. ([businesswire.com](https://www.businesswire.com/news/home/20220118006030/en/Global-Venture-Capital-Annual-Investment-Shatters-Records-Following-Another-Healthy-Quarter-Says-KPMG-Private-Enterprises-Venture-Pulse-Report?utm_source=openai))  \n   * Crunchbase data show the first half of 2021 alone set new records, with ~$288B invested, surpassing the previous half\u2011year record just set in H2 2020\u2014evidence of both continuation and acceleration of capital flows. ([news.crunchbase.com](https://news.crunchbase.com/venture/global-vc-funding-h1-2021-monthly-recap/?utm_source=openai))\n\n4. **SPACs and speculative capital flows peaked in 2021**  \n   * SPAC statistics show 613 SPAC IPOs in 2021 raising about $162B, dramatically above 2020\u2019s ~250 SPACs raising ~$83B, and far beyond any pre\u2011COVID year\u2014clear evidence of \u201ceasy\u201d speculative capital deployment. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Special-purpose_acquisition_company?utm_source=openai))\n\n5. **Cross\u2011border and FDI capital flows rebounded strongly in 2021**  \n   * Cross\u2011regional commercial real estate capital flows between North America, Europe and APAC in H2 2021 rose about 60% year\u2011over\u2011year to a near\u2011record $77.5B, after being flat in H2 2020, with reports explicitly describing \u201crobust\u201d global capital flows in 2021. ([cbre.com](https://www.cbre.com/insights/reports/global-capital-flows?utm_source=openai))  \n   * UNCTAD notes global FDI flows in 2021 rebounded sharply from 2020, more than doubling into developed economies, with U.S. inflows more than doubling on the back of cross\u2011border M&A. ([unctad.org](https://unctad.org/news/global-foreign-direct-investment-rebounded-strongly-2021-recovery-highly-uneven?utm_source=openai))\n\n6. **Election period behavior is consistent with a post\u2011election \u201cfloodgate\u201d of risk\u2011on capital**  \n   * U.S. equities staged a powerful rally from Election Day through November 2020; November was one of the strongest months for U.S. stocks in nearly a century, with the Dow up ~12% and small\u2011cap Russell 2000 up over 16%, supported by investor optimism as the election outcome and transition became clearer. ([washingtonpost.com](https://www.washingtonpost.com/business/2020/11/30/stocks-today-november-2020/?utm_source=openai))  \n   * This rally, combined with the subsequent record\u2011setting 2021 risk\u2011asset and deal activity under a Biden administration, supports Friedberg\u2019s claim that capital flows would keep surging after the election rather than stall, and that this was not contingent on a specific party winning.\n\n**Assessment vs. the prediction**\n\n*Claim:* The late\u20112020 environment of huge, fast capital flows driven by ultra\u2011low rates would **continue into 2021** and see another **\u201cfloodgate\u201d** of capital movement around/after the November 2020 election, *regardless of which side won.*\n\n*Outcome:*  \n\u2013 Interest rates remained near zero in 2021, and quantitative easing persisted.  \n\u2013 Multiple measures of capital flow velocity and volume (M&A volume, VC funding, SPAC issuance, cross\u2011border real\u2011estate and FDI flows) show **record or near\u2011record highs in 2021**, significantly above 2020 levels.  \n\u2013 Markets rallied strongly around and after the election and continued into 2021 as the recovery, vaccine news, and policy clarity combined with easy money.\n\nGiven this, the core directional prediction\u2014that the capital\u2011flow mania of late 2020 would *not* stop in 2021 and would be further unleashed after the election\u2014was borne out by subsequent data. Thus the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 847,
+          "start_index": 744,
+          "title": "Federal Funds Rate - 62 Year Historical Chart | MacroTrends",
+          "type": "url_citation",
+          "url": "https://m.macrotrends.net/2015/fed-funds-rate-historical-chart?utm_source=openai"
+        },
+        {
+          "end_index": 1335,
+          "start_index": 1241,
+          "title": "Global M&A volumes hit record high in 2021, breach $5 trillion for first time | Euronews",
+          "type": "url_citation",
+          "url": "https://www.euronews.com/next/2021/12/31/global-m-a-review?utm_source=openai"
+        },
+        {
+          "end_index": 1598,
+          "start_index": 1437,
+          "title": "Global M&A volumes hit a record high in 2021 with over 62,193 deals worth $5.8 trillion, says Refinitiv - Tech Startups",
+          "type": "url_citation",
+          "url": "https://techstartups.com/2022/01/26/global-ma-volumes-hit-record-high-2021-62193-deals-worth-5-8-trillion-says-refinitiv/?utm_source=openai"
+        },
+        {
+          "end_index": 2087,
+          "start_index": 1848,
+          "title": "Global Venture Capital Annual Investment Shatters Records Following Another Healthy Quarter, Says KPMG Private Enterprise\u2019s Venture Pulse Report",
+          "type": "url_citation",
+          "url": "https://www.businesswire.com/news/home/20220118006030/en/Global-Venture-Capital-Annual-Investment-Shatters-Records-Following-Another-Healthy-Quarter-Says-KPMG-Private-Enterprises-Venture-Pulse-Report?utm_source=openai"
+        },
+        {
+          "end_index": 2430,
+          "start_index": 2311,
+          "title": "Global Venture Funding Hits All-Time High In First Half Of 2021, With $288B Invested",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/global-vc-funding-h1-2021-monthly-recap/?utm_source=openai"
+        },
+        {
+          "end_index": 2812,
+          "start_index": 2707,
+          "title": "Special-purpose acquisition company",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Special-purpose_acquisition_company?utm_source=openai"
+        },
+        {
+          "end_index": 3243,
+          "start_index": 3153,
+          "title": "Global Capital Flows H2 2021 | CBRE",
+          "type": "url_citation",
+          "url": "https://www.cbre.com/insights/reports/global-capital-flows?utm_source=openai"
+        },
+        {
+          "end_index": 3571,
+          "start_index": 3434,
+          "title": "Global foreign direct investment rebounded strongly in 2021, but the recovery is highly uneven | UN Trade and Development (UNCTAD)",
+          "type": "url_citation",
+          "url": "https://unctad.org/news/global-foreign-direct-investment-rebounded-strongly-2021-recovery-highly-uneven?utm_source=openai"
+        },
+        {
+          "end_index": 4105,
+          "start_index": 3985,
+          "title": "U.S. stocks wrap up a monster November - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/business/2020/11/30/stocks-today-november-2020/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was accurate. High-velocity capital flows from late 2020 (e.g., VC funding, SPACs, M&A, PE amid near-zero Fed funds rate of 0-0.25% throughout 2020-2021 per FRED/St. Louis Fed) continued and accelerated in 2021, with records broken post-election. US VC funding doubled from $166B (2020, NVCA/PitchBook) to $330B (2021); global VC from $347B to $671B (KPMG). PE buyout value doubled from $577B to $1.1T (Bain). Global M&A value up 64% to $5.9T (Refinitiv/MoFo). SPACs exploded post-election: Q1 2021 had 298-314 IPOs raising $88B, exceeding all of 2020's $76-83B (PwC, Deal PointData). This aligns with a 'floodgate' post-Nov 2020 election, sustained through 2021 due to stimulus/low rates."
+    },
+    {
+      "id": "C-01:01:11.620",
+      "result": "ambiguous",
+      "explanation": "**Macroeconomic performance (2021)**  \n- U.S. real GDP grew **5.7% in 2021** after contracting **3.4% in 2020**, a sharp rebound and clearly above the ~2% pre\u2011COVID trend, with broad-based strength in consumption and investment. ([bea.gov](https://www.bea.gov/news/2022/gross-domestic-product-fourth-quarter-and-year-2021-advance-estimate?utm_source=openai))  \n\u2192 This strongly supports Chamath\u2019s claim of being \u201csuper bullish on the economy.\u201d\n\n**Technology / markets in 2021**  \n- The **S&P 500** returned **28.71%** in 2021, well above its long\u2011run average. ([slickcharts.com](https://www.slickcharts.com/sp500/returns?utm_source=openai))  \n- The tech\u2011heavy **Nasdaq\u2011100** returned **26.63%** in 2021, also a very strong year, following an even bigger gain in 2020. ([slickcharts.com](https://www.slickcharts.com/nasdaq100/returns?utm_source=openai))  \n\u2192 The U.S. equity market and especially large\u2011cap tech performed very strongly in 2021, consistent with being \u201csuper bullish on tech.\u201d\n\n**U.S. political situation vs. 2020**  \nEvidence that 2021 was *not clearly* an improvement:\n- On **January 6, 2021**, a pro\u2011Trump mob attacked the U.S. Capitol in an effort to overturn the 2020 election, in what has been described as the most severe assault on the building since 1814 and part of a broader attempt to subvert the election result. ([en.wikipedia.org](https://en.wikipedia.org/wiki/January_6_United_States_Capitol_attack?utm_source=openai))  \n- The attack led to a second impeachment of Donald Trump and deepened partisan conflict over election legitimacy and investigations into the riot, signaling ongoing or even heightened dysfunction. ([en.wikipedia.org](https://en.wikipedia.org/wiki/January_6_United_States_Capitol_attack?utm_source=openai))  \n\nEvidence that 2021 could be seen as *relatively* more stable than 2020:\n- **2020** featured the peak of nationwide racial\u2011justice protests after George Floyd\u2019s murder (the largest protest movement in modern U.S. history), widespread COVID\u201119 lockdown protests, and intense, sustained election\u2011related demonstrations beginning in November 2020. ([en.wikipedia.org](https://en.wikipedia.org/wiki/United_States_racial_unrest_%282020%E2%80%932023%29?utm_source=openai))  \n- Some forms of mass street unrest and COVID\u2011related protest activity diminished after early 2021, and by mid\u20112021 the political environment lacked the same continuous, overlapping crises (pandemic onset, first impeachment, summer unrest, election\u2011week uncertainty) that defined much of 2020.\n\n**Why the verdict is ambiguous**  \n- The **economic and tech\u2011market parts** of the prediction are clearly correct on the data: 2021 saw a strong, above\u2011trend macro rebound and very strong equity/tech returns. ([bea.gov](https://www.bea.gov/news/2022/gross-domestic-product-fourth-quarter-and-year-2021-advance-estimate?utm_source=openai))  \n- The **political part**\u2014that the U.S. political situation would *improve* relative to 2020\u2014is a subjective judgment. One can reasonably argue either that:  \n  - January 6 and its aftermath show *greater* instability, or  \n  - the overall year 2021, after the transfer of power, had *less continuous* turmoil than 2020 despite the early\u2011year crisis.  \n\nBecause the political component of the prediction depends on a normative comparison that reasonable observers can disagree on, while the economic/tech components were clearly borne out, the overall assessment of the combined prediction is **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 396,
+          "start_index": 267,
+          "title": "Gross Domestic Product, Fourth Quarter and Year 2021 (Advance Estimate) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2022/gross-domestic-product-fourth-quarter-and-year-2021-advance-estimate?utm_source=openai"
+        },
+        {
+          "end_index": 681,
+          "start_index": 601,
+          "title": "S&P 500 Total Returns by Year Since 1926",
+          "type": "url_citation",
+          "url": "https://www.slickcharts.com/sp500/returns?utm_source=openai"
+        },
+        {
+          "end_index": 894,
+          "start_index": 810,
+          "title": "Nasdaq 100 Annual Returns by Year",
+          "type": "url_citation",
+          "url": "https://www.slickcharts.com/nasdaq100/returns?utm_source=openai"
+        },
+        {
+          "end_index": 1494,
+          "start_index": 1386,
+          "title": "January 6 United States Capitol attack",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/January_6_United_States_Capitol_attack?utm_source=openai"
+        },
+        {
+          "end_index": 1803,
+          "start_index": 1695,
+          "title": "January 6 United States Capitol attack",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/January_6_United_States_Capitol_attack?utm_source=openai"
+        },
+        {
+          "end_index": 2275,
+          "start_index": 2154,
+          "title": "United States racial unrest (2020\u20132023)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/United_States_racial_unrest_%282020%E2%80%932023%29?utm_source=openai"
+        },
+        {
+          "end_index": 2914,
+          "start_index": 2785,
+          "title": "Gross Domestic Product, Fourth Quarter and Year 2021 (Advance Estimate) | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2022/gross-domestic-product-fourth-quarter-and-year-2021-advance-estimate?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "**Economy**: US real GDP grew 5.7-6.06% in 2021, the strongest since 1984 and well above the ~2% trend (sources: [BEA](https://www.bea.gov/news/2022/gross-domestic-product-fourth-quarter-and-year-2021-second-estimate), [Macrotrends](https://www.macrotrends.net/global-metrics/countries/usa/united-states/gdp-growth-rate)).\n\n**Tech sector**: NASDAQ returned ~21-27%, S&P 500 ~27-28% amid tech boom (sources: [Slickcharts](https://www.slickcharts.com/nasdaq100/returns), [Macrotrends](https://www.macrotrends.net/2526/sp-500-historical-annual-returns)).\n\n**Politics**: Improved relative to 2020's election chaos; Polity score rose from +5 (anocracy, end-2020) to +8 (democracy, 2021) per Systemic Peace; described as 'noticeably calmer' post-Trump (sources: [Systemic Peace](https://www.systemicpeace.org/), [Arab News](https://www.arabnews.com/node/1992766)). All parts held."
+    },
+    {
+      "id": "C-01:01:11.620-2",
+      "result": "wrong",
+      "explanation": "**Assessment of the prediction**  \nChamath\u2019s core claim was that *soon after the November 2020 election* U.S. political discourse would become **more civil**, and that Joe Biden\u2019s election would play a major role in that improvement by changing what behaviors are rewarded.\n\nThe empirical record for the 1\u20132 years after the 2020 election points the other way:\n\n1. **Public perception of civility and division worsened under Biden\u2019s first year.**  \n   - A February 2022 Georgetown University \u201cBattleground Civility Poll\u201d found that **43% of voters said politics was *less civil* since Biden took office, only 29% said more civil, and 27% said about the same**. The poll summary notes that a majority of voters think politics has gotten *less* civil overall and explicitly says that, despite Biden\u2019s rhetoric about civility, \u201cmost voters (60%) think politics has been less civil.\u201d ([politics.georgetown.edu](https://politics.georgetown.edu/2022/02/03/battleground-civility-poll-voters-agree-politics-has-grown-less-civil-since-covid-19-and-beginning-of-biden-presidency/?utm_source=openai))  \n   - A November 2021 Monmouth University poll found **about half of Americans (49%) felt the country had become *more divided* since Biden took office**, only 12% thought it had become more united, and 38% saw no change. While this was *somewhat* better than peak division under Trump, it still indicates a net move toward greater division, not a return to civility. ([monmouth.edu](https://www.monmouth.edu/polling-institute/reports/monmouthpoll_us_111521/?utm_source=openai))\n\n2. **Political threats and intimidation continued to surge after the 2020 election.**  \n   - An analysis from the Carnegie Endowment documents that **threats against members of Congress rose dramatically**, from 902 in 2016 to about 9,600 by 2021\u2014more than a tenfold increase, with 8,613 threats already in 2020 and another spike in 2021. ([carnegieendowment.org](https://carnegieendowment.org/2022/03/31/rise-in-political-violence-in-united-states-and-damage-to-our-democracy-pub-87584?utm_source=openai))  \n   - U.S. Capitol Police data summarized by PolitiFact similarly shows threats against lawmakers increasing every year through 2021, reaching 9,625 cases that year\u2014again about ten times the 2016 level. ([politifact.com](https://www.politifact.com/factchecks/2022/nov/01/amy-klobuchar/election-officials-lawmakers-congress-have-faced-i/?utm_source=openai))  \n   - Research on political violence reports roughly **300 acts of political violence from the January 6 attack through the 2024 election**, the largest surge since the 1970s, with violence during the 2024 cycle at its highest since that era. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Political_violence_in_the_United_States?utm_source=openai))  \n   These trends show an environment of escalating intimidation and violence, not one in which civility was \u201cfound\u201d shortly after Biden\u2019s election.\n\n3. **The immediate post\u2011election period was especially uncivil.**  \n   - After Biden\u2019s victory, there were **widespread attempts to overturn the election**, accompanied by menacing threats against election officials and their families in multiple states, sometimes including explicit death threats. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai))  \n   - This culminated in the **January 6, 2021 attack on the U.S. Capitol**, a highly visible breakdown of peaceful, civil politics that occurred in the exact \u201cnear term\u201d window following the election.\n\n**Conclusion**  \nAlthough Biden *was* elected (a part of Chamath\u2019s expectation), the key part of the prediction\u2014that his election would quickly usher in a **more civil** political discourse and substantially improve what behaviors are rewarded\u2014does not match subsequent data and events. Surveys show most Americans perceived politics as *less* civil and more divided in the early Biden years, while threats and political violence rose sharply. That evidence makes the overall prediction **wrong**.",
+      "sources": [
+        {
+          "end_index": 1127,
+          "start_index": 918,
+          "title": "Battleground Civility Poll: Voters Agree Politics Has Grown Less Civil Since COVID-19 and Beginning of Biden Presidency - Institute of Politics and Public Service",
+          "type": "url_citation",
+          "url": "https://politics.georgetown.edu/2022/02/03/battleground-civility-poll-voters-agree-politics-has-grown-less-civil-since-covid-19-and-beginning-of-biden-presidency/?utm_source=openai"
+        },
+        {
+          "end_index": 1608,
+          "start_index": 1498,
+          "title": "Doubt in American System Increases | Polling Institute | Monmouth University",
+          "type": "url_citation",
+          "url": "https://www.monmouth.edu/polling-institute/reports/monmouthpoll_us_111521/?utm_source=openai"
+        },
+        {
+          "end_index": 2119,
+          "start_index": 1952,
+          "title": "The Rise in Political Violence in the United States and Damage to Our Democracy | Carnegie Endowment for International Peace",
+          "type": "url_citation",
+          "url": "https://carnegieendowment.org/2022/03/31/rise-in-political-violence-in-united-states-and-damage-to-our-democracy-pub-87584?utm_source=openai"
+        },
+        {
+          "end_index": 2478,
+          "start_index": 2325,
+          "title": "PolitiFact | Election officials, lawmakers in Congress have faced increase in threats",
+          "type": "url_citation",
+          "url": "https://www.politifact.com/factchecks/2022/nov/01/amy-klobuchar/election-officials-lawmakers-congress-have-faced-i/?utm_source=openai"
+        },
+        {
+          "end_index": 2833,
+          "start_index": 2724,
+          "title": "Political violence in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Political_violence_in_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 3422,
+          "start_index": 3287,
+          "title": "Attempts to overturn the 2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Joe Biden won the 2020 election as predicted, but American political discourse did **not** become more civil in the near term afterward (e.g., 2021-2022). Polls and studies show polarization persisted or worsened: Georgetown Battleground Civility Poll (Feb 2022) found 63% of voters agreed politics grew **less civil** since COVID/Biden presidency start ([source](https://politics.georgetown.edu/2022/02/03/battleground-civility-poll-voters-agree-politics-has-grown-less-civil-since-covid-19-and-beginning-of-biden-presidency/)); Roll Call reported 'civility downhill since Biden' ([source](https://rollcall.com/2022/02/03/civility-downhill-biden-poll/)); Vanderbilt Unity Index tracked **continued polarization increase** 2020-2025 ([source](https://news.vanderbilt.edu/2024/02/14/latest-vanderbilt-unity-index-shows-the-u-s-continuing-its-trend-toward-increased-political-polarization/)). Jan 6, 2021 riot and studies on online incivility (e.g., 2020-2022 elections) contradict improvement ([Carnegie](https://carnegieendowment.org/research/2023/09/polarization-democracy-and-political-violence-in-the-united-states-what-the-research-says?lang=en))."
+    },
+    {
+      "id": "C-01:01:11.620-3",
+      "result": "right",
+      "explanation": "Joe Biden won the November 3, 2020 U.S. presidential election, defeating incumbent President Donald Trump. Major news organizations and official state certifications confirmed Biden as the winner with 306 electoral votes to Trump\u2019s 232, and a popular vote margin of over 7 million votes.\n\nBecause Chamath\u2019s prediction was that *\u201cJoe Biden will win the November 2020 U.S. presidential election\u201d*, and Biden did in fact win, this prediction is **right**.\n\nKey sources documenting Biden\u2019s victory include:\n- Post\u2011election summaries of the 2020 U.S. presidential election, showing Joe Biden as the winner with 306 electoral votes and the popular vote lead.\n- Official state certifications and Electoral College results finalized in December 2020.\n\n(Any standard reference on the 2020 U.S. presidential election\u2014such as major U.S. news outlets or the official National Archives record of Electoral College results\u2014confirms Biden\u2019s victory.)",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Joe Biden won the 2020 U.S. presidential election on November 3, 2020, defeating Donald Trump with 306 electoral votes to 232 and 51.3% of the popular vote. This fulfills the prediction. Sources: [Wikipedia](https://en.wikipedia.org/wiki/2020_United_States_presidential_election), [CNN](https://www.cnn.com/election/2020/results/president), [270toWin](https://www.270towin.com/2020-election/), [NYT](https://www.nytimes.com/interactive/2020/11/03/us/elections/results-president.html)."
+    },
+    {
+      "id": "C-01:02:58.230",
+      "result": "ambiguous",
+      "explanation": "**How the world actually evolved (2020\u20132025)**\n\n**Evidence the prediction *did* come true in an important sense (more dispersion):**\n\n- A major 2021 *Rise of the Rest* / PitchBook report found that seed and early\u2011stage VC going to Bay Area startups was on track to fall below 30% of the U.S. total for the first time in over a decade, while capital raised by VC funds *outside* the Bay Area/NYC/Boston rose ~700% over ten years to $21B, with more than 3,000 active investors now based outside those three hubs. ([revolution.com](https://revolution.com/press-release/revolutions-rise-of-the-rest-publishes-report-revealing-the-dramatic-shift-in-vc-funding-towards-rising-startup-cities/?utm_source=openai))\n- S&P Global\u2019s 2024 analysis showed venture funding rounds in many inland states (Arkansas, Alabama, Iowa, Wyoming, etc.) more than doubled in value between 2019 and 2023, explicitly linking the shift to remote work and onshoring; meanwhile, California and New York saw *declines* in total VC dollars over that span (though from a much higher base). ([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2024/9/remote-work-onshoring-drive-venture-capital-funding-to-us-inland-states-82943030?utm_source=openai))\n- Multiple Sunbelt and interior metros\u2014Austin, Miami, Denver, Nashville, Phoenix, Orlando, Albuquerque, the Raleigh\u2013Durham Triangle\u2014have grown tech employment and job postings far faster than traditional hubs, collectively adding large numbers of tech jobs and increasingly attracting big\u2011tech offices. ([thebigjob.com](https://thebigjob.com/premium/new-tech-hubs-2025?utm_source=openai))\n- Brookings\u2019 pandemic\u2011era work on tech geography finds that while the eight \u201csuperstar\u201d metros still dominate, there has been **modest but real diffusion** of tech jobs, startups, and job postings to a wider set of smaller and lower\u2011cost metros since 2020, with superstar metros\u2019 share of tech job postings falling from ~40% (2016) to about 31% by late 2021 and rising\u2011star/interior cities gaining share. ([brookings.edu](https://www.brookings.edu/articles/tech-jobs-spread-out-during-the-pandemic-but-future-dispersal-isnt-guaranteed/?utm_source=openai))\n- Remote work and digital nomadism became structural: remote/hybrid work has stabilized rather than reverting to pre\u2011COVID norms, remote postings (about 8% of LinkedIn jobs) attract roughly 35% of applications, and U.S. digital nomads more than doubled from 2019 to over 18M in 2024\u2014expanding tech\u2011adjacent opportunities in many locations where major employers have no office. ([businessinsider.com](https://www.businessinsider.com/remote-companies-say-getting-flooded-with-applications-2025-10?utm_source=openai))\n\nThese trends support Chamath\u2019s intuition that COVID and remote work would create **meaningful new tech and startup opportunity in many more U.S. cities**, not just in Silicon Valley.\n\n---\n\n**Evidence the prediction *did not* fully come true as framed (\u201caway from\u201d California/Silicon Valley, wealth creation):**\n\n- Venture capital and startup wealth have actually **re\u2011concentrated** in California\u2014especially the Bay Area\u2014since the initial 2020\u20132021 dispersion:\n  - Crunchbase reported that by 2022, California startups were again taking ~51% of all U.S. VC dollars, up from ~47% in 2019. ([news.crunchbase.com](https://news.crunchbase.com/venture/california-dominates-us-venture-market-ai/?utm_source=openai))\n  - By 2023, companies in the San Francisco Bay Area alone attracted about 41% of all U.S. startup funding. ([news.crunchbase.com](https://news.crunchbase.com/venture/sf-bay-area-startup-funding-bigger-share-ai/?utm_source=openai))\n  - Carta data for Q3 2023\u2013Q2 2024 show California accounting for **51.7%** of all VC raised on its platform; the next\u2011largest state (New York) had only ~11%. ([carta.com](https://carta.com/data/state-of-private-markets-q2-2024/?utm_source=openai))\n  - Crunchbase figures summarized in early 2025 show Bay Area startups taking **$90B of $178B** in U.S. VC funding in 2024 (\u224857% of the national total), driven largely by AI mega\u2011rounds (OpenAI, Anthropic, Databricks, xAI, etc.). ([techcrunch.com](https://techcrunch.com/2025/01/07/silicon-valley-is-so-dominant-again-its-startups-devoured-over-half-of-all-global-vc-funding-in-2024/?utm_source=openai))\n  - A 2025 analysis notes that roughly **52%** of all U.S. startup investment in early 2025 was going to California startups, up from 47% in 2023\u2014i.e., California\u2019s share of capital is *rising*, not falling. ([consultancycircle.com](https://consultancycircle.com/ai/california-continues-to-dominate-startup-funding-landscape/?utm_source=openai))\n- The 2025 Silicon Valley Index still finds the region attracting ~$69B in VC in 2024 and generating tens of thousands of patents, even as some firms add capacity faster in Austin and Seattle. Separate JLL data show the Bay Area capturing nearly half of global AI VC in 2024 and driving a new local office\u2011demand boom. ([lemonde.fr](https://www.lemonde.fr/en/economy/article/2025/03/27/silicon-valley-s-nine-richest-billionaires-have-15-times-more-liquid-wealth-than-half-the-region-s-population_6739576_19.html?utm_source=openai))\n- On employment, Brookings and Census data describe a **persistent \u201cwinner\u2011take\u2011most\u201d geography**: the eight superstar metros (including San Francisco and San Jose) still hold around 38%+ of U.S. tech jobs and accounted for about half of tech job growth in the first pandemic year, slightly *increasing* their employment share even amid remote\u2011work disruption. The Census Bureau\u2019s 2023 mapping of high\u2011tech employment continues to show the largest, densest clusters on the coasts (San Jose, San Francisco, Boston, NYC, DC). ([brookings.edu](https://www.brookings.edu/articles/tech-jobs-spread-out-during-the-pandemic-but-future-dispersal-isnt-guaranteed/?utm_source=openai))\n- VC itself has become more concentrated in a handful of top Silicon Valley\u2013centric firms: by 2024, over half of all capital raised by U.S. VCs went to just nine firms, and the total number of active VC firms had fallen ~25% since 2021\u2014reinforcing capital\u2011allocation power in the core hubs rather than diffusing it. ([ft.com](https://www.ft.com/content/7a787423-9466-4e55-8c0e-8811cfe44dd3?utm_source=openai))\n\nThis evidence runs against the stronger reading of the prediction that **opportunity and wealth creation would move *away from* the primary concentration in California/Silicon Valley in a durable way.** Instead, California\u2014especially the Bay Area\u2014now commands *at least* as large a share of high\u2011end venture funding and frontier tech wealth (AI) as before COVID, sometimes larger.\n\n---\n\n**Why the verdict is \u2018ambiguous\u2019**\n\n- If you interpret the claim narrowly as *\u201cSilicon Valley will no longer be the dominant center of tech wealth and startup funding; that will shift significantly to the rest of the country\u201d*, the data do **not** support it: California/Bay Area\u2019s share of U.S. VC and AI capital is currently **higher** than pre\u2011pandemic, and superstar metros remain structurally dominant in tech jobs. ([news.crunchbase.com](https://news.crunchbase.com/venture/california-dominates-us-venture-market-ai/?utm_source=openai))\n- If you interpret it more broadly as *\u201cCOVID and frustration with California will catalyze a meaningful redistribution of tech and startup opportunities across many more U.S. regions, enabled by remote work\u201d*, the prediction looks **substantially right**: there has been large absolute growth of VC, startups, and tech employment in inland and Sunbelt metros; thousands of new non\u2011coastal VC firms; and a lasting expansion of remote/hybrid roles that lets talent live far from Silicon Valley. ([revolution.com](https://revolution.com/press-release/revolutions-rise-of-the-rest-publishes-report-revealing-the-dramatic-shift-in-vc-funding-towards-rising-startup-cities/?utm_source=openai))\n\nBecause both dynamics are true at the same time\u2014**more places have real tech opportunity now, yet capital and wealth are still (and in some respects more) concentrated in California/Silicon Valley**\u2014the outcome can\u2019t be cleanly labeled simply \u201cright\u201d or \u201cwrong.\u201d That\u2019s why the most accurate overall judgment is **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 749,
+          "start_index": 555,
+          "title": "Revolution\u2019s Rise of the Rest Publishes Report Revealing the Dramatic Shift in VC Funding Towards Rising Startup Cities \u2014 Revolution",
+          "type": "url_citation",
+          "url": "https://revolution.com/press-release/revolutions-rise-of-the-rest-publishes-report-revealing-the-dramatic-shift-in-vc-funding-towards-rising-startup-cities/?utm_source=openai"
+        },
+        {
+          "end_index": 1295,
+          "start_index": 1101,
+          "title": "Remote work, onshoring drive venture capital funding to US inland states | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2024/9/remote-work-onshoring-drive-venture-capital-funding-to-us-inland-states-82943030?utm_source=openai"
+        },
+        {
+          "end_index": 1685,
+          "start_index": 1600,
+          "title": "Regional Tech Hubs Emerge Post-Silicon Valley | Premium Intelligence - The Big Job",
+          "type": "url_citation",
+          "url": "https://thebigjob.com/premium/new-tech-hubs-2025?utm_source=openai"
+        },
+        {
+          "end_index": 2242,
+          "start_index": 2092,
+          "title": "Tech jobs spread out during the pandemic, but future dispersal isn\u2019t guaranteed | Brookings",
+          "type": "url_citation",
+          "url": "https://www.brookings.edu/articles/tech-jobs-spread-out-during-the-pandemic-but-future-dispersal-isnt-guaranteed/?utm_source=openai"
+        },
+        {
+          "end_index": 2758,
+          "start_index": 2621,
+          "title": "Remote companies like Dropbox and Atlassian say they're getting flooded with applications, as other firms RTO",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/remote-companies-say-getting-flooded-with-applications-2025-10?utm_source=openai"
+        },
+        {
+          "end_index": 3478,
+          "start_index": 3357,
+          "title": "Despite Pandemic, Hybrid Work, California Still Dominates Venture Market",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/california-dominates-us-venture-market-ai/?utm_source=openai"
+        },
+        {
+          "end_index": 3711,
+          "start_index": 3588,
+          "title": "SF Bay Area Share Of Startup Funding Hits A Multiyear High",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/sf-bay-area-startup-funding-bigger-share-ai/?utm_source=openai"
+        },
+        {
+          "end_index": 3961,
+          "start_index": 3872,
+          "title": "State of Private Markets: Q2 2024 | Carta",
+          "type": "url_citation",
+          "url": "https://carta.com/data/state-of-private-markets-q2-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 4366,
+          "start_index": 4193,
+          "title": "Silicon Valley is so dominant again, its startups devoured over half of all US VC funding in 2024 | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2025/01/07/silicon-valley-is-so-dominant-again-its-startups-devoured-over-half-of-all-global-vc-funding-in-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 4713,
+          "start_index": 4576,
+          "title": "California Continues to Dominate Startup Funding Landscape \u2013 Consultancy Circle",
+          "type": "url_citation",
+          "url": "https://consultancycircle.com/ai/california-continues-to-dominate-startup-funding-landscape/?utm_source=openai"
+        },
+        {
+          "end_index": 5246,
+          "start_index": 5034,
+          "title": "Silicon Valley's nine richest billionaires have 15 times more liquid wealth than half the region's population",
+          "type": "url_citation",
+          "url": "https://www.lemonde.fr/en/economy/article/2025/03/27/silicon-valley-s-nine-richest-billionaires-have-15-times-more-liquid-wealth-than-half-the-region-s-population_6739576_19.html?utm_source=openai"
+        },
+        {
+          "end_index": 5922,
+          "start_index": 5772,
+          "title": "Tech jobs spread out during the pandemic, but future dispersal isn\u2019t guaranteed | Brookings",
+          "type": "url_citation",
+          "url": "https://www.brookings.edu/articles/tech-jobs-spread-out-during-the-pandemic-but-future-dispersal-isnt-guaranteed/?utm_source=openai"
+        },
+        {
+          "end_index": 6333,
+          "start_index": 6240,
+          "title": "Number of US venture capital firms falls as cash flows to tech's top investors",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/7a787423-9466-4e55-8c0e-8811cfe44dd3?utm_source=openai"
+        },
+        {
+          "end_index": 7272,
+          "start_index": 7151,
+          "title": "Despite Pandemic, Hybrid Work, California Still Dominates Venture Market",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/california-dominates-us-venture-market-ai/?utm_source=openai"
+        },
+        {
+          "end_index": 7962,
+          "start_index": 7768,
+          "title": "Revolution\u2019s Rise of the Rest Publishes Report Revealing the Dramatic Shift in VC Funding Towards Rising Startup Cities \u2014 Revolution",
+          "type": "url_citation",
+          "url": "https://revolution.com/press-release/revolutions-rise-of-the-rest-publishes-report-revealing-the-dramatic-shift-in-vc-funding-towards-rising-startup-cities/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction has come true. Post-2020, California's share of U.S. tech jobs fell from ~19% to 16-17% by 2025, the lowest since 2008, with a net loss of ~11k tech jobs since 2020 amid layoffs and migration ([Apricitas Economics](https://www.apricitas.io/p/california-keeps-losing-tech-jobs), [Economic Times](https://m.economictimes.com/news/international/us/end-of-an-era-californias-tech-job-market-just-fell-to-its-lowest-point-since-2008/articleshow/125065434.cms)). Remote work surged (47% fully remote in tech, 3x more remote jobs vs. 2020; [Gallup](https://www.gallup.com/workplace/694361/hybrid-work-retreat-barely.aspx), [StrongDM](https://www.strongdm.com/blog/remote-work-statistics)), enabling distribution. New hubs like Austin, Miami, Denver grew VC/jobs (top 25 beyond SV; [WithExpert](https://withexpert.ai/news/top-25-startup-cities-beyond-silicon-valley-2025)), fueled by CA dissatisfaction (costs, policies; [Cybernews](https://cybernews.com/editorial/california-silicon-valley-tech-jobs/)). SV remains leader but less dominant ([SignalFire 2024](https://www.signalfire.com/blog/sf-is-back), [StartupGenome 2025](https://startupgenome.com/report/gser2025/global-startup-ecosystem-ranking-2025-top-40))."
+    },
+    {
+      "id": "D-01:04:52.160",
+      "result": "right",
+      "explanation": "Evidence since 2020 supports the claim that many U.S. tech companies have reduced their concentration in San Francisco and expanded across a broader set of U.S. regions.\n\n1. Companies reducing SF footprint and decentralizing\n- A 2021 analysis by sf.citi (a San Francisco tech industry group) documented a significant migration of tech companies and workers out of San Francisco, finding that most surveyed tech companies had already downsized or planned to downsize Bay Area offices, and many expected a substantial share of their Bay Area workforce to remain permanently remote. The report explicitly described an ongoing tech exodus and a trend toward decentralization of the industry footprint away from San Francisco. ([sfciti.org](https://sfciti.org/news/press-release/new-data-on-the-san-francisco-tech-exodus/?utm_source=openai))\n- A related sf.citi event report in March 2021 noted that the Bay Area\u2019s dominance as the single main tech cluster was already weakening before COVID, and that the pandemic accelerated a shift toward more distributed or hub\u2011and\u2011spoke office footprints, with more tech offices in more U.S. cities (e.g., founders planning multiple hubs rather than a single SF HQ). ([sfciti.org](https://sfciti.org/news/press-release/tech-migration-insights-and-the-future-of-sf-austin-miami/?utm_source=openai))\n\n2. Headquarters moves and major expansions out of California/Bay Area\n- Brookings (2022) highlighted that several major tech firms moved corporate headquarters from California to other metros during the pandemic period, including Palantir to Denver, Hewlett Packard Enterprise to the Houston area, Oracle and Tesla to Texas, and noted large new Google and Apple engineering offices in other states. ([brookings.edu](https://www.brookings.edu/articles/superstars-rising-stars-and-the-rest-pandemic-trends-and-shifts-in-the-geography-of-tech/))\n- A 2025 Business Insider report found that since 2020 more than 200 companies have relocated their headquarters to Texas, with over half coming from California. It specifically lists high\u2011profile tech and tech\u2011adjacent moves such as Tesla, Oracle, SpaceX, and Coinbase choosing Texas for headquarters or major bases, reflecting a sustained post\u20112020 relocation trend away from California\u2019s traditional hubs. ([businessinsider.com](https://www.businessinsider.com/companies-moving-to-texas?utm_source=openai))\n\n3. Growth of new and expanding tech hubs across the U.S.\n- Brookings\u2019 geographic analysis of the tech sector concludes that while pre\u2011pandemic growth was highly concentrated in a few coastal superstars (including San Francisco and San Jose), the pandemic years began to distribute more tech activity into a wider set of places. Employment growth slowed in some top superstars and increased in numerous midsized and smaller markets, suggesting a partial shift from extreme concentration toward a more geographically dispersed pattern. ([brookings.edu](https://www.brookings.edu/articles/superstars-rising-stars-and-the-rest-pandemic-trends-and-shifts-in-the-geography-of-tech/))\n- A 2022 Fortune analysis of tech job data found that, although California and New York still led in total tech employment, the fastest tech job growth during the pandemic occurred in a wide range of other states (such as Tennessee, Idaho, Utah, North Carolina, Texas) and in cities like Houston, Orlando, and Charlotte, showing that tech employment growth was increasingly scattered across the country rather than confined to the Bay Area and a few coastal hubs. ([fortune.com](https://fortune.com/2022/05/11/new-us-tech-hubs-post-covid-era-remote-work/?utm_source=openai))\n- A 2025 employment intelligence report described Austin, Miami, Denver, and Nashville as major emerging tech employment centers, collectively adding 127,000 tech jobs in 2024 and growing nearly 90 percent faster than traditional hubs. It notes major firms such as Tesla, Apple, Google, and Meta building significant engineering operations in these emerging markets, along with a sharp rise in venture capital investment in nontraditional hubs, emphasizing conscious geographic diversification by companies and investors. ([thebigjob.com](https://thebigjob.com/premium/new-tech-hubs-2025?utm_source=openai))\n\n4. Overall assessment relative to the prediction\n- Sacks\u2019s prediction did not say San Francisco would cease to matter; it claimed that, because of SF\u2019s policies and broader conditions after 2020, tech companies would increasingly be located all over the U.S. rather than being so heavily concentrated in the Bay Area.\n- The post\u20112020 evidence shows: (a) a documented reduction in SF\u2019s share of offices and workers as many firms go remote\u2011first or downsize there, (b) multiple headline firms relocating headquarters or substantial operations from California to other states, and (c) rapid growth and deepening tech ecosystems in a broad range of U.S. metros (Austin, Miami, Denver, Nashville, Houston, smaller interior cities), all while SF remains important but less uniquely dominant.\n\nTaken together, these trends match the direction and essence of the prediction: in the years after 2020, U.S. tech employment, investment, and corporate footprints have become more geographically dispersed across many regions of the country, with significant growth and relocation outside San Francisco and the Bay Area. Therefore, the prediction is best characterized as right.",
+      "sources": [
+        {
+          "end_index": 872,
+          "start_index": 758,
+          "title": "New Data on the San Francisco Tech Exodus - sf.citi",
+          "type": "url_citation",
+          "url": "https://sfciti.org/news/press-release/new-data-on-the-san-francisco-tech-exodus/?utm_source=openai"
+        },
+        {
+          "end_index": 1368,
+          "start_index": 1238,
+          "title": "Tech Migration Insights and the Future of San Francisco, Austin, & Miami - sf.citi",
+          "type": "url_citation",
+          "url": "https://sfciti.org/news/press-release/tech-migration-insights-and-the-future-of-sf-austin-miami/?utm_source=openai"
+        },
+        {
+          "end_index": 1915,
+          "start_index": 1772,
+          "title": "Superstars, rising stars, and the rest: Pandemic trends and shifts in the geography of tech | Brookings",
+          "type": "url_citation",
+          "url": "https://www.brookings.edu/articles/superstars-rising-stars-and-the-rest-pandemic-trends-and-shifts-in-the-geography-of-tech/"
+        },
+        {
+          "end_index": 2426,
+          "start_index": 2326,
+          "title": "Major companies continue to relocate to Texas",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/companies-moving-to-texas?utm_source=openai"
+        },
+        {
+          "end_index": 3108,
+          "start_index": 2965,
+          "title": "Superstars, rising stars, and the rest: Pandemic trends and shifts in the geography of tech | Brookings",
+          "type": "url_citation",
+          "url": "https://www.brookings.edu/articles/superstars-rising-stars-and-the-rest-pandemic-trends-and-shifts-in-the-geography-of-tech/"
+        },
+        {
+          "end_index": 3684,
+          "start_index": 3574,
+          "title": "New tech hubs are emerging around the country because of the pandemic | Fortune",
+          "type": "url_citation",
+          "url": "https://fortune.com/2022/05/11/new-us-tech-hubs-post-covid-era-remote-work/?utm_source=openai"
+        },
+        {
+          "end_index": 4293,
+          "start_index": 4208,
+          "title": "Regional Tech Hubs Emerge Post-Silicon Valley | Premium Intelligence - The Big Job",
+          "type": "url_citation",
+          "url": "https://thebigjob.com/premium/new-tech-hubs-2025?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction has come true. Since 2020, numerous tech companies have relocated HQs or major operations out of San Francisco/Bay Area, including Tesla (to Austin, TX), Oracle (to Austin/TN), Palantir (to Denver, CO), HPE (to Spring, TX), Snowflake (to MT/remote), and X/Twitter (to TX), with reports of 70 companies leaving entirely and 28 more (e.g., Google, Meta, Salesforce) downsizing SF offices ([buildremote.co](https://buildremote.co/companies/businesses-leaving-san-francisco/), [Business Insider](https://www.businessinsider.com/companies-leaving-california-list-2025-7)). Bay Area office vacancy surged from 4% to 34%, tech jobs declined net (CA +6k total since 2020 but -71k post-2022; SF metro -3.8% vs. national +5%; CA share of US tech jobs from 19% to 16%) ([apricitas.io](https://www.apricitas.io/p/california-keeps-losing-tech-jobs)). Meanwhile, tech hubs emerged/dispersed to Austin, Denver, Miami, Raleigh, Atlanta, Nashville, Phoenix, Dallas ([fonzi.ai](https://fonzi.ai/blog/tech-hubs-usa), [coursereport.com](https://www.coursereport.com/reports/techxodus)). Though Bay Area remains #1 (22%+ workforce tech, leads VC/founders per [signalfire.com](https://www.signalfire.com/blog/sf-is-back)), concentration has notably declined with broad US dispersion."
+    },
+    {
+      "id": "C-01:06:01.700",
+      "result": "right",
+      "explanation": "**What was predicted**  \nChamath said in early October 2020 that the odds of Joe Biden winning the November 2020 U.S. presidential election were about **65\u201335, approaching 70\u201330** in Biden\u2019s favor (\"Biden 6535, approaching 7030.\"). This is a probabilistic forecast assigning a substantially higher chance of victory to Biden than to Trump.\n\n**What actually happened**  \nIn the 2020 U.S. presidential election held on November 3, 2020, **Joe Biden defeated Donald Trump**, winning both the national popular vote and the decisive majority of Electoral College votes. Major news outlets and the official certification process confirmed Biden as the winner. \n\n**Assessment**  \nBecause the event to which Chamath assigned the higher probability (a Biden victory) **did occur**, this probabilistic prediction is **directionally correct**. He did not guarantee a Biden win, but he judged Biden as the clear favorite and that outcome materialized.\n\nTherefore, the prediction is classified as **right**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Joe Biden won the 2020 U.S. presidential election on November 3, 2020, defeating Donald Trump with 306 electoral votes to 232 and 51.3% of the popular vote to 46.8%. ([Wikipedia](https://en.wikipedia.org/wiki/2020_United_States_presidential_election), [CNN](https://www.cnn.com/election/2020/results/president), [National Archives](https://www.archives.gov/electoral-college/2020)). Chamath's early October 2020 assessment of Biden at 65-70% probability aligned with contemporaneous national polls (e.g., Marist: Biden 54-43%; Quinnipiac: 51-41%) and betting odds (Biden ~64% implied probability per BetOnline late Oct). The outcome matched the predicted high-probability event."
+    },
+    {
+      "id": "D-01:06:17.180",
+      "result": "right",
+      "explanation": "Available data on prediction and betting markets in early\u2013mid October 2020 shows Joe Biden was indeed trading in roughly the 60\u201370% implied probability range that Sacks described. For example, a Forbes piece on October 7, 2020 reported prediction market PredictIt giving Biden a 65% chance of victory, and noted this was an increase from the previous week. ([forbes.com](https://www.forbes.com/sites/jonathanponciano/2020/10/07/prediction-markets-factor-in-65-chance-of-biden-victory-heres-what-that-means-for-stocks/?utm_source=openai)) Another Forbes article on November 2, 2020 stated that PredictIt had Biden \u201cnear-70% highs earlier this month,\u201d indicating Biden\u2019s odds had recently been around the 70% level in October. ([forbes.com](https://www.forbes.com/sites/jonathanponciano/2020/11/02/online-betting-markets-trump-victory-polls-biden-election/?utm_source=openai)) A Smarkets exchange update on October 21, 2020 reported Biden at a 63% chance at that time and noted his lead had recently reached 71% versus Trump\u2019s 29%, again consistent with the 60\u201370% range Sacks referenced. ([prnewswire.com](https://www.prnewswire.com/news-releases/smarkets-bidens-lead-in-prediction-markets-cut-by-trump-during-record-period-for-political-betting-301156343.html?utm_source=openai))  \n\nSacks\u2019s claim, normalized as \u201cAs of early October 2020, Joe Biden has roughly a 70% probability of winning, in line with betting market odds,\u201d therefore matches independent reporting on those markets at that time. In addition, Biden did go on to win the 2020 U.S. presidential election, securing 306 electoral votes to Trump\u2019s 232 and being inaugurated as the 46th president on January 20, 2021. ([cnbc.com](https://www.cnbc.com/2020/12/14/election-results-biden-electoral-votes.html?utm_source=openai)) Taken together, his characterization of the odds was accurate relative to contemporaneous markets, and the higher-probability outcome he pointed to (a Biden win) is what actually occurred, so this prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 570,
+          "start_index": 390,
+          "title": "Prediction Markets Now Factor In 65% Chance Of Biden Victory. Here\u2019s What That Means For Stocks And The Economy",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/jonathanponciano/2020/10/07/prediction-markets-factor-in-65-chance-of-biden-victory-heres-what-that-means-for-stocks/?utm_source=openai"
+        },
+        {
+          "end_index": 907,
+          "start_index": 758,
+          "title": "Online Betting Markets Are More Bullish On A Trump Victory Than Polls, Here\u2019s Why",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/jonathanponciano/2020/11/02/online-betting-markets-trump-victory-polls-biden-election/?utm_source=openai"
+        },
+        {
+          "end_index": 1312,
+          "start_index": 1120,
+          "title": "Smarkets: Biden's lead in prediction markets cut by Trump during record period for political betting",
+          "type": "url_citation",
+          "url": "https://www.prnewswire.com/news-releases/smarkets-bidens-lead-in-prediction-markets-cut-by-trump-during-record-period-for-political-betting-301156343.html?utm_source=openai"
+        },
+        {
+          "end_index": 1821,
+          "start_index": 1714,
+          "title": "Election results: Biden wins majority of Electoral College votes, securing presidency",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2020/12/14/election-results-biden-electoral-votes.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Joe Biden won the November 2020 U.S. presidential election, securing 306 electoral votes to Donald Trump's 232 and 51.3% of the popular vote (81.3 million votes to 74.2 million). This outcome aligns with the predictor's assessment of a ~70% probability for Biden, matching contemporaneous betting/prediction market odds (e.g., PredictIt prices around 60\u00a2 for Biden shares in early October 2020, implying ~60% probability, with aggregates like RealClearPolitics averaging ~64% on election day but similar earlier). Sources: [Wikipedia 2020 Election](https://en.wikipedia.org/wiki/2020_United_States_presidential_election), [CNN Results](https://www.cnn.com/election/2020/results/president), [NYT Results](https://www.nytimes.com/interactive/2020/11/03/us/elections/results-president.html), [RealClearPolitics Betting Odds](https://www.realclearpolitics.com/elections/betting_odds/2020_president/), [Ballotpedia PredictIt Markets](https://ballotpedia.org/PredictIt_markets_in_the_2020_presidential_election)."
+    },
+    {
+      "id": "D-01:06:42.530",
+      "result": "ambiguous",
+      "explanation": "- Around the time of the podcast (immediately after the first debate and Trump\u2019s COVID diagnosis), major betting and prediction markets generally implied something in the ballpark of a **30\u201340% chance** for Trump. For example:\n  - A Reuters report on October 1, 2020 noted that on Smarkets, Biden was around a 63% favorite after the first debate, implying Trump in roughly the high\u201130s/low\u201140s. ([timesofindia.indiatimes.com](https://timesofindia.indiatimes.com/world/us/us-presidential-elections/joe-bidens-odds-improve-on-betting-markets-after-first-us-debate/articleshow/78435052.cms?utm_source=openai))\n  - A mid\u2011October Guardian summary of online bookmakers put Biden around 69% and Trump about 32%. ([theguardian.com](https://www.theguardian.com/business/2020/oct/14/joe-biden-win-us-stock-investment-patterns?utm_source=openai))\n  - Crypto and exchange markets like Polymarket and FTX generally priced Trump in the low\u201130s to high\u201130s percent range in the weeks leading up to the election. ([decrypt.co](https://decrypt.co/47007/crypto-prediction-markets-polls-diverge-trump-election-odds?utm_source=openai))\n\n- Expert statistical models at the time disagreed strongly with those market odds:\n  - FiveThirtyEight\u2019s model, for instance, gave Trump only about a **12% chance** by October 22, 2020. ([fivethirtyeight.com](https://fivethirtyeight.com/features/where-the-presidential-race-stands-before-the-last-debate/?utm_source=openai))\n  - The Economist\u2019s model around late October put Trump as low as **4\u201314%**. ([decrypt.co](https://decrypt.co/47007/crypto-prediction-markets-polls-diverge-trump-election-odds?utm_source=openai))\n\n- After the fact, several analyses argued that 2020 election prediction markets showed **systematic irrationalities and arbitrage opportunities**, particularly in the way they priced Trump even after it was clear Biden had won key states. ([asteriskmag.com](https://asteriskmag.com/issues/05/prediction-markets-have-an-elections-problem-jeremiah-johnson?utm_source=openai))  However, these critiques focus on inefficiencies and bias; they do **not** pin down a consensus, ex\u2011post \u201ctrue\u201d pre\u2011election win probability for Trump.\n\n- Because:\n  1. The **\u201ctrue probability\u201d** of a one\u2011off event (Trump winning in 2020) is inherently unobservable;\n  2. Credible models at the time spanned a **wide range** (roughly 5\u201340%) for Trump\u2019s chances; and\n  3. Post\u2011election research has shown that both polls and markets had notable flaws without definitively establishing that Trump\u2019s real odds *must* have been above or below the ~30% level,\n\n  we *cannot* rigorously determine whether Sacks was correct that Trump\u2019s **true** winning probability was \u201csomewhat higher\u201d than the ~30% implied by markets.\n\n**Conclusion:** The claim is about an unobservable quantity (true probability) in a context where contemporary and retrospective analyses diverge. Even with the benefit of hindsight, there is no objective way to say that the real probability was definitively above or below 30%. Therefore the prediction\u2019s accuracy is **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 644,
+          "start_index": 433,
+          "title": "Joe Biden's odds improve on betting markets after first US debate - Times of India",
+          "type": "url_citation",
+          "url": "https://timesofindia.indiatimes.com/world/us/us-presidential-elections/joe-bidens-odds-improve-on-betting-markets-after-first-us-debate/articleshow/78435052.cms?utm_source=openai"
+        },
+        {
+          "end_index": 874,
+          "start_index": 744,
+          "title": "Belief Joe Biden will win drives shift in US stock purchases | US markets | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/2020/oct/14/joe-biden-win-us-stock-investment-patterns?utm_source=openai"
+        },
+        {
+          "end_index": 1155,
+          "start_index": 1037,
+          "title": "Why Prediction Markets and Polls Diverge on Trump's Election Odds - Decrypt",
+          "type": "url_citation",
+          "url": "https://decrypt.co/47007/crypto-prediction-markets-polls-diverge-trump-election-odds?utm_source=openai"
+        },
+        {
+          "end_index": 1484,
+          "start_index": 1346,
+          "title": "Where The Presidential Race Stands Before The Last Debate | FiveThirtyEight",
+          "type": "url_citation",
+          "url": "https://fivethirtyeight.com/features/where-the-presidential-race-stands-before-the-last-debate/?utm_source=openai"
+        },
+        {
+          "end_index": 1681,
+          "start_index": 1563,
+          "title": "Why Prediction Markets and Polls Diverge on Trump's Election Odds - Decrypt",
+          "type": "url_citation",
+          "url": "https://decrypt.co/47007/crypto-prediction-markets-polls-diverge-trump-election-odds?utm_source=openai"
+        },
+        {
+          "end_index": 2058,
+          "start_index": 1924,
+          "title": "Prediction Markets Have an Elections Problem\u2014Asterisk",
+          "type": "url_citation",
+          "url": "https://asteriskmag.com/issues/05/prediction-markets-have-an-elections-problem-jeremiah-johnson?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "Betting markets implied Trump win probabilities of ~40% around Oct 2-6, 2020 (e.g., +148 odds post-COVID diagnosis imply ~40%; [SportsBettingDime tracker](https://www.sportsbettingdime.com/politics/futures/us-presidential-election-odds/2020-cycle/)). The predictor claimed markets showed ~30%, slightly understating this. Trump's actual loss (Biden won 306-232 EC) is consistent with ex ante probabilities of 30-40%, as seen in contemporaneous forecasts (e.g., 538 models gave Trump ~25-40% in early Oct per articles). Polling errors (~3-4% Trump overperformance) suggest true odds may have been somewhat higher than poll-based models, but 'true probability' is inherently unobservable and not definitively resolvable from the outcome alone."
+    }
+  ]
+}

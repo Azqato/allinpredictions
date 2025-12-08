@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "count": 8,
+    "count_by_result": {
+      "wrong": 2,
+      "ambiguous": 1,
+      "right": 2,
+      "inconclusive": 3
+    }
+  },
+  "predictions": [
+    {
+      "id": "E-00:12:55.000",
+      "result": "wrong",
+      "explanation": "The prediction was that Democrats would *keep* control of the U.S. House of Representatives after the 2022 midterm elections. In reality, Republicans won a majority in the House in the November 8, 2022 midterms and took control in the 118th Congress (starting January 3, 2023), while Democrats retained only the Senate. Multiple sources document that Republicans secured the House majority in the 2022 elections.\n\nBecause the actual outcome is directly contrary to the prediction, the prediction is **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "In the 2022 U.S. midterm elections, Republicans gained control of the House of Representatives with 222 seats to Democrats' 213, flipping the majority from Democrats who held it prior (e.g., [Wikipedia](https://en.wikipedia.org/wiki/2022_United_States_House_of_Representatives_elections), [BBC](https://www.bbc.com/news/election/2022/us/results), [Ballotpedia](https://ballotpedia.org/Election_results%2C_2022:_U.S._House)). Chamath's prediction that Democrats would retain the House was incorrect."
+    },
+    {
+      "id": "B-00:13:57.000",
+      "result": "wrong",
+      "explanation": "The context of Sacks\u2019s comment is the CDC\u2019s *mask / transmission* guidance for vaccinated people in light of Delta (\u201cthere\u2019s new information here\u2026 Even the CDC hasn\u2019t officially changed their policy yet\u2026 it\u2019s coming\u201d).\n\nIn reality, the CDC had already made that policy change **before** this episode was released:\n\n* On **July 27, 2021**, CDC updated its *Interim Public Health Recommendations for Fully Vaccinated People* in response to the Delta variant, now recommending that fully vaccinated people **wear masks in public indoor settings in areas of substantial or high transmission**, and explicitly noting new evidence that vaccinated people infected with Delta can spread the virus. ([stacks.cdc.gov](https://stacks.cdc.gov/view/cdc/108355/cdc_108355_DS3.bin?utm_source=openai))  \n* This updated guidance is dated July 27/28, 2021 in CDC\u2019s archived materials and contemporaneous summaries. ([stacks.cdc.gov](https://stacks.cdc.gov/view/cdc/108355/cdc_108355_DS3.bin?utm_source=openai))  \n* The All\u2011In E42 episode was published on **July 30, 2021**, i.e., three days after the CDC change. ([glasp.co](https://glasp.co/youtube/p/e42-china-s-tech-crackdown-crispr-breakthrough-practical-climate-change-solutions-more?utm_source=openai))\n\nSacks\u2019s line about \u201cwe\u2019ve predicted the policy change on this show anywhere from two weeks to two months before they actually do it\u201d is presented as applying to the *impending* CDC shift he is describing (\u201cit\u2019s coming, right? we know it\u2019s coming\u201d), but by release time that shift had already occurred.\n\nWithin the **two\u2011weeks\u2011to\u2011two\u2011months window after July 30, 2021**, CDC did adjust **vaccine-dosing** policy (e.g., on **August 13, 2021** ACIP/CDC recommended an additional mRNA dose for moderately to severely immunocompromised people, and on **September 23, 2021** recommended certain Pfizer boosters). ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC8568093/?utm_source=openai))  However, these were about **extra doses**, not the mask/transmission guidance he was explicitly talking about, which had already been revised on July 27.\n\nBecause the key CDC policy change on vaccinated masking and Delta transmission happened *before* the episode rather than within the \u201ctwo weeks to two months after\u201d window Sacks implied, the prediction \u2014 as normalized here \u2014 is best scored as **wrong**.",
+      "sources": [
+        {
+          "end_index": 822,
+          "start_index": 727,
+          "title": "Interim Public Health Recommendations for Fully Vaccinated People | CDC",
+          "type": "url_citation",
+          "url": "https://stacks.cdc.gov/view/cdc/108355/cdc_108355_DS3.bin?utm_source=openai"
+        },
+        {
+          "end_index": 1030,
+          "start_index": 935,
+          "title": "Interim Public Health Recommendations for Fully Vaccinated People | CDC",
+          "type": "url_citation",
+          "url": "https://stacks.cdc.gov/view/cdc/108355/cdc_108355_DS3.bin?utm_source=openai"
+        },
+        {
+          "end_index": 1279,
+          "start_index": 1134,
+          "title": "E42: China's tech crackdown, CRISPR breakthrough, practical climate change solutions & more | Video Summary and Q&A | Glasp",
+          "type": "url_citation",
+          "url": "https://glasp.co/youtube/p/e42-china-s-tech-crackdown-crispr-breakthrough-practical-climate-change-solutions-more?utm_source=openai"
+        },
+        {
+          "end_index": 1985,
+          "start_index": 1892,
+          "title": "The Advisory Committee on Immunization Practices\u2019 Interim Recommendations for Additional Primary and Booster Doses of COVID-19 Vaccines \u2014 United States, 2021 - PMC",
+          "type": "url_citation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8568093/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The CDC updated its COVID-19 masking guidance for fully vaccinated people on **July 27, 2021**, recommending they wear masks indoors in public settings in areas of substantial or high transmission, based on new data showing Delta variant breakthrough infections in vaccinated individuals could transmit like in unvaccinated ([CDC statement](https://archive.cdc.gov/www_cdc_gov/media/releases/2021/s0730-mmwr-covid-19.html), [MMWR July 30, 2021](https://www.cdc.gov/mmwr/volumes/70/wr/mm7030e2.htm)). This change preceded the July 30 podcast episode. No additional CDC policy changes on vaccinated masking or transmission occurred within the predicted window (roughly Aug 13\u2013Sep 30, 2021); subsequent updates (e.g., OSHA Aug 13) referenced the July 27 guidance ([NYT](https://www.nytimes.com/2021/07/27/health/cdc-masks-indoors-delta-variant.html), [CNN](https://www.cnn.com/2021/07/27/politics/cdc-mask-guidance/index.html))."
+    },
+    {
+      "id": "E-00:23:35.100",
+      "result": "ambiguous",
+      "explanation": "Since 2020, Chinese authorities have launched a sweeping tech-sector \u2018rectification\u2019 campaign: Ant Group\u2019s IPO was halted and its lucrative lending businesses were forced into a new consumer-finance company in which large state-owned asset managers and local state funds hold sizable minority stakes, while Ant retains about a 50% ownership share.([digichina.stanford.edu](https://digichina.stanford.edu/work/is-chinas-tech-crackdown-or-rectification-over/?utm_source=openai)) At the same time, state investment vehicles such as the China Internet Investment Fund and entities under the Cyberspace Administration of China have acquired 1% \u2018golden share\u2019 positions with board seats and veto-like rights in content-heavy units of ByteDance, Alibaba, Tencent, Weibo, Kuaishou, SenseTime and others, explicitly to give the state direct influence over business decisions and online content.([en.wikipedia.org](https://en.wikipedia.org/wiki/China_Internet_Investment_Fund?utm_source=openai)) CCP party committees have also been embedded in most large private firms, greatly strengthening party influence over strategy and personnel across the corporate sector.([en.wikipedia.org](https://en.wikipedia.org/wiki/Organization_of_the_Chinese_Communist_Party?utm_source=openai)) Many analysts describe this as a permanent shift toward much tighter state control over big tech, using regulation, party organs and targeted equity stakes rather than leaving firms largely autonomous.([digichina.stanford.edu](https://digichina.stanford.edu/work/is-chinas-tech-crackdown-or-rectification-over/?utm_source=openai)) However, the bulk of China\u2019s major internet and technology companies (including Alibaba, Tencent, Meituan and others) remain majority-owned by private and institutional investors, not converted into conventional state-owned enterprises; state holdings are typically small golden shares or minority stakes, and these companies still operate as profit-seeking, publicly listed firms.([en.wikipedia.org](https://en.wikipedia.org/wiki/Alibaba_Group?utm_source=openai)) In recent years Beijing has also signaled a desire to stabilize regulation and support private platforms to bolster growth, rather than continuing toward wholesale nationalisation of the sector.([reuters.com](https://www.reuters.com/business/finance/chinas-internet-firms-cautiously-revive-lending-beijing-pushes-consumer-loans-2025-11-10/?utm_source=openai)) Because Chamath\u2019s prediction hinges on how one defines \u2018de facto nationalization\u2019\u2014whether it means significantly expanded state influence and partial ownership (which has clearly occurred) versus broad state takeover or controlling ownership of major firms (which has not)\u2014reasonable observers could judge the outcome differently. The direction of policy matches his thesis about rising state control, but the strong claim that major parts of the tech sector would be de facto or de jure nationalised is not clearly fulfilled, so the result is best scored as ambiguous.",
+      "sources": [
+        {
+          "end_index": 513,
+          "start_index": 384,
+          "title": "Is China\u2019s Tech \u2018Crackdown\u2019 or \u2018Rectification\u2019 Over?",
+          "type": "url_citation",
+          "url": "https://digichina.stanford.edu/work/is-chinas-tech-crackdown-or-rectification-over/?utm_source=openai"
+        },
+        {
+          "end_index": 1022,
+          "start_index": 922,
+          "title": "China Internet Investment Fund",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/China_Internet_Investment_Fund?utm_source=openai"
+        },
+        {
+          "end_index": 1304,
+          "start_index": 1191,
+          "title": "Organization of the Chinese Communist Party",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Organization_of_the_Chinese_Communist_Party?utm_source=openai"
+        },
+        {
+          "end_index": 1635,
+          "start_index": 1506,
+          "title": "Is China\u2019s Tech \u2018Crackdown\u2019 or \u2018Rectification\u2019 Over?",
+          "type": "url_citation",
+          "url": "https://digichina.stanford.edu/work/is-chinas-tech-crackdown-or-rectification-over/?utm_source=openai"
+        },
+        {
+          "end_index": 2100,
+          "start_index": 2017,
+          "title": "Alibaba Group",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Alibaba_Group?utm_source=openai"
+        },
+        {
+          "end_index": 2460,
+          "start_index": 2295,
+          "title": "China's internet firms cautiously revive lending as Beijing pushes consumer loans",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/finance/chinas-internet-firms-cautiously-revive-lending-beijing-pushes-consumer-loans-2025-11-10/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence of de facto or de jure nationalization of major Chinese tech companies like Alibaba, Tencent, or ByteDance since 2021. These firms remain privately held and publicly traded, with primary ownership by institutional investors (e.g., Vanguard holds ~9% of Alibaba per TIKR.com, 2025). State influence increased via regulations, CCP committees, and 'golden shares'\u2014typically 1% minority stakes in subsidiaries granting special rights (e.g., board influence on content; Reuters, Jan 2023; FT reports on Alibaba's Youku/UCWeb and Tencent discussions). Alibaba disclosed minor state stakes in some units (<6% revenue impact; Bloomberg, Feb 2024). Crackdown focused on antitrust fines, data rules, not ownership transfer (e.g., Ant IPO halt, Didi delisting). By 2025, regulations eased, tech rallied (Bloomberg, Feb 2025). Sources: Reuters/Guardian/FT on golden shares; Wikipedia/Alibaba/Tencent pages confirm private status; no reports of takeovers (searches 2021-2025)."
+    },
+    {
+      "id": "B-00:45:22.410",
+      "result": "right",
+      "explanation": "Evidence since 2021 shows that mRNA COVID-19 vaccines were *not* a one\u2011off; multiple additional mRNA-based medical products have been developed and brought to market:\n\n- **New mRNA COVID\u201119 vaccines beyond the original Pfizer/Moderna shots**  \n  - **AWcorna (ARCoV)**, an mRNA COVID\u201119 vaccine developed by Walvax/Abogen, received emergency use authorization in Indonesia in September 2022, adding another marketed mRNA COVID product. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Walvax_COVID-19_vaccine?utm_source=openai))  \n  - **Zapomeran (Kostaive, ARCT\u2011154)**, a *self\u2011amplifying* mRNA COVID\u201119 vaccine, was approved in Japan in November 2023 and later authorized in the EU in February 2025, becoming the first approved self\u2011amplifying mRNA vaccine. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Zapomeran?utm_source=openai))  \n  - Moderna\u2019s **next\u2011generation mRNA\u20111283 vaccine (mNEXSPIKE)** was approved by the U.S. FDA on May 30, 2025 for adults \u226565 and high\u2011risk individuals 12\u201364, as a distinct lower\u2011dose, refrigerator\u2011stable mRNA COVID vaccine. ([en.wikipedia.org](https://en.wikipedia.org/wiki/MRNA-1283?utm_source=openai))  \n  - Regulators have repeatedly approved updated Pfizer\u2013BioNTech and Moderna mRNA formulations (bivalent and variant\u2011specific boosters, and 2024\u201325/2025\u201326 formulas), each marketed as new vaccine products for evolving variants. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Pfizer%E2%80%93BioNTech_COVID-19_vaccine?utm_source=openai))\n\n- **Non\u2011COVID mRNA vaccines (new disease areas)**  \n  - Moderna\u2019s **mRESVIA (mRNA\u20111345)** for respiratory syncytial virus (RSV) was approved by the U.S. FDA in May 2024 for adults \u226560, with its indication expanded in June 2025 to high\u2011risk adults 18\u201359. It is widely described as Moderna\u2019s second approved mRNA product and the **first mRNA vaccine approved for a disease other than COVID\u201119** in the U.S. ([investors.modernatx.com](https://investors.modernatx.com/news/news-details/2024/Moderna-Receives-U.S.-FDA-Approval-for-RSV-Vaccine-mRESVIAR/default.aspx?utm_source=openai))  \n  - The same RSV mRNA vaccine has also been approved in the EU and Australia, where regulators likewise emphasize it as the first non\u2011COVID mRNA vaccine in those regions. ([news.modernatx.com](https://news.modernatx.com/news/news-details/2024/Moderna-Receives-European-Commission-Approval-for-RSV-Vaccine-mRESVIAR/default.aspx?utm_source=openai))\n\nIn 2021, only the initial Pfizer\u2013BioNTech and Moderna COVID\u201119 vaccines were on the market. By late 2025, there are **multiple distinct mRNA COVID vaccines (including self\u2011amplifying and next\u2011generation formulations) and at least one major non\u2011COVID mRNA vaccine (RSV) approved across several jurisdictions.** This clearly matches the directional claim that the original COVID vaccines would be just the first breakthrough and that \u201cthere\u2019s going to be a lot more\u201d mRNA\u2011based medical products in the ensuing years.\n\nGiven this expansion from essentially two products to a portfolio spanning several companies, formulations, and at least two different diseases, the prediction that **many additional mRNA-based medical products would be developed and brought to market after the COVID vaccines has been borne out.**",
+      "sources": [
+        {
+          "end_index": 564,
+          "start_index": 471,
+          "title": "Walvax COVID-19 vaccine",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Walvax_COVID-19_vaccine?utm_source=openai"
+        },
+        {
+          "end_index": 876,
+          "start_index": 797,
+          "title": "Zapomeran",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Zapomeran?utm_source=openai"
+        },
+        {
+          "end_index": 1182,
+          "start_index": 1103,
+          "title": "MRNA-1283",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/MRNA-1283?utm_source=openai"
+        },
+        {
+          "end_index": 1523,
+          "start_index": 1413,
+          "title": "Pfizer\u2013BioNTech COVID-19 vaccine",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Pfizer%E2%80%93BioNTech_COVID-19_vaccine?utm_source=openai"
+        },
+        {
+          "end_index": 2107,
+          "start_index": 1933,
+          "title": "Moderna Receives U.S. FDA Approval for RSV Vaccine mRESVIA(R)",
+          "type": "url_citation",
+          "url": "https://investors.modernatx.com/news/news-details/2024/Moderna-Receives-U.S.-FDA-Approval-for-RSV-Vaccine-mRESVIAR/default.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 2457,
+          "start_index": 2282,
+          "title": "Moderna Receives European Commission Approval for RSV Vaccine mRESVIA(R)",
+          "type": "url_citation",
+          "url": "https://news.modernatx.com/news/news-details/2024/Moderna-Receives-European-Commission-Approval-for-RSV-Vaccine-mRESVIAR/default.aspx?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "As of December 2025, only one additional mRNA-based medical product beyond COVID-19 vaccines has been FDA-approved and brought to market: Moderna's mRESVIA (mRNA-1345), an RSV vaccine approved on May 31, 2024, for adults 60+ (expanded June 2025). No other mRNA vaccines or therapies have received FDA approval. COVID-19 vaccine updates (e.g., Spikevax 2024-2025, Comirnaty) are iterations of the originals, not 'additional' per the prediction's context. Moderna's flu vaccine (mRNA-1010) remains in Phase 3; BioNTech/Pfizer pipelines (e.g., oncology) are in earlier stages without approvals. 'Many' implies several, not one after 4+ years. Sources: [FDA MRESVIA page](https://www.fda.gov/vaccines-blood-biologics/vaccines/mresvia), [Moderna pipeline](https://www.modernatx.com/research/product-pipeline), [FDA vaccines list](https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states), [Reuters approval news](https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-approves-modernas-rsv-vaccine-its-second-marketed-product-2024-05-31/)."
+    },
+    {
+      "id": "E-00:53:32.140",
+      "result": "right",
+      "explanation": "By late 2025, the core elements of Chamath\u2019s prediction have materialized:\n\n1. **Major economies *have* begun adopting carbon border tariffs based on embedded emissions.**\n   * The EU\u2019s Carbon Border Adjustment Mechanism (CBAM) was legislated in 2023 and entered a transitional phase on 1 October 2023, requiring importers of cement, steel, aluminium, fertilisers, electricity and hydrogen to report embedded greenhouse\u2011gas emissions; from 1 January 2026 they must buy CBAM certificates priced off the EU ETS, i.e., a de\u2011facto carbon tariff based on the product\u2019s embedded emissions. ([eeas.europa.eu](https://www.eeas.europa.eu/delegations/japan/commission-adopts-detailed-reporting-rules-carbon-border-adjustment-mechanisms-transitional-phase_en?utm_source=openai))\n   * The UK government has decided to introduce its own CBAM from 1 January 2027, placing a carbon price on imported, emissions\u2011intensive goods (iron & steel, aluminium, cement, hydrogen, fertilisers, etc.) calculated by reference to the UK ETS and explicitly including Scope 1, Scope 2 and certain precursor-product emissions. ([gov.uk](https://www.gov.uk/government/consultations/consultation-on-the-introduction-of-a-uk-carbon-border-adjustment-mechanism?utm_source=openai))\n   * Other jurisdictions have not yet fully implemented CBAMs but are moving in that direction: Canada launched consultations on border carbon adjustments in 2021, and Australia has begun formal policy work and public signalling on a possible CBAM to protect emissions\u2011exposed sectors like steel and cement. ([canada.ca](https://www.canada.ca/en/department-finance/news/2021/08/government-launches-consultations-on-border-carbon-adjustments.html?utm_source=openai))  Global analyses from the World Bank explicitly note that the EU CBAM is encouraging more governments to consider carbon pricing in trade\u2011exposed sectors. ([worldbank.org](https://www.worldbank.org/en/news/press-release/2024/05/21/global-carbon-pricing-revenues-top-a-record-100-billion?utm_source=openai))  \n   * This is not yet *universal* adoption (e.g., the U.S. still has no enacted CBAM), and the UK CBAM will initially target basic materials rather than finished cars like a \"British tariff on a German Volkswagen\". But the overall trajectory of **increasing use of carbon\u2011based import charges in trade policy** is clear.\n\n2. **Evidence already shows substantial redistribution of economic value across countries and sectors.**\n   * The EU CBAM is widely reported as reshaping trade incentives: Reuters and other outlets note that Western Balkan electricity exporters are likely to become less competitive in EU markets unless they adopt domestic carbon pricing, potentially forcing major shifts in their power sectors and creating new revenue streams if they do so. ([reuters.com](https://www.reuters.com/sustainability/boards-policy-regulation/west-balkan-power-producers-should-adopt-carbon-pricing-eu-tax-looms-campaigners-2025-10-30/?utm_source=openai))\n   * India\u2019s government has warned that its steel exports will be \u201csignificantly affected\u201d because about two\u2011thirds of India\u2019s steel exports go to Europe and will face the new EU carbon tax on high\u2011emission goods such as steel, aluminium and cement, directly threatening the value of those export flows. ([reuters.com](https://www.reuters.com/world/india/india-steel-exports-face-eu-carbon-tax-hit-us-tariffs-impact-minimal-official-2025-09-17/?utm_source=openai))\n   * For Australia, business and policy groups emphasize that large fractions of aluminium and steel exports to the EU fall under CBAM, with compliance costs and potential loss of market share for higher\u2011carbon producers, while low\u2011carbon producers stand to gain\u2014classic redistribution between firms and sectors. ([bcsda.org.au](https://www.bcsda.org.au/post/bcsda-to-make-submission-on-eu-carbon-border-adjustment-mechanism-consultation?utm_source=openai))  The UK government\u2019s own CBAM documentation frames it as protecting decarbonizing domestic industries from being undercut by more carbon\u2011intensive imports, again implying gains for some producers and losses for others. ([gov.uk](https://www.gov.uk/government/publications/introduction-of-carbon-border-adjustment-mechanism/carbon-border-adjustment-mechanism?utm_source=openai))\n\nPutting this together: since the 2021 podcast, **carbon\u2011based border measures have moved from theory to binding law in the EU and UK, and they are already reordering trade incentives and profitability across high\u2011emission sectors and exporting countries.** While the full magnitude of value destruction/creation will only be felt after CBAMs are fully operational (2026\u20132027 onward), the direction and mechanism Chamath described\u2014carbon tariffs embedded in trade policy causing large redistributions of value\u2014are now clearly in place. On that basis, the prediction is best judged as **right**, albeit still unfolding in scope and scale.",
+      "sources": [
+        {
+          "end_index": 803,
+          "start_index": 620,
+          "title": "Commission adopts detailed reporting rules for the Carbon Border Adjustment Mechanism's transitional phase | EEAS",
+          "type": "url_citation",
+          "url": "https://www.eeas.europa.eu/delegations/japan/commission-adopts-detailed-reporting-rules-carbon-border-adjustment-mechanisms-transitional-phase_en?utm_source=openai"
+        },
+        {
+          "end_index": 1282,
+          "start_index": 1133,
+          "title": "Consultation on the introduction of a UK carbon border adjustment mechanism - GOV.UK",
+          "type": "url_citation",
+          "url": "https://www.gov.uk/government/consultations/consultation-on-the-introduction-of-a-uk-carbon-border-adjustment-mechanism?utm_source=openai"
+        },
+        {
+          "end_index": 1749,
+          "start_index": 1592,
+          "title": "Government launches consultations on border carbon adjustments\u00a0 - Canada.ca",
+          "type": "url_citation",
+          "url": "https://www.canada.ca/en/department-finance/news/2021/08/government-launches-consultations-on-border-carbon-adjustments.html?utm_source=openai"
+        },
+        {
+          "end_index": 2056,
+          "start_index": 1905,
+          "title": "State and Trends of Carbon Pricing 2024",
+          "type": "url_citation",
+          "url": "https://www.worldbank.org/en/news/press-release/2024/05/21/global-carbon-pricing-revenues-top-a-record-100-billion?utm_source=openai"
+        },
+        {
+          "end_index": 3021,
+          "start_index": 2830,
+          "title": "West Balkan power producers should adopt carbon pricing as EU tax looms, campaigners say",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/west-balkan-power-producers-should-adopt-carbon-pricing-eu-tax-looms-campaigners-2025-10-30/?utm_source=openai"
+        },
+        {
+          "end_index": 3487,
+          "start_index": 3327,
+          "title": "India steel exports face EU carbon tax hit, US tariffs impact minimal, official says",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/india/india-steel-exports-face-eu-carbon-tax-hit-us-tariffs-impact-minimal-official-2025-09-17/?utm_source=openai"
+        },
+        {
+          "end_index": 3946,
+          "start_index": 3802,
+          "title": "BCSDA to make submission on EU Carbon Border Adjustment Mechanism consultation",
+          "type": "url_citation",
+          "url": "https://www.bcsda.org.au/post/bcsda-to-make-submission-on-eu-carbon-border-adjustment-mechanism-consultation?utm_source=openai"
+        },
+        {
+          "end_index": 4324,
+          "start_index": 4166,
+          "title": "Carbon Border Adjustment Mechanism - GOV.UK",
+          "type": "url_citation",
+          "url": "https://www.gov.uk/government/publications/introduction-of-carbon-border-adjustment-mechanism/carbon-border-adjustment-mechanism?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The EU implemented CBAM in transitional phase (reporting) from Oct 2023, full duties from 2026, based on embedded/lifecycle carbon emissions for key sectors (steel, cement, etc.) \u2013 matching the prediction exactly ([EU Taxation site](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en)). UK announced CBAM for 2027 in Budget 2025, legislating soon, aligning with the British-German example ([UK GOV](https://www.gov.uk/government/publications/introduction-of-carbon-border-adjustment-mechanism/carbon-border-adjustment-mechanism)). No other full adoptions, but US proposals (e.g., Foreign Pollution Fee Act) and global momentum indicate increasing trend ([RFF report](https://www.rff.org/publications/reports/how-carbon-border-adjustments-might-drive-global-climate-policy-momentum/)). Economic shifts: Models predict trade redirection, value-added gains for low-emission producers/sectors (e.g., +employment in fertilizers), losses for high-emission exporters; early transitional impacts limited but long-term redistribution expected ([CER policy brief](https://www.cer.eu/publications/archive/policy-brief/2024/learning-cbams-transitional-impacts-trade), [OECD](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/03/what-to-expect-from-the-eu-carbon-border-adjustment-mechanism_a21e9b51/719d2ff9-en.pdf)). 4+ years post-2021, policy adoption realized with forecasted value unlocks/losses."
+    },
+    {
+      "id": "E-00:59:24.250",
+      "result": "inconclusive",
+      "explanation": "The prediction specifies a **20\u201330 year window starting from July 2021 (i.e., until 2041\u20132051)**. As of the current date (late 2025), only about four years have elapsed, so the timeframe has not expired.\n\nEmpirically, there is **no widely accepted, practical room\u2011temperature, ambient\u2011pressure superconductor** in use for energy transmission or storage today. The most advanced confirmed superconductors with very high critical temperatures are mainly hydrogen\u2011rich hydrides that require **extreme pressures (hundreds of GPa)**, which makes them impractical for grid or storage applications.([chemistryviews.org](https://www.chemistryviews.org/details/news/11272163/Room-Temperature_Superconductor_at_High_Pressures/?utm_source=openai)) High\u2011profile claims of room\u2011temperature superconductivity at more accessible pressures\u2014such as carbonaceous sulfur hydride and N\u2011doped lutetium hydride\u2014have since been **retracted by Nature** after serious doubts about data and reproducibility.([en.wikipedia.org](https://en.wikipedia.org/wiki/Carbonaceous_sulfur_hydride?utm_source=openai)) The 2023 LK\u201199 episode likewise ended with a consensus that LK\u201199 is **not** a room\u2011temperature superconductor at ambient pressure.([en.wikipedia.org](https://en.wikipedia.org/wiki/LK-99?utm_source=openai))\n\nBecause (1) the key enabling technology (practical ambient\u2011condition superconductors) has not yet appeared, but (2) there is still ample time remaining in the 2041\u20132051 window, the prediction cannot yet be judged right or wrong. Hence: **inconclusive (too early)**.",
+      "sources": [
+        {
+          "end_index": 778,
+          "start_index": 633,
+          "title": "Room-Temperature Superconductor at High Pressures - ChemistryViews",
+          "type": "url_citation",
+          "url": "https://www.chemistryviews.org/details/news/11272163/Room-Temperature_Superconductor_at_High_Pressures/?utm_source=openai"
+        },
+        {
+          "end_index": 1120,
+          "start_index": 1023,
+          "title": "Carbonaceous sulfur hydride",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Carbonaceous_sulfur_hydride?utm_source=openai"
+        },
+        {
+          "end_index": 1327,
+          "start_index": 1252,
+          "title": "LK-99",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/LK-99?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction is for a practical breakthrough in room-temperature superconductors by 2041\u20132051. As of December 1, 2025\u2014only ~4 years into the 20\u201330 year window\u2014no such confirmed, practical breakthrough at ambient conditions has occurred, despite ongoing research and unverified claims (e.g., LK-99 debunked in 2023; recent 2025 papers like Penn State's predictive model or MIT's graphene work show promise but no verified shift in energy applications). Sources: [ScienceDaily (Oct 2025)](https://www.sciencedaily.com/releases/2025/10/251030075132.htm), [SciTechDaily (Oct 2025)](https://scitechdaily.com/the-holy-grail-of-physics-scientists-discover-new-path-to-room-temperature-superconductors/), [MIT News (Nov 2025)](https://news.mit.edu/2025/physicists-observe-evidence-unconventional-superconductivity-graphene-1106). It is too early to evaluate."
+    },
+    {
+      "id": "E-01:04:35.680",
+      "result": "inconclusive",
+      "explanation": "As of November 29, 2025, there is **no verified, commercially relevant superconducting technology** that enables practical *zero\u2011resistance electrical conduction* at ambient conditions and has **materially transformed global energy and power systems**.\n\nKey points from current evidence:\n\n- The most publicized recent claim of a \u2018breakthrough\u2019 superconductor was **LK\u201199** (a proposed room\u2011temperature, ambient\u2011pressure superconducting material) in 2023, but multiple independent groups failed to reproduce true superconductivity; follow\u2011up studies concluded its behavior was not consistent with a genuine superconductor. \n- High\u2011temperature hydride superconductors (like various hydrogen\u2011rich compounds under extreme pressures) have been reported at or near room temperature, but they require **gigantic pressures** (hundreds of gigapascals), making them **far from practical commercial technologies** for the grid or general power applications.\n- There is no evidence in energy\u2011sector reports, major physics/engineering literature, or mainstream coverage that any immigrant in the U.S. (or anyone else) has produced a **widely deployed, transforming technology** based on practical zero\u2011resistance conduction.\n\nHowever, the prediction\u2019s **time horizon is \u201cwithin the next few decades.\u201d** Only a few years (2021\u21922025) have elapsed, which is far shorter than the stated window. Since the prediction explicitly allows multiple decades for the breakthrough to occur and diffuse enough to transform global energy systems, **it is too early to judge it as either right or wrong.**\n\nTherefore, given the long timeframe and current lack of such a breakthrough, the correct assessment as of today is **inconclusive (too early to tell)**.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "No commercially relevant superconducting technology enabling practical zero-resistance electrical conduction that materially transforms global energy and power systems has emerged as of December 2025. Recent advances, such as MIT's unconventional superconductivity in twisted graphene ([MIT News, Nov 2025](https://news.mit.edu/2025/physicists-observe-evidence-unconventional-superconductivity-graphene-1106)) or Penn State's predictive methods ([SciTechDaily, Oct 2025](https://scitechdaily.com/the-holy-grail-of-physics-scientists-discover-new-path-to-room-temperature-superconductors/)), are promising lab results but not practical or transformative. LK-99 claims debunked ([Wikipedia](https://en.wikipedia.org/wiki/LK-99); [Nature, Apr 2025](https://www.nature.com/articles/s41598-025-98554-3)). Metaculus resolved 'no' for commercial room-temp superconductor by 2025 ([Metaculus](https://www.metaculus.com/questions/18170/commercial-room-temp-superconductor-by-2025/)). Prior US claims (e.g., Ranga Dias, Sri Lankan immigrant at U Rochester) retracted amid misconduct ([NYT, Nov 2024](https://www.nytimes.com/2024/11/19/science/ranga-dias-rochester-superconductor.html)). Prediction specifies 'few decades' from 2021 (~2041+), so too early to falsify."
+    },
+    {
+      "id": "A-01:14:33.010",
+      "result": "inconclusive",
+      "explanation": "Robinhood IPO\u2019d in July 2021 at around a $30\u201332 billion valuation, consistent with Jason\u2019s premise.([cnbc.com](https://www.cnbc.com/2021/07/28/robinhood-valued-at-32-billion-after-selling-shares-in-ipo-at-38-per-share-source-says.html?utm_source=openai)) As of November 28, 2025, Robinhood (ticker: HOOD) has a market capitalization of roughly $127 billion\u2014around 4x its IPO value, but still far below the 10\u201330x (\u2248$300\u2013900 billion) and especially the ~$1 trillion level Jason speculated it *could* eventually reach.  \n\nHowever, his statement was explicitly probabilistic (\u201cthere\u2019s a chance\u201d) and open\u2011ended in time (\u201csomeday\u201d). Robinhood remains an operating, independent public company with substantial equity value and growth since the IPO; nothing in the current data rules out a future path\u2014however unlikely it may currently seem\u2014toward a $1 trillion market cap. Because the claim concerns a nonzero chance of a very long\u2011term outcome, it cannot yet be definitively judged as either realized or impossible.  \n\nGiven this, the prediction is **not yet falsifiable as of 2025**, so the appropriate assessment is that it\u2019s too early to say whether it was right or wrong.",
+      "sources": [
+        {
+          "end_index": 294,
+          "start_index": 139,
+          "title": "Robinhood valued at $32 billion after selling shares in IPO at $38 per share",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/07/28/robinhood-valued-at-32-billion-after-selling-shares-in-ipo-at-38-per-share-source-says.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction posits a 'non-trivial chance' that Robinhood (IPO ~$30-32B valuation in July 2021) could grow 10-30x to ~$1T market cap 'someday' or 'eventually.' As of December 2025, Robinhood's market cap is approximately $115-116B ([Yahoo Finance](https://finance.yahoo.com/quote/HOOD/), [CompaniesMarketCap](https://companiesmarketcap.com/robinhood/marketcap/), [Macrotrends](https://www.macrotrends.net/stocks/charts/HOOD/robinhood-markets/market-cap)), roughly 3.8x the IPO value, with no peak approaching $300B let alone $1T since 2021. However, 'someday' implies an indefinite future timeline (potentially decades), so 4+ years is too early to deem it impossible or disproven."
+    }
+  ]
+}

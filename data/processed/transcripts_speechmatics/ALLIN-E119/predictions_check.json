@@ -1,0 +1,653 @@
+{
+  "meta": {
+    "count": 17,
+    "count_by_result": {
+      "wrong": 7,
+      "ambiguous": 4,
+      "right": 5,
+      "inconclusive": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:03:40.000",
+      "result": "wrong",
+      "explanation": "Public data show that the feared, *sustained* payroll crisis for SVB\u2011banked startups did not materialize once regulators intervened.\n\nOn March 12, 2023\u2014one day after the podcast release\u2014the U.S. Treasury, Federal Reserve, and FDIC announced a systemic\u2011risk exception for Silicon Valley Bank, explicitly stating that **all** depositors, insured and uninsured, would be \u201cfully protected\u201d and would \u201chave access to all of their money starting Monday, March 13.\u201d ([techcrunch.com](https://techcrunch.com/2023/03/12/silicon-valley-banks-depositors-will-be-fully-protected-according-to-the-federal-reserve/?utm_source=openai))  This meant funds were not locked in receivership for \u201cthe next few weeks,\u201d but instead unfrozen within roughly one business day.\n\nSen. Alex Padilla\u2019s statement about this action emphasized that it would ensure *\u201cmillions of workers across the country will be paid on time,\u201d* underscoring that the policy response was specifically designed to prevent widespread missed payrolls at SVB\u2011banked firms. ([padilla.senate.gov](https://www.padilla.senate.gov/newsroom/press-releases/padilla-statement-on-treasury-federal-reserve-and-fdic-action-regarding-silicon-valley-bank-collapse%EF%BF%BC/?utm_source=openai))\n\nBefore that government backstop was announced, Y Combinator and others warned that **up to ~10,000 startups might be unable to pay employees in the next 30 days** if deposits remained inaccessible, and that around 30% of YC companies exposed via SVB were at risk of not making payroll. ([livemint.com](https://www.livemint.com/companies/news/svb-crisis-to-impact-over-10-000-startups-trigger-1-lakh-layoffs-y-combinator-11678557688839.html?utm_source=openai))  These were *scenario projections and risk estimates*, not reports of what actually ended up happening once all deposits were guaranteed.\n\nPost\u2011intervention reporting instead describes startups as anxious but generally able to stitch together short\u2011term fixes (new bank accounts, emergency credit, loans) until their SVB funds cleared. NPR, for example, profiles founders who, by Monday March 13, had new accounts and fallback methods (like paper checks) to meet payroll and explicitly characterizes the situation as *\u201cturning into a nuisance versus a catastrophe.\u201d* ([nepm.org](https://www.nepm.org/national-world-news/national-world-news/2023-03-13/startups-on-pins-and-needles-until-their-funds-clear-from-silicon-valley-bank?utm_source=openai))  Retrospective summaries note that many startups were initially unable to retrieve money and had to take loans to make payroll, and warn that *continued* inaccessibility *could have* led to mass furloughs or shutdowns\u2014again using conditional language about a risk that large\u2011scale policy intervention ultimately averted. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank?utm_source=openai))\n\nThere is some evidence of **isolated, short\u2011term payroll disruptions** (e.g., employees whose Friday March 10 paychecks failed because their payroll provider used SVB), but available reporting and later analyses do not show that **\u201cthousands of companies\u201d** ended up unable to make payroll over the **following weeks** due to frozen SVB deposits. ([washingtonpost.com](https://www.washingtonpost.com/technology/2023/03/11/silicon-valley-bank-startups-payroll/?utm_source=openai))  Instead, regulators\u2019 rapid guarantee of all deposits and emergency support from VCs and alternative banks largely prevented the prolonged, large\u2011scale payroll failure scenario described.\n\nBecause access to funds was restored quickly and the evidence points to a brief liquidity scare with limited, short\u2011duration payroll issues rather than a weeks\u2011long inability for *thousands* of startups to pay employees, Sacks\u2019s prediction that \u201cprobably thousands of companies now cannot make payroll in the next few weeks because their money is trapped and tied up at Silicon Valley Bank\u201d is best judged as **wrong**.",
+      "sources": [
+        {
+          "end_index": 655,
+          "start_index": 494,
+          "title": "Silicon Valley Bank's depositors will be fully protected, according to the Federal Reserve | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2023/03/12/silicon-valley-banks-depositors-will-be-fully-protected-according-to-the-federal-reserve/?utm_source=openai"
+        },
+        {
+          "end_index": 1264,
+          "start_index": 1057,
+          "title": "Padilla Statement on Treasury, Federal Reserve, and FDIC Action Regarding Silicon Valley Bank Collapse\ufffc - Senator Alex Padilla",
+          "type": "url_citation",
+          "url": "https://www.padilla.senate.gov/newsroom/press-releases/padilla-statement-on-treasury-federal-reserve-and-fdic-action-regarding-silicon-valley-bank-collapse%EF%BF%BC/?utm_source=openai"
+        },
+        {
+          "end_index": 1727,
+          "start_index": 1554,
+          "title": "SVB crisis to impact over 10,000 startups, trigger 1 lakh layoffs: Y Combinator | Company Business News",
+          "type": "url_citation",
+          "url": "https://www.livemint.com/companies/news/svb-crisis-to-impact-over-10-000-startups-trigger-1-lakh-layoffs-y-combinator-11678557688839.html?utm_source=openai"
+        },
+        {
+          "end_index": 2478,
+          "start_index": 2297,
+          "title": "Startups 'on pins and needles' until their funds clear from Silicon Valley Bank | New England Public Media",
+          "type": "url_citation",
+          "url": "https://www.nepm.org/national-world-news/national-world-news/2023-03-13/startups-on-pins-and-needles-until-their-funds-clear-from-silicon-valley-bank?utm_source=openai"
+        },
+        {
+          "end_index": 2901,
+          "start_index": 2800,
+          "title": "Collapse of Silicon Valley Bank",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank?utm_source=openai"
+        },
+        {
+          "end_index": 3384,
+          "start_index": 3252,
+          "title": "Silicon Valley Bank collapse leaves start-ups scrambling to pay workers - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/technology/2023/03/11/silicon-valley-bank-startups-payroll/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction that 'probably thousands of startup companies... will be unable to make payroll... because their money is trapped' in the weeks after SVB's March 10, 2023 shutdown did not materialize. SVB closed on March 10 (Friday). On March 12 (Sunday), U.S. regulators (Treasury, Fed, FDIC) announced all depositors would have full access starting March 13 (Monday), invoking the systemic risk exception ([FDIC press release](https://www.fdic.gov/news/press-releases/2023/pr23019.html); [Wikipedia timeline](https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank)). Funds were frozen only over the weekend.\n\nContemporary reports (March 10-12) noted fears and scrambling ([Bloomberg](https://www.bloomberg.com/news/articles/2023-03-10/startups-are-worried-about-paying-their-people-after-svb-fails), [NYT](https://www.nytimes.com/2023/03/10/technology/silicon-valley-bank-fallout.html), [CNBC](https://www.cnbc.com/2023/03/10/silicon-valley-bank-customers-scramble-to-meet-payroll-pay-bills.html)), with some payroll delays (e.g., Rippling on Friday). Payroll providers like Remote advanced funds ([HR Brew](https://www.hr-brew.com/stories/2023/03/22/how-remote-says-it-funded-its-clients-payroll-after-the-silicon-valley-bank-collapse)).\n\nNo evidence of thousands missing payroll in following weeks; post-March 13 reports confirm access restored, avoiding widespread failures ([Fortune](https://fortune.com/2023/03/20/silicon-valley-bank-avoid-payroll-disaster/)). SVB served thousands of startups ([Crunchbase](https://news.crunchbase.com/venture/silicon-valley-bank-impact/)), but swift intervention prevented the predicted crisis."
+    },
+    {
+      "id": "A-00:03:55.000",
+      "result": "wrong",
+      "explanation": "Sacks was warning that, as a result of Silicon Valley Bank\u2019s failure, **\u201cmaybe thousands\u201d of small venture\u2011backed startups could be wiped out** because they would lose access to their deposits and be unable to make payroll.\n\nWhat actually happened:\n\n- On March 12, 2023 (the day after the episode dropped), the U.S. Treasury, Federal Reserve, and FDIC invoked a **systemic risk exception** and explicitly guaranteed that **all SVB depositors \u2013 insured and uninsured \u2013 would be fully protected**, with access to all of their money starting Monday, March 13. ([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai))\n- SVB\u2019s operations were transferred into a bridge bank and then sold to First Citizens, with deposits assumed and branches reopened, so customers (including startups) could continue banking. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Silicon_Valley_Bank?utm_source=openai))\n- In the UK, HSBC bought Silicon Valley Bank UK for \u00a31 in a government\u2011brokered rescue that explicitly aimed to avert an \u201cexistential threat\u201d to the UK tech sector and allowed SVB UK customers to \u201ccontinue to bank as usual,\u201d again preventing mass failures of otherwise viable startups. ([legaltechnology.com](https://legaltechnology.com/2023/03/13/hsbc-agrees-to-acquire-svb-uk-as-existential-threat-to-uk-tech-sector-averted/?utm_source=openai))\n- Contemporaneous analysis from within the startup ecosystem itself described the situation as an **\u201cextinction level disruption\u201d** that would have pushed thousands of companies over the edge *if* deposits remained frozen for weeks or months, but noted that **\u201cdisaster was averted when the gov\u2019t came in \u2026 by guaranteeing depositors their money.\u201d** ([adamant.beehiiv.com](https://adamant.beehiiv.com/p/how-the-svb-saga-impacts-fundraising?utm_source=openai))\n\nWhile many startups have since failed amid higher interest rates and a broad venture funding downturn, those failures are part of a wider macro/VC cycle. Available reporting attributes the SVB episode to *temporary* hardship and financing headwinds, not to thousands of startups being randomly wiped out solely because their SVB deposits disappeared. Given the scale of coverage around SVB, such a mass, direct wipeout would almost certainly be documented, and it is consistently described instead as a **near\u2011miss** scenario.\n\nTherefore, as a prediction about what *would* happen (\"thousands\" of otherwise sound venture\u2011backed startups being wiped out as a consequence of the SVB failure), it did **not** come true.",
+      "sources": [
+        {
+          "end_index": 684,
+          "start_index": 594,
+          "title": "Joint Statement by the Department of the Treasury, Federal Reserve, and FDIC | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai"
+        },
+        {
+          "end_index": 966,
+          "start_index": 877,
+          "title": "Silicon Valley Bank",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Silicon_Valley_Bank?utm_source=openai"
+        },
+        {
+          "end_index": 1414,
+          "start_index": 1254,
+          "title": "HSBC agrees to acquire SVB UK as\u00a0\"existential threat\u201d to UK tech sector averted\u00a0 - Legal IT Insider",
+          "type": "url_citation",
+          "url": "https://legaltechnology.com/2023/03/13/hsbc-agrees-to-acquire-svb-uk-as-existential-threat-to-uk-tech-sector-averted/?utm_source=openai"
+        },
+        {
+          "end_index": 1875,
+          "start_index": 1766,
+          "title": "How the SVB saga impacts fundraising + Fundraising Fieldnotes 3.14.23",
+          "type": "url_citation",
+          "url": "https://adamant.beehiiv.com/p/how-the-svb-saga-impacts-fundraising?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction did not come true. Despite initial panic describing SVB's collapse as a potential 'extinction-level event' for startups (e.g., [CBS News, Mar 13, 2023](https://www.cbsnews.com/sanfrancisco/news/silicon-valley-bank-tech-industry-avoided-an-extinction-level-event/); Y Combinator CEO tweets), swift U.S. government intervention on March 13, 2023, protected all depositors and restored access, averting mass failures ([Wikipedia: Collapse of Silicon Valley Bank](https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank)). No credible sources report thousands of venture-backed startups shutting down directly due to SVB; while ~3,200 U.S. venture-backed startups closed in 2023 ([NYT/PitchBook via TechCrunch, Dec 30, 2023](https://techcrunch.com/2023/12/30/remembering-the-startups-we-lost-in-2023/); [Carta: 543 on platform](https://www.linkedin.com/posts/ryandbaird_543-carta-startups-have-shut-down-so-activity-7143691909830443008-Cbts)), these were attributed to broader VC funding drought (down >50% YoY per [PitchBook/CNN, Dec 7, 2023](https://www.cnn.com/2023/12/07/investing/2023-was-an-extinction-level-year-for-tech-startups-where-did-all-the-money-go)), high rates, and 2021 overfunding, not SVB. One-year retrospectives confirm no SVB-triggered wipeout ([Bloomberg, Mar 10, 2024](https://www.bloomberg.com/news/articles/2024-03-10/a-year-later-lessons-from-silicon-valley-bank-s-epic-collapse))."
+    },
+    {
+      "id": "A-00:05:26.000",
+      "result": "ambiguous",
+      "explanation": "The prediction was explicitly conditional: *\u201cunless the Fed steps in here over the weekend, we're going to see \u2026 a run on the regional banking system, a cascade like we saw in 2008.\u201d* In reality, the Federal Reserve, FDIC, and Treasury **did** step in on Sunday, March 12, 2023, announcing that all depositors at Silicon Valley Bank and Signature Bank would be fully protected and launching the Bank Term Funding Program to provide liquidity to banks.([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai))  \n\nBecause the key condition (\u201cunless the Fed steps in over the weekend\u201d) was not met, we cannot directly observe what would have happened in the *absence* of intervention. Some regional banks did experience runs and stress \u2014 for example, Signature Bank suffered heavy withdrawals before being closed on March 12, and First Republic later failed amid large deposit outflows \u2014 but regulators again intervened and contained the fallout, preventing a 2008-style systemic collapse of the entire regional banking system.([fdic.gov](https://www.fdic.gov/news/speeches/2023/spsept2823.html?utm_source=openai))  \n\nSince the scenario the prediction was about (no Fed intervention over that weekend) never actually occurred, and the interventions themselves plausibly altered the outcome, the truth of the counterfactual claim (\u201cthere *would* have been* a cascading crisis like 2008 if they hadn\u2019t intervened\u201d) cannot be empirically determined. Hence the result is **ambiguous**, not demonstrably right or wrong.",
+      "sources": [
+        {
+          "end_index": 578,
+          "start_index": 488,
+          "title": "Joint Statement by the Department of the Treasury, Federal Reserve, and FDIC | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai"
+        },
+        {
+          "end_index": 1183,
+          "start_index": 1096,
+          "title": "\u201cSuccessfully Managing Systemic Risk: Deposit Insurance in a Turbulent World\u201d | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/speeches/2023/spsept2823.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The Federal Reserve, along with Treasury and FDIC, intervened over the weekend of March 11-12, 2023, by issuing a joint statement on Sunday, March 12, guaranteeing all deposits at SVB and Signature Bank ([federalreserve.gov](https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312b.htm)), and announcing the Bank Term Funding Program (BTFP) on the same day ([federalreserve.gov](https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312a.htm)). Thus, the condition ('no intervention') was false. No cascading regional banking crisis similar to 2008 occurred; while there were deposit outflows at banks like First Republic ($40B on March 13; [FDIC OIG](https://www.fdicoig.gov/sites/default/files/reports/2023-12/EVAL-24-03.pdf)) and others, interventions contained the turmoil without widespread failures or systemic freeze (e.g., only SVB, Signature failed immediately; First Republic later on May 1). Sources describe 2023 as 'turmoil' or 'stress' but not dynamically like 2008's prolonged cascade ([FDIC](https://www.fdic.gov/news/speeches/2024/lessons-learned-us-regional-bank-failures-2023), [IMF](https://www.imf.org/en/publications/global-financial-stability-notes/issues/2024/03/04/the-us-banking-sector-since-the-march-2023-turmoil-navigating-the-aftermath-544809)). The conditional holds vacuously (antecedent false), and intervention averting predicted crisis aligns with the warning."
+    },
+    {
+      "id": "D-00:17:10.000",
+      "result": "right",
+      "explanation": "Chamath\u2019s prediction was that by Monday or Tuesday after the March 11, 2023 recording, affected companies and employees would be \u201con the other side\u201d of the SVB crisis with \u201cnot a lot of damage.\u201d This quote and its timing are confirmed in the episode transcript, where he expresses hope that founders and employees will be through the immediate crisis by Monday or Tuesday. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e119-silicon-valley-bank-implodes-startup-extinction-event-contagion-risk-culpability-and-more?utm_source=openai))\n\nWhat actually happened aligns closely with that forecast:\n\n1. **All deposits were guaranteed and made available starting Monday, March 13.** On March 12, the U.S. Treasury, Federal Reserve, and FDIC issued a joint statement saying all Silicon Valley Bank depositors would be \u201cfully protected\u201d and that *\u201cDepositors will have access to all of their money starting Monday, March 13.\u201d* ([theguardian.com](https://www.theguardian.com/business/2023/mar/12/silicon-valley-bank-collapse-no-bailout-janet-yellen?utm_source=openai))\n2. **A bridge bank was created so normal banking could resume immediately.** The FDIC converted the receivership structure into Silicon Valley Bridge Bank, N.A., transferring all deposits (insured and uninsured) and reopening branches with normal hours and services on Monday, March 13, giving customers full access via ATMs, debit cards, checks, and online banking. ([hunton.com](https://www.hunton.com/insights/legal/silicon-valley-bank-march-13-2023-updates-on-fdic-receivership-and-bridge-bank?utm_source=openai))\n3. **Most startups regained access to funds on March 13 and resumed operations.** Contemporary reporting and later summaries note that *many* technology entrepreneurs and startup founders regained access to their deposits on March 13 and immediately began wiring funds to new banks and payroll processors so they could meet payroll and operating expenses. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank?utm_source=openai))\n4. **The feared \u201cextinction event\u201d for startups did not materialize.** While the collapse caused a weekend of intense stress and some short-term operational disruptions (e.g., delayed payroll runs, scrambling to re-paper banking relationships), the combination of full depositor protection and the bridge bank structure meant that startups and their employees generally did not suffer permanent loss of deposits or mass closures attributable directly to frozen SVB funds. The real losses fell on SVB\u2019s shareholders and certain creditors, and the broader banking system bore costs via special assessments, not on depositors or employees of portfolio companies. ([financialhorse.com](https://financialhorse.com/silicon-valley-bank-the-bailout-is-here-is-contagion-averted-time-to-sell-dbs-bank-and-astrea-bonds-13-march-2023/?utm_source=openai))\n\nGiven that by Monday\u2013Tuesday (March 13\u201314, 2023) most affected startups had regained access to their money and were able to continue operations, and the worst-case scenario of widespread company failures and unpaid employees was largely averted, Chamath\u2019s prediction that the immediate crisis would be mostly past for companies and employees with \u201cnot a lot of damage\u201d is broadly **right** (acknowledging there was short-term stress and some localized disruption, but not the systemic wipeout that had been feared).",
+      "sources": [
+        {
+          "end_index": 610,
+          "start_index": 406,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E119: Silicon Valley Bank implodes: startup extinction event, contagion risk, culpability, and more Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e119-silicon-valley-bank-implodes-startup-extinction-event-contagion-risk-culpability-and-more?utm_source=openai"
+        },
+        {
+          "end_index": 1139,
+          "start_index": 999,
+          "title": "US guarantees all deposits after Silicon Valley Bank collapse, as Biden promises action | Banking | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/business/2023/mar/12/silicon-valley-bank-collapse-no-bailout-janet-yellen?utm_source=openai"
+        },
+        {
+          "end_index": 1658,
+          "start_index": 1508,
+          "title": "Silicon Valley Bank: March 13, 2023 Updates on FDIC Receivership and Bridge Bank",
+          "type": "url_citation",
+          "url": "https://www.hunton.com/insights/legal/silicon-valley-bank-march-13-2023-updates-on-fdic-receivership-and-bridge-bank?utm_source=openai"
+        },
+        {
+          "end_index": 2117,
+          "start_index": 2016,
+          "title": "Collapse of Silicon Valley Bank",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank?utm_source=openai"
+        },
+        {
+          "end_index": 2962,
+          "start_index": 2779,
+          "title": "Silicon Valley Bank \u2013 The \u201cBailout\u201d is here, is contagion averted? Time to sell DBS Bank and Astrea bonds? (13 March 2023) | Financial Horse",
+          "type": "url_citation",
+          "url": "https://financialhorse.com/silicon-valley-bank-the-bailout-is-here-is-contagion-averted-time-to-sell-dbs-bank-and-astrea-bonds-13-march-2023/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was accurate. On March 12, 2023 evening, the U.S. Treasury, Federal Reserve, and FDIC issued a joint statement guaranteeing access to *all* SVB deposits starting Monday, March 13, with no losses to depositors ([Joint Statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312b.htm); [FDIC Press Release](https://www.fdic.gov/news/press-releases/2023/pr23019.html)). A bridge bank reopened SVB branches on March 13, allowing full access ([Wikipedia](https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank)). Affected startups faced brief disruptions (e.g., delayed payroll over the weekend) but were 'on the other side' by March 13-14 with limited damage\u2014no depositor losses, no mass failures from SVB itself ([TechCrunch timeline](https://techcrunch.com/2023/03/16/svb-crash-timeline-what-happened/); Reuters on companies like Roblox/Roku, no extinction). Later banking issues (e.g., First Republic) were separate."
+    },
+    {
+      "id": "A-00:34:12.000",
+      "result": "right",
+      "explanation": "Regulators did **not** arrange over the March 11\u201312, 2023 weekend to place Silicon Valley Bank into the hands of J.P. Morgan or a similar large acquirer. Instead, on Monday, March 13, the FDIC created **Silicon Valley Bridge Bank, N.A.**, transferring all deposits and substantially all assets into this FDIC\u2011operated bridge bank, while it sought a buyer. A purchase-and-assumption agreement with First\u2013Citizens Bank & Trust was only reached on March 26, well after the weekend in question, and involved a regional bank rather than a JPMorgan\u2011style G\u2011SIB. ([content.govdelivery.com](https://content.govdelivery.com/accounts/USFDIC/bulletins/34e4e30?utm_source=openai))\n\nIn the **following week (March 13\u201317)**, the banking turmoil clearly continued to **cascade**:\n\n- Signature Bank had already been closed on Sunday, March 12, with the FDIC creating Signature Bridge Bank and invoking a systemic\u2011risk exception\u2014part of the same unfolding crisis. ([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23018.html?utm_source=openai))\n- Regional bank stress intensified after markets opened Monday. First Republic Bank, which shared SVB\u2019s vulnerability to large uninsured deposits, saw its stock price and depositor confidence collapse, prompting a **$30 billion rescue deposit package** on March 16 from 11 of the largest U.S. banks (including JPMorgan, Bank of America, Citigroup, and Wells Fargo), explicitly framed as an effort to stabilize the banking system amid post\u2011SVB turmoil. ([cnbc.com](https://www.cnbc.com/2023/03/16/group-of-financial-institutions-in-talks-to-deposit-about-20-billion-in-first-republic-sources-say.html?utm_source=openai))\n\nSo the first branch of Sacks\u2019s disjunction (\u201cthey place SVB in the hands of a J.P. Morgan\u2013type bank this weekend\u201d) did **not** occur. The second branch (\u201cor this thing keeps cascading next week, if they don\u2019t\u201d) **did** occur: no such weekend takeover happened, and the banking/startup\u2011funding shock continued into the following week with additional bank failures, severe stress at First Republic, and extraordinary rescue measures. On that basis, the overall conditional prediction\u2014*if no big\u2011bank takeover this weekend, the crisis keeps cascading next week*\u2014was essentially **right**, even though regulators chose a different resolution mechanism (full depositor protection plus a bridge bank) than the two options Sacks explicitly named.",
+      "sources": [
+        {
+          "end_index": 701,
+          "start_index": 589,
+          "title": "FDIC Acts to Protect All Depositors of the former Silicon Valley Bank, Santa Clara, California",
+          "type": "url_citation",
+          "url": "https://content.govdelivery.com/accounts/USFDIC/bulletins/34e4e30?utm_source=openai"
+        },
+        {
+          "end_index": 1074,
+          "start_index": 984,
+          "title": "FDIC Establishes Signature Bridge Bank, N.A., as Successor to Signature Bank, New York, NY | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23018.html?utm_source=openai"
+        },
+        {
+          "end_index": 1695,
+          "start_index": 1528,
+          "title": "Wall Street rides to the rescue as 11 banks pledge First Republic $30 billion in deposits",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/03/16/group-of-financial-institutions-in-talks-to-deposit-about-20-billion-in-first-republic-sources-say.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No takeover of SVB by a large bank like J.P. Morgan occurred over the March 11\u201312 weekend. Regulators closed SVB on March 10, placed it in FDIC receivership, and held an auction on March 12 with bids due that day; only a single non-bank bid was received and rejected (JPMorgan, Bank of America, Goldman Sachs, PNC, and RBC declined). Instead, FDIC created a bridge bank, and on March 12, invoked a systemic risk exception to protect all deposits ([Wikipedia](https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank), [Axios timeline](https://www.axios.com/2023/03/18/silicon-valley-bank-timeline), [ABC News timeline](https://abcnews.go.com/Business/timeline-silicon-valley-bank-collapse/story?id=97846565)).\n\nThe banking/startup crisis did not continue to cascade the following week (March 13\u201317). Signature Bank closed on March 12 (weekend), but no further U.S. bank failures occurred that week. Deposit protections calmed markets: regional bank stocks plunged March 13 but recovered by March 14; First Republic received $30B from 11 banks on March 16 and was stabilized (later failed in May). Startups accessed funds via bridge bank, averting payroll crises. Government interventions (Fed's Bank Term Funding Program, deposit guarantees) contained contagion ([Wikipedia](https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank), [Axios](https://www.axios.com/2023/03/18/silicon-valley-bank-timeline)). Neither prong of the prediction occurred."
+    },
+    {
+      "id": "A-00:41:18.000",
+      "result": "wrong",
+      "explanation": "Public statements and regulatory actions show the opposite of this prediction occurred.\n\nOn March 12, 2023, the U.S. Treasury, Federal Reserve, and FDIC issued a joint statement that *explicitly* said Silicon Valley Bank depositors \"will have access to all of their money starting Monday, March 13\" and that all depositors would be fully protected.([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai)) \n\nOn March 13, 2023, the FDIC announced it had transferred **all deposits, both insured and uninsured**, into an FDIC\u2011operated bridge bank and that **depositors would have full access to their money beginning that morning**, with all depositors made whole.([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23019.html?utm_source=openai)) Multiple contemporaneous reports (Bloomberg, TechCrunch, CoinDesk, others) confirmed that SVB customers would have access to *all* funds on Monday under this guarantee.([bloomberg.com](https://www.bloomberg.com/news/articles/2023-03-12/svb-customers-will-have-access-to-all-their-money-on-monday?utm_source=openai))\n\nSacks predicted that depositors **would not** know their recovery or receive full distributions by Monday and that the process could take weeks or months. In reality, U.S. regulators guaranteed full recovery on Sunday and implemented it on Monday, March 13. Therefore, this prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 475,
+          "start_index": 385,
+          "title": "Joint Statement by the Department of the Treasury, Federal Reserve, and FDIC | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai"
+        },
+        {
+          "end_index": 824,
+          "start_index": 734,
+          "title": "FDIC Acts to Protect All Depositors of the former Silicon Valley Bank, Santa Clara, California | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23019.html?utm_source=openai"
+        },
+        {
+          "end_index": 1140,
+          "start_index": 993,
+          "title": "SVB Depositors Will Get All Their Money After Frantic Weekend - Bloomberg",
+          "type": "url_citation",
+          "url": "https://www.bloomberg.com/news/articles/2023-03-12/svb-customers-will-have-access-to-all-their-money-on-monday?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction assumed depositors would not know their exact (partial) recovery or receive full distributions by March 13, 2023, requiring weeks/months for 'cents on the dollar.' In reality, on March 12, 2023, Treasury, Fed, and FDIC announced all SVB depositors would have **full access to all their money starting Monday, March 13** ([Joint Statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312b.htm)). FDIC confirmed on March 13: depositors had **full access beginning that morning** via bridge bank ([FDIC PR](https://www.fdic.gov/news/press-releases/2023/pr23019.html)). All deposits, insured and uninsured, were made whole immediately\u2014no partial recovery process. Multiple sources corroborate instant full access, e.g., [Hunton Andrews Kurth](https://www.hunton.com/insights/legal/silicon-valley-bank-march-13-2023-updates-on-fdic-receivership-and-bridge-bank), [Morgan Lewis](https://www.morganlewis.com/pubs/2023/03/svb-and-distressed-banks-lessons-learned-from-a-wild-weekend)."
+    },
+    {
+      "id": "D-00:42:28.000",
+      "result": "right",
+      "explanation": "Multiple contemporaneous reports from March 11\u201312, 2023 describe exactly the situation Chamath outlined: distressed and hedge-fund buyers approaching SVB depositors and offering to buy their uninsured deposit claims at steep discounts, with the low end around **60 cents on the dollar**.\n\n* Semafor, cited by Reuters and others, reported that hedge funds were offering to buy startup deposits stranded at SVB \"for as little as 60 cents on the dollar,\" with bids generally in the **60\u201380 cents** range for uninsured deposits in the immediate aftermath of the failure. ([investing.com](https://www.investing.com/news/stock-market-news/hedge-funds-offering-to-buy-startup-deposits-stuck-at-silicon-valley-bank-semafor-3028171?utm_source=openai))  \n* Further coverage identified firms such as **HPS Investment Partners** and **Oaktree Capital Management** offering to buy SVB deposit claims at discounts between **60 and 75 cents on the dollar**, again within the first couple of days after the bank was seized. ([economictimes.indiatimes.com](https://economictimes.indiatimes.com/markets/stocks/news/hps-oaktree-among-firms-pitching-deals-for-trapped-svb-deposits/articleshow/98575702.cms?from=mdr&utm_source=openai))  \n* Additional summaries of the episode similarly note that some buyers were offering to purchase SVB client deposits at **60\u201375 cents on the dollar**. ([costar.com](https://www.costar.com/article/926326868/fast-moving-209-billion-bank-collapse-rattles-tech-finance-communities?utm_source=openai))\n\nChamath\u2019s statement that, immediately after SVB\u2019s collapse, a company with large deposits at SVB was offered **about 60 cents on the dollar** for its claim is therefore consistent with independent reporting on actual bid levels in that time window. While regulators ultimately guaranteed all deposits at par, his claim about the *immediate* distressed-debt pricing was accurate.",
+      "sources": [
+        {
+          "end_index": 779,
+          "start_index": 604,
+          "title": "Hedge funds offering to buy startup deposits stuck at Silicon Valley Bank -Semafor By Reuters",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/stock-market-news/hedge-funds-offering-to-buy-startup-deposits-stuck-at-silicon-valley-bank-semafor-3028171?utm_source=openai"
+        },
+        {
+          "end_index": 1252,
+          "start_index": 1046,
+          "title": "svb: HPS, Oaktree among firms pitching deals for trapped SVB deposits - The Economic Times",
+          "type": "url_citation",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/hps-oaktree-among-firms-pitching-deals-for-trapped-svb-deposits/articleshow/98575702.cms?from=mdr&utm_source=openai"
+        },
+        {
+          "end_index": 1551,
+          "start_index": 1406,
+          "title": "News | Fast-Moving $209 Billion Bank Collapse Rattles Tech, Finance Communities",
+          "type": "url_citation",
+          "url": "https://www.costar.com/article/926326868/fast-moving-209-billion-bank-collapse-rattles-tech-finance-communities?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Multiple sources confirm that on March 11, 2023, hedge funds and distressed-debt buyers offered to purchase stranded SVB deposits/claims at discounts including 60 cents on the dollar. Examples: Reuters (Mar 11) reported 'as little as 60 cents on the dollar'; Bloomberg (Mar 11-12) noted offers from 60-75 cents and 60-80 cents; Semafor via Hedgeweek cited bids from 60-80 cents. This matches Chamath's claim of a $100M depositor offered $0.60 on the dollar 'today' (podcast date)."
+    },
+    {
+      "id": "C-00:46:04.000",
+      "result": "ambiguous",
+      "explanation": "**What was predicted**\n\nFriedberg\u2019s claim was explicitly conditional:\n\n> *If* by ~48\u201372 hours after the end of the March 11\u201312, 2023 weekend all SVB depositors do **not** have 100% of their deposits available in cash, *then* there will be a \u201creal crisis\u201d with a massive run from institutions that don\u2019t offer fully liquid cash.\n\nSo the prediction only applies in a world where SVB depositors are **not** fully and quickly made whole.\n\n**What actually happened**\n\nOn Sunday, March 12, 2023, U.S. regulators (Treasury, Federal Reserve, FDIC) invoked the **systemic risk exception** and announced that **all** Silicon Valley Bank and Signature Bank depositors, insured and uninsured, would be fully protected and would have access to all their money starting Monday, March 13, 2023. ([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai))  SVB deposits (insured and uninsured) were transferred into a bridge bank and made available, with the cost of covering uninsured deposits to be recouped via special assessments on banks. ([sec.gov](https://www.sec.gov/Archives/edgar/data/1390777/000119312523108625/d490478d424b5.htm?utm_source=openai))  \n\nBecause of that intervention, the **antecedent condition of the prediction (\u201cif depositors don\u2019t get 100% within 48\u201372 hours\u201d) never occurred.** In reality, regulators acted specifically to prevent the kind of broad bank run Friedberg was warning about; Fed and FDIC officials later described the measures as aimed at calming uninsured depositors and limiting contagion. ([fdic.gov](https://www.fdic.gov/news/speeches/2023/spsept2823.html?utm_source=openai))\n\n**Why the outcome is ambiguous**\n\n- The prediction is a **counterfactual causal claim**: it asserts what *would* have happened under a scenario that did **not** materialize.\n- Since depositors *did* receive full protection very quickly, the scenario \u201cno full access within 48\u201372 hours\u201d was never tested in the real world; we cannot directly observe whether there would have been the \u201cmassive run\u201d he described.\n- We can see that regulators took his scenario seriously enough to act pre\u2011emptively, but that does not prove the magnitude of the hypothetical run, only that authorities perceived substantial risk.\n\nBecause the required condition for the prediction to be evaluated never occurred, its truth or falsity cannot be established from observed outcomes.\n\n**Conclusion**\n\nThe correct classification is **\"ambiguous\"**: there has been more than enough time, but the prediction concerns a counterfactual world (no quick, full guarantee of deposits), so we cannot determine from actual events whether his stated consequence (\u201cmassive run\u201d) would indeed have followed.",
+      "sources": [
+        {
+          "end_index": 917,
+          "start_index": 827,
+          "title": "Joint Statement by the Department of the Treasury, Federal Reserve, and FDIC | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai"
+        },
+        {
+          "end_index": 1221,
+          "start_index": 1106,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1390777/000119312523108625/d490478d424b5.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1685,
+          "start_index": 1598,
+          "title": "\u201cSuccessfully Managing Systemic Risk: Deposit Insurance in a Turbulent World\u201d | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/speeches/2023/spsept2823.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "SVB was closed on March 10, 2023. On March 12, Treasury, Fed, and FDIC announced all depositors would have access to 100% of funds starting March 13 ([Joint Statement](https://home.treasury.gov/news/press-releases/jy1337); [FDIC PR](https://www.fdic.gov/news/press-releases/2023/pr23019.html)). Bridge Bank enabled online, ATM, and other access that day, well before 48-72 hours post-March 12 weekend end ([Wikipedia SVB Collapse](https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank); multiple FDIC alerts). The condition (no prompt access) did not occur. No massive run followed on other non-cash-holding institutions; Signature failed March 12 amid contagion fears, but Fed's BTFP and guarantees contained panic\u2014no widespread deposit flight ([Brookings](https://www.brookings.edu/articles/what-did-the-fed-do-after-silicon-valley-bank-and-signature-bank-failed/); [Fed Review](https://www.federalreserve.gov/publications/files/svb-review-20230428.pdf)). Conditional prediction held: prompt access averted predicted crisis."
+    },
+    {
+      "id": "C-00:46:48.000",
+      "result": "ambiguous",
+      "explanation": "Key parts of Friedberg\u2019s scenario happened, but not exactly as he specified, and whether it *\u201cavoided a broader crisis\u201d* is a judgment call.\n\n**What he said needed to happen**\n1. *\u201cSomeone takes over Silicon Valley Bank this weekend.\u201d*  \n2. The federal government *\u201cguarantee 100% of those deposits.\u201d*  \n3. Depositors have immediate cash access the following week, to prevent a broader crisis.\n\n**What actually happened**\n- **Full deposit guarantee and access next week:** On Sunday, March 12, 2023, the Treasury, Fed, and FDIC announced a *systemic risk exception* for SVB. They stated that **all** SVB depositors would be *\u201cfully protected\u201d* and would *\u201chave access to all of their money starting Monday, March 13.\u201d* ([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai)) This effectively guaranteed 100% of deposits (including uninsured), funded by the FDIC\u2019s Deposit Insurance Fund and later recouped via special assessments on banks. ([reuters.com](https://www.reuters.com/business/finance/us-bank-regulator-considering-legal-action-against-former-svb-executives-2024-12-17/?utm_source=openai)) So the guarantee-and-access part of his prescription was met very closely.\n\n- **Timing and nature of the \u201ctakeover\u201d:** Regulators closed SVB on March 10 and transferred all deposits and substantially all assets into a temporary FDIC-run **Silicon Valley Bridge Bank, N.A.**, whose purpose was to stabilize and market the franchise. ([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23023.html?utm_source=openai)) A true private\u2011sector buyer, First Citizens Bank, did not acquire the bridge bank\u2019s deposits and loans until a purchase and assumption deal announced March 26\u201327, 2023\u2014two weeks after the weekend in question. ([ir.firstcitizens.com](https://ir.firstcitizens.com/news-and-events/newsroom/news-details/2023/First-Citizens-Bank-Enters-into-Whole-Bank-Purchase-of-Silicon-Valley-Bridge-Bank-N.A/default.aspx?utm_source=openai)) So if \u201csomeone takes over \u2026 this weekend\u201d means a private buyer, that part did **not** happen on his timeline; if one counts the FDIC/bridge bank as the \u201ctakeover,\u201d it roughly did.\n\n- **Did this avert a \u2018broader crisis\u2019?**  \n  - There **was** further turmoil: Signature Bank failed on March 12 and was also resolved with a systemic risk exception and full depositor protection, ([hunton.com](https://www.hunton.com/en/insights/signature-bank-what-to-know-about-march-12-2023-closing-fdic-receivership-and-bridge-bank.html?utm_source=openai)) and First Republic Bank was seized and sold to JPMorgan on May 1, 2023, becoming the second\u2011largest bank failure in U.S. history. ([forbes.com](https://www.forbes.com/sites/siladityaray/2023/05/01/jpmorgan-chase-agrees-to-acquire-first-republic-banks-deposits-after-fdic-intervenes/?utm_source=openai))  \n  - However, there was **no 2008\u2011style systemic collapse**: the combination of the SVB/Signature guarantees and the Fed\u2019s liquidity facilities stabilized the system, and widescale cascading failures did not materialize. ([fortune.com](https://fortune.com/2023/05/01/first-republic-bank-second-biggest-bank-failure-ever-jpmorgan-jamie-dimon-fdic/?utm_source=openai))  \n\n**Why this is classified as ambiguous**\n- His core **policy prescription**\u2014government backstopping all SVB deposits and ensuring immediate access\u2014*did* occur almost exactly as described and appears to have been central to containing contagion. ([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai))\n- His **timing/detail about a buyer \u201cthis weekend\u201d** was off; the actual private acquisition came later, after an FDIC bridge period. ([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23023.html?utm_source=openai))\n- The phrase **\u201cavoid a broader crisis\u201d** is inherently subjective: you can reasonably argue either that the measures *did* prevent a full\u2011blown systemic crisis, or that the subsequent failure of multiple additional banks means a broader crisis *did* occur.\n\nBecause the factual outcome partly matches (full guarantee, next\u2011week access) but diverges on the buyer timing, and because the success criterion (\u201cbroader crisis\u201d) is not objectively clear-cut, the prediction can\u2019t be cleanly labeled purely right or wrong\u2014hence **\u201cambiguous.\u201d**",
+      "sources": [
+        {
+          "end_index": 854,
+          "start_index": 764,
+          "title": "Joint Statement by the Department of the Treasury, Federal Reserve, and FDIC | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai"
+        },
+        {
+          "end_index": 1180,
+          "start_index": 1020,
+          "title": "US bank regulator considering legal action against former SVB executives",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/finance/us-bank-regulator-considering-legal-action-against-former-svb-executives-2024-12-17/?utm_source=openai"
+        },
+        {
+          "end_index": 1605,
+          "start_index": 1515,
+          "title": "First\u2013Citizens Bank & Trust Company, Raleigh, NC, to Assume All Deposits and Loans of Silicon Valley Bridge Bank, N.A., From the FDIC | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23023.html?utm_source=openai"
+        },
+        {
+          "end_index": 2029,
+          "start_index": 1815,
+          "title": "First Citizens Bank Enters into Whole Bank Purchase of Silicon Valley Bridge Bank, N.A. | First Citizens BancShares",
+          "type": "url_citation",
+          "url": "https://ir.firstcitizens.com/news-and-events/newsroom/news-details/2023/First-Citizens-Bank-Enters-into-Whole-Bank-Purchase-of-Silicon-Valley-Bridge-Bank-N.A/default.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 2574,
+          "start_index": 2411,
+          "title": "Signature Bank: What to Know About March 12, 2023 Closing, FDIC Receivership and Bridge Bank",
+          "type": "url_citation",
+          "url": "https://www.hunton.com/en/insights/signature-bank-what-to-know-about-march-12-2023-closing-fdic-receivership-and-bridge-bank.html?utm_source=openai"
+        },
+        {
+          "end_index": 2877,
+          "start_index": 2705,
+          "title": "First Republic Taken Over By JP Morgan After Regulators Shut It Down",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/siladityaray/2023/05/01/jpmorgan-chase-agrees-to-acquire-first-republic-banks-deposits-after-fdic-intervenes/?utm_source=openai"
+        },
+        {
+          "end_index": 3246,
+          "start_index": 3101,
+          "title": "JPMorgan acquires First Republic Bank after FDIC seizure | Fortune",
+          "type": "url_citation",
+          "url": "https://fortune.com/2023/05/01/first-republic-bank-second-biggest-bank-failure-ever-jpmorgan-jamie-dimon-fdic/?utm_source=openai"
+        },
+        {
+          "end_index": 3587,
+          "start_index": 3497,
+          "title": "Joint Statement by the Department of the Treasury, Federal Reserve, and FDIC | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23017.html?utm_source=openai"
+        },
+        {
+          "end_index": 3813,
+          "start_index": 3723,
+          "title": "First\u2013Citizens Bank & Trust Company, Raleigh, NC, to Assume All Deposits and Loans of Silicon Valley Bridge Bank, N.A., From the FDIC | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23023.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No private buyer took over SVB over the March 11\u201312 weekend; instead, the California regulator closed SVB on March 10, FDIC was appointed receiver, and created a bridge bank (Silicon Valley Bridge Bank, N.A.) to hold assets/deposits temporarily ([FDIC press release](https://www.fdic.gov/news/press-releases/2023/pr23016.html), [Wikipedia timeline](https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank)). First Citizens acquired parts later on March 27 ([NYT](https://www.nytimes.com/2023/03/27/business/silicon-valley-bank-first-citizens.html)). However, on March 12, Treasury/Fed/FDIC issued a joint statement guaranteeing 100% of SVB deposits for access starting March 13, invoking systemic risk exception ([Federal Reserve joint statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312b.htm)). A broader crisis was arguably avoided despite no weekend buyer, as interventions contained contagion to Signature Bank and others ([FDIC speeches](https://www.fdic.gov/news/speeches/2023/spmar2723.html)). Thus, the predicted 'only way' (requiring buyer takeover) did not occur, making the prediction wrong."
+    },
+    {
+      "id": "B-00:49:32.000",
+      "result": "wrong",
+      "explanation": "Key elements of Jason\u2019s prediction did not occur, even though one numerical aspect was close.\n\n1. **Scale of the backstop.** He said the situation would likely require roughly $25\u201350 billion, about 5\u201310% of TARP. In practice, Treasury authorized **up to $25 billion** from the Exchange Stabilization Fund as a backstop for the Federal Reserve\u2019s Bank Term Funding Program (BTFP), created in direct response to the SVB/Signature stress. ([sfnet.com](https://www.sfnet.com/detail-pages/article-detail/federal-reserve-board-announces-it-will-make-available-additional-funding-to-eligible-depository-institutions-to-help-assure-banks?utm_source=openai))  TARP\u2019s original authorization was $700 billion, so $25 billion is ~3.6% of TARP\u2014slightly below but broadly in the same ballpark as his 5\u201310% of TARP framing. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Troubled_Asset_Relief_Program?utm_source=openai))  So the **order-of-magnitude** part of the prediction was reasonably accurate.\n\n2. **Who bore the losses and how.** SVB\u2019s failure is estimated to cost about **$20 billion** to the FDIC\u2019s Deposit Insurance Fund (DIF), funded by assessments on banks, not by general taxpayers. ([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23023.html?utm_source=openai))  The FDIC is recouping those costs through a **special assessment on banks**, not through a taxpayer-funded capital injection. ([reuters.com](https://www.reuters.com/sustainability/boards-policy-regulation/fdic-countersues-capital-one-over-silicon-valley-signature-bank-collapses-2025-11-18/?utm_source=openai))  This is structurally quite different from a TARP\u2011style government investment funded by taxpayers.\n\n3. **No TARP\u2011style equity/warrants in SVB or its depositors\u2019 companies.** Jason envisioned taxpayers getting senior claims and **warrants in SVB and/or affected companies**, allowing them to potentially earn a 50\u2013100%+ profit. In reality:\n   * Shareholders and certain unsecured debtholders of SVB were explicitly *not* protected; there was no federal equity infusion into SVB itself. ([federalreserve.gov](https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312a.htm?utm_source=openai))  SVB equity went to (or near) zero in the receivership, so taxpayer-held warrants in SVB would not have produced large gains.\n   * In the actual sale, the FDIC received **equity appreciation rights** in First Citizens BancShares stock (up to about **$500 million**), which it later exercised, providing some offset to DIF losses. ([fdic.gov](https://www.fdic.gov/news/speeches/2023/spmay1523.html?utm_source=openai))  But this upside accrues to the FDIC\u2019s insurance fund, not as a large, TARP\u2011like profit stream to general taxpayers, and it is far smaller than the ~$16\u201320 billion estimated cost to the DIF.\n   * There were **no broad-based warrants or equity stakes in the portfolio companies/depositors** as part of the official rescue framework.\n\n4. **Taxpayer profit claim.** Jason\u2019s core claim was that a roughly $25\u201350 billion government backstop, structured with seniority and warrants, could plausibly return **at least 50% and potentially 100%+ profit to U.S. taxpayers** over time. Since:\n   * The actual intervention did **not** use taxpayer-funded equity or broad warrant positions,\n   * The publicly documented outcome is a large **net cost to the FDIC\u2019s fund** with relatively modest offsetting upside (First Citizens equity appreciation rights),\n   there is **no realized 50\u2013100%+ profit to taxpayers** from a TARP\u2011like SVB backstop.\n\nBecause the actual policy architecture (FDIC resolution funded by bank assessments + Fed lending backed by a mostly unused $25B Treasury backstop) diverged from the TARP\u2011style, warrant-heavy structure he described, and no such profit stream to taxpayers materialized, the overall prediction about how a government backstop would work out for taxpayers is best classified as **wrong**, despite his back-of-the-envelope estimate of the scale (around $25B) being roughly aligned with the authorized backstop size.",
+      "sources": [
+        {
+          "end_index": 683,
+          "start_index": 470,
+          "title": "Federal Reserve Board Announces it Will Make Available Additional Funding to Eligible Depository Institutions to Help Assure Banks Have the Ability to Meet the Needs of all Their Depositors | Secured Finance Network",
+          "type": "url_citation",
+          "url": "https://www.sfnet.com/detail-pages/article-detail/federal-reserve-board-announces-it-will-make-available-additional-funding-to-eligible-depository-institutions-to-help-assure-banks?utm_source=openai"
+        },
+        {
+          "end_index": 942,
+          "start_index": 843,
+          "title": "Troubled Asset Relief Program",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Troubled_Asset_Relief_Program?utm_source=openai"
+        },
+        {
+          "end_index": 1310,
+          "start_index": 1220,
+          "title": "First\u2013Citizens Bank & Trust Company, Raleigh, NC, to Assume All Deposits and Loans of Silicon Valley Bridge Bank, N.A., From the FDIC | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23023.html?utm_source=openai"
+        },
+        {
+          "end_index": 1622,
+          "start_index": 1438,
+          "title": "FDIC countersues Capital One over Silicon Valley, Signature bank collapses",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/fdic-countersues-capital-one-over-silicon-valley-signature-bank-collapses-2025-11-18/?utm_source=openai"
+        },
+        {
+          "end_index": 2230,
+          "start_index": 2111,
+          "title": "Federal Reserve Board - Federal Reserve Board announces it will make available additional funding to eligible depository institutions to help assure banks have the ability to meet the needs of all their depositors",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312a.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2648,
+          "start_index": 2562,
+          "title": "Oversight of Prudential Regulators | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/speeches/2023/spmay1523.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No government backstop resembling TARP\u2014with $25\u201350 billion in capital, seniority, and warrants in SVB or affected companies\u2014occurred. Instead, FDIC resolved SVB via receivership, transferring assets/deposits to a bridge bank sold to First Citizens BancShares (March 2023). All deposits protected under systemic risk exception, costing DIF ~$16\u201320B for SVB (latest combined SVB+Signature loss $21.8B as of June 2025; FDIC reports [fdic.gov/deposit-insurance-assessments/special-assessment...](https://www.fdic.gov/deposit-insurance-assessments/special-assessment-pursuant-systemic-risk-determination), [democrats-financialservices.house.gov...](https://democrats-financialservices.house.gov/uploadedfiles/hhrg-118-ba00-wstate-gruenbergm-20241120.pdf)). Losses covered by bank assessments, not direct taxpayer funds or profits. No warrants/equity to government (searches yielded no evidence). BTFP provided liquidity (Treasury $25B backstop unused significantly), ended profitably for Fed but not matching prediction. [FDIC SVB page](https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/silicon-valley.html), [Joint Statement](https://home.treasury.gov/news/press-releases/jy1337)."
+    },
+    {
+      "id": "A-00:51:52.000",
+      "result": "wrong",
+      "explanation": "The scenario Sachs warned about did not materialize. On March 12\u201313, 2023, just one\u2013two days after the SVB failure, U.S. regulators (Treasury, Fed, FDIC) invoked the **systemic risk exception** and explicitly intervened to protect **all** Silicon Valley Bank depositors, including those above the normal $250,000 insurance cap. They transferred all deposits into an FDIC-operated bridge bank and guaranteed that depositors would have full access to their money starting March 13. ([fdic.gov](https://www.fdic.gov/news/press-releases/2023/pr23019.html?utm_source=openai))\n\nRegulators also launched the **Bank Term Funding Program** to provide broad liquidity support to other banks, specifically to prevent contagion and systemic stress from SVB\u2019s failure. Congressional and FDIC testimony describe these actions as taken *because* officials feared widespread contagion if uninsured depositors at SVB (and Signature Bank) were left exposed. ([fdic.gov](https://www.fdic.gov/news/speeches/2023/spmar2923.html?utm_source=openai))\n\nAlthough there were additional high-profile failures (e.g., Signature Bank and later First Republic), these were resolved with further regulatory intervention and did not trigger the uncontrolled sequence of domino failures and systemic collapse that Sachs was concerned about. ([reuters.com](https://www.reuters.com/legal/fdic-sues-17-former-silicon-valley-bank-executives-directors-over-collapse-2025-01-16/?utm_source=openai)) Because the government *did* intervene quickly and took systemic-risk-mitigating actions, the conditional scenario he described (\u201cgovernment doesn\u2019t step in\u201d leading to dominoes and systemic risk) did not occur, so this prediction is best judged as **wrong**.",
+      "sources": [
+        {
+          "end_index": 606,
+          "start_index": 516,
+          "title": "FDIC Acts to Protect All Depositors of the former Silicon Valley Bank, Santa Clara, California | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23019.html?utm_source=openai"
+        },
+        {
+          "end_index": 1064,
+          "start_index": 978,
+          "title": "Recent Bank Failures and the Federal Regulatory Response | FDIC.gov",
+          "type": "url_citation",
+          "url": "https://www.fdic.gov/news/speeches/2023/spmar2923.html?utm_source=openai"
+        },
+        {
+          "end_index": 1497,
+          "start_index": 1346,
+          "title": "FDIC sues 17 former Silicon Valley Bank executives, directors over collapse",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/legal/fdic-sues-17-former-silicon-valley-bank-executives-directors-over-collapse-2025-01-16/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The U.S. government intervened promptly after SVB's collapse on March 10, 2023. On March 12, Treasury Secretary Yellen, Fed Chair Powell, and FDIC invoked the systemic risk exception to protect *all* depositors (insured and uninsured) at SVB and Signature Bank, ensuring access to funds by March 13. The Fed launched the Bank Term Funding Program (BTFP) for liquidity. While Signature Bank failed March 12 and First Republic May 1 (acquired by JPMorgan), there were no further 'dominoes' or broader systemic financial crisis; the banking system stabilized without widespread failures into 2025. No evidence links intervention (or lack thereof) to 'tech unpopularity'\u2014action was swift despite political critiques of tech. ([FDIC testimony](https://www.fdic.gov/news/speeches/2023/spmar2723.html), [Fed SVB review](https://www.federalreserve.gov/publications/files/svb-review-20230428.pdf), [Wikipedia 2023 banking crisis](https://en.wikipedia.org/wiki/2023_United_States_banking_crisis), [Brookings on Fed response](https://www.brookings.edu/articles/what-did-the-fed-do-after-silicon-valley-bank-and-signature-bank-failed/))"
+    },
+    {
+      "id": "sacks-00:53:22.970",
+      "result": "inconclusive",
+      "explanation": "The prediction was explicitly conditional: *\u201cif the federal government doesn't step in here, the whole regional banking system could be decimated, and you're just going to be left with four too big to fail banks.\u201d* \n\nWhat happened instead:\n\n- On **March 12, 2023**, the U.S. Treasury, Federal Reserve, and FDIC announced that **all depositors** of Silicon Valley Bank and Signature Bank would be fully protected, even above the normal FDIC insurance limits, and created the Bank Term Funding Program (BTFP) to support banks\u2019 liquidity.\n- This is widely described in official releases and news coverage as the federal government \u201cstepping in\u201d to backstop depositors and stabilize the banking system.\n\nBecause the *if*-clause (\u201cif the federal government doesn't step in here\u201d) was **not** satisfied, we cannot empirically evaluate the implied counterfactual outcome (whether regional banks would have been \u201cdecimated\u201d and consolidated into roughly four big banks). The actual path of history tells us what happened *with* intervention, not what would have happened *without* it.\n\nTherefore, the accuracy of this statement is **inconclusive**: the condition for the prediction never occurred, so the prediction cannot be judged as right or wrong on observed outcomes.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is conditional: *if* the U.S. federal government did *not* step in to protect SVB depositors, *then* the regional banking system would be largely wiped out, consolidating into ~4 large banks over following months. \n\nThe condition did **not** occur: On March 12-13, 2023, Treasury, Fed, and FDIC announced full protection for *all* SVB depositors (insured and uninsured), creating bridge banks with no losses to depositors ([FDIC press release](https://www.fdic.gov/news/press-releases/2023/pr23019.html), [Fed statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20230312b.htm), [CNBC](https://www.cnbc.com/2023/03/12/regulators-unveil-plan-to-stem-damage-from-svb-collapse.html)). \n\nThe consequent also did not occur: US regional banks were **not** wiped out. Post-SVB failures were limited (Signature, First Republic absorbed by JPM; ~4-5 total in 2023 crisis per [Wikipedia](https://en.wikipedia.org/wiki/2023_United_States_banking_crisis), [FDIC](https://www.fdic.gov/news/speeches/2024/lessons-learned-us-regional-bank-failures-2023)). As of Q1 2025, ~4,462 insured banks exist ([MX.com](https://www.mx.com/blog/biggest-banks-by-asset-size-united-states/)); regional banks persist amid challenges but no mass consolidation to 4 banks ([Reuters 2024](https://www.reuters.com/markets/us/regional-banks-face-big-hurdles-year-after-svb-collapse-2024-03-07/), [IBISWorld 2025](https://www.ibisworld.com/united-states/industry/regional-banks/6091/)). \n\nSince the antecedent is false, the counterfactual cannot be tested/verified despite >2.5 years passing."
+    },
+    {
+      "id": "jason-00:58:08.980",
+      "result": "ambiguous",
+      "explanation": "The prediction is explicitly conditional: **if Silicon Valley Bank (SVB) depositors\u2019 funds were effectively destroyed / not made available, then many affected startups would go out of business the next month.**\n\nWhat actually happened:\n- On **March 10, 2023**, SVB was taken over by the FDIC.\n- On **March 12, 2023**, U.S. regulators (Treasury, Federal Reserve, FDIC) announced that **all SVB depositors would be made whole and have access to all their money**, even above the standard FDIC limit. \n- Normal access to deposits resumed shortly thereafter, preventing the scenario of deposits being permanently lost.\n\nBecause the **antecedent of the prediction (deposits destroyed / not made available) never occurred**, we cannot empirically test the claim that \u201cthese companies are going out of business next month.\u201d It is a counterfactual statement about what *would* have happened under a policy choice that was *not* taken.\n\nTherefore, the accuracy of the prediction **cannot be determined from real-world outcomes**; the world where deposits were not honored did not occur, so we have no direct evidence on whether mass startup shutdowns within a month would have happened.\n\n**Conclusion:** The correct label is **\"ambiguous\"**: enough time has passed, but the prediction concerns a counterfactual scenario that never materialized, so it cannot be definitively judged right or wrong.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction is conditional: *if* SVB depositors' funds were effectively lost (not made available), *then* many affected startups would shut down within ~1 month (by mid-April 2023). However, the condition did not occur. Per the U.S. Department of the Treasury, Federal Reserve, and FDIC [joint statement, March 12, 2023](https://home.treasury.gov/news/press-releases/jy1337), 'Depositors will have access to all of their money starting Monday, March 13. No losses associated with the resolution of Silicon Valley Bank will be borne by taxpayers.' FDIC confirmed full access via Silicon Valley Bridge Bank on March 13, 2023 ([FDIC press release](https://www.fdic.gov/news/press-releases/2023/pr23019.html)). All depositors, including uninsured ones, were made whole immediately. No evidence of mass startup shutdowns in March/April 2023 due to SVB ([Wikipedia SVB collapse](https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank); multiple news searches yielded panic but no closures). Since the antecedent (funds lost) was false, the consequent cannot be tested, making the prediction's accuracy ambiguous despite sufficient time passing."
+    },
+    {
+      "id": "friedberg-01:02:20.500",
+      "result": "wrong",
+      "explanation": "Available data show that venture activity was already in a broad downturn before Silicon Valley Bank (SVB) failed, and that the months immediately after the collapse did **not** see private markets \u201cseize up\u201d or funding rounds drop to roughly half their pre\u2011SVB pace.\n\n**1. Deal activity and funding volumes after March 2023**\n\n* **Global monthly funding:**\n  * February 2023 global VC funding fell below $20B and was already at a two\u2011year low. ([nasdaq.com](https://www.nasdaq.com/videos/monthly-vc-funding-dips-below-%2420-billion-in-february?utm_source=openai))  \n  * April 2023, the first full month after SVB\u2019s collapse, saw about **$21B** in global funding, down 56% year\u2011over\u2011year but described as the *second\u2011lowest* month since July 2022\u2014i.e., continuing an existing slide rather than a new, abrupt freeze. ([news.crunchbase.com](https://news.crunchbase.com/venture/monthly-vc-funding-april-2023/?utm_source=openai))  \n  * May 2023 funding was about **$22B**, roughly flat with April (and ~44% below May 2022), with commentary that April\u2013May funding was averaging just above $20B, in line with 2018\u20132020 levels and simply \u201cwell below\u201d the boom of 2021/early\u20112022. ([news.crunchbase.com](https://news.crunchbase.com/venture/monthly-vc-funding-ai-recap-may-2023/?utm_source=openai))  \n  These levels represent a large decline versus the 2021 peak, but **they are similar to, not half of, the pace already seen in late 2022 and early 2023**.\n\n* **US deal counts:**\n  * Q1 2023 (which includes the SVB episode) already had only **2,856 observed US deals** totaling $37B\u2014the lowest quarterly deal count since 2013\u2014reflecting a downturn driven mainly by rates and macro conditions, not SVB alone. ([ssti.org](https://ssti.org/blog/q1-2023-deal-counts-down-amid-continued-market-pressure-deal-value-stays-relatively-strong?utm_source=openai))  \n  * In Q2 2023, the PitchBook\u2013NVCA Venture Monitor noted that **US deal counts \u201cleveled off,\u201d with just over 4,000 deals in the quarter and early stage posting its fourth\u2011most\u2011active quarter ever, remaining above pre\u20112021 figures.** ([forteventures.com](https://www.forteventures.com/insights/2023/7/21/presenting-the-q2-2023-venture-monitor?utm_source=openai))  \n  * For full\u2011year 2023, estimated US VC deal count was **15,766**, only modestly below 2022\u2019s 16,464 and still above 2020 and prior years\u2014far from a 50% collapse in the pace of financings. ([ssti.org](https://ssti.org/blog/useful-stats-overview-2023-vc-activity?utm_source=openai))  \n\nTaken together, this shows **no evidence that in the \u201cnext few months\u201d after SVB the number of funding rounds fell to about half of the pre\u2011SVB pace**. The downturn was real but more like a 20\u201340% reduction versus 2022, and it was underway well before March 2023.\n\n**2. Term sheets and market \u201cseizure\u201d**\n\nThere is anecdotal evidence that some deals were delayed, repriced, or renegotiated:\n\n* Articles describing the immediate aftermath speak of a \u201ccooling effect,\u201d more cautious investors, and some pending term sheets being renegotiated as risk was reassessed. ([fastercapital.com](https://fastercapital.com/content/Venture-Capital--Venture-Capital-Woes--How-the-Silicon-Valley-Bank-Collapse-Affects-Startups.html?utm_source=openai))\n\nBut major contemporaneous reporting also stresses that **VC equity funding did not stop**:\n\n* A Fortune piece on March 21, 2023 quotes one VC calling SVB\u2019s impact an \u201cincremental pumping of the brakes\u201d and \u201cnot a hard reset,\u201d and notes that VCs were still issuing term sheets during and immediately after the crisis. ([fortune.com](https://fortune.com/2023/03/21/svb-collapse-could-impact-startup-funding/?utm_source=openai))\n* A MedTech\u2011focused analysis shortly after the collapse predicts a return to \u201cbusiness as usual\u201d for equity financing (while warning that **venture debt**, not equity, would be notably harder to raise for several months). ([medtechdive.com](https://www.medtechdive.com/news/svb-shutdown-future-medtech-startups/645410/?utm_source=openai))\n\nSo while some term sheets were indeed pulled or revised, the evidence points to a **temporary disruption and tighter terms**, not a broad, sustained seizure where \u201cmany\u201d existing term sheets vanished and new financings largely stopped.\n\n**3. What *did* tighten meaningfully: venture debt, not equity deal count**\n\nSVB\u2019s collapse clearly hit **venture debt**:\n\n* SVB held about **50% market share** in US venture debt; its failure contributed to a **38% year\u2011over\u2011year decline** in venture debt issuance in the following quarter, and lenders became significantly more selective. ([transacted.io](https://www.transacted.io/despite-increased-demand-venture-debt-proves-elusive-after-silicon-valley-bank-failure?utm_source=openai))\n\nBut Friedberg\u2019s prediction was specifically about **VC fundings/rounds and term sheets in private equity markets**, not just debt. On that core point, the quantitative data show a continued slowdown rather than a new halving of activity immediately post\u2011SVB.\n\n**Conclusion**\n\nFriedberg accurately anticipated that the environment would worsen and investors would focus more on triaging existing portfolios. However, the concrete elements of his prediction\u2014**markets \u201cseizing,\u201d many term sheets being pulled, and funding rounds dropping to roughly half the pre\u2011SVB pace in the ensuing months of 2023**\u2014are not borne out by the available venture data or by broad industry reporting. The downturn was significant but more gradual and was already in progress.\n\n**Therefore this prediction is best classified as:** **wrong**.",
+      "sources": [
+        {
+          "end_index": 602,
+          "start_index": 483,
+          "title": "Monthly VC Funding Dips Below $20 Billion in February | Nasdaq",
+          "type": "url_citation",
+          "url": "https://www.nasdaq.com/videos/monthly-vc-funding-dips-below-%2420-billion-in-february?utm_source=openai"
+        },
+        {
+          "end_index": 964,
+          "start_index": 855,
+          "title": "How Low Can It Go? Health Care Leads With Nearly $5.7B Invested In Bummer Month For Global Venture Funding",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/monthly-vc-funding-april-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 1329,
+          "start_index": 1213,
+          "title": "Global Venture Funding Leveled In May 2023 Despite Big AI Raises",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/monthly-vc-funding-ai-recap-may-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 1888,
+          "start_index": 1744,
+          "title": "Q1 2023: Deal counts down amid continued market pressure, deal value stays relatively strong | SSTI",
+          "type": "url_citation",
+          "url": "https://ssti.org/blog/q1-2023-deal-counts-down-amid-continued-market-pressure-deal-value-stays-relatively-strong?utm_source=openai"
+        },
+        {
+          "end_index": 2253,
+          "start_index": 2125,
+          "title": "Presenting the Q2 2023 Venture Monitor \u2014 Fort\u00e9 Ventures",
+          "type": "url_citation",
+          "url": "https://www.forteventures.com/insights/2023/7/21/presenting-the-q2-2023-venture-monitor?utm_source=openai"
+        },
+        {
+          "end_index": 2538,
+          "start_index": 2446,
+          "title": "Useful Stats: An overview of 2023 VC activity | SSTI",
+          "type": "url_citation",
+          "url": "https://ssti.org/blog/useful-stats-overview-2023-vc-activity?utm_source=openai"
+        },
+        {
+          "end_index": 3286,
+          "start_index": 3114,
+          "title": "Venture Capital: Venture Capital Woes: How the Silicon Valley Bank Collapse Affects Startups - FasterCapital",
+          "type": "url_citation",
+          "url": "https://fastercapital.com/content/Venture-Capital--Venture-Capital-Woes--How-the-Silicon-Valley-Bank-Collapse-Affects-Startups.html?utm_source=openai"
+        },
+        {
+          "end_index": 3717,
+          "start_index": 3609,
+          "title": "How the SVB collapse could impact startup funding | Fortune",
+          "type": "url_citation",
+          "url": "https://fortune.com/2023/03/21/svb-collapse-could-impact-startup-funding/?utm_source=openai"
+        },
+        {
+          "end_index": 4057,
+          "start_index": 3941,
+          "title": "\u2018Business as usual?\u2019 Investors weigh in on future of medtech startup financing after SVB collapse | MedTech Dive",
+          "type": "url_citation",
+          "url": "https://www.medtechdive.com/news/svb-shutdown-future-medtech-startups/645410/?utm_source=openai"
+        },
+        {
+          "end_index": 4794,
+          "start_index": 4645,
+          "title": "Despite Increased Demand, Venture Debt Proves Elusive After Silicon Valley Bank Failure",
+          "type": "url_citation",
+          "url": "https://www.transacted.io/despite-increased-demand-venture-debt-proves-elusive-after-silicon-valley-bank-failure?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction did not come true. VC deal counts did not fall to roughly half the pre-SVB pace in the months after March 2023, nor is there evidence of many VCs pulling existing term sheets due to SVB.\n\n**Deal counts (US VC, PitchBook-NVCA Venture Monitor reports):**\n- Q4 2022 (pre-SVB): Estimated ~3,000-3,800 deals (stage breakdowns: angel/seed 1,515; early-stage 1,330; late-stage 936; [Q4 2022 report](https://nvca.org/wp-content/uploads/2023/01/Q4_2022_PitchBook-NVCA_Venture_Monitor.pdf), local cite 2,935).\n- Q1 2023 (includes March SVB collapse): 3,888 estimated deals ([Q1 2023 report](https://nvca.org/wp-content/uploads/2023/04/Q1_23_VM_U.pdf)). Similar to Q4 2022, down gradually from 2021 peaks (~4,800 Q1 2022).\n- Q2 2023: Leveled off at just over 4,000 deals ([Q2 2023 report summary](https://nvca.org/wp-content/uploads/2023/07/Q2-1.pdf)). No sharp drop.\n- Full 2023: ~11,858-15,766 deals (down from 2022's 15k-18k, but ongoing trend from rising rates since mid-2022, not SVB-specific halving).\n\nVC activity was already cooling pre-SVB (down 25% QoQ in Q4 2022 vs Q1 2022). SVB added uncertainty ([Q1 2023 report](https://nvca.org/wp-content/uploads/2023/04/Q1_23_VM_U.pdf)), but reports note no major deal market freeze: 'SVB collapse spared an already muted venture deal market' ([TechCrunch, Mar 2023](https://techcrunch.com/2023/03/29/svb-venture-deal-market-impact/)).\n\n**Term sheets:** No widespread reports of VCs pulling investment term sheets; panic focused on withdrawing *deposits* from SVB ([Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/the-collapse-of-silicon-valley-bank), [Business Insider](https://www.businessinsider.com/vcs-and-founders-silicon-valley-bank-meltdown-fdic-supporting-bank-2023-3)). VCs instead supported portfolios amid cash crunches.\n\nSources: PitchBook-NVCA quarterly reports (2022-2023), Crunchbase/TechCrunch analyses."
+    },
+    {
+      "id": "friedberg-01:02:40.540",
+      "result": "right",
+      "explanation": "Friedberg\u2019s prediction had two main parts: (1) some venture funds would shut down after the SVB crisis, and (2) many already\u2011distressed portfolio companies would not get bridge financing, leading to an accelerated wave of shutdowns in the rest of 2023. Both are broadly borne out by subsequent data and reporting, even though the causes were a mix of the pre\u2011existing downturn plus the SVB shock.\n\n**1. Venture funds shutting down**  \n* A 2024 Venture Capital Archive report estimates that **at least 9% of VC funds ceased operations in 2023**, and that by 2024 a total of about **11.1% of funds had shut down**, with many others effectively becoming \u201czombie\u201d firms. ([scribd.com](https://www.scribd.com/document/925235735/Venture-Capital-Archive-2024-Report?utm_source=openai))  \n* The *Financial Times* reports that the number of active U.S. VC firms fell by **more than 25%** from a 2021 peak (8,315) to 6,175 in 2024, and explicitly cites **fund closures such as Countdown Capital (winding down and returning capital) and Foundry Group (no new funds)** as examples of firms giving up in the tougher post\u20112021, post\u2011SVB environment. ([ft.com](https://www.ft.com/content/7a787423-9466-4e55-8c0e-8811cfe44dd3?utm_source=openai))  \nThese are exactly the kinds of outcomes Friedberg described when he said \u201cfunds could shut down coming out of this.\u201d\n\n**2. Distressed startups not getting bridges and shutting down faster in 2023**  \n* Multiple analyses describe **2023 as a \u201cmass extinction event\u201d for startups**, with about **3,200 startups that had collectively raised around $27 billion shutting down in 2023**, according to PitchBook data cited by *Business Insider* and summarized by other outlets. These sources explicitly tie the wave of failures to a sharp pullback in venture funding and greater investor caution, not to operational mistakes alone. ([tech.yahoo.com](https://tech.yahoo.com/business/articles/10-biggest-startups-shut-down-110002840.html?utm_source=openai))  \n* A TechCrunch/TechCrunch\u2011echoed data set via Carta shows **769 U.S. startups shutting down in 2023** (Carta customers that dissolved or went bankrupt), with shutdowns subsequently rising further in 2024, and commentary that the increase is driven by macro conditions and a **lack of available venture funding in 2023\u201324**. ([techcrunch.com](https://techcrunch.com/2025/01/26/2025-will-likely-be-another-brutal-year-of-failed-startups-data-suggests/?utm_source=openai))  \n* TechCrunch\u2019s November 2023 analysis of the venture market (\u201cThe time to triage is over\u201d) notes that VCs had spent much of the downturn using reserves to **\u201ctriage\u201d portfolios with bridge capital**, but that this was no longer sustainable: funds \u201ccan\u2019t put resources toward companies that they know won\u2019t produce a return,\u201d and partners are now letting weaker companies sell or shut down instead. The piece predicts \u201ca really rough period of startup shutdowns\u201d as that reality plays out. ([techcrunch.com](https://techcrunch.com/2023/11/15/the-time-to-triage-is-over/?utm_source=openai))  \n* Broader 2023 commentary and data show a dramatic funding slowdown (e.g., global VC down roughly half year\u2011over\u2011year, and significant drops in deal value and fundraising), with capital concentrating in better\u2011performing companies and a large overhang of 2020\u201321\u2011vintage startups running out of runway. ([digitalnative.tech](https://www.digitalnative.tech/p/seed-investing-the-state-of-the-union?utm_source=openai))  \n\nPutting this together:\n\n* There is clear, quantitative evidence that **a non\u2011trivial share of venture funds shut down or went dormant in 2023\u201324**, in line with the prediction that some funds would not survive the post\u2011SVB, higher\u2011rate environment. ([scribd.com](https://www.scribd.com/document/925235735/Venture-Capital-Archive-2024-Report?utm_source=openai))  \n* There is also strong evidence that **many distressed startups failed in 2023 because they could not raise new capital or bridge rounds**, and that VCs explicitly shifted away from propping up weaker portfolio companies\u2014exactly what Friedberg meant by saying that ~\u201c75% distressed\u201d companies were \u201cdone for\u201d and \u201cno one\u2019s going to step in and bridge them,\u201d leading to an acceleration of shutdowns as \u201ccash is king.\u201d ([tech.yahoo.com](https://tech.yahoo.com/business/articles/10-biggest-startups-shut-down-110002840.html?utm_source=openai))  \n\nWhile not every detail (like the informal \u201c75% distressed\u201d threshold) is directly measurable, the **direction and substance** of his forecast match observed outcomes: consolidation and closures among venture funds, and a clear, funding\u2011driven spike in startup shutdowns over the remaining months of 2023. Therefore, the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 814,
+          "start_index": 703,
+          "title": "Venture Capital Archive 2024 Report | PDF | Venture Capital | Corporate Finance",
+          "type": "url_citation",
+          "url": "https://www.scribd.com/document/925235735/Venture-Capital-Archive-2024-Report?utm_source=openai"
+        },
+        {
+          "end_index": 1266,
+          "start_index": 1173,
+          "title": "Number of US venture capital firms falls as cash flows to tech's top investors",
+          "type": "url_citation",
+          "url": "https://www.ft.com/content/7a787423-9466-4e55-8c0e-8811cfe44dd3?utm_source=openai"
+        },
+        {
+          "end_index": 2021,
+          "start_index": 1898,
+          "title": "Here are 10 of the biggest startups that shut down as part of an industry-wide 'mass extinction event'",
+          "type": "url_citation",
+          "url": "https://tech.yahoo.com/business/articles/10-biggest-startups-shut-down-110002840.html?utm_source=openai"
+        },
+        {
+          "end_index": 2494,
+          "start_index": 2349,
+          "title": "2025 will likely be another brutal year of failed startups, data suggests | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2025/01/26/2025-will-likely-be-another-brutal-year-of-failed-startups-data-suggests/?utm_source=openai"
+        },
+        {
+          "end_index": 3086,
+          "start_index": 2987,
+          "title": "The time to triage is over | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2023/11/15/the-time-to-triage-is-over/?utm_source=openai"
+        },
+        {
+          "end_index": 3505,
+          "start_index": 3393,
+          "title": "Seed Investing: The State of the Union - by Rex Woodbury",
+          "type": "url_citation",
+          "url": "https://www.digitalnative.tech/p/seed-investing-the-state-of-the-union?utm_source=openai"
+        },
+        {
+          "end_index": 3873,
+          "start_index": 3762,
+          "title": "Venture Capital Archive 2024 Report | PDF | Venture Capital | Corporate Finance",
+          "type": "url_citation",
+          "url": "https://www.scribd.com/document/925235735/Venture-Capital-Archive-2024-Report?utm_source=openai"
+        },
+        {
+          "end_index": 4417,
+          "start_index": 4294,
+          "title": "Here are 10 of the biggest startups that shut down as part of an industry-wide 'mass extinction event'",
+          "type": "url_citation",
+          "url": "https://tech.yahoo.com/business/articles/10-biggest-startups-shut-down-110002840.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction held true directionally. Startup shutdowns accelerated significantly in 2023 post-SVB: Carta data shows 770 shutdowns in 2023 vs. 467 in 2022 (65% increase), with Q1 2023-Q1 2024 up further; PitchBook notes ~3,200 failures amid funding crunch, aligning with 'cash is king' and no bridges for distressed firms ([Carta](https://carta.com/data/startup-shutdowns-q1-2024/), [Forbes](https://www.forbes.com/sites/kylewestaway/2024/02/07/the-top-5-startup-funding-trends-of-2023/), [BI](https://www.businessinsider.com/biggest-startup-shutdowns-in-2023-2023-12)). SVB chilled funding/venture debt ([NYT](https://www.nytimes.com/2023/03/27/technology/silicon-valley-bank-start-ups.html), [Fortune](https://fortune.com/2023/04/17/with-the-collapse-of-svb-venture-debt-is-drying-up/)). For VC funds, while not mass closures tied directly to SVB, activity plummeted (38% fewer active VCs per PitchBook; OpenView stopped investing Dec 2023), with some effectively shutting down operations ([PitchBook](https://pitchbook.com/news/articles/active-vc-investors-decline), [Axios](https://www.axios.com/2023/12/06/openview-venture-partners-stops-investing)). Broader 2023 downturn validated the 'extinction event' for distressed portfolios."
+    },
+    {
+      "id": "sacks-01:03:01.900",
+      "result": "wrong",
+      "explanation": "The prediction was that SVB\u2019s March 2023 failure would trigger **about a 60\u2011day freeze in venture deal-making**, with new investments and term sheets dropping to *minimal* levels as VCs focused almost entirely on existing portfolios.\n\nAvailable data and contemporaneous reporting don\u2019t support that:\n\n- **Global VC activity was already depressed before SVB failed.** Crunchbase shows Q1 2023 global funding at about $76B, down ~53% year over year, but *flat quarter\u2011over\u2011quarter* versus Q4 2022, meaning the quarter that included the March 10 SVB collapse did not show an additional cliff\u2011drop consistent with a sudden freeze. SVB is described as an \u201cadded shock to a weakened funding environment,\u201d not the cause of a new standstill. ([news.crunchbase.com](https://news.crunchbase.com/venture/global-vc-funding-falls-q1-2023/))\n\n- **By late March, observers already reported that any pause in deals had largely passed.** A TechCrunch piece on March 29, 2023 reported that SVB\u2019s failure did not appear likely to have \u201clasting adverse impact\u201d on venture deal activity and that \u201cany pause the news did create \u2026 has likely already passed.\u201d DocSend data cited there showed investor activity in pitch decks down only ~7% and founder activity down ~4% versus the same week a year prior, and multiple investors said the brief dip had reversed quickly. ([techcrunch.com](https://techcrunch.com/2023/03/29/svb-venture-deal-market-impact/))  That is well inside the predicted 60\u2011day window.\n\n- **Deal flow continued at substantial levels through Q2 2023, not \u201cminimal\u201d levels.** Crunchbase\u2019s Q2 2023 report shows global venture funding falling further to ~$65B (down 18% from Q1), but still funding more than 6,000 startups in the quarter, with roughly 1,500 seed and 1,200 early\u2011stage (Series A/B) rounds. That is a material slowdown, yet far from a freeze or near\u2011cessation of new deals. ([news.crunchbase.com](https://news.crunchbase.com/venture/vc-funding-falling-report-data-q2-2023-global/))\n\n- **VC behavior did tilt more toward existing portfolios, but not to the exclusion of new deals.** S&P Global reported that, particularly in insurtech, VCs \u201crattled by recent events\u201d were prioritizing reinforcing existing portfolio companies and becoming more selective about new investments, tightening an already difficult fundraising environment. ([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2023/3/insurtech-funding-flight-to-quality-to-accelerate-after-svb-collapse-74739313?utm_source=openai))  PitchBook/NVCA data cited by Clearbrook show a sharp drop in *venture debt* volume post\u2011SVB, especially at early stages, but equity deals continued, indicating a shift in risk appetite rather than a 60\u2011day halt. ([clearbrookglobal.com](https://www.clearbrookglobal.com/weekly-market-commentary-july-17-2023/?utm_source=openai))\n\nOverall, the evidence supports **a continuing cyclical downturn and some short\u2011lived caution immediately after the SVB collapse**, not a roughly two\u2011month period where new venture investments and term sheets fell to minimal levels. On that basis, Sacks\u2019s specific prediction of a 60\u2011day freeze is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 864,
+          "start_index": 771,
+          "title": "Global VC Funding Falls Dramatically Across All Stages In Rocky Q1, Despite Massive OpenAI And Stripe Deals\u00a0\u00a0",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/global-vc-funding-falls-q1-2023/"
+        },
+        {
+          "end_index": 1468,
+          "start_index": 1383,
+          "title": "SVB collapse spared an already muted venture deal market",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2023/03/29/svb-venture-deal-market-impact/"
+        },
+        {
+          "end_index": 2027,
+          "start_index": 1920,
+          "title": "AI Was Q2's Big Hope To Reverse The Global Venture Funding Slowdown. It Wasn't Enough",
+          "type": "url_citation",
+          "url": "https://news.crunchbase.com/venture/vc-funding-falling-report-data-q2-2023-global/"
+        },
+        {
+          "end_index": 2572,
+          "start_index": 2381,
+          "title": "Insurtech funding flight to quality to accelerate after SVB collapse | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2023/3/insurtech-funding-flight-to-quality-to-accelerate-after-svb-collapse-74739313?utm_source=openai"
+        },
+        {
+          "end_index": 2901,
+          "start_index": 2786,
+          "title": "Weekly Market Commentary - July 17, 2023 - Clearbrook",
+          "type": "url_citation",
+          "url": "https://www.clearbrookglobal.com/weekly-market-commentary-july-17-2023/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction of a roughly 60-day freeze (March-May 2023) in VC deal-making, with new investments and term sheets dropping to minimal levels, did not occur. US VC activity was already declining from 2022 highs (18,610 deals annually, ~4,650/quarter), but Q1 2023 saw an estimated 3,888 deals ($37B value) per PitchBook-NVCA Venture Monitor Q1 report ([PDF](https://nvca.org/wp-content/uploads/2023/04/Q1_23_VM_U.pdf)), including post-SVB March. Q2 2023 deal value was ~$39.8B (similar to Q1, down 48% YoY but no freeze), with seed deal counts stable or up per reports. Global funding: April $21B, May $22B (Crunchbase recaps). Articles confirm muted market spared further drop by SVB ([TechCrunch, Mar 29, 2023](https://techcrunch.com/2023/03/29/svb-venture-deal-market-impact/)); VCs aided portfolios but new deals continued at low steady pace, not 'minimal' (thousands quarterly). No sources report a freeze."
+    },
+    {
+      "id": "sacks-01:11:33.760",
+      "result": "right",
+      "explanation": "Evidence from March\u2013April 2023 shows that **depositor flight and contagion did spread to other U.S. regional banks**, with substantial cash outflows and runs/near-runs:\n\n- **First Republic Bank**: After the SVB and Signature failures in March 2023, First Republic experienced massive withdrawals. Its Q1 2023 filings reported over **$100 billion in deposit outflows** in March, largely tied to uninsured and wealthy depositors moving money after the SVB collapse. Multiple analyses characterized this as a classic modern bank run driven by contagion fears from SVB. \n- **Sector\u2011wide regional bank stress**: In the weeks following SVB\u2019s failure (mid\u2011March through April 2023), numerous U.S. regional banks\u2014such as PacWest and Western Alliance\u2014saw **sharp deposit declines and intense market pressure**, with reports of customers shifting funds to larger banks and money\u2011market funds for perceived safety. Regulators and financial press widely described this as **contagion from SVB\u2019s collapse** affecting regional institutions, even where fundamentals differed. \n- **Aggregate data on small/medium banks**: Federal Reserve and industry data released later in 2023 showed that **smaller U.S. banks suffered material net deposit outflows in March 2023**, while the largest banks and money\u2011market funds recorded inflows\u2014consistent with the \u201cflight to safety\u201d and \u201cwhy take a chance?\u201d behavior the prediction described. \n\nBecause (a) contagion fears did spread, (b) multiple regional banks experienced substantial deposit outflows, and (c) at least one major regional (First Republic) suffered a run severe enough to fail, the core substance of Sacks\u2019s prediction\u2014that *in the days and weeks after SVB\u2019s collapse, depositor flight would spread to other regional banks, causing significant cash outflows and runs at multiple institutions*\u2014is borne out by subsequent events.\n\nTherefore the prediction is **right**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was correct: depositor flight did spread post-SVB collapse, causing substantial outflows and runs at multiple regional banks. FDIC's Q1 2023 Quarterly Banking Profile reported a record **$472 billion** in total U.S. bank deposit outflows ([Reuters](https://www.reuters.com/markets/us/us-bank-deposits-fell-record-pace-while-profits-flat-q1-fdic-2023-05-31/)). NY Fed study found outflows concentrated in ~30 **super-regional banks** ($50-250B assets) like SVB ([Reuters](https://www.reuters.com/markets/us/deposit-outflows-after-svb-collapse-concentrated-among-super-regionals-ny-fed-2023-05-11/)). Contagion hit Signature Bank (heavy withdrawals, failed March 12) and First Republic (40% deposit drop Q1, seized May 1) ([FDIC speech](https://www.fdic.gov/news/speeches/2024/lessons-learned-us-regional-bank-failures-2023)). Big banks saw inflows from regionals ([CNN](https://www.cnn.com/2023/03/15/economy/big-banks-deposit-spike-svb)). This matches the 'days and weeks after' timeline from the March 11 podcast."
+    }
+  ]
+}

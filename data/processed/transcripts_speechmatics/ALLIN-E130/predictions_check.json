@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "count": 8,
+    "count_by_result": {
+      "wrong": 2,
+      "right": 2,
+      "inconclusive": 4
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:32:36.910",
+      "result": "wrong",
+      "explanation": "Chamath predicted that during the 2023 debt ceiling standoff, President Joe Biden would *invoke the 14th Amendment* and *unilaterally pass a budget via executive order* to avoid default.\n\nWhat actually happened:\n\n- The 2023 debt ceiling crisis was resolved through **legislation**, not unilateral executive action. On June 3, 2023, Biden signed the **Fiscal Responsibility Act of 2023**, a bipartisan bill passed by both the House and Senate, which suspended the debt ceiling until January 1, 2025. \n- Biden and his administration *discussed* the 14th Amendment as a potential legal theory, and Biden said he believed he had the authority, but he also explicitly noted this route would be legally contested and time-consuming. There is no record of him invoking the 14th Amendment to resolve the standoff. (This is widely reported across major outlets and legal analyses.)\n- No executive order was issued that **unilaterally \u201cpassed a budget\u201d or raised/suspended the debt ceiling**; instead, Treasury\u2019s X-date pressure led to a negotiated legislative deal.\n\nBecause the crisis was resolved via normal congressional legislation and **Biden did not invoke the 14th Amendment nor pass a budget via executive order**, the prediction did **not** come true.\n",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The 2023 debt ceiling crisis was resolved when Congress passed the Fiscal Responsibility Act of 2023, suspending the debt limit until January 2025, which President Biden signed into law on June 3, 2023. Biden considered invoking the 14th Amendment but did not do so, nor did he issue an executive order to unilaterally pass a budget. \n\nSources:\n- [Wikipedia: 2023 United States debt-ceiling crisis](https://en.wikipedia.org/wiki/2023_United_States_debt-ceiling_crisis)\n- [Politico: 14th Amendment and debt ceiling](https://www.politico.com/news/2023/05/19/14th-amendment-biden-debt-ceiling-00097932)\n- [PBS: Why Biden cautious on 14th Amendment](https://www.pbs.org/newshour/politics/why-biden-is-cautious-about-using-the-14th-amendment-to-address-the-debt-ceiling-crisis)"
+    },
+    {
+      "id": "C-00:32:42.590",
+      "result": "right",
+      "explanation": "The prediction was that the 2023 U.S. debt ceiling negotiations\u2014reported as being about $72 billion apart\u2014would be resolved with a bipartisan agreement before an actual default.\n\nWhat happened:\n- On June 3, 2023, President Biden signed the **Fiscal Responsibility Act of 2023** into law after it passed both the House and Senate with bipartisan support, suspending the debt ceiling until January 1, 2025. \n- The Treasury Department had warned of a potential default around June 5, 2023 if the limit were not raised/suspended, but no default occurred; U.S. obligations continued to be paid on time.\n\nThus, the 2023 debt ceiling standoff was indeed **resolved with a bipartisan agreement before any actual default**, matching Friedberg\u2019s forecast.\n\nSo the prediction is **right**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was correct. Reuters reported on May 25-26, 2023, that negotiators were ~$70 billion apart ([Reuters](https://www.reuters.com/markets/us/biden-mccarthy-aides-hunt-bipartisan-debt-ceiling-deal-2023-05-25/)). The Fiscal Responsibility Act of 2023, a bipartisan deal between Biden and McCarthy, passed the House 314-117 and Senate 63-36 on June 1-2, 2023, suspending the debt ceiling until 2025 and averting default ([Congress.gov](https://www.congress.gov/bill/118th-congress/house-bill/3746), [Reuters](https://www.reuters.com/world/us/us-senate-aims-quick-passage-debt-ceiling-bill-avoid-default-2023-06-01/), [Wikipedia](https://en.wikipedia.org/wiki/2023_United_States_debt-ceiling_crisis))."
+    },
+    {
+      "id": "B-00:44:19.000",
+      "result": "inconclusive",
+      "explanation": "It is **too early** to determine whether this prediction is right or wrong.\n\nThe prediction is explicitly about the situation **five years** after the May 2023 discussion (\"in five years\") and \"around 2028\". Five years after 2023 is **2028**, which has not yet occurred as of **November 30, 2025** (2023 + 5 = 2028).\n\nWe can observe that, so far, the U.S. still has large federal deficits and a rising debt\u2011to\u2011GDP ratio, and no sweeping structural fiscal reform has been passed that clearly locks in a very different long\u2011term debt path. However, because the prediction concerns the state of affairs *by around 2028*, and future policy and economic developments between late 2025 and 2028 are unknown, we cannot yet conclusively say that the 2028 endpoint condition has been met or not.\n\nTherefore, the correct status today is **inconclusive (too early)**, even though the trajectory *so far* appears broadly consistent with the scenario Chamath described.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns the U.S. fiscal situation 'by around 2028' (five years from May 2023), including continued large deficits, higher debt-to-GDP, and no major reforms. As of December 2025 (FY2025 data), deficits remain large at $1.8T (5.9% GDP; [Treasury Fiscal Data](https://fiscaldata.treasury.gov), [CBO](https://www.cbo.gov/publication/61307), [Bipartisan Policy Center](https://bipartisanpolicy.org/report/deficit-tracker/)), similar to FY2023 (~$1.7T) and FY2024. Debt-to-GDP rose slightly from ~120% (end-2023; [Macrotrends](https://www.macrotrends.net/1381/debt-to-gdp-ratio-historical-chart), [FRED Q4 2023](https://fred.stlouisfed.org/series/GFDEGDQ188S)) to ~125% (FY2025 avg; [FiscalData](https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/), [FRED Q2 2025:118.8%](https://fred.stlouisfed.org/series/GFDEGDQ188S)). Debt ceiling raised (2023 FRA suspension to 2025, then +$5T to $41.1T in July 2025 'One Big Beautiful Bill'; [Treasury](https://home.treasury.gov), [Wikipedia](https://en.wikipedia.org/wiki/United_States_debt_ceiling), [Peterson](https://www.pgpf.org)), but no major structural reforms to alter trajectory. Too early to assess full 2028 status."
+    },
+    {
+      "id": "B-01:05:56.800",
+      "result": "inconclusive",
+      "explanation": "Chamath\u2019s prediction has two parts:\n\n1. **\"A few quarters, maybe a few years\" of hype and focus on Nvidia/AI chips.**  \n   From mid\u20112023 through late\u20112025, Nvidia and AI chips have remained at the very center of the AI trade. Nvidia passed a $1T valuation in 2023 and then became the first company to reach $4T and later $5T in 2025, with these gains explicitly attributed to surging demand for AI/data\u2011center hardware. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Nvidia?utm_source=openai))  Industry commentary describes an ongoing \u201cAI supercycle\u201d in which advanced chips and HBM memory are the main growth engine for semiconductors through at least 2025\u201326. ([stocks.observer-reporter.com](https://stocks.observer-reporter.com/observerreporter/article/tokenring-2025-10-22-chipmakers-face-bifurcated-reality-ai-supercycle-soars-while-traditional-markets-stumble?utm_source=openai))  That strongly supports the first part: the hype and outsized investor focus on Nvidia/AI chips have indeed persisted for multiple quarters and into multiple years after May 2023.\n\n2. **\"Then the smart money will probably figure out where the next lily pad is\" and rotate capital to the next part of the AI stack.**  \n   As of late 2025, there is *some* broadening of AI enthusiasm (e.g., Alphabet\u2019s surge toward a multi\u2011trillion valuation on AI and its own chips, plus interest in software, cloud, data centers, and power infrastructure), but Nvidia remains the clear centerpiece of the AI trade and a dominant weight in major indexes. ([reuters.com](https://www.reuters.com/business/alphabet-races-toward-4-trillion-valuation-ai-fueled-gains-accelerate-2025-11-24/?utm_source=openai))  Many analysts still project Nvidia to lead AI hardware and infrastructure well into the late 2020s, and discussions of rotation are mostly framed as future risk or early bearish positioning by some investors rather than a completed, broad *smart\u2011money* shift away from Nvidia and AI chips. ([businessinsider.com](https://www.businessinsider.com/greg-jensen-michael-burry-nvidia-chips-ai-depreciation-big-short-2025-11?utm_source=openai))  \n\nBecause the **first part** (sustained multi\u2011quarter/years hype around Nvidia and AI chips) has clearly been correct so far, but the **second, longer\u2011horizon part** (a substantial smart\u2011money rotation to the \u201cnext lily pad\u201d in the AI value chain) has *not yet clearly occurred* and may not be expected until further years out, the overall prediction cannot yet be judged fully right or wrong.\n\nHence, the status is **inconclusive (too early)**: one component has played out as described, but the key forward\u2011looking rotation piece is still unresolved.",
+      "sources": [
+        {
+          "end_index": 541,
+          "start_index": 465,
+          "title": "Nvidia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Nvidia?utm_source=openai"
+        },
+        {
+          "end_index": 934,
+          "start_index": 711,
+          "title": "Contact - Observer-Reporter",
+          "type": "url_citation",
+          "url": "https://stocks.observer-reporter.com/observerreporter/article/tokenring-2025-10-22-chipmakers-face-bifurcated-reality-ai-supercycle-soars-while-traditional-markets-stumble?utm_source=openai"
+        },
+        {
+          "end_index": 1726,
+          "start_index": 1577,
+          "title": "Alphabet races toward $4 trillion valuation as AI-fueled gains accelerate",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/business/alphabet-races-toward-4-trillion-valuation-ai-fueled-gains-accelerate-2025-11-24/?utm_source=openai"
+        },
+        {
+          "end_index": 2165,
+          "start_index": 2018,
+          "title": "Bridgewater's Greg Jensen echoes Michael Burry on Nvidia's AI chips &mdash; and says they could help make themselves obsolete",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/greg-jensen-michael-burry-nvidia-chips-ai-depreciation-big-short-2025-11?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction has held: Nvidia/AI chip hype persisted well beyond several quarters into a few years (2.5 years by Dec 2025), with NVDA market cap surging from ~$1T (May 2023, adj. close ~$38) to ~$4.3T (Nov 2025, [companiesmarketcap.com](https://companiesmarketcap.com/nvidia/marketcap/), [macrotrends.net](https://www.macrotrends.net/stocks/charts/NVDA/nvidia/market-cap)), record Q3 FY2026 revenue $57B (+62% YoY, [investor.nvidia.com](https://investor.nvidia.com)). NVDA YTD 2025 +34%, still #1 company despite recent dips ([finance.yahoo.com](https://finance.yahoo.com/quote/NVDA/history/)).\n\nRotation signs emerging late 2025: 'smart money' selling NVDA ([medium.com](https://bundleiq.medium.com/is-smart-money-selling-nvidia-258d63f044cb), Nov 19), 'Great AI Rotation' to software ([buysidedigest.com](https://www.buysidedigest.com/elevator/the-great-ai-rotation-has-begun-a-traders-guide-to-the-next-phase-brent-donnelly/), Nov 20), bets on AI software as chips struggle ([reuters.com](https://www.reuters.com/technology/artificial-intelligence/us-chip-darlings-struggle-some-bet-software-next-big-ai-play-2025-03-06/), Mar), 'rotating from Nvidia hardware to OpenAI software' ([sahmcapital.com](https://www.sahmcapital.com/news/content/nvidia-sell-signal-3-market-legends-dump-the-stock-2025-11-19), Nov 19). VC AI deals 51% global value Q3 2025 ([jdsupra.com](https://www.jdsupra.com/legalnews/artificial-intelligence-q3-2025-global-5267211/)), shifting downstream. Chamath himself noted inference > training shift ([benzinga.com](https://www.benzinga.com/markets/equities/25/01/43256925), Jan 2025). Sequence matches; not fully rotated yet but 'after which' phase starting."
+    },
+    {
+      "id": "B-01:04:21.000",
+      "result": "inconclusive",
+      "explanation": "The prediction explicitly concerns where *long\u2011term* economic value will accrue **5\u20137 years after** the start of the AI cycle around 2023\u2014i.e., roughly in **2028\u20132030**. As of today (November 30, 2025), we are only about two years into that window. Even though AI hardware companies like Nvidia have captured enormous value so far (e.g., Nvidia\u2019s market cap and revenue explosion driven by AI chips), it is still too early to determine whether, by 2028\u20132030, the *majority* of long\u2011term economic value will instead be captured by software and services built on top of AI. Because the prediction\u2019s evaluation period has not yet arrived, it cannot be judged now.\n\nTherefore, the correct status is: it\u2019s too early to tell whether this prediction will be right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction concerns long-term economic value accrual (majority to AI software/services companies) around 2028\u20132030, but the current date is December 2025\u2014only ~2.5 years into the cycle, far short of the 5\u20137 year horizon. Thus, it is too early to evaluate. For context, AI hardware leader Nvidia's market cap surged from ~$1T (end-2023, post-podcast) to $4.3T (Nov 2025) per [Macrotrends](https://www.macrotrends.net/stocks/charts/NVDA/nvidia/market-cap) and [CompaniesMarketCap](https://companiesmarketcap.com/nvidia/marketcap/). Top AI software startups (e.g., Forbes AI 50) have valuations in hundreds of millions to billions (e.g., Anysphere $176M), with aggregate funding ~$116B in H1 2025 per Inc., but dwarfed by Nvidia alone; no software firm matches hardware gains yet [Forbes AI 50](https://www.forbes.com/lists/ai50/), [Eqvista](https://eqvista.com/top-ai-startups-by-valuation/). Articles note hardware dominance so far (e.g., 'hardware is king again' [Carlsquare](https://carlsquare.com/insights/softwares-crown-is-at-risk-hardware-is-king-again/)), but long-term software moats remain unproven."
+    },
+    {
+      "id": "C-01:12:27.620",
+      "result": "wrong",
+      "explanation": "By mid\u20112024, neither the official U.S. business\u2011cycle arbiters nor the broad community of professional economists had concluded that a new recession was underway, let alone one that had already begun in mid\u20112023.\n\n* The National Bureau of Economic Research (NBER), which is the standard reference for dating U.S. recessions, still listed the last recession as running from February\u2013April 2020; its expansions\u2011and\u2011contractions table shows no new peak or recession start after that date as of its latest update, meaning no 2022\u20132023 recession has been officially dated. ([nber.org](https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions))\n* Data for 2023 show solid economic performance rather than recessionary conditions: real GDP grew about 2.5% in 2023, unemployment averaged a very low 3.6%, employment hit record highs, and real wages rose slightly after inflation. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Economic_policy_of_the_Biden_administration?utm_source=openai))\n* Entering and through early\u2011to\u2011mid 2024, major forecasts and official outlooks commonly described a likely or ongoing **soft landing**\u2014slower growth but no recession. The Congressional Budget Office projected a soft landing in 2024 with continued (albeit slower) growth and disinflation rather than a downturn. ([axios.com](https://www.axios.com/2023/12/15/us-economy-avoid-recession-inflation-cbo-projections?utm_source=openai)) Federal Reserve officials similarly grew more confident that the economy would avoid recession. ([investopedia.com](https://www.investopedia.com/fed-officials-increasingly-believe-economy-will-have-soft-landing-8613021?utm_source=openai))\n* Ratings agencies and large forecasters revised earlier recession calls to \u201cno recession\u201d or low odds of recession in 2024, again implying that they did not view a recession as already in progress dating back to 2023. ([forbes.com](https://www.forbes.com/sites/danirvine/2024/01/11/fitch-no-us-recession-predicted-in-2024-despite-warning-signs/?utm_source=openai))\n* More broadly, commentary in early 2024 characterized the U.S. as a standout case of reducing inflation while maintaining growth\u2014often explicitly framed as achieving or nearing a soft landing rather than being in a recession that had begun the prior year. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Soft_landing_%28economics%29?utm_source=openai))\n\nWhile a few dissenting voices claimed the U.S. was in a \u201csoft\u201d or \u201crolling\u201d recession, the mainstream professional and official view by mid\u20112024 was that the U.S. had *not* entered a new recession in 2023. Therefore, Sacks\u2019s prediction that economists a year later would say \u201cthe recession had already begun\u201d is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 697,
+          "start_index": 603,
+          "title": "US Business Cycle Expansions and Contractions | NBER",
+          "type": "url_citation",
+          "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+        },
+        {
+          "end_index": 1045,
+          "start_index": 932,
+          "title": "Economic policy of the Biden administration",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Economic_policy_of_the_Biden_administration?utm_source=openai"
+        },
+        {
+          "end_index": 1477,
+          "start_index": 1359,
+          "title": "U.S. economy will pull off soft landing in 2024, CBO projects",
+          "type": "url_citation",
+          "url": "https://www.axios.com/2023/12/15/us-economy-avoid-recession-inflation-cbo-projections?utm_source=openai"
+        },
+        {
+          "end_index": 1716,
+          "start_index": 1574,
+          "title": "Fed Officials Increasingly Believe Economy Will Have 'Soft Landing'",
+          "type": "url_citation",
+          "url": "https://www.investopedia.com/fed-officials-increasingly-believe-economy-will-have-soft-landing-8613021?utm_source=openai"
+        },
+        {
+          "end_index": 2083,
+          "start_index": 1937,
+          "title": "Fitch: No U.S. Recession Predicted In 2024 Despite Warning Signs",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/danirvine/2024/01/11/fitch-no-us-recession-predicted-in-2024-despite-warning-signs/?utm_source=openai"
+        },
+        {
+          "end_index": 2440,
+          "start_index": 2342,
+          "title": "Soft landing (economics)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Soft_landing_%28economics%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The National Bureau of Economic Research (NBER), the official arbiter of U.S. recession dates, has not declared any recession since the COVID-19 recession ending in April 2020. NBER-based recession indicators (e.g., FRED USREC) remain at 0.00 from 2023 through October 2025 ([web:3] NBER search; NBER Business Cycle Dating page). In mid-2024, economists widely noted that predicted recessions for 2023 had not materialized, with headlines like 'Economists Predicted a Recession. So Far They've Been Wrong' (NYT, Jan 2024) and 'The US avoided a recession in 2023' (NH Bulletin, Dec 2023). No professional consensus in mid-2024 dated an ongoing recession's start to mid-2023; instead, growth continued (e.g., GDP expanded 2.8% in 2024 per Conference Board, Sep 2025). Papers like Michaillat & Saez (2024) discuss indicators but do not reflect NBER dating or consensus on a 2023 start."
+    },
+    {
+      "id": "C-01:32:07.190",
+      "result": "right",
+      "explanation": "Evidence since the 2022\u20132023 tightening strongly supports Sacks\u2019s prediction of a large subsequent wave of company failures and bankruptcies.\n\n* **Sharp monetary tightening and liquidity withdrawal.** Between March 2022 and July 2023 the Fed raised the federal funds rate from near 0% to 5.25\u20135.50%, the fastest and largest hiking cycle in decades, after years of near\u2011zero rates and quantitative easing.([forbes.com](https://www.forbes.com/advisor/investing/fed-raises-interest-rates/?utm_source=openai)) This is the \u201cmoney being sucked out of the system\u201d backdrop Sacks was referring to.\n\n* **Corporate bankruptcies rose to post\u2011GFC highs.**\n  * In 2023, U.S. corporate bankruptcy filings (public + certain large private firms) jumped from the unusually low 2021\u20132022 levels and were already described as the highest since around 2010, driven largely by higher interest rates.([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2023/7/54-new-us-corporate-bankruptcies-take-h1-tally-to-highest-level-since-2010-76444770?utm_source=openai))\n  * In 2024, filings reached 694\u2013695, explicitly noted by S&P Global and other outlets as the **highest annual total since 2010**, with elevated interest rates and strained consumer finances cited as the main causes.([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2025/1/us-corporate-bankruptcies-soar-to-14-year-high-in-2024-61-filings-in-december-87008718?utm_source=openai))\n  * In 2025, the trend continued: by October there were already 655 filings, and S&P/Reuters reported that **2025 was on pace to hit the highest level of U.S. corporate bankruptcies in about 15 years.**([investing.com](https://www.investing.com/news/stock-market-news/us-corporate-bankruptcies-set-to-hit-15year-high-amid-credit-jitters-sp-data-shows-4357012?utm_source=openai))\n\n* **Startup and VC\u2011backed failures surged.**\n  * Carta data show **startup shutdowns rose from 467 in 2022 to 770 in 2023**, the highest number since Carta began tracking, with analysts calling 2023 \u201cthe most fatal year for startups,\u201d driven by a hostile funding climate after the 2021\u201322 boom.([forbes.com](https://www.forbes.com/sites/kylewestaway/2024/02/07/the-top-5-startup-funding-trends-of-2023/?utm_source=openai))\n  * By Q1 2024, **254 venture\u2011backed U.S. startups had already failed**, a 58% year\u2011over\u2011year increase and the highest quarterly total of the decade; the rise is attributed to companies running out of cash as venture funding and venture debt tightened.([techmonitor.ai](https://www.techmonitor.ai/leadership/startup-failures-surge-by-58-in-us-during-q1-2024-amid-funding-crunch?utm_source=openai))\n  * One 2025 review estimates **966 U.S. startups shut down in 2024**, up ~26% from 769 in 2023, describing a continuing \u201cwave of shutdowns\u201d linked to overfunding in 2020\u201321 and subsequent funding scarcity.([founderstoday.news](https://www.founderstoday.news/2025-another-tough-year-for-startups/?utm_source=openai))\n\nAcross both large corporates and venture\u2011backed startups, failures and bankruptcies have climbed to their highest levels since the aftermath of the Great Recession, clearly above the calm period that preceded the 2022\u20132023 tightening. While not on the scale of 2008\u20132009, the data show a broad, multi\u2011year spike in distress that matches Sacks\u2019s qualitative prediction of a big post\u2011tightening \u201ctsunami\u201d of failures within the 1\u20133 year window he suggested.",
+      "sources": [
+        {
+          "end_index": 540,
+          "start_index": 439,
+          "title": "Federal Funds Rate History 1990 to 2025 \u2013 Forbes Advisor",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/advisor/investing/fed-raises-interest-rates/?utm_source=openai"
+        },
+        {
+          "end_index": 1113,
+          "start_index": 916,
+          "title": "54 new US corporate bankruptcies take H1 tally to highest level since 2010 | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2023/7/54-new-us-corporate-bankruptcies-take-h1-tally-to-highest-level-since-2010-76444770?utm_source=openai"
+        },
+        {
+          "end_index": 1531,
+          "start_index": 1331,
+          "title": "US corporate bankruptcies soar to 14-year high in 2024; 61 filings in December | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2025/1/us-corporate-bankruptcies-soar-to-14-year-high-in-2024-61-filings-in-december-87008718?utm_source=openai"
+        },
+        {
+          "end_index": 1911,
+          "start_index": 1735,
+          "title": "US corporate bankruptcies set to hit 15-year high amid credit jitters, S&P data shows By Reuters",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/stock-market-news/us-corporate-bankruptcies-set-to-hit-15year-high-amid-credit-jitters-sp-data-shows-4357012?utm_source=openai"
+        },
+        {
+          "end_index": 2338,
+          "start_index": 2210,
+          "title": "The Top 5 Startup Funding Trends",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/kylewestaway/2024/02/07/the-top-5-startup-funding-trends-of-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 2737,
+          "start_index": 2592,
+          "title": "Startup failures surge by 58% in US during 2024 amid funding crunch",
+          "type": "url_citation",
+          "url": "https://www.techmonitor.ai/leadership/startup-failures-surge-by-58-in-us-during-q1-2024-amid-funding-crunch?utm_source=openai"
+        },
+        {
+          "end_index": 3055,
+          "start_index": 2945,
+          "title": "2025 set to be another tough Year for Startups as Failures continue to rise - FoundersToday",
+          "type": "url_citation",
+          "url": "https://www.founderstoday.news/2025-another-tough-year-for-startups/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction of a 'tsunami' of company failures and bankruptcies in the 1-3 years following 2022-2023 monetary tightening has materialized. US corporate bankruptcy filings have surged since 2023, reaching levels not seen in 14-15 years. Key data: S&P Global tracked 373 large filings in 2022, rising to ~635 in 2023, 686-694 in 2024, and 655 through Oct 2025 (on track to exceed prior years; [Reuters Nov 2025](https://www.reuters.com/legal/litigation/us-corporate-bankruptcies-set-hit-15-year-high-amid-credit-jitters-sp-data-shows-2025-11-13/), [FT Jan 2025](https://www.ft.com/content/ac3c1e2f-c9bc-417e-a686-7170e1bf8533)). Business filings per US Courts: 12,748 (2022), 15,724 (2023), 22,060 (2024), with 10.6% YoY rise into 2025 ([USCourts Nov 2025](https://www.uscourts.gov/data-news/judiciary-news/2025/11/24/bankruptcy-filings-increase-10-6-percent)). Large/mega filings elevated since early 2023, with 117 in 2H2024-1H2025 vs prior 113 ([Cornerstone Sep 2025](https://www.cornerstone.com/insights/press-releases/mega-bankruptcies-surge-in-first-half-of-2025/)). Explicitly tied to Fed rate hikes ([CSC Jun 2025](https://blog.cscglobal.com/the-surge-in-large-corporate-bankruptcy-filings-whats-driving-the-2024-2025-wave/)). Media describes as 'surge', 'wave' post-hikes ([Reuters Jan 2024](https://www.reuters.com/markets/us/us-bankruptcies-surged-18-2023-seen-rising-again-2024-report-2024-01-03/)). 2.5 years in, peak aligns perfectly."
+    },
+    {
+      "id": "B-01:35:02.630",
+      "result": "inconclusive",
+      "explanation": "Available full\u2011year sales data after the May 2023 episode show that the Tesla Model Y has **not yet** been the best\u2011selling vehicle in the United States, but the prediction didn\u2019t include a clear time limit, so it could still become true in a future year.\n\n**2023 U.S. sales:** Multiple industry summaries using Automotive News/Cox data report that the **Ford F\u2011Series** remained America\u2019s best\u2011selling vehicle in 2023, extending a decades\u2011long streak. The Tesla Model Y was high on the charts (around 5th place), with estimated U.S. sales in the mid\u2011380k range, but it did **not** surpass the F\u2011Series or other top trucks. ([motortrend.com](https://www.motortrend.com/news/best-selling-cars-trucks-suvs-in-america-2023/?utm_source=openai))\n\n**2024 U.S. sales:** For full\u2011year 2024, rankings again show the **Ford F\u2011Series** as the best\u2011selling vehicle in America, with roughly 730k\u2013760k units sold, while the Model Y sits several spots lower (typically 4th\u20136th) with ~370k\u2013410k units. ([motor1.com](https://www.motor1.com/features/716773/best-selling-cars-2024/?utm_source=openai))  Other analyses and state\u2011level breakdowns likewise show the Model Y leading in some states (e.g., California, Nevada, New Jersey, Washington) but not nationally. ([visualcapitalist.com](https://www.visualcapitalist.com/the-best-selling-vehicle-in-america-by-state/?utm_source=openai))  Globally, the Model Y *did* become the world\u2019s best\u2011selling car in 2023, but that is a different claim than being #1 in the U.S. market. ([kbb.com](https://www.kbb.com/car-news/tesla-model-y-was-worlds-best-selling-car-in-2023/?utm_source=openai))\n\nBecause Chamath\u2019s statement was open\u2011ended (\"going to be the best selling car in America\") and was not explicitly tied to a specific year like 2023 or 2024, it is still **possible**\u2014though currently unrealized\u2014that a later full year (e.g., 2026 or beyond) could satisfy it. As of late 2025, we can say the prediction has **not yet come true**, but we **cannot** definitively say it will never do so. Therefore the fairest status is **inconclusive (too early)** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 782,
+          "start_index": 666,
+          "title": "Lessons From 2023's Best-Selling New Cars, Trucks, and SUVs in America",
+          "type": "url_citation",
+          "url": "https://www.motortrend.com/news/best-selling-cars-trucks-suvs-in-america-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 1126,
+          "start_index": 1030,
+          "title": "The 20 Best-Selling Cars of 2024",
+          "type": "url_citation",
+          "url": "https://www.motor1.com/features/716773/best-selling-cars-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 1412,
+          "start_index": 1290,
+          "title": "Mapped: The Best Selling Vehicle in Every U.S. State in 2024",
+          "type": "url_citation",
+          "url": "https://www.visualcapitalist.com/the-best-selling-vehicle-in-america-by-state/?utm_source=openai"
+        },
+        {
+          "end_index": 1661,
+          "start_index": 1551,
+          "title": "Tesla Model Y Was the World\u2019s Best-Selling Car in 2023 - Kelley Blue Book",
+          "type": "url_citation",
+          "url": "https://www.kbb.com/car-news/tesla-model-y-was-worlds-best-selling-car-in-2023/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction did not come true in 2024, the first full calendar year after the May 2023 podcast. Tesla Model Y US sales were ~373,000 (goodcarbadcar.net) or 405,900 estimated (caranddriver.com), ranking outside the top 3-5. Top sellers: Ford F-Series ~766,000 (motor1.com, best-selling-cars.com), Toyota RAV4 475,193 (Toyota pressroom.toyota.com, goodcarbadcar.net), Chevrolet Silverado ~500k+. Model Y was not #1 overall, non-truck, or SUV (caranddriver.com: RAV4 top non-truck). 2025 incomplete (Dec 1 date), sales down (caranddriver.com Q3 2025), but 2024 falsifies for that year; no evidence of fulfillment."
+    }
+  ]
+}

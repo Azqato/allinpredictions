@@ -1,0 +1,574 @@
+{
+  "meta": {
+    "count": 15,
+    "count_by_result": {
+      "wrong": 6,
+      "right": 4,
+      "ambiguous": 4,
+      "inconclusive": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:20:17.310",
+      "result": "wrong",
+      "explanation": "* **Product launch:** Trump Media & Technology Group did in fact launch Truth Social as a functioning social app. It debuted on Apple\u2019s App Store on February 21, 2022 and quickly hit the top of the free-app charts, with ongoing iOS, Android, and web clients now in active use. This contradicts the claim that they would \"never get a product out the door.\" ([cnbc.com](https://www.cnbc.com/2022/02/21/trumps-truth-social-app-tops-downloads-on-apple-app-store.html?utm_source=openai))\n\n* **User numbers in the first year:** Trump Media does not publish official user stats, but a Reuters\u2011based timeline compiled by SEO.ai estimates that Truth Social\u2019s monthly active users grew from about 0.5 million at launch in February 2022 to ~5.0 million in November 2022, ~5.5 million in December 2022, and ~6.0\u20136.5 million in January\u2013February 2023. That puts first\u2011year usage clearly in the \u201con the order of 5\u201310 million\u201d range. ([seo.ai](https://seo.ai/blog/how-many-users-does-truth-social-have?utm_source=openai)) These figures are consistent with later independent estimates that place Truth Social\u2019s active user base in the mid\u2011single\u2011digit millions (roughly 5\u20136.3 million monthly active users) by 2024\u20132025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai))\n\n* **Overall assessment:** The real world outcome is: (a) a real, publicly launched product exists (falsifying the \u201cnever launch\u201d part), and (b) its scale has indeed been in roughly the 5\u201310 million\u2011user band rather than anything massive (matching only the conditional back\u2011up claim). Because the normalized prediction includes both \"will never successfully launch\" **and** the conditional user\u2011range statement, the combined prediction, taken literally, resolves to false even though the conditional piece was directionally accurate. Therefore the overall prediction is scored as **wrong**.",
+      "sources": [
+        {
+          "end_index": 517,
+          "start_index": 391,
+          "title": "Trump's Truth Social app tops downloads on Apple App Store",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/02/21/trumps-truth-social-app-tops-downloads-on-apple-app-store.html?utm_source=openai"
+        },
+        {
+          "end_index": 1042,
+          "start_index": 955,
+          "title": "How Many Users Does Truth Social Have? Statistics & Facts (2025)",
+          "type": "url_citation",
+          "url": "https://seo.ai/blog/how-many-users-does-truth-social-have?utm_source=openai"
+        },
+        {
+          "end_index": 1322,
+          "start_index": 1240,
+          "title": "Truth Social",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Truth Social successfully launched on February 21, 2022 (Wikipedia, AP News, Reuters), countering the 'never launch' claim but satisfying the conditional clause. User metrics in the first year (Feb 2022\u2013Feb 2023) align with 'on the order of 5\u201310 million': seo.ai reports ~6.5M MAU by Feb 2023 (rising from 5.5M Dec 2022); Wikipedia notes ~6.55M avg monthly visits May 2022\u2013Apr 2023; Reuters (Oct 2022) ~2.9M downloads by month 8; ~1M downloads first two weeks (Search Logistics). Later estimates (Similarweb ~5M MAU at IPO, Statista) confirm it hovered around this scale, never exploding to competitor levels (e.g., Twitter's 200M+ DAU). Prediction accurate overall."
+    },
+    {
+      "id": "B-00:23:10.560",
+      "result": "right",
+      "explanation": "*What was predicted?*\n\nChamath predicted that:\n1. The Digital World Acquisition Corp. (DWAC) / Trump Media & Technology Group (TMTG) deal **would actually complete its de\u2011SPAC**.\n2. At closing, the **enterprise value would be extremely high relative to expectations**, such that observers would be surprised.\n\n*Did the merger (de\u2011SPAC) actually close?*\n\nYes.\n- DWAC and TMTG completed their merger in late March 2024; TMTG became the public company and DWAC ceased to exist as a standalone SPAC.([ae.marketscreener.com](https://ae.marketscreener.com/quote/stock/TRUMP-MEDIA-TECHNOLOGY-GR-127708949/news/Trump-Media-Technology-Group-Corp-completed-the-acquisition-of-Digital-World-Acquisition-Corp-46279017/?utm_source=openai))\n- The combined company began trading on Nasdaq under the ticker **DJT** on March 26, 2024.([cnbc.com](https://www.cnbc.com/2024/03/26/trump-media-stock-ticker-djt-debuts-after-dwac-merger.html?utm_source=openai))\n\nThis directly confirms the \u201cit will de\u2011SPAC\u201d part of the prediction.\n\n*How high was the valuation at closing, relative to prior expectations?*\n\n**Deal / baseline expectations in 2021:**\n- The original merger agreement valued Trump Media at an **initial enterprise value of $875 million**, with potential earn\u2011outs lifting that to **up to $1.7 billion** if the stock performed well post\u2011combination.([sec.gov](https://www.sec.gov/Archives/edgar/data/1849635/000110465921128232/tm2130724d1_ex99-1.htm?utm_source=openai))  \nThis was the formal, stated EV baseline.\n\n**Market pricing at and immediately after de\u2011SPAC:**\n- On March 26, 2024, DJT\u2019s first trading day, the stock closed at **$57.99**, giving the company a market value of about **$7.85 billion**.([investor.wedbush.com](https://investor.wedbush.com/wedbush/article/predictstreet-2025-9-30-trump-media-and-technology-group-corp-djt-a-deep-dive-into-a-politically-charged-tech-stock?utm_source=openai))  \n- CNBC similarly reported that Trump\u2019s majority stake was worth over **$5 billion** during midday trading on the debut, implying a total equity value in the mid\u2011single\u2011digit billions.([cnbc.com](https://www.cnbc.com/2024/03/26/trump-media-stock-ticker-djt-debuts-after-dwac-merger.html?utm_source=openai))\n- Commentators noted that a business with only a few million dollars of annual revenue was being valued around **$6\u20138 billion**, describing it as a meme\u2011stock\u2011type valuation.([mediapost.com](https://www.mediapost.com/publications/article/394641/?utm_source=openai))\n\nRelative to the *deal* EV of $875M\u2013$1.7B, the actual market\u2011implied enterprise value at closing was several times higher (roughly 4\u20139\u00d7), which fits the prediction that closing EV would be \u201cvery high\u201d versus the original expectations embedded in the merger terms.\n\n**Expectations by the time of closing (skepticism the deal would ever get there):**\n- In 2022\u20132023, multiple investigations and SEC scrutiny created substantial doubt that the merger would close at all; short\u2011seller Kerrisdale Capital explicitly argued DWAC would **never secure regulatory approval to close the merger**.([benzinga.com](https://www.benzinga.com/m-a/22/08/28539560/donald-trumps-spac-deal-could-face-new-hurdle-in-vote-extension-could-the-merger-fall-apart?utm_source=openai))\n- DWAC\u2019s share price had collapsed from triple\u2011digit highs in 2021 to the mid\u2011teens by late 2022 amid worries about liquidation and failed extensions.([cnbc.com](https://www.cnbc.com/2022/09/06/shares-of-trump-spac-fall-after-merger-extension-vote-fails.html?utm_source=openai))  \n\nAgainst that backdrop\u2014where a non\u2011trivial camp expected *no deal* or a much more modest outcome\u2014the fact that the merger did close and produced a ~$7\u20138B equity value for a tiny\u2011revenue company was indeed far above what many skeptics and more conservative observers were expecting.\n\n*Were observers \u201cshocked\u201d by the valuation?*\n\n\"Shocked\" is subjective, but there is clear evidence that:\n- Financial and media commentary repeatedly highlighted how **disproportionately large** the valuation was compared with the company\u2019s revenues (on the order of a few million dollars per year), often in a mocking or incredulous tone.([mediapost.com](https://www.mediapost.com/publications/article/394641/?utm_source=openai))  \n- Coverage framed DJT as a **meme stock** driven by politics and retail enthusiasm rather than fundamentals, underlining how unusual the valuation was.([investor.wedbush.com](https://investor.wedbush.com/wedbush/article/predictstreet-2025-9-30-trump-media-and-technology-group-corp-djt-a-deep-dive-into-a-politically-charged-tech-stock?utm_source=openai))\n\nWhile \u201ceveryone will be shocked\u201d can\u2019t be measured precisely, the objective facts are that the\ndeal closed and the market\u2011implied enterprise value at closing was many times the original deal EV and widely described as extraordinary given the fundamentals.\n\n**Conclusion**\n\n- The **deal did de\u2011SPAC**, despite significant regulatory and legal overhang.\n- At and immediately after closing, Trump Media / DJT traded at an **enterprise/equity value massively above both the agreed 2021 deal valuation and what many skeptics thought was plausible**, provoking exactly the kind of disbelief Chamath alluded to.\n\nGiven those facts, the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 768,
+          "start_index": 537,
+          "title": "Trump Media & Technology Group Corp. completed the acquisition of Digital World Acquisition Corp. | MarketScreener UAE Emirates",
+          "type": "url_citation",
+          "url": "https://ae.marketscreener.com/quote/stock/TRUMP-MEDIA-TECHNOLOGY-GR-127708949/news/Trump-Media-Technology-Group-Corp-completed-the-acquisition-of-Digital-World-Acquisition-Corp-46279017/?utm_source=openai"
+        },
+        {
+          "end_index": 982,
+          "start_index": 860,
+          "title": "Trump Media stock ticker DJT debuts after DWAC merger",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/03/26/trump-media-stock-ticker-djt-debuts-after-dwac-merger.html?utm_source=openai"
+        },
+        {
+          "end_index": 1509,
+          "start_index": 1389,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://www.sec.gov/Archives/edgar/data/1849635/000110465921128232/tm2130724d1_ex99-1.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1954,
+          "start_index": 1750,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://investor.wedbush.com/wedbush/article/predictstreet-2025-9-30-trump-media-and-technology-group-corp-djt-a-deep-dive-into-a-politically-charged-tech-stock?utm_source=openai"
+        },
+        {
+          "end_index": 2263,
+          "start_index": 2141,
+          "title": "Trump Media stock ticker DJT debuts after DWAC merger",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/03/26/trump-media-stock-ticker-djt-debuts-after-dwac-merger.html?utm_source=openai"
+        },
+        {
+          "end_index": 2530,
+          "start_index": 2439,
+          "title": "Trump Media Co. Completes SPAC Merger, Stock Begins Trading Downward 03/22/2024",
+          "type": "url_citation",
+          "url": "https://www.mediapost.com/publications/article/394641/?utm_source=openai"
+        },
+        {
+          "end_index": 3293,
+          "start_index": 3122,
+          "title": "Could Donald Trump's SPAC Deal Fall Apart? Here Are The Stakes - Benzinga",
+          "type": "url_citation",
+          "url": "https://www.benzinga.com/m-a/22/08/28539560/donald-trumps-spac-deal-could-face-new-hurdle-in-vote-extension-could-the-merger-fall-apart?utm_source=openai"
+        },
+        {
+          "end_index": 3573,
+          "start_index": 3445,
+          "title": "Trump SPAC adjourns shareholder meeting as it seeks to delay merger deadline",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/09/06/shares-of-trump-spac-fall-after-merger-extension-vote-fails.html?utm_source=openai"
+        },
+        {
+          "end_index": 4297,
+          "start_index": 4206,
+          "title": "Trump Media Co. Completes SPAC Merger, Stock Begins Trading Downward 03/22/2024",
+          "type": "url_citation",
+          "url": "https://www.mediapost.com/publications/article/394641/?utm_source=openai"
+        },
+        {
+          "end_index": 4656,
+          "start_index": 4452,
+          "title": "",
+          "type": "url_citation",
+          "url": "https://investor.wedbush.com/wedbush/article/predictstreet-2025-9-30-trump-media-and-technology-group-corp-djt-a-deep-dive-into-a-politically-charged-tech-stock?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction succeeded on both counts. The DWAC/TMTG de-SPAC merger completed successfully, with shareholder approval on March 22, 2024, and closing on March 25, 2024, after which it traded as DJT on Nasdaq ([Wikipedia](https://en.wikipedia.org/wiki/Digital_World_Acquisition_Corp.), [Reuters](https://www.reuters.com/markets/us/trumps-media-company-shares-jump-ahead-backdoor-nasdaq-debut-2024-03-26/), [Bloomberg](https://www.bloomberg.com/news/articles/2024-03-26/trump-social-media-firm-gains-20-ahead-of-post-spac-deal-debut)).\n\nThe initial deal valued TMTG at an enterprise value of ~$875M (announcement) or $1.1B at $10/share transaction price ([SEC filing](https://www.sec.gov/Archives/edgar/data/1849635/000110465921128231/tm2130724d1_ex99-1.htm), [SPAC Conference](https://news.spacconference.com/2024/03/25/digital-world-releases-vote-results-on-trump-media-deal/)). At closing/debut, DWAC closed ~$50/share on March 25, and DJT debuted March 26 closing at $57.99/share with a market cap/EV of ~$8B ([CNBC](https://www.cnbc.com/2024/03/26/trump-media-stock-ticker-djt-debuts-after-dwac-merger.html), [Reuters](https://www.reuters.com/markets/us/trumps-media-company-shares-jump-ahead-backdoor-nasdaq-debut-2024-03-26/)), over 7x the deal EV and surprising given TMTG's minimal revenue/losses (described as 'eye-popping' and 'meme-SPAC' in reports). This aligns with Chamath's forecast of a shockingly high closing value observers wouldn't anticipate."
+    },
+    {
+      "id": "C-00:23:52.100",
+      "result": "ambiguous",
+      "explanation": "Friedberg\u2019s statement was explicitly conditional: he said that **if** the DWAC\u2013Trump Media SPAC \u201cactually does de\u2011SPAC at this valuation,\u201d then Trump would not run again because he\u2019d have about \u201c$20 billion\u201d of equity value in the new media business.([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand?utm_source=openai))\n\nWhat actually happened:\n\n* The DWAC\u2013Trump Media & Technology Group merger did not close at anything close to a ~$20B equity valuation. When trading in DJT began on March 26, 2024, public estimates of the company\u2019s market cap were in the mid\u2013single\u2011digit billions (roughly $2.7\u20139.5B depending on share-count assumptions), and Trump\u2019s stake was valued in the mid\u2011single\u2011digit billions, not ~$20B.([cnbc.com](https://www.cnbc.com/2024/03/26/trump-media-stock-ticker-djt-debuts-after-dwac-merger.html?utm_source=openai))\n* The merger itself was completed in late March 2024.([accessnewswire.com](https://www.accessnewswire.com/newsroom/en/business-and-professional-services/digital-world-acquisition-corp.-and-trump-media-and-technology-gr-846488?utm_source=openai))\n* Separately, Trump **did** run for president again: he announced his 2024 candidacy on November 15, 2022, later secured the Republican nomination in July 2024, won the November 6, 2024 election, and was inaugurated again on January 20, 2025.([en.wikipedia.org](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai))\n\nHowever, Friedberg\u2019s prediction was of the form: *If (deal closes at ~20B valuation), then (Trump won\u2019t run again).* Because the antecedent never occurred \u2014 the deal closed but at far lower valuations than the ~$20B level he was talking about \u2014 we can\u2019t directly observe the world in which his condition is satisfied. The truth of the counterfactual \u201cif Trump had actually gotten a ~$20B equity value from this SPAC, he would not have run again\u201d therefore cannot be determined from real\u2011world outcomes.\n\nGiven that the condition for the prediction was not met, and the statement is about a hypothetical scenario, the forecast cannot be cleanly scored as right or wrong. It is best classified as **ambiguous**: enough time has passed, but whether the prediction would have held under its stated condition is inherently unresolvable.",
+      "sources": [
+        {
+          "end_index": 490,
+          "start_index": 287,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E52: Trump's SPAC, peak venture liquidity, tech as an economic ladder, Dems overplaying their hand Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand?utm_source=openai"
+        },
+        {
+          "end_index": 1012,
+          "start_index": 890,
+          "title": "Trump Media stock ticker DJT debuts after DWAC merger",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2024/03/26/trump-media-stock-ticker-djt-debuts-after-dwac-merger.html?utm_source=openai"
+        },
+        {
+          "end_index": 1259,
+          "start_index": 1067,
+          "title": "Digital World Acquisition Corp. and Trump Media & Technology Group Corp. Announce Completion of Business Combination",
+          "type": "url_citation",
+          "url": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/digital-world-acquisition-corp.-and-trump-media-and-technology-gr-846488?utm_source=openai"
+        },
+        {
+          "end_index": 1612,
+          "start_index": 1503,
+          "title": "Donald Trump 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai"
+        }
+      ],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The merger between DWAC and Trump Media & Technology Group (TMTG) completed on March 25, 2024, with shares debuting under ticker DJT on March 26, 2024, at a market cap of approximately $8 billion (closing price $57.99/share; sources: [Bloomberg](https://www.bloomberg.com/news/articles/2024-03-26/trump-social-media-firm-gains-20-ahead-of-post-spac-deal-debut), [Reuters](https://www.reuters.com/markets/us/trumps-media-company-shares-jump-ahead-backdoor-nasdaq-debut-2024-03-26/), [NYT](https://www.nytimes.com/2024/03/26/business/trump-media-stock.html)). This is not 'roughly $20B' as specified in the prediction's condition (2021 hype implied higher valuations, e.g., peaks over $10B, but de-SPAC valuation was ~40% lower).\n\nDonald Trump announced his 2024 candidacy on November 15, 2022, secured the nomination in March 2024, and won the election (sources: [Wikipedia 2024 election](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [CNN](https://www.cnn.com/2022/11/15/politics/trump-2024-presidential-bid)).\n\nSince the 'if' condition (merger at ~$20B valuation) was not satisfied, the prediction's scenario did not occur, making it impossible to verify the consequent even though sufficient time (post-2024 election, now Dec 2025) has passed."
+    },
+    {
+      "id": "D-00:33:17.840",
+      "result": "wrong",
+      "explanation": "The prediction was that for the *2024 U.S. presidential election* there was roughly a 50% chance Joe Biden would be on the general-election ballot and a 50% chance Donald Trump would be on the general-election ballot.\n\nWhat actually happened:\n- Joe Biden was the Democratic Party nominee and appeared on the 2024 general-election presidential ballot.\n- Donald Trump was the Republican Party nominee and appeared on the 2024 general-election presidential ballot.\n\nBoth Biden and Trump were in fact on the ballot, so ex post the *realized* outcome was that **both** appeared, not that each only had a 50% chance of doing so.\n\nWhile you can\u2019t strictly falsify a probabilistic statement from a *single* outcome in a formal statistical sense, for the purposes of judging this concrete, binary forecast about who would be on the 2024 ballot, the world that occurred (\"both on\") is inconsistent with the implication that it was only a 25% joint-probability scenario (0.5 \u00d7 0.5). Treated as a practical prediction about who would run, it did **not** match reality.\n\nTherefore, evaluated against what actually happened in the 2024 election, the prediction is best classified as **wrong**.",
+      "sources": [],
+      "grok_result": "ambiguous",
+      "grok_explanation": "The prediction assigned ~50% probability to both Joe Biden and Donald Trump appearing on the 2024 general-election ballot. In reality, Trump was the Republican nominee and appeared on ballots nationwide ([Wikipedia](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [Ballotpedia](https://ballotpedia.org/Presidential_candidates,_2024)), while Biden withdrew on July 21, 2024, and Kamala Harris became the Democratic nominee, so Biden was not on the ballot (no sources indicate otherwise; searches confirm Biden voted but was not a candidate). As a probabilistic forecast on a single binary outcome per candidate, it is ambiguous whether the ~50% estimates 'came true'\u2014Trump's occurrence aligns with the probability, Biden's non-occurrence does too in a binomial sense, but calibration on one event cannot be definitively judged right or wrong."
+    },
+    {
+      "id": "C-00:32:53.900",
+      "result": "wrong",
+      "explanation": "The prediction had two clear components:\n\n1. **Trump would focus on running his media company instead of running for president again.**  \n   This did *not* come true. Trump Media & Technology Group (TMTG), parent of Truth Social, did go public via a SPAC merger with Digital World Acquisition Corp. in March 2024 and now trades under ticker DJT, with Trump as the dominant shareholder. ([accessnewswire.com](https://www.accessnewswire.com/newsroom/en/business-and-professional-services/digital-world-acquisition-corp.-and-trump-media-and-technology-gr-846488?utm_source=openai))  However, Donald Trump formally announced a 2024 presidential campaign on November 15, 2022, became the Republican Party\u2019s presumptive and then official nominee in 2024, and went on to win the 2024 presidential election. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai))  He was inaugurated again on January 20, 2025, and is now serving as president, actively shaping GOP strategy for the 2026 midterms. ([reuters.com](https://www.reuters.com/world/us/trump-seizes-control-republicans-2026-election-strategy-with-his-presidency-line-2025-11-24/?utm_source=openai))  This directly contradicts the idea that he would **choose running the media empire instead of returning to the presidency**.\n\n2. **If it\u2019s not Biden, the Democratic nominee would be a Biden-aligned proxy rather than a significantly different ideological choice.**  \n   This *did* come true. President Joe Biden initially ran for re\u2011election and secured enough delegates, but after a widely criticized June 2024 debate performance he withdrew from the race on July 21, 2024. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  Biden endorsed his vice president, Kamala Harris, who was subsequently chosen as the Democratic nominee on August 5, 2024. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai))  Harris had served as his VP and ran on a platform broadly continuous with Biden\u2019s, fitting well with the notion of a *Biden-aligned proxy*.\n\nBecause the first, very specific claim (Trump opting for the media company instead of another presidential run) is clearly false, while the conditional second claim about a Biden-aligned proxy nominee is true, the **overall combined prediction is best judged as wrong.**",
+      "sources": [
+        {
+          "end_index": 614,
+          "start_index": 422,
+          "title": "Digital World Acquisition Corp. and Trump Media & Technology Group Corp. Announce Completion of Business Combination",
+          "type": "url_citation",
+          "url": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/digital-world-acquisition-corp.-and-trump-media-and-technology-gr-846488?utm_source=openai"
+        },
+        {
+          "end_index": 945,
+          "start_index": 836,
+          "title": "Donald Trump 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai"
+        },
+        {
+          "end_index": 1239,
+          "start_index": 1079,
+          "title": "Trump seizes control of Republicans' 2026 election strategy with his presidency on the line",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/trump-seizes-control-republicans-2026-election-strategy-with-his-presidency-line-2025-11-24/?utm_source=openai"
+        },
+        {
+          "end_index": 1861,
+          "start_index": 1718,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 2129,
+          "start_index": 1986,
+          "title": "Withdrawal of Joe Biden from the 2024 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction has two parts connected by 'and': (1) Trump chooses to run TMTG rather than seek the presidency again; (2) conditional on Biden not running, Dem nominee is Biden-aligned proxy.\n\nPart 1 is false: Trump announced his 2024 candidacy on Nov. 15, 2022, ran, and won the election on Nov. 5, 2024 ([Wikipedia: Trump 2024 campaign](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign); [CBS: Trump wins 2024](https://www.cbsnews.com/news/donald-trump-win-presidency-2024/)). While holding a ~$3-4B stake in TMTG (transferred to trust Dec. 2024; [NYT](https://www.nytimes.com/2024/11/13/business/trump-media-truth-social.html), [Reuters](https://www.reuters.com/business/media-telecom/trump-media-shares-fall-after-trump-transfers-his-stake-company-revocable-trust-2024-12-20/)), he prioritized and won the presidency.\n\nPart 2 is arguably true: Biden withdrew July 21, 2024, after primaries; Harris (his VP/proxy) became nominee ([Wikipedia: Biden withdrawal](https://en.wikipedia.org/wiki/Withdrawal_of_Joe_Biden_from_the_2024_United_States_presidential_election); [Politico](https://www.politico.com/news/2024/07/21/biden-drops-out-election-00169980)). But since part 1 failed, overall prediction is wrong."
+    },
+    {
+      "id": "B-00:26:28.790",
+      "result": "wrong",
+      "explanation": "Available evidence shows that Trump Media & Technology Group (TMTG) neither (a) became a major, M&A\u2011driven consolidator of media/tech assets nor (b) \"really shake[d] up\" or reshaped the U.S. media landscape by late 2025.\n\nOn the strategy side, TMTG\u2019s own 2024 results and 2025 filings describe it as operating Truth Social and building out related products like the Truth+ streaming service and the Truth.Fi financial/fintech brand. Management now says it is *exploring* mergers and acquisitions and may evolve into a holding company, but the same filings emphasize that 2024 was spent improving its own platforms and infrastructure rather than integrating acquired media or tech firms. There is no record of TMTG acquiring major media companies; instead, its expansion has been via organic product launches and partnerships (e.g., with Crypto.com, and a separate SPAC-based CRO digital-asset treasury venture), not transformative roll\u2011up acquisitions of existing U.S. media assets.([globenewswire.com](https://www.globenewswire.com/news-release/2025/02/14/3026874/0/en/TMTG-Reports-Full-Year-2024-Results.html?utm_source=openai))\n\nOn the impact side, Truth Social remains a relatively small, niche \"alt\u2011tech\" social network. Estimates for early 2025 put it at roughly 6.3 million active users, far below major platforms, and SimilarWeb/CNN data cited in public sources show its daily active users in the hundreds of thousands versus tens or hundreds of millions on X, Threads, Reddit, etc.([seo.ai](https://seo.ai/blog/how-many-users-does-truth-social-have?utm_source=openai)) Financially, TMTG generated only about $4 million in revenue in 2023 and around $3.6 million in 2024 while posting very large net losses (on the order of hundreds of millions of dollars), dramatically underperforming its own earlier projections of tens of millions of users and billions in revenue by the mid\u20112020s.([forbes.com](https://www.forbes.com/sites/kylemullins/2024/04/06/how-much-is-truth-social-really-worth/?utm_source=openai)) This scale and performance are inconsistent with any broad, structural reshaping of the U.S. media ecosystem.\n\nBecause TMTG did not, in practice, pursue a large, M&A\u2011led consolidation of media/tech assets and also failed to produce a significant disruption of the U.S. media landscape, Chamath\u2019s prediction\u2014\"this is going to really shake up the media landscape\" if run as an M&A vehicle\u2014has not come true.",
+      "sources": [
+        {
+          "end_index": 1167,
+          "start_index": 1019,
+          "title": "TMTG Reports Full-Year 2024 Results",
+          "type": "url_citation",
+          "url": "https://www.globenewswire.com/news-release/2025/02/14/3026874/0/en/TMTG-Reports-Full-Year-2024-Results.html?utm_source=openai"
+        },
+        {
+          "end_index": 1618,
+          "start_index": 1531,
+          "title": "How Many Users Does Truth Social Have? Statistics & Facts (2025)",
+          "type": "url_citation",
+          "url": "https://seo.ai/blog/how-many-users-does-truth-social-have?utm_source=openai"
+        },
+        {
+          "end_index": 2058,
+          "start_index": 1934,
+          "title": "How Much Is Truth Social Really Worth?",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/kylemullins/2024/04/06/how-much-is-truth-social-really-worth/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump Media & Technology Group (TMTG) did not primarily pursue an M&A-focused strategy of acquiring media and tech assets. Instead, it focused on organic product development, launching and iterating on Truth Social (2022), Truth+ (video streaming), and Truth Predict (prediction markets with Crypto.com partnership, Oct 2025). The only major 'acquisition' was its own SPAC merger with Digital World Acquisition Corp. (DWAC) to go public in Mar 2024. Recent activity (e.g., Feb 2025 board approval for M&A exploration fund, Aug 2025 crypto treasury SPAC with Yorkville/Crypto.com) is late (post-4 years), crypto-focused, and not completed media/tech deals reshaping anything. \n\nNo disruption or reshaping of U.S. media: Truth Social has ~2-6M monthly active users (e.g., [DemandSage Jul 2025](https://www.demandsage.com/truth-social-statistics/), [SEO.ai Jan 2025](https://seo.ai/blog/how-many-users-does-truth-social-have)), tiny vs. X (500M+) or Facebook (3B+). Revenue minimal ($821K Q1 2025, $777M cash but Q3 2025 $54.8M loss, stock at record lows ~$10-11 Nov 2025, down ~half post-election). No sources indicate media landscape impact; it's a niche 'MAGA' platform with financial struggles ([Reuters Nov 2025](https://www.reuters.com/business/media-telecom/trump-medias-quarterly-loss-widens-costs-soar-2025-11-07/), [Forbes Nov 2025](https://www.forbes.com/sites/johntobey/2025/11/17/trump-media-stock-djtthree-issues-put-it-on-thin-ice/)). Prediction failed after 4+ years."
+    },
+    {
+      "id": "B-00:42:50.770",
+      "result": "right",
+      "explanation": "Chamath predicted in October 2021 that at some future point the tech and venture market would undergo a major valuation reset, likening it to the dot\u2011com crash and arguing that the preceding liquidity would make the correction particularly violent.\n\nWithin roughly a year, this scenario occurred:\n\n- **Public tech bear market:** The Nasdaq Composite entered a bear market from November 2021 to December 2022, falling about 33% from its peak, compared with a roughly 78% drawdown during the 2000\u201302 dot\u2011com bust. ([aol.com](https://www.aol.com/nasdaq-officially-bear-market-heres-151200846.html?utm_source=openai)) While not as deep at the index level as 2000\u201302, it was still one of the worst Nasdaq bear markets since then.\n\n- **Speculative tech wiped out (dot\u2011com\u2011scale losses):** Highly valued, liquidity\u2011fueled tech names experienced collapses comparable to the dot\u2011com era. The ARK Innovation ETF (a basket of high\u2011growth, unprofitable tech) suffered a peak\u2011to\u2011trough drawdown of about **80.9%** between February 2021 and December 2022, on par with the Nasdaq\u2019s 78% collapse in the dot\u2011com crash. ([portfolioslab.com](https://portfolioslab.com/symbol/ARKK?utm_source=openai)) ARK\u2019s fintech ETF saw a similar maximum drawdown of about **78.6%** ending in December 2022. ([portfolioslab.com](https://portfolioslab.com/symbol/ARKF?utm_source=openai)) Bessemer\u2019s Nasdaq Emerging Cloud Index, tracking high\u2011growth SaaS names, fell over **40%** in 2022 from its 2021 peak, retracing all the way back to 2020 levels. ([bvp.com](https://www.bvp.com/atlas/state-of-the-cloud-2022?utm_source=openai)) These moves represent a severe rerating of the exact segment Chamath was talking about.\n\n- **Venture and late\u2011stage funding reset:** Venture markets also saw a dramatic reversal from 2021\u2019s liquidity boom. In the US, total VC investment value in 2022 shrank **40.8%** versus 2021, with deal volume down nearly 25%. ([globaldata.com](https://www.globaldata.com/media/business-fundamentals/vc-investment-us-shrinks-40-8-2022-reveals-globaldata/?utm_source=openai)) Globally, December 2022 venture deal value was down **66.7% year\u2011over\u2011year**, reflecting a sharp pullback from the 2021 funding frenzy. ([spglobal.com](https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/global-venture-capital-deal-value-falls-66-7-yoy-in-december-2022-73826071?utm_source=openai)) By 2023, total global VC funding had fallen about **40%** from 2022 to 2023 and, by 2024, was roughly **50%+ below 2021\u2019s peak**, indicating a sustained VC \u201cwinter\u201d after the boom. ([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2024/1/global-venture-capital-investments-continue-downtrend-in-december-2023-80043834?utm_source=openai)) This is exactly the sort of valuation reset and liquidity withdrawal he described.\n\n- **Violent mark\u2011downs for crossover investors:** Large crossover and growth funds that had aggressively deployed 2020\u201321 liquidity into tech and late\u2011stage venture were hit especially hard. Tiger Global\u2019s flagship fund lost over **50%** in 2022 amid the tech sell\u2011off, with reports of around **$17 billion** in losses wiping out much of a decade of gains. ([cnbc.com](https://www.cnbc.com/2022/06/02/tiger-global-drops-14percent-in-may-during-the-tech-sell-off-pushing-hedge-funds-2022-losses-to-over-50percent.html?utm_source=openai)) Even by the end of 2024 its big pandemic\u2011era private tech fund remained in the red despite an AI\u2011driven rebound, underscoring how brutal the reset was for capital that had chased 2020\u201321 valuations. ([businessinsider.com](https://www.businessinsider.com/tiger-global-investment-strategy-changes-from-2022-comeback-2025-5?utm_source=openai))\n\nRelative to the dot\u2011com crash, the *broad* Nasdaq decline was smaller, but in the speculative, liquidity\u2011driven parts of tech and in late\u2011stage venture, drawdowns (70\u201380% losses, funding collapsing by roughly half or more, and major crossover funds suffering historic hits) were of very similar magnitude to 2000\u201302. Chamath did not specify a date or catalyst, only that such a reset would \"eventually\" occur and would be made more violent by the prior liquidity. By 2022\u201323, that major valuation reset had clearly happened in exactly the areas he identified.\n\nGiven this evidence, the prediction that there would be a violent, dot\u2011com\u2011style rerating in tech and venture due to excess liquidity is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 650,
+          "start_index": 549,
+          "title": "The Nasdaq Is Officially in a Bear Market. Here's Why History Says Investors Shouldn't Panic.",
+          "type": "url_citation",
+          "url": "https://www.aol.com/nasdaq-officially-bear-market-heres-151200846.html?utm_source=openai"
+        },
+        {
+          "end_index": 1219,
+          "start_index": 1141,
+          "title": "ARK Innovation ETF (ARKK) - Stock Analysis | PortfoliosLab",
+          "type": "url_citation",
+          "url": "https://portfolioslab.com/symbol/ARKK?utm_source=openai"
+        },
+        {
+          "end_index": 1391,
+          "start_index": 1313,
+          "title": "ARK Fintech Innovation ETF (ARKF) - Stock Analysis | PortfoliosLab",
+          "type": "url_citation",
+          "url": "https://portfolioslab.com/symbol/ARKF?utm_source=openai"
+        },
+        {
+          "end_index": 1634,
+          "start_index": 1554,
+          "title": "State of the Cloud 2022 - Bessemer Venture Partners",
+          "type": "url_citation",
+          "url": "https://www.bvp.com/atlas/state-of-the-cloud-2022?utm_source=openai"
+        },
+        {
+          "end_index": 2099,
+          "start_index": 1952,
+          "title": "VC investment in the US shrinks by 40.8% in 2022, reveals GlobalData - GlobalData",
+          "type": "url_citation",
+          "url": "https://www.globaldata.com/media/business-fundamentals/vc-investment-us-shrinks-40-8-2022-reveals-globaldata/?utm_source=openai"
+        },
+        {
+          "end_index": 2429,
+          "start_index": 2236,
+          "title": "Global venture capital deal value falls 66.7% YOY in December 2022 | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/global-venture-capital-deal-value-falls-66-7-yoy-in-december-2022-73826071?utm_source=openai"
+        },
+        {
+          "end_index": 2804,
+          "start_index": 2611,
+          "title": "Global venture capital investments continue downtrend in December 2023 | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2024/1/global-venture-capital-investments-continue-downtrend-in-december-2023-80043834?utm_source=openai"
+        },
+        {
+          "end_index": 3427,
+          "start_index": 3248,
+          "title": "Tiger Global drops 14% in May during the tech sell-off, pushing hedge fund's 2022 losses to over 50%",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/06/02/tiger-global-drops-14percent-in-may-during-the-tech-sell-off-pushing-hedge-funds-2022-losses-to-over-50percent.html?utm_source=openai"
+        },
+        {
+          "end_index": 3768,
+          "start_index": 3627,
+          "title": "Tiger Global explains its comeback after its 56% loss in 2022 &mdash; and why it sees itself in Rory McIlroy",
+          "type": "url_citation",
+          "url": "https://www.businessinsider.com/tiger-global-investment-strategy-changes-from-2022-comeback-2025-5?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "There was a significant tech and VC valuation correction in 2022-2023, with NASDAQ dropping ~35% peak-to-trough (Nov 2021 ~16,000 to Oct 2022 ~10,200; [Macrotrends](https://www.macrotrends.net/1320/nasdaq-historical-chart), Yahoo Finance), VC funding down >60% ([Chamath Substack 2023](https://chamath.substack.com/p/higher-rates-will-lead-to-the-next)), unicorn valuations often halved or more (>80% down from peaks; [Industry Ventures](https://www.industryventures.com/insight/thinning-the-herd/)). However, this was not 'similar in severity' to dot-com (NASDAQ -78%, 15-year recovery; [Goldman Sachs](https://www.goldmansachs.com/our-firm/history/moments/2000-dot-com-bubble)). Markets recovered quickly: NASDAQ ~23,300 by late 2025 (>45% above 2021 peak; [FRED](https://fred.stlouisfed.org/series/NASDAQCOM)), VC funding rebounding (Q1 2025 $80-126B, valuations rising; [EY](https://www.ey.com/en_us/insights/growth/venture-capital-investment-trends), [KPMG](https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2025/venture-pulse-q1-2025.pdf)). Articles confirm 2022 milder than dot-com ([Fortune](https://fortune.com/2022/05/22/why-crypto-tech-stocks-crash-recession-dotcom-bubble/), [MarketWatch](https://www.marketwatch.com/story/the-2022-tech-wreck-is-not-the-same-as-the-dot-com-bust-but-investors-will-still-want-to-change-their-game-11654360806)). 4+ years later, no violent dot-com-scale event."
+    },
+    {
+      "id": "C-00:45:35.000",
+      "result": "inconclusive",
+      "explanation": "It\u2019s too early to definitively judge a prediction whose explicit horizon is \u201cthe next decade or two\u201d (into the 2030s\u20132040s) based on only ~4 years of data since 2021.\n\nThat said, **developments so far broadly align with his thesis** that tech\u2011driven firms would keep disrupting large incumbent public companies rather than 2021 being a final peak bubble:\n\n- The U.S. equity market has become *more* dominated by a handful of tech and tech\u2011adjacent giants. The \u201cMagnificent Seven\u201d (Apple, Microsoft, Alphabet, Amazon, Nvidia, Meta, Tesla) now account for about one\u2011third to 37% of the S&P 500\u2019s market cap, versus roughly 12% in 2015\u2014an unprecedented level of concentration\u2014and have massively outperformed the rest of the index. ([finance.yahoo.com](https://finance.yahoo.com/news/magnificent-seven-makes-one-third-140006761.html?utm_source=openai))\n- Nvidia, whose business is central to AI and automation, became the first company to hit about a $4T market cap in 2025 and alone represents around 7% of the S&P 500; U.S. tech as a whole now commands over 30% of S&P 500 market value, far above its share of current earnings, reflecting large forward bets on continued tech disruption. ([apnews.com](https://apnews.com/article/7947e86a7ee9a994b9f16c3c0779b74f?utm_source=openai))\n- Automation in \u201cold\u2011line\u201d sectors has accelerated: industrial robot installations roughly doubled globally over the past decade, with 542,000 robots installed in 2024 and total operating stock near 4.7 million, and multiple industry forecasts project industrial robotics markets growing at double\u2011digit CAGRs well into the 2030s as manufacturing, automotive, electronics, and other traditional industries automate. ([automation.com](https://www.automation.com/en-us/articles/september-2025/global-robot-demand-factories-doubles-10-years?utm_source=openai))\n\nAt the same time, there are **signs of froth and bubble\u2011like behavior**: tech and AI leaders trade at historically rich valuations, and commentators increasingly warn of an \u201cAI bubble\u201d or overconcentration risk in a small group of mega\u2011caps. ([washingtonpost.com](https://www.washingtonpost.com/business/2025/11/24/sp500-stock-market-tech-nvidia/?utm_source=openai)) This leaves open the possibility that what we\u2019re seeing now could still resolve into a classic boom\u2011bust rather than a decades\u2011long disruption cycle.\n\nBecause the prediction\u2019s main falsifiable claim is about *persistence through at least the early 2030s*, and we are only partway through that window, the fairest judgment as of late 2025 is **\u201cinconclusive (too early)\u201d**, even though current trends are directionally supportive of Friedberg\u2019s view rather than contradicting it.",
+      "sources": [
+        {
+          "end_index": 892,
+          "start_index": 772,
+          "title": "The Magnificent Seven makes up one-third of the S&P 500 \u2013 should investors be concerned?",
+          "type": "url_citation",
+          "url": "https://finance.yahoo.com/news/magnificent-seven-makes-one-third-140006761.html?utm_source=openai"
+        },
+        {
+          "end_index": 1324,
+          "start_index": 1231,
+          "title": "AI kingpin Nvidia crowned as first public company with a $4 trillion valuation",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/7947e86a7ee9a994b9f16c3c0779b74f?utm_source=openai"
+        },
+        {
+          "end_index": 1883,
+          "start_index": 1742,
+          "title": "Global Robot Demand in Factories Doubles Over 10 Years",
+          "type": "url_citation",
+          "url": "https://www.automation.com/en-us/articles/september-2025/global-robot-demand-factories-doubles-10-years?utm_source=openai"
+        },
+        {
+          "end_index": 2253,
+          "start_index": 2129,
+          "title": "The 'S&P 493' reveals a very different U.S. economy",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/business/2025/11/24/sp500-stock-market-tech-nvidia/?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "Only ~4 years have passed since the Oct 2021 prediction, which forecasts continuation/acceleration through at least early 2030s (10+ years). Current trends support continuation: S&P 500 tech sector weight rose from ~28% end-2021 ([Syntax Data](https://www.syntaxdata.com/research/know-what-you-own-revisiting-s-p-500-tech-exposure)) to 36% Nov 2025 ([Reuters](https://www.reuters.com/business/finance/ai-stock-wobble-points-us-market-reliance-tech-2025-11-06/)); industrials stable ~8-9%; AI/software/automation accelerating in manufacturing/autos/energy ([McKinsey Tech Trends 2025](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech), EV trends); no peak bubble reversal post-2022. Too early for full verification."
+    },
+    {
+      "id": "B-00:58:52.890",
+      "result": "ambiguous",
+      "explanation": "Available sources show that Chamath **announced plans** to visit Africa in December 2021 and to give talks there, but I could not find credible confirmation that the trip or the lectures actually occurred.\n\nEvidence for the plan:\n- In the All\u2011In E52 transcript (Oct 23, 2021), Chamath says: *\u201cI\u2019m about to do this thing in Africa and I\u2019m going there in December\u2026 we\u2019re thinking of just doing a couple of like, lectures and talks and stuff\u2026 Kenya, Nigeria, Ghana and there may be a couple of other [countries].\u201d* ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand?utm_source=openai))\n- Shortly after, Kenyan Wall Street reported that he **\u201chas announced he will be making his maiden visit to Africa in December 2021\u201d**, specifically to Kenya, Nigeria, and Ghana, and that *\u201cduring his trip, Chamath will be hosting a couple of fireside chats with the startup and investing community.\u201d* ([kenyanwallstreet.com](https://kenyanwallstreet.com/chamath-palihapitiya-is-visiting-kenya-ghana-nigeria/))\n- A December 13, 2021 Medium article likewise describes him as **announcing** his maiden visit to Kenya, Ghana, and Nigeria, linking back to the All\u2011In episode and the Kenyan Wall Street piece. ([medium.com](https://medium.com/coinmonks/3-recommendations-to-chamath-and-to-any-billionaire-who-is-coming-to-invest-in-africa-da65147008fa))\n\nHowever, despite searching news outlets, startup/tech media in Kenya, Nigeria, and Ghana, and other public coverage of Chamath\u2019s activities, I was **unable to locate any post\u2011December\u20112021 reports, photos, event recaps, or social posts** documenting that these fireside chats or lectures actually took place, nor any later references by Chamath or the All\u2011In podcast to having just completed an Africa speaking tour.\n\nBecause we have strong evidence of a **planned** December 2021 Africa trip with multiple talks, but no reliable public record confirming whether the trip happened or was canceled/modified, the truth of the prediction cannot be determined from available information. Hence the outcome is best classified as **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 755,
+          "start_index": 552,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E52: Trump's SPAC, peak venture liquidity, tech as an economic ladder, Dems overplaying their hand Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand?utm_source=openai"
+        },
+        {
+          "end_index": 1167,
+          "start_index": 1059,
+          "title": "The 'King of Spacs\u2019 Chamath Palihapitiya is Visiting Kenya, Ghana, Nigeria | The Kenyan Wallstreet",
+          "type": "url_citation",
+          "url": "https://kenyanwallstreet.com/chamath-palihapitiya-is-visiting-kenya-ghana-nigeria/"
+        },
+        {
+          "end_index": 1506,
+          "start_index": 1363,
+          "title": "3 recommendations to Chamath (and to any billionaire) who is coming to invest in Africa | by Dr. Alex Cahana | Coinmonks | Medium",
+          "type": "url_citation",
+          "url": "https://medium.com/coinmonks/3-recommendations-to-chamath-and-to-any-billionaire-who-is-coming-to-invest-in-africa-da65147008fa"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath announced plans on the Oct 23, 2021 All-In podcast (E52) to travel to Africa in December 2021 for lectures/talks, specifically mentioning Kenya, Ghana, Nigeria per contemporaneous reports like [Kenyan Wall Street (Oct 24, 2021)](https://kenyanwallstreet.com/chamath-palihapitiya-is-visiting-kenya-ghana-nigeria) and [Medium (Dec 13, 2021)](https://medium.com/coinmonks/3-recommendations-to-chamath-and-to-any-billionaire-who-is-coming-to-invest-in-africa-da65147008fa), which reference fireside chats. However, no evidence confirms the trip occurred: no tweets from @chamath (searches for Dec 2021-Jan 2022 yielded zero results), no news reports of events/lectures, no photos/recaps, and no later mentions in podcasts/Substack. Omicron surge likely disrupted plans. Extensive searches (e.g., 'Chamath Palihapitiya Africa December 2021', specific countries) only resurfaced announcements, not fulfillment."
+    },
+    {
+      "id": "B-00:58:54.690",
+      "result": "ambiguous",
+      "explanation": "Chamath\u2019s statement in E52 is an invitation/offer: he says he is going to Africa in December 2021 and tells Jason, \u201cYou can come with me in early December if you want,\u201d while they joke about Jason being his \u201cwingman as a service.\u201d([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand?utm_source=openai))  \n\nSeparately, Kenyan business media reported that Chamath had **announced** a maiden visit to Africa (Kenya, Nigeria, Ghana and possibly other countries) in December 2021, explicitly citing this All-In episode as the source.([kenyanwallstreet.com](https://kenyanwallstreet.com/chamath-palihapitiya-is-visiting-kenya-ghana-nigeria/))  Those pieces describe *Chamath\u2019s* planned trip but do not mention Jason joining him.\n\nDespite searching for later evidence (podcast recaps, news coverage of the trip, or social posts tying both Chamath and Jason to an Africa tour in early December 2021), there are no reliable public sources that clearly state whether Jason actually accepted the invitation and traveled with Chamath. The absence of mention does not prove that he did **not** go; it only means it was not documented in the sources we can access.\n\nBecause (1) the original quote is conditional (an option to join, not a firm prediction of Jason going), and (2) more than enough time has passed but publicly available information does not resolve whether Jason took the trip, the outcome **cannot be determined from current evidence**. Hence the prediction is best classified as **ambiguous** rather than right or wrong.",
+      "sources": [
+        {
+          "end_index": 470,
+          "start_index": 267,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E52: Trump's SPAC, peak venture liquidity, tech as an economic ladder, Dems overplaying their hand Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand?utm_source=openai"
+        },
+        {
+          "end_index": 806,
+          "start_index": 698,
+          "title": "The 'King of Spacs\u2019 Chamath Palihapitiya is Visiting Kenya, Ghana, Nigeria | The Kenyan Wallstreet",
+          "type": "url_citation",
+          "url": "https://kenyanwallstreet.com/chamath-palihapitiya-is-visiting-kenya-ghana-nigeria/"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Extensive web searches reveal only pre-trip announcements of Chamath Palihapitiya's planned Africa visit to Kenya, Ghana, and Nigeria in December 2021, stemming from the E52 All-In Podcast (e.g., [Kenyan Wall Street, Oct 24, 2021](https://kenyanwallstreet.com/chamath-palihapitiya-is-visiting-kenya-ghana-nigeria); Medium, Dec 13, 2021). No evidence confirms the trip occurred, including no news reports, Twitter posts from @chamath, photos, or mentions in subsequent All-In episodes like E60 (Dec 23, 2021). Jason Calacanis posted about COVID-19 recovery on Instagram [Dec 31, 2021](https://www.instagram.com/p/CYLXyXDrp7U/), suggesting he was not traveling internationally. No sources indicate Jason accepted the invitation or that they traveled together in early December 2021."
+    },
+    {
+      "id": "B-00:58:56.690",
+      "result": "wrong",
+      "explanation": "By the end of Joe Biden\u2019s first two years in office (January 20, 2023), he had signed a long list of major laws, including:\n\n- The $1.9 trillion **American Rescue Plan Act** (COVID and economic relief).  \n- The bipartisan **Infrastructure Investment and Jobs Act** (roughly $1 trillion over ten years for roads, bridges, transit, broadband, etc.).  \n- The **CHIPS and Science Act** to subsidize and onshore semiconductor manufacturing and fund R&D.  \n- The **Inflation Reduction Act**, the largest climate and clean\u2011energy investment in U.S. history, which also empowers Medicare to negotiate drug prices and extends ACA subsidies.  \n- The **Honoring our PACT Act** (veterans\u2019 toxic exposure benefits).  \n- The **Bipartisan Safer Communities Act** (first major federal gun\u2011safety law in nearly 30 years).  \n- The **Respect for Marriage Act**, codifying federal recognition of same\u2011sex and interracial marriage.  \n- The **Electoral Count Reform and Presidential Transition Improvement Act** and the **Juneteenth National Independence Day Act**, among other measures.\n\nThese were all enacted during the 117th Congress (2021\u201322). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Presidency_of_Joe_Biden?utm_source=openai))  Mainstream reporting and analysis across outlets describe Biden\u2019s first two years as **one of the most productive legislative periods in decades**, with the Associated Press noting that this agenda produced \u201cthe most productive first\u2011term Congress since President Lyndon Johnson,\u201d and multiple analyses calling his first two years \u201camong the most productive of any president in the past half century.\u201d ([thenationalherald.com](https://www.thenationalherald.com/first-congress-revealed-bidens-generational-ambition/?utm_source=openai))\n\nBy contrast, assessments of Donald Trump\u2019s first two years (January 20, 2017\u2013January 20, 2019) consistently emphasize a **much thinner legislative record**. The signature domestic achievement was the **Tax Cuts and Jobs Act of 2017**, a large tax overhaul cutting corporate and individual rates. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Tax_Cuts_and_Jobs_Act?utm_source=openai))  Additional notable statutes in that window include the **Bipartisan Budget Act of 2018** and the **First Step Act** (criminal\u2011justice reform) in December 2018. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Bipartisan_Budget_Act_of_2018?utm_source=openai))  However, key Trump priorities such as full repeal of the Affordable Care Act and a major infrastructure bill **failed** in Congress, and much of his domestic policy impact came via executive actions that were later reversible. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Economic_policy_of_the_first_Trump_administration?utm_source=openai))\n\nPolitical scientists who tally \u201cmajor laws\u201d find that the 2021\u201322 Congress under Biden passed more such significant bills than the typical recent Congress, while journalists and scholars routinely rank Biden\u2019s two\u2011year legislative output as exceeding that of other modern presidents, a group that includes Trump. ([dominionpost.com](https://www.dominionpost.com/2023/02/06/bidens-successes-were-made-possible-by-obama/?utm_source=openai))  There is no serious empirical literature arguing that Trump\u2019s first two years produced *more* or *larger* legislative and policy accomplishments than Biden\u2019s first two years; the weight of evidence points the other way.\n\nBecause Biden\u2019s first two years are widely regarded as **more** legislatively productive and substantively consequential than Trump\u2019s first two years, Chamath\u2019s prediction that Trump would have \u201cgotten more done\u201d in his first two years than Biden would in his was not borne out.",
+      "sources": [
+        {
+          "end_index": 1264,
+          "start_index": 1171,
+          "title": "Presidency of Joe Biden",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Presidency_of_Joe_Biden?utm_source=openai"
+        },
+        {
+          "end_index": 1800,
+          "start_index": 1668,
+          "title": "First Congress Revealed Biden's Generational Ambition - The National Herald",
+          "type": "url_citation",
+          "url": "https://www.thenationalherald.com/first-congress-revealed-bidens-generational-ambition/?utm_source=openai"
+        },
+        {
+          "end_index": 2191,
+          "start_index": 2100,
+          "title": "Tax Cuts and Jobs Act",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Tax_Cuts_and_Jobs_Act?utm_source=openai"
+        },
+        {
+          "end_index": 2452,
+          "start_index": 2353,
+          "title": "Bipartisan Budget Act of 2018",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Bipartisan_Budget_Act_of_2018?utm_source=openai"
+        },
+        {
+          "end_index": 2800,
+          "start_index": 2681,
+          "title": "Economic policy of the first Trump administration",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Economic_policy_of_the_first_Trump_administration?utm_source=openai"
+        },
+        {
+          "end_index": 3242,
+          "start_index": 3117,
+          "title": "Biden\u2019s successes were made possible by Obama - Dominion Post",
+          "type": "url_citation",
+          "url": "https://www.dominionpost.com/2023/02/06/bidens-successes-were-made-possible-by-obama/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath predicted Biden would secure fewer legislative and policy accomplishments in his first two years (by Jan 20, 2023) than Trump did in his (2017-2019). However, Biden passed more major legislation despite a divided Congress, while Trump (with unified Republican control initially) passed fewer landmark bills.\n\n**Trump's key bills (2017-2019):** Tax Cuts and Jobs Act (2017), First Step Act (2018), VA MISSION Act (2018). Many of 96 laws signed in 2017 were minor extensions/repeals ([NPR](https://www.npr.org/2017/12/27/573546883/trump-signed-96-laws-in-2017-here-is-what-they-do-and-how-they-measure-up)). ~400 public laws in 115th Congress ([GovTrack](https://www.govtrack.us/congress/bills/statistics)).\n\n**Biden's key bills (2021-Jan 2023):** American Rescue Plan ($1.9T, 2021), Infrastructure Investment and Jobs Act ($1.2T, 2021), CHIPS and Science Act (2022), Inflation Reduction Act (2022), Bipartisan Safer Communities Act (2022), PACT Act (2022). ([Washington Monthly](https://washingtonmonthly.com/2024/04/07/trump-vs-biden-who-got-more-done-on-legislation/), [Newsweek](https://www.newsweek.com/joe-biden-trump-two-years-president-1775220)). ~350 public laws in 117th Congress.\n\nAnalyses confirm Biden achieved more substantive legislation ([Washington Monthly](https://washingtonmonthly.com/2024/04/07/trump-vs-biden-who-got-more-done-on-legislation/); [Newsweek](https://www.newsweek.com/joe-biden-trump-two-years-president-1775220)). Policy via EOs/deregulation was significant for Trump, but Biden's legislative output exceeds Trump's in scale and number of major acts."
+    },
+    {
+      "id": "A-01:23:45.150",
+      "result": "right",
+      "explanation": "In the Oct 23, 2021 episode (E52), Jason tells listeners they are \"looking at locations in Miami\" for an All-In Summit and \"will have news shortly,\" directing them to sign up for email updates at summit.allinpodcast.co. ([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand?utm_source=openai)) Subsequent documentation shows that the first All-In Summit was indeed held in Miami Beach, Florida, at the New World Symphony from May 15\u201317, 2022. ([aedeapartners.com](https://www.aedeapartners.com/aneta-key-calendar/2022/all-in-summit-miami?utm_source=openai)) Biographical and media coverage of Jason Calacanis and the show likewise notes that their inaugural All-In Summit took place in Miami in May 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Jason_Calacanis?utm_source=openai)) Because the summit was scheduled and publicly announced as a Miami event within a few months of the episode, the promised location news for an All-In Summit in Miami did arrive in the \"near future,\" so this prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 460,
+          "start_index": 257,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E52: Trump's SPAC, peak venture liquidity, tech as an economic ladder, Dems overplaying their hand Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand?utm_source=openai"
+        },
+        {
+          "end_index": 724,
+          "start_index": 610,
+          "title": "All-In Summit \u2014 Aedea Partners LLC \u2014 Strategy Consulting and Training with Aneta Key",
+          "type": "url_citation",
+          "url": "https://www.aedeapartners.com/aneta-key-calendar/2022/all-in-summit-miami?utm_source=openai"
+        },
+        {
+          "end_index": 957,
+          "start_index": 872,
+          "title": "Jason Calacanis",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Jason_Calacanis?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The All-In Summit 2022 was held in Miami Beach, FL, from May 15-17, 2022, at the New World Symphony (sources: [Wikipedia](https://en.wikipedia.org/wiki/All-In_(podcast)), [Aedea Partners](https://www.aedeapartners.com/aneta-key-calendar/2022/all-in-summit-miami), [Simple Thread blog](https://www.simplethread.com/takeaways-from-all-in-summit/), Instagram posts, YouTube recaps). This is after the October 23, 2021 podcast episode. The All-In Summit Twitter account was created April 24, 2022, indicating announcements preceded the event. A 2023 summit was also in Miami (YouTube playlist mentions). This fulfills the prediction of announcing details for a Miami event 'in the near future' (~7 months later)."
+    },
+    {
+      "id": "A-01:24:00.190",
+      "result": "right",
+      "explanation": "The first All-In Summit was in fact held in **Miami Beach, Florida** in **May 2022**, with the program running from **May 15\u201317, 2022** at the New World Symphony. ([en.wikipedia.org](https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai)) This falls squarely within the March\u2013April\u2013May 2022 time window Jason said they were targeting. While the event ultimately spanned roughly 2\u20133 calendar days rather than a strictly defined two-day window, the core of the prediction\u2014that the planned Miami summit would take place in spring 2022 within that March\u2013May window\u2014was borne out by the actual dates, so it is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 286,
+          "start_index": 196,
+          "title": "All-In (podcast)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The All-In Summit 2022 occurred in Miami Beach, FL, from May 15-17, 2022 (Sunday 6 PM to Tuesday), fitting a two-day window in May 2022. Confirmed by multiple sources: Aedea Partners event listing ([aedeapartners.com](https://www.aedeapartners.com/aneta-key-calendar/2022/all-in-summit-miami)); All-In Podcast YouTube playlist and episodes (e.g., Elon Musk talk on May 16); attendee takeaways (simplethread.com, wadewilliams.com); Swagup blog (swagup.com, Dec 2022)."
+    },
+    {
+      "id": "C-01:24:03.790",
+      "result": "wrong",
+      "explanation": "The quote in context shows that Friedberg/Jason were promising a specific *January* LA event tied to Mark Suster\u2019s Upfront Summit: they say they will \u201cdo an LA show in January\u2026 a live All-In podcast at the Upfront Summit, Mark Suster\u2019s event in LA.\u201d([podscripts.co](https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand?utm_source=openai))  \n\nHowever, the 2022 Upfront Summit\u2014originally scheduled for January 26\u201327 at Banc of California Stadium in Los Angeles([cooley.com](https://www.cooley.com/events/2022/2022-01-26-upfront-summit?utm_source=openai))\u2014was postponed about five weeks due to the Omicron COVID wave and actually took place March 1\u20132, 2022 in Los Angeles.([dot.la](https://dot.la/upfront-summit-postponed-to-march-2656221992.html?utm_source=openai))  There is no record that the All\u2011In hosts did a separate live LA show in January 2022 outside of Upfront, and coverage of their first major branded live event instead points to the All\u2011In Summit held later in May 2022 in Miami, not Los Angeles.([en.wikipedia.org](https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai))  \n\nBecause the conference they tied the promise to was moved out of January and there is no evidence of any All\u2011In live show in Los Angeles during January 2022, the prediction that *\u201cThe All-In podcast will do a live show in Los Angeles in January 2022\u201d* did **not** come true.",
+      "sources": [
+        {
+          "end_index": 485,
+          "start_index": 282,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg - E52: Trump's SPAC, peak venture liquidity, tech as an economic ladder, Dems overplaying their hand Transcript and Discussion",
+          "type": "url_citation",
+          "url": "https://podscripts.co/podcasts/all-in-with-chamath-jason-sacks-friedberg/e52-trumps-spac-peak-venture-liquidity-tech-as-an-economic-ladder-dems-overplaying-their-hand?utm_source=openai"
+        },
+        {
+          "end_index": 701,
+          "start_index": 607,
+          "title": "2022 Upfront Summit // Cooley // Global Law Firm",
+          "type": "url_citation",
+          "url": "https://www.cooley.com/events/2022/2022-01-26-upfront-summit?utm_source=openai"
+        },
+        {
+          "end_index": 912,
+          "start_index": 818,
+          "title": "Upfront Summit Postponed to March Over Omicron Fears - dot.LA",
+          "type": "url_citation",
+          "url": "https://dot.la/upfront-summit-postponed-to-march-2656221992.html?utm_source=openai"
+        },
+        {
+          "end_index": 1247,
+          "start_index": 1157,
+          "title": "All-In (podcast)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/All-In_%28podcast%29?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence exists of an All-In Podcast live show in Los Angeles in January 2022. Wikipedia ([All-In (podcast)](https://en.wikipedia.org/wiki/All-In_(podcast))) states their first live event franchise, the All-In Summit, occurred May 15-17, 2022, in Miami Beach, FL, with the first LA Summit in September 2023 at UCLA's Royce Hall. Web searches for 'All-In Podcast live show Los Angeles January 2022', episode lists from 2022, and direct queries like 'did All-In podcast do a live show in LA January 2022' yielded no confirmations\u2014only later events like the 2022 Bestie Awards (live from Twitter HQ, Dec 2022) or unrelated podcasts. The podcast's events page ([allin.com/events](https://allin.com/events)) lists no 2022 LA January event. Since over three years have passed without records, the prediction did not occur."
+    },
+    {
+      "id": "B-01:24:55.370",
+      "result": "ambiguous",
+      "explanation": "Available public sources don\u2019t provide enough verifiable detail to determine whether *both* Chamath Palihapitiya and David Friedberg had newborn children within about a week of the Oct 23, 2021 episode.\n\nWhat we can see:\n\n- The very next All\u2011In episode (E53, published Oct 30, 2021) is summarized with a segment at 0:00 labeled \u201cBestie intro, **child update**, Joe Lonsdale\u2019s take on paternity leave,\u201d indicating at least some baby\u2011related news the following week but not specifying whose child(ren) or exact timing.\n  ([bilingualpodcastplayer.com](https://bilingualpodcastplayer.com/episode/128988))\n- Biographical sources say Chamath has five children in total and that he later married Nathalie Domp\u00e9, with whom he has at least one or two children, but they do **not** give birth dates for those younger children, so we can\u2019t tie any specific birth to late October 2021.\n  ([en.wikipedia.org](https://en.wikipedia.org/wiki/Chamath_Palihapitiya?utm_source=openai))\n- Public profiles of David Friedberg contain essentially no information about his children or their birth dates; his Wikipedia page\u2019s \u201cPersonal life\u201d section is silent on this.\n  ([en.wikipedia.org](https://en.wikipedia.org/wiki/David_Friedberg?utm_source=openai))\n- Even community chatter among All\u2011In listeners only clearly mentions a Friedberg baby much later (a 2025 Reddit comment saying he \u201cjust had a baby\u201d), which doesn\u2019t establish anything about 2021.\n  ([reddit.com](https://www.reddit.com//r/TheAllinPodcasts/comments/1m2sws4?utm_source=openai))\n\nBecause the births in question concern private family matters and are not documented with reliable, date\u2011specific public records or accessible transcripts, I cannot confirm whether **both** partners had given birth by \u201cthis time next week\u201d after the Oct 23, 2021 episode. The prediction therefore cannot be confidently scored as right or wrong based on available evidence.",
+      "sources": [
+        {
+          "end_index": 642,
+          "start_index": 561,
+          "title": "E53: Wealth tax, dealing with inflation as a capital allocator, big tech earnings, Facebook's rebrand, paternity leave & more - All-In with Chamath, Jason, Sacks & Friedberg - \u8bfb\u4e2d\u82f1\u6587\u7a3f\uff0c\u542c\u82f1\u6587\u64ad\u5ba2",
+          "type": "url_citation",
+          "url": "https://bilingualpodcastplayer.com/episode/128988"
+        },
+        {
+          "end_index": 1010,
+          "start_index": 920,
+          "title": "Chamath Palihapitiya",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Chamath_Palihapitiya?utm_source=openai"
+        },
+        {
+          "end_index": 1277,
+          "start_index": 1192,
+          "title": "David Friedberg",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/David_Friedberg?utm_source=openai"
+        },
+        {
+          "end_index": 1571,
+          "start_index": 1478,
+          "title": "JCal Friedberg BATTLE behind the scenes theory",
+          "type": "url_citation",
+          "url": "https://www.reddit.com//r/TheAllinPodcasts/comments/1m2sws4?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No evidence exists of Chamath Palihapitiya or David Friedberg having newborn children around late October/early November 2021. Chamath's children with ex-wife Brigette Lau were born ~2008-2012 (ages 5-9 in 2017 per CNBC); his first child with partner Nathalie Domp\u00e9 was conceived in 2018 (Times of India) or expected by 2019 (New Yorker, June 2021), making them toddlers by 2021, with a possible second later (Wikipedia lists two together, married 2023). A 2022 All-In clip shows Chamath's 'adorable daughter' (likely ~2-3yo). Friedberg has three children with wife Allison Broude pre-2021 (Famous Birthdays) and a fourth in June 2025 (Reddit r/allinpodofficial). No birth announcements, podcast mentions, or media hits for Oct/Nov 2021 births despite extensive searches (e.g., Twitter/Reddit-specific, date-range queries yielded zero). As public figures sharing personal stories on All-In Podcast, such events would likely be noted if true. [Wikipedia: Chamath](https://en.wikipedia.org/wiki/Chamath_Palihapitiya), [Friedberg](https://en.wikipedia.org/wiki/David_Friedberg); [New Yorker](https://www.newyorker.com/magazine/2021/06/07/the-pied-piper-of-spacs); [Times of India](https://timesofindia.indiatimes.com/life-style/relationships/love-sex/who-is-nathalie-dompe-all-you-need-to-know-about-chamath-palihapitiyas-wife/articleshow/117490999.cms); Reddit threads."
+    }
+  ]
+}

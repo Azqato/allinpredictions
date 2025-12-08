@@ -1,0 +1,515 @@
+{
+  "meta": {
+    "count": 11,
+    "count_by_result": {
+      "wrong": 6,
+      "right": 3,
+      "ambiguous": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "A-00:07:28.050",
+      "result": "wrong",
+      "explanation": "Episode E83 (\u201cMarket slide continues, and how to address Uvalde\u201d) was released on May 27, 2022.\u30101\u2020cite\u2020turn1search3\u3011 In the transcript, Jason refers to the Palmer Luckey All-In Summit session and says it will be \"coming out next week,\" framing it as part of \u201ca great week [of] all-in content next week.\u201d\u30101\u2020cite\u2020turn1search2\u3011 This clearly predicts that the Palmer Luckey confrontation/session will be released as a podcast in the following week (i.e., the week of May 30\u2013June 5, 2022).\n\nHowever, the Palmer Luckey All-In Summit session appears as the episode \"#AIS: Palmer Luckey on Anduril,\" which podcast platforms consistently list as being published on June 22\u201323, 2022 (e.g., iHeartRadio on June 22 and Apple Podcasts/Libsyn on June 23).\u30103\u2020cite\u2020turn3search0\u2020turn3search2\u2020turn3search10\u3011 That is roughly three to four weeks after E83, not in the next week/early June window Jason described. Therefore, although the episode was eventually released, the specific timing prediction (\u201ccoming out next week\u201d) was wrong.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The All-In Summit 2022 occurred May 15-17 in Miami ([source](https://www.aedeapartners.com/aneta-key-calendar/2022/all-in-summit-miami)). Podcast E83 was released May 27, 2022, predicting release of the Palmer Luckey confrontation session in early June 2022. The episode '#AIS: Palmer Luckey on Anduril' (featuring Jason's intro and Q&A where Luckey confronted Jason on social media attacks) was released June 22-23, 2022 on YouTube ([source](https://www.youtube.com/watch?v=nK0NfL2M5L4)), Apple Podcasts ([source](https://podcasts.apple.com/us/podcast/ais-palmer-luckey-on-anduril/id1502871393?i=1000567453063)), Spotify, and Libsyn ([source](https://allinchamathjason.libsyn.com/2022/06)). June 23 is late June, not early June or the following week."
+    },
+    {
+      "id": "F-00:24:33.540",
+      "result": "wrong",
+      "explanation": "Key question: Did the U.S. economy experience a recession in 2022 as formally classified by standard arbiters (especially the NBER)?\n\n1. **NBER has not declared a 2022 recession.** The National Bureau of Economic Research (NBER), which is widely treated as the official arbiter of U.S. business cycles, *did not* date a U.S. recession in 2022. Its listed recessions jump from the COVID recession of February\u2013April 2020 with no additional recession through and including 2022.\n2. **GDP did fall for two quarters, but that was *not* treated as a recession.** U.S. real GDP contracted in Q1 and Q2 of 2022, but grew again afterward; despite this, the NBER\u2019s Business Cycle Dating Committee explicitly did not designate 2022 as a recessionary period, largely because employment, income, and industrial production remained strong and continued to grow.\n3. **Consensus by major institutions and media** (e.g., Federal Reserve commentary, Congressional Research Service, and major financial press) as of 2023\u20132025 consistently refer to a *2022 slowdown* or *growth scare*, not an official U.S. recession, and clarify that no NBER recession was recorded for 2022.\n\nBecause the prediction specifically said the U.S. was headed into a \u201cserious downturn or recession\u201d that would be (in effect) recognized as such in 2022, and the U.S. did *not* have an officially dated recession in 2022, the prediction is **wrong**.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "The NBER, the official arbiter of US recessions, did not declare a recession in 2022. Their business cycle chronology lists the most recent recession as February 2020 (peak) to April 2020 (trough), with no subsequent recession including or overlapping 2022 ([NBER Business Cycle Dating](https://www.nber.org/research/business-cycle-dating), [US Business Cycle Expansions and Contractions](https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions)). Although initial GDP reports showed negative growth in Q1 (-1.6%) and Q2 (-0.6%) 2022, later revisions adjusted Q2 upward (e.g., to ~+0.6% per some sources like YCharts), and strong employment data prevented NBER classification. Recent confirmations (e.g., BEA revisions Sep 2024) affirm no recession occurred ([Jeffrey Frankel blog](https://www.jeffrey-frankel.com/2024/09/27/bea-revision-confirms-no-recession-in-2022/)). By 2025, sufficient time has passed for any declaration."
+    },
+    {
+      "id": "E-00:32:17.080",
+      "result": "right",
+      "explanation": "Chamath\u2019s conditional prediction was that if a macro slowdown forced meaningful downward revisions to corporate earnings forecasts, then U.S. equity markets would likely make their cycle low around the time those revisions occurred, within roughly 2\u20133 quarters of May 2022 (i.e., by about Q1 2023).\n\n**1. Macro slowdown and earnings forecast cuts in the next 2\u20133 quarters**  \n\u2022 The U.S. economy experienced a clear slowdown in 2022: real GDP contracted at an annualized \u20131.6% in Q1 2022 and \u20130.9% in Q2 2022, meeting the common \u201ctechnical recession\u201d definition and widely described as a technical recession. ([cnbc.com](https://www.cnbc.com/2022/07/28/gdp-q2-.html?utm_source=openai))  \n\u2022 By late 2022, analysts were sharply cutting forward S&P 500 earnings estimates. A Bank of America note in early November 2022 described a \u201ccomplete U\u2011turn\u201d in 2023 EPS estimates: 2023 EPS for the S&P 500 was down 3.6% just since the start of October and about 8% below its June 2022 peak, with forward estimates \u201ccut much larger than usual.\u201d ([equity-insider.com](https://equity-insider.com/2022/11/08/sp-500-earnings-estimates-for-2023-take-complete-u-turn-as-recession-risks-loom-according-to-bofa/?utm_source=openai))  \n\u2022 Goldman Sachs similarly slashed its S&P 500 EPS forecast in November 2022, noting that since the start of Q3 analysts had already lowered aggregate S&P 500 EPS by about 7%, versus a typical ~3%, and warning of \u201cadditional negative EPS revisions\u201d ahead. ([investing.com](https://www.investing.com/news/stock-market-news/goldman-says-earnings-season-is-weak-now-expects-flat-sp-500-eps-growth-for-2023-432SI-2934122?utm_source=openai))  \n\u2022 Over the following year, the calendar\u2011year 2023 EPS estimate fell from roughly $250 in mid\u20112022 to about $219 by May 2023 (a ~13% cut), confirming that earnings expectations were indeed revised down materially over the 2\u20133 quarters after May 2022. ([timelytopics.com](https://timelytopics.com/202305/index.html?utm_source=openai))  \n\n**2. Timing of the U.S. equity market low**  \n\u2022 The S&P 500\u2019s 2022 bear market trough is widely recorded as October 12, 2022, when it closed around 3,577, about 25% below its January 3, 2022 peak. ([marottaonmoney.com](https://marottaonmoney.com/did-the-2022-bear-market-continue-into-2023/?utm_source=openai))  \n\u2022 Multiple retrospectives identify that October 2022 low as the bottom of that bear market cycle, after which the index entered a new bull market and subsequently advanced more than 20% and later to new all\u2011time highs (e.g., surpassing 5,000 in February 2024 and 6,000 by November 2024), without revisiting or undercutting the October 12, 2022 level. ([campaignforamillion.com](https://www.campaignforamillion.com/post/corrections-and-bear-markets?utm_source=openai))  \n\n**3. Match to the prediction**  \n\u2022 The macro slowdown and associated downward revisions to earnings forecasts clearly materialized over the 2\u20133 quarters after May 2022 (roughly through late 2022 and into early 2023). ([equity-insider.com](https://equity-insider.com/2022/11/08/sp-500-earnings-estimates-for-2023-take-complete-u-turn-as-recession-risks-loom-according-to-bofa/?utm_source=openai))  \n\u2022 The S&P 500 made its cycle low on October 12, 2022\u2014about 4\u00bd months after the May 2022 podcast and within the 2\u20133 quarter window Chamath referenced. That low occurred right as cuts to 2023 EPS estimates were accelerating (notably during Q3/Q4 2022 earnings season). ([marottaonmoney.com](https://marottaonmoney.com/did-the-2022-bear-market-continue-into-2023/?utm_source=openai))  \n\nWhile earnings revisions continued somewhat beyond that exact date, the main elements of Chamath\u2019s call\u2014(1) a macro\u2011driven earnings downgrade cycle and (2) the equity market\u2019s ultimate low occurring during that downgrade phase and within the next 2\u20133 quarters\u2014did occur. On that basis, the prediction is best classified as **right**.",
+      "sources": [
+        {
+          "end_index": 720,
+          "start_index": 644,
+          "title": "GDP Q2: Economic growth fell 0.9%, sending strong recession signal",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/07/28/gdp-q2-.html?utm_source=openai"
+        },
+        {
+          "end_index": 1246,
+          "start_index": 1068,
+          "title": "S&P 500 earnings estimates for 2023 take \u2018complete U-turn\u2019 as recession risks loom, according to BofA - Equity Insider",
+          "type": "url_citation",
+          "url": "https://equity-insider.com/2022/11/08/sp-500-earnings-estimates-for-2023-take-complete-u-turn-as-recession-risks-loom-according-to-bofa/?utm_source=openai"
+        },
+        {
+          "end_index": 1685,
+          "start_index": 1505,
+          "title": "Goldman Says Earnings Season is 'Weak', Now Expects Flat S&P 500 EPS Growth for 2023 By Investing.com",
+          "type": "url_citation",
+          "url": "https://www.investing.com/news/stock-market-news/goldman-says-earnings-season-is-weak-now-expects-flat-sp-500-eps-growth-for-2023-432SI-2934122?utm_source=openai"
+        },
+        {
+          "end_index": 2021,
+          "start_index": 1939,
+          "title": "May 2023 | North Star Advisory Group",
+          "type": "url_citation",
+          "url": "https://timelytopics.com/202305/index.html?utm_source=openai"
+        },
+        {
+          "end_index": 2338,
+          "start_index": 2225,
+          "title": "Did the 2022 Bear Market Continue Into 2023? \u2013 Marotta On Money",
+          "type": "url_citation",
+          "url": "https://marottaonmoney.com/did-the-2022-bear-market-continue-into-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 2809,
+          "start_index": 2693,
+          "title": "Corrections and Bear Markets",
+          "type": "url_citation",
+          "url": "https://www.campaignforamillion.com/post/corrections-and-bear-markets?utm_source=openai"
+        },
+        {
+          "end_index": 3211,
+          "start_index": 3033,
+          "title": "S&P 500 earnings estimates for 2023 take \u2018complete U-turn\u2019 as recession risks loom, according to BofA - Equity Insider",
+          "type": "url_citation",
+          "url": "https://equity-insider.com/2022/11/08/sp-500-earnings-estimates-for-2023-take-complete-u-turn-as-recession-risks-loom-according-to-bofa/?utm_source=openai"
+        },
+        {
+          "end_index": 3595,
+          "start_index": 3482,
+          "title": "Did the 2022 Bear Market Continue Into 2023? \u2013 Marotta On Money",
+          "type": "url_citation",
+          "url": "https://marottaonmoney.com/did-the-2022-bear-market-continue-into-2023/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "A macro slowdown occurred in 2022 due to high inflation and Fed rate hikes, leading to significant downward revisions in S&P 500 earnings forecasts. FactSet reported large cuts to Q3 2022 EPS estimates by Sep 30, 2022 (largest in over two years, <a href='https://insight.factset.com/largest-cuts-to-eps-estimates-for-sp-500-companies-for-q3-2022-in-more-than-two-years'>FactSet Sep 30, 2022</a>). 2023 EPS estimates fell from ~$250 in early 2022 to $240 by Aug/Sep 2022 (<a href='https://www.tker.co/p/sp-500-forward-earnings-revisions'>TKer Sep 8, 2022</a>; <a href='https://hedgopia.com/revision-trend-in-23-earnings-estimates-down-yet-to-reflect-full-extent-of-end-demand-softness-that-lies-ahead/'>Hedgopia Sep 6, 2022</a>), with further cuts in Oct-Nov (e.g., BofA noted 3.6% drop since Oct start, <a href='https://www.marketwatch.com/story/s-p-500-earnings-estimates-for-2023-take-complete-u-turn-as-recession-risks-loom-according-to-bofa-11667843447'>MarketWatch Nov 7, 2022</a>). These revisions occurred within 2-3 quarters (Q3 2022-Q1 2023). The S&P 500 cycle low was in Oct 2022 (intraday low ~Oct 12-13, close low 3577 on Oct 12; monthly Sep close 3585, Oct rebound, <a href='https://en.wikipedia.org/wiki/2022_stock_market_decline'>Wikipedia</a>; YCharts historical), coinciding with peak revision period during Q3 earnings season. No lower low since; index rallied to new highs by 2025."
+    },
+    {
+      "id": "F-00:34:12.290",
+      "result": "right",
+      "explanation": "Multiple independent data points show that, as 2022 wore on and funding conditions tightened, startups increasingly used structured terms (especially enhanced liquidation preferences) to preserve prior high valuations rather than accept headline down rounds.\n\n* In June 2022, TechCrunch reported that many Series A/B companies that had raised at rich 2021 valuations were now doing **\u201coverly structured flat and extension rounds\u201d** instead of clean down rounds, and that these structured deals were \u201cthe most common thing we\u2019re seeing at this moment.\u201d The article describes investors adding punitive terms (e.g., high liquidation preferences, participating preferred) explicitly to avoid reducing the last round\u2019s valuation. ([techcrunch.com](https://techcrunch.com/2022/06/09/down-round-flat-round/?utm_source=openai))\n* On SVB Financial Group\u2019s **Q3 2022 earnings call**, management said: \u201cright now, we\u2019re not seeing a lot of down rounds, we\u2019re seeing more structured rounds,\u201d explaining that companies were **keeping the same price but adding a 2x liquidation preference** and similar terms. This was described as what they were actively seeing in late 2022, and framed as a way to protect valuations while markets reset. ([nasdaq.com](https://www.nasdaq.com/articles/svb-financial-group-sivb-q3-2022-earnings-call-transcript?utm_source=openai))\n* Carta\u2019s \"State of Private Markets\" data for Q1 2019\u2013Q2 2023 show that the share of rounds with **investor\u2011friendly terms like liquidation multipliers and participating preferred** rose to unusually high levels by late 2022 / early 2023 (8.2% of rounds in Q1 2023, 6.1% in Q2 2023), which the report characterizes as elevated \u201cwhen the venture market tightens up and funding is harder to find.\u201d ([carta.com](https://carta.com/data/state-of-private-markets-q2-2023/)) This implies a marked increase in structured deals versus the 2019\u20132021 period.\n* Valuation Research Corp\u2019s analyses of the post\u20112021 downturn note that **down rounds reached multiyear highs in 2023, but that statistics undercount effective down rounds because many companies chose flat or structured financings** instead. They state explicitly that the number of **structured new rounds\u2014featuring downside protection, cumulative dividends, and liquidation preferences at multiples of the original issue price\u2014was increasing**, used to avoid marking headline valuations down even though economics were equivalent to a down round. ([valuationresearch.com](https://www.valuationresearch.com/insights/venture-capital-market-outlook-2024/?utm_source=openai))\n* Follow\u2011on commentary in 2023 describes **structured term sheets as \u201cback in vogue\u201d**, with new investors demanding liquidation preferences up to 4x as an alternative to cutting valuations, again confirming the pattern sacks described\u2014structure used to mask what would otherwise be down\u2011round pricing in a tougher market that began in 2022. ([techcrunch.com](https://techcrunch.com/2023/08/03/operational-and-finance-tips-for-early-stage-startups-in-a-tough-market/?utm_source=openai))\n\nTaken together, these sources show that starting in mid\u2011 to late\u20112022, as startups that had raised at peak 2021 valuations ran into a much tougher funding environment, there was a clear, noticeable increase in structured rounds with features like multiple liquidation preferences and other preferences used specifically to preserve prior valuations. That matches sacks\u2019s prediction on both **timing** (\u201clater this year\u201d) and **mechanism** (structure used to avoid down rounds), so the prediction is best judged as **right**.",
+      "sources": [
+        {
+          "end_index": 854,
+          "start_index": 760,
+          "title": "The case for down rounds | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2022/06/09/down-round-flat-round/?utm_source=openai"
+        },
+        {
+          "end_index": 1385,
+          "start_index": 1262,
+          "title": "SVB Financial Group (SIVB) Q3 2022 Earnings Call Transcript | Nasdaq",
+          "type": "url_citation",
+          "url": "https://www.nasdaq.com/articles/svb-financial-group-sivb-q3-2022-earnings-call-transcript?utm_source=openai"
+        },
+        {
+          "end_index": 1856,
+          "start_index": 1785,
+          "title": "State of Private Markets: Q2 2023 | Carta",
+          "type": "url_citation",
+          "url": "https://carta.com/data/state-of-private-markets-q2-2023/"
+        },
+        {
+          "end_index": 2612,
+          "start_index": 2488,
+          "title": "Venture Capital Market Outlook 2024: Trends and Predictions | Valuation Research Corp.",
+          "type": "url_citation",
+          "url": "https://www.valuationresearch.com/insights/venture-capital-market-outlook-2024/?utm_source=openai"
+        },
+        {
+          "end_index": 3100,
+          "start_index": 2956,
+          "title": "Operational and finance tips for early-stage startups in a tough market | TechCrunch",
+          "type": "url_citation",
+          "url": "https://techcrunch.com/2023/08/03/operational-and-finance-tips-for-early-stage-startups-in-a-tough-market/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction came true. In late 2022, as VC conditions worsened, reports documented a noticeable rise in structured VC deals using terms like multiple liquidation preferences, participating preferred stock, convertibles, and PIK dividends to enable flat/bridge rounds that preserved prior valuations and avoided explicit down rounds. \n\n- **PitchBook (Oct 12, 2022)**: Structured equity (e.g., convertibles, debt with warrants, preferred equity) made a 'comeback'; investors frequently demanded 2x liquidation preferences; examples like Tonal's summer 2022 round. Used to extend runways without priced equity. [Link](https://pitchbook.com/news/articles/structured-equity-liquidation-preference-startup-funding)\n\n- **KPMG Venture Pulse Q4 2022**: Unicorns/companies accepted 'stringent deal terms such as multiple liquidation preferences or ratchets' to maintain valuations via flat rounds/extensions, anticipating more down rounds in 2023. [PDF](https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2023/01/venture-pulse-q4-2022.pdf)\n\n- **Carta (Q1 2024 report, historical context)**: Investor protections (1x+ liq prefs in 8% of rounds, participating prefs, etc.) rose post-2022 bull market end; trend began late 2022 amid valuation reset. [Link](https://carta.com/data/deal-terms-q1-2024/)\n\nOther sources (e.g., a16z Sep 2022, Kruze Aug 2022) confirm structured terms proliferating then. While percentages remained low (e.g., WilmerHale: 0% multiples in 2022, rising to 8% in 2023 first rounds), the shift was 'noticeable' per industry commentary, matching the quote on desperation-driven structure."
+    },
+    {
+      "id": "F-00:34:55.020",
+      "result": "right",
+      "explanation": "Evidence from late 2022 shows that the tech talent market was clearly less overheated than it had been in early 2022, matching Sacks\u2019s directional and timing call.\n\nBy the **end of 2022**, multiple sources describe a marked shift from a candidate\u2011scarce \u201ctalent war\u201d to a market with more job seekers and fewer postings. A 2024 Appcast benchmark report notes that *at the end of 2022 and continuing through 2023, tech companies engaged in layoffs after a period of over\u2011hiring*, producing a **shrunken market with fewer job postings** and \u201chordes of eager tech employees\u201d chasing those jobs. ([scribd.com](https://www.scribd.com/document/855659990/Report-2024-Recruitment-Marketing-Benchmark-Report-1?utm_source=openai)) An executive\u2011search survey summarizing **late\u20112022 conditions** similarly concludes that large\u2011scale tech layoffs increased the supply of candidates and *\u201ceased the shortage of recent years.\u201d* ([kestria.com](https://kestria.com/insights/sourcing-talent-in-challenging-times/?utm_source=openai)) Data from layoff trackers and news coverage show that mass tech layoffs **began in the last quarter of 2022** and then intensified into 2023, with well over 150,000 tech workers laid off globally in 2022 alone, making it one of the worst years on record for the sector. ([newstarget.com](https://www.newstarget.com/2023-05-10-global-tech-layoffs-exceed-total-last-year.html?utm_source=openai)) A December 2022 ZipRecruiter/WSJ analysis (reported here via summary) explicitly describes the **tech job market as slowing** even though many laid\u2011off workers were still being rehired quickly\u2014indicating a cooling from the prior frenzy rather than a collapse. ([reddit.com](https://www.reddit.com/r/REBubble/comments/zxdhjx?utm_source=openai))\n\nOn **compensation and bargaining power**, the environment was also less \u201chot\u201d by late 2022. For example, Amazon\u2019s stock had fallen roughly 50% from mid\u20112021 to late 2022, leaving many employees 15\u201350% below target total compensation despite previously aggressive hiring and pay practices. ([advisorfinder.com](https://advisorfinder.com/resources-for-clients/amazon-stock-compensation-guide?utm_source=openai)) Combined with hiring slowdowns and layoffs across Big Tech, this reduced candidates\u2019 leverage for ever\u2011higher offers and multiple competing bids compared with the peak boom in early 2022.\n\nTaken together, these contemporaneous data points show that **within roughly six months of the May 2022 episode (by late 2022), the tech talent market had indeed cooled materially from its earlier red\u2011hot state**, even though it remained relatively strong by historical standards. That aligns with Sacks\u2019s prediction that \u201cwithin the next six months, the talent market is not going to be as hot.\u201d",
+      "sources": [
+        {
+          "end_index": 755,
+          "start_index": 627,
+          "title": "Report - 2024 Recruitment Marketing Benchmark Report - 1 | PDF | Labour Economics | Recruitment",
+          "type": "url_citation",
+          "url": "https://www.scribd.com/document/855659990/Report-2024-Recruitment-Marketing-Benchmark-Report-1?utm_source=openai"
+        },
+        {
+          "end_index": 1050,
+          "start_index": 949,
+          "title": "Sourcing talent in challenging times | Kestria",
+          "type": "url_citation",
+          "url": "https://kestria.com/insights/sourcing-talent-in-challenging-times/?utm_source=openai"
+        },
+        {
+          "end_index": 1444,
+          "start_index": 1321,
+          "title": "Global TECH LAYOFFS in 2023 already surpass last year\u2019s total; more job cuts still to come",
+          "type": "url_citation",
+          "url": "https://www.newstarget.com/2023-05-10-global-tech-layoffs-exceed-total-last-year.html?utm_source=openai"
+        },
+        {
+          "end_index": 1788,
+          "start_index": 1705,
+          "title": "WSJ News | Laid Off Tech Workers Quickly Find New Jobs",
+          "type": "url_citation",
+          "url": "https://www.reddit.com/r/REBubble/comments/zxdhjx?utm_source=openai"
+        },
+        {
+          "end_index": 2201,
+          "start_index": 2081,
+          "title": "Amazon Stock Compensation Guide: RSUs, Vesting & Trends",
+          "type": "url_citation",
+          "url": "https://advisorfinder.com/resources-for-clients/amazon-stock-compensation-guide?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By late 2022 (Q4), the tech talent market had cooled substantially compared to the 2021-early 2022 boom. Job postings dropped sharply: e.g., Betts Recruiting reported tech sales openings fell from ~800k in Q1 2022 to 75k in Q4 amid equivalent layoffs ([Betts Q4 2022 overview](https://bettsrecruiting.com/blog/betts-tech-job-market-overview-for-q4-2022/)). Levels.fyi's 2022 End-of-Year Pay Report noted a 'stark cooldown' in Q4 with layoffs/hiring freezes, and median total compensation dropped across roles vs. 2021 ([Levels.fyi 2022 Report](https://www.levels.fyi/2022/)). Hiring managers reported lower offers and less competition to close candidates (Pragmatic Engineer, Dec 2022: [The 2022 Hiring Market](https://newsletter.pragmaticengineer.com/p/the-2022-hiring-market-via-hiring-managers)). Tech postings fell significantly in Q4 2022 (Gradientflow/Lightcast data). Layoffs accelerated Oct-Nov (e.g., Twitter Oct, Meta Nov; [Computerworld timeline](https://www.computerworld.com/article/1614926/tech-layoffs-in-2022-a-timeline.html)), reducing competing offers and upward comp pressure."
+    },
+    {
+      "id": "B-00:59:38.480",
+      "result": "wrong",
+      "explanation": "Breaking the prediction into its main components and checking conditions by fall 2022 (roughly September\u2013November 2022):\n\n1. **Inflation \u201crolling over\u201d with clear evidence** \u2013 This largely *did* happen.\n   * Headline CPI year\u2011over\u2011year peaked at **9.1% in June 2022**.\n   * By early fall it was moving down: **8.2% in September**, **7.7% in October**, and **7.1% in November 2022**, with BLS noting each successive month as the smallest 12\u2011month increase in many months.\n   * These releases were widely reported as inflation \u201ccooling\u201d or \u201cslowing more than forecast.\u201d\n   \n   This part of Brad\u2019s forecast was basically right: by fall 2022 there was clear data that inflation had peaked and was trending lower. ([bls.gov](https://www.bls.gov/opub/ted/2022/consumer-prices-up-9-1-percent-over-the-year-ended-june-2022-largest-increase-in-40-years.htm?promo_code=24371&utm_source=openai))\n\n2. **Markets having good visibility into the Fed\u2019s path and *upper bound* on rates by fall 2022** \u2013 This *did not* come true.\n   * At the September 21, 2022 FOMC meeting, the Fed\u2019s own Summary of Economic Projections showed a **median fed\u2011funds rate of 4.4% at end\u20112022 and 4.6% in 2023**\u2014already a material upward revision from June, and clearly still evolving. ([federalreserve.gov](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20220921.htm?utm_source=openai))\n   * By **December 14, 2022**, the Fed again revised its projected 2023 median rate **up to about 5.1%**, indicating that what markets thought was the likely peak in September was not actually the upper bound. ([federalreserve.gov](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20221214.htm?utm_source=openai))\n   * A late\u2011November 2022 S&P Global piece described the benchmark rate \u201csoaring toward 5% with **few clues to peak**,\u201d and futures markets were split across different terminal\u2011rate ranges, some already pricing **above 5\u20135.25%** and warning the Fed might need to push even higher. ([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2022/11/benchmark-fed-rate-soars-toward-5-with-few-clues-to-peak-73170302?utm_source=openai))\n   * In reality, the Fed ultimately raised the funds rate to **5.25\u20135.5% by July 26, 2023**, the highest level in over 22 years\u2014above what had been projected in fall 2022. ([cnbc.com](https://www.cnbc.com/2023/07/26/fed-meeting-july-2023-.html?utm_source=openai))\n   \n   Taken together, this shows that **as of fall 2022, neither the Fed nor markets had stable, reliable visibility on the ultimate upper bound of rates**; expectations were still being revised upward and public commentary explicitly emphasized uncertainty about the peak. This directly contradicts Brad\u2019s claim that by that time we\u2019d have \u201cvery good evidence\u201d of what the Fed was likely to do and the upper bound on interest rates.\n\n3. **Ability to underwrite equities using roughly prior 5\u2011year average multiples** \u2013 This was *approximately* right in a mechanical sense.\n   * Pandemic\u2011era valuation compression meant that by mid\u20112022 the S&P 500 forward 12\u2011month P/E was already below its 5\u2011year average. FactSet data (via multiple summaries) shows:\n     * On **May 5, 2022**, the S&P 500 forward P/E was **17.6**, below the 5\u2011year average of about **18.6**. ([insight.factset.com](https://insight.factset.com/sp-500-forward-p/e-ratio-dips-below-18.0-for-the-first-time-since-q2-2020?utm_source=openai))\n     * A FactSet summary of Q4 2022 (as of **Jan 31, 2023**, still reflecting late\u20112022 conditions) put the S&P 500 forward P/E at **17.8**, also *below* the 5\u2011year average (18.5). ([reddit.com](https://www.reddit.com//r/stocks/comments/10phl14?utm_source=openai))\n     * S&P Global reported the index\u2019s daily forward P/E at **16.22x on Oct 14, 2022**, the lowest since early 2020. ([spglobal.com](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2022/10/s-p-500-valuations-historically-high-even-after-drop-from-2020-peak-72553661?utm_source=openai))\n   * That means that **by fall 2022, broad\u2011market valuation multiples had indeed compressed to around or below prior 5\u2011year averages**, so using those averages as underwriting anchors was at least feasible from a numbers standpoint, even if investors debated whether such multiples were appropriate in a higher\u2011rate regime.\n\nBecause the prediction was explicitly conjunctive (\u201cby this fall we\u2019ll have very good evidence of inflation rolling over, what the Fed is likely to do, *the upward bound* on rates, and we\u2019ll be able to underwrite to the 5\u2011year average\u201d), and the key Fed\u2011visibility/upper\u2011bound part clearly failed\u2014markets still lacked clarity and the supposed upper bound kept moving up\u2014**the overall forecast must be judged as not having come true.**\n\nTherefore, the best classification is **\"wrong\"**.",
+      "sources": [
+        {
+          "end_index": 924,
+          "start_index": 749,
+          "title": "Consumer prices up 9.1 percent over the year ended June 2022, largest increase in 40 years : The Economics Daily: U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/ted/2022/consumer-prices-up-9-1-percent-over-the-year-ended-june-2022-largest-increase-in-40-years.htm?promo_code=24371&utm_source=openai"
+        },
+        {
+          "end_index": 1404,
+          "start_index": 1292,
+          "title": "The Fed - September 21, 2022: FOMC Projections materials, accessible version",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20220921.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1728,
+          "start_index": 1616,
+          "title": "The Fed - December 14, 2022: FOMC Projections materials, accessible version",
+          "type": "url_citation",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20221214.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2191,
+          "start_index": 2011,
+          "title": "Benchmark Fed rate soars toward 5% with few clues to peak | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2022/11/benchmark-fed-rate-soars-toward-5-with-few-clues-to-peak-73170302?utm_source=openai"
+        },
+        {
+          "end_index": 2456,
+          "start_index": 2365,
+          "title": "Fed meeting July 2023: Fed approves hike, interest rates rise to highest level in more than 22 years",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2023/07/26/fed-meeting-july-2023-.html?utm_source=openai"
+        },
+        {
+          "end_index": 3470,
+          "start_index": 3326,
+          "title": "S&P 500 Forward P/E Ratio Dips Below 18.0 for the First Time Since Q2 2020",
+          "type": "url_citation",
+          "url": "https://insight.factset.com/sp-500-forward-p/e-ratio-dips-below-18.0-for-the-first-time-since-q2-2020?utm_source=openai"
+        },
+        {
+          "end_index": 3736,
+          "start_index": 3653,
+          "title": "With 30% of the S&P 500 reporting for Q4, here is the scorecard for earnings vs estimates.",
+          "type": "url_citation",
+          "url": "https://www.reddit.com//r/stocks/comments/10phl14?utm_source=openai"
+        },
+        {
+          "end_index": 4046,
+          "start_index": 3855,
+          "title": "S&P 500 valuations historically high even after drop from 2020 peak | S&P Global",
+          "type": "url_citation",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2022/10/s-p-500-valuations-historically-high-even-after-drop-from-2020-peak-72553661?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By fall 2022 (Sep-Nov), US CPI YoY declined from 9.1% (Jun) to 8.2% (Sep), 7.7% (Oct), and 7.1% (Nov), providing clear evidence of inflation rolling over ([BLS CPI data](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm), [US Inflation Calculator](https://www.usinflationcalculator.com/inflation/current-inflation-rates/)). The Sep 21, 2022 FOMC dot plot showed median fed funds rate at 4.4% end-2022 and peak 4.6% in 2023, giving markets clear visibility on policy path and upper bound ([Federal Reserve SEP](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20220921.htm), [CNBC](https://www.cnbc.com/2022/09/21/fed-rate-hike-september-2022-.html)). S&P 500 forward P/E was ~20.5x end-Sep 2022 (YCharts), roughly matching prior 5-year average (~18-20x, e.g., FactSet 5-yr avg ~19.9x), enabling underwriting at average multiples ([YCharts](https://ycharts.com/indicators/sp_500_pe_ratio_forward_estimate), [MacroMicro](https://en.macromicro.me/series/20052/sp500-forward-pe-ratio)). All elements held."
+    },
+    {
+      "id": "B-01:00:34.000",
+      "result": "ambiguous",
+      "explanation": "Brad\u2019s forecast has three main parts, which aged differently:\n\n1. **Fed path / \u201crunaway inflation\u201d**  \n   - U.S. CPI inflation peaked at about **9.1% in June 2022**, then declined steadily: by December 2022 it was ~6.5%, and by mid\u20112023 around 3%, roughly half the peak level. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021%E2%80%932023_inflation_surge?utm_source=openai))  \n   - Over the same period, the Fed hiked the policy rate from near 0% in March 2022 to **5.25\u20135.50% by July 2023**, then held it there, a textbook aggressive tightening cycle. ([forbes.com](https://www.forbes.com/advisor/investing/july-fomc-meeting-federal-reserve/?utm_source=openai))  \n   - Ex post, this combination *did* bring inflation down from 40\u2011year highs toward the low\u2011single digits without tipping into double\u2011digit or hyperinflation. Whether 8\u20139% counts as \u201crunaway\u201d is a semantic/political judgment, but the *direction* Brad predicted\u2014that inflation would roll over under Fed tightening\u2014was broadly correct.\n\n2. **Public markets \u201cinvestable\u201d again by fall 2022**  \n   - The S&P 500\u2019s 2022 bear market bottomed in **October 2022** after roughly a 25% drawdown from its January high. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_stock_market_decline?utm_source=openai))  \n   - Many market historians now date the start of the current bull market to that October 2022 low; by late 2025 the S&P 500 is up **~80%+** from the bottom, and major U.S. indices have logged multiple record highs. ([barrons.com](https://www.barrons.com/articles/stocks-bull-market-3-year-anniversary-19326bbc?utm_source=openai))  \n   - From an ex\u2011post returns perspective, investors who treated fall 2022 as an \u201cinvestable environment\u201d in U.S. public equities were well rewarded, which lines up with Brad\u2019s timing for public markets.\n\n3. **Venture markets lag 6\u201312 months (attractive by roughly spring\u2013fall 2023)**  \n   - Venture funding and exits **continued to deteriorate through 2023**. CB Insights\u2019 State of Venture 2023 report shows global VC funding fell another 42% in 2023 vs. 2022, with Q4\u201923 at the lowest quarterly funding since 2016. ([cbinsights.com](https://www.cbinsights.com/research/report/venture-trends-2023/?utm_source=openai))  \n   - PitchBook\u2013NVCA data show U.S. VC deal value in 2023 (~$170.6B) was sharply down from 2022 and far below 2021\u2019s peak, with deal counts and fundraising on track for multi\u2011year lows. ([ssti.org](https://ssti.org/blog/useful-stats-overview-2023-vc-activity?utm_source=openai))  \n   - Their 2023 U.S. VC Valuations report documents that **growth\u2011stage valuations fell back to around 2018 levels**, and bottom\u2011quartile valuations dropped even more, reflecting a pricing reset but also a cohort of weaker companies forced to raise in a hostile environment. ([scribd.com](https://www.scribd.com/document/708534139/2023-Annual-US-VC-Valuations-Report?utm_source=openai))  \n   - Contemporary commentary repeatedly described 2023 as a deepening **\u201cfunding winter\u201d** with seven consecutive quarters of global VC funding decline by late 2023, not as a clearly healthy, market\u2011clearing environment; meaningful improvement in deal activity and sentiment shows up more in 2024, helped by AI\u2011driven deals, rather than firmly in 2023. ([forbes.com](https://www.forbes.com/sites/jonathanburgos/2023/12/06/investors-zoom-in-on-ai-as-startup-funding-winter-deepens-asian-vcs/?utm_source=openai))  \n   - From a *bargain\u2011hunter* VC perspective, those much lower valuations by 2023 could indeed be called \u201cmore attractive\u201d than 2021\u2019s bubble, but liquidity, fundraising, and exit conditions were still very weak. Whether that counts as the \u201cattractive, market\u2011clearing\u201d environment Brad envisioned is highly subjective.\n\n**Why the overall verdict is \u201cambiguous\u201d**  \n- On **inflation and the Fed**, and on **public equities being investable by fall 2022**, the forecast lines up well with subsequent data.  \n- On **private venture markets**, the specific 6\u201312\u2011month lag and the idea that conditions would be broadly attractive and market\u2011clearing by roughly spring\u2013fall 2023 look too optimistic given how severely funding, exits, and fundraising deteriorated through 2023 and only began to stabilize later.  \n- Because key terms like \u201crunaway inflation,\u201d \u201cinvestable environment,\u201d and \u201cmarket\u2011clearing prices\u201d are inherently judgment\u2011laden\u2014and because different reasonable observers could score the venture\u2011market call differently\u2014the prediction is best characterized as **partly right and partly too rosy**, hence **ambiguous rather than clearly right or wrong**.",
+      "sources": [
+        {
+          "end_index": 420,
+          "start_index": 317,
+          "title": "2021\u20132023 inflation surge",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021%E2%80%932023_inflation_surge?utm_source=openai"
+        },
+        {
+          "end_index": 709,
+          "start_index": 600,
+          "title": "Federal Funds Rate History 1990 to 2025 \u2013 Forbes Advisor",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/advisor/investing/july-fomc-meeting-federal-reserve/?utm_source=openai"
+        },
+        {
+          "end_index": 1319,
+          "start_index": 1224,
+          "title": "2022 stock market decline",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_stock_market_decline?utm_source=openai"
+        },
+        {
+          "end_index": 1653,
+          "start_index": 1539,
+          "title": "Stocks' Bull Market Nears 3-Year Anniversary. It Likely Has More Room to Run.",
+          "type": "url_citation",
+          "url": "https://www.barrons.com/articles/stocks-bull-market-3-year-anniversary-19326bbc?utm_source=openai"
+        },
+        {
+          "end_index": 2277,
+          "start_index": 2176,
+          "title": "State of Venture 2023 Report - CB Insights Research",
+          "type": "url_citation",
+          "url": "https://www.cbinsights.com/research/report/venture-trends-2023/?utm_source=openai"
+        },
+        {
+          "end_index": 2558,
+          "start_index": 2466,
+          "title": "Useful Stats: An overview of 2023 VC activity | SSTI",
+          "type": "url_citation",
+          "url": "https://ssti.org/blog/useful-stats-overview-2023-vc-activity?utm_source=openai"
+        },
+        {
+          "end_index": 2948,
+          "start_index": 2837,
+          "title": "2023 Annual US VC Valuations Report | PDF | Venture Capital | Corporate Finance",
+          "type": "url_citation",
+          "url": "https://www.scribd.com/document/708534139/2023-Annual-US-VC-Valuations-Report?utm_source=openai"
+        },
+        {
+          "end_index": 3462,
+          "start_index": 3305,
+          "title": "Investors Zoom In On AI As Startup Funding Winter Deepens: Asian VCs",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/jonathanburgos/2023/12/06/investors-zoom-in-on-ai-as-startup-funding-winter-deepens-asian-vcs/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction has three main parts, but the venture capital timeline failed.\n\n**Inflation:** Fed tightening from March 2022 (rates from 0.25% to 4.5% by Dec) avoided runaway inflation. CPI peaked at 9.1% in June 2022, fell to 6.5% annual 2022 and 3.4% in 2023 ([BLS](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm), [US Inflation Calculator](https://www.usinflationcalculator.com/inflation/current-inflation-rates/)).\n\n**Public markets:** S&P 500 rallied in fall 2022 (Sep 30: 3585 \u2192 Oct 31: 3872 (+8%) \u2192 Nov 30: 4080 (+5%)), bottoming Oct 12 before 2023's +24% gain ([YCharts](https://ycharts.com/indicators/sp_500), [Yahoo Finance](https://finance.yahoo.com/quote/%5EGSPC/history/)). Retrospectively attractive, though 2022 ended -19%.\n\n**Venture markets:** Did not lag only 6-12 months. Cambridge Associates US VC Index had negative returns in 2022 and 2023, rebounding in 2024 ([Cambridge Associates CY2024](https://www.cambridgeassociates.com/insight/us-pe-vc-benchmark-commentary-calendar-year-2024/), [CY2023](https://www.cambridgeassociates.com/wp-content/uploads/2024/08/2024-08-US-PE-VC-Benchmark-Commentary-CY2023_PUBLIC-1.pdf)). Deal activity/fundraising depressed through 2023, recovery 2024 ([PitchBook-NVCA](https://nvca.org/wp-content/uploads/2025/10/Q3-2025-PitchBook-NVCA-Venture-Monitor.pdf), [Carta](https://carta.com/data/state-of-private-markets-q4-2024/)). Lag was ~18+ months, making overall prediction wrong."
+    },
+    {
+      "id": "A-01:48:00.160",
+      "result": "wrong",
+      "explanation": "Jason said on E83 (released May 27, 2022) that **\u201cFreiburg will be back next week, as will the Palmer Luckey explosive episode. So look for a great week of all in content next week.\u201d** E83\u2019s date is confirmed as May 27, 2022. ([metacast.app](https://metacast.app/podcast/all-in-with-chamath-jason-sacks-and-friedberg/3AEqEKwn/e83-market-slide-continues-and-how-to-address-uvalde/bu0xBkYE?utm_source=openai))\n\nLooking at the release schedule right after that:\n- In the following days they released several All-In Summit \"#AIS\" episodes: Glenn Greenwald & Matt Taibbi (May 28), Mar Hershenson (May 30), MP Materials CEO James Litinsky (May 31), and **\u201cOpening chat with Miami Mayor Francis Suarez\u201d** on June 3, 2022. ([allinchamathjason.libsyn.com](https://allinchamathjason.libsyn.com/website/2022/05?utm_source=openai))  \n- The Suarez episode\u2019s notes and video summary explicitly show the **Besties reunited in Miami** and list David **Friedberg** among the hosts, so Friedberg was indeed back on the pod by June 3 (i.e., during the week after May 27). ([podcasts.apple.com](https://podcasts.apple.com/de/podcast/ais-opening-chat-with-miami-mayor-francis-suarez/id1502871393?i=1000565153009&utm_source=openai))\n\nHowever, the **Palmer Luckey episode** titled **\u201c#AIS: Palmer Luckey on Anduril\u201d** did **not** come out that same week. Across multiple platforms (Libsyn, iHeart, Goodpods, Listen Notes, Glasp) it is dated **June 23, 2022** (with iHeart listing June 22, but all around that late-June window), nearly **four weeks after** E83. ([allinchamathjason.libsyn.com](https://allinchamathjason.libsyn.com/website/ais-palmer-luckey-on-anduril?utm_source=openai))  In the main-episode feed, E84 (June 24) even opens by discussing a \"one\u2011month hiatus,\" reinforcing that this block of Palmer Luckey + main episodes happened after a longer break, not \"next week\" after May 27. ([sites.libsyn.com](https://sites.libsyn.com/254861/e84-markets-update-crypto-collapse-russiaukraine-endgame-state-of-the-podcast?utm_source=openai))\n\nSo while part of Jason\u2019s statement (Friedberg returning and there being lots of Summit content) did come true in the following week, the **specific claim that the Palmer Luckey \u201cexplosive episode\u201d would also drop that next week is clearly false** given its late\u2011June release. Because that key element of the prediction failed, the overall prediction is best scored as **wrong**.",
+      "sources": [
+        {
+          "end_index": 443,
+          "start_index": 262,
+          "title": "E83: Market slide continues, and how to address Uvalde | All-In with Chamath, Jason, Sacks & Friedbe",
+          "type": "url_citation",
+          "url": "https://metacast.app/podcast/all-in-with-chamath-jason-sacks-and-friedberg/3AEqEKwn/e83-market-slide-continues-and-how-to-address-uvalde/bu0xBkYE?utm_source=openai"
+        },
+        {
+          "end_index": 860,
+          "start_index": 756,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg",
+          "type": "url_citation",
+          "url": "https://allinchamathjason.libsyn.com/website/2022/05?utm_source=openai"
+        },
+        {
+          "end_index": 1252,
+          "start_index": 1095,
+          "title": "#AIS: Opening chat with Miami \u00a0...\u00a0\u2013 All-In with Chamath, Jason, Sacks & Friedberg\u00a0\u2013 Apple\u00a0Podcasts",
+          "type": "url_citation",
+          "url": "https://podcasts.apple.com/de/podcast/ais-opening-chat-with-miami-mayor-francis-suarez/id1502871393?i=1000565153009&utm_source=openai"
+        },
+        {
+          "end_index": 1707,
+          "start_index": 1582,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg: #AIS: Palmer Luckey on Anduril",
+          "type": "url_citation",
+          "url": "https://allinchamathjason.libsyn.com/website/ais-palmer-luckey-on-anduril?utm_source=openai"
+        },
+        {
+          "end_index": 2071,
+          "start_index": 1922,
+          "title": "All-In with Chamath, Jason, Sacks & Friedberg: E84: Markets update, crypto collapse, Russia/Ukraine endgame, state of the podcast",
+          "type": "url_citation",
+          "url": "https://sites.libsyn.com/254861/e84-markets-update-crypto-collapse-russiaukraine-endgame-state-of-the-podcast?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction stated that in the week after the May 27, 2022 release (roughly May 28\u2013June 3), David Friedberg would return and an 'explosive' Palmer Luckey episode would be released, leading to multiple strong All-In content releases. However, no episodes were released that week. E84 (with all besties, including Friedberg, returning) was released on June 23, 2022 ([YouTube](https://www.youtube.com/watch?v=Bh6-PXMdmPk), [Twitter](https://twitter.com/theallinpod/status/1540219397557653504)). The Palmer Luckey episode (#AIS: Palmer Luckey on Anduril, from All-In Summit) was also released June 23, 2022 ([YouTube](https://www.youtube.com/watch?v=nK0NfL2M5L4), [Apple Podcasts](https://podcasts.apple.com/us/podcast/ais-palmer-luckey-on-anduril/id1502871393?i=1000567453063), [Libsyn](https://allinchamathjason.libsyn.com/2022/06)). A Reddit post on June 18 confirms the Palmer episode was anticipated but not yet released ([Reddit](https://www.reddit.com/r/TheAllinPodcasts/comments/vex8bo/wheres_the_palmer_luckey_episode/)). The podcast was on hiatus after E83 until June 23, with no content in the predicted week ([E84 title mentions 'state of the podcast' hiatus explanation](https://www.youtube.com/watch?v=Bh6-PXMdmPk)). Sources: YouTube uploads, podcast platforms, Reddit discussions."
+    },
+    {
+      "id": "B-00:27:35.480",
+      "result": "wrong",
+      "explanation": "The prediction had two parts, both of which failed:\n\n1. **Expected path for June and July 2022:** Brad predicted 50 bps hikes at both the June and July 2022 FOMC meetings.\n   * On **June 15, 2022**, the FOMC raised the federal funds rate by **75 basis points**, from 0.75\u20131.00% to 1.50\u20131.75%. ([investinglive.com](https://investinglive.com/centralbank/fomc-statement-from-the-june-2022-meeting-fed-hikes-by-75-basis-points-20220615/?utm_source=openai))  \n   * On **July 27, 2022**, the FOMC again raised the rate by **75 basis points**, to 2.25\u20132.50%. ([cnbc.com](https://www.cnbc.com/2022/07/27/fed-decision-july-2022-.html?utm_source=openai))  \n   These were not 50 bps moves, so the forecast for the *size* of the June and July hikes was incorrect.\n\n2. **Expected pause in the back half of 2022:** Brad further implied the Fed would then pause to \"take a look\" (i.e., stop raising rates) in the latter half of 2022.\n   * After July, the Fed **continued to hike**:  \n     * **September 20\u201321, 2022:** +75 bps to 3.00\u20133.25%. ([cnbc.com](https://www.cnbc.com/2022/09/21/fed-rate-hike-september-2022-.html?utm_source=openai))  \n     * **November 1\u20132, 2022:** +75 bps to 3.75\u20134.00%. ([investinglive.com](https://investinglive.com/centralbank/fomc-meeting-minutes-from-the-november-2022-fed-meeting-20221123/?utm_source=openai))  \n   There was clearly no pause in the second half of 2022; further large hikes occurred.\n\nBecause the Fed neither did 50\u201350 in June/July nor paused in the back half of 2022, the prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 488,
+          "start_index": 329,
+          "title": "FOMC statement from the June 2022 meeting: Fed hikes by 75 basis points | investingLive",
+          "type": "url_citation",
+          "url": "https://investinglive.com/centralbank/fomc-statement-from-the-june-2022-meeting-fed-hikes-by-75-basis-points-20220615/?utm_source=openai"
+        },
+        {
+          "end_index": 681,
+          "start_index": 589,
+          "title": "Fed decision July 2022: Fed hikes interest rates by 0.75 percentage point",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/07/27/fed-decision-july-2022-.html?utm_source=openai"
+        },
+        {
+          "end_index": 1168,
+          "start_index": 1070,
+          "title": "Fed rate hike September 2022: Rates raised by three-quarters of a percentage point",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/09/21/fed-rate-hike-september-2022-.html?utm_source=openai"
+        },
+        {
+          "end_index": 1370,
+          "start_index": 1226,
+          "title": "FOMC minutes from the November 2022 Fed meeting: Slowing of pace of rate hikes appropriate | investingLive",
+          "type": "url_citation",
+          "url": "https://investinglive.com/centralbank/fomc-meeting-minutes-from-the-november-2022-fed-meeting-20221123/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction was incorrect. The Fed raised rates by 75 basis points (not 50) at the June 15-16, 2022 FOMC meeting (to 1.50-1.75%) and again by 75 bps at the July 26-27 meeting (to 2.25-2.50%). It did not pause in the second half of 2022, instead hiking further: +75 bps in September (to 3.00-3.25%), +75 bps in November (to 3.75-4.00%), and +50 bps in December (to 4.25-4.50%). Sources: [Federal Reserve Open Market Operations](https://www.federalreserve.gov/monetarypolicy/openmarket.htm); [Forbes Fed Funds Rate History](https://www.forbes.com/advisor/investing/fed-funds-rate-history/)."
+    },
+    {
+      "id": "E-00:23:34.890",
+      "result": "wrong",
+      "explanation": "The condition in Chamath\u2019s scenario essentially *did* occur, and the equity\u2011market part of his prediction played out, but the Federal Reserve part did not.\n\n1. **Did the Friday inflation data look \u201creasonably good\u201d?**  \n   \u2022 On Friday, May 27, 2022, the BEA released the *Personal Income and Outlays, April 2022* report. Headline PCE inflation (the Fed\u2019s preferred gauge) rose 0.2% month\u2011over\u2011month and 6.3% year\u2011over\u2011year, down from 6.6% in March; core PCE slowed to 4.9% from 5.2%.([bea.gov](https://www.bea.gov/news/2022/personal-income-and-outlays-april-2022?utm_source=openai))  \n   \u2022 Multiple summaries framed this as a *moderation* in inflation and evidence it may have peaked: e.g., coverage noted that the PCE index was \u201cthe first slowdown since November 2020\u201d and that price pressures were \u201cfinally\u2026moderating, at least for now.\u201d([americanchemistry.com](https://www.americanchemistry.com/chemistry-in-america/news-trends/weekly-economic-report/2022/weekly-chemistry-and-economic-trends-may-27-2022?utm_source=openai))  \n   \u2022 The same data showed consumer spending up 0.9% and personal income up 0.4% in April, described as a \u201chealthy\u201d pace that supported ongoing growth.([bea.gov](https://www.bea.gov/news/2022/personal-income-and-outlays-april-2022?utm_source=openai))  \n   \u2192 That matches his condition of moderating inflation with still\u2011positive (\u201cmoderate\u201d) growth.\n\n2. **Did the Fed signal a *less aggressive* tightening path as a result?**  \n   \u2022 Around that time, Chair Jerome Powell had already signaled plans for back\u2011to\u2011back 0.5\u2011percentage\u2011point hikes in June and July and pledged to keep \u201cratcheting up\u201d rates until inflation was coming down in a \u201cclear and convincing\u201d way.([ottawa.citynews.ca](https://ottawa.citynews.ca/2022/05/27/key-inflation-gauge-slowed-to-still-high-63-over-past-year-5413030/?utm_source=openai))  \n   \u2022 Reporting on the May 27 PCE data explicitly noted that, despite the slight cooling, inflation was still very high and most economists expected the Fed to continue raising rates, not ease off.([bangordailynews.com](https://www.bangordailynews.com/2022/05/27/nation/key-inflation-gauge-slowed-to-still-high-6-3-percent-over-past-year/?utm_source=openai))  \n   \u2022 In fact, at its very next meeting on June 15, 2022, the FOMC *increased* the pace of tightening, delivering a 0.75\u2011point hike\u2014the largest since 1994\u2014underscoring a more aggressive, not less aggressive, path.([en.wikipedia.org](https://en.wikipedia.org/wiki/History_of_Federal_Open_Market_Committee_actions?utm_source=openai))  \n   \u2192 The data may have given \u201cammo\u201d in an abstract sense, but the Fed did **not** actually signal or adopt a less aggressive tightening path.\n\n3. **Did equity markets \u201cgo boom\u201d immediately afterward?**  \n   \u2022 U.S. equities rallied strongly into and on that Friday. On May 27, 2022, the Dow rose about 1.8%, the S&P 500 2.5%, and the Nasdaq 3.3%; it was the first positive week for the major indices after a long losing streak.([businesstimes.com.sg](https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-wall-street-stocks-end-weekly-gains-first-time-2?utm_source=openai))  \n   \u2022 Coverage tied the move directly to the PCE release, describing the rally as driven by \u201csigns of moderating inflation\u201d and evidence that inflation might be at or near a peak.([thenationalnews.com](https://www.thenationalnews.com/business/markets/2022/05/28/global-stocks-in-positive-territory-on-signs-of-moderating-us-inflation/?utm_source=openai))  \n   \u2192 This is consistent with his claim that, under those conditions, \u201cthe markets will go boom,\u201d at least in the short term.\n\n**Net assessment**  \nChamath was directionally right that **moderating inflation data would spark a short\u2011term equity rally**, and that\u2019s exactly what happened after the May 27, 2022 PCE release. However, the normalized prediction also requires that the **Fed signal a less aggressive tightening path**, and subsequent communications and actions show the opposite: the Fed stayed hawkish and then tightened even more aggressively in June. Because that key component failed, the overall prediction\u2014taken as stated in the normalized form\u2014is best classified as **wrong**, albeit with a partially correct market call.",
+      "sources": [
+        {
+          "end_index": 618,
+          "start_index": 519,
+          "title": "Personal Income and Outlays, April 2022 | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2022/personal-income-and-outlays-april-2022?utm_source=openai"
+        },
+        {
+          "end_index": 1064,
+          "start_index": 876,
+          "title": "Weekly Chemistry and Economic Trends (May 27, 2022) - American Chemistry Council",
+          "type": "url_citation",
+          "url": "https://www.americanchemistry.com/chemistry-in-america/news-trends/weekly-economic-report/2022/weekly-chemistry-and-economic-trends-may-27-2022?utm_source=openai"
+        },
+        {
+          "end_index": 1317,
+          "start_index": 1218,
+          "title": "Personal Income and Outlays, April 2022 | U.S. Bureau of Economic Analysis (BEA)",
+          "type": "url_citation",
+          "url": "https://www.bea.gov/news/2022/personal-income-and-outlays-april-2022?utm_source=openai"
+        },
+        {
+          "end_index": 1883,
+          "start_index": 1736,
+          "title": "Key inflation gauge slowed to still-high 6.3% over past year",
+          "type": "url_citation",
+          "url": "https://ottawa.citynews.ca/2022/05/27/key-inflation-gauge-slowed-to-still-high-63-over-past-year-5413030/?utm_source=openai"
+        },
+        {
+          "end_index": 2244,
+          "start_index": 2083,
+          "title": "Key inflation gauge slowed to still-high 6.3 percent over past year",
+          "type": "url_citation",
+          "url": "https://www.bangordailynews.com/2022/05/27/nation/key-inflation-gauge-slowed-to-still-high-6-3-percent-over-past-year/?utm_source=openai"
+        },
+        {
+          "end_index": 2578,
+          "start_index": 2460,
+          "title": "History of Federal Open Market Committee actions",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/History_of_Federal_Open_Market_Committee_actions?utm_source=openai"
+        },
+        {
+          "end_index": 3184,
+          "start_index": 3011,
+          "title": "US: Wall Street stocks end with weekly gains for first time in 2 months - The Business Times",
+          "type": "url_citation",
+          "url": "https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-wall-street-stocks-end-weekly-gains-first-time-2?utm_source=openai"
+        },
+        {
+          "end_index": 3541,
+          "start_index": 3366,
+          "title": "Global stocks in positive territory on signs of moderating US inflation | The National",
+          "type": "url_citation",
+          "url": "https://www.thenationalnews.com/business/markets/2022/05/28/global-stocks-in-positive-territory-on-signs-of-moderating-us-inflation/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The data released on June 3, 2022\u2014the Friday following the May 27 podcast\u2014was the May Employment Situation report (nonfarm payrolls). It showed strong job growth of +390,000 (above expectations of ~328,000) and average hourly earnings up 0.3% MoM / 5.2% YoY (hot wage inflation, not moderating). This did **not** indicate moderating inflation or moderate growth. Equity markets sold off sharply (S&P 500 -1.6%, Dow -~300 points) as the 'good news is bad news' dynamic fueled hawkish Fed bets ([Reuters](https://www.reuters.com/markets/europe/global-markets-global-markets-2022-06-03/), [CNBC](https://www.cnbc.com/2022/06/03/jobs-report-may-2022-.html), [WSJ](https://www.wsj.com/finance/stocks/global-stocks-markets-dow-update-06-03-2022-11654241708)). The Fed's June 15 meeting featured a 75bps hike\u2014the largest in 28 years\u2014and signaled ongoing aggressive tightening ([Federal Reserve](https://www.federalreserve.gov/monetarypolicy/fomcpresconf20220615.htm), [CNBC](https://www.cnbc.com/2022/06/15/real-time-updates-of-the-feds-big-rate-decision-and-powells-press-conference.html)). The predicted scenario (soft data \u2192 less aggressive Fed \u2192 market rally) did not occur. Sources: BLS [report](https://www.bls.gov/news.release/archives/empsit_06032022.pdf)."
+    },
+    {
+      "id": "B-01:09:55.360",
+      "result": "ambiguous",
+      "explanation": "Brad\u2019s prediction referenced the cumulative number of startups/tech companies on the Layoffs.fyi tracker *since 3/11/20*.\n\nEvidence we can see:\n- Near the time of the podcast (late May 2022), a VC newsletter citing Layoffs.fyi reported *\u201c709 startups w/ layoffs \u2026 Since 3/11/20\u201d*, matching Brad\u2019s statement that there were about 714 startups on the list then. ([whatshotit.vc](https://www.whatshotit.vc/p/whats-in-enterprise-itvc-291?utm_source=openai))\n- An archived copy of the Layoffs.fyi homepage from May 24, 2023 shows *\u201c1744 tech companies w/ layoffs \u2026 210844 employees laid off \u2026 Since 3/11/20\u201d*. ([adam.curry.com](https://adam.curry.com/art/1684953706_PHjHexf9.html?utm_source=openai)) So by mid\u20112023 the cumulative count was 1,744\u2014well below Brad\u2019s 3,000 threshold.\n- The current Layoffs.fyi homepage (late 2025) displays only per\u2011year figures server\u2011side: 1,064 companies with layoffs in 2022, 1,193 in 2023, 551 in 2024, and 237 in 2025 (so far). ([layoffs.fyi](https://layoffs.fyi/)) Independent write\u2011ups citing Layoffs.fyi echo very similar per\u2011year company counts for 2022\u20132025. ([businesstechafrica.co.za](https://www.businesstechafrica.co.za/business/2025/04/08/ai-creating-a-world-without-workers-are-any-jobs-safe/?utm_source=openai))\n\nWhy this doesn\u2019t let us resolve the prediction:\n- What we need is the *current* Layoffs.fyi figure specifically labeled *\u201c[X] tech/startup companies w/ layoffs \u2026 Since 3/11/20\u201d*, i.e., the total number of distinct companies that have ever appeared on the tracker. The site now renders that value via client\u2011side code, and in the text-only snapshot available here it appears only as a shortcode placeholder with no number, so we cannot see today\u2019s cumulative count directly. ([layoffs.fyi](https://layoffs.fyi/))\n- Secondary datasets scraped from Layoffs.fyi (e.g., a Hugging Face tabular dataset with 3,622 layoff events) show how many *events* are recorded, but they do not state how many *unique companies* those events correspond to. Multiple events per company are common, so we cannot reliably infer the unique-company total from event-count alone. ([huggingface.co](https://huggingface.co/datasets/hakunamatata1997/Layoffs_Data))\n- Per\u2011year company totals imply there have been thousands of company\u2011year layoff entries since 2020, but because the same firm can appear in multiple years (e.g., Amazon, Microsoft, Google), the unique-company count could plausibly be either below or above 3,000; the data we can see do not pin it down.\n- Additionally, Brad\u2019s condition *\u201cby the time we\u2019re done\u201d* depends on what one considers the end of the 2022\u2011era tech downturn. Commentators disagree on whether that cycle effectively ended by 2023, extended through 2024, or is still ongoing alongside AI\u2011driven restructuring in 2025, so even a precise cumulative count today would not clearly map to his intended end\u2011point. ([poetsandquantsforexecs.com](https://poetsandquantsforexecs.com/news/the-tech-bloodbath-is-far-from-over/?utm_source=openai))\n\nBecause (a) the live *\u201csince 3/11/20\u201d* company count from Layoffs.fyi is not observable in the available snapshots, and (b) the endpoint of the relevant downturn cycle is itself not well defined in public data, we cannot determine whether the tracker has ever listed at least 3,000 distinct startups by the end of that cycle. Therefore the truth of Brad\u2019s prediction is not knowable from accessible evidence, and the outcome has to be rated as **ambiguous**, not clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 493,
+          "start_index": 400,
+          "title": "What's \ud83d\udd25 in Enterprise IT/VC #291 - by Ed Sim",
+          "type": "url_citation",
+          "url": "https://www.whatshotit.vc/p/whats-in-enterprise-itvc-291?utm_source=openai"
+        },
+        {
+          "end_index": 735,
+          "start_index": 646,
+          "title": "Layoffs.fyi - Tech Layoff Tracker and Startup Layoff Lists [Printable]",
+          "type": "url_citation",
+          "url": "https://adam.curry.com/art/1684953706_PHjHexf9.html?utm_source=openai"
+        },
+        {
+          "end_index": 1038,
+          "start_index": 1001,
+          "title": "Layoffs.fyi - Tech Layoff Tracker and DOGE Layoff Tracker",
+          "type": "url_citation",
+          "url": "https://layoffs.fyi/"
+        },
+        {
+          "end_index": 1296,
+          "start_index": 1137,
+          "title": "AI Creating a World Without Workers - Are any Jobs Safe? | Business Tech Africa",
+          "type": "url_citation",
+          "url": "https://www.businesstechafrica.co.za/business/2025/04/08/ai-creating-a-world-without-workers-are-any-jobs-safe/?utm_source=openai"
+        },
+        {
+          "end_index": 1812,
+          "start_index": 1775,
+          "title": "Layoffs.fyi - Tech Layoff Tracker and DOGE Layoff Tracker",
+          "type": "url_citation",
+          "url": "https://layoffs.fyi/"
+        },
+        {
+          "end_index": 2237,
+          "start_index": 2156,
+          "title": "hakunamatata1997/Layoffs_Data \u00b7 Datasets at Hugging Face",
+          "type": "url_citation",
+          "url": "https://huggingface.co/datasets/hakunamatata1997/Layoffs_Data"
+        },
+        {
+          "end_index": 3046,
+          "start_index": 2920,
+          "title": "Poets&Quants for Execs | The Tech Bloodbath Is Far From Over",
+          "type": "url_citation",
+          "url": "https://poetsandquantsforexecs.com/news/the-tech-bloodbath-is-far-from-over/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The layoffs.fyi tracker (also referenced as layoffsfyi.com) listed approximately 714 companies with layoffs as of May 2022. Historical data shows peak yearly companies with layoffs: 1,064 in 2022, 1,193 in 2023, 551 in 2024, and around 237 in 2025 YTD (as of late 2025 per site snippets and TechCrunch Nov 26, 2025 article noting 549 companies in 2024). These are yearly figures, not cumulative unique. The all-time unique total is not explicitly stated but logically less than 3,000 given repeats (e.g., multiple rounds at Google, Meta) and no sources claiming 3,000+ unique startups/companies tracked. The 2022 downturn cycle effectively ended by 2024 with market recovery, and even cumulative unique likely ~2,500 max. Sources: [layoffs.fyi homepage stats](https://layoffs.fyi/), [TechCrunch 2025 layoffs](https://techcrunch.com/2025/11/26/tech-layoffs-2025-list/), [LinkedIn historical](https://www.linkedin.com/posts/ashrock17_2022-1064-tech-companies-laid-off-165269-activity-7298577977557037056-Q3BV), multiple reports confirming yearly peaks under 1,200."
+    }
+  ]
+}

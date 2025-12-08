@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "count": 2,
+    "count_by_result": {
+      "ambiguous": 1,
+      "inconclusive": 1
+    }
+  },
+  "predictions": [
+    {
+      "id": "B-00:14:20.710",
+      "result": "ambiguous",
+      "explanation": "By November 30, 2025, there is substantial evidence *both* that U.S. export controls have constrained China\u2019s AI hardware and that China\u2019s frontier AI capabilities have nonetheless reached near parity with the West, making the prediction impossible to score cleanly as right or wrong.\n\n**1. The condition of continued restricted access is largely met**  \nSince 2022\u20132023, the U.S. has barred or tightly licensed exports of Nvidia\u2019s leading data\u2011center GPUs (A100, H100, A800, H800, H20, L40/L40S, etc.) and expanded controls on advanced semiconductor manufacturing equipment to China. ([stblaw.com](https://www.stblaw.com/about-us/publications/view/2023/11/02/u.s.-comprehensive-upgrade-of-its-controls-on-semiconductor-exports-to-china?utm_source=openai))  These controls remain broadly in force through 2025, with only prospective discussion of loosening some sales (e.g., H200) still under consideration. ([reuters.com](https://www.reuters.com/world/china/trump-weighing-advanced-nvidia-chip-sales-china-bloomberg-news-reports-2025-11-24/?utm_source=openai))  So the conditional premise\u2014China lacking straightforward access to Nvidia\u2019s top-tier chips and U.S. leading-edge fab tools for multiple years\u2014is essentially true.\n\n**2. Evidence that China has been materially \u201cslowed down\u201d**  \n* **Compute share collapse:** One 2025 analysis using Epoch AI data finds that, as of March 2025, the U.S. controls about 75% of global AI compute capacity, while China\u2019s share fell from 37.3% in March 2022 to 14.1%\u2014a sharp relative decline aligned in time with U.S. export controls. ([research.contrary.com](https://research.contrary.com/deep-dive/drawing-geopolitical-boundaries?utm_source=openai))  \n* **Bottlenecks acknowledged by Chinese and U.S. officials:** The same report notes Chinese leaders and firms openly describe bans on advanced chips as their key constraint, and that deployment (inference) at scale is hampered\u2014e.g., DeepSeek limiting API access soon after launching its R1 model, and Tencent warning that chip shortages could severely limit nationwide AI adoption or drive up costs. ([research.contrary.com](https://research.contrary.com/deep-dive/drawing-geopolitical-boundaries?utm_source=openai))  Separately, a U.S. export\u2011control official estimated Huawei would be able to produce no more than about 200,000 advanced AI chips in 2025\u2014insufficient for domestic demand\u2014underscoring a real hardware shortfall despite Huawei\u2019s Ascend line. ([reuters.com](https://www.reuters.com/world/china/us-says-chinas-huawei-cant-make-more-than-200000-ai-chips-2025-2025-06-12/?utm_source=openai))  \nThese points support Chamath\u2019s intuition that the missing U.S. technology \u201cslows them down quite a bit,\u201d at least in terms of *available compute and ease of scaling*.\n\n**3. Evidence that frontier AI *capabilities* have not been strongly held back**  \nOn the other hand, multiple independent indicators show Chinese models closing the capability gap quickly:\n* A detailed 2025 export\u2011controls review finds that despite the U.S. holding roughly 5\u00d7 more compute, the performance gap between top U.S. and Chinese LLMs shrank from double\u2011digit margins in 2023 to **near parity in 2024**. ([research.contrary.com](https://research.contrary.com/deep-dive/drawing-geopolitical-boundaries?utm_source=openai))  \n* Chinese LLMs have reached or exceeded top global benchmarks:\n  * Alibaba\u2019s open\u2011source Qwen 2.5\u201172B topped the OpenCompass LLM leaderboard, surpassing closed\u2011source state\u2011of\u2011the\u2011art models such as GPT\u20114o and Claude 3.5 on many metrics. ([alibabacloud.com](https://www.alibabacloud.com/blog/alibaba-clouds-qwen-2-5-tops-opencompass-llm-leaderboard-as-the-first-open-source-champion_601701?utm_source=openai))  \n  * Qwen2.5\u2011Max entered the Chatbot Arena global top\u201110 and ranked **#1 in math and coding** and #2 on hard prompts in early 2025. ([en.people.cn](https://en.people.cn/n3/2025/0206/c90000-20273094.html?utm_source=openai))  \n  * On Hugging Face\u2019s Open LLM leaderboard, *all* top\u201110 open-source models were derivatives of Alibaba\u2019s Qwen series; Qwen2.5\u20111.5B\u2011Instruct became the single most downloaded open\u2011source model globally, highlighting massive adoption and competitive quality. ([aibase.com](https://www.aibase.com/news/15253?utm_source=openai))  \n* Journalistic and policy analyses (e.g., Time and Foreign Policy) stress that **China has advanced in AI despite chip controls**, citing workarounds such as stockpiling and smuggling Nvidia GPUs, offshore training on Nvidia hardware in Southeast Asian data centers, and rapid improvement of domestic chips like Huawei\u2019s Ascend series. ([time.com](https://time.com/7204164/china-ai-advances-chips/?utm_source=openai))  One 2025 Foreign Policy piece concludes that export controls \"have neither failed nor worked as well as hoped,\" since Chinese frontier models like DeepSeek V3 and R1 were only *months* behind U.S. models when released. ([foreignpolicy.com](https://foreignpolicy.com/2025/09/19/ai-china-chips-export-controls-h20-nvidia/?utm_source=openai))  \n* Nvidia\u2011linked commentary similarly argues that specific bans (e.g., on the H20) **did not stop China\u2019s AI progress**, contending instead that they mainly hurt U.S. industry, even while some experts still defend them as strategically useful. ([tomshardware.com](https://www.tomshardware.com/pc-components/gpus/nvidia-says-h20-export-controls-didnt-stop-chinas-ai-progress-claims-they-only-stifled-u-s-economic-and-technology-leadership?utm_source=openai))  \n\nThese results imply that, while China\u2019s **scale and cost of deployment** are hurt by hardware constraints, its *frontier model capabilities* have continued to improve rapidly and, on some benchmarks, match or beat Western systems.\n\n**4. Why this is ultimately ambiguous rather than clearly right or wrong**  \nChamath\u2019s claim is qualitative: that lack of access to leading\u2011edge U.S. manufacturing tech and Nvidia\u2019s top chips would \"slow [China] down quite a bit\" over multiple years. By late 2025:\n* There is strong evidence of a *significant compute and scaling slowdown* (loss of compute share, acknowledged chip bottlenecks, deployment constraints), which supports his view. ([research.contrary.com](https://research.contrary.com/deep-dive/drawing-geopolitical-boundaries?utm_source=openai))  \n* There is equally strong evidence that **headline AI capabilities have not been slowed to the same degree**, with Chinese frontier models arriving within months of U.S. releases and achieving top rankings on major leaderboards, despite the hardware gap and controls. ([alibabacloud.com](https://www.alibabacloud.com/blog/alibaba-clouds-qwen-2-5-tops-opencompass-llm-leaderboard-as-the-first-open-source-champion_601701?utm_source=openai))  \n\nBecause \u201cslowed down quite a bit\u201d could reasonably be judged true if one focuses on *compute and deployment*, or false if one focuses on *frontier model quality and timing*, the available data support both interpretations. The subjective, non\u2011quantitative nature of the prediction and the mixed empirical record make it impossible to classify it as clearly right or clearly wrong. Therefore the fairest score is **ambiguous**.",
+      "sources": [
+        {
+          "end_index": 796,
+          "start_index": 625,
+          "title": "U.S. Comprehensive Upgrade of Its Controls on Semiconductor Exports to China",
+          "type": "url_citation",
+          "url": "https://www.stblaw.com/about-us/publications/view/2023/11/02/u.s.-comprehensive-upgrade-of-its-controls-on-semiconductor-exports-to-china?utm_source=openai"
+        },
+        {
+          "end_index": 1101,
+          "start_index": 948,
+          "title": "Trump weighing advanced Nvidia chip sales to China, Bloomberg News reports",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/china/trump-weighing-advanced-nvidia-chip-sales-china-bloomberg-news-reports-2025-11-24/?utm_source=openai"
+        },
+        {
+          "end_index": 1733,
+          "start_index": 1617,
+          "title": "Deep Dive: Export Controls and the AI Race | Contrary Research",
+          "type": "url_citation",
+          "url": "https://research.contrary.com/deep-dive/drawing-geopolitical-boundaries?utm_source=openai"
+        },
+        {
+          "end_index": 2253,
+          "start_index": 2137,
+          "title": "Deep Dive: Export Controls and the AI Race | Contrary Research",
+          "type": "url_citation",
+          "url": "https://research.contrary.com/deep-dive/drawing-geopolitical-boundaries?utm_source=openai"
+        },
+        {
+          "end_index": 2640,
+          "start_index": 2495,
+          "title": "US says China's Huawei can't make more than 200,000 AI chips in 2025",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/china/us-says-chinas-huawei-cant-make-more-than-200000-ai-chips-2025-2025-06-12/?utm_source=openai"
+        },
+        {
+          "end_index": 3347,
+          "start_index": 3231,
+          "title": "Deep Dive: Export Controls and the AI Race | Contrary Research",
+          "type": "url_citation",
+          "url": "https://research.contrary.com/deep-dive/drawing-geopolitical-boundaries?utm_source=openai"
+        },
+        {
+          "end_index": 3761,
+          "start_index": 3590,
+          "title": "Alibaba Cloud's Qwen 2.5 Tops OpenCompass LLM Leaderboard as the First Open-Source Champion - Alibaba Cloud Community",
+          "type": "url_citation",
+          "url": "https://www.alibabacloud.com/blog/alibaba-clouds-qwen-2-5-tops-opencompass-llm-leaderboard-as-the-first-open-source-champion_601701?utm_source=openai"
+        },
+        {
+          "end_index": 3986,
+          "start_index": 3896,
+          "title": "Another Chinese AI model, Alibaba\u2019s Qwen2.5-Max, enters global top 10 in performance evaluation - People's Daily Online",
+          "type": "url_citation",
+          "url": "https://en.people.cn/n3/2025/0206/c90000-20273094.html?utm_source=openai"
+        },
+        {
+          "end_index": 4315,
+          "start_index": 4248,
+          "title": "Global Open Source Large Model Rankings Released, Alibaba Tongyi Qwen Takes the Lead",
+          "type": "url_citation",
+          "url": "https://www.aibase.com/news/15253?utm_source=openai"
+        },
+        {
+          "end_index": 4736,
+          "start_index": 4655,
+          "title": "How China Is Advancing in AI Despite U.S. Chip Restrictions",
+          "type": "url_citation",
+          "url": "https://time.com/7204164/china-ai-advances-chips/?utm_source=openai"
+        },
+        {
+          "end_index": 5079,
+          "start_index": 4959,
+          "title": "China\u2019s Chip Dependence Is Good for U.S. Interests",
+          "type": "url_citation",
+          "url": "https://foreignpolicy.com/2025/09/19/ai-china-chips-export-controls-h20-nvidia/?utm_source=openai"
+        },
+        {
+          "end_index": 5539,
+          "start_index": 5326,
+          "title": "Nvidia says H20 export controls didn't stop China's AI progress - claims 'they only stifled U.S. economic and technology leadership'",
+          "type": "url_citation",
+          "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-says-h20-export-controls-didnt-stop-chinas-ai-progress-claims-they-only-stifled-u-s-economic-and-technology-leadership?utm_source=openai"
+        },
+        {
+          "end_index": 6344,
+          "start_index": 6228,
+          "title": "Deep Dive: Export Controls and the AI Race | Contrary Research",
+          "type": "url_citation",
+          "url": "https://research.contrary.com/deep-dive/drawing-geopolitical-boundaries?utm_source=openai"
+        },
+        {
+          "end_index": 6787,
+          "start_index": 6616,
+          "title": "Alibaba Cloud's Qwen 2.5 Tops OpenCompass LLM Leaderboard as the First Open-Source Champion - Alibaba Cloud Community",
+          "type": "url_citation",
+          "url": "https://www.alibabacloud.com/blog/alibaba-clouds-qwen-2-5-tops-opencompass-llm-leaderboard-as-the-first-open-source-champion_601701?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "The prediction posits a significant slowdown in China's advanced AI capabilities for *multiple years* due to ongoing lack of access to top US semis/Nvidia chips. Export controls remain in effect for leading-edge tech (e.g., Nvidia market share in China at 0% per Jensen Huang, Oct 2025; [Reuters](https://www.reuters.com/world/china/trump-weighing-advanced-nvidia-chip-sales-china-bloomberg-news-reports-2025-11-24/), [WSJ](https://www.wsj.com/tech/ai/china-ai-nvidia-chip-access-6a4fa63d)). However, only ~7.5 months have passed since Apr 2025. Benchmarks show China closing the US performance gap rapidly (LMSYS Arena: US lead shrank from 9.3% Jan 2024 to 1.7% Feb 2025; Stanford AI Index 2025), with new competitive models (DeepSeek, Alibaba Qwen, Baidu Ernie 5.0) released post-podcast. Analyses mixed\u2014controls impact hardware ([FDD Sep 2025](https://www.fdd.org/analysis/2025/09/08/why-export-controls-work-5-debunked-myths-about-u-s-china-ai-competition/)), but AI progress continues via domestic chips/open-source ([AI-Frontiers Jul 2025](https://ai-frontiers.org/articles/us-chip-export-controls-china-ai), [Al Jazeera Nov 2025](https://www.aljazeera.com/economy/2025/11/13/chinas-ai-is-quietly-making-big-inroads-in-silicon-valley)). Too early to assess multi-year slowdown."
+    },
+    {
+      "id": "C-00:43:44.650",
+      "result": "inconclusive",
+      "explanation": "Sacks\u2019 prediction is conditional and long\u2011term: if Harvard keeps DEI\u2011style, race\u2011conscious policies, then every 1\u20132 years there will be new whistleblower\u2011driven litigation revealing ongoing racial discrimination in admissions, with repeated legal findings against Harvard. The key testable elements are (a) a recurring pattern over multiple 1\u20132\u2011year cycles and (b) court or formal legal findings that Harvard is again liable for race\u2011based discrimination in admissions, post\u20112023. The Supreme Court\u2019s 2023 Students for Fair Admissions v. Harvard decision did find Harvard\u2019s prior race\u2011conscious admissions unlawful, but that is the baseline event Sacks is referring to, not a post\u2011prediction data point. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Students_for_Fair_Admissions_v._Harvard?utm_source=openai)) Since the podcast aired on April 19, 2025, only about seven months have elapsed (to November 30, 2025), which is less than the first 1\u20132\u2011year window he specified. In that interval, there has been a federal Office for Civil Rights compliance review and a denial\u2011of\u2011access letter over Harvard\u2019s refusal to turn over admissions data, but that review has not yet produced a legal finding that Harvard is again violating Title VI in admissions. ([ed.gov](https://www.ed.gov/about/news/press-release/us-department-of-education-issues-denial-of-access-letter-harvard-university-its-continued-failure-provide-admissions-data?utm_source=openai)) There has also been a civil\u2011rights complaint by America First Legal alleging unlawful DEI programs and DEI\u2011linked use of federal funds, which calls for investigation and potential sanctions but is not itself a whistleblower admissions\u2011discrimination lawsuit with a liability finding. ([nypost.com](https://nypost.com/2025/08/06/us-news/harvard-got-49m-from-feds-to-fund-unlawful-dei-programs-discrimination-suit-claims/?utm_source=openai)) Other prominent Harvard cases since 2024 concern hostile\u2011environment and antisemitism claims under Title VI and have led to settlements and policy changes, not new judicial findings that Harvard is again discriminating by race in its undergraduate admissions decisions. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Louis_D._Brandeis_Center_for_Human_Rights_Under_Law?utm_source=openai)) Because (1) the first 1\u20132\u2011year period following the prediction has not yet elapsed, and (2) the pattern of repeated whistleblower\u2011driven admissions cases with fresh liability findings has not had time either to materialize or be ruled out, the available evidence neither clearly confirms nor clearly falsifies Sacks\u2019 forecast. It is therefore too early to judge, so the prediction is best classified as inconclusive at this time.",
+      "sources": [
+        {
+          "end_index": 853,
+          "start_index": 744,
+          "title": "Students for Fair Admissions v. Harvard",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Students_for_Fair_Admissions_v._Harvard?utm_source=openai"
+        },
+        {
+          "end_index": 1490,
+          "start_index": 1294,
+          "title": "U.S. Department of Education Issues Denial of Access Letter to Harvard University for Its Continued Failure to Provide Admissions Data | U.S. Department of Education",
+          "type": "url_citation",
+          "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-issues-denial-of-access-letter-harvard-university-its-continued-failure-provide-admissions-data?utm_source=openai"
+        },
+        {
+          "end_index": 1930,
+          "start_index": 1775,
+          "title": "Harvard got $49M from feds to fund unlawful DEI programs, discrimination complaint claims",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/08/06/us-news/harvard-got-49m-from-feds-to-fund-unlawful-dei-programs-discrimination-suit-claims/?utm_source=openai"
+        },
+        {
+          "end_index": 2322,
+          "start_index": 2201,
+          "title": "Louis D. Brandeis Center for Human Rights Under Law",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Louis_D._Brandeis_Center_for_Human_Rights_Under_Law?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive (too early)",
+      "grok_explanation": "The podcast prediction was made on April 19, 2025, and the current date is December 1, 2025\u2014only about 7.5 months later. The prediction specifies new whistleblower-driven litigation every 1\u20132 years if Harvard does not fully abandon DEI-based race-conscious policies. No such litigation has emerged: searches reveal complaints (e.g., America First Legal's Aug 6, 2025 civil rights complaint to DOJ alleging illegal DEI at Harvard Medical School, including admissions, funded by $49M federal grants; House Oversight letter Apr 17, 2025 on Title VI) but no new court filings, whistleblowers revealing admissions discrimination, or legal findings against Harvard since then ([NYPost Aug 6](https://nypost.com/2025/08/06/us-news/harvard-got-49m-from-feds-to-fund-unlawful-dei-programs-discrimination-suit-claims/), [AFL Aug 6](https://aflegal.org/press-release/america-first-legal-files-civil-rights-complaint-calls-on-doj-to-hold-harvard-medical-school-accountable-for-ongoing-illegal-dei-practices/)). Harvard has tweaked policies (ended UMRP May 2025, renamed DEI office Apr 2025, banned race disclosures in interviews Jun 2025) amid Trump admin pressure but rejected full elimination ([Crimson May 28](https://www.thecrimson.com/article/2025/5/28/dei-rise-and-fall/), [CNN Apr 29](https://www.cnn.com/2025/04/29/us/harvard-renames-dei-office-hnk)). Insufficient time has passed to test the prediction."
+    }
+  ]
+}

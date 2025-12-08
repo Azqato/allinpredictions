@@ -1,0 +1,709 @@
+{
+  "meta": {
+    "count": 16,
+    "count_by_result": {
+      "wrong": 10,
+      "right": 3,
+      "inconclusive": 1,
+      "ambiguous": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:15:52.750",
+      "result": "wrong",
+      "explanation": "Bureau of Labor Statistics (BLS) data show the official U\u20113 U.S. unemployment rate at **6.2% in February 2021** and **6.0% in March 2021**, matching Sacks\u2019s statement that unemployment was about 6% at the time of the podcast.([beautifydata.com](https://beautifydata.com/economics/united-states/unemployment-rate/by-state-per-month/2021/february?utm_source=openai))  \n\nSacks predicted that unemployment would fall to **\u201c3 or 4% in two quarters\u201d**, i.e., roughly by **September 2021**. However, BLS figures for that period are:\n\n- **August 2021:** 5.2% unemployment.([bls.gov](https://www.bls.gov/opub/ted/2021/unemployment-rate-drops-to-5-2-percent-in-august-2021.htm?utm_source=openai))  \n- **September 2021:** 4.8% unemployment.([economy.fedprimerate.com](https://economy.fedprimerate.com/2021/10/usa-hard-data-monthly-jobs-employment-situation-report-september-2021.html?utm_source=openai))  \n\nThus, by the end of the two\u2011quarter horizon (around September 2021), unemployment had **not** reached the predicted 3\u20134% range; it was still nearly **5%**. Unemployment did eventually fall into that range later in 2021: BLS data show **4.2% in November 2021** and **3.9% in December 2021**, but that is roughly **8\u20139 months** after March 2021 (three quarters, not two).([bts.gov](https://www.bts.gov/newsroom/us-transportation-sector-unemployment-rate-falls-51-october-2021-remains-above-pre?utm_source=openai))  \n\nDirectionally, Sacks was right that unemployment would keep dropping and eventually return to the 3\u20134% zone, but the **timing** in his prediction was too aggressive. Because his forecast explicitly specified the two\u2011quarter horizon, and the target range was not reached by then, the prediction is best classified as **wrong** on its stated terms.",
+      "sources": [
+        {
+          "end_index": 397,
+          "start_index": 258,
+          "title": "US Unemployment Rate By State in February, 2021",
+          "type": "url_citation",
+          "url": "https://beautifydata.com/economics/united-states/unemployment-rate/by-state-per-month/2021/february?utm_source=openai"
+        },
+        {
+          "end_index": 723,
+          "start_index": 601,
+          "title": "Unemployment rate drops to 5.2 percent in August 2021 : The Economics Daily: U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/ted/2021/unemployment-rate-drops-to-5-2-percent-in-august-2021.htm?utm_source=openai"
+        },
+        {
+          "end_index": 930,
+          "start_index": 767,
+          "title": "Economy: Employment Situation Report for September 2021",
+          "type": "url_citation",
+          "url": "https://economy.fedprimerate.com/2021/10/usa-hard-data-monthly-jobs-employment-situation-report-september-2021.html?utm_source=openai"
+        },
+        {
+          "end_index": 1447,
+          "start_index": 1305,
+          "title": "U.S. Transportation Sector Unemployment Rate Falls to 5.1% in October 2021, Remains Above Pre-Pandemic October 2019\u2019s 2.7% | Bureau of Transportation Statistics",
+          "type": "url_citation",
+          "url": "https://www.bts.gov/newsroom/us-transportation-sector-unemployment-rate-falls-51-october-2021-remains-above-pre?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "U.S. unemployment was 6.0% in March 2021 ([BLS Employment Situation, April 2, 2021](https://www.bls.gov/news.release/archives/empsit_04022021.pdf)). By June 2021 (end of Q2), it was 5.9% ([BLS/CNBC, July 2, 2021](https://www.cnbc.com/2021/07/02/jobs-report-june-2021.html)); by September 2021 (end of Q3), 4.8% ([BLS Employment Situation, Oct 8, 2021](https://www.bls.gov/news.release/archives/empsit_10082021.pdf)). This exceeds the predicted 3\u20134% range and did not reach ~4% until November (4.2%) or December (3.9%)."
+    },
+    {
+      "id": "C-00:16:57.420",
+      "result": "right",
+      "explanation": "Multiple lines of evidence show this prediction came true in the intended sense (national supply and eligibility, not that every willing person actually *did* get vaccinated by that date):\n\n- On April 30, 2021, White House COVID coordinator Jeff Zients stated that the U.S. had just shipped its **300 millionth** COVID\u201119 vaccine dose to states, tribes, territories and federal channels, and reiterated that **by the end of May the U.S. would have enough vaccine supply for every adult American**.\n  ([bidenwhitehouse.archives.gov](https://bidenwhitehouse.archives.gov/briefing-room/press-briefings/2021/04/30/press-briefing-by-white-house-covid-19-response-team-and-public-health-officials-33/?utm_source=openai))\n- A CDC\u2011based cost analysis shows that **about 284.6 million doses had been distributed to jurisdictions and 284.2 million administered by May 31, 2021**, not counting some federal channels, which is consistent with a total national supply above 300 million doses when federal programs are included.\n  ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC11980439/?utm_source=openai))\n- By April 19, **all U.S. states had opened eligibility to everyone aged 16 and older**, meaning that by the end of May, any 16+ American who wanted a vaccine could at least book and receive doses as supply allowed.\n  ([en.wikipedia.org](https://en.wikipedia.org/wiki/COVID-19_vaccination_in_the_United_States?utm_source=openai))\n- Independent analyses at the time (e.g., McKinsey) projected that manufacturers were **on track to supply enough doses for all eligible U.S. adults by the end of May 2021**, and contemporaneous surveys from KFF showed the main emerging constraint was **demand**, not supply.\n  ([mckinsey.com](https://www.mckinsey.com/industries/healthcare/our-insights/a-light-at-the-end-of-the-tunnel-us-covid-19-vaccine-administration?utm_source=openai))\n- News coverage in early May reported states beginning to **turn down federal vaccine allocations** because local demand had slackened, further indicating that vaccine *supply* was no longer the binding constraint for adults who wanted shots.\n  ([en.as.com](https://en.as.com/en/2021/05/09/latest_news/1620553693_285824.html?utm_source=openai))\n\nTaken together, these data show that by the end of May 2021 the U.S. had shipped on the order of 300 million doses and had broad 16+ eligibility with excess supply, matching Sacks\u2019s prediction that there would be sufficient vaccine (around 300 million doses) for every American over 16 who *wanted* one to be able to receive it by then.",
+      "sources": [
+        {
+          "end_index": 750,
+          "start_index": 536,
+          "title": "Press Briefing by White House COVID-19 Response Team and Public Health Officials | The White House",
+          "type": "url_citation",
+          "url": "https://bidenwhitehouse.archives.gov/briefing-room/press-briefings/2021/04/30/press-briefing-by-white-house-covid-19-response-team-and-public-health-officials-33/?utm_source=openai"
+        },
+        {
+          "end_index": 1149,
+          "start_index": 1055,
+          "title": "Jurisdiction-level costs of the initial phase of the COVID-19 Vaccination Program in the United States, December 20, 2020\u2013May 31, 2021 - PMC",
+          "type": "url_citation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11980439/?utm_source=openai"
+        },
+        {
+          "end_index": 1481,
+          "start_index": 1370,
+          "title": "COVID-19 vaccination in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COVID-19_vaccination_in_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 1925,
+          "start_index": 1762,
+          "title": "Update on US COVID-19 vaccine administration | McKinsey",
+          "type": "url_citation",
+          "url": "https://www.mckinsey.com/industries/healthcare/our-insights/a-light-at-the-end-of-the-tunnel-us-covid-19-vaccine-administration?utm_source=openai"
+        },
+        {
+          "end_index": 2272,
+          "start_index": 2173,
+          "title": "Covid-19 vaccine news summary: Sunday 9 May 2021 - AS USA",
+          "type": "url_citation",
+          "url": "https://en.as.com/en/2021/05/09/latest_news/1620553693_285824.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was accurate. President Biden announced on March 11, 2021, that there would be sufficient COVID-19 vaccine supply for every adult American (over 16) by the end of May 2021, aligning with the podcast quote. US population over 16 was approximately 264 million ([Census data](https://www.census.gov/data/tables/time-series/demo/popest/2020s-national-detail.html)). By May 31, 2021, the federal government had distributed about 284.6 million doses ([PMC study](https://pmc.ncbi.nlm.nih.gov/articles/PMC11980439/)), close to the 'about 300 million' cited and sufficient for at least one dose per eligible person. All states opened eligibility to adults by May 1, supply exceeded demand, and Biden confirmed on May 4, 2021: 'Now that we have the vaccine supply...' ([White House remarks](https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2021/05/04/remarks-by-president-biden-on-the-covid-19-response-and-the-vaccination-program/)). No shortages reported; vaccination plateaued due to hesitancy, not supply."
+    },
+    {
+      "id": "C-00:17:26.000",
+      "result": "wrong",
+      "explanation": "Key parts of Sacks\u2019s conditional prediction did not come true by Memorial Day 2021:\n\n- **His condition on vaccine access was largely satisfied.** By early April 2021, President Biden directed states to make all adults eligible for vaccination by April 19, and by mid\u2011April essentially all states had opened eligibility to all adults 16+ with a site within about 5 miles for 90% of adults.([cnbc.com](https://www.cnbc.com/2021/03/29/biden-to-announce-90percent-of-us-adults-will-eligible-for-covid-shots-by-april-19-with-sites-within-five-miles-of-home.html?utm_source=openai)) While vaccine rollout was not perfect, access was no longer tightly rationed to small priority groups\u2014substantially matching Sacks\u2019s \u201clet everyone who wants to get a vaccine get one\u201d condition.\n\n- **The pandemic was *not* over as a large\u2011scale public health emergency by Memorial Day 2021.**\n  - The U.S. Department of Health and Human Services\u2019 COVID\u201119 Public Health Emergency (PHE) declaration, first issued in January 2020, was explicitly renewed in April 2021 and repeatedly thereafter; in a January 21, 2021 letter HHS told governors it expected the PHE to remain in place for *all of 2021*.([aspr.hhs.gov](https://aspr.hhs.gov/legal/PHE/Pages/Letter-to-Governors-on-the-COVID-19-Response.aspx?utm_source=openai)) The federal PHE did not actually end until May 11, 2023.([kff.org](https://www.kff.org/covid-19/the-end-of-the-covid-19-public-health-emergency-details-on-health-coverage-and-access/?utm_source=openai)) That is directly contrary to his benchmark of \u201cno longer a large\u2011scale public health emergency.\u201d\n  - Around Memorial Day weekend 2021, U.S. COVID data still showed substantial transmission and mortality: the 7\u2011day average of new cases was just under 20,000 per day, and the 7\u2011day average of deaths was roughly 500\u2013600 per day.([cnbc.com](https://www.cnbc.com/2021/06/01/covid-19-cases-deaths-vaccinations-daily-update.html?utm_source=openai)) Contemporary coverage described cases as at their lowest level in a year but clearly still an ongoing pandemic, not \"zero pandemic.\"([cnbc.com](https://www.cnbc.com/2021/05/30/us-covid-cases-lowest-in-a-year-as-memorial-day-travel-picks-up.html?utm_source=openai))\n  - Globally and in the U.S., authorities still framed COVID\u201119 as an active pandemic; WHO continued to treat it as a pandemic emergency well past 2021 and only ended the *global* Public Health Emergency of International Concern in May 2023.([who.int](https://www.who.int/europe/emergencies/situations/covid-19?utm_source=openai))\n\nGiven that (1) vaccines were broadly available by the relevant time, satisfying the spirit of his condition, but (2) COVID\u201119 in the U.S. was still officially and substantively a major public health emergency with tens of thousands of new cases and hundreds of deaths per day, Sacks\u2019s claim that there would be \"zero pandemic understood as such\" in the U.S. by Memorial Day 2021 is best classified as **wrong**.",
+      "sources": [
+        {
+          "end_index": 611,
+          "start_index": 423,
+          "title": "Covid vaccine: Biden says 90% of U.S. adults will be eligible by April 19",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/03/29/biden-to-announce-90percent-of-us-adults-will-eligible-for-covid-shots-by-april-19-with-sites-within-five-miles-of-home.html?utm_source=openai"
+        },
+        {
+          "end_index": 1334,
+          "start_index": 1212,
+          "title": "Renewal of Public Health Emergency for COVID-19 by HHS on January 21, 2021",
+          "type": "url_citation",
+          "url": "https://aspr.hhs.gov/legal/PHE/Pages/Letter-to-Governors-on-the-COVID-19-Response.aspx?utm_source=openai"
+        },
+        {
+          "end_index": 1537,
+          "start_index": 1391,
+          "title": "The End of the COVID-19 Public Health Emergency: Details on Health Coverage and Access | KFF",
+          "type": "url_citation",
+          "url": "https://www.kff.org/covid-19/the-end-of-the-covid-19-public-health-emergency-details-on-health-coverage-and-access/?utm_source=openai"
+        },
+        {
+          "end_index": 1981,
+          "start_index": 1865,
+          "title": "Covid-19 cases, deaths, and vaccinations: Daily U.S. data on June 1",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/06/01/covid-19-cases-deaths-vaccinations-daily-update.html?utm_source=openai"
+        },
+        {
+          "end_index": 2248,
+          "start_index": 2116,
+          "title": "U.S. Covid cases lowest in a year as Memorial Day travel picks up",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/05/30/us-covid-cases-lowest-in-a-year-as-memorial-day-travel-picks-up.html?utm_source=openai"
+        },
+        {
+          "end_index": 2580,
+          "start_index": 2491,
+          "title": "Coronavirus disease (COVID-19) pandemic",
+          "type": "url_citation",
+          "url": "https://www.who.int/europe/emergencies/situations/covid-19?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By Memorial Day 2021 (May 31), US COVID-19 daily new cases were around 10,000-12,000 (e.g., 11,976 on May 29 per [CNBC](https://www.cnbc.com/2021/05/30/us-covid-cases-lowest-in-a-year-as-memorial-day-travel-picks-up.html), ~9,349 around Memorial Day per [WUSA9](https://www.wusa9.com/article/news/verify/covid-cases-five-times-higher-than-last-memorial-day-fact-check-2022/65-397f7a9a-0a89-4e6d-85d5-7b8e071be0cc)), the lowest in over a year. Test positivity was ~0.8-0.9%. Hospitalizations had declined sharply to ~15,000-20,000 nationally (from peaks >150,000). Daily deaths were in the low hundreds (vs. 3,000+ peaks). Vaccination reached 50% of population with \u22651 dose, 41% fully vaccinated ([CNN](https://www.cnn.com/2021/05/29/health/us-coronavirus-saturday), [Marketwatch](https://www.marketwatch.com/story/more-than-half-of-u-s-adults-are-fully-vaccinated-as-memorial-day-air-travel-reaches-pre-pandemic-levels-11622564831)). Restrictions eased (CDC mask guidance May 13), travel surged to pre-pandemic levels. This matched 'effectively over as a pandemic, no longer large-scale public health emergency, sporadic cases continue.' Delta surge began later (June-July). Vaccines rolled out widely post-March 2021 despite phased eligibility."
+    },
+    {
+      "id": "G-00:19:29.970",
+      "result": "inconclusive",
+      "explanation": "It is **too early** to evaluate this prediction.\n\n- The prediction cites a Congressional Budget Office (CBO) long\u2011term projection that **U.S. federal debt held by the public will reach about 202% of GDP in 2051**. That is a forecast for the year **2051**, not a current or near\u2011term outcome.\n- As of today (November 29, 2025), 2051 is still **26 years in the future**, so we cannot yet know whether debt will actually reach that level.\n- Available data today can only show where the debt\u2011to\u2011GDP ratio stands *now* and in recent years; it cannot confirm or refute a 2051 outcome.\n\nBecause the target year has not arrived and the underlying prediction is about a specific **future** ratio in 2051, the correctness of the prediction **cannot yet be determined**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "The predictor accurately cited the CBO's March 4, 2021, 'Long-Term Budget Outlook' report, which stated: 'Federal debt held by the public is projected to equal 202 percent of gross domestic product (GDP) in 2051.' This matches the podcast's release date of March 6, 2021. Sources: [CBO publication](https://www.cbo.gov/publication/56977), [CBO PDF](https://www.cbo.gov/system/files/2021-03/56977-LTBO-2021.pdf), multiple news reports (e.g., Reuters, WSJ, CNBC) confirming the 202% figure for 2051."
+    },
+    {
+      "id": "A-00:21:06.840",
+      "result": "ambiguous",
+      "explanation": "There is no real\u2011world policy outcome that directly matches Chamath\u2019s hypothetical, so his quantitative claim can\u2019t be cleanly scored as right or wrong.\n\nKey facts:\n- In March 2021, Congress passed and President Biden signed the American Rescue Plan Act (ARPA), a $1.9 trillion COVID relief package, largely as proposed rather than a smaller, highly means\u2011tested alternative.([en.wikipedia.org](https://en.wikipedia.org/wiki/American_Rescue_Plan_Act_of_2021?utm_source=openai))  Chamath\u2019s scenario was explicitly *instead of* that $1.9T package.\n- ARPA combined many elements: $1,400 recovery rebates, extended unemployment benefits, large state and local aid, school funding, health subsidies, expanded child tax credit, etc. It was not structured as a purely means\u2011tested transfer heavily concentrated on the poorest and excluding the richest, which is what his statement envisioned.([en.wikipedia.org](https://en.wikipedia.org/wiki/American_Rescue_Plan_Act_of_2021?utm_source=openai))\n- Analytical estimates suggest that some *components* of ARPA line up in magnitude with the range he mentioned. For example, the Penn Wharton Budget Model estimated the $1,400 \u201crecovery rebates\u201d alone would cost about $416\u2013465 billion, depending on the version,([budgetmodel.wharton.upenn.edu](https://budgetmodel.wharton.upenn.edu/estimates/2021/3/4/recovery-rebates-in-the-american-rescue-plan-house?utm_source=openai)) and it estimated about $120 billion for the expanded child tax credit and roughly $350 billion for enhanced unemployment benefits within the broader Biden relief plan.([budgetmodel.wharton.upenn.edu](https://budgetmodel.wharton.upenn.edu/issues/2021/2/3/macroeconomic-effects-of-19-trillion-biden-covid-relief-plan?utm_source=openai))  But deciding which combination of components corresponds to his hypothetical \u201creally expansive\u201d means\u2011tested program is subjective.\n\nBecause:\n- The specific means\u2011tested\u2011only package he described was never enacted, and\n- Any attempt to back\u2011fit his $500\u2013700B estimate to pieces of ARPA relies on judgment rather than a clear empirical test,\n\nwe cannot definitively say his prediction was empirically right or wrong. It is therefore best classified as **ambiguous** rather than correct, incorrect, or merely \u201ctoo early to tell.\u201d",
+      "sources": [
+        {
+          "end_index": 517,
+          "start_index": 415,
+          "title": "American Rescue Plan Act of 2021",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/American_Rescue_Plan_Act_of_2021?utm_source=openai"
+        },
+        {
+          "end_index": 1028,
+          "start_index": 926,
+          "title": "American Rescue Plan Act of 2021",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/American_Rescue_Plan_Act_of_2021?utm_source=openai"
+        },
+        {
+          "end_index": 1451,
+          "start_index": 1291,
+          "title": "Recovery Rebates in the American Rescue Plan Act of 2021 (House of Representatives Version) \u2014 Penn Wharton Budget Model",
+          "type": "url_citation",
+          "url": "https://budgetmodel.wharton.upenn.edu/estimates/2021/3/4/recovery-rebates-in-the-american-rescue-plan-house?utm_source=openai"
+        },
+        {
+          "end_index": 1786,
+          "start_index": 1619,
+          "title": "Macroeconomic Effects of the $1.9 Trillion Biden COVID Relief Plan \u2014 Penn Wharton Budget Model",
+          "type": "url_citation",
+          "url": "https://budgetmodel.wharton.upenn.edu/issues/2021/2/3/macroeconomic-effects-of-19-trillion-biden-covid-relief-plan?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath estimated that an expansive means-tested COVID stimulus heavily targeting the poorest and excluding the richest would cost $500\u2013700B, as an alternative to the proposed $1.9T package. While no standalone $500\u2013700B package replaced the ARP, the actual costs of ARP's key means-tested components align closely: third-round direct payments (EIPs) totaled ~$411B ([Tax Foundation](https://taxfoundation.org/data/all/federal/economic-impact-payments/), [USA Facts](https://usafacts.org/articles/2021-american-rescue-plan-act-spending-breakdown-cares-act/)); expanded unemployment assistance ~$242B (USA Facts); advance Child Tax Credit payments >$92B ([Treasury](https://home.treasury.gov/news/press-releases/jy0645)). Sum: ~$745B, on the order of $500\u2013700B. These were means-tested (e.g., EIPs phased out above $75k/$150k AGI, zero for richest; UI for unemployed; CTC refundable/phased). The estimate for such targeted aid proved accurate. ARP total was $1.9T due to non-targeted aid (e.g., $350B states)."
+    },
+    {
+      "id": "C-00:28:17.880",
+      "result": "wrong",
+      "explanation": "The prediction has two parts, and together they do not hold up.\n\n1. **\u201cBy June 2021, Covid as a pandemic is going to be over [in the U.S.]\u201d**  \n   \u2022 In early June 2021 the U.S. was still recording roughly 14,000 new cases and about 400 deaths per day, with tens of thousands of new infections each week and many restrictions and emergency measures still in place. ([archive.cdc.gov](https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/covid-data/covidview/past-reports/06112021.html?utm_source=openai))  \n   \u2022 Far from being \u201cover,\u201d the U.S. then experienced a large **Delta** surge starting in the summer of 2021, with cases and hospitalizations rising sharply as Delta became the dominant variant. ([statnews.com](https://www.statnews.com/2021/07/20/delta-variant-surges-to-83-of-sequenced-covid-19-cases-in-the-u-s-cdc-says/?utm_source=openai))  \n   \u2022 This was followed by the massive **Omicron** wave in winter 2021\u201322, which produced the most intense phase of U.S. transmission, with daily new cases peaking at over 1.25 million and a seven\u2011day average near 600,000 cases in January 2022. ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC10385263/?utm_source=openai))  \n   These large national waves after June 2021 indicate that Covid was still functioning as a pandemic in the U.S. well beyond the date he specified.\n\n2. **\u201cThere will always be cases\u2026 It\u2019s going to return as a seasonal illness.\u201d**  \n   \u2022 The persistence part is correct: as of 2025, experts widely describe Covid as an *endemic* virus that continues to circulate year\u2011round in the U.S., causing recurrent waves rather than disappearing. ([washingtonpost.com](https://www.washingtonpost.com/wellness/2025/03/13/covid-endemic-pandemic-five-years/?utm_source=openai))  \n   \u2022 However, Covid has **not** clearly settled into a simple, flu\u2011like winter\u2011only pattern. Analyses through 2023\u201325 emphasize that SARS\u2011CoV\u20112 still produces sizable waves in multiple seasons (including summer), and that its transmission has not yet fallen into a stable, predictable seasonal rhythm. ([statnews.com](https://www.statnews.com/2023/08/23/covid-19-has-not-yet-fallen-into-a-seasonal-pattern/?utm_source=openai))  \n\nBecause (a) the time\u2011specific claim that the pandemic phase in the U.S. would be \u201cover by June 2021\u201d is clearly refuted by subsequent large national waves, and (b) the virus\u2019s behavior to date is more accurately described as year\u2011round endemic with complex surges rather than a straightforward seasonal illness, the overall prediction is best judged **wrong**.",
+      "sources": [
+        {
+          "end_index": 544,
+          "start_index": 400,
+          "title": "Healthier Together | CDC",
+          "type": "url_citation",
+          "url": "https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/covid-data/covidview/past-reports/06112021.html?utm_source=openai"
+        },
+        {
+          "end_index": 890,
+          "start_index": 743,
+          "title": "Delta variant surges to 83% of sequenced Covid-19 cases in the U.S.",
+          "type": "url_citation",
+          "url": "https://www.statnews.com/2021/07/20/delta-variant-surges-to-83-of-sequenced-covid-19-cases-in-the-u-s-cdc-says/?utm_source=openai"
+        },
+        {
+          "end_index": 1232,
+          "start_index": 1138,
+          "title": "Spatiotemporal Patterns of the Omicron Wave of COVID-19 in the United States - PMC",
+          "type": "url_citation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10385263/?utm_source=openai"
+        },
+        {
+          "end_index": 1803,
+          "start_index": 1676,
+          "title": "Five years since the pandemic began, covid may now be endemic, experts say",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/wellness/2025/03/13/covid-endemic-pandemic-five-years/?utm_source=openai"
+        },
+        {
+          "end_index": 2233,
+          "start_index": 2109,
+          "title": "Covid-19 hasn\u2019t fallen into a seasonal pattern \u2014 yet",
+          "type": "url_citation",
+          "url": "https://www.statnews.com/2023/08/23/covid-19-has-not-yet-fallen-into-a-seasonal-pattern/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "By late June 2021, US daily COVID-19 cases had declined to a 7-day average of ~11,000-12,000 ([Worldometer](https://www.worldometers.info/coronavirus/country/us/), [NYT Covid Tracker](https://www.nytimes.com/interactive/2021/us/covid-cases.html), [Wikipedia US 2021 timeline](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States)). However, the Delta variant\u2014designated a concern by CDC on June 15\u2014drove a major surge starting early July, with cases rising to >60,000 daily by late July and peaking at >160,000 in September, overwhelming hospitals in many areas and prompting renewed mask mandates (e.g., CDC indoor mask recommendation July 27) and local restrictions ([CDC timeline](https://www.cdc.gov/museum/timeline/covid19.html), [CNN June 14 news](https://www.cnn.com/us/live-news/coronavirus-pandemic-vaccine-updates-06-14-21), [Wikipedia Delta](https://en.wikipedia.org/wiki/SARS-CoV-2_Delta_variant)). Daily deaths averaged >300 in June and rose again. No officials declared the pandemic over; the US public health emergency lasted until May 2023. While COVID has since evolved into a seasonal illness with winter peaks ([CDC respiratory virus dashboard](https://www.cdc.gov/respiratory-viruses/data/activity-levels.html), [Nature study on seasonality](https://www.nature.com/articles/s41598-023-31057-1)), it continued 'functioning as a pandemic' immediately after June 2021, falsifying the prediction."
+    },
+    {
+      "id": "A-00:38:37.410",
+      "result": "ambiguous",
+      "explanation": "The EU did introduce the **EU Digital COVID Certificate** (often called the Green Pass), a QR\u2011code\u2011based, digitally verifiable document used across all member states starting July 2021 to facilitate travel during reopening. It could certify that someone had been *vaccinated*, had a recent *negative test*, or had *recovered* from COVID\u201119, and was explicitly designed to ease cross\u2011border movement within the EU. ([en.wikipedia.org](https://en.wikipedia.org/wiki/EU_Digital_COVID_Certificate?utm_source=openai))\n\nHowever, the *legal* framework stressed that neither vaccination nor possession of the certificate was to be a formal precondition for exercising free\u2011movement rights. EU Council and Parliament texts and Q&A documents repeatedly state that the EU Digital COVID Certificate is **not a travel document and not a precondition** for free movement, and that people must not be discriminated against for being unvaccinated; test or recovery certificates had to be accepted as alternatives. ([consilium.europa.eu](https://www.consilium.europa.eu/en/press/press-releases/2021/05/21/covid-19-coreper-endorses-political-agreement-on-the-eu-digital-covid-certificate-to-facilitate-free-movement/?utm_source=openai))\n\nIn practice, during 2021\u20132022 many member states *did* require an EU Digital COVID Certificate (or equivalent) for quarantine\u2011free or minimally restricted travel, so vaccinated travellers effectively used a digital vaccine passport to move freely. At the same time, unvaccinated travellers could often still move using test certificates, and the EU\u2011level rules never made **vaccination alone** a universal, formal requirement. ([en.wikipedia.org](https://en.wikipedia.org/wiki/EU_Digital_COVID_Certificate?utm_source=openai))\n\nBecause the prediction can be read either as:\n- broadly anticipating an EU\u2011wide digital system (which did happen and functioned very much like a vaccine passport in practice), or\n- specifically claiming that *being vaccinated* would be a **required** condition for free movement at the EU\u2011law level (which did *not* happen),\nits accuracy depends heavily on interpretation. For that reason, the outcome is best classified as **ambiguous** rather than clearly right or wrong.",
+      "sources": [
+        {
+          "end_index": 549,
+          "start_index": 451,
+          "title": "EU Digital COVID Certificate",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/EU_Digital_COVID_Certificate?utm_source=openai"
+        },
+        {
+          "end_index": 1257,
+          "start_index": 1037,
+          "title": "COVID-19: Coreper endorses political agreement on the EU digital COVID certificate to facilitate free movement - Consilium",
+          "type": "url_citation",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2021/05/21/covid-19-coreper-endorses-political-agreement-on-the-eu-digital-covid-certificate-to-facilitate-free-movement/?utm_source=openai"
+        },
+        {
+          "end_index": 1786,
+          "start_index": 1688,
+          "title": "EU Digital COVID Certificate",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/EU_Digital_COVID_Certificate?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Chamath's prediction accurately foresaw the EU's implementation of the Digital COVID Certificate (DCC, aka Digital Green Certificate), proposed on March 17, 2021 (days after the March 6 podcast) and launched July 1, 2021. This digitally verifiable certificate proved vaccination, negative test, or recovery status, facilitating 'free travel' by exempting holders from quarantines/tests where member states imposed restrictions. While not an EU-wide mandate (member states decided requirements), up to 17 states required it in 2022 for intra-EU travel (*[Wikipedia](https://en.wikipedia.org/wiki/EU_Digital_COVID_Certificate)*, *[EU Commission](https://commission.europa.eu/strategy-and-policy/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_en)*). Commonly termed a 'vaccine passport' despite including tests/recovery (*[Euronews](https://www.euronews.com/travel/2021/03/17/eu-plans-to-boost-summer-travel-with-its-proposal-for-a-digital-vaccine-passport)*), it matched the quote and enabled reopening travel in 2021. Expired June 2023 (*[EU site](https://ec.europa.eu/commission/presscorner/detail/en/ip_21_1181)*)."
+    },
+    {
+      "id": "C-00:39:58.210",
+      "result": "wrong",
+      "explanation": "Sacks predicted that government proposals for digital vaccination passports would \"fade away very quickly once Covid is over,\" i.e., would not persist long after mid\u20112021.\n\nIn reality, governments expanded and institutionalized digital vaccine credentials well beyond that timeframe:\n\n- The EU Digital COVID Certificate (EU DCC) was formally in force from 1 July 2021 until 30 June 2023, and its regulation was explicitly extended by one year to mid\u20112023 rather than allowed to lapse in 2022. It was used across all EU member states, facilitated free movement, and became a global reference standard for travel, with over a billion certificates issued and dozens of non\u2011EU countries connected. ([consilium.europa.eu](https://www.consilium.europa.eu/en/policies/coronavirus-pandemic/eu-digital-covid-certificate/?utm_source=openai))\n- Instead of being retired when the WHO declared the end of the COVID\u201119 global health emergency in May 2023, the EU DCC framework was handed over to the World Health Organization. WHO and the European Commission launched the Global Digital Health Certification Network in June\u2013July 2023, explicitly building on the EU DCC to support ongoing verification of COVID\u201119 and other vaccination certificates for future health threats. ([who.int](https://www.who.int/news/item/05-06-2023-the-european-commission-and-who-launch-landmark-digital-health-initiative-to-strengthen-global-health-security?utm_source=openai))\n- In the United States, no single federal passport was issued, but a de facto national standard emerged: SMART Health Cards. By early 2022, at least 21 states plus DC and Puerto Rico offered SMART Health Cards as verifiable digital proof of vaccination, and more than 200 million Americans could obtain such credentials. These were explicitly described by public and private stakeholders as the national standard for digital vaccine verification and used for travel and access to venues. ([forbes.com](https://www.forbes.com/sites/suzannerowankelleher/2022/02/24/national-vaccine-quietly-rolled-out/?utm_source=openai))\n- New York\u2019s Excelsior Pass, a prominent state-run digital vaccine passport used for entry to restaurants and entertainment venues, launched in 2021 and was not decommissioned until July 28, 2023\u2014over two years after mid\u20112021 and months after the U.S. federal public health emergency ended. ([ny1.com](https://ny1.com/nyc/getaway-guy/news/2023/06/30/new-york-will-shut-down-its-covid-19-era-vaccination-app?utm_source=openai))\n\nWhile most day-to-day access mandates eased by 2022, digital vaccine-passport systems did not quickly disappear once the acute COVID period passed; they were extended, widely adopted, and repurposed into longer-term digital health credential infrastructure. That outcome is opposite to Sacks\u2019s claim that such proposals would fade away very quickly once Covid was over, so the prediction is best judged as wrong.",
+      "sources": [
+        {
+          "end_index": 870,
+          "start_index": 733,
+          "title": "EU digital COVID certificate: how it works - Consilium",
+          "type": "url_citation",
+          "url": "https://www.consilium.europa.eu/en/policies/coronavirus-pandemic/eu-digital-covid-certificate/?utm_source=openai"
+        },
+        {
+          "end_index": 1483,
+          "start_index": 1301,
+          "title": "The European Commission and WHO launch landmark digital health initiative to strengthen global health security",
+          "type": "url_citation",
+          "url": "https://www.who.int/news/item/05-06-2023-the-european-commission-and-who-launch-landmark-digital-health-initiative-to-strengthen-global-health-security?utm_source=openai"
+        },
+        {
+          "end_index": 2104,
+          "start_index": 1973,
+          "title": "A National Vaccine Pass Has Quietly Rolled Out \u2013 And Red States Are Getting On Board",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/suzannerowankelleher/2022/02/24/national-vaccine-quietly-rolled-out/?utm_source=openai"
+        },
+        {
+          "end_index": 2532,
+          "start_index": 2397,
+          "title": "New York will shut down its COVID-19 era vaccination app",
+          "type": "url_citation",
+          "url": "https://ny1.com/nyc/getaway-guy/news/2023/06/30/new-york-will-shut-down-its-covid-19-era-vaccination-app?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Digital vaccination passports for COVID-19 were temporary measures that ended shortly after the pandemic's peak. The EU Digital COVID Certificate expired on June 30, 2023 ([Wikipedia](https://en.wikipedia.org/wiki/EU_Digital_COVID_Certificate), [Dutch gov](https://www.government.nl/latest/news/2023/06/12/from-1-july-digital-covid-certificates-will-no-longer-be-issued), [EU Council](https://www.consilium.europa.eu/en/policies/coronavirus-pandemic/covid-19-travel-measures/)). US had no federal passport; requirements lifted by May 2023 ([NAFSA](https://www.nafsa.org/regulatory-information/covid-vaccine-and-test-requirements-us-entry), CDC immigrant visas March 2025 ([State Dept](https://travel.state.gov/content/travel/en/News/visas-news/cdc-removes-covid-19-vaccination-requirement-for-immigrant-visa-applicants.html))). No ongoing mandates in 2025 for travel or events; apps discontinued (e.g., CLEAR HealthPass March 2024). Proposals faded post-emergency (WHO May 2023), not persisting long-term ([Congress bills](https://www.congress.gov/bill/119th-congress/house-bill/121))."
+    },
+    {
+      "id": "A-00:42:09.390",
+      "result": "wrong",
+      "explanation": "Chamath\u2019s prediction had two key elements: (1) **scope** \u2013 \u201cmost cities\u201d would adopt some kind of vaccination/biological\u2011status passport, at least for sporting events and concerts; and (2) **durability/structure** \u2013 framed as a kind of ongoing \u201cbiological Patriot Act,\u201d i.e., a stable post\u2011COVID infrastructure rather than a short emergency blip.\n\n**What actually happened (2021\u20132025):**\n\n* Many jurisdictions did introduce vaccine or COVID\u2011status passes in 2021\u2013early 2022. Examples include:\n  * New York City\u2019s *Key to NYC* program, requiring proof of vaccination for indoor dining, gyms, and entertainment venues, including concerts and clubs, from August 2021 until it was suspended March 7, 2022. ([ny1.com](https://ny1.com/nyc/all-boroughs/news/2022/03/04/some-city-covid-19-rules-are-changing--here-s-what-you-need-to-know--?utm_source=openai))\n  * San Francisco\u2019s requirement for proof of vaccination at indoor restaurants, bars, gyms, and large indoor events beginning August 2021, which was dropped for most businesses March 11, 2022. ([sf.gov](https://www.sf.gov/news--sf-require-proof-vaccination-entry-certain-indoor-businesses-and-all-large-indoor-events?utm_source=openai))\n  * Multiple other U.S. cities (Chicago, Boston, New Orleans, Washington, D.C., Seattle, Philadelphia, Newark, etc.) briefly required proof of vaccination for indoor dining, gyms, and entertainment venues. ([lonelyplanet.com](https://www.lonelyplanet.com/news/travel-in-the-united-states-covid-2021?utm_source=openai))\n  * Numerous countries in Europe, Asia, and elsewhere rolled out vaccine\u2011passport or COVID\u2011certificate systems for domestic venues and events \u2013 e.g., Italy\u2019s *Green Pass*, France\u2019s *passe sanitaire*, South Korea, Singapore, Taiwan, Azerbaijan, and others. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Vaccine_passports_during_the_COVID-19_pandemic?utm_source=openai))\n\n* At the same time, **large swaths of the U.S. and other regions never adopted such systems and in fact banned them**:\n  * U.S. states including Texas, Florida, Alabama, Arkansas, Iowa, Montana, and several others enacted laws or executive orders prohibiting government\u2011issued vaccine passports and often restricting businesses from requiring proof of vaccination. ([gov.texas.gov](https://gov.texas.gov/news/post/governor-abbott-issues-executive-order-prohibiting-government-mandated-vaccine-passports?utm_source=openai))\n  * Major cities in those states (e.g., Houston, Dallas, San Antonio, Austin, Miami, Tampa, Orlando, Jacksonville) therefore **never had city\u2011wide vaccine\u2011passport mandates** for general event and venue access.\n  * Many populous cities in India, Africa, and parts of Latin America also did not implement comprehensive vaccine passports for everyday access to concerts, sports, or restaurants; global summaries of vaccine\u2011passport use list dozens of adopting countries, not a majority of the world\u2019s major cities. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Vaccine_passports_during_the_COVID-19_pandemic?utm_source=openai))\n\n* Crucially, **most of the systems that did exist were temporary and have been rolled back**:\n  * NYC ended Key to NYC in March 2022; businesses have discretion but there is no city\u2011mandated proof\u2011of\u2011vaccination requirement for patrons. ([ny1.com](https://ny1.com/nyc/all-boroughs/news/2022/03/04/some-city-covid-19-rules-are-changing--here-s-what-you-need-to-know--?utm_source=openai))\n  * San Francisco ended its proof\u2011of\u2011vaccination requirement for most indoor businesses on March 11, 2022; only large \u201cmega events\u201d briefly retained stricter rules. ([sf.gov](https://www.sf.gov/news--sf-drops-vaccine-mandate-restaurants-bars-gyms?utm_source=openai))\n  * EU member states stopped requiring the EU Digital COVID Certificate even for travel by August 2022, and domestic \u201cGreen Pass\u201d\u2011style rules in places like Italy and France were also phased out around 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/EU_Digital_COVID_Certificate?utm_source=openai))\n\nBy late 2025, **there is no enduring, near\u2011universal system of vaccine or biological\u2011status passports for concerts and sporting events in \u201cmost major cities.\u201d** Instead, a subset of cities and countries briefly adopted such measures, while many others explicitly rejected or banned them, and almost all such requirements have since been lifted.\n\nBecause:\n\n* the prediction said **\u201cmost cities will have to have them\u201d** (a majority, not just \u201csome\u201d or \u201cmany\u201d),\n* and implied a **lasting post\u2011COVID security infrastructure** (\u201cbiological Patriot Act\u201d),\n* yet in reality adoption was partial, heavily contested, and largely temporary,\n\nthe prediction, taken as stated, did **not** come true.\n\nSo the outcome is best classified as **wrong**: events moved in that direction briefly, but not to the extent or permanence Chamath forecast.",
+      "sources": [
+        {
+          "end_index": 889,
+          "start_index": 740,
+          "title": "What to know about changing COVID-19 rules",
+          "type": "url_citation",
+          "url": "https://ny1.com/nyc/all-boroughs/news/2022/03/04/some-city-covid-19-rules-are-changing--here-s-what-you-need-to-know--?utm_source=openai"
+        },
+        {
+          "end_index": 1227,
+          "start_index": 1084,
+          "title": "SF to require proof of vaccination for entry to certain indoor businesses and all large indoor events | SF.gov",
+          "type": "url_citation",
+          "url": "https://www.sf.gov/news--sf-require-proof-vaccination-entry-certain-indoor-businesses-and-all-large-indoor-events?utm_source=openai"
+        },
+        {
+          "end_index": 1547,
+          "start_index": 1435,
+          "title": "Omicron in the US: What places have restrictions - Lonely Planet",
+          "type": "url_citation",
+          "url": "https://www.lonelyplanet.com/news/travel-in-the-united-states-covid-2021?utm_source=openai"
+        },
+        {
+          "end_index": 1921,
+          "start_index": 1805,
+          "title": "Vaccine passports during the COVID-19 pandemic",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Vaccine_passports_during_the_COVID-19_pandemic?utm_source=openai"
+        },
+        {
+          "end_index": 2448,
+          "start_index": 2291,
+          "title": "Governor Abbott Issues Executive Order Prohibiting Government-Mandated Vaccine Passports | Office of the Texas Governor | Greg Abbott",
+          "type": "url_citation",
+          "url": "https://gov.texas.gov/news/post/governor-abbott-issues-executive-order-prohibiting-government-mandated-vaccine-passports?utm_source=openai"
+        },
+        {
+          "end_index": 3080,
+          "start_index": 2964,
+          "title": "Vaccine passports during the COVID-19 pandemic",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Vaccine_passports_during_the_COVID-19_pandemic?utm_source=openai"
+        },
+        {
+          "end_index": 3471,
+          "start_index": 3322,
+          "title": "What to know about changing COVID-19 rules",
+          "type": "url_citation",
+          "url": "https://ny1.com/nyc/all-boroughs/news/2022/03/04/some-city-covid-19-rules-are-changing--here-s-what-you-need-to-know--?utm_source=openai"
+        },
+        {
+          "end_index": 3739,
+          "start_index": 3638,
+          "title": "SF Drops Vaccine Mandate for Restaurants, Bars, Gyms | SF.gov",
+          "type": "url_citation",
+          "url": "https://www.sf.gov/news--sf-drops-vaccine-mandate-restaurants-bars-gyms?utm_source=openai"
+        },
+        {
+          "end_index": 4047,
+          "start_index": 3949,
+          "title": "EU Digital COVID Certificate",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/EU_Digital_COVID_Certificate?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Chamath predicted that most major cities would adopt permanent vaccination or biological-status passport systems for venues like sporting events and concerts in the years after COVID-19 (post-March 2021). However, such requirements were temporary, implemented during peak pandemic (2021-2022), and widely lifted by 2022-2023 with no ongoing mandates by 2025.\n\n- **NYC**: Key to NYC mandate ended March 2022; current sites (e.g., NYC Tourism) confirm proof no longer required ([NYC Tourism](https://www.nyctourism.com/coronavirus/); Pitchfork, Mar 2022).\n- **Los Angeles**: Lifted April 2022 for mega-events; LA Coliseum states no vaccination proof required ([LA Coliseum A-Z](https://www.lacoliseum.com/atozguide/); LATimes, Mar 2022).\n- **London**: NHS COVID Pass withdrawn; no domestic requirements ([GOV.UK](https://www.gov.uk/guidance/nhs-covid-pass)).\n- **Toronto**: Not required for events at Scotiabank Arena ([Scotiabank Arena](https://www.scotiabankarena.com/know-before-you-go); Destination Toronto, 2023).\n\nNo evidence of permanent systems in other major cities; many US states banned vaccine passports (e.g., Ballotpedia). 'Biological passport' now refers to anti-doping in sports, not public health. Sources: web searches on current requirements (2024-2025), all confirm end of mandates."
+    },
+    {
+      "id": "A-00:43:40.000",
+      "result": "wrong",
+      "explanation": "Chamath predicted that: (1) legal challenges over business vaccination requirements would reach the U.S. Supreme Court, and (2) the Court would issue a **narrow ruling affirming that private businesses may decide to require vaccination** as a condition of service or employment.\n\nHere is what actually happened:\n\n1. **Supreme Court COVID\u2011vaccine cases**\n   * The Court heard major vaccine\u2011mandate cases in January 2022, most prominently **National Federation of Independent Business v. OSHA**, which challenged OSHA\u2019s *federal* vaccine\u2011or\u2011test rule for large private employers, and **Biden v. Missouri**, which concerned the federal CMS mandate for health\u2011care facilities. In NFIB v. OSHA, the Court held that OSHA\u2019s broad vaccine\u2011or\u2011test Emergency Temporary Standard exceeded the agency\u2019s statutory authority and stayed the rule. ([en.wikipedia.org](https://en.wikipedia.org/wiki/National_Federation_of_Independent_Business_v._Occupational_Safety_and_Health_Administration?utm_source=openai))\n   * Those cases were about what the **federal government** can require of employers, not about whether **private businesses, acting on their own, have a constitutional or statutory right** to impose vaccine requirements on employees or customers.\n\n2. **No Supreme Court merits ruling on private businesses\u2019 own vaccine policies**\n   * There is **no U.S. Supreme Court merits decision** squarely addressing a purely private employer\u2019s or private business\u2019s self\u2011imposed COVID\u201119 vaccine requirement for employees or customers.\n   * Litigation over employer mandates has been decided mainly in **lower courts and state supreme courts**. For example, the Louisiana Supreme Court in *Hayes v. University Health Shreveport, LLC* upheld a private hospital\u2019s right to require staff vaccination and terminate non\u2011compliant at\u2011will employees, and the Fifth Circuit in *Horvath v. City of Leander* upheld an employer vaccine requirement with religious accommodations\u2014but neither case is from the U.S. Supreme Court. ([druganddevicelawblog.com](https://www.druganddevicelawblog.com/2022/01/louisiana-supreme-court-upholds-private-employer-vaccine-mandate.html?utm_source=openai))\n   * The Supreme Court did receive emergency applications related to mandates (e.g., *Klaassen v. Indiana University*), but Justice Barrett\u2019s one\u2011sentence denial of relief there did not create a written, precedential ruling that \"businesses may decide\" to require vaccines. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Klaassen_v._Indiana_University?utm_source=openai))\n\n3. **Effect of NFIB v. OSHA is indirect, not the predicted ruling**\n   * After NFIB v. OSHA, legal commentators and law\u2011firm client alerts emphasized that the decision **blocked OSHA\u2019s mandate but left private employers generally free, under other applicable laws, to adopt their own vaccination policies if they wished**. ([phillipslytle.com](https://phillipslytle.com/u-s-supreme-court-blocks-oshas-covid-19-vaccinate-or-test-rule/?utm_source=openai))\n   * However, that is an implication of the absence of a federal mandate, not a **narrow Supreme Court holding that affirmatively establishes private businesses\u2019 right to impose vaccine conditions on service or employment.** The NFIB opinion itself is framed as an administrative\u2011law and statutory\u2011authority decision, not an employer\u2011rights decision. ([en.wikipedia.org](https://en.wikipedia.org/wiki/National_Federation_of_Independent_Business_v._Occupational_Safety_and_Health_Administration?utm_source=openai))\n\n4. **Enough time has passed**\n   * By late 2025, COVID\u201119 emergency conditions have receded, and there is still **no Supreme Court precedent** matching the specific description Chamath gave (a narrow ruling affirming that private businesses may decide to require vaccination as a condition of service or employment). Overviews of U.S. COVID\u201119 vaccine mandates list NFIB v. OSHA and Biden v. Missouri as the key Supreme Court cases, but none describe a decision of the type predicted. ([en.wikipedia.org](https://en.wikipedia.org/wiki/COVID-19_vaccination_mandates_in_the_United_States?utm_source=openai))\n\nBecause the Court did **not** issue the kind of narrow, pro\u2011business\u2011discretion ruling described\u2014even though it did hear related vaccine\u2011mandate cases\u2014the prediction\u2019s core outcome is **incorrect**.",
+      "sources": [
+        {
+          "end_index": 1031,
+          "start_index": 869,
+          "title": "National Federation of Independent Business v. Occupational Safety and Health Administration",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/National_Federation_of_Independent_Business_v._Occupational_Safety_and_Health_Administration?utm_source=openai"
+        },
+        {
+          "end_index": 2206,
+          "start_index": 2044,
+          "title": "Louisiana Supreme Court Upholds Private Employer Vaccine Mandate | Drug & Device Law",
+          "type": "url_citation",
+          "url": "https://www.druganddevicelawblog.com/2022/01/louisiana-supreme-court-upholds-private-employer-vaccine-mandate.html?utm_source=openai"
+        },
+        {
+          "end_index": 2584,
+          "start_index": 2484,
+          "title": "Klaassen v. Indiana University",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Klaassen_v._Indiana_University?utm_source=openai"
+        },
+        {
+          "end_index": 3042,
+          "start_index": 2912,
+          "title": "U.S. Supreme Court Blocks OSHA\u2019s COVID-19 Vaccinate-or-Test Rule | Phillips Lytle LLP",
+          "type": "url_citation",
+          "url": "https://phillipslytle.com/u-s-supreme-court-blocks-oshas-covid-19-vaccinate-or-test-rule/?utm_source=openai"
+        },
+        {
+          "end_index": 3557,
+          "start_index": 3395,
+          "title": "National Federation of Independent Business v. Occupational Safety and Health Administration",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/National_Federation_of_Independent_Business_v._Occupational_Safety_and_Health_Administration?utm_source=openai"
+        },
+        {
+          "end_index": 4167,
+          "start_index": 4047,
+          "title": "COVID-19 vaccination mandates in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COVID-19_vaccination_mandates_in_the_United_States?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction required legal challenges to private businesses' COVID-19 vaccination requirements for customers or employees to reach the U.S. Supreme Court, resulting in a narrow ruling affirming businesses' rights to impose such requirements. No such cases reached or were decided by the Supreme Court. The relevant SCOTUS rulings\u2014*NFIB v. Dep't of Labor* (Jan. 13, 2022) striking down OSHA's vaccine-or-test mandate for large employers, and *Biden v. Missouri* upholding CMS's vaccine mandate for healthcare workers\u2014involved **federal government mandates**, not private businesses' independent policies. Multiple sources confirm these decisions explicitly did not limit private employers' ability to mandate vaccines themselves (e.g., Akerman analysis: 'Nothing in the Court's decision hinders the ability of private employers to impose their own vaccine mandate'). Searches for SCOTUS involvement in private mandate challenges yielded no results; lower courts handled such cases (e.g., Louisiana Supreme Court upheld a private employer's mandate; NYC's mandate for private sector struck down by state court). Recent SCOTUSblog (Aug. 2025) discusses potential future cases on state mandates but none on private businesses. With over 4 years passed since the March 2021 prediction, no matching SCOTUS litigation or ruling occurred."
+    },
+    {
+      "id": "C-00:45:29.290",
+      "result": "wrong",
+      "explanation": "Evidence indicates that by June 1, 2021, COVID-19 vaccines were broadly available in the U.S., but public\u2011health authorities still judged that emergency powers and some mask requirements remained justified, and subsequent events (e.g., the Delta wave) confirmed that such measures were in fact needed.\n\n**Vaccine availability by June 1, 2021**\n- All U.S. adults 16+ were eligible for vaccination by April 19, 2021; all 50 states, DC, and Puerto Rico had opened eligibility by that date. ([cdc.gov](https://www.cdc.gov/mmwr/volumes/70/wr/mm7025e1.htm?utm_source=openai))\n- By June 1, 2021, about 50\u201351% of the total U.S. population had received at least one dose and about 40\u201341% were fully vaccinated. ([usafacts.org](https://usafacts.org/articles/six-charts-about-covid-19-vaccines-24-of-americans-12-to-17-have-started-their-vaccinations/?utm_source=openai))  Among adults 18+, roughly 57% had at least one dose by May 22, 2021. ([cdc.gov](https://www.cdc.gov/mmwr/volumes/70/wr/mm7025e1.htm?utm_source=openai))  Supply was no longer the binding constraint; experts were already warning that supply would outstrip demand by May. ([mckinsey.com](https://www.mckinsey.com/industries/healthcare/our-insights/a-light-at-the-end-of-the-tunnel-us-covid-19-vaccine-administration?utm_source=openai))  \n- So the narrow claim that vaccines would be \u201cavailable\u201d by around June 1 was broadly accurate.\n\n**But emergency powers and mask justifications did *not* disappear by June 1**\n- The federal COVID\u201119 public\u2011health emergency, first declared in January 2020, was renewed on April 15, 2021 and repeatedly thereafter; HHS explicitly stated that a nationwide public\u2011health emergency still existed due to the ongoing consequences of COVID\u201119. ([aota.org](https://www.aota.org/advocacy/advocacy-news/2020/hhs-secretary-renews-public-health-emergency/?utm_source=openai))  That is directly contrary to the idea that there was \u201cno more justification\u201d for emergency powers by June 1, 2021.\n- CDC\u2019s May 13, 2021 guidance allowed fully vaccinated people to forgo masks in many settings, but still **required or recommended masks** in specific contexts (e.g., public transportation, crowded indoor spaces) and continued to advise masking for the unvaccinated. ([dw.com](https://www.dw.com/en/covid-us-relaxes-mask-rules-for-fully-vaccinated-people/a-57521565?utm_source=openai))  Thus, the leading federal public\u2011health authority did *not* consider masks categorically unnecessary after June 1.\n- Many state and local mandates and emergency orders remained in force past June 1. For example, Pennsylvania\u2019s statewide mask mandate was not lifted until June 28, 2021, and even then masks were still required on planes, trains, buses, and other public transportation. ([en.wikipedia.org](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Pennsylvania?utm_source=openai))  Several states (e.g., Hawaii and others listed in state\u2011by\u2011state mask\u2011policy summaries) maintained some form of mask requirements or emergency orders well beyond that date. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States?utm_source=openai))\n\n**Subsequent developments showed non\u2011pharmaceutical measures *were* still needed**\n- In June 2021, the more transmissible Delta variant was rapidly spreading in the U.S. and internationally; CDC and other experts warned that multicomponent prevention strategies, including indoor masking irrespective of vaccination status in high\u2011incidence areas, might be needed alongside vaccination. ([cdc.gov](https://www.cdc.gov/mmwr/volumes/70/wr/mm7032e2.htm?utm_source=openai))\n- Delta became the predominant U.S. variant in late June 2021 and drove a major surge in cases during July\u2013September 2021. ([cdc.gov](https://www.cdc.gov/mmwr/volumes/71/wr/mm7106a4.htm?utm_source=openai))  CDC data show the 7\u2011day average of U.S. cases bottomed around 11\u201312k in mid\u2011June, then climbed to over 130k by early September 2021. ([archive.cdc.gov](https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/covid-data/covidview/past-reports/06252021.html?utm_source=openai))  During this wave, many jurisdictions re\u2011imposed or tightened mask guidance and other public\u2011health measures, confirming that such tools were still needed even with substantial vaccine availability.\n\n**Assessment**\n- Sacks\u2019 prediction tied vaccine availability to the *end* of any public\u2011health justification for emergency powers and masks: he argued that \u201con June 1st, there is no more justification for government having these extraordinary powers\u201d and that \u201cwe even need to wear a mask beyond June 1st\u201d would no longer be true.\n- While vaccine supply was indeed ample by around that date, the continued federal public\u2011health emergency, ongoing CDC mask recommendations (especially for unvaccinated people and in specific settings), persistent state\u2011level mandates, and the rapid emergence of the Delta\u2011driven surge all show that significant public\u2011health justification for such powers and measures remained.\n\nBecause the central, time\u2011bound claim\u2014that after June 1, 2021 there would be *no* public\u2011health justification for emergency powers or masks\u2014was contradicted by policy, expert guidance, and eventual outcomes, the prediction is best categorized as **wrong**.",
+      "sources": [
+        {
+          "end_index": 605,
+          "start_index": 523,
+          "title": "COVID-19 Vaccination Coverage Among Adults \u2014 United States, December 14, 2020\u2013May 22, 2021 | MMWR",
+          "type": "url_citation",
+          "url": "https://www.cdc.gov/mmwr/volumes/70/wr/mm7025e1.htm?utm_source=openai"
+        },
+        {
+          "end_index": 897,
+          "start_index": 739,
+          "title": "Six charts about COVID-19 vaccines: 24% of Americans 12 to 17 have started their vaccinations | USAFacts",
+          "type": "url_citation",
+          "url": "https://usafacts.org/articles/six-charts-about-covid-19-vaccines-24-of-americans-12-to-17-have-started-their-vaccinations/?utm_source=openai"
+        },
+        {
+          "end_index": 1050,
+          "start_index": 968,
+          "title": "COVID-19 Vaccination Coverage Among Adults \u2014 United States, December 14, 2020\u2013May 22, 2021 | MMWR",
+          "type": "url_citation",
+          "url": "https://www.cdc.gov/mmwr/volumes/70/wr/mm7025e1.htm?utm_source=openai"
+        },
+        {
+          "end_index": 1331,
+          "start_index": 1168,
+          "title": "Update on US COVID-19 vaccine administration | McKinsey",
+          "type": "url_citation",
+          "url": "https://www.mckinsey.com/industries/healthcare/our-insights/a-light-at-the-end-of-the-tunnel-us-covid-19-vaccine-administration?utm_source=openai"
+        },
+        {
+          "end_index": 1900,
+          "start_index": 1774,
+          "title": "HHS Secretary Renews Public Health Emergency | AOTA",
+          "type": "url_citation",
+          "url": "https://www.aota.org/advocacy/advocacy-news/2020/hhs-secretary-renews-public-health-emergency/?utm_source=openai"
+        },
+        {
+          "end_index": 2403,
+          "start_index": 2285,
+          "title": "Coronavirus: US relaxes mask rules for vaccinated \u2013 DW \u2013 05/13/2021",
+          "type": "url_citation",
+          "url": "https://www.dw.com/en/covid-us-relaxes-mask-rules-for-fully-vaccinated-people/a-57521565?utm_source=openai"
+        },
+        {
+          "end_index": 2894,
+          "start_index": 2791,
+          "title": "COVID-19 pandemic in Pennsylvania",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Pennsylvania?utm_source=openai"
+        },
+        {
+          "end_index": 3199,
+          "start_index": 3069,
+          "title": "Face masks during the COVID-19 pandemic in the United States",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Face_masks_during_the_COVID-19_pandemic_in_the_United_States?utm_source=openai"
+        },
+        {
+          "end_index": 3673,
+          "start_index": 3591,
+          "title": "Rapid Increase in Circulation of the SARS-CoV-2 B.1.617.2 (Delta) Variant \u2014 Mesa County, Colorado, April\u2013June 2021 | MMWR",
+          "type": "url_citation",
+          "url": "https://www.cdc.gov/mmwr/volumes/70/wr/mm7032e2.htm?utm_source=openai"
+        },
+        {
+          "end_index": 3880,
+          "start_index": 3798,
+          "title": "Genomic Surveillance for SARS-CoV-2 Variants: Predominance of the Delta (B.1.617.2) and Omicron (B.1.1.529) Variants \u2014 United States, June 2021\u2013January 2022 | MMWR",
+          "type": "url_citation",
+          "url": "https://www.cdc.gov/mmwr/volumes/71/wr/mm7106a4.htm?utm_source=openai"
+        },
+        {
+          "end_index": 4159,
+          "start_index": 4015,
+          "title": "Keep Variants at Bay. Get Vaccinated Today. | CDC",
+          "type": "url_citation",
+          "url": "https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/covid-data/covidview/past-reports/06252021.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Vaccines were sufficiently available by June 1, 2021 (>50% U.S. population had \u22651 dose, all adults eligible; [KFF](https://www.kff.org/covid-19/kff-covid-19-vaccine-monitor-june-2021/), [CNBC](https://www.cnbc.com/2021/06/01/covid-19-cases-deaths-vaccinations-daily-update.html)). However, mask mandates persisted in many states (e.g., CA until June 15, KY June 11, NY emergency end June 23; [LeadingAge](https://leadingage.org/state-state-face-mask-mandates/), [Ballotpedia](https://ballotpedia.org/State-level_mask_requirements_in_response_to_the_coronavirus_%28COVID-19%29_pandemic%2C_2020-2022)), federal transit mandate continued, and state emergency powers were not uniformly ended by June 1 ([Morrison Foerster on NY](https://www.mofo.com/resources/insights/210701-cuomo-ends-ny-state-emergency)). CDC recommended masks for unvaccinated indoors ([CDC July guidance](https://www.cdc.gov/mmwr/volumes/70/wr/mm7030e2.htm)), Delta variant became dominant ~June 1 prompting rises ([CDC timeline](https://www.cdc.gov/museum/timeline/covid19.html)), providing public-health justification. Federal PHE ended May 2023 ([HHS](https://www.hhs.gov/coronavirus/covid-19-public-health-emergency/index.html)). Thus, emergency powers/mandates continued with rationale."
+    },
+    {
+      "id": "C-00:49:33.950",
+      "result": "right",
+      "explanation": "Evidence shows that the **substance of Sacks\u2019 prediction was borne out**, with only a minor miss on the exact election date:\n\n- **Signatures surpassing 2 million by end of the period:** The recall campaign ultimately submitted **2,117,730 signatures by the March 2021 deadline**, exceeding 2 million, as recorded in the California Secretary of State\u2013summarized history of the 2021 recall petition. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai))  This matches his claim that they would be \u201cat or over 2,000,000 in 2 weeks, which is the end of the signature period.\u201d  Contemporary coverage in early March 2021 already had organizers announcing about **1,950,000 collected signatures** and \u201cnearing 2 million.\u201d ([californiaglobe.com](https://californiaglobe.com/articles/recallgavin2020-campaign-celebrates-1950000-signatures-with-rally/?utm_source=openai))\n\n- **Validation rate around the mid\u201180s:** An early\u2013February 2021 status report from the Secretary of State, cited by the *Los Angeles Times*, found **about 84% of the signatures submitted at that point were valid**. ([latimes.com](https://www.latimes.com/california/story/2021-03-09/newsom-state-of-the-state-address-covid-19-preview-california-governor-recall?utm_source=openai))  The final official tally after the March 17 deadline was **1,719,943 valid of 2,117,730 submitted**, about **81%**, still a high validation rate and reasonably close to his \u201cabout 84%\u201d statement, which reflected the then-current official figure. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai))\n\n- **Certified recall election taking place:** On **April 26, 2021**, the Secretary of State announced that the recall effort had enough valid signatures to qualify for the ballot; after the withdrawal window, a final count of **1,719,900 valid signatures** confirmed that the recall election would be held. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai))  This fulfills his prediction that \u201cthis is clearly going to pass. There will be a recall election.\u201d\n\n- **Timing of the recall election (\u201caround August\u201d):** After certification on July 1, 2021, Lieutenant Governor Eleni Kounalakis set the **recall election date for September 14, 2021**. ([sos.ca.gov](https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall?utm_source=openai))  That\u2019s roughly one month later than \u201caround August,\u201d but still in late summer 2021 and within the same general timeframe he anticipated.\n\nGiven that:\n- the petition did surpass 2 million signatures by the deadline,\n- the validation rate was indeed high and in the low\u2011 to mid\u201180% range at the time of his comment,\n- and a recall election was duly certified and held in late summer 2021,\n\nthe forecast\u2019s key claims proved accurate. The only notable miss was that the actual election date landed in mid\u2011September rather than \u201caround August,\u201d which is a relatively small deviation from the predicted timing. Therefore, the overall prediction is best scored as **right**.",
+      "sources": [
+        {
+          "end_index": 548,
+          "start_index": 433,
+          "title": "2021 California gubernatorial recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai"
+        },
+        {
+          "end_index": 958,
+          "start_index": 812,
+          "title": "RecallGavin2020 Campaign Celebrates 1,950,000 Signatures With Rally \u2013 California Globe",
+          "type": "url_citation",
+          "url": "https://californiaglobe.com/articles/recallgavin2020-campaign-celebrates-1950000-signatures-with-rally/?utm_source=openai"
+        },
+        {
+          "end_index": 1342,
+          "start_index": 1178,
+          "title": "Recall looming, Newsom preps State of the State address - Los Angeles Times",
+          "type": "url_citation",
+          "url": "https://www.latimes.com/california/story/2021-03-09/newsom-state-of-the-state-address-covid-19-preview-california-governor-recall?utm_source=openai"
+        },
+        {
+          "end_index": 1705,
+          "start_index": 1590,
+          "title": "2021 California gubernatorial recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai"
+        },
+        {
+          "end_index": 2131,
+          "start_index": 2016,
+          "title": "2021 California gubernatorial recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai"
+        },
+        {
+          "end_index": 2550,
+          "start_index": 2422,
+          "title": "California Gubernatorial Recall Election - September 14, 2021 :: California Secretary of State",
+          "type": "url_citation",
+          "url": "https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction was substantially accurate. Organizers reported ~1.93M signatures on March 3, 2021, and submitted 2.1M-2.16M by the March 17 deadline, surpassing 2M ([Deadline.com](https://deadline.com/2021/03/newsom-recall-petition-reaches-1927000-signatures-with-2-weeks-left-say-organizers-1234706295/), [SOS PDF](https://elections.cdn.sos.ca.gov/recalls/cumulative-newsom-heatlie.pdf), [Wikipedia](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election)). Final valid signatures: 1,719,943 out of ~2.1M submitted (~82% validation rate), close to predicted 84% and exceeding the 1.5M threshold ([Ballotpedia](https://ballotpedia.org/Gavin_Newsom_recall,_Governor_of_California_(2019-2021)), [California Globe](https://californiaglobe.com/tag/newsom-recall-petition-signature-validation/)). SOS announced threshold met April 26, 2021; certified July 1; recall election held September 14, 2021 ('around August' approximate given certification timing and 60-80 day window) ([SOS](https://www.sos.ca.gov/administration/news-releases-and-advisories/2021-news-releases-and-advisories/sw21019), [Wikipedia](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election))."
+    },
+    {
+      "id": "C-00:50:39.740",
+      "result": "wrong",
+      "explanation": "Key falsifiable elements of Sacks\u2019s prediction did not occur, despite COVID being an important backdrop to the recall.\n\n1. **California as a continued \u201claggard\u201d by summer 2021 and Newsom clinging to a zero\u2011COVID style over\u2011restrictiveness**  \n   \u2022 On April 6, 2021, Newsom announced that California would *end most COVID restrictions and retire its tiered Blueprint system on June 15*, shifting to broad reopening with few capacity limits and focusing mainly on vaccination and masking. The Blueprint and statewide mask mandate were in fact ended June 15; by June 8 most Californians were already under the least\u2011restrictive \u201cMinimal\u201d tier. ([en.wikipedia.org](https://en.wikipedia.org/wiki/California_government_response_to_the_COVID-19_pandemic?utm_source=openai))  \n   \u2022 Many states (e.g., Texas, Mississippi, various others) did reopen earlier in spring 2021, but by late May discussion in national coverage and even casual commentary noted that Michigan and some others, not California, would be among the last to fully reopen, and Hawaii had not even set a date. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_the_United_States_%282021%29?utm_source=openai))  \n   \u2022 Exit\u2011poll analysis from the recall shows that while the pandemic was top of mind, roughly two\u2011thirds of voters thought Newsom\u2019s COVID policies were about right or not strict enough; only about one\u2011third saw them as too strict. ([latimes.com](https://www.latimes.com/politics/newsletter/2021-09-15/national-lessons-from-californias-recall-essential-politics?utm_source=openai))  Taken together, California was no longer clearly a reopening \u201claggard\u201d by summer 2021, and the electorate as a whole did not broadly see Newsom as absurdly over\u2011restrictive in that period.\n\n2. **\u201cHe still probably won\u2019t have an agreement with the teachers unions to go back to school\u201d**  \n   \u2022 Los Angeles Unified School District and United Teachers Los Angeles announced a *tentative agreement* on March 9, 2021 to reopen campuses for in\u2011person instruction beginning mid\u2011April, with detailed safety protocols; the school board endorsed it. ([lausd.org](https://www.lausd.org/site/Default.aspx?DomainID=4&FlexDataID=104059&PageID=1&PageType=3&ViewID=6446ee88-d30c-497e-9316-3f8874b3e108&utm_source=openai))  \n   \u2022 At the state level, on March 1 California agreed on a $6.6 billion school\u2011reopening framework that conditioned funds on districts offering in\u2011person learning for younger and high\u2011needs students by the end of March. ([en.wikipedia.org](https://en.wikipedia.org/wiki/California_government_response_to_the_COVID-19_pandemic?utm_source=openai))  \n   \u2022 UTLA and LAUSD then reached another agreement effective June 23, 2021, setting conditions for *full, five\u2011days\u2011a\u2011week in\u2011person instruction* for the 2021\u201322 school year. ([utla.net](https://utla.net/tentative-agreement-reached-for-2021-22-school-year/?utm_source=openai))  By summer 2021, the largest district and its teachers union clearly did have reopening agreements in place, directly contradicting this part of the prediction.\n\n3. **Did Newsom\u2019s supposed over\u2011restrictiveness become \u201cthe big issue\u201d in the recall?**  \n   \u2022 The recall petition\u2019s surge was indeed \u201cwidely credited\u201d to anger over lockdowns, job losses, and school and business closures, combined with the French Laundry incident. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election)) COVID policy was central to why the recall qualified.  \n   \u2022 But by the time of the September 14, 2021 election, California had low COVID rates, a large budget surplus, broad economic reopening, and schools back in session, and analysts noted that other issues (homelessness, taxes, cost of living) were also salient. ([latimes.com](https://www.latimes.com/california/story/2021-05-06/covid-declining-newsom-recall-other-california-issues?utm_source=openai))  \n   \u2022 Exit polls found the pandemic was the single most important issue overall, yet most voters *approved* of Newsom\u2019s COVID approach, and his campaign successfully framed the recall as a referendum on pro\u2011versus\u2011anti\u2011mandate COVID policy; this helped him defeat the recall by roughly 62%\u201338%. ([cbsnews.com](https://www.cbsnews.com/sanfrancisco/news/california-recall-cbs-news-exit-poll-shows-voters-most-concerned-about-covid-economy/?utm_source=openai))  COVID was important, but not in the predicted way of Newsom being punished for an obviously over\u2011restrictive, laggard stance.\n\nBecause (a) California did not remain a conspicuous reopening laggard under a continuing \u201czeroism\u201d posture into summer 2021, (b) major school\u2011reopening agreements with teachers unions were in place well before and during that summer, and (c) while COVID was central, it did not become the dominant issue in the *specific punitive way* Sacks described, the overall prediction is best characterized as **wrong**, notwithstanding some partial correctness about COVID being a major context in the recall.",
+      "sources": [
+        {
+          "end_index": 802,
+          "start_index": 677,
+          "title": "California government response to the COVID-19 pandemic",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/California_government_response_to_the_COVID-19_pandemic?utm_source=openai"
+        },
+        {
+          "end_index": 1241,
+          "start_index": 1106,
+          "title": "Timeline of the COVID-19 pandemic in the United States (2021)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_the_United_States_%282021%29?utm_source=openai"
+        },
+        {
+          "end_index": 1626,
+          "start_index": 1477,
+          "title": "Trump still wins elections \u2014 for Democrats \u2014 and other California recall lessons - Los Angeles Times",
+          "type": "url_citation",
+          "url": "https://www.latimes.com/politics/newsletter/2021-09-15/national-lessons-from-californias-recall-essential-politics?utm_source=openai"
+        },
+        {
+          "end_index": 2337,
+          "start_index": 2172,
+          "title": "Los Angeles Unified Board members welcome tentative agreement with educators to safely reopen schools (03-09-21)",
+          "type": "url_citation",
+          "url": "https://www.lausd.org/site/Default.aspx?DomainID=4&FlexDataID=104059&PageID=1&PageType=3&ViewID=6446ee88-d30c-497e-9316-3f8874b3e108&utm_source=openai"
+        },
+        {
+          "end_index": 2686,
+          "start_index": 2561,
+          "title": "California government response to the COVID-19 pandemic",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/California_government_response_to_the_COVID-19_pandemic?utm_source=openai"
+        },
+        {
+          "end_index": 2966,
+          "start_index": 2865,
+          "title": "Tentative Agreement reached for 2021\u201322 school year - UTLA",
+          "type": "url_citation",
+          "url": "https://utla.net/tentative-agreement-reached-for-2021-22-school-year/?utm_source=openai"
+        },
+        {
+          "end_index": 3495,
+          "start_index": 3398,
+          "title": "2021 California gubernatorial recall election - Wikipedia",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election"
+        },
+        {
+          "end_index": 3955,
+          "start_index": 3815,
+          "title": "As COVID fades, Newsom recall hits other California issues - Los Angeles Times",
+          "type": "url_citation",
+          "url": "https://www.latimes.com/california/story/2021-05-06/covid-declining-newsom-recall-other-california-issues?utm_source=openai"
+        },
+        {
+          "end_index": 4415,
+          "start_index": 4253,
+          "title": "California Recall: CBS News Exit Poll Shows Voters Most Concerned About COVID, Economy - CBS San Francisco",
+          "type": "url_citation",
+          "url": "https://www.cbsnews.com/sanfrancisco/news/california-recall-cbs-news-exit-poll-shows-voters-most-concerned-about-covid-economy/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The prediction largely came true. By summer 2021, most U.S. states had substantially reopened earlier than California (e.g., Texas and Mississippi in March 2021 fully reopened; by July 4, all but Hawaii had [US News]; CA fully lifted restrictions June 15 [gov.ca.gov]). CA was relatively restricted until mid-June with tier system and capacity limits, seen as slower than peers like FL/TX (e.g., EdSource March 2021: CA lags in school reopening; general narrative of strictness). Schools: While March 2021 deals incentivized K-2 reopen by April and 99% districts planned full Fall 2021 reopen by June [gov.ca.gov June 7], union resistance lingered but agreements/plans were in place\u2014not fully 'without agreement' but contentious as predicted. Laggard/over-restrictiveness was central in recall (Sept 14, 2021): COVID handling key issue driving recall signatures/polling (Wikipedia; CalMatters; NYT Sep 2021 'Pandemic Becomes Key Issue'; Al Jazeera 'slammed for COVID'). Though Newsom won 62%, it was a major factor for 'yes' voters comparing to other states."
+    },
+    {
+      "id": "C-00:51:33.460",
+      "result": "right",
+      "explanation": "Gavin Newsom did in fact face a statewide recall election in California in 2021. The official election date was **September 14, 2021**, as confirmed by the California Secretary of State and contemporaneous election notices. ([sos.ca.gov](https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall?utm_source=openai))  \n\nSacks\u2019s timing was slightly off\u2014he said the recall would be \u201caround August,\u201d while the election was ultimately set for mid\u2011September. However, key election activity (such as mailing vote\u2011by\u2011mail ballots) began on **August 16, 2021**, which is indeed in August and part of the same late\u2011summer window he was pointing to. ([sos.ca.gov](https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall?utm_source=openai))  \n\nBecause:\n- A recall election *did* occur, as predicted, and\n- Its timing (mid\u2011September with election processes starting in mid\u2011August) reasonably matches \u201caround August,\u201d\n\nthe prediction is best classified as **right**, with a minor timing inaccuracy rather than a substantive failure.",
+      "sources": [
+        {
+          "end_index": 385,
+          "start_index": 257,
+          "title": "California Gubernatorial Recall Election - September 14, 2021 :: California Secretary of State",
+          "type": "url_citation",
+          "url": "https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall?utm_source=openai"
+        },
+        {
+          "end_index": 839,
+          "start_index": 711,
+          "title": "California Gubernatorial Recall Election - September 14, 2021 :: California Secretary of State",
+          "type": "url_citation",
+          "url": "https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "A recall election for California Governor Gavin Newsom was indeed held in 2021. It was officially scheduled for September 14, 2021, as confirmed by the California Secretary of State ([sos.ca.gov](https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall)), Wikipedia ([en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election)), and news outlets like CalMatters and LA Times (July 1, 2021 articles). The prediction specified 'approximately around August 2021,' and while the vote was on Sept. 14, the process started in August per Wikipedia, making the timing reasonably close for a March 2021 forecast."
+    },
+    {
+      "id": "C-00:56:48.000",
+      "result": "wrong",
+      "explanation": "Jason Calacanis\u2019 co-host David Sacks predicted that the progressive district attorney of Los Angeles County (George Gasc\u00f3n), the district attorney of San Francisco (Chesa Boudin), and California Governor Gavin Newsom would *all* be successfully recalled.\n\nWhat actually happened:\n\n1. **Chesa Boudin (San Francisco DA)** \u2013 *Was* recalled.\n   - San Francisco held a recall election on June 7, 2022. Voters approved removing Boudin from office by roughly 55\u201360% \"yes\" on the recall (122,588 yes to 100,177 no). ([en.wikipedia.org](https://en.wikipedia.org/wiki/2022_San_Francisco_District_Attorney_recall_election?utm_source=openai))\n\n2. **George Gasc\u00f3n (Los Angeles County DA)** \u2013 *Was not* recalled.\n   - A major 2022 recall effort submitted about 715,000 signatures, but after verification only ~520,000 were deemed valid, short of the 566,857 required. County officials therefore rejected the petition and no recall election was held. ([abc7.com](https://abc7.com/post/george-gascn-recall-los-angeles-district-attorney-da-signatures/12128228/?utm_source=openai))\n\n3. **Gavin Newsom (Governor of California)** \u2013 *Was not* recalled.\n   - A statewide recall election was held on September 14, 2021. Voters rejected the recall by a wide margin (about 61.9% \"No\" to 38.1% \"Yes\"), and Newsom remained in office. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai))\n\nBecause only Boudin was successfully recalled, while Gasc\u00f3n\u2019s recall never made the ballot and Newsom survived his recall election, the prediction that all three officials were \u201cgoing to get recalled\u201d is **incorrect overall**.",
+      "sources": [
+        {
+          "end_index": 670,
+          "start_index": 548,
+          "title": "2022 San Francisco District Attorney recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2022_San_Francisco_District_Attorney_recall_election?utm_source=openai"
+        },
+        {
+          "end_index": 1106,
+          "start_index": 979,
+          "title": "DA George Gasc\u00f3n recall effort fails to collect enough signatures to make ballot, county says - ABC7 Los Angeles",
+          "type": "url_citation",
+          "url": "https://abc7.com/post/george-gascn-recall-los-angeles-district-attorney-da-signatures/12128228/?utm_source=openai"
+        },
+        {
+          "end_index": 1472,
+          "start_index": 1357,
+          "title": "2021 California gubernatorial recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction required **all three** officials\u2014George Gasc\u00f3n (LA County DA), Chesa Boudin (SF DA), and Gavin Newsom (CA Governor)\u2014to be **successfully recalled**. Only Boudin was recalled (June 2022; [CBS News](https://www.cbsnews.com/news/chesa-boudin-san-francisco-da-recalled/), [Politico](https://www.politico.com/news/2022/06/08/chesa-boudin-san-francisco-district-attorney-recall-00038002)). Newsom survived his 2021 recall ([Wikipedia](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election), [NBC News](https://www.nbcnews.com/politics/2021-recall-elections/california-governor-results/)). Gasc\u00f3n's 2021-2022 recall failed to qualify for ballot ([NYT](https://www.nytimes.com/2022/08/16/us/gascon-recall-district-attorney-los-angeles.html), [LAT](https://www.latimes.com/california/story/2022-08-15/recall-effort-la-district-attorney-george-gascon-fails)); he lost re-election in 2024, but not via recall ([NBC](https://www.nbcnews.com/politics/2024-election/la-district-attorney-progressive-loses-re-election-gascon-rcna175906)). Since not all were recalled, the prediction is wrong."
+    },
+    {
+      "id": "C-01:05:20.660",
+      "result": "wrong",
+      "explanation": "Gavin Newsom was *not* successfully recalled. In the September 14, 2021 California gubernatorial recall election, 61.9% of voters chose **No** on the recall versus 38.1% **Yes**, so Newsom remained governor and served out his term. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai))\n\nBecause the core prediction was that \u201cNewsom's going to get recalled,\u201d that part is clearly falsified by the election result. Even though crime and education were issues raised by recall proponents, post-election reporting and exit polls indicate COVID-19 and related pandemic management were the dominant statewide concerns, further undercutting the claim that crime and education would be the key drivers of a successful recall. ([cnbc.com](https://www.cnbc.com/2021/09/15/california-recall-election-results.html?utm_source=openai))",
+      "sources": [
+        {
+          "end_index": 380,
+          "start_index": 265,
+          "title": "2021 California gubernatorial recall election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election?utm_source=openai"
+        },
+        {
+          "end_index": 918,
+          "start_index": 815,
+          "title": "Gavin Newsom wins California recall election",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/09/15/california-recall-election-results.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction that Gavin Newsom would be successfully recalled as California governor did not come true. The recall election occurred on September 14, 2021, and Newsom survived it decisively, with voters rejecting the recall by a wide margin (61.9% no on recall). Official results were certified on October 22, 2021, confirming he remained in office. Subsequent recall attempts (e.g., 2024) failed to qualify. Sources: [Wikipedia: 2021 California gubernatorial recall election](https://en.wikipedia.org/wiki/2021_California_gubernatorial_recall_election), [CalMatters results](https://calmatters.org/politics/2021/09/california-recall-election-results/), [Ballotpedia certification](https://news.ballotpedia.org/2021/10/27/results-of-newsom-recall-certified-12-8-million-total-votes-cast/), [NBC News](https://www.nbcnews.com/politics/2021-recall-elections/california-governor-results/). While crime and education were issues raised, they did not lead to a successful recall."
+    }
+  ]
+}

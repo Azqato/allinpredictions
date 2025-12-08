@@ -1,0 +1,927 @@
+{
+  "meta": {
+    "count": 21,
+    "count_by_result": {
+      "right": 6,
+      "ambiguous": 3,
+      "wrong": 10,
+      "inconclusive": 2
+    }
+  },
+  "predictions": [
+    {
+      "id": "C-00:02:25.190",
+      "result": "right",
+      "explanation": "The prediction was that (1) the Trump campaign\u2019s post\u2011election 2020 legal challenges would *almost all* fail, and (2) Joe Biden would in fact take office as the next U.S. president on Inauguration Day 2021.\n\n1. **Outcome of Trump\u2019s post\u2011election lawsuits**  \n   After the 2020 election, Trump\u2019s campaign and allies filed 62 lawsuits in multiple states challenging election procedures, vote counting, and certification. Nearly all of these suits were dismissed or dropped for lack of evidence or standing; only a single narrow ruling in Pennsylvania, about the deadline for first\u2011time voters to provide ID to cure their ballots, initially went in Trump\u2019s favor and did not affect the overall result. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Post-election_lawsuits_related_to_the_2020_U.S._presidential_election?utm_source=openai))  This matches Sacks\u2019s claim that the legal challenges were \u201cvery, very unlikely\u201d to prevail and that they would overwhelmingly fail.\n\n2. **Whether Joe Biden became president on Inauguration Day 2021**  \n   Joe Biden was inaugurated as the 46th president of the United States on January 20, 2021, and his presidency ran from January 20, 2021, to January 20, 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Inauguration_of_Joe_Biden?utm_source=openai))  That is exactly the Inauguration Day and office\u2011taking Sacks was forecasting.\n\nBecause the lawsuits did indeed almost all fail and Biden did take office on January 20, 2021, the prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 874,
+          "start_index": 735,
+          "title": "Post-election lawsuits related to the 2020 U.S. presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Post-election_lawsuits_related_to_the_2020_U.S._presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1336,
+          "start_index": 1241,
+          "title": "Inauguration of Joe Biden",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Inauguration_of_Joe_Biden?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Joe Biden was inaugurated as the 46th U.S. President on January 20, 2021 ([Wikipedia](https://en.wikipedia.org/wiki/Inauguration_of_Joe_Biden), [U.S. Senate](https://www.senate.gov/art-artifacts/thematic-collections/historic-events/inauguration/2021.htm)). Trump's campaign filed ~62 lawsuits post-2020 election, with nearly all failing or dismissed ([Wikipedia](https://en.wikipedia.org/wiki/Post-election_lawsuits_related_to_the_2020_U.S._presidential_election), [Campaign Legal Center](https://campaignlegal.org/results-lawsuits-regarding-2020-elections), [Brookings](https://www.brookings.edu/articles/trumps-judicial-campaign-to-upend-the-2020-election-a-failure-but-not-a-wipe-out/)). No challenges succeeded in overturning results, matching the prediction."
+    },
+    {
+      "id": "C-00:13:39.490",
+      "result": "ambiguous",
+      "explanation": "Evidence clearly supports parts of the prediction but not the whole normalized version.\n\n**1. Did Trump, by the 2024 cycle, publicly and repeatedly claim the 2020 election was stolen/rigged?**\nYes. After the 2020 election Trump repeatedly asserted that it was \"rigged\" or \"stolen,\" and he never stopped. A tally of his false statements during the transition period shows dozens of uses of \"rigged\" and \"stolen,\" and later reporting notes that he continued to insist the 2020 election was stolen in subsequent years.\u00a0\u30109search29\u3011 The article on attempts to overturn the 2020 election likewise notes that he kept claiming massive fraud, saying it was the \"crime of the century\" and asserting \"I say I won the election\" into 2022 and beyond.\u00a0\u30109search28\u3011 FactCheck.org\u2019s review of his January 20, 2025 inaugural remarks records him again calling 2020 \"totally rigged.\"\u00a0\u30101search3\u3011 PolitiFact describes him as running in 2024 \"on the myth that he won in 2020,\" quoting him in a June 2023 Fox News interview saying, \"First of all, I won in 2020 by a lot.\"\u00a0\u30101search4\u3011 PBS and PolitiFact coverage of his 2024 win likewise emphasize that the \"Big Lie\" about a stolen 2020 election remained central to his politics.\u00a0\u30100search1\u3011 Taken together, this clearly satisfies the **stolen/rigged-election** portion of the prediction.\n\n**2. Did he tie this to the timing of COVID\u201119 vaccine announcements?**\nImmediately after Pfizer\u2019s November 9, 2020 announcement that its COVID\u201119 vaccine appeared more than 90% effective, Trump claimed without evidence that Pfizer and the FDA waited until after the election for political reasons. In tweets on November 9\u201310 he wrote that Pfizer and others would \"only announce a Vaccine after the Election\" and that \"the @US_FDA and the Democrats didn\u2019t want to have me get a Vaccine WIN, prior to the election, so instead it came out five days later.\u201d\u00a0\u30104view0\u3011\u301010search2\u3011 FactCheck.org and AP both document these claims in detail.\u00a0\u30104view0\u3011\u30105view0\u3011 A related AP fact check quotes another tweet where he warned of \"MASSIVE BALLOT COUNTING ABUSE\" and added, \"just like the early vaccine, remember I told you so!\" explicitly pairing his vaccine-timing grievance with his election-fraud narrative.\u00a0\u30105view0\u3011 The Washington Post reported that these accusations against FDA and Pfizer were seen inside the administration as likely to \"fuel baseless conspiracy theories that the election was stolen from Trump.\"\u00a0\u301010search0\u3011\n\nSo, **in late 2020**, Trump clearly did what Sacks anticipated in spirit: he used the post\u2011election Pfizer timing as part of a broader story that the system was conspiring against him and that the election was illegitimate.\n\n**3. Was that vaccine\u2011timing argument a repeated talking point *around the 2024 election cycle*?**\nHere the evidence is much weaker. Coverage of Trump\u2019s 2023\u201324 campaign and his broader rhetoric emphasizes his claims about mail-in ballots, voting machines, and generalized fraud, not repeated references to Pfizer\u2019s November 2020 announcement as a core justification for saying the election was stolen.\u00a0\u30109search28\u3011\u30100search1\u3011\u30101search4\u3011\n\nThe Pfizer-timing allegation itself has persisted within his political orbit: in 2025, the House Judiciary Committee (run by Trump allies) subpoenaed former Pfizer vaccine chief Philip Dormitzer to investigate whether Pfizer delayed trial results until after the 2020 election, explicitly framing the issue as possible election interference.\u00a0\u30108view0\u3011\u30103news5\u3011 That shows the suspicion remained politically salient, but news reports do not clearly document Trump personally and **repeatedly** using vaccine timing as a standard part of his 2024 stolen-election narrative the way he invoked other fraud claims.\n\n**4. Overall assessment**\n- **Clearly true:** By and during the 2024 election cycle, Trump was publicly and repeatedly claiming that the 2020 election was rigged/stolen, and this claim was central to his 2024 campaign and subsequent presidency.\u00a0\u30109search28\u3011\u30101search3\u3011\u30101search4\u3011\n- **Clearly true (but earlier in time):** In November 2020 he explicitly alleged that Pfizer and the FDA timed vaccine news to hurt his reelection chances, and he linked this \"early vaccine\" grievance to impending \"massive ballot counting abuse,\" tying vaccine timing into his broader narrative of being cheated.\u00a0\u30105view0\u3011\u301010search0\u3011\n- **Not clearly supported:** That, specifically *around the 2024 election cycle*, he \"publicly and repeatedly\" invoked the vaccine timing as a key justification for his stolen-election claims. Available reporting on his 2024 rhetoric does not highlight this as a recurring theme.\u00a0\u30109search28\u3011\u30100search1\u3011\n\nBecause one part of the normalized prediction (repeated stolen-election claims) is strongly borne out while the other part (their being tied, repeatedly and specifically in the 2024 cycle, to vaccine announcement timing) is not well documented, the fairest overall judgment is **\"ambiguous\"** rather than fully right or fully wrong.",
+      "sources": [],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump has publicly and repeatedly claimed the 2020 election was stolen around the 2024 cycle (e.g., rallies, Truth Social posts, as noted in Politifact Nov 2024 and various reports). However, no evidence shows him citing COVID-19 vaccine announcement timing (Pfizer Nov 9, 2020) as justification. He claimed in Nov 2020 tweets that Pfizer/FDA/Democrats delayed the announcement post-election to deny him a 'vaccine win' ([AP Fact Check](https://apnews.com/ap-fact-check-trumps-claims-on-vaccine-election-are-wrong-108077c4b716db604ee49b42c6d64af0), [Science.org](https://www.science.org/content/article/fact-check-no-evidence-supports-trump-s-claim-covid-19-vaccine-result-was-suppressed)). He referenced the delay later (e.g., prompting 2025 probes per [Forbes Mar 2025](https://www.forbes.com/sites/tylerroush/2025/03/27/did-pfizer-delay-covid-vaccine-announcement-until-after-2020-election-heres-what-we-know/), WSJ), but not tied to 'stolen' fraud claims, which focus on ballots/Dominion/etc. Truth Social searches yielded no links. A Aug 2024 letter vaguely alleges blame ([Union-Bulletin](https://www.union-bulletin.com/opinion/letters_to_editor/letter-trumps-lies-about-the-election-prove-hes-unfit-to-lead/article_773f66c6-5517-11ef-89a8-2f586b6e31bf.html)), but no quotes. Thus, specific prediction failed."
+    },
+    {
+      "id": "D-00:22:29.240",
+      "result": "wrong",
+      "explanation": "On the specific, testable parts of Friedberg\u2019s prediction, U.S. society largely reverted to pre\u20112020 norms within a couple of years of vaccines and cheap testing becoming widely available.\n\n**1. Large venues: masks and temperature checks**\n- By early\u2013mid 2022, nearly all state and local general indoor mask mandates had been lifted, including for businesses and sports/entertainment venues; remaining requirements were mostly limited to healthcare, long\u2011term care, and a few specialized settings.([aarp.org](https://www.aarp.org/health/healthy-living/info-2020/states-mask-mandates-coronavirus.html?utm_source=openai))\n- Washington, D.C., for example, explicitly ended its mask mandate for businesses, retail, gyms, restaurants, bars, and sports and entertainment venues as of March 1, 2022.([justia.com](https://www.justia.com/covid-19/50-state-covid-19-resources/mask-mandates-during-covid-19-50-state-resources/?utm_source=openai))  This is inconsistent with the idea that such venues would keep mask requirements in place \u201cpermanently\u201d or for many years after vaccines.\n- High\u2011profile attractions that had used temperature checks (e.g., Walt Disney World) ended these screenings in May\u2013June 2021, well before 2022, and did not reintroduce them as a standing policy.([blogmickey.com](https://blogmickey.com/2021/05/disney-world-ends-temperature-checks-early-following-mask-rule-change/?utm_source=openai))  Local examples from school and community sports by 2021 already show football games dropping temperature checks and other entry restrictions.([abc13.com](https://abc13.com/texas-covid-protocols-are-masks-required-at-high-school-football-games-uil-spring-isd/10964710/?utm_source=openai))  By 2025, routine temperature checks at big events are rare rather than a persistent norm.\n\n**2. K\u201112 schools: routine COVID testing**\n- In August 2022, the CDC updated its K\u201112 operational guidance and stated that it no longer recommended routine screening testing in schools, suggesting instead that screening be limited to higher\u2011risk activities or times of elevated transmission.([chalkbeat.org](https://www.chalkbeat.org/2022/8/11/23301933/cdc-guidance-schools-quarantines-testing/?utm_source=openai))  This is the opposite of making regular testing a permanent, routine feature of schooling.\n- Pediatric and school\u2011health groups (e.g., CHOP\u2019s PolicyLab) similarly advised that weekly or routine testing was \u201cno longer a necessary routine practice,\u201d recommending only voluntary or targeted testing.([inquirer.com](https://www.inquirer.com/news/school-covid-safety-guidelines-philadelphia-chop-policy-lab-20220810.html?utm_source=openai))\n- Many large school testing programs were wound down entirely. Shield Illinois, a major state K\u201112 testing initiative, performed its last SARS\u2011CoV\u20112 assay on June 30, 2023.([en.wikipedia.org](https://en.wikipedia.org/wiki/Shield_Illinois?utm_source=openai))  District\u2011level guidance for 2023\u201324 (e.g., Douglas County School District in Colorado) explicitly treats COVID like a routine illness and states that staff will not require testing for students or staff to return after illness, nor monitor test or vaccination status.([dcsdk12.org](https://www.dcsdk12.org/parents-students/student-wellness/nursing-services/covid-response-2023-2024?utm_source=openai))\n\n**3. Overall societal trajectory**\n- By 2023\u201325, COVID\u201119 is generally managed as an endemic respiratory illness: federal programs for universal free home tests have been ended or scaled back, and most institutions operate without special entry screening or routine testing.([govfacts.org](https://govfacts.org/health-healthcare/public-health/disease-prevention-vaccination/the-us-government-no-longer-pays-for-free-covid-19-test-kits/?utm_source=openai))  While a few lasting changes remain (e.g., some masking in healthcare settings, more attention to ventilation), the specific scenarios Friedberg emphasized\u2014temperature checks and mask requirements as ongoing norms at large venues, and routine testing of K\u201112 students\u2014did *not* become permanent or long\u2011term standard practice.\n\nBecause these concrete elements of the prediction are broadly contradicted by actual U.S. policy and behavior by 2022\u20132025, the forecast is best classified as **wrong**.",
+      "sources": [
+        {
+          "end_index": 655,
+          "start_index": 533,
+          "title": "Does Your State Have a Mask Mandate Due to Coronavirus?",
+          "type": "url_citation",
+          "url": "https://www.aarp.org/health/healthy-living/info-2020/states-mask-mandates-coronavirus.html?utm_source=openai"
+        },
+        {
+          "end_index": 972,
+          "start_index": 829,
+          "title": "Mask Mandates During COVID-19: 50-State Legal Resources | COVID-19 Legal Center | Justia",
+          "type": "url_citation",
+          "url": "https://www.justia.com/covid-19/50-state-covid-19-resources/mask-mandates-during-covid-19-50-state-resources/?utm_source=openai"
+        },
+        {
+          "end_index": 1447,
+          "start_index": 1308,
+          "title": "Disney World Ends Temperature Checks Early Following Mask Rule Change",
+          "type": "url_citation",
+          "url": "https://blogmickey.com/2021/05/disney-world-ends-temperature-checks-early-following-mask-rule-change/?utm_source=openai"
+        },
+        {
+          "end_index": 1736,
+          "start_index": 1590,
+          "title": "Coronavirus Texas: Some Houston-area school districts won't require fans masking at football games - ABC13 Houston",
+          "type": "url_citation",
+          "url": "https://abc13.com/texas-covid-protocols-are-masks-required-at-high-school-football-games-uil-spring-isd/10964710/?utm_source=openai"
+        },
+        {
+          "end_index": 2246,
+          "start_index": 2123,
+          "title": "New CDC guidance: No quarantines, less testing \u2013 Chalkbeat",
+          "type": "url_citation",
+          "url": "https://www.chalkbeat.org/2022/8/11/23301933/cdc-guidance-schools-quarantines-testing/?utm_source=openai"
+        },
+        {
+          "end_index": 2683,
+          "start_index": 2544,
+          "title": "Here's what CHOP's 2022-2023 back-to-school COVID recommendations say",
+          "type": "url_citation",
+          "url": "https://www.inquirer.com/news/school-covid-safety-guidelines-philadelphia-chop-policy-lab-20220810.html?utm_source=openai"
+        },
+        {
+          "end_index": 2942,
+          "start_index": 2857,
+          "title": "Shield Illinois",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Shield_Illinois?utm_source=openai"
+        },
+        {
+          "end_index": 3345,
+          "start_index": 3211,
+          "title": "COVID Response 2024-25 - Douglas County School District",
+          "type": "url_citation",
+          "url": "https://www.dcsdk12.org/parents-students/student-wellness/nursing-services/covid-response-2023-2024?utm_source=openai"
+        },
+        {
+          "end_index": 3805,
+          "start_index": 3624,
+          "title": "The US Government No Longer Pays for Free COVID-19 Test Kits | GovFacts",
+          "type": "url_citation",
+          "url": "https://govfacts.org/health-healthcare/public-health/disease-prevention-vaccination/the-us-government-no-longer-pays-for-free-covid-19-test-kits/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "By December 2025, over five years after vaccines and cheap tests became widely available (2021 onward), U.S. society has largely returned to pre-2020 norms regarding the predicted measures. Large venues like NFL stadiums do not require temperature checks or masks; NFL dropped all COVID restrictions including masks and testing ([Docwire News](https://www.docwirenews.com/post/nfl-drops-all-covid-restrictions)). Current stadium policies (e.g., Mercedes-Benz, AT&T) focus on bags and conduct, with no COVID mandates mentioned in 2025 searches. Concert venues similarly have optional or no mask policies ([PyCon US 2025](https://us.pycon.org/2025/about/health-safety-guidelines/)). K-12 schools do not routinely test students; CDC 2024-2025 guidance emphasizes hygiene, ventilation, and staying home when sick but omits routine testing, masks, or temp checks ([CDC K-12 Guidance](https://www.cdc.gov/orr/school-preparedness/infection-prevention/index.html)). Districts confirm no surveillance testing unless necessary (e.g., Stevens Coop 2024-25, Charleston County). Searches for 2025 routine measures yield only outdated (2020-2021) results, confirming the prediction failed."
+    },
+    {
+      "id": "B-00:24:31.240",
+      "result": "wrong",
+      "explanation": "Chamath argued in November 2020 that the U.S. would not get back to more than roughly **80% of pre\u2011COVID social and economic normality until sometime in 2022 (maybe 2023)**, largely because scaling vaccine production and distribution would take that long.\n\nHowever, multiple indicators show the U.S. was already above that ~80% threshold by mid\u2013 to late\u2011**2021**, well before 2022:\n\n* **Economic activity:** Real U.S. GDP had already **returned to and surpassed its pre\u2011pandemic level by Q2 2021**, according to Brookings\u2019 analysis of BEA data. ([brookings.edu](https://www.brookings.edu/research/11-facts-on-the-economic-recovery-from-the-covid-19-pandemic/?utm_source=openai)) Full\u2011year 2021 GDP growth was **5.7%**, the fastest since the 1980s and a sharp rebound from 2020. ([thenationalnews.com](https://www.thenationalnews.com/business/economy/2022/01/27/us-economy-grew-57-in-2021-in-rebound-from-2020-recession/?utm_source=openai)) While the labor market wasn\u2019t perfectly restored, BLS data show unemployment averaging **4.2% in Q4 2021** (vs. 3.5% in late 2019) and employment still a few million jobs short\u2014but clearly well past 80% of the way back. ([bls.gov](https://www.bls.gov/opub/mlr/2022/article/US-labor-market-shows-improvement-in-2021-but-the-COVID-19-pandemic-continues-to-weigh-on-the-economy.htm?utm_source=openai))\n\n* **Mobility and social behavior:** Google Community Mobility\u2013based analyses show **retail and recreation mobility in the U.S. had returned to around baseline by April 2021**, and **transit\u2011station mobility was back near baseline by July 2021**. Workplaces remained about **20% below baseline through early 2022**, but with retail, recreation, grocery/pharmacy, and transit at or near 100%, the overall mix of social and economic activity was well above 80% of pre\u2011COVID norms by mid\u20112021. ([pcghealthpolicy.com](https://pcghealthpolicy.com/2022/04/19/where-did-we-go-during-the-pandemic-using-community-mobility-data-to-track-behavior-during-the-phe/?utm_source=openai)) Air\u2011travel volumes tell a similar story: by summer 2021 TSA checkpoint counts were routinely around **2 million passengers per day**, only ~20\u201325% below 2019 levels. ([statista.com](https://www.statista.com/chart/24599/passenger-screenings-at-us-airports/?utm_source=openai))\n\n* **Vaccination and lifting of restrictions:** Vaccine rollout was **far faster than implied** in the prediction. By **August 2, 2021**, **70% of U.S. adults had received at least one dose** of a COVID\u201119 vaccine, and about half the total population was fully vaccinated. ([cnbc.com](https://www.cnbc.com/2021/08/02/covid-vaccine-us-reaches-bidens-70percent-goal-for-adults-a-month-behind.html?utm_source=openai)) On **May 13, 2021**, the CDC said fully vaccinated people could **resume most indoor and outdoor activities without masks or distancing** in non\u2011health\u2011care settings, essentially telling them they could return to pre\u2011pandemic behaviors except where local rules still applied. ([hoganlovells.com](https://www.hoganlovells.com/en/publications/how-should-employers-respond-to-new-cdc-guidance-stating-that-fully-vaccinated-individuals-can-resume-activities-without-masks-or-social-distancing?utm_source=openai)) Many states lifted most business capacity limits and mask mandates during spring\u2013summer 2021, enabling near\u2011normal social and commercial life in large parts of the country. ([hr.dickinson-wright.com](https://hr.dickinson-wright.com/2021/05/03/states-relax-covid-19-restrictions-on-businesses-as-summer-approaches/?utm_source=openai))\n\nWhile some sectors (e.g., offices in big cities, some international travel, certain hospitality niches) and specific metrics lagged into 2022, the **overall** combination of GDP, employment, mobility, travel, and daily social activity in the U.S. had clearly surpassed an 80% recovery level **months before 2022 began**. That contradicts his timeline that such a level of normality would *not* be reached until 2022 or later.\n\n**Conclusion:** Because the U.S. crossed a reasonable \u201c80% of normal\u201d threshold for both economic output and everyday social activity by mid\u2013 to late\u20112021, Chamath\u2019s prediction that this would not happen until 2022\u20132023 was **wrong**.",
+      "sources": [
+        {
+          "end_index": 715,
+          "start_index": 582,
+          "title": "11 facts on the economic recovery from the COVID-19 pandemic | Brookings",
+          "type": "url_citation",
+          "url": "https://www.brookings.edu/research/11-facts-on-the-economic-recovery-from-the-covid-19-pandemic/?utm_source=openai"
+        },
+        {
+          "end_index": 976,
+          "start_index": 815,
+          "title": "US economy grew 5.7% in 2021 in rebound from 2020 recession | The National",
+          "type": "url_citation",
+          "url": "https://www.thenationalnews.com/business/economy/2022/01/27/us-economy-grew-57-in-2021-in-rebound-from-2020-recession/?utm_source=openai"
+        },
+        {
+          "end_index": 1375,
+          "start_index": 1197,
+          "title": "U.S. labor market shows improvement in 2021, but the COVID-19 pandemic continues to weigh on the economy : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+          "type": "url_citation",
+          "url": "https://www.bls.gov/opub/mlr/2022/article/US-labor-market-shows-improvement-in-2021-but-the-COVID-19-pandemic-continues-to-weigh-on-the-economy.htm?utm_source=openai"
+        },
+        {
+          "end_index": 2050,
+          "start_index": 1869,
+          "title": "Where Did We Go During the Pandemic? Using Community Mobility Data to Track Behavior During the PHE \u2013",
+          "type": "url_citation",
+          "url": "https://pcghealthpolicy.com/2022/04/19/where-did-we-go-during-the-pandemic-using-community-mobility-data-to-track-behavior-during-the-phe/?utm_source=openai"
+        },
+        {
+          "end_index": 2326,
+          "start_index": 2217,
+          "title": "Chart: U.S. Airports Are Busier Than Ever This Year | Statista",
+          "type": "url_citation",
+          "url": "https://www.statista.com/chart/24599/passenger-screenings-at-us-airports/?utm_source=openai"
+        },
+        {
+          "end_index": 2743,
+          "start_index": 2602,
+          "title": "Covid vaccine: U.S. reaches Biden's 70% goal for adults a month behind",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/08/02/covid-vaccine-us-reaches-bidens-70percent-goal-for-adults-a-month-behind.html?utm_source=openai"
+        },
+        {
+          "end_index": 3252,
+          "start_index": 3020,
+          "title": "Employer considerations: New CDC guidance for fully vaccinated individuals not wearing masks",
+          "type": "url_citation",
+          "url": "https://www.hoganlovells.com/en/publications/how-should-employers-respond-to-new-cdc-guidance-stating-that-fully-vaccinated-individuals-can-resume-activities-without-masks-or-social-distancing?utm_source=openai"
+        },
+        {
+          "end_index": 3586,
+          "start_index": 3426,
+          "title": "States Relax COVID-19 Restrictions on Businesses as Summer Approaches - HR Blog",
+          "type": "url_citation",
+          "url": "https://hr.dickinson-wright.com/2021/05/03/states-relax-covid-19-restrictions-on-businesses-as-summer-approaches/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction was that the US would not exceed roughly 80% pre-COVID social and economic normality until 2022 (possibly 2023), due to vaccine scaling delays. However, key metrics recovered faster:\n\n**Economic:** Real GDP surpassed pre-pandemic (Q4 2019) levels in Q2 2021 ([CRS report](https://www.congress.gov/crs-product/R47115), [Treasury](https://home.treasury.gov/news/featured-stories/the-us-economy-in-global-context)). Unemployment fell from 14.8% (Apr 2020) to 3.9% (Dec 2021 annual avg., monthly 3.9% Dec 2021; pre-COVID 3.5%) ([FRED UNRATE](https://fred.stlouisfed.org/series/UNRATE), [Investopedia](https://www.investopedia.com/historical-us-unemployment-rate-by-year-7495494)).\n\n**Social:** Most states lifted mask mandates, capacity limits, and gathering restrictions by May-June 2021 (e.g., NJ May 2021, CDC guidance May 2021) ([NASHP tracker](https://nashp.org/state-tracker/2021-covid-19-state-restrictions-re-openings-and-mask-requirements/)). Google Mobility reports showed workplace/retail visits recovering to 90-100% baseline by summer 2021 (historical data via [Google](https://www.google.com/covid19/mobility/)). Air travel reached ~70-80% by late 2021, full recovery 2022 ([OAG](https://www.oag.com/coronavirus-airline-schedules-data)). Restaurant traffic rebounded post-Omicron by early 2022 (OpenTable).\n\nVaccine rollout exceeded expectations: >50% adults fully vaccinated by May 2021. Thus, >80% normality achieved in 2021, falsifying the prediction. Sources as linked; current date Dec 2025 confirms full passage of timeframe."
+    },
+    {
+      "id": "C-00:25:42.850",
+      "result": "wrong",
+      "explanation": "**Evaluation timeframe**\n- The prediction was made in November 2020, about conditions \"by next summer\" (i.e., Northern Hemisphere summer 2021) and the following few months.\n\n**1. Was COVID-19 a \u201cdistant bad memory\u201d and no longer a major active concern by summer 2021?**\n- On 15 July 2021, the WHO Emergency Committee explicitly concluded that the COVID\u201119 pandemic **still constituted a Public Health Emergency of International Concern (PHEIC)** and advised continuing intensive global response measures. ([who.int](https://www.who.int/news/item/15-07-2021-statement-on-the-eighth-meeting-of-the-international-health-regulations-%282005%29-emergency-committee-regarding-the-coronavirus-disease-%28covid-19%29-pandemic?utm_source=openai))\n- WHO situation reports from July 2021 show **~3.8 million new cases and ~69,000 deaths in a single week** globally, with cases and deaths rising again, driven by variants such as Delta. ([who.int](https://www.who.int/publications/m/item/weekly-epidemiological-update-on-covid-19---27-july-2021?utm_source=openai))\n- In the U.S., the highly transmissible **Delta variant** became dominant by early July 2021, leading to a major surge in cases; CDC reinstated indoor masking recommendations for vaccinated people by July 27, 2021. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_the_United_States_%282021%29?utm_source=openai))\n- Many regions (e.g., Eastern Mediterranean) were still in **community transmission** with millions of cumulative cases and hundreds of thousands of deaths as of late July 2021. ([emro.who.int](https://www.emro.who.int/pandemic-epidemic-diseases/covid-19/covid-19-situation-updates-for-week-30-2531-july-2021.html?utm_source=openai))\n\nGiven that the disease was surging, emergency status was formally maintained, and new restrictions were being reintroduced, COVID-19 clearly **had not become a distant memory or ceased to be a major concern in daily life** by summer 2021.\n\n**2. Did we just have 1\u20132 quarters of transition before normalcy?**\n- International bodies in 2021 were already warning of a **\u201clong, uneven and uncertain ascent\u201d** and a **\u201cGreat Divergence\u201d** in recovery, not a brief 3\u20136 month transition back to normal. The IMF\u2019s 2021 analysis projected that over 150 economies would still have **per\u2011capita incomes below 2019 levels in 2021**, with substantial output losses persisting through at least 2025. ([imf.org](https://www.imf.org/external/pubs/ft/ar/2021/eng/spotlight/the-great-divergence/?utm_source=openai))\n- Subsequent waves (notably Omicron starting late 2021) and the fact that WHO did not lift the PHEIC designation until **May 2023** confirm that the disruptive phase of the pandemic lasted **years**, not 1\u20132 quarters. ([paho.org](https://www.paho.org/en/news/8-5-2023-covid-19-no-longer-constitutes-public-health-emergency-international-concern?utm_source=openai))\n\nSo the **duration and intensity** of the pandemic\u2019s impact were significantly underestimated.\n\n**3. Did social life snap back with a big partying/dating surge?**\n- There *was* a pronounced short\u2011term rebound in some high\u2011income, highly vaccinated places, especially in the U.S.:\n  - The phrase **\u201cHot Vax Summer\u201d** became widely used in 2021 to describe expectations of a surge in dating, partying, and in\u2011person socializing after vaccination; media and social\u2011media usage of the term peaked in summer 2021. ([covidlexicon.net](https://covidlexicon.net/?utm_source=openai))\n  - Dating apps and nightlife in many U.S. cities saw strong activity as restrictions briefly eased.\n- However, this surge was **localized and short\u2011lived**, and was followed quickly by renewed concern and restrictions as Delta cases and hospitalizations climbed again in mid\u2011 to late\u2011summer 2021. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021_hospital_crisis_in_the_U.S._from_COVID-19?utm_source=openai))\n\nThis means the \u201ceveryone will want to party\u201d part had **some truth in specific contexts**, but it did **not** characterize the whole world or mark an enduring end to COVID\u2011related worries.\n\n**4. Did the global economy \u201csnap back very fast\u201d?**\n- While there was a rebound in global GDP in 2021, leading institutions emphasized that the recovery was **partial, uneven, and scarring**:\n  - The IMF\u2019s 2021 reports stress that recoveries were \u201cdiverging dangerously\u201d across and within countries, with **tourism\u2011dependent and low\u2011income economies lagging badly** and facing long\u2011lasting damage. ([imf.org](https://www.imf.org/external/pubs/ft/ar/2021/eng/spotlight/the-great-divergence/?utm_source=openai))\n  - The majority of countries were expected to remain **below their pre\u2011pandemic income trajectories for years**.\n\nSo the idea of a rapid, broad\u2011based global snap\u2011back was **overly optimistic**.\n\n**Overall judgment**\n- **Core claims that COVID would be a distant memory by summer 2021 and that only 1\u20132 quarters of transition would be needed are clearly falsified** by the ongoing global emergency status, major new waves, continued restrictions, and prolonged economic and social disruption.\n- A **narrow sub\u2011prediction**\u2014a temporary surge in partying/dating as vaccines rolled out in some rich countries\u2014was directionally correct, but this does not rescue the overall forecast, which was about the *end* of COVID as a major concern and a quick, broad return to normal.\n\n**Conclusion:** the prediction is **mostly wrong** in its main substance and timing, despite getting one secondary effect (a brief partying rebound) partly right.",
+      "sources": [
+        {
+          "end_index": 776,
+          "start_index": 544,
+          "title": "Statement on the eighth meeting of the International Health Regulations (2005) Emergency Committee regarding the coronavirus disease (COVID-19) pandemic",
+          "type": "url_citation",
+          "url": "https://www.who.int/news/item/15-07-2021-statement-on-the-eighth-meeting-of-the-international-health-regulations-%282005%29-emergency-committee-regarding-the-coronavirus-disease-%28covid-19%29-pandemic?utm_source=openai"
+        },
+        {
+          "end_index": 1092,
+          "start_index": 965,
+          "title": "Weekly epidemiological update on COVID-19 - 27 July 2021",
+          "type": "url_citation",
+          "url": "https://www.who.int/publications/m/item/weekly-epidemiological-update-on-covid-19---27-july-2021?utm_source=openai"
+        },
+        {
+          "end_index": 1444,
+          "start_index": 1309,
+          "title": "Timeline of the COVID-19 pandemic in the United States (2021)",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_the_United_States_%282021%29?utm_source=openai"
+        },
+        {
+          "end_index": 1779,
+          "start_index": 1624,
+          "title": "WHO EMRO - COVID-19 situation updates for week 30 (25\u201331 July 2021)",
+          "type": "url_citation",
+          "url": "https://www.emro.who.int/pandemic-epidemic-diseases/covid-19/covid-19-situation-updates-for-week-30-2531-july-2021.html?utm_source=openai"
+        },
+        {
+          "end_index": 2583,
+          "start_index": 2472,
+          "title": "The Great Divergence | No Time to Let Up | IMF Annual Report 2021",
+          "type": "url_citation",
+          "url": "https://www.imf.org/external/pubs/ft/ar/2021/eng/spotlight/the-great-divergence/?utm_source=openai"
+        },
+        {
+          "end_index": 2949,
+          "start_index": 2803,
+          "title": "COVID-19 no longer constitutes a public health emergency of international concern - PAHO/WHO | Pan American Health Organization",
+          "type": "url_citation",
+          "url": "https://www.paho.org/en/news/8-5-2023-covid-19-no-longer-constitutes-public-health-emergency-international-concern?utm_source=openai"
+        },
+        {
+          "end_index": 3530,
+          "start_index": 3465,
+          "title": "Covid Lexicon \u2013 A lexicon of pandemic-era words and phrases",
+          "type": "url_citation",
+          "url": "https://covidlexicon.net/?utm_source=openai"
+        },
+        {
+          "end_index": 3947,
+          "start_index": 3831,
+          "title": "2021 hospital crisis in the U.S. from COVID-19",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021_hospital_crisis_in_the_U.S._from_COVID-19?utm_source=openai"
+        },
+        {
+          "end_index": 4655,
+          "start_index": 4544,
+          "title": "The Great Divergence | No Time to Let Up | IMF Annual Report 2021",
+          "type": "url_citation",
+          "url": "https://www.imf.org/external/pubs/ft/ar/2021/eng/spotlight/the-great-divergence/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction was wrong. By summer 2021 (June-August), COVID-19 was not a 'distant bad memory' but remained a major daily concern due to the Delta variant surge. In the US, Delta caused record hospitalizations and deaths in July-August 2021 ([JAMA article](https://jamanetwork.com/journals/jama/fullarticle/2783478), [Science](https://www.science.org/content/article/delta-variant-triggers-dangerous-new-phase-pandemic)). Globally, cases rose sharply, with ongoing waves ([Our World in Data COVID cases](https://ourworldindata.org/covid-cases), [WHO dashboard](https://data.who.int/dashboards/covid19/cases)). Restrictions persisted: US CDC reinstated indoor mask mandates July 2021; Europe had vaccine/test requirements for travel ([NYT](https://www.nytimes.com/2021/04/25/world/europe/american-travel-to-europe.html)). Vaccines were widely available in high-income countries by mid-2021 but uneven globally ([AJMC timeline](https://www.ajmc.com/view/a-timeline-of-covid-19-vaccine-developments-in-2021)). No global 'snap back' or 'Tel Aviv'-like partying surge occurred amid Delta fears; social life reopened unevenly but cautiously ([Business Insider on Florida partying despite surge](https://www.businessinsider.com/florida-nightlife-going-wild-amid-delta-surge-college-students-partying-2021-7), [Atlantic on uncertain summer](https://www.theatlantic.com/technology/archive/2021/08/welcome-summer-uncertain-vibes/619662/)). Economy rebounded strongly (5.6% global growth [World Bank](https://www.worldbank.org/en/news/feature/2021/06/08/the-global-economy-on-track-for-strong-but-uneven-growth-as-covid-19-still-weighs)) but COVID disruptions continued."
+    },
+    {
+      "id": "C-00:25:42.850-b",
+      "result": "ambiguous",
+      "explanation": "**Summary of the prediction**  \nSacks suggested that *a few years* after 2020, COVID-19 would be so far in the rear\u2011view mirror that:\n1. People would see it as something we were overly afraid of, and  \n2. They would even question why it caused so much political damage to Trump (i.e., why he lost).\n\nBy late 2025, enough time has passed to judge this. The evidence shows **parts of the prediction came true (COVID largely normalized for many people)** while **the hindsight minimization he anticipated is only partial and strongly partisan, and mainstream analysis still treats COVID as a central, legitimate reason for Trump\u2019s loss.** Hence the overall call is **mixed/ambiguous** rather than clearly right or wrong.\n\n---\n\n### 1. Is COVID \u201cin the rear\u2011view mirror\u201d for many people by the mid\u20112020s?\n\n**Yes, largely.**\n\n* **Emergency phase ended and daily life normalized:** The U.S. federal COVID\u201119 public health emergency and associated flexibilities officially expired on May 11, 2023, marking an end to the formal emergency phase and a shift to treating COVID more like an endemic respiratory illness. ([oig.hhs.gov](https://oig.hhs.gov/coronavirus/covid-flex-expiration.asp?utm_source=openai))\n* **Public concern has dropped sharply:** A large Pew survey conducted in October 2024 found that only **21%** of Americans see the coronavirus as a *major* threat to U.S. public health, down from 67% in 2020. A **majority (56%)** say COVID-19 is now *\u201cnot something we really need to worry about much,\u201d* and just **4%** report regularly wearing masks. ([pewresearch.org](https://www.pewresearch.org/politics/2025/02/12/5-years-later-america-looks-back-at-the-impact-of-covid-19/?utm_source=openai))\n* **Many think the pandemic phase is over:** A 2025 YouGov poll reports that **51%** of Americans say COVID-19 is *no longer a pandemic*; most describe their own infections as mild or moderate. ([today.yougov.com](https://today.yougov.com/health/articles/51911-five-years-after-what-americans-think-about-covid-19-pandemic-poll?utm_source=openai))\n\nOn this narrow point\u2014COVID as a dominating, day\u2011to\u2011day fear\u2014Sacks\u2019 intuition was substantially correct: for much of the public, COVID has moved into the background of ordinary life.\n\n---\n\n### 2. Do people now feel \u201cwe were too afraid\u201d and that restrictions were excessive?\n\n**Partly, but in a strongly partisan and not overwhelming way.**\n\n* **Enduring sense of seriousness and harm:** The same Pew work finds that about **three\u2011quarters** of Americans say the pandemic took at least some toll on their lives, and large majorities know someone who was hospitalized or died. **84%** in an Axios\u2013Ipsos poll agree COVID has *permanently* changed their lives. ([pewresearch.org](https://www.pewresearch.org/politics/2025/02/12/5-years-later-america-looks-back-at-the-impact-of-covid-19/?utm_source=openai))\n* **Most still see COVID as more serious than a cold/flu:** As of late 2024, **56%** say COVID-19 is *worse* than a cold or flu; **40%** say it\u2019s no worse. Similarly, 39% say we\u2019re *not taking it seriously enough*, while 56% say it\u2019s not something we need to worry about much. ([pewresearch.org](https://www.pewresearch.org/politics/2025/02/12/americans-views-on-covid-19-risk-and-the-countrys-response-to-health-emergencies/?utm_source=openai))  \n  \u2192 That is not a dominant consensus that fear was irrational; opinion is split.\n* **Clear partisan split on whether we overreacted:** When asked about past restrictions, **62% of Republicans** say there should have been *fewer* restrictions, versus only **15% of Democrats**; most Democrats say rules were about right or should have been stronger. ([pewresearch.org](https://www.pewresearch.org/politics/2025/02/12/americans-views-on-covid-19-risk-and-the-countrys-response-to-health-emergencies/?utm_source=openai))  \n  \u2192 So there *are* \u201cmany people\u201d (especially on the right) who now think the response went too far, but that view is far from universal.\n\nSo Sacks was partly right that a sizeable chunk of the population would later see the fear and restrictions as excessive\u2014but that attitude is heavily partisan and counterbalanced by large groups who still regard COVID as a serious disease and think the response was broadly justified.\n\n---\n\n### 3. Do people now question why COVID hurt Trump politically / why he lost?\n\n**No, mainstream evidence still treats COVID\u2014and his handling of it\u2014as a central, obvious factor in his defeat.**\n\n* **Academic studies:** Peer\u2011reviewed political science research finds that COVID\u201119 **significantly reduced Trump\u2019s electoral support**, especially where health or economic impacts were salient. One Cambridge University Press article shows that information about the economic downturn and poor public\u2011health performance during COVID measurably depressed support for Trump. Another study using county\u2011level data concludes that higher COVID case counts *decreased* support for Trump and that, under plausible counterfactuals with fewer cases, he likely would have performed better electorally. ([cambridge.org](https://www.cambridge.org/core/journals/perspectives-on-politics/article/impact-of-covid19-on-trumps-electoral-demise-the-role-of-economic-and-democratic-accountability/9EE4FE61B2AFB3F7548C5F0AA657B2CC?utm_source=openai))\n* **Campaign and Republican diagnostics:** Trump\u2019s own campaign pollster Tony Fabrizio concluded in a post\u2011election autopsy that Trump lost largely because voters disapproved of his handling of the pandemic; voters who rated COVID as a top issue broke heavily for Biden. This assessment was echoed in reporting by outlets like The Washington Post and CNN. ([washingtonpost.com](https://www.washingtonpost.com/politics/poor-handling-of-virus-cost-trump-his-reelection-campaign-autopsy-finds/2021/02/01/92d60002-650b-11eb-886d-5264d4ceb46d_story.html?utm_source=openai))\n* **Ongoing media and political narratives:** Retrospective analyses of the 2020 race\u2014from mainstream magazines and 2024 election\u2011cycle coverage\u2014continue to highlight COVID as the dominant challenge of Trump\u2019s last year in office and a key reason he lost (especially his dismissiveness about the virus as deaths mounted). Biden and his allies still invoke Trump\u2019s pandemic mismanagement in their narratives, indicating that the link between COVID and Trump\u2019s loss remains widely accepted rather than puzzling. ([time.com](https://time.com/5907973/donald-trump-loses-2020-election/?utm_source=openai))\n\nWhile some Trump supporters reject the legitimacy of the 2020 result and blame fraud, that is *not* the same as widespread confusion over why COVID hurt him. The prevailing scholarly and media consensus remains that the pandemic and his response to it were central, not mysterious, drivers of his defeat.\n\n---\n\n### Overall assessment\n\n* **Accurate elements:**  \n  *By the mid\u20112020s, COVID is no longer an acute, top\u2011of\u2011mind fear for most Americans; the emergency phase is over and daily life is largely normalized.*\n\n* **Inaccurate or only partially realized elements:**  \n  *There is no broad, cross\u2011partisan sense that we were irrationally afraid, nor is there widespread puzzlement about why COVID politically damaged Trump. Many\u2014especially Democrats and independents\u2014still see COVID as a serious disease that justifiably shaped their 2020 vote, and mainstream analysis continues to treat Trump\u2019s pandemic handling as an obvious, primary cause of his loss.*\n\nBecause **one core part of the prediction (normalization) came true while the stronger claim about hindsight minimization of fear and Trump\u2019s loss did not clearly materialize beyond partisan subgroups**, the fairest single label is **\u201cambiguous\u201d** rather than fully right or wrong.",
+      "sources": [
+        {
+          "end_index": 1249,
+          "start_index": 1157,
+          "title": "OIG\u2019s COVID-19 Public Health Emergency Flexibilities End on May 11, 2023 Upon Expiration of the COVID-19 Public Health Emergency Declaration",
+          "type": "url_citation",
+          "url": "https://oig.hhs.gov/coronavirus/covid-flex-expiration.asp?utm_source=openai"
+        },
+        {
+          "end_index": 1750,
+          "start_index": 1604,
+          "title": "How COVID-19 Changed American Life: Looking Back 5 Years Later | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/politics/2025/02/12/5-years-later-america-looks-back-at-the-impact-of-covid-19/?utm_source=openai"
+        },
+        {
+          "end_index": 2099,
+          "start_index": 1946,
+          "title": "Five years after it started, what do Americans think about the COVID-19 pandemic? | YouGov",
+          "type": "url_citation",
+          "url": "https://today.yougov.com/health/articles/51911-five-years-after-what-americans-think-about-covid-19-pandemic-poll?utm_source=openai"
+        },
+        {
+          "end_index": 2913,
+          "start_index": 2767,
+          "title": "How COVID-19 Changed American Life: Looking Back 5 Years Later | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/politics/2025/02/12/5-years-later-america-looks-back-at-the-impact-of-covid-19/?utm_source=openai"
+        },
+        {
+          "end_index": 3360,
+          "start_index": 3192,
+          "title": "Americans' views on COVID-19 risk and emergency response: Looking back 5 years later | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/politics/2025/02/12/americans-views-on-covid-19-risk-and-the-countrys-response-to-health-emergencies/?utm_source=openai"
+        },
+        {
+          "end_index": 3882,
+          "start_index": 3714,
+          "title": "Americans' views on COVID-19 risk and emergency response: Looking back 5 years later | Pew Research Center",
+          "type": "url_citation",
+          "url": "https://www.pewresearch.org/politics/2025/02/12/americans-views-on-covid-19-risk-and-the-countrys-response-to-health-emergencies/?utm_source=openai"
+        },
+        {
+          "end_index": 5350,
+          "start_index": 5112,
+          "title": "The Impact of COVID-19 on Trump\u2019s Electoral Demise: The Role of Economic and Democratic Accountability | Perspectives on Politics | Cambridge Core",
+          "type": "url_citation",
+          "url": "https://www.cambridge.org/core/journals/perspectives-on-politics/article/impact-of-covid19-on-trumps-electoral-demise-the-role-of-economic-and-democratic-accountability/9EE4FE61B2AFB3F7548C5F0AA657B2CC?utm_source=openai"
+        },
+        {
+          "end_index": 5920,
+          "start_index": 5708,
+          "title": "Poor handling of virus cost Trump his reelection, campaign autopsy finds - The Washington Post",
+          "type": "url_citation",
+          "url": "https://www.washingtonpost.com/politics/poor-handling-of-virus-cost-trump-his-reelection-campaign-autopsy-finds/2021/02/01/92d60002-650b-11eb-886d-5264d4ceb46d_story.html?utm_source=openai"
+        },
+        {
+          "end_index": 6522,
+          "start_index": 6432,
+          "title": "How Donald Trump Lost the 2020 Presidential Election | TIME",
+          "type": "url_citation",
+          "url": "https://time.com/5907973/donald-trump-loses-2020-election/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "By late 2025, COVID-19 is widely viewed as in the 'rearview mirror': Pew Research (Feb 2025, Oct 2024 survey) shows only 20-21% see it as a major threat (down from 67% in 2020), 56% say it's no longer worrisome, 40% view it as no worse than flu, and 80% rarely/never mask. 38% say fewer restrictions needed (62% Republicans), 54% say media exaggerated risks (80% Republicans), indicating many question past fear levels. Trump's 2020 loss was linked to COVID handling, but his 2024 reelection (evidenced by 2025 second-term coverage) and hindsight ratings (38% excellent/good on handling per Pew) suggest the political damage faded, aligning with prediction that many would question its outsized impact as COVID recedes. Sources: [Pew COVID 5-Year Report](https://www.pewresearch.org/politics/2025/02/12/americans-views-on-covid-19-risk-and-the-countrys-response-to-health-emergencies/), Gallup (59% say pandemic over, Mar 2025)."
+    },
+    {
+      "id": "A-00:26:44.300",
+      "result": "wrong",
+      "explanation": "Burning Man 2021 did **not** take place as an official in\u2011person festival in Black Rock City. Organizers announced on April 27, 2021 that the event was canceled for the second year in a row due to COVID\u201119 \"uncertainties\" and redirected efforts toward a 2022 in\u2011person return and virtual/alternative activities instead.([pbs.org](https://www.pbs.org/newshour/arts/burning-man-cancels-2021-festival-in-northern-nevada-desert?utm_source=openai)) While thousands reportedly went to the playa for an unofficial, loosely organized \u201crogue burn,\u201d this was explicitly not an official Burning Man event and therefore could not be the \u201cgreatest Burning Man ever\u201d in the sense Jason described.([en.wikipedia.org](https://en.wikipedia.org/wiki/Burning_Man?utm_source=openai))\n\nAt the same time, the **general** part of the prediction\u2014that large in\u2011person festivals would resume by summer 2021\u2014was broadly correct. For example, Lollapalooza returned to Chicago\u2019s Grant Park at full capacity from July 29\u2013August 1, 2021, drawing roughly 385,000 attendees over four days after being canceled in 2020.([chicagomag.com](https://www.chicagomag.com/chicago-magazine/august-2021/postpandemic-palooza/?utm_source=openai))\n\nBecause the prediction was specifically framed around Burning Man 2021 becoming \u201cthe greatest Burning Man ever,\u201d and that core event was canceled rather than held at record scale, the overall prediction is best classified as **wrong**, despite being partially right about the broader festival landscape.",
+      "sources": [
+        {
+          "end_index": 478,
+          "start_index": 354,
+          "title": "Burning Man cancels 2021 festival in northern Nevada desert | PBS News",
+          "type": "url_citation",
+          "url": "https://www.pbs.org/newshour/arts/burning-man-cancels-2021-festival-in-northern-nevada-desert?utm_source=openai"
+        },
+        {
+          "end_index": 798,
+          "start_index": 717,
+          "title": "Burning Man",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Burning_Man?utm_source=openai"
+        },
+        {
+          "end_index": 1237,
+          "start_index": 1122,
+          "title": "Postpandemic-Palooza \u2013 Chicago Magazine",
+          "type": "url_citation",
+          "url": "https://www.chicagomag.com/chicago-magazine/august-2021/postpandemic-palooza/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Burning Man 2021 was canceled on April 27, 2021, due to ongoing COVID-19 uncertainties, marking the second consecutive year without the in-person event ([Wikipedia](https://en.wikipedia.org/wiki/Burning_Man), [PBS](https://www.pbs.org/newshour/arts/burning-man-cancels-2021-festival-in-northern-nevada-desert), [NPR](https://www.npr.org/2021/04/29/992172825/burning-man-canceled-relief-as-burners-locals-see-bright-side-of-informal-events)). It could not have experienced high attendance or been 'the greatest Burning Man ever.' While some music festivals resumed in summer 2021 with restrictions like proof of vaccination (e.g., Summerfest), the prediction's core claim about Burning Man resuming exceptionally fails."
+    },
+    {
+      "id": "D-00:32:52.660",
+      "result": "right",
+      "explanation": "Evidence after the January 5, 2021 Georgia runoffs shows that Friedberg\u2019s prediction was essentially correct on both key points:\n\n1. **Most expensive Senate runoffs in U.S. history**  \n   - OpenSecrets-based reporting found the Perdue\u2013Ossoff race spent nearly **$470 million** and the Loeffler\u2013Warnock race nearly **$363 million**, with both races *individually* surpassing the previous record for the most expensive Senate race (the 2020 North Carolina Senate race at about $299 million). ([newsweek.com](https://www.newsweek.com/georgia-senate-runoffs-finish-most-expensive-history-least-171-million-more-any-other-1558826?utm_source=openai))  \n   - News coverage at the time explicitly described the Georgia runoffs as **\u201cthe most expensive races in history\u201d** or **record\u2011breaking Senate elections**, confirming they set a new high-water mark. ([newsweek.com](https://www.newsweek.com/georgia-senate-runoffs-finish-most-expensive-history-least-171-million-more-any-other-1558826?utm_source=openai))  \n   - Earlier analyses during the campaign also noted that spending on **the runoffs alone** had already \u201csmashed\u201d records and made Georgia \u201cExhibit A\u201d for runaway Senate spending. ([thefulcrum.us](https://thefulcrum.us/runoff-georgia?utm_source=openai))  \n   Together, this confirms his claim that these would be \u201cthe biggest funding for a Senate runoff race in history, by far.\u201d\n\n2. **Total spending and ad\u2011spending scale (> $100 million)**  \n   - AdImpact\u2019s post\u2011election analysis estimates that the *two* 2020 Georgia Senate runoffs saw a combined **$507 million in advertising spending**, with about **$262 million** in ads for Perdue\u2013Ossoff and **$245.6 million** for Warnock\u2013Loeffler. ([adimpact.com](https://adimpact.com/blogs/blog/georgia-senate-runoff-spending-analysis?utm_source=openai))  \n   - Other contemporaneous reporting put overall spending on the runoffs (candidates + outside groups) at **well over $370 million**, again emphasizing that these runoffs were unprecedentedly expensive. ([thefulcrum.us](https://thefulcrum.us/runoff-georgia?utm_source=openai))  \n   - Friedberg\u2019s specific ballpark for ads (\u201cnorth of $100 million\u2026 maybe 100 to 200 million\u201d) ended up being conservative\u2014the actual ad spending was more than double his upper bound\u2014but the *core* of his forecast was that spending would at least exceed $100 million and reach an extraordinary, record\u2011setting level. The realized figures clearly met and greatly surpassed that threshold.\n\nBecause the Georgia runoffs did, in fact, become by far the most expensive Senate runoffs in U.S. history and shattered the $100 million mark in total and advertising spending, Friedberg\u2019s prediction is best classified as **right**, even though he underestimated just how extreme the final ad totals would be.",
+      "sources": [
+        {
+          "end_index": 680,
+          "start_index": 526,
+          "title": "Georgia Senate Runoffs Finish as Most Expensive in History, At Least 171 Million More Than Any Other - Newsweek",
+          "type": "url_citation",
+          "url": "https://www.newsweek.com/georgia-senate-runoffs-finish-most-expensive-history-least-171-million-more-any-other-1558826?utm_source=openai"
+        },
+        {
+          "end_index": 1039,
+          "start_index": 885,
+          "title": "Georgia Senate Runoffs Finish as Most Expensive in History, At Least 171 Million More Than Any Other - Newsweek",
+          "type": "url_citation",
+          "url": "https://www.newsweek.com/georgia-senate-runoffs-finish-most-expensive-history-least-171-million-more-any-other-1558826?utm_source=openai"
+        },
+        {
+          "end_index": 1296,
+          "start_index": 1223,
+          "title": "Georgia smashes record for most expensive Senate election - The Fulcrum",
+          "type": "url_citation",
+          "url": "https://thefulcrum.us/runoff-georgia?utm_source=openai"
+        },
+        {
+          "end_index": 1845,
+          "start_index": 1738,
+          "title": "Georgia Senate Runoff Spending Analysis",
+          "type": "url_citation",
+          "url": "https://adimpact.com/blogs/blog/georgia-senate-runoff-spending-analysis?utm_source=openai"
+        },
+        {
+          "end_index": 2125,
+          "start_index": 2052,
+          "title": "Georgia smashes record for most expensive Senate election - The Fulcrum",
+          "type": "url_citation",
+          "url": "https://thefulcrum.us/runoff-georgia?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The January 2021 Georgia Senate runoffs were the most expensive Senate races (including runoffs) in U.S. history, shattering records. Ad spending alone on the runoffs totaled $498.23 million across both races ([AdImpact](https://adimpact.com/blogs/blog/georgia-spending-data-senate-runoffs-reach-historic-totals/)), far exceeding the predicted $100\u2013200 million on ads. Total spending was even higher: Perdue-Ossoff ~$470M, Loeffler-Warnock ~$363M ([Newsweek](https://www.newsweek.com/georgia-senate-runoffs-finish-most-expensive-history-least-171-million-more-any-other-1558826), citing OpenSecrets), topping prior records like NC-2020 ($299M). OpenSecrets data for GAS2 shows candidates spent ~$221M and outside groups $189M in the cycle, dominated by runoff ([OpenSecrets GAS2](https://www.opensecrets.org/races/summary?cycle=2020&id=GAS2&spec=Y)). No prior Senate runoffs approached this."
+    },
+    {
+      "id": "D-00:33:53.550",
+      "result": "wrong",
+      "explanation": "The *condition* of the prediction was met: Democrats won **both** Georgia Senate runoffs on January 5, 2021 (Jon Ossoff and Raphael Warnock), producing a 50\u201350 Senate in which Vice President Kamala Harris held the tie\u2011breaking vote, giving Democrats effective control of the chamber. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2021_Georgia_runoff_election?utm_source=openai))\n\nHowever, U.S. equity markets did **not** fall 30\u201340% in the following six months:\n\n* The S&P 500 (a standard proxy for \u201cthe market\u201d) closed at **3,727.48** on January 5, 2021. ([statmuse.com](https://www.statmuse.com/money/ask/s-and-p-500-index-on-jan-5-2021?utm_source=openai))\n* By early July 2021, it was around **4,350+** (e.g., 4,352.34 on July 2 and 4,343.54 on July 6), implying a gain of roughly **16\u201317%**, not a decline. ([statmuse.com](https://www.statmuse.com/money/ask/sandp-500-jul-2021?utm_source=openai))\n* Monthly data show the S&P 500 was positive or only slightly negative in each month from February through June 2021, with no crash anywhere near 30\u201340%. ([statmuse.com](https://www.statmuse.com/money/ask/s-and-p-500-chart-by-month-2021?utm_source=openai))\n* By year\u2011end 2021 the S&P 500 had logged **70 record closes** and finished the year up about **27%**, indicating a broadly bullish environment rather than a deep drawdown in mid\u20112021. ([cnbc.com](https://www.cnbc.com/2021/12/30/stock-market-futures-open-to-close-news.html?utm_source=openai))\n\nSince the Democrats did gain Senate control as specified, but U.S. equities **rose** instead of dropping 30\u201340% over the subsequent six months, Friedberg\u2019s conditional market prediction is **wrong**.",
+      "sources": [
+        {
+          "end_index": 415,
+          "start_index": 317,
+          "title": "2021 Georgia runoff election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2021_Georgia_runoff_election?utm_source=openai"
+        },
+        {
+          "end_index": 699,
+          "start_index": 597,
+          "title": "S And P 500 Index On Jan 5 2021 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/s-and-p-500-index-on-jan-5-2021?utm_source=openai"
+        },
+        {
+          "end_index": 942,
+          "start_index": 853,
+          "title": "Sandp 500 Jul 2021 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/sandp-500-jul-2021?utm_source=openai"
+        },
+        {
+          "end_index": 1200,
+          "start_index": 1098,
+          "title": "S And P 500 Chart By Month 2021 | StatMuse Money",
+          "type": "url_citation",
+          "url": "https://www.statmuse.com/money/ask/s-and-p-500-chart-by-month-2021?utm_source=openai"
+        },
+        {
+          "end_index": 1495,
+          "start_index": 1387,
+          "title": "S&P 500 ends 2021 with a nearly 27% gain, but dips in final trading day",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/12/30/stock-market-futures-open-to-close-news.html?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The condition was met: Democrats won both Georgia Senate runoff races on January 5, 2021 (Jon Ossoff defeated David Perdue; Raphael Warnock defeated Kelly Loeffler), securing 50-50 Senate control with VP tiebreaker ([Wikipedia](https://en.wikipedia.org/wiki/2021_Georgia_runoff_election), [NYT](https://www.nytimes.com/interactive/2021/01/05/us/elections/results-georgia-runoffs.html), [WaPo](https://www.washingtonpost.com/elections/election-results/georgia-senate-runoffs-2021/)).\n\nHowever, U.S. equity markets (S&P 500) did not decline 30-40%. S&P 500 closed at $3,727.48 on Jan 5, ~$3,748 on Jan 6 (up 0.57%, per [A Frugal Doctor](https://www.afrugaldoctor.com/home/volatility-decay-dont-hold-leveraged-etfs-long-term)), $3,851.55 on Jan 20 ([StatMuse](https://www.statmuse.com/money/ask?q=what%2Bwas%2Bthe%2Bs%2Band%2Bp%2B500%2Bwhen%2Btrump%2Bleft%2Boffice%2Bon%2Bjan%2B20%252C%2B2021)), and $4,343.54 on July 6 (~16.6% gain from Jan 5; [StatMuse](https://www.statmuse.com/money/ask/sandp-500-jul-2021)). Markets rose steadily through mid-2021, with no 30-40% drop ([Yahoo Finance historical data](https://finance.yahoo.com/quote/%5EGSPC/history/), [Multpl](https://www.multpl.com/s-p-500-historical-prices/table/by-month))."
+    },
+    {
+      "id": "C-00:57:47.590",
+      "result": "wrong",
+      "explanation": "Sacks predicted that:\n\n1. **Donald Trump would pursue election court challenges for a few weeks after the election but effectively end them by U.S. Thanksgiving 2020 (November 26, 2020), meaning the contest of the result would be over by then.**  \n2. **Courts would ultimately rule against Trump or throw out his cases.**\n\n**What actually happened:**\n\n- Trump and his allies continued significant legal efforts *after* Thanksgiving. For example, on **November 27, 2020** (the day after Thanksgiving), the Third Circuit Court of Appeals rejected the Trump campaign\u2019s attempt to undo Pennsylvania\u2019s vote certification, showing the campaign was still actively litigating key challenges beyond Thanksgiving. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Post-election_lawsuits_related_to_the_2020_U.S._presidential_election_from_Pennsylvania?utm_source=openai))\n- Trump\u2019s broader effort to overturn the election ran from early November well into **December 2020 and January 2021**, involving dozens of lawsuits, pressure on state officials, and attempts to get the Supreme Court to intervene; this was not effectively \u201cover\u201d by Thanksgiving. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai))\n- A major post-Thanksgiving legal push was **Texas v. Pennsylvania**, filed December 8, 2020, at the U.S. Supreme Court, seeking to invalidate Biden\u2019s wins in four states. The Court dismissed the case on **December 11, 2020** for lack of standing\u2014another prominent defeat, but clearly showing that the legal contest continued well beyond Thanksgiving. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Texas_v._Pennsylvania?utm_source=openai))\n- Overall, Trump and his allies filed 60+ lawsuits related to the 2020 election and **did not win any that could change the outcome**; courts repeatedly dismissed or ruled against them, matching the part of Sacks\u2019 prediction that courts would ultimately rule against Trump\u2019s side. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai))\n\n**Assessment:**\n\n- The **timing and \u201cend by Thanksgiving\u201d component** of the prediction was clearly wrong: high\u2011profile court challenges and broader legal/political efforts to overturn the election were still very much active in December and even into January. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai))  \n- The **courts\u2011will\u2011rule\u2011against-him component** was correct, but it was coupled to the stronger claim that the contest would effectively be over by Thanksgiving.\n\nBecause the key claim about when Trump\u2019s challenges would effectively end was false, the prediction as stated is best judged **wrong overall**, despite being right that the courts would ultimately reject his efforts.",
+      "sources": [
+        {
+          "end_index": 901,
+          "start_index": 744,
+          "title": "Post-election lawsuits related to the 2020 U.S. presidential election from Pennsylvania",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Post-election_lawsuits_related_to_the_2020_U.S._presidential_election_from_Pennsylvania?utm_source=openai"
+        },
+        {
+          "end_index": 1318,
+          "start_index": 1183,
+          "title": "Attempts to overturn the 2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1763,
+          "start_index": 1672,
+          "title": "Texas v. Pennsylvania",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Texas_v._Pennsylvania?utm_source=openai"
+        },
+        {
+          "end_index": 2181,
+          "start_index": 2046,
+          "title": "Attempts to overturn the 2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 2583,
+          "start_index": 2448,
+          "title": "Attempts to overturn the 2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump's election court challenges continued beyond Thanksgiving 2020 (November 26). While many lawsuits were dismissed or ruled against by then (e.g., over 30 failures by Nov 27 per Wikipedia; PA certifications Nov 24 despite suits; dismissals in MI Nov 13-23, AZ Nov 13-21, NV Nov 20, GA Nov 19), ongoing appeals (e.g., Third Circuit PA appeal rejected Nov 27), new filings (Sidney Powell suits Nov 25-26 in GA/MI), and incomplete certifications (WI/AZ Nov 30) meant the legal contest was not 'effectively ended' or 'over' by Thanksgiving. Efforts persisted into December (e.g., Texas v. Pennsylvania filed Dec 7, SCOTUS dismissal Dec 11). Sources: [Post-election lawsuits Wikipedia](https://en.wikipedia.org/wiki/Post-election_lawsuits_related_to_the_2020_U.S._presidential_election), [Timeline Wikipedia](https://en.wikipedia.org/wiki/Timeline_of_the_2020_United_States_presidential_election_(November_2020%E2%80%93January_2021)), [Attempts to overturn Wikipedia](https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election)."
+    },
+    {
+      "id": "C-00:57:47.590-2",
+      "result": "right",
+      "explanation": "**Assessment**\n- Conditional prediction: *If* Donald Trump chooses to run for president in 2024, he will probably win the Republican Party\u2019s presidential nomination.\n- Reality:\n  - Trump **did choose to run** in the 2024 election, formally announcing his candidacy on November 15, 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai))  \n  - He then **won the 2024 Republican primaries** decisively, securing far more than the required delegates. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_primaries?utm_source=openai))  \n  - Trump was officially nominated as the Republican presidential candidate at the **2024 Republican National Convention** in Milwaukee (July 15\u201318, 2024). ([en.wikipedia.org](https://en.wikipedia.org/wiki/2024_Republican_National_Convention?utm_source=openai))  \n\nBecause the condition (*he chooses to run*) was met and the predicted outcome (he *gets the Republican nomination again*) occurred, the prediction is **correct**.\n\n**Conclusion**\nDonald Trump ran in 2024 and became the Republican Party\u2019s presidential nominee; therefore Sacks\u2019s prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 432,
+          "start_index": 323,
+          "title": "Donald Trump 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai"
+        },
+        {
+          "end_index": 659,
+          "start_index": 545,
+          "title": "2024 Republican Party presidential primaries",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_primaries?utm_source=openai"
+        },
+        {
+          "end_index": 924,
+          "start_index": 819,
+          "title": "2024 Republican National Convention",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/2024_Republican_National_Convention?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Donald Trump announced his 2024 presidential campaign on November 15, 2022 ([CNN](https://www.cnn.com/2022/11/15/politics/trump-2024-presidential-bid), [Wikipedia](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign)), satisfying the condition. He secured the Republican nomination, clinching it mathematically on March 12, 2024 ([PBS](https://www.pbs.org/newshour/politics/trump-clinches-2024-republican-nomination)) and receiving the official nomination on July 15, 2024 ([Politico](https://www.politico.com/news/2024/07/15/donald-trump-gop-presidential-nominee-00168345)). Primaries results confirm his dominance ([Wikipedia](https://en.wikipedia.org/wiki/2024_Republican_Party_presidential_primaries)). The prediction proved correct."
+    },
+    {
+      "id": "B-00:59:33.610",
+      "result": "wrong",
+      "explanation": "**Outcome:** The prediction was **wrong**.\n\nChamath predicted a *0% chance* that Donald Trump would run for president again in 2024. In reality, Trump **did run** in 2024, formally announced a 2024 presidential campaign, secured the Republican nomination, and was the Republican nominee in the 2024 U.S. presidential election.\n\nKey facts:\n\n- Donald Trump **formally announced his 2024 presidential campaign on November 15, 2022**.\n- He ran in, and won, the 2024 Republican primaries and became the **Republican Party\u2019s presidential nominee**.\n- Trump appeared on the ballot in the **2024 United States presidential election** as the Republican nominee and won the election, securing 312 electoral votes and the presidency.\n\nThese points are documented in public election records and reporting on Trump\u2019s 2024 campaign and the 2024 U.S. presidential election. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai))\n\nBecause Trump *did* run for president in 2024, a prediction of \u201c0% chance he runs again in four years\u201d is clearly **incorrect**.",
+      "sources": [
+        {
+          "end_index": 1011,
+          "start_index": 902,
+          "title": "Donald Trump 2024 presidential campaign",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Donald Trump announced his 2024 presidential campaign on November 15, 2022 ([CNN](https://www.cnn.com/2022/11/15/politics/trump-2024-presidential-bid), [Wikipedia](https://en.wikipedia.org/wiki/Donald_Trump_2024_presidential_campaign)), became the Republican nominee, and won the election on November 5, 2024, against Kamala Harris ([CNN results](https://www.cnn.com/election/2024/results/president), [Wikipedia election page](https://en.wikipedia.org/wiki/2024_United_States_presidential_election), [BBC](https://www.bbc.com/news/election/2024/us/results)). Chamath's 0% chance prediction was incorrect."
+    },
+    {
+      "id": "D-00:59:56.980",
+      "result": "wrong",
+      "explanation": "**Summary**  \nThe key components of Friedberg\u2019s prediction did not materialize: Trump was based in Florida rather than New York, he did not buy or own a law firm, and credible estimates of his post\u2011presidency earnings are far below ~$100 million per month.\n\n**1. Where Trump was based after leaving office**  \n- In October 2019, Trump formally changed his primary residence from New York City to Mar\u2011a\u2011Lago in Palm Beach, Florida.([en.wikipedia.org](https://en.wikipedia.org/wiki/Mar-a-Lago?utm_source=openai))  \n- After his first term ended on January 20, 2021, he went to live at Mar\u2011a\u2011Lago and operated his post\u2011presidency office from there, not from New York.([en.wikipedia.org](https://en.wikipedia.org/wiki/Mar-a-Lago?utm_source=openai))  \n\n**2. Law firm ownership vs. heavy use of outside counsel**  \n- Trump has relied on numerous independent law firms\u2014Kasowitz LLP, van der Veen, Hartshorn & Levin, Blanche Law, McGuireWoods, Squire Patton Boggs, among others\u2014to defend him and his allies across civil, criminal, and congressional matters.([cnbc.com](https://www.cnbc.com/2021/08/02/trump-pacs-paid-lawyers-nearly-8-million-as-they-fought-election-results-impeachment.html?utm_source=openai))  \n- His leadership PAC, Save America, has **paid** these firms tens of millions of dollars; by 2022 it had spent at least $16 million on legal services in that year alone, and in total more than $60 million on legal fees since creation.([en.wikipedia.org](https://en.wikipedia.org/wiki/Save_America?utm_source=openai))  \n- There is no credible reporting that Trump *bought* or effectively owns a law firm; instead, he is a major client who hires many separate firms and even carries legal debts to them.([thedailybeast.com](https://www.thedailybeast.com/new-filings-reveal-trumps-legal-bills-are-costing-him-big/?utm_source=openai))  \n\n**3. Scale of Trump\u2019s post\u2011presidency income**  \n- Forbes analyzed Trump\u2019s finances and estimated that during his first three years out of office (2021\u20132023), he generated about **$605 million in operating income total**\u2014i.e., roughly **$16\u201317 million per month on average**, not $100 million.([forbes.com](https://www.forbes.com/sites/danalexander/2024/10/07/how-donald-trump-earned-605-million-over-the-last-three-years/?utm_source=openai))  \n- That income came largely from golf properties, Mar\u2011a\u2011Lago, licensing, speaking fees, and NFTs; his social\u2011media venture (Truth Social) actually lost money on an operating basis in 2022, though his equity stake had paper value.([forbes.com](https://www.forbes.com/sites/danalexander/2024/10/07/how-donald-trump-earned-605-million-over-the-last-three-years/?utm_source=openai))  \n- Separately, Trump\u2011controlled entities like the Save America PAC raised hundreds of millions of dollars (e.g., $255.4 million by January 2021 and about $75 million in the first half of 2021), but those are political committee funds, legally distinct from Trump\u2019s personal income and heavily used for legal and political expenses.([en.wikipedia.org](https://en.wikipedia.org/wiki/Wealth_of_Donald_Trump?utm_source=openai))  \n\n**4. Later windfalls don\u2019t rescue the original claim**  \n- Since his return to the White House in 2025, Trump and his family have reportedly made over $1 billion in profits from crypto\u2011related ventures and seen large gains from Trump Media & Technology Group, implying very high effective earnings over that later period.([reuters.com](https://www.reuters.com/markets/wealth/coins-miners-trump-familys-crypto-playbook-2025-09-03/?utm_source=openai))  \n- However, those gains are: (a) tied to his *second* presidency, not his post\u2011presidency phase after 2021; and (b) irregular windfalls, not a documented, steady ~$100 million per month cash income to him personally.\n\n**Conclusion**  \nBecause Trump was based in Florida rather than New York, did not buy or own a law firm, and his best\u2011documented post\u2011presidency earnings are an order of magnitude below $100 million per month, Friedberg\u2019s prediction is **overall wrong**.",
+      "sources": [
+        {
+          "end_index": 547,
+          "start_index": 467,
+          "title": "Mar-a-Lago",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Mar-a-Lago?utm_source=openai"
+        },
+        {
+          "end_index": 781,
+          "start_index": 701,
+          "title": "Mar-a-Lago",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Mar-a-Lago?utm_source=openai"
+        },
+        {
+          "end_index": 1242,
+          "start_index": 1089,
+          "title": "Trump PACs paid lawyers nearly $8 million as he fought election results and impeachment",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2021/08/02/trump-pacs-paid-lawyers-nearly-8-million-as-they-fought-election-results-impeachment.html?utm_source=openai"
+        },
+        {
+          "end_index": 1562,
+          "start_index": 1480,
+          "title": "Save America",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Save_America?utm_source=openai"
+        },
+        {
+          "end_index": 1877,
+          "start_index": 1748,
+          "title": "New Filings Reveal Trump\u2019s Legal Bills Are Costing Him Big",
+          "type": "url_citation",
+          "url": "https://www.thedailybeast.com/new-filings-reveal-trumps-legal-bills-are-costing-him-big/?utm_source=openai"
+        },
+        {
+          "end_index": 2326,
+          "start_index": 2177,
+          "title": "Here's How Much Trump Earned After Leaving The White House",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/danalexander/2024/10/07/how-donald-trump-earned-605-million-over-the-last-three-years/?utm_source=openai"
+        },
+        {
+          "end_index": 2707,
+          "start_index": 2558,
+          "title": "Here's How Much Trump Earned After Leaving The White House",
+          "type": "url_citation",
+          "url": "https://www.forbes.com/sites/danalexander/2024/10/07/how-donald-trump-earned-605-million-over-the-last-three-years/?utm_source=openai"
+        },
+        {
+          "end_index": 3133,
+          "start_index": 3041,
+          "title": "Wealth of Donald Trump",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Wealth_of_Donald_Trump?utm_source=openai"
+        },
+        {
+          "end_index": 3589,
+          "start_index": 3461,
+          "title": "From coins to miners: Trump family's crypto playbook",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/markets/wealth/coins-miners-trump-familys-crypto-playbook-2025-09-03/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction has three key elements, none of which came true.\n\n1. **Based in New York**: Trump changed his primary residence to Mar-a-Lago, Palm Beach, Florida, in 2019 and has remained primarily associated with Florida post-2021, not New York. ([Wikipedia: Residences of Donald Trump](https://en.wikipedia.org/wiki/Residences_of_Donald_Trump); [NYT 2019](https://www.nytimes.com/2019/10/31/us/politics/trump-new-york-florida-primary-residence.html); [Yahoo 2025](https://www.yahoo.com/news/articles/karoline-leavitt-says-york-trump-220233311.html)).\n\n2. **Acquire/own a law firm**: No evidence Trump bought or owns a law firm for defense. Searches yield zero relevant results; he hires external lawyers as needed. ([Search results](https://www.mondaq.com/unitedstates/management/1701252/lets-buy-a-law-firm-management-service-organizations) unrelated).\n\n3. **$100M/month income from post-presidency activities**: Unrealistic ($1.2B/year). Post-2021 disclosures show millions from licensing/books/NFTs/golf (~$600M total in 2024, per CNN/AP), but far below $100M/month. Truth Social generated little (e.g., <$5M valuation in 2023). Net worth rose from ~$2.5B (2021) to $7.3B (2025) via crypto/Truth Social volatility/presidency boosts, not monthly mega-income. ([Forbes 2025](https://www.forbes.com/sites/danalexander/2025/09/09/presidency-boosts-trumps-net-worth-by-3-billion-in-a-year/); [CNN 2024](https://www.cnn.com/2024/08/15/politics/financial-disclosure-trump-2024); [CREW 2024](https://www.citizensforethics.org/reports-investigations/crew-reports/donald-trumps-2024-financial-disclosures/)).\n\nOver 4+ years post-Jan 2021, all falsified."
+    },
+    {
+      "id": "B-01:00:06.460",
+      "result": "right",
+      "explanation": "Donald Trump left office on **January 20, 2021** and subsequently created a new media enterprise, **Trump Media & Technology Group (TMTG)**, which owns the social media platform **Truth Social**. Truth Social was announced in October 2021 and publicly launched in February 2022; it is explicitly described as a social networking service founded by Trump and owned by his media company, which has since expanded into other media/streaming and related ventures. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai))\n\nAfter leaving office, Trump also **actively tried to act as a political kingmaker** in the Republican Party:\n\n* He issued a large number of endorsements in GOP primaries, and coverage of the **May 2022 Ohio and Indiana primaries** described them as the first big test of his status as the Republican Party \u201ckingmaker\u201d \u2014 a test that Associated Press analysis said he \u201cpassed\u201d when his endorsed candidate J.D. Vance won the Ohio Senate primary. ([wsls.com](https://www.wsls.com/news/politics/2022/05/04/primary-takeaways-trump-passes-test-as-kingmaker-in-ohio/?utm_source=openai))  \n* Political reporting repeatedly framed him as a \u201ckingmaker,\u201d noting that Republican candidates in places like Arizona actively sought his backing and that Trump used rallies and endorsements to shape primary fields. ([rollcall.com](https://rollcall.com/2022/01/13/kingmaker-trump-heads-to-rural-arizona-where-gop-candidates-are-eager-for-his-backing/?utm_source=openai))  \n* His endorsements were pivotal in unseating several House Republicans who voted to impeach him in 2021, demonstrating his deliberate effort to reward loyalists and punish opponents inside the party. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Primary_challenge?utm_source=openai))\n\nWhile commentators debated how *effective* he was as a kingmaker \u2014 some arguing he was less decisive than advertised ([theguardian.com](https://www.theguardian.com/commentisfree/2022/may/26/voter-priorities-democrats-endorsements?utm_source=openai)) \u2014 the prediction only claimed that he would **launch a media business** and **try** to become a GOP kingmaker. Both clearly occurred, so the prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 575,
+          "start_index": 493,
+          "title": "Truth Social",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai"
+        },
+        {
+          "end_index": 1159,
+          "start_index": 1024,
+          "title": "Primary takeaways: Trump passes test as kingmaker in Ohio",
+          "type": "url_citation",
+          "url": "https://www.wsls.com/news/politics/2022/05/04/primary-takeaways-trump-passes-test-as-kingmaker-in-ohio/?utm_source=openai"
+        },
+        {
+          "end_index": 1534,
+          "start_index": 1380,
+          "title": "\u2018Kingmaker\u2019 Trump heads to rural Arizona, where GOP candidates are eager for his backing - Roll Call",
+          "type": "url_citation",
+          "url": "https://rollcall.com/2022/01/13/kingmaker-trump-heads-to-rural-arizona-where-gop-candidates-are-eager-for-his-backing/?utm_source=openai"
+        },
+        {
+          "end_index": 1825,
+          "start_index": 1738,
+          "title": "Primary challenge",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Primary_challenge?utm_source=openai"
+        },
+        {
+          "end_index": 2078,
+          "start_index": 1946,
+          "title": "Trump is no kingmaker in the Republican party. That is increasingly clear | Ben Davis | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/commentisfree/2022/may/26/voter-priorities-democrats-endorsements?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "Donald Trump launched Trump Media & Technology Group (TMTG) after leaving office in January 2021, with operations commencing February 8, 2021, and Truth Social announced October 2021 and launched February 2022 ([BBC](https://www.bbc.com/news/world-us-canada-58990330), [AP News](https://apnews.com/article/trump-media-truth-social-nasdaq-stock-106d7c423174ca1d7cc3cc9a3f3897a0), [SEC filing](https://www.sec.gov/Archives/edgar/data/1849635/000114036124016719/ef20025342_ex99-2.htm)). This qualifies as a media business (social media platform). He also actively attempted to be a political kingmaker in the Republican Party, endorsing numerous candidates in 2022 primaries and maintaining dominance, as described in sources like [Politico](https://www.politico.com/news/2022/05/05/trump-influence-over-gop-elections-00030161) ('Republican kingmaker') and [VOA](https://www.voanews.com/a/trump-republican-political-kingmaker-or-political-meddler-/6553935.html). Both parts of the prediction occurred."
+    },
+    {
+      "id": "C-01:00:12.860",
+      "result": "right",
+      "explanation": "**Summary**\nSacks predicted that, in the years after 2020, Donald Trump would (1) become a Republican kingmaker whose endorsement shapes primaries and (2) build a Fox\u2011News\u2011style media vehicle fused with his grassroots movement, so that Republicans risk primary challenges if they cross him. Both dynamics largely materialized, even though some details (like literally replacing Fox or *every* Republican needing his endorsement) were overstated.\n\n**1. Kingmaker status and primary leverage**\n\n* **High-impact endorsement record.** Analyses of the 2022 and 2024 cycles show Trump endorsements are both numerous and highly successful in GOP primaries. Ballotpedia/Axios and other trackers found his endorsees won around 90\u201395% of their 2022 primaries, with similar high win rates for 2024, especially among non-incumbents in contested races. Commentators explicitly described him as a GOP *kingmaker* whose backing is often decisive. ([spectrumlocalnews.com](https://spectrumlocalnews.com/nys/central-ny/news/2022/08/19/midterms-2022-elections-biden-trump-democrats-republicans-abortion-?utm_source=openai))\n* **Republicans seeking or fearing his endorsement.** Studies of 2022 primaries show Trump-endorsed candidates almost always won, and a large share of GOP candidates highlighted Trump or \u201cMAGA/America First\u201d branding in their materials, strongly suggesting they saw alignment with him as electorally valuable. ([brookings.edu](https://www.brookings.edu/articles/lessons-from-the-2022-primaries-what-do-they-tell-us-about-americas-political-parties-and-the-midterm-elections/?utm_source=openai))  Senior Republicans and analysts repeatedly note that his support is something most Republican candidates *want*, and that his backing can make or break a primary campaign.\n* **Primary threats against dissidents.** Trump has repeatedly used or threatened primary challenges to discipline Republicans who cross him. High\u2011profile examples include:\n  * Liz Cheney, who lost her 2022 Wyoming primary in a landslide to Trump\u2011backed Harriet Hageman after leading the Jan. 6 committee and voting to impeach him. ([theguardian.com](https://www.theguardian.com/us-news/2022/aug/16/wyoming-republican-primary-liz-cheney-donald-trump-harriet-hageman?utm_source=openai))\n  * Georgia officials Brian Kemp, Brad Raffensperger and Chris Carr, all targeted by Trump for certifying Biden\u2019s 2020 win; Trump backed challengers against them in 2022 (Perdue, Hice, Gordon). ([gpb.org](https://www.gpb.org/news/2022/05/24/kemp-stomps-trump-backed-david-perdue-in-georgia-governor-primary?utm_source=openai))\n  * Ongoing or threatened challenges against figures like Rep. Thomas Massie and Sen. Thom Tillis, where Trump or his allies openly float primary opponents as punishment for insufficient loyalty. ([apnews.com](https://apnews.com/article/b23bd6b1644263ebe9b36a232736d441?utm_source=openai))  \n  In parallel, Sen. Lisa Murkowski has publicly said many GOP lawmakers are \u201cafraid\u201d of retaliation from Trump if they oppose him, explicitly mentioning fears of being primaried. ([nypost.com](https://nypost.com/2025/04/17/us-news/were-all-afraid-sen-lisa-murkowski-says-gop-fears-retaliation-if-they-cross-trump/?utm_source=openai))\n\n* **But not literally \u2018every\u2019 Republican.** There are notable exceptions where Republicans have survived or thrived without Trump\u2019s endorsement or even against his wishes:\n  * Georgia Gov. Brian Kemp crushed Trump\u2011backed David Perdue by ~50 points in the 2022 GOP primary and went on to win re\u2011election. ([gpb.org](https://www.gpb.org/news/2022/05/24/kemp-stomps-trump-backed-david-perdue-in-georgia-governor-primary?utm_source=openai))\n  * Georgia Secretary of State Brad Raffensperger beat Trump\u2011endorsed Jody Hice outright in the 2022 primary. ([cnbc.com](https://www.cnbc.com/2022/05/24/georgia-gop-secretary-of-state-primary-raffensperger-faces-trump-pick-hice.html?utm_source=openai))\n  * Sen. Lisa Murkowski won re\u2011election in Alaska in 2022 despite Trump\u2019s active opposition and endorsement of Kelly Tshibaka. ([cnbc.com](https://www.cnbc.com/2022/11/24/murkowski-wins-re-election-in-alaska-fending-off-trump-backed-challenge.html?utm_source=openai))\n\n  These counterexamples show that Sacks\u2019s phrase \u201cevery Republican will need to go get his endorsement or they will be primaried\u201d is too absolute. However, the broader pattern\u2014Trump\u2019s endorsement is highly prized, and many Republicans fear or face MAGA-aligned primary challengers if they oppose him\u2014is accurate.\n\n**2. Fox\u2011News\u2011style media plus grassroots movement**\n\n* **Creation of a Trump-centric media platform.** In 2021\u20132022, Trump founded Trump Media & Technology Group (TMTG) and launched **Truth Social**, a social network explicitly positioned as a pro\u2011Trump, \u201cfree speech\u201d alternative to mainstream platforms. Major references (including Britannica and multiple language Wikipedias) describe Truth Social as a Trump\u2011owned Twitter\u2011like platform built in response to his bans from mainstream social media and heavily centered on his political movement. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai))  TMTG itself markets Truth Social as the home for millions who have \u201crejected the pervasive censorship regime,\u201d i.e., the core MAGA base. ([tmtgcorp.com](https://tmtgcorp.com/?utm_source=openai))  That\u2019s very close to \u201cFox News hybridized with a grassroots movement.\u201d\n* **Expansion into streaming \u2018news TV\u2019 via Truth+.** Beginning in 2024, TMTG rolled out **Truth+**, a live TV streaming platform integrated into Truth Social. Company releases and outside coverage describe Truth+ as an ultra\u2011fast TV streaming service carrying \u201cpro\u2011freedom news networks like Newsmax, Real America\u2019s Voice, OAN, and more,\u201d plus a library of \u201cnon\u2011woke\u201d content, marketed as an alternative to mainstream media. ([globenewswire.com](https://www.globenewswire.com/news-release/2024/08/02/2923625/0/en/Trump-Media-Technology-Group-Begins-TV-Streaming-Rollout.html?_nhids=nc7MdcbgsRw4Als&_nlid=C6bSsAD6eU&utm_source=openai))  This is essentially a Trump\u2011branded distribution hub for right\u2011wing cable news and commentary, tightly linked to his own social platform and movement.\n* **But not a full replacement or direct peer to Fox.** Where Sacks overshot is in implying Trump would *supplant* Fox with a direct competitor on the same scale. Fox News remains overwhelmingly dominant in cable news: it has led all cable outlets in ratings for years, captured well over half of the cable news audience in 2024, and in 2025 is even challenging or surpassing the broadcast networks in prime\u2011time viewership. ([press.foxnews.com](https://press.foxnews.com/2024/12/fox-news-channel-finishes-2024-with-highest-audience-share-in-nearly-a-decade-as-it-marks-nine-years-as-cables-most-watched-network?utm_source=openai))  Truth Social/Truth+ have modest user bases and large financial losses; Politico reports TMTG lost over $400 million in the most recent year despite a meme\u2011stock valuation. ([politico.com](https://www.politico.com/news/2025/02/15/truth-social-losing-money-00204531?utm_source=openai))  So Trump *did* build a Trump\u2011centric media ecosystem that carries news and harnesses his grassroots\u2014but it hasn\u2019t displaced Fox as the premier right\u2011wing TV outlet.\n\n**3. Overall assessment**\n\nTaken together:\n\n* Trump did become a central **kingmaker** in GOP politics, with a powerful, widely sought endorsement and a demonstrated willingness to sponsor or threaten primary challenges against Republicans who defy him.\n* He did build a **media vehicle**\u2014Truth Social plus the Truth+ streaming platform\u2014explicitly tied to his **MAGA grassroots movement** and hosting pro\u2011Trump news content, serving as an alternative information ecosystem alongside Fox.\n* The prediction\u2019s language about *\u201cevery\u201d* Republican needing his endorsement and about a full\u2011blown Fox replacement is overstated; some Republicans have survived without him, and Fox remains the dominant right\u2011leaning TV network.\n\nBut the core strategic picture Sacks sketched\u2014Trump using a proprietary media platform plus a Tea\u2011Party\u2011style base to act as a GOP kingmaker whose favor or wrath shapes Republican primaries\u2014has clearly come to pass. Hence the prediction is best classified as **right**, with some exaggeration in scope and absolutism rather than in direction.",
+      "sources": [
+        {
+          "end_index": 1146,
+          "start_index": 973,
+          "title": "Analysis: Can Biden buck the historical midterm trend?",
+          "type": "url_citation",
+          "url": "https://spectrumlocalnews.com/nys/central-ny/news/2022/08/19/midterms-2022-elections-biden-trump-democrats-republicans-abortion-?utm_source=openai"
+        },
+        {
+          "end_index": 1642,
+          "start_index": 1458,
+          "title": "Lessons from the 2022 Primaries \u2013 what do they tell us about America\u2019s political parties and the midterm elections? | Brookings",
+          "type": "url_citation",
+          "url": "https://www.brookings.edu/articles/lessons-from-the-2022-primaries-what-do-they-tell-us-about-americas-political-parties-and-the-midterm-elections/?utm_source=openai"
+        },
+        {
+          "end_index": 2303,
+          "start_index": 2150,
+          "title": "Liz Cheney loses Wyoming Republican primary to Trump-endorsed rival | US midterm elections 2022 | The Guardian",
+          "type": "url_citation",
+          "url": "https://www.theguardian.com/us-news/2022/aug/16/wyoming-republican-primary-liz-cheney-donald-trump-harriet-hageman?utm_source=openai"
+        },
+        {
+          "end_index": 2631,
+          "start_index": 2499,
+          "title": "Kemp stomps Trump-backed David Perdue in Georgia governor primary | Georgia Public Broadcasting",
+          "type": "url_citation",
+          "url": "https://www.gpb.org/news/2022/05/24/kemp-stomps-trump-backed-david-perdue-in-georgia-governor-primary?utm_source=openai"
+        },
+        {
+          "end_index": 2922,
+          "start_index": 2829,
+          "title": "Trump backs retired Navy SEAL in his quest to oust Kentucky Rep. Massie in Republican primary",
+          "type": "url_citation",
+          "url": "https://apnews.com/article/b23bd6b1644263ebe9b36a232736d441?utm_source=openai"
+        },
+        {
+          "end_index": 3259,
+          "start_index": 3105,
+          "title": "Sen. Lisa Murkowski says GOP lawmakers fear retaliation if they cross Trump: 'We're all afraid'",
+          "type": "url_citation",
+          "url": "https://nypost.com/2025/04/17/us-news/were-all-afraid-sen-lisa-murkowski-says-gop-fears-retaliation-if-they-cross-trump/?utm_source=openai"
+        },
+        {
+          "end_index": 3700,
+          "start_index": 3568,
+          "title": "Kemp stomps Trump-backed David Perdue in Georgia governor primary | Georgia Public Broadcasting",
+          "type": "url_citation",
+          "url": "https://www.gpb.org/news/2022/05/24/kemp-stomps-trump-backed-david-perdue-in-georgia-governor-primary?utm_source=openai"
+        },
+        {
+          "end_index": 3955,
+          "start_index": 3812,
+          "title": "Georgia GOP secretary of state primary: Raffensperger beats Trump pick Hice",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/05/24/georgia-gop-secretary-of-state-primary-raffensperger-faces-trump-pick-hice.html?utm_source=openai"
+        },
+        {
+          "end_index": 4224,
+          "start_index": 4084,
+          "title": "Murkowski wins re-election in Alaska, fending off Trump-backed challenge",
+          "type": "url_citation",
+          "url": "https://www.cnbc.com/2022/11/24/murkowski-wins-re-election-in-alaska-fending-off-trump-backed-challenge.html?utm_source=openai"
+        },
+        {
+          "end_index": 5176,
+          "start_index": 5094,
+          "title": "Truth Social",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai"
+        },
+        {
+          "end_index": 5372,
+          "start_index": 5315,
+          "title": "Trump Media",
+          "type": "url_citation",
+          "url": "https://tmtgcorp.com/?utm_source=openai"
+        },
+        {
+          "end_index": 6080,
+          "start_index": 5871,
+          "title": "Trump Media & Technology Group Begins TV Streaming Rollout",
+          "type": "url_citation",
+          "url": "https://www.globenewswire.com/news-release/2024/08/02/2923625/0/en/Trump-Media-Technology-Group-Begins-TV-Streaming-Rollout.html?_nhids=nc7MdcbgsRw4Als&_nlid=C6bSsAD6eU&utm_source=openai"
+        },
+        {
+          "end_index": 6865,
+          "start_index": 6659,
+          "title": "Media Relations | Fox News",
+          "type": "url_citation",
+          "url": "https://press.foxnews.com/2024/12/fox-news-channel-finishes-2024-with-highest-audience-share-in-nearly-a-decade-as-it-marks-nine-years-as-cables-most-watched-network?utm_source=openai"
+        },
+        {
+          "end_index": 7150,
+          "start_index": 7039,
+          "title": "Trump Media says it lost more than $400M last year",
+          "type": "url_citation",
+          "url": "https://www.politico.com/news/2025/02/15/truth-social-losing-money-00204531?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "Trump has become a kingmaker in Republican politics, with his endorsements critical in GOP primaries (e.g., high success rate in 2022 midterms per [NYT](https://www.nytimes.com/2022/03/25/us/politics/trump-endorsement-primaries.html), [Politico](https://www.politico.com/news/2022/05/05/trump-influence-over-gop-elections-00030161), and 2024 nomination dominance). The MAGA movement functions as a Tea Party-style grassroots force ([WaPo](https://www.washingtonpost.com/politics/2025/10/31/tea-party-trump-maga-republicans/), [Pew](https://www.pewresearch.org/politics/2019/05/16/trumps-staunch-gop-supporters-have-roots-in-the-tea-party/)). However, Trump did not launch a Fox News competitor: post-2020 speculation ([NBC](https://www.nbcnews.com/business/business-news/trump-separates-fox-news-what-s-next-both-n1245549), [People](https://people.com/politics/trump-plans-wreck-fox-rival-digital-media-channel-report/)) led nowhere; Newsmax/OAN rose independently; Truth+ (launched July 2025) is a streaming platform carrying Newsmax but not a new TV news network by Trump ([Reuters](https://www.reuters.com/world/us/trump-media-launches-tv-streaming-platform-with-newsmax-channel-globally-2025-07-07/)). The prediction's core mechanism\u2014a hybridized Fox competitor\u2014failed, making it wrong despite partial influence match."
+    },
+    {
+      "id": "A-01:00:34.060",
+      "result": "wrong",
+      "explanation": "**Why this prediction is judged wrong**\n\nJason\u2019s claim (Nov 2020) was that any *Trump\u2011backed media network* trying to compete with Fox News would:\n1. **Fail to secure strong backing**;\n2. Look like a weaker, *\u201cBreitbart Lite\u201d* outlet; and\n3. **Shut down within 24 months of launch.**\n\nWhat actually happened:\n\n1. **Trump did launch a Trump\u2011branded media network in practice \u2013 Trump Media & Technology Group (TMTG) with Truth Social at its core.**  \n   * TMTG/Truth Social was announced in 2021 and Truth Social launched on Feb. 21, 2022 as an alt\u2011tech social media platform owned by Trump\u2019s media company. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai))  \n   * That is clearly a Trump\u2011backed media operation (social network, news distribution, video, etc.), i.e., a media *network* in the broad sense.\n\n2. **It *did* secure substantial financial backing.**  \n   * The planned SPAC merger with Digital World Acquisition Corp. (DWAC) was structured to provide roughly **$1.25 billion** in capital (about $300M from DWAC\u2019s trust plus a $1B PIPE), a level of funding inconsistent with \u201cwill not be able to get the backing.\u201d ([globenewswire.com](https://www.globenewswire.com/news-release/2021/12/04/2346139/0/en/Trump-Media-Technology-Group-Corp-and-Digital-World-Acquisition-Corp-Announce-1-Billion-PIPE-Investment-in-Committed-Capital-to-Fund-Business.html?utm_source=openai))  \n   * Even after PIPE commitments were later unwound, DWAC still had hundreds of millions of dollars in its trust, and the merged Trump Media entity ultimately went public and commanded a multi\u2011billion\u2011dollar market cap, with Trump\u2019s stake valued around **$4 billion** in late 2024. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Trump_Media_%26_Technology_Group?utm_source=openai))  \n   * In 2024\u201325 TMTG reported **hundreds of millions of dollars in annual losses** yet was still able to announce a **$400 million share buyback** and pursue a **$2.5 billion bitcoin\u2011treasury strategy** and other crypto/ETF ventures\u2014again indicating ample capital support rather than a failure to attract backing. ([politico.com](https://www.politico.com/news/2025/02/15/truth-social-losing-money-00204531?utm_source=openai))\n\n3. **The core platform did *not* shut down within 24 months.**  \n   * Truth Social launched in February 2022 and remains active as of late November 2025\u2014over **3\u00bd years later**, well beyond the 24\u2011month window Jason predicted for shutdown. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai))  \n   * It is described as a small but ongoing platform (millions of monthly active users, continued app store presence, ongoing product and financial initiatives), not as a shuttered failure. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai))\n\n4. **Trump has also launched a TV\u2011style streaming platform without it collapsing (yet).**  \n   * On July 7, 2025, Trump Media launched **Truth+**, a global TV streaming service carrying the conservative cable channel Newsmax and other video content, positioning itself in the same general conservative news/streaming space where Fox News and Fox Nation operate. ([reuters.com](https://www.reuters.com/world/us/trump-media-launches-tv-streaming-platform-with-newsmax-channel-globally-2025-07-07/))  \n   * Truth+ is only a few months old as of Nov. 29, 2025, so we can\u2019t yet test the 24\u2011month shutdown claim for this specific platform\u2014but its very launch, backed by a publicly traded company with hundreds of millions in cash and active capital\u2011raising plans, directly contradicts the idea that Trump *\u201cwill not be able to get the backing for this network.\u201d* ([reuters.com](https://www.reuters.com/world/us/trump-media-launches-tv-streaming-platform-with-newsmax-channel-globally-2025-07-07/))\n\n5. **The only clearly Trump\u2011run product that *did* shut down quickly was a minor blog, not a Fox\u2011rival network.**  \n   * Trump\u2019s \u201cFrom the Desk of Donald J. Trump\u201d blog launched in May 2021 and was closed in less than a month due to low engagement. ([truthout.org](https://truthout.org/articles/trumps-blog-shuts-down-weeks-after-launch-having-failed-to-garner-a-following/?utm_source=openai))  \n   * This was a simple blog page on his website, not a significant, well\u2011funded media network attempting to compete with Fox News; using it to claim the prediction came true would stretch the original context beyond reason.\n\n**Ambiguity about \u201ccompete with Fox News\u201d**\n\nJason\u2019s original context was speculation that Trump would start a **television** or streaming news network to poach Fox\u2019s audience. No standalone \u201cTrump TV\u201d cable channel has launched so far, so there is no direct one\u2011to\u2011one test of that narrow scenario. But the *general* factual assertions he made\u2014Trump won\u2019t get serious backing for a media network, and anything he does will die within 24 months\u2014are clearly contradicted by the continued, well\u2011funded existence of TMTG/Truth Social and now Truth+.\n\nBecause the prediction\u2019s key falsifiable components (no backing; shutdown within 24 months) have not held up when applied to Trump\u2019s actual media ventures, the overall result is **wrong**.",
+      "sources": [
+        {
+          "end_index": 731,
+          "start_index": 649,
+          "title": "Truth Social",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai"
+        },
+        {
+          "end_index": 1456,
+          "start_index": 1202,
+          "title": "Trump Media & Technology Group Corp. and Digital World",
+          "type": "url_citation",
+          "url": "https://www.globenewswire.com/news-release/2021/12/04/2346139/0/en/Trump-Media-Technology-Group-Corp-and-Digital-World-Acquisition-Corp-Announce-1-Billion-PIPE-Investment-in-Committed-Capital-to-Fund-Business.html?utm_source=openai"
+        },
+        {
+          "end_index": 1844,
+          "start_index": 1742,
+          "title": "Trump Media & Technology Group",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Trump_Media_%26_Technology_Group?utm_source=openai"
+        },
+        {
+          "end_index": 2273,
+          "start_index": 2162,
+          "title": "Trump Media says it lost more than $400M last year",
+          "type": "url_citation",
+          "url": "https://www.politico.com/news/2025/02/15/truth-social-losing-money-00204531?utm_source=openai"
+        },
+        {
+          "end_index": 2600,
+          "start_index": 2518,
+          "title": "Truth Social",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai"
+        },
+        {
+          "end_index": 2876,
+          "start_index": 2794,
+          "title": "Truth Social",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Truth_Social?utm_source=openai"
+        },
+        {
+          "end_index": 3377,
+          "start_index": 3243,
+          "title": "Trump Media launches TV streaming platform with Newsmax channel globally | Reuters",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/trump-media-launches-tv-streaming-platform-with-newsmax-channel-globally-2025-07-07/"
+        },
+        {
+          "end_index": 3873,
+          "start_index": 3739,
+          "title": "Trump Media launches TV streaming platform with Newsmax channel globally | Reuters",
+          "type": "url_citation",
+          "url": "https://www.reuters.com/world/us/trump-media-launches-tv-streaming-platform-with-newsmax-channel-globally-2025-07-07/"
+        },
+        {
+          "end_index": 4271,
+          "start_index": 4127,
+          "title": "Trump\u2019s Blog Shuts Down Weeks After Launch, Having Failed to Garner a Following | Truthout",
+          "type": "url_citation",
+          "url": "https://truthout.org/articles/trumps-blog-shuts-down-weeks-after-launch-having-failed-to-garner-a-following/?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "No Trump-backed media network matching the description launched and failed as predicted. While there was speculation in late 2020 about Trump starting a rival to Fox News ([Axios Nov 12, 2020](https://www.axios.com/trump-fox-news-digital-media-competitor-25afddee-144d-4820-8ed4-9eb0ffa42420.html), [People Nov 12, 2020](https://people.com/politics/trump-plans-wreck-fox-rival-digital-media-channel-report/)), Trump Media & Technology Group (TMTG) launched Truth Social (social media platform) in June 2022 and Truth+ (TV streaming service with Newsmax channel) in 2024\u2013July 2025 ([Reuters Jul 7, 2025](https://www.reuters.com/world/us/trump-media-launches-tv-streaming-platform-with-newsmax-channel-globally-2025-07-07/), [NYT Jul 14, 2025](https://www.nytimes.com/2025/07/14/business/media/trump-media-truth-plus-streaming.html)). These secured backing via SPAC merger (publicly traded as DJT), partnerships, and are still operational >24 months post-launch, not resembling 'Breitbart Lite' or shutting down."
+    },
+    {
+      "id": "B-01:04:22.750",
+      "result": "wrong",
+      "explanation": "Chamath\u2019s prediction was that by **December 15, 2020**, Trump would effectively be \u201cout\u201d and the post\u2011election contest would \u201call be done.\u201d In reality, Trump\u2019s efforts to contest and overturn the 2020 election *continued well past* that date.\n\nKey evidence:\n\n- A comprehensive timeline of efforts to overturn the 2020 election notes the **main phase of attempts ran from November 4, 2020 through January 7, 2021**, explicitly covering all of December and stretching into early January. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai))\n- On **December 21, 2020**, Trump met at the White House with Rep. Mo Brooks, other members of Congress, and his legal team to strategize using the January 6 congressional certification to overturn the election results\u2014planning that clearly post\u2011dates December 15. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai))\n- On **December 23, 2020**, Trump personally called the chief investigator in the Georgia Secretary of State\u2019s office, urging the official to \u201cfind\u201d fraud, another direct attempt to alter certified results occurring after December 15. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai))\n- On **January 2, 2021**, Trump held the now\u2011infamous hour\u2011long call with Georgia Secretary of State Brad Raffensperger, pressuring him to \u201cfind 11,780 votes\u201d to overturn Biden\u2019s win in Georgia\u2014strong evidence that Trump was still actively contesting the election nearly **three weeks after** December 15. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Trump%E2%80%93Raffensperger_phone_call?utm_source=openai))\n\nBecause Trump\u2019s legal, political, and behind\u2011the\u2011scenes efforts to overturn the election were *ongoing and intensifying* after December 15, 2020, the prediction that everything would be \u201cdone\u201d and he\u2019d be \u201cout\u201d by that date is **incorrect**.",
+      "sources": [
+        {
+          "end_index": 658,
+          "start_index": 523,
+          "title": "Attempts to overturn the 2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1060,
+          "start_index": 925,
+          "title": "Attempts to overturn the 2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1432,
+          "start_index": 1297,
+          "title": "Attempts to overturn the 2020 United States presidential election",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Attempts_to_overturn_the_2020_United_States_presidential_election?utm_source=openai"
+        },
+        {
+          "end_index": 1848,
+          "start_index": 1740,
+          "title": "Trump\u2013Raffensperger phone call",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Trump%E2%80%93Raffensperger_phone_call?utm_source=openai"
+        }
+      ],
+      "grok_result": "wrong",
+      "grok_explanation": "The prediction was wrong. The Electoral College voted on December 14, 2020, certifying Biden's 306-232 victory ([National Archives](https://www.archives.gov/electoral-college/2020); [Wikipedia](https://en.wikipedia.org/wiki/2020_United_States_presidential_election)). However, Trump did not end his contestation by December 15. He continued claiming fraud, e.g., falsely stating he won post-EC vote ([Washington Post, Dec 15, 2020](https://www.washingtonpost.com/nation/2020/12/15/trump-electoral-college-biden/)) and attacking McConnell for congratulating Biden on Dec 15 ([Business Insider timeline](https://www.businessinsider.com/a-timeline-of-trumps-efforts-to-overturn-the-2020-election-2021-10)). Efforts like pressuring DOJ and fake electors persisted beyond ([Just Security timeline](https://www.justsecurity.org/81939/timeline-false-electors/); [DOJ indictment](https://www.justice.gov/storage/US_v_Trump_23_cr_257.pdf)). Trump never conceded, and disputes continued until Jan 6 certification ([NPR, Dec 15](https://www.npr.org/2020/12/15/946562685/democracy-held-with-bidens-win-but-trump-is-keeping-america-divided-as-ever))."
+    },
+    {
+      "id": "C-01:04:31.270",
+      "result": "ambiguous",
+      "explanation": "**Summary of prediction**  \nSacks predicted in November 2020 that:\n1. Trump\u2019s postelection lawsuits would mostly or entirely fail.\n2. If the dispute reached the U.S. Supreme Court, the Court would rule against him.\n3. At that point Trump would accept the result (even if he did not formally concede).\n\n**1. Lawsuits outcome**  \n- The Trump campaign and allies filed dozens of postelection lawsuits in multiple states; virtually all were dismissed or withdrawn, with no court finding outcome-changing fraud.   \n\u2192 This part of the prediction was **right**.\n\n**2. Supreme Court outcome**  \n- Key efforts to get the Supreme Court to overturn or invalidate results (e.g., *Texas v. Pennsylvania* and emergency applications in Pennsylvania cases) were rejected; the Court declined to hear them or dismissed for lack of standing, and did not grant the relief Trump sought.   \n\u2192 The Court effectively **ruled against** Trump\u2019s position; this part was **right**.\n\n**3. Did Trump \u201caccept the result\u201d?**  \nThis is where interpretation becomes ambiguous:\n- Trump never formally conceded and repeatedly and publicly asserted that the 2020 election was \u201crigged\u201d or \u201cstolen,\u201d including after the Supreme Court rejections and after leaving office.   \n- He nevertheless did leave office on January 20, 2021, and the constitutional transfer of power to Joe Biden occurred on schedule, with the Trump administration cooperating on some key transition mechanics (e.g., GSA ascertainment in late November 2020, eventual use of transition resources).   \n\nWhether that counts as \u201caccepting the result\u201d depends on how you read Sacks\u2019s words:\n- **If \u201caccept\u201d means de facto compliance** with the Supreme Court outcome and the Electoral College result (i.e., no extra-constitutional attempt to stay in power once all legal avenues closed), then the prediction is substantially correct.\n- **If \u201caccept\u201d means acknowledging the legitimacy of the election outcome** (stopping claims of fraud and publicly recognizing Biden as the rightful winner), then the prediction is wrong; Trump has continued to deny the legitimacy of the 2020 result.\n\nBecause Sacks explicitly allowed for \u201che may not concede, but he will accept the result,\u201d and Trump\u2019s subsequent behavior mixed formal compliance with persistent rejection of legitimacy, it is not possible to score this with a single clear label without importing a subjective definition of \u201caccept.\u201d\n\n**Conclusion**  \n- Lawsuits mostly/entirely failed: **right**.  \n- Supreme Court, if reached, would rule against Trump: **right**.  \n- Trump would \u201caccept the result\u201d: depends on whether you focus on **behavioral compliance** (yes) or **public acknowledgment/legitimacy** (no).  \n\nGiven this definitional ambiguity around \u201caccept the result,\u201d the overall assessment is **ambiguous**.",
+      "sources": [],
+      "grok_result": "right",
+      "grok_explanation": "Trump's 62 post-election lawsuits mostly failed:  nearly all (61+) dismissed, dropped, or lost on merits; one minor procedural win overturned, none changed results ([Wikipedia](https://en.wikipedia.org/wiki/Post-election_lawsuits_related_to_the_2020_U.S._presidential_election), [Campaign Legal](https://campaignlegal.org/results-lawsuits-regarding-2020-elections)). SCOTUS rejected key cases against him, e.g., *Texas v. Pennsylvania* (Dec 11, 2020), Pennsylvania challenges (Feb/Apr 2021). Trump did not concede but accepted results by leaving office Jan 20, 2021, leaving Oval Office letter for Biden, allowing inauguration ([NPR](https://www.npr.org/2021/01/20/958905703/for-1st-time-in-150-years-outgoing-president-doesnt-attend-inauguration), [Politico](https://www.politico.com/news/2021/01/20/trump-biden-inauguration-day-460670))."
+    },
+    {
+      "id": "C-01:06:02.170",
+      "result": "right",
+      "explanation": "The condition of the prediction was met: the post\u2011election effort to overturn or invalidate the 2020 presidential result *did* reach the U.S. Supreme Court, most prominently in **Texas v. Pennsylvania**, which sought to throw out results in four Biden\u2011won states.\n\nOn **December 11, 2020**, the Court **denied Texas\u2019s motion for leave to file a bill of complaint for lack of standing**, ending the case. Seven justices explicitly denied leave; Justices Alito and Thomas wrote separately that they would allow Texas to *file* the complaint but said they **\u201cwould not grant other relief\u201d** and expressed no view on other issues. That means:\n\n* On the jurisdiction/standing question, the split was effectively **7\u20132 against Texas/Trump** (Alito and Thomas differing only on procedure). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Texas_v._Pennsylvania?utm_source=openai))  \n* On the **actual relief Trump and Texas wanted** (blocking or overturning the election results), **all nine justices rejected it**\u2014Alito and Thomas expressly said they would give Texas no relief, and the other seven denied the case outright. ([reason.com](https://reason.com/volokh/2020/12/11/supreme-court-unanimously-denies-texas-emergency-relief-refuses-to-grant-motion-for-leave-to-file/?utm_source=openai))\n\nSacks predicted that if the dispute reached the Supreme Court, the decision against Trump would be **at least 7\u20132 and possibly 8\u20131 or 9\u20130**. The real outcome was **at least 7\u20132 against Texas/Trump on the key threshold issue and functionally 9\u20130 against granting them any relief**, which fits his predicted range. Therefore, the prediction is **right**.",
+      "sources": [
+        {
+          "end_index": 911,
+          "start_index": 820,
+          "title": "Texas v. Pennsylvania",
+          "type": "url_citation",
+          "url": "https://en.wikipedia.org/wiki/Texas_v._Pennsylvania?utm_source=openai"
+        },
+        {
+          "end_index": 1327,
+          "start_index": 1158,
+          "title": "Supreme Court Unanimously Denies Texas Emergency Relief, Refuses to Grant Motion for Leave to File (Updated)",
+          "type": "url_citation",
+          "url": "https://reason.com/volokh/2020/12/11/supreme-court-unanimously-denies-texas-emergency-relief-refuses-to-grant-motion-for-leave-to-file/?utm_source=openai"
+        }
+      ],
+      "grok_result": "right",
+      "grok_explanation": "The 2020 election dispute did reach the U.S. Supreme Court, most notably in *Texas v. Pennsylvania* (No. 22O155, decided Dec. 11, 2020), where Texas (on Trump's behalf) sought to invalidate results in four Biden-won states. The Court issued a per curiam order denying leave to file due to lack of Article III standing, without reaching the merits ([SCOTUS order](https://www.supremecourt.gov/orders/courtorders/121120zr_p860.pdf)). Justices Alito (joined by Thomas) issued a statement concurring in denial but indicating they would have granted leave to file procedurally ([SCOTUSblog](https://www.scotusblog.com/2020/12/justices-throw-out-texas-lawsuit-that-sought-to-block-election-outcome/); [CNN](https://www.cnn.com/2020/12/12/politics/texas-pennsylvania-supreme-court-alito-thomas-explained)). This is characterized as a 7-2 decision against Trump ([Wikipedia](https://en.wikipedia.org/wiki/Texas_v._Pennsylvania)), matching the prediction of 'at least 7-2.' Other cases (e.g., cert denials in PA disputes, Feb. 2021) were unanimous rejections without merits review, aligning with the lopsided margin predicted."
+    },
+    {
+      "id": "B-01:14:19.530",
+      "result": "inconclusive",
+      "explanation": "As of November 29, 2025, the City and County of San Francisco has **not** filed for municipal (Chapter 9) bankruptcy. Recent coverage of the city\u2019s finances discusses large budget deficits and Mayor Daniel Lurie\u2019s 2025\u201326 budget proposal with deep cuts and use of reserves, but makes no mention of any bankruptcy filing.\n\nFor example, reporting on the 2025\u201326 budget describes San Francisco\u2019s fiscal stress and proposed service reductions, not a Chapter 9 process or petition.\u30101news15\u3011 Likewise, up-to-date lists and discussions of U.S. Chapter 9 municipal bankruptcies (which include notable cases like Detroit, Stockton, and others) do **not** list San Francisco among the municipalities that have filed.\u30102search12\u3011\n\nBecause Chamath\u2019s prediction allowed **10 years from November 2020 (until November 2030)** and we are only five years into that window, there is still time for the event to occur. The fact that it has not happened *yet* does not invalidate the prediction. Therefore, the correct status today is that it is **too early to tell** whether the prediction will ultimately be right or wrong.",
+      "sources": [],
+      "grok_result": "inconclusive",
+      "grok_explanation": "No evidence found that the City and County of San Francisco has filed for municipal (Chapter 9) bankruptcy since November 2020. Web searches for \"San Francisco municipal bankruptcy filing since 2020\", \"San Francisco Chapter 9 bankruptcy\", and related queries returned results about other entities (e.g., PG&E, Archdiocese of San Francisco, tech firms like Wag and 23andMe, San Francisco Art Institute) filing bankruptcy, general municipal bankruptcy discussions, or SF's involvement in others' cases, but nothing about the city itself filing. SF financial reports (e.g., CAFR FY2020) and debt policies discuss bankruptcy hypothetically, not as an event. As of December 2025, approximately 5 years remain until the November 2030 deadline, so it is too early to determine if the prediction will come true. Sources: ICMA.org (2020), Pew Trusts (2020), USCourts.gov bankruptcy stats, SF.gov documents (2024-2025), news from SFGate, SFStandard (2025)."
+    },
+    {
+      "id": "B-01:14:19.530-2",
+      "result": "inconclusive",
+      "explanation": "The prediction window is 10\u201315 years from November 2020, i.e., until sometime between November 2030 and November 2035. As of **November 29, 2025**, only about five years have elapsed, so the time period for evaluating the prediction has not yet ended.\n\nAvailable evidence indicates that the **City and County of San Francisco has not filed for municipal (Chapter 9) bankruptcy** since the podcast date:\n\n- The city continues to issue new general obligation bonds and other debt instruments in 2024\u20132025, with detailed official statements posted by the Controller\u2019s Office of Public Finance and EMMA, which would not be occurring in the same way if the city were in Chapter 9.\n- San Francisco\u2019s general obligation bond ratings as of late 2024 and 2025 remain in the **AA/Aa** range (Fitch AAA, Moody\u2019s Aa1, S&P AA+), with only recent *downgrades* from Aaa/AAA\u2014showing fiscal stress but clearly **no default or bankruptcy event** reported by the rating agencies or the city. ([sf.gov](https://www.sf.gov/reports--december-2024--city-credit-ratings?utm_source=openai))\n- City financial reports describe deficits, revenue weakness, and use of layoffs and other measures to rebalance the budget, but do **not** mention any Chapter 9 filing or formal bankruptcy proceedings. ([sfchronicle.com](https://www.sfchronicle.com/sf/article/lurie-close-budget-deficit-by-cutting-sf-jobs-20351384.php?utm_source=openai))\n\nBecause (1) San Francisco has not filed for municipal bankruptcy as of November 2025, and (2) there is still up to roughly ten years left in the prediction window, the correct classification today is **\u201cinconclusive (too early)\u201d**, not \u201cright\u201d or \u201cwrong.\u201d",
+      "sources": [
+        {
+          "end_index": 1110,
+          "start_index": 1018,
+          "title": "City Credit Ratings | SF.gov",
+          "type": "url_citation",
+          "url": "https://www.sf.gov/reports--december-2024--city-credit-ratings?utm_source=openai"
+        },
+        {
+          "end_index": 1451,
+          "start_index": 1315,
+          "title": "Mayor Lurie wants to close S.F. budget deficit by cutting roughly 1,400 city jobs",
+          "type": "url_citation",
+          "url": "https://www.sfchronicle.com/sf/article/lurie-close-budget-deficit-by-cutting-sf-jobs-20351384.php?utm_source=openai"
+        }
+      ],
+      "grok_result": "inconclusive",
+      "grok_explanation": "No evidence of San Francisco filing for municipal (Chapter 9) bankruptcy since November 2020. Searches for 'San Francisco municipal bankruptcy since 2020', '\"San Francisco\" \"Chapter 9\" bankruptcy filing', and related terms returned no confirmations; instead, results discuss SF's budget deficits (e.g., projected $1.47B by FY2029-30 per SPUR.org, May 2025) and past CA cases like Vallejo, but no SF filing. Lists of recent bankruptcies (Pew 2020, Governing) exclude SF. With current date Dec 1, 2025, and prediction deadline Nov 2035, it is too early to evaluate fully."
+    }
+  ]
+}
