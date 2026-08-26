@@ -32,6 +32,69 @@ RESULT_COLORS = {
     "unvalidated": "#94a3b8",
 }
 QUALIFYING_CONFIDENCE = {"high", "medium"}
+VALID_CHECK_RESULTS = {"right", "wrong", "ambiguous", "inconclusive"}
+BAD_WHO_VALUES = {"unknown", "n/a", "none", "null", ""}
+
+
+def levenshtein(a: str, b: str) -> int:
+    if a == b:
+        return 0
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        cur = [i] + [0] * len(b)
+        for j, cb in enumerate(b, 1):
+            cur[j] = min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (ca != cb))
+        prev = cur
+    return prev[-1]
+
+
+class DataValidationError(Exception):
+    """Raised when data/predictions or data/checks don't match the §7 schema.
+
+    generate_site.py has no client-side or upstream schema enforcement, so a
+    hand-edited or migration-script-written prediction file can otherwise
+    render silently-wrong host cards (the freeberg/unknown incident this
+    check exists to catch a repeat of)."""
+
+
+def validate_prediction(episode_id: str, p: Dict[str, Any], permanent_hosts: List[str]) -> List[str]:
+    """Only checks records that would actually render as a speaker card
+    (role == host, or speaker_confidence high/medium - the same `qualifies`
+    condition build_speaker_index uses), since a bad `who`/`role` on a
+    low-confidence/unattributed line never reaches the page. This is the
+    exact class of record that caused the freeberg/unknown incident."""
+    errors: List[str] = []
+    pred_id = p.get("id") or "<missing id>"
+    who = p.get("who")
+    role = p.get("role")
+    qualifies = role == "host" or p.get("speaker_confidence") in QUALIFYING_CONFIDENCE
+    if not qualifies:
+        return errors
+
+    if not who or not isinstance(who, str) or who.lower() in BAD_WHO_VALUES:
+        errors.append(f"{episode_id}/{pred_id}: qualifying prediction has a missing/placeholder 'who' ({who!r})")
+        return errors
+
+    if role is not None and role not in ("host", "guest", "unknown"):
+        errors.append(f"{episode_id}/{pred_id}: 'role' ({role!r}) must be 'host', 'guest', 'unknown', or omitted")
+    if who in permanent_hosts and role == "guest":
+        errors.append(f"{episode_id}/{pred_id}: 'who' ({who!r}) is a permanent host but 'role' is 'guest'")
+    elif who not in permanent_hosts:
+        near = [h for h in permanent_hosts if 0 < levenshtein(who, h) <= 2]
+        if near:
+            errors.append(
+                f"{episode_id}/{pred_id}: 'who' ({who!r}) is suspiciously close to permanent host(s) "
+                f"{near} - likely a misspelling rather than a real guest"
+            )
+    return errors
+
+
+def validate_check_result(episode_id: str, check: Dict[str, Any]) -> List[str]:
+    result = check.get("result")
+    check_id = check.get("id") or "<missing id>"
+    if result not in VALID_CHECK_RESULTS:
+        return [f"{episode_id}/{check_id}: check 'result' ({result!r}) is not one of {sorted(VALID_CHECK_RESULTS)}"]
+    return []
 
 
 def load_json(path: Path, default: Any = None) -> Any:
@@ -60,6 +123,7 @@ def load_all_data(root: Path) -> Dict[str, Any]:
     hosts_cfg = yaml.safe_load((root / "config" / "hosts.yaml").read_text())
     permanent_hosts = list(hosts_cfg.get("hosts", {}).keys())
 
+    validation_errors: List[str] = []
     episodes_out = []
     for ep in episodes:
         episode_id = ep["episode_id"]
@@ -68,9 +132,12 @@ def load_all_data(root: Path) -> Dict[str, Any]:
             continue
         checks_data = load_json(root / "data" / "checks" / f"{episode_id}.json", {})
         check_map = {c["id"]: c for c in checks_data.get("checks", [])}
+        for c in checks_data.get("checks", []):
+            validation_errors.extend(validate_check_result(episode_id, c))
 
         merged_predictions = []
         for p in pred_data.get("predictions", []):
+            validation_errors.extend(validate_prediction(episode_id, p, permanent_hosts))
             check = check_map.get(p["id"])
             merged = dict(p)
             merged["timestamp_seconds"] = timestamp_to_seconds(p.get("timestamp", ""))
@@ -90,6 +157,13 @@ def load_all_data(root: Path) -> Dict[str, Any]:
                 "video_id": ep.get("video_id"),
                 "predictions": merged_predictions,
             }
+        )
+
+    if validation_errors:
+        report = "\n".join(f"  - {e}" for e in validation_errors)
+        raise DataValidationError(
+            f"{len(validation_errors)} data/predictions or data/checks record(s) failed schema "
+            f"validation; refusing to generate a site with bad data:\n{report}"
         )
 
     # newest first

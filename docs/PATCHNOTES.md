@@ -2,6 +2,19 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.9.0 (2026-08-26)
+
+### Added
+- A data-validation layer in `generate_site.py`: `load_all_data()` now checks every prediction/check record that would actually render as a speaker card and raises `DataValidationError` with a full report before generating any HTML, instead of silently rendering bad data. Catches a missing/placeholder `who`, an invalid `role`, a permanent host tagged `role: "guest"`, a `who` that's a near-miss (Levenshtein distance <=2) of a permanent host slug (the exact shape of the freeberg/unknown incident), and check `result` values outside `right/wrong/ambiguous/inconclusive`. Records that never reach the page (low-confidence unattributed lines, e.g. `who: "unknown-c"`) are intentionally left unvalidated.
+
+### Fixed
+- `scripts/fetch_episodes.py`'s yt-dlp lookup was silently failing on this project's Windows dev environment: `yt-dlp` is pip-installed as a Python module only, not a standalone binary on PATH, so `fetch_ytdlp_playlist()`'s `subprocess.run` raised `FileNotFoundError`, which was caught and logged only as a warning, degrading video_id resolution to 2/411 episodes with no hard failure. Fixed by shlex-splitting the configured `--yt-dlp-path` and automatically falling back to `<this interpreter> -m yt_dlp` when the primary command isn't found; verified via a live smoke test (14/20 resolved with zero flags, up from 2/20).
+- 8 predictions across `data/predictions/E002.json`, `E003.json`, `E005.json`, `E006.json`, `E008.json`, `E009.json` had David Sacks tagged `role: "guest"` instead of `"host"`, a real pre-existing data bug surfaced by the new validation layer above (masked in live output only because `build_speaker_index()` pre-seeds all four permanent hosts before the episode loop runs, so the bug never reached the page, but the raw data was wrong).
+
+### Changed
+- `docs/PRD.md` §31 open question about `data/manifest.json`'s `generated_at` staleness marked resolved: `build_manifest.py` sets it unconditionally on every run and was never buggy, the timestamp that looked stale during the 2026-08-25 audit simply hadn't been refreshed since 2026-08-05 yet at that point in the session.
+- `docs/PRD.md` §21 Runbook's Common Errors table gained two new rows (the yt-dlp fix above and the new `DataValidationError` failure mode).
+
 ## v0.8.0 (2026-08-25)
 
 ### Added
