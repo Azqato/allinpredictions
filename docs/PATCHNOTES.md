@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.10.0 (2026-08-26)
+
+### Added
+- Validated a fourth batch of predictions (20 episodes, fewest-predictions-first per the standing sweep order), bringing the archive-wide validated count to 72/357. 41 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources); the joe-manchin episode had 0 qualifying predictions (both were low-confidence unattributed lines), so its `data/checks/<episode_id>.json` was written as an empty, explicitly-processed file rather than left missing.
+
 ## v0.9.0 (2026-08-26)
 
 ### Added
