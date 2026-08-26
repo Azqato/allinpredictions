@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.12.0 (2026-08-26)
+
+### Added
+- Validated a sixth batch of predictions (20 episodes, fewest-predictions-first per the standing sweep order; the second of five 20-episode batches requested toward a 100-episode sweep), bringing the archive-wide validated count to 112/357. 77 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources); two episodes (h-1b-shakeup..., E069) had 0 qualifying predictions and were written as empty, explicitly-processed check files.
+
 ## v0.11.0 (2026-08-26)
 
 ### Added
