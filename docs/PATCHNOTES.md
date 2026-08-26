@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.13.0 (2026-08-26)
+
+### Added
+- Validated a seventh batch of predictions (20 episodes, fewest-predictions-first per the standing sweep order; the third of five 20-episode batches requested toward a 100-episode sweep), bringing the archive-wide validated count to 132/357. 116 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources), the largest single batch of the sweep so far.
+
 ## v0.12.0 (2026-08-26)
 
 ### Added

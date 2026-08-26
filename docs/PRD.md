@@ -590,6 +590,7 @@ Ordered by priority; when two conflict, the higher one wins.
 | Validation sweep, third batch (20 episodes, fewest-predictions-first, 41 predictions checked) | 2026-08-26 | Complete - 72/357 episodes now validated overall |
 | Validation sweep, fourth batch (20 episodes, fewest-predictions-first, 67 predictions checked; first of five 20-episode batches toward a 100-episode sweep) | 2026-08-26 | Complete - 92/357 episodes now validated overall |
 | Validation sweep, fifth batch (20 episodes, fewest-predictions-first, 77 predictions checked; second of five 20-episode batches toward a 100-episode sweep) | 2026-08-26 | Complete - 112/357 episodes now validated overall |
+| Validation sweep, sixth batch (20 episodes, fewest-predictions-first, 116 predictions checked; third of five 20-episode batches toward a 100-episode sweep) | 2026-08-26 | Complete - 132/357 episodes now validated overall |
 | Pre-launch parity pass: home page filter UI + "Last updated" date (§27) | 2026-08-25 | Complete - resolved-only checkbox, topic dropdown, Total/By Year/By Topic segmented toggle, "Last updated" date, and a dismissible welcome banner all shipped in `generate_site.py`/`app.js`/templates |
 | **Full site replacement (repo restructure v2, per Decisions Log §14.5): promote the former `rewrite/` contents to the repo root; archive old pipeline (`scripts/`, `web/`, `config/`, old `data/`, `AGENTS.md`, `DEVELOPMENT.md`, `analysis.md`, root `requirements.txt`) into `old/`** | 2026-08-25 | Complete |
 | **Phase 5: deploy to GitHub Pages (MVP launch)** | 2026-08-25 | Complete - live at https://azqato.github.io/allinpredictions/ |
@@ -820,7 +821,7 @@ Because no browser-testing rule existed anywhere in this project's docs before t
 
 **Explicit TODO/FIXME/HACK markers:** none found via a repo-wide search as of this pass (excluding `old/`). This project's convention (§28) is to record known gaps in this PRD's prose (Roadmap §19, Risks §12, this section) rather than in inline code comments.
 
-**Work in progress as of 2026-08-26:** none - `git status` is clean and there are no unmerged branches (single-branch `main` history, per §28). The full-archive validation sweep (112/357 episodes validated; two of five 20-episode batches toward a 100-episode sweep complete, three more batches queued) and the `video_id` resolution backlog (45 episodes) are ongoing, tracked work, not uncommitted/stubbed code.
+**Work in progress as of 2026-08-26:** none - `git status` is clean and there are no unmerged branches (single-branch `main` history, per §28). The full-archive validation sweep (132/357 episodes validated; three of five 20-episode batches toward a 100-episode sweep complete, two more batches queued) and the `video_id` resolution backlog (45 episodes) are ongoing, tracked work, not uncommitted/stubbed code.
 
 **Open questions for the author:**
 1. Should the four migration scripts in §29/this section be deleted now that their one-time job is done, kept as-is for provenance, or given a proper doc write-up in §6? Currently kept as-is, undocumented beyond a one-line description in §8, because deleting them felt premature during a documentation-only pass and nobody has asked for their removal.
