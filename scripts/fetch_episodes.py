@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shlex
 import subprocess
 import sys
 from datetime import datetime
@@ -90,13 +91,30 @@ def parse_feed(feed_bytes: bytes) -> List[Dict[str, Any]]:
 
 
 def fetch_ytdlp_playlist(playlist_url: str, ytdlp_path: str = "yt-dlp") -> bytes:
-    cmd = [ytdlp_path, "-J", "--flat-playlist", playlist_url]
-    result = subprocess.run(cmd, capture_output=True, text=True, check=False)
-    if result.returncode != 0:
-        raise RuntimeError(
-            f"yt-dlp failed ({result.returncode}): {result.stderr.strip() or result.stdout}"
-        )
-    return result.stdout.encode("utf-8")
+    """Run yt-dlp, falling back to `python -m yt_dlp` if the bare binary
+    isn't on PATH (common when yt-dlp is only pip-installed as a module,
+    e.g. this project's Windows dev environment)."""
+    base_cmds = [shlex.split(ytdlp_path)]
+    module_fallback = [sys.executable, "-m", "yt_dlp"]
+    if base_cmds[0] != module_fallback:
+        base_cmds.append(module_fallback)
+
+    last_error: Optional[Exception] = None
+    for base_cmd in base_cmds:
+        cmd = base_cmd + ["-J", "--flat-playlist", playlist_url]
+        try:
+            result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        except FileNotFoundError as exc:
+            last_error = exc
+            continue
+        if result.returncode != 0:
+            last_error = RuntimeError(
+                f"yt-dlp failed ({result.returncode}): {result.stderr.strip() or result.stdout}"
+            )
+            continue
+        return result.stdout.encode("utf-8")
+
+    raise last_error or RuntimeError("yt-dlp invocation failed for an unknown reason")
 
 
 def parse_ytdlp_entries(raw_bytes: bytes) -> List[Dict[str, Any]]:
@@ -200,7 +218,15 @@ def main(argv: List[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--feed-url", default=DEFAULT_FEED_URL)
     parser.add_argument("--youtube-playlist-url", default=DEFAULT_YOUTUBE_PLAYLIST_URL)
-    parser.add_argument("--yt-dlp-path", default="yt-dlp")
+    parser.add_argument(
+        "--yt-dlp-path",
+        default="yt-dlp",
+        help=(
+            "Command to invoke yt-dlp (may include arguments, e.g. "
+            "'python -m yt_dlp'). Falls back automatically to "
+            "'<this interpreter> -m yt_dlp' if the given command isn't found."
+        ),
+    )
     parser.add_argument(
         "--youtube-map",
         type=Path,
