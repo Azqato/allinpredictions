@@ -585,7 +585,8 @@ Ordered by priority; when two conflict, the higher one wins.
 | Repo restructure (v1): site generated to the repo root, `docs/` reserved for documentation (§8.1) | 2026-08-04 | Complete |
 | §16.1 documentation audit & consolidation (this pass) | 2026-08-04 | Complete (partial: see §16.1 status note; will need a follow-up pass once more of the archive is processed) |
 | Phase 4: extraction sweep against currently-available transcripts, manual/no-agent, oldest-first (§13) | 2026-08-04 | Complete - 357/404 episodes have a predictions file; all 128/128 chunked/captioned episodes are done. Remaining 47 episodes are blocked on captions (45 need `video_id` resolution, 2 have a `video_id` but no fetchable captions), not extraction work |
-| Validation sweep, first batch (E010-E020, 155 predictions) | 2026-08-25 | Complete - 32/357 episodes now validated overall |
+| Validation sweep, first batch (E010-E020, 155 predictions) | 2026-08-25 | Complete - 32/357 episodes validated after this batch |
+| Validation sweep, second batch (20 episodes, fewest-predictions-first, 14 predictions checked) | 2026-08-25 | Complete - 52/357 episodes now validated overall |
 | Pre-launch parity pass: home page filter UI + "Last updated" date (§27) | 2026-08-25 | Complete - resolved-only checkbox, topic dropdown, Total/By Year/By Topic segmented toggle, "Last updated" date, and a dismissible welcome banner all shipped in `generate_site.py`/`app.js`/templates |
 | **Full site replacement (repo restructure v2, per Decisions Log §14.5): promote the former `rewrite/` contents to the repo root; archive old pipeline (`scripts/`, `web/`, `config/`, old `data/`, `AGENTS.md`, `DEVELOPMENT.md`, `analysis.md`, root `requirements.txt`) into `old/`** | 2026-08-25 | Complete |
 | **Phase 5: deploy to GitHub Pages (MVP launch)** | 2026-08-25 | Complete - live at https://azqato.github.io/allinpredictions/ |
