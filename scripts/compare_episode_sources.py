@@ -50,7 +50,7 @@ def main(argv: List[str]) -> int:
 
     rewrite_eps = load_json(args.rewrite_episodes)
     if not args.old_episodes.exists():
-        print(f"Old repo episode index not found at {args.old_episodes} -- skipping cross-check.")
+        print(f"Old repo episode index not found at {args.old_episodes}, skipping cross-check.")
         args.out.write_text(json.dumps({"skipped": True, "reason": "old index not found"}, indent=2))
         return 0
     old_eps = load_json(args.old_episodes)

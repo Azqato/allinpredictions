@@ -60,7 +60,7 @@ There is exactly **one** breakpoint in the current CSS:
 
 At 700px and below, the two-column grid (`.grid-2`, used for host scorecards, episode cards) collapses to a single column. Everything else in the layout is fluid/flex-wrap based (`flex-wrap: wrap` on header nav, scorecard heads, prediction card heads) rather than breakpoint-based, so it reflows naturally at other widths without needing additional media queries.
 
-**Note:** a formal mobile-responsiveness audit across more widths (375px, 900px, 1150px, 1440px, 1920px per the methodology in the rewrite's roadmap) is planned but has not yet run (see PRD.md §16.3). This single breakpoint has not yet been stress-tested at the narrower widths.
+**Note:** a formal mobile-responsiveness audit across more widths (375px, 900px, 1150px, 1440px, 1920px per the methodology in PRD.md §16.3's roadmap) is planned but has not yet run (see PRD.md §16.3). This single breakpoint has not yet been stress-tested at the narrower widths.
 
 ## Component patterns
 
@@ -68,13 +68,17 @@ At 700px and below, the two-column grid (`.grid-2`, used for host scorecards, ep
 - **Scorecards** (`.scorecard`): a `.card` containing a name/count header (`.scorecard-head`) and a body (`.scorecard-body`) holding the donut chart + legend table side by side (wraps on narrow widths via `flex-wrap`).
 - **Prediction cards** (`.prediction-card`): a `.card` with a header row (who-badge, verdict badge, optional low-confidence badge, timestamp, tags), the prediction text, a blockquote-styled original quote (`.quote`, left-border accent), and an optional collapsible explanation block with cited sources.
 - **Badges** (`.badge`, `.who-badge`, `.tag`): small, pill/rounded-rect labels, `.2rem-.25rem` padding, `.7rem-.75rem` font, `600` weight for status/who badges. Verdict badges (`.badge-right` etc.) always pair a tinted background with a lighter, higher-contrast text color in the same hue family, never plain `--fg` text on a tinted background.
-- **Charts:** donut and stacked-bar charts are hand-rolled inline SVG (no chart library), generated server-side at build time for the default view, with a click-to-toggle alternate view swapped in client-side by `app.js` (see PRD.md §9.3). Always use the verdict color tokens above for chart segments, in the same order as the legend.
+- **Charts:** donut and stacked-bar charts are hand-rolled inline SVG (no chart library), generated server-side at build time for the default view, with full client-side recomputation by `app.js` driven by three controls per host card: a "resolved only" checkbox, a topic-filter dropdown, and a Total/By Year/By Topic segmented toggle (see PRD.md §9.3, §27). Each card carries its per-prediction entries as a `data-entries` JSON attribute that `app.js` parses once and redraws from on any filter change. Always use the verdict color tokens above for chart segments, in the same order as the legend.
+- **Filter controls** (`.chart-controls`, `.checkbox-label`, `.segmented`): the checkbox/dropdown/segmented-button-group row above each scorecard's chart. `.segmented` renders as a row of plain `<button>`s inside a bordered pill container, with `.active` marking the current view; state lives entirely in `app.js`, not in the URL or `localStorage`.
+- **Stacked bars** (`.stacked-bars`, `.stacked-bar-row`, `.stacked-bar-label`, `.stacked-bar-track`, `.stacked-bar-seg`): one row per year (or per topic), a label, and a horizontal track with one `.stacked-bar-seg` per verdict sized to its share of that row's total, using the same verdict color tokens as the donut.
 - **Modals** (`.modal`): fixed, full-viewport, centered flex, `rgba(0,0,0,.7)` scrim, a `28rem`-max-width box using the same border/radius/background language as `.card`. Currently used only for the one-time YouTube-link disclaimer.
+- **Welcome banner** (`.welcome-banner`): a full-width, top-of-page banner with a dismiss button, shown once per browser (`localStorage` key `predict_welcome_banner_dismissed`) and hidden via `.welcome-banner.hidden`. Added in the pre-launch parity pass (PRD.md §27) to match the original site's disclaimer banner.
+- **Last-updated label** (`.last-updated`): a small `.muted`-style text span in the header nav, showing the date `generate_site.py` last ran. Computed at generation time, never hand-edited.
 
 ## Accessibility
 
 - **Target:** no formal WCAG level has been certified, but the palette and type choices are informally targeting **WCAG AA** contrast for primary text (`--fg` `#f5f5f5` on `--bg` `#080d0b` is a very high-contrast pairing well above AA). Verdict badge text/background pairs (e.g. `#bbf7d0` on `rgba(34,197,94,.18)`) have not been formally contrast-checked against AA and should be verified as part of a future accessibility pass.
-- **Keyboard navigation:** all interactive elements (`<a>`, `<button>`) are native HTML elements, not custom `<div>`-based controls, so they get keyboard focus and activation for free without extra ARIA work. The chart-toggle interaction (`app.js`) is attached to the donut's container `<div>`, which is a known gap: it's currently mouse/touch-only (`click` listener) with no keyboard equivalent; this should be fixed (e.g. make it a real `<button>`, or add a keyboard handler) as part of a future accessibility pass rather than left as-is indefinitely.
+- **Keyboard navigation:** all interactive elements (`<a>`, `<button>`, `<input type="checkbox">`, `<select>`) are native HTML elements, not custom `<div>`-based controls, so they get keyboard focus and activation for free without extra ARIA work, including the chart-control row (`.chart-controls`) added in the pre-launch parity pass (PRD.md §27) - the resolved-only checkbox, topic dropdown, and segmented view-toggle buttons are all real form controls.
 - **No custom focus styles** are currently defined (relying on browser defaults), which is acceptable but not ideal; worth revisiting alongside the contrast check above.
 
 ## Animation & motion
@@ -87,6 +91,6 @@ Deliberately minimal:
 
 ## Notes for future work (AI or human)
 
-- When adding a new page, always extend `base.html` and pass `asset_prefix` explicitly if the new page lives one level below `rewrite/` root (see PRD.md §21's runbook entry on this exact bug): the header/nav/footer render before any per-page `{% set %}` would take effect, so it must come from the render call, not the template body.
+- When adding a new page, always extend `base.html` and pass `asset_prefix` explicitly if the new page lives one level below the repo root (see PRD.md §21's runbook entry on this exact bug): the header/nav/footer render before any per-page `{% set %}` would take effect, so it must come from the render call, not the template body.
 - The site's dark theme is not currently theme-switchable (no light mode). If a light mode is ever added, every token in the palette table above needs a light-mode counterpart, and the verdict colors in particular need to be re-checked for contrast against a light background.
 - Keep new components built from `.card` and the existing badge/tag patterns rather than introducing new visual primitives, to keep the "quiet, citation-first" philosophy intact as the site grows (more pages, the Annual Predictions filter feature, etc.).

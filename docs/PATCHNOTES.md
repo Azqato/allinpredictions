@@ -2,6 +2,34 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.7.0 (2026-08-25)
+
+### Added
+- Validated a second batch of predictions (episodes E010-E020, 155 predictions), bringing the archive-wide validated count to 32/357.
+- Home page filter controls (pre-launch parity pass, PRD.md §27): a "resolved only" checkbox, a topic-filter dropdown, and a Total/By Year/By Topic segmented toggle per host scorecard, all recomputed client-side by a rewritten `app.js` from a per-card `data-entries` JSON attribute. Added a matching `stacked_bar_svg`-equivalent rendering path alongside the existing donut chart.
+- A "Last updated: <date>" label in the site header, computed at generation time from the current date, not hand-maintained.
+- A dismissible welcome banner on the home page, matching the original site's disclaimer banner, gated behind its own `localStorage` flag.
+- `.nojekyll` at the repo root so GitHub Pages serves the static output without Jekyll processing it.
+- Six new PRD sections that this documentation-audit pass found genuinely missing: Conventions, Browser Testing, Deprecation and Removal, Documentation Versus Reality, Risks and Open Questions, and Working Practice (docs/PRD.md §28-§33).
+
+### Changed
+- **MVP launched to production.** Promoted the former `rewrite/` directory's contents to the repo root; archived the old (paid-API) pipeline into `old/` rather than deleting it. This moved up the site's public launch to *before* the full-archive validation sweep finishes, per an explicit sequencing change (Decisions Log §14.5, Roadmap §19) - the remaining validation work, the mobile-responsive audit (§16.3), and the Annual Predictions filter (§17) all continue as ongoing work against the now-live site instead of gating the first deploy.
+- Rewrote `README.md` from a developer-facing quickstart (tech-stack table, install commands, environment-variable section) to a general-reader front door: what the site is, who it's for, a link to the live URL, and a pointer into `/docs` for everything else. The install/version/runbook content it used to carry lives in `docs/PRD.md`'s Runbook (§21) and Technical Requirements (§22) sections instead, which already covered the same ground.
+- Ran a full documentation audit and rewrite of `docs/PRD.md`, `docs/DESIGN.md`, and this file: reconciled every stale `rewrite/`-as-subfolder path reference against the actual post-restructure repo layout, updated the Roadmap (§19) and every "Planned"/"post-launch" status line that had since actually shipped, and logged every discrepancy found between the docs and the live codebase in a new Documentation Versus Reality table (§29) instead of silently correcting them.
+- Ran the writing-style sweep (§16.2) - originally scheduled for a post-launch window - in this same pass instead, per explicit request: replaced 166 em dashes across `docs/PRD.md`/`docs/PATCHNOTES.md`, one leftover `&mdash;` reference, and prose double dashes in `config/hosts.yaml`, `prompts/*.md`, and script docstrings/comments, using a colon after labeled terms and a spaced hyphen elsewhere. Extended the Writing Style rule (§26) with a fifth replacement option (a single hyphen, encouraged in titles/headings/version lines) per a live instruction, without discarding the original four-option rule. Deliberately left untouched, as a stated exception: verbatim transcript quotes and citation titles in `data/predictions/*.json`/`data/checks/*.json`, since altering their punctuation would misrepresent the source.
+
+### Fixed
+- **Live-site bug:** two prediction files had a `freeberg` typo instead of `friedberg` in their `who`/`id` fields, and several `unknown`-speaker predictions had a bare `role: "host"` or `role: "unknown"` instead of `null` - both bypassed `build_speaker_index()`'s permanent-host check in `generate_site.py` and produced bogus "Freeberg" and "Unknown" scorecards on the live site. Fixed via targeted edits (not a full JSON re-serialization, to keep the diff scoped) across the six affected prediction files, regenerated, and confirmed fixed on the live GitHub Pages URL.
+
+## v0.6.0 (2026-08-25)
+
+### Added
+- Manually extracted predictions for episodes E018, E019, and E020 (superseded by the broader E010-E020 batch recorded under v0.7.0 above, listed here for completeness since it was a separate step in this session).
+
+### Status snapshot (as of this release, not a target)
+- 357/357 currently-extractable episodes have `data/predictions/<episode_id>.json` (unchanged from v0.5.0; this release only added validation coverage, not new extractions).
+- 32/357 episodes validated after this batch.
+
 ## v0.5.0 (2026-08-04)
 
 ### Added
@@ -11,7 +39,7 @@ All notable changes to this project, in reverse chronological order. Format: sem
 ### Status snapshot (as of this release, not a target)
 - 128/128 chunked/captioned episodes now have `data/predictions/<episode_id>.json`; the extraction sweep against currently-available transcripts is complete.
 - 357/404 unique archive episodes have a predictions file in total (includes episodes adapted earlier from `data/processed`, outside the chunk pipeline).
-- Of the 404 total archive episodes, 45 remain blocked on a resolvable YouTube `video_id` (deferred, to be resolved manually later per standing decision) and 2 have a `video_id` but no captions available via any current fetch method — neither category has transcripts/chunks yet, so neither was in scope for this sweep.
+- Of the 404 total archive episodes, 45 remain blocked on a resolvable YouTube `video_id` (deferred, to be resolved manually later per standing decision) and 2 have a `video_id` but no captions available via any current fetch method - neither category has transcripts/chunks yet, so neither was in scope for this sweep.
 - 22 episodes have gone through the validation sweep (`data/checks/`); the full-archive validation sweep against all 357 predictions files remains deferred until video_id resolution and caption-less-episode handling are addressed, per the two-sweep process in PRD.md §13.
 
 ## v0.4.0 (2026-08-04)
@@ -27,7 +55,7 @@ All notable changes to this project, in reverse chronological order. Format: sem
 
 ### Status snapshot (as of this release, not a target)
 - 283/402 unique archive episodes have `data/predictions/<episode_id>.json` (~70%).
-- Of the 119 remaining: 72 already have transcripts + chunks and are ready for extraction with no further fetch work needed; 47 are blocked on captions — 45 lack a resolvable YouTube `video_id` (deferred, to be resolved manually later per standing decision) and 2 have a `video_id` but no captions available via any current fetch method.
+- Of the 119 remaining: 72 already have transcripts + chunks and are ready for extraction with no further fetch work needed; 47 are blocked on captions - 45 lack a resolvable YouTube `video_id` (deferred, to be resolved manually later per standing decision) and 2 have a `video_id` but no captions available via any current fetch method.
 - 22 episodes have gone through the validation sweep (`data/checks/`); the full-archive validation sweep remains deferred until the extraction sweep is complete, per the two-sweep process in PRD.md §13.
 
 ## v0.3.0 (2026-08-04)

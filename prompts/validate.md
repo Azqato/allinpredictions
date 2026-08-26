@@ -1,7 +1,7 @@
 # Prediction validation
 
 For a given extracted prediction, determine whether it came true using
-WebSearch/WebFetch (free, built into Claude Code -- no OpenAI/xAI calls).
+WebSearch/WebFetch (free, built into Claude Code, no OpenAI/xAI calls).
 
 ## Input
 A single prediction object from `data/predictions/<episode_id>.json`, plus
@@ -12,10 +12,10 @@ Research using WebSearch (and WebFetch for promising individual sources) to
 determine the outcome. Be concise; cite sources.
 
 Output one of these results:
-- `right` -- the prediction appears to have come true.
-- `wrong` -- the prediction appears to have been incorrect.
-- `ambiguous` -- hard to tell due to confounding factors or unclear data.
-- `inconclusive` -- not enough time has passed to know yet.
+- `right`: the prediction appears to have come true.
+- `wrong`: the prediction appears to have been incorrect.
+- `ambiguous`: hard to tell due to confounding factors or unclear data.
+- `inconclusive`: not enough time has passed to know yet.
 
 ## Output format
 Write to `data/checks/<episode_id>.json`, merging into the existing file if

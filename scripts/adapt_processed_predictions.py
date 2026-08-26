@@ -1,7 +1,7 @@
 """Adapter: convert data/processed/transcripts_speechmatics/<dir>/predictions.json
 (paid-pipeline output from the original repo) into the rewrite's predictions schema.
 
-Only raw predictions are carried over -- NOT predictions_check.json / validation
+Only raw predictions are carried over, NOT predictions_check.json / validation
 results, since all predictions will be independently revalidated later.
 
 Speaker normalization:

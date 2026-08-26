@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build/refresh data/manifest.json: per-episode pipeline status tracking.
 
-Enables incremental, idempotent runs (PRD.md section 6.8) -- re-running the
+Enables incremental, idempotent runs (PRD.md section 6.8): re-running the
 pipeline after adding new episodes should only touch what's new.
 """
 from __future__ import annotations
@@ -82,7 +82,7 @@ def main(argv: List[str]) -> int:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(manifest, indent=2))
     print(
-        f"Wrote {args.out}: {len(episodes)} episodes -- "
+        f"Wrote {args.out}: {len(episodes)} episodes, "
         f"captions={counts['captions_fetched']} chunked={counts['chunked']} "
         f"predictions={counts['predictions_extracted']} validated={counts['validated']}"
     )

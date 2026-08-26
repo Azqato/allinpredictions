@@ -4,7 +4,7 @@
 Free-tooling only: podcast RSS feed (no key) + yt-dlp flat-playlist listing
 (metadata only, no video/audio download). See rewrite/PRD.md section 6.1.
 
-Canonical numbering/ordering reference: https://allin.com/episodes -- used to
+Canonical numbering/ordering reference: https://allin.com/episodes, used to
 sanity-check episode_code extraction, not scraped as a data source (no public
 JSON feed was found behind it).
 """
@@ -167,7 +167,7 @@ def attach_video_ids(
                 dt = entry.get("published_dt")
                 if not dt:
                     continue
-                # Both are naive/aware -- normalize by dropping tzinfo for the diff.
+                # Both are naive/aware; normalize by dropping tzinfo for the diff.
                 dt_cmp = dt.replace(tzinfo=None)
                 ep_cmp = ep_dt.replace(tzinfo=None)
                 delta = abs((dt_cmp - ep_cmp).total_seconds())
