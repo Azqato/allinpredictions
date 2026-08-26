@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+  <h1>Hosts &amp; Guests</h1>
+  <div class="section-head">
+    <h2>Permanent Hosts</h2>
+  </div>
+  <div class="grid grid-2">
+    {% for h in hosts %}
+    <a class="card episode-card" href="{{ h.who }}.html">
+      <div class="episode-title">{{ h.who_display }}</div>
+      <div class="muted">{{ h.total_all }} prediction{{ '' if h.total_all == 1 else 's' }}</div>
+    </a>
+    {% endfor %}
+  </div>
+
+  {% if guests %}
+  <div class="section-head" style="margin-top:2rem;">
+    <h2>Guests</h2>
+    <p class="muted">Any named guest with at least one prediction confidently attributed to them.</p>
+  </div>
+  <div class="grid grid-2">
+    {% for g in guests %}
+    <a class="card episode-card" href="{{ g.who }}.html">
+      <div class="episode-title">{{ g.who_display }}</div>
+      <div class="muted">{{ g.total_all }} prediction{{ '' if g.total_all == 1 else 's' }}</div>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All-In Predictions</title>
+  <meta name="description" content="Validating every prediction made on the All-In Podcast, using free tools and Claude." />
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><strong>ALL IN</strong><span>Predictions</span></a>
+      <nav class="nav">
+        <a href="../episodes/index.html">Episodes</a>
+        <a href="../host/index.html">Hosts</a>
+        <a href="../about.html">About</a>
+<span class="last-updated">Last updated: 2026-08-26</span>      </nav>
+    </div>
+  </header>
+  <div id="welcome-banner" class="welcome-banner hidden">
+    <div class="container welcome-banner-inner">
+      <p>This is an early, in-progress rewrite: predictions are automatically extracted and validated by LLMs, so there may be inaccuracies, and much of the archive is still unvalidated (shown as "Unvalidated").</p>
+      <button type="button" id="welcome-banner-dismiss">Dismiss</button>
+    </div>
+  </div>
+  <main class="container main">
+<section>
+  <div class="flex-between">
+    <div>
+      <h1>Dan Loeb</h1>
+      <p class="muted">Guest &middot; 2 tracked predictions</p>
+    </div>
+    <a href="../index.html">Back home</a>
+  </div>
+
+  <div class="card scorecard" style="margin-top:1.5rem;">
+    <div class="scorecard-body">
+      <svg width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="No data"><circle cx="80.0" cy="80.0" r="69.0" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="22" /></svg>
+      <table class="legend">
+        <tbody>
+          <tr>
+            <td><span class="dot dot-right"></span>Right</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-wrong"></span>Wrong</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-ambiguous"></span>Ambiguous</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-inconclusive"></span>Inconclusive</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-unvalidated"></span>Unvalidated</td>
+            <td class="num">2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p class="muted small-note">Small sample size (2 predictions): treat this accuracy figure as anecdotal, not statistically meaningful.</p>
+
+  <div class="predictions" style="margin-top:2rem;">
+    <article class="prediction-card" id="dan-loeb-00:13:14">
+      <div class="prediction-head">
+        <a class="who-badge" href="../episodes/dan-loeb-the-lost-art-of-short-selling-and-why-stock-picking-is-back.html">Dan Loeb: The Lost Art of Short Selling, and Why Stock Picking is Back</a>
+        <span class="badge badge-unvalidated">Unvalidated</span>
+        <span class="muted">Fri, 05 Jun 2026 19:18:00 +0000 &middot; 00:13:14</span>
+      </div>
+      <p class="prediction-text">Even as AI agents take on more investing and capital-allocation tasks over the next decade, the human element (relationships, accountability, judgment) will remain essential to running firms like Third Point, and humans will never be fully replaced by AI agents.</p>
+      <blockquote class="quote">&ldquo;the human element. I think this is true for everyone you have here like the element of uh the social component that the human network of knowing people being able to to capture opportunities work with people interact like that&#39;s never going away. like you&#39;re never had going to maybe maybe you can theorize that there will be agents that will sit at Andre and Horowitz and who whoever else your funds but I think the human will always have to be there because people like to you know you want to know who&#39;s making or losing the money.&rdquo;</blockquote>
+    </article>
+    <article class="prediction-card" id="dan-loeb-00:21:09">
+      <div class="prediction-head">
+        <a class="who-badge" href="../episodes/dan-loeb-the-lost-art-of-short-selling-and-why-stock-picking-is-back.html">Dan Loeb: The Lost Art of Short Selling, and Why Stock Picking is Back</a>
+        <span class="badge badge-unvalidated">Unvalidated</span>
+        <span class="muted">Fri, 05 Jun 2026 19:18:00 +0000 &middot; 00:21:09</span>
+      </div>
+      <p class="prediction-text">Nvidia is currently undervalued and, similar to how Google and Amazon eventually broke out after long being treated as a &#39;safe short,&#39; Nvidia&#39;s valuation will break out higher within the next two to three years as its earnings growth is validated.</p>
+      <blockquote class="quote">&ldquo;that&#39;s a rub against Nvidia, which is a $5 billion company, and people feel like it&#39;s sort of a ceiling on it. I think we&#39;ll look back at some point in time and say that was a foolish way to think about Nvidia given its dominant position and its valuation relative to &gt;&gt; Is it undervalued right now? &gt;&gt; Yeah, absolutely. On earnings over the next two or three years. ... the long short pods are structured such that they have to be short something. So Nvidia feels like a safe short by the way Google was a safe short um Amazon was a safe short. So I mean this just happens and sometimes they&#39;ll languish at a valuation then they they break out. I think that&#39;ll eventually happen with Nvidia.&rdquo;</blockquote>
+    </article>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Unofficial project; data is generated using free tools (YouTube captions) and Claude (extraction, speaker attribution, and web-search validation), with no OpenAI, xAI, or paid ASR involved. It is best-effort and may contain errors, omissions, or misattributions, especially in speaker attribution, which relies on transcript context rather than voice matching.</p>
+    </div>
+  </footer>
+  <script src="../static/app.js"></script>
+</body>
+</html>

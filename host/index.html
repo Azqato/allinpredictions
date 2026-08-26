@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All-In Predictions</title>
+  <meta name="description" content="Validating every prediction made on the All-In Podcast, using free tools and Claude." />
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><strong>ALL IN</strong><span>Predictions</span></a>
+      <nav class="nav">
+        <a href="../episodes/index.html">Episodes</a>
+        <a href="../host/index.html">Hosts</a>
+        <a href="../about.html">About</a>
+<span class="last-updated">Last updated: 2026-08-26</span>      </nav>
+    </div>
+  </header>
+  <div id="welcome-banner" class="welcome-banner hidden">
+    <div class="container welcome-banner-inner">
+      <p>This is an early, in-progress rewrite: predictions are automatically extracted and validated by LLMs, so there may be inaccuracies, and much of the archive is still unvalidated (shown as "Unvalidated").</p>
+      <button type="button" id="welcome-banner-dismiss">Dismiss</button>
+    </div>
+  </div>
+  <main class="container main">
+<section>
+  <h1>Hosts &amp; Guests</h1>
+  <div class="section-head">
+    <h2>Permanent Hosts</h2>
+  </div>
+  <div class="grid grid-2">
+    <a class="card episode-card" href="jason.html">
+      <div class="episode-title">Jason</div>
+      <div class="muted">497 predictions</div>
+    </a>
+    <a class="card episode-card" href="chamath.html">
+      <div class="episode-title">Chamath</div>
+      <div class="muted">1033 predictions</div>
+    </a>
+    <a class="card episode-card" href="sacks.html">
+      <div class="episode-title">Sacks</div>
+      <div class="muted">800 predictions</div>
+    </a>
+    <a class="card episode-card" href="friedberg.html">
+      <div class="episode-title">Friedberg</div>
+      <div class="muted">626 predictions</div>
+    </a>
+    <a class="card episode-card" href="freeberg.html">
+      <div class="episode-title">Freeberg</div>
+      <div class="muted">6 predictions</div>
+    </a>
+    <a class="card episode-card" href="unknown.html">
+      <div class="episode-title">Unknown</div>
+      <div class="muted">0 predictions</div>
+    </a>
+  </div>
+
+  <div class="section-head" style="margin-top:2rem;">
+    <h2>Guests</h2>
+    <p class="muted">Any named guest with at least one prediction confidently attributed to them.</p>
+  </div>
+  <div class="grid grid-2">
+    <a class="card episode-card" href="brad.html">
+      <div class="episode-title">Brad</div>
+      <div class="muted">29 predictions</div>
+    </a>
+    <a class="card episode-card" href="gavin.html">
+      <div class="episode-title">Gavin</div>
+      <div class="muted">22 predictions</div>
+    </a>
+    <a class="card episode-card" href="elon-musk.html">
+      <div class="episode-title">Elon Musk</div>
+      <div class="muted">10 predictions</div>
+    </a>
+    <a class="card episode-card" href="balaji.html">
+      <div class="episode-title">Balaji</div>
+      <div class="muted">10 predictions</div>
+    </a>
+    <a class="card episode-card" href="trump.html">
+      <div class="episode-title">Trump</div>
+      <div class="muted">9 predictions</div>
+    </a>
+    <a class="card episode-card" href="tucker.html">
+      <div class="episode-title">Tucker</div>
+      <div class="muted">8 predictions</div>
+    </a>
+    <a class="card episode-card" href="musk.html">
+      <div class="episode-title">Musk</div>
+      <div class="muted">8 predictions</div>
+    </a>
+    <a class="card episode-card" href="jd-vance.html">
+      <div class="episode-title">Jd Vance</div>
+      <div class="muted">8 predictions</div>
+    </a>
+    <a class="card episode-card" href="howard-lutnick.html">
+      <div class="episode-title">Howard Lutnick</div>
+      <div class="muted">7 predictions</div>
+    </a>
+    <a class="card episode-card" href="scott-bessent.html">
+      <div class="episode-title">Scott Bessent</div>
+      <div class="muted">7 predictions</div>
+    </a>
+    <a class="card episode-card" href="gavin-baker.html">
+      <div class="episode-title">Gavin Baker</div>
+      <div class="muted">6 predictions</div>
+    </a>
+    <a class="card episode-card" href="brad-gerstner.html">
+      <div class="episode-title">Brad Gerstner</div>
+      <div class="muted">6 predictions</div>
+    </a>
+    <a class="card episode-card" href="cathie-wood.html">
+      <div class="episode-title">Cathie Wood</div>
+      <div class="muted">6 predictions</div>
+    </a>
+    <a class="card episode-card" href="dave-ricks.html">
+      <div class="episode-title">Dave Ricks</div>
+      <div class="muted">6 predictions</div>
+    </a>
+    <a class="card episode-card" href="other.html">
+      <div class="episode-title">Other</div>
+      <div class="muted">6 predictions</div>
+    </a>
+    <a class="card episode-card" href="david.html">
+      <div class="episode-title">David</div>
+      <div class="muted">6 predictions</div>
+    </a>
+    <a class="card episode-card" href="adena-hefets.html">
+      <div class="episode-title">Adena Hefets</div>
+      <div class="muted">6 predictions</div>
+    </a>
+    <a class="card episode-card" href="mark-cuban.html">
+      <div class="episode-title">Mark Cuban</div>
+      <div class="muted">5 predictions</div>
+    </a>
+    <a class="card episode-card" href="kyle-samani.html">
+      <div class="episode-title">Kyle Samani</div>
+      <div class="muted">5 predictions</div>
+    </a>
+    <a class="card episode-card" href="oz.html">
+      <div class="episode-title">Oz</div>
+      <div class="muted">5 predictions</div>
+    </a>
+    <a class="card episode-card" href="dara-khosrowshahi.html">
+      <div class="episode-title">Dara Khosrowshahi</div>
+      <div class="muted">5 predictions</div>
+    </a>
+    <a class="card episode-card" href="doug-burgum.html">
+      <div class="episode-title">Doug Burgum</div>
+      <div class="muted">5 predictions</div>
+    </a>
+    <a class="card episode-card" href="cyan.html">
+      <div class="episode-title">Cyan</div>
+      <div class="muted">5 predictions</div>
+    </a>
+    <a class="card episode-card" href="elon.html">
+      <div class="episode-title">Elon</div>
+      <div class="muted">5 predictions</div>
+    </a>
+    <a class="card episode-card" href="andrew-feldman.html">
+      <div class="episode-title">Andrew Feldman</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="sarah.html">
+      <div class="episode-title">Sarah</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="steve-hilton.html">
+      <div class="episode-title">Steve Hilton</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="marty-makary.html">
+      <div class="episode-title">Marty Makary</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="adam.html">
+      <div class="episode-title">Adam</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="keller.html">
+      <div class="episode-title">Keller</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="eric.html">
+      <div class="episode-title">Eric</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="rand-paul.html">
+      <div class="episode-title">Rand Paul</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="chris-wright.html">
+      <div class="episode-title">Chris Wright</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="ben_shapiro.html">
+      <div class="episode-title">Ben_shapiro</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="travis.html">
+      <div class="episode-title">Travis</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="keith.html">
+      <div class="episode-title">Keith</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="cuban.html">
+      <div class="episode-title">Cuban</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="nate-silver.html">
+      <div class="episode-title">Nate Silver</div>
+      <div class="muted">4 predictions</div>
+    </a>
+    <a class="card episode-card" href="ryan-cohen.html">
+      <div class="episode-title">Ryan Cohen</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="bill-maris.html">
+      <div class="episode-title">Bill Maris</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="spencer-pratt.html">
+      <div class="episode-title">Spencer Pratt</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="josh-shapiro.html">
+      <div class="episode-title">Josh Shapiro</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="bryan-johnson.html">
+      <div class="episode-title">Bryan Johnson</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="adam-goldstein.html">
+      <div class="episode-title">Adam Goldstein</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="chase-lochmiller.html">
+      <div class="episode-title">Chase Lochmiller</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="rene-haas.html">
+      <div class="episode-title">Rene Haas</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="tony-robbins.html">
+      <div class="episode-title">Tony Robbins</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="ron-johnson.html">
+      <div class="episode-title">Ron Johnson</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="reid_hoffman.html">
+      <div class="episode-title">Reid_hoffman</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="kennedy.html">
+      <div class="episode-title">Kennedy</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="jared_kushner.html">
+      <div class="episode-title">Jared_kushner</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="vivek.html">
+      <div class="episode-title">Vivek</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="brad_gerstner.html">
+      <div class="episode-title">Brad_gerstner</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="keith-rabois.html">
+      <div class="episode-title">Keith Rabois</div>
+      <div class="muted">3 predictions</div>
+    </a>
+    <a class="card episode-card" href="pat-gelsinger.html">
+      <div class="episode-title">Pat Gelsinger</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="oleg-nodelman.html">
+      <div class="episode-title">Oleg Nodelman</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="dave-mccormick.html">
+      <div class="episode-title">Dave Mccormick</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="will-marshall.html">
+      <div class="episode-title">Will Marshall</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="dan-loeb.html">
+      <div class="episode-title">Dan Loeb</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="arvind-srinivas.html">
+      <div class="episode-title">Arvind Srinivas</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="shervin.html">
+      <div class="episode-title">Shervin</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="brian-armstrong.html">
+      <div class="episode-title">Brian Armstrong</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="michael-kratsios.html">
+      <div class="episode-title">Michael Kratsios</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="bob-sternfels.html">
+      <div class="episode-title">Bob Sternfels</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="tareq-amin.html">
+      <div class="episode-title">Tareq Amin</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="pete-buttigieg.html">
+      <div class="episode-title">Pete Buttigieg</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="andrew-ross-sorkin.html">
+      <div class="episode-title">Andrew Ross Sorkin</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="anatoly-yakovenko.html">
+      <div class="episode-title">Anatoly Yakovenko</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="eric-schmitt.html">
+      <div class="episode-title">Eric Schmitt</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="ben.html">
+      <div class="episode-title">Ben</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="donald-trump.html">
+      <div class="episode-title">Donald Trump</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="lisa-su.html">
+      <div class="episode-title">Lisa Su</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="jared-isaacman.html">
+      <div class="episode-title">Jared Isaacman</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="sergey.html">
+      <div class="episode-title">Sergey</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="sundar-pichai.html">
+      <div class="episode-title">Sundar Pichai</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="larry.html">
+      <div class="episode-title">Larry</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="schulz.html">
+      <div class="episode-title">Schulz</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="joe.html">
+      <div class="episode-title">Joe</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="ryan.html">
+      <div class="episode-title">Ryan</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="jared.html">
+      <div class="episode-title">Jared</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="christie.html">
+      <div class="episode-title">Christie</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="palmer-luckey.html">
+      <div class="episode-title">Palmer Luckey</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="p.html">
+      <div class="episode-title">P</div>
+      <div class="muted">2 predictions</div>
+    </a>
+    <a class="card episode-card" href="mati-staniszewski.html">
+      <div class="episode-title">Mati Staniszewski</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="aaron-cowen.html">
+      <div class="episode-title">Aaron Cowen</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="dan-dreyfus.html">
+      <div class="episode-title">Dan Dreyfus</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="gurley.html">
+      <div class="episode-title">Gurley</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="michael-intrader.html">
+      <div class="episode-title">Michael Intrader</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="daniel-roberts.html">
+      <div class="episode-title">Daniel Roberts</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="matt-mahan.html">
+      <div class="episode-title">Matt Mahan</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="reza.html">
+      <div class="episode-title">Reza</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="michael-tracey.html">
+      <div class="episode-title">Michael Tracey</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="george-kurtz.html">
+      <div class="episode-title">George Kurtz</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="jake-loosararian.html">
+      <div class="episode-title">Jake Loosararian</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="david-sacks.html">
+      <div class="episode-title">David Sacks</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="hemant-taneja.html">
+      <div class="episode-title">Hemant Taneja</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="jan-sramek.html">
+      <div class="episode-title">Jan Sramek</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="mohan.html">
+      <div class="episode-title">Mohan</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="rick-caruso.html">
+      <div class="episode-title">Rick Caruso</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="rich-lyons.html">
+      <div class="episode-title">Rich Lyons</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="vlad-tenev.html">
+      <div class="episode-title">Vlad Tenev</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="james-litinsky.html">
+      <div class="episode-title">James Litinsky</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="jensen-huang.html">
+      <div class="episode-title">Jensen Huang</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="bo.html">
+      <div class="episode-title">Bo</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="thomas.html">
+      <div class="episode-title">Thomas</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="nico-rosberg.html">
+      <div class="episode-title">Nico Rosberg</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="philippe.html">
+      <div class="episode-title">Philippe</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="brooke-rollins.html">
+      <div class="episode-title">Brooke Rollins</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="chris-williamson.html">
+      <div class="episode-title">Chris Williamson</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="aaron_levie.html">
+      <div class="episode-title">Aaron_levie</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="nassim_taleb.html">
+      <div class="episode-title">Nassim_taleb</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="rfk_jr.html">
+      <div class="episode-title">Rfk_jr</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="antonio.html">
+      <div class="episode-title">Antonio</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="antonio-gracias.html">
+      <div class="episode-title">Antonio Gracias</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="francis-suarez.html">
+      <div class="episode-title">Francis Suarez</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="joe-lonsdale.html">
+      <div class="episode-title">Joe Lonsdale</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="mar-hershenson.html">
+      <div class="episode-title">Mar Hershenson</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="glenn-greenwald.html">
+      <div class="episode-title">Glenn Greenwald</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="antonio-garcia-martinez.html">
+      <div class="episode-title">Antonio Garcia Martinez</div>
+      <div class="muted">1 prediction</div>
+    </a>
+    <a class="card episode-card" href="draymond.html">
+      <div class="episode-title">Draymond</div>
+      <div class="muted">1 prediction</div>
+    </a>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Unofficial project; data is generated using free tools (YouTube captions) and Claude (extraction, speaker attribution, and web-search validation), with no OpenAI, xAI, or paid ASR involved. It is best-effort and may contain errors, omissions, or misattributions, especially in speaker attribution, which relies on transcript context rather than voice matching.</p>
+    </div>
+  </footer>
+  <script src="../static/app.js"></script>
+</body>
+</html>

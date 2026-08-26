@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All-In Predictions</title>
+  <meta name="description" content="Validating every prediction made on the All-In Podcast, using free tools and Claude." />
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><strong>ALL IN</strong><span>Predictions</span></a>
+      <nav class="nav">
+        <a href="../episodes/index.html">Episodes</a>
+        <a href="../host/index.html">Hosts</a>
+        <a href="../about.html">About</a>
+<span class="last-updated">Last updated: 2026-08-26</span>      </nav>
+    </div>
+  </header>
+  <div id="welcome-banner" class="welcome-banner hidden">
+    <div class="container welcome-banner-inner">
+      <p>This is an early, in-progress rewrite: predictions are automatically extracted and validated by LLMs, so there may be inaccuracies, and much of the archive is still unvalidated (shown as "Unvalidated").</p>
+      <button type="button" id="welcome-banner-dismiss">Dismiss</button>
+    </div>
+  </div>
+  <main class="container main">
+<section>
+  <div class="flex-between">
+    <div>
+      <h1>Larry</h1>
+      <p class="muted">Guest &middot; 2 tracked predictions</p>
+    </div>
+    <a href="../index.html">Back home</a>
+  </div>
+
+  <div class="card scorecard" style="margin-top:1.5rem;">
+    <div class="scorecard-body">
+      <svg width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="No data"><circle cx="80.0" cy="80.0" r="69.0" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="22" /></svg>
+      <table class="legend">
+        <tbody>
+          <tr>
+            <td><span class="dot dot-right"></span>Right</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-wrong"></span>Wrong</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-ambiguous"></span>Ambiguous</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-inconclusive"></span>Inconclusive</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-unvalidated"></span>Unvalidated</td>
+            <td class="num">2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p class="muted small-note">Small sample size (2 predictions): treat this accuracy figure as anecdotal, not statistically meaningful.</p>
+
+  <div class="predictions" style="margin-top:2rem;">
+    <article class="prediction-card" id="larry-01:27:59">
+      <div class="prediction-head">
+        <a class="who-badge" href="../episodes/the-great-tariff-debate-with-david-sacks-larry-summers-and-ezra-klein.html">The Great Tariff Debate with David Sacks, Larry Summers, and Ezra Klein</a>
+        <span class="badge badge-unvalidated">Unvalidated</span>
+        <span class="muted">Fri, 11 Apr 2025 21:47:00 +0000 &middot; 01:27:59</span>
+      </div>
+      <p class="prediction-text">The Trump-era project of economic and geopolitical nationalism (analogous to Juan Perón–style populism), including its Doge reforms and tariff-driven realignment, will ultimately end in disastrous failure as a governing model for the United States, even though it addresses some real concerns. Over the long run it will not be judged a successful approach to governing.</p>
+      <blockquote class="quote">&ldquo;my best judgment is that this project is going to end in disastrous failure, despite having put its finger on some important concerns and issues.&rdquo;</blockquote>
+    </article>
+    <article class="prediction-card" id="larry-01:28:59">
+      <div class="prediction-head">
+        <a class="who-badge" href="../episodes/the-great-tariff-debate-with-david-sacks-larry-summers-and-ezra-klein.html">The Great Tariff Debate with David Sacks, Larry Summers, and Ezra Klein</a>
+        <span class="badge badge-unvalidated">Unvalidated</span>
+        <span class="muted">Fri, 11 Apr 2025 21:47:00 +0000 &middot; 01:28:59</span>
+      </div>
+      <p class="prediction-text">Net fiscal impact of the Doge initiative on the IRS and federal tax administration will be negative: the reduction in tax revenue caused by degrading the tax collection system will exceed the budgetary savings Doge achieves elsewhere, thereby increasing the federal deficit relative to a counterfactual without those IRS-related cuts.</p>
+      <blockquote class="quote">&ldquo;My belief is that the revenue loss from the Doge&#39;s destruction of a significant part of the functioning of our nation&#39;s tax collection system is likely to exceed, in terms of contributing more to the deficit than any savings that you successfully identified.&rdquo;</blockquote>
+    </article>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Unofficial project; data is generated using free tools (YouTube captions) and Claude (extraction, speaker attribution, and web-search validation), with no OpenAI, xAI, or paid ASR involved. It is best-effort and may contain errors, omissions, or misattributions, especially in speaker attribution, which relies on transcript context rather than voice matching.</p>
+    </div>
+  </footer>
+  <script src="../static/app.js"></script>
+</body>
+</html>

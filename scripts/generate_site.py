@@ -1,0 +1,294 @@
+#!/usr/bin/env python3
+"""Deterministic static site generator. No LLM calls -- pure data -> HTML.
+
+Reads data/episodes.json + data/predictions/*.json + data/checks/*.json,
+joins them, computes per-host/guest accuracy stats, and renders the site
+directly into the rewrite/ root (index.html, episodes/, host/, static/,
+about.html) -- the eventual GitHub Pages "deploy from root" publish
+location once rewrite/ replaces the repo root -- using Jinja2 templates +
+hand-rolled inline SVG charts. See PRD.md section 9.
+"""
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import json
+import math
+import re
+import shutil
+import sys
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+import yaml
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+RESULT_KEYS = ["right", "wrong", "ambiguous", "inconclusive", "unvalidated"]
+RESULT_COLORS = {
+    "right": "#22c55e",
+    "wrong": "#ef4444",
+    "ambiguous": "#d4c4a8",
+    "inconclusive": "#6b7280",
+    "unvalidated": "#94a3b8",
+}
+QUALIFYING_CONFIDENCE = {"high", "medium"}
+
+
+def load_json(path: Path, default: Any = None) -> Any:
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text())
+    except Exception:
+        return default
+
+
+def timestamp_to_seconds(ts: str) -> Optional[int]:
+    m = re.match(r"^(\d+):(\d{2}):(\d{2})$", ts or "")
+    if not m:
+        return None
+    h, mi, s = (int(x) for x in m.groups())
+    return h * 3600 + mi * 60 + s
+
+
+def capitalize_who(who: str) -> str:
+    return " ".join(part.capitalize() for part in who.split("-"))
+
+
+def load_all_data(root: Path) -> Dict[str, Any]:
+    episodes = load_json(root / "data" / "episodes.json", [])
+    hosts_cfg = yaml.safe_load((root / "config" / "hosts.yaml").read_text())
+    permanent_hosts = list(hosts_cfg.get("hosts", {}).keys())
+
+    episodes_out = []
+    for ep in episodes:
+        episode_id = ep["episode_id"]
+        pred_data = load_json(root / "data" / "predictions" / f"{episode_id}.json")
+        if not pred_data:
+            continue
+        checks_data = load_json(root / "data" / "checks" / f"{episode_id}.json", {})
+        check_map = {c["id"]: c for c in checks_data.get("checks", [])}
+
+        merged_predictions = []
+        for p in pred_data.get("predictions", []):
+            check = check_map.get(p["id"])
+            merged = dict(p)
+            merged["timestamp_seconds"] = timestamp_to_seconds(p.get("timestamp", ""))
+            merged["result"] = check["result"] if check else None
+            merged["explanation"] = check.get("explanation") if check else None
+            merged["sources"] = check.get("sources", []) if check else []
+            merged["who_display"] = capitalize_who(p["who"])
+            merged_predictions.append(merged)
+
+        episodes_out.append(
+            {
+                "episode_id": episode_id,
+                "title": ep.get("title") or episode_id,
+                "published": ep.get("published"),
+                "published_iso": ep.get("published_iso"),
+                "youtube_url": ep.get("youtube_url"),
+                "video_id": ep.get("video_id"),
+                "predictions": merged_predictions,
+            }
+        )
+
+    # newest first
+    episodes_out.sort(key=lambda e: e.get("published_iso") or "", reverse=True)
+    return {"episodes": episodes_out, "permanent_hosts": permanent_hosts, "hosts_cfg": hosts_cfg}
+
+
+def empty_bucket() -> Dict[str, int]:
+    return {k: 0 for k in RESULT_KEYS}
+
+
+def bump(bucket: Dict[str, int], result: Optional[str]) -> None:
+    bucket[result or "unvalidated"] = bucket.get(result or "unvalidated", 0) + 1
+
+
+def build_speaker_index(episodes: List[Dict[str, Any]], permanent_hosts: List[str]) -> Dict[str, Dict[str, Any]]:
+    """One entry per speaker (host or guest) who qualifies for a scorecard."""
+    speakers: Dict[str, Dict[str, Any]] = {}
+
+    def ensure(who: str, role: str) -> Dict[str, Any]:
+        if who not in speakers:
+            speakers[who] = {
+                "who": who,
+                "who_display": capitalize_who(who),
+                "role": role,
+                "stats": empty_bucket(),
+                "predictions": [],
+                "chart_entries": [],
+            }
+        return speakers[who]
+
+    for host in permanent_hosts:
+        ensure(host, "host")
+
+    for ep in episodes:
+        year = (ep.get("published_iso") or "")[:4] or None
+        for p in ep["predictions"]:
+            who, role = p["who"], p.get("role") or ("host" if p["who"] in permanent_hosts else "guest")
+            qualifies = role == "host" or p.get("speaker_confidence") in QUALIFYING_CONFIDENCE
+            if not qualifies:
+                continue
+            entry = ensure(who, role)
+            entry["predictions"].append({**p, "episode_id": ep["episode_id"], "episode_title": ep["title"],
+                                          "episode_published": ep.get("published"), "youtube_url": ep.get("youtube_url")})
+            if p.get("speaker_confidence") in QUALIFYING_CONFIDENCE:
+                bump(entry["stats"], p.get("result"))
+                # Lightweight per-prediction record for client-side topic/year
+                # filtering (§27): kept in sync with the stats bucket above by
+                # only including entries that also count toward it.
+                entry["chart_entries"].append(
+                    {"result": p.get("result") or "unvalidated", "tags": p.get("tags") or [], "year": year}
+                )
+
+    return speakers
+
+
+def html_attr_json(obj: Any) -> str:
+    """json.dumps, escaped so the result can sit inside an HTML attribute value."""
+    raw = json.dumps(obj, separators=(",", ":"))
+    return (
+        raw.replace("&", "&amp;")
+        .replace('"', "&quot;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
+
+
+def donut_svg(stats: Dict[str, int], keys: List[str], *, size: int = 160, stroke: int = 22) -> str:
+    total = sum(stats.get(k, 0) for k in keys)
+    r = (size - stroke) / 2
+    cx = cy = size / 2
+    circumference = 2 * math.pi * r
+    if total == 0:
+        return (
+            f'<svg width="{size}" height="{size}" viewBox="0 0 {size} {size}" role="img" aria-label="No data">'
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="{stroke}" />'
+            f"</svg>"
+        )
+    offset = 0.0
+    segments = []
+    for key in keys:
+        val = stats.get(key, 0)
+        if val <= 0:
+            continue
+        frac = val / total
+        length = frac * circumference
+        dasharray = f"{length:.2f} {circumference - length:.2f}"
+        rotate = (offset / total) * 360 - 90
+        segments.append(
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{RESULT_COLORS[key]}" '
+            f'stroke-width="{stroke}" stroke-dasharray="{dasharray}" '
+            f'transform="rotate({rotate:.2f} {cx} {cy})" />'
+        )
+        offset += val
+    return (
+        f'<svg width="{size}" height="{size}" viewBox="0 0 {size} {size}" role="img" aria-label="Accuracy chart">'
+        + "".join(segments)
+        + "</svg>"
+    )
+
+
+def render_site(root: Path, out_dir: Path) -> None:
+    data = load_all_data(root)
+    episodes = data["episodes"]
+    permanent_hosts = data["permanent_hosts"]
+    speakers = build_speaker_index(episodes, permanent_hosts)
+
+    for s in speakers.values():
+        s["donut_svg"] = donut_svg(s["stats"], ["right", "wrong"])
+        s["donut_svg_all"] = donut_svg(s["stats"], ["right", "wrong", "ambiguous", "inconclusive"])
+        s["total_resolved"] = s["stats"]["right"] + s["stats"]["wrong"]
+        s["total_all"] = sum(s["stats"].values())
+        s["chart_json"] = html_attr_json(s["chart_entries"])
+
+    hosts_sorted = sorted(
+        (s for s in speakers.values() if s["role"] == "host"),
+        key=lambda s: permanent_hosts.index(s["who"]) if s["who"] in permanent_hosts else 99,
+    )
+    guests_sorted = sorted(
+        (s for s in speakers.values() if s["role"] == "guest"),
+        key=lambda s: -s["total_all"],
+    )
+
+    # All topic tags appearing on any host's qualifying predictions, for the
+    # home page topic filter dropdown (§27).
+    topics = sorted({tag for s in hosts_sorted for e in s["chart_entries"] for tag in e["tags"]})
+
+    templates_dir = root / "site_src" / "templates"
+    env = Environment(
+        loader=FileSystemLoader(str(templates_dir)),
+        autoescape=select_autoescape(["html"]),
+        trim_blocks=True,
+        lstrip_blocks=True,
+    )
+
+    # Only clean the specific generated paths -- out_dir may be the rewrite/
+    # root itself (so the site's index.html etc. sit at the eventual repo
+    # root for GitHub Pages "deploy from root"), which also holds source
+    # directories (scripts/, data/, config/, site_src/, prompts/, docs/) that
+    # must never be touched by a site rebuild.
+    GENERATED_TOP_LEVEL = ["index.html", "about.html", "episodes", "host", "static"]
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for name in GENERATED_TOP_LEVEL:
+        p = out_dir / name
+        if p.is_dir():
+            shutil.rmtree(p, ignore_errors=True)
+        elif p.exists():
+            p.unlink()
+    (out_dir / "episodes").mkdir(exist_ok=True)
+    (out_dir / "host").mkdir(exist_ok=True)
+
+    static_src = root / "site_src" / "static"
+    static_dst = out_dir / "static"
+    if static_src.exists():
+        shutil.copytree(static_src, static_dst, dirs_exist_ok=True)
+
+    last_updated = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
+    common = {"site_title": "All-In Predictions", "last_updated": last_updated}
+
+    (out_dir / "index.html").write_text(
+        env.get_template("index.html").render(
+            **common, hosts=hosts_sorted, guests=guests_sorted, episodes=episodes[:6],
+            total_episode_count=len(episodes), topics=topics,
+        )
+    )
+
+    (out_dir / "episodes" / "index.html").write_text(
+        env.get_template("episodes_index.html").render(**common, episodes=episodes, asset_prefix="../")
+    )
+
+    for ep in episodes:
+        (out_dir / "episodes" / f"{ep['episode_id']}.html").write_text(
+            env.get_template("episode.html").render(**common, episode=ep, asset_prefix="../")
+        )
+
+    (out_dir / "host" / "index.html").write_text(
+        env.get_template("host_index.html").render(**common, hosts=hosts_sorted, guests=guests_sorted, asset_prefix="../")
+    )
+
+    for s in speakers.values():
+        s["predictions"].sort(key=lambda p: p.get("episode_published") or "", reverse=True)
+        (out_dir / "host" / f"{s['who']}.html").write_text(
+            env.get_template("host.html").render(**common, speaker=s, asset_prefix="../")
+        )
+
+    (out_dir / "about.html").write_text(env.get_template("about.html").render(**common))
+
+    print(f"Generated site: {len(episodes)} episode pages, {len(speakers)} host/guest pages -> {out_dir}")
+
+
+def main(argv: List[str]) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parent.parent)
+    parser.add_argument("--out", type=Path, default=None)
+    args = parser.parse_args(argv)
+    out_dir = args.out or args.root
+    render_site(args.root, out_dir)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv[1:]))

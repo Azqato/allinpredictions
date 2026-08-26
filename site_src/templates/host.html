@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+  <div class="flex-between">
+    <div>
+      <h1>{{ speaker.who_display }}</h1>
+      <p class="muted">{{ "Permanent host" if speaker.role == "host" else "Guest" }} &middot; {{ speaker.total_all }} tracked prediction{{ '' if speaker.total_all == 1 else 's' }}</p>
+    </div>
+    <a href="../index.html">Back home</a>
+  </div>
+
+  {% if speaker.total_all > 0 %}
+  <div class="card scorecard" style="margin-top:1.5rem;">
+    <div class="scorecard-body">
+      {{ speaker.donut_svg|safe }}
+      <table class="legend">
+        <tbody>
+          {% for key in ["right", "wrong", "ambiguous", "inconclusive", "unvalidated"] %}
+          <tr>
+            <td><span class="dot dot-{{ key }}"></span>{{ key|capitalize }}</td>
+            <td class="num">{{ speaker.stats[key] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {% if speaker.role == "guest" and speaker.total_all < 3 %}
+  <p class="muted small-note">Small sample size ({{ speaker.total_all }} prediction{{ '' if speaker.total_all == 1 else 's' }}): treat this accuracy figure as anecdotal, not statistically meaningful.</p>
+  {% endif %}
+  {% else %}
+  <p class="muted">No confidently-attributed predictions yet for this speaker.</p>
+  {% endif %}
+
+  <div class="predictions" style="margin-top:2rem;">
+    {% for p in speaker.predictions %}
+    <article class="prediction-card" id="{{ p.id }}">
+      <div class="prediction-head">
+        <a class="who-badge" href="../episodes/{{ p.episode_id }}.html">{{ p.episode_title }}</a>
+        <span class="badge badge-{{ p.result or 'unvalidated' }}">{{ (p.result or 'unvalidated')|capitalize }}</span>
+        <span class="muted">{{ p.episode_published }} &middot; {{ p.timestamp }}</span>
+      </div>
+      <p class="prediction-text">{{ p.prediction }}</p>
+      <blockquote class="quote">&ldquo;{{ p.quote }}&rdquo;</blockquote>
+      {% if p.explanation %}
+      <div class="explanation">
+        <div class="explanation-label">Explanation</div>
+        <p>{{ p.explanation }}</p>
+      </div>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

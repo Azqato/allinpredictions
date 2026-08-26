@@ -1,0 +1,40 @@
+# Canonical *permanent* host roster for the All-In Podcast.
+# Guests are NOT listed here -- they're derived per-episode from title/description
+# + transcript context (see PRD.md section 6.4) and don't need config entries.
+#
+# `attribution_hints` are contextual keywords/topics Claude should weight when
+# guessing which permanent host is speaking a given line, since there is no
+# audio/voice-embedding diarization in this rewrite (captions only).
+
+hosts:
+  jason:
+    display_name: Jason Calacanis
+    role: host
+    attribution_hints:
+      - hosting duties / sponsor reads / show intro cadence
+      - angel investing, "This Week in Startups", early-stage deals
+      - "moderator style: frequently directs questions to the other three"
+
+  chamath:
+    display_name: Chamath Palihapitiya
+    role: host
+    attribution_hints:
+      - Social Capital, SPACs, macro/markets commentary
+      - contrarian framing, "look, the reality is..."
+      - healthcare investing, biotech references
+
+  sacks:
+    display_name: David Sacks
+    role: host
+    attribution_hints:
+      - politics, geopolitics, policy/regulatory commentary
+      - Craft Ventures, PayPal Mafia references
+      - 'the "Dictator-in-residence" recurring bit, government/AI policy roles'
+
+  friedberg:
+    display_name: David Friedberg
+    role: host
+    attribution_hints:
+      - agriculture, biotech, climate/science, Ohalo/The Production Board
+      - data-and-first-principles framing, "if you look at the numbers..."
+      - science/health explainers

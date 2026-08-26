@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+  <h1>Episodes</h1>
+  <p class="muted">{{ episodes|length }} episode{{ '' if episodes|length == 1 else 's' }} processed so far (out of the full All-In archive).</p>
+  <div class="grid grid-2" style="margin-top:1rem;">
+    {% for ep in episodes %}
+    <a class="card episode-card" href="{{ ep.episode_id }}.html">
+      <div class="episode-title">{{ ep.title }}</div>
+      <div class="muted">{{ ep.published or "Unknown date" }}</div>
+      <div class="muted" style="margin-top:.5rem;">Predictions: {{ ep.predictions|length }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

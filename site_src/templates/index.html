@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+  <div class="section-head">
+    <h1>Host Accuracy</h1>
+    <p class="muted">Percentage of resolved predictions (right vs. wrong).</p>
+  </div>
+  <div class="chart-controls">
+    <label class="checkbox-label"><input type="checkbox" id="resolved-only-toggle" checked /> Resolved only</label>
+    <select id="topic-filter" aria-label="Filter by topic">
+      <option value="">All topics</option>
+      {% for t in topics %}
+      <option value="{{ t }}">{{ t|capitalize }}</option>
+      {% endfor %}
+    </select>
+    <div class="segmented" id="view-toggle" role="tablist" aria-label="Chart view">
+      <button type="button" class="active" data-view="total">Total</button>
+      <button type="button" data-view="year">By Year</button>
+      <button type="button" data-view="topic">By Topic</button>
+    </div>
+  </div>
+  <div class="grid grid-2">
+    {% for h in hosts %}
+    <div class="card scorecard" data-who="{{ h.who }}" data-entries="{{ h.chart_json|safe }}">
+      <div class="scorecard-head">
+        <a class="scorecard-name" href="host/{{ h.who }}.html">{{ h.who_display }}</a>
+        <span class="muted scorecard-count">{{ h.total_resolved }} resolved &middot; {{ h.total_all }} total</span>
+      </div>
+      <div class="scorecard-body chart-area">
+        <div class="donut">
+          {{ h.donut_svg|safe }}
+        </div>
+        <table class="legend">
+          <tbody>
+            {% for key in ["right", "wrong"] %}
+            <tr>
+              <td><span class="dot dot-{{ key }}"></span>{{ key|capitalize }}</td>
+              <td class="num">{{ h.stats[key] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% if guests %}
+  <div class="section-head" style="margin-top:2rem;">
+    <h2>Guest Predictions</h2>
+    <p class="muted">Non-host speakers with at least one confidently-attributed prediction. <a href="host/index.html">See all guests &rarr;</a></p>
+  </div>
+  <div class="grid grid-2">
+    {% for g in guests[:4] %}
+    <div class="card scorecard">
+      <div class="scorecard-head">
+        <a class="scorecard-name" href="host/{{ g.who }}.html">{{ g.who_display }}</a>
+        <span class="muted">{{ g.total_all }} prediction{{ '' if g.total_all == 1 else 's' }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+
+<section class="section-head" style="margin-top:2.5rem;">
+  <div class="flex-between">
+    <h2>Recent Episodes</h2>
+    <a href="episodes/index.html">View all ({{ total_episode_count }})</a>
+  </div>
+  <div class="grid grid-2" style="margin-top:1rem;">
+    {% for ep in episodes %}
+    <a class="card episode-card" href="episodes/{{ ep.episode_id }}.html">
+      <div class="episode-title">{{ ep.title }}</div>
+      <div class="muted">{{ ep.published or "Unknown date" }}</div>
+      <div class="muted" style="margin-top:.5rem;">Predictions: {{ ep.predictions|length }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
