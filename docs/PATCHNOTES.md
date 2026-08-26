@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.11.0 (2026-08-26)
+
+### Added
+- Validated a fifth batch of predictions (20 episodes, fewest-predictions-first per the standing sweep order; the first of five 20-episode batches requested toward a 100-episode sweep), bringing the archive-wide validated count to 92/357. 67 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources), including several conditional predictions (Ryan Cohen's eBay takeover, Reza and Shervin's Iran regime-change predictions in E536) scored `inconclusive` because their premise wasn't fulfilled rather than forcing a right/wrong verdict.
+
 ## v0.10.0 (2026-08-26)
 
 ### Added
