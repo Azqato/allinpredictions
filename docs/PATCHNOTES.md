@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.17.0 (2026-08-27)
+
+### Added
+- Validated a tenth batch of predictions (20 episodes, fewest-predictions-first recomputed fresh against the live manifest; the first of four additional 20-episode batches requested beyond the completed 100-episode sweep), bringing the archive-wide validated count to 192/357. 157 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources), spanning episodes from 2022 through 2026, including several near-term 2025-2026 tariff/tech/politics episodes requiring fresh web research (Supreme Court IEEPA tariff ruling, China 3nm chip status, Tesla AI5/Optimus/Starship progress, Fed 2025 rate cuts, California billionaire tax ballot qualification, Trump's Greenland pursuit).
+
 ## v0.16.0 (2026-08-27)
 
 ### Added
