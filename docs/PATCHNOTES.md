@@ -2,6 +2,17 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.41.0 (2026-08-27)
+
+### Added
+- Ran Batch 7 of the incremental process (PRD §13) against the unprocessed backlog: resolved 5 more missing `video_id`s (2 found directly via WebSearch, 3 via yt-dlp channel-filtered search matching upload date against the RSS-feed publish date, since YouTube's public titles for these episodes differ from the RSS feed titles), fetched transcripts and chunks, then ran full extraction+attribution+tagging and validation in one pass for all 5 episodes -- graham-allison-on-the-global-realignment-iran-china-israel-greenland (2 predictions), rewriting-the-rules-the-sec-cftc-on-crypto-ipos-the-future-of-american-markets (0 predictions, regulatory policy discussion without falsifiable dated claims), travis-kalanick-michael-dell-live-from-austin-texas (2 predictions, from Michael Dell and Brad Gerstner), john-fetterman-the-rogue-democrat-who-broke-party-ranks (0 predictions, political-opinion interview consistently hedged with "I don't know"), and jensen-huang-live-nvidia-s-future-physical-ai-rise-of-the-agent-inference-explosion-ai-pr-crisis (3 predictions). 4 of the 7 predictions checked so far (right/wrong/ambiguous/inconclusive with explanations); Michael Dell's ~100%-quarterly-infrastructure-growth guidance came back right (Dell's ISG revenue grew 181% the following quarter); Graham Allison's Iran-war-declared-over-before-the-March-29-China-trip prediction came back wrong (the China trip itself was delayed to May over the unresolved war, which still hadn't ended by then); Brad Gerstner's 10-million-Trump-accounts-by-July-4 prediction came back wrong (roughly 6 million had signed up by the July 4, 2026 launch); Allison's ~5%-Taiwan-invasion-probability-for-2026-2027 and all 3 of Jensen Huang's multi-year forecasts (digital biology, robotics, Anthropic revenue) were marked inconclusive (timeframes not yet elapsed). This is the seventh incremental-process batch; 392 of 412 tracked episodes now have predictions extracted, 20 remain unprocessed.
+
+## v0.40.0 (2026-08-27)
+
+### Fixed
+- Fixed a naming-convention bug introduced in Batch 6: two predictions used display-name-style `who` slugs (`chamath-palihapitiya`, `david-friedberg`) instead of the canonical `config/hosts.yaml` slugs (`chamath`, `friedberg`), which silently fabricated two duplicate host pages (splitting Chamath's and Friedberg's stats across two cards each) instead of erroring. Also fixed a `role: "guest"` on a Friedberg (permanent host) prediction that should have been `"host"`.
+- Hardened `scripts/generate_site.py`'s data validator: `role: "host"` predictions now require an exact match to a `config/hosts.yaml` slug and hard-fail the site build otherwise, closing the gap where the prior near-miss/typo check (Levenshtein distance <=2) missed longer display-name-style variants entirely. Verified against the exact bug pattern before and after the fix.
+
 ## v0.39.0 (2026-08-27)
 
 ### Added

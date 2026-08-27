@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All-In Predictions</title>
+  <meta name="description" content="Validating every prediction made on the All-In Podcast, using free tools and Claude." />
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><strong>ALL IN</strong><span>Predictions</span></a>
+      <nav class="nav">
+        <a href="../episodes/index.html">Episodes</a>
+        <a href="../host/index.html">Hosts</a>
+        <a href="../about.html">About</a>
+<span class="last-updated">Last updated: 2026-08-27</span>      </nav>
+    </div>
+  </header>
+  <div id="welcome-banner" class="welcome-banner hidden">
+    <div class="container welcome-banner-inner">
+      <p>This is an early, in-progress rewrite: predictions are automatically extracted and validated by LLMs, so there may be inaccuracies, and much of the archive is still unvalidated (shown as "Unvalidated").</p>
+      <button type="button" id="welcome-banner-dismiss">Dismiss</button>
+    </div>
+  </div>
+  <main class="container main">
+<section>
+  <div class="flex-between">
+    <div>
+      <h1>Travis Kalanick &amp; Michael Dell Live from Austin, Texas</h1>
+      <p class="muted">Tue, 17 Mar 2026 04:11:00 +0000</p>
+    </div>
+    <a href="index.html">Back to episodes</a>
+  </div>
+
+  <div class="predictions">
+    <article class="prediction-card" id="michael-dell-00:46:47">
+      <div class="prediction-head">
+        <a class="who-badge" href="../host/michael-dell.html">Michael Dell</a>
+        <span class="badge badge-right">Right</span>
+        <span class="muted">00:46:47</span>
+        <span class="tags">
+<span class="tag">tech</span><span class="tag">ai</span><span class="tag">markets</span>        </span>
+      </div>
+      <p class="prediction-text">Dell&#39;s infrastructure business will grow approximately 100% this quarter, up from 73% growth the prior quarter.</p>
+      <blockquote class="quote">
+        &ldquo;You look at our at our infrastructure business last quarter grew 73%. Well, that&#39;s kind of unusual for a business of this size. And you know, this quarter we guided that it would grow even faster like 100% so.&rdquo;
+        <span class="yt-link">
+          <a href="https://www.youtube.com/watch?v=9y7TTU1jIvk&t=2807" target="_blank" rel="noreferrer" class="js-youtube-link">View on YouTube</a>
+        </span>
+      </blockquote>
+      <div class="explanation">
+        <div class="explanation-label">Explanation</div>
+        <p>Dell&#39;s Infrastructure Solutions Group (ISG) revenue reached a record $29 billion in the following quarter (Q1 FY2027, reported May 2026), up 181% year-over-year - well beyond the roughly 100% growth Dell guided to on the show, driven by explosive AI server demand.</p>
+        <ul class="sources">
+          <li><a href="https://www.sec.gov/Archives/edgar/data/0001571996/000157199626000030/dell-20260501.htm" target="_blank" rel="noreferrer">Dell Technologies Inc. - Form 10-Q - FY2026</a></li>
+          <li><a href="https://www.cnbc.com/2026/05/28/dell-q1-earnings-report-2027.html" target="_blank" rel="noreferrer">Dell Q1 earnings report 2027</a></li>
+        </ul>
+      </div>
+    </article>
+    <article class="prediction-card" id="brad-01:12:48">
+      <div class="prediction-head">
+        <a class="who-badge" href="../host/brad.html">Brad</a>
+        <span class="badge badge-wrong">Wrong</span>
+        <span class="muted">01:12:48</span>
+        <span class="tags">
+<span class="tag">economy</span><span class="tag">politics</span>        </span>
+      </div>
+      <p class="prediction-text">10 million children will have claimed their Invest America (Trump) accounts by July 4, 2026, the 250th anniversary of the United States.</p>
+      <blockquote class="quote">
+        &ldquo;There are 4.5 million kids who&#39;ve claimed their account. Almost $150,000 a day will have on the trajectory we&#39;re on. 10 million by July 4th or 250 at the anniversary of the country.&rdquo;
+        <span class="yt-link">
+          <a href="https://www.youtube.com/watch?v=9y7TTU1jIvk&t=4368" target="_blank" rel="noreferrer" class="js-youtube-link">View on YouTube</a>
+        </span>
+      </blockquote>
+      <div class="explanation">
+        <div class="explanation-label">Explanation</div>
+        <p>Trump Accounts (Invest America) officially launched on July 4, 2026 with about 6 million children signed up - well short of Gerstner&#39;s 10 million target - and signups reached roughly 7 million by late July, still below the predicted figure by the July 4 deadline.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/07/27/bessent-trump-account-signups-reach-7-million.html" target="_blank" rel="noreferrer">Trump Account signups reach 7 million - Bessent says it&#39;s &#39;the most successful launch in government history&#39;</a></li>
+          <li><a href="https://www.cnbc.com/2026/06/23/trump-account-signups-hit-6-million-millions-more-children-eligible.html" target="_blank" rel="noreferrer">Trump Account signups now total more than 6 million, but millions more children are eligible</a></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div id="youtube-warning-modal" class="modal hidden">
+  <div class="modal-box">
+    <h2>Heads up</h2>
+    <p>Timestamp links are best-effort and may be imperfect due to mismatches between transcript timestamps and the YouTube video, and because speaker attribution is inferred from context rather than voice matching.</p>
+    <button type="button" id="youtube-warning-continue">Continue</button>
+  </div>
+</div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Unofficial project; data is generated using free tools (YouTube captions) and Claude (extraction, speaker attribution, and web-search validation), with no OpenAI, xAI, or paid ASR involved. It is best-effort and may contain errors, omissions, or misattributions, especially in speaker attribution, which relies on transcript context rather than voice matching.</p>
+    </div>
+  </footer>
+  <script src="../static/app.js"></script>
+</body>
+</html>
