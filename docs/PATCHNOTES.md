@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.33.0 (2026-08-27)
+
+### Changed
+- Updated `docs/PRD.md` §13 Phase 4 to scope the original two-sweep (extract-everything-then-validate-everything) batching design explicitly to the now-complete initial full-archive load, and documented a new standing incremental process for the 47-episode unprocessed backlog and all future newly-published episodes: combined extraction+attribution+tagging+validation in a single pass per batch of 5 episodes, using the exact same close-out steps (manifest rebuild, site regen, docs update, commit/push) established during the validation-only batches. This is now the permanent, reusable process for ongoing archive maintenance, not a one-time plan.
+
 ## v0.32.0 (2026-08-27)
 
 ### Added
