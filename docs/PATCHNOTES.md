@@ -2,6 +2,12 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.27.0 (2026-08-27)
+
+### Added
+- Validated Batch L (first of five additional 5-episode batches requested), covering E143, E121, E101, E095, E074, 80 individual predictions checked (right/wrong/ambiguous/inconclusive with explanations), bringing the archive-wide validated count to 329/357 (322/402 in full-pipeline terms including the 47-episode unprocessed backlog). Resolved via general/historical knowledge spanning the August 2023 GOP primary debate and Nvidia earnings episode, the March 2023 SVB/banking-crisis aftermath and TikTok divestiture saga, the November 2022 post-election market update with guest Brad Gerstner, the September 2022 European energy-crisis episode, and the April 2022 Q1-earnings/recession-risk episode; several long-horizon (2030s-2050s) demographic, tax-rate, and brand-disruption predictions marked inconclusive as premature.
+- Added a new roadmap item (PRD §19) at user request: track an expected-resolution date on each prediction check, so unresolved (inconclusive) predictions can be automatically flagged for recheck once that date passes, with the date rolling forward to a new expectation if the outcome still isn't determinable at recheck time.
+
 ## v0.26.0 (2026-08-27)
 
 ### Added
