@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.23.0 (2026-08-27)
+
+### Added
+- Validated a fifteenth batch of predictions (20 episodes, fewest-predictions-first recomputed fresh against the live manifest; the third and final of three additional 20-episode batches requested beyond the just-completed fourteenth-batch validation), bringing the archive-wide validated count to 314/357. 261 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources), spanning episodes from 2021 through 2025, with fresh web research on the unanimous March 2024 Trump v. Anderson Supreme Court ruling restoring Trump's ballot eligibility, Google's April 2024 Project Nimbus employee firings, Nikki Haley's March 2024 Super Tuesday exit from the Republican primary, the Gonzalez v. Google Section 230 non-ruling, the August 2024 NAR real-estate commission settlement, the Magnificent Seven's ~34% S&P 500 weight at end of 2025, the US national debt crossing $38 trillion in October 2025, actual 2025 ICE deportation totals, GPT-5's mixed August 2025 reception, and the Waymo-led 2025-2026 robotaxi market. This completes the full three-additional-batch, 60-episode request made beyond the completed thirteenth-batch validation.
+
 ## v0.22.0 (2026-08-27)
 
 ### Added
