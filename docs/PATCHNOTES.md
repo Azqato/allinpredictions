@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.19.0 (2026-08-27)
+
+### Added
+- Validated a twelfth batch of predictions (20 episodes, fewest-predictions-first recomputed fresh against the live manifest; the third of four additional 20-episode batches requested beyond the completed 100-episode sweep), bringing the archive-wide validated count to 233/357. 195 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources), spanning episodes from 2022 through 2024, with fresh web research on 2023 global IPO volume, Instacart and Klaviyo revenue figures, the Texas Stock Exchange's SEC approval timeline, the 2024 Atlantic hurricane season's records, Tesla's Dojo supercomputer shutdown and revival, and the 2025 Musk-Trump public falling out.
+
 ## v0.18.0 (2026-08-27)
 
 ### Added
