@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.29.0 (2026-08-27)
+
+### Added
+- Validated Batch N (third of five additional 5-episode batches requested), covering the trump-vs-powell/GENIUS Act episode, the markets-turn-trump/2024-election-home-stretch episode, the dueling-presidential-interviews/SpaceX-catch episode, E119 (the SVB collapse in real time), and E080 (May 2022 recession deep dive), 85 individual predictions checked (right/wrong/ambiguous/inconclusive with explanations), bringing the archive-wide validated count to 339/357 (332/402 in full-pipeline terms including the 47-episode unprocessed backlog). Resolved via general/historical knowledge spanning the July 2025 GENIUS Act signing and stablecoin-policy predictions, the October 2024 election home-stretch market predictions, the SpaceX Starship-catch/Starlink-subscriber and nuclear-power predictions, the March 2023 SVB collapse's real-time crisis predictions (many conditional on a government non-intervention that didn't occur, marked inconclusive), and the May 2022 recession-risk episode.
+
 ## v0.28.0 (2026-08-27)
 
 ### Added
