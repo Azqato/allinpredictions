@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.14.0 (2026-08-27)
+
+### Added
+- Two new roadmap entries in `docs/PRD.md`, sourced from Reddit user feedback: §34, a planned host-vs-guest prediction accuracy league table (buildable now, no schema change needed since `role`/`who` already exist per prediction, pending answers on accuracy formula, minimum sample size, and guest page treatment); §35, a long-term-deferred listener voting/feedback mechanism, explicitly flagged as needing a backend/storage decision this static, accountless site doesn't have today. Both added to the §19 Roadmap table and §35 also to the explicitly-deferred-items list.
+
 ## v0.13.0 (2026-08-26)
 
 ### Added

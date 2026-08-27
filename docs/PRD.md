@@ -602,6 +602,8 @@ Ordered by priority; when two conflict, the higher one wins.
 | §17: Annual Predictions episode filter | Post-launch | Planned |
 | `video_id` resolution (45 episodes) | Post-launch | Planned |
 | Follow-up extraction sweep: pick up the 45 episodes unblocked by `video_id` resolution, plus any newly published episodes since the 2026-08-04 sweep | Post-launch, after `video_id` resolution progresses | Planned |
+| §34: Host vs. guest prediction league table (Reddit feedback, 2026-08-27) | Post-launch; ready to build once accuracy-formula/min-sample/guest-page questions are answered | Planned |
+| §35: Listener voting/feedback mechanism (Reddit feedback, 2026-08-27) | Long-term, no scheduled trigger; needs a real backend/storage decision this static site doesn't have yet | Deferred |
 
 **Explicitly deferred items and why** (see also §12 Risks and §16 for full detail on each):
 - Caption-less episode handling (2 episodes with a `video_id` but no captions fetchable via any current method): deferred with no scheduled trigger yet, to be revisited later once a fetch method exists or a manual-transcription fallback is decided on; not on the critical path since it's only 2 of 404 episodes.
@@ -609,6 +611,7 @@ Ordered by priority; when two conflict, the higher one wins.
 - Second-opinion validation pattern (re-validate in a fresh session and diff): a possible accuracy improvement over single-pass validation, deferred because single-pass validation is working adequately and doubling validation cost isn't justified yet.
 - GitHub Action for deterministic-only site regeneration: deferred because there's no CI need yet at this scale; manual regeneration is fast and the Claude-driven steps can't run in CI anyway.
 - Multi-podcast generalization: explicitly out of v1 scope per §2 Non-Goals; the architecture stays podcast-agnostic where cheap to do so, but no plugin system is being built now.
+- Listener voting/feedback mechanism (§35): deferred with no scheduled trigger; the user's own framing of this Reddit-sourced idea flagged it as long-term, and it genuinely needs a backend/storage decision (accounts-free voting has no natural anti-abuse mechanism) this static, accountless site doesn't have today.
 
 ## 20. Metrics
 
@@ -868,3 +871,34 @@ Concrete instructions for whoever (human or Claude) picks this project up next.
 - **What to update afterward:** add a dated entry to `docs/PATCHNOTES.md` describing the change (§16.1's format), and update this PRD's Roadmap (§19) if the change completes or changes the status of a tracked milestone.
 
 **How this documentation process should be repeated going forward:** the methodology used for this 2026-08-25 audit (§16.1's process list: full codebase crawl first, read every doc in `/docs` in full, diff each against the actual code, merge rather than silently overwrite disagreements into §29's table, then update the four target files) is the standing process for keeping documentation in sync with the codebase after future feature work - not a one-time event. It should be re-run whenever a change is large enough to plausibly make a section of this PRD stale (a new pipeline stage, a schema change, a new page type, a roadmap milestone completing), not on a fixed schedule. A smaller change (a bug fix, a small copy edit) only needs its own `PATCHNOTES.md` entry and, if relevant, a one-line update to the specific PRD section it affects - it does not need a full re-audit.
+
+## 34. Planned Feature: Host vs. Guest Prediction League Table
+
+**Status:** Planned, added to the roadmap 2026-08-27 from Reddit-sourced user feedback (see §19).
+
+**Trigger:** post-MVP, and genuinely buildable now rather than blocked on any future work - unlike §17, this needs no new data-model field. `role: "host" | "guest"` and `who` already exist on every prediction record (§7), so ranking accuracy across both populations is purely an aggregation-and-display feature on top of data the site already has.
+
+**Context:** a recurring piece of feedback (this instance sourced from a Reddit thread asking "what would you like to see on a site that tracks the accuracy of predictions from the All-In Pod hosts") is that the current site (per-host scorecards only, §9) doesn't let a visitor compare the four permanent hosts against the many recurring/one-off guests who also make predictions on the show. A ranked, sortable "league table" spanning both populations is a natural extension of the existing right/wrong/ambiguous/inconclusive scoring the site already computes per speaker.
+
+**Goal:** a single page ranking every host and every guest by prediction accuracy, so a visitor can see at a glance who calls it best, not just how any one individual has done in isolation.
+
+**Design questions to settle before implementation (do not guess - ask):**
+- **Accuracy formula:** right / (right + wrong), matching the existing per-host scorecard math, or a variant that folds in `ambiguous` as a partial credit / excludes it entirely. Whatever the existing host scorecards already use (§9) should be the default unless there's a reason to diverge, for consistency.
+- **Minimum sample size:** a guest with a 1-for-1 record would rank above every host on raw accuracy despite being statistical noise. Needs an explicit minimum-predictions threshold (e.g. 5+) below which a speaker is either excluded from the ranked table or shown in a separate "not enough data yet" section rather than silently ranked.
+- **Guest identity/pages:** today only the four permanent hosts get dedicated `host/*.html` pages (§8, §9); guests appear only inline on episode pages. The league table surfacing guest rows raises whether guests now warrant their own minimal profile page (list of their predictions and record) or whether a table row that deep-links to their prediction cards on the relevant episode pages is sufficient for v1 of this feature.
+
+**Site feature (pending the above):**
+- A new page, e.g. `/league.html`, with a sortable table: name, role (host/guest badge), total qualifying predictions, right/wrong/ambiguous/inconclusive counts, accuracy %.
+- Likely linked from the home page nav alongside the existing host links.
+
+**Why this belongs in the roadmap and not immediate work:** it's real, well-scoped, and technically ready today, but the design questions above (accuracy formula, minimum-n cutoff, guest page treatment) are product decisions the user should make explicitly rather than have assumed, consistent with this project's "ask, don't guess" norm (§16.3.4) for anything beyond a pure mechanical fix.
+
+## 35. Planned Feature (Long-Term, Deferred): Listener Voting / Feedback Mechanism
+
+**Status:** Explicitly deferred. Added to the roadmap 2026-08-27 from the same Reddit feedback thread as §34; the user who raised it flagged it themselves as something that "may have to wait until much longer future state," and the architecture confirms that instinct was right.
+
+**Context:** the same feedback thread asked for a way for listeners to vote or otherwise register their own opinion on a prediction's outcome, as a check on (or supplement to) the site's own "house" verdict (`right`/`wrong`/`ambiguous`/`inconclusive`, §7, produced by the validation pipeline in §6).
+
+**Why this is a real future feature but not near-term work:** this site is deliberately static and accountless - no backend, no database, no user auth (§1 Goals, §23 Security explicitly states both are "none" by design for a public informational site with zero paid dependencies). A voting mechanism needs somewhere to durably store votes per prediction per (at least pseudonymous) visitor, and cheaply defending that against trivial ballot-stuffing (no accounts means no natural rate-limit) - both are real architecture decisions, not incremental additions to the current `generate_site.py` + embedded-JSON-plus-vanilla-JS model (§9). Candidate approaches (a free-tier serverless function + KV store, a third-party embeddable widget, a GitHub-Issues-as-votes hack) each carry cost, privacy, or reliability trade-offs that should be decided deliberately when this is actually prioritized, not chosen implicitly by whichever is fastest to bolt on.
+
+**Trigger:** none scheduled. Revisit once the core validated-prediction archive (§13 Phase 4, §19) is substantially complete and the league table (§34) has shipped, at which point "how does the house verdict compare to what listeners think" becomes a natural next question rather than a feature bolted onto a still-in-progress data set.
