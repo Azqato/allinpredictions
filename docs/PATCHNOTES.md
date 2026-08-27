@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.38.0 (2026-08-27)
+
+### Added
+- Ran Batch 5 of the incremental process (PRD §13) against the 47-episode unprocessed backlog (fifth and final of the "5 batches as a test" run): resolved 5 more missing `video_id`s via yt-dlp channel search, fetched transcripts and chunks, then ran full extraction+attribution+tagging and validation in one pass for all 5 episodes -- nobel-prize-in-physics-winner-john-martinis-on-the-state-of-quantum (1 prediction), nobel-peace-prize-winner-mar-a-corina-machado-on-defeating-maduro-socialism-freeing-venezuela (1 prediction), triple-h-on-wwe-s-evolution-the-rise-of-the-antihero-and-the-psychology-of-stardom (0 predictions, sports-entertainment/psychology narrative without falsifiable dated claims), ari-emanuel-on-the-future-of-entertainment-hollywood-ai-creator-economy-youtube-vs-netflix (0 predictions, industry commentary without clean falsifiable claims), and molly-s-game-uncensored-the-truth-behind-the-world-s-most-infamous-poker-game (0 predictions, personal-story narrative without falsifiable dated claims). 2 predictions checked (right/wrong/ambiguous/inconclusive with explanations): Maria Corina Machado's prediction that Maduro would leave power soon came back right (Maduro was captured and arrested by the U.S. on January 3, 2026 on narco-terrorism charges, roughly 2.5 months after this October 2025 interview, with Delcy Rodriguez taking over as acting president), while John Martinis's 8-10-year quantum-computing-scaling prediction was marked inconclusive (timeframe far from elapsed). This is the fifth and final batch of the "5 batches as a test" request, completing it in full: 25 episodes processed across the 5 batches, with 22 episodes remaining in the 47-episode unprocessed backlog (402-episode full-pipeline total).
+
 ## v0.37.0 (2026-08-27)
 
 ### Added
