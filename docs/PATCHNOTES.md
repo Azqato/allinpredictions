@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.28.0 (2026-08-27)
+
+### Added
+- Validated Batch M (second of five additional 5-episode batches requested), covering E068, E057, E033, E024, and the inside-the-white-house-tech-dinner episode, 81 individual predictions checked (right/wrong/ambiguous/inconclusive with explanations), bringing the archive-wide validated count to 334/357 (327/402 in full-pipeline terms including the 47-episode unprocessed backlog). Resolved via general/historical knowledge spanning the February 2022 Canadian trucker convoy episode, the December 2021 Omicron episode, the May 2021 Antonio Garcia Martinez/crypto-pullback episode, the March 2021 COVID-reopening/Newsom-recall episode, and the September 2025 White House tech dinner/tariffs episode (several very-recent 2025-2026 tariff-revenue and investment-timeline predictions marked inconclusive as premature).
+
 ## v0.27.0 (2026-08-27)
 
 ### Added
