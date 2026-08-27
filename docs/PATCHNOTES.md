@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.15.1 (2026-08-27)
+
+### Fixed
+- The "All topics" dropdown on the home page charts was unreadable when opened: the site is dark-only but never declared `color-scheme: dark`, so the browser rendered the native `<select>` popup with its default light-theme white background while the CSS-set light foreground text (`--fg: #f5f5f5`) stayed applied, producing near-white-on-white text (user-reported via screenshot). Fixed by adding `color-scheme: dark` to `:root` in `site_src/static/style.css` plus an explicit `.chart-controls select option` background/color rule as a cross-browser fallback.
+
 ## v0.15.0 (2026-08-27)
 
 ### Added
