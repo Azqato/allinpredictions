@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.15.0 (2026-08-27)
+
+### Added
+- Validated an eighth batch of predictions (20 episodes, fewest-predictions-first per the standing sweep order, recomputed fresh against the live manifest rather than reusing a stale saved candidate list from a prior session; the fourth of five 20-episode batches toward a 100-episode sweep), bringing the archive-wide validated count to 152/357. 110 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources).
+
 ## v0.14.0 (2026-08-27)
 
 ### Added
