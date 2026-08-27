@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.26.0 (2026-08-27)
+
+### Added
+- Validated the second of two 5-episode test batches (episode ordinal "Batch K"), completing the two-batch test of the reduced 5-episode batch size. Covered E052, E043, the ai-sovereignty-wars-palantir-nvidia-deal-scotus-birthright-ruling-newsom-s-ca-budget-lie episode, E155, and E153, 78 individual predictions checked (right/wrong/ambiguous/inconclusive with explanations), bringing the archive-wide validated count to 324/357 (317/402 in full-pipeline terms including the 47-episode unprocessed backlog). Resolved via general/historical knowledge spanning the 2021 Trump Media/DWAC SPAC saga and 2021 fintech/BNPL consolidation trends through the 2023-2024 OpenAI board crisis, the 2023 Israel-Hamas war's opening months, and 2025-2026 AI-infrastructure and California fiscal-policy predictions (several of the longer-horizon California and AI-labor-market claims marked inconclusive as premature).
+
 ## v0.25.0 (2026-08-27)
 
 ### Added
