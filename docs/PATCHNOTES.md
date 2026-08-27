@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.18.0 (2026-08-27)
+
+### Added
+- Validated an eleventh batch of predictions (20 episodes, fewest-predictions-first recomputed fresh against the live manifest; the second of four additional 20-episode batches requested beyond the completed 100-episode sweep), bringing the archive-wide validated count to 212/357. 165 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources), spanning episodes from 2021 through 2026, with fresh web research on the Adobe-Figma deal's collapse, Google's ad-tech antitrust case, the 2026 California governor's race, ChatGPT's declining market share, SpaceX's pre-IPO financials, and 2025-2026 Treasury yield moves. One episode (E081) had zero qualifying predictions (all speakers unknown/low-confidence) and was marked validated with an empty checks file.
+
 ## v0.17.0 (2026-08-27)
 
 ### Added
