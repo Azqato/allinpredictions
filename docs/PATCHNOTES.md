@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.31.0 (2026-08-27)
+
+### Added
+- Validated Batch P (fifth and final of five additional 5-episode batches requested), covering E106, E084, the gpt-4o-launches-glue-demo episode, E171, and E156, 93 individual predictions checked (right/wrong/ambiguous/inconclusive with explanations), bringing the archive-wide validated count to 349/357 (342/402 in full-pipeline terms including the 47-episode unprocessed backlog). Resolved via general/historical knowledge spanning the December 2022 Xi-ruler-for-life/SaaS-contraction episode, the June 2022 inflation/recession/2024-election-speculation episode, the May 2024 GPT-4o launch/Ohalo/Perplexity episode, the March 2024 DOJ-vs-Apple/NAR-settlement episode (several DOJ-Apple predictions marked inconclusive as the case remains unresolved), and the December 2023 campus-antisemitism-hearings/Gemini-launch episode. This completes the user's "5 more batches" request in full.
+
 ## v0.30.0 (2026-08-27)
 
 ### Added
