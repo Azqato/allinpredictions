@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.32.0 (2026-08-27)
+
+### Added
+- Validated Batch Q (the final batch, closing out the entire validation-eligible pool), covering the last 8 episodes: trump-wins-how-it-happened-and-what-s-next, trump-verdict-covid-cover-up-crypto-corner-salesforce-drops-20-ai-correction, E132, E114, E051, ipos-and-spacs-are-back-mag-7-showdown-zuck-on-tilt-apple-s-fumble-genius-act-passes-senate, E103, and E045, 180 individual predictions checked (right/wrong/ambiguous/inconclusive with explanations). This brings the archive-wide validated count to 357/357 (100% of the validation-eligible pool; 350/402 in full-pipeline terms including the 47-episode unprocessed backlog). Resolved via general/historical knowledge spanning the November 2024 Trump-win aftermath episode, the May 2024 Fauci-hearing/Biden-debate-swap episode, the June 2023 SEC-crackdown/Coinbase episode, the February 2023 SVB-era pre-crisis market-outlook episode, the October 2021 inflation-onset episode, the June 2025 GENIUS-Act/Mag-7-dispersion episode, the November 2022 midterms/recession-outlook episode (several specific Senate-race predictions resolved definitively wrong against actual 2022 results), and the September 2021 Theranos-trial/SB8-abortion-law episode. This is the final batch of the "finish the batches" request; no further episodes remain in the validation-eligible pool.
+
 ## v0.31.0 (2026-08-27)
 
 ### Added
