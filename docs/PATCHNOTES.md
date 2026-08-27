@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.37.0 (2026-08-27)
+
+### Added
+- Ran Batch 4 of the incremental process (PRD §13) against the 47-episode unprocessed backlog (fourth of the "5 batches as a test" run): resolved 5 more missing `video_id`s via yt-dlp channel search (WebSearch alone could not locate these 5 on the All-In YouTube channel directly, so falsifiable-title searches were run against the channel's own uploads via yt-dlp), fetched transcripts and chunks, then ran full extraction+attribution+tagging and validation in one pass for all 5 episodes -- google-deepmind-ceo-demis-hassabis-on-ai-creativity-and-a-golden-age-of-science-all-in-summit (2 predictions), ro-khanna-on-crime-censorship-congress-fixing-what-s-broken-in-america (0 predictions, policy/opinion discussion without falsifiable dated claims), joe-tsai-on-us-china-rivalry-ai-s-future-owning-the-nets-liberty-caitlin-clark-s-major-impact (1 prediction), bryan-johnson-the-1-longevity-secret-you-can-start-doing-today (0 predictions, health advice/philosophy without falsifiable dated claims), and how-orlando-bravo-built-one-of-the-most-successful-firms-in-private-equity (0 predictions, business-history narrative without falsifiable dated claims). 3 predictions checked (right/wrong/ambiguous/inconclusive with explanations): Demis Hassabis's AGI-in-5-to-10-years prediction and Joe Tsai's competing AGI-in-20-years prediction were both marked inconclusive (timeframes far from elapsed), while Hassabis's Isomorphic Labs "pre-clinical phase sometime next year" prediction came back right (Isomorphic's Eli Lilly/Novartis collaborations generated multiple AI-designed preclinical candidates by early 2026, now targeting a first-in-human trial by end of 2026). This is the fourth incremental-process batch against the previously-unprocessed backlog; 27 backlog episodes remain, with 1 more test batch planned.
+
 ## v0.36.0 (2026-08-27)
 
 ### Added
