@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.34.0 (2026-08-27)
+
+### Added
+- Ran Batch 1 of the new incremental process (PRD §13) against the 47-episode unprocessed backlog, the first batch of the "5 batches as a test" run: resolved missing `video_id`s (3 of 5 episodes needed manual `config/youtube_urls_override.json` entries found by grepping the @allin YouTube channel's full upload list), fetched transcripts and chunks, then ran full extraction+attribution+tagging and validation in one pass for all 5 episodes -- ais-mp-materials-ceo-james-litinsky-on-rare-earths-supply-chain-and-energy-independence (1 prediction), ais-the-lanby-s-tandice-urban-on-solving-healthcare-s-customer-service-problem (0 predictions, purely descriptive guest talk), jonathan-haidt-the-all-in-interview (0 predictions, purely analytical/opinion content), john-mearsheimer-and-jeffrey-sachs-all-in-summit-2024 (3 predictions), and senator-ted-cruz-the-all-in-inauguration-series (10 predictions, mostly Trump second-term/cabinet-confirmation forecasts made the day before the 2025 inauguration). 14 predictions checked (right/wrong/ambiguous/inconclusive with explanations); notably 3 of Cruz's predictions (100 executive orders on day one, Greenland referendum appetite, Panama Canal/China outcome) came back wrong against actual outcomes, while border, tax-cut, energy-regulation, and cabinet-confirmation predictions came back right. This is the first incremental-process batch to touch the previously-unprocessed backlog; 42 backlog episodes remain, with 4 more test batches planned.
+
 ## v0.33.0 (2026-08-27)
 
 ### Changed
