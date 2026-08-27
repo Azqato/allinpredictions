@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.30.0 (2026-08-27)
+
+### Added
+- Validated Batch O (fourth of five additional 5-episode batches requested), covering E072, E059, E038, the presidential-debate-reaction/Biden-hot-swap episode, and E151, 87 individual predictions checked (right/wrong/ambiguous/inconclusive with explanations), bringing the archive-wide validated count to 344/357 (337/402 in full-pipeline terms including the 47-episode unprocessed backlog). Resolved via general/historical knowledge spanning the March 2022 early-invasion ceasefire-hopes episode, the December 2021 affirmative-action/Build-Back-Better episode, the August 2021 Robinhood-IPO/Delta-variant episode, the June 2024 Biden debate-reaction/hot-swap episode, and the October 2023 Israel-Hamas war episode.
+
 ## v0.29.0 (2026-08-27)
 
 ### Added
