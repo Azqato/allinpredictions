@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.21.0 (2026-08-27)
+
+### Added
+- Validated a thirteenth batch of predictions (20 episodes, fewest-predictions-first recomputed fresh against the live manifest; the first of three additional 20-episode batches requested beyond the just-completed 80-episode/four-batch sweep), bringing the archive-wide validated count to 274/357. 207 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources), spanning episodes from 2021 through 2026, with fresh web research on Zohran Mamdani's November 2025 NYC mayoral win, GPT-5's rocky August 2025 launch, Waymo's Los Angeles expansion, the Google-Wiz acquisition's close and Wiz's ARR, the Scarlett Johansson/OpenAI voice dispute resolution, the September-December 2025 Fed rate cuts, the Trump-Musk feud and reconciliation, the Department of Education dismantlement order, the March 2025 JFK files release, asteroid 2024 YR4's downgraded impact probability, the Bob Lee murder conviction, Dean Phillips' 2024 primary collapse, and the April 2025 "Liberation Day" tariffs.
+
 ## v0.20.0 (2026-08-27)
 
 ### Added
