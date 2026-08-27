@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All-In Predictions</title>
+  <meta name="description" content="Validating every prediction made on the All-In Podcast, using free tools and Claude." />
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><strong>ALL IN</strong><span>Predictions</span></a>
+      <nav class="nav">
+        <a href="../episodes/index.html">Episodes</a>
+        <a href="../host/index.html">Hosts</a>
+        <a href="../about.html">About</a>
+<span class="last-updated">Last updated: 2026-08-27</span>      </nav>
+    </div>
+  </header>
+  <div id="welcome-banner" class="welcome-banner hidden">
+    <div class="container welcome-banner-inner">
+      <p>This is an early, in-progress rewrite: predictions are automatically extracted and validated by LLMs, so there may be inaccuracies, and much of the archive is still unvalidated (shown as "Unvalidated").</p>
+      <button type="button" id="welcome-banner-dismiss">Dismiss</button>
+    </div>
+  </div>
+  <main class="container main">
+<section>
+  <div class="flex-between">
+    <div>
+      <h1>Paul Buchheit</h1>
+      <p class="muted">Guest &middot; 1 tracked prediction</p>
+    </div>
+    <a href="../index.html">Back home</a>
+  </div>
+
+  <div class="card scorecard" style="margin-top:1.5rem;">
+    <div class="scorecard-body">
+      <svg width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="No data"><circle cx="80.0" cy="80.0" r="69.0" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="22" /></svg>
+      <table class="legend">
+        <tbody>
+          <tr>
+            <td><span class="dot dot-right"></span>Right</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-wrong"></span>Wrong</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-ambiguous"></span>Ambiguous</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-inconclusive"></span>Inconclusive</td>
+            <td class="num">1</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-unvalidated"></span>Unvalidated</td>
+            <td class="num">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p class="muted small-note">Small sample size (1 prediction): treat this accuracy figure as anecdotal, not statistically meaningful.</p>
+
+  <div class="predictions" style="margin-top:2rem;">
+    <article class="prediction-card" id="paul-buchheit-01:06:12">
+      <div class="prediction-head">
+        <a class="who-badge" href="../episodes/winning-the-ai-race-part-1-michael-kratsios-kelly-loeffler-chris-power-shyam-sankar-paul-buchheit-jake-loosararian.html">Winning the AI Race Part 1: Michael Kratsios, Kelly Loeffler, Chris Power, Shyam Sankar, Paul Buchheit, Jake Loosararian</a>
+        <span class="badge badge-inconclusive">Inconclusive</span>
+        <span class="muted">Wed, 23 Jul 2025 20:09:00 +0000 &middot; 01:06:12</span>
+      </div>
+      <p class="prediction-text">Within 20 years of this interview (by approximately 2045), AI models will be able to predict how a drug affects the human body without physical testing, and will be more predictive than today&#39;s clinical trials.</p>
+      <blockquote class="quote">&ldquo;in 20 years we&#39;ll be able to know how a drug affects the body without ever actually testing it. And my prediction is actually our our AI models will be more predictive than today&#39;s clinical trials.&rdquo;</blockquote>
+      <div class="explanation">
+        <div class="explanation-label">Explanation</div>
+        <p>This is an explicit 20-year prediction (to approximately 2045) made in 2025. AI drug-discovery/prediction tools are advancing but nowhere near replacing clinical trials as of 2026, and the timeframe has not elapsed, so this cannot be evaluated yet.</p>
+      </div>
+    </article>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Unofficial project; data is generated using free tools (YouTube captions) and Claude (extraction, speaker attribution, and web-search validation), with no OpenAI, xAI, or paid ASR involved. It is best-effort and may contain errors, omissions, or misattributions, especially in speaker attribution, which relies on transcript context rather than voice matching.</p>
+    </div>
+  </footer>
+  <script src="../static/app.js"></script>
+</body>
+</html>

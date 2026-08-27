@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.36.0 (2026-08-27)
+
+### Added
+- Ran Batch 3 of the incremental process (PRD §13) against the 47-episode unprocessed backlog (third of the "5 batches as a test" run): resolved 5 more missing `video_id`s via WebSearch, fetched transcripts and chunks, then ran full extraction+attribution+tagging and validation in one pass for all 5 episodes -- miami-mayor-francis-suarez-the-recipe-for-creating-america-s-happiest-city-all-in-live-from-miami (0 predictions, city-governance/policy discussion without falsifiable dated claims), energy-secretary-chris-wright-on-the-future-of-american-energy-all-in-summit-2025 (2 predictions), the-new-era-of-the-stock-market-with-nasdaq-ceo-adena-friedman-all-in-summit-2025 (0 predictions, market-structure/business discussion without falsifiable dated claims), how-to-save-america-mark-cuban-and-tucker-carlson-debate-all-in-summit-2025 (0 predictions, healthcare-policy advocacy and cultural commentary without falsifiable dated claims), and winning-the-ai-race-part-1-michael-kratsios-kelly-loeffler-chris-power-shyam-sankar-paul-buchheit-jake-loosararian (2 predictions, from Chris Power and Paul Buchheit; the AI Action Plan, Shyam Sankar, Jake Loosararian, and Kelly Loeffler segments were policy/opinion discussion without clean falsifiable claims). 4 predictions checked (right/wrong/ambiguous/inconclusive with explanations): Chris Wright's small-modular-reactor-criticality-at-Idaho-National-Laboratory-by-July-4-2026 prediction came back right (DOE's Reactor Pilot Program hit the deadline, with Antares Nuclear achieving criticality at INL on June 4, 2026), his 50-year solar-share bet was marked inconclusive (timeframe far from elapsed), Chris Power's Arizona-factory-launch prediction came back ambiguous (Hadrian's Mesa "Factory 3" opened January 29, 2026 -- close to but past the "by Christmas 2025" framing he also gave), and Paul Buchheit's 20-year AI-drug-prediction claim was marked inconclusive. This is the third incremental-process batch against the previously-unprocessed backlog; 32 backlog episodes remain, with 2 more test batches planned.
+
 ## v0.35.0 (2026-08-27)
 
 ### Added
