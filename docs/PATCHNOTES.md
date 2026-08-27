@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.35.0 (2026-08-27)
+
+### Added
+- Ran Batch 2 of the incremental process (PRD §13) against the 47-episode unprocessed backlog (second of the "5 batches as a test" run): resolved 5 more missing `video_id`s via WebSearch, fetched transcripts and chunks, then ran full extraction+attribution+tagging and validation in one pass for all 5 episodes -- antonio-gracias-doge-updates-voter-fraud-arrests-finding-big-balls-all-in-live-from-miami (0 predictions, operational/anecdotal DOGE commentary), ray-dalio-the-all-in-interview (0 predictions, macro/debt-cycle analysis without crisp falsifiable claims), scott-bessent-all-in-dc (2 predictions), howard-lutnick-all-in-dc (6 predictions), and the inauguration-interviews-trump-s-talent-democratic-rebrand-more-with-house-whip-emmer-reps-swalwell-khanna panel (2 predictions, from Rep. Tom Emmer; Swalwell and Khanna's segments were opinion/analysis without falsifiable, dated claims). 10 predictions checked (right/wrong/ambiguous/inconclusive with explanations); notably most of Lutnick's DC predictions came back wrong against actual outcomes (the $1T-cut/$1T-revenue budget-balancing pledge, the Trump Card's "two weeks" launch claim, and the 1-million-card sales estimate all fell well short of reality), while his post-quantum-cryptography and gold-card-financing-industry predictions came back right, and Emmer's reconciliation-bill timeline came back wrong (bill signed ~6 weeks later than his Memorial Day target) while his cabinet-confirmation prediction came back right. This is the second incremental-process batch against the previously-unprocessed backlog; 37 backlog episodes remain, with 3 more test batches planned.
+
 ## v0.34.0 (2026-08-27)
 
 ### Added
