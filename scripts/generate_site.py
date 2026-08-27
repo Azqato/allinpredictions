@@ -79,6 +79,18 @@ def validate_prediction(episode_id: str, p: Dict[str, Any], permanent_hosts: Lis
         errors.append(f"{episode_id}/{pred_id}: 'role' ({role!r}) must be 'host', 'guest', 'unknown', or omitted")
     if who in permanent_hosts and role == "guest":
         errors.append(f"{episode_id}/{pred_id}: 'who' ({who!r}) is a permanent host but 'role' is 'guest'")
+    elif who not in permanent_hosts and role == "host":
+        # role:"host" must use one of the exact config/hosts.yaml slugs - a
+        # display-name-style variant (e.g. "chamath-palihapitiya" instead of
+        # "chamath") silently fabricates a second page for the same person
+        # rather than tripping the near-miss check below, since it's not a
+        # short typo. This is exactly the chamath-palihapitiya/david-friedberg
+        # incident this branch exists to catch a repeat of.
+        errors.append(
+            f"{episode_id}/{pred_id}: 'who' ({who!r}) has role 'host' but is not one of the "
+            f"canonical permanent-host slugs {sorted(permanent_hosts)} from config/hosts.yaml - "
+            f"use the exact slug (e.g. 'chamath', not 'chamath-palihapitiya')"
+        )
     elif who not in permanent_hosts:
         near = [h for h in permanent_hosts if 0 < levenshtein(who, h) <= 2]
         if near:
