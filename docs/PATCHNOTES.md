@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.16.0 (2026-08-27)
+
+### Added
+- Validated a ninth batch of predictions (20 episodes, fewest-predictions-first recomputed fresh against the live manifest; the fifth and final of five 20-episode batches toward the 100-episode sweep requested this weekend), bringing the archive-wide validated count to 172/357. 144 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources), spanning episodes from 2021 through 2026. This completes the full 100-episode validation request (60 episodes validated in the prior session, 40 in this one).
+
 ## v0.15.1 (2026-08-27)
 
 ### Fixed
