@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.42.0 (2026-08-27)
+
+### Added
+- Ran Batch 8 of the incremental process (PRD §13) against the unprocessed backlog: resolved 5 more missing `video_id`s (all via yt-dlp channel-filtered search, since YouTube's public titles for these episodes differ from the RSS feed titles, with upload dates verified against each episode's RSS `published_iso`), fetched transcripts and chunks, then ran full extraction+attribution+tagging and validation in one pass for all 5 episodes -- anthropic-s-generational-run-openai-panics-ai-moats-meta-loses-lawsuits (2 predictions), the-companies-changing-warfare-forever-palantir-anduril-execs-on-drones-ai-the-future-of-war (0 predictions, strategic/philosophical defense-industry discussion without clean falsifiable dated claims), charles-chase-koch-on-how-they-quietly-built-a-150b-empire (0 predictions, business-history/principles interview without falsifiable dated claims), bill-ackman-investment-strategy-what-the-market-is-missing-how-ai-breaks-businesses (1 prediction), and thomas-laffont-the-4t-ai-ipo-wave-2026-s-unicorn-economy-and-the-10x-paradox (2 predictions). All 5 predictions checked (right/wrong/ambiguous/inconclusive with explanations): both of Jason's ChatGPT predictions came back right (ChatGPT crossed 1 billion users within the predicted 1-2 month window, and its consumer market share fell well under 50%, reaching 46.4% by May 2026 as Gemini and Claude gained share); Thomas Laffont's AI-industry-revenue-doubling-to-2027 and OpenAI/Anthropic-surpassing-AWS/Microsoft predictions, and Bill Ackman's 22-year Pershing Square AUM-growth forecast, were all marked inconclusive (timeframes not yet elapsed or too methodologically ambiguous to confirm cleanly). This is the eighth incremental-process batch; 397 of 412 tracked episodes now have predictions extracted, 15 remain unprocessed (Ray Dalio's episode remains permanently unresolvable on the official channel and continues to be skipped).
+
 ## v0.41.0 (2026-08-27)
 
 ### Added
