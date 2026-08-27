@@ -614,7 +614,7 @@ Ordered by priority; when two conflict, the higher one wins.
 | §34: Host vs. guest prediction league table (Reddit feedback, 2026-08-27) | Post-launch; ready to build once accuracy-formula/min-sample/guest-page questions are answered | Planned |
 | §35: Listener voting/feedback mechanism (Reddit feedback, 2026-08-27) | Long-term, no scheduled trigger; needs a real backend/storage decision this static site doesn't have yet | Deferred |
 | Extend the §27 home page filter UI (Resolved only checkbox, topic dropdown, Total/By Year/By Topic segmented toggle) to every individual host and guest page, not just the home page | Post-launch; user-requested 2026-08-27 | Planned |
-| §36: competitor-audit feature gaps (accuracy %/hit-rate everywhere, home page headline stat, host leaderboard, sitewide search, unified all-predictions browse page, "recently settled" feed, curated high-impact-calls section, per-host verdict-count breakdown) | After the full ingest-and-validation sweep completes (47-episode backlog + remaining validation batches); user-requested 2026-08-27 | Planned |
+| §36: competitor-audit feature gaps, all 8 approved for implementation (accuracy %/hit-rate everywhere, home page headline stat, host leaderboard, sitewide search, unified all-predictions browse page, "recently settled" feed, curated high-impact-calls section, per-host verdict-count breakdown) | After the full ingest-and-validation sweep completes (47-episode backlog + remaining validation batches); user-requested and approved 2026-08-27 | Planned |
 
 **Explicitly deferred items and why** (see also §12 Risks and §16 for full detail on each):
 - Caption-less episode handling (2 episodes with a `video_id` but no captions fetchable via any current method): deferred with no scheduled trigger yet, to be revisited later once a fetch method exists or a manual-transcription fallback is decided on; not on the critical path since it's only 2 of 404 episodes.
@@ -916,7 +916,7 @@ Concrete instructions for whoever (human or Claude) picks this project up next.
 
 ## 36. Competitor Audit: allinscorecard.lovable.app - Feature Gaps
 
-**Status:** Audit complete 2026-08-27, at explicit user request ("index this entire site... identify any core features we are missing and add them to our roadmap"). All items below are **planned, sequenced after the full ingest-and-validate sweep completes** (§19) - this was an explicit sequencing instruction, not an implicit assumption.
+**Status:** Audit complete 2026-08-27, at explicit user request ("index this entire site... identify any core features we are missing and add them to our roadmap"). All 8 items below are **approved for implementation** (user confirmed 2026-08-27: "all of those features are great and i want to implement all of them"), **sequenced after the full ingest-and-validate sweep completes** (§19) - this was an explicit sequencing instruction, not an implicit assumption.
 
 **Context:** [allinscorecard.lovable.app](https://allinscorecard.lovable.app/) is an independent, similarly-scoped site tracking All-In Podcast host predictions. It was indexed (homepage, `/predictions`, `/hosts`, an individual host page, `/episodes`, `/methodology`) to identify features it has that this site (`allinpredictions`) does not. Its stated scope at audit time: 2,741 predictions, 52% overall settled-call success rate, four hosts only (no guest scorecards - a point where this site is already ahead, see §34).
 
