@@ -2,6 +2,12 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.20.0 (2026-08-27)
+
+### Added
+- Validated a thirteenth batch of predictions (20 episodes, fewest-predictions-first recomputed fresh against the live manifest; the fourth and final of four additional 20-episode batches requested beyond the completed 100-episode sweep), bringing the archive-wide validated count to 253/357. 210 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources), spanning episodes from 2021 through 2026, with fresh web research on Anthropic's 2026 valuation and revenue run rate, the Nvidia-Groq licensing deal, California's Billionaire Tax Act ballot qualification, CXMT's China DRAM IPO, the Trump administration's Intel equity stake, the September/December 2025 Fed rate cuts, ongoing AI copyright litigation, and TikTok's 2025-2026 forced-divestiture deal. This completes the full four-batch, 80-episode request made beyond the original 100-episode sweep.
+- Added a roadmap item (docs/PRD.md §19) to extend the home page's filter UI (Resolved only checkbox, topic dropdown, Total/By Year/By Topic toggle) to every individual host and guest page, per user request.
+
 ## v0.19.0 (2026-08-27)
 
 ### Added
