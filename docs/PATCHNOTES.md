@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.24.0 (2026-08-27)
+
+### Added
+- Audited competitor site allinscorecard.lovable.app at user request and documented 8 identified feature gaps in docs/PRD.md §36, added as a new roadmap row in §19: no accuracy/hit-rate percentage computed or shown anywhere on this site (the single largest gap), no home page headline stat, no host leaderboard, no sitewide search across predictions, no unified all-predictions browse page with host/verdict filters, no "recently settled" feed, no curated high-impact-calls section, and no per-host verdict-count breakdown block. Explicitly sequenced to start after the full ingest-and-validation sweep (the 47-episode unprocessed backlog plus remaining validation batches) completes, per the user's own framing of the request.
+
 ## v0.23.0 (2026-08-27)
 
 ### Added
