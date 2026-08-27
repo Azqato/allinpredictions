@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.22.0 (2026-08-27)
+
+### Added
+- Validated a fourteenth batch of predictions (20 episodes, fewest-predictions-first recomputed fresh against the live manifest; the second of three additional 20-episode batches requested beyond the just-completed thirteenth-batch validation), bringing the archive-wide validated count to 294/357. 227 individual predictions were checked (right/wrong/ambiguous/inconclusive with cited sources), spanning episodes from 2022 through 2026, with fresh web research on the September 2025 Google antitrust remedies ruling, the January 2024 Taiwan election, the 2024 Kursk offensive and its collapse by March 2025, the November 2024 US presidential election margin, Tim Walz's full tenure on the 2024 Harris ticket, the December 2022 Georgia Senate runoff, Nvidia's continued AI accelerator dominance, xAI's Colossus GPU cluster scaling, OpenAI's 2025 revenue run rate, Elon Musk's America Party status heading into the 2026 midterms, Zohran Mamdani's early mayoral term, and Bitcoin's price action in late 2025.
+
 ## v0.21.0 (2026-08-27)
 
 ### Added
