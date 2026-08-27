@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.25.0 (2026-08-27)
+
+### Added
+- Validated the first of two 5-episode test batches (episode ordinal "Batch J"), switching batch size down from 20 to 5 episodes at the user's request to test a lighter-weight validation cadence. Covered E145, E140, E128, E079, E067, 75 individual predictions checked (right/wrong/ambiguous/inconclusive with explanations), bringing the archive-wide validated count to 319/357 (312/402 in full-pipeline terms, including the 47-episode unprocessed backlog). Mostly resolved via general/historical knowledge for well-established pre-2024 events (LK-99 superconductor debunking, the Dobbs v. Jackson aftermath on Obergefell/affirmative action/state abortion policy, the 2022 trucker convoy, 2023 Treasury-yield and debt-ceiling-era predictions, Hunter Biden's gun/tax cases and 2024 pardon, the 2024 Republican primary and general election outcomes), with no additional web research required for this batch.
+
 ## v0.24.0 (2026-08-27)
 
 ### Added
