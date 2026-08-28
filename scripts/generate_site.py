@@ -289,6 +289,10 @@ def render_site(root: Path, out_dir: Path) -> None:
         s["total_resolved"] = s["stats"]["right"] + s["stats"]["wrong"]
         s["total_all"] = sum(s["stats"].values())
         s["chart_json"] = html_attr_json(s["chart_entries"])
+        s["accuracy_pct"] = (
+            round(100 * s["stats"]["right"] / s["total_resolved"], 1) if s["total_resolved"] else None
+        )
+        s["small_sample"] = s["role"] == "guest" and s["total_all"] < 3
 
     hosts_sorted = sorted(
         (s for s in speakers.values() if s["role"] == "host"),
@@ -299,9 +303,79 @@ def render_site(root: Path, out_dir: Path) -> None:
         key=lambda s: -s["total_all"],
     )
 
+    # Combined accuracy leaderboard (§34/§36 items 1-3): every host + guest,
+    # ranked by resolved-prediction accuracy (unranked/no-data speakers sort
+    # last). Small-sample guests stay in the list but are flagged so the
+    # figure isn't read as statistically meaningful.
+    leaderboard = sorted(
+        speakers.values(),
+        key=lambda s: (s["accuracy_pct"] is None, -(s["accuracy_pct"] or 0), -s["total_resolved"]),
+    )
+
     # All topic tags appearing on any host's qualifying predictions, for the
     # home page topic filter dropdown (§27).
     topics = sorted({tag for s in hosts_sorted for e in s["chart_entries"] for tag in e["tags"]})
+
+    # Distinct years with at least one episode, newest first, for the
+    # Annual Predictions episode filter (§17) and the Full Ledger filter.
+    years = sorted({(ep.get("published_iso") or "")[:4] for ep in episodes if ep.get("published_iso")}, reverse=True)
+
+    # Sitewide overall headline stat (§36 item 2): summed across every
+    # speaker's qualifying-prediction bucket, so it matches what the
+    # scorecards already show rather than recomputing from raw files.
+    overall_stats = empty_bucket()
+    for s in speakers.values():
+        for k in RESULT_KEYS:
+            overall_stats[k] += s["stats"][k]
+    overall_total_resolved = overall_stats["right"] + overall_stats["wrong"]
+    overall_total_all = sum(overall_stats.values())
+    overall_accuracy_pct = (
+        round(100 * overall_stats["right"] / overall_total_resolved, 1) if overall_total_resolved else None
+    )
+
+    # "Recently settled" feed (§36 item 6): the most recent qualifying
+    # predictions with a resolved-ish verdict, newest episode first.
+    recently_settled: List[Dict[str, Any]] = []
+    for ep in episodes:
+        for p in ep["predictions"]:
+            if p.get("result") not in ("right", "wrong", "ambiguous"):
+                continue
+            qualifies = p.get("role") == "host" or p.get("speaker_confidence") in QUALIFYING_CONFIDENCE
+            if not qualifies:
+                continue
+            recently_settled.append(
+                {**p, "episode_id": ep["episode_id"], "episode_title": ep["title"],
+                 "episode_published": ep.get("published"), "youtube_url": ep.get("youtube_url")}
+            )
+        if len(recently_settled) >= 20:
+            break
+    recently_settled = recently_settled[:20]
+
+    # Full Ledger (§36 item 5): a lightweight, client-filterable index of
+    # every qualifying prediction sitewide. Kept deliberately thin (no quote/
+    # explanation/sources) so the JSON stays small - the full record lives on
+    # the episode page this links to.
+    ledger_entries = []
+    for ep in episodes:
+        year = (ep.get("published_iso") or "")[:4] or None
+        for p in ep["predictions"]:
+            qualifies = p.get("role") == "host" or p.get("speaker_confidence") in QUALIFYING_CONFIDENCE
+            if not qualifies:
+                continue
+            ledger_entries.append(
+                {
+                    "id": p["id"],
+                    "who": p["who"],
+                    "who_display": p["who_display"],
+                    "episode_id": ep["episode_id"],
+                    "episode_title": ep["title"],
+                    "published": ep.get("published"),
+                    "year": year,
+                    "result": p.get("result") or "unvalidated",
+                    "tags": p.get("tags") or [],
+                    "prediction": p.get("prediction") or "",
+                }
+            )
 
     templates_dir = root / "site_src" / "templates"
     env = Environment(
@@ -316,7 +390,7 @@ def render_site(root: Path, out_dir: Path) -> None:
     # root for GitHub Pages "deploy from root"), which also holds source
     # directories (scripts/, data/, config/, site_src/, prompts/, docs/) that
     # must never be touched by a site rebuild.
-    GENERATED_TOP_LEVEL = ["index.html", "about.html", "episodes", "host", "static"]
+    GENERATED_TOP_LEVEL = ["index.html", "about.html", "leaderboard.html", "ledger.html", "episodes", "host", "static"]
     out_dir.mkdir(parents=True, exist_ok=True)
     for name in GENERATED_TOP_LEVEL:
         p = out_dir / name
@@ -339,12 +413,28 @@ def render_site(root: Path, out_dir: Path) -> None:
         env.get_template("index.html").render(
             **common, hosts=hosts_sorted, guests=guests_sorted, episodes=episodes[:6],
             total_episode_count=len(episodes), topics=topics,
+            overall_stats=overall_stats, overall_total_resolved=overall_total_resolved,
+            overall_total_all=overall_total_all, overall_accuracy_pct=overall_accuracy_pct,
+            recently_settled=recently_settled[:8],
         )
     )
 
     (out_dir / "episodes" / "index.html").write_text(
-        env.get_template("episodes_index.html").render(**common, episodes=episodes, asset_prefix="../")
+        env.get_template("episodes_index.html").render(**common, episodes=episodes, years=years, asset_prefix="../")
     )
+
+    (out_dir / "leaderboard.html").write_text(
+        env.get_template("leaderboard.html").render(
+            **common, leaderboard=leaderboard,
+            overall_stats=overall_stats, overall_total_resolved=overall_total_resolved,
+            overall_total_all=overall_total_all, overall_accuracy_pct=overall_accuracy_pct,
+        )
+    )
+
+    (out_dir / "ledger.html").write_text(
+        env.get_template("ledger.html").render(**common, topics=topics, years=years, ledger_count=len(ledger_entries))
+    )
+    (static_dst / "ledger.json").write_text(json.dumps(ledger_entries, ensure_ascii=False))
 
     for ep in episodes:
         (out_dir / "episodes" / f"{ep['episode_id']}.html").write_text(

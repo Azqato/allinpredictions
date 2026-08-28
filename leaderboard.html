@@ -1,0 +1,1911 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leaderboard &middot; All-In Predictions</title>
+  <meta name="description" content="Validating every prediction made on the All-In Podcast, using free tools and Claude." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><strong>ALL IN</strong><span>Predictions</span></a>
+      <nav class="nav">
+        <a href="episodes/index.html">Episodes</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="ledger.html">Ledger</a>
+        <a href="host/index.html">Hosts</a>
+        <a href="about.html">About</a>
+<span class="last-updated">Last updated: 2026-08-28</span>      </nav>
+    </div>
+  </header>
+  <div id="welcome-banner" class="welcome-banner hidden">
+    <div class="container welcome-banner-inner">
+      <p>This is an early, in-progress rewrite: predictions are automatically extracted and validated by LLMs, so there may be inaccuracies, and much of the archive is still unvalidated (shown as "Unvalidated").</p>
+      <button type="button" id="welcome-banner-dismiss">Dismiss</button>
+    </div>
+  </div>
+  <main class="container main">
+<section class="section-head">
+  <h1>Leaderboard</h1>
+  <p class="muted">Every host and guest, ranked by accuracy on resolved (right/wrong) predictions, with the full verdict breakdown for each. Sitewide: 62.5% (1013 right &middot; 609 wrong of 1622 resolved, 3445 total).</p>
+</section>
+
+<div class="table-scroll">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Speaker</th>
+        <th>Accuracy</th>
+        <th>Right</th>
+        <th>Wrong</th>
+        <th>Ambiguous</th>
+        <th>Inconclusive</th>
+        <th>Unvalidated</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="muted">1</td>
+        <td>
+          <a href="host/jared-kushner.html">Jared Kushner</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">5</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">5</td>
+      </tr>
+      <tr>
+        <td class="muted">2</td>
+        <td>
+          <a href="host/nate-silver.html">Nate Silver</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">4</td>
+        <td class="num">0</td>
+        <td class="num">8</td>
+      </tr>
+      <tr>
+        <td class="muted">3</td>
+        <td>
+          <a href="host/marty-makary.html">Marty Makary</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">4</td>
+        <td>
+          <a href="host/dave-ricks.html">Dave Ricks</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">6</td>
+      </tr>
+      <tr>
+        <td class="muted">5</td>
+        <td>
+          <a href="host/david.html">David</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">6</td>
+        <td>
+          <a href="host/sarah-friar.html">Sarah Friar</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">7</td>
+        <td>
+          <a href="host/steve-hilton.html">Steve Hilton</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">8</td>
+        <td>
+          <a href="host/adam-carolla.html">Adam Carolla</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">9</td>
+        <td>
+          <a href="host/rene-haas.html">Rene Haas</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">10</td>
+        <td>
+          <a href="host/keller-rinaudo-cliffton.html">Keller Rinaudo Cliffton</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">11</td>
+        <td>
+          <a href="host/phil-hellmuth.html">Phil Hellmuth</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">12</td>
+        <td>
+          <a href="host/pat-gelsinger.html">Pat Gelsinger</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">13</td>
+        <td>
+          <a href="host/bill-maris.html">Bill Maris</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">14</td>
+        <td>
+          <a href="host/daniel-roberts.html">Daniel Roberts</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">15</td>
+        <td>
+          <a href="host/michael-dell.html">Michael Dell</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">16</td>
+        <td>
+          <a href="host/chase-lochmiller.html">Chase Lochmiller</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">17</td>
+        <td>
+          <a href="host/brian-armstrong.html">Brian Armstrong</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">18</td>
+        <td>
+          <a href="host/bob-sternfels.html">Bob Sternfels</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">19</td>
+        <td>
+          <a href="host/hemant-taneja.html">Hemant Taneja</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">20</td>
+        <td>
+          <a href="host/maria-corina-machado.html">Maria Corina Machado</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">21</td>
+        <td>
+          <a href="host/neal-mohan.html">Neal Mohan</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">22</td>
+        <td>
+          <a href="host/rick-caruso.html">Rick Caruso</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">23</td>
+        <td>
+          <a href="host/eric-schmidt.html">Eric Schmidt</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">24</td>
+        <td>
+          <a href="host/dara-khosrowshahi.html">Dara Khosrowshahi</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+        <td class="num">0</td>
+        <td class="num">5</td>
+      </tr>
+      <tr>
+        <td class="muted">25</td>
+        <td>
+          <a href="host/demis-hassabis.html">Demis Hassabis</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">26</td>
+        <td>
+          <a href="host/ben-shapiro.html">Ben Shapiro</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">4</td>
+        <td class="num">0</td>
+        <td class="num">6</td>
+      </tr>
+      <tr>
+        <td class="muted">27</td>
+        <td>
+          <a href="host/doug-burgum.html">Doug Burgum</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">5</td>
+      </tr>
+      <tr>
+        <td class="muted">28</td>
+        <td>
+          <a href="host/lisa-su.html">Lisa Su</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">29</td>
+        <td>
+          <a href="host/jared-isaacman.html">Jared Isaacman</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">30</td>
+        <td>
+          <a href="host/nico-rosberg.html">Nico Rosberg</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">31</td>
+        <td>
+          <a href="host/ron-johnson.html">Ron Johnson</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">32</td>
+        <td>
+          <a href="host/sergey-brin.html">Sergey Brin</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">33</td>
+        <td>
+          <a href="host/sundar-pichai.html">Sundar Pichai</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">34</td>
+        <td>
+          <a href="host/travis-kalanick.html">Travis Kalanick</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">35</td>
+        <td>
+          <a href="host/john-mearsheimer.html">John Mearsheimer</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">36</td>
+        <td>
+          <a href="host/reid-hoffman.html">Reid Hoffman</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">37</td>
+        <td>
+          <a href="host/nassim-taleb.html">Nassim Taleb</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">38</td>
+        <td>
+          <a href="host/palmer-luckey.html">Palmer Luckey</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">39</td>
+        <td>
+          <a href="host/glenn-greenwald.html">Glenn Greenwald</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">40</td>
+        <td>
+          <a href="host/antonio-garcia-martinez.html">Antonio Garcia Martinez</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>100.0%</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">41</td>
+        <td>
+          <a href="host/jd-vance.html">Jd Vance</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>83.3%</td>
+        <td class="num">5</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">8</td>
+      </tr>
+      <tr>
+        <td class="muted">42</td>
+        <td>
+          <a href="host/keith-rabois.html">Keith Rabois</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>75.0%</td>
+        <td class="num">3</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">7</td>
+      </tr>
+      <tr>
+        <td class="muted">43</td>
+        <td>
+          <a href="host/adena-hefets.html">Adena Hefets</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>75.0%</td>
+        <td class="num">3</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">6</td>
+      </tr>
+      <tr>
+        <td class="muted">44</td>
+        <td>
+          <a href="host/ted-cruz.html">Ted Cruz</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>70.0%</td>
+        <td class="num">7</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">10</td>
+      </tr>
+      <tr>
+        <td class="muted">45</td>
+        <td>
+          <a href="host/friedberg.html">Friedberg</a>
+          <span class="muted">Host</span>
+        </td>
+        <td>66.8%</td>
+        <td class="num">177</td>
+        <td class="num">88</td>
+        <td class="num">136</td>
+        <td class="num">134</td>
+        <td class="num">103</td>
+        <td class="num">638</td>
+      </tr>
+      <tr>
+        <td class="muted">46</td>
+        <td>
+          <a href="host/tucker-carlson.html">Tucker Carlson</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>66.7%</td>
+        <td class="num">4</td>
+        <td class="num">2</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">8</td>
+      </tr>
+      <tr>
+        <td class="muted">47</td>
+        <td>
+          <a href="host/scott-bessent.html">Scott Bessent</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>66.7%</td>
+        <td class="num">2</td>
+        <td class="num">1</td>
+        <td class="num">3</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">9</td>
+      </tr>
+      <tr>
+        <td class="muted">48</td>
+        <td>
+          <a href="host/chris-wright.html">Chris Wright</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>66.7%</td>
+        <td class="num">2</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">6</td>
+      </tr>
+      <tr>
+        <td class="muted">49</td>
+        <td>
+          <a href="host/robert-f-kennedy-jr.html">Robert F Kennedy Jr</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>66.7%</td>
+        <td class="num">2</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">50</td>
+        <td>
+          <a href="host/sacks.html">Sacks</a>
+          <span class="muted">Host</span>
+        </td>
+        <td>66.4%</td>
+        <td class="num">295</td>
+        <td class="num">149</td>
+        <td class="num">180</td>
+        <td class="num">89</td>
+        <td class="num">90</td>
+        <td class="num">803</td>
+      </tr>
+      <tr>
+        <td class="muted">51</td>
+        <td>
+          <a href="host/jason.html">Jason</a>
+          <span class="muted">Host</span>
+        </td>
+        <td>59.9%</td>
+        <td class="num">139</td>
+        <td class="num">93</td>
+        <td class="num">102</td>
+        <td class="num">91</td>
+        <td class="num">76</td>
+        <td class="num">501</td>
+      </tr>
+      <tr>
+        <td class="muted">52</td>
+        <td>
+          <a href="host/chamath.html">Chamath</a>
+          <span class="muted">Host</span>
+        </td>
+        <td>56.7%</td>
+        <td class="num">282</td>
+        <td class="num">215</td>
+        <td class="num">220</td>
+        <td class="num">187</td>
+        <td class="num">132</td>
+        <td class="num">1036</td>
+      </tr>
+      <tr>
+        <td class="muted">53</td>
+        <td>
+          <a href="host/brad-gerstner.html">Brad Gerstner</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>55.6%</td>
+        <td class="num">10</td>
+        <td class="num">8</td>
+        <td class="num">16</td>
+        <td class="num">13</td>
+        <td class="num">0</td>
+        <td class="num">47</td>
+      </tr>
+      <tr>
+        <td class="muted">54</td>
+        <td>
+          <a href="host/gavin-baker.html">Gavin Baker</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>54.5%</td>
+        <td class="num">6</td>
+        <td class="num">5</td>
+        <td class="num">3</td>
+        <td class="num">13</td>
+        <td class="num">4</td>
+        <td class="num">31</td>
+      </tr>
+      <tr>
+        <td class="muted">55</td>
+        <td>
+          <a href="host/donald-trump.html">Donald Trump</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>50.0%</td>
+        <td class="num">5</td>
+        <td class="num">5</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">11</td>
+      </tr>
+      <tr>
+        <td class="muted">56</td>
+        <td>
+          <a href="host/pete-buttigieg.html">Pete Buttigieg</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>50.0%</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">57</td>
+        <td>
+          <a href="host/cyan-banister.html">Cyan Banister</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>50.0%</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">2</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">5</td>
+      </tr>
+      <tr>
+        <td class="muted">58</td>
+        <td>
+          <a href="host/tom-emmer.html">Tom Emmer</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>50.0%</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">59</td>
+        <td>
+          <a href="host/ryan-petersen.html">Ryan Petersen</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>50.0%</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">60</td>
+        <td>
+          <a href="host/chris-christie.html">Chris Christie</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>50.0%</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">61</td>
+        <td>
+          <a href="host/antonio-gracias.html">Antonio Gracias</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>50.0%</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">62</td>
+        <td>
+          <a href="host/elon-musk.html">Elon Musk</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>40.0%</td>
+        <td class="num">2</td>
+        <td class="num">3</td>
+        <td class="num">4</td>
+        <td class="num">9</td>
+        <td class="num">5</td>
+        <td class="num">23</td>
+      </tr>
+      <tr>
+        <td class="muted">63</td>
+        <td>
+          <a href="host/howard-lutnick.html">Howard Lutnick</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>33.3%</td>
+        <td class="num">4</td>
+        <td class="num">8</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">13</td>
+      </tr>
+      <tr>
+        <td class="muted">64</td>
+        <td>
+          <a href="host/balaji-srinivasan.html">Balaji Srinivasan</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>33.3%</td>
+        <td class="num">1</td>
+        <td class="num">2</td>
+        <td class="num">6</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">10</td>
+      </tr>
+      <tr>
+        <td class="muted">65</td>
+        <td>
+          <a href="host/rand-paul.html">Rand Paul</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">66</td>
+        <td>
+          <a href="host/vivek-ramaswamy.html">Vivek Ramaswamy</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">67</td>
+        <td>
+          <a href="host/aaron-cowen.html">Aaron Cowen</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">68</td>
+        <td>
+          <a href="host/dan-dreyfus.html">Dan Dreyfus</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">69</td>
+        <td>
+          <a href="host/kyle-samani.html">Kyle Samani</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">5</td>
+      </tr>
+      <tr>
+        <td class="muted">70</td>
+        <td>
+          <a href="host/spencer-pratt.html">Spencer Pratt</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">71</td>
+        <td>
+          <a href="host/bryan-johnson.html">Bryan Johnson</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">72</td>
+        <td>
+          <a href="host/graham-allison.html">Graham Allison</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">73</td>
+        <td>
+          <a href="host/shervin-pishevar.html">Shervin Pishevar</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">74</td>
+        <td>
+          <a href="host/mehmet-oz.html">Mehmet Oz</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">2</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">5</td>
+      </tr>
+      <tr>
+        <td class="muted">75</td>
+        <td>
+          <a href="host/cathie-wood.html">Cathie Wood</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">5</td>
+        <td class="num">0</td>
+        <td class="num">6</td>
+      </tr>
+      <tr>
+        <td class="muted">76</td>
+        <td>
+          <a href="host/andrew-schulz.html">Andrew Schulz</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">77</td>
+        <td>
+          <a href="host/other.html">Other</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">78</td>
+        <td>
+          <a href="host/francis-suarez.html">Francis Suarez</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>0.0%</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">79</td>
+        <td>
+          <a href="host/michael-kratsios.html">Michael Kratsios</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">5</td>
+        <td class="num">0</td>
+        <td class="num">7</td>
+      </tr>
+      <tr>
+        <td class="muted">80</td>
+        <td>
+          <a href="host/dino-mavrookas.html">Dino Mavrookas</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">81</td>
+        <td>
+          <a href="host/vibhav-altekar.html">Vibhav Altekar</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">82</td>
+        <td>
+          <a href="host/bert-borick.html">Bert Borick</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">83</td>
+        <td>
+          <a href="host/jonathan-hurst.html">Jonathan Hurst</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">84</td>
+        <td>
+          <a href="host/mark-cuban.html">Mark Cuban</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">7</td>
+        <td class="num">0</td>
+        <td class="num">9</td>
+      </tr>
+      <tr>
+        <td class="muted">85</td>
+        <td>
+          <a href="host/mati-staniszewski.html">Mati Staniszewski</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">86</td>
+        <td>
+          <a href="host/andrew-feldman.html">Andrew Feldman</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">1</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">87</td>
+        <td>
+          <a href="host/ryan-cohen.html">Ryan Cohen</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">88</td>
+        <td>
+          <a href="host/oleg-nodelman.html">Oleg Nodelman</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">89</td>
+        <td>
+          <a href="host/dave-mccormick.html">Dave Mccormick</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">90</td>
+        <td>
+          <a href="host/nikesh-arora.html">Nikesh Arora</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">91</td>
+        <td>
+          <a href="host/will-marshall.html">Will Marshall</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">92</td>
+        <td>
+          <a href="host/dan-loeb.html">Dan Loeb</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">93</td>
+        <td>
+          <a href="host/thomas-laffont.html">Thomas Laffont</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">94</td>
+        <td>
+          <a href="host/bill-ackman.html">Bill Ackman</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">95</td>
+        <td>
+          <a href="host/bill-gurley.html">Bill Gurley</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">96</td>
+        <td>
+          <a href="host/josh-shapiro.html">Josh Shapiro</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">97</td>
+        <td>
+          <a href="host/michael-intrader.html">Michael Intrader</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">98</td>
+        <td>
+          <a href="host/arvind-srinivas.html">Arvind Srinivas</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">99</td>
+        <td>
+          <a href="host/matt-mahan.html">Matt Mahan</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">100</td>
+        <td>
+          <a href="host/jensen-huang.html">Jensen Huang</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+        <td class="num">0</td>
+        <td class="num">4</td>
+      </tr>
+      <tr>
+        <td class="muted">101</td>
+        <td>
+          <a href="host/reza-pahlavi.html">Reza Pahlavi</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">102</td>
+        <td>
+          <a href="host/emil-michael.html">Emil Michael</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">103</td>
+        <td>
+          <a href="host/michael-tracey.html">Michael Tracey</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">104</td>
+        <td>
+          <a href="host/adam-goldstein.html">Adam Goldstein</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">105</td>
+        <td>
+          <a href="host/george-kurtz.html">George Kurtz</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">106</td>
+        <td>
+          <a href="host/jake-loosararian.html">Jake Loosararian</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">107</td>
+        <td>
+          <a href="host/david-sacks.html">David Sacks</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">108</td>
+        <td>
+          <a href="host/tareq-amin.html">Tareq Amin</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">109</td>
+        <td>
+          <a href="host/john-martinis.html">John Martinis</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">110</td>
+        <td>
+          <a href="host/jan-sramek.html">Jan Sramek</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">111</td>
+        <td>
+          <a href="host/andrew-ross-sorkin.html">Andrew Ross Sorkin</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">112</td>
+        <td>
+          <a href="host/joe-tsai.html">Joe Tsai</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">113</td>
+        <td>
+          <a href="host/anatoly-yakovenko.html">Anatoly Yakovenko</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">114</td>
+        <td>
+          <a href="host/rich-lyons.html">Rich Lyons</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">115</td>
+        <td>
+          <a href="host/vlad-tenev.html">Vlad Tenev</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">116</td>
+        <td>
+          <a href="host/eric-schmitt.html">Eric Schmitt</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">117</td>
+        <td>
+          <a href="host/james-litinsky.html">James Litinsky</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">118</td>
+        <td>
+          <a href="host/chris-power.html">Chris Power</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">119</td>
+        <td>
+          <a href="host/paul-buchheit.html">Paul Buchheit</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">120</td>
+        <td>
+          <a href="host/bo-hines.html">Bo Hines</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">121</td>
+        <td>
+          <a href="host/bill-hagerty.html">Bill Hagerty</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">122</td>
+        <td>
+          <a href="host/tony-robbins.html">Tony Robbins</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">123</td>
+        <td>
+          <a href="host/philippe-laffont.html">Philippe Laffont</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">124</td>
+        <td>
+          <a href="host/brooke-rollins.html">Brooke Rollins</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">125</td>
+        <td>
+          <a href="host/larry-summers.html">Larry Summers</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+      </tr>
+      <tr>
+        <td class="muted">126</td>
+        <td>
+          <a href="host/chris-williamson.html">Chris Williamson</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">127</td>
+        <td>
+          <a href="host/joe-lonsdale.html">Joe Lonsdale</a>
+          <span class="muted">Guest</span>
+        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">2</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">3</td>
+      </tr>
+      <tr>
+        <td class="muted">128</td>
+        <td>
+          <a href="host/aaron-levie.html">Aaron Levie</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">129</td>
+        <td>
+          <a href="host/jeffrey-sachs.html">Jeffrey Sachs</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">130</td>
+        <td>
+          <a href="host/jim-litinsky.html">Jim Litinsky</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">131</td>
+        <td>
+          <a href="host/mar-hershenson.html">Mar Hershenson</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+      <tr>
+        <td class="muted">132</td>
+        <td>
+          <a href="host/draymond-green.html">Draymond Green</a>
+          <span class="muted">Guest</span>
+<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>        </td>
+        <td>&mdash;</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+        <td class="num">0</td>
+        <td class="num">1</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Unofficial project; data is generated using free tools (YouTube captions) and Claude (extraction, speaker attribution, and web-search validation), with no OpenAI, xAI, or paid ASR involved. It is best-effort and may contain errors, omissions, or misattributions, especially in speaker attribution, which relies on transcript context rather than voice matching.</p>
+    </div>
+  </footer>
+  <script src="static/app.js"></script>
+</body>
+</html>

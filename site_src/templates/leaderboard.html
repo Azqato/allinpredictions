@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Leaderboard &middot; {{ site_title }}{% endblock %}
+{% block content %}
+<section class="section-head">
+  <h1>Leaderboard</h1>
+  <p class="muted">Every host and guest, ranked by accuracy on resolved (right/wrong) predictions, with the full verdict breakdown for each. Sitewide: {{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% endif %} ({{ overall_stats.right }} right &middot; {{ overall_stats.wrong }} wrong of {{ overall_total_resolved }} resolved, {{ overall_total_all }} total).</p>
+</section>
+
+<div class="table-scroll">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Speaker</th>
+        <th>Accuracy</th>
+        <th>Right</th>
+        <th>Wrong</th>
+        <th>Ambiguous</th>
+        <th>Inconclusive</th>
+        <th>Unvalidated</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for s in leaderboard %}
+      <tr>
+        <td class="muted">{{ loop.index }}</td>
+        <td>
+          <a href="host/{{ s.who }}.html">{{ s.who_display }}</a>
+          <span class="muted">{{ "Host" if s.role == "host" else "Guest" }}</span>
+          {% if s.small_sample %}<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>{% endif %}
+        </td>
+        <td>{% if s.accuracy_pct is not none %}{{ s.accuracy_pct }}%{% else %}&mdash;{% endif %}</td>
+        <td class="num">{{ s.stats.right }}</td>
+        <td class="num">{{ s.stats.wrong }}</td>
+        <td class="num">{{ s.stats.ambiguous }}</td>
+        <td class="num">{{ s.stats.inconclusive }}</td>
+        <td class="num">{{ s.stats.unvalidated }}</td>
+        <td class="num">{{ s.total_all }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

@@ -1,8 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
+<section class="section-head">
+  <div class="flex-between">
+    <div>
+      <h1>{{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% else %}&mdash;{% endif %} accuracy sitewide</h1>
+      <p class="muted">{{ overall_stats.right }} right &middot; {{ overall_stats.wrong }} wrong out of {{ overall_total_resolved }} resolved ({{ overall_total_all }} total qualifying predictions). <a href="leaderboard.html">See the full leaderboard &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="section-head">
-    <h1>Host Accuracy</h1>
+    <h2>Host Accuracy</h2>
     <p class="muted">Percentage of resolved predictions (right vs. wrong).</p>
   </div>
   <div class="chart-controls">
@@ -61,6 +70,27 @@
   </div>
   {% endif %}
 </section>
+
+{% if recently_settled %}
+<section class="section-head" style="margin-top:2.5rem;">
+  <div class="flex-between">
+    <h2>Recently Settled</h2>
+    <a href="ledger.html">Browse the full ledger &rarr;</a>
+  </div>
+  <div class="grid grid-2" style="margin-top:1rem;">
+    {% for p in recently_settled %}
+    <a class="card prediction-card" href="episodes/{{ p.episode_id }}.html#{{ p.id }}">
+      <div class="flex-between">
+        <span class="who-badge">{{ p.who_display }}</span>
+        <span class="badge badge-{{ p.result }}">{{ p.result|capitalize }}</span>
+      </div>
+      <p style="margin:.5rem 0;">{{ p.prediction }}</p>
+      <div class="muted">{{ p.episode_title }} &middot; {{ p.episode_published or "Unknown date" }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 
 <section class="section-head" style="margin-top:2.5rem;">
   <div class="flex-between">

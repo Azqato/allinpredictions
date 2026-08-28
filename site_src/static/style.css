@@ -298,6 +298,23 @@ h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
 .segmented button + button { border-left: 1px solid var(--border); }
 .segmented button.active { background: rgba(255,255,255,.08); color: var(--fg); }
 
+.table-scroll { overflow-x: auto; margin-top: 1rem; }
+.data-table { width: 100%; border-collapse: collapse; font-size: .875rem; white-space: nowrap; }
+.data-table th, .data-table td { padding: .5rem .75rem; border-bottom: 1px solid var(--border); text-align: left; }
+.data-table th { color: var(--muted); font-weight: 600; font-size: .75rem; text-transform: uppercase; letter-spacing: .03em; }
+.data-table td.num, .data-table th:nth-child(n+3) { text-align: right; }
+.data-table tbody tr:hover { background: rgba(255,255,255,.03); }
+
+input[type="search"] {
+  background: var(--card-bg);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: .25rem;
+  padding: .35rem .5rem;
+  font-size: .875rem;
+  min-width: 14rem;
+}
+
 .stacked-bars { display: flex; flex-direction: column; gap: .5rem; width: 100%; }
 .stacked-bar-row { display: flex; flex-direction: column; gap: .2rem; }
 .stacked-bar-label { font-size: .8rem; }

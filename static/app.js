@@ -200,6 +200,118 @@
     });
   }
 
+  function setupEpisodeYearFilter() {
+    var select = document.getElementById("episode-year-filter");
+    var grid = document.getElementById("episode-grid");
+    var countEl = document.getElementById("episode-year-count");
+    if (!select || !grid) return;
+    var cards = grid.querySelectorAll(".episode-card");
+
+    function render() {
+      var year = select.value;
+      var shown = 0;
+      cards.forEach(function (card) {
+        var match = !year || card.getAttribute("data-year") === year;
+        card.style.display = match ? "" : "none";
+        if (match) shown++;
+      });
+      if (countEl) {
+        if (year) {
+          countEl.style.display = "";
+          countEl.textContent = shown + " episode" + (shown === 1 ? "" : "s") + " in " + year;
+        } else {
+          countEl.style.display = "none";
+        }
+      }
+    }
+
+    select.addEventListener("change", render);
+    render();
+  }
+
+  function setupLedgerPage() {
+    var container = document.getElementById("ledger-results");
+    if (!container) return;
+    var src = container.getAttribute("data-src");
+    var searchInput = document.getElementById("ledger-search");
+    var yearFilter = document.getElementById("ledger-year-filter");
+    var topicFilter = document.getElementById("ledger-topic-filter");
+    var resultFilter = document.getElementById("ledger-result-filter");
+    var countEl = document.getElementById("ledger-count");
+    var PAGE_SIZE = 50;
+    var shownCount = PAGE_SIZE;
+    var entries = [];
+
+    function escapeHtml(s) {
+      var div = document.createElement("div");
+      div.textContent = s == null ? "" : String(s);
+      return div.innerHTML;
+    }
+
+    function matches(e, q, year, topic, result) {
+      if (year && e.year !== year) return false;
+      if (result && e.result !== result) return false;
+      if (topic && (e.tags || []).indexOf(topic) === -1) return false;
+      if (q && (e.prediction || "").toLowerCase().indexOf(q) === -1 &&
+        (e.who_display || "").toLowerCase().indexOf(q) === -1 &&
+        (e.episode_title || "").toLowerCase().indexOf(q) === -1) return false;
+      return true;
+    }
+
+    function render() {
+      var q = (searchInput.value || "").trim().toLowerCase();
+      var year = yearFilter.value;
+      var topic = topicFilter.value;
+      var result = resultFilter.value;
+      var filtered = entries.filter(function (e) { return matches(e, q, year, topic, result); });
+
+      if (countEl) countEl.textContent = filtered.length + " prediction" + (filtered.length === 1 ? "" : "s");
+
+      var page = filtered.slice(0, shownCount);
+      var html = page.map(function (e) {
+        return '<a class="card prediction-card" href="episodes/' + e.episode_id + '.html#' + e.id + '">' +
+          '<div class="flex-between">' +
+          '<span class="who-badge">' + escapeHtml(e.who_display) + '</span>' +
+          '<span class="badge badge-' + e.result + '">' + escapeHtml(e.result.charAt(0).toUpperCase() + e.result.slice(1)) + '</span>' +
+          '</div>' +
+          '<p style="margin:.5rem 0;">' + escapeHtml(e.prediction) + '</p>' +
+          '<div class="muted">' + escapeHtml(e.episode_title) + (e.published ? ' &middot; ' + escapeHtml(e.published) : '') + '</div>' +
+          '</a>';
+      }).join("");
+
+      if (filtered.length > shownCount) {
+        html += '<button type="button" id="ledger-load-more" class="segmented" style="padding:.5rem 1rem;">Load more (' +
+          (filtered.length - shownCount) + ' remaining)</button>';
+      }
+      container.innerHTML = html || '<p class="muted">No predictions match this filter.</p>';
+
+      var loadMore = document.getElementById("ledger-load-more");
+      if (loadMore) {
+        loadMore.addEventListener("click", function () {
+          shownCount += PAGE_SIZE;
+          render();
+        });
+      }
+    }
+
+    function onFilterChange() {
+      shownCount = PAGE_SIZE;
+      render();
+    }
+
+    fetch(src).then(function (resp) { return resp.json(); }).then(function (data) {
+      entries = data || [];
+      render();
+    }).catch(function () {
+      container.innerHTML = '<p class="muted">Could not load the ledger data.</p>';
+    });
+
+    searchInput.addEventListener("input", onFilterChange);
+    yearFilter.addEventListener("change", onFilterChange);
+    topicFilter.addEventListener("change", onFilterChange);
+    resultFilter.addEventListener("change", onFilterChange);
+  }
+
   function setupWelcomeBanner() {
     var STORAGE_KEY = "predict_welcome_banner_dismissed";
     var banner = document.getElementById("welcome-banner");
@@ -219,6 +331,8 @@
   document.addEventListener("DOMContentLoaded", function () {
     setupYoutubeWarning();
     setupHomeCharts();
+    setupEpisodeYearFilter();
+    setupLedgerPage();
     setupWelcomeBanner();
   });
 })();

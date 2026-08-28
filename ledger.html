@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Full Ledger &middot; All-In Predictions</title>
+  <meta name="description" content="Validating every prediction made on the All-In Podcast, using free tools and Claude." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><strong>ALL IN</strong><span>Predictions</span></a>
+      <nav class="nav">
+        <a href="episodes/index.html">Episodes</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="ledger.html">Ledger</a>
+        <a href="host/index.html">Hosts</a>
+        <a href="about.html">About</a>
+<span class="last-updated">Last updated: 2026-08-28</span>      </nav>
+    </div>
+  </header>
+  <div id="welcome-banner" class="welcome-banner hidden">
+    <div class="container welcome-banner-inner">
+      <p>This is an early, in-progress rewrite: predictions are automatically extracted and validated by LLMs, so there may be inaccuracies, and much of the archive is still unvalidated (shown as "Unvalidated").</p>
+      <button type="button" id="welcome-banner-dismiss">Dismiss</button>
+    </div>
+  </div>
+  <main class="container main">
+<section class="section-head">
+  <h1>Full Ledger</h1>
+  <p class="muted">Every confidently-attributed prediction sitewide (3453 total). Filter and search below.</p>
+</section>
+
+<div class="chart-controls">
+  <input type="search" id="ledger-search" placeholder="Search predictions&hellip;" aria-label="Search predictions" />
+  <select id="ledger-year-filter" aria-label="Filter by year">
+    <option value="">All years</option>
+    <option value="2026">2026</option>
+    <option value="2025">2025</option>
+    <option value="2024">2024</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+  </select>
+  <select id="ledger-topic-filter" aria-label="Filter by topic">
+    <option value="">All topics</option>
+    <option value="2026-election">2026-election</option>
+    <option value="2028-election">2028-election</option>
+    <option value="ai">Ai</option>
+    <option value="ai-policy">Ai-policy</option>
+    <option value="autonomous-vehicles">Autonomous-vehicles</option>
+    <option value="business">Business</option>
+    <option value="china">China</option>
+    <option value="climate">Climate</option>
+    <option value="conflict">Conflict</option>
+    <option value="economy">Economy</option>
+    <option value="finance">Finance</option>
+    <option value="geopolitics">Geopolitics</option>
+    <option value="government">Government</option>
+    <option value="health">Health</option>
+    <option value="markets">Markets</option>
+    <option value="meta">Meta</option>
+    <option value="midterms">Midterms</option>
+    <option value="open-source">Open-source</option>
+    <option value="politics">Politics</option>
+    <option value="regulation">Regulation</option>
+    <option value="science">Science</option>
+    <option value="socialism">Socialism</option>
+    <option value="spacex">Spacex</option>
+    <option value="starlink">Starlink</option>
+    <option value="tech">Tech</option>
+    <option value="technology">Technology</option>
+    <option value="valuation">Valuation</option>
+    <option value="venture">Venture</option>
+    <option value="waymo">Waymo</option>
+    <option value="world">World</option>
+    <option value="zuckerberg">Zuckerberg</option>
+  </select>
+  <select id="ledger-result-filter" aria-label="Filter by result">
+    <option value="">All results</option>
+    <option value="right">Right</option>
+    <option value="wrong">Wrong</option>
+    <option value="ambiguous">Ambiguous</option>
+    <option value="inconclusive">Inconclusive</option>
+    <option value="unvalidated">Unvalidated</option>
+  </select>
+</div>
+
+<p class="muted" id="ledger-count"></p>
+<div class="predictions" id="ledger-results" data-src="static/ledger.json"></div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Unofficial project; data is generated using free tools (YouTube captions) and Claude (extraction, speaker attribution, and web-search validation), with no OpenAI, xAI, or paid ASR involved. It is best-effort and may contain errors, omissions, or misattributions, especially in speaker attribution, which relies on transcript context rather than voice matching.</p>
+    </div>
+  </footer>
+  <script src="static/app.js"></script>
+</body>
+</html>

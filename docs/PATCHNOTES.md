@@ -2,6 +2,15 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.47.0 (2026-08-27)
+
+### Added
+- Shipped item 2 of the approved post-backlog development plan (PRD §19): the batched leaderboard/ledger/filter items, all reading off the speaker-index data `generate_site.py` already computed. New sitewide headline stat on the home page (accuracy %, right/wrong/resolved/total counts, computed by summing every speaker's qualifying-prediction bucket). New "Recently Settled" section on the home page: the 8 most-recently-resolved qualifying predictions (right/wrong/ambiguous), newest episode first, linking to the source episode's deep-linked prediction card.
+- New `leaderboard.html` page: a single ranked table combining the accuracy leaderboard, host-vs-guest comparison (§34), and full per-speaker verdict-count breakdown (right/wrong/ambiguous/inconclusive/unvalidated, not just right/wrong) for all 132 hosts and guests, sorted by accuracy % (unranked speakers sort last), with a small-sample flag for guests under 3 tracked predictions.
+- New `ledger.html` page: a client-side searchable/filterable browse of every one of the 3453 qualifying predictions sitewide (search text, year, topic, result), backed by a new `static/ledger.json` data file (deliberately thin per-record - no quote/explanation - to keep payload size down) fetched and rendered client-side with a "load more" pager (50 at a time).
+- Added a year filter dropdown to the Episodes index page (§17), client-side, reusing the existing show/hide filter pattern from the home page's topic filter.
+- Added "Leaderboard" and "Ledger" links to the site nav (now `Episodes | Leaderboard | Ledger | Hosts | About`).
+
 ## v0.46.0 (2026-08-27)
 
 ### Fixed

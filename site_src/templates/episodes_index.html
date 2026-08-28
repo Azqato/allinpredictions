@@ -1,11 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 <section>
-  <h1>Episodes</h1>
-  <p class="muted">{{ episodes|length }} episode{{ '' if episodes|length == 1 else 's' }} processed so far (out of the full All-In archive).</p>
-  <div class="grid grid-2" style="margin-top:1rem;">
+  <div class="flex-between">
+    <div>
+      <h1>Episodes</h1>
+      <p class="muted">{{ episodes|length }} episode{{ '' if episodes|length == 1 else 's' }} processed so far (out of the full All-In archive).</p>
+    </div>
+    {% if years %}
+    <select id="episode-year-filter" aria-label="Filter by year">
+      <option value="">All years</option>
+      {% for y in years %}
+      <option value="{{ y }}">{{ y }}</option>
+      {% endfor %}
+    </select>
+    {% endif %}
+  </div>
+  <p class="muted" id="episode-year-count" style="display:none;"></p>
+  <div class="grid grid-2" style="margin-top:1rem;" id="episode-grid">
     {% for ep in episodes %}
-    <a class="card episode-card" href="{{ ep.episode_id }}.html">
+    <a class="card episode-card" href="{{ ep.episode_id }}.html" data-year="{{ (ep.published_iso or '')[:4] }}">
       <div class="episode-title">{{ ep.title }}</div>
       <div class="muted">{{ ep.published or "Unknown date" }}</div>
       <div class="muted" style="margin-top:.5rem;">Predictions: {{ ep.predictions|length }}</div>
