@@ -19,7 +19,7 @@
     <select id="topic-filter" aria-label="Filter by topic">
       <option value="">All topics</option>
       {% for t in topics %}
-      <option value="{{ t }}">{{ t|capitalize }}</option>
+      <option value="{{ t }}">{{ t|tag_display }}</option>
       {% endfor %}
     </select>
     <div class="segmented" id="view-toggle" role="tablist" aria-label="Chart view">

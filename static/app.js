@@ -50,6 +50,16 @@
   var RESOLVED_KEYS = ["right", "wrong"];
   var ALL_KEYS = ["right", "wrong", "ambiguous", "inconclusive"];
 
+  // Keep in sync with TAG_DISPLAY_OVERRIDES in scripts/generate_site.py.
+  var TAG_DISPLAY_OVERRIDES = { "ai": "AI", "ipo": "IPO" };
+  function tagDisplay(tag) {
+    if (Object.prototype.hasOwnProperty.call(TAG_DISPLAY_OVERRIDES, tag)) return TAG_DISPLAY_OVERRIDES[tag];
+    return tag.split("-").map(function (word) {
+      if (Object.prototype.hasOwnProperty.call(TAG_DISPLAY_OVERRIDES, word)) return TAG_DISPLAY_OVERRIDES[word];
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    }).join(" ");
+  }
+
   function emptyBucket() {
     return { right: 0, wrong: 0, ambiguous: 0, inconclusive: 0, unvalidated: 0 };
   }
@@ -179,7 +189,7 @@
           });
         });
         var groupList = Object.keys(groups).sort().map(function (label) {
-          return { label: groupKey === "topic" ? label.charAt(0).toUpperCase() + label.slice(1) : label, bucket: groups[label] };
+          return { label: state.view === "topic" ? tagDisplay(label) : label, bucket: groups[label] };
         });
         d.chartArea.innerHTML = stackedBarsHtml(groupList, keys);
       });

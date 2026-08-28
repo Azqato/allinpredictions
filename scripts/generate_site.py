@@ -35,6 +35,23 @@ QUALIFYING_CONFIDENCE = {"high", "medium"}
 VALID_CHECK_RESULTS = {"right", "wrong", "ambiguous", "inconclusive"}
 BAD_WHO_VALUES = {"unknown", "n/a", "none", "null", ""}
 
+# Tag slugs whose correct display casing isn't plain title-case (acronyms,
+# stylized brand names, leading-digit names). Anything not listed here falls
+# back to splitting on "-" and title-casing each word, e.g.
+# "autonomous-vehicles" -> "Autonomous Vehicles".
+TAG_DISPLAY_OVERRIDES = {
+    "ai": "AI",
+    "ipo": "IPO",
+}
+
+
+def tag_display(tag: str) -> str:
+    if tag in TAG_DISPLAY_OVERRIDES:
+        return TAG_DISPLAY_OVERRIDES[tag]
+    return " ".join(
+        TAG_DISPLAY_OVERRIDES.get(word, word.capitalize()) for word in tag.split("-")
+    )
+
 
 def levenshtein(a: str, b: str) -> int:
     if a == b:
@@ -325,9 +342,18 @@ def render_site(root: Path, out_dir: Path) -> None:
         key=lambda s: (-s["stats"]["right"], s["accuracy_pct"] is None, -(s["accuracy_pct"] or 0)),
     )
 
-    # All topic tags appearing on any host's qualifying predictions, for the
-    # home page topic filter dropdown (§27).
-    topics = sorted({tag for s in hosts_sorted for e in s["chart_entries"] for tag in e["tags"]})
+    # Topic tags appearing on any HOST's qualifying predictions, for the home
+    # page topic filter (§27) -- scoped to hosts because that's all the home
+    # page's scorecards actually filter; a guest-only tag would just zero
+    # out every card if offered there.
+    host_topics = sorted({tag for s in hosts_sorted for e in s["chart_entries"] for tag in e["tags"]})
+
+    # Every topic tag appearing on ANY qualifying prediction sitewide (host
+    # or guest), for the Full Ledger filter (§36), which browses all of them.
+    # Using host_topics here was the bug: dozens of guest-only tags (spacex,
+    # openai, robotics, etc.) were silently missing from the ledger's filter
+    # even though the ledger itself includes those predictions.
+    all_topics = sorted({tag for s in speakers.values() for e in s["chart_entries"] for tag in e["tags"]})
 
     # Distinct years with at least one episode, newest first, for the
     # Annual Predictions episode filter (§17) and the Full Ledger filter.
@@ -399,6 +425,7 @@ def render_site(root: Path, out_dir: Path) -> None:
         trim_blocks=True,
         lstrip_blocks=True,
     )
+    env.filters["tag_display"] = tag_display
 
     # Only clean the specific generated paths -- out_dir may be the rewrite/
     # root itself (so the site's index.html etc. sit at the eventual repo
@@ -427,7 +454,7 @@ def render_site(root: Path, out_dir: Path) -> None:
     (out_dir / "index.html").write_text(
         env.get_template("index.html").render(
             **common, hosts=hosts_sorted, guests=guests_sorted, episodes=episodes[:6],
-            total_episode_count=len(episodes), topics=topics,
+            total_episode_count=len(episodes), topics=host_topics,
             overall_stats=overall_stats, overall_total_resolved=overall_total_resolved,
             overall_total_all=overall_total_all, overall_accuracy_pct=overall_accuracy_pct,
             overall_pct_all=overall_pct_all, overall_pct_resolved=overall_pct_resolved,
@@ -449,7 +476,7 @@ def render_site(root: Path, out_dir: Path) -> None:
     )
 
     (out_dir / "ledger.html").write_text(
-        env.get_template("ledger.html").render(**common, topics=topics, years=years, ledger_count=len(ledger_entries))
+        env.get_template("ledger.html").render(**common, topics=all_topics, years=years, ledger_count=len(ledger_entries))
     )
     (static_dst / "ledger.json").write_text(json.dumps(ledger_entries, ensure_ascii=False))
 

@@ -17,7 +17,7 @@
   <select id="ledger-topic-filter" aria-label="Filter by topic">
     <option value="">All topics</option>
     {% for t in topics %}
-    <option value="{{ t }}">{{ t|capitalize }}</option>
+    <option value="{{ t }}">{{ t|tag_display }}</option>
     {% endfor %}
   </select>
   <select id="ledger-result-filter" aria-label="Filter by result">

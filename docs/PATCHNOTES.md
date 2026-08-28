@@ -2,6 +2,26 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.48.0 (2026-08-27)
+
+### Added
+- Added percentages to every prediction-accuracy breakdown sitewide (home page headline stat, per-host scorecards, host/guest pages, leaderboard) via a new `pct_bucket()` helper, mirrored client-side in `app.js` so filtered/re-rendered legends stay consistent (e.g. "3 (37.5%)" instead of a bare count); zero-count cells omit a redundant "(0.0%)".
+
+## v0.49.0 (2026-08-27)
+
+### Changed
+- Changed the leaderboard's default sort from accuracy % to sheer number of right predictions (`stats.right` descending, accuracy % as tiebreak), per user request. Every column remains click-to-sort; accuracy is still available, just no longer the default.
+
+## v0.50.0 (2026-08-27)
+
+### Fixed
+- Fixed the topic filter dropdowns (home page, Full Ledger): the home page's topic list was silently scoped to only host predictions, so ~40 guest-only tags (spacex, openai, robotics, etc.) never appeared as filter options on the Ledger even though the Ledger displays those predictions. Now the Ledger gets its own `all_topics` list computed across every speaker (host + guest), while the home page correctly keeps its host-scoped list (it only filters host scorecards, so a guest-only option would just zero out every card).
+- Fixed topic label casing: the `|capitalize` Jinja filter was mangling multi-word/acronym tags ("ai" -> "Ai", "spacex" -> "Spacex", "ai-policy" -> "Ai-policy"). New `tag_display()` filter (Python) + `tagDisplay()` (JS, kept in sync) special-cases acronyms/brands and title-cases hyphenated compound tags word-by-word ("open-source" -> "Open Source").
+- Fixed dead code in `app.js`'s "By Topic" chart view: the stacked-bar group labels were never actually capitalized because the code checked `groupKey === "topic"`, but `groupKey` is only ever `"year"` or `"tags"` — the correct flag is `state.view === "topic"`. Now uses the new `tagDisplay()` for consistent casing.
+
+### Changed
+- Consolidated the tag taxonomy from 72 distinct tags down to 30 general themes, per user request ("each tag should be a general theme, not that specific - individual company names shouldn't be a tag"). Retagged 49 predictions across 16 episode files: merged company/product names into their domain (anthropic/openai/xai/grok/meta -> ai; spacex/starlink -> space; waymo -> autonomous-vehicles; google/technology/big-tech/hardware -> tech; saronic/1x/agility-robotics/nasa -> dropped, redundant with a co-occurring general tag), dropped person names (zuckerberg, elon-musk, aoc - redundant with co-occurring topic tags), merged single-material tags into the "commodities" umbrella (copper, silver, critical-minerals), merged narrow subtopics into their nearest general theme (regulation -> policy, foreign-policy/world -> geopolitics, quantum-computing -> science, fusion -> energy, cybersecurity/hard-takeoff/humanoid -> ai/robotics, jobs/supply-chain/growth -> economy, house/senate -> dropped, redundant with co-occurring "midterms"), and collapsed year-specific election tags (2026-election, 2028-election, bare "2028") into a single "elections" tag (the Ledger's separate Year filter already covers the year dimension). Verified every merge against the actual prediction text before mapping; no prediction was left with an empty tag list.
+
 ## v0.47.0 (2026-08-27)
 
 ### Added
