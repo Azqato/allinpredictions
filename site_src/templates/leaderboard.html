@@ -3,7 +3,7 @@
 {% block content %}
 <section class="section-head">
   <h1>Leaderboard</h1>
-  <p class="muted">Every host and guest, ranked by accuracy on resolved (right/wrong) predictions, with the full verdict breakdown for each. Sitewide: {{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% endif %} ({{ overall_stats.right }} right &middot; {{ overall_stats.wrong }} wrong of {{ overall_total_resolved }} resolved, {{ overall_total_all }} total).</p>
+  <p class="muted">Every host and guest, ranked by accuracy on resolved (right/wrong) predictions, with the full verdict breakdown for each (counts and % of that speaker's total predictions). Sitewide: {{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% endif %} ({{ overall_stats.right }} right ({{ overall_pct_all.right }}%) &middot; {{ overall_stats.wrong }} wrong ({{ overall_pct_all.wrong }}%) of {{ overall_total_resolved }} resolved, {{ overall_total_all }} total).</p>
 </section>
 
 <div class="table-scroll">
@@ -31,11 +31,9 @@
           {% if s.small_sample %}<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>{% endif %}
         </td>
         <td>{% if s.accuracy_pct is not none %}{{ s.accuracy_pct }}%{% else %}&mdash;{% endif %}</td>
-        <td class="num">{{ s.stats.right }}</td>
-        <td class="num">{{ s.stats.wrong }}</td>
-        <td class="num">{{ s.stats.ambiguous }}</td>
-        <td class="num">{{ s.stats.inconclusive }}</td>
-        <td class="num">{{ s.stats.unvalidated }}</td>
+        {% for key in ["right", "wrong", "ambiguous", "inconclusive", "unvalidated"] %}
+        <td class="num">{{ s.stats[key] }}{% if s.stats[key] and s.pct_all[key] is not none %} <span class="muted">({{ s.pct_all[key] }}%)</span>{% endif %}</td>
+        {% endfor %}
         <td class="num">{{ s.total_all }}</td>
       </tr>
       {% endfor %}

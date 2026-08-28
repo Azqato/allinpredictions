@@ -106,11 +106,14 @@
   }
 
   function legendHtml(bucket, keys) {
+    var total = keys.reduce(function (sum, k) { return sum + (bucket[k] || 0); }, 0);
     var html = '<table class="legend"><tbody>';
     keys.forEach(function (key) {
+      var val = bucket[key] || 0;
+      var pct = val > 0 && total > 0 ? ' <span class="muted">(' + ((val / total) * 100).toFixed(1) + '%)</span>' : '';
       html += "<tr><td><span class=\"dot dot-" + key + "\"></span>" +
         key.charAt(0).toUpperCase() + key.slice(1) + "</td><td class=\"num\">" +
-        (bucket[key] || 0) + "</td></tr>";
+        val + pct + "</td></tr>";
     });
     html += "</tbody></table>";
     return html;

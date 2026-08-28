@@ -191,6 +191,15 @@ def bump(bucket: Dict[str, int], result: Optional[str]) -> None:
     bucket[result or "unvalidated"] = bucket.get(result or "unvalidated", 0) + 1
 
 
+def pct_bucket(bucket: Dict[str, int], denom: int) -> Dict[str, Optional[float]]:
+    """Each key's count as a percentage of `denom`, rounded to 1 decimal.
+    None (not 0) when denom is 0, so templates can render an em dash instead
+    of a misleading "0%"."""
+    if not denom:
+        return {k: None for k in bucket}
+    return {k: round(100 * v / denom, 1) for k, v in bucket.items()}
+
+
 def build_speaker_index(episodes: List[Dict[str, Any]], permanent_hosts: List[str]) -> Dict[str, Dict[str, Any]]:
     """One entry per speaker (host or guest) who qualifies for a scorecard."""
     speakers: Dict[str, Dict[str, Any]] = {}
@@ -293,6 +302,10 @@ def render_site(root: Path, out_dir: Path) -> None:
             round(100 * s["stats"]["right"] / s["total_resolved"], 1) if s["total_resolved"] else None
         )
         s["small_sample"] = s["role"] == "guest" and s["total_all"] < 3
+        # Per-key percentage-of-total breakdowns, for showing "N (P%)" next to
+        # each verdict count rather than raw counts alone.
+        s["pct_all"] = pct_bucket(s["stats"], s["total_all"])
+        s["pct_resolved"] = pct_bucket(s["stats"], s["total_resolved"])
 
     hosts_sorted = sorted(
         (s for s in speakers.values() if s["role"] == "host"),
@@ -332,6 +345,8 @@ def render_site(root: Path, out_dir: Path) -> None:
     overall_accuracy_pct = (
         round(100 * overall_stats["right"] / overall_total_resolved, 1) if overall_total_resolved else None
     )
+    overall_pct_all = pct_bucket(overall_stats, overall_total_all)
+    overall_pct_resolved = pct_bucket(overall_stats, overall_total_resolved)
 
     # "Recently settled" feed (§36 item 6): the most recent qualifying
     # predictions with a resolved-ish verdict, newest episode first.
@@ -415,6 +430,7 @@ def render_site(root: Path, out_dir: Path) -> None:
             total_episode_count=len(episodes), topics=topics,
             overall_stats=overall_stats, overall_total_resolved=overall_total_resolved,
             overall_total_all=overall_total_all, overall_accuracy_pct=overall_accuracy_pct,
+            overall_pct_all=overall_pct_all, overall_pct_resolved=overall_pct_resolved,
             recently_settled=recently_settled[:8],
         )
     )
@@ -428,6 +444,7 @@ def render_site(root: Path, out_dir: Path) -> None:
             **common, leaderboard=leaderboard,
             overall_stats=overall_stats, overall_total_resolved=overall_total_resolved,
             overall_total_all=overall_total_all, overall_accuracy_pct=overall_accuracy_pct,
+            overall_pct_all=overall_pct_all, overall_pct_resolved=overall_pct_resolved,
         )
     )
 

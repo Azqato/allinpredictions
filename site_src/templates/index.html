@@ -4,7 +4,7 @@
   <div class="flex-between">
     <div>
       <h1>{{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% else %}&mdash;{% endif %} accuracy sitewide</h1>
-      <p class="muted">{{ overall_stats.right }} right &middot; {{ overall_stats.wrong }} wrong out of {{ overall_total_resolved }} resolved ({{ overall_total_all }} total qualifying predictions). <a href="leaderboard.html">See the full leaderboard &rarr;</a></p>
+      <p class="muted">{{ overall_stats.right }} right ({{ overall_pct_resolved.right }}%) &middot; {{ overall_stats.wrong }} wrong ({{ overall_pct_resolved.wrong }}%) out of {{ overall_total_resolved }} resolved ({{ overall_total_all }} total qualifying predictions). <a href="leaderboard.html">See the full leaderboard &rarr;</a></p>
     </div>
   </div>
 </section>
@@ -44,7 +44,7 @@
             {% for key in ["right", "wrong"] %}
             <tr>
               <td><span class="dot dot-{{ key }}"></span>{{ key|capitalize }}</td>
-              <td class="num">{{ h.stats[key] }}</td>
+              <td class="num">{{ h.stats[key] }}{% if h.stats[key] and h.pct_resolved[key] is not none %} <span class="muted">({{ h.pct_resolved[key] }}%)</span>{% endif %}</td>
             </tr>
             {% endfor %}
           </tbody>

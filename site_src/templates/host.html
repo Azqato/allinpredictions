@@ -4,7 +4,7 @@
   <div class="flex-between">
     <div>
       <h1>{{ speaker.who_display }}</h1>
-      <p class="muted">{{ "Permanent host" if speaker.role == "host" else "Guest" }} &middot; {{ speaker.total_all }} tracked prediction{{ '' if speaker.total_all == 1 else 's' }}</p>
+      <p class="muted">{{ "Permanent host" if speaker.role == "host" else "Guest" }} &middot; {{ speaker.total_all }} tracked prediction{{ '' if speaker.total_all == 1 else 's' }}{% if speaker.accuracy_pct is not none %} &middot; {{ speaker.accuracy_pct }}% accuracy{% endif %}</p>
     </div>
     <a href="../index.html">Back home</a>
   </div>
@@ -18,7 +18,7 @@
           {% for key in ["right", "wrong", "ambiguous", "inconclusive", "unvalidated"] %}
           <tr>
             <td><span class="dot dot-{{ key }}"></span>{{ key|capitalize }}</td>
-            <td class="num">{{ speaker.stats[key] }}</td>
+            <td class="num">{{ speaker.stats[key] }}{% if speaker.stats[key] and speaker.pct_all[key] is not none %} <span class="muted">({{ speaker.pct_all[key] }}%)</span>{% endif %}</td>
           </tr>
           {% endfor %}
         </tbody>
