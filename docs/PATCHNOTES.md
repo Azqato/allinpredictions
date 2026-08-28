@@ -2,6 +2,12 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.46.0 (2026-08-27)
+
+### Fixed
+- Ran the host/guest name-accuracy audit (PRD §19, item 1 of the approved post-backlog development plan): audited all 144 distinct `who` values across `data/predictions/*.json` and fixed 182 individual prediction records across ~65 episode files. Normalized 6 underscore-formatted slugs to hyphens (`ben_shapiro`, `brad_gerstner`, `jared_kushner`, `nassim_taleb`, `reid_hoffman`, `rfk_jr`). Merged 15 duplicate-identity slugs that were fragmenting one person's scorecard across multiple pages into their canonical full-name slug (`brad`/`brad_gerstner`->`brad-gerstner`; `elon`/`musk`->`elon-musk`; `gavin`->`gavin-baker`; `cuban`->`mark-cuban`; `trump`->`donald-trump`; `kennedy`/`rfk_jr`->`robert-f-kennedy-jr`; and 9 more). Researched and renamed 26 bare-first-name-only slugs to full First-Last slugs via episode-title/WebSearch verification (`balaji`->`balaji-srinivasan`, `sergey`->`sergey-brin`, `tucker`->`tucker-carlson`, `vivek`->`vivek-ramaswamy`, `oz`->`mehmet-oz`, and 21 more).
+- Fixed two real data-quality bugs of the same class as the 2026-08-25 freeberg-typo incident: E088 had a Friedberg quote mislabeled `who: "david"`/`role: "guest"` instead of `friedberg`/`host`; the trump-vs-powell episode had the identical statement extracted twice under two different speaker labels 11 seconds apart (`other-00:58:05` and `bo-00:58:16`) - removed the duplicate, kept the survivor renamed to `bo-hines`, and renamed two more `other`-labeled predictions in that episode to the correctly-identified guest `bill-hagerty`. Site rebuilt clean: 132 host/guest pages (down from 145 stale/duplicate pages), zero validator errors. 3 predictions in E129 and 3 in E114/epstein-files-flop remain unresolved (`who: "david"`/`"other"`) - confirmed host-only episodes but the original transcripts were never retained for these older-batch episodes, so which specific host is speaking can't be confirmed without a transcript re-fetch; intentionally left rather than guessed.
+
 ## v0.45.0 (2026-08-27)
 
 ### Added

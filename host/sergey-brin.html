@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All-In Predictions</title>
+  <meta name="description" content="Validating every prediction made on the All-In Podcast, using free tools and Claude." />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><strong>ALL IN</strong><span>Predictions</span></a>
+      <nav class="nav">
+        <a href="../episodes/index.html">Episodes</a>
+        <a href="../host/index.html">Hosts</a>
+        <a href="../about.html">About</a>
+<span class="last-updated">Last updated: 2026-08-28</span>      </nav>
+    </div>
+  </header>
+  <div id="welcome-banner" class="welcome-banner hidden">
+    <div class="container welcome-banner-inner">
+      <p>This is an early, in-progress rewrite: predictions are automatically extracted and validated by LLMs, so there may be inaccuracies, and much of the archive is still unvalidated (shown as "Unvalidated").</p>
+      <button type="button" id="welcome-banner-dismiss">Dismiss</button>
+    </div>
+  </div>
+  <main class="container main">
+<section>
+  <div class="flex-between">
+    <div>
+      <h1>Sergey Brin</h1>
+      <p class="muted">Guest &middot; 2 tracked predictions</p>
+    </div>
+    <a href="../index.html">Back home</a>
+  </div>
+
+  <div class="card scorecard" style="margin-top:1.5rem;">
+    <div class="scorecard-body">
+      <svg width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="Accuracy chart"><circle cx="80.0" cy="80.0" r="69.0" fill="none" stroke="#22c55e" stroke-width="22" stroke-dasharray="433.54 0.00" transform="rotate(-90.00 80.0 80.0)" /></svg>
+      <table class="legend">
+        <tbody>
+          <tr>
+            <td><span class="dot dot-right"></span>Right</td>
+            <td class="num">1</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-wrong"></span>Wrong</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-ambiguous"></span>Ambiguous</td>
+            <td class="num">1</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-inconclusive"></span>Inconclusive</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-unvalidated"></span>Unvalidated</td>
+            <td class="num">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p class="muted small-note">Small sample size (2 predictions): treat this accuracy figure as anecdotal, not statistically meaningful.</p>
+
+  <div class="predictions" style="margin-top:2rem;">
+    <article class="prediction-card" id="sergey-brin-00:17:31">
+      <div class="prediction-head">
+        <a class="who-badge" href="../episodes/sergey-brin-google-co-founder-all-in-live-from-miami.html">Sergey Brin, Google Co-Founder | All-In Live from Miami</a>
+        <span class="badge badge-ambiguous">Ambiguous</span>
+        <span class="muted">Tue, 20 May 2025 02:37:00 +0000 &middot; 00:17:31</span>
+      </div>
+      <p class="prediction-text">Over the next few years, foundational AI models will continue converging into fewer, more general-purpose models rather than proliferating into many specialized models for individual domains.</p>
+      <blockquote class="quote">&ldquo;things have been more converging... increasingly it&#39;s also just becoming one model... we do get a lot of oomph occasionally we do specialized models... but the trends have not gone that way.&rdquo;</blockquote>
+      <div class="explanation">
+        <div class="explanation-label">Explanation</div>
+        <p>The frontier AI landscape has not converged into fewer models: distinct major model families from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek, and Alibaba continue to proliferate, but within any single lab&#39;s own lineup, general-purpose models have absorbed capabilities (coding, vision, agentic tool use) that once required separate specialized models, partially matching the prediction.</p>
+      </div>
+    </article>
+    <article class="prediction-card" id="sergey-brin-00:30:38">
+      <div class="prediction-head">
+        <a class="who-badge" href="../episodes/sergey-brin-google-co-founder-all-in-live-from-miami.html">Sergey Brin, Google Co-Founder | All-In Live from Miami</a>
+        <span class="badge badge-right">Right</span>
+        <span class="muted">Tue, 20 May 2025 02:37:00 +0000 &middot; 00:30:38</span>
+      </div>
+      <p class="prediction-text">With each new generation of Gemini models, the free tier will match or exceed the capability of the previous generation&#39;s paid Pro tier.</p>
+      <blockquote class="quote">&ldquo;as we go to the next generation you know it&#39;s like every time we&#39;ve gone forward a generation then the sort of uh the new free tier is usually as good as the previous pro tier uh and sometimes better.&rdquo;</blockquote>
+      <div class="explanation">
+        <div class="explanation-label">Explanation</div>
+        <p>The pattern held for the next generation: Gemini&#39;s free tier now runs on Gemini 3 Flash, which benchmarks ahead of the prior generation&#39;s paid Gemini 2.5 Pro tier on most agentic tasks, while the new Gemini 3.1 Pro was moved behind a paywall.</p>
+      </div>
+    </article>
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Unofficial project; data is generated using free tools (YouTube captions) and Claude (extraction, speaker attribution, and web-search validation), with no OpenAI, xAI, or paid ASR involved. It is best-effort and may contain errors, omissions, or misattributions, especially in speaker attribution, which relies on transcript context rather than voice matching.</p>
+    </div>
+  </footer>
+  <script src="../static/app.js"></script>
+</body>
+</html>
