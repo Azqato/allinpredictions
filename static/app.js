@@ -315,6 +315,62 @@
     resultFilter.addEventListener("change", onFilterChange);
   }
 
+  function setupLeaderboardSort() {
+    var table = document.getElementById("leaderboard-table");
+    if (!table) return;
+    var headers = table.querySelectorAll("th[data-sort-key]");
+    var tbody = table.querySelector("tbody");
+    if (!headers.length || !tbody) return;
+
+    function currentSort() {
+      var active = table.querySelector("th.sort-active");
+      return {
+        key: active ? active.getAttribute("data-sort-key") : "accuracy",
+        dir: active ? active.getAttribute("data-sort-dir") : "desc"
+      };
+    }
+
+    function sortBy(key, dir, isText) {
+      var rows = Array.prototype.slice.call(tbody.querySelectorAll("tr"));
+      rows.sort(function (a, b) {
+        var av = a.getAttribute("data-" + key), bv = b.getAttribute("data-" + key);
+        var cmp;
+        if (isText) {
+          cmp = av.localeCompare(bv);
+        } else {
+          cmp = parseFloat(av) - parseFloat(bv);
+        }
+        return dir === "asc" ? cmp : -cmp;
+      });
+      rows.forEach(function (row) { tbody.appendChild(row); });
+    }
+
+    headers.forEach(function (th) {
+      th.addEventListener("click", function () {
+        var key = th.getAttribute("data-sort-key");
+        var isText = th.getAttribute("data-sort-type") === "text";
+        var prev = currentSort();
+        var dir;
+        if (prev.key === key) {
+          dir = th.getAttribute("data-sort-dir") === "asc" ? "desc" : "asc";
+        } else {
+          // Numeric columns default to descending (biggest first) on first
+          // click; the rank/speaker text columns default to ascending.
+          dir = isText || key === "rank" ? "asc" : "desc";
+        }
+        headers.forEach(function (h) {
+          h.classList.remove("sort-active");
+          h.removeAttribute("data-sort-dir");
+          h.textContent = h.textContent.replace(/ [↑↓]$/, "");
+        });
+        th.classList.add("sort-active");
+        th.setAttribute("data-sort-dir", dir);
+        th.textContent += dir === "asc" ? " ↑" : " ↓";
+        sortBy(key, dir, isText);
+      });
+    });
+  }
+
   function setupWelcomeBanner() {
     var STORAGE_KEY = "predict_welcome_banner_dismissed";
     var banner = document.getElementById("welcome-banner");
@@ -336,6 +392,7 @@
     setupHomeCharts();
     setupEpisodeYearFilter();
     setupLedgerPage();
+    setupLeaderboardSort();
     setupWelcomeBanner();
   });
 })();

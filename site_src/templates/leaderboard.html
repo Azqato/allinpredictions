@@ -3,27 +3,31 @@
 {% block content %}
 <section class="section-head">
   <h1>Leaderboard</h1>
-  <p class="muted">Every host and guest, ranked by accuracy on resolved (right/wrong) predictions, with the full verdict breakdown for each (counts and % of that speaker's total predictions). Sitewide: {{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% endif %} ({{ overall_stats.right }} right ({{ overall_pct_all.right }}%) &middot; {{ overall_stats.wrong }} wrong ({{ overall_pct_all.wrong }}%) of {{ overall_total_resolved }} resolved, {{ overall_total_all }} total).</p>
+  <p class="muted">Every host and guest, with the full verdict breakdown for each (counts and % of that speaker's total predictions). Click a column heading to sort - defaults to accuracy on resolved (right/wrong) predictions. Sitewide: {{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% endif %} ({{ overall_stats.right }} right ({{ overall_pct_all.right }}%) &middot; {{ overall_stats.wrong }} wrong ({{ overall_pct_all.wrong }}%) of {{ overall_total_resolved }} resolved, {{ overall_total_all }} total).</p>
 </section>
 
 <div class="table-scroll">
-  <table class="data-table">
+  <table class="data-table" id="leaderboard-table">
     <thead>
       <tr>
-        <th>#</th>
-        <th>Speaker</th>
-        <th>Accuracy</th>
-        <th>Right</th>
-        <th>Wrong</th>
-        <th>Ambiguous</th>
-        <th>Inconclusive</th>
-        <th>Unvalidated</th>
-        <th>Total</th>
+        <th data-sort-key="rank" data-sort-dir="asc">#</th>
+        <th data-sort-key="who" data-sort-type="text">Speaker</th>
+        <th data-sort-key="accuracy" data-sort-dir="desc" class="sort-active">Accuracy &darr;</th>
+        <th data-sort-key="right">Right</th>
+        <th data-sort-key="wrong">Wrong</th>
+        <th data-sort-key="ambiguous">Ambiguous</th>
+        <th data-sort-key="inconclusive">Inconclusive</th>
+        <th data-sort-key="unvalidated">Unvalidated</th>
+        <th data-sort-key="total">Total</th>
       </tr>
     </thead>
     <tbody>
       {% for s in leaderboard %}
-      <tr>
+      <tr data-rank="{{ loop.index }}" data-who="{{ s.who_display }}"
+          data-accuracy="{{ s.accuracy_pct if s.accuracy_pct is not none else -1 }}"
+          data-right="{{ s.stats.right }}" data-wrong="{{ s.stats.wrong }}"
+          data-ambiguous="{{ s.stats.ambiguous }}" data-inconclusive="{{ s.stats.inconclusive }}"
+          data-unvalidated="{{ s.stats.unvalidated }}" data-total="{{ s.total_all }}">
         <td class="muted">{{ loop.index }}</td>
         <td>
           <a href="host/{{ s.who }}.html">{{ s.who_display }}</a>

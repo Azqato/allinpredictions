@@ -304,6 +304,9 @@ h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
 .data-table th { color: var(--muted); font-weight: 600; font-size: .75rem; text-transform: uppercase; letter-spacing: .03em; }
 .data-table td.num, .data-table th:nth-child(n+3) { text-align: right; }
 .data-table tbody tr:hover { background: rgba(255,255,255,.03); }
+.data-table th[data-sort-key] { cursor: pointer; user-select: none; }
+.data-table th[data-sort-key]:hover { color: var(--fg); }
+.data-table th.sort-active { color: var(--fg); }
 
 input[type="search"] {
   background: var(--card-bg);
