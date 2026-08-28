@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.51.0 (2026-08-27)
+
+### Changed
+- Rolled up every tag with fewer than 20 total predictions into a broader surviving category, per user request ("categories with less than 20 overall predictions should be rolled up into another one if possible"). Straight renames (no splitting), so no data was lost, just consolidated: `autonomous-vehicles`/`open-source`/`robotics` -> `tech`; `business`/`energy`/`macro`/`manufacturing` -> `economy`; `policy` -> `government`; `commodities`/`finance`/`ipo`/`revenue`/`valuation` -> `markets`; `elections`/`midterms` -> `politics`; `china`/`defense`/`space` -> `geopolitics`. This takes the taxonomy from 30 tags (19 of them under 20 predictions) down to **12 broad tags, every one with at least 20 predictions** (`economy` 1211, `politics` 1171, `tech` 843, `government` 823, `markets` 813, `ai` 635, `venture` 280, `health` 272, `conflict` 184, `science` 171, `climate` 123, `geopolitics` 20). Retagged 47 predictions across 8 episode files. Home page and Full Ledger topic dropdowns are now identical (both host-only and sitewide tag sets converged onto the same 12 categories).
+
 ## v0.48.0 (2026-08-27)
 
 ### Added

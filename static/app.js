@@ -51,7 +51,7 @@
   var ALL_KEYS = ["right", "wrong", "ambiguous", "inconclusive"];
 
   // Keep in sync with TAG_DISPLAY_OVERRIDES in scripts/generate_site.py.
-  var TAG_DISPLAY_OVERRIDES = { "ai": "AI", "ipo": "IPO" };
+  var TAG_DISPLAY_OVERRIDES = { "ai": "AI" };
   function tagDisplay(tag) {
     if (Object.prototype.hasOwnProperty.call(TAG_DISPLAY_OVERRIDES, tag)) return TAG_DISPLAY_OVERRIDES[tag];
     return tag.split("-").map(function (word) {

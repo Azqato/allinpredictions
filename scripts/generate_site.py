@@ -41,7 +41,6 @@ BAD_WHO_VALUES = {"unknown", "n/a", "none", "null", ""}
 # "autonomous-vehicles" -> "Autonomous Vehicles".
 TAG_DISPLAY_OVERRIDES = {
     "ai": "AI",
-    "ipo": "IPO",
 }
 
 
