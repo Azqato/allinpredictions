@@ -322,7 +322,7 @@ def render_site(root: Path, out_dir: Path) -> None:
     # figure isn't read as statistically meaningful.
     leaderboard = sorted(
         speakers.values(),
-        key=lambda s: (s["accuracy_pct"] is None, -(s["accuracy_pct"] or 0), -s["total_resolved"]),
+        key=lambda s: (-s["stats"]["right"], s["accuracy_pct"] is None, -(s["accuracy_pct"] or 0)),
     )
 
     # All topic tags appearing on any host's qualifying predictions, for the
