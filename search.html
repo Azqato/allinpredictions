@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search &middot; All-In Predictions</title>
+  <meta name="description" content="Validating every prediction made on the All-In Podcast, using free tools and Claude." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><strong>ALL IN</strong><span>Predictions</span></a>
+      <nav class="nav">
+        <a href="episodes/index.html">Episodes</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="ledger.html">Ledger</a>
+        <a href="host/index.html">Hosts</a>
+        <a href="search.html">Search</a>
+        <a href="about.html">About</a>
+<span class="last-updated">Last updated: 2026-08-31</span>      </nav>
+    </div>
+  </header>
+  <div id="welcome-banner" class="welcome-banner hidden">
+    <div class="container welcome-banner-inner">
+      <p>This is an early, in-progress rewrite: predictions are automatically extracted and validated by LLMs, so there may be inaccuracies, and much of the archive is still unvalidated (shown as "Unvalidated").</p>
+      <button type="button" id="welcome-banner-dismiss">Dismiss</button>
+    </div>
+  </div>
+  <main class="container main">
+<section class="section-head">
+  <h1>Search</h1>
+  <p class="muted">Search across every prediction, episode, and host/guest sitewide (4001 indexed items).</p>
+</section>
+
+<div class="chart-controls">
+  <input type="search" id="search-input" placeholder="Search predictions, episodes, people&hellip;" aria-label="Search" autofocus />
+  <select id="search-type-filter" aria-label="Filter by type">
+    <option value="">Everything</option>
+    <option value="prediction">Predictions</option>
+    <option value="episode">Episodes</option>
+    <option value="host">Hosts</option>
+    <option value="guest">Guests</option>
+  </select>
+</div>
+
+<p class="muted" id="search-count"></p>
+<div class="predictions" id="search-results" data-src="static/search_index.json"></div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Unofficial project; data is generated using free tools (YouTube captions) and Claude (extraction, speaker attribution, and web-search validation), with no OpenAI, xAI, or paid ASR involved. It is best-effort and may contain errors, omissions, or misattributions, especially in speaker attribution, which relies on transcript context rather than voice matching.</p>
+    </div>
+  </footer>
+  <script src="static/app.js"></script>
+</body>
+</html>

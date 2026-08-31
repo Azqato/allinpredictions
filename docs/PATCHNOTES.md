@@ -2,6 +2,12 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.55.0 (2026-08-31)
+
+### Added
+- **"The Big Ones" home page section**: a hand-curated highlight reel of 12 of the show's boldest, highest-stakes predictions (5 confirmed hits, 5 confident misses, 2 huge still-inconclusive calls to watch), listed by `episode_id`/`id` in the new `config/big_ones.json` and resolved against the live prediction/check data at build time, so it always reflects the current verdict. Includes Chamath's crypto-market-cap call ($2-3T &rarr; $6T, right), Sacks predicting Sam Altman would consolidate control of OpenAI within months of the November 2023 board crisis (right), Jason's "President Kamala for four months" 2024 call (wrong), Howard Lutnick's $1 trillion DOGE-waste-cut pledge (wrong), Brad Gerstner's $2 trillion SpaceX IPO valuation call (wrong, SpaceX still private), and both of today's new inconclusive predictions.
+- **Sitewide search** (`search.html`, nav link "Search"): a single search box across every prediction, episode, and host/guest page (4,001 indexed items total), filterable by type. Built from a new `static/search_index.json` generated alongside the existing `ledger.json`; results only render once the visitor starts typing rather than dumping the full index unfiltered.
+
 ## v0.54.0 (2026-08-31)
 
 ### Added

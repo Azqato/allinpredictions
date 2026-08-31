@@ -325,6 +325,93 @@
     resultFilter.addEventListener("change", onFilterChange);
   }
 
+  function setupSearchPage() {
+    var container = document.getElementById("search-results");
+    if (!container) return;
+    var src = container.getAttribute("data-src");
+    var searchInput = document.getElementById("search-input");
+    var typeFilter = document.getElementById("search-type-filter");
+    var countEl = document.getElementById("search-count");
+    var PAGE_SIZE = 50;
+    var shownCount = PAGE_SIZE;
+    var entries = [];
+
+    function escapeHtml(s) {
+      var div = document.createElement("div");
+      div.textContent = s == null ? "" : String(s);
+      return div.innerHTML;
+    }
+
+    function matches(e, q, type) {
+      if (type && e.type !== type) return false;
+      if (q && (e.text || "").indexOf(q) === -1) return false;
+      return true;
+    }
+
+    function typeLabel(type) {
+      return type === "host" ? "Host" : type === "guest" ? "Guest" : type === "episode" ? "Episode" : "Prediction";
+    }
+
+    function render() {
+      var q = (searchInput.value || "").trim().toLowerCase();
+      var type = typeFilter.value;
+      // Without a query, an unfiltered 3000+ item dump isn't useful -- wait
+      // for the visitor to actually search (optionally narrowed by type).
+      if (!q) {
+        container.innerHTML = '<p class="muted">Start typing to search.</p>';
+        if (countEl) countEl.textContent = "";
+        return;
+      }
+      var filtered = entries.filter(function (e) { return matches(e, q, type); });
+
+      if (countEl) countEl.textContent = filtered.length + " result" + (filtered.length === 1 ? "" : "s");
+
+      var page = filtered.slice(0, shownCount);
+      var html = page.map(function (e) {
+        var badge = e.type === "prediction"
+          ? '<span class="badge badge-' + e.result + '">' + escapeHtml(e.result.charAt(0).toUpperCase() + e.result.slice(1)) + '</span>'
+          : '<span class="badge badge-muted">' + typeLabel(e.type) + '</span>';
+        return '<a class="card prediction-card" href="' + e.url + '">' +
+          '<div class="flex-between">' +
+          '<span class="who-badge">' + typeLabel(e.type) + '</span>' +
+          badge +
+          '</div>' +
+          '<p style="margin:.5rem 0;">' + escapeHtml(e.title) + '</p>' +
+          '<div class="muted">' + escapeHtml(e.subtitle) + '</div>' +
+          '</a>';
+      }).join("");
+
+      if (filtered.length > shownCount) {
+        html += '<button type="button" id="search-load-more" class="segmented" style="padding:.5rem 1rem;">Load more (' +
+          (filtered.length - shownCount) + ' remaining)</button>';
+      }
+      container.innerHTML = html || '<p class="muted">No results.</p>';
+
+      var loadMore = document.getElementById("search-load-more");
+      if (loadMore) {
+        loadMore.addEventListener("click", function () {
+          shownCount += PAGE_SIZE;
+          render();
+        });
+      }
+    }
+
+    function onFilterChange() {
+      shownCount = PAGE_SIZE;
+      render();
+    }
+
+    fetch(src).then(function (resp) { return resp.json(); }).then(function (data) {
+      entries = data || [];
+      render();
+    }).catch(function () {
+      container.innerHTML = '<p class="muted">Could not load the search index.</p>';
+    });
+
+    searchInput.addEventListener("input", onFilterChange);
+    typeFilter.addEventListener("change", onFilterChange);
+  }
+
   function setupLeaderboardSort() {
     var table = document.getElementById("leaderboard-table");
     if (!table) return;
@@ -402,6 +489,7 @@
     setupHomeCharts();
     setupEpisodeYearFilter();
     setupLedgerPage();
+    setupSearchPage();
     setupLeaderboardSort();
     setupWelcomeBanner();
   });

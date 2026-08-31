@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Search &middot; {{ site_title }}{% endblock %}
+{% block content %}
+<section class="section-head">
+  <h1>Search</h1>
+  <p class="muted">Search across every prediction, episode, and host/guest sitewide ({{ search_count }} indexed items).</p>
+</section>
+
+<div class="chart-controls">
+  <input type="search" id="search-input" placeholder="Search predictions, episodes, people&hellip;" aria-label="Search" autofocus />
+  <select id="search-type-filter" aria-label="Filter by type">
+    <option value="">Everything</option>
+    <option value="prediction">Predictions</option>
+    <option value="episode">Episodes</option>
+    <option value="host">Hosts</option>
+    <option value="guest">Guests</option>
+  </select>
+</div>
+
+<p class="muted" id="search-count"></p>
+<div class="predictions" id="search-results" data-src="static/search_index.json"></div>
+{% endblock %}

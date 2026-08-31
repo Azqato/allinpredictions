@@ -391,6 +391,30 @@ def render_site(root: Path, out_dir: Path) -> None:
             break
     recently_settled = recently_settled[:20]
 
+    # "Big Ones" (roadmap item 3): a hand-curated highlight reel of the
+    # highest-profile predictions, listed in config/big_ones.json as
+    # {episode_id, id} pairs. Resolved from the same merged prediction
+    # records as everywhere else, so quote/result/tags/who_display stay in
+    # sync automatically as new checks come in. Entries whose episode_id/id
+    # no longer resolve (a rename, a corrected id) are skipped with a
+    # warning rather than breaking the build.
+    pred_lookup: Dict[tuple, Dict[str, Any]] = {}
+    for ep in episodes:
+        for p in ep["predictions"]:
+            pred_lookup[(ep["episode_id"], p["id"])] = {
+                **p, "episode_id": ep["episode_id"], "episode_title": ep["title"],
+                "episode_published": ep.get("published"), "youtube_url": ep.get("youtube_url"),
+            }
+    big_ones_cfg = load_json(root / "config" / "big_ones.json", [])
+    big_ones: List[Dict[str, Any]] = []
+    for entry in big_ones_cfg:
+        key = (entry.get("episode_id"), entry.get("id"))
+        record = pred_lookup.get(key)
+        if record is None:
+            print(f"[warn] big_ones.json entry not found, skipping: {entry}", file=sys.stderr)
+            continue
+        big_ones.append(record)
+
     # Full Ledger (§36 item 5): a lightweight, client-filterable index of
     # every qualifying prediction sitewide. Kept deliberately thin (no quote/
     # explanation/sources) so the JSON stays small - the full record lives on
@@ -417,6 +441,48 @@ def render_site(root: Path, out_dir: Path) -> None:
                 }
             )
 
+    # Sitewide search index (roadmap item 4): one flat JSON array combining
+    # predictions, episodes, and host/guest pages, so a single client-side
+    # search box can find any of them. Kept thin like the ledger, plus a
+    # lowercase "text" field for the client to substring-match against
+    # without recomputing it per-keystroke.
+    search_index: List[Dict[str, Any]] = []
+    for ep in episodes:
+        search_index.append(
+            {
+                "type": "episode",
+                "title": ep["title"],
+                "subtitle": ep.get("published") or "",
+                "url": f"episodes/{ep['episode_id']}.html",
+                "text": (ep["title"] or "").lower(),
+            }
+        )
+        for p in ep["predictions"]:
+            qualifies = p.get("role") == "host" or p.get("speaker_confidence") in QUALIFYING_CONFIDENCE
+            if not qualifies:
+                continue
+            search_index.append(
+                {
+                    "type": "prediction",
+                    "title": p.get("prediction") or "",
+                    "subtitle": f"{p['who_display']} · {ep['title']}",
+                    "result": p.get("result") or "unvalidated",
+                    "url": f"episodes/{ep['episode_id']}.html#{p['id']}",
+                    "text": f"{p.get('prediction') or ''} {p['who_display']} {ep['title']}".lower(),
+                }
+            )
+    for s in speakers.values():
+        search_index.append(
+            {
+                "type": "host" if s["role"] == "host" else "guest",
+                "title": s["who_display"],
+                "subtitle": f"{s['total_all']} prediction{'' if s['total_all'] == 1 else 's'}"
+                + (f" · {s['accuracy_pct']}% accuracy" if s["accuracy_pct"] is not None else ""),
+                "url": f"host/{s['who']}.html",
+                "text": s["who_display"].lower(),
+            }
+        )
+
     templates_dir = root / "site_src" / "templates"
     env = Environment(
         loader=FileSystemLoader(str(templates_dir)),
@@ -431,7 +497,7 @@ def render_site(root: Path, out_dir: Path) -> None:
     # root for GitHub Pages "deploy from root"), which also holds source
     # directories (scripts/, data/, config/, site_src/, prompts/, docs/) that
     # must never be touched by a site rebuild.
-    GENERATED_TOP_LEVEL = ["index.html", "about.html", "leaderboard.html", "ledger.html", "episodes", "host", "static"]
+    GENERATED_TOP_LEVEL = ["index.html", "about.html", "leaderboard.html", "ledger.html", "search.html", "episodes", "host", "static"]
     out_dir.mkdir(parents=True, exist_ok=True)
     for name in GENERATED_TOP_LEVEL:
         p = out_dir / name
@@ -457,7 +523,7 @@ def render_site(root: Path, out_dir: Path) -> None:
             overall_stats=overall_stats, overall_total_resolved=overall_total_resolved,
             overall_total_all=overall_total_all, overall_accuracy_pct=overall_accuracy_pct,
             overall_pct_all=overall_pct_all, overall_pct_resolved=overall_pct_resolved,
-            recently_settled=recently_settled[:8],
+            recently_settled=recently_settled[:8], big_ones=big_ones,
         )
     )
 
@@ -478,6 +544,11 @@ def render_site(root: Path, out_dir: Path) -> None:
         env.get_template("ledger.html").render(**common, topics=all_topics, years=years, ledger_count=len(ledger_entries))
     )
     (static_dst / "ledger.json").write_text(json.dumps(ledger_entries, ensure_ascii=False))
+
+    (out_dir / "search.html").write_text(
+        env.get_template("search.html").render(**common, search_count=len(search_index))
+    )
+    (static_dst / "search_index.json").write_text(json.dumps(search_index, ensure_ascii=False))
 
     for ep in episodes:
         (out_dir / "episodes" / f"{ep['episode_id']}.html").write_text(
