@@ -666,7 +666,7 @@ Ordered by priority; when two conflict, the higher one wins.
 | §35: Listener voting/feedback mechanism (Reddit feedback, 2026-08-27) | Long-term, no scheduled trigger; needs a real backend/storage decision this static site doesn't have yet | Deferred |
 | Extend the §27 home page filter UI (Resolved only checkbox, topic dropdown, Total/By Year/By Topic segmented toggle) to every individual host and guest page, not just the home page | Post-launch; user-requested 2026-08-27 | **Complete 2026-08-31** - see the dedicated row in the same-day follow-ups above |
 | §36: competitor-audit feature gaps, all 8 approved for implementation (accuracy %/hit-rate everywhere, home page headline stat, host leaderboard, sitewide search, unified all-predictions browse page, "recently settled" feed, curated high-impact-calls section, per-host verdict-count breakdown) | After the full ingest-and-validation sweep completes (47-episode backlog + remaining validation batches); user-requested and approved 2026-08-27 | **Complete 2026-08-31** - all 8 shipped: 6 in the batched-items row above, plus sitewide search and the curated "Big Ones" section in the row below (2026-08-31) |
-| §36.1-36.5: visual/UX detail re-audit (hero block, per-host highlight cards, "Fresh Verdicts" feed, "The Standings" leaderboard, "The Big Ones" curated section, "This Episode's Calls", topic tag cloud), a new "The Roster" host+guest index page sorted by prediction count, a new "The Full Ledger" browse/search/filter page, a redesigned Methodology page, and a sitewide distinct-naming convention | Same sequencing as §36 (after the full ingest-and-validation sweep); documentation-only pass 2026-08-27, no implementation yet | Planned |
+| §36.1-36.5: visual/UX detail re-audit (hero block, per-host highlight cards, "Fresh Verdicts" feed, "The Standings" leaderboard, "The Big Ones" curated section, "This Episode's Calls", topic tag cloud), a new "The Roster" host+guest index page sorted by prediction count, a new "The Full Ledger" browse/search/filter page, a redesigned Methodology page, and a sitewide distinct-naming convention | Same sequencing as §36 (after the full ingest-and-validation sweep); documentation-only pass 2026-08-27, no implementation yet | **Split into 11 tracked subtasks 2026-08-31** (see §19.1 below) - broken down at user request ("can we split #2 up into subtasks? that's a lot to tackle at once"). Not started; §19.1 is now the authoritative task list for this item, sequenced foundational -> home page visual refresh -> new/redesigned pages -> naming pass |
 
 **Explicitly deferred items and why** (see also §12 Risks and §16 for full detail on each):
 - Caption-less episode handling (2 episodes with a `video_id` but no captions fetchable via any current method): deferred with no scheduled trigger yet, to be revisited later once a fetch method exists or a manual-transcription fallback is decided on; not on the critical path since it's only 2 of 404 episodes.
@@ -675,6 +675,30 @@ Ordered by priority; when two conflict, the higher one wins.
 - GitHub Action for deterministic-only site regeneration: deferred because there's no CI need yet at this scale; manual regeneration is fast and the Claude-driven steps can't run in CI anyway.
 - Multi-podcast generalization: explicitly out of v1 scope per §2 Non-Goals; the architecture stays podcast-agnostic where cheap to do so, but no plugin system is being built now.
 - Listener voting/feedback mechanism (§35): deferred with no scheduled trigger; the user's own framing of this Reddit-sourced idea flagged it as long-term, and it genuinely needs a backend/storage decision (accounts-free voting has no natural anti-abuse mechanism) this static, accountless site doesn't have today.
+
+### 19.1 §36.1-36.5 Subtask Breakdown (the full roadmap moving forward)
+
+**Status:** planned, split out 2026-08-31 at explicit user request ("can we split #2 up into subtasks? that's a lot in one to tackle at once"), where "#2" referred to the §36.1-36.5 visual/UX re-audit item as presented in a prior "what's next" summary. This table is now the authoritative, granular task list for that roadmap item - update rows here as each subtask ships, rather than tracking it as one line.
+
+Note: some ground originally scoped into §36.1-36.5 back on 2026-08-27 (sitewide search, the Full Ledger's existence, a home page "recently settled"/"Big Ones" section, the leaderboard page) has since shipped under other roadmap rows above. The subtasks below are what's genuinely still outstanding against the live site as of 2026-08-31 - visual/structural refinement and net-new pages, not the underlying data/functionality, which already exists.
+
+**Sequencing:** foundational decisions and shared infrastructure first (rows 1-2), then the home page visual refresh (rows 3-7), then new/redesigned pages (rows 8-10), with the naming-convention pass (row 11) threaded through each item as it ships rather than done as a separate final pass.
+
+| # | Subtask | Depends on | Status |
+|---|---|---|---|
+| 1 | Verdict data-model decision: resolve whether `ambiguous`/`inconclusive` map cleanly to "partly right"/"too early," or need reframing/a new state, before any accuracy or leaderboard visual locks in a denominator (§36.1 item 8, §36.4) | None - do first | Planned |
+| 2 | Reusable prediction-card component: one markup/JS pattern for a prediction card, used by every section/page that renders one (home sections, Full Ledger, episode pages) instead of near-duplicate card HTML per template (per §36.3's note) | None - do early, most other UI rows reuse it | Planned |
+| 3 | Home page hero block: bold two-line headline + one-line sitewide stat as a CTA (§36.1 item 1) | Row 1 (the stat line depends on the settled data-model decision) | Planned |
+| 4 | Per-host highlight cards on the home page: "Signature Calls" (top hits) / "The Misses" (collapsed) in a 4-up grid (§36.1 item 2) | Rows 1, 2 | Planned |
+| 5 | "The Standings": leaderboard-style component with a segmented verdict bar per host + superlative badges (§36.1 item 4) | Rows 1, 2 | Planned |
+| 6 | "Topic Index" tag cloud with live per-topic counts on the home page (§36.1 item 7) | Row 2 | Planned |
+| 7 | "This Episode's Calls": every call from the single most-recent episode (including ungraded), distinct from the existing Recently Settled section (§36.1 item 6) | Row 2 | Planned |
+| 8 | "The Roster": redesign `host/index.html` with avatars, hit-rate %, and guests sorted descending by prediction count (§36.2) | Rows 1, 2 | Planned |
+| 9 | "The Full Ledger" upgrade: replace the current year/topic/result dropdowns with pill filters (host x verdict x topic) (§36.3) | Row 2 | Planned |
+| 10 | Methodology page redesign: numbered pipeline steps (§6) + a verdict glossary, explicitly noting guest predictions are scored too (a stated point of difference from the competitor) (§36.4) | Row 1 (the glossary needs the settled data-model decision) | Planned |
+| 11 | Naming-convention pass (§36.5): apply the distinct working names (table already in §36.5) to each item above as it ships, so nothing launches under the competitor's own copy | Threaded through rows 3-10, not a standalone step | Planned |
+
+**Explicitly kept separate from this breakdown:** §16.3 (mobile-responsive audit) stays its own roadmap row, done after this visual pass rather than folded into it - it's testing against whatever layout results from rows 1-11, not redesign work itself.
 
 ## 20. Metrics
 

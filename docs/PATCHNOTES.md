@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.63.0 (2026-08-31)
+
+### Changed
+- Documentation only, no site rebuild: split the §36.1-36.5 visual/UX re-audit roadmap item into 11 tracked subtasks (`docs/PRD.md` new §19.1), per user request ("can we split #2 up into subtasks?"). Sequenced foundational decisions and a reusable prediction-card component first, then the home page visual refresh, then new/redesigned pages, with the naming-convention pass threaded through each item as it ships. Flagged that some of the original 2026-08-27 scope (search, the Full Ledger, Recently Settled, Big Ones, the leaderboard) has already shipped under other roadmap rows, so §19.1 reflects only what's genuinely still outstanding.
+
 ## v0.62.0 (2026-08-31)
 
 ### Fixed
