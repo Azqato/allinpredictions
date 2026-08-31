@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.65.0 (2026-08-31)
+
+### Changed
+- Documentation only, no site rebuild: re-sequenced the §19.1 subtask breakdown by dependencies-first, then lowest-effort-first within each dependency tier, per user request ("sort the roadmap based on dependencies and what requires the least effort first based on dependencies"). This is a real execution-order change, not a relabeling - e.g. the Topic Index tag cloud (Low effort, needs only the card component) now comes well before the per-host highlight cards (High effort, needs both foundational items plus real curation work), even though both were originally listed under "home page visual refresh" together. Added an Effort column to the table so the ordering rationale is visible, not implicit.
+
 ## v0.64.0 (2026-08-31)
 
 ### Removed
