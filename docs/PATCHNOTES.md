@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.60.0 (2026-08-31)
+
+### Fixed
+- The predictions-list collapse button (added in v0.59.0) didn't actually hide anything: it toggled the `hidden` attribute, but `.predictions { display: flex; }` in the author stylesheet overrides the browser's default `[hidden]{display:none}` rule (author CSS always wins over UA defaults, regardless of selector specificity), so the list stayed visible. Fixed by toggling `style.display` directly in `app.js` instead of the `hidden` attribute. Also renamed the button's labels from "Hide predictions"/"Show predictions" to "Collapse"/"Expand", per user request.
+
 ## v0.59.0 (2026-08-31)
 
 ### Added

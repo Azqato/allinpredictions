@@ -245,11 +245,16 @@
     var btn = document.getElementById("predictions-toggle");
     var list = document.getElementById("predictions-list");
     if (!btn || !list) return;
+    // .predictions sets display:flex in the author stylesheet, which
+    // overrides the UA [hidden]{display:none} rule (author styles always
+    // beat UA defaults regardless of specificity) -- so the `hidden`
+    // attribute alone silently does nothing here. Toggle style.display
+    // directly instead.
     btn.addEventListener("click", function () {
-      var collapsed = list.hidden;
-      list.hidden = !collapsed;
-      btn.textContent = collapsed ? "Hide predictions" : "Show predictions";
-      btn.setAttribute("aria-expanded", collapsed ? "true" : "false");
+      var expanded = list.style.display !== "none";
+      list.style.display = expanded ? "none" : "";
+      btn.textContent = expanded ? "Expand" : "Collapse";
+      btn.setAttribute("aria-expanded", expanded ? "false" : "true");
     });
   }
 
