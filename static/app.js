@@ -139,9 +139,9 @@
     if (!resolvedToggle || !topicFilter || !viewToggle) return;
 
     // Below the chart, an individual host/guest page also lists every
-    // prediction card; the topic dropdown filters that list too so it stays
-    // in sync with the chart above it (year and resolved-only stay
-    // chart-only, since the cards already show every verdict and every
+    // prediction card; the topic dropdown and resolved-only checkbox filter
+    // that list too so it stays in sync with the chart above it (the year/
+    // topic chart view stays chart-only, since the cards already show every
     // year at a glance).
     var predictionCards = document.querySelectorAll("#predictions-list .prediction-card[data-tags]");
     var predictionsEmptyMsg = null;
@@ -206,19 +206,22 @@
         var shown = 0;
         predictionCards.forEach(function (card) {
           var tags = (card.getAttribute("data-tags") || "").split(",").filter(Boolean);
-          var match = !state.topic || tags.indexOf(state.topic) !== -1;
+          var topicMatch = !state.topic || tags.indexOf(state.topic) !== -1;
+          var result = card.getAttribute("data-result");
+          var resolvedMatch = !state.resolvedOnly || result === "right" || result === "wrong";
+          var match = topicMatch && resolvedMatch;
           card.style.display = match ? "" : "none";
           if (match) shown++;
         });
         var predictionsList = document.getElementById("predictions-list");
         if (predictionsList) {
-          if (shown === 0 && !predictionsEmptyMsg) {
+          if (!predictionsEmptyMsg) {
             predictionsEmptyMsg = document.createElement("p");
             predictionsEmptyMsg.className = "muted";
-            predictionsEmptyMsg.textContent = "No predictions match this topic.";
+            predictionsEmptyMsg.textContent = "No predictions match this filter.";
             predictionsList.appendChild(predictionsEmptyMsg);
           }
-          if (predictionsEmptyMsg) predictionsEmptyMsg.style.display = shown === 0 ? "" : "none";
+          predictionsEmptyMsg.style.display = shown === 0 ? "" : "none";
         }
       }
     }

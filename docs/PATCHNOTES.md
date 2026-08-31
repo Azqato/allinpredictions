@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.61.0 (2026-08-31)
+
+### Changed
+- The "Resolved only" checkbox on host/guest pages now also filters the predictions list below the chart (previously chart-only, matching the topic dropdown's prior scope), per user request. Ambiguous/inconclusive/unvalidated cards hide when checked. Each card now carries a `data-result` attribute so the client JS can filter without parsing the visible badge text. The "no predictions match" fallback message now covers either filter (renamed from "this topic" to "this filter").
+
 ## v0.60.0 (2026-08-31)
 
 ### Fixed
