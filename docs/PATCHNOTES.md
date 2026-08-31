@@ -2,6 +2,12 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.56.0 (2026-08-31)
+
+### Changed
+- Moved the "Big Ones" home page section (below "Guest Predictions" instead of above "Host Accuracy"), per user request, so visitors see the per-host scorecards and guest predictions first before the curated highlight reel.
+- Added a "Home" link as the first item in the site nav (`base.html`), per user request — previously the only way back to the home page was the logo/brand link.
+
 ## v0.55.0 (2026-08-31)
 
 ### Added

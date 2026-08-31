@@ -9,28 +9,6 @@
   </div>
 </section>
 
-{% if big_ones %}
-<section class="section-head" style="margin-top:2.5rem;">
-  <div class="flex-between">
-    <h2>The Big Ones</h2>
-    <a href="ledger.html">Browse the full ledger &rarr;</a>
-  </div>
-  <p class="muted">A hand-picked reel of the boldest, highest-stakes calls made on the show &mdash; the huge hits, the confident misses, and the ones still playing out.</p>
-  <div class="grid grid-2" style="margin-top:1rem;">
-    {% for p in big_ones %}
-    <a class="card prediction-card" href="episodes/{{ p.episode_id }}.html#{{ p.id }}">
-      <div class="flex-between">
-        <span class="who-badge">{{ p.who_display }}</span>
-        <span class="badge badge-{{ p.result or 'unvalidated' }}">{{ (p.result or "unvalidated")|capitalize }}</span>
-      </div>
-      <p style="margin:.5rem 0;">{{ p.prediction }}</p>
-      <div class="muted">{{ p.episode_title }} &middot; {{ p.episode_published or "Unknown date" }}</div>
-    </a>
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
-
 <section>
   <div class="section-head">
     <h2>Host Accuracy</h2>
@@ -92,6 +70,28 @@
   </div>
   {% endif %}
 </section>
+
+{% if big_ones %}
+<section class="section-head" style="margin-top:2.5rem;">
+  <div class="flex-between">
+    <h2>The Big Ones</h2>
+    <a href="ledger.html">Browse the full ledger &rarr;</a>
+  </div>
+  <p class="muted">A hand-picked reel of the boldest, highest-stakes calls made on the show &mdash; the huge hits, the confident misses, and the ones still playing out.</p>
+  <div class="grid grid-2" style="margin-top:1rem;">
+    {% for p in big_ones %}
+    <a class="card prediction-card" href="episodes/{{ p.episode_id }}.html#{{ p.id }}">
+      <div class="flex-between">
+        <span class="who-badge">{{ p.who_display }}</span>
+        <span class="badge badge-{{ p.result or 'unvalidated' }}">{{ (p.result or "unvalidated")|capitalize }}</span>
+      </div>
+      <p style="margin:.5rem 0;">{{ p.prediction }}</p>
+      <div class="muted">{{ p.episode_title }} &middot; {{ p.episode_published or "Unknown date" }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 
 {% if recently_settled %}
 <section class="section-head" style="margin-top:2.5rem;">
