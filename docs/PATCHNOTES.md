@@ -2,11 +2,19 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.57.0 (2026-08-31)
+
+### Changed
+- "Big Ones" is now right-calls-only, top 6 by a new backend `impact_score` field (1.0-1000, editorial judgment of real-world significance, not a display value), per user request ("can we make it only right calls?" / "only the top 6 for the homepage, 12 is too cluttered"). `config/big_ones.json` now holds a 9-entry candidate pool, each with an `impact_score`; `generate_site.py` filters to `result == "right"` and takes the top 6 by score. Never rendered publicly. Updated the section's home page description text to match ("A hand-picked reel of the show's highest-stakes calls that came back right").
+
+### Fixed
+- Removed 4 em dashes introduced earlier today in `docs/PATCHNOTES.md` and one in `site_src/templates/index.html`'s "Big Ones" description, caught during a user-requested review of `docs/PRD.md` for §26 writing-style violations. Also fixed 2 pre-existing `&mdash;` "no data" placeholders in `index.html` and `leaderboard.html` (replaced with a plain hyphen) and one older em dash in a historical `docs/PATCHNOTES.md` entry, for full consistency with the §26 no-em-dash rule. `docs/PRD.md` itself had none introduced by recent edits; its only 3 remaining em-dash/`&mdash;` mentions are the rule's own self-referential examples (deliberately kept, per §26's own text).
+
 ## v0.56.0 (2026-08-31)
 
 ### Changed
 - Moved the "Big Ones" home page section (below "Guest Predictions" instead of above "Host Accuracy"), per user request, so visitors see the per-host scorecards and guest predictions first before the curated highlight reel.
-- Added a "Home" link as the first item in the site nav (`base.html`), per user request — previously the only way back to the home page was the logo/brand link.
+- Added a "Home" link as the first item in the site nav (`base.html`), per user request. Previously the only way back to the home page was the logo/brand link.
 
 ## v0.55.0 (2026-08-31)
 
@@ -22,17 +30,17 @@ All notable changes to this project, in reverse chronological order. Format: sem
 - Backfilled `resolves_by` on a 5-check test batch to prove out the retroactive-backfill workflow: `chamath-00:59:45` (2065, from a 40-50yr NYC-decline forecast), `chamath-01:01:35` (2028, vague "coming years" NYC real estate crash), `friedberg-01:11:59` (2035, age-reversal therapy), `andrew-ross-sorkin-00:39:59` (2040, "end of empire" inflection point), `andrew-ross-sorkin-00:44:34` (2035, 10-year tariff/auto-tech window).
 
 ### Changed
-- `scripts/build_manifest.py`: added a `legacy_no_transcript` status count and a `notes` field explaining that `captions_fetched`/`chunked` reading `false` alongside `predictions_extracted: true` reflects real historical episodes whose raw transcript/chunk files were never retained (not a bug and not "unprocessed") — 229 episodes fall into this category. `predictions_extracted`/`validated` (or actual `data/predictions/`, `data/checks/` file presence) remain the correct ground truth for pipeline completeness, now documented directly in the manifest instead of only in project memory.
+- `scripts/build_manifest.py`: added a `legacy_no_transcript` status count and a `notes` field explaining that `captions_fetched`/`chunked` reading `false` alongside `predictions_extracted: true` reflects real historical episodes whose raw transcript/chunk files were never retained (not a bug and not "unprocessed"). 229 episodes fall into this category. `predictions_extracted`/`validated` (or actual `data/predictions/`, `data/checks/` file presence) remain the correct ground truth for pipeline completeness, now documented directly in the manifest instead of only in project memory.
 
 ## v0.53.0 (2026-08-31)
 
 ### Fixed
-- Recovered the one permanently-"unresolvable" backlog episode, Ray Dalio's "Our System Is in Jeopardy - Debt, AI & the Cycle That Destroyed Rome" (RSS-published 2026-03-03), which had no resolvable `video_id` because the yt-dlp channel search couldn't find it under that title. Found it manually on the official All-In YouTube channel under a different public title, "Ray Dalio: 'AI Is Eating Everything - and It Might Eat Itself'" (`u-vMNzHgSHI`) — same chapter markers and description confirm it's the same upload, just retitled on YouTube. Added a `config/youtube_urls_override.json` entry, fetched its transcript/chunks, and extracted 1 falsifiable dated prediction (Ray Dalio forecasting Democrats will take the House in the 2026 midterms), validated `inconclusive` since the midterms haven't happened yet (though current polling favors that outcome). Episode count now 413 tracked / 413 with extracted predictions — zero gaps remain.
+- Recovered the one permanently-"unresolvable" backlog episode, Ray Dalio's "Our System Is in Jeopardy - Debt, AI & the Cycle That Destroyed Rome" (RSS-published 2026-03-03), which had no resolvable `video_id` because the yt-dlp channel search couldn't find it under that title. Found it manually on the official All-In YouTube channel under a different public title, "Ray Dalio: 'AI Is Eating Everything - and It Might Eat Itself'" (`u-vMNzHgSHI`): same chapter markers and description confirm it's the same upload, just retitled on YouTube. Added a `config/youtube_urls_override.json` entry, fetched its transcript/chunks, and extracted 1 falsifiable dated prediction (Ray Dalio forecasting Democrats will take the House in the 2026 midterms), validated `inconclusive` since the midterms haven't happened yet (though current polling favors that outcome). Episode count now 413 tracked / 413 with extracted predictions, zero gaps remain.
 
 ## v0.52.0 (2026-08-31)
 
 ### Added
-- Processed 1 newly-published episode found via the incremental RSS/YouTube sweep (Batch 12): "Nvidia's Historic Quarter, SaaS Comeback, Bessent vs Druck, America's Debt Crisis, Cancer Vaccine" (published 2026-08-29). Fetched transcript and chunks, extracted 1 falsifiable dated host prediction (Chamath's Social Security insolvency / state bankruptcy and restructuring forecast for "around 2030 to 2032"), and validated it via WebSearch-informed review — marked `inconclusive` since the 2030-2032 window is still years out. Episode count now 413 tracked / 412 with extracted predictions.
+- Processed 1 newly-published episode found via the incremental RSS/YouTube sweep (Batch 12): "Nvidia's Historic Quarter, SaaS Comeback, Bessent vs Druck, America's Debt Crisis, Cancer Vaccine" (published 2026-08-29). Fetched transcript and chunks, extracted 1 falsifiable dated host prediction (Chamath's Social Security insolvency / state bankruptcy and restructuring forecast for "around 2030 to 2032"), and validated it via WebSearch-informed review, marked `inconclusive` since the 2030-2032 window is still years out. Episode count now 413 tracked / 412 with extracted predictions.
 
 ## v0.51.0 (2026-08-27)
 
@@ -54,7 +62,7 @@ All notable changes to this project, in reverse chronological order. Format: sem
 ### Fixed
 - Fixed the topic filter dropdowns (home page, Full Ledger): the home page's topic list was silently scoped to only host predictions, so ~40 guest-only tags (spacex, openai, robotics, etc.) never appeared as filter options on the Ledger even though the Ledger displays those predictions. Now the Ledger gets its own `all_topics` list computed across every speaker (host + guest), while the home page correctly keeps its host-scoped list (it only filters host scorecards, so a guest-only option would just zero out every card).
 - Fixed topic label casing: the `|capitalize` Jinja filter was mangling multi-word/acronym tags ("ai" -> "Ai", "spacex" -> "Spacex", "ai-policy" -> "Ai-policy"). New `tag_display()` filter (Python) + `tagDisplay()` (JS, kept in sync) special-cases acronyms/brands and title-cases hyphenated compound tags word-by-word ("open-source" -> "Open Source").
-- Fixed dead code in `app.js`'s "By Topic" chart view: the stacked-bar group labels were never actually capitalized because the code checked `groupKey === "topic"`, but `groupKey` is only ever `"year"` or `"tags"` — the correct flag is `state.view === "topic"`. Now uses the new `tagDisplay()` for consistent casing.
+- Fixed dead code in `app.js`'s "By Topic" chart view: the stacked-bar group labels were never actually capitalized because the code checked `groupKey === "topic"`, but `groupKey` is only ever `"year"` or `"tags"`; the correct flag is `state.view === "topic"`. Now uses the new `tagDisplay()` for consistent casing.
 
 ### Changed
 - Consolidated the tag taxonomy from 72 distinct tags down to 30 general themes, per user request ("each tag should be a general theme, not that specific - individual company names shouldn't be a tag"). Retagged 49 predictions across 16 episode files: merged company/product names into their domain (anthropic/openai/xai/grok/meta -> ai; spacex/starlink -> space; waymo -> autonomous-vehicles; google/technology/big-tech/hardware -> tech; saronic/1x/agility-robotics/nasa -> dropped, redundant with a co-occurring general tag), dropped person names (zuckerberg, elon-musk, aoc - redundant with co-occurring topic tags), merged single-material tags into the "commodities" umbrella (copper, silver, critical-minerals), merged narrow subtopics into their nearest general theme (regulation -> policy, foreign-policy/world -> geopolitics, quantum-computing -> science, fusion -> energy, cybersecurity/hard-takeoff/humanoid -> ai/robotics, jobs/supply-chain/growth -> economy, house/senate -> dropped, redundant with co-occurring "midterms"), and collapsed year-specific election tags (2026-election, 2028-election, bare "2028") into a single "elections" tag (the Ledger's separate Year filter already covers the year dimension). Verified every merge against the actual prediction text before mapping; no prediction was left with an empty tag list.

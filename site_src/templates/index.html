@@ -3,7 +3,7 @@
 <section class="section-head">
   <div class="flex-between">
     <div>
-      <h1>{{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% else %}&mdash;{% endif %} accuracy sitewide</h1>
+      <h1>{{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% else %}-{% endif %} accuracy sitewide</h1>
       <p class="muted">{{ overall_stats.right }} right ({{ overall_pct_resolved.right }}%) &middot; {{ overall_stats.wrong }} wrong ({{ overall_pct_resolved.wrong }}%) out of {{ overall_total_resolved }} resolved ({{ overall_total_all }} total qualifying predictions). <a href="leaderboard.html">See the full leaderboard &rarr;</a></p>
     </div>
   </div>
@@ -77,7 +77,7 @@
     <h2>The Big Ones</h2>
     <a href="ledger.html">Browse the full ledger &rarr;</a>
   </div>
-  <p class="muted">A hand-picked reel of the boldest, highest-stakes calls made on the show &mdash; the huge hits, the confident misses, and the ones still playing out.</p>
+  <p class="muted">A hand-picked reel of the show's highest-stakes calls that came back right.</p>
   <div class="grid grid-2" style="margin-top:1rem;">
     {% for p in big_ones %}
     <a class="card prediction-card" href="episodes/{{ p.episode_id }}.html#{{ p.id }}">

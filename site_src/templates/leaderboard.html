@@ -34,7 +34,7 @@
           <span class="muted">{{ "Host" if s.role == "host" else "Guest" }}</span>
           {% if s.small_sample %}<span class="badge badge-muted" title="Fewer than 3 tracked predictions: treat this accuracy figure as anecdotal, not statistically meaningful.">small sample</span>{% endif %}
         </td>
-        <td>{% if s.accuracy_pct is not none %}{{ s.accuracy_pct }}%{% else %}&mdash;{% endif %}</td>
+        <td>{% if s.accuracy_pct is not none %}{{ s.accuracy_pct }}%{% else %}-{% endif %}</td>
         {% for key in ["right", "wrong", "ambiguous", "inconclusive", "unvalidated"] %}
         <td class="num">{{ s.stats[key] }}{% if s.stats[key] and s.pct_all[key] is not none %} <span class="muted">({{ s.pct_all[key] }}%)</span>{% endif %}</td>
         {% endfor %}

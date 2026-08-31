@@ -391,13 +391,18 @@ def render_site(root: Path, out_dir: Path) -> None:
             break
     recently_settled = recently_settled[:20]
 
-    # "Big Ones" (roadmap item 3): a hand-curated highlight reel of the
-    # highest-profile predictions, listed in config/big_ones.json as
-    # {episode_id, id} pairs. Resolved from the same merged prediction
-    # records as everywhere else, so quote/result/tags/who_display stay in
-    # sync automatically as new checks come in. Entries whose episode_id/id
-    # no longer resolve (a rename, a corrected id) are skipped with a
-    # warning rather than breaking the build.
+    # "Big Ones" (roadmap item 3): a hand-curated pool of the highest-profile
+    # predictions, listed in config/big_ones.json as {episode_id, id,
+    # impact_score} entries. impact_score (1.0-1000) is an editorial judgment
+    # of real-world significance -- NOT confidence or correctness -- used
+    # only to rank this candidate pool; it's a backend field, never rendered
+    # on the site. Resolved from the same merged prediction records as
+    # everywhere else, so quote/result/tags/who_display stay in sync
+    # automatically as new checks come in. Entries whose episode_id/id no
+    # longer resolve (a rename, a corrected id) are skipped with a warning
+    # rather than breaking the build. The home page shows only the top 6,
+    # confirmed-right entries by impact_score, so a wrong/inconclusive
+    # prediction never displaces the highlight reel with a miss.
     pred_lookup: Dict[tuple, Dict[str, Any]] = {}
     for ep in episodes:
         for p in ep["predictions"]:
@@ -406,14 +411,18 @@ def render_site(root: Path, out_dir: Path) -> None:
                 "episode_published": ep.get("published"), "youtube_url": ep.get("youtube_url"),
             }
     big_ones_cfg = load_json(root / "config" / "big_ones.json", [])
-    big_ones: List[Dict[str, Any]] = []
+    big_ones_pool: List[Dict[str, Any]] = []
     for entry in big_ones_cfg:
         key = (entry.get("episode_id"), entry.get("id"))
         record = pred_lookup.get(key)
         if record is None:
             print(f"[warn] big_ones.json entry not found, skipping: {entry}", file=sys.stderr)
             continue
-        big_ones.append(record)
+        big_ones_pool.append({**record, "impact_score": entry.get("impact_score", 0)})
+    big_ones = sorted(
+        (r for r in big_ones_pool if r.get("result") == "right"),
+        key=lambda r: -r["impact_score"],
+    )[:6]
 
     # Full Ledger (§36 item 5): a lightweight, client-filterable index of
     # every qualifying prediction sitewide. Kept deliberately thin (no quote/
