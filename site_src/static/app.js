@@ -242,6 +242,12 @@
         render();
       });
     });
+
+    // Run once on load so the predictions list matches the checkbox's
+    // default checked state immediately, instead of only applying once the
+    // visitor changes a filter (the chart above already matches by luck,
+    // since the server-rendered donut only counts right/wrong to start).
+    render();
   }
 
   function setupPredictionsToggle() {

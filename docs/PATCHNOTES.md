@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.62.0 (2026-08-31)
+
+### Fixed
+- The resolved-only/topic filters on host/guest pages didn't apply to the predictions list on first page load, only after the visitor toggled a control at least twice: `render()` was wired to each control's `change` event but never called on setup, so the list started unfiltered even though "Resolved only" is checked by default. Fixed by calling `render()` once at the end of `setupHomeCharts()`.
+
 ## v0.61.0 (2026-08-31)
 
 ### Changed
