@@ -2,6 +2,14 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.67.0 (2026-08-31)
+
+### Fixed
+- The two footer paragraphs (disclaimer + new GitHub Issues link) had no spacing between them and ran together; added `.75rem` margin between them and made the footer link visibly underlined instead of blending into the surrounding text.
+
+### Changed
+- §35 (Listener Voting/Feedback Mechanism) is resolved, not deferred: per explicit user decision ("the full listener-voting feature should be part of the issues submission... that's the decision i made moving forward so we dont colelct user data"), the GitHub Issues footer link *is* the listener-voting/feedback mechanism going forward - not a stopgap ahead of a custom voting backend. Rewrote `docs/PRD.md` §35 from "Planned (Deferred)" to "Complete," updated its §19 roadmap row and the same-day follow-up row accordingly, and removed the now-stale "§35 stays deferred" note from §19.1's footer.
+
 ## v0.66.0 (2026-08-31)
 
 ### Added
