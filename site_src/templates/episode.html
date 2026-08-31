@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "_prediction_card.html" as card %}
 {% block content %}
 <section>
   <div class="flex-between">
@@ -11,45 +12,7 @@
 
   <div class="predictions">
     {% for p in episode.predictions %}
-    <article class="prediction-card" id="{{ p.id }}">
-      <div class="prediction-head">
-        <a class="who-badge" href="../host/{{ p.who }}.html">{{ p.who_display }}</a>
-        <span class="badge badge-{{ p.result or 'unvalidated' }}">{{ (p.result or 'unvalidated')|capitalize }}</span>
-        {% if p.speaker_confidence != "high" %}
-        <span class="badge badge-muted" title="Speaker attribution is a best-effort contextual guess (no audio/voice matching); confidence: {{ p.speaker_confidence }}">
-          attribution: {{ p.speaker_confidence }}
-        </span>
-        {% endif %}
-        <span class="muted">{{ p.timestamp }}</span>
-        {% if p.tags %}
-        <span class="tags">
-          {% for tag in p.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
-        </span>
-        {% endif %}
-      </div>
-      <p class="prediction-text">{{ p.prediction }}</p>
-      <blockquote class="quote">
-        &ldquo;{{ p.quote }}&rdquo;
-        {% if episode.youtube_url %}
-        <span class="yt-link">
-          <a href="{{ episode.youtube_url }}{% if p.timestamp_seconds %}&t={{ p.timestamp_seconds }}{% endif %}" target="_blank" rel="noreferrer" class="js-youtube-link">View on YouTube</a>
-        </span>
-        {% endif %}
-      </blockquote>
-      {% if p.explanation %}
-      <div class="explanation">
-        <div class="explanation-label">Explanation</div>
-        <p>{{ p.explanation }}</p>
-        {% if p.sources %}
-        <ul class="sources">
-          {% for s in p.sources %}
-          <li><a href="{{ s.url }}" target="_blank" rel="noreferrer">{{ s.title or s.url }}</a></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </div>
-      {% endif %}
-    </article>
+    {{ card.card_article(p, "../host/" ~ p.who ~ ".html", p.who_display, show_confidence=True, show_tags=True, youtube_url=episode.youtube_url) }}
     {% else %}
     <div class="card">No predictions found for this episode.</div>
     {% endfor %}

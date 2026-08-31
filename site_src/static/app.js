@@ -60,6 +60,18 @@
     }).join(" ");
   }
 
+  // Verdict data-model decision (§19.1 item 1): the underlying `result`
+  // values (right/wrong/ambiguous/inconclusive/unvalidated) stay unchanged
+  // in the data model -- ambiguous checks, read in practice, mean a mixed/
+  // partial outcome, and inconclusive means the timeframe hasn't elapsed
+  // yet -- so only the *display* copy changes to say that plainly. Keep in
+  // sync with VERDICT_DISPLAY_OVERRIDES in scripts/generate_site.py.
+  var VERDICT_DISPLAY_OVERRIDES = { ambiguous: "Partly Right", inconclusive: "Too Early" };
+  function verdictDisplay(result) {
+    if (Object.prototype.hasOwnProperty.call(VERDICT_DISPLAY_OVERRIDES, result)) return VERDICT_DISPLAY_OVERRIDES[result];
+    return result.charAt(0).toUpperCase() + result.slice(1);
+  }
+
   function emptyBucket() {
     return { right: 0, wrong: 0, ambiguous: 0, inconclusive: 0, unvalidated: 0 };
   }
@@ -122,7 +134,7 @@
       var val = bucket[key] || 0;
       var pct = val > 0 && total > 0 ? ' <span class="muted">(' + ((val / total) * 100).toFixed(1) + '%)</span>' : '';
       html += "<tr><td><span class=\"dot dot-" + key + "\"></span>" +
-        key.charAt(0).toUpperCase() + key.slice(1) + "</td><td class=\"num\">" +
+        verdictDisplay(key) + "</td><td class=\"num\">" +
         val + pct + "</td></tr>";
     });
     html += "</tbody></table>";
@@ -250,6 +262,24 @@
     render();
   }
 
+  function setupTopicIndex() {
+    // §19.1 item 3: clicking a Topic Index pill on the home page sets the
+    // existing topic-filter dropdown (already wired up by setupHomeCharts)
+    // to that topic and scrolls the Host Accuracy chart into view, so the
+    // pill acts as a shortcut into the filter that's already there rather
+    // than a second, separate filtering mechanism.
+    var cloud = document.getElementById("topic-index");
+    var topicFilter = document.getElementById("topic-filter");
+    if (!cloud || !topicFilter) return;
+    cloud.querySelectorAll(".tag-pill[data-topic]").forEach(function (pill) {
+      pill.addEventListener("click", function () {
+        topicFilter.value = pill.getAttribute("data-topic");
+        topicFilter.dispatchEvent(new Event("change"));
+        topicFilter.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    });
+  }
+
   function setupPredictionsToggle() {
     var btn = document.getElementById("predictions-toggle");
     var list = document.getElementById("predictions-list");
@@ -339,7 +369,7 @@
         return '<a class="card prediction-card" href="episodes/' + e.episode_id + '.html#' + e.id + '">' +
           '<div class="flex-between">' +
           '<span class="who-badge">' + escapeHtml(e.who_display) + '</span>' +
-          '<span class="badge badge-' + e.result + '">' + escapeHtml(e.result.charAt(0).toUpperCase() + e.result.slice(1)) + '</span>' +
+          '<span class="badge badge-' + e.result + '">' + escapeHtml(verdictDisplay(e.result)) + '</span>' +
           '</div>' +
           '<p style="margin:.5rem 0;">' + escapeHtml(e.prediction) + '</p>' +
           '<div class="muted">' + escapeHtml(e.episode_title) + (e.published ? ' &middot; ' + escapeHtml(e.published) : '') + '</div>' +
@@ -423,7 +453,7 @@
       var page = filtered.slice(0, shownCount);
       var html = page.map(function (e) {
         var badge = e.type === "prediction"
-          ? '<span class="badge badge-' + e.result + '">' + escapeHtml(e.result.charAt(0).toUpperCase() + e.result.slice(1)) + '</span>'
+          ? '<span class="badge badge-' + e.result + '">' + escapeHtml(verdictDisplay(e.result)) + '</span>'
           : '<span class="badge badge-muted">' + typeLabel(e.type) + '</span>';
         return '<a class="card prediction-card" href="' + e.url + '">' +
           '<div class="flex-between">' +
@@ -541,6 +571,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     setupYoutubeWarning();
     setupHomeCharts();
+    setupTopicIndex();
     setupPredictionsToggle();
     setupEpisodeYearFilter();
     setupLedgerPage();

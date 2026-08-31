@@ -2,6 +2,19 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.68.0 (2026-08-31)
+
+Implements §19.1 items 1-5 (Verdict data-model decision, reusable prediction-card component, Topic Index, hero block, This Episode's Calls) in one pass, per user request.
+
+### Added
+- Reusable prediction-card Jinja component (`site_src/templates/_prediction_card.html`), with `card_link()` (compact, whole-card-is-a-link, used by home page sections) and `card_article()` (detailed in-page version, used by episode/host/guest pages) macros. Converted `episode.html`, `host.html`, and index.html's Big Ones/Recently Settled sections to use it, replacing three separate duplicated card markups with one. Incidentally added a YouTube deep link and sources list to host/guest page cards, which host.html's old inline markup omitted even though the underlying data was already present.
+- "Topic Index" tag cloud on the home page: a pill per topic (host-scoped, same set as the existing topic filter) showing its live qualifying-prediction count, sorted by count descending. Clicking a pill sets the existing topic-filter dropdown and scrolls the Host Accuracy chart into view, rather than introducing a second, separate filtering mechanism.
+- New home page hero block ("Did they call it?") replacing the bare accuracy-percentage headline, plus a one-line stat/CTA row underneath it that keeps the same numbers the old headline showed.
+- "This Episode's Calls" home page section: every qualifying prediction from the single most recent episode, capped at 6 (`HOME_SECTION_MAX`), placed after Recently Settled and before Recent Episodes.
+
+### Changed
+- Verdict display labels: `ambiguous` now displays as "Partly Right" and `inconclusive` as "Too Early," sitewide (badges, legends, ledger/leaderboard filters and headers). The underlying `result` schema values are unchanged (`ambiguous`/`inconclusive` still the stored values across ~3,455 checks) - this is a display-only mapping (`verdict_display()` in Python, `verdictDisplay()` in JS), mirroring the existing `tag_display` pattern. Grounded in reading an actual `ambiguous` check record, which confirmed the real-world usage is a mixed/partial outcome, not a "genuinely unclear" one - `about.html`'s methodology copy was corrected to match, not just relabeled.
+
 ## v0.67.0 (2026-08-31)
 
 ### Fixed

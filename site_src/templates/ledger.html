@@ -23,7 +23,7 @@
   <select id="ledger-result-filter" aria-label="Filter by result">
     <option value="">All results</option>
     {% for r in ["right", "wrong", "ambiguous", "inconclusive", "unvalidated"] %}
-    <option value="{{ r }}">{{ r|capitalize }}</option>
+    <option value="{{ r }}">{{ r|verdict_display }}</option>
     {% endfor %}
   </select>
 </div>

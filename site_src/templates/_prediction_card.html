@@ -1,0 +1,68 @@
+{# Reusable prediction-card component (§19.1 item 2). Two shapes cover every
+   place a prediction renders sitewide:
+     - card_link: the compact, whole-card-is-a-link version used by home page
+       sections (Big Ones, Recently Settled, This Episode's Calls) and any
+       future section in the same style.
+     - card_article: the detailed, in-page version (result badge, quote,
+       YouTube deep link, explanation + sources) used by episode and
+       host/guest pages, which differ slightly in which metadata they show
+       (episode.html links back to the host; host.html links back to the
+       episode and needs client-side filter attributes) - parameterized
+       rather than duplicated. #}
+
+{% macro card_link(p, prefix='') %}
+<a class="card prediction-card" href="{{ prefix }}episodes/{{ p.episode_id }}.html#{{ p.id }}">
+  <div class="flex-between">
+    <span class="who-badge">{{ p.who_display }}</span>
+    <span class="badge badge-{{ p.result or 'unvalidated' }}">{{ (p.result or "unvalidated")|verdict_display }}</span>
+  </div>
+  <p style="margin:.5rem 0;">{{ p.prediction }}</p>
+  <div class="muted">{{ p.episode_title }} &middot; {{ p.episode_published or "Unknown date" }}</div>
+</a>
+{% endmacro %}
+
+{% macro card_article(p, primary_href, primary_label, show_published=False, show_confidence=False, show_tags=False, youtube_url=None, filter_attrs=False) %}
+<article class="prediction-card" id="{{ p.id }}"{% if filter_attrs %} data-tags="{{ (p.tags or [])|join(',') }}" data-result="{{ p.result or 'unvalidated' }}"{% endif %}>
+  <div class="prediction-head">
+    <a class="who-badge" href="{{ primary_href }}">{{ primary_label }}</a>
+    <span class="badge badge-{{ p.result or 'unvalidated' }}">{{ (p.result or 'unvalidated')|verdict_display }}</span>
+    {% if show_confidence and p.speaker_confidence != "high" %}
+    <span class="badge badge-muted" title="Speaker attribution is a best-effort contextual guess (no audio/voice matching); confidence: {{ p.speaker_confidence }}">
+      attribution: {{ p.speaker_confidence }}
+    </span>
+    {% endif %}
+    {% if show_published %}
+    <span class="muted">{{ p.episode_published }} &middot; {{ p.timestamp }}</span>
+    {% else %}
+    <span class="muted">{{ p.timestamp }}</span>
+    {% endif %}
+    {% if show_tags and p.tags %}
+    <span class="tags">
+      {% for tag in p.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </span>
+    {% endif %}
+  </div>
+  <p class="prediction-text">{{ p.prediction }}</p>
+  <blockquote class="quote">
+    &ldquo;{{ p.quote }}&rdquo;
+    {% if youtube_url %}
+    <span class="yt-link">
+      <a href="{{ youtube_url }}{% if p.timestamp_seconds %}&t={{ p.timestamp_seconds }}{% endif %}" target="_blank" rel="noreferrer" class="js-youtube-link">View on YouTube</a>
+    </span>
+    {% endif %}
+  </blockquote>
+  {% if p.explanation %}
+  <div class="explanation">
+    <div class="explanation-label">Explanation</div>
+    <p>{{ p.explanation }}</p>
+    {% if p.sources %}
+    <ul class="sources">
+      {% for s in p.sources %}
+      <li><a href="{{ s.url }}" target="_blank" rel="noreferrer">{{ s.title or s.url }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endif %}
+</article>
+{% endmacro %}

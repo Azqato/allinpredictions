@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "_prediction_card.html" as card %}
 {% block content %}
 <section>
   <div class="flex-between">
@@ -36,7 +37,7 @@
         <tbody>
           {% for key in ["right", "wrong"] %}
           <tr>
-            <td><span class="dot dot-{{ key }}"></span>{{ key|capitalize }}</td>
+            <td><span class="dot dot-{{ key }}"></span>{{ key|verdict_display }}</td>
             <td class="num">{{ speaker.stats[key] }}{% if speaker.stats[key] and speaker.pct_all[key] is not none %} <span class="muted">({{ speaker.pct_all[key] }}%)</span>{% endif %}</td>
           </tr>
           {% endfor %}
@@ -61,21 +62,7 @@
   {% endif %}
   <div class="predictions" id="predictions-list">
     {% for p in speaker.predictions %}
-    <article class="prediction-card" id="{{ p.id }}" data-tags="{{ (p.tags or [])|join(',') }}" data-result="{{ p.result or 'unvalidated' }}">
-      <div class="prediction-head">
-        <a class="who-badge" href="../episodes/{{ p.episode_id }}.html">{{ p.episode_title }}</a>
-        <span class="badge badge-{{ p.result or 'unvalidated' }}">{{ (p.result or 'unvalidated')|capitalize }}</span>
-        <span class="muted">{{ p.episode_published }} &middot; {{ p.timestamp }}</span>
-      </div>
-      <p class="prediction-text">{{ p.prediction }}</p>
-      <blockquote class="quote">&ldquo;{{ p.quote }}&rdquo;</blockquote>
-      {% if p.explanation %}
-      <div class="explanation">
-        <div class="explanation-label">Explanation</div>
-        <p>{{ p.explanation }}</p>
-      </div>
-      {% endif %}
-    </article>
+    {{ card.card_article(p, "../episodes/" ~ p.episode_id ~ ".html", p.episode_title, show_published=True, youtube_url=p.youtube_url, filter_attrs=True) }}
     {% endfor %}
   </div>
 </section>

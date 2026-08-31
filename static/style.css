@@ -61,6 +61,35 @@ h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
 
 .section-head { margin-bottom: 1rem; }
 
+.hero { margin-bottom: .5rem; }
+.hero h1 { font-size: 2.25rem; line-height: 1.15; margin-bottom: .5rem; }
+.hero-sub { margin: 0 0 1rem; font-size: 1rem; color: var(--muted); }
+.hero-stat { margin: 0; font-size: .95rem; }
+.hero-stat strong { font-size: 1.05rem; }
+.hero-stat a { margin-left: .5rem; white-space: nowrap; }
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .75rem;
+}
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card-bg);
+  color: var(--fg);
+  font: inherit;
+  font-size: .8rem;
+  padding: .3rem .7rem;
+  cursor: pointer;
+}
+.tag-pill:hover { border-color: var(--fg); }
+.tag-pill-count { color: var(--muted); font-size: .75rem; }
+
 .flex-between {
   display: flex;
   align-items: flex-start;

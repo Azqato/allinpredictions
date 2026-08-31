@@ -17,6 +17,7 @@ import math
 import re
 import shutil
 import sys
+from collections import Counter
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -55,6 +56,27 @@ def tag_display(tag: str) -> str:
     return " ".join(
         TAG_DISPLAY_OVERRIDES.get(word, word.capitalize()) for word in tag.split("-")
     )
+
+
+# Verdict data-model decision (§19.1 item 1, docs/PRD.md §36.1 item 8): the
+# underlying `result` values (right/wrong/ambiguous/inconclusive/unvalidated)
+# stay unchanged in the data model, so no migration across ~3,455 existing
+# checks. Only the *display* copy changes: read against real check
+# explanations, "ambiguous" is used in practice for a mixed/partial outcome
+# ("partly right") and "inconclusive" for a timeframe that hasn't elapsed yet
+# ("too early") - so those are the display strings, everywhere a verdict
+# renders as visible copy. Keep in sync with VERDICT_DISPLAY_OVERRIDES in
+# site_src/static/app.js.
+VERDICT_DISPLAY_OVERRIDES = {
+    "ambiguous": "Partly Right",
+    "inconclusive": "Too Early",
+}
+
+
+def verdict_display(result: str) -> str:
+    if result in VERDICT_DISPLAY_OVERRIDES:
+        return VERDICT_DISPLAY_OVERRIDES[result]
+    return result.capitalize()
 
 
 def levenshtein(a: str, b: str) -> int:
@@ -365,6 +387,13 @@ def render_site(root: Path, out_dir: Path) -> None:
     # out every card if offered there.
     host_topics = sorted({tag for s in hosts_sorted for e in s["chart_entries"] for tag in e["tags"]})
 
+    # §19.1 item 3 "Topic Index": live per-topic counts for the home page tag
+    # cloud, scoped to the same host-only set as host_topics/the topic filter
+    # above (so a pill's count always matches what clicking it actually
+    # filters to). Sorted by count descending so the biggest topics lead.
+    topic_counts = Counter(tag for s in hosts_sorted for e in s["chart_entries"] for tag in e["tags"])
+    topic_index = sorted(topic_counts.items(), key=lambda kv: (-kv[1], kv[0]))
+
     # Every topic tag appearing on ANY qualifying prediction sitewide (host
     # or guest), for the Full Ledger filter (§36), which browses all of them.
     # Using host_topics here was the bug: dozens of guest-only tags (spacex,
@@ -442,6 +471,25 @@ def render_site(root: Path, out_dir: Path) -> None:
         key=lambda r: -r["impact_score"],
     )[:HOME_SECTION_MAX]
 
+    # "This Episode's Calls" (§19.1 item 5): every qualifying prediction from
+    # the single most recent episode (episodes is already newest-first, same
+    # assumption "Recent Episodes"/recently_settled above rely on), so the
+    # newest show gets its own highlight strip distinct from the curated
+    # Big Ones and time-scoped Recently Settled sections. Capped at
+    # HOME_SECTION_MAX like every other home page section.
+    latest_episode = episodes[0] if episodes else None
+    this_episode_calls: List[Dict[str, Any]] = []
+    if latest_episode:
+        for p in latest_episode["predictions"]:
+            qualifies = p.get("role") == "host" or p.get("speaker_confidence") in QUALIFYING_CONFIDENCE
+            if not qualifies:
+                continue
+            this_episode_calls.append(
+                {**p, "episode_id": latest_episode["episode_id"], "episode_title": latest_episode["title"],
+                 "episode_published": latest_episode.get("published"), "youtube_url": latest_episode.get("youtube_url")}
+            )
+        this_episode_calls = this_episode_calls[:HOME_SECTION_MAX]
+
     # Full Ledger (§36 item 5): a lightweight, client-filterable index of
     # every qualifying prediction sitewide. Kept deliberately thin (no quote/
     # explanation/sources) so the JSON stays small - the full record lives on
@@ -518,6 +566,7 @@ def render_site(root: Path, out_dir: Path) -> None:
         lstrip_blocks=True,
     )
     env.filters["tag_display"] = tag_display
+    env.filters["verdict_display"] = verdict_display
 
     # Only clean the specific generated paths -- out_dir may be the rewrite/
     # root itself (so the site's index.html etc. sit at the eventual repo
@@ -551,6 +600,7 @@ def render_site(root: Path, out_dir: Path) -> None:
             overall_total_all=overall_total_all, overall_accuracy_pct=overall_accuracy_pct,
             overall_pct_all=overall_pct_all, overall_pct_resolved=overall_pct_resolved,
             recently_settled=recently_settled[:HOME_SECTION_MAX], big_ones=big_ones,
+            topic_index=topic_index, latest_episode=latest_episode, this_episode_calls=this_episode_calls,
         )
     )
 

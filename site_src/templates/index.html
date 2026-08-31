@@ -1,13 +1,27 @@
 {% extends "base.html" %}
+{% import "_prediction_card.html" as card %}
 {% block content %}
-<section class="section-head">
-  <div class="flex-between">
-    <div>
-      <h1>{{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% else %}-{% endif %} accuracy sitewide</h1>
-      <p class="muted">{{ overall_stats.right }} right ({{ overall_pct_resolved.right }}%) &middot; {{ overall_stats.wrong }} wrong ({{ overall_pct_resolved.wrong }}%) out of {{ overall_total_resolved }} resolved ({{ overall_total_all }} total qualifying predictions). <a href="leaderboard.html">See the full leaderboard &rarr;</a></p>
-    </div>
+<section class="hero">
+  <h1>Did they call it?</h1>
+  <p class="hero-sub">Every prediction made on the All-In Podcast, checked against what actually happened.</p>
+  <p class="hero-stat">
+    <strong>{{ overall_accuracy_pct }}{% if overall_accuracy_pct is not none %}%{% else %}-{% endif %} accuracy sitewide</strong>
+    <span class="muted"> &middot; {{ overall_stats.right }} right ({{ overall_pct_resolved.right }}%) &middot; {{ overall_stats.wrong }} wrong ({{ overall_pct_resolved.wrong }}%) out of {{ overall_total_resolved }} resolved ({{ overall_total_all }} total qualifying predictions)</span>
+    <a href="leaderboard.html">See the full leaderboard &rarr;</a>
+  </p>
+</section>
+
+{% if topic_index %}
+<section class="section-head" style="margin-top:1.5rem;">
+  <h2>Topic Index</h2>
+  <p class="muted">Jump to a topic. Counts reflect qualifying host predictions.</p>
+  <div class="tag-cloud" id="topic-index">
+    {% for t, count in topic_index %}
+    <button type="button" class="tag-pill" data-topic="{{ t }}">{{ t|tag_display }} <span class="tag-pill-count">{{ count }}</span></button>
+    {% endfor %}
   </div>
 </section>
+{% endif %}
 
 <section>
   <div class="section-head">
@@ -43,7 +57,7 @@
           <tbody>
             {% for key in ["right", "wrong"] %}
             <tr>
-              <td><span class="dot dot-{{ key }}"></span>{{ key|capitalize }}</td>
+              <td><span class="dot dot-{{ key }}"></span>{{ key|verdict_display }}</td>
               <td class="num">{{ h.stats[key] }}{% if h.stats[key] and h.pct_resolved[key] is not none %} <span class="muted">({{ h.pct_resolved[key] }}%)</span>{% endif %}</td>
             </tr>
             {% endfor %}
@@ -80,14 +94,7 @@
   <p class="muted">A hand-picked reel of the show's highest-stakes calls that came back right.</p>
   <div class="grid grid-2" style="margin-top:1rem;">
     {% for p in big_ones %}
-    <a class="card prediction-card" href="episodes/{{ p.episode_id }}.html#{{ p.id }}">
-      <div class="flex-between">
-        <span class="who-badge">{{ p.who_display }}</span>
-        <span class="badge badge-{{ p.result or 'unvalidated' }}">{{ (p.result or "unvalidated")|capitalize }}</span>
-      </div>
-      <p style="margin:.5rem 0;">{{ p.prediction }}</p>
-      <div class="muted">{{ p.episode_title }} &middot; {{ p.episode_published or "Unknown date" }}</div>
-    </a>
+    {{ card.card_link(p) }}
     {% endfor %}
   </div>
 </section>
@@ -101,14 +108,22 @@
   </div>
   <div class="grid grid-2" style="margin-top:1rem;">
     {% for p in recently_settled %}
-    <a class="card prediction-card" href="episodes/{{ p.episode_id }}.html#{{ p.id }}">
-      <div class="flex-between">
-        <span class="who-badge">{{ p.who_display }}</span>
-        <span class="badge badge-{{ p.result }}">{{ p.result|capitalize }}</span>
-      </div>
-      <p style="margin:.5rem 0;">{{ p.prediction }}</p>
-      <div class="muted">{{ p.episode_title }} &middot; {{ p.episode_published or "Unknown date" }}</div>
-    </a>
+    {{ card.card_link(p) }}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if this_episode_calls %}
+<section class="section-head" style="margin-top:2.5rem;">
+  <div class="flex-between">
+    <h2>This Episode's Calls</h2>
+    <a href="episodes/{{ latest_episode.episode_id }}.html">View full episode &rarr;</a>
+  </div>
+  <p class="muted">Every qualifying prediction from the latest episode, {{ latest_episode.title }}.</p>
+  <div class="grid grid-2" style="margin-top:1rem;">
+    {% for p in this_episode_calls %}
+    {{ card.card_link(p) }}
     {% endfor %}
   </div>
 </section>

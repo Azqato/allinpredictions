@@ -38,7 +38,7 @@
   <p>Because this project does not download or process audio, there is no voice-based speaker diarization. Instead, each prediction's speaker is inferred from the surrounding transcript text alone (direct address, self-reference, recurring topics). Each prediction carries a confidence level, and low-confidence or unattributed predictions are excluded from host and guest scorecards, though they remain visible on the relevant episode page for transparency.</p>
 
   <h2>How validation works</h2>
-  <p>Each prediction is checked using web search to determine whether it appears to have come true (right), been incorrect (wrong), be too early to tell (inconclusive), or be genuinely unclear even with enough time elapsed (ambiguous). Explanations cite the sources used.</p>
+  <p>Each prediction is checked using web search to determine whether it appears to have come true (right), been incorrect (wrong), be too early to tell (shown as "Too Early") - the forecast's timeframe hasn't elapsed yet - or landed as a mixed or partial outcome (shown as "Partly Right") - some of the call came true, some didn't. Explanations cite the sources used.</p>
 
   <h2>Disclaimer</h2>
   <p>This is an unofficial, best-effort project. It may contain transcription errors, misattributed speakers, or incorrect validation verdicts. It is not affiliated with the All-In Podcast or its hosts.</p>
