@@ -229,6 +229,62 @@ h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
 .sources { padding-left: 1.1rem; font-size: .8rem; }
 
 .about p { max-width: 65ch; }
+.about h2 { margin-top: 2rem; }
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 0 0 .5rem;
+}
+
+.pipeline-steps {
+  list-style: none;
+  counter-reset: pipeline-step;
+  margin: 1.5rem 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+.pipeline-steps li {
+  counter-increment: pipeline-step;
+  position: relative;
+  padding-left: 3rem;
+}
+.pipeline-steps li::before {
+  content: counter(pipeline-step, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+.pipeline-step-title { display: block; font-weight: 600; margin-bottom: .15rem; }
+.pipeline-steps p { margin: 0; max-width: 60ch; color: var(--muted); font-size: .9rem; }
+
+.verdict-glossary { margin: 1rem 0; }
+.verdict-glossary-row {
+  display: flex;
+  align-items: baseline;
+  gap: .75rem;
+  padding: .5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.verdict-glossary-row dt {
+  flex: 0 0 9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+.verdict-glossary-row dd { margin: 0; max-width: 50ch; color: var(--muted); font-size: .9rem; }
+@media (max-width: 600px) {
+  .verdict-glossary-row { flex-direction: column; gap: .25rem; }
+  .verdict-glossary-row dt { flex: none; }
+}
 
 .site-footer {
   border-top: 1px solid var(--border);

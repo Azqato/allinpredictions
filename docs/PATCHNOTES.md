@@ -2,7 +2,17 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
-## v0.68.0 (2026-08-31)
+## v0.69.0 (2026-08-31)
+
+Implements §19.1 item 6 (Methodology page redesign), per user request ("what's next?" -> "yes").
+
+### Changed
+- Redesigned `about.html` as the site's Methodology page: an eyebrow label, an original headline/subhead ("The transcript talks. We check if it was right."), a numbered five-step pipeline (capture the transcript, pull out the calls, attribute the speaker, check the record, publish the receipts) mapped onto this site's own §6 pipeline stages, and a five-row verdict glossary (Right/Wrong/Partly Right/Too Early/Unvalidated) with the same colored dots used elsewhere on the site. Kept the existing "How speaker attribution works," "About this project," and "Disclaimer" copy underneath it.
+- Added a "Where this differs from other trackers" section explicitly stating that this site scores guest predictions too, not just the four permanent hosts, per §36.4's noted point of difference.
+- Original copy throughout, not the competitor's headline or step titles, per the §36.5 naming convention.
+
+### Added
+- Footer link ("Read the Methodology") to `about.html` on every page, since the page had no inbound link anywhere on the site after "About" was removed from the nav in v0.64.0 - it's now reachable again without a direct URL.
 
 Implements §19.1 items 1-5 (Verdict data-model decision, reusable prediction-card component, Topic Index, hero block, This Episode's Calls) in one pass, per user request.
 
