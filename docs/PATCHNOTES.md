@@ -2,7 +2,13 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
-## v0.69.0 (2026-08-31)
+## v0.70.0 (2026-08-31)
+
+### Fixed
+- Footer text was capped at a cramped `60ch` inside the already-960px `.container`, leaving large empty margins on wider screens. Restructured the footer to match composeratlas.com's layout: a centered sitemap link row (uncapped width), then a wider (`720px`) legal disclaimer line, then a short copyright line - none of the three feel narrow anymore.
+
+### Added
+- Full sitemap nav in the footer of every page (Home, Episodes, Leaderboard, Ledger, Hosts, Search, Methodology, plus a "Feedback" link out to GitHub Issues), replacing the two ad-hoc inline links ("Open an issue on GitHub" / "Read the Methodology") that were previously buried in the disclaimer paragraphs.
 
 Implements §19.1 item 6 (Methodology page redesign), per user request ("what's next?" -> "yes").
 

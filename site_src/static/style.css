@@ -286,19 +286,41 @@ h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
   .verdict-glossary-row dt { flex: none; }
 }
 
+/* Footer, incl. sitemap nav - modeled on composeratlas.com's footer layout
+   (centered link row, then a wider legal line, then a copyright line)
+   rather than the old cramped 60ch-capped paragraphs. */
 .site-footer {
   border-top: 1px solid var(--border);
-  padding: 1.5rem 0 2.5rem;
+  padding: 2rem 1.5rem 2.5rem;
+  text-align: center;
 }
-.site-footer p {
-  max-width: 60ch;
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.footer-links a {
+  font-size: .8rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+.footer-links a:hover { color: var(--fg); text-decoration: underline; }
+
+.footer-legal {
+  max-width: 720px;
   margin: 0 auto;
   color: var(--muted);
   font-size: .75rem;
-  text-align: center;
-  padding: 0 1.5rem;
+  line-height: 1.6;
 }
-.site-footer p + p { margin-top: .75rem; }
+.footer-copy {
+  margin: .75rem auto 0;
+  color: var(--muted);
+  font-size: .75rem;
+}
 .site-footer a { text-decoration: underline; }
 .site-footer a:hover { color: var(--fg); }
 
