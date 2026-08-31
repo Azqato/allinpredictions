@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.71.0 (2026-08-31)
+
+### Added
+- "About" link in the footer sitemap, alongside "Methodology" - both point to `about.html` (they're the same page), but "About" jumps straight to its "About this project" section (`about.html#about-this-project`, a new anchor id) rather than duplicating a plain top-of-page link, per user request.
+
 ## v0.70.0 (2026-08-31)
 
 ### Fixed
