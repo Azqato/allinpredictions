@@ -2,6 +2,14 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.66.0 (2026-08-31)
+
+### Added
+- Footer link ("Open an issue on GitHub") on every page pointing to `https://github.com/Azqato/allinpredictions/issues`, as a lightweight substitute for §35's full listener-voting/feedback feature, per user request. The repo's Issues tab was already public and enabled by default (confirmed via the GitHub API - `has_issues: true`), so no repo setting needed to change for visitors to open one.
+
+### Changed
+- Documentation only: combined the "Full retroactive `resolves_by` backfill" roadmap row into the "Full-archive validation sweep" row (both are the same underlying work - research a prediction's real-world outcome, write/update its verdict record), status set to "Planned, continuing indefinitely as maintenance," per user request.
+
 ## v0.65.0 (2026-08-31)
 
 ### Changed
