@@ -10,12 +10,31 @@
   </div>
 
   {% if speaker.total_all > 0 %}
-  <div class="card scorecard" style="margin-top:1.5rem;">
-    <div class="scorecard-body">
-      {{ speaker.donut_svg|safe }}
+  <div class="chart-controls" style="margin-top:1.5rem;">
+    <label class="checkbox-label"><input type="checkbox" id="resolved-only-toggle" checked /> Resolved only</label>
+    <select id="topic-filter" aria-label="Filter by topic">
+      <option value="">All topics</option>
+      {% for t in topics %}
+      <option value="{{ t }}">{{ t|tag_display }}</option>
+      {% endfor %}
+    </select>
+    <div class="segmented" id="view-toggle" role="tablist" aria-label="Chart view">
+      <button type="button" class="active" data-view="total">Total</button>
+      <button type="button" data-view="year">By Year</button>
+      <button type="button" data-view="topic">By Topic</button>
+    </div>
+  </div>
+  <div class="card scorecard" data-who="{{ speaker.who }}" data-entries="{{ speaker.chart_json|safe }}" style="margin-top:1rem;">
+    <div class="scorecard-head">
+      <span class="muted scorecard-count">{{ speaker.total_resolved }} resolved &middot; {{ speaker.total_all }} total</span>
+    </div>
+    <div class="scorecard-body chart-area">
+      <div class="donut">
+        {{ speaker.donut_svg|safe }}
+      </div>
       <table class="legend">
         <tbody>
-          {% for key in ["right", "wrong", "ambiguous", "inconclusive", "unvalidated"] %}
+          {% for key in ["right", "wrong"] %}
           <tr>
             <td><span class="dot dot-{{ key }}"></span>{{ key|capitalize }}</td>
             <td class="num">{{ speaker.stats[key] }}{% if speaker.stats[key] and speaker.pct_all[key] is not none %} <span class="muted">({{ speaker.pct_all[key] }}%)</span>{% endif %}</td>

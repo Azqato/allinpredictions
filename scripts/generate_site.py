@@ -33,6 +33,11 @@ RESULT_COLORS = {
 }
 QUALIFYING_CONFIDENCE = {"high", "medium"}
 VALID_CHECK_RESULTS = {"right", "wrong", "ambiguous", "inconclusive"}
+# Home page convention (documented in docs/PRD.md's Home Page Layout notes):
+# every prediction-listing section on the home page (Big Ones, Recently
+# Settled, Recent Episodes) caps at this many items, so the page stays
+# scannable. "See more"/"Browse the full ledger" links cover the rest.
+HOME_SECTION_MAX = 6
 BAD_WHO_VALUES = {"unknown", "n/a", "none", "null", ""}
 
 # Tag slugs whose correct display casing isn't plain title-case (acronyms,
@@ -146,6 +151,17 @@ def capitalize_who(who: str) -> str:
     return " ".join(part.capitalize() for part in who.split("-"))
 
 
+def display_name_for(who: str, hosts_cfg: Dict[str, Any]) -> str:
+    """Full "First Last" name for the four permanent hosts (config/hosts.yaml
+    `display_name`, since their canonical slugs are short nicknames like
+    "jason"/"sacks"), falling back to the slug-derived capitalization for
+    everyone else (guest slugs are already full-name, e.g. "elon-musk")."""
+    host_entry = hosts_cfg.get("hosts", {}).get(who)
+    if host_entry and host_entry.get("display_name"):
+        return host_entry["display_name"]
+    return capitalize_who(who)
+
+
 def load_all_data(root: Path) -> Dict[str, Any]:
     episodes = load_json(root / "data" / "episodes.json", [])
     hosts_cfg = yaml.safe_load((root / "config" / "hosts.yaml").read_text())
@@ -172,7 +188,7 @@ def load_all_data(root: Path) -> Dict[str, Any]:
             merged["result"] = check["result"] if check else None
             merged["explanation"] = check.get("explanation") if check else None
             merged["sources"] = check.get("sources", []) if check else []
-            merged["who_display"] = capitalize_who(p["who"])
+            merged["who_display"] = display_name_for(p["who"], hosts_cfg)
             merged_predictions.append(merged)
 
         episodes_out.append(
@@ -216,7 +232,9 @@ def pct_bucket(bucket: Dict[str, int], denom: int) -> Dict[str, Optional[float]]
     return {k: round(100 * v / denom, 1) for k, v in bucket.items()}
 
 
-def build_speaker_index(episodes: List[Dict[str, Any]], permanent_hosts: List[str]) -> Dict[str, Dict[str, Any]]:
+def build_speaker_index(
+    episodes: List[Dict[str, Any]], permanent_hosts: List[str], hosts_cfg: Dict[str, Any]
+) -> Dict[str, Dict[str, Any]]:
     """One entry per speaker (host or guest) who qualifies for a scorecard."""
     speakers: Dict[str, Dict[str, Any]] = {}
 
@@ -224,7 +242,7 @@ def build_speaker_index(episodes: List[Dict[str, Any]], permanent_hosts: List[st
         if who not in speakers:
             speakers[who] = {
                 "who": who,
-                "who_display": capitalize_who(who),
+                "who_display": display_name_for(who, hosts_cfg),
                 "role": role,
                 "stats": empty_bucket(),
                 "predictions": [],
@@ -306,7 +324,7 @@ def render_site(root: Path, out_dir: Path) -> None:
     data = load_all_data(root)
     episodes = data["episodes"]
     permanent_hosts = data["permanent_hosts"]
-    speakers = build_speaker_index(episodes, permanent_hosts)
+    speakers = build_speaker_index(episodes, permanent_hosts, data["hosts_cfg"])
 
     for s in speakers.values():
         s["donut_svg"] = donut_svg(s["stats"], ["right", "wrong"])
@@ -422,7 +440,7 @@ def render_site(root: Path, out_dir: Path) -> None:
     big_ones = sorted(
         (r for r in big_ones_pool if r.get("result") == "right"),
         key=lambda r: -r["impact_score"],
-    )[:6]
+    )[:HOME_SECTION_MAX]
 
     # Full Ledger (§36 item 5): a lightweight, client-filterable index of
     # every qualifying prediction sitewide. Kept deliberately thin (no quote/
@@ -527,12 +545,12 @@ def render_site(root: Path, out_dir: Path) -> None:
 
     (out_dir / "index.html").write_text(
         env.get_template("index.html").render(
-            **common, hosts=hosts_sorted, guests=guests_sorted, episodes=episodes[:6],
+            **common, hosts=hosts_sorted, guests=guests_sorted, episodes=episodes[:HOME_SECTION_MAX],
             total_episode_count=len(episodes), topics=host_topics,
             overall_stats=overall_stats, overall_total_resolved=overall_total_resolved,
             overall_total_all=overall_total_all, overall_accuracy_pct=overall_accuracy_pct,
             overall_pct_all=overall_pct_all, overall_pct_resolved=overall_pct_resolved,
-            recently_settled=recently_settled[:8], big_ones=big_ones,
+            recently_settled=recently_settled[:HOME_SECTION_MAX], big_ones=big_ones,
         )
     )
 
@@ -570,8 +588,11 @@ def render_site(root: Path, out_dir: Path) -> None:
 
     for s in speakers.values():
         s["predictions"].sort(key=lambda p: p.get("episode_published") or "", reverse=True)
+        speaker_topics = sorted({tag for e in s["chart_entries"] for tag in e["tags"]})
         (out_dir / "host" / f"{s['who']}.html").write_text(
-            env.get_template("host.html").render(**common, speaker=s, asset_prefix="../")
+            env.get_template("host.html").render(
+                **common, speaker=s, asset_prefix="../", topics=speaker_topics,
+            )
         )
 
     (out_dir / "about.html").write_text(env.get_template("about.html").render(**common))

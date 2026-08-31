@@ -2,6 +2,15 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.58.0 (2026-08-31)
+
+### Added
+- The Resolved-only/topic/Total-Year-Topic chart filter UI (§27), previously home-page-only, now also appears on every individual host and guest page, scoped to that speaker's own predictions. Reuses the existing `setupHomeCharts()` client-side logic unchanged (it already keyed off `.scorecard[data-who]` and generic filter-control IDs, so no new JS was needed), per user request.
+
+### Changed
+- "Recently Settled" on the home page is now capped at 6 (was 8), per user request ("top 6 for recently settled too please"). Formalized the cap as a single `HOME_SECTION_MAX = 6` constant in `generate_site.py`, applied to all three home page prediction/episode sections (Big Ones, Recently Settled, Recent Episodes) instead of three separate hardcoded numbers. Documented the "every home page section caps at 6" convention in `docs/PRD.md` §9.2.
+- The four permanent hosts now display their full "First Last" name (e.g. "Jason Calacanis" instead of just "Jason") everywhere `who_display` is rendered - host pages, home page scorecards, the leaderboard, search results - sourced from `config/hosts.yaml`'s existing `display_name` field via a new `display_name_for()` helper. Guest display names are unaffected (their slugs were already full names). Per user request, prompted by the host page showing only a first name.
+
 ## v0.57.0 (2026-08-31)
 
 ### Changed
