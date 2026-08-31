@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.64.0 (2026-08-31)
+
+### Removed
+- "About" link removed from the site nav (`base.html`), per user request. `about.html` itself still exists and generates normally (just unlinked from navigation); no page content was deleted.
+
 ## v0.63.0 (2026-08-31)
 
 ### Changed
