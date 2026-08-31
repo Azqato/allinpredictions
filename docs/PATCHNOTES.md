@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.53.0 (2026-08-31)
+
+### Fixed
+- Recovered the one permanently-"unresolvable" backlog episode, Ray Dalio's "Our System Is in Jeopardy - Debt, AI & the Cycle That Destroyed Rome" (RSS-published 2026-03-03), which had no resolvable `video_id` because the yt-dlp channel search couldn't find it under that title. Found it manually on the official All-In YouTube channel under a different public title, "Ray Dalio: 'AI Is Eating Everything - and It Might Eat Itself'" (`u-vMNzHgSHI`) — same chapter markers and description confirm it's the same upload, just retitled on YouTube. Added a `config/youtube_urls_override.json` entry, fetched its transcript/chunks, and extracted 1 falsifiable dated prediction (Ray Dalio forecasting Democrats will take the House in the 2026 midterms), validated `inconclusive` since the midterms haven't happened yet (though current polling favors that outcome). Episode count now 413 tracked / 413 with extracted predictions — zero gaps remain.
+
 ## v0.52.0 (2026-08-31)
 
 ### Added
