@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.52.0 (2026-08-31)
+
+### Added
+- Processed 1 newly-published episode found via the incremental RSS/YouTube sweep (Batch 12): "Nvidia's Historic Quarter, SaaS Comeback, Bessent vs Druck, America's Debt Crisis, Cancer Vaccine" (published 2026-08-29). Fetched transcript and chunks, extracted 1 falsifiable dated host prediction (Chamath's Social Security insolvency / state bankruptcy and restructuring forecast for "around 2030 to 2032"), and validated it via WebSearch-informed review — marked `inconclusive` since the 2030-2032 window is still years out. Episode count now 413 tracked / 412 with extracted predictions.
+
 ## v0.51.0 (2026-08-27)
 
 ### Changed
