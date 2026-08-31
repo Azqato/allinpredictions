@@ -2,6 +2,16 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.54.0 (2026-08-31)
+
+### Added
+- `resolves_by` field on check entries (`data/checks/{episode_id}.json`): an ISO date marking when a prediction's forecast window is expected to become evaluable. Applied going forward to all newly-written checks (including today's two: Chamath's Social Security 2030-2032 forecast and Ray Dalio's 2026-midterms forecast), plus a 5-check test batch backfilled retroactively (see below). The ~685 remaining pre-existing `inconclusive` checks do not have this field yet; full retroactive backfill is planned in batches of 5 (roadmap, not started).
+- `scripts/list_due_rechecks.py`: scans all checks files and lists every `inconclusive` check whose `resolves_by` date has passed (or would pass as of a given `--as-of` date), so a future recheck pass has a ready-made worklist instead of manually hunting for overdue predictions.
+- Backfilled `resolves_by` on a 5-check test batch to prove out the retroactive-backfill workflow: `chamath-00:59:45` (2065, from a 40-50yr NYC-decline forecast), `chamath-01:01:35` (2028, vague "coming years" NYC real estate crash), `friedberg-01:11:59` (2035, age-reversal therapy), `andrew-ross-sorkin-00:39:59` (2040, "end of empire" inflection point), `andrew-ross-sorkin-00:44:34` (2035, 10-year tariff/auto-tech window).
+
+### Changed
+- `scripts/build_manifest.py`: added a `legacy_no_transcript` status count and a `notes` field explaining that `captions_fetched`/`chunked` reading `false` alongside `predictions_extracted: true` reflects real historical episodes whose raw transcript/chunk files were never retained (not a bug and not "unprocessed") — 229 episodes fall into this category. `predictions_extracted`/`validated` (or actual `data/predictions/`, `data/checks/` file presence) remain the correct ground truth for pipeline completeness, now documented directly in the manifest instead of only in project memory.
+
 ## v0.53.0 (2026-08-31)
 
 ### Fixed

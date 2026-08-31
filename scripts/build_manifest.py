@@ -44,6 +44,7 @@ def main(argv: List[str]) -> int:
         "chunked": 0,
         "predictions_extracted": 0,
         "validated": 0,
+        "legacy_no_transcript": 0,
     }
 
     for ep in episodes:
@@ -56,6 +57,12 @@ def main(argv: List[str]) -> int:
         )
         predictions_extracted = (args.predictions_dir / f"{episode_id}.json").exists()
         validated = (args.checks_dir / f"{episode_id}.json").exists()
+        # True for episodes processed in an earlier phase of this project where
+        # predictions/checks were extracted and retained but the raw transcript/
+        # chunk files were not (or have since been pruned). NOT the same as
+        # "unprocessed" -- these episodes are fully done, just missing their raw
+        # source artifacts. See docs/PRD.md notes on manifest interpretation.
+        legacy_no_transcript = predictions_extracted and not (captions_fetched and chunked)
 
         row = {
             "episode_id": episode_id,
@@ -65,6 +72,7 @@ def main(argv: List[str]) -> int:
             "chunked": chunked,
             "predictions_extracted": predictions_extracted,
             "validated": validated,
+            "legacy_no_transcript": legacy_no_transcript,
             "first_seen": prev_row.get("first_seen", now_iso()),
             "last_checked": now_iso(),
         }
@@ -77,6 +85,17 @@ def main(argv: List[str]) -> int:
         "generated_at": now_iso(),
         "episode_count": len(episodes),
         "status_counts": counts,
+        "notes": (
+            "captions_fetched/chunked are computed fresh from file existence on every "
+            "run, so they are never stale by construction. However, they legitimately "
+            "read false for episodes marked legacy_no_transcript=true: these were "
+            "processed in an earlier phase of the project, have real predictions_extracted "
+            "and validated=true, but their raw transcript/chunk files were never retained. "
+            "Do not treat captions_fetched=false/chunked=false as 'unprocessed' without "
+            "also checking predictions_extracted -- use predictions_extracted (or the "
+            "presence of data/predictions/{id}.json and data/checks/{id}.json) as the "
+            "ground truth for pipeline completeness."
+        ),
         "episodes": rows,
     }
     args.out.parent.mkdir(parents=True, exist_ok=True)
@@ -84,7 +103,8 @@ def main(argv: List[str]) -> int:
     print(
         f"Wrote {args.out}: {len(episodes)} episodes, "
         f"captions={counts['captions_fetched']} chunked={counts['chunked']} "
-        f"predictions={counts['predictions_extracted']} validated={counts['validated']}"
+        f"predictions={counts['predictions_extracted']} validated={counts['validated']} "
+        f"(legacy_no_transcript={counts['legacy_no_transcript']})"
     )
     return 0
 
