@@ -138,6 +138,14 @@
     var viewToggle = document.getElementById("view-toggle");
     if (!resolvedToggle || !topicFilter || !viewToggle) return;
 
+    // Below the chart, an individual host/guest page also lists every
+    // prediction card; the topic dropdown filters that list too so it stays
+    // in sync with the chart above it (year and resolved-only stay
+    // chart-only, since the cards already show every verdict and every
+    // year at a glance).
+    var predictionCards = document.querySelectorAll("#predictions-list .prediction-card[data-tags]");
+    var predictionsEmptyMsg = null;
+
     var state = { resolvedOnly: true, topic: "", view: "total" };
 
     var cardData = [];
@@ -193,6 +201,26 @@
         });
         d.chartArea.innerHTML = stackedBarsHtml(groupList, keys);
       });
+
+      if (predictionCards.length) {
+        var shown = 0;
+        predictionCards.forEach(function (card) {
+          var tags = (card.getAttribute("data-tags") || "").split(",").filter(Boolean);
+          var match = !state.topic || tags.indexOf(state.topic) !== -1;
+          card.style.display = match ? "" : "none";
+          if (match) shown++;
+        });
+        var predictionsList = document.getElementById("predictions-list");
+        if (predictionsList) {
+          if (shown === 0 && !predictionsEmptyMsg) {
+            predictionsEmptyMsg = document.createElement("p");
+            predictionsEmptyMsg.className = "muted";
+            predictionsEmptyMsg.textContent = "No predictions match this topic.";
+            predictionsList.appendChild(predictionsEmptyMsg);
+          }
+          if (predictionsEmptyMsg) predictionsEmptyMsg.style.display = shown === 0 ? "" : "none";
+        }
+      }
     }
 
     resolvedToggle.addEventListener("change", function () {
@@ -210,6 +238,18 @@
         state.view = btn.getAttribute("data-view");
         render();
       });
+    });
+  }
+
+  function setupPredictionsToggle() {
+    var btn = document.getElementById("predictions-toggle");
+    var list = document.getElementById("predictions-list");
+    if (!btn || !list) return;
+    btn.addEventListener("click", function () {
+      var collapsed = list.hidden;
+      list.hidden = !collapsed;
+      btn.textContent = collapsed ? "Hide predictions" : "Show predictions";
+      btn.setAttribute("aria-expanded", collapsed ? "true" : "false");
     });
   }
 
@@ -487,6 +527,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     setupYoutubeWarning();
     setupHomeCharts();
+    setupPredictionsToggle();
     setupEpisodeYearFilter();
     setupLedgerPage();
     setupSearchPage();

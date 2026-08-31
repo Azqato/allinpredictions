@@ -2,6 +2,15 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.59.0 (2026-08-31)
+
+### Added
+- The topic dropdown on host/guest pages now filters the prediction cards listed below the chart, not just the chart itself, so both stay in sync when a visitor narrows to one topic. Cards outside the selected topic hide client-side; a "No predictions match this topic" message shows if the filter empties the list. Resolved-only and the Total/By Year/By Topic view toggle remain chart-only, since the cards already show every verdict and year at a glance.
+- A "Hide predictions"/"Show predictions" collapse button above the predictions list on host/guest pages, per user request.
+
+### Changed
+- Confirmed (no code change needed) that guest pages already share the exact same `host.html` template and JS as permanent-host pages - the v0.58.0 chart-filter UI and this release's topic-filtered predictions list and collapse button all apply identically to both, since `generate_site.py` renders every speaker (host or guest) through the same code path.
+
 ## v0.58.0 (2026-08-31)
 
 ### Added

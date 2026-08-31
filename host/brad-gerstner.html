@@ -82,8 +82,14 @@
     </div>
   </div>
 
-  <div class="predictions" style="margin-top:2rem;">
-    <article class="prediction-card" id="brad-gerstner-01:12:48">
+  <div class="section-head" style="margin-top:2rem;">
+    <div class="flex-between">
+      <h2>Predictions</h2>
+      <button type="button" id="predictions-toggle" class="link-button" aria-expanded="true" aria-controls="predictions-list">Hide predictions</button>
+    </div>
+  </div>
+  <div class="predictions" id="predictions-list">
+    <article class="prediction-card" id="brad-gerstner-01:12:48" data-tags="economy,politics">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/travis-kalanick-michael-dell-live-from-austin-texas.html">Travis Kalanick &amp; Michael Dell Live from Austin, Texas</a>
         <span class="badge badge-wrong">Wrong</span>
@@ -96,7 +102,7 @@
         <p>Trump Accounts (Invest America) officially launched on July 4, 2026 with about 6 million children signed up - well short of Gerstner&#39;s 10 million target - and signups reached roughly 7 million by late July, still below the predicted figure by the July 4 deadline.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:06:23">
+    <article class="prediction-card" id="brad-gerstner-00:06:23" data-tags="tech,ai">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E136.html">E136 Hacking the pod, Threads launches, Fed minutes, immigration debate, balloon farce, heart health</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -109,7 +115,7 @@
         <p>Meta did launch Llama 2 in July 2023, but its AI agents/chatbots on WhatsApp and Instagram launched around September 2023, somewhat beyond the predicted 4-6 week window.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:09:30">
+    <article class="prediction-card" id="brad-gerstner-00:09:30" data-tags="tech">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E136.html">E136 Hacking the pod, Threads launches, Fed minutes, immigration debate, balloon farce, heart health</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -122,7 +128,7 @@
         <p>Threads did reach 100 million signups, a genuinely fast pace, but it took roughly five days rather than within 24 hours of launch as implied.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:21:43">
+    <article class="prediction-card" id="brad-gerstner-00:21:43" data-tags="ai">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E136.html">E136 Hacking the pod, Threads launches, Fed minutes, immigration debate, balloon farce, heart health</a>
         <span class="badge badge-wrong">Wrong</span>
@@ -135,7 +141,7 @@
         <p>ChatGPT usage grew far beyond the predicted 100-150 million range, reaching hundreds of millions of weekly active users by 2024-2025 rather than stabilizing at that level.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:52:21">
+    <article class="prediction-card" id="brad-gerstner-00:52:21" data-tags="markets,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E073.html">E73: Late-stage VC markdowns and mistakes, market strategy, Ukraine/Russia update with Brad Gerstner</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -148,7 +154,7 @@
         <p>By 2025-2026, markets did show renewed signs of speculative excess (AI stock enthusiasm, meme-stock resurgence), arguably fulfilling this prediction&#39;s 5-7 year window, though it is a subjective, still-developing call.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:01:49">
+    <article class="prediction-card" id="brad-gerstner-01:01:49" data-tags="conflict,politics">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E073.html">E73: Late-stage VC markdowns and mistakes, market strategy, Ukraine/Russia update with Brad Gerstner</a>
         <span class="badge badge-wrong">Wrong</span>
@@ -161,7 +167,7 @@
         <p>No complete European embargo of Russian oil at roughly 3 million barrels a day occurred within 1-2 weeks of late March 2022; EU sanctions on Russian oil were phased in much more gradually over the following months and were never a complete embargo of that scale.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:10:43">
+    <article class="prediction-card" id="brad-gerstner-01:10:43" data-tags="conflict,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E073.html">E73: Late-stage VC markdowns and mistakes, market strategy, Ukraine/Russia update with Brad Gerstner</a>
         <span class="badge badge-wrong">Wrong</span>
@@ -174,7 +180,7 @@
         <p>Oil prices did not reach $180-200 per barrel; they peaked in the $120-130 range in mid-2022 before declining, well short of the predicted spike, and no full EU oil embargo of that scale materialized.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:18:16">
+    <article class="prediction-card" id="brad-gerstner-01:18:16" data-tags="politics,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E073.html">E73: Late-stage VC markdowns and mistakes, market strategy, Ukraine/Russia update with Brad Gerstner</a>
         <span class="badge badge-right">Right</span>
@@ -187,7 +193,7 @@
         <p>China did not supply lethal weapons to Russia during the war, consistent with the prediction, maintaining a posture of economic and diplomatic support without direct arms transfers.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:28:27">
+    <article class="prediction-card" id="brad-gerstner-01:28:27" data-tags="economy,government">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E073.html">E73: Late-stage VC markdowns and mistakes, market strategy, Ukraine/Russia update with Brad Gerstner</a>
         <span class="badge badge-wrong">Wrong</span>
@@ -200,7 +206,7 @@
         <p>The Fed did not pivot to a &#39;balanced risk&#39; framing by mid-summer 2022; it continued aggressively prioritizing inflation control with large rate hikes (including 75bp increases) through the rest of 2022.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:36:30">
+    <article class="prediction-card" id="brad-gerstner-00:36:30" data-tags="markets,economy,tech">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E101.html">E101: Ye acquires Parler, Snap drops 30%, macro outlook, VC metrics, valuing stocks &amp; more</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -213,7 +219,7 @@
         <p>Equity markets actually staged a fairly sharp recovery in 2023 (the S&amp;P 500 rose about 24%), which looks more V-shaped than the predicted prolonged two-year &#39;ringing out&#39; without a rapid rebound, though valuation and business-model adjustments did continue.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:36:30-2">
+    <article class="prediction-card" id="brad-gerstner-00:36:30-2" data-tags="tech,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E101.html">E101: Ye acquires Parler, Snap drops 30%, macro outlook, VC metrics, valuing stocks &amp; more</a>
         <span class="badge badge-right">Right</span>
@@ -226,7 +232,7 @@
         <p>Many tech companies did show materially improved margins and cost discipline by 2023-2024 as a result of post-2022 efficiency drives.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:37:51">
+    <article class="prediction-card" id="brad-gerstner-00:37:51" data-tags="markets,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E101.html">E101: Ye acquires Parler, Snap drops 30%, macro outlook, VC metrics, valuing stocks &amp; more</a>
         <span class="badge badge-right">Right</span>
@@ -239,7 +245,7 @@
         <p>S&amp;P 500 aggregate earnings did not collapse from roughly 225 to 200; earnings grew through 2023 into 2024 without a severe reversal.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:37:56">
+    <article class="prediction-card" id="brad-gerstner-00:37:56" data-tags="markets,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E101.html">E101: Ye acquires Parler, Snap drops 30%, macro outlook, VC metrics, valuing stocks &amp; more</a>
         <span class="badge badge-right">Right</span>
@@ -252,7 +258,7 @@
         <p>Equity markets, including hard-hit growth and tech names, rallied substantially from their late-2022 lows through 2023-2024 rather than suffering a further major asymmetric downside leg.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:48:09">
+    <article class="prediction-card" id="brad-gerstner-00:48:09" data-tags="venture,markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E101.html">E101: Ye acquires Parler, Snap drops 30%, macro outlook, VC metrics, valuing stocks &amp; more</a>
         <span class="badge badge-right">Right</span>
@@ -265,7 +271,7 @@
         <p>Substantial markdowns across venture portfolios did occur through 2022-2024 as valuations from the 2021 peak reverted toward historical means.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:07:00">
+    <article class="prediction-card" id="brad-gerstner-00:07:00" data-tags="markets,ai">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/more-trillion-dollar-ipos-anthropic-3t-zuck-s-price-war-china-ends-open-source-trump-accounts.html">More Trillion Dollar IPOs, Anthropic $3T, Zuck&#39;s Price War, China Ends Open Source?, Trump Accounts</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -278,7 +284,7 @@
         <p>The 6-9 month window (from July 2026) runs through roughly April 2027. As of August 2026, Anthropic is tracking toward an October 2026 listing (targeting the window), but OpenAI is reportedly leaning toward a 2027 IPO, which may fall outside the window. Neither has completed an IPO yet, so this remains unresolved.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:13:09">
+    <article class="prediction-card" id="brad-gerstner-00:13:09" data-tags="markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/more-trillion-dollar-ipos-anthropic-3t-zuck-s-price-war-china-ends-open-source-trump-accounts.html">More Trillion Dollar IPOs, Anthropic $3T, Zuck&#39;s Price War, China Ends Open Source?, Trump Accounts</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -291,7 +297,7 @@
         <p>A multi-year revenue-growth forecast (&#39;for the next many years&#39;); far too early to assess.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:22:13">
+    <article class="prediction-card" id="brad-gerstner-00:22:13" data-tags="markets,ai">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/more-trillion-dollar-ipos-anthropic-3t-zuck-s-price-war-china-ends-open-source-trump-accounts.html">More Trillion Dollar IPOs, Anthropic $3T, Zuck&#39;s Price War, China Ends Open Source?, Trump Accounts</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -304,7 +310,7 @@
         <p>A forecast about next year&#39;s revenue trajectory contingent on first crossing $100B in annual revenue; neither the starting condition nor the following year has been reached yet.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:19:24">
+    <article class="prediction-card" id="brad-gerstner-01:19:24" data-tags="government,markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/more-trillion-dollar-ipos-anthropic-3t-zuck-s-price-war-china-ends-open-source-trump-accounts.html">More Trillion Dollar IPOs, Anthropic $3T, Zuck&#39;s Price War, China Ends Open Source?, Trump Accounts</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -317,7 +323,7 @@
         <p>A 10-year forecast for Trump account enrollment; the program only just launched, far too early to assess.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:20:34">
+    <article class="prediction-card" id="brad-gerstner-01:20:34" data-tags="government,markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/more-trillion-dollar-ipos-anthropic-3t-zuck-s-price-war-china-ends-open-source-trump-accounts.html">More Trillion Dollar IPOs, Anthropic $3T, Zuck&#39;s Price War, China Ends Open Source?, Trump Accounts</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -330,7 +336,7 @@
         <p>A 15-year forecast for cumulative Trump account contributions; far too early to assess.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:22:21">
+    <article class="prediction-card" id="brad-gerstner-01:22:21" data-tags="government,markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/more-trillion-dollar-ipos-anthropic-3t-zuck-s-price-war-china-ends-open-source-trump-accounts.html">More Trillion Dollar IPOs, Anthropic $3T, Zuck&#39;s Price War, China Ends Open Source?, Trump Accounts</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -343,7 +349,7 @@
         <p>This projection depends on a child&#39;s Trump account compounding from birth to age 28 — a multi-decade horizon that has not remotely elapsed.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:22:05">
+    <article class="prediction-card" id="brad-gerstner-00:22:05" data-tags="geopolitics,markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/google-s-ai-brain-drain-spacex-s-huge-quarter-airtable-s-90-collapse-us-data-fuels-china-ai.html">Google&#39;s AI Brain Drain, SpaceX&#39;s Huge Quarter, Airtable&#39;s 90% Collapse, US Data Fuels China AI</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -356,7 +362,7 @@
         <p>As of August 2026, SpaceX&#39;s AI/compute-rental ARR is well below $100 billion, and the $1 trillion ARR target is set for 2030. Neither milestone has been reached yet, so this remains unresolved.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:34:06">
+    <article class="prediction-card" id="brad-gerstner-00:34:06" data-tags="ai,markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/google-s-ai-brain-drain-spacex-s-huge-quarter-airtable-s-90-collapse-us-data-fuels-china-ai.html">Google&#39;s AI Brain Drain, SpaceX&#39;s Huge Quarter, Airtable&#39;s 90% Collapse, US Data Fuels China AI</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -369,7 +375,7 @@
         <p>As of August 2026, Anthropic has not yet IPO&#39;d; investors reportedly are targeting an October 2026 listing at a valuation of $2 trillion or more, and ARR is reported around $65B (with some full-year 2026 projections of $100-120B), tracking toward but not yet confirming the prediction&#39;s figures.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:52:30">
+    <article class="prediction-card" id="brad-gerstner-00:52:30" data-tags="economy,markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/epstein-files-is-saas-dead-moltbook-panic-spacex-xai-merger-trump-s-fed-pick.html">Epstein Files, Is SaaS Dead?, Moltbook Panic, SpaceX xAI Merger, Trump&#39;s Fed Pick</a>
         <span class="badge badge-wrong">Wrong</span>
@@ -382,7 +388,7 @@
         <p>Incoming Fed Chair Kevin Warsh confirmed a hawkish policy stance and signaled hikes rather than cutting more than the market expected.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:27:35">
+    <article class="prediction-card" id="brad-gerstner-00:27:35" data-tags="economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E083.html">E83: Market slide continues, and how to address Uvalde</a>
         <span class="badge badge-wrong">Wrong</span>
@@ -395,7 +401,7 @@
         <p>The Fed raised rates by 75 basis points (not 50) at both the June and July 2022 FOMC meetings after the hot May CPI report, exceeding the predicted 50bp pace, and did not pause in the back half of 2022, continuing to hike through year-end.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:59:38">
+    <article class="prediction-card" id="brad-gerstner-00:59:38" data-tags="economy,markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E083.html">E83: Market slide continues, and how to address Uvalde</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -408,7 +414,7 @@
         <p>By fall 2022 there were some signs inflation was moderating from its June peak, but it remained elevated and volatile through year-end, and equity valuations did not clearly return to a stable 5-year-average multiple regime during that period given continued Fed tightening and market declines into October.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:00:34">
+    <article class="prediction-card" id="brad-gerstner-01:00:34" data-tags="economy,markets,venture">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E083.html">E83: Market slide continues, and how to address Uvalde</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -421,7 +427,7 @@
         <p>The US avoided runaway inflation and public markets did stabilize by late 2022/early 2023, but venture markets took considerably longer than 6-12 months to reach a genuinely investable, market-clearing environment, with the funding slump persisting well into 2023 and 2024.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:09:55">
+    <article class="prediction-card" id="brad-gerstner-01:09:55" data-tags="venture,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E083.html">E83: Market slide continues, and how to address Uvalde</a>
         <span class="badge badge-right">Right</span>
@@ -434,7 +440,7 @@
         <p>The layoffs.fyi tracker did surpass 3,000 companies with reported layoffs as the tech downturn extended through 2022 and 2023.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:17:57">
+    <article class="prediction-card" id="brad-gerstner-00:17:57" data-tags="markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E133.html">E133: Market melt-up, IPO update, AI startups overheat, Reddit revolts &amp; more with Brad Gerstner</a>
         <span class="badge badge-right">Right</span>
@@ -447,7 +453,7 @@
         <p>Nvidia beat consensus earnings estimates in every quarter for the remainder of 2023, driven by explosive AI GPU demand.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:36:57">
+    <article class="prediction-card" id="brad-gerstner-00:36:57" data-tags="ai,markets,tech">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E133.html">E133: Market melt-up, IPO update, AI startups overheat, Reddit revolts &amp; more with Brad Gerstner</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -460,7 +466,7 @@
         <p>AI-driven changes to search and advertising monetization have begun (ChatGPT, AI Overviews reducing traditional search usage) but a full multi-hundred-billion-dollar redistribution of search ad revenue away from Google within 5-7 years (by roughly 2028-2030) remains an ongoing, unresolved process as of 2026.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:32:53">
+    <article class="prediction-card" id="brad-gerstner-00:32:53" data-tags="venture,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E141.html">E141: State of Series A&#39;s, VC dry powder, IPO window opens + more with Bill Gurley &amp; Brad Gerstner</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -473,7 +479,7 @@
         <p>Many but not literally all 2021-era unicorns took down rounds; the &#39;100%&#39; framing was an overstatement even though the broad trend of valuation resets was real.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:55:48">
+    <article class="prediction-card" id="brad-gerstner-00:55:48" data-tags="markets,venture,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E141.html">E141: State of Series A&#39;s, VC dry powder, IPO window opens + more with Bill Gurley &amp; Brad Gerstner</a>
         <span class="badge badge-right">Right</span>
@@ -486,7 +492,7 @@
         <p>2023-2024 saw a wave of tech IPOs including higher-quality offerings (Arm) and several down-round IPOs (Instacart, Klaviyo) at reduced valuations.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:58:07">
+    <article class="prediction-card" id="brad-gerstner-00:58:07" data-tags="markets,venture,tech">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E141.html">E141: State of Series A&#39;s, VC dry powder, IPO window opens + more with Bill Gurley &amp; Brad Gerstner</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -499,7 +505,7 @@
         <p>The IPO market did gradually reopen through late 2023 into 2024 as predicted, though the specific quarterly deal counts cited were only roughly approximate to what occurred.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:29:40">
+    <article class="prediction-card" id="brad-gerstner-01:29:40" data-tags="economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E141.html">E141: State of Series A&#39;s, VC dry powder, IPO window opens + more with Bill Gurley &amp; Brad Gerstner</a>
         <span class="badge badge-right">Right</span>
@@ -512,7 +518,7 @@
         <p>By the end of 2023, US inflation had fallen substantially and &#39;disinflation&#39; became the dominant macro narrative, as predicted.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:57:30">
+    <article class="prediction-card" id="brad-gerstner-00:57:30" data-tags="ai,tech,markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/trump-brokers-gaza-peace-deal-national-guard-in-chicago-openai-amd-ai-roundtripping-gold-rally.html">Trump Brokers Gaza Peace Deal, National Guard in Chicago, OpenAI/AMD, AI Roundtripping, Gold Rally</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -525,7 +531,7 @@
         <p>AI GPU utilization remained extremely high through 2026 given surging demand, though some reports of underutilized or &#39;dark&#39; compute did emerge periodically amid capacity buildout debates.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:07:06">
+    <article class="prediction-card" id="brad-gerstner-00:07:06" data-tags="ai,tech">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/anthropic-s-30b-ramp-mythos-doomsday-openclaw-ankled-iran-war-ceasefire-israel-s-influence.html">Anthropic&#39;s $30B Ramp, Mythos Doomsday, OpenClaw Ankled, Iran War Ceasefire, Israel&#39;s Influence</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -538,7 +544,7 @@
         <p>No independently verifiable public confirmation of an OpenAI model specifically named &#39;Spud&#39; being released was found.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:08:00">
+    <article class="prediction-card" id="brad-gerstner-00:08:00" data-tags="ai,tech">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/anthropic-s-30b-ramp-mythos-doomsday-openclaw-ankled-iran-war-ceasefire-israel-s-influence.html">Anthropic&#39;s $30B Ramp, Mythos Doomsday, OpenClaw Ankled, Iran War Ceasefire, Israel&#39;s Influence</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -551,7 +557,7 @@
         <p>Frontier labs including OpenAI and Google did increasingly adopt more cautious pre-release safety testing and staged rollout practices through 2025-2026, generally consistent with the trend though not confirmed as directly copying Anthropic&#39;s specific approach.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:38:36">
+    <article class="prediction-card" id="brad-gerstner-00:38:36" data-tags="ai,tech,venture">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/anthropic-s-30b-ramp-mythos-doomsday-openclaw-ankled-iran-war-ceasefire-israel-s-influence.html">Anthropic&#39;s $30B Ramp, Mythos Doomsday, OpenClaw Ankled, Iran War Ceasefire, Israel&#39;s Influence</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -564,7 +570,7 @@
         <p>Open-source pretraining projects (DeepSeek, Llama, Qwen) achieved significant success and competitiveness by 2025, partially matching the prediction, though whether any has become the clearly dominant success story remains debated.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:48:02">
+    <article class="prediction-card" id="brad-gerstner-00:48:02" data-tags="ai,markets,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/anthropic-s-30b-ramp-mythos-doomsday-openclaw-ankled-iran-war-ceasefire-israel-s-influence.html">Anthropic&#39;s $30B Ramp, Mythos Doomsday, OpenClaw Ankled, Iran War Ceasefire, Israel&#39;s Influence</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -577,7 +583,7 @@
         <p>Anthropic&#39;s revenue run rate grew rapidly through 2025 but ended the year well below the $80-100B range predicted (more in the range of several billion to low tens of billions), while OpenAI did see a substantial revenue inflection.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:14:35">
+    <article class="prediction-card" id="brad-gerstner-01:14:35" data-tags="politics,conflict">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/anthropic-s-30b-ramp-mythos-doomsday-openclaw-ankled-iran-war-ceasefire-israel-s-influence.html">Anthropic&#39;s $30B Ramp, Mythos Doomsday, OpenClaw Ankled, Iran War Ceasefire, Israel&#39;s Influence</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -590,7 +596,7 @@
         <p>No comprehensive Russia-Ukraine peace deal was finalized shortly after this prediction, though negotiations did continue through 2025-2026; Venezuela and Cuba situations also saw incremental but not fully resolved developments.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:14:58">
+    <article class="prediction-card" id="brad-gerstner-01:14:58" data-tags="markets,politics">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/anthropic-s-30b-ramp-mythos-doomsday-openclaw-ankled-iran-war-ceasefire-israel-s-influence.html">Anthropic&#39;s $30B Ramp, Mythos Doomsday, OpenClaw Ankled, Iran War Ceasefire, Israel&#39;s Influence</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -603,7 +609,7 @@
         <p>None of the Iran, Lebanon, Ukraine-Russia, or Venezuela situations were fully and simultaneously resolved by July 4, 2025, though the stock market did perform strongly overall through mid-to-late 2025.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:09:22">
+    <article class="prediction-card" id="brad-gerstner-00:09:22" data-tags="tech,markets,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/elon-s-anthropic-deal-the-next-ai-monopoly-fda-for-ai-panic-trading-the-ai-boom.html">Elon&#39;s Anthropic Deal, The Next AI Monopoly?, &#34;FDA for AI&#34; Panic, Trading the AI Boom</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -616,7 +622,7 @@
         <p>No dedicated &#39;Elon Web Services&#39; product or revenue line has materialized as a distinct, separately reported business; the prediction was too speculative to verify.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:22:59">
+    <article class="prediction-card" id="brad-gerstner-00:22:59" data-tags="markets,tech,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/elon-s-anthropic-deal-the-next-ai-monopoly-fda-for-ai-panic-trading-the-ai-boom.html">Elon&#39;s Anthropic Deal, The Next AI Monopoly?, &#34;FDA for AI&#34; Panic, Trading the AI Boom</a>
         <span class="badge badge-wrong">Wrong</span>
@@ -629,7 +635,7 @@
         <p>SpaceX has not conducted an IPO as of mid-2026; it remains private, so a 40-50x revenue trading multiple at a 2 trillion dollar valuation cannot have occurred.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:18:54">
+    <article class="prediction-card" id="brad-gerstner-00:18:54" data-tags="ai,economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/does-openai-need-a-bailout-mamdani-wins-socialism-rising-filibuster-nuclear-option.html">Does OpenAI Need a Bailout? Mamdani Wins, Socialism Rising, Filibuster Nuclear Option</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -642,7 +648,7 @@
         <p>The roughly two-year window (to around the end of 2027) for OpenAI reaching approximately $100 billion in annual revenue has not yet elapsed, though the company&#39;s run rate was tracking strongly upward by mid-2026.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:39:24">
+    <article class="prediction-card" id="brad-gerstner-00:39:24" data-tags="economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/does-openai-need-a-bailout-mamdani-wins-socialism-rising-filibuster-nuclear-option.html">Does OpenAI Need a Bailout? Mamdani Wins, Socialism Rising, Filibuster Nuclear Option</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -655,7 +661,7 @@
         <p>The November 2026 midterm elections had not yet occurred as of mid-2026, so this macroeconomic conditional prediction cannot yet be evaluated.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:39:46">
+    <article class="prediction-card" id="brad-gerstner-00:39:46" data-tags="economy,markets">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/does-openai-need-a-bailout-mamdani-wins-socialism-rising-filibuster-nuclear-option.html">Does OpenAI Need a Bailout? Mamdani Wins, Socialism Rising, Filibuster Nuclear Option</a>
         <span class="badge badge-inconclusive">Inconclusive</span>
@@ -668,7 +674,7 @@
         <p>The full window through November 2026 had not yet elapsed as of mid-2026, and the exact count of Fed rate cuts and GDP reacceleration over that specific period remains to be confirmed.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-00:39:46-2">
+    <article class="prediction-card" id="brad-gerstner-00:39:46-2" data-tags="economy">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/does-openai-need-a-bailout-mamdani-wins-socialism-rising-filibuster-nuclear-option.html">Does OpenAI Need a Bailout? Mamdani Wins, Socialism Rising, Filibuster Nuclear Option</a>
         <span class="badge badge-ambiguous">Ambiguous</span>
@@ -681,7 +687,7 @@
         <p>US inflation trended in a mixed, roughly sideways-to-modestly-lower pattern through late 2025 and into 2026 rather than clearly and steadily rolling over.</p>
       </div>
     </article>
-    <article class="prediction-card" id="brad-gerstner-01:22:10">
+    <article class="prediction-card" id="brad-gerstner-01:22:10" data-tags="politics,government">
       <div class="prediction-head">
         <a class="who-badge" href="../episodes/E118.html">E118: AI FOMO frenzy, macro update, Fox vs Dominion, US vs China &amp; more with Brad Gerstner</a>
         <span class="badge badge-right">Right</span>
