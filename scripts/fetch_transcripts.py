@@ -1,248 +1,454 @@
 #!/usr/bin/env python3
-"""Fetch YouTube caption tracks for each episode (free, no API key).
+"""Fetch YouTube transcripts into data/transcripts/<episode_id>.json.
 
-Prefers youtube-transcript-api (direct timedtext access); falls back to
-`yt-dlp --write-auto-sub --skip-download` + local SRT parsing if that's
-blocked/unavailable for a given video. If both are blocked (e.g. a
-cloud/datacenter IP block from YouTube), falls back further to driving a
-real, visible Microsoft Edge browser via Playwright against tactiq.io's
-free transcript tool -- this only works in headed mode (headless Chromium
-does not reliably load the underlying YouTube embed/captions), so a
-browser window will pop up on screen for each episode that reaches this
-fallback. See PRD.md section 6.2.
+Same process as the financialeducation project (see docs/PRD.md section 6.2
+and docs/YOUTUBE-LIMITS.md). Episodes come from data/episodes.json.
+
+Process: one episode at a time. Fetch one, process it, then fetch the next,
+so a block or failure never strands fetched-but-unprocessed episodes.
+
+Methods, in order:
+  1. FreeTranscriptAPI. Fetches on its own servers, so it does not use this
+     machine's YouTube budget. Capped at 18 calls per rolling hour.
+  2. youtube-transcript-api. Direct from this IP; 1-2 YouTube requests.
+  3. headless Microsoft Edge + tactiq.io. tactiq plays the video in an embedded
+     YouTube player inside our browser, so its caption request also comes from
+     this IP (about 6-8 YouTube requests). Only reached when method 2 failed
+     without a rate limit, e.g. an empty reply for a video that needs the
+     player's security token.
+  4. yt-dlp auto-subs (`python -m yt_dlp`, deno as its JavaScript runtime).
+     Retry queue only.
+Normal runs use methods 1-3. `--all-methods` or `--retry-queue` adds 4.
+
+Every failure is classified:
+  rate_limited  YouTube answered 429 / IpBlocked. The run stops, since every
+                method shares this IP, and a cool-off time is saved.
+  no_captions   YouTube says captions are disabled or missing.
+  unknown       anything else.
+Failed videos go to the retry queue, data/transcripts/_missing.json, with the
+reason and an attempt count. They are never skipped by this script.
+
+Pacing (state in data/transcripts/_fetch_state.json, so it holds across runs),
+set from docs/YOUTUBE-LIMITS.md:
+  - 60-120s between attempts (60s base plus random jitter, so gaps are never regular)
+  - at most 20 attempts per rolling hour and 100 per rolling 24 hours; a run
+    that reaches a cap exits and prints when it may resume
+  - a rate limit doubles the base gap (up to 15 min), stops the run, and sets
+    a cool-off: 10 min, doubling per consecutive rate limit up to 30 min
+  - each success halves the base gap back toward 60s and resets the cool-off
+Every attempt is appended to data/transcripts/_fetch_log.jsonl with the gap
+since the previous attempt, so the limits can be re-tuned from real data.
+
+All requests are anonymous: no Google or YouTube account is ever used (author
+decision, 2026-09-27).
+
+Usage:
+  python scripts/fetch_transcripts.py [--all-methods] [EPISODE_ID ...]   (no IDs = every unfetched episode)
+  python scripts/fetch_transcripts.py --retry-queue      (all methods, whole queue)
 """
 from __future__ import annotations
 
-import argparse
+import datetime
 import json
+import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
+import random
+import time
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from urllib.parse import quote
+
+ROOT = Path(__file__).resolve().parent.parent
+OUT_DIR = ROOT / "data" / "transcripts"
+MISSING_LOG = OUT_DIR / "_missing.json"
+STATE_FILE = OUT_DIR / "_fetch_state.json"
+ATTEMPT_LOG = OUT_DIR / "_fetch_log.jsonl"
+EPISODES = ROOT / "data" / "episodes.json"
+
+# Limits from docs/YOUTUBE-LIMITS.md: ~20-30 caption requests in a burst per IP,
+# blocks lasting hours. Stay well under that; slower is fine.
+MIN_COOLDOWN = 60             # base gap between attempts
+JITTER_SECONDS = 60           # plus a random 0-60s, so gaps are 60-120s and never regular
+HOURLY_CAP = 20               # attempts per rolling hour
+DAILY_CAP = 100               # attempts per rolling 24 hours
+MAX_COOLDOWN = 900
+COOL_OFF_START = 10 * 60      # first rate limit: wait 10 min before the next run
+COOL_OFF_MAX = 30 * 60        # doubles per consecutive rate limit, capped at 30 min
+STOP_AFTER_RATE_LIMITS = 1  # every method shares one IP, so one 429 means stop
+FTA_URL = "https://api.freetranscriptapi.com/v1/transcript"
+FTA_HOURLY_CAP = 18           # service allows 20/hour per IP anonymously; stay under
+FTA_MIN_GAP = 20              # seconds between FreeTranscriptAPI calls, plus 0-20s jitter
+TACTIQ_POLL_SECONDS = 3
+TACTIQ_MAX_SECONDS = 90
+# Headless Edge otherwise reports "HeadlessEdg", which tactiq may treat differently.
+EDGE_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+)
+TACTIQ_TS_RE = re.compile(r"^(\d{2}):(\d{2}):(\d{2})\.(\d{3})$")
+SRT_TIME_RE = re.compile(r"(\d+):(\d+):(\d+),(\d+)")
 
 
-def fetch_via_transcript_api(video_id: str) -> Optional[List[Dict[str, Any]]]:
+class FetchError(Exception):
+    def __init__(self, kind: str, detail: str):
+        super().__init__(f"{kind}: {detail}")
+        self.kind = kind
+
+
+def classify(exc: Exception) -> str:
+    if isinstance(exc, FetchError):
+        return exc.kind
+    text = f"{type(exc).__name__} {exc}"
+    if re.search(r"IpBlocked|RequestBlocked|TooManyRequests|429", text):
+        return "rate_limited"
+    if re.search(r"TranscriptsDisabled|NoTranscriptFound|no subtitles|no captions", text, re.I):
+        return "no_captions"
+    return "unknown"
+
+
+def _now() -> float:
+    return time.time()
+
+
+def load_state() -> dict:
+    if STATE_FILE.exists():
+        return json.loads(STATE_FILE.read_text(encoding="utf-8"))
+    return {"cooldown_seconds": MIN_COOLDOWN, "last_attempt_end": 0, "blocked_until": 0}
+
+
+def save_state(state: dict) -> None:
+    STATE_FILE.write_text(json.dumps(state, indent=2), encoding="utf-8")
+
+
+def log_attempt(entry: dict) -> None:
+    with ATTEMPT_LOG.open("a", encoding="utf-8") as fh:
+        fh.write(json.dumps(entry) + "\n")
+
+
+def _iso(ts: float) -> str:
+    return datetime.datetime.fromtimestamp(ts).isoformat(timespec="seconds")
+
+
+# ---------- methods ----------
+
+def via_freetranscriptapi(video_id: str):
+    import urllib.error
+    import urllib.request
+    from urllib.parse import urlencode
+
+    req = urllib.request.Request(FTA_URL + "?" + urlencode({"video_url": video_id}),
+                                 headers={"User-Agent": "financialeducation-wiki/1.0 (personal archive)"})
     try:
-        from youtube_transcript_api import YouTubeTranscriptApi
-    except ImportError:
-        return None
-    try:
-        api = YouTubeTranscriptApi()
-        fetched = api.fetch(video_id)
-        cues = []
-        for snippet in fetched:
-            cues.append(
-                {
-                    "text": snippet.text,
-                    "start_seconds": round(float(snippet.start), 3),
-                    "duration_seconds": round(float(snippet.duration), 3),
-                }
-            )
-        return cues
-    except Exception as exc:  # noqa: BLE001
-        print(f"  youtube-transcript-api failed: {exc}")
-        return None
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", "replace")[:200]
+        if exc.code == 429:
+            raise FetchError("service_limited", f"FreeTranscriptAPI 429: {body}") from exc
+        if re.search(r"no (captions|transcript|subtitles)|disabled|not available", body, re.I):
+            raise FetchError("no_captions", f"FreeTranscriptAPI {exc.code}: {body}") from exc
+        raise RuntimeError(f"FreeTranscriptAPI HTTP {exc.code}: {body}") from exc
+    lang = str(data.get("language") or "")
+    if lang and not lang.lower().startswith("en"):
+        raise RuntimeError(f"FreeTranscriptAPI returned language {lang!r}, not English")
+    return [
+        {"text": str(c["text"]).strip(), "start_seconds": round(float(c["start"]), 3),
+         "duration_seconds": round(float(c.get("duration") or 0), 3)}
+        for c in data.get("transcript") or [] if str(c.get("text", "")).strip()
+    ]
 
 
-def srt_timestamp_to_seconds(ts: str) -> float:
-    h, m, rest = ts.split(":")
-    s, ms = rest.split(",")
-    return int(h) * 3600 + int(m) * 60 + int(s) + int(ms) / 1000.0
+def via_transcript_api(video_id: str):
+    from youtube_transcript_api import YouTubeTranscriptApi
+
+    fetched = YouTubeTranscriptApi().fetch(video_id)
+    return [
+        {"text": s.text, "start_seconds": round(s.start, 3), "duration_seconds": round(s.duration, 3)}
+        for s in fetched
+    ]
 
 
-def parse_srt(text: str) -> List[Dict[str, Any]]:
-    blocks = re.split(r"\r?\n\r?\n", text.strip())
-    cues: List[Dict[str, Any]] = []
-    for block in blocks:
-        lines = [ln for ln in block.splitlines() if ln.strip()]
-        if len(lines) < 2:
-            continue
-        time_line = next((ln for ln in lines if "-->" in ln), None)
-        if not time_line:
-            continue
-        start_str, end_str = [p.strip() for p in time_line.split("-->")]
-        try:
-            start = srt_timestamp_to_seconds(start_str)
-            end = srt_timestamp_to_seconds(end_str.split(" ")[0])
-        except Exception:
-            continue
-        text_lines = lines[lines.index(time_line) + 1 :]
-        cue_text = " ".join(text_lines).strip()
-        if not cue_text:
-            continue
-        cues.append(
-            {
-                "text": cue_text,
-                "start_seconds": round(start, 3),
-                "duration_seconds": round(max(end - start, 0.0), 3),
-            }
+def _srt_seconds(ts: str) -> float:
+    h, m, s, ms = map(int, SRT_TIME_RE.match(ts.strip()).groups())
+    return h * 3600 + m * 60 + s + ms / 1000
+
+
+def _deno_env() -> dict:
+    env = dict(os.environ)
+    if not shutil.which("deno"):
+        links = Path(os.environ.get("LOCALAPPDATA", "")) / "Microsoft" / "WinGet" / "Links"
+        pkgs = sorted((Path(os.environ.get("LOCALAPPDATA", "")) / "Microsoft" / "WinGet" / "Packages").glob("DenoLand.Deno*"))
+        extra = [str(p) for p in [links, *pkgs] if (p / "deno.exe").exists()]
+        env["PATH"] = os.pathsep.join(extra + [env.get("PATH", "")])
+    return env
+
+
+def via_ytdlp(video_id: str):
+    cmd = [sys.executable, "-m", "yt_dlp", "--write-auto-sub", "--sub-lang", "en", "--skip-download",
+           "--convert-subs", "srt"]
+    with tempfile.TemporaryDirectory() as tmp:
+        result = subprocess.run(
+            cmd + ["-o", str(Path(tmp) / "%(id)s.%(ext)s"), f"https://www.youtube.com/watch?v={video_id}"],
+            capture_output=True, text=True, env=_deno_env(),
         )
-    return cues
-
-
-def fetch_via_ytdlp(video_id: str, ytdlp_path: str = "yt-dlp") -> Optional[List[Dict[str, Any]]]:
-    url = f"https://www.youtube.com/watch?v={video_id}"
-    with tempfile.TemporaryDirectory() as tmpdir:
-        out_tmpl = str(Path(tmpdir) / "%(id)s.%(ext)s")
-        cmd = [
-            ytdlp_path,
-            "--write-auto-sub",
-            "--sub-lang",
-            "en",
-            "--skip-download",
-            "--convert-subs",
-            "srt",
-            "-o",
-            out_tmpl,
-            url,
-        ]
-        result = subprocess.run(cmd, capture_output=True, text=True, check=False)
-        if result.returncode != 0:
-            print(f"  yt-dlp caption fetch failed: {result.stderr.strip()[:300]}")
-            return None
-        srt_files = list(Path(tmpdir).glob("*.srt"))
-        if not srt_files:
-            return None
-        return parse_srt(srt_files[0].read_text(encoding="utf-8", errors="replace"))
-
-
-TACTIQ_TIMESTAMP_RE = re.compile(r"^(\d{2}):(\d{2}):(\d{2})\.(\d{3})$")
-
-
-def parse_tactiq_transcript(body_text: str) -> List[Dict[str, Any]]:
-    lines = body_text.splitlines()
-    cues: List[Dict[str, Any]] = []
-    i = 0
-    n = len(lines)
-    while i < n:
-        m = TACTIQ_TIMESTAMP_RE.match(lines[i].strip())
-        if m:
-            h, mnt, s, ms = m.groups()
-            start = int(h) * 3600 + int(mnt) * 60 + int(s) + int(ms) / 1000.0
-            text = lines[i + 1].strip() if i + 1 < n else ""
+        srt = next(Path(tmp).glob("*.srt"), None)
+        if result.returncode or not srt:
+            err = result.stderr.strip()
+            if "429" in err:
+                raise FetchError("rate_limited", "yt-dlp HTTP 429")
+            if not err or "no subtitles" in err.lower() or "There are no subtitles" in err:
+                raise FetchError("no_captions", "yt-dlp found no English subtitles")
+            raise RuntimeError(err.splitlines()[-1])
+        cues = []
+        for block in re.split(r"\r?\n\r?\n", srt.read_text(encoding="utf-8", errors="replace").strip()):
+            lines = [ln for ln in block.splitlines() if ln.strip()]
+            timing = next((ln for ln in lines if "-->" in ln), None)
+            if not timing:
+                continue
+            start, end = (p.split(" ")[0] for p in timing.split("-->"))
+            text = " ".join(lines[lines.index(timing) + 1:]).strip()
             if text:
-                cues.append({"text": text, "start_seconds": round(start, 3)})
-            i += 2
-        else:
-            i += 1
+                s, e = _srt_seconds(start), _srt_seconds(end)
+                cues.append({"text": text, "start_seconds": round(s, 3), "duration_seconds": round(max(e - s, 0), 3)})
+        return cues
 
-    for idx, cue in enumerate(cues):
-        if idx + 1 < len(cues):
-            duration = max(cues[idx + 1]["start_seconds"] - cue["start_seconds"], 0.0)
-        else:
-            duration = 5.0
-        cue["duration_seconds"] = round(duration, 3)
+
+def _parse_tactiq(body: str):
+    lines = body.splitlines()
+    cues = []
+    for i, line in enumerate(lines[:-1]):
+        m = TACTIQ_TS_RE.match(line.strip())
+        if m and lines[i + 1].strip():
+            h, mi, s, ms = map(int, m.groups())
+            cues.append({"text": lines[i + 1].strip(), "start_seconds": round(h * 3600 + mi * 60 + s + ms / 1000, 3)})
+    for i, cue in enumerate(cues):
+        nxt = cues[i + 1]["start_seconds"] if i + 1 < len(cues) else cue["start_seconds"] + 5
+        cue["duration_seconds"] = round(max(nxt - cue["start_seconds"], 0), 3)
     return cues
 
 
-def fetch_via_tactiq_playwright(video_id: str) -> Optional[List[Dict[str, Any]]]:
-    try:
-        from playwright.sync_api import sync_playwright
-    except ImportError:
-        print("  playwright not installed; skipping tactiq fallback")
-        return None
+def via_tactiq_headless_edge(video_id: str):
+    from playwright.sync_api import sync_playwright
 
-    url = f"https://www.youtube.com/watch?v={video_id}"
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(channel="msedge", headless=False, slow_mo=150)
-            page = browser.new_page()
-            page.goto("https://tactiq.io/tools/youtube-transcript", wait_until="domcontentloaded")
+    yt = f"https://www.youtube.com/watch?v={video_id}"
+    timedtext: list[tuple[int, int]] = []  # (status, body length) of YouTube caption responses
 
-            input_box = page.locator("input[type='text'], input[type='url']").first
-            input_box.fill(url)
+    def on_response(resp):
+        if "/api/timedtext" in resp.url:
+            try:
+                size = len(resp.body())
+            except Exception:  # noqa: BLE001
+                size = -1
+            timedtext.append((resp.status, size))
 
-            submit_btn = page.get_by_role("button", name="Get Video Transcript")
-            if submit_btn.count() == 0:
-                submit_btn = page.locator("button:has-text('Transcript')").first
-            submit_btn.click()
+    args = ["--disable-blink-features=AutomationControlled"]
+    with sync_playwright() as p:
+        browser = p.chromium.launch(channel="msedge", headless=True, args=args)
+        context = browser.new_context(user_agent=EDGE_USER_AGENT, viewport={"width": 1366, "height": 900})
+        page = context.new_page()
+        page.on("response", on_response)
+        page.goto(
+            "https://tactiq.io/tools/run/youtube_transcript?yt=" + quote(yt, safe=""),
+            wait_until="domcontentloaded",
+        )
+        cues = []
+        for _ in range(TACTIQ_MAX_SECONDS // TACTIQ_POLL_SECONDS):
+            page.wait_for_timeout(TACTIQ_POLL_SECONDS * 1000)
+            cues = _parse_tactiq(page.locator("body").inner_text())
+            if len(cues) > 5:
+                break
+            if any(status == 429 for status, _ in timedtext):
+                break
+            if any(status == 200 for status, _ in timedtext):
+                # captions arrived; give tactiq a moment to render them
+                page.wait_for_timeout(5000)
+                cues = _parse_tactiq(page.locator("body").inner_text())
+                break
+        context.close()
+    if len(cues) > 5:
+        return cues
+    if any(status == 429 for status, _ in timedtext):
+        raise FetchError("rate_limited", "YouTube timedtext returned 429 to the tactiq player")
+    if any(status == 200 and size == 0 for status, size in timedtext):
+        raise FetchError("no_captions", "YouTube timedtext returned an empty caption track")
+    if not timedtext:
+        raise FetchError("unknown", "tactiq's player never requested captions (possibly none exist)")
+    raise FetchError("unknown", f"no transcript after {TACTIQ_MAX_SECONDS}s; timedtext={timedtext}")
 
-            page.wait_for_timeout(12000)
-            body_text = page.locator("body").inner_text()
-            browser.close()
-    except Exception as exc:  # noqa: BLE001
-        print(f"  tactiq/playwright fetch failed: {exc}")
-        return None
 
-    cues = parse_tactiq_transcript(body_text)
-    return cues or None
+# FreeTranscriptAPI fetches on its own servers, so it does not use this IP's
+# YouTube budget (verified 2026-09-28). The other three all reach YouTube from
+# this IP and share one budget, paced by wait_for_turn().
+SERVICE_METHODS = {"freetranscriptapi"}
+METHODS = [
+    ("freetranscriptapi", via_freetranscriptapi),
+    ("youtube_transcript_api", via_transcript_api),        # 1-2 YouTube requests per video
+    ("tactiq_playwright_edge_headless", via_tactiq_headless_edge),  # real player, ~6-8 requests;
+    # only reached when the direct method failed without a rate limit (e.g. empty reply from a
+    # video that needs the player's security token)
+    ("yt_dlp_auto_sub", via_ytdlp),
+]
 
 
-def main(argv: List[str]) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--episodes", type=Path, default=Path("data/episodes.json"))
-    parser.add_argument("--out-dir", type=Path, default=Path("data/transcripts"))
-    parser.add_argument("--missing-log", type=Path, default=Path("data/transcripts/_missing.json"))
-    parser.add_argument("--yt-dlp-path", default="yt-dlp")
-    parser.add_argument("--limit", type=int, default=None)
-    parser.add_argument("--force", action="store_true")
-    parser.add_argument(
-        "--no-tactiq-fallback",
-        action="store_true",
-        help="Disable the headed-Edge/Playwright/tactiq.io fallback (pops up a visible browser per episode).",
-    )
-    args = parser.parse_args(argv)
+# ---------- pacing ----------
 
-    episodes = json.loads(args.episodes.read_text())
-    if args.limit is not None:
-        episodes = episodes[: args.limit]
+def wait_for_turn(state: dict) -> None:
+    now = _now()
+    if state.get("blocked_until", 0) > now:
+        return (f"[cool-off] YouTube rate-limited this IP recently. Next YouTube fetch allowed after "
+                f"{_iso(state['blocked_until'])} ({(state['blocked_until'] - now) / 60:.0f} min).")
+    recent = [t for t in state.get("attempt_times", []) if now - t < 86400]
+    for cap, window, label in ((DAILY_CAP, 86400, "daily"), (HOURLY_CAP, 3600, "hourly")):
+        in_window = sorted(t for t in recent if now - t < window)
+        if len(in_window) >= cap:
+            resume = in_window[len(in_window) - cap] + window
+            return (f"[cap] {label} limit of {cap} YouTube attempts reached. Next YouTube fetch allowed after "
+                    f"{_iso(resume)} ({(resume - now) / 60:.0f} min).")
+    wait = state["cooldown_seconds"] + random.uniform(0, JITTER_SECONDS) - (_now() - state.get("last_attempt_end", 0))
+    if wait > 0:
+        print(f"  cooldown {wait:.0f}s")
+        time.sleep(wait)
+    return None
 
-    args.out_dir.mkdir(parents=True, exist_ok=True)
-    missing: List[Dict[str, str]] = []
-    if args.missing_log.exists() and not args.force:
+
+def service_turn(state: dict) -> str | None:
+    now = _now()
+    if state.get("fta_paused_until", 0) > now:
+        return f"FreeTranscriptAPI paused until {_iso(state['fta_paused_until'])}"
+    recent = sorted(t for t in state.get("fta_times", []) if now - t < 3600)
+    if len(recent) >= FTA_HOURLY_CAP:
+        return f"FreeTranscriptAPI hourly cap reached until {_iso(recent[len(recent) - FTA_HOURLY_CAP] + 3600)}"
+    wait = FTA_MIN_GAP + random.uniform(0, FTA_MIN_GAP) - (now - (recent[-1] if recent else 0))
+    if wait > 0:
+        print(f"  service gap {wait:.0f}s")
+        time.sleep(wait)
+    return None
+
+
+def record(state: dict, video_id: str, method: str, result: str, kind: str | None, started: float) -> None:
+    prev_end = state.get("last_attempt_end", 0)
+    end = _now()
+    if result == "ok":
+        state["cooldown_seconds"] = max(MIN_COOLDOWN, state["cooldown_seconds"] // 2)
+        state["rate_limit_streak"] = 0
+    elif kind == "rate_limited":
+        state["cooldown_seconds"] = min(MAX_COOLDOWN, state["cooldown_seconds"] * 2)
+        state["rate_limit_streak"] = state.get("rate_limit_streak", 0) + 1
+        state["blocked_until"] = end + min(COOL_OFF_MAX, COOL_OFF_START * 2 ** (state["rate_limit_streak"] - 1))
+    state["last_attempt_end"] = end
+    state["attempt_times"] = [t for t in state.get("attempt_times", []) if end - t < 86400] + [started]
+    save_state(state)
+    log_attempt({
+        "at": _iso(started), "video_id": video_id, "method": method, "result": result, "kind": kind,
+        "seconds": round(end - started, 1),
+        "gap_since_previous": round(started - prev_end, 1) if prev_end else None,
+        "cooldown_after": state["cooldown_seconds"],
+    })
+
+
+def fetch(episode_id: str, video_id: str, title: str, methods, state: dict) -> tuple[bool, str | None]:
+    kinds = []
+    for name, method in methods:
+        service = name in SERVICE_METHODS
+        blocked = service_turn(state) if service else wait_for_turn(state)
+        if blocked:
+            print(f"  {name} skipped: {blocked}")
+            if not service:
+                return False, "waiting:" + blocked
+            continue
+        started = _now()
         try:
-            missing = json.loads(args.missing_log.read_text())
-        except Exception:
-            missing = []
-
-    fetched, skipped, failed = 0, 0, 0
-    for ep in episodes:
-        episode_id = ep["episode_id"]
-        video_id = ep.get("video_id")
-        out_path = args.out_dir / f"{episode_id}.json"
-
-        if out_path.exists() and not args.force:
-            print(f"[skip] {episode_id} (already fetched)")
-            skipped += 1
+            cues = method(video_id)
+        except Exception as exc:  # noqa: BLE001
+            kind = classify(exc)
+            if service:
+                state["fta_times"] = [t for t in state.get("fta_times", []) if _now() - t < 3600] + [started]
+                if kind == "service_limited":
+                    state["fta_paused_until"] = _now() + 3600
+                save_state(state)
+                log_attempt({"at": _iso(started), "video_id": video_id, "method": name, "result": "failed",
+                             "kind": kind, "seconds": round(_now() - started, 1)})
+                print(f"  {name} failed [{kind}]: {str(exc)[:150]}")
+                if kind == "no_captions":
+                    kinds.append(kind)
+                continue
+            kinds.append(kind)
+            record(state, video_id, name, "failed", kind, started)
+            print(f"  {name} failed [{kind}]: {str(exc).strip().splitlines()[0][:150] if str(exc).strip() else type(exc).__name__}")
+            if kind == "rate_limited":
+                return False, "rate_limited"
             continue
-        if not video_id:
-            print(f"[skip] {episode_id} (no video_id resolved)")
-            missing.append({"episode_id": episode_id, "reason": "no_video_id"})
+        if service:
+            state["fta_times"] = [t for t in state.get("fta_times", []) if _now() - t < 3600] + [started]
+            save_state(state)
+            log_attempt({"at": _iso(started), "video_id": video_id, "method": name,
+                         "result": "ok" if cues else "failed", "kind": None if cues else "unknown",
+                         "seconds": round(_now() - started, 1)})
+        if cues:
+            if not service:
+                record(state, video_id, name, "ok", None, started)
+            payload = {"episode_id": episode_id, "video_id": video_id, "title": title, "source": name,
+                       "cue_count": len(cues), "cues": cues}
+            (OUT_DIR / f"{episode_id}.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
+            print(f"  OK via {name} ({len(cues)} cues)")
+            return True, None
+        if not service:
+            record(state, video_id, name, "failed", "unknown", started)
+        kinds.append("unknown")
+    return False, ("no_captions" if "no_captions" in kinds else "unknown")
+
+
+def main(argv: list[str]) -> int:
+    all_methods = "--all-methods" in argv or "--retry-queue" in argv
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    episodes = json.loads(EPISODES.read_text(encoding="utf-8"))
+    by_id = {e["episode_id"]: e for e in episodes}
+    missing = json.loads(MISSING_LOG.read_text(encoding="utf-8")) if MISSING_LOG.exists() else []
+    wanted = [a for a in argv if not a.startswith("--")]
+    if "--retry-queue" in argv:
+        wanted = [m["episode_id"] for m in missing]
+    elif not wanted:
+        wanted = [e["episode_id"] for e in episodes]
+    methods = METHODS if all_methods else METHODS[:3]
+    state = load_state()
+    print(f"[pacing] cooldown {state['cooldown_seconds']}s; "
+          f"methods: {', '.join(n for n, _ in methods)}")
+    failed = 0
+    for i, eid in enumerate(wanted):
+        ep = by_id.get(eid, {})
+        vid = ep.get("video_id")
+        if (OUT_DIR / f"{eid}.json").exists():
             continue
-
-        print(f"[fetch] {episode_id} ({video_id})")
-        cues = fetch_via_transcript_api(video_id)
-        method = "youtube_transcript_api"
-        if cues is None:
-            print("  falling back to yt-dlp auto-sub ...")
-            cues = fetch_via_ytdlp(video_id, args.yt_dlp_path)
-            method = "yt_dlp_auto_sub"
-        if cues is None and not args.no_tactiq_fallback:
-            print("  falling back to headed Edge / tactiq.io (browser window will open) ...")
-            cues = fetch_via_tactiq_playwright(video_id)
-            method = "tactiq_playwright_edge"
-
-        if not cues:
-            print(f"  [FAILED] no captions available for {episode_id}")
-            missing.append({"episode_id": episode_id, "reason": "captions_unavailable"})
+        if not vid:
+            print(f"[skip] {eid} (no video_id resolved)")
+            continue
+        print(f"[fetch] {eid} ({vid}) {ep.get('title', '')}")
+        ok, kind = fetch(eid, vid, ep.get("title", ""), methods, state)
+        if kind and kind.startswith("waiting:"):
+            print(f"[stop] {kind[8:]} Stopping; this episode was not attempted on YouTube and is not queued.")
+            break
+        if ok:
+            missing = [m for m in missing if m.get("episode_id") != eid]
+        else:
             failed += 1
-            continue
-
-        payload = {
-            "episode_id": episode_id,
-            "video_id": video_id,
-            "source": method,
-            "cue_count": len(cues),
-            "cues": cues,
-        }
-        out_path.write_text(json.dumps(payload, indent=2))
-        fetched += 1
-
-    args.missing_log.write_text(json.dumps(missing, indent=2))
-    print(f"\nDone. fetched={fetched} skipped={skipped} failed={failed}")
-    return 0
+            prev = next((m for m in missing if m.get("episode_id") == eid), {})
+            missing = [m for m in missing if m.get("episode_id") != eid]
+            kinds = sorted(set(prev.get("kinds", [])) | {kind})
+            missing.append({"episode_id": eid, "video_id": vid, "title": ep.get("title", ""), "reason": kind,
+                            "kinds": kinds, "attempts": prev.get("attempts", 0) + 1,
+                            "last_attempt": _iso(_now()), "likely_no_captions": "no_captions" in kinds})
+            print(f"  [FAILED: {kind}] added to retry queue")
+            if kind == "rate_limited":
+                rest = [e for e in wanted[i + 1:] if not (OUT_DIR / f"{e}.json").exists()]
+                print(f"[stop] YouTube is rate-limiting this IP. Not attempting {len(rest)} remaining episode(s); "
+                      f"next run may start after {_iso(state['blocked_until'])}.")
+                break
+        MISSING_LOG.write_text(json.dumps(missing, indent=2), encoding="utf-8")
+    MISSING_LOG.write_text(json.dumps(missing, indent=2), encoding="utf-8")
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

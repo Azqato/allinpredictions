@@ -2,6 +2,15 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.72.0 (2026-09-28)
+
+### Changed
+- `scripts/fetch_transcripts.py`: replaced with the Financial Education project's fetcher, adapted to `data/episodes.json` and per-episode output. Method order is now FreeTranscriptAPI (server-side), `youtube-transcript-api`, headless Edge + tactiq.io, then `yt-dlp` for the retry queue only. Added pacing (60-120s gaps, 20/hour and 100/day caps, 10-30 min cool-off after a rate limit), failure classification, a retry queue with attempt counts, and an attempt log. One episode at a time; anonymous only.
+- `docs/PRD.md`: Captions row and §6.2 rewritten to match. Earlier docs said tactiq fetches captions on its own servers; network capture showed it uses our IP.
+
+### Added
+- `docs/YOUTUBE-LIMITS.md`: research on YouTube caption limits, with sources, copied from the Financial Education project.
+
 ## v0.71.0 (2026-08-31)
 
 ### Added

@@ -103,7 +103,7 @@ Two clean layers:
 | Task | Tool | Cost | Auth needed? |
 |---|---|---|---|
 | Episode metadata | `yt-dlp -J --flat-playlist` against `@allin/videos`, or podcast RSS | Free | No |
-| Captions | `youtube-transcript-api` (pip) - preferred; falls back to `yt-dlp --write-auto-sub --skip-download` | Free | No |
+| Captions | FreeTranscriptAPI (server-side, 18 calls/hour) first, then `youtube-transcript-api`, then headless Edge + tactiq.io (which uses our IP too), then `yt-dlp` on the retry queue only. One episode at a time with shared pacing; see §6.2 and `docs/YOUTUBE-LIMITS.md` | Free | No |
 | Prediction extraction | Claude Code (this agent) | Free¹ | No (uses existing Claude Code session/subscription) |
 | Speaker attribution | Claude Code, contextual inference from caption text | Free¹ | No |
 | Validation research | Claude Code `WebSearch` / `WebFetch` tools | Free¹ | No |
@@ -125,11 +125,19 @@ Two clean layers:
 - Disagreements are resolved by hand against allin.com/episodes (the canonical numbering source) and logged to `data/episode_source_diff.json` for traceability - this diff report is expected input to the Phase-6+ decision on retiring the old pipeline.
 
 ### 6.2 Transcript acquisition
-- Script: `scripts/fetch_transcripts.py`.
-- For each episode's `video_id`, fetch the caption track via `youtube_transcript_api.YouTubeTranscriptApi.get_transcript(video_id)` (prefers manually-created captions if present, otherwise auto-generated). No API key, no rate-limit auth - it's an unofficial wrapper around YouTube's public timedtext endpoint.
-- Fallback if that library is blocked/unavailable for a given video: `yt-dlp --write-auto-sub --sub-lang en --skip-download --convert-subs srt`, then parse the SRT/VTT locally.
-- Output per episode: `data/transcripts/<episode_id>.json` - list of `{text, start_seconds, duration_seconds}` caption cues, essentially the original's `segments.json` but **without a `speaker_label` field** (this is the key structural difference from the old pipeline - see §6.4).
-- Skips episodes whose captions are unavailable/disabled entirely (logs to `data/transcripts/_missing.json` for visibility; these episodes simply won't have predictions).
+Same process as the Financial Education project. Research and sources: `docs/YOUTUBE-LIMITS.md`.
+- Script: `scripts/fetch_transcripts.py [--all-methods] [EPISODE_ID ...]` (no IDs = every unfetched episode in `data/episodes.json`); `--retry-queue` retries the queue with all methods.
+- **One episode at a time:** fetch one, process it, then fetch the next, so a block never strands fetched-but-unprocessed episodes.
+- **Methods, in order:**
+  1. FreeTranscriptAPI (`api.freetranscriptapi.com/v1/transcript?video_url=ID`, no key). Fetches on its own servers, so it does not use our IP's YouTube budget. Its free limit is 20/hour per IP; we cap at 18 per rolling hour with 20-40s gaps, and a 429 from it pauses it for an hour.
+  2. `youtube-transcript-api`, direct from our IP (1-2 YouTube requests).
+  3. Headless Microsoft Edge + tactiq.io. tactiq plays the video in an embedded YouTube player inside our browser, so its caption request also comes from our IP (about 6-8 YouTube requests). Network capture confirmed this; it is not a way around YouTube limits.
+  4. `yt-dlp` auto-subs, retry queue only.
+- **Failure kinds:** `rate_limited` (429/IpBlocked: stop the run, since every local method shares our IP), `no_captions`, `unknown`. Failed episodes go to `data/transcripts/_missing.json` with reason, kinds and attempt count, and are retried after everything else.
+- **Pacing** (state in `data/transcripts/_fetch_state.json`): 60-120s between YouTube attempts with random jitter; at most 20 per rolling hour and 100 per 24 hours; a rate limit doubles the gap (max 15 min) and sets a cool-off of 10 min, doubling to 30 min max. When a cap or cool-off is active the run stops without queuing the episode.
+- Every attempt is logged to `data/transcripts/_fetch_log.jsonl`.
+- Anonymous only: never sign in to Google or YouTube.
+- Output per episode: `data/transcripts/<episode_id>.json` - list of `{text, start_seconds, duration_seconds}` caption cues, **without a `speaker_label` field** (see §6.4).
 
 ### 6.3 Transcript normalization & chunking
 - Script: `scripts/prepare_chunks.py` (pure Python, deterministic - ports the original's `build_lines`/`chunk_lines` logic).
