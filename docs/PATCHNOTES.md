@@ -2,6 +2,14 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.74.0 (2026-09-28)
+
+### Added
+- Three more server-side transcript services, found in a survey of 25 options (see `docs/YOUTUBE-LIMITS.md`): YTTools, yt-to-text (the backend of tubetranscript.com) and YouTubeTranscript.pro. Method order is now FreeTranscriptAPI, YTTools, yt-to-text, YouTubeTranscript.pro, then the direct YouTube tool, tactiq, and yt-dlp. None of the four services uses this computer's IP. Each has its own pacing (20-40 seconds between calls; caps of 18/hour, 30/hour, 30/hour and 10 per 30 days) and is paused for an hour on a 429 or bot page.
+
+### Changed
+- A YouTube cool-off or cap now only blocks the methods that use our IP. While any service is open the run keeps going; an episode the services all miss is queued as `deferred`. The run stops only when every service is paused or capped and YouTube is also waiting.
+
 ## v0.73.0 (2026-09-28)
 
 ### Changed

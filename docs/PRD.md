@@ -103,7 +103,7 @@ Two clean layers:
 | Task | Tool | Cost | Auth needed? |
 |---|---|---|---|
 | Episode metadata | `yt-dlp -J --flat-playlist` against `@allin/videos`, or podcast RSS | Free | No |
-| Captions | FreeTranscriptAPI (server-side, 18 calls/hour) first, then `youtube-transcript-api`, then headless Edge + tactiq.io (which uses our IP too), then `yt-dlp` on the retry queue only. One episode at a time with shared pacing; see §6.2 and `docs/YOUTUBE-LIMITS.md` | Free | No |
+| Captions | Four server-side services first (FreeTranscriptAPI, YTTools, yt-to-text, YouTubeTranscript.pro), then `youtube-transcript-api`, then headless Edge + tactiq.io (which uses our IP too), then `yt-dlp` on the retry queue only. One episode at a time with shared pacing; see §6.2 and `docs/YOUTUBE-LIMITS.md` | Free | No |
 | Prediction extraction | Claude Code (this agent) | Free¹ | No (uses existing Claude Code session/subscription) |
 | Speaker attribution | Claude Code, contextual inference from caption text | Free¹ | No |
 | Validation research | Claude Code `WebSearch` / `WebFetch` tools | Free¹ | No |
@@ -129,11 +129,16 @@ Same process as the Financial Education project. Research and sources: `docs/YOU
 - Script: `scripts/fetch_transcripts.py [--all-methods] [EPISODE_ID ...]` (no IDs = every unfetched episode in `data/episodes.json`); `--retry-queue` retries the queue with all methods.
 - **One episode at a time:** fetch one, process it, then fetch the next, so a block never strands fetched-but-unprocessed episodes.
 - **Methods, in order:**
-  1. FreeTranscriptAPI (`api.freetranscriptapi.com/v1/transcript?video_url=ID`, no key). Fetches on its own servers, so it does not use our IP's YouTube budget. Its free limit is 20/hour per IP; we cap at 18 per rolling hour with 20-40s gaps, and a 429 from it pauses it for an hour.
-  2. `youtube-transcript-api`, direct from our IP (1-2 YouTube requests).
-  3. Headless Microsoft Edge + tactiq.io. tactiq plays the video in an embedded YouTube player inside our browser, so its caption request also comes from our IP (about 6-8 YouTube requests). Network capture confirmed this; it is not a way around YouTube limits.
-  4. `yt-dlp` auto-subs, retry queue only.
-- **Failure kinds:** `rate_limited` (429/IpBlocked: stop the run, since every local method shares our IP; the only thing that starts a cool-off), `no_captions`, `timeout`, `unknown`. Failed episodes go to `data/transcripts/_missing.json` with reason, kinds and attempt count, and are retried after everything else (`--retry-queue`).
+  1. FreeTranscriptAPI (`api.freetranscriptapi.com/v1/transcript?video_url=ID`, no key). Free limit 20/hour per IP; we cap at 18 per rolling hour.
+  2. YTTools (`yttools.co/api/transcript?url=<YouTube URL>`). No published limit; we cap at 30/hour.
+  3. yt-to-text (`POST yt-to-text.com/api/v1/Subtitles`, the backend of tubetranscript.com). No published limit; we cap at 30/hour.
+  4. YouTubeTranscript.pro (`youtubetranscript.pro/api/youtube/transcript?url=&videoId=`). 10 free credits a month, so it is tried last and capped at 10 per rolling 30 days.
+  5. `youtube-transcript-api`, direct from our IP (1-2 YouTube requests).
+  6. Headless Microsoft Edge + tactiq.io. tactiq plays the video in an embedded YouTube player inside our browser, so its caption request also comes from our IP (about 6-8 YouTube requests). Network capture confirmed this; it is not a way around YouTube limits.
+  7. `yt-dlp` auto-subs, retry queue and final check only.
+- **Services 1-4** fetch on their own servers, so they never use our IP's YouTube budget (each verified 2026-09-28 with a plain HTTP request). Each waits 20-40s between its own calls; a 429, bot page or "blocked" reply pauses that service for an hour. 2 and 3 are undocumented endpoints and may change without notice. A service's "no captions" is not trusted on its own.
+- **Cool-off applies to methods 5-7 only:** while any service is open the run keeps going; an episode the services all miss while YouTube is waiting is queued as `deferred`. The run stops only when every service is paused or capped and YouTube is also waiting.
+- **Failure kinds:** `rate_limited` (YouTube 429/IpBlocked: the only thing that starts a cool-off; the run continues on the services, or stops if none is open), `no_captions`, `timeout`, `service_limited`, `deferred`, `unknown`. Failed episodes go to `data/transcripts/_missing.json` with reason, kinds and attempt count, and are retried after everything else (`--retry-queue`).
 - **No captions:** when YouTube says captions are disabled or missing, no further method is tried, no cool-off starts, and the episode goes to `data/transcripts/_no_captions.json` instead of the retry queue. It gets one last all-methods check only at the very end, after the retry queue (`--no-captions-check`).
 - **FreeTranscriptAPI timeouts:** retried once after 15 seconds before falling through to the YouTube methods.
 - **Pacing** (state in `data/transcripts/_fetch_state.json`): 60-120s between YouTube attempts with random jitter; at most 20 per rolling hour and 100 per 24 hours; a rate limit doubles the gap (max 15 min) and sets a cool-off of 10 min, doubling to 30 min max. When a cap or cool-off is active the run stops without queuing the episode.

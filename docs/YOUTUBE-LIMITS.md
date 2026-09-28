@@ -88,9 +88,52 @@ https://supadata.ai/pricing and https://supadata.ai/blog/best-youtube-transcript
 https://transcriptapi.com/
 https://www.youtube-transcript.io/api
 
+## Survey of 25 more options (2026-09-28)
+
+Tested by calling each site's own backend with plain `curl` for video `RBfXOEbJRt8`. A transcript coming back proves the site fetched it on its own servers, since curl never contacts YouTube. Only options that are server-side and need no key qualify.
+
+**Qualify (adopted as methods 2-4):**
+
+| Option | Endpoint | Stated limit | Result |
+|---|---|---|---|
+| YTTools (yttools.co) | `GET /api/transcript?url=<YouTube URL>` | "No usage limits" | 304 cues; offsets in milliseconds |
+| yt-to-text (backend of tubetranscript.com) | `POST yt-to-text.com/api/v1/Subtitles` `{"video_id"}` | None stated | 304 cues; `NO_SUBTITLES` for a video without captions |
+| YouTubeTranscript.pro | `GET /api/youtube/transcript?url=&videoId=` | 10 free credits a month | 304 cues |
+
+YTTools and yt-to-text are undocumented endpoints used by their own web pages and could change without notice.
+
+**Did not qualify:**
+
+| Option | Server-side | No key | Result |
+|---|---|---|---|
+| Invidious public instances | Yes | Yes | 403, 502, bot page or empty on every live instance |
+| Piped public instances | Yes | Yes | YouTube blocking them ("confirm you're not a bot") |
+| youtubetranscript.com | Yes | Yes | "YouTube is currently blocking us" |
+| SocialFetch | Yes | No | Free tool behind Cloudflare Turnstile; API needs a key |
+| SubGrab | Yes | No | Sign-in required |
+| NoteGPT | ? | No | "login expired" |
+| YTVidHub | Yes | No | "Authentication required" |
+| youtubetotranscript.com | ? | ? | Cloudflare 403 |
+| DownloadYoutubeSubtitles | ? | ? | Cloudflare challenge |
+| YouTranscripts | ? | ? | 429 on the page itself |
+| Kome.ai | ? | ? | 429; API 522 |
+| SaveSubs | Yes | ? | "BLOCKED" |
+| DownSub | ? | ? | Encrypted API calls, not testable |
+| YTTranscript.AI | ? | ? | No transcript endpoint found |
+| WayinVideo | Yes | ? | Endpoints appear to need an account |
+| Lynote | ? | ? | No endpoint found |
+| Glasp | No | Yes | Browser extension; runs on our IP |
+| Apify actors | Yes | No | Apify token required |
+| Scrapingdog | Yes | No | Paid API key |
+| SearchAPI | Yes | No | "Invalid API key" |
+| Anthiago | ? | ? | Endpoint 404 |
+| HappyScribe | ? | No | Account required |
+
+Sources: https://yttools.co/ , https://tubetranscript.com/en , https://youtubetranscript.pro/ , https://docs.invidious.io/api/ , https://docs.piped.video/docs/api-documentation/ , https://www.socialfetch.dev/tools/youtube-transcript , https://subgrab.com/youtube-transcript , https://notegpt.io/youtube-transcript-generator , https://ytvidhub.com/ , https://youtubetotranscript.com/ , https://downloadyoutubesubtitles.com/ , https://www.youtranscripts.com/ , https://kome.ai/tools/youtube-transcript-generator , https://savesubs.com/ , https://downsub.com/ , https://yttranscript.ai/ , https://wayin.ai/tools/video-transcript-generator/youtube/ , https://lynote.ai/youtube-transcript , https://glasp.co/youtube-transcript , https://apify.com/om_kh/youtube-transcript-api , https://www.scrapingdog.com/youtube-transcript-extractor/ , https://www.searchapi.io/ , https://www.happyscribe.com/blog/best-free-youtube-transcript-generator-tools-2026-guide
+
 ## How this shapes our settings
 
-- Adopted 2026-09-28: FreeTranscriptAPI is the primary method, so most fetches don't use our IP's YouTube budget at all.
+- Adopted 2026-09-28: four server-side services go first (FreeTranscriptAPI, YTTools, yt-to-text, YouTubeTranscript.pro), so most fetches don't use our IP's YouTube budget at all, and a YouTube cool-off no longer stops a run while any service is open.
 
 - Adopted 2026-09-28: 60-120 seconds between attempts with random variation, at most 20 attempts per rolling hour and 100 per rolling 24 hours.
 - The 10-30 minute cool-off (author decision) is a cheap check: each check is one request and stops the run at once. Expect checks to keep failing for hours after a real block. The attempt log will show whether frequent checks lengthen blocks.
