@@ -332,7 +332,7 @@ def _service_json(name: str, url: str, body: dict | None = None, headers: dict |
             text = resp.read().decode("utf-8", "replace")
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", "replace")[:200]
-        if exc.code == 429 or re.search(r"block|rate.?limit|too many", detail, re.I):
+        if exc.code == 429 or re.search(r"block|rate.?limit|too many|credits|exhausted|quota", detail, re.I):
             raise FetchError("service_limited", f"{name} {exc.code}: {detail}") from exc
         if re.search(r"no.?(captions|transcript|subtitles)|disabled", detail, re.I):
             raise FetchError("no_captions", f"{name} {exc.code}: {detail}") from exc
@@ -361,6 +361,17 @@ def via_yttools(video_id: str):
             for c in items if str(c.get("text", "")).strip()]
 
 
+ENGLISH_WORDS = {"the", "and", "to", "you", "i", "a", "is", "that", "it", "of", "this", "we", "in"}
+
+
+def _check_english(name: str, cues: list) -> list:
+    """For services that don't report a language: reject text that isn't English."""
+    words = " ".join(c["text"] for c in cues).lower().split()
+    if len(words) >= 50 and sum(w in ENGLISH_WORDS for w in words) / len(words) < 0.08:
+        raise RuntimeError(f"{name} returned text that does not look like English")
+    return cues
+
+
 def via_yt_to_text(video_id: str):
     # backend of tubetranscript.com; times are strings in seconds, e = end time
     data = _service_json("yt-to-text", "https://yt-to-text.com/api/v1/Subtitles", {"video_id": video_id},
@@ -368,9 +379,10 @@ def via_yt_to_text(video_id: str):
     if data.get("code") == "NO_SUBTITLES":
         raise FetchError("no_captions", "yt-to-text: NO_SUBTITLES")
     items = (data.get("data") or {}).get("transcripts") or []
-    return [{"text": html.unescape(str(c["t"])).strip(), "start_seconds": round(float(c["s"]), 3),
-             "duration_seconds": round(max(float(c["e"]) - float(c["s"]), 0), 3)}
-            for c in items if str(c.get("t", "")).strip()]
+    return _check_english("yt-to-text", [
+        {"text": html.unescape(str(c["t"])).strip(), "start_seconds": round(float(c["s"]), 3),
+         "duration_seconds": round(max(float(c["e"]) - float(c["s"]), 0), 3)}
+        for c in items if str(c.get("t", "")).strip()])
 
 
 def via_youtubetranscript_pro(video_id: str):
@@ -489,6 +501,10 @@ def fetch(episode_id: str, video_id: str, title: str, methods, state: dict) -> t
     kinds = []
     for name, method in methods:
         service = name in SERVICE_METHODS
+        if name == "youtubetranscript_pro" and kinds.count("no_captions") >= 2 and not FINAL_CHECK:
+            # only 10 credits a month: don't spend one when two services already said no captions
+            print(f"  {name} skipped: two services already reported no captions")
+            continue
         blocked = service_turn(state, name) if service else wait_for_turn(state)
         if blocked:
             print(f"  {name} skipped: {blocked}")

@@ -2,6 +2,13 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.75.0 (2026-09-28)
+
+### Changed
+- Transcripts from yt-to-text are checked for English; a non-English track now fails over to the next method instead of being saved.
+- YouTubeTranscript.pro is skipped when two or more services already said the episode has no captions, so its 10 monthly credits aren't wasted.
+- A service reply that says its credits or quota are used up now pauses that service rather than counting as an unknown error.
+
 ## v0.74.0 (2026-09-28)
 
 ### Added
