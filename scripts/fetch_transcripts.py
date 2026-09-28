@@ -23,10 +23,16 @@ Normal runs use methods 1-3. `--all-methods` or `--retry-queue` adds 4.
 Every failure is classified:
   rate_limited  YouTube answered 429 / IpBlocked. The run stops, since every
                 method shares this IP, and a cool-off time is saved.
-  no_captions   YouTube says captions are disabled or missing.
+  no_captions   YouTube says captions are disabled or missing. The video is not
+                tried with any further method (saves tactiq's ~6-8 YouTube
+                requests) and never causes a cool-off.
+  timeout       a FreeTranscriptAPI timeout; it is retried once after 15s first.
   unknown       anything else.
 Failed videos go to the retry queue, data/transcripts/_missing.json, with the
-reason and an attempt count. They are never skipped by this script.
+reason and an attempt count. no_captions videos go to a separate list,
+data/transcripts/_no_captions.json, instead: they are not retried with the
+backlog or the retry queue, only once more with every method at the very end
+(--no-captions-check). Nothing is ever skipped by this script.
 
 Pacing (state in data/transcripts/_fetch_state.json, so it holds across runs),
 set from docs/YOUTUBE-LIMITS.md:
@@ -45,6 +51,7 @@ decision, 2026-09-27).
 Usage:
   python scripts/fetch_transcripts.py [--all-methods] [EPISODE_ID ...]   (no IDs = every unfetched episode)
   python scripts/fetch_transcripts.py --retry-queue      (all methods, whole queue)
+  python scripts/fetch_transcripts.py --no-captions-check   (last: all methods, no-captions list)
 """
 from __future__ import annotations
 
@@ -64,6 +71,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "data" / "transcripts"
 MISSING_LOG = OUT_DIR / "_missing.json"
+NO_CAPTIONS_LOG = OUT_DIR / "_no_captions.json"   # option B: checked once more at the very end
 STATE_FILE = OUT_DIR / "_fetch_state.json"
 ATTEMPT_LOG = OUT_DIR / "_fetch_log.jsonl"
 EPISODES = ROOT / "data" / "episodes.json"
@@ -80,6 +88,7 @@ COOL_OFF_MAX = 30 * 60        # doubles per consecutive rate limit, capped at 30
 STOP_AFTER_RATE_LIMITS = 1  # every method shares one IP, so one 429 means stop
 FTA_URL = "https://api.freetranscriptapi.com/v1/transcript"
 FTA_HOURLY_CAP = 18           # service allows 20/hour per IP anonymously; stay under
+FTA_TIMEOUT_RETRY_SECONDS = 15  # one retry after a FreeTranscriptAPI timeout
 FTA_MIN_GAP = 20              # seconds between FreeTranscriptAPI calls, plus 0-20s jitter
 TACTIQ_POLL_SECONDS = 3
 TACTIQ_MAX_SECONDS = 90
@@ -104,6 +113,8 @@ def classify(exc: Exception) -> str:
     text = f"{type(exc).__name__} {exc}"
     if re.search(r"IpBlocked|RequestBlocked|TooManyRequests|429", text):
         return "rate_limited"
+    if re.search(r"timed out|TimeoutError|timeout", text, re.I):
+        return "timeout"
     if re.search(r"TranscriptsDisabled|NoTranscriptFound|no subtitles|no captions", text, re.I):
         return "no_captions"
     return "unknown"
@@ -349,6 +360,9 @@ def record(state: dict, video_id: str, method: str, result: str, kind: str | Non
     })
 
 
+FINAL_CHECK = False  # --no-captions-check: try every method even after "no captions"
+
+
 def fetch(episode_id: str, video_id: str, title: str, methods, state: dict) -> tuple[bool, str | None]:
     kinds = []
     for name, method in methods:
@@ -361,7 +375,17 @@ def fetch(episode_id: str, video_id: str, title: str, methods, state: dict) -> t
             continue
         started = _now()
         try:
-            cues = method(video_id)
+            try:
+                cues = method(video_id)
+            except Exception as exc:  # noqa: BLE001
+                if not (service and classify(exc) == "timeout"):
+                    raise
+                # a timeout is usually the service being slow, not a limit: one retry
+                print(f"  {name} timed out; retrying once in {FTA_TIMEOUT_RETRY_SECONDS}s")
+                state["fta_times"] = [t for t in state.get("fta_times", []) if _now() - t < 3600] + [started]
+                time.sleep(FTA_TIMEOUT_RETRY_SECONDS)
+                started = _now()
+                cues = method(video_id)
         except Exception as exc:  # noqa: BLE001
             kind = classify(exc)
             if service:
@@ -380,6 +404,10 @@ def fetch(episode_id: str, video_id: str, title: str, methods, state: dict) -> t
             print(f"  {name} failed [{kind}]: {str(exc).strip().splitlines()[0][:150] if str(exc).strip() else type(exc).__name__}")
             if kind == "rate_limited":
                 return False, "rate_limited"
+            if kind == "no_captions" and not FINAL_CHECK:
+                # YouTube itself said captions are disabled or missing: don't spend more
+                # YouTube requests (tactiq is ~6-8) on this video now
+                return False, "no_captions"
             continue
         if service:
             state["fta_times"] = [t for t in state.get("fta_times", []) if _now() - t < 3600] + [started]
@@ -401,15 +429,28 @@ def fetch(episode_id: str, video_id: str, title: str, methods, state: dict) -> t
     return False, ("no_captions" if "no_captions" in kinds else "unknown")
 
 
+def save_queues(missing: list, no_caps: list) -> None:
+    MISSING_LOG.write_text(json.dumps(missing, indent=2), encoding="utf-8")
+    NO_CAPTIONS_LOG.write_text(json.dumps(no_caps, indent=2), encoding="utf-8")
+
+
 def main(argv: list[str]) -> int:
-    all_methods = "--all-methods" in argv or "--retry-queue" in argv
+    all_methods = any(a in argv for a in ("--all-methods", "--retry-queue", "--no-captions-check"))
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     episodes = json.loads(EPISODES.read_text(encoding="utf-8"))
     by_id = {e["episode_id"]: e for e in episodes}
+    global FINAL_CHECK
     missing = json.loads(MISSING_LOG.read_text(encoding="utf-8")) if MISSING_LOG.exists() else []
+    no_caps = json.loads(NO_CAPTIONS_LOG.read_text(encoding="utf-8")) if NO_CAPTIONS_LOG.exists() else []
+    no_caps += [m for m in missing if m.get("likely_no_captions")]
+    missing = [m for m in missing if not m.get("likely_no_captions")]
     wanted = [a for a in argv if not a.startswith("--")]
     if "--retry-queue" in argv:
         wanted = [m["episode_id"] for m in missing]
+    elif "--no-captions-check" in argv:
+        # option B: one last all-methods check, only after the retry queue is empty
+        FINAL_CHECK = True
+        wanted = [m["episode_id"] for m in no_caps]
     elif not wanted:
         wanted = [e["episode_id"] for e in episodes]
     methods = METHODS if all_methods else METHODS[:3]
@@ -432,22 +473,31 @@ def main(argv: list[str]) -> int:
             break
         if ok:
             missing = [m for m in missing if m.get("episode_id") != eid]
+            no_caps = [m for m in no_caps if m.get("episode_id") != eid]
         else:
             failed += 1
-            prev = next((m for m in missing if m.get("episode_id") == eid), {})
+            prev = next((m for m in missing + no_caps if m.get("episode_id") == eid), {})
             missing = [m for m in missing if m.get("episode_id") != eid]
+            no_caps = [m for m in no_caps if m.get("episode_id") != eid]
             kinds = sorted(set(prev.get("kinds", [])) | {kind})
-            missing.append({"episode_id": eid, "video_id": vid, "title": ep.get("title", ""), "reason": kind,
-                            "kinds": kinds, "attempts": prev.get("attempts", 0) + 1,
-                            "last_attempt": _iso(_now()), "likely_no_captions": "no_captions" in kinds})
-            print(f"  [FAILED: {kind}] added to retry queue")
+            entry = {"episode_id": eid, "video_id": vid, "title": ep.get("title", ""), "reason": kind, "kinds": kinds,
+                     "attempts": prev.get("attempts", 0) + 1, "last_attempt": _iso(_now()),
+                     "likely_no_captions": "no_captions" in kinds}
+            if kind == "no_captions":
+                # option B: no rerun during the backlog or the retry pass; one final check at the very end
+                entry["final_checked"] = FINAL_CHECK
+                no_caps.append(entry)
+                print("  [NO CAPTIONS] moved to the no-captions list for one final check at the end")
+            else:
+                missing.append(entry)
+                print(f"  [FAILED: {kind}] added to retry queue")
             if kind == "rate_limited":
                 rest = [e for e in wanted[i + 1:] if not (OUT_DIR / f"{e}.json").exists()]
                 print(f"[stop] YouTube is rate-limiting this IP. Not attempting {len(rest)} remaining episode(s); "
                       f"next run may start after {_iso(state['blocked_until'])}.")
                 break
-        MISSING_LOG.write_text(json.dumps(missing, indent=2), encoding="utf-8")
-    MISSING_LOG.write_text(json.dumps(missing, indent=2), encoding="utf-8")
+        save_queues(missing, no_caps)
+    save_queues(missing, no_caps)
     return 1 if failed else 0
 
 

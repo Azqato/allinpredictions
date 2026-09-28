@@ -133,7 +133,9 @@ Same process as the Financial Education project. Research and sources: `docs/YOU
   2. `youtube-transcript-api`, direct from our IP (1-2 YouTube requests).
   3. Headless Microsoft Edge + tactiq.io. tactiq plays the video in an embedded YouTube player inside our browser, so its caption request also comes from our IP (about 6-8 YouTube requests). Network capture confirmed this; it is not a way around YouTube limits.
   4. `yt-dlp` auto-subs, retry queue only.
-- **Failure kinds:** `rate_limited` (429/IpBlocked: stop the run, since every local method shares our IP), `no_captions`, `unknown`. Failed episodes go to `data/transcripts/_missing.json` with reason, kinds and attempt count, and are retried after everything else.
+- **Failure kinds:** `rate_limited` (429/IpBlocked: stop the run, since every local method shares our IP; the only thing that starts a cool-off), `no_captions`, `timeout`, `unknown`. Failed episodes go to `data/transcripts/_missing.json` with reason, kinds and attempt count, and are retried after everything else (`--retry-queue`).
+- **No captions:** when YouTube says captions are disabled or missing, no further method is tried, no cool-off starts, and the episode goes to `data/transcripts/_no_captions.json` instead of the retry queue. It gets one last all-methods check only at the very end, after the retry queue (`--no-captions-check`).
+- **FreeTranscriptAPI timeouts:** retried once after 15 seconds before falling through to the YouTube methods.
 - **Pacing** (state in `data/transcripts/_fetch_state.json`): 60-120s between YouTube attempts with random jitter; at most 20 per rolling hour and 100 per 24 hours; a rate limit doubles the gap (max 15 min) and sets a cool-off of 10 min, doubling to 30 min max. When a cap or cool-off is active the run stops without queuing the episode.
 - Every attempt is logged to `data/transcripts/_fetch_log.jsonl`.
 - Anonymous only: never sign in to Google or YouTube.

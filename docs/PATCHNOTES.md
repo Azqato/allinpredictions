@@ -2,6 +2,12 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.73.0 (2026-09-28)
+
+### Changed
+- `scripts/fetch_transcripts.py`: when YouTube says a video has no captions, no further method is tried (tactiq would spend 6-8 more YouTube requests), no cool-off starts, and the video moves to a separate `data/transcripts/_no_captions.json` list instead of the retry queue. That list gets one last all-methods check at the very end (`--no-captions-check`). Only a rate limit starts a cool-off (author decision).
+- FreeTranscriptAPI timeouts are retried once after 15 seconds before falling back to YouTube.
+
 ## v0.72.0 (2026-09-28)
 
 ### Changed
