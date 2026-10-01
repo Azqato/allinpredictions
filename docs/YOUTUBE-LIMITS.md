@@ -136,5 +136,7 @@ Sources: https://yttools.co/ , https://tubetranscript.com/en , https://youtubetr
 - Adopted 2026-09-28: four server-side services go first (FreeTranscriptAPI, YTTools, yt-to-text, YouTubeTranscript.pro), so most fetches don't use our IP's YouTube budget at all, and a YouTube cool-off no longer stops a run while any service is open.
 
 - Adopted 2026-09-28: 60-120 seconds between attempts with random variation, at most 20 attempts per rolling hour and 100 per rolling 24 hours.
+- Lowered 2026-10-01 (author decision): at most 10 attempts per rolling hour and 50 per rolling 24 hours, so this IP keeps plenty of headroom for the author's own YouTube use outside the project.
+- Added 2026-10-01 (author decision): at least 30 seconds between any two transcript requests, across every service and YouTube, kept in the state file so it holds across runs. A service that does not answer at all (connection timeout) is paused for an hour, the same as a 429.
 - The 10-30 minute cool-off (author decision) is a cheap check: each check is one request and stops the run at once. Expect checks to keep failing for hours after a real block. The attempt log will show whether frequent checks lengthen blocks.
 - Do not skip a video as "no captions" from an empty direct-tool reply alone.

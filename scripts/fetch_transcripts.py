@@ -15,8 +15,8 @@ Methods, in order (1-4 are server-side services, 5-7 use this IP):
   4. YouTubeTranscript.pro. Free tier is 10 credits a month, so it is tried last
      and capped at 10 per rolling 30 days.
      The services fetch from YouTube on their own servers, so they never use this
-     IP's YouTube budget. Each waits 20-40s between its own calls; a 429, bot page
-     or "blocked" reply pauses that service for an hour. 2 and 3 are undocumented
+     IP's YouTube budget. Each waits 20-40s between its own calls; a 429, bot page,
+     "blocked" reply or no answer at all pauses that service for an hour. 2 and 3 are undocumented
      endpoints their own web pages use, so any unexpected reply is just a failure
      for that service. A service's "no captions" is not trusted on its own.
   5. youtube-transcript-api. Direct from this IP; 1-2 YouTube requests.
@@ -51,8 +51,9 @@ backlog or the retry queue, only once more with every method at the very end
 
 Pacing (state in data/transcripts/_fetch_state.json, so it holds across runs),
 set from docs/YOUTUBE-LIMITS.md:
+  - at least 30s between ANY two requests, whichever service or method they go to
   - 60-120s between attempts (60s base plus random jitter, so gaps are never regular)
-  - at most 20 attempts per rolling hour and 100 per rolling 24 hours; a run
+  - at most 10 attempts per rolling hour and 50 per rolling 24 hours; a run
     that reaches a cap exits and prints when it may resume
   - a rate limit doubles the base gap (up to 15 min), stops the run, and sets
     a cool-off: 10 min, doubling per consecutive rate limit up to 30 min
@@ -96,8 +97,8 @@ EPISODES = ROOT / "data" / "episodes.json"
 # blocks lasting hours. Stay well under that; slower is fine.
 MIN_COOLDOWN = 60             # base gap between attempts
 JITTER_SECONDS = 60           # plus a random 0-60s, so gaps are 60-120s and never regular
-HOURLY_CAP = 20               # attempts per rolling hour
-DAILY_CAP = 100               # attempts per rolling 24 hours
+HOURLY_CAP = 10               # attempts per rolling hour (author: keep YouTube usable on this IP, 2026-10-01)
+DAILY_CAP = 50                # attempts per rolling 24 hours
 MAX_COOLDOWN = 900
 COOL_OFF_START = 10 * 60      # first rate limit: wait 10 min before the next run
 COOL_OFF_MAX = 30 * 60        # doubles per consecutive rate limit, capped at 30 min
@@ -107,6 +108,8 @@ FTA_HOURLY_CAP = 18           # service allows 20/hour per IP anonymously; stay 
 FTA_TIMEOUT_RETRY_SECONDS = 15  # one retry after a FreeTranscriptAPI timeout
 FTA_MIN_GAP = 20              # seconds between FreeTranscriptAPI calls, plus 0-20s jitter
 SERVICE_GAP = 20              # seconds between calls to the same service, plus 0-20s jitter
+GLOBAL_MIN_GAP = 30           # seconds between ANY two requests, across every service and YouTube
+                              # (author decision, 2026-10-01); kept in the state file across runs
 # Server-side services: they fetch from YouTube on their own servers, so they never
 # use this IP's YouTube budget. key = state-file prefix; cap = calls per rolling window.
 # YTTools and yt-to-text publish no limit; 30/hour is our own conservative choice.
@@ -337,6 +340,10 @@ def _service_json(name: str, url: str, body: dict | None = None, headers: dict |
         if re.search(r"no.?(captions|transcript|subtitles)|disabled", detail, re.I):
             raise FetchError("no_captions", f"{name} {exc.code}: {detail}") from exc
         raise RuntimeError(f"{name} HTTP {exc.code}: {detail}") from exc
+    except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
+        # the service never answered (down, or dropping our connections): pause it for the
+        # hour like a 429, instead of losing a ~20s connect timeout on every video
+        raise FetchError("service_limited", f"{name} unreachable: {exc}") from exc
     try:
         return json.loads(text)
     except ValueError:
@@ -469,6 +476,23 @@ def service_turn(state: dict, name: str) -> str | None:
     return None
 
 
+def global_gap(state: dict) -> None:
+    """Wait until GLOBAL_MIN_GAP seconds have passed since the previous request of any kind ended."""
+    wait = GLOBAL_MIN_GAP - (_now() - state.get("last_request_end", 0))
+    if wait > 0:
+        print(f"  global gap {wait:.0f}s")
+        time.sleep(wait)
+
+
+def _submit(state: dict, method, video_id: str):
+    """Run one request and stamp its end time for the global gap, success or failure."""
+    try:
+        return method(video_id)
+    finally:
+        state["last_request_end"] = _now()
+        save_state(state)
+
+
 def note_service_call(state: dict, name: str, started: float) -> None:
     state[SERVICES[name]["key"] + "_times"] = _service_times(state, name) + [started]
 
@@ -511,10 +535,11 @@ def fetch(episode_id: str, video_id: str, title: str, methods, state: dict) -> t
             if not service:
                 return False, "waiting:" + blocked
             continue
+        global_gap(state)
         started = _now()
         try:
             try:
-                cues = method(video_id)
+                cues = _submit(state, method, video_id)
             except Exception as exc:  # noqa: BLE001
                 if not (service and classify(exc) == "timeout"):
                     raise
@@ -522,8 +547,9 @@ def fetch(episode_id: str, video_id: str, title: str, methods, state: dict) -> t
                 print(f"  {name} timed out; retrying once in {FTA_TIMEOUT_RETRY_SECONDS}s")
                 note_service_call(state, name, started)
                 time.sleep(FTA_TIMEOUT_RETRY_SECONDS)
+                global_gap(state)
                 started = _now()
-                cues = method(video_id)
+                cues = _submit(state, method, video_id)
         except Exception as exc:  # noqa: BLE001
             kind = classify(exc)
             if service:
