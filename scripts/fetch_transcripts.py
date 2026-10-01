@@ -444,6 +444,8 @@ def via_youtube_transcript_ai(video_id: str):
     # Markdown with [m:ss] paragraphs about 30s apart; auto-captions arrive with each
     # phrase repeated, collapsed here (checked at 96% word match against a clean copy)
     text = _service_text("youtube-transcript.ai", f"https://youtube-transcript.ai/transcript/{video_id}.txt")
+    if re.match(r"\s*# No captions available", text):
+        raise FetchError("no_captions", "youtube-transcript.ai: no captions available")
     lang = re.search(r"^Language:\s*([A-Za-z-]+)", text, re.M)
     if lang:
         _english("youtube-transcript.ai", lang.group(1))
