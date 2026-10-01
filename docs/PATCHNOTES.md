@@ -2,6 +2,11 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.76.1 (2026-10-01)
+
+### Fixed
+- A transcript service that returns a caption track in another language no longer counts toward that service's 3-failures-in-a-row pause; it counts like a "no captions" reply, since the service answered correctly.
+
 ## v0.76.0 (2026-10-01)
 
 ### Changed
