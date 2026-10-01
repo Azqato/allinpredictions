@@ -7,29 +7,36 @@ and docs/YOUTUBE-LIMITS.md). Episodes come from data/episodes.json.
 Process: one episode at a time. Fetch one, process it, then fetch the next,
 so a block or failure never strands fetched-but-unprocessed episodes.
 
-Methods, in order (1-4 are server-side services, 5-7 use this IP):
+Methods, in order (1-5 are server-side services, 6-8 use this IP):
   1. FreeTranscriptAPI. Max 18 calls per rolling hour (its free limit is 20).
   2. YTTools (yttools.co/api/transcript). No published limit; we cap at 30/hour.
   3. yt-to-text (yt-to-text.com/api/v1/Subtitles, the backend of tubetranscript.com).
      No published limit; we cap at 30/hour.
-  4. YouTubeTranscript.pro. Free tier is 10 credits a month, so it is tried last
+  4. Invidious public instances (inv.nadeko.net, invidious.f5.si), 20/hour each,
+     youtubetranscript.com (30/hour), and youtube-transcript.ai (10/hour; its free
+     tier is for low-volume personal scripts, so it is a fallback only; its
+     auto-captions repeat each phrase, collapsed in code). Added 2026-10-01 even
+     though some were failing then: a service that fails 3 times in a row is
+     paused for an hour, so a broken one costs little and returns on its own.
+  5. YouTubeTranscript.pro. Free tier is 10 credits a month, so it is tried last
      and capped at 10 per rolling 30 days.
      The services fetch from YouTube on their own servers, so they never use this
      IP's YouTube budget. Each waits 20-40s between its own calls; a 429, bot page,
-     "blocked" reply or no answer at all pauses that service for an hour. 2 and 3 are undocumented
+     "blocked" reply or no answer at all pauses that service for an hour, and so do 3
+     failures in a row. 2 and 3 are undocumented
      endpoints their own web pages use, so any unexpected reply is just a failure
      for that service. A service's "no captions" is not trusted on its own.
-  5. youtube-transcript-api. Direct from this IP; 1-2 YouTube requests.
-  6. headless Microsoft Edge + tactiq.io. tactiq plays the video in an embedded
+  6. youtube-transcript-api. Direct from this IP; 1-2 YouTube requests.
+  7. headless Microsoft Edge + tactiq.io. tactiq plays the video in an embedded
      YouTube player inside our browser, so its caption request also comes from
-     this IP (about 6-8 YouTube requests). Only reached when method 5 failed
+     this IP (about 6-8 YouTube requests). Only reached when method 6 failed
      without a rate limit or a "no captions" answer.
-  7. yt-dlp auto-subs (`python -m yt_dlp`, deno as its JavaScript runtime).
+  8. yt-dlp auto-subs (`python -m yt_dlp`, deno as its JavaScript runtime).
      Retry queue and final check only.
-Normal runs use methods 1-6. `--all-methods`, `--retry-queue` or
-`--no-captions-check` adds 7.
+Normal runs use methods 1-7. `--all-methods`, `--retry-queue` or
+`--no-captions-check` adds 8.
 
-A YouTube cool-off or cap only blocks methods 5-7. While any service is open the
+A YouTube cool-off or cap only blocks methods 6-8. While any service is open the
 run keeps going: a video the services all miss is queued as `deferred` and the run
 moves to the next one. The run stops only when every service is paused or capped
 and YouTube is also waiting.
@@ -52,6 +59,7 @@ backlog or the retry queue, only once more with every method at the very end
 Pacing (state in data/transcripts/_fetch_state.json, so it holds across runs),
 set from docs/YOUTUBE-LIMITS.md:
   - at least 30s between ANY two requests, whichever service or method they go to
+    (only 5s after a request that failed)
   - 60-120s between attempts (60s base plus random jitter, so gaps are never regular)
   - at most 10 attempts per rolling hour and 50 per rolling 24 hours; a run
     that reaches a cap exits and prints when it may resume
@@ -110,6 +118,8 @@ FTA_MIN_GAP = 20              # seconds between FreeTranscriptAPI calls, plus 0-
 SERVICE_GAP = 20              # seconds between calls to the same service, plus 0-20s jitter
 GLOBAL_MIN_GAP = 30           # seconds between ANY two requests, across every service and YouTube
                               # (author decision, 2026-10-01); kept in the state file across runs
+FAILURE_GAP = 5               # ...but only 5s after a request that failed (author decision, 2026-10-01)
+FAIL_STREAK_PAUSE = 3         # a service failing this many times in a row is paused for an hour
 # Server-side services: they fetch from YouTube on their own servers, so they never
 # use this IP's YouTube budget. key = state-file prefix; cap = calls per rolling window.
 # YTTools and yt-to-text publish no limit; 30/hour is our own conservative choice.
@@ -117,6 +127,12 @@ SERVICES = {
     "freetranscriptapi": {"key": "fta", "cap": FTA_HOURLY_CAP, "window": 3600, "label": "FreeTranscriptAPI"},
     "yttools": {"key": "yttools", "cap": 30, "window": 3600, "label": "YTTools"},
     "yt_to_text": {"key": "yttotext", "cap": 30, "window": 3600, "label": "yt-to-text"},
+    # public Invidious instances are volunteer-run: keep their share small
+    "invidious_nadeko": {"key": "invnadeko", "cap": 20, "window": 3600, "label": "Invidious (inv.nadeko.net)"},
+    "invidious_f5": {"key": "invf5", "cap": 20, "window": 3600, "label": "Invidious (invidious.f5.si)"},
+    "youtubetranscript_com": {"key": "yttcom", "cap": 30, "window": 3600, "label": "youtubetranscript.com"},
+    # free tier is for low-volume personal scripts, not bulk ingest: fallback only, 10/hour
+    "youtube_transcript_ai": {"key": "ytai", "cap": 10, "window": 3600, "label": "youtube-transcript.ai"},
     # free tier is 10 credits a month, so it is the last service tried
     "youtubetranscript_pro": {"key": "yttpro", "cap": 10, "window": 30 * 86400, "label": "YouTubeTranscript.pro"},
 }
@@ -322,6 +338,16 @@ def via_tactiq_headless_edge(video_id: str):
 
 def _service_json(name: str, url: str, body: dict | None = None, headers: dict | None = None):
     """GET (or POST JSON) a server-side transcript service; classify its errors."""
+    text = _service_text(name, url, body, headers)
+    try:
+        return json.loads(text)
+    except ValueError:
+        # an HTML page instead of JSON is usually a bot wall in front of the service
+        raise FetchError("service_limited", f"{name} returned non-JSON: {text[:120]!r}") from None
+
+
+def _service_text(name: str, url: str, body: dict | None = None, headers: dict | None = None) -> str:
+    """Fetch a service's raw reply; HTTP errors and no-answer are classified like _service_json."""
     import urllib.error
     import urllib.request
 
@@ -344,11 +370,7 @@ def _service_json(name: str, url: str, body: dict | None = None, headers: dict |
         # the service never answered (down, or dropping our connections): pause it for the
         # hour like a 429, instead of losing a ~20s connect timeout on every video
         raise FetchError("service_limited", f"{name} unreachable: {exc}") from exc
-    try:
-        return json.loads(text)
-    except ValueError:
-        # an HTML page instead of JSON is usually a bot wall in front of the service
-        raise FetchError("service_limited", f"{name} returned non-JSON: {text[:120]!r}") from None
+    return text
 
 
 def _english(name: str, lang) -> None:
@@ -392,6 +414,86 @@ def via_yt_to_text(video_id: str):
         for c in items if str(c.get("t", "")).strip()])
 
 
+def _collapse_repeats(text: str, min_len: int = 4, max_len: int = 20) -> str:
+    """Drop rolling auto-caption repeats: 'a b c d a b c d e' -> 'a b c d e'."""
+    words = text.split()
+    out, i = [], 0
+    while i < len(words):
+        for k in range(min(max_len, (len(words) - i) // 2), min_len - 1, -1):
+            if [w.lower() for w in words[i:i + k]] == [w.lower() for w in words[i + k:i + 2 * k]]:
+                i += k  # skip the first copy; the second is kept
+                break
+        else:
+            out.append(words[i])
+            i += 1
+    return " ".join(out)
+
+
+def _paragraph_cues(paras: list[tuple[float, str]]) -> list:
+    """(start, text) paragraphs -> cues; each runs until the next paragraph starts."""
+    cues = []
+    for n, (start, text) in enumerate(paras):
+        end = paras[n + 1][0] if n + 1 < len(paras) else start
+        if text.strip():
+            cues.append({"text": text.strip(), "start_seconds": round(start, 3),
+                         "duration_seconds": round(max(end - start, 0), 3)})
+    return cues
+
+
+def via_youtube_transcript_ai(video_id: str):
+    # Markdown with [m:ss] paragraphs about 30s apart; auto-captions arrive with each
+    # phrase repeated, collapsed here (checked at 96% word match against a clean copy)
+    text = _service_text("youtube-transcript.ai", f"https://youtube-transcript.ai/transcript/{video_id}.txt")
+    lang = re.search(r"^Language:\s*([A-Za-z-]+)", text, re.M)
+    if lang:
+        _english("youtube-transcript.ai", lang.group(1))
+    paras = []
+    for h, m, s, body in re.findall(r"^\[(\d+):(\d{2})(?::(\d{2}))?\]\s*(.+)$", text, re.M):
+        secs = int(h) * 3600 + int(m) * 60 + int(s) if s else int(h) * 60 + int(m)
+        paras.append((float(secs), html.unescape(_collapse_repeats(body))))
+    return _check_english("youtube-transcript.ai", _paragraph_cues(paras))
+
+
+def via_youtubetranscript_com(video_id: str):
+    # XML <text start dur>; while YouTube blocks them it returns one apology line instead
+    text = _service_text("youtubetranscript.com", f"https://youtubetranscript.com/?server_vid2={video_id}")
+    if re.search(r"currently blocking us|we're sorry", text, re.I):
+        raise FetchError("service_limited", "youtubetranscript.com: YouTube is blocking it")
+    return _check_english("youtubetranscript.com", [
+        {"text": html.unescape(html.unescape(t)).strip(), "start_seconds": round(float(s), 3),
+         "duration_seconds": round(float(d or 0), 3)}
+        for s, d, t in re.findall(r'<text start="([\d.]+)"(?: dur="([\d.]+)")?[^>]*>(.*?)</text>', text, re.S)
+        if t.strip()])
+
+
+def _vtt_seconds(ts: str) -> float:
+    parts = [float(p) for p in ts.replace(",", ".").split(":")]
+    return parts[-1] + 60 * parts[-2] + (3600 * parts[-3] if len(parts) == 3 else 0)
+
+
+def _invidious(host: str, video_id: str):
+    # WebVTT; an empty body means the instance couldn't get captions from YouTube
+    text = _service_text(f"Invidious {host}", f"https://{host}/api/v1/captions/{video_id}?lang=en")
+    cues, last = [], ""
+    for start, end, body in re.findall(
+            r"([\d:.]+) --> ([\d:.]+)[^\n]*\n(.*?)(?:\n\n|\Z)", text.replace("\r", ""), re.S):
+        line = html.unescape(re.sub(r"<[^>]+>", "", body)).replace("\n", " ").strip()
+        if not line or line == last:  # auto-caption tracks repeat the previous line
+            continue
+        last = line
+        cues.append({"text": line, "start_seconds": round(_vtt_seconds(start), 3),
+                     "duration_seconds": round(max(_vtt_seconds(end) - _vtt_seconds(start), 0), 3)})
+    return _check_english(f"Invidious {host}", cues)
+
+
+def via_invidious_nadeko(video_id: str):
+    return _invidious("inv.nadeko.net", video_id)
+
+
+def via_invidious_f5(video_id: str):
+    return _invidious("invidious.f5.si", video_id)
+
+
 def via_youtubetranscript_pro(video_id: str):
     from urllib.parse import urlencode
     data = _service_json("YouTubeTranscript.pro", "https://youtubetranscript.pro/api/youtube/transcript?"
@@ -413,14 +515,18 @@ METHODS = [
     ("freetranscriptapi", via_freetranscriptapi),
     ("yttools", via_yttools),
     ("yt_to_text", via_yt_to_text),
-    ("youtubetranscript_pro", via_youtubetranscript_pro),
+    ("invidious_nadeko", via_invidious_nadeko),
+    ("invidious_f5", via_invidious_f5),
+    ("youtubetranscript_com", via_youtubetranscript_com),
+    ("youtube_transcript_ai", via_youtube_transcript_ai),    # low-volume fallback (its terms)
+    ("youtubetranscript_pro", via_youtubetranscript_pro),    # scarcest: 10 credits a month
     ("youtube_transcript_api", via_transcript_api),        # 1-2 YouTube requests per video
     ("tactiq_playwright_edge_headless", via_tactiq_headless_edge),  # real player, ~6-8 requests;
     # only reached when the direct method failed without a rate limit (e.g. empty reply from a
     # video that needs the player's security token)
     ("yt_dlp_auto_sub", via_ytdlp),
 ]
-NORMAL_METHODS = 6  # yt-dlp only with --all-methods / --retry-queue / --no-captions-check
+NORMAL_METHODS = len(METHODS) - 1  # yt-dlp only with --all-methods / --retry-queue / --no-captions-check
 
 
 # ---------- pacing ----------
@@ -477,8 +583,9 @@ def service_turn(state: dict, name: str) -> str | None:
 
 
 def global_gap(state: dict) -> None:
-    """Wait until GLOBAL_MIN_GAP seconds have passed since the previous request of any kind ended."""
-    wait = GLOBAL_MIN_GAP - (_now() - state.get("last_request_end", 0))
+    """Wait GLOBAL_MIN_GAP seconds after the previous request of any kind ended (FAILURE_GAP if it failed)."""
+    gap = GLOBAL_MIN_GAP if state.get("last_request_ok", True) else FAILURE_GAP
+    wait = gap - (_now() - state.get("last_request_end", 0))
     if wait > 0:
         print(f"  global gap {wait:.0f}s")
         time.sleep(wait)
@@ -486,11 +593,29 @@ def global_gap(state: dict) -> None:
 
 def _submit(state: dict, method, video_id: str):
     """Run one request and stamp its end time for the global gap, success or failure."""
+    ok = False
     try:
-        return method(video_id)
+        cues = method(video_id)
+        ok = bool(cues)
+        return cues
     finally:
         state["last_request_end"] = _now()
+        state["last_request_ok"] = ok
         save_state(state)
+
+
+def note_service_result(state: dict, name: str, ok: bool, kind: str | None = None) -> None:
+    """Pause a service for an hour after FAIL_STREAK_PAUSE failures in a row. A 'no captions'
+    answer is a real answer, and a service_limited failure already paused it."""
+    key = SERVICES[name]["key"] + "_fail_streak"
+    if ok or kind in ("no_captions", "service_limited"):
+        state[key] = 0
+        return
+    state[key] = state.get(key, 0) + 1
+    if state[key] >= FAIL_STREAK_PAUSE:
+        state[SERVICES[name]["key"] + "_paused_until"] = _now() + 3600
+        state[key] = 0
+        print(f"  {SERVICES[name]['label']} failed {FAIL_STREAK_PAUSE} times in a row; paused for an hour")
 
 
 def note_service_call(state: dict, name: str, started: float) -> None:
@@ -556,6 +681,7 @@ def fetch(episode_id: str, video_id: str, title: str, methods, state: dict) -> t
                 note_service_call(state, name, started)
                 if kind == "service_limited":
                     state[SERVICES[name]["key"] + "_paused_until"] = _now() + 3600
+                note_service_result(state, name, False, kind)
                 save_state(state)
                 log_attempt({"at": _iso(started), "video_id": video_id, "method": name, "result": "failed",
                              "kind": kind, "seconds": round(_now() - started, 1)})
@@ -575,6 +701,7 @@ def fetch(episode_id: str, video_id: str, title: str, methods, state: dict) -> t
             continue
         if service:
             note_service_call(state, name, started)
+            note_service_result(state, name, bool(cues), None if cues else "unknown")
             save_state(state)
             log_attempt({"at": _iso(started), "video_id": video_id, "method": name,
                          "result": "ok" if cues else "failed", "kind": None if cues else "unknown",

@@ -7,6 +7,8 @@ All notable changes to this project, in reverse chronological order. Format: sem
 ### Changed
 - YouTube requests from this IP were capped at 10 per rolling hour and 50 per rolling day (was 20 and 100), so YouTube stays usable from this IP outside the project.
 - Every transcript request of any kind, to any service or to YouTube, now waits at least 30 seconds after the previous one.
+- After a failed transcript request, the next one waits only 5 seconds, and a service that fails 3 times in a row is paused for an hour, then tried again on its own.
+- Added four server-side transcript services ahead of this computer's IP: two Invidious instances, youtubetranscript.com and youtube-transcript.ai (a low-volume fallback, with repeated auto-caption phrases cleaned up).
 - A transcript service that does not answer at all is now paused for an hour, like a rate-limit reply, instead of costing a 20-second timeout on every episode.
 
 ## v0.75.0 (2026-09-28)
