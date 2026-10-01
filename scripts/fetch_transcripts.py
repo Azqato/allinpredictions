@@ -210,7 +210,7 @@ def via_freetranscriptapi(video_id: str):
         raise RuntimeError(f"FreeTranscriptAPI HTTP {exc.code}: {body}") from exc
     lang = str(data.get("language") or "")
     if lang and not lang.lower().startswith("en"):
-        raise RuntimeError(f"FreeTranscriptAPI returned language {lang!r}, not English")
+        raise FetchError("wrong_language", f"FreeTranscriptAPI returned language {lang!r}, not English")
     return [
         {"text": str(c["text"]).strip(), "start_seconds": round(float(c["start"]), 3),
          "duration_seconds": round(float(c.get("duration") or 0), 3)}
@@ -375,7 +375,7 @@ def _service_text(name: str, url: str, body: dict | None = None, headers: dict |
 
 def _english(name: str, lang) -> None:
     if lang and not str(lang).lower().startswith("en"):
-        raise RuntimeError(f"{name} returned language {lang!r}, not English")
+        raise FetchError("wrong_language", f"{name} returned language {lang!r}, not English")
 
 
 def via_yttools(video_id: str):
@@ -397,7 +397,7 @@ def _check_english(name: str, cues: list) -> list:
     """For services that don't report a language: reject text that isn't English."""
     words = " ".join(c["text"] for c in cues).lower().split()
     if len(words) >= 50 and sum(w in ENGLISH_WORDS for w in words) / len(words) < 0.08:
-        raise RuntimeError(f"{name} returned text that does not look like English")
+        raise FetchError("wrong_language", f"{name} returned text that does not look like English")
     return cues
 
 
@@ -608,9 +608,10 @@ def _submit(state: dict, method, video_id: str):
 
 def note_service_result(state: dict, name: str, ok: bool, kind: str | None = None) -> None:
     """Pause a service for an hour after FAIL_STREAK_PAUSE failures in a row. A 'no captions'
-    answer is a real answer, and a service_limited failure already paused it."""
+    answer is a real answer (so is a non-English track: the service worked, the video
+    only has captions in another language), and a service_limited failure already paused it."""
     key = SERVICES[name]["key"] + "_fail_streak"
-    if ok or kind in ("no_captions", "service_limited"):
+    if ok or kind in ("no_captions", "wrong_language", "service_limited"):
         state[key] = 0
         return
     state[key] = state.get(key, 0) + 1
