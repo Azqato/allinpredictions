@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All-In Predictions</title>
+  <meta name="description" content="Validating every prediction made on the All-In Podcast, using free tools and Claude." />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><strong>ALL IN</strong><span>Predictions</span></a>
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../episodes/index.html">Episodes</a>
+        <a href="../leaderboard.html">Leaderboard</a>
+        <a href="../ledger.html">Ledger</a>
+        <a href="../host/index.html">Hosts</a>
+        <a href="../search.html">Search</a>
+<span class="last-updated">Last updated: 2026-10-03</span>      </nav>
+    </div>
+  </header>
+  <div id="welcome-banner" class="welcome-banner hidden">
+    <div class="container welcome-banner-inner">
+      <p>This is an early, in-progress rewrite: predictions are automatically extracted and validated by LLMs, so there may be inaccuracies, and much of the archive is still unvalidated (shown as "Unvalidated").</p>
+      <button type="button" id="welcome-banner-dismiss">Dismiss</button>
+    </div>
+  </div>
+  <main class="container main">
+<section>
+  <div class="flex-between">
+    <div>
+      <h1>Daniel Ek</h1>
+      <p class="muted">Guest &middot; 1 tracked prediction</p>
+    </div>
+    <a href="../index.html">Back home</a>
+  </div>
+
+  <div class="chart-controls" style="margin-top:1.5rem;">
+    <label class="checkbox-label"><input type="checkbox" id="resolved-only-toggle" checked /> Resolved only</label>
+    <select id="topic-filter" aria-label="Filter by topic">
+      <option value="">All topics</option>
+      <option value="health">Health</option>
+      <option value="tech">Tech</option>
+    </select>
+    <div class="segmented" id="view-toggle" role="tablist" aria-label="Chart view">
+      <button type="button" class="active" data-view="total">Total</button>
+      <button type="button" data-view="year">By Year</button>
+      <button type="button" data-view="topic">By Topic</button>
+    </div>
+  </div>
+  <div class="card scorecard" data-who="daniel-ek" data-entries="[{&quot;result&quot;:&quot;inconclusive&quot;,&quot;tags&quot;:[&quot;health&quot;,&quot;tech&quot;],&quot;year&quot;:&quot;2026&quot;}]" style="margin-top:1rem;">
+    <div class="scorecard-head">
+      <span class="muted scorecard-count">0 resolved &middot; 1 total</span>
+    </div>
+    <div class="scorecard-body chart-area">
+      <div class="donut">
+        <svg width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="No data"><circle cx="80.0" cy="80.0" r="69.0" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="22" /></svg>
+      </div>
+      <table class="legend">
+        <tbody>
+          <tr>
+            <td><span class="dot dot-right"></span>Right</td>
+            <td class="num">0</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-wrong"></span>Wrong</td>
+            <td class="num">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p class="muted small-note">Small sample size (1 prediction): treat this accuracy figure as anecdotal, not statistically meaningful.</p>
+
+  <div class="section-head" style="margin-top:2rem;">
+    <div class="flex-between">
+      <h2>Predictions</h2>
+      <button type="button" id="predictions-toggle" class="link-button" aria-expanded="true" aria-controls="predictions-list">Collapse</button>
+    </div>
+  </div>
+  <div class="predictions" id="predictions-list">
+    <article class="prediction-card" id="daniel-ek-00:50:21" data-tags="health,tech" data-result="inconclusive">
+  <div class="prediction-head">
+    <a class="who-badge" href="../episodes/daniel-ek-life-after-spotify-broken-healthcare-incentives-catching-disease-early-ai-s-potential.html">Daniel Ek: Life After Spotify, Broken Healthcare Incentives, Catching Disease Early &amp; AI&#39;s Potential</a>
+    <span class="badge badge-inconclusive">Too Early</span>
+    <span class="muted">Mon, 28 Sep 2026 22:16:00 +0000 &middot; 00:50:21</span>
+  </div>
+  <p class="prediction-text">Neko Health will open US locations beyond New York, including Miami and Washington DC, and expand across the US within 12 to 24 months (by roughly September 2028).</p>
+  <blockquote class="quote">
+    &ldquo;We&#39;re launching in Florida as well in Miami and we&#39;re launching in DC and we&#39;re going to try to launch all over the US in the coming 12 to 24 months.&rdquo;
+    <span class="yt-link">
+      <a href="https://www.youtube.com/watch?v=JEUboZzZGM4&t=3021" target="_blank" rel="noreferrer" class="js-youtube-link">View on YouTube</a>
+    </span>
+  </blockquote>
+  <div class="explanation">
+    <div class="explanation-label">Explanation</div>
+    <p>The 12 to 24 month expansion window runs to about September 2028.</p>
+  </div>
+</article>
+
+  </div>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links" aria-label="Sitemap">
+        <a href="../index.html">Home</a>
+        <a href="../episodes/index.html">Episodes</a>
+        <a href="../leaderboard.html">Leaderboard</a>
+        <a href="../ledger.html">Ledger</a>
+        <a href="../host/index.html">Hosts</a>
+        <a href="../search.html">Search</a>
+        <a href="../about.html">Methodology</a>
+        <a href="../about.html#about-this-project">About</a>
+        <a href="https://github.com/Azqato/allinpredictions/issues" target="_blank" rel="noopener noreferrer">Feedback &#8599;</a>
+      </nav>
+      <p class="footer-legal">Unofficial project; data is generated using free tools (YouTube captions) and Claude (extraction, speaker attribution, and web-search validation), with no OpenAI, xAI, or paid ASR involved. It is best-effort and may contain errors, omissions, or misattributions, especially in speaker attribution, which relies on transcript context rather than voice matching.</p>
+      <p class="footer-copy">All-In Predictions &middot; not affiliated with the All-In Podcast or its hosts.</p>
+    </div>
+  </footer>
+  <script src="../static/app.js"></script>
+</body>
+</html>

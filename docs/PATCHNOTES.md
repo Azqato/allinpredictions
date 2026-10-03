@@ -2,6 +2,13 @@
 
 All notable changes to this project, in reverse chronological order. Format: semantic version, date (YYYY-MM-DD), then Added/Changed/Fixed/Removed sections with one line per change, past tense.
 
+## v0.77.0 (2026-10-03)
+
+### Added
+- Ingested 20 new episodes from the feed, from the All-In Summit sessions through the September 11 episode: transcripts fetched, chunked, extracted and validated, adding 45 predictions.
+- Validation found 1 prediction right (Brad Gerstner's call that the Fed would raise rates at its September 2026 meeting); the other 44 are inconclusive because their windows are still open.
+- Added the Luca Ferrari (Bending Spoons) episode's YouTube ID to the URL overrides.
+
 ## v0.76.1 (2026-10-01)
 
 ### Fixed
